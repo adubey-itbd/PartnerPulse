@@ -2,8 +2,9 @@
 .env
 *.env
 
-# Generated per-partner caches & downloaded decks
+# Generated per-partner caches, downloaded decks, run logs
 /data/*.json
+/data/*.log
 /data/decks/
 
 # Python
