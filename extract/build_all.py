@@ -12,9 +12,20 @@ import json
 import sys
 import traceback
 
-from . import ai, config, teamgps
+from . import ai, config, portfolio, teamgps
 from .build_partner import build, slugify
 from .partners import PARTNERS
+
+
+def write_index(all_data, error_rows=None):
+    """Write data/_index.json: per-partner rows (sorted by risk) + portfolio
+    aggregate block. `all_data` is the list of full per-partner data dicts."""
+    rows = [index_row(d) for d in all_data] + list(error_rows or [])
+    rows.sort(key=lambda r: (r.get("risk_score") is None, -(r.get("risk_score") or 0)))
+    payload = {"partners": rows, "portfolio": portfolio.build(all_data)}
+    (config.DATA_DIR / "_index.json").write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    return rows
 
 
 def _csat_positive_pct(stats: dict) -> float:
@@ -62,15 +73,13 @@ def main():
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     if args.reindex:
-        index = []
+        all_data = []
         for p in PARTNERS:
             f = config.DATA_DIR / f"{slugify(p.name)}.json"
             if f.exists():
-                index.append(index_row(json.loads(f.read_text(encoding="utf-8"))))
-        index.sort(key=lambda r: (r.get("risk_score") is None, -(r.get("risk_score") or 0)))
-        (config.DATA_DIR / "_index.json").write_text(
-            json.dumps({"partners": index}, indent=2, ensure_ascii=False), encoding="utf-8")
-        print(f"Reindexed {len(index)} partners")
+                all_data.append(json.loads(f.read_text(encoding="utf-8")))
+        rows = write_index(all_data)
+        print(f"Reindexed {len(rows)} partners (+ portfolio aggregates)")
         return
     targets = PARTNERS
     if args.only:
@@ -82,7 +91,7 @@ def main():
     nps_all = teamgps.get_nps_all()
     print(f"  {len(nps_all)} NPS responses cached", file=sys.stderr)
 
-    index = []
+    all_data, error_rows = [], []
     for p in targets:
         print(f"\n=== {p.name} ===", file=sys.stderr)
         try:
@@ -94,20 +103,17 @@ def main():
                       f"({data['ai'].get('risk_band')})", file=sys.stderr)
             out = config.DATA_DIR / f"{slugify(p.name)}.json"
             out.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-            index.append(index_row(data))
+            all_data.append(data)
         except Exception as e:
             print(f"  FAILED {p.name}: {e}", file=sys.stderr)
             traceback.print_exc()
-            index.append({"slug": slugify(p.name), "name": p.name, "error": str(e)})
+            error_rows.append({"slug": slugify(p.name), "name": p.name, "error": str(e)})
 
-    # Sort the portfolio by churn risk (highest first; unknowns last).
-    index.sort(key=lambda r: (r.get("risk_score") is None, -(r.get("risk_score") or 0)))
-    idx_path = config.DATA_DIR / "_index.json"
-    idx_path.write_text(json.dumps({"partners": index}, indent=2, ensure_ascii=False),
-                        encoding="utf-8")
-    print(f"\nWrote {idx_path} with {len(index)} partners", file=sys.stderr)
+    rows = write_index(all_data, error_rows)
+    print(f"\nWrote {config.DATA_DIR / '_index.json'} with {len(rows)} partners "
+          f"(+ portfolio aggregates)", file=sys.stderr)
     print(json.dumps([{"name": r.get("name"), "risk": r.get("risk_score"),
-                       "band": r.get("risk_band")} for r in index], indent=2))
+                       "band": r.get("risk_band")} for r in rows], indent=2))
 
 
 if __name__ == "__main__":

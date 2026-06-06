@@ -43,18 +43,23 @@ extract/                      Python extraction + AI engine
                               meeting notes, attachment list + two-mode download
   teamgps.py                  TeamGPS CSAT (company filter) + NPS (local domain filter)
   transcripts.py              MarkItDown: .docx transcripts + PDF/PPTX decks -> Markdown
-  ai.py                       Azure gpt-5.4 churn analysis (risk, drivers, remediation)
+  ai.py                       Azure Foundry gpt-5.4 churn analysis (risk, drivers, remediation)
   build_partner.py            orchestrates one partner -> data/{slug}.json
+  portfolio.py                derives portfolio aggregates from per-partner caches
   build_all.py                all partners + AI + data/_index.json roll-up
 
-index.html / portfolio.js     all-partners portfolio (landing page, churn ranking)
+index.html / portfolio.js     Executive Overview (Chart.js charts) + Partner 360 view
+                              (churn-risk ranking table, RAG filter, highest-risk cards)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,
                               Action Tracker, CSAT & NPS, Transcripts, Service Decks
-styles.css                    shared design system
+styles.css                    shared design system (light theme)
+vendor/
+  chart.umd.min.js            Chart.js 4.4.4 vendored locally (no CDN)
 server.py                     dependency-free local dev server (no-cache)
 data/                         generated caches (gitignored) — built by the engine
 Transcripts/                  local .docx meeting transcripts, per partner
-*-SOP.md                      source-of-truth API/extraction docs
+docs/                         architecture.md, changelog.md, and three SOP docs
+legacy/                       superseded single-partner files (app.js, data.js)
 ```
 
 Data sources per partner: HaloPSA (client metadata, RAG/risk custom fields, review-ticket

@@ -1163,3 +1163,32 @@ body {
     font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.8rem;
     color: var(--text-secondary); line-height: 1.6;
 }
+
+/* ============ Executive Overview charts ============ */
+.card-subtitle { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+.charts-grid { grid-template-columns: 1fr 1fr; }
+.chart-card { display: flex; flex-direction: column; }
+.chart-box { position: relative; height: 270px; width: 100%; }
+.chart-box canvas { max-width: 100%; }
+.donut-box { height: 210px; }
+.donut-legend { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+.donut-legend .legend-item { font-size: 0.82rem; }
+.footnote { font-size: 0.76rem; color: var(--text-muted); margin-top: 20px; line-height: 1.6; max-width: 1000px; }
+
+/* Data-sources footer in sidebar */
+.data-sources-title {
+    font-size: 0.7rem; font-weight: 700; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;
+}
+.data-source-row {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.8rem; color: var(--text-secondary); padding: 3px 0;
+}
+.status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.status-dot.ok { background: var(--success); box-shadow: 0 0 0 3px rgba(16,185,129,0.15); }
+.status-dot.ai { background: var(--primary); box-shadow: 0 0 0 3px rgba(99,102,241,0.15); }
+.last-sync { font-size: 0.72rem; color: var(--text-muted); margin-top: 12px; }
+
+@media (max-width: 1100px) {
+    .charts-grid { grid-template-columns: 1fr; }
+}
