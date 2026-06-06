@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartnerPulse — Portfolio Health Overview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="portfolio-shell">
+        <!-- Top bar -->
+        <header class="portfolio-header">
+            <div class="brand-section" style="margin-bottom:0;">
+                <div class="brand-logo">P</div>
+                <div>
+                    <div class="brand-name">PartnerPulse</div>
+                    <div style="font-size:0.78rem;color:var(--text-muted);">Executive Portfolio Health &amp; Churn Risk</div>
+                </div>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-outline" id="generated-at">—</span>
+                <span class="badge badge-info">gpt-5.4 Churn Engine</span>
+            </div>
+        </header>
+
+        <main class="portfolio-main">
+            <!-- KPI row -->
+            <div class="kpi-grid" id="kpi-grid"></div>
+
+            <!-- Risk distribution + table -->
+            <div class="card" style="margin-bottom:24px;">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
+                        Partner Churn Risk Ranking
+                    </h2>
+                    <div class="filter-pills" id="rag-filters">
+                        <span class="filter-pill active" data-rag="All">All</span>
+                        <span class="filter-pill" data-rag="Red">Red</span>
+                        <span class="filter-pill" data-rag="Amber">Amber</span>
+                        <span class="filter-pill" data-rag="Green">Green</span>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="custom-table portfolio-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="name">Partner</th>
+                                <th data-sort="rag">RAG</th>
+                                <th data-sort="cancel_risk">Cancel Risk</th>
+                                <th data-sort="risk_score" class="sorted-desc">AI Churn Risk</th>
+                                <th data-sort="sentiment_trend">Trend</th>
+                                <th data-sort="csat_positive_pct">CSAT +</th>
+                                <th data-sort="nps_promoters">NPS Prom.</th>
+                                <th data-sort="service_line">Service</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="portfolio-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- At-risk highlight cards -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg>
+                        Attention Required — Highest Risk
+                    </h2>
+                </div>
+                <div class="risk-card-grid" id="risk-cards"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

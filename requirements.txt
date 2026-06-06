@@ -1,0 +1,5 @@
+# PartnerPulse extraction + AI engine
+requests>=2.31
+markitdown[pdf,docx,pptx]>=0.1.0   # .docx transcripts + PDF/PPTX deck conversion
+openai>=1.40                        # Azure OpenAI (gpt-5.4 on Azure Foundry)
+python-dotenv>=1.0                  # load .env for local runs

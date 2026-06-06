@@ -1,0 +1,13 @@
+# Secrets — never commit; use Secret Manager on Firebase
+.env
+*.env
+
+# Generated per-partner caches & downloaded decks
+/data/*.json
+/data/decks/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
