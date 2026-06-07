@@ -52,7 +52,7 @@ index.html / portfolio.js     Executive Overview (Chart.js charts) + Partner 360
                               (churn-risk ranking table, RAG filter, highest-risk cards)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,
                               Action Tracker, CSAT & NPS, Transcripts, Service Decks
-styles.css                    shared design system (light theme)
+styles.css                    shared design system (light theme, dark sidebar nav)
 vendor/
   chart.umd.min.js            Chart.js 4.4.4 vendored locally (no CDN)
 server.py                     dependency-free local dev server (no-cache)

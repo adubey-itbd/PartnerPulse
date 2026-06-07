@@ -1192,3 +1192,35 @@ body {
 @media (max-width: 1100px) {
     .charts-grid { grid-template-columns: 1fr; }
 }
+
+/* ============ Dark sidebar (both portfolio & partner pages) ============ */
+/* Everything is scoped under .sidebar so the header and main content stay light. */
+.sidebar {
+    background-color: #0f172a;
+    border-right: 1px solid rgba(148, 163, 184, 0.14);
+}
+.sidebar .brand-name { color: #f1f5f9; }
+
+.sidebar .nav-link { color: #cbd5e1; }
+.sidebar .nav-link:hover { background-color: #1e293b; color: #ffffff; }
+.sidebar .nav-item.active .nav-link {
+    background-color: rgba(99, 102, 241, 0.18);
+    color: #c7d2fe;
+}
+
+.sidebar .back-link { color: #94a3b8; }
+.sidebar .back-link:hover { color: #a5b4fc; }
+
+.sidebar .sidebar-footer { border-top: 1px solid rgba(148, 163, 184, 0.14); }
+
+/* Partner page: partner selector card */
+.sidebar .partner-selector-card {
+    background: rgba(148, 163, 184, 0.08);
+    border-color: rgba(148, 163, 184, 0.16);
+}
+.sidebar .partner-details-name { color: #f1f5f9; }
+.sidebar .partner-details-status { color: #94a3b8; }
+
+/* Portfolio page: data sources footer */
+.sidebar .data-source-row { color: #cbd5e1; }
+.sidebar .last-sync { color: #94a3b8; }
