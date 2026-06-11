@@ -2,9 +2,10 @@
 .env
 *.env
 
-# Generated per-partner caches, downloaded decks, run logs
+# Generated per-partner caches, downloaded decks, run logs, demo exec block
 /data/*.json
 /data/*.log
+/data/*.js
 /data/decks/
 
 # Python
