@@ -38,6 +38,11 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   data is an **embedded array** in its inline `<script>`, NOT fetched.
 - `partner.html` + `partner.js` — per-partner drilldown (`?partner=<slug>`), fetches
   `data/{slug}.json` at runtime. `styles.css` shared; Chart.js vendored in `vendor/`.
+- `refresh.js` — "Sync Data" header button (both pages). Talks to `server.py`'s
+  sync API: `POST /api/refresh` (single-flight, optional `{"steps":[...]}` subset:
+  `registry` | `real-extras` | `demo-reindex`), `GET /api/refresh/status`. Cycle =
+  build_all → build_real_partners → gen_demo_partners, continue-on-failure, log in
+  `data/_sync.log`. The `registry` step needs `markitdown`.
 - `extract/` — pipeline library package (config, halo, teamgps, transcripts, ai,
   build_partner, build_all, portfolio). Secrets: env/.env first, live fallbacks
   baked in `extract/config.py` (beta only — never copy them elsewhere).

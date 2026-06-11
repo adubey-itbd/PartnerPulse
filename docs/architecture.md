@@ -61,8 +61,8 @@ graph TD
 ### Repository layout
 
 ```
-index.html / partner.html / partner.js / styles.css / vendor/   the dashboard (served from repo root)
-server.py / setup.ps1 / requirements.txt                        entry points
+index.html / partner.html / partner.js / refresh.js / styles.css / vendor/   the dashboard (served from repo root)
+server.py / setup.ps1 / requirements.txt                        entry points (server.py also hosts the sync API)
 extract/        ingestion + AI pipeline (Python package, run via python -m extract.*)
 scripts/        operational scripts (build_real_partners.py, gen_demo_partners.py)
 data/           generated caches (gitignored): {slug}.json, _index.json, decks/, demo_exec_partners.js
@@ -173,7 +173,12 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 ### Build-Time Cache vs. Real-Time API Queries
 * **Choice:** The application processes telemetry and runs AI analysis ahead of time (synchronously, as a CLI pipeline), generating static JSON.
 * **Why:** Calling HaloPSA/TeamGPS APIs and running gpt-5.4 on page load would take 10–30 seconds per request, resulting in a poor user experience. It also prevents API rate-limiting issues and controls Azure API costs.
-* **Tradeoff:** The dashboard displays cached data. Updates are not live and must be triggered via a recurring task (e.g., cron job) or manual execution of `python -m extract.build_all`.
+* **Tradeoff:** The dashboard displays cached data. Updates are not live — they are triggered by the dashboard's **"Sync Data"** header button (see *Manual Sync API* below), a recurring task (e.g., cron job), or manual execution of `python -m extract.build_all`.
+
+### Manual Sync API + Dashboard Button
+* **Choice:** `server.py` exposes a small stdlib-only sync API — `POST /api/refresh` starts a single-flight sync cycle (409 if one is running; optional `{"steps": [...]}` body runs a subset), `GET /api/refresh/status` reports per-step progress. The cycle shells out sequentially to the existing entry points (`extract.build_all` → `scripts/build_real_partners.py` → `scripts/gen_demo_partners.py`), one subprocess per step, **continue-on-failure**, output appended to `data/_sync.log`. The shared `refresh.js` wires the header "Sync Data" button on both pages: confirm dialog, polled progress, page reload when at least one step succeeded.
+* **Why:** Source systems change daily (e.g., a Halo SIP open today is closed tomorrow); the exec needs a way to know the dashboard is current *now* without touching a terminal. Subprocesses (rather than in-process imports) isolate module-level API caches, keep the server dependency-free, and make a missing optional dependency (e.g. `markitdown` for the registry step) degrade to a per-step failure instead of breaking the whole cycle.
+* **Tradeoff:** A full cycle takes minutes and spends live Halo/TeamGPS calls + Azure gpt-5.4 tokens — hence manual, confirm-guarded, and single-flight. On machines without `markitdown` the registry step reports failed while the other steps still refresh Halo/TeamGPS data and the index.
 
 ### MarkItDown for Document Ingestion
 * **Choice:** Integrated Microsoft's `markitdown` library in the build pipeline.
