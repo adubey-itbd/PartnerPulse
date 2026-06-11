@@ -67,11 +67,15 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 5. **Halo API is quirky** (no server-side ticket-type filter, unreliable
    `record_count`, no closed flag on statuses, custom fields only on detail calls).
    Check `docs/HaloPSA-API-SOP.md` quirks + addenda before writing Halo code.
-6. **`markitdown` is required** for the registry build path and all transcript
+6. **`markitdown` is required** for the registry build path and `.docx` transcript
    ingestion (installed here 2026-06-11). Where it's missing,
    `build_real_partners.py` skips transcripts with a warning and
    `extract.build_all` fails outright. Transcript folders are matched
    case/punctuation-insensitively; unmatched folders trigger a warning.
+   Transcripts can be `.docx` (manual Teams export) or `.vtt` (pulled from the
+   Graph meeting-transcript API via the Claude M365 connector — agent-driven flow,
+   see Data-Extraction-SOP §1 Option C; only works for meetings the connector
+   user attended, else Graph 403s).
 7. **`index.html` does NOT load `styles.css`** — it is fully self-contained (own
    inline `<style>` + `<script>`); `styles.css` applies only to `partner.html`.
    Shared UI (like the sync button) needs its CSS in BOTH places.

@@ -1,0 +1,478 @@
+WEBVTT
+NOTE title: MSP Corp (CRDS Group) | ITBD Service Call
+NOTE date: 2026-06-09
+NOTE duration: 11m 22s
+
+00:00:11.026 --> 00:00:15.066
+<v Ashish Paul>Morning, Chester. Morning, Karine. Morning, Danny.</v>
+
+00:00:14.626 --> 00:00:15.666
+<v Karine Pelletier>Hi, good morning.</v>
+
+00:00:16.306 --> 00:00:17.706
+<v Chester Co>Good morning, folks.</v>
+
+00:00:18.746 --> 00:00:19.786
+<v Ashish Paul>What are you all doing?</v>
+
+00:00:19.466 --> 00:00:20.466
+<v Sarbjeet Singh>Good morning, everyone.</v>
+
+00:00:21.426 --> 00:00:22.066
+<v Karine Pelletier>The money.</v>
+
+00:00:23.426 --> 00:00:24.386
+<v Chester Co>Doing good, thank you.</v>
+
+00:00:26.506 --> 00:00:27.226
+<v Ashish Paul>That's great.</v>
+
+00:00:28.666 --> 00:00:31.386
+<v Ashish Paul>Long time, no see. We've been meeting after one month.</v>
+
+00:00:34.266 --> 00:00:35.306
+<v Ashish Paul>How's everything going?</v>
+
+00:00:36.546 --> 00:00:36.666
+<v Ashish Paul>Yeah.</v>
+
+00:00:37.106 --> 00:00:37.666
+<v Karine Pelletier>Right.</v>
+
+00:00:37.266 --> 00:00:38.786
+<v Chester Co>Yeah, everything's everything's good.</v>
+
+00:00:41.146 --> 00:00:41.626
+<v Ashish Paul>Blake it.</v>
+
+00:00:45.026 --> 00:00:46.026
+<v Ashish Paul>All right.</v>
+
+00:00:47.866 --> 00:00:49.306
+<v Ashish Paul>Just give me a moment.</v>
+
+00:00:57.306 --> 00:01:10.986
+<v Ashish Paul>Okay, so thank you so much, Danny and Chester, for joining this call. So let's quickly jump on to the agenda and starting with Ray, how things are moving with him.</v>
+
+00:01:15.666 --> 00:01:18.146
+<v Chester Co>I'll let Danny speak.</v>
+
+00:01:21.626 --> 00:01:22.746
+<v Ashish Paul>Danny, you are on mute.</v>
+
+00:01:27.266 --> 00:01:28.546
+<v Chester Co>You're still muted.</v>
+
+00:01:27.306 --> 00:01:28.426
+<v Ashish Paul>You went on mute again.</v>
+
+00:01:31.866 --> 00:01:33.146
+<v Ashish Paul>You're on mute again, Danny.</v>
+
+00:01:35.826 --> 00:01:36.106
+<v Ashish Paul>Hoh.</v>
+
+00:01:36.986 --> 00:01:38.106
+<v Ashish Paul>Something is all.</v>
+
+00:01:39.226 --> 00:01:41.546
+<v Ashish Paul>It's on here. Yep, now it's better.</v>
+
+00:01:39.586 --> 00:01:40.066
+<v Danny Lee>There you go.</v>
+
+00:01:41.306 --> 00:01:48.066
+<v Danny Lee>Sorry about that. I said his utilization went up, so he's at 82%, which is past our goal of 80, so everything's going good.</v>
+
+00:01:50.826 --> 00:02:10.266
+<v Ashish Paul>That's great. And in terms of the improvement points, Chester, that you mentioned regarding he is describing the tickets that he's entering, they are specifically specified as for the role. So Ray is working on it and I think he has completely worked on that piece and it has been taken.</v>
+
+00:02:12.466 --> 00:02:12.786
+<v Danny Lee>Hoh.</v>
+
+00:02:12.786 --> 00:02:12.986
+<v Chester Co>Yeah.</v>
+
+00:02:14.346 --> 00:02:32.666
+<v Ashish Paul>Yep, that's right. So, Danny, when you mentioned about the utilization piece of 82%, as per our calculation, I will certainly show the numbers when we go through the presentation deck. But before that, I see we have Keith with us. Hey, Keith, how are you doing?</v>
+
+00:02:19.666 --> 00:02:20.146
+<v Danny Lee>Mhm.</v>
+
+00:02:27.906 --> 00:02:28.306
+<v Danny Lee>Okay.</v>
+
+00:02:33.186 --> 00:02:33.506
+<v Danny Lee>If.</v>
+
+00:02:33.306 --> 00:02:34.706
+<v Keith Rozario>I'm good buddy, how are you?</v>
+
+00:02:35.986 --> 00:02:36.506
+<v Ashish Paul>Big Reid.</v>
+
+00:02:36.866 --> 00:02:38.866
+<v Keith Rozario>Hey, Jester, hey Danny, hey Karine.</v>
+
+00:02:37.906 --> 00:02:39.186
+<v Chester Co>Hey, hey Keith.</v>
+
+00:02:38.866 --> 00:02:39.346
+<v Danny Lee>Hey, hey.</v>
+
+00:02:40.506 --> 00:02:55.346
+<v Ashish Paul>So, let me just give you a quick intro. So, Keith is one of the senior technical team leads working with IT by design, so he will be helping me with the MSP Corp. So, yeah, he'll be a frequent visitor on these service calls in the near future.</v>
+
+00:02:56.146 --> 00:02:57.026
+<v Danny Lee>Sounds good, welcome.</v>
+
+00:02:57.706 --> 00:02:58.226
+<v Keith Rozario>Thank you.</v>
+
+00:02:59.146 --> 00:02:59.546
+<v Ashish Paul>Kip.</v>
+
+00:02:59.426 --> 00:03:00.946
+<v Keith Rozario>Thank you. Looking forward to work with you guys.</v>
+
+00:03:01.026 --> 00:03:01.586
+<v Danny Lee>Now we can play.</v>
+
+00:03:01.746 --> 00:03:02.466
+<v Chester Co>Mackless.</v>
+
+00:03:04.026 --> 00:03:08.026
+<v Ashish Paul>Before I jump into the presentation deck, anything else, Jester, Denny, you want to share?</v>
+
+00:03:09.186 --> 00:03:09.466
+<v Danny Lee>Nope.</v>
+
+00:03:10.786 --> 00:03:11.106
+<v Chester Co>Yep.</v>
+
+00:03:12.026 --> 00:03:13.626
+<v Ashish Paul>Shall we bring up my screen?</v>
+
+00:03:17.066 --> 00:03:19.066
+<v Ashish Paul>Let me know if you're able to see it.</v>
+
+00:03:20.466 --> 00:03:20.706
+<v Danny Lee>Yep.</v>
+
+00:03:22.106 --> 00:03:40.106
+<v Ashish Paul>Thank you. This is our monthly business review and reiteration is May 1st till May 29th. Starting with our agenda items for today, they remain same. We will have check-in, highlights of the account, action tracker, performance analysis, points of the customer, pay forward and then recap.</v>
+
+00:03:41.946 --> 00:03:43.706
+<v Ashish Paul>We have covered this slide already.</v>
+
+00:03:45.146 --> 00:04:04.026
+<v Ashish Paul>Here we have the discussion points from our previous Connect where race over performance and transition under Dennis leadership were reviewed positively. We focused on the CSAT transitions that have been taken care. And thank you so much, Danny, for sharing the CSAT survey for Ray. We appreciate it.</v>
+
+00:04:05.546 --> 00:04:17.226
+<v Ashish Paul>And we discussed with Ray regarding the charge codes when he's working on the tickets. So this is something that he has fixed already. So yeah, we are in good heads.</v>
+
+00:04:18.266 --> 00:04:18.546
+<v Danny Lee>One.</v>
+
+00:04:19.626 --> 00:04:20.746
+<v Ashish Paul>Any questions so far?</v>
+
+00:04:24.066 --> 00:04:24.466
+<v Chester Co>No.</v>
+
+00:04:25.826 --> 00:04:26.146
+<v Danny Lee>Nope.</v>
+
+00:04:25.946 --> 00:04:26.426
+<v Ashish Paul>Thank you.</v>
+
+00:04:28.106 --> 00:04:46.626
+<v Ashish Paul>Okay, this is the access to the reporting piece, which is still being considered. So yeah, let me know, Danny, once we are there so that we would have access to the BrightGauge or internal reporting tool so that we can have real-time access of race data.</v>
+
+00:04:47.426 --> 00:04:51.666
+<v Danny Lee>Okay, are we waiting, Chester, are we waiting till we get on boarded to the new system or are we talking about the current one?</v>
+
+00:04:53.826 --> 00:04:57.506
+<v Chester Co>Um, we're waiting until we get to the new system.</v>
+
+00:04:57.586 --> 00:04:58.626
+<v Danny Lee>Okay, perfect. Makes sense.</v>
+
+00:05:00.266 --> 00:05:00.666
+<v Ashish Paul>Okay.</v>
+
+00:05:00.706 --> 00:05:21.386
+<v Chester Co>Sorry, just one more thing about the charge codes. When he's entering charge codes, we just need a little bit of detail on what that charge code was used for, right? You know, if it's a...</v>
+
+00:05:18.106 --> 00:05:18.506
+<v Ashish Paul>Kour.</v>
+
+00:05:21.466 --> 00:05:40.226
+<v Chester Co>Training and assistance, just put a little bit about what the training was about, right? Because, you know, I was looking last week, he's got three hours of training and assistance, but there's no details on what those are.</v>
+
+00:05:27.586 --> 00:05:27.986
+<v Danny Lee>Okay.</v>
+
+00:05:27.626 --> 00:05:28.266
+<v Ashish Paul>I got it.</v>
+
+00:05:28.866 --> 00:05:29.346
+<v Danny Lee>Makes sense.</v>
+
+00:05:42.106 --> 00:05:45.906
+<v Ashish Paul>Sure, I'll make sure that he will put that as well.</v>
+
+00:05:46.386 --> 00:05:47.106
+<v Chester Co>Thank you.</v>
+
+00:05:48.066 --> 00:05:48.506
+<v Ashish Paul>You like him?</v>
+
+00:05:51.226 --> 00:05:54.106
+<v Ashish Paul>Yeah, we were the KPIs that we discussed, so...</v>
+
+00:05:55.866 --> 00:06:14.426
+<v Ashish Paul>I'll quickly move to performance analysis. This is the utilization piece for Ray. And as per the calculation that we have internally, although it is less than what you have at your end, but it's still 75% with us, which is still a good number. And so I have considered.</v>
+
+00:06:07.986 --> 00:06:08.466
+<v Danny Lee>Mhm.</v>
+
+00:06:12.466 --> 00:06:13.066
+<v Danny Lee>Mm-hmm.</v>
+
+00:06:14.746 --> 00:06:27.066
+<v Ashish Paul>May 8th, which was a holiday, which is why we could see a dip in his utilization third week of May. However, he was able to maintain 75 plus in the rest of the weeks for the month of May.</v>
+
+00:06:27.746 --> 00:06:27.986
+<v Chester Co>Yeah.</v>
+
+00:06:28.866 --> 00:06:29.186
+<v Danny Lee>Yep.</v>
+
+00:06:30.666 --> 00:06:31.626
+<v Ashish Paul>Any questions there?</v>
+
+00:06:32.546 --> 00:06:32.786
+<v Danny Lee>No.</v>
+
+00:06:34.426 --> 00:06:34.986
+<v Ashish Paul>Thank you.</v>
+
+00:06:36.346 --> 00:06:59.786
+<v Ashish Paul>Next we have is the tickets resolved. So Ray has closed 181 tickets in total. So throughout the month, he worked on Office 365 cases, SharePoint, server support, and other alerts and escalation from different team members. The required target he had is like 8 tickets per day. So he has surpassed them every week.</v>
+
+00:06:53.946 --> 00:06:54.426
+<v Danny Lee>Mhm.</v>
+
+00:07:00.266 --> 00:07:13.866
+<v Ashish Paul>So as we can see, the target for May 8th was 32. He was able to close 36 tickets there because 18 was enough. And rest of the weeks, we can see the numbers are purpassing the required targets.</v>
+
+00:07:14.546 --> 00:07:15.026
+<v Danny Lee>Cool.</v>
+
+00:07:16.386 --> 00:07:16.466
+<v Danny Lee>Hoh.</v>
+
+00:07:17.266 --> 00:07:36.186
+<v Ashish Paul>And Pre had been vocal in terms of asking for more work, because we also observed, and Danny, we had a chat on that as well. I think third week of May and towards the end, we observed a slight dip in the ticket inflow. So please utilize Pre in.</v>
+
+00:07:36.506 --> 00:07:52.666
+<v Ashish Paul>internal projects, any reporting or wherever you feel that he could be utilized because when he's done with the tickets, I have advised him to reach out to you so that he can be utilized for anything and everything that can be that can add value to your site.</v>
+
+00:07:52.146 --> 00:07:52.626
+<v Danny Lee>Sounds good.</v>
+
+00:07:54.106 --> 00:07:54.426
+<v Ashish Paul>Okay.</v>
+
+00:07:57.066 --> 00:08:16.426
+<v Ashish Paul>Right, way forward. So AZ104 certification is completed by Ray. So that's that. And strong focus on the guide infrastructure. Ray is working on it already. Utilization has got better and accurate time capture and agreement alignment. So this is something that we have coached Ray already.</v>
+
+00:08:04.506 --> 00:08:04.986
+<v Danny Lee>Mhm.</v>
+
+00:08:17.186 --> 00:08:18.946
+<v Danny Lee>I think he's going for his SC300, right?</v>
+
+00:08:19.546 --> 00:08:21.946
+<v Ashish Paul>Yes, he is preparing for SC300, yes.</v>
+
+00:08:22.146 --> 00:08:22.306
+<v Danny Lee>Rick.</v>
+
+00:08:26.026 --> 00:08:31.466
+<v Ashish Paul>All right, this is Bill 80 so I think the team is registered already. I can skip this one.</v>
+
+00:08:33.626 --> 00:08:36.466
+<v Ashish Paul>This starting to be a slide, that is it.</v>
+
+00:08:40.106 --> 00:08:42.506
+<v Ashish Paul>Any other questions, Danny Chester?</v>
+
+00:08:42.626 --> 00:08:43.266
+<v Danny Lee>Nope, I'm good.</v>
+
+00:08:45.066 --> 00:08:45.546
+<v Ashish Paul>Thank you.</v>
+
+00:08:45.186 --> 00:08:47.106
+<v Chester Co>No, nothing else on my side.</v>
+
+00:08:48.866 --> 00:08:51.626
+<v Ashish Paul>Right, Karine, anything you want to add?</v>
+
+00:08:53.706 --> 00:08:58.706
+<v Karine Pelletier>No, I'm sorry. No, just waiting for a few suitable candidate.</v>
+
+00:08:59.626 --> 00:09:02.906
+<v Ashish Paul>Yep, yep, I saw your email and uh, yep, we're working on it.</v>
+
+00:09:03.586 --> 00:09:04.786
+<v Karine Pelletier>Okay, thank you very much.</v>
+
+00:09:03.986 --> 00:09:04.346
+<v Ashish Paul>Thank you.</v>
+
+00:09:05.306 --> 00:09:07.146
+<v Ashish Paul>You're welcome, Sarbjeet.</v>
+
+00:09:05.426 --> 00:09:05.986
+<v Danny Lee>Excellent.</v>
+
+00:09:07.946 --> 00:09:09.626
+<v Ashish Paul>You have, you are a neutral.</v>
+
+00:09:08.866 --> 00:09:09.826
+<v Sarbjeet Singh>No, all good.</v>
+
+00:09:11.386 --> 00:09:11.826
+<v Sarbjeet Singh>Thank you.</v>
+
+00:09:12.986 --> 00:09:14.506
+<v Ashish Paul>You're welcome, Keith.</v>
+
+00:09:15.786 --> 00:09:23.906
+<v Keith Rozario>Sarbjeet on mute doesn't happen very often, right? It was shocking for me too, but yeah, I'm good, really.</v>
+
+00:09:18.466 --> 00:09:18.626
+<v Chester Co>Yeah.</v>
+
+00:09:18.946 --> 00:09:19.466
+<v Ashish Paul>Yeah.</v>
+
+00:09:20.426 --> 00:09:20.546
+<v Danny Lee>Yeah.</v>
+
+00:09:21.626 --> 00:09:22.266
+<v Ashish Paul>Yep, yep.</v>
+
+00:09:22.786 --> 00:09:26.466
+<v Sarbjeet Singh>Unfortunately, my headphone gone has gone faulty.</v>
+
+00:09:27.026 --> 00:09:27.426
+<v Chester Co>Yeah.</v>
+
+00:09:28.626 --> 00:09:34.866
+<v Chester Co>So, Keith, do you do you work in the same office as OK? Alright, good, good to know.</v>
+
+00:09:28.786 --> 00:09:29.826
+<v Keith Rozario>Right, thank you.</v>
+
+00:09:32.066 --> 00:09:33.746
+<v Keith Rozario>Yes, same office, correct.</v>
+
+00:09:34.306 --> 00:09:34.466
+<v Danny Lee>Mm.</v>
+
+00:09:35.346 --> 00:09:35.586
+<v Keith Rozario>Yeah.</v>
+
+00:09:36.386 --> 00:09:36.786
+<v Chester Co>All right.</v>
+
+00:09:36.746 --> 00:09:55.466
+<v Ashish Paul>Right, I guess this is it I have for today. Our next meeting is scheduled for 7th of July. Not established, 14th of July. Until then, please take care of yourself. And before we call it off, I believe 1st of July is a holiday.</v>
+
+00:09:55.946 --> 00:10:08.266
+<v Ashish Paul>at MSP Corp. So I just wanted to confirm if you are comfortable, Ray, taking this off or you want him to be available as rest of the team would not be on shift.</v>
+
+00:10:08.746 --> 00:10:14.986
+<v Chester Co>I don't remember if July 1st is not a U.S. holiday, right? I think it's only Canadian.</v>
+
+00:10:15.226 --> 00:10:27.466
+<v Ashish Paul>Yes, so yeah, July 1st is Canada holiday and July 3rd is US Independence Day. So we are observing 3rd of July, but you know, in case you want to swap, we can also do that.</v>
+
+00:10:15.306 --> 00:10:16.106
+<v Danny Lee>I don't know the day.</v>
+
+00:10:17.466 --> 00:10:17.546
+<v Chester Co>Uh.</v>
+
+00:10:28.026 --> 00:10:37.786
+<v Chester Co>Yeah, because if it's, I have to check if it's a US holiday, if it's not a US holiday, then we'll need Ray.</v>
+
+00:10:38.986 --> 00:10:40.346
+<v Chester Co>to cover.</v>
+
+00:10:41.866 --> 00:10:41.906
+<v Chester Co>Uh...</v>
+
+00:10:42.266 --> 00:10:42.666
+<v Ashish Paul>Kour.</v>
+
+00:10:42.946 --> 00:10:43.146
+<v Chester Co>The.</v>
+
+00:10:44.306 --> 00:10:49.946
+<v Chester Co>It looks like it's only Canada, I think, and then U.S. gets Fourth of July, right?</v>
+
+00:10:46.986 --> 00:10:47.786
+<v Danny Lee>Yeah, I think so.</v>
+
+00:10:49.786 --> 00:10:50.986
+<v Danny Lee>Or for July, yeah.</v>
+
+00:10:51.066 --> 00:10:55.986
+<v Ashish Paul>Yep, we are getting it on 3rd because 4th is Saturday, so we are off 1:30.</v>
+
+00:10:55.706 --> 00:10:56.186
+<v Chester Co>Okay.</v>
+
+00:10:57.386 --> 00:11:04.906
+<v Chester Co>Yeah, so, and that's the case, yeah, we'll need him to to cover to be around for July 1st.</v>
+
+00:11:05.626 --> 00:11:08.386
+<v Ashish Paul>All right, I can make this. It'll be done.</v>
+
+00:11:06.706 --> 00:11:06.946
+<v Chester Co>Yeah.</v>
+
+00:11:08.186 --> 00:11:09.946
+<v Chester Co>OKOK. Thank you.</v>
+
+00:11:09.226 --> 00:11:10.266
+<v Danny Lee>Okay, thank you so much.</v>
+
+00:11:11.146 --> 00:11:11.786
+<v Ashish Paul>You're welcome.</v>
+
+00:11:12.666 --> 00:11:18.666
+<v Ashish Paul>Alrighty. Well, thank you so much for your time. We'll see you next month. Until then, take care and have a good one.</v>
+
+00:11:15.146 --> 00:11:15.626
+<v Chester Co>Right.</v>
+
+00:11:16.826 --> 00:11:16.986
+<v Danny Lee>Pre.</v>
+
+00:11:18.666 --> 00:11:20.906
+<v Danny Lee>All right. Have a great day. Thank you. See you in a month. Bye.</v>
+
+00:11:19.066 --> 00:11:21.346
+<v Chester Co>Thank you. Bye-bye. Bye.</v>
+
+00:11:19.226 --> 00:11:21.706
+<v Keith Rozario>Thank you, everyone. Take care. Bye.</v>
+
+00:11:19.666 --> 00:11:21.946
+<v Sarbjeet Singh>Bye. Thank you. Thank you, everyone.</v>

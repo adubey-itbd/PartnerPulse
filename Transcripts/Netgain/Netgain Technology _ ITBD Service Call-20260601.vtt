@@ -1,0 +1,688 @@
+WEBVTT
+NOTE title: Netgain Technology | ITBD Service Call
+NOTE date: 2026-06-01
+NOTE duration: 39m 30s
+
+00:00:03.732 --> 00:00:04.252
+<v Keith Rozario>I think I do.</v>
+
+00:00:05.652 --> 00:00:05.972
+<v Aaron Guglani>Is it?</v>
+
+00:00:07.012 --> 00:00:07.572
+<v Kevin Lynott>No.</v>
+
+00:00:07.012 --> 00:00:07.732
+<v Keith Rozario>No, nothing yet.</v>
+
+00:00:10.212 --> 00:00:11.332
+<v Aaron Guglani>Just check it.</v>
+
+00:00:17.572 --> 00:00:20.052
+<v Keith Rozario>Now we can see your desktop, yes? OK, there you go.</v>
+
+00:00:21.092 --> 00:00:29.412
+<v Aaron Guglani>Right. All right. Thank you, Keith. So we'll be discussing the bi-weekly business review and that's the duration going to be May 3rd till May 23rd.</v>
+
+00:00:21.212 --> 00:00:21.652
+<v Keith Rozario>You see it.</v>
+
+00:00:31.372 --> 00:00:51.492
+<v Aaron Guglani>Agenda items gonna be the same: check-in, highlights, action tracker, performance analysis, yeah, by design, way forward, and recap. Before we begin, how are things at the moment, Sai? Though we connect very frequently, Tuesday, Thursday, apart from that, in the collaboration channel as well, we discuss so many things.</v>
+
+00:00:51.892 --> 00:00:55.972
+<v Aaron Guglani>Anything you want to bring from the past last service call until now.</v>
+
+00:00:59.252 --> 00:01:03.172
+<v Sai Chelikani>No, I think we're chugging along on, you know, our...</v>
+
+00:01:05.732 --> 00:01:13.692
+<v Sai Chelikani>some of our rework stuff. So I we have I haven't been as focused talking about the</v>
+
+00:01:16.932 --> 00:01:30.772
+<v Sai Chelikani>Resource side of the things, I know we're again, we're focused on the ConnectWise rework stuff. So from our last call to this call, that's been the focus. I haven't looked into the tech numbers as of yet. I don't have any concerns at this point in time.</v>
+
+00:01:32.052 --> 00:01:37.252
+<v Aaron Guglani>Okay, and did you get a chance to connect with Isaac about Allan?</v>
+
+00:01:40.212 --> 00:01:50.132
+<v Sai Chelikani>I'm sorry, I will connect. I am connecting with him. Yeah, yeah. What am I connecting with him about? I will. I am connecting with him today. What do I need to ask him? Sorry.</v>
+
+00:01:41.732 --> 00:01:43.252
+<v Aaron Guglani>Abhishek, yeah.</v>
+
+00:01:50.772 --> 00:01:56.372
+<v Aaron Guglani>About his performance, how things are with him, how he managing things, day-to-day tasks and everything.</v>
+
+00:01:55.172 --> 00:01:55.572
+<v Sai Chelikani>Okay.</v>
+
+00:01:57.412 --> 00:02:13.092
+<v Sai Chelikani>Okay, I will, I don't think there has been an issue. I know that Isaac has said positive things about Allan so far. I will make sure that I connect with Isaac today and I will get specific feedback.</v>
+
+00:02:05.332 --> 00:02:05.812
+<v Aaron Guglani>Mhm.</v>
+
+00:02:13.892 --> 00:02:20.532
+<v Aaron Guglani>Great, good to hear that and we'll be waiting on that part. Kevin, anything you want to bring?</v>
+
+00:02:22.892 --> 00:02:28.852
+<v Kevin Lynott>Uh, I just want to confirm, so I know I was at a week of things, so...</v>
+
+00:02:30.532 --> 00:02:34.532
+<v Kevin Lynott>So, Hank is leaving. What do we when is the last date for Hank?</v>
+
+00:02:35.052 --> 00:02:40.612
+<v Keith Rozario>June 23rd will be his last day with with that game.</v>
+
+00:02:42.292 --> 00:02:43.412
+<v Keith Rozario>But correct me if I'm wrong, sir.</v>
+
+00:02:47.332 --> 00:02:47.372
+<v Sai Chelikani>Uhh.</v>
+
+00:02:49.732 --> 00:02:56.612
+<v Sai Chelikani>Let's see. Yeah, that was one month out from Dipon to joining, right? So that sounds about right.</v>
+
+00:02:55.652 --> 00:02:56.212
+<v Keith Rozario>Yeah, yeah.</v>
+
+00:02:58.932 --> 00:02:59.492
+<v Kevin Lynott>Okay.</v>
+
+00:02:58.932 --> 00:03:20.692
+<v Sai Chelikani>Well, I mean, like I said, I mean, hope, we'll see again, if the date is set in stone, is set in stone. The goal was that we were going to confirm that Deepak Vansh was doing well and he's, you know, on track before we moved to Vansh out. So that was my plan. So that date to me is tentative, but I know that he was looking to exit. So if he's</v>
+
+00:03:22.052 --> 00:03:28.372
+<v Sai Chelikani>He's got to exit to join his new job and he needs to give a date and that's the date we're giving and that's fine.</v>
+
+00:03:28.772 --> 00:03:29.252
+<v Keith Rozario>Mmh.</v>
+
+00:03:30.372 --> 00:03:45.812
+<v Sai Chelikani>I would appreciate obviously a little wiggle room. I don't know, Dipon Shu is doing well. I think as far, I haven't heard any negative feedback so far. I haven't heard positive feedback either. I just haven't heard any feedback. So I don't think there's any issue right now, but that's dependency.</v>
+
+00:03:38.772 --> 00:03:39.252
+<v Keith Rozario>Mhm.</v>
+
+00:03:46.972 --> 00:03:49.492
+<v Keith Rozario>Yeah, no worries, no worries.</v>
+
+00:03:48.132 --> 00:03:48.612
+<v Aaron Guglani>Awesome.</v>
+
+00:03:50.132 --> 00:03:51.572
+<v Kevin Lynott>Do we have any?</v>
+
+00:03:52.932 --> 00:04:00.612
+<v Kevin Lynott>Any any any candidates out there recently? Is anybody else? Is Jared still considering a position? Sorry.</v>
+
+00:04:01.572 --> 00:04:08.852
+<v Sai Chelikani>Yes, so the tools admit the tools administration position is with Keith, so we're waiting on candidates.</v>
+
+00:04:09.652 --> 00:04:10.052
+<v Keith Rozario>Yep.</v>
+
+00:04:10.212 --> 00:04:16.892
+<v Sai Chelikani>So we are not looking at any US-based resource for that. So we are strictly looking from an offshore resource.</v>
+
+00:04:20.492 --> 00:04:25.332
+<v Kevin Lynott>Okay, so that's being worked on. Okay. I just want to make sure I have up to date.</v>
+
+00:04:27.052 --> 00:04:27.652
+<v Aaron Guglani>Nice.</v>
+
+00:04:29.012 --> 00:04:30.052
+<v Aaron Guglani>Shall I move further?</v>
+
+00:04:31.252 --> 00:04:32.212
+<v Kevin Lynott>Yeah, go ahead. Sorry.</v>
+
+00:04:32.612 --> 00:04:33.012
+<v Aaron Guglani>Awesome.</v>
+
+00:04:34.292 --> 00:04:54.572
+<v Aaron Guglani>Moving on to the couple of highlights, the QA process introduced within the team, maintaining quality standard nodes on tickets, clear upward trend in utilization following SIP adoption and improved workload coordination. The Vansh onboarding has been completed on May 26th. Ongoing consistent feedback provided to engineer,</v>
+
+00:04:54.692 --> 00:05:13.572
+<v Aaron Guglani>to ensure stronger alignment with customer expectations. CSAT remains strong, immediate action taken on all the neutral and negative survey. Team is adhering to SCAF process and the standard notes. I have already started performing the regular ticket audits and I am already sharing the weekly report as well.</v>
+
+00:05:14.132 --> 00:05:16.212
+<v Aaron Guglani>Did you get a chance to look into those reports?</v>
+
+00:05:18.532 --> 00:05:20.692
+<v Sai Chelikani>I just came back from being out of office, so no.</v>
+
+00:05:20.852 --> 00:05:27.892
+<v Aaron Guglani>Okay. All right. Louis, offboarding has been completed on May 15th. Any thoughts on this?</v>
+
+00:05:32.252 --> 00:05:33.492
+<v Sai Chelikani>Nope, not at this time.</v>
+
+00:05:34.332 --> 00:05:34.612
+<v Aaron Guglani>Pre.</v>
+
+00:05:36.052 --> 00:05:55.332
+<v Aaron Guglani>Moving on to the action tracker QA process introduced by Sai and that's already completed. Urgent issue channel, Aaron and Keith already completed that, given the feedback to the team where and how they will be following the urgent issue channel. ConnectWise rework training, Sai already conducted with the team. L3 hiring is completed.</v>
+
+00:05:55.732 --> 00:06:00.692
+<v Aaron Guglani>The bunch is on boarded, and I am process training with the support team. I have already conducted that.</v>
+
+00:06:04.772 --> 00:06:11.412
+<v Aaron Guglani>These are the couple of ITBD recommended KPI. I believe we did discuss that in the past, so I'm skipping it for now.</v>
+
+00:06:13.252 --> 00:06:15.652
+<v Aaron Guglani>Moving on to the performance analysis.</v>
+
+00:06:16.692 --> 00:06:35.892
+<v Aaron Guglani>Utilization trend for Akshay and Harshit, Akshay achieved 82% utilization duration from May 3rd till May 23rd, and Harshit achieved 83%, and both the engineers during the off hours, they have exceeded the 80% target. Piyali is doing consistently.</v>
+
+00:06:36.212 --> 00:06:41.572
+<v Aaron Guglani>Amazing wherein she achieved 101% utilization leading the entire team.</v>
+
+00:06:44.052 --> 00:07:02.212
+<v Aaron Guglani>Apart from that, if I talk about the her utilization hours, she achieved like 102 billable hours, significantly exceeding the target. Gautam achieved 83.5% utilization with the 100 billable hours. Diksha achieved 82.3, wherein the utilization hours were 92.</v>
+
+00:07:03.092 --> 00:07:25.492
+<v Aaron Guglani>Ujjwal delivered 82.1% with the 92 billable hours. Himanshu achieved 81.5. Most of the engineers achieved the benchmark of 80% target. There's just one team member, Sahjeet. He was at 75%. And I am sure, Sai, you remember he was on leave for more than five days due to some medical emergency at his place.</v>
+
+00:07:28.932 --> 00:07:30.132
+<v Aaron Guglani>Any questions on this?</v>
+
+00:07:39.892 --> 00:07:42.092
+<v Keith Rozario>You, you're on mute, you're on mute.</v>
+
+00:07:42.772 --> 00:08:03.692
+<v Sai Chelikani>Oh, sorry. We're switching computers here. One of the things that I think we need to look into is, you know, are we tracking consistently? Because one of the misses that I've seen, I think it's inclusive in these dates, was, you know, Ujwal, for example, didn't log his PTO, his time off.</v>
+
+00:08:03.812 --> 00:08:18.372
+<v Sai Chelikani>on the day that he was off. It wasn't in his time sheet. So if he missed an entire day, is, you know, are we tracked? Was that tracked here on this list? You know, that was tracked on that list.</v>
+
+00:08:07.972 --> 00:08:08.452
+<v Aaron Guglani>Okay.</v>
+
+00:08:15.572 --> 00:08:16.292
+<v Aaron Guglani>Yes.</v>
+
+00:08:19.092 --> 00:08:40.692
+<v Aaron Guglani>Correct. So, Sai, every Monday or during the offers when I start my shift, I look into the time sheets for all the people and I look into all these things like whether they have updated the PTO. Apart from that, I do check the work types as well because initially if you remember when Kason were there, he was asked to look into the work type as well. So all these things regularly every Monday offers.</v>
+
+00:08:19.732 --> 00:08:19.972
+<v Sai Chelikani>Pre.</v>
+
+00:08:41.252 --> 00:08:44.532
+<v Aaron Guglani>As in when I start, I look into these things. So these are already updated.</v>
+
+00:08:43.532 --> 00:08:43.772
+<v Sai Chelikani>Yeah.</v>
+
+00:08:45.412 --> 00:08:49.972
+<v Sai Chelikani>And this utilization is grabbed where is that in ConnectWise or is that your own system?</v>
+
+00:08:50.532 --> 00:09:01.732
+<v Aaron Guglani>It's from the connect wise the number of hours they work. It exclude the non-billable hours for the PTO. Apart from that, it is the number of days they work according to that the calculation is done.</v>
+
+00:09:04.932 --> 00:09:05.412
+<v Sai Chelikani>Okay.</v>
+
+00:09:06.532 --> 00:09:06.772
+<v Aaron Guglani>Yeah.</v>
+
+00:09:07.172 --> 00:09:07.492
+<v Sai Chelikani>Well...</v>
+
+00:09:08.452 --> 00:09:09.452
+<v Sai Chelikani>Okay, that's fine.</v>
+
+00:09:11.012 --> 00:09:25.972
+<v Sai Chelikani>Ujwal didn't have his PTO there, so I don't know how that affects this, if it affects it at all. He did, he missed a whole day of putting PTO, so I don't know. I just don't know if in your in this calculation here, if that affects it positively or negatively.</v>
+
+00:09:24.132 --> 00:09:24.612
+<v Aaron Guglani>Mhm.</v>
+
+00:09:27.172 --> 00:09:41.172
+<v Aaron Guglani>Well, we do not include that. So if I can tell you the calculation part, let's say if an engineer is on off, right? So the total hours I consider as 32, and the number of billable hours he worked upon, he or she.</v>
+
+00:09:42.252 --> 00:09:43.332
+<v Sai Chelikani>OK, alright.</v>
+
+00:09:42.372 --> 00:09:53.772
+<v Keith Rozario>So for that particular week, the denominator changes. Out of 40 hours that we compare usually, we compare with 32 hours, like you said. That day is excluded from the whole calculation from both numerator and denominator.</v>
+
+00:09:50.212 --> 00:09:50.612
+<v Sai Chelikani>Okay.</v>
+
+00:09:55.332 --> 00:09:56.132
+<v Sai Chelikani>Okay, all good.</v>
+
+00:09:57.332 --> 00:09:57.732
+<v Aaron Guglani>Right.</v>
+
+00:09:59.172 --> 00:10:15.972
+<v Aaron Guglani>Moving on to the ticket closure, average team ticket closure was 86.11. Looking into the office team members, both the engineer delivered strong ticket resolution. Harshit leading the team with an excellent 94% of the closure rate.</v>
+
+00:10:16.372 --> 00:10:16.852
+<v Aaron Guglani>Ohh.</v>
+
+00:10:18.012 --> 00:10:38.852
+<v Aaron Guglani>Successfully, he closed like 132 tickets out of 140 tickets. Akshay maintained the strong performance wherein he closed 157 tickets out of 177 tickets, with an 89% of the closure rate. Overall, if I talk about the offers in Genia, they closed like 289 tickets out of 317 tickets.</v>
+
+00:10:38.972 --> 00:10:51.812
+<v Aaron Guglani>Which the closure percentage gonna come up as ninety-one percent during the prime hours, Piyali and Ujwal, again, the top contributor, they are leading the team both in ticket volume and the closure efficiency.</v>
+
+00:10:52.932 --> 00:11:00.932
+<v Aaron Guglani>Ojul closed 150 tickets out of 165. Piyali closed 165 tickets out of 180 tickets.</v>
+
+00:11:02.372 --> 00:11:18.932
+<v Aaron Guglani>Rest of the team member also delivered the consistent results. Himanshu, Sahjeet, Diksha, Gautam all maintained the closure rate above the 80% benchmark. Overall, the team maintained continues to maintain healthy ticket resolution metrics while handling a significant ticket volume.</v>
+
+00:11:20.212 --> 00:11:29.572
+<v Aaron Guglani>Though I see there is a room of improvement with Dikshan Gautam because their closure rate is around 80%. So I'll work with them and ensure that in the next period they are good to go.</v>
+
+00:11:33.172 --> 00:11:54.292
+<v Sai Chelikani>Okay. The, you know, the big thing is Diksha's improvement, right? I mean, I expect Diksha to be at the same closure rate. It was Ujwal and Piyali. You know, we had a ramp up period and we had questions on if she, you know, should or shouldn't be considered an L2. I think the piece there was that she was missing.</v>
+
+00:11:38.052 --> 00:11:38.332
+<v Aaron Guglani>Yeah.</v>
+
+00:11:43.092 --> 00:11:43.572
+<v Aaron Guglani>Mhm.</v>
+
+00:11:55.252 --> 00:12:11.812
+<v Sai Chelikani>some pieces. So we need to keep an eye on that. I think your feedback was that we wanted to wait a month and make sure that she improved. So, you know, starting and she's working prime shift, I believe. So she, her, you know, her number should be right up there.</v>
+
+00:12:08.452 --> 00:12:09.012
+<v Aaron Guglani>Yes.</v>
+
+00:12:13.732 --> 00:12:27.492
+<v Sai Chelikani>in those regular hours, right? So I would like to see a little bit more of a detailed plan as to how we're going to get or what we can provide Diksha and Shridhar to get to that next level.</v>
+
+00:12:28.452 --> 00:12:39.972
+<v Aaron Guglani>Certainly, I'll look into it. For Sahjeet, it was low because of his leaves that affected him, but I'll still keep an eye on both the engineers and ensure that in the next period, they're going to cover up that.</v>
+
+00:12:41.252 --> 00:12:41.572
+<v Sai Chelikani>Okay.</v>
+
+00:12:41.492 --> 00:13:01.812
+<v Keith Rozario>Yep. And Pratiksha, like you mentioned, she was hired as an L2, but since she was not, I mean, during the internal assessments, you felt she was not at that level and you were expecting her to take, you know, at least the strong L1 role, like which will in Piyali are. If she's not able to live up to that expectation, we'll definitely take a call on this side. So I'm with you on this.</v>
+
+00:13:01.852 --> 00:13:10.612
+<v Keith Rozario>Let's check, I mean, just assess for another few weeks and see. And then, of course, we can take a call, both of us together on this piece.</v>
+
+00:13:12.212 --> 00:13:12.612
+<v Sai Chelikani>Okay.</v>
+
+00:13:13.492 --> 00:13:13.972
+<v Keith Rozario>Right.</v>
+
+00:13:14.372 --> 00:13:25.652
+<v Aaron Guglani>All right, just wanted to add about Allan. Allan worked on 54 tickets, where in the closure is 54, so he achieved like 100% closure rate because he works on the project kind of task. So that's because of it.</v>
+
+00:13:27.572 --> 00:13:27.972
+<v Sai Chelikani>All right.</v>
+
+00:13:28.612 --> 00:13:47.252
+<v Aaron Guglani>Moving on to the CSAT, the overall average CSAT which we received during the last three weeks, that's 95.74, in which the total number of CSAT which we received, that's 47, 45 were positive, they were like 2 neutral. And the neutral which we received, that's was Sahjeet and Ojwal.</v>
+
+00:13:48.692 --> 00:14:03.172
+<v Aaron Guglani>For Ujwal, Saini, if you remember, we did discuss about the incident wherein he resolved on the second go, but initially Akshay was supposed to do that. There was a slight miss. He did that, the check box in the connect wise.</v>
+
+00:14:05.332 --> 00:14:23.252
+<v Aaron Guglani>while performing the onboarding task. For Sahjeet, it was not because of him. The SISOP team, when they deployed some update, there was one server got missed out and due to which it affected him. Though I kept it over here, but he was not at fault. I...</v>
+
+00:14:05.732 --> 00:14:06.292
+<v Sai Chelikani>Okay.</v>
+
+00:14:08.892 --> 00:14:09.372
+<v Sai Chelikani>Mhm.</v>
+
+00:14:23.492 --> 00:14:26.052
+<v Aaron Guglani>I'm sure you have gone through that ticket as well.</v>
+
+00:14:27.652 --> 00:14:29.012
+<v Sai Chelikani>I'm sorry, what happened on that one?</v>
+
+00:14:30.212 --> 00:14:40.852
+<v Aaron Guglani>There was one incident wherein this is upstream deployed some updates and one server got messed out and due to which the end user was not happy with that.</v>
+
+00:14:35.572 --> 00:14:36.052
+<v Sai Chelikani>Okay.</v>
+
+00:14:37.212 --> 00:14:37.412
+<v Sai Chelikani>Yeah.</v>
+
+00:14:41.892 --> 00:14:48.052
+<v Sai Chelikani>Correct, so I moved that ticket over to Sysop, so that doesn't count against Service. It doesn't count against him.</v>
+
+00:14:48.772 --> 00:14:58.772
+<v Aaron Guglani>Got it. Though I captured these information from the smileback report which we get every Monday, so that's the reason I kept it here. So yeah, that was the reason.</v>
+
+00:14:57.972 --> 00:14:58.532
+<v Sai Chelikani>You can.</v>
+
+00:14:59.492 --> 00:15:05.172
+<v Sai Chelikani>We can modify that report to only include service desk, because I think that's more pertinent to this.</v>
+
+00:15:05.572 --> 00:15:06.132
+<v Aaron Guglani>Sure.</v>
+
+00:15:08.132 --> 00:15:15.572
+<v Sai Chelikani>I don't know if, okay, yeah, I don't know if you're looking directly in the, are you looking in the portal or are you just getting a report?</v>
+
+00:15:08.212 --> 00:15:09.172
+<v Aaron Guglani>That makes sense.</v>
+
+00:15:16.052 --> 00:15:19.012
+<v Aaron Guglani>From the report, every Monday we get that, Monday morning.</v>
+
+00:15:17.892 --> 00:15:21.972
+<v Sai Chelikani>Okay, so I can take the auction item to modify that report.</v>
+
+00:15:22.372 --> 00:15:23.332
+<v Aaron Guglani>Sure thing.</v>
+
+00:15:25.172 --> 00:15:35.652
+<v Aaron Guglani>These are the individual CSATs which we received, like, again, Piyali is leading with 18 end user CSATs, then Ujwal with nine and Gautam with six, so on.</v>
+
+00:15:36.852 --> 00:15:38.052
+<v Aaron Guglani>Any questions over here?</v>
+
+00:15:41.772 --> 00:15:41.972
+<v Sai Chelikani>Oh.</v>
+
+00:15:43.812 --> 00:16:01.252
+<v Aaron Guglani>These are some of the customer testimonials wherein the end user was talking about our team member. For Sahjeet, good follow-up, great personality. For Ujwal, good help, finally resolved, good communication and follow-up, always quick to respond and completed in a timely fashion.</v>
+
+00:16:01.892 --> 00:16:18.292
+<v Aaron Guglani>For Piyali, very supportive. The NetGain representative was extremely helpful. And for Diksha, excellent support. Need authorization for me to reset the password, like the SCAF process, and she followed it immediately, and that made the customer happy.</v>
+
+00:16:22.532 --> 00:16:40.372
+<v Aaron Guglani>Moving on to the way forward, onboarding for the Vansh is already completed. CSAT, which is like 95%, so the focus coaching for Sahjeet and Akshay, that's already in place because Ojul was not at fault wherein Akshay missed out a single step that bring the neutral survey.</v>
+
+00:16:40.612 --> 00:17:02.532
+<v Aaron Guglani>So I have already given the feedback and ensure that they will pick up the pace and meet the targets. QA framework rollout, I am continuing doing the regular audits. Every week I'm doing the audit for each engineer. So there are like 8 audits. And that report I'm sharing with you, Sai, as well, and with the team as well about their feedback, how they can improve.</v>
+
+00:17:04.132 --> 00:17:22.612
+<v Aaron Guglani>MIM process to reinforce MIM adherence with the team, address incident manager reachability gaps affecting bridge creation. Though, if you remember, we were coming across with several challenges with the bridge creation. They were not following it, but that's already taken care. Renewals, Keith.</v>
+
+00:17:22.772 --> 00:17:44.452
+<v Aaron Guglani>To share the renewal pricing for Atul with Kevin and Sumit, utilization standardization side to align on the utilization data tracking standardization shift-based performance to be factored for office engineers. Sai, we did discuss about the targets, so we will need to work on that as well for L1, L2, L3.</v>
+
+00:17:46.532 --> 00:17:49.492
+<v Sai Chelikani>Yep, we can go over that on tomorrow.</v>
+
+00:17:49.332 --> 00:17:58.452
+<v Aaron Guglani>Great, great. Move on. These are a couple of services here by design, which we did discuss that in the past, so I'm skipping it for now.</v>
+
+00:17:59.732 --> 00:18:14.052
+<v Aaron Guglani>Team GPS, you guys are already aware, so skipping it. Build IT events, that's happening on August 3rd to 5th. Hayden only hurts in New Jersey and the city. I'm not sure, are you guys coming on it?</v>
+
+00:18:14.052 --> 00:18:25.892
+<v Keith Rozario>Yeah, I think there was a discussion I think already had with Ankur about it, and Ankur is Natalie. We have Natalie and Lee both here on the call. Uh, Natalie, hey, hey Lee.</v>
+
+00:18:19.292 --> 00:18:19.772
+<v Aaron Guglani>Mhm.</v>
+
+00:18:23.052 --> 00:18:23.492
+<v Aaron Guglani>Mhm.</v>
+
+00:18:24.092 --> 00:18:37.172
+<v Natalie McKenzie>Yeah, no, obviously you guys are strategic partners, so we would love to have whoever you guys would like to send to build it. We can have, Sai, are you going to be attending this year, Kevin?</v>
+
+00:18:38.332 --> 00:18:40.212
+<v Natalie McKenzie>If you guys give me the names, I can get you signed up.</v>
+
+00:18:38.812 --> 00:18:39.172
+<v Sai Chelikani>By the...</v>
+
+00:18:42.372 --> 00:18:52.932
+<v Sai Chelikani>I'd be interested in depending on the time and cost. So if you wanted to send me some more information, I'd be interested to look more into the details on it.</v>
+
+00:18:49.892 --> 00:18:50.052
+<v Natalie McKenzie>Yeah.</v>
+
+00:18:53.412 --> 00:18:57.892
+<v Natalie McKenzie>Okay, yeah, as far as so time frame, I mean, are you available August 3rd through the 5th?</v>
+
+00:18:59.652 --> 00:19:00.532
+<v Sai Chelikani>Um, should be.</v>
+
+00:19:01.292 --> 00:19:23.092
+<v Natalie McKenzie>Okay, I'll send it to you and then I'll give you, so there's a pre-day as well. So August 2nd, we have the peer group. So either if you're a part of that or you just want to see what that's like, let me know. I can talk to Sunny about that. And then we have a partner dinner Sunday. So definitely all partners, we want to be there Sunday evening. We're going to be going to the Kaila's house. They'll be having great food for us.</v>
+
+00:19:23.332 --> 00:19:44.612
+<v Natalie McKenzie>And then Monday through Wednesday is going to be the event. Wednesday is the AI accelerator. So Cy, Kevin, I don't know who's kind of leading that with NetGain, but I highly recommend whoever your AI implementation officer is. Maybe they don't have that title, but who has ever taken the lead there, definitely would want to send them to this conference as well.</v>
+
+00:19:46.612 --> 00:19:47.092
+<v Sai Chelikani>Awesome.</v>
+
+00:19:46.892 --> 00:20:06.292
+<v Natalie McKenzie>And then I do want to stop talking, but we have a great event at the end of it as well. So Kam booked out the New York Stock Exchange. So we're going to be going to the New York Stock Exchange for our closing party. It'll be Great Gatsby themed as well. So I told you that there is a dress code, and I'm sure you guys look good in a tux.</v>
+
+00:20:07.332 --> 00:20:29.772
+<v Natalie McKenzie>My soul, what are they? Is it a fedora? What are they? Yeah, in a fedora. Yeah, yeah, yeah. So it'll be good. But I'll send you all that information. And again, we want to have you guys, as many people as you want to send. Just let me know and I'll figure out how to get you there at no cost. Obviously, I'll give you the hotel information. That'll be a little bit of a cost, but we do want</v>
+
+00:20:08.292 --> 00:20:10.372
+<v Lee Cavellier>Thakur Thakur.</v>
+
+00:20:12.652 --> 00:20:13.332
+<v Sai Chelikani>Yeah.</v>
+
+00:20:15.652 --> 00:20:15.812
+<v Lee Cavellier>Yeah.</v>
+
+00:20:30.092 --> 00:20:30.972
+<v Natalie McKenzie>You guys still attend?</v>
+
+00:20:32.332 --> 00:20:39.052
+<v Sai Chelikani>Yeah, great. Yeah, if you can send that over to me, I will, I will see where I can fit it into my schedule, but would love to attend.</v>
+
+00:20:32.812 --> 00:20:33.212
+<v Natalie McKenzie>Yep.</v>
+
+00:20:41.052 --> 00:20:41.612
+<v Aaron Guglani>Prince.</v>
+
+00:20:43.372 --> 00:21:02.132
+<v Aaron Guglani>Moving on to the IT by design services, these are a couple of services which we guys offer. Co-managed Engineering, infrastructure managed service, self-managed, Helpdesk, RMM, Build IT, Shield IT, Pro Services and Team GPS. Moving on, there we go. So I'm opening a room for the discussion.</v>
+
+00:21:06.652 --> 00:21:08.652
+<v Keith Rozario>Any last comments? Sorry.</v>
+
+00:21:07.212 --> 00:21:07.692
+<v Sai Chelikani>Yeah.</v>
+
+00:21:08.012 --> 00:21:08.332
+<v Aaron Guglani>Yeah.</v>
+
+00:21:10.212 --> 00:21:14.652
+<v Sai Chelikani>Again, I think we're improving what I still.</v>
+
+00:21:15.852 --> 00:21:35.532
+<v Sai Chelikani>I'm looking for for the team is again a little continuing to try to be proactive, right? So I think we're in my eyes, we're not we're still not hitting the mark in that proactiveness. You know, one of that, you know, one of the examples of that is Deepak Shu's onboarding.</v>
+
+00:21:35.692 --> 00:21:51.772
+<v Sai Chelikani>Right, he's onboarding last week, he was with Fu. I didn't hear any feedback as to how he was doing, how the onboarding's doing, if he feels like he's missing out. I didn't get any feedback from that. And I would have expected that. It's his first week, right?</v>
+
+00:21:48.012 --> 00:21:48.172
+<v Keith Rozario>Mm.</v>
+
+00:21:50.812 --> 00:21:51.212
+<v Keith Rozario>Okay.</v>
+
+00:21:52.492 --> 00:21:52.652
+<v Keith Rozario>Mm.</v>
+
+00:21:54.092 --> 00:21:59.532
+<v Sai Chelikani>I, you know, we talked about the Diksha piece. I mentioned that a couple weeks ago.</v>
+
+00:22:00.612 --> 00:22:15.692
+<v Sai Chelikani>we're down on those numbers. I haven't seen like an improvement plan, you know, or, you know, improvement for her, whatever for that. So that proactiveness is what I'm, what I.</v>
+
+00:22:03.052 --> 00:22:03.212
+<v Keith Rozario>Mm.</v>
+
+00:22:16.732 --> 00:22:36.212
+<v Sai Chelikani>feel like I'm continuing to lack and that I shouldn't need to, I'm expecting with you guys managing those resources that you come to me with that information to say, hey, you know, Dipon is doing great, but man, he's really struggling on Dio. He needs some more training. Can you find someone for me? That's what I'm expecting, right? If I have to go and</v>
+
+00:22:19.132 --> 00:22:19.612
+<v Keith Rozario>Mhm.</v>
+
+00:22:32.492 --> 00:22:32.652
+<v Keith Rozario>Mm.</v>
+
+00:22:35.132 --> 00:22:35.292
+<v Keith Rozario>Mm.</v>
+
+00:22:36.492 --> 00:22:40.252
+<v Sai Chelikani>follow up and do that. That takes up a lot of my time. I'm expecting that you guys are doing that.</v>
+
+00:22:41.132 --> 00:22:59.852
+<v Keith Rozario>Okay, all right. So for the Vansh, sure, I take that on myself. I'm in fact, Aaron is working with him very closely in case he sees any challenges and make sure he's upfront and honest and proactive with you guys. That's for the KT as well that he's receiving. Second for Diksha, yes.</v>
+
+00:23:00.692 --> 00:23:20.092
+<v Keith Rozario>We connected a few weeks ago from L2. Yes, we are kind of involving her more towards the L1 work and hopefully she excels that. I think that's what we concluded the last time we talked about it, that yes, she's a strong L1 and we are planning to utilize her the way we utilize Piyali and Uri. Hopefully that works out, but if...</v>
+
+00:23:20.252 --> 00:23:44.572
+<v Keith Rozario>Another week, every Monday, I think Aaron sends out the utilization and data and information about these guys. If we see that our numbers continue to dip, then like I said, Sai, earlier on the call, we'll definitely sit together and if required, take a call on that piece as well. Regarding, I think you were on leave on Friday. I did share an email regarding, rather 2 emails. One was regarding the L3 position that's currently open. There are a few people who are going through the MNG round.</v>
+
+00:23:44.852 --> 00:24:05.012
+<v Keith Rozario>Today, I'll come to know if they passed that round or not, and then I can assess them with the technical piece and then get them through you for a technical round size. So I'll share their profiles with you as well as soon as they clear the MNG round. Second one was for, it was regarding Aaron. I think you can check that email later. It's between Sameer, me, and you. So yeah, if in case you go through that email, if you have any queries, question around it.</v>
+
+00:24:05.132 --> 00:24:22.692
+<v Keith Rozario>please let us know so that we can involve Aaron Moore into the account and he can do all these stuff for you. You know, he can be way more proactive for you. So yeah, really excited about that piece as well. But apart from that, if anything pops up, I'm just one chat away for you, for Kevin as well.</v>
+
+00:24:21.532 --> 00:24:29.732
+<v Sai Chelikani>Is there sorry, what happened to the the sorry, the can we get an update on the tools tools admin role? We haven't heard anything from them.</v>
+
+00:24:28.812 --> 00:24:48.612
+<v Keith Rozario>The update that I gave you was for the L3. I'll be honest with you, the tool admin role is for the TA as well. I mean, for the talent acquisition team is a little challenging. They are still trying to find one. Yes, you made it a little easier for me. You mentioned that even if there is a person who has the ability to work on ConnectWise Management.</v>
+
+00:24:48.692 --> 00:25:08.252
+<v Keith Rozario>we can start with that individual as well, because for the rest of the tools, he can or she can easily be trained on. But still, yeah, they're trying to find the best match for you so that you don't have to go through much of an hassle when it comes to the training piece. Otherwise, yes, I have individuals internally as well who are familiar with the ConnectWise tool, is that the other tools that you had mentioned.</v>
+
+00:25:08.652 --> 00:25:27.372
+<v Keith Rozario>We're still kind of trying to find the best match, but otherwise, if you still want to stick with the piece that you mentioned that you're okay with anyone who's still familiar with the ConnectWise Management and ConnectWise Automate as well, I think I can start pitching those resources to you. What do you think?</v>
+
+00:25:12.252 --> 00:25:12.652
+<v Natalie McKenzie>15.</v>
+
+00:25:28.012 --> 00:25:28.732
+<v Keith Rozario>Should I let them?</v>
+
+00:25:28.332 --> 00:25:51.572
+<v Sai Chelikani>Yeah, let's start with Connect. Well, it should go directly to Jared, not me. I don't need to be involved in the intake there. But yes, I would say let's start with ConnectWise, manage and automate. Let's send those to Jared. Let's see what he thinks. If he feels like he's going to be able to fill that role with those talents, then great. If we feel like it's not enough and we need to expand, then we can talk about that at that time.</v>
+
+00:25:33.772 --> 00:25:34.092
+<v Keith Rozario>Yeah.</v>
+
+00:25:35.212 --> 00:25:35.532
+<v Keith Rozario>Okay.</v>
+
+00:25:39.652 --> 00:25:40.132
+<v Keith Rozario>Mhm.</v>
+
+00:25:42.292 --> 00:25:42.572
+<v Keith Rozario>Okay.</v>
+
+00:25:47.532 --> 00:25:47.932
+<v Keith Rozario>Okay.</v>
+
+00:25:52.172 --> 00:26:05.932
+<v Keith Rozario>Okay, I was just, you know, not wanting Jared to go on a interview with these guys and, you know, just waste his time because of course they would just know about ConnectWise and there were multiple tools that Jared had shared with me. So, yeah.</v>
+
+00:26:03.572 --> 00:26:04.252
+<v Sai Chelikani>It's...</v>
+
+00:26:05.692 --> 00:26:19.892
+<v Sai Chelikani>It's a larger tool, but we won't know until, you know, he starts looking at one or two, right? So let's start there and let's get the ball rolling and then we can come back and realign. So maybe we give him one or two and we can see where we go from there.</v>
+
+00:26:12.332 --> 00:26:12.732
+<v Keith Rozario>Right.</v>
+
+00:26:17.852 --> 00:26:18.252
+<v Keith Rozario>Kour.</v>
+
+00:26:20.812 --> 00:26:40.492
+<v Keith Rozario>Cool, that works out. That works out. So yeah, there's an action item on me, Aaron, if you can note that down. There's one more thing for me, for you, Kevin. Rather, I'll be sharing Uri's numbers for renewal with you would require your blessing on that. And then we can proceed with that as well. Right. Super. Rest Natalie, of course, you're going to share the details about Build It, right?</v>
+
+00:26:35.932 --> 00:26:36.492
+<v Kevin Lynott>Okay.</v>
+
+00:26:41.452 --> 00:26:59.852
+<v Natalie McKenzie>Yeah, I'll share those build-in details. And then I think this is the first time you guys may be seeing my face, but you've probably seen my name in a couple emails. But I'm Natalie, so I'm over the customer experience team. So really just making sure you guys are having a good time listening a little bit on the call today.</v>
+
+00:26:41.492 --> 00:26:41.612
+<v Aaron Guglani>Okay.</v>
+
+00:27:00.132 --> 00:27:20.092
+<v Natalie McKenzie>One thing I just have a question about is just Diksha in general, because I'm hearing 2 things. I'm hearing she's leveling up, but I'm also hearing there's a service improvement plan. So I'm confused by that piece. Leveling down. Okay, okay, okay. She was an L2. Okay. Yeah, then that makes sense.</v>
+
+00:27:09.532 --> 00:27:16.412
+<v Keith Rozario>Leveling down, doubling down. She's an L2. Yeah, she's an L2, but yeah, she's yeah.</v>
+
+00:27:20.012 --> 00:27:20.652
+<v Keith Rozario>Makes sense now.</v>
+
+00:27:20.252 --> 00:27:22.012
+<v Natalie McKenzie>Kindle, alright.</v>
+
+00:27:23.132 --> 00:27:23.532
+<v Natalie McKenzie>Accounting.</v>
+
+00:27:24.292 --> 00:27:24.572
+<v Keith Rozario>Mm.</v>
+
+00:27:24.332 --> 00:27:25.052
+<v Natalie McKenzie>That's all I have.</v>
+
+00:27:24.892 --> 00:27:25.292
+<v Aaron Guglani>Ohh.</v>
+
+00:27:26.892 --> 00:27:27.932
+<v Aaron Guglani>Any thoughts, Lee?</v>
+
+00:27:32.652 --> 00:27:37.932
+<v Lee Cavellier>Nothing that hasn't been shared, except to say, "Hey, Si, hey, Kevin, good to see you both. Hope you're both well."</v>
+
+00:27:37.212 --> 00:27:37.852
+<v Kevin Lynott>I see him.</v>
+
+00:27:37.532 --> 00:27:38.092
+<v Sai Chelikani>I see ya.</v>
+
+00:27:38.812 --> 00:27:57.212
+<v Lee Cavellier>I guess the only thing I will reiterate, Build It's kind of awesome. I went last year for the first time. I'm very excited for it coming up. It's unlike any other industry event I've gone to in that it's just very functional and useful and value-driven.</v>
+
+00:27:58.412 --> 00:28:00.652
+<v Lee Cavellier>So from the service delivery side, tossing that out there.</v>
+
+00:28:02.812 --> 00:28:06.972
+<v Sai Chelikani>Well, we'll have to set aside some time to chat if we, if we, if it ends up working out.</v>
+
+00:28:03.492 --> 00:28:03.732
+<v Kevin Lynott>Two.</v>
+
+00:28:06.812 --> 00:28:20.812
+<v Lee Cavellier>Yeah, happy to. If you got any questions about like what it was like day in, day out, I think they've shared the agenda with us. Well, yeah, I know they've shared the agenda with us internally, so I'm happy to walk through that and give expectations as far as what I would what I would anticipate from it.</v>
+
+00:28:22.572 --> 00:28:24.092
+<v Sai Chelikani>Sure. All right.</v>
+
+00:28:25.612 --> 00:28:29.452
+<v Aaron Guglani>All right. Thank you so much, guys. Thank you for joining the call. Thank you.</v>
+
+00:28:26.172 --> 00:28:26.892
+<v Keith Rozario>Alrighty.</v>
+
+00:28:30.052 --> 00:28:32.012
+<v Lee Cavellier>All right, great to see you all. Cheers.</v>
+
+00:28:30.492 --> 00:28:32.492
+<v Kevin Lynott>Great, thanks. Yep, alright.</v>
+
+00:28:30.572 --> 00:28:31.372
+<v Natalie McKenzie>Thank you.</v>
+
+00:28:30.812 --> 00:28:32.012
+<v Sai Chelikani>Thanks, y'all. Take care.</v>

@@ -113,6 +113,19 @@ The first 3-5 lines of the parsed text contain metadata that should be extracted
 * **Line 3 (Duration)**: `19m 37s`
 * **Dialogue Speakers**: Regex match `^([A-Z][a-zA-Z'\-\s]+)\s+\d+:\d+` (e.g. `Akhilesh Shukla   0:27`) to compile a speaker list and map user utterances.
 
+### Option C: Teams WEBVTT transcripts pulled from call recordings (Graph / M365 connector)
+
+The service-call recordings live in `desmanagement@itbd.net`'s OneDrive `Recordings/` folder as `.mp4` — useless for text. The **transcript** is retrieved from the Teams meeting itself via Microsoft Graph, which the Claude Microsoft 365 connector exposes (verified 2026-06-11). This is an **agent-driven flow** (no Graph credentials exist in `extract/config.py`), so an LLM session with the M365 connector performs it:
+
+1. `outlook_calendar_search` with `calendarOwnerEmail=desmanagement@itbd.net` (delegated access) for the meeting subject + date window.
+2. `read_resource` on the event URI → take the `meetingTranscriptUrl` field verbatim.
+3. `read_resource` on that URI → `transcripts[].content` is the full **WEBVTT** with `<v Speaker>text</v>` voice tags.
+4. Save it verbatim to `Transcripts/{Partner}/<subject>-<YYYYMMDD>.vtt`, inserting `NOTE title:` / `NOTE date:` / `NOTE duration:` metadata lines after the leading `WEBVTT` line.
+
+`extract/transcripts.py: parse_vtt` parses `.vtt` natively (no markitdown): NOTE metadata, cue timestamps → `M:SS`, consecutive same-speaker cues merged into dialogue turns — same schema as the `.docx` path.
+
+> ⚠️ **Access constraint:** Graph returns **403 "User does not have access to lookup meeting"** unless the signed-in connector user was an **invitee/participant** of that meeting. (Verified: Atlantic PC's calls are not retrievable by `Amit.Dubey@itbd.net`, who is not invited; Logically/Milner/ION247/Premier/Netgain/MSP Corp CRDS are.) Delegated calendar access is enough to *find* the events but not to *read transcripts* of meetings you didn't attend.
+
 ---
 
 ## 2. Customer Satisfaction (CSAT) — TeamGPS

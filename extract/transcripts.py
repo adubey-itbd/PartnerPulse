@@ -1,7 +1,9 @@
-"""Transcript (.docx) and deck (.pdf) -> Markdown / structured dialogue.
+"""Transcript (.docx / .vtt) and deck (.pdf) -> Markdown / structured dialogue.
 
-Uses Microsoft MarkItDown for both file types (SOP §1, Option A). Transcript
-markdown is parsed into the dashboard's transcript schema:
+Uses Microsoft MarkItDown for .docx and decks (SOP §1, Option A). Teams WEBVTT
+transcripts (pulled from the Graph meeting-transcript API via the Claude M365
+connector) are parsed natively — no markitdown needed. Both produce the
+dashboard's transcript schema:
   {filename, title, date, duration, dialogue:[{speaker, timestamp, text}], markdown}
 Deck PDFs are converted to Markdown and cached on disk for both the AI layer and
 the per-partner UI.
@@ -78,6 +80,55 @@ def parse_transcript(path) -> dict:
     }
 
 
+# --- Teams WEBVTT transcripts -------------------------------------------------
+# Cue timing line: 00:01:18.991 --> 00:01:19.871
+_VTT_TIME_RE = re.compile(r"^(\d{2}):(\d{2}):(\d{2})\.\d{3}\s+-->\s+")
+# Speaker-tagged payload: <v Speaker Name>text</v>
+_VTT_VOICE_RE = re.compile(r"<v\s+([^>]+)>(.*?)</v>", re.S)
+# Optional metadata header we write when saving: "NOTE key: value"
+_VTT_NOTE_RE = re.compile(r"^NOTE\s+(title|date|duration):\s*(.+)$", re.M)
+
+
+def parse_vtt(path) -> dict:
+    """Parse a Teams WEBVTT transcript into the dashboard transcript schema.
+    Consecutive cues from the same speaker are merged into one dialogue turn."""
+    path = Path(path)
+    raw = path.read_text(encoding="utf-8")
+    meta = dict(_VTT_NOTE_RE.findall(raw))
+
+    dialogue = []
+    ts = ""
+    for line in raw.splitlines():
+        m = _VTT_TIME_RE.match(line.strip())
+        if m:
+            h, mnt, s = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            ts = f"{h * 60 + mnt}:{s:02d}"
+            continue
+        for speaker, text in _VTT_VOICE_RE.findall(line):
+            speaker = speaker.strip()
+            text = " ".join(text.split()).strip()
+            if not text:
+                continue
+            if dialogue and dialogue[-1]["speaker"] == speaker:
+                dialogue[-1]["text"] += " " + text
+            else:
+                dialogue.append({"speaker": speaker, "timestamp": ts, "text": text})
+
+    duration = meta.get("duration", "")
+    if not duration and ts:
+        duration = ts.replace(":", "m ") + "s"
+    markdown = "\n\n".join(f"**{d['speaker']}** {d['timestamp']}\n{d['text']}"
+                           for d in dialogue)
+    return {
+        "filename": path.name,
+        "title": meta.get("title") or path.stem,
+        "date": meta.get("date", ""),
+        "duration": duration,
+        "dialogue": dialogue,
+        "markdown": markdown,
+    }
+
+
 def _norm(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")
 
@@ -98,18 +149,19 @@ def resolve_partner_dir(partner_name: str):
 
 
 def list_partner_transcripts(transcript_dir: str):
-    """All .docx transcripts for a partner folder, sorted by name."""
+    """All .docx and .vtt transcripts for a partner folder, sorted by name."""
     d = resolve_partner_dir(transcript_dir)
     if d is None:
         return []
-    return sorted(d.glob("*.docx"))
+    return sorted(list(d.glob("*.docx")) + list(d.glob("*.vtt")))
 
 
 def parse_partner_transcripts(transcript_dir: str):
     out = []
     for p in list_partner_transcripts(transcript_dir):
         try:
-            out.append(parse_transcript(p))
+            parse = parse_vtt if p.suffix.lower() == ".vtt" else parse_transcript
+            out.append(parse(p))
         except Exception as e:  # don't let one bad file kill the run
             out.append({"filename": p.name, "title": p.stem, "date": "",
                         "duration": "", "dialogue": [], "markdown": "",
