@@ -67,6 +67,8 @@ Transcripts/                  local .docx meeting transcripts, per partner
 docs/                         architecture.md, changelog.md, three SOP docs, LLM-SOP.md, archive/
 legacy/                       superseded single-partner files (app.js, data.js)
 CLAUDE.md                     LLM working context — commands, gotchas, doc-update rules
+hooks/pre-commit              blocks code commits that don't update docs/changelog.md
+                              (enabled via `git config core.hooksPath hooks`; setup.ps1 does this)
 ```
 
 Data sources per partner: HaloPSA (client metadata, RAG/risk custom fields, review-ticket

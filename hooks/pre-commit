@@ -1,0 +1,46 @@
+#!/bin/sh
+# PartnerPulse pre-commit hook — enforces docs/LLM-SOP.md.
+#
+# Rule: any commit that touches code/config must also update the docs that the
+# LLM SOP obligates — at minimum docs/changelog.md. Doc-only commits pass.
+#
+# Bypass (humans only, sparingly): SKIP_DOCS_CHECK=1 git commit ...
+
+if [ "$SKIP_DOCS_CHECK" = "1" ]; then
+    echo "pre-commit: SKIP_DOCS_CHECK=1 set — docs check bypassed." >&2
+    exit 0
+fi
+
+staged=$(git diff --cached --name-only)
+[ -z "$staged" ] && exit 0
+
+# Anything outside docs/README/CLAUDE.md counts as a code/config change.
+code_changed=$(printf '%s\n' "$staged" | grep -Ev '^(docs/|README\.md$|CLAUDE\.md$)' || true)
+changelog_staged=$(printf '%s\n' "$staged" | grep -E '^docs/changelog\.md$' || true)
+
+[ -z "$code_changed" ] && exit 0   # docs-only commit
+
+if [ -z "$changelog_staged" ]; then
+    echo "" >&2
+    echo "COMMIT BLOCKED — docs/LLM-SOP.md not followed." >&2
+    echo "" >&2
+    echo "This commit changes code/config but does not stage docs/changelog.md." >&2
+    echo "Per docs/LLM-SOP.md every behavioural change needs a changelog entry," >&2
+    echo "plus any other doc whose 'Update when...' condition fired:" >&2
+    echo "" >&2
+    printf '%s\n' "$code_changed" | sed 's/^/    changed: /' >&2
+    echo "" >&2
+    echo "  extract/ or scripts/ pipeline change  -> docs/architecture.md, Data-Extraction-SOP.md" >&2
+    echo "  new verified Halo/TeamGPS behaviour   -> dated addendum in the matching API SOP" >&2
+    echo "  files moved/renamed/added/deleted     -> README.md tree, CLAUDE.md, architecture layout" >&2
+    echo "  commands or gotchas changed           -> CLAUDE.md" >&2
+    echo "  docs added/renamed or rules changed   -> docs/LLM-SOP.md itself" >&2
+    echo "" >&2
+    echo "Stage the doc updates and retry. Bypass (humans only): SKIP_DOCS_CHECK=1 git commit" >&2
+    exit 1
+fi
+
+# Changelog is staged — soft reminder to sweep the rest of the registry.
+echo "pre-commit: changelog staged OK. Reminder — sweep docs/LLM-SOP.md registry:" >&2
+echo "  architecture / SOPs / README / CLAUDE.md if their update conditions fired." >&2
+exit 0

@@ -27,6 +27,21 @@ Every doc in this repo, what it covers, and when a change obligates an update:
 Not documentation, but doc-adjacent: `.env.example` (update when a new secret/env var
 is introduced) and `.gitignore` (update when a new generated-file pattern appears).
 
+## 1b. Enforcement — pre-commit hook
+
+This SOP is **mechanically enforced** by `hooks/pre-commit` (activated via
+`git config core.hooksPath hooks`, which `setup.ps1` sets automatically):
+
+* Any commit staging code/config (anything outside `docs/`, `README.md`,
+  `CLAUDE.md`) **without** `docs/changelog.md` staged is **blocked**.
+* Doc-only commits pass. When the changelog IS staged, the hook prints a reminder
+  to sweep the rest of the registry — it cannot verify the *content* of doc
+  updates, only their presence. The semantic check (step 2 below) is on you.
+* Human-only escape hatch: `SKIP_DOCS_CHECK=1 git commit …`. LLMs must NOT use it
+  (nor `--no-verify`) — fix the docs instead.
+* If you change the hook's rules or location, update this section, `CLAUDE.md`,
+  and `setup.ps1` together.
+
 ## 2. Procedure (run after every change)
 
 1. **Identify what changed:** code, schema, pipeline step, file location, command,

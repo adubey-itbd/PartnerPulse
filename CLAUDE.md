@@ -12,6 +12,10 @@ be updated (changelog entries are required for every behavioural change), and th
 repo invariants that code and docs must keep in sync. That SOP and this file are
 themselves maintained under the same rule.
 
+Enforced by `hooks/pre-commit` (`core.hooksPath=hooks`, set by `setup.ps1`): commits
+touching code without staging `docs/changelog.md` are blocked. Never bypass it with
+`--no-verify` or `SKIP_DOCS_CHECK=1` — update the docs instead.
+
 ## Commands
 
 ```powershell

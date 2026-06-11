@@ -106,6 +106,14 @@ if (-not (Test-Path ".\.env") -and (Test-Path ".\.env.example")) {
 }
 
 # ---------------------------------------------------------------------------
+# 3b. Git hooks — enforce the docs-update SOP (docs/LLM-SOP.md) on every commit
+# ---------------------------------------------------------------------------
+if (Test-Path ".\.git") {
+    git config core.hooksPath hooks
+    Write-Ok "Git hooks enabled (core.hooksPath=hooks — pre-commit docs check)"
+}
+
+# ---------------------------------------------------------------------------
 # 4. Build partner data + AI analysis
 # ---------------------------------------------------------------------------
 Write-Step "Building partner data + gpt-5.4 churn analysis"

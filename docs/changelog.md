@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **`scripts/build_real_partners.py`:** pulls 8 additional real Halo clients (Netgain, F12, RedHelm-1Path, Proda, Amoskeag, Granite Networks, Secure Future, Atlantic PC) through the same extraction + gpt-5.4 analysis (no deck/transcript path), writes `data/{slug}.json`, and injects exec-overview objects into `index.html`'s embedded partner array.
 - **`scripts/gen_demo_partners.py`:** seeds 40 synthetic demo partners (`demo: true`, fixed seed 42) for scalability testing — stub partner JSONs, regenerated `data/_index.json`, and an auto-injected demo block in `index.html`.
 - **`CLAUDE.md`** (LLM working context) and **`docs/LLM-SOP.md`** (documentation-maintenance SOP for any LLM making changes).
+- **`hooks/pre-commit` docs-enforcement hook:** any commit staging code/config without `docs/changelog.md` is blocked with a pointer to the LLM SOP registry; doc-only commits pass. Versioned in `hooks/` and activated via `git config core.hooksPath hooks` (now done automatically by `setup.ps1`). Human-only bypass: `SKIP_DOCS_CHECK=1`.
 
 ### Changed
 - **Repo reorganization:** operational scripts moved from the repo root into `scripts/`; the generated `demo_exec_partners.js` now lands in `data/` (gitignored); the saved build-session log moved to `docs/archive/PartnerPulse.txt`. README and architecture docs updated to match.
