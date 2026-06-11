@@ -16,6 +16,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **`CLAUDE.md`** (LLM working context) and **`docs/LLM-SOP.md`** (documentation-maintenance SOP for any LLM making changes).
 - **`hooks/pre-commit` docs-enforcement hook:** any commit staging code/config without `docs/changelog.md` is blocked with a pointer to the LLM SOP registry; doc-only commits pass. Versioned in `hooks/` and activated via `git config core.hooksPath hooks` (now done automatically by `setup.ps1`); `.gitattributes` pins `hooks/*` to LF so the sh script survives Windows checkouts. Human-only bypass: `SKIP_DOCS_CHECK=1`.
 
+### Fixed
+- **Sync button rendered unstyled (giant icon) on the Executive Overview:** `index.html` is fully self-contained and does not load `styles.css`, so the `.sync-btn` rules never applied there. The rules are now duplicated in its inline `<style>` block, and the icon SVG carries explicit `width="16" height="16"` attributes as a fallback on both pages.
+
 ### Changed
 - **Repo reorganization:** operational scripts moved from the repo root into `scripts/`; the generated `demo_exec_partners.js` now lands in `data/` (gitignored); the saved build-session log moved to `docs/archive/PartnerPulse.txt`. README and architecture docs updated to match.
 - **Partner page navigation:** back-link relabelled "All Partners" → "Dashboard".

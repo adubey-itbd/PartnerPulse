@@ -71,3 +71,6 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
    Check `docs/HaloPSA-API-SOP.md` quirks + addenda before writing Halo code.
 6. **`markitdown` may be missing locally** — importing `extract.build_partner` then
    fails; one-off scripts inline their own `slugify` instead.
+7. **`index.html` does NOT load `styles.css`** — it is fully self-contained (own
+   inline `<style>` + `<script>`); `styles.css` applies only to `partner.html`.
+   Shared UI (like the sync button) needs its CSS in BOTH places.
