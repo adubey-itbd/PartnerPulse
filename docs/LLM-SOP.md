@@ -21,6 +21,7 @@ Every doc in this repo, what it covers, and when a change obligates an update:
 | `docs/Data-Extraction-SOP.md` | The per-partner extraction procedure (transcripts, CSAT, NPS, client metadata, ticket notes, SIP counts, execution workflow) | An extraction step is added/removed/reordered, or an endpoint/filter pattern changes |
 | `docs/HaloPSA-API-SOP.md` | Halo REST reference: auth, quirks, addenda of verified findings, endpoint catalogue, lookup decodes | A new Halo API behaviour/quirk is **verified** — append a dated addendum section; never silently rewrite older findings (mark them superseded) |
 | `docs/TeamGPS-Open-API-SOP.md` | TeamGPS Open API reference: auth, pagination, endpoints | A new TeamGPS behaviour/endpoint is verified (same addendum style) |
+| `docs/IT-Request-Graph-Transcript-Access.md` | Pending IT request: Graph app registration for transcript ingestion | The request is granted/denied/changed — record the outcome and the app id, or mark it withdrawn |
 | `docs/LLM-SOP.md` (this file) | Doc registry + maintenance procedure | Docs are added/moved/renamed; update rules or repo conventions change |
 | `docs/archive/` | Frozen artifacts (saved session logs) | Never edited — only add to it |
 
