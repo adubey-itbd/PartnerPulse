@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [1.0.0-beta.5] - 2026-06-11
+
+### Added
+- **Per-partner SIP counts (open / closed):** `extract/halo.py: count_sips()` counts all-time Service Improvement Plans (Halo ticket type 99) per partner — free-text search + client-side type filter (Halo has no working server-side type filter), a recovery pass for SIPs mis-filed under ITBD's own client record, and a status-name heuristic for open vs. closed. Surfaced as `client.sip_open`/`sip_closed` in partner JSON and index rows, and as a "SIPs (open / closed)" KPI + detail field on the partner page.
+- **`scripts/build_real_partners.py`:** pulls 8 additional real Halo clients (Netgain, F12, RedHelm-1Path, Proda, Amoskeag, Granite Networks, Secure Future, Atlantic PC) through the same extraction + gpt-5.4 analysis (no deck/transcript path), writes `data/{slug}.json`, and injects exec-overview objects into `index.html`'s embedded partner array.
+- **`scripts/gen_demo_partners.py`:** seeds 40 synthetic demo partners (`demo: true`, fixed seed 42) for scalability testing — stub partner JSONs, regenerated `data/_index.json`, and an auto-injected demo block in `index.html`.
+- **`CLAUDE.md`** (LLM working context) and **`docs/LLM-SOP.md`** (documentation-maintenance SOP for any LLM making changes).
+
+### Changed
+- **Repo reorganization:** operational scripts moved from the repo root into `scripts/`; the generated `demo_exec_partners.js` now lands in `data/` (gitignored); the saved build-session log moved to `docs/archive/PartnerPulse.txt`. README and architecture docs updated to match.
+- **Partner page navigation:** back-link relabelled "All Partners" → "Dashboard".
+
+### Removed
+- **`portfolio.js`** (and the old portfolio SPA): its Partner 360 list view is now a second view inside `index.html`, switched from the sidebar. The Executive Overview's partner array is embedded in the page and kept in sync by the two injection scripts — it is no longer fetched from `data/_index.json` at runtime.
+
+---
+
 ## [1.0.0-beta.4] - 2026-06-07
 
 ### Changed

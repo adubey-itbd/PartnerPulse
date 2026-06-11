@@ -19,8 +19,9 @@ graph TD
     end
 
     subgraph Ingestion & AI Engine (Python)
-        Engine[build_all.py / build_partner.py]
-        Portfolio[portfolio.py]
+        Engine[extract/build_all.py / build_partner.py]
+        Scripts[scripts/build_real_partners.py / gen_demo_partners.py]
+        Portfolio[extract/portfolio.py]
         MID[MarkItDown Parser]
         Azure[Azure Foundry gpt-5.4]
     end
@@ -31,7 +32,7 @@ graph TD
     end
 
     subgraph Presentation Layer (Frontend)
-        IndexUI[index.html / portfolio.js]
+        IndexUI[index.html — Executive Overview + Partner 360, embedded partner array]
         DetailUI[partner.html / partner.js]
         Server[server.py]
     end
@@ -47,11 +48,28 @@ graph TD
     Engine --> Portfolio
     Portfolio -->|Portfolio Aggregates| Index
     Engine -->|Partner Rows| Index
-    
+    Scripts -->|Inject partner objects| IndexUI
+    Scripts -->|Write/refresh caches| PartnerC
+
     Server -->|Serve Assets| IndexUI
     Server -->|Serve Assets| DetailUI
-    Index -->|Read Data| IndexUI
-    PartnerC -->|Read Data| DetailUI
+    PartnerC -->|Runtime fetch| DetailUI
+```
+
+> **Note:** `index.html` does **not** fetch `data/_index.json` at runtime — its partner array is **embedded in the page** and kept in sync by the injection scripts (see §4). Only `partner.html`/`partner.js` fetch JSON (`data/{slug}.json`) at runtime.
+
+### Repository layout
+
+```
+index.html / partner.html / partner.js / styles.css / vendor/   the dashboard (served from repo root)
+server.py / setup.ps1 / requirements.txt                        entry points
+extract/        ingestion + AI pipeline (Python package, run via python -m extract.*)
+scripts/        operational scripts (build_real_partners.py, gen_demo_partners.py)
+data/           generated caches (gitignored): {slug}.json, _index.json, decks/, demo_exec_partners.js
+Transcripts/    input .docx meeting transcripts, per partner
+docs/           architecture, changelog, SOPs, LLM-SOP, archive/
+legacy/         superseded single-partner files
+CLAUDE.md       LLM working context (commands, gotchas, doc-update rules)
 ```
 
 ---
@@ -64,6 +82,7 @@ The Python engine orchestrates the compilation of raw partner telemetry into a u
 2. **Telemetry Fetching:**
    * **HaloPSA (`extract/halo.py`):** Queries custom RAG/risk fields, client metadata, review tickets, meeting notes, and attachments. Attachments support two delivery modes: inline raw bytes, or a JSON `{"link": <pre-signed CDN URL>}` response that must be followed — both handled transparently in `halo.download_attachment`.
    * **TeamGPS (`extract/teamgps.py`):** Fetches CSAT (filtered by company) and NPS (filtered by email domain). The full NPS set is fetched once in `build_all.py` and passed to each partner build to avoid redundant API calls.
+   * **SIP counts (`extract/halo.py: count_sips`):** All-time Service Improvement Plan (Halo ticket type 99) counts per partner, split open/closed. Halo has no working server-side ticket-type filter, so the engine searches three free-text terms, filters rows client-side on `tickettype_id == 99`, and runs a second "bucket B" pass over SIPs filed under ITBD's own client record (id 12) whose summary names the partner. Open vs. closed is a status-**name** heuristic (no `isclosed` flag exists). Results land as `client.sip_open` / `client.sip_closed`.
 3. **Document Extraction (`extract/transcripts.py`):** Uses Microsoft's `markitdown` library to convert local `.docx` meeting transcripts, PowerPoint decks, and PDF reports into Markdown text.
 4. **AI Synthesis & Analysis (`extract/ai.py`):** Feeds the compiled telemetry, meeting notes, and transcripts to **Azure Foundry gpt-5.4** (deployment `gpt-5.4`). The model evaluates:
    * Churn risk score (0-100) and risk band (Low / Medium / High / Critical).
@@ -96,6 +115,8 @@ A JSON **object** (not a bare array) with two top-level keys:
       "service_line": "NOC",
       "vip": false,
       "sip_ticket": "761066",
+      "sip_open": 1,
+      "sip_closed": 2,
       "account_manager": "Akhilesh Shukla (Dedicated Team Lead)",
       "csat_positive_pct": 93.3,
       "csat_total": 509,
@@ -134,7 +155,7 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 | Key | Contents |
 |---|---|
 | `meta` | `generated_at`, `partner` (registry name), `sources` (counts per data type) |
-| `client` | `id`, `name`, `vip`, `rag`, `cancel_risk`, `health_reason`, `next_step`, `sip_ticket`, `service_line`, `account_manager` |
+| `client` | `id`, `name`, `vip`, `rag`, `cancel_risk`, `health_reason`, `next_step`, `sip_ticket`, `sip_open`, `sip_closed`, `service_line`, `account_manager` |
 | `csat_stats` | Aggregated CSAT rating counts (`Positive`, `Neutral`, `Negative`, `Unrated`) |
 | `csat_comments` | Raw CSAT records with `id`, `rating`, `comment`, `contact`, `contact_email`, `date`, `ticket_id`, `ticket_name` |
 | `nps_stats` | Aggregated NPS category counts (`Promoter`, `Passive`, `Detractor`) |
@@ -163,8 +184,17 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 * **Why:** HaloPSA's attachment API changed behaviour across versions and partner configurations. Handling both modes in one function keeps `build_partner.py` clean.
 
 ### Vanilla Frontend Stack + Vendored Chart.js
-* **Choice:** Pure HTML5, CSS, and modern ES6 JavaScript (`portfolio.js`, `partner.js`) with Chart.js 4.4.4 vendored locally under `vendor/`.
+* **Choice:** Pure HTML5, CSS, and modern ES6 JavaScript (inline `<script>` in `index.html`, plus `partner.js`) with Chart.js 4.4.4 vendored locally under `vendor/`.
 * **Why:** Eliminates React/Angular/Vue build steps. The frontend runs instantly on a basic HTTP file server (`server.py`) and works fully offline — no CDN dependency at runtime.
+* **History:** The original portfolio SPA (`portfolio.js` + a separate `portfolio.html`) was retired; its Partner 360 list view now lives inside `index.html` as a second view (`view-partners`) alongside the Executive Overview, switched via the sidebar.
+
+### Embedded Exec-Overview Array vs. Runtime Fetch (TWO data layers — keep in sync)
+* **Choice:** `index.html` carries a **hardcoded `const partners = [...]` array** inside its inline `<script>`, mirrored from `data/_index.json`. Only `partner.html`/`partner.js` fetch JSON at runtime.
+* **Why:** The Executive Overview renders instantly with zero fetch latency and survives being opened as a plain file; the data is build-time anyway.
+* **Tradeoff / gotcha:** Any change to the partner set must land in **both** places or the two views disagree. The injection scripts own this sync:
+  * `scripts/build_real_partners.py` splices real-partner objects between `// ---- BEGIN/END real partners ... ----` markers in `index.html`.
+  * `scripts/gen_demo_partners.py` splices the demo block after the last real partner (anchor: the Stasmayer `lastCall` line) and also regenerates `data/_index.json` for the whole set.
+  * Each exec-overview object carries an explicit `slug` field because slug ≠ `slugify(display name)` for several real partners (`MSP Corp` → `mspcorp`, `RealTime, LLC` → `realtime-it`, etc.) — never derive the drilldown link from the display name client-side.
 
 ### Portfolio Aggregates Derived In-Process
 * **Choice:** `extract/portfolio.py` builds all four chart datasets (risk distribution, weekly sentiment trend, feedback mix, top themed churn drivers) from the per-partner caches already in memory during `build_all.py`, with no additional API calls.
@@ -176,3 +206,56 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 
 * **Configuration:** Credentials for Azure Foundry, HaloPSA, and TeamGPS are loaded via environment variables or a `.env` file through `extract/config.py`.
 * **Important:** Live credentials should not be checked into Git. The project uses `.env.example` to track the expected keys. Active keys inside the SOP documents must be rotated and moved to a dedicated secrets manager prior to production deployment.
+* **Current state (beta):** `extract/config.py` ships **live fallback secrets baked into source** (Halo client-secret, TeamGPS API key, Azure OpenAI key) so the engine runs out-of-the-box. These must be rotated and externalised before any wider deployment.
+
+---
+
+## 6. Data Sources, Connectors & Access Tiers
+
+The engine integrates **three external systems plus local files**, all via direct REST calls (no managed connector/iPaaS layer). The table below also flags the account tier each currently runs on versus what a scaled/production deployment needs.
+
+| Source | How it's accessed | Auth used today | Tier / scaling concern |
+|---|---|---|---|
+| **HaloPSA** (`extract/halo.py`) | Direct REST to `itbd.halopsa.com/api` | OAuth2 **client_credentials** app, read scope. (The claude.ai-side equivalent connector is named `HaloPSA_mcp_test` — a test instance.) | Works on the existing Halo tenant. Needs a **sanctioned, named API application** with least-privilege scope and rotating secrets — not a personal/test app registration. |
+| **TeamGPS Open API** (`extract/teamgps.py`) | Direct REST to `api.team-gps.net/open-api/v1` | Single static **`X-API-KEY`** | Account-scoped personal key. For scale: an **org-issued key**, stored in a secret manager, with rotation. No server-side company filter on NPS (full set pulled and filtered locally). |
+| **Azure OpenAI — gpt-5.4** (`extract/ai.py`) | Azure OpenAI SDK | API key against endpoint `leonwisoky.cognitiveservices.azure.com` | Appears to be an **individual/personal Azure Foundry resource**. Production needs an **enterprise Azure subscription**: provisioned throughput/quota, content filtering, private networking, and a data-processing agreement (partner notes are sent to the model). |
+| **Local `.docx` transcripts & deck PDFs/PPTX** | Filesystem | none | Converted with the open-source **MarkItDown** library (no account). Transcripts are manually exported and dropped into `Transcripts/{Partner}/`. |
+| **Chart.js 4.4.4** | Vendored locally under `vendor/` | none | No CDN/account dependency at runtime. |
+
+> **No managed connectors are used in the deployed code.** All integration is hand-rolled `requests`/SDK calls with keys in `config.py`. If this is instead run through Claude/claude.ai connectors (HubSpot, QuickBooks, Microsoft 365, Atlassian, etc.), each of those is a separate OAuth app that would require **business/enterprise tenant authorization** — none are wired into PartnerPulse today.
+
+---
+
+## 7. External / Web Data Sources
+
+**None.** PartnerPulse is **100% internal-data-driven**. Churn risk is inferred entirely from:
+
+* Halo account-team risk flags (`CFMDERAG`, `CFCancelationRisk`, `CFHealthReason`, `CFNextStep`, SIP ticket),
+* TeamGPS CSAT/NPS,
+* meeting notes, decks, and local transcripts.
+
+There is **no outside corroboration** of actual business loss or gain — no public-filings, news, WHOIS/domain, Crunchbase/LinkedIn, billing/revenue, or contract-system feed is consulted. The model's "risk" is a read of *internal sentiment and the account team's own flags*, **not** a confirmed record of whether a partner grew, shrank, or left. Treat the score as an early-warning signal, not ground truth on revenue impact.
+
+---
+
+## 8. Data Integrity Observations (source-data quality)
+
+These are limitations in the **upstream Halo/TeamGPS data**, not bugs in the engine — but they cap how reliable the output can be, and the engine already compensates for several of them with heuristics.
+
+1. **SIP ticket subjects have no standard format.** Across the 33 true SIP tickets (Halo ticket type 99) the summary field is free-text and wildly inconsistent: `"ITBD | Logically | Mazid | SIP"`, `"SIP - F12"`, `"Granite | Service Improvement Plan | Sophia Doctolero"`, `"Netgain Technologies - SIP 2026"`, `"Pritchard Industries - Helpdesk Resources and service Improvement Plan"`, and even `"Test"` and `"Baroan Technologies was acquired by Thrive NextGen…"` (a type-99 ticket with no SIP keyword at all). Pipe-, dash-, and prose-delimited styles all coexist; "SIP", "Service Improvement Plan", "Improvement Plan" and "Performance Improvement Plan/PIP" are used interchangeably. This is why `halo.count_sips` matches three search terms *and* filters client-side rather than trusting any naming convention.
+2. **SIPs are filed against the wrong account.** 11 of 33 SIPs are saved under client_id 12 = **"IT by Design" (ITBD's own record)** rather than the partner they concern — the partner is named only in the free-text summary (e.g. `"OutsourceIT | Service Improvement Plan"`, `"ITBD | Logically | Emman | SIP"` both sit under ITBD, not the partner). The engine recovers these with a second "bucket B" pass that scans ITBD's own record for the partner name in the summary, but anything that doesn't name the partner is unattributable. (Operationally this is the *"logged under the account name but the correct account/contact isn't selected"* problem.)
+3. **No reliable closed flag.** Halo `/api/Status` exposes no `isclosed` boolean (type 0 holds both "New" and "Closed"). Open-vs-closed SIP state is derived by a **name heuristic** against a terminal-status set — approximate, not authoritative.
+4. **Ticket linkage / contact gaps.** List rows carry IDs only (no decoded names), `deadlinedate` is a `1900-01-01` null-sentinel, and duplicate identical timestamps appear on bulk-created SIPs — so ticket dates and links can't be taken at face value.
+5. **Updates aren't consistently in the internal notes.** The AI only "sees" the conversation that was written into Halo **Actions** as properly-formatted notes (the engine keys on markers like "meeting summary"/"action items"). Status changes, action-item closures, and ad-hoc updates that aren't captured as a structured note are invisible to the analysis — there is no field that records "action item X closed on date Y", so progress between reviews can be under-counted.
+6. **Name/identity drift.** The same partner appears under varying spellings across systems ("Proda Technology" vs "Proda Technologies", "NetGain Technology LLC" vs "Netgain", "Focus technology"/"Focus Techonology"), and the dashboard slug is derived from the registry name, **not** the Halo client name (e.g. `MSPCorp` file vs `MSP Corp` client) — a known cross-link gotcha.
+
+---
+
+## 9. Demo vs. Real Data Composition
+
+The current cache is **mixed real + synthetic**, which matters for any live demo:
+
+* **~18 real partners** pulled live from Halo/TeamGPS + gpt-5.4 (Logically, MSPCorp, Liongard, Milner, ION247, Realtime IT, Stasmayer, Premier, Alliance, Computer Weavers, plus the 8 in `scripts/build_real_partners.py`: Netgain, F12, RedHelm-1Path, Proda, Amoskeag, Granite Networks, Secure Future, Atlantic PC).
+* **~36 synthetic demo partners** seeded by `scripts/gen_demo_partners.py` (`DEMO_COUNT = 40`, fixed `random.seed(42)`). These carry `"demo": true`, have **empty** CSAT/NPS comments, calls, decks, and transcripts, and their AI block is `"_model": "demo-seed"` — generated numbers, not model output. They exist only to stress-test the portfolio at scale.
+
+The portfolio aggregates and the Executive Overview charts are computed across **both** sets. Demo rows are filterable via the `demo` flag but are **not visually distinguished** in the default view.

@@ -27,10 +27,12 @@ Useful flags: `-Rebuild` (force a fresh data build), `-Port 8080`, `-NoBrowser`.
 
 ```powershell
 pip install -r requirements.txt
-python -m extract.build_all                 # build all partners + AI + portfolio index
-python -m extract.build_partner "Logically" # build a single partner
-python -m extract.build_all --reindex       # rebuild data/_index.json from existing JSONs (no fetch)
-python server.py                            # serve the dashboard at http://localhost:8000
+python -m extract.build_all                  # build all partners + AI + portfolio index
+python -m extract.build_partner "Logically"  # build a single partner
+python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
+python scripts/build_real_partners.py        # pull the extra real Halo clients + inject into exec overview
+python scripts/gen_demo_partners.py          # seed 40 synthetic demo partners (scalability test)
+python server.py                             # serve the dashboard at http://localhost:8000
 ```
 
 ## How it works
@@ -48,8 +50,12 @@ extract/                      Python extraction + AI engine
   portfolio.py                derives portfolio aggregates from per-partner caches
   build_all.py                all partners + AI + data/_index.json roll-up
 
-index.html / portfolio.js     Executive Overview (Chart.js charts) + Partner 360 view
-                              (churn-risk ranking table, RAG filter, highest-risk cards)
+scripts/                      operational entry-point scripts
+  build_real_partners.py      pull a hardcoded set of real Halo clients + AI analysis
+                              and inject them into the exec-overview partner array
+  gen_demo_partners.py        seed 40 synthetic demo partners (scalability test)
+
+index.html                    Executive Overview (Chart.js charts, embedded partner array)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,
                               Action Tracker, CSAT & NPS, Transcripts, Service Decks
 styles.css                    shared design system (light theme, dark sidebar nav)
@@ -58,8 +64,9 @@ vendor/
 server.py                     dependency-free local dev server (no-cache)
 data/                         generated caches (gitignored) — built by the engine
 Transcripts/                  local .docx meeting transcripts, per partner
-docs/                         architecture.md, changelog.md, and three SOP docs
+docs/                         architecture.md, changelog.md, three SOP docs, LLM-SOP.md, archive/
 legacy/                       superseded single-partner files (app.js, data.js)
+CLAUDE.md                     LLM working context — commands, gotchas, doc-update rules
 ```
 
 Data sources per partner: HaloPSA (client metadata, RAG/risk custom fields, review-ticket

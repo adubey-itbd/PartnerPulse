@@ -267,6 +267,12 @@ Filter the cleaned action notes for key markers: `"meeting summary"`, `"action i
 
 ---
 
+## 5b. SIP Counts — HaloPSA
+
+Each partner's all-time **Service Improvement Plan** counts (open vs. closed) come from Halo ticket type **99**. There is no server-side ticket-type filter, so the engine (`extract/halo.py: count_sips`) searches three free-text terms, filters rows client-side on `tickettype_id == 99`, and runs a second pass over SIPs mis-filed under ITBD's own client record (id 12) whose summary names the partner. Open/closed is a status-name heuristic. Full details and quirks: **HaloPSA-API-SOP.md → "Addendum — SIP / ticket-type filtering findings"**. Output lands as `client.sip_open` / `client.sip_closed` in the partner JSON.
+
+---
+
 ## 6. Execution Workflow for a Partner Run
 
 To scan a new partner in the system, the dashboard engine must execute these steps sequentially:
@@ -280,19 +286,21 @@ To scan a new partner in the system, the dashboard engine must execute these ste
   │
   ├─► 3. Query Client Users list & construct set of emails and domain extensions.
   │
-  ├─► 4. Fetch all CSAT reviews filtered by company name matching client.
+  ├─► 4. Count SIP tickets (type 99) for the client — open vs. closed (see §5b).
   │
-  ├─► 5. Fetch NPS client reviews & filter locally using the user email/domain sets.
+  ├─► 5. Fetch all CSAT reviews filtered by company name matching client.
   │
-  ├─► 6. Search for the 5 most recent 'Bi-Weekly Service call' tickets for the client.
+  ├─► 6. Fetch NPS client reviews & filter locally using the user email/domain sets.
   │
-  ├─► 7. For each ticket:
+  ├─► 7. Search for the 5 most recent 'Bi-Weekly Service call' tickets for the client.
+  │
+  ├─► 8. For each ticket:
   │      ├─ Fetch actions list.
   │      └─ Fetch action details, clean HTML, and extract meeting summaries & action items.
   │
-  ├─► 8. Parse the local directory for Word transcripts matching the client's name.
+  ├─► 9. Parse the local directory for Word transcripts matching the client's name.
   │
-  ├─► 9. Merge and cache all extracted data into a unified Partner JSON payload.
+  ├─► 10. Merge and cache all extracted data into a unified Partner JSON payload.
   │
   └─► [End: Render Dashboard UI]
 ```

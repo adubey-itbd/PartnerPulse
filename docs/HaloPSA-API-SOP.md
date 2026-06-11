@@ -267,6 +267,41 @@ Trust these over any conflicting statement earlier in this doc.
 
 ---
 
+## ⚠️ Addendum — SIP / ticket-type filtering findings (2026-06-10 session)
+
+Discovered while building per-partner SIP (Service Improvement Plan) counts.
+Implemented in `extract/halo.py: count_sips()`.
+
+1. **SIPs are ticket type 99**, a first-class Halo ticket type on this tenant
+   (33 true SIPs all-time as of 2026-06-10).
+
+2. **There is NO working server-side ticket-type filter on `/api/Tickets`.**
+   Every `tickettype_*` query-param variant is silently ignored. However each
+   list ROW carries `tickettype_id`, so the working pattern is: narrow with the
+   free-text `search` param (which IS honoured) and filter rows client-side on
+   `tickettype_id == 99`.
+
+3. **SIP subjects have no standard format** — pipe-, dash-, and prose-delimited
+   styles coexist, and "SIP" / "Service Improvement Plan" / "Improvement Plan" /
+   "PIP" are used interchangeably (one type-99 ticket has no SIP keyword at
+   all). `count_sips` therefore unions three search terms: `"SIP"`,
+   `"Service Improvement Plan"`, `"Improvement Plan"`, deduped by ticket id.
+
+4. **A third of SIPs are filed under the WRONG client.** 11 of 33 sit under
+   client_id 12 = "IT by Design" (ITBD's own record), with the partner named
+   only in the free-text summary. `count_sips` recovers these with a second
+   "bucket B" pass: fetch all text-discoverable type-99 tickets once
+   (module-level cache), then match the partner's name terms against the
+   summary. Tickets that don't name the partner are unattributable.
+
+5. **Open vs. closed is a status-NAME heuristic.** `/api/Status` exposes no
+   `isclosed` flag (see 2026-06-06 addendum #7). `count_sips` decodes
+   `status_id` via a cached `/api/Status` name map and treats
+   `{closed, closed order, closed item, completed, cancelled, rejected}` as
+   terminal. Approximate, not authoritative.
+
+---
+
 ## Data Inventory (reachable endpoints)
 
 Counts as of 2026-06-06 on the ITBD tenant. "—" = count not reported by the API
