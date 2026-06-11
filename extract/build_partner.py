@@ -25,7 +25,7 @@ def slugify(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
-def _client_block(client: dict, cf: dict, account_manager: str) -> dict:
+def _client_block(client: dict, cf: dict, account_manager: str, sips: dict) -> dict:
     return {
         "id": client.get("id"),
         "name": client.get("name"),
@@ -35,6 +35,8 @@ def _client_block(client: dict, cf: dict, account_manager: str) -> dict:
         "health_reason": cf.get("CFHealthReason"),
         "next_step": cf.get("CFNextStep"),
         "sip_ticket": cf.get("CFSIPTicketMDE"),
+        "sip_open": sips.get("open", 0),
+        "sip_closed": sips.get("closed", 0),
         "service_line": cf.get("CFProduct"),
         "account_manager": account_manager,
     }
@@ -62,6 +64,11 @@ def build(partner_name: str, with_decks: bool = True, verbose: bool = True,
     # 3. Users -> emails / domains -------------------------------------------
     emails, domains = halo.get_users(client_id)
     log(f"[users] {len(emails)} emails, domains={sorted(domains)}")
+
+    # SIP (Service Improvement Plan, ticket type 99) counts — own record plus
+    # SIPs filed under ITBD's record that name the partner in the summary.
+    sips = halo.count_sips(client_id, name_terms=[p.name, p.halo_search])
+    log(f"[sips] open={sips['open']} closed={sips['closed']}")
 
     # 4. CSAT -----------------------------------------------------------------
     csat = teamgps.get_csat(p.teamgps_company)
@@ -128,7 +135,7 @@ def build(partner_name: str, with_decks: bool = True, verbose: bool = True,
                 "decks": len(decks), "transcripts": len(tx),
             },
         },
-        "client": _client_block(client, cf, account_manager),
+        "client": _client_block(client, cf, account_manager, sips),
         "csat_stats": csat_stats,
         "csat_comments": csat,
         "nps_stats": nps_stats,

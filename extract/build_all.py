@@ -48,6 +48,8 @@ def index_row(data: dict) -> dict:
         "service_line": c.get("service_line"),
         "vip": c.get("vip"),
         "sip_ticket": c.get("sip_ticket"),
+        "sip_open": c.get("sip_open", 0),
+        "sip_closed": c.get("sip_closed", 0),
         "account_manager": c.get("account_manager"),
         "csat_positive_pct": _csat_positive_pct(data.get("csat_stats", {})),
         "csat_total": sum(data.get("csat_stats", {}).values()),

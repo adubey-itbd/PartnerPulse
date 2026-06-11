@@ -106,6 +106,8 @@
         $("ov-sip-ticket").innerHTML = c.sip_ticket
             ? `<a href="#" style="color:var(--primary);font-weight:600;text-decoration:none;">Ticket #${esc(c.sip_ticket)}</a>`
             : "N/A";
+        const sipOpen = c.sip_open || 0, sipClosed = c.sip_closed || 0;
+        $("ov-sip-counts").textContent = `${sipOpen} open / ${sipClosed} closed`;
     }
 
     // ---------------- Overview ----------------
@@ -126,7 +128,7 @@
         $("ov-nps-score").textContent = (d.nps_stats && d.nps_stats.Promoter != null)
             ? `${d.nps_stats.Promoter}` : "0";
         $("ov-reviews").textContent = total;
-        $("ov-sip").textContent = d.client.sip_ticket ? "1 Active" : "None";
+        $("ov-sip").textContent = `${d.client.sip_open || 0} / ${d.client.sip_closed || 0}`;
 
         $("ov-stacked-bar").innerHTML = `
             <div class="stacked-segment stacked-positive" style="width:${pct(cs.Positive || 0)}%" title="Positive: ${cs.Positive || 0}"></div>

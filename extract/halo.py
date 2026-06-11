@@ -114,6 +114,96 @@ def parse_custom_fields(client: dict) -> dict:
     return out
 
 
+# --- Service Improvement Plans (ticket type 99) -----------------------------
+# SIPs are a first-class Halo ticket type. There is NO working server-side type
+# filter on /api/Tickets (every tickettype_* param is ignored), but each list
+# ROW carries `tickettype_id`, so we narrow with the free-text `search` (which
+# IS honoured) and filter the rows client-side.
+SIP_TICKET_TYPE_ID = 99
+_SIP_SEARCH_TERMS = ("SIP", "Service Improvement Plan", "Improvement Plan")
+
+# Open vs closed is derived from the ticket's status name — Halo's Status objects
+# expose no reliable `isclosed` flag. These are the terminal statuses.
+_CLOSED_STATUS_NAMES = {
+    "closed", "closed order", "closed item", "completed", "cancelled", "rejected",
+}
+
+_status_names = None
+_global_sips = None
+
+
+def _status_name_map() -> dict:
+    """{status_id: name}, fetched once."""
+    global _status_names
+    if _status_names is None:
+        _status_names = {s.get("id"): (s.get("name") or "")
+                         for s in _rows(get("Status"))}
+    return _status_names
+
+
+def _search_type99(seen: dict, **params):
+    """Paginate /Tickets for the given params, keeping type-99 rows into `seen`."""
+    for page in range(1, 12):
+        rows = _rows(get("Tickets", page_size=100, page_no=page,
+                         pageinate="true", **params))
+        if not rows:
+            break
+        for r in rows:
+            if r.get("tickettype_id") == SIP_TICKET_TYPE_ID:
+                seen[r.get("id")] = r
+        if len(rows) < 50:        # short page => last page for this query
+            break
+
+
+def _all_text_sips() -> list:
+    """All type-99 tickets discoverable via the SIP free-text searches, fetched
+    once and reused across partners (used to catch SIPs filed under ITBD's own
+    client record with the partner named only in the summary)."""
+    global _global_sips
+    if _global_sips is None:
+        seen = {}
+        for term in _SIP_SEARCH_TERMS:
+            _search_type99(seen, search=term)
+        _global_sips = list(seen.values())
+    return _global_sips
+
+
+def count_sips(client_id: int, name_terms=()) -> dict:
+    """All-time SIP (ticket type 99) counts for a partner, split open vs closed.
+
+    Counts two buckets, de-duplicated by ticket id:
+      A) SIPs filed under the partner's own Halo client record (`client_id`).
+      B) SIPs filed under another record (typically ITBD's own) whose summary
+         names the partner — matched against `name_terms`.
+    """
+    names = _status_name_map()
+    seen = {}
+
+    # A) the partner's own client record (catches SIPs whose summary may not even
+    #    mention the partner, e.g. "Service Improvement Plan - <agent name>").
+    for term in _SIP_SEARCH_TERMS:
+        _search_type99(seen, client_id=client_id, search=term)
+
+    # B) SIPs filed elsewhere that name the partner in the summary.
+    toks = [t.lower() for t in name_terms if t and len(t) >= 3]
+    if toks:
+        for r in _all_text_sips():
+            if r.get("id") in seen or r.get("client_id") == client_id:
+                continue
+            summ = (r.get("summary") or "").lower()
+            if any(tok in summ for tok in toks):
+                seen[r.get("id")] = r
+
+    open_n = closed_n = 0
+    for r in seen.values():
+        nm = names.get(r.get("status_id"), "").strip().lower()
+        if nm in _CLOSED_STATUS_NAMES:
+            closed_n += 1
+        else:
+            open_n += 1
+    return {"open": open_n, "closed": closed_n}
+
+
 # --- Users -> emails / domains ----------------------------------------------
 def get_users(client_id: int):
     """Return (emails:set, domains:set) for a client's contacts."""
