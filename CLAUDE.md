@@ -23,7 +23,6 @@ python -m extract.build_all                  # full build: all partners + AI + p
 python -m extract.build_partner "Logically"  # build one partner
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
 python scripts/build_real_partners.py        # extra real Halo clients + exec-overview injection
-python scripts/gen_demo_partners.py          # reseed 40 synthetic demo partners + reinject
 python server.py [port]                      # dev server, default http://localhost:8000
 powershell -ExecutionPolicy Bypass -File .\setup.ps1   # fresh-machine bootstrap
 ```
@@ -40,37 +39,39 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   `data/{slug}.json` at runtime. `styles.css` shared; Chart.js vendored in `vendor/`.
 - `refresh.js` — "Sync Data" header button (both pages). Talks to `server.py`'s
   sync API: `POST /api/refresh` (single-flight, optional `{"steps":[...]}` subset:
-  `registry` | `real-extras` | `demo-reindex`), `GET /api/refresh/status`. Cycle =
-  build_all → build_real_partners → gen_demo_partners, continue-on-failure, log in
-  `data/_sync.log`. The `registry` step needs `markitdown`.
+  `registry` | `real-extras` | `reindex`), `GET /api/refresh/status`. Cycle =
+  build_all → build_real_partners → build_all --reindex, continue-on-failure,
+  log in `data/_sync.log`.
 - `extract/` — pipeline library package (config, halo, teamgps, transcripts, ai,
   build_partner, build_all, portfolio). Secrets: env/.env first, live fallbacks
   baked in `extract/config.py` (beta only — never copy them elsewhere).
 - `scripts/` — operational entry points; they sys.path-shim the repo root, run them
   from anywhere. New one-off scripts go here, library code goes in `extract/`.
 - `data/` — generated, gitignored (partner JSONs, `_index.json`, `decks/`,
-  `demo_exec_partners.js`). Never write generated artifacts to the repo root.
+  `_sync.log`). Never write generated artifacts to the repo root.
 - `docs/` — architecture, changelog, 3 API/extraction SOPs, LLM-SOP, `archive/`
   (frozen, never edit). `Transcripts/` — input .docx. `legacy/` — dead code, kept.
 
 ## Critical gotchas
 
 1. **Two data layers must stay in sync:** the embedded array in `index.html` vs the
-   `data/*.json` caches. Partner-set changes go through the injection scripts
-   (`scripts/build_real_partners.py`, `scripts/gen_demo_partners.py`), never by
-   hand-editing one side.
-2. **Injection anchors:** the scripts splice `index.html` at literal marker strings
-   (`// ---- BEGIN/END real partners ----` and the last real partner's
-   `lastCall: …, callsAnalyzed: N },` line). Don't reformat those lines.
+   `data/*.json` caches. Partner-set changes go through
+   `scripts/build_real_partners.py` (exec-array injection) + `extract.build_all
+   --reindex` (index), never by hand-editing one side.
+2. **Injection anchors:** `build_real_partners.py` splices `index.html` between the
+   literal `// ---- BEGIN/END real partners ----` marker lines. Don't reformat them.
 3. **Slug ≠ slugified display name** ("MSP Corp" → `mspcorp`, "RealTime, LLC" →
    `realtime-it`, …). Use the explicit `slug` field; never derive from display name.
-4. **`DEMO_COUNT = 40`** in `gen_demo_partners.py` — it purges and regenerates all
-   `demo: true` files, so a smaller value silently shrinks the dashboard.
+4. **All data is real** — the synthetic demo partners were wiped 2026-06-11 (seeder
+   deleted). If `demo: true` rows reappear, stale data is being restored.
 5. **Halo API is quirky** (no server-side ticket-type filter, unreliable
    `record_count`, no closed flag on statuses, custom fields only on detail calls).
    Check `docs/HaloPSA-API-SOP.md` quirks + addenda before writing Halo code.
-6. **`markitdown` may be missing locally** — importing `extract.build_partner` then
-   fails; one-off scripts inline their own `slugify` instead.
+6. **`markitdown` is required** for the registry build path and all transcript
+   ingestion (installed here 2026-06-11). Where it's missing,
+   `build_real_partners.py` skips transcripts with a warning and
+   `extract.build_all` fails outright. Transcript folders are matched
+   case/punctuation-insensitively; unmatched folders trigger a warning.
 7. **`index.html` does NOT load `styles.css`** — it is fully self-contained (own
    inline `<style>` + `<script>`); `styles.css` applies only to `partner.html`.
    Shared UI (like the sync button) needs its CSS in BOTH places.

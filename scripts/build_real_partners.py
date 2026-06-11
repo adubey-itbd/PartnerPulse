@@ -1,9 +1,11 @@
 """Pull REAL data for a set of Halo clients and merge them into the dashboards.
 
 Runs the same extraction as extract.build_partner (Halo client fields + SIP
-counts + service-review meeting notes + TeamGPS CSAT/NPS) then the gpt-5.4 churn
-analysis (extract.ai), but WITHOUT the deck/transcript path so it needs no
-markitdown. Writes data/{slug}.json (no demo flag) and injects an exec-overview
+counts + service-review meeting notes + TeamGPS CSAT/NPS + local .docx
+transcripts when a matching Transcripts/{Partner}/ folder exists) then the
+gpt-5.4 churn analysis (extract.ai). Transcript ingestion needs markitdown; if
+it is missing the step is skipped with a warning instead of failing. Skips the
+deck path. Writes data/{slug}.json (no demo flag) and injects an exec-overview
 object for each into the hardcoded real-partner array.
 
     python scripts/build_real_partners.py            # build all
@@ -71,12 +73,24 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all):
     account_manager = (note_authors.most_common(1)[0][0] + " (Dedicated Team Lead)"
                        if note_authors else (client.get("accountmanagertech") or ""))
 
+    # Local .docx transcripts — any Transcripts/ folder matching the partner name
+    # (case/punctuation-insensitive) is ingested, same as the registry build path.
+    tx = []
+    try:
+        from extract import transcripts as transcripts_mod
+        tx = transcripts_mod.parse_partner_transcripts(name)
+        if tx:
+            print(f"  [transcripts] {len(tx)} parsed", file=sys.stderr)
+    except ImportError:
+        print("  [transcripts] markitdown not installed — skipping transcript ingestion",
+              file=sys.stderr)
+
     data = {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "partner": name,
             "sources": {"csat": len(csat), "nps": len(nps), "calls": len(historical_calls),
-                        "decks": 0, "transcripts": 0},
+                        "decks": 0, "transcripts": len(tx)},
         },
         "client": {
             "id": client.get("id"), "name": name, "vip": bool(client.get("is_vip")),
@@ -89,7 +103,7 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all):
         "csat_stats": csat_stats, "csat_comments": csat,
         "nps_stats": nps_stats, "nps_comments": nps,
         "historical_calls": historical_calls,
-        "action_items": [], "decks": [], "transcripts": [],
+        "action_items": [], "decks": [], "transcripts": tx,
     }
     data["ai"] = ai.analyze(data)
     return data
@@ -156,10 +170,8 @@ def exec_object_js(o):
 def inject_exec(objs):
     """Additively merge real-partner objects into the BEGIN/END block at the top of
     the hardcoded array. Existing entries are preserved; a freshly built object whose
-    slug is already present is replaced in place, otherwise it is appended. This keeps
-    the demo-block re-injection in gen_demo_partners.py (which splices AFTER the last
-    real partner) from ever clobbering these, and lets a partial run add new partners
-    without re-fetching or overwriting the others."""
+    slug is already present is replaced in place, otherwise it is appended — so a
+    partial run can add new partners without re-fetching or overwriting the others."""
     html = EXEC.read_text(encoding="utf-8")
     open_marker = "    const partners = [\n"
     begin = "        // ---- BEGIN real partners pulled by build_real_partners.py ----\n"
@@ -190,9 +202,27 @@ def inject_exec(objs):
     EXEC.write_text(html, encoding="utf-8")
 
 
+def warn_unmatched_transcript_dirs():
+    """Every Transcripts/ subfolder should belong to SOME built partner — the
+    registry (extract.build_all) or the NEW list here. Anything else would be
+    silently ignored by both build paths, so call it out."""
+    from extract import partners as registry
+    known = {slugify(p.name) for p in registry.PARTNERS} | {slugify(n[0]) for n in NEW}
+    if not config.TRANSCRIPTS_DIR.is_dir():
+        return
+    unmatched = [d.name for d in sorted(config.TRANSCRIPTS_DIR.iterdir())
+                 if d.is_dir() and slugify(d.name) not in known]
+    for name in unmatched:
+        print(f"WARNING: Transcripts/{name}/ does not match any built partner — "
+              f"its files are NOT being ingested. Add the partner to "
+              f"extract/partners.py or scripts/build_real_partners.py NEW.",
+              file=sys.stderr)
+
+
 def main():
     only = {a.lower() for a in sys.argv[1:]}
     targets = [n for n in NEW if not only or slugify(n[0]) in only]
+    warn_unmatched_transcript_dirs()
     print(f"Fetching TeamGPS NPS set once…", file=sys.stderr)
     nps_all = teamgps.get_nps_all()
     print(f"  {len(nps_all)} NPS responses cached", file=sys.stderr)

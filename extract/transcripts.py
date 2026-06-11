@@ -78,10 +78,29 @@ def parse_transcript(path) -> dict:
     }
 
 
+def _norm(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")
+
+
+def resolve_partner_dir(partner_name: str):
+    """Find the Transcripts/ subfolder for a partner: exact name first, then a
+    case/punctuation-insensitive match — so 'Realtime IT' finds 'realtime it',
+    'RealTime-IT', etc. Returns a Path or None."""
+    d = config.TRANSCRIPTS_DIR / partner_name
+    if d.is_dir():
+        return d
+    want = _norm(partner_name)
+    if want and config.TRANSCRIPTS_DIR.is_dir():
+        for sub in config.TRANSCRIPTS_DIR.iterdir():
+            if sub.is_dir() and _norm(sub.name) == want:
+                return sub
+    return None
+
+
 def list_partner_transcripts(transcript_dir: str):
     """All .docx transcripts for a partner folder, sorted by name."""
-    d = config.TRANSCRIPTS_DIR / transcript_dir
-    if not d.is_dir():
+    d = resolve_partner_dir(transcript_dir)
+    if d is None:
         return []
     return sorted(d.glob("*.docx"))
 

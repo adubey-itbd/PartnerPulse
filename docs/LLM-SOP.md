@@ -67,20 +67,18 @@ code and every doc that states it must move together:
 
 1. **Two frontend data layers.** `index.html` has an **embedded** `const partners`
    array (Executive Overview + Partner 360); `partner.html`/`partner.js` **fetch**
-   `data/{slug}.json` at runtime. Any partner-set change must hit both, via the
-   injection scripts — never hand-edit one side only.
+   `data/{slug}.json` at runtime. Any partner-set change must hit both — via
+   `scripts/build_real_partners.py` (array injection) and `extract.build_all
+   --reindex` (index) — never hand-edit one side only.
 2. **Injection anchors are load-bearing strings.** `scripts/build_real_partners.py`
-   splices between `// ---- BEGIN/END real partners ... ----` markers;
-   `scripts/gen_demo_partners.py` splices after the last real partner's
-   `lastCall: "…", callsAnalyzed: N },` line in `index.html`. Editing those lines in
-   `index.html` breaks the scripts — update both together.
+   splices between the `// ---- BEGIN/END real partners ... ----` marker lines in
+   `index.html`. Editing those lines breaks the script — update both together.
 3. **Slug ≠ slugified display name** for several real partners ("MSP Corp" →
    `mspcorp`, "RealTime, LLC" → `realtime-it`, "Alliance InfoSystems LLC" →
    `alliance-infosystems`, "Stasmayer Inc." → `stasmayer`). Exec-overview objects
    carry an explicit `slug:` field; never derive links from display names.
-4. **`DEMO_COUNT` in `scripts/gen_demo_partners.py` must stay 40** unless the user
-   asks otherwise — the script deletes and regenerates all `demo: true` files, so a
-   smaller value silently shrinks the dashboard.
+4. **All data is real — never reintroduce synthetic/demo partners.** The demo
+   seeder and all `demo: true` data were deliberately wiped on 2026-06-11.
 5. **Generated files live in `data/` and are gitignored** (`*.json`, `*.log`, `*.js`,
    `decks/`). Scripts must not write generated artifacts to the repo root.
 6. **Scripts live in `scripts/` and sys.path-shim the repo root** so

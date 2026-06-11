@@ -31,7 +31,6 @@ python -m extract.build_all                  # build all partners + AI + portfol
 python -m extract.build_partner "Logically"  # build a single partner
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
 python scripts/build_real_partners.py        # pull the extra real Halo clients + inject into exec overview
-python scripts/gen_demo_partners.py          # seed 40 synthetic demo partners (scalability test)
 python server.py                             # serve the dashboard at http://localhost:8000
 ```
 
@@ -51,9 +50,8 @@ extract/                      Python extraction + AI engine
   build_all.py                all partners + AI + data/_index.json roll-up
 
 scripts/                      operational entry-point scripts
-  build_real_partners.py      pull a hardcoded set of real Halo clients + AI analysis
-                              and inject them into the exec-overview partner array
-  gen_demo_partners.py        seed 40 synthetic demo partners (scalability test)
+  build_real_partners.py      pull a hardcoded set of real Halo clients (+ transcripts,
+                              + AI analysis) and inject them into the exec-overview array
 
 index.html                    Executive Overview (Chart.js charts, embedded partner array)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,

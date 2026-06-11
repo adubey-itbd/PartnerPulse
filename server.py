@@ -42,9 +42,9 @@ SYNC_STEPS = [
     {"id": "real-extras",
      "label": "Additional real partners + exec-overview injection",
      "cmd": [sys.executable, str(ROOT / "scripts" / "build_real_partners.py")]},
-    {"id": "demo-reindex",
-     "label": "Demo partners + portfolio index regeneration",
-     "cmd": [sys.executable, str(ROOT / "scripts" / "gen_demo_partners.py")]},
+    {"id": "reindex",
+     "label": "Portfolio index regeneration",
+     "cmd": [sys.executable, "-m", "extract.build_all", "--reindex"]},
 ]
 
 

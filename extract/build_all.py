@@ -75,11 +75,14 @@ def main():
     config.DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     if args.reindex:
+        # Index EVERY per-partner cache in data/ — registry partners and the
+        # extras built by scripts/build_real_partners.py alike (skip _index.json
+        # and other _-prefixed artifacts).
         all_data = []
-        for p in PARTNERS:
-            f = config.DATA_DIR / f"{slugify(p.name)}.json"
-            if f.exists():
-                all_data.append(json.loads(f.read_text(encoding="utf-8")))
+        for f in sorted(config.DATA_DIR.glob("*.json")):
+            if f.name.startswith("_"):
+                continue
+            all_data.append(json.loads(f.read_text(encoding="utf-8")))
         rows = write_index(all_data)
         print(f"Reindexed {len(rows)} partners (+ portfolio aggregates)")
         return

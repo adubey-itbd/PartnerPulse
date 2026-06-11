@@ -20,7 +20,7 @@ graph TD
 
     subgraph Ingestion & AI Engine (Python)
         Engine[extract/build_all.py / build_partner.py]
-        Scripts[scripts/build_real_partners.py / gen_demo_partners.py]
+        Scripts[scripts/build_real_partners.py]
         Portfolio[extract/portfolio.py]
         MID[MarkItDown Parser]
         Azure[Azure Foundry gpt-5.4]
@@ -64,8 +64,8 @@ graph TD
 index.html / partner.html / partner.js / refresh.js / styles.css / vendor/   the dashboard (served from repo root)
 server.py / setup.ps1 / requirements.txt                        entry points (server.py also hosts the sync API)
 extract/        ingestion + AI pipeline (Python package, run via python -m extract.*)
-scripts/        operational scripts (build_real_partners.py, gen_demo_partners.py)
-data/           generated caches (gitignored): {slug}.json, _index.json, decks/, demo_exec_partners.js
+scripts/        operational scripts (build_real_partners.py)
+data/           generated caches (gitignored): {slug}.json, _index.json, decks/, _sync.log
 Transcripts/    input .docx meeting transcripts, per partner
 docs/           architecture, changelog, SOPs, LLM-SOP, archive/
 legacy/         superseded single-partner files
@@ -176,7 +176,7 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 * **Tradeoff:** The dashboard displays cached data. Updates are not live — they are triggered by the dashboard's **"Sync Data"** header button (see *Manual Sync API* below), a recurring task (e.g., cron job), or manual execution of `python -m extract.build_all`.
 
 ### Manual Sync API + Dashboard Button
-* **Choice:** `server.py` exposes a small stdlib-only sync API — `POST /api/refresh` starts a single-flight sync cycle (409 if one is running; optional `{"steps": [...]}` body runs a subset), `GET /api/refresh/status` reports per-step progress. The cycle shells out sequentially to the existing entry points (`extract.build_all` → `scripts/build_real_partners.py` → `scripts/gen_demo_partners.py`), one subprocess per step, **continue-on-failure**, output appended to `data/_sync.log`. The shared `refresh.js` wires the header "Sync Data" button on both pages: confirm dialog, polled progress, page reload when at least one step succeeded.
+* **Choice:** `server.py` exposes a small stdlib-only sync API — `POST /api/refresh` starts a single-flight sync cycle (409 if one is running; optional `{"steps": [...]}` body runs a subset), `GET /api/refresh/status` reports per-step progress. The cycle shells out sequentially to the existing entry points (`extract.build_all` → `scripts/build_real_partners.py` → `extract.build_all --reindex`), one subprocess per step, **continue-on-failure**, output appended to `data/_sync.log`. The shared `refresh.js` wires the header "Sync Data" button on both pages: confirm dialog, polled progress, page reload when at least one step succeeded.
 * **Why:** Source systems change daily (e.g., a Halo SIP open today is closed tomorrow); the exec needs a way to know the dashboard is current *now* without touching a terminal. Subprocesses (rather than in-process imports) isolate module-level API caches, keep the server dependency-free, and make a missing optional dependency (e.g. `markitdown` for the registry step) degrade to a per-step failure instead of breaking the whole cycle.
 * **Tradeoff:** A full cycle takes minutes and spends live Halo/TeamGPS calls + Azure gpt-5.4 tokens — hence manual, confirm-guarded, and single-flight. On machines without `markitdown` the registry step reports failed while the other steps still refresh Halo/TeamGPS data and the index.
 
@@ -197,8 +197,7 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 * **Choice:** `index.html` carries a **hardcoded `const partners = [...]` array** inside its inline `<script>`, mirrored from `data/_index.json`. Only `partner.html`/`partner.js` fetch JSON at runtime.
 * **Why:** The Executive Overview renders instantly with zero fetch latency and survives being opened as a plain file; the data is build-time anyway.
 * **Tradeoff / gotcha:** Any change to the partner set must land in **both** places or the two views disagree. The injection scripts own this sync:
-  * `scripts/build_real_partners.py` splices real-partner objects between `// ---- BEGIN/END real partners ... ----` markers in `index.html`.
-  * `scripts/gen_demo_partners.py` splices the demo block after the last real partner (anchor: the Stasmayer `lastCall` line) and also regenerates `data/_index.json` for the whole set.
+  * `scripts/build_real_partners.py` splices real-partner objects between `// ---- BEGIN/END real partners ... ----` markers in `index.html` (replace-by-slug, append if new); `extract.build_all --reindex` regenerates `data/_index.json` from every per-partner cache.
   * Each exec-overview object carries an explicit `slug` field because slug ≠ `slugify(display name)` for several real partners (`MSP Corp` → `mspcorp`, `RealTime, LLC` → `realtime-it`, etc.) — never derive the drilldown link from the display name client-side.
 
 ### Portfolio Aggregates Derived In-Process
@@ -256,11 +255,8 @@ These are limitations in the **upstream Halo/TeamGPS data**, not bugs in the eng
 
 ---
 
-## 9. Demo vs. Real Data Composition
+## 9. Data Composition — Real Only
 
-The current cache is **mixed real + synthetic**, which matters for any live demo:
+All data is **real**, pulled live from Halo/TeamGPS + gpt-5.4: **18 partners** — the 10 registry partners in `extract/partners.py` (Logically, MSPCorp, Liongard, Milner, ION247, Realtime IT, Stasmayer, Premier, Alliance, Computer Weavers) plus the 8 in `scripts/build_real_partners.py` (Netgain, F12, RedHelm-1Path, Proda, Amoskeag, Granite Networks, Secure Future, Atlantic PC).
 
-* **~18 real partners** pulled live from Halo/TeamGPS + gpt-5.4 (Logically, MSPCorp, Liongard, Milner, ION247, Realtime IT, Stasmayer, Premier, Alliance, Computer Weavers, plus the 8 in `scripts/build_real_partners.py`: Netgain, F12, RedHelm-1Path, Proda, Amoskeag, Granite Networks, Secure Future, Atlantic PC).
-* **~36 synthetic demo partners** seeded by `scripts/gen_demo_partners.py` (`DEMO_COUNT = 40`, fixed `random.seed(42)`). These carry `"demo": true`, have **empty** CSAT/NPS comments, calls, decks, and transcripts, and their AI block is `"_model": "demo-seed"` — generated numbers, not model output. They exist only to stress-test the portfolio at scale.
-
-The portfolio aggregates and the Executive Overview charts are computed across **both** sets. Demo rows are filterable via the `demo` flag but are **not visually distinguished** in the default view.
+> **History:** until 2026-06-11 the cache also held ~36 synthetic demo partners (seeded by a since-deleted `gen_demo_partners.py`) to stress-test the portfolio at scale. All demo data was wiped from the codebase — partner JSONs, the injected exec-overview block, and the seeder itself. If a partner carrying `"demo": true` ever reappears, something is restoring stale data.
