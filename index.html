@@ -11,75 +11,122 @@
 <script src="vendor/chart.umd.min.js"></script>
 <style>
 :root {
-    --bg-primary: #f8fafc; --bg-secondary: #ffffff; --border-color: #e2e8f0;
-    --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #94a3b8;
-    --primary: #6366f1; --primary-light: #e0e7ff; --primary-hover: #4f46e5;
-    --success: #10b981; --success-light: #d1fae5; --success-dark: #065f46;
-    --warning: #f59e0b; --warning-light: #fef3c7; --warning-dark: #92400e;
-    --danger: #ef4444; --danger-light: #fee2e2; --danger-dark: #991b1b;
-    --info: #0ea5e9; --info-light: #e0f2fe; --info-dark: #0369a1;
-    --neutral: #94a3b8;
+    --bg-primary: #c9c6ee; --bg-shell: #f7f7fd; --bg-secondary: #ffffff; --border-color: #ececf8;
+    --text-primary: #171a2c; --text-secondary: #4b5168; --text-muted: #9298ad;
+    --primary: #6d5ef0; --primary-light: #efedfd; --primary-hover: #5b4bd9;
+    --grad-primary: linear-gradient(135deg, #9d7bfa 0%, #6d5ef0 100%);
+    --success: #10b981; --success-light: #e3f8ef; --success-dark: #0c7a58;
+    --warning: #f59e0b; --warning-light: #fdf3e0; --warning-dark: #9a5b07;
+    --danger: #ef4444; --danger-light: #fdeaec; --danger-dark: #b42334;
+    --info: #0ea5e9; --info-light: #e6f4fd; --info-dark: #086fa1;
+    --neutral: #9aa3b8;
     --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+    --shadow-sm: 0 2px 6px rgba(76,70,160,0.06), 0 12px 28px rgba(76,70,160,0.08);
+    --shadow-md: 0 14px 38px rgba(76,70,160,0.16);
+    --shadow-grad: 0 10px 22px rgba(109,94,240,0.38);
+    --shadow-float: 0 30px 70px rgba(64,58,150,0.22), 0 8px 20px rgba(64,58,150,0.10);
     --transition-fast: 0.15s ease; --transition-normal: 0.25s ease;
-    --card-track: #f8fafc;
+    --card-track: #f4f5fb;
+    --radius-card: 22px;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
+    background: linear-gradient(160deg, #d4d1f4 0%, #c5c2ec 45%, #b7b3e6 100%) fixed;
     background-color: var(--bg-primary); color: var(--text-primary);
     font-family: var(--font-body); font-size: 0.95rem; line-height: 1.6;
     overflow-x: hidden; min-height: 100vh;
 }
-.app-container { display: flex; min-height: 100vh; width: 100vw; }
+/* Soft ambient blobs behind the floating panels (decorative only) */
+body::before, body::after {
+    content: ""; position: fixed; border-radius: 50%;
+    filter: blur(70px); pointer-events: none; z-index: 0;
+}
+body::before { width: 460px; height: 460px; background: rgba(255,255,255,0.5); top: -140px; right: -120px; }
+body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bottom: -200px; left: -140px; }
+.app-container { display: flex; min-height: 100vh; width: 100vw; gap: 20px; padding: 18px; position: relative; z-index: 1; }
 
-/* ---------- Sidebar (dark, matches PartnerPulse) ---------- */
+/* ---------- Sidebar (light, matches PartnerPulse redesign) ---------- */
 .sidebar {
-    width: 260px; background-color: #0f172a;
-    border-right: 1px solid rgba(148,163,184,0.14);
+    width: 264px; background-color: var(--bg-secondary);
+    border-radius: 26px; box-shadow: var(--shadow-float);
     display: flex; flex-direction: column; justify-content: space-between;
-    padding: 24px; flex-shrink: 0;
+    padding: 22px 18px; flex-shrink: 0;
+    position: sticky; top: 18px; height: calc(100vh - 36px); overflow-y: auto;
 }
-.brand-section { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+.brand-section { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding: 0 6px; }
 .brand-logo {
-    width: 38px; height: 38px; background: linear-gradient(135deg, var(--primary), #8b5cf6);
-    border-radius: 10px; display: flex; align-items: center; justify-content: center;
-    color: #fff; font-weight: 700; font-size: 1.2rem; font-family: var(--font-heading);
-    box-shadow: 0 4px 10px rgba(99,102,241,0.3);
+    width: 42px; height: 42px; background: var(--grad-primary);
+    border-radius: 13px; display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 1.25rem; font-family: var(--font-heading);
+    box-shadow: var(--shadow-grad);
 }
-.brand-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: #f1f5f9; letter-spacing: -0.5px; line-height: 1.1; }
-.brand-tag { font-size: 0.72rem; color: #94a3b8; }
+.brand-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.5px; line-height: 1.1; }
+.brand-tag { font-size: 0.72rem; color: var(--text-muted); }
 .nav-menu { display: flex; flex-direction: column; gap: 8px; list-style: none; flex-grow: 1; }
 .nav-link {
-    display: flex; align-items: center; gap: 12px; padding: 12px 16px;
-    color: #cbd5e1; text-decoration: none; border-radius: 8px; font-weight: 500;
+    display: flex; align-items: center; gap: 12px; padding: 13px 16px;
+    color: var(--text-secondary); text-decoration: none; border-radius: 13px; font-weight: 600;
     transition: var(--transition-fast); cursor: pointer;
 }
-.nav-link:hover { background-color: #1e293b; color: #fff; }
-.nav-item.active .nav-link { background-color: rgba(99,102,241,0.18); color: #c7d2fe; font-weight: 600; }
+.nav-link:hover { background-color: var(--primary-light); color: var(--primary-hover); }
+.nav-item.active .nav-link { background: var(--grad-primary); color: #fff; font-weight: 700; box-shadow: var(--shadow-grad); }
 .nav-link svg { width: 20px; height: 20px; flex-shrink: 0; }
-.sidebar-footer { border-top: 1px solid rgba(148,163,184,0.14); padding-top: 16px; margin-top: 16px; }
-.data-sources-title { font-size: 0.7rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
-.data-source-row { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: #cbd5e1; padding: 3px 0; }
+.sidebar-footer { padding-top: 16px; margin-top: 16px; }
+.data-sources-title { font-size: 0.7rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; padding: 0 6px; }
+.data-source-row { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-secondary); padding: 3px 6px; }
+
+/* Insights snapshot card (sidebar) — mirrors the portfolio KPIs, filled by renderKPIs() */
+.insights-card {
+    background: var(--bg-secondary); border: 1px solid var(--border-color);
+    border-radius: 16px; padding: 16px; box-shadow: var(--shadow-sm); margin-bottom: 8px;
+}
+.insights-head {
+    display: flex; align-items: center; gap: 9px;
+    font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; color: var(--text-primary);
+    padding-bottom: 12px; border-bottom: 1px solid var(--card-track);
+}
+.insights-bolt {
+    width: 26px; height: 26px; border-radius: 8px; flex-shrink: 0;
+    background: var(--primary-light); color: var(--primary);
+    display: flex; align-items: center; justify-content: center;
+}
+.insights-bolt svg { width: 14px; height: 14px; }
+.insight-stat { padding: 11px 0; border-bottom: 1px solid var(--card-track); }
+.insight-label { font-size: 0.76rem; font-weight: 600; color: var(--text-secondary); }
+.insight-value { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; line-height: 1.25; }
+.insight-sub { font-size: 0.7rem; color: var(--text-muted); }
+.insights-link {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    margin-top: 14px; padding: 10px 12px;
+    border: 1px solid var(--border-color); border-radius: 11px;
+    color: var(--primary); font-weight: 700; font-size: 0.8rem; text-decoration: none;
+    transition: var(--transition-fast);
+}
+.insights-link:hover { background: var(--primary-light); border-color: transparent; }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .status-dot.ok { background: var(--success); box-shadow: 0 0 0 3px rgba(16,185,129,0.15); }
 .status-dot.ai { background: var(--primary); box-shadow: 0 0 0 3px rgba(99,102,241,0.15); }
 
 /* ---------- Main ---------- */
-.main-content { flex-grow: 1; display: flex; flex-direction: column; min-height: 100vh; overflow: hidden; }
-.top-header {
-    height: 72px; background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color);
-    display: flex; align-items: center; justify-content: space-between; padding: 0 32px; flex-shrink: 0;
+.main-content {
+    flex-grow: 1; display: flex; flex-direction: column; min-height: calc(100vh - 36px);
+    overflow: hidden; background-color: var(--bg-shell);
+    border-radius: 26px; box-shadow: var(--shadow-float);
 }
-.header-title-section h1 { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px; }
-.header-badges { display: flex; align-items: center; gap: 12px; }
+.top-header {
+    min-height: 88px; background-color: transparent;
+    display: flex; align-items: center; justify-content: space-between; padding: 22px 32px 6px; flex-shrink: 0; gap: 16px;
+}
+.header-title-section h1 { font-family: var(--font-heading); font-size: 1.7rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.5px; }
+.header-subtitle { font-size: 0.85rem; color: var(--text-muted); margin-top: 1px; }
+.header-badges { display: flex; align-items: center; gap: 12px; margin-left: auto; }
 .page-container { flex-grow: 1; padding: 32px; overflow-y: auto; animation: fadeIn var(--transition-normal); }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 
 /* ---------- Badges ---------- */
-.badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-.badge-outline { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-secondary); }
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 11px; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge-outline { background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-secondary); }
 .badge-success { background-color: var(--success-light); color: var(--success-dark); }
 .badge-warning { background-color: var(--warning-light); color: var(--warning-dark); }
 .badge-danger { background-color: var(--danger-light); color: var(--danger-dark); }
@@ -87,24 +134,38 @@ body {
 .badge-primary { background-color: var(--primary-light); color: var(--primary-hover); }
 
 /* ---------- Cards ---------- */
-.card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: var(--shadow-sm); padding: 24px; transition: var(--transition-normal); margin-bottom: 24px; }
-.card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid var(--card-track); padding-bottom: 12px; gap: 16px; }
-.card-title { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 600; color: var(--text-primary); }
+.card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-card); box-shadow: var(--shadow-sm); padding: 24px; transition: var(--transition-normal); margin-bottom: 24px; }
+.card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 18px; gap: 16px; }
+.card-title { font-family: var(--font-heading); font-size: 1.12rem; font-weight: 700; color: var(--text-primary); }
 .card-subtitle { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
 
-/* ---------- KPI ---------- */
+/* ---------- KPI tiles (soft pastel, first one gradient) ---------- */
 .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 24px; }
-.kpi-card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; display: flex; align-items: center; gap: 16px; box-shadow: var(--shadow-sm); }
-.kpi-icon-wrapper { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.kpi-icon-wrapper.primary { background-color: var(--primary-light); color: var(--primary); }
-.kpi-icon-wrapper.success { background-color: var(--success-light); color: var(--success); }
-.kpi-icon-wrapper.warning { background-color: var(--warning-light); color: var(--warning); }
-.kpi-icon-wrapper.danger { background-color: var(--danger-light); color: var(--danger); }
-.kpi-icon-wrapper svg { width: 24px; height: 24px; }
-.kpi-info { display: flex; flex-direction: column; }
-.kpi-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-.kpi-value { font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--text-primary); line-height: 1.2; margin-top: 2px; }
-.kpi-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+.kpi-card {
+    background-color: var(--bg-secondary); border-radius: 24px; padding: 20px 22px;
+    display: flex; flex-direction: column;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), var(--shadow-sm);
+}
+.kpi-top { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.kpi-icon-wrapper {
+    width: 44px; height: 44px; border-radius: 13px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    background-color: var(--bg-secondary); box-shadow: 0 2px 8px rgba(20,22,52,0.10);
+}
+.kpi-icon-wrapper svg { width: 22px; height: 22px; }
+.kpi-card.primary { background: var(--grad-primary); box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 18px 34px rgba(109,94,240,0.42); }
+.kpi-card.primary .kpi-icon-wrapper { background-color: rgba(255,255,255,0.22); box-shadow: none; color: #fff; }
+.kpi-card.primary .kpi-label, .kpi-card.primary .kpi-sub { color: rgba(255,255,255,0.85); }
+.kpi-card.primary .kpi-value { color: #fff; }
+.kpi-card.success { background-color: var(--success-light); box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 16px 30px rgba(16,185,129,0.20); }
+.kpi-card.success .kpi-icon-wrapper { color: var(--success); }
+.kpi-card.warning { background-color: var(--warning-light); box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 16px 30px rgba(245,158,11,0.20); }
+.kpi-card.warning .kpi-icon-wrapper { color: var(--warning); }
+.kpi-card.danger { background-color: var(--danger-light); box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 16px 30px rgba(239,68,68,0.18); }
+.kpi-card.danger .kpi-icon-wrapper { color: var(--danger); }
+.kpi-label { font-size: 0.82rem; color: var(--text-secondary); font-weight: 700; }
+.kpi-value { font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--text-primary); line-height: 1.15; }
+.kpi-sub { font-size: 0.74rem; color: var(--text-muted); margin-top: 2px; }
 
 /* ---------- Chart ---------- */
 .chart-box { position: relative; height: 400px; width: 100%; }
@@ -112,22 +173,24 @@ body {
 
 /* ---------- Risk-ranking chart: tier filters + collapse/expand ---------- */
 .trend-key { color: var(--danger); font-weight: 700; }
-.filter-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.rank-legend { display: flex; gap: 14px; flex-wrap: wrap; padding-top: 6px; flex-shrink: 0; }
+.filter-pills { display: flex; gap: 8px; flex-wrap: wrap; }
 .filter-pill {
-    padding: 5px 12px; border-radius: 9999px; font-size: 0.76rem; font-weight: 600;
-    border: 1px solid var(--border-color); color: var(--text-secondary);
+    padding: 8px 16px; border-radius: 9999px; font-size: 0.8rem; font-weight: 700;
+    border: 1px solid transparent; color: var(--text-secondary);
     background: var(--bg-secondary); cursor: pointer; transition: var(--transition-fast);
     user-select: none; white-space: nowrap;
+    box-shadow: 0 3px 10px rgba(76,70,160,0.12);
 }
 .filter-pill:hover { border-color: var(--primary); color: var(--primary); }
-.filter-pill.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.filter-pill.active { background: var(--grad-primary); border-color: transparent; color: #fff; box-shadow: var(--shadow-grad); }
 
 /* Global page filter bar */
 .page-filter {
     display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
     background: var(--bg-secondary); border: 1px solid var(--border-color);
-    border-radius: 12px; box-shadow: var(--shadow-sm);
-    padding: 14px 20px; margin-bottom: 24px;
+    border-radius: 16px; box-shadow: var(--shadow-sm);
+    padding: 13px 20px; margin-bottom: 24px;
     position: sticky; top: 0; z-index: 20;
 }
 .page-filter-label { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
@@ -138,12 +201,19 @@ body {
 .rank-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--card-track); }
 .rank-count { font-size: 0.8rem; color: var(--text-muted); }
 .rank-toggle {
-    font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; color: var(--primary);
-    background: transparent; border: 1px solid var(--border-color); border-radius: 8px;
-    padding: 7px 14px; cursor: pointer; transition: var(--transition-fast);
+    font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; color: var(--primary);
+    background: var(--bg-secondary); border: 1px solid transparent; border-radius: 11px;
+    padding: 8px 16px; cursor: pointer; transition: var(--transition-fast);
+    box-shadow: 0 3px 10px rgba(76,70,160,0.12);
 }
 .rank-toggle:hover { background: var(--primary-light); border-color: var(--primary); }
 .rank-toggle[hidden] { display: none; }
+
+/* Side-by-side row: risk-ranking chart + at-risk table (stacks on narrow screens) */
+.overview-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 24px; align-items: start; }
+.overview-split .card { margin-bottom: 24px; }
+.overview-split .table-wrapper { max-height: 560px; overflow-y: auto; }
+.overview-split .custom-table th { position: sticky; top: 0; z-index: 1; background-color: var(--bg-secondary); }
 
 /* ---------- Sentiment rows ---------- */
 .sent-legend { display: flex; gap: 18px; margin-bottom: 18px; flex-wrap: wrap; }
@@ -160,7 +230,7 @@ body {
 
 /* ---------- Voice of partner ---------- */
 .voice-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-bottom: 24px; }
-.voice-card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); }
+.voice-card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); }
 .voice-card-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
 .voice-name { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; color: var(--text-primary); }
 .tone-pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 9999px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
@@ -169,7 +239,7 @@ body {
 .tone-Mixed { background: var(--warning-light); color: var(--warning-dark); }
 .tone-Positive { background: var(--success-light); color: var(--success-dark); }
 .theme-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-.theme-tag { padding: 3px 9px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 0.72rem; background: var(--card-track); color: var(--text-secondary); }
+.theme-tag { padding: 4px 11px; border-radius: 9999px; border: 1px solid var(--border-color); font-size: 0.72rem; background: var(--card-track); color: var(--text-secondary); }
 .voice-points { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; flex-grow: 1; }
 .voice-points li { position: relative; padding-left: 18px; font-size: 0.84rem; color: var(--text-secondary); }
 .voice-points li::before { content: "›"; position: absolute; left: 4px; top: -1px; color: var(--primary); font-weight: 700; }
@@ -179,20 +249,20 @@ body {
 .recurring-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .recurring-col h3 { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
 .recurring-col h3 .dot { width: 9px; height: 9px; border-radius: 50%; }
-.recurring-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--card-track); margin-bottom: 8px; }
+.recurring-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; border: 1px solid var(--border-color); border-radius: 11px; background: var(--card-track); margin-bottom: 8px; }
 .recurring-theme { font-size: 0.86rem; font-weight: 600; color: var(--text-primary); }
 .recurring-meta { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; }
 
 /* ---------- Table ---------- */
 .table-wrapper { overflow-x: auto; }
 .custom-table { width: 100%; border-collapse: collapse; text-align: left; }
-.custom-table th { background-color: var(--card-track); padding: 12px 16px; font-weight: 600; font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color); }
-.custom-table td { padding: 14px 16px; border-bottom: 1px solid var(--border-color); font-size: 0.88rem; color: var(--text-primary); }
+.custom-table th { background-color: var(--bg-secondary); padding: 11px 14px; font-weight: 700; font-size: 0.73rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color); }
+.custom-table td { padding: 13px 14px; border-bottom: 1px solid var(--card-track); font-size: 0.86rem; color: var(--text-primary); }
 .custom-table tr:hover td { background-color: var(--card-track); }
 .tier-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 10px; vertical-align: middle; }
-.cell-name { font-weight: 600; }
+.cell-name { font-weight: 700; }
 .risk-num { font-family: var(--font-heading); font-weight: 800; font-size: 1rem; }
-.pill { display: inline-flex; padding: 3px 10px; border-radius: 9999px; font-size: 0.72rem; font-weight: 700; }
+.pill { display: inline-flex; padding: 4px 11px; border-radius: 8px; font-size: 0.72rem; font-weight: 700; }
 .pill-danger { background: var(--danger-light); color: var(--danger-dark); }
 .pill-warning { background: var(--warning-light); color: var(--warning-dark); }
 .pill-success { background: var(--success-light); color: var(--success-dark); }
@@ -203,6 +273,9 @@ body {
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1380px) {
+    .overview-split { grid-template-columns: 1fr; }
+}
 @media (max-width: 1100px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .voice-grid { grid-template-columns: 1fr; }
@@ -214,28 +287,14 @@ body {
     .sent-row { grid-template-columns: 120px 1fr 44px; gap: 8px; }
     .page-container, .top-header { padding-left: 18px; padding-right: 18px; }
 }
-
-/* ---------- Optional dark mode ---------- */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-primary: #0b1220; --bg-secondary: #111a2e; --border-color: #1e2a44;
-        --text-primary: #e2e8f0; --text-secondary: #94a3b8; --text-muted: #64748b;
-        --card-track: #0f1729;
-        --success-light: rgba(16,185,129,0.16); --success-dark: #6ee7b7;
-        --warning-light: rgba(245,158,11,0.16); --warning-dark: #fcd34d;
-        --danger-light: rgba(239,68,68,0.16); --danger-dark: #fca5a5;
-        --info-light: rgba(14,165,233,0.16); --info-dark: #7dd3fc;
-        --primary-light: rgba(99,102,241,0.18); --primary-hover: #c7d2fe;
-    }
-}
 /* Manual data-sync button (refresh.js drives it against /api/refresh) */
 .sync-btn {
     display: inline-flex; align-items: center; gap: 8px;
-    margin-left: 16px; padding: 8px 16px;
-    border: 1px solid var(--border-color); border-radius: 8px;
-    background-color: var(--bg-secondary); color: var(--text-secondary);
-    font-family: inherit; font-size: 0.85rem; font-weight: 600;
-    cursor: pointer; white-space: nowrap;
+    margin-left: 16px; padding: 10px 18px;
+    border: 1px solid var(--border-color); border-radius: 12px;
+    background-color: var(--bg-secondary); color: var(--text-primary);
+    font-family: inherit; font-size: 0.85rem; font-weight: 700;
+    cursor: pointer; white-space: nowrap; box-shadow: var(--shadow-sm);
     transition: border-color .15s, color .15s, background-color .15s;
 }
 .sync-btn:hover:not(:disabled) {
@@ -247,6 +306,37 @@ body {
 .sync-btn.syncing .sync-icon { animation: sync-spin 1s linear infinite; }
 .sync-btn.syncing { border-color: var(--primary); color: var(--primary-hover); }
 @keyframes sync-spin { to { transform: rotate(360deg); } }
+
+/* "Last sync" timestamp (injected before the button by refresh.js) */
+.sync-stamp {
+    margin-left: 16px;
+    font-size: 0.75rem; color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Live sync progress panel (injected under the button by refresh.js) */
+.sync-panel {
+    position: fixed; z-index: 1000;
+    min-width: 300px; max-width: 400px;
+    padding: 14px 16px;
+    border: 1px solid var(--border-color); border-radius: 14px;
+    background-color: var(--bg-secondary, #fff); color: var(--text-secondary);
+    box-shadow: var(--shadow-md);
+    font-size: 0.8rem; line-height: 1.35; text-align: left;
+}
+.sync-panel-title { font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+.sync-step { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; }
+.sync-step-icon { width: 14px; flex-shrink: 0; text-align: center; font-weight: 700; }
+.sync-step.ok .sync-step-icon { color: var(--success); }
+.sync-step.failed .sync-step-icon { color: var(--danger); }
+.sync-step.running .sync-step-icon {
+    color: var(--primary);
+    display: inline-block; animation: sync-spin 1s linear infinite;
+}
+.sync-step.pending { opacity: .55; }
+.sync-step-body { min-width: 0; }
+.sync-step-detail { margin-top: 2px; color: var(--primary); font-weight: 600; }
+.sync-step.failed .sync-step-detail { color: var(--danger); }
 </style>
 </head>
 <body>
@@ -277,6 +367,29 @@ body {
             </ul>
         </div>
         <div class="sidebar-footer">
+            <!-- Insights snapshot — same portfolio-wide numbers as the KPI tiles, filled by renderKPIs() -->
+            <div class="insights-card">
+                <div class="insights-head">
+                    <span class="insights-bolt"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg></span>
+                    Insights Snapshot
+                </div>
+                <div class="insight-stat">
+                    <div class="insight-label">High Risk Partners</div>
+                    <div class="insight-value" id="ins-high" style="color:var(--danger)">—</div>
+                    <div class="insight-sub">churn risk ≥ 45</div>
+                </div>
+                <div class="insight-stat">
+                    <div class="insight-label">Renewals at Risk</div>
+                    <div class="insight-value" id="ins-renewals" style="color:var(--warning)">—</div>
+                    <div class="insight-sub">derived: risk + call tone</div>
+                </div>
+                <div class="insight-stat">
+                    <div class="insight-label">Avg Churn Risk</div>
+                    <div class="insight-value" id="ins-avg" style="color:var(--primary)">—</div>
+                    <div class="insight-sub">scale 0–100</div>
+                </div>
+                <a class="insights-link" href="#at-risk" id="insights-viewall">View all insights <span aria-hidden="true">→</span></a>
+            </div>
             <div class="data-sources-title">Data Sources</div>
             <div class="data-source-row"><span class="status-dot ok"></span> HALO PSA</div>
             <div class="data-source-row"><span class="status-dot ok"></span> TeamGPS · CSAT/NPS</div>
@@ -290,6 +403,7 @@ body {
         <header class="top-header">
             <div class="header-title-section">
                 <h1 id="view-title">Executive Overview</h1>
+                <p class="header-subtitle" id="view-subtitle">Real-time overview of partner health and churn risk</p>
             </div>
             <div class="header-badges" id="header-badges"></div>
             <button class="sync-btn" id="sync-btn" type="button" title="Pull fresh HaloPSA + TeamGPS data and re-run the AI analysis">
@@ -316,12 +430,18 @@ body {
             <!-- 1. KPI strip — portfolio-wide totals (the filter scopes the lists, not the summary) -->
             <div class="kpi-grid" id="kpi-grid"></div>
 
-            <!-- 2. Who needs attention — churn-risk ranking -->
+            <!-- 2. Who needs attention (chart) + at-risk table, side by side -->
+            <div class="overview-split">
             <div class="card">
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">Who needs attention</h2>
                         <div class="card-subtitle">Partners ranked by churn risk, worst first · <span class="trend-key">▼</span> = declining trend · expand for the full filtered list</div>
+                    </div>
+                    <div class="rank-legend" aria-hidden="true">
+                        <span class="legend-item"><span class="legend-dot" style="background:var(--danger)"></span> High</span>
+                        <span class="legend-item"><span class="legend-dot" style="background:var(--warning)"></span> Watch</span>
+                        <span class="legend-item"><span class="legend-dot" style="background:var(--success)"></span> Healthy</span>
                     </div>
                 </div>
                 <div class="rank-scroll">
@@ -336,6 +456,31 @@ body {
                 </div>
                 <div class="sr-only" id="bubble-fallback"></div>
             </div>
+
+            <!-- At-risk partners table -->
+            <div class="card" id="at-risk">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">At-risk partners</h2>
+                        <div class="card-subtitle">Filtered accounts ranked by churn risk · renewal risk derived from risk + call tone</div>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Partner</th><th>Risk</th><th>Call tone</th><th>Top driver</th><th>Renewal risk</th>
+                            </tr>
+                        </thead>
+                        <tbody id="risk-table-body"></tbody>
+                    </table>
+                </div>
+                <p class="footnote">
+                    Sentiment is sourced from TeamGPS CSAT (NPS where CSAT is unavailable). Churn risk, drivers, and talking points are produced by Azure gpt-5.4; call themes are paraphrased from service-review transcripts (never verbatim). HALO PSA contributes meeting minutes and action items only.
+                    Call tone is derived from sentiment trend and negative share. No revenue figures, historical trends, or bulk ticket SLA/resolution metrics are shown — this view is account-by-account, and SLA is an end-customer signal rather than a partner-churn signal.
+                </p>
+            </div>
+            </div><!-- /overview-split -->
 
             <!-- 3. Customer sentiment per partner -->
             <div class="card">
@@ -374,29 +519,6 @@ body {
                 </div>
             </div>
 
-            <!-- 5. At-risk partners table -->
-            <div class="card" id="at-risk">
-                <div class="card-header">
-                    <div>
-                        <h2 class="card-title">At-risk partners</h2>
-                        <div class="card-subtitle">Filtered accounts ranked by churn risk · renewal risk derived from risk + call tone</div>
-                    </div>
-                </div>
-                <div class="table-wrapper">
-                    <table class="custom-table">
-                        <thead>
-                            <tr>
-                                <th>Partner</th><th>Risk</th><th>Call tone</th><th>Top driver</th><th>Renewal risk</th>
-                            </tr>
-                        </thead>
-                        <tbody id="risk-table-body"></tbody>
-                    </table>
-                </div>
-                <p class="footnote">
-                    Sentiment is sourced from TeamGPS CSAT (NPS where CSAT is unavailable). Churn risk, drivers, and talking points are produced by Azure gpt-5.4; call themes are paraphrased from service-review transcripts (never verbatim). HALO PSA contributes meeting minutes and action items only.
-                    Call tone is derived from sentiment trend and negative share. No revenue figures, historical trends, or bulk ticket SLA/resolution metrics are shown — this view is account-by-account, and SLA is an end-customer signal rather than a partner-churn signal.
-                </p>
-            </div>
         </section>
 
         <!-- View: Partner 360 — the full clickable partner list -->
@@ -455,290 +577,243 @@ body {
     // =========================================================================
     const partners = [
         // ---- BEGIN real partners pulled by build_real_partners.py ----
-        { name: "Netgain", slug: "netgain", churnRisk: 29, csatPositivePct: 93, reviewVolume: 118,
+        { name: "Netgain", slug: "netgain", churnRisk: 26, csatPositivePct: 93, reviewVolume: 118,
           sentiment: { positive: 93, neutral: 7, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Recent service reviews are positive with no active escalation signals",
-          themes: ["Recent service reviews are positive with no active escalation signals", "Active SIP keeps account in amber despite improving trajectory", "Quality/process gaps cited in CSAT feedback", "Customer sentiment is positive but not strongly advocacy-level"],
-          talkingPoints: ["Netgain appears generally healthy and trending positively, with recent service reviews noting no major concerns and strong collaboration..", "Risk is moderated by an active minor SIP and lingering quality/communication issues around documentation, troubleshooting, and client updates.."],
-          lastCall: "2026-06-01", callsAnalyzed: 4 },
+          topDriver: "Account team rates churn risk low and says the account is improving",
+          themes: ["Account team rates churn risk low and says the account is improving", "Minor service improvement plan remains active", "Recent reviews report positive engagement and no major escalations", "Quality issues were raised earlier around updates, documentation, and troubleshooting"],
+          talkingPoints: ["Netgain appears generally healthy with strong recent service reviews, positive CSAT, and no major escalations, though the account remains Amber due to a minor SIP and lingering quality/documentation concerns..", "Recent sentiment suggests the relationship is moving in the right direction rather than deteriorating.."],
+          lastCall: "2026-06-01", callsAnalyzed: 3 },
         { name: "F12", slug: "f12", churnRisk: 22, csatPositivePct: 88, reviewVolume: 114,
-          sentiment: { positive: 88, neutral: 9, negative: 3 }, sentimentTrend: "Stable",
-          topDriver: "Strong overall partner satisfaction across teams",
-          themes: ["Strong overall partner satisfaction across teams", "Promoter-only NPS and strong partnership perception", "Open position / staffing change being managed", "Repeated engineer-specific process/attendance/productivity issues"],
-          talkingPoints: ["F12 appears healthy with consistently positive recent service reviews, promoter-only NPS, and account-team flags showing low cancel risk..", "The only notable risks are isolated engineer-specific coaching items and one open SIP/new position, but there is no sign of broad relationship deterioration.."],
+          sentiment: { positive: 88, neutral: 9, negative: 3 }, sentimentTrend: "Improving",
+          topDriver: "Strong overall partner sentiment and executive sponsorship",
+          themes: ["Strong overall partner sentiment and executive sponsorship", "Recent service reviews were broadly positive across teams", "Open role coverage and staffing continuity being actively managed", "Recurring named-engineer process/attendance/productivity concerns"],
+          talkingPoints: ["F12 appears healthy with strong recent service review feedback, multiple promoter NPS responses, and account-team ground truth marked Green/Low cancel risk..", "Some isolated engineer-specific coaching items remain, but there are no broad service escalations and recent reviews emphasize stability, improvement, and positive contribution across teams.."],
           lastCall: "2026-06-10", callsAnalyzed: 5 },
-        { name: "RedHelm - 1Path", slug: "redhelm-1path", churnRisk: 29, csatPositivePct: 98, reviewVolume: 133,
-          sentiment: { positive: 98, neutral: 2, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Recent executive/account signals are positive", "Operational transition risk from NOC offboarding", "Open staffing and coverage planning needs"],
-          talkingPoints: ["Relationship appears healthy with renewed contracts, a strong recent QBR, closed SIPs, and consistently positive CSAT/NPS..", "Residual risk is mainly operational from recent NOC offboarding, open positions, and a few follow-up items around access, KPI visibility, and staffing coverage.."],
+        { name: "RedHelm - 1Path", slug: "redhelm-1path", churnRisk: 32, csatPositivePct: 98, reviewVolume: 133,
+          sentiment: { positive: 98, neutral: 2, negative: 0 }, sentimentTrend: "Stable",
+          topDriver: "Strong customer sentiment and service satisfaction",
+          themes: ["Strong customer sentiment and service satisfaction", "Account team indicates moderate but not acute churn exposure", "Recent business review and contract renewal are positive retention signals", "Open staffing and coverage planning create delivery risk"],
+          talkingPoints: ["Relationship health appears generally positive with renewed contracts, a recently strong QBR, closed SIPs, and consistently strong CSAT/NPS sentiment..", "Residual churn risk remains from NOC offboarding, open staffing needs, and several operational improvement items that were still being worked through in recent service reviews.."],
           lastCall: "2026-06-07", callsAnalyzed: 2 },
         { name: "Proda Technologies", slug: "proda-technologies", churnRisk: 72, csatPositivePct: 88, reviewVolume: 8,
-          sentiment: { positive: 88, neutral: 12, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Account officially marked Red with high cancel risk tied to project issues",
-          themes: ["Account officially marked Red with high cancel risk tied to project issues", "Active service improvement plan / escalation exists", "Recent delivery miss from named engineer created concern", "Open ITAM and hardware logistics issues remain unresolved"],
-          talkingPoints: ["The relationship shows strong overall advocacy and positive engineer feedback, but churn risk is elevated because the account is explicitly flagged Red/High risk due to unresolved Hardware Project issues and recent delivery inconsistency..", "Recent service notes indicate some operational stabilization, but open ITAM and logistics actions still need to be closed.."],
+          sentiment: { positive: 88, neutral: 12, negative: 0 }, sentimentTrend: "Stable",
+          topDriver: "Account officially marked Red with high cancel risk tied to hardware project issues",
+          themes: ["Account officially marked Red with high cancel risk tied to hardware project issues", "Active service improvement/escalation in place", "Open operational issues in ITAM and hardware logistics", "Recent delivery inconsistency from named engineer"],
+          talkingPoints: ["The relationship shows strong historical satisfaction and recent praise for engineers, but churn risk remains high because the account is explicitly flagged Red due to unresolved issues in the Hardware Project and an active SIP..", "Operational concerns around ITAM/hardware logistics and at least one recent delivery miss indicate execution risk despite otherwise positive sentiment.."],
           lastCall: "2026-06-02", callsAnalyzed: 1 },
-        { name: "Amoskeag Network Consulting Group LLC", slug: "amoskeag-network-consulting-group-llc", churnRisk: 38, csatPositivePct: 100, reviewVolume: 16,
+        { name: "Amoskeag Network Consulting Group LLC", slug: "amoskeag-network-consulting-group-llc", churnRisk: 34, csatPositivePct: 100, reviewVolume: 16,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Active staffing transition",
-          themes: ["Active staffing transition", "Formal service improvement oversight", "Strong customer satisfaction", "Strong advocacy and communication feedback"],
-          talkingPoints: ["Overall sentiment is positive with perfect CSAT and promoter NPS, but churn risk is elevated to medium due to a staffing replacement being actively managed under a SIP..", "The key near-term risk is whether the replacement engineer completes training smoothly without disrupting service confidence.."],
+          topDriver: "Operational transition with replacement engineer",
+          themes: ["Operational transition with replacement engineer", "Training progress needs monitoring", "Strong partner satisfaction and communication", "Consistently positive support experience"],
+          talkingPoints: ["Overall sentiment is positive with perfect CSAT and promoter NPS, but the account carries a medium churn flag due to a staff replacement and the need to ensure successful training progress..", "Current risk appears operational rather than relationship-driven.."],
           lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "Granite Networks Inc", slug: "granite-networks-inc", churnRisk: 24, csatPositivePct: 100, reviewVolume: 49,
+        { name: "Granite Networks Inc", slug: "granite-networks-inc", churnRisk: 22, csatPositivePct: 100, reviewVolume: 49,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
           topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Direct positive partner feedback on service quality", "Engineer performance development is being actively managed", "Named engineer coaching and onboarding gaps"],
-          talkingPoints: ["Granite Networks appears healthy with consistently strong CSAT/NPS and explicit praise for ITBD responsiveness and partnership..", "Risk is limited to engineer performance development and coaching items around Anton/Sophia, but the account remains in Hypercare Green with low cancel risk.."],
+          themes: ["Strong customer satisfaction and advocacy", "Direct positive partner feedback on service quality", "Active engineer performance development focus", "Coaching needed for named engineers and service process discipline"],
+          talkingPoints: ["Granite Networks appears healthy with consistently strong CSAT/NPS and explicit praise for the NOC team..", "The main risk is limited to engineer performance development and coaching, particularly around Anton/Sophia, but current account-team flags remain low risk and hypercare green.."],
           lastCall: "2026-06-07", callsAnalyzed: 1 },
         { name: "Secure Future Tech Solutions", slug: "secure-future-tech-solutions", churnRisk: 42, csatPositivePct: 100, reviewVolume: 29,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Declining",
-          topDriver: "Engineer offboarding tied to partner concerns",
-          themes: ["Engineer offboarding tied to partner concerns", "Need to prove value with remaining engineer", "Strong customer satisfaction and advocacy", "Recent delivery performance exceeded expectations"],
-          talkingPoints: ["Overall sentiment is very positive with perfect CSAT/NPS and strong April performance, but churn risk is elevated by the planned offboarding of Dave due to attendance and overhead concerns..", "The relationship appears stable-to-slightly declining because the partner is reducing engineer coverage and ITBD is now reliant on Christian maintaining value independently.."],
+          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
+          topDriver: "Engineer offboarding creates account instability",
+          themes: ["Engineer offboarding creates account instability", "Named-engineer performance concerns impacted trust/value perception", "Need to sustain value with remaining engineer", "Strong customer satisfaction offsets churn pressure"],
+          talkingPoints: ["Overall partner sentiment is very positive with strong CSAT/NPS and recent praise for both engineers, but churn risk is elevated by the planned offboarding of Dave due to attendance and overhead concerns..", "The relationship appears stable today, with risk concentrated around proving ongoing value and utilization after Dave’s June 12 departure.."],
           lastCall: "2026-05-05", callsAnalyzed: 1 },
         { name: "Atlantic PC Inc", slug: "atlantic-pc-inc", churnRisk: 8, csatPositivePct: 100, reviewVolume: 12,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong partner advocacy and satisfaction",
-          themes: ["Strong partner advocacy and satisfaction", "Consistently positive service feedback", "Recent operational performance improved", "Only minor watch item was utilization softness"],
-          talkingPoints: ["Atlantic PC appears very healthy, with strong recent satisfaction signals and positive service-review notes indicating expectations are being met or exceeded..", "Minor utilization variability was acknowledged and improved in the latest review, with no active partner complaints or escalation signals.."],
+          topDriver: "Strong partner satisfaction and advocacy",
+          themes: ["Strong partner satisfaction and advocacy", "Consistently positive service feedback", "Named engineer performance is viewed positively", "Operational performance improved in the most recent review"],
+          talkingPoints: ["Atlantic PC appears very healthy, with strong positive feedback, perfect recent CSAT/NPS, and no service concerns raised in the latest reviews..", "Performance trends are stable to improving, and the few open items are administrative rather than risk-related.."],
           lastCall: "2026-05-20", callsAnalyzed: 2 },
         { name: "Continuous Networks", slug: "continuous-networks", churnRisk: 12, csatPositivePct: 100, reviewVolume: 45,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
           topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Highly positive qualitative feedback on team quality", "Named engineers are seen as valued assets", "Recent staffing transition requires monitoring"],
-          talkingPoints: ["Continuous Networks appears healthy with consistently strong partner sentiment, perfect CSAT distribution, and all recorded NPS responses in promoter range..", "The only notable watch item is the recent engineer transition tied to Kelly's maternity leave, but the account team still flags overall risk as low/green.."],
+          themes: ["Strong customer satisfaction and advocacy", "Repeated praise for ITBD team quality and partnership value", "Named engineers viewed as valued assets", "Recent staffing transition creates minor continuity risk"],
+          talkingPoints: ["Continuous Networks appears healthy with consistently strong CSAT/NPS sentiment and multiple explicit endorsements of the ITBD team..", "The only notable risk is the recent staffing transition related to Kelly's maternity replacement, but the account is currently flagged green/low risk.."],
           lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "APM IT Solutions", slug: "apm-it-solutions", churnRisk: 62, csatPositivePct: 100, reviewVolume: 0,
+        { name: "APM IT Solutions", slug: "apm-it-solutions", churnRisk: 61, csatPositivePct: 100, reviewVolume: 0,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Active account risk and hypercare status",
-          themes: ["Active account risk and hypercare status", "Customer experience and setup issues remain unresolved", "Limited operational visibility requested by partner", "Project execution delays on audit work"],
-          talkingPoints: ["The relationship shows moderate churn risk driven by active hypercare status and partner concerns around asset setup, customer experience, and delayed project execution..", "Recent notes indicate collaboration is ongoing, but several key visibility and access improvements remain unresolved with no firm due dates.."],
+          topDriver: "Account is in hypercare with explicit customer-experience concerns",
+          themes: ["Account is in hypercare with explicit customer-experience concerns", "Operational visibility gaps are affecting confidence", "Access/setup dependencies remain unresolved", "Project execution delays on customer-facing compliance work"],
+          talkingPoints: ["APM IT Solutions shows moderate churn risk driven by active hypercare, account-team concern over asset setup and customer experience, and unresolved visibility/access issues impacting trust and execution..", "Recent notes indicate collaboration is continuing, but key actions remain open and project delays around the Mercer Street Friends audit are a material concern.."],
           lastCall: "2026-05-18", callsAnalyzed: 1 },
         { name: "Matador Networks", slug: "matador-networks", churnRisk: 12, csatPositivePct: 100, reviewVolume: 51,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently strong customer advocacy and satisfaction",
-          themes: ["Consistently strong customer advocacy and satisfaction", "Positive feedback on named engineers and leadership support", "ITBD seen as operationally important during transitions", "Governance gap due to overdue QBR"],
-          talkingPoints: ["Matador Networks appears healthy with consistently strong promoter feedback, perfect recorded CSAT, and explicit praise for both engineers and ITBD leadership..", "The only notable concern is an overdue QBR and a pending request to help define recommended KPIs, but there are no active relationship escalations or churn signals.."],
+          topDriver: "Consistently strong customer satisfaction",
+          themes: ["Consistently strong customer satisfaction", "Direct praise for engineers and leadership", "Operational support viewed as business-critical", "Minor governance gap from overdue QBR"],
+          talkingPoints: ["Matador Networks appears healthy with consistently strong CSAT/NPS and repeated praise for both dedicated engineers and ITBD leadership support..", "The only notable gap is an overdue QBR and a pending request to help define an ITBD-recommended KPI.."],
           lastCall: "2026-06-01", callsAnalyzed: 0 },
         { name: "Vitis Tech", slug: "vitis-tech", churnRisk: 12, csatPositivePct: 100, reviewVolume: 13,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Recent service review reported no delivery concerns", "New engineers are ramping and not yet fully productive", "Prior concern on timeliness appears to be improving"],
-          talkingPoints: ["The partnership appears healthy with strong CSAT/NPS, no active escalations, and positive feedback on account management and service delivery..", "The only watchpoint is that newly onboarded engineers are still ramping and need continued coaching to reach full productivity.."],
+          topDriver: "Strong partner satisfaction and advocacy",
+          themes: ["Strong partner satisfaction and advocacy", "No active delivery risk or escalation", "Successful onboarding and positive view of replacements", "New engineers not yet at full productivity"],
+          talkingPoints: ["The Vitis Tech relationship appears healthy with strong CSAT/NPS, no active escalations, and positive feedback on account management and service delivery..", "The only notable watchpoint is that newly onboarded engineers are still ramping and need continued coaching to reach full productivity over the next 60-90 days.."],
           lastCall: "2026-06-09", callsAnalyzed: 1 },
-        { name: "Community IT", slug: "community-it", churnRisk: 32, csatPositivePct: 97, reviewVolume: 77,
+        { name: "Community IT", slug: "community-it", churnRisk: 38, csatPositivePct: 97, reviewVolume: 77,
           sentiment: { positive: 97, neutral: 3, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong overall partner satisfaction",
-          themes: ["Strong overall partner satisfaction", "Named engineer quality concerns requiring coaching", "Open coverage and staffing continuity risk", "Recent operational improvement in utilization and billing accuracy"],
-          talkingPoints: ["Community IT appears generally satisfied with ITBD, supported by consistently strong NPS/CSAT and recent notes indicating performance improvement..", "Churn risk is moderated by account-team flagging around Sandro's flex agreement and several open coaching/coverage action items tied to engineer performance and staffing continuity.."],
+          topDriver: "Strong partner satisfaction and advocacy",
+          themes: ["Strong partner satisfaction and advocacy", "Account team flags medium cancel risk tied to contract/flex arrangement", "Named engineer performance and coaching needs remain active", "Some service quality concerns on attention to detail and communication"],
+          talkingPoints: ["Community IT appears generally healthy with strong CSAT/NPS sentiment and repeated praise for ITBD management and engineers, but the account still carries medium cancel risk tied to Sandro's Flex Agreement and there are active coaching/performance gaps for named engineers..", "Recent reviews show improvement in utilization and billing accuracy, though several operational and training action items remain open or TBD.."],
           lastCall: "2026-05-20", callsAnalyzed: 4 },
-        { name: "PEI", slug: "pei", churnRisk: 28, csatPositivePct: 100, reviewVolume: 12,
+        { name: "PEI", slug: "pei", churnRisk: 32, csatPositivePct: 100, reviewVolume: 12,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Exceptionally strong customer advocacy and partnership sentiment",
-          themes: ["Exceptionally strong customer advocacy and partnership sentiment", "Utilization below target with explicit staffing scrutiny risk", "Repeated need to improve time tracking and utilization accuracy", "Ticket quality and governance issues surfaced recently"],
-          talkingPoints: ["PEI appears healthy with very strong promoter-only NPS and repeated praise for the ITBD team as a true partner..", "The main risk is operational: recent service reviews repeatedly highlight low/inaccurate utilization and ticket hygiene concerns that could invite stakeholder scrutiny if not corrected.."],
+          topDriver: "Exceptionally strong partner advocacy and satisfaction",
+          themes: ["Exceptionally strong partner advocacy and satisfaction", "Utilization below target is an active commercial risk", "Ticket hygiene and time-entry governance need improvement", "No named-engineer performance issue; one engineer explicitly cleared and another praised"],
+          talkingPoints: ["PEI appears generally healthy with very strong promoter NPS and repeated praise for the engineering team and partnership..", "The main churn risk is operational: persistent utilization/time-entry compliance issues and ticket hygiene concerns could trigger stakeholder scrutiny on staffing if not corrected.."],
           lastCall: "2026-04-22", callsAnalyzed: 4 },
         { name: "Prevare LLC", slug: "prevare-llc", churnRisk: 14, csatPositivePct: 93, reviewVolume: 16,
           sentiment: { positive: 93, neutral: 7, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently positive partner sentiment toward named engineer",
-          themes: ["Consistently positive partner sentiment toward named engineer", "Strong customer satisfaction signals", "Open KPI/reporting setup dependency has lingered across reviews", "Minor quality/process coaching needed for engineer execution"],
-          talkingPoints: ["Prevare appears healthy with repeated positive partner feedback for Samreen, strong CSAT/NPS, and no account-team churn flags..", "Minor delivery/process items remain open around KPI reporting, ticket detail, and proactive escalation, but there is no evidence of material dissatisfaction.."],
+          topDriver: "Consistently positive engineer feedback",
+          themes: ["Consistently positive engineer feedback", "Strong customer satisfaction signals", "Minor documentation quality slippage", "KPI reporting setup still incomplete"],
+          talkingPoints: ["Relationship health appears strong with repeated positive partner feedback for Samreen and no meaningful churn indicators in recent reviews..", "Minor operational improvement items remain open around KPI reporting, ticket note detail, and proactive escalation, but they are not presented as dissatisfaction drivers.."],
           lastCall: "2026-05-22", callsAnalyzed: 5 },
         { name: "Perfect Cloud Solutions", slug: "perfect-cloud-solutions", churnRisk: 34, csatPositivePct: 100, reviewVolume: 14,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
           topDriver: "Recent agreement renewal supports retention",
-          themes: ["Recent agreement renewal supports retention", "Account team still flags medium cancel risk", "Business contraction may reduce account stability", "Customer sentiment is positive overall"],
-          talkingPoints: ["The relationship appears generally healthy with strong CSAT, no detractors, and a recent agreement renewal..", "Risk remains moderate because the account team explicitly flags medium cancel risk and notes reduced business volume leading to the temporary resource ending on 05/31.."],
+          themes: ["Recent agreement renewal supports retention", "Consistently positive customer satisfaction", "Positive advocacy but mostly passive NPS mix", "Business contraction reducing service demand"],
+          talkingPoints: ["The relationship appears generally healthy with a recent renewal, all-positive CSAT, and no NPS detractors..", "Churn risk remains moderate because the account team explicitly flags medium cancel risk and notes reduced business volume that already led to ending a temporary resource.."],
           lastCall: "2026-06-01", callsAnalyzed: 0 },
         { name: "Dependable Solutions", slug: "dependable-solutions", churnRisk: 6, csatPositivePct: 100, reviewVolume: 32,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently strong NPS sentiment",
-          themes: ["Consistently strong NPS sentiment", "Perfect CSAT mix in rated responses", "Positive qualitative feedback on responsiveness and communication", "Partner views ITBD as integrated and dependable"],
-          talkingPoints: ["Dependable Solutions appears very healthy with consistently strong satisfaction signals and no active risk flags, SIPs, or complaints..", "Recent feedback describes ITBD as reliable, responsive, and embedded as part of the partner's team.."],
+          topDriver: "Consistently strong customer advocacy",
+          themes: ["Consistently strong customer advocacy", "Perfect CSAT profile among rated responses", "High praise for service quality and responsiveness", "Strong embedded-team relationship"],
+          talkingPoints: ["Dependable Solutions appears very healthy with no account-team churn flags and consistently excellent customer sentiment..", "CSAT and NPS are uniformly positive, with repeated praise for responsiveness, communication, reliability, and team integration.."],
           lastCall: "2026-06-01", callsAnalyzed: 0 },
         { name: "Pegasus Technology Solutions", slug: "pegasus-technology-solutions", churnRisk: 18, csatPositivePct: 100, reviewVolume: 42,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong overall customer satisfaction",
-          themes: ["Strong overall customer satisfaction", "Promoter-heavy NPS with repeated praise for engineer quality and responsiveness", "Recent procedural complaint from a detractor", "Account team reports no active delivery issues"],
-          talkingPoints: ["Overall relationship health appears strong, with consistently positive CSAT, a strong promoter-heavy NPS profile, and account-team flags indicating low cancel risk..", "The main watchout is a recent detractor citing procedure adherence issues in the NOC, but this appears isolated versus the broader positive feedback trend.."],
+          topDriver: "Strong positive customer satisfaction",
+          themes: ["Strong positive customer satisfaction", "Overwhelmingly positive NPS and partner advocacy", "Recent operational concern around procedure adherence", "Account team indicates low current churn risk"],
+          talkingPoints: ["Relationship health appears strong overall, with green account status, a closed SIP, perfect CSAT distribution among rated surveys, and predominantly promoter NPS feedback praising responsiveness and engineer quality..", "The main caution is a recent detractor comment citing procedure failures in the NOC that reportedly caused downstream client SLA breaches.."],
           lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "Boomtown CIO", slug: "boomtown-cio", churnRisk: 32, csatPositivePct: 100, reviewVolume: 27,
+        { name: "Boomtown CIO", slug: "boomtown-cio", churnRisk: 28, csatPositivePct: 100, reviewVolume: 27,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
           topDriver: "Consistently strong partner sentiment and advocacy",
-          themes: ["Consistently strong partner sentiment and advocacy", "Named engineer receiving repeated positive feedback", "Utilization remains materially below agreed target", "Some planned enablement/work-expansion actions are slipping"],
-          talkingPoints: ["The relationship appears healthy with strong recent QBR/service-call feedback, perfect CSAT/NPS sentiment, and explicit praise for Varun and the partnership..", "Churn risk is moderated by persistent under-utilization versus the 80% target and a few development/action items that have slipped or remain open.."],
+          themes: ["Consistently strong partner sentiment and advocacy", "Engineer performance is viewed positively with no named-resource complaints", "Utilization remains materially below agreed target, creating commercial risk", "Some agreed development and workload actions are slipping or still unresolved"],
+          talkingPoints: ["The relationship appears healthy with consistently strong promoter feedback, perfect CSAT, and repeated praise for Varun’s responsiveness and ownership..", "Primary risk is commercial/utilization-related rather than service-quality-related, as Flex alignment and below-target utilization remain open themes.."],
           lastCall: "2026-05-31", callsAnalyzed: 3 },
-        { name: "CW Now", slug: "cw-now", churnRisk: 52, csatPositivePct: 100, reviewVolume: 0,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "No documented customer sentiment data",
-          themes: ["No documented customer sentiment data", "No account-team risk classification", "Lack of recorded follow-up plan"],
-          talkingPoints: ["There is insufficient recent partner feedback, service-review content, or account-team risk data to clearly assess relationship health..", "The absence of CSAT/NPS signals and documented next steps creates uncertainty rather than confirmed churn risk.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
         { name: "Networking Now", slug: "networking-now", churnRisk: 8, csatPositivePct: 100, reviewVolume: 20,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Recent renewal and positive QBR outcome",
-          themes: ["Recent renewal and positive QBR outcome", "Strong satisfaction signals with named engineer", "Consistently positive survey results", "No formal service concerns or escalation activity"],
-          talkingPoints: ["Relationship health is strong with renewal completed at a 10% revised rate, consistently positive service feedback, and no active risk flags or service issues..", "The only recent negative signal is a missed June service call, which appears administrative rather than dissatisfaction-driven.."],
+          topDriver: "Recent successful renewal and green account status",
+          themes: ["Recent successful renewal and green account status", "Consistently positive engineer feedback", "Strong customer satisfaction signals", "Minor engagement risk from missed recent review"],
+          talkingPoints: ["The relationship appears healthy with renewal completed at a 10% revised rate, consistently positive CSAT/NPS, and repeated positive feedback for Harley..", "The only minor caution is a missed June service call and several open/ongoing action items, but there is no evidence of service dissatisfaction or churn intent.."],
           lastCall: "2026-06-09", callsAnalyzed: 3 },
         { name: "Galactica Cybersecurity", slug: "galactica-cybersecurity", churnRisk: 12, csatPositivePct: 100, reviewVolume: 5,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently positive named-engineer feedback",
-          themes: ["Consistently positive named-engineer feedback", "Positive customer satisfaction signals", "Stable delivery and client confidence", "KPI framework remains undefined"],
-          talkingPoints: ["Relationship health appears strong with repeated positive feedback for Kasey, positive CSAT, and no active account-team risk flags or SIP/PIP concerns..", "Minor follow-through gaps remain around KPI definition and a slipped certification deadline, but these do not currently indicate churn pressure.."],
+          topDriver: "Consistently positive engineer feedback",
+          themes: ["Consistently positive engineer feedback", "Positive customer satisfaction signals", "Stable delivery and client confidence", "KPI framework still not finalized"],
+          talkingPoints: ["Relationship health appears strong with repeated positive feedback for Kasey, positive CSAT, and no active risk flags or service concerns..", "The only mild gaps are administrative follow-through on KPI definition and a slipped certification target, neither of which currently indicates churn risk.."],
           lastCall: "2026-04-19", callsAnalyzed: 4 },
-        { name: "ICSI", slug: "icsi", churnRisk: 18, csatPositivePct: 100, reviewVolume: 22,
+        { name: "ICSI", slug: "icsi", churnRisk: 22, csatPositivePct: 100, reviewVolume: 22,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Positive relationship with named engineers", "Recent renewal completed", "Recent operational concern with named engineer attendance/reporting"],
-          talkingPoints: ["ICSI appears healthy with renewal completed, strong CSAT/NPS, and repeated positive feedback about key engineers Hayes and Sushant..", "The main watchpoint is a recent operational concern around Hayes' stand-up attendance and validation of utilization/reporting data, but there is no evidence of broader dissatisfaction.."],
+          topDriver: "Strong renewal and positive account health flag",
+          themes: ["Strong renewal and positive account health flag", "Consistently positive customer feedback", "Named-engineer operational concern", "Some historical technician friction"],
+          talkingPoints: ["ICSI appears healthy with renewal completed, strong CSAT/NPS, and repeated positive feedback about key engineers Hayes and Sushant..", "The main watchout is a recent operational concern around Hayes' stand-up attendance and validation of utilization/reporting data, but there is no indication of broader dissatisfaction.."],
           lastCall: "2026-05-17", callsAnalyzed: 2 },
-        { name: "Infopathways", slug: "infopathways", churnRisk: 9, csatPositivePct: 100, reviewVolume: 42,
+        { name: "Infopathways", slug: "infopathways", churnRisk: 10, csatPositivePct: 100, reviewVolume: 42,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
           topDriver: "Consistently strong partner sentiment toward named engineers",
-          themes: ["Consistently strong partner sentiment toward named engineers", "Excellent customer satisfaction and advocacy metrics", "Account team indicates no current churn concern", "Minor process gap in triage/classification could affect billing accuracy"],
-          talkingPoints: ["The Infopathways relationship appears very healthy, with repeated positive feedback for named engineers, perfect CSAT distribution, and all recorded NPS responses in promoter range..", "Minor operational improvement areas exist around triage accuracy and completing capability-development actions, but there are no active churn flags or service recovery concerns.."],
+          themes: ["Consistently strong partner sentiment toward named engineers", "Excellent customer satisfaction and advocacy", "Account team reports no churn concern", "Minor process gap in ticket classification affecting billing accuracy"],
+          talkingPoints: ["The Infopathways relationship appears very healthy, with repeated positive feedback for named engineers, perfect CSAT to date, and all recorded NPS responses in promoter range..", "Minor operational improvement areas exist around triage accuracy and capability-development follow-through, but there are no active churn flags or service recovery concerns.."],
           lastCall: "2026-04-19", callsAnalyzed: 4 },
         { name: "NerdsToGo", slug: "nerdstogo", churnRisk: 38, csatPositivePct: 100, reviewVolume: 12,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong end-customer satisfaction and advocacy",
-          themes: ["Strong end-customer satisfaction and advocacy", "High reliance on and praise for named engineer", "Account team flagged churn risk tied to business loss", "Active service improvement process/open internal risk indicator"],
-          talkingPoints: ["Overall relationship sentiment appears positive, supported by perfect CSAT/NPS and strong praise for named engineer Tanmoy..", "Churn risk remains moderate due to the account team's amber flag, stated business loss, an open SIP, and limited recent service-review substance with a QBR still pending.."],
+          topDriver: "Business loss flagged by account team",
+          themes: ["Business loss flagged by account team", "Open service improvement/escalation process", "Strong partner satisfaction and advocacy", "Named engineer highly valued by partner"],
+          talkingPoints: ["Relationship sentiment appears positive based on consistently strong CSAT/NPS and specific praise for engineer Tanmoy, but account-level churn risk remains elevated to Medium due to business loss and an open SIP..", "Recent review notes provide limited operational insight and show a missed/awaiting connection for the service call.."],
           lastCall: "2026-04-08", callsAnalyzed: 1 },
         { name: "CMIT Solutions Stamford", slug: "cmit-solutions-stamford", churnRisk: 24, csatPositivePct: 88, reviewVolume: 15,
           sentiment: { positive: 88, neutral: 12, negative: 0 }, sentimentTrend: "Improving",
           topDriver: "Recent performance improvement acknowledged by partner",
-          themes: ["Recent performance improvement acknowledged by partner", "Ongoing concerns about ticket comprehension and documentation clarity", "Partner wants stronger coaching and development support for named engineer", "Open expectations on CDP, documentation structure, and ownership expansion"],
-          talkingPoints: ["Relationship health is positive with no active churn flags, strong CSAT/NPS, and recent service reviews noting clear improvement in Nick’s performance..", "Residual risk remains around documentation clarity, coaching expectations, and follow-through on development and ownership action items.."],
+          themes: ["Recent performance improvement acknowledged by partner", "Earlier concerns on ticket comprehension and documentation clarity", "Partner wants stronger coaching and development support", "Open expectations around ownership expansion and CDP delivery"],
+          talkingPoints: ["Overall relationship health is good with no active cancellation risk, positive CSAT/NPS, and recent service reviews noting clear improvement in Nick’s performance..", "Residual concerns remain around coaching, documentation quality, and follow-through on development/ownership expectations, but recent sentiment is favorable.."],
           lastCall: "2026-04-22", callsAnalyzed: 2 },
-        { name: "Vistitude", slug: "vistitude", churnRisk: 18, csatPositivePct: 87, reviewVolume: 36,
+        { name: "Vistitude", slug: "vistitude", churnRisk: 14, csatPositivePct: 87, reviewVolume: 36,
           sentiment: { positive: 87, neutral: 13, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong recent partner sentiment and no delivery concerns",
-          themes: ["Strong recent partner sentiment and no delivery concerns", "Renewal completed with price increase accepted", "Broadly positive customer satisfaction and NPS history", "Named engineer performance development still being monitored"],
-          talkingPoints: ["The relationship appears healthy with strong recent positive feedback on Ankit, stable service delivery, and an already completed renewal despite a modest rate increase..", "Minor coaching areas remain around Ankit’s strategic approach, billable utilization, and consistency on advanced ticket handling, but there are no active escalation or churn signals.."],
+          topDriver: "Strong recent engineer feedback and stable service delivery",
+          themes: ["Strong recent engineer feedback and stable service delivery", "Account renewed, reducing immediate churn risk", "Very strong customer advocacy in NPS", "Named engineer has some recent performance coaching needs"],
+          talkingPoints: ["Vistitude appears healthy with strong recent partner feedback, no active delivery escalations, and a completed renewal despite minor coaching points around Ankit’s strategic ownership and productivity consistency..", "Overall sentiment is positive and stable-to-improving, with relationship strength supported by very strong NPS and no detractor signals.."],
           lastCall: "2026-04-07", callsAnalyzed: 1 },
         { name: "Mission Technology", slug: "mission-technology", churnRisk: 18, csatPositivePct: 100, reviewVolume: 0,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "No active risk flags from account team",
-          themes: ["No active risk flags from account team", "No documented negative customer feedback", "No NPS detractor signals", "Insufficient review-note evidence"],
-          talkingPoints: ["There are no account-team risk flags, CSAT/NPS responses, or service-review notes provided indicating active dissatisfaction or churn risk..", "Confidence is limited because there is effectively no partner feedback or meeting evidence to assess recent relationship health.."],
+          topDriver: "No active account risk flags",
+          themes: ["No active account risk flags", "No reported customer dissatisfaction signals", "Insufficient recent service-review evidence"],
+          talkingPoints: ["There are no documented risk flags, CSAT/NPS responses, or service-review notes/decks provided for this partner..", "With no negative evidence and no engagement history to assess, churn risk appears low but confidence is limited by the absence of data.."],
           lastCall: "2026-06-01", callsAnalyzed: 0 },
+        { name: "C&W Computers", slug: "c-w-computers", churnRisk: 18, csatPositivePct: 100, reviewVolume: 20,
+          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
+          topDriver: "Strong customer satisfaction and advocacy",
+          themes: ["Strong customer satisfaction and advocacy", "Named engineer receiving repeated positive feedback", "Some concerns on proactive communication of available capacity", "Process improvement requests on documentation and closure discipline"],
+          talkingPoints: ["The relationship appears healthy with consistently strong CSAT/NPS and repeated positive feedback for Von..", "Minor operational risks remain around proactive capacity communication, documentation, and several open follow-ups tied to Defender planning and KPI/reporting alignment.."],
+          lastCall: "2026-05-31", callsAnalyzed: 2 },
         // ---- END real partners ----
-        { name: "MSP Corp", slug: "mspcorp", churnRisk: 76, csatPositivePct: 89, reviewVolume: 109,
-          sentiment: { positive: 89, neutral: 10, negative: 1 }, sentimentTrend: "Stable",
-          topDriver: "Active performance management across multiple named resources",
-          themes: ["Active performance management across multiple named resources",
-                   "Contract scope reduction / cancellation signal already received",
-                   "Recent negative CSAT tied to underperforming technician",
-                   "Repeated neutral feedback on quality and process adherence",
-                   "Mixed but improving operational feedback in latest reviews"],
-          talkingPoints: ["High churn risk from active performance-management cases and a contract cancellation signal already received.",
-                          "Recent calls show some stabilization and pockets of positive CSAT, but unresolved action items keep the account fragile."],
-          lastCall: "2026-06-03", callsAnalyzed: 2 },
+        { name: "MSP Corp", slug: "mspcorp", churnRisk: 76, csatPositivePct: 88, reviewVolume: 115,
+          sentiment: { positive: 88, neutral: 11, negative: 1 }, sentimentTrend: "Stable",
+          topDriver: "Multiple active performance escalations on named engineers",
+          themes: ["Multiple active performance escalations on named engineers", "Commercial/relationship deterioration signaled by cancellation notice", "Replacement delays and staffing instability", "Recent customer feedback cites compliance and recurring coaching issues"],
+          talkingPoints: ["MSP Corp shows mixed service health: some pods and individual engineers are improving, but the relationship remains materially at risk due to multiple active SIPs/PIPs, named-resource performance concerns, and an AP agreement cancellation already received..", "Recent feedback is somewhat better operationally, but unresolved staffing and compliance issues keep churn risk elevated.."],
+          lastCall: "2026-06-08", callsAnalyzed: 2 },
 
-        { name: "Milner", slug: "milner", churnRisk: 61, csatPositivePct: 93, reviewVolume: 109,
-          sentiment: { positive: 93, neutral: 6, negative: 1 }, sentimentTrend: "Declining",
-          topDriver: "Renewal and resource alignment risk",
-          themes: ["Renewal and resource alignment risk",
-                   "Recent named-engineer performance complaints",
-                   "Serious technical quality concerns on specific engineer",
-                   "Mixed but still positive customer sentiment",
-                   "Open action around role alignment without firm due dates"],
-          talkingPoints: ["Flagged on renewal and resource-alignment risk plus repeated named-engineer performance issues, despite strong NPS.",
-                          "Consistency and follow-through gaps are straining the relationship; leadership is reviewing role alignment."],
-          lastCall: "2026-05-20", callsAnalyzed: 1 },
+        { name: "Milner", slug: "milner", churnRisk: 27, csatPositivePct: 93, reviewVolume: 114,
+          sentiment: { positive: 93, neutral: 6, negative: 1 }, sentimentTrend: "Improving",
+          topDriver: "Strong overall customer satisfaction and positive partner sentiment",
+          themes: ["Strong overall customer satisfaction and positive partner sentiment", "Recent service review indicates performance stabilization", "Named engineer performance concerns have been recurring", "Escalation/process adherence still needs reinforcement"],
+          talkingPoints: ["Relationship health appears generally stable to positive, with strong CSAT/NPS, improving engineer performance, and agreement to retain previously at-risk resources..", "Main watchouts are recurring named-engineer execution/escalation concerns and an open renewal process that still needs follow-through.."],
+          lastCall: "2026-06-03", callsAnalyzed: 1 },
 
-        { name: "Logically", slug: "logically", churnRisk: 34, csatPositivePct: 95, reviewVolume: 509,
-          sentiment: { positive: 95, neutral: 4, negative: 1 }, sentimentTrend: "Stable",
-          topDriver: "Named engineer performance issues remain active",
-          themes: ["Named engineer performance issues remain active",
-                   "Recent client complaints about reliability and coverage",
-                   "Formal performance management has been needed for multiple resources",
-                   "Open/ongoing corrective actions and replacements indicate unresolved execution gaps",
-                   "Relationship strength and executive advocacy offset churn risk"],
-          talkingPoints: ["Broadly satisfied with strong NPS, but recurring engineer-specific performance concerns are driving amber health.",
-                          "Prior performance-management activity and reliability/coverage complaints keep churn risk above low."],
-          lastCall: "2026-05-13", callsAnalyzed: 4 },
+        { name: "Logically", slug: "logically", churnRisk: 33, csatPositivePct: 95, reviewVolume: 514,
+          sentiment: { positive: 95, neutral: 4, negative: 1 }, sentimentTrend: "Improving",
+          topDriver: "Engineer-specific performance issues required formal intervention",
+          themes: ["Engineer-specific performance issues required formal intervention", "Named engineer reliability/availability complaints impacted confidence", "Recent service reviews show measurable operational improvement", "Some action items remain ongoing or without firm due dates"],
+          talkingPoints: ["Logically remains broadly healthy with strong NPS, solid service reviews, and recent operational improvement, but relationship risk persists due to repeated engineer-specific performance and reliability concerns..", "Current churn risk appears contained rather than acute, with Mazid under SIP monitoring and backup coverage actions still being worked through.."],
+          lastCall: "2026-05-13", callsAnalyzed: 3 },
 
-        { name: "Alliance InfoSystems LLC", slug: "alliance-infosystems", churnRisk: 24, csatPositivePct: 45, reviewVolume: 11,
+        { name: "Alliance InfoSystems LLC", slug: "alliance-infosystems", churnRisk: 34, csatPositivePct: 45, reviewVolume: 11,
           sentiment: { positive: 45, neutral: 55, negative: 0 }, sentimentTrend: "Stable",
           topDriver: "Strong satisfaction with current engineers",
-          themes: ["Strong satisfaction with current engineers",
-                   "Partner business pressure may delay renewals",
-                   "Repeated concern about utilization reporting and feeling unheard",
-                   "Minor operational issue with named engineer time entry"],
-          talkingPoints: ["Healthy delivery; the main risk is commercial as the partner reviews renewals after losing a major client.",
-                          "Repeated requests for better utilization-reporting visibility."],
+          themes: ["Strong satisfaction with current engineers", "Partner business pressure affecting renewal timing", "Utilization and time-entry concerns around Vishnu remain active", "Passive NPS feedback indicates engagement and listening concerns"],
+          talkingPoints: ["Alliance InfoSystems is broadly satisfied with the current engineer team and recent service reviews are positive, but churn risk is moderated by the partner's loss of a major client, a renewal pushed by 3 months, and continued concern around Vishnu's utilization/time-entry visibility..", "Relationship sentiment remains mostly positive, though some feedback suggests meetings feel less valuable and the partner feels repeated on utilization topics.."],
           lastCall: "2026-06-02", callsAnalyzed: 2 },
 
         { name: "Computer Weavers", slug: "computer-weavers", churnRisk: 18, csatPositivePct: 100, reviewVolume: 9,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong named-engineer advocacy",
-          themes: ["Strong named-engineer advocacy",
-                   "Consistently positive customer satisfaction",
-                   "No active churn or escalation signals",
-                   "Partner disengagement from governance cadence",
-                   "Aging unresolved action item"],
-          talkingPoints: ["Strong, green relationship with consistently positive CSAT.",
-                          "Minor watchouts: a missed monthly call and a long-running open board-review action item."],
+          topDriver: "Strong partner advocacy for named engineer Arnie",
+          themes: ["Strong partner advocacy for named engineer Arnie", "Consistently positive CSAT with no negative feedback", "No active churn or escalation signals from account team", "Partner engagement gap on latest review cadence"],
+          talkingPoints: ["The relationship appears healthy with strong qualitative feedback for Arnie, no active escalations, and 9/9 positive CSAT..", "Some delivery/process signals need monitoring, including repeated low billable utilization, a long-running open action item, and the partner missing the latest service call.."],
           lastCall: "2026-02-02", callsAnalyzed: 1 },
 
-        { name: "Premier Technologies", slug: "premier-technologies", churnRisk: 18, csatPositivePct: 100, reviewVolume: 19,
+        { name: "Premier Technologies", slug: "premier-technologies", churnRisk: 18, csatPositivePct: 100, reviewVolume: 20,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong recent satisfaction with current engineer",
-          themes: ["Strong recent satisfaction with current engineer",
-                   "Account team flags relationship as healthy",
-                   "Historic named-engineer dissatisfaction remains a residual risk",
-                   "Open KPI/automation and migration action items are still not closed"],
-          talkingPoints: ["Healthy with strong recent reviews and praise for the current engineer.",
-                          "Residual risk from older engineer dissatisfaction and a few open action items."],
+          topDriver: "Recent partner sentiment is strongly positive toward the assigned engineer",
+          themes: ["Recent partner sentiment is strongly positive toward the assigned engineer", "Account team reports no active churn concern", "Historic named-engineer dissatisfaction exists but appears resolved after replacement", "Operational follow-through is slipping on KPI/reporting setup"],
+          talkingPoints: ["Premier Technologies appears healthy with consistently positive recent service reviews, strong feedback for Malkeet, and account-team risk flags marked Green with no cancel risk..", "Minor delivery/process gaps remain around KPI automation and an earlier email migration prerequisite miss, but these do not appear to be materially harming the relationship.."],
           lastCall: "2026-04-15", callsAnalyzed: 3 },
 
         { name: "RealTime, LLC", slug: "realtime-it", churnRisk: 16, csatPositivePct: 83, reviewVolume: 6,
-          sentiment: { positive: 83, neutral: 17, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong partner satisfaction with named engineer",
-          themes: ["Strong partner satisfaction with named engineer",
-                   "Consistently strong NPS with no detractors",
-                   "KPI/reporting framework still not finalized",
-                   "Some action items remain aging or awaiting partner completion",
-                   "Engineer needs growth in end-to-end ownership"],
-          talkingPoints: ["Consistently positive feedback and strong NPS with no detractors.",
-                          "Main watchout is delayed KPI/reporting alignment."],
-          lastCall: "2026-05-11", callsAnalyzed: 3 },
+          sentiment: { positive: 83, neutral: 17, negative: 0 }, sentimentTrend: "Improving",
+          topDriver: "Strong named-engineer satisfaction",
+          themes: ["Strong named-engineer satisfaction", "Consistently strong customer advocacy", "Performance concerns softened over time", "Some follow-through gaps on reporting/action items"],
+          talkingPoints: ["RealTime appears healthy with consistently positive partner feedback, strong NPS, and explicit confirmation that Vibhu is performing well and meeting expectations..", "Minor process friction around KPI/reporting finalization and one older unscheduled reporting item remain, but recent sentiment is positive and stable-to-improving.."],
+          lastCall: "2026-06-08", callsAnalyzed: 4 },
 
         { name: "Liongard", slug: "liongard", churnRisk: 14, csatPositivePct: 99, reviewVolume: 156,
           sentiment: { positive: 99, neutral: 1, negative: 0 }, sentimentTrend: "Improving",
           topDriver: "Strong partner satisfaction and advocacy",
-          themes: ["Strong partner satisfaction and advocacy",
-                   "Account team reports low churn risk and no escalations",
-                   "Open action items around ticket quality and escalation process",
-                   "Some feedback on communication/language and troubleshooting depth",
-                   "Team continuity appears well managed despite one newer engineer leave"],
-          talkingPoints: ["Healthy with excellent CSAT/NPS and no active escalations.",
-                          "Minor open items around communication quality and escalation hygiene."],
-          lastCall: null, callsAnalyzed: 0 },
+          themes: ["Strong partner satisfaction and advocacy", "Account team reports low churn risk with no escalations", "Partner praises engineer quality and team performance", "Some service quality/process improvement opportunities remain open"],
+          talkingPoints: ["Liongard appears healthy with very strong CSAT/NPS sentiment, no active escalations, and explicit account-team assessment of low cancel risk..", "Minor process-improvement items remain open, but recent feedback is overwhelmingly positive and one prior action item has already been completed.."],
+          lastCall: "2026-06-01", callsAnalyzed: 0 },
 
-        { name: "Ion247", slug: "ion247", churnRisk: 12, csatPositivePct: 100, reviewVolume: 7,
+        { name: "Ion247", slug: "ion247", churnRisk: 8, csatPositivePct: 100, reviewVolume: 7,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently strong customer sentiment",
-          themes: ["Consistently strong customer sentiment",
-                   "Positive named-engineer feedback",
-                   "No recent escalations or service complaints",
-                   "Open reporting action item has slipped over multiple reviews"],
-          talkingPoints: ["Very healthy with strong promoter feedback and no raised concerns.",
-                          "One long-open reporting action item has slipped across reviews."],
-          lastCall: null, callsAnalyzed: 0 },
+          topDriver: "Very strong partner advocacy and satisfaction",
+          themes: ["Very strong partner advocacy and satisfaction", "Named engineer feedback is strongly positive", "No current operational or account risk flags", "Service delivery described as stable with no escalations"],
+          talkingPoints: ["Ion247 appears very healthy with consistently strong partner sentiment, perfect recent CSAT/NPS, and no account-team churn flags or escalations..", "The only notable concern is a long-open reporting action item that has slipped across review cycles, but it has not translated into dissatisfaction.."],
+          lastCall: "2026-06-01", callsAnalyzed: 0 },
 
-        { name: "Stasmayer Inc.", slug: "stasmayer", churnRisk: 12, csatPositivePct: 100, reviewVolume: 3,
+        { name: "Stasmayer Inc.", slug: "stasmayer", churnRisk: 11, csatPositivePct: 100, reviewVolume: 3,
           sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
           topDriver: "Strong partner satisfaction with named engineer",
-          themes: ["Strong partner satisfaction with named engineer",
-                   "Recent service reviews report no concerns or escalations",
-                   "Positive loyalty signals from NPS",
-                   "KPI performance remains on track",
-                   "Minor operational watchpoint around utilization/timesheet hygiene"],
-          talkingPoints: ["Healthy with repeated praise for the engineer and stable delivery.",
-                          "Minor watchpoint around utilization/timesheet discipline."],
+          themes: ["Strong partner satisfaction with named engineer", "Very positive executive feedback/NPS", "No active service issues or escalations", "Recent utilization softness"],
+          talkingPoints: ["The Stasmayer relationship appears healthy with repeated partner praise for Adley, strong promoter-only NPS, and no reported service escalations or performance concerns..", "Minor watchouts are limited to timesheet discipline and lower recent billable utilization, but these have not translated into dissatisfaction.."],
           lastCall: "2026-05-29", callsAnalyzed: 4 },
     ];
 
@@ -806,22 +881,34 @@ body {
         const highRisk = partners.filter((p) => p.churnRisk >= 45).length;
         const renewalsAtRisk = partners.filter((p) => renewalRisk(p) === "High").length;
 
-        const icon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>`;
+        const svg = (path) => `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="${path}" /></svg>`;
+        const ICONS = {
+            partners: svg("M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"),
+            chart: svg("M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"),
+            shield: svg("M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286Z"),
+            renew: svg("M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"),
+        };
         const cards = [
-            { label: "Partners Tracked", value: tracked, sub: "active accounts", cls: "primary" },
-            { label: "Avg Churn Risk", value: avgRisk, sub: "scale 0–100", cls: avgRisk >= 45 ? "danger" : avgRisk >= 25 ? "warning" : "success" },
-            { label: "High Risk", value: highRisk, sub: "risk ≥ 45", cls: "danger" },
-            { label: "Renewals at Risk", value: renewalsAtRisk, sub: "derived: risk + call tone", cls: "warning" },
+            { label: "Partners Tracked", value: tracked, sub: "active accounts", cls: "primary", icon: ICONS.partners },
+            { label: "Avg Churn Risk", value: avgRisk, sub: "scale 0–100", cls: avgRisk >= 45 ? "danger" : avgRisk >= 25 ? "warning" : "success", icon: ICONS.chart },
+            { label: "High Risk", value: highRisk, sub: "risk ≥ 45", cls: "danger", icon: ICONS.shield },
+            { label: "Renewals at Risk", value: renewalsAtRisk, sub: "derived: risk + call tone", cls: "warning", icon: ICONS.renew },
         ];
         $("kpi-grid").innerHTML = cards.map((c) => `
-            <div class="kpi-card">
-                <div class="kpi-icon-wrapper ${c.cls}">${icon}</div>
-                <div class="kpi-info">
+            <div class="kpi-card ${c.cls}">
+                <div class="kpi-top">
+                    <div class="kpi-icon-wrapper">${c.icon}</div>
                     <span class="kpi-label">${c.label}</span>
-                    <span class="kpi-value">${c.value}</span>
-                    <span class="kpi-sub">${c.sub}</span>
                 </div>
+                <span class="kpi-value">${c.value}</span>
+                <span class="kpi-sub">${c.sub}</span>
             </div>`).join("");
+
+        // Sidebar insights snapshot mirrors the same portfolio-wide numbers.
+        const setIns = (id, v) => { const el = $(id); if (el) el.textContent = v; };
+        setIns("ins-high", highRisk);
+        setIns("ins-renewals", renewalsAtRisk);
+        setIns("ins-avg", avgRisk);
 
         $("header-badges").innerHTML = `
             <span class="badge badge-outline">${tracked} Partners</span>
@@ -853,6 +940,10 @@ body {
     let rankChart = null;
 
     function tierBarColor(t) { return t === "High" ? COL.danger : t === "Watch" ? COL.warning : COL.success; }
+    // Left→right bar gradient per tier (pure styling; tier semantics unchanged).
+    function tierGradient(t) {
+        return t === "High" ? ["#ef4444", "#fb7185"] : t === "Watch" ? ["#f59e0b", "#fbbf24"] : ["#10b981", "#34d399"];
+    }
 
     function rankRows() { return filteredPartners(); }
 
@@ -878,10 +969,9 @@ body {
     function renderRiskRank() {
         const canvas = $("riskRankChart");
         if (!canvas) return;
-        const isDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const grid = isDark ? "rgba(148,163,184,0.16)" : "rgba(148,163,184,0.22)";
-        const tick = isDark ? "#94a3b8" : "#64748b";
-        const label = isDark ? "#cbd5e1" : "#334155";
+        const grid = "rgba(148,163,184,0.20)";
+        const tick = "#8a90a6";
+        const label = "#3c4257";
 
         const all = rankRows();
         const shown = rankExpanded ? all : all.slice(0, COLLAPSED_N);
@@ -903,10 +993,19 @@ body {
                     labels: shown.map((p) => (p.sentimentTrend === "Declining" ? "▼ " : "") + p.name),
                     datasets: [{
                         data: shown.map((p) => p.churnRisk),
-                        backgroundColor: shown.map((p) => tierBarColor(tierOf(p.churnRisk)) + "d9"),
+                        backgroundColor: (c) => {
+                            const { ctx, chartArea } = c.chart;
+                            const p = shown[c.dataIndex] || shown[0];
+                            const [from, to] = tierGradient(tierOf(p.churnRisk));
+                            if (!chartArea) return from;
+                            const g = ctx.createLinearGradient(chartArea.left, 0, chartArea.right, 0);
+                            g.addColorStop(0, from); g.addColorStop(1, to);
+                            return g;
+                        },
+                        // borderColor still drives the value-label colour in barValueLabel.
                         borderColor: shown.map((p) => tierBarColor(tierOf(p.churnRisk))),
-                        borderWidth: 1, borderRadius: 5,
-                        barPercentage: 0.72, categoryPercentage: 0.82,
+                        borderWidth: 0, borderRadius: 999, borderSkipped: false,
+                        barPercentage: 0.55, categoryPercentage: 0.82,
                     }],
                 },
                 plugins: [barValueLabel],
@@ -1106,10 +1205,15 @@ body {
 
     // ---------- View switching (Executive Overview ⇄ Partner 360) ----------
     const VIEW_TITLE = { overview: "Executive Overview", partners: "Partner 360" };
+    const VIEW_SUB = {
+        overview: "Real-time overview of partner health and churn risk",
+        partners: "Every partner ranked by churn risk — select one to drill in",
+    };
     function showView(view) {
         $("view-overview").style.display = (view === "partners") ? "none" : "";
         $("view-partners").style.display = (view === "partners") ? "" : "none";
         $("view-title").textContent = VIEW_TITLE[view] || VIEW_TITLE.overview;
+        $("view-subtitle").textContent = VIEW_SUB[view] || VIEW_SUB.overview;
         document.querySelectorAll(".nav-link[data-view]").forEach((a) => {
             a.parentElement.classList.toggle("active", a.getAttribute("data-view") === view);
         });
@@ -1122,6 +1226,14 @@ body {
                 e.preventDefault();
                 showView(a.getAttribute("data-view"));
             });
+        });
+        // Sidebar "View all insights" jumps to the at-risk table (switching back to the overview if needed).
+        const viewAll = $("insights-viewall");
+        if (viewAll) viewAll.addEventListener("click", (e) => {
+            e.preventDefault();
+            showView("overview");
+            const target = $("at-risk");
+            if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
         });
     }
 

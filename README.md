@@ -52,18 +52,29 @@ extract/                      Python extraction + AI engine
 scripts/                      operational entry-point scripts
   build_real_partners.py      pull a hardcoded set of real Halo clients (+ transcripts,
                               + AI analysis) and inject them into the exec-overview array
+  refresh_exec_row.py         re-render embedded exec-overview rows from data/{slug}.json
+                              caches (one slug, --all as the sync cycle's exec-rows step,
+                              or --remove <slug> for offboarding)
+  setup_graph_transcript_access.ps1   for IT: completes the Graph app-registration
+                              provisioning for transcript ingestion (see
+                              docs/IT-Request-Graph-Transcript-Access.md)
+  probe_graph_transcripts.py  acceptance test for that app registration (token ->
+                              meeting -> transcript fetch; GRAPH_* creds from .env)
 
 index.html                    Executive Overview (Chart.js charts, embedded partner array)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,
                               Action Tracker, CSAT & NPS, Transcripts, Service Decks
-refresh.js                    "Sync Data" header button — drives the sync API on both pages
-styles.css                    shared design system (light theme, dark sidebar nav)
+refresh.js                    "Sync Data" header button + live progress panel (per-step
+                              state and current pipeline activity) — drives the sync API
+styles.css                    design system for partner.html (claymorphic light theme,
+                              matches index.html's inline styles, which it does not share)
 vendor/
   chart.umd.min.js            Chart.js 4.4.4 vendored locally (no CDN)
 server.py                     dependency-free local dev server (no-cache) + manual sync API
                               (POST /api/refresh, GET /api/refresh/status -> data/_sync.log)
 data/                         generated caches (gitignored) — built by the engine
-Transcripts/                  local .docx meeting transcripts, per partner
+Transcripts/                  meeting transcripts, one folder per partner — .docx
+                              (manual Teams exports) + .vtt (Graph transcript pulls)
 docs/                         architecture.md, changelog.md, three SOP docs, LLM-SOP.md, archive/
 legacy/                       superseded single-partner files (app.js, data.js)
 CLAUDE.md                     LLM working context — commands, gotchas, doc-update rules
@@ -72,8 +83,8 @@ hooks/pre-commit              blocks code commits that don't update docs/changel
 ```
 
 Data sources per partner: HaloPSA (client metadata, RAG/risk custom fields, review-ticket
-meeting notes, deck attachments), TeamGPS (CSAT & NPS), local `.docx` transcripts, and the
-service-review decks (PDF/PPTX → Markdown). Bulk ticket SLA/status is intentionally excluded —
+meeting notes, deck attachments), TeamGPS (CSAT & NPS), local call transcripts (`.docx`
+Teams exports + `.vtt` Graph pulls), and the service-review decks (PDF/PPTX → Markdown). Bulk ticket SLA/status is intentionally excluded —
 for the white-label NOC model those are end-customer metrics, not partner-churn signals.
 
 ## Roadmap

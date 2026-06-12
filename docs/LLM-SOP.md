@@ -80,8 +80,10 @@ code and every doc that states it must move together:
    carry an explicit `slug:` field; never derive links from display names.
 4. **All data is real — never reintroduce synthetic/demo partners.** The demo
    seeder and all `demo: true` data were deliberately wiped on 2026-06-11.
-5. **Generated files live in `data/` and are gitignored** (`*.json`, `*.log`, `*.js`,
-   `decks/`). Scripts must not write generated artifacts to the repo root.
+5. **Generated files live in `data/` and the whole directory is gitignored**
+   (`/data/` — nothing under it is ever tracked). Scripts must not write generated
+   artifacts to the repo root, and nothing hand-written (scripts, secrets) belongs
+   in `data/` — operational scripts go in `scripts/`.
 6. **Scripts live in `scripts/` and sys.path-shim the repo root** so
    `from extract import …` works from any cwd. New operational scripts follow the
    same pattern; library code goes in `extract/`.

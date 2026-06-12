@@ -23,6 +23,10 @@ python -m extract.build_all                  # full build: all partners + AI + p
 python -m extract.build_partner "Logically"  # build one partner
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
 python scripts/build_real_partners.py        # extra real Halo clients + exec-overview injection
+python scripts/refresh_exec_row.py <slug>    # re-render one partner's embedded exec row from its JSON
+python scripts/refresh_exec_row.py --all     # re-render ALL embedded exec rows (sync step "exec-rows")
+python scripts/refresh_exec_row.py --remove <slug>   # delete a partner's embedded exec row (offboarding)
+#  single-partner refresh: build_all --only <Name> -> build_all --reindex -> refresh_exec_row.py <slug>
 python server.py [port]                      # dev server, default http://localhost:8000
 powershell -ExecutionPolicy Bypass -File .\setup.ps1   # fresh-machine bootstrap
 ```
@@ -36,11 +40,18 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 - `index.html` — Executive Overview + Partner 360 views (sidebar-switched). Partner
   data is an **embedded array** in its inline `<script>`, NOT fetched.
 - `partner.html` + `partner.js` — per-partner drilldown (`?partner=<slug>`), fetches
-  `data/{slug}.json` at runtime. `styles.css` shared; Chart.js vendored in `vendor/`.
-- `refresh.js` — "Sync Data" header button (both pages). Talks to `server.py`'s
-  sync API: `POST /api/refresh` (single-flight, optional `{"steps":[...]}` subset:
-  `registry` | `real-extras` | `reindex`), `GET /api/refresh/status`. Cycle =
-  build_all → build_real_partners → build_all --reindex, continue-on-failure,
+  `data/{slug}.json` at runtime. Styled by `styles.css` (which `index.html` does
+  NOT load — gotcha 7); Chart.js vendored in `vendor/`.
+- `refresh.js` — "Sync Data" header button + "Last sync" timestamp (both pages;
+  timestamp = `portfolio.generated_at` from `data/_index.json`). Talks to
+  `server.py`'s sync API: `POST /api/refresh` (single-flight, optional
+  `{"steps":[...]}` subset: `registry` | `real-extras` | `exec-rows` |
+  `reindex`), `GET /api/refresh/status` (per-step state + live `activity`
+  parsed from streamed pipeline output — see `server.py: parse_activity`).
+  While running, a progress panel under the button shows each step + current
+  activity; its CSS lives in BOTH `styles.css` and `index.html`'s inline
+  `<style>` (gotcha 7). Cycle = build_all → build_real_partners →
+  refresh_exec_row --all → build_all --reindex, continue-on-failure, streamed
   log in `data/_sync.log`.
 - `extract/` — pipeline library package (config, halo, teamgps, transcripts, ai,
   build_partner, build_all, portfolio). Secrets: env/.env first, live fallbacks
@@ -49,11 +60,18 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   from anywhere. New one-off scripts go here, library code goes in `extract/`.
   `build_real_partners.py` NEW is the partner roster beyond the registry (28
   entries); `client_id=None` marks a transcript-only partner with no Halo record
-  (e.g. CW Now) — Halo/TeamGPS skipped, AI runs on call transcripts alone.
+  — Halo/TeamGPS skipped, AI runs on call transcripts alone (path currently
+  unused: its one user "CW Now" turned out to be Halo client 39 "C&W Computers",
+  corrected 2026-06-12). `setup_graph_transcript_access.ps1` is for IT, not the
+  pipeline: finishes the Graph app-registration provisioning (permissions +
+  access policies — see `docs/IT-Request-Graph-Transcript-Access.md` § Outcome);
+  `probe_graph_transcripts.py` is its acceptance test (token → meeting →
+  transcript fetch). Graph creds: `GRAPH_*` vars in `.env`.
 - `data/` — generated, gitignored (partner JSONs, `_index.json`, `decks/`,
   `_sync.log`). Never write generated artifacts to the repo root.
 - `docs/` — architecture, changelog, 3 API/extraction SOPs, LLM-SOP, `archive/`
-  (frozen, never edit). `Transcripts/` — input .docx. `legacy/` — dead code, kept.
+  (frozen, never edit). `Transcripts/` — input .docx/.vtt, one folder per
+  partner. `legacy/` — dead code, kept.
 
 ## Critical gotchas
 

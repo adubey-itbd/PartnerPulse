@@ -2,11 +2,9 @@
 .env
 *.env
 
-# Generated per-partner caches, downloaded decks, run logs, demo exec block
-/data/*.json
-/data/*.log
-/data/*.js
-/data/decks/
+# Generated artifacts — the whole directory (per-partner caches, downloaded
+# decks, run logs). Nothing in data/ is ever tracked; scripts go in scripts/.
+/data/
 
 # Python
 __pycache__/

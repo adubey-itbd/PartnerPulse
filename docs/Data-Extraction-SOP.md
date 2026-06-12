@@ -311,7 +311,8 @@ To scan a new partner in the system, the dashboard engine must execute these ste
   │      ├─ Fetch actions list.
   │      └─ Fetch action details, clean HTML, and extract meeting summaries & action items.
   │
-  ├─► 9. Parse the local directory for Word transcripts matching the client's name.
+  ├─► 9. Parse the local directory for transcripts matching the client's name
+  │      (.docx Teams exports + .vtt Graph pulls — see §1).
   │
   ├─► 10. Merge and cache all extracted data into a unified Partner JSON payload.
   │

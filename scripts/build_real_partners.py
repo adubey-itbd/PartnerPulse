@@ -55,7 +55,10 @@ NEW = [
     ("Dependable Solutions",         60,  "Dependable",          "Dependable Solutions Inc"),
     ("Pegasus Technology Solutions", 135, "Pegasus",             "Pegasus Technology Solutions"),
     ("Boomtown CIO",                 34,  "Boomtown",            "Boomtown CIO"),
-    ("CW Now",                       None, "CW Now",             "CW Now"),
+    # "CW Now" is the meeting-title shorthand for Halo client "C&W Computers"
+    # (their domain is cwnow.com) — corrected 2026-06-12 from the bogus
+    # transcript-only "CW Now" entry.
+    ("C&W Computers",                39,  "C&W",                 "C&W Computers"),
     ("Networking Now",               121, "Networking Now",      "Networking Now"),
     ("Galactica Cybersecurity",      946, "Galactica",           "Galactica CyberSecurity"),
     ("ICSI",                         80,  "ICSI",                "ICSI"),
@@ -69,7 +72,7 @@ NEW = [
 
 def build_real(name, client_id, halo_search, teamgps_company, nps_all):
     if client_id is None:
-        # Transcript-only partner: no Halo client record exists (e.g. CW Now).
+        # Transcript-only partner: no Halo client record exists.
         client, cf, sips = {}, {}, {}
         csat, nps, historical_calls = [], [], []
         csat_stats = teamgps.csat_stats(csat)
