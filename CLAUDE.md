@@ -47,6 +47,9 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   baked in `extract/config.py` (beta only — never copy them elsewhere).
 - `scripts/` — operational entry points; they sys.path-shim the repo root, run them
   from anywhere. New one-off scripts go here, library code goes in `extract/`.
+  `build_real_partners.py` NEW is the partner roster beyond the registry (28
+  entries); `client_id=None` marks a transcript-only partner with no Halo record
+  (e.g. CW Now) — Halo/TeamGPS skipped, AI runs on call transcripts alone.
 - `data/` — generated, gitignored (partner JSONs, `_index.json`, `decks/`,
   `_sync.log`). Never write generated artifacts to the repo root.
 - `docs/` — architecture, changelog, 3 API/extraction SOPs, LLM-SOP, `archive/`

@@ -88,6 +88,19 @@ code and every doc that states it must move together:
 7. **API-SOP addendum discipline:** new verified API findings are appended as dated
    addendum sections ("Addendum — <topic> (YYYY-MM-DD session)") that explicitly
    supersede earlier statements rather than rewriting them.
+8. **`Transcripts/` conventions (git-tracked input data):** one folder per partner,
+   whose name must normalize-match the partner's display name — `slugify(folder)` ==
+   `slugify(registry name or NEW display name)` — or the files are silently ignored
+   (a warning fires in `build_real_partners.py` for orphan folders). Files are
+   `.docx` (manual Teams exports) or `.vtt` (Graph pulls); every `.vtt` starts with
+   `WEBVTT` + `NOTE title:` / `NOTE date:` / `NOTE duration:` lines (keys matched
+   case-insensitively). Keep transcript content verbatim — never summarize or edit it.
+9. **The partner roster lives in two places only:** `extract/partners.py` PARTNERS
+   (the 10 registry partners, full build incl. decks) and
+   `scripts/build_real_partners.py` NEW (everything else). Adding a partner = a NEW
+   entry (resolve the Halo client id first; `client_id=None` for transcript-only
+   partners with no Halo record) + run the script + `extract.build_all --reindex`.
+   Never add partners by editing `index.html` or `data/` by hand (rule 1).
 
 ## 4. Changelog conventions
 

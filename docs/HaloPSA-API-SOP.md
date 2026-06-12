@@ -302,6 +302,18 @@ Implemented in `extract/halo.py: count_sips()`.
 
 ---
 
+## ⚠️ Addendum — Tickets search outage (2026-06-11/12 session)
+
+`GET /api/Tickets?client_id={id}&search=…` returned **HTTP 500 for every client**
+for roughly 12 hours on 2026-06-11 evening (verified across three clients,
+repeated attempts ~30 min apart), then recovered by itself on 2026-06-12. Plain
+`/api/Tickets` paging and `/api/Client` were unaffected. Treat persistent 500s on
+the search variant as a **tenant-side outage, not a code bug**: don't burn retries
+or "fix" the query — rerun the build later. (The pipeline's per-partner builds die
+on this in `halo.find_service_tickets`; the sync UI reports the step failed.)
+
+---
+
 ## Data Inventory (reachable endpoints)
 
 Counts as of 2026-06-06 on the ITBD tenant. "—" = count not reported by the API
