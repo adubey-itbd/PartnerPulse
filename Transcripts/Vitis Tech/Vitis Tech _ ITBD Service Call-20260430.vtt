@@ -1,0 +1,314 @@
+WEBVTT
+NOTE title: Vitis Tech I ITBD Service Call
+NOTE date: 2026-04-30
+NOTE duration: 10m 37s
+
+00:00:13.534 --> 00:00:14.574
+<v Kip Singh>Hey, Adrian, how are you?</v>
+
+00:00:14.654 --> 00:00:14.734
+<v Kip Singh>Of.</v>
+
+00:00:15.094 --> 00:00:16.574
+<v Adrian Hoh>What's going on, Kip?</v>
+
+00:00:18.254 --> 00:00:20.014
+<v Kip Singh>Just back-to-back meetings.</v>
+
+00:00:21.454 --> 00:00:34.094
+<v Adrian Hoh>By my calendar next week, I had to, it's one of those weeks where I have to manually put my lunch on my calendar or someone is going to try to overwrite that.</v>
+
+00:00:23.174 --> 00:00:23.494
+<v Kip Singh>S.</v>
+
+00:00:35.334 --> 00:00:38.494
+<v Adrian Hoh>or schedule me during my lunch. I mean, Monday.</v>
+
+00:00:35.414 --> 00:00:35.534
+<v Kip Singh>Yeah.</v>
+
+00:00:39.934 --> 00:00:46.734
+<v Adrian Hoh>One, two, three, 4, 5, 6, 7, 8, 9, 10, 11, 12. I have 12 meetings on Monday.</v>
+
+00:00:40.414 --> 00:00:40.534
+<v Kip Singh>Yeah.</v>
+
+00:00:49.014 --> 00:00:49.614
+<v Kip Singh>Hold on.</v>
+
+00:00:49.214 --> 00:00:50.734
+<v Adrian Hoh>That's too, that's too many.</v>
+
+00:00:51.694 --> 00:00:52.934
+<v Kip Singh>Too, too many.</v>
+
+00:00:53.214 --> 00:00:55.374
+<v Adrian Hoh>In a perfect world, that's 12 too many.</v>
+
+00:00:57.294 --> 00:00:59.054
+<v Adrian Hoh>I'd rather have zero, so...</v>
+
+00:01:00.134 --> 00:01:03.054
+<v Adrian Hoh>This is me just ******** about how many meetings I have. How are you?</v>
+
+00:01:04.814 --> 00:01:12.414
+<v Kip Singh>Good, good. Yeah, so I will be on PDO tomorrow, so I'm just trying to wrap up things.</v>
+
+00:01:13.134 --> 00:01:13.494
+<v Adrian Hoh>Okay.</v>
+
+00:01:14.494 --> 00:01:16.174
+<v Kip Singh>Yeah, so...</v>
+
+00:01:17.534 --> 00:01:29.694
+<v Kip Singh>So I'm buying a bike tomorrow. So we'll plan on touring and some solo rides maybe pretty soon.</v>
+
+00:01:30.214 --> 00:01:35.534
+<v Adrian Hoh>Are you, so when you say, when you say bike, are you meaning like bicycle or do you mean like motorcycle?</v>
+
+00:01:36.374 --> 00:01:37.054
+<v Kip Singh>Motorcycle.</v>
+
+00:01:37.294 --> 00:01:56.574
+<v Adrian Hoh>Okay, because the reason why I ask that is because the term bike, I use it for a lot of different things. So motorcycle, bicycle, but like a four-wheeler, I have a couple four-wheelers and I also refer to them as bikes. I don't know why they have four wheels. So that's cool. That sounds</v>
+
+00:01:41.414 --> 00:01:41.774
+<v Kip Singh>S.</v>
+
+00:01:53.214 --> 00:01:53.694
+<v Kip Singh>S.</v>
+
+00:01:56.694 --> 00:02:00.894
+<v Adrian Hoh>That sounds exciting. I, since I have...</v>
+
+00:01:59.374 --> 00:01:59.694
+<v Kip Singh>Yeah.</v>
+
+00:02:02.174 --> 00:02:19.374
+<v Adrian Hoh>I always wanted to get a motorcycle, but when my daughter was born, I was like, oh, I'm just, I'm going to hold off on this for a little bit. And I don't even know if I told you, we found, so my wife is pregnant again and we'll be having a boy in September. So</v>
+
+00:02:21.174 --> 00:02:25.054
+<v Adrian Hoh>Pretty stoked about that, so now it's gonna be even longer for me to get a motorcycle.</v>
+
+00:02:21.374 --> 00:02:22.654
+<v Kip Singh>Congratulations!</v>
+
+00:02:26.494 --> 00:02:27.054
+<v Kip Singh>Yeah.</v>
+
+00:02:28.654 --> 00:02:31.214
+<v Kip Singh>But good wishes, congratulations, and yeah.</v>
+
+00:02:30.654 --> 00:02:31.054
+<v Adrian Hoh>Thank you.</v>
+
+00:02:32.334 --> 00:02:45.614
+<v Adrian Hoh>Yeah, it's our daughter turned 5 last month, so we got a little bit of an age gap between the two of them, but I'm 12 years older than my sister, so I don't think it's that bad.</v>
+
+00:02:47.054 --> 00:02:47.614
+<v Kip Singh>Yeah.</v>
+
+00:02:49.534 --> 00:02:50.174
+<v Kip Singh>Yeah, right.</v>
+
+00:02:53.494 --> 00:02:58.814
+<v Kip Singh>Okay, so how are things moving with Abner and Chris and Sentinel?</v>
+
+00:02:59.294 --> 00:03:17.614
+<v Adrian Hoh>Good. We have, I've been throwing some tickets at Grayson and Abner. Santino is just doing more of the same thing. So next week we will be getting Grayson and Abner and Santino involved in</v>
+
+00:03:06.494 --> 00:03:06.974
+<v Kip Singh>Hello.</v>
+
+00:03:18.574 --> 00:03:39.054
+<v Adrian Hoh>We have an old legacy backup platform, and I've already had Shiraj and Santino involved in migrating some customers over to the new one. There's an older one than the one that they've been working off of. So Chris, my team lead, is going to be going through and getting some documentation.</v>
+
+00:03:39.454 --> 00:03:52.494
+<v Adrian Hoh>created on what's going to be required to move them from the old, old backup portal to the new one. And then we'll probably meet with those guys, hopefully Monday afternoon, Tuesday afternoon, and let them hit the ground running on those.</v>
+
+00:03:40.094 --> 00:03:40.174
+<v Kip Singh>The.</v>
+
+00:03:53.694 --> 00:03:57.574
+<v Kip Singh>Yeah, yeah, that sounds great, yeah.</v>
+
+00:04:00.654 --> 00:04:19.054
+<v Adrian Hoh>But other than that, I mean, things are going well. You know, when we talked last week, we were still doing the daily check-ins with them. And we have it scheduled. The first week we do daily check-ins and then, you know, from then on probably until about</v>
+
+00:04:00.814 --> 00:04:01.854
+<v Kip Singh>Scooping at that.</v>
+
+00:04:09.054 --> 00:04:09.534
+<v Kip Singh>Mhm.</v>
+
+00:04:11.334 --> 00:04:11.774
+<v Kip Singh>S.</v>
+
+00:04:19.334 --> 00:04:37.774
+<v Adrian Hoh>a little over the first month or so. We do a weekly check-in. So we'll have the weekly check-in with Grayson and Abner tomorrow. Actually, I moved it up a little bit. We were going to do it in the afternoon. I'm going to do it in the morning. I put in about 12, 13 hours yesterday. So I'm going to leave early tomorrow. So</v>
+
+00:04:28.254 --> 00:04:28.574
+<v Kip Singh>Okay.</v>
+
+00:04:38.974 --> 00:04:39.374
+<v Kip Singh>No.</v>
+
+00:04:43.174 --> 00:05:01.894
+<v Adrian Hoh>No, everything's going well. They completed their training modules and I'm just going to start giving them some tickets. And one of the things that I'm going to talk to them about tomorrow is instead of Chris or myself assigning tickets over to them, I want them to start going out and seeing some</v>
+
+00:04:43.214 --> 00:04:43.774
+<v Kip Singh>Three.</v>
+
+00:05:02.094 --> 00:05:24.734
+<v Adrian Hoh>We're trying to find some tickets that they think is in their skill set and then try to work through those. So same thing we did with Santino. So we spoon fed them a little bit. And then once we got to the point where, you know, they know their experience and their limitations better than I do at this point in time. So they can go out and find something they want to</v>
+
+00:05:21.294 --> 00:05:21.534
+<v Kip Singh>Yeah.</v>
+
+00:05:24.894 --> 00:05:44.334
+<v Adrian Hoh>You want to try to tackle first and then, you know, it's like we say, I tell the guys here too, I'm like, if you see something that you want to try to work on that you don't 100% know how to fix it, give it a shot. And if you have questions, you know, definitely reach out, but you're not going to learn if you just keep doing the same stuff over and over and over again.</v>
+
+00:05:46.734 --> 00:05:46.974
+<v Kip Singh>Yeah.</v>
+
+00:05:49.294 --> 00:06:02.654
+<v Kip Singh>That's great. And I hope they have already gone through their assigned trainings. So yeah, from this week, they already started working on the tickets. Even I'm checking with them on daily basis for now.</v>
+
+00:05:53.934 --> 00:05:54.414
+<v Adrian Hoh>Yep.</v>
+
+00:05:58.494 --> 00:05:58.814
+<v Adrian Hoh>Kip.</v>
+
+00:06:04.054 --> 00:06:16.174
+<v Kip Singh>just to ensure there are no any gaps or something like that. Or if there are any, we can address them proactively. Apart from that, I think.</v>
+
+00:06:18.254 --> 00:06:39.454
+<v Kip Singh>Yeah, so I'm not going to present the deck today, so I'm just, I just wanted to have a feedback on the engineers, especially the Grayson, Sentino, and Abner. So it's good to hear that things are moving in the right direction. And so for how long you are going to keep Shiraj for the shadow process?</v>
+
+00:06:21.934 --> 00:06:22.254
+<v Adrian Hoh>Fun.</v>
+
+00:06:38.574 --> 00:06:39.374
+<v Adrian Hoh>Um...</v>
+
+00:06:40.654 --> 00:07:00.054
+<v Adrian Hoh>I would, so Daniel is, he's been out pretty much the last two weeks on for conferences and, you know, different, like he was on PTO earlier this week and now he's out in, I think, Chicago for a conference. I'm going to talk to him about that.</v>
+
+00:06:58.174 --> 00:06:58.494
+<v Kip Singh>Yeah.</v>
+
+00:07:00.974 --> 00:07:20.094
+<v Adrian Hoh>early next week and get kind of like an exit plan set up for Shiraz. We'll do like a target, a target date and you know, make sure that the other guys are in a good enough spot. I mean, Santino's been with us what now almost.</v>
+
+00:07:01.574 --> 00:07:02.094
+<v Kip Singh>SS.</v>
+
+00:07:10.934 --> 00:07:10.974
+<v Kip Singh>I.</v>
+
+00:07:21.054 --> 00:07:39.374
+<v Adrian Hoh>It's over two months. I think it's between like two and three months. So he's really coming up to speed and doing a good job. And I think, I don't know if the guys have, you know, Grayson and Abner would have been more shadowing with Shiraj or Santino. I don't, I don't know, but</v>
+
+00:07:41.094 --> 00:07:43.534
+<v Adrian Hoh>When I meet with him, I will...</v>
+
+00:07:43.694 --> 00:07:43.934
+<v Kip Singh>Yeah.</v>
+
+00:07:44.694 --> 00:07:57.014
+<v Adrian Hoh>I'll bring it up on the, when we meet again next week, I will, like, hey, here's the date that I want Neeraj to. And then if that works for you guys, we'll make it work. If not, we need to adjust it. We can figure that out.</v>
+
+00:07:47.214 --> 00:07:47.534
+<v Kip Singh>Hello.</v>
+
+00:07:58.894 --> 00:08:02.894
+<v Kip Singh>Yeah, sure, definitely. That sounds like a plan, so no problem there.</v>
+
+00:08:04.334 --> 00:08:05.054
+<v Kip Singh>And...</v>
+
+00:08:06.334 --> 00:08:13.094
+<v Kip Singh>Just one more thing I would like to share with you is...</v>
+
+00:08:24.734 --> 00:08:25.214
+<v Adrian Hoh>Hello.</v>
+
+00:08:47.294 --> 00:08:48.254
+<v Adrian Hoh>Hey, you back.</v>
+
+00:08:48.494 --> 00:08:50.894
+<v Kip Singh>Instead of share, I clicked on leave.</v>
+
+00:08:51.614 --> 00:08:53.614
+<v Adrian Hoh>No, no, no worries at all.</v>
+
+00:08:54.174 --> 00:08:54.294
+<v Kip Singh>Yeah.</v>
+
+00:08:55.214 --> 00:09:01.134
+<v Kip Singh>OK, so let me share my screen real quick to start thing I would like to share with you.</v>
+
+00:09:06.014 --> 00:09:07.294
+<v Kip Singh>Are you able to see my screen?</v>
+
+00:09:08.014 --> 00:09:08.974
+<v Adrian Hoh>I can see your screen.</v>
+
+00:09:09.734 --> 00:09:28.174
+<v Kip Singh>Yeah, so this is regarding the build it live for 2026. We are going to have a session in August 3rd, 4th, and 5th in New Jersey City. So a lot of MSP leaders are going to attend this session. And this is purely built for growth leadership and intelligence.</v>
+
+00:09:28.974 --> 00:09:29.854
+<v Kip Singh>So...</v>
+
+00:09:31.574 --> 00:09:36.894
+<v Kip Singh>Let me know your availability and I can share some more details with you on the email.</v>
+
+00:09:36.014 --> 00:09:39.054
+<v Adrian Hoh>Can you shoot me over an email? Can you shoot me over an email on this, Kip?</v>
+
+00:09:39.374 --> 00:09:51.374
+<v Kip Singh>Yeah, sure, sure. I will send you, Daniel, an email with the details so you can go through that and do let me know in case you have any queries.</v>
+
+00:09:47.054 --> 00:09:47.454
+<v Adrian Hoh>Yeah.</v>
+
+00:09:53.374 --> 00:09:53.854
+<v Adrian Hoh>Got it.</v>
+
+00:09:55.214 --> 00:09:58.574
+<v Kip Singh>Okay, anything else apart from this you want to share is just.</v>
+
+00:09:59.614 --> 00:10:03.934
+<v Adrian Hoh>No, we're the same. Everything's going well. I have no...</v>
+
+00:10:05.134 --> 00:10:08.174
+<v Adrian Hoh>I have no issues or qualms with anything right now. We're looking good.</v>
+
+00:10:09.054 --> 00:10:24.814
+<v Kip Singh>Yeah, and you will be getting the CSAT survey from the month of April. We will be start triggering the CSAT surveys most likely starting next week. So just keep an eye and fill out that survey whenever you get thing.</v>
+
+00:10:20.494 --> 00:10:20.934
+<v Adrian Hoh>Okay.</v>
+
+00:10:25.374 --> 00:10:25.774
+<v Adrian Hoh>Got it.</v>
+
+00:10:26.894 --> 00:10:27.134
+<v Adrian Hoh>No.</v>
+
+00:10:27.214 --> 00:10:31.694
+<v Kip Singh>Okay. All right. Thank you, Adrian. Thank you for your time and have a wonderful day. Bye bye.</v>
+
+00:10:31.574 --> 00:10:34.734
+<v Adrian Hoh>You too, buddy. Have fun on that bike, OK? Be safe.</v>
+
+00:10:33.934 --> 00:10:34.254
+<v Kip Singh>Yep.</v>
+
+00:10:35.614 --> 00:10:37.054
+<v Kip Singh>Yeah, thank you. Bye.</v>
+
+00:10:36.254 --> 00:10:36.894
+<v Adrian Hoh>See ya.</v>
+

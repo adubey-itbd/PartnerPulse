@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [1.0.0-beta.6] - 2026-06-12
+
+### Added
+- **20 new partners onboarded into the dashboard** (transcript-access audit follow-up): Continuous Networks, APM IT Solutions, Matador Networks, Vitis Tech, Community IT, PEI, Prevare LLC, Perfect Cloud Solutions, Dependable Solutions, Pegasus Technology Solutions, Boomtown CIO, CW Now, Networking Now, Galactica Cybersecurity, ICSI, Infopathways, NerdsToGo, CMIT Solutions Stamford, Vistitude, Mission Technology — built via `scripts/build_real_partners.py` (Halo + TeamGPS + SIPs + gpt-5.4) and injected into the exec-overview array. Portfolio now tracks **38 real partners**.
+- **Transcript-only build path:** NEW entries may carry `client_id=None` (no Halo record — e.g. CW Now); the build skips Halo/TeamGPS and runs the AI on call transcripts alone.
+- **36 more Teams call transcripts pulled** (Apr 14 – Jun 11 window) across the new partners plus Computer Weavers, after a full calendar audit of desmanagement@itbd.net (377 events) determined per-meeting access. Notable availability gaps: Continuous Networks never had transcription enabled (0 transcripts despite 7 accessible calls); several single occurrences (Matador 05-04, APM April weeklies, Pegasus CalAmp 05-01, Community IT Innovators 05-13) have no transcript; Boomtown's QBR and Vistitude's QBR meetings aren't resolvable via Graph.
+
+---
+
 ## [1.0.0-beta.5] - 2026-06-11
 
 ### Added

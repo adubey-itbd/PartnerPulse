@@ -257,6 +257,10 @@ These are limitations in the **upstream Halo/TeamGPS data**, not bugs in the eng
 
 ## 9. Data Composition — Real Only
 
-All data is **real**, pulled live from Halo/TeamGPS + gpt-5.4: **18 partners** — the 10 registry partners in `extract/partners.py` (Logically, MSPCorp, Liongard, Milner, ION247, Realtime IT, Stasmayer, Premier, Alliance, Computer Weavers) plus the 8 in `scripts/build_real_partners.py` (Netgain, F12, RedHelm-1Path, Proda, Amoskeag, Granite Networks, Secure Future, Atlantic PC).
+All data is **real**, pulled live from Halo/TeamGPS + gpt-5.4: **38 partners** —
+
+* the 10 registry partners in `extract/partners.py` (Logically, MSPCorp, Liongard, Milner, ION247, Realtime IT, Stasmayer, Premier, Alliance, Computer Weavers),
+* plus 28 in `scripts/build_real_partners.py` NEW: the original 8 extras (Netgain, F12, RedHelm-1Path, Proda, Amoskeag, Granite Networks, Secure Future, Atlantic PC) and 20 added 2026-06-12 from the transcript-access audit (Continuous Networks, APM IT Solutions, Matador Networks, Vitis Tech, Community IT, PEI, Prevare LLC, Perfect Cloud Solutions, Dependable Solutions, Pegasus Technology Solutions, Boomtown CIO, CW Now, Networking Now, Galactica Cybersecurity, ICSI, Infopathways, NerdsToGo, CMIT Solutions Stamford, Vistitude, Mission Technology).
+* **CW Now** has no Halo client record — it is a **transcript-only** partner (`client_id=None` in NEW skips Halo/TeamGPS; the AI works from call transcripts alone).
 
 > **History:** until 2026-06-11 the cache also held ~36 synthetic demo partners (seeded by a since-deleted `gen_demo_partners.py`) to stress-test the portfolio at scale. All demo data was wiped from the codebase — partner JSONs, the injected exec-overview block, and the seeder itself. If a partner carrying `"demo": true` ever reappears, something is restoring stale data.

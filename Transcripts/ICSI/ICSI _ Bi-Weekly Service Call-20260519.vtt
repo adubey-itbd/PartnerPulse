@@ -1,0 +1,961 @@
+WEBVTT
+NOTE title: ICSI | Bi-Weekly Service Call
+NOTE date: 2026-05-19
+NOTE duration: 31m 53s
+
+00:02:06.146 --> 00:02:07.266
+<v Aman Thakur>Good afternoon, Priya.</v>
+
+00:02:09.146 --> 00:02:10.866
+<v Sarbjeet Singh>Hey, Parisa, good afternoon.</v>
+
+00:02:11.306 --> 00:02:13.266
+<v Parissa Sedghi>Hold on, I am on mute.</v>
+
+00:02:16.786 --> 00:02:19.346
+<v Amit Dubey>We see you and we hear you. Yes.</v>
+
+00:02:17.186 --> 00:02:18.226
+<v Parissa Sedghi>Hi, can you guys hear me?</v>
+
+00:02:19.666 --> 00:02:20.546
+<v Sarbjeet Singh>Loud and clear.</v>
+
+00:02:19.906 --> 00:02:20.786
+<v Aman Thakur>Good to see you.</v>
+
+00:02:20.706 --> 00:02:24.066
+<v Amit Dubey>How have you been, Parisa? It's been a while.</v>
+
+00:02:21.026 --> 00:02:24.306
+<v Parissa Sedghi>Now can I hear you guys? Shoot, hold on.</v>
+
+00:02:33.586 --> 00:02:34.786
+<v Parissa Sedghi>Can somebody say something?</v>
+
+00:02:36.026 --> 00:02:37.666
+<v Sarbjeet Singh>Testing, can you hear us?</v>
+
+00:02:37.266 --> 00:02:39.746
+<v Parissa Sedghi>Oh, I hear you. I hear you. Thank God.</v>
+
+00:02:40.066 --> 00:02:40.306
+<v Sarbjeet Singh>Rick.</v>
+
+00:02:41.986 --> 00:02:47.586
+<v Parissa Sedghi>I'm at, I just got home because there is a an air show.</v>
+
+00:02:48.706 --> 00:03:01.706
+<v Parissa Sedghi>in town and it was like shaking our entire building, like the planes were, because they're like fighter jets and I had to get out of there. So I just got home, so I apologize that I'm a little bit late.</v>
+
+00:03:03.026 --> 00:03:07.026
+<v Amit Dubey>It's okay. It's been a while that we spoke. How are things? You've been keeping really busy.</v>
+
+00:03:03.266 --> 00:03:03.986
+<v Sarbjeet Singh>No worries.</v>
+
+00:03:08.146 --> 00:03:10.146
+<v Parissa Sedghi>Too busy, so stinking busy.</v>
+
+00:03:11.426 --> 00:03:16.226
+<v Amit Dubey>What's happening? The business expanding or you guys are experimenting with new things?</v>
+
+00:03:11.906 --> 00:03:11.986
+<v Parissa Sedghi>Um...</v>
+
+00:03:14.706 --> 00:03:15.346
+<v Parissa Sedghi>Kip.</v>
+
+00:03:17.906 --> 00:03:33.666
+<v Parissa Sedghi>You know, we're still doing some automation, you know, experimentation. We're basically using any, what is it, N8N and Roost, yeah, N8N and Roost to help with our workflows, and then...</v>
+
+00:03:27.586 --> 00:03:29.506
+<v Amit Dubey>And a 10, yep, yeah.</v>
+
+00:03:30.586 --> 00:03:31.066
+<v Amit Dubey>Mmh.</v>
+
+00:03:36.786 --> 00:03:54.466
+<v Parissa Sedghi>Our compliance-based pod is growing tremendously. So unfortunately, I can't use you guys for that, but it's a lot of the construction folks are going after government contacts and we're helping them get CMMC certified and all that stuff. So it's been.</v>
+
+00:03:42.226 --> 00:03:42.626
+<v Amit Dubey>Well...</v>
+
+00:03:54.786 --> 00:04:03.106
+<v Parissa Sedghi>It's been exciting and you know, we're also going for CMMC. So, you know, it's just busy.</v>
+
+00:04:04.546 --> 00:04:05.506
+<v Parissa Sedghi>Oh man, where'd he go?</v>
+
+00:04:06.946 --> 00:04:15.026
+<v Aman Thakur>All right, yeah, thank, thank you. Alright, I think I'll start, or I think I might join back, so let me share my.</v>
+
+00:04:13.466 --> 00:04:27.666
+<v Amit Dubey>No, no, no, it's it's my it's my connectivity, Kris. Apologies for that. No, it's great to hear, and did you did you know that we are a roost certified consultants?</v>
+
+00:04:28.066 --> 00:04:28.786
+<v Parissa Sedghi>How are you?</v>
+
+00:04:29.466 --> 00:04:50.106
+<v Amit Dubey>Yeah, we are. And we are certified by Roost. So we have been working really closely with a lot of our partners who are using Roost as an automation tool and helping them in many ways. So yeah, if you think that you, if you ever stuck or if you think that you probably want to explore.</v>
+
+00:04:38.426 --> 00:04:38.706
+<v Parissa Sedghi>What?</v>
+
+00:04:50.466 --> 00:05:11.106
+<v Amit Dubey>what more it would look like, feel free to, you know, probably have a call with us and we can take you through what all can be done. And if you can give us a quick glimpse of what you guys are working on, that will open up a lot of new avenues for us. In terms of automation as well, I mean, I was glad to hear that, you know, you are using NTN.</v>
+
+00:05:08.706 --> 00:05:08.786
+<v Parissa Sedghi>The.</v>
+
+00:05:11.826 --> 00:05:19.266
+<v Amit Dubey>Did you receive any communications about Sunny's pattern initially regarding EIS later program?</v>
+
+00:05:12.466 --> 00:05:12.786
+<v Parissa Sedghi>Two.</v>
+
+00:05:20.226 --> 00:05:38.146
+<v Parissa Sedghi>Have I received information? Everyone and their mother has reached out to me about this on your team. It's not for the lack of trying on your part, let me tell you. I think I even got like a LinkedIn message from Kam, whatever automation that was too.</v>
+
+00:05:26.386 --> 00:05:28.626
+<v Amit Dubey>Well, okay, okay, okay.</v>
+
+00:05:27.906 --> 00:05:28.346
+<v Sarbjeet Singh>Ch.</v>
+
+00:05:32.066 --> 00:05:34.466
+<v Amit Dubey>No, no, absolutely not. I mean, it just that, you know, what...</v>
+
+00:05:38.306 --> 00:05:39.106
+<v Parissa Sedghi>It's like, whoa.</v>
+
+00:05:39.026 --> 00:05:41.266
+<v Amit Dubey>OK, yeah, yeah.</v>
+
+00:05:40.386 --> 00:05:41.586
+<v Parissa Sedghi>You guys are stalking me.</v>
+
+00:05:44.786 --> 00:05:44.906
+<v Parissa Sedghi>Yeah.</v>
+
+00:05:45.026 --> 00:06:06.026
+<v Amit Dubey>Well, you're pretty active in LinkedIn. So yeah, even if we don't want to, I mean, I get to see a post from you or your team every day. So yeah, I'm not surprised. The marketing team will not do that. Yeah. Yeah. No, it's to be honest, right? I mean, we've heard a lot of good words from a lot of our partners that we're speaking to.</v>
+
+00:05:48.306 --> 00:05:48.586
+<v Parissa Sedghi>Do it.</v>
+
+00:05:50.946 --> 00:05:51.106
+<v Parissa Sedghi>Yeah.</v>
+
+00:05:54.706 --> 00:05:55.746
+<v Parissa Sedghi>Yeah, yeah.</v>
+
+00:06:01.026 --> 00:06:01.266
+<v Parissa Sedghi>Yeah.</v>
+
+00:06:06.706 --> 00:06:25.346
+<v Amit Dubey>Because of course, there is nothing getting sold there. It is just about discovering the different concepts and agents, right, and working beyond anything. There are a number of other avenues also which are available. And people have been able to refine their ideas, even if they were</v>
+
+00:06:25.666 --> 00:06:44.386
+<v Amit Dubey>They want to work on their own, not necessarily that working with ITBD, but at least they were able to understand what all additional steps they can take for their own business. And like you already have an AI team, I'm sure that anybody joining from your team would benefit a lot in terms of...</v>
+
+00:06:32.866 --> 00:06:33.146
+<v Parissa Sedghi>Oops.</v>
+
+00:06:44.866 --> 00:06:49.266
+<v Amit Dubey>brainstorming the further ideas what can be done in addition to what you guys are doing.</v>
+
+00:06:45.906 --> 00:06:46.226
+<v Parissa Sedghi>So.</v>
+
+00:06:50.626 --> 00:06:56.706
+<v Parissa Sedghi>Yeah, I'll mention it. You know, we've had to hire a full-time automation person because, you know, Roost is...</v>
+
+00:06:58.546 --> 00:07:04.546
+<v Parissa Sedghi>You know, there's just, there's not, they say there's out of the box workflows, but it's not been like that for us.</v>
+
+00:07:05.266 --> 00:07:05.746
+<v Amit Dubey>Yeah.</v>
+
+00:07:07.026 --> 00:07:07.346
+<v Amit Dubey>Yeah.</v>
+
+00:07:07.266 --> 00:07:07.906
+<v Parissa Sedghi>So...</v>
+
+00:07:09.026 --> 00:07:29.826
+<v Amit Dubey>Do let us know, Marissa. Like I always say, that we're more than happy to at least show you what is available. What you go ahead with is something that is completely up to you and your business needs. But if you are at all interested in looking into different options and what are the possibilities we have, we'll be more than happy to show you those possibilities.</v>
+
+00:07:10.466 --> 00:07:10.626
+<v Parissa Sedghi>No.</v>
+
+00:07:14.706 --> 00:07:15.106
+<v Parissa Sedghi>If.</v>
+
+00:07:19.626 --> 00:07:19.906
+<v Parissa Sedghi>Did it?</v>
+
+00:07:22.626 --> 00:07:23.026
+<v Parissa Sedghi>Kip.</v>
+
+00:07:31.426 --> 00:07:35.106
+<v Parissa Sedghi>Okay. I'll let Brian, Woody, and the rest of the team know about that.</v>
+
+00:07:35.626 --> 00:07:45.026
+<v Amit Dubey>Yeah, absolutely. I mean, even if it is a quick demo of what all we are doing, we will be more than happy to do so. We recently developed...</v>
+
+00:07:46.146 --> 00:07:46.306
+<v Parissa Sedghi>Yeah.</v>
+
+00:07:47.106 --> 00:08:07.106
+<v Amit Dubey>It's kind of a service coordinator, to be honest, right? That is qualifying the tickets which are lending into the PSA tool and identifying whether it has the right quality of information, whether the technician has given the right amount of information to the customer, right, whether it qualifies from a QA point of view.</v>
+
+00:07:48.586 --> 00:07:48.866
+<v Parissa Sedghi>Thanks.</v>
+
+00:08:07.426 --> 00:08:29.266
+<v Amit Dubey>and rating the ticketing and of course raising a risk which an individual will take months and weeks, right? It is immediately putting that in the dashboard that these minute tickets are at risk because the engineer has not put the right information on the ticket or no triage was completed. So it's pretty interesting that anybody who's managing the services, at least they will have that information.</v>
+
+00:08:24.466 --> 00:08:24.786
+<v Parissa Sedghi>Kip.</v>
+
+00:08:27.986 --> 00:08:28.586
+<v Parissa Sedghi>Exactly.</v>
+
+00:08:29.506 --> 00:08:35.426
+<v Amit Dubey>right in front of them at a glance, real time, using these tools and automation agents.</v>
+
+00:08:35.506 --> 00:08:35.746
+<v Parissa Sedghi>Mick.</v>
+
+00:08:37.586 --> 00:08:53.346
+<v Parissa Sedghi>Okay, yeah, we've done, we've done some of, you know, we've used our automation stuff to help us prioritize tickets and kind of like a social listening tool. You know, Roost does all of our onboarding and offboardings, well, most of them.</v>
+
+00:08:45.706 --> 00:08:46.186
+<v Amit Dubey>Mhm.</v>
+
+00:08:55.506 --> 00:08:55.986
+<v Amit Dubey>Yeah.</v>
+
+00:08:55.746 --> 00:09:16.226
+<v Parissa Sedghi>And then N8N does a lot of our on call alerts that we have set up and things like that. So the team has done a lot of a lot of work and we are actually one of the first ones to come in on board roost. Like we were we were part of the like.</v>
+
+00:09:02.186 --> 00:09:02.786
+<v Amit Dubey>Mm-hmm.</v>
+
+00:09:05.986 --> 00:09:06.706
+<v Amit Dubey>It has this.</v>
+
+00:09:12.106 --> 00:09:12.626
+<v Amit Dubey>Mhm.</v>
+
+00:09:15.106 --> 00:09:15.586
+<v Amit Dubey>Yeah.</v>
+
+00:09:16.946 --> 00:09:19.746
+<v Parissa Sedghi>startup phase with Aaron and all those guys.</v>
+
+00:09:21.106 --> 00:09:21.586
+<v Parissa Sedghi>So.</v>
+
+00:09:21.426 --> 00:09:24.706
+<v Amit Dubey>Yeah, no, amazing, amazing. Have you tried Claude at all?</v>
+
+00:09:25.906 --> 00:09:45.266
+<v Parissa Sedghi>We have. Yeah, that's Brian's working on some of that right now because we're also going for CMMC certification. So not only we're helping our clients get it, but we're going forward as well. So there's a lot of policies and things like that that we are enacting and looking at.</v>
+
+00:09:27.586 --> 00:09:27.986
+<v Amit Dubey>Okay.</v>
+
+00:09:31.026 --> 00:09:31.506
+<v Amit Dubey>Mhm.</v>
+
+00:09:36.066 --> 00:09:36.466
+<v Amit Dubey>Okay.</v>
+
+00:09:45.506 --> 00:09:45.986
+<v Parissa Sedghi>So.</v>
+
+00:09:47.186 --> 00:09:47.586
+<v Amit Dubey>OK.</v>
+
+00:09:47.666 --> 00:09:48.706
+<v Parissa Sedghi>Like I said, we're busy.</v>
+
+00:09:49.506 --> 00:09:57.746
+<v Amit Dubey>No, great. Good to be busy and good to see that you're growing. Yeah. Yeah, the sad part is that we have not grown with you. That's the sad part, right?</v>
+
+00:09:53.066 --> 00:09:53.226
+<v Parissa Sedghi>Yeah.</v>
+
+00:09:57.266 --> 00:10:03.826
+<v Parissa Sedghi>I know, I know that is sad, and I mean, I never forced, I didn't foresee the challenges.</v>
+
+00:10:04.306 --> 00:10:04.706
+<v Parissa Sedghi>Um...</v>
+
+00:10:05.986 --> 00:10:06.466
+<v Amit Dubey>Yeah.</v>
+
+00:10:06.546 --> 00:10:09.346
+<v Parissa Sedghi>I thought I thought there would have been a way around it by now.</v>
+
+00:10:11.586 --> 00:10:13.026
+<v Parissa Sedghi>Just giving, giving.</v>
+
+00:10:14.946 --> 00:10:19.026
+<v Parissa Sedghi>Technology, but I mean, at the end of the day, you can't teleport a person here, so...</v>
+
+00:10:21.266 --> 00:10:40.906
+<v Amit Dubey>Yeah, I mean, there's so much that we are currently involved in working with, of course, hundreds of customers, right? And go on calls and, yeah, I can see that what are the possibilities available and how they are leveraging on, of course, different levels based on the business needs. So, yeah, it'll be interesting to see that, you know, why we have not been able to...</v>
+
+00:10:41.026 --> 00:10:58.866
+<v Amit Dubey>help you in any way or collaborate with your business anyway. Because right now, if you're able to work with hundreds of customers, giving them whatnot, right, starting from security to automation to the standard rules like Haze, right, everything currently exists.</v>
+
+00:10:45.586 --> 00:10:45.906
+<v Parissa Sedghi>****.</v>
+
+00:10:59.346 --> 00:10:59.826
+<v Parissa Sedghi>Yeah.</v>
+
+00:10:59.986 --> 00:11:19.586
+<v Amit Dubey>Even, I don't know if you know it, but it's worth mentioning that we have gone over and above the standard technical rules to offer a non-standard rules like accounting, legal, right? One of our biggest customers who currently have more than 50, 60 engineers from us, right?</v>
+
+00:11:19.986 --> 00:11:38.146
+<v Amit Dubey>They've also taken legal roles from us, right? The accounting roles, because of course they're leveraging the current market to pull cheaper engineers or cheaper resources, right, who can be, who can plug into their current teams and deliver for them.</v>
+
+00:11:38.146 --> 00:11:40.786
+<v Parissa Sedghi>Wait, so you guys have people giving legal advice?</v>
+
+00:11:41.506 --> 00:12:02.146
+<v Amit Dubey>Not legal, so this is looking into the ConnectWise contract, right? So there are contracts that goes and sits into, right? So you need somebody who is a contract admin is what we call it as, right? So of course they have a legal understanding of what the contract looks like, right? What are the things covered, what is not covered, right? And raising a risk around these things, so.</v>
+
+00:12:02.466 --> 00:12:04.386
+<v Amit Dubey>These are the ones who work around those things.</v>
+
+00:12:05.266 --> 00:12:08.466
+<v Parissa Sedghi>Yeah, I know for us like a lot of the a lot of the issue is</v>
+
+00:12:10.306 --> 00:12:29.186
+<v Parissa Sedghi>is that you're not in the United States. So that like that's like the hardest parts of I mean, it's I'd be interested to hear what other industries that those MSPs are going after because you know, a lot of the stuff that we do either is hands on or it's compliance restricted. So it makes things way more complicated.</v>
+
+00:12:13.746 --> 00:12:14.226
+<v Amit Dubey>Yeah.</v>
+
+00:12:29.426 --> 00:12:47.026
+<v Parissa Sedghi>And even like, I mean, we have you guys, then we have one guy that we've been working with ConnectWise, but he's been with us for five years. And those two people are the exception to a lot of the security stuff that we're working on. And it's...</v>
+
+00:12:36.386 --> 00:12:36.786
+<v Amit Dubey>Yeah.</v>
+
+00:12:47.986 --> 00:13:06.746
+<v Parissa Sedghi>it's been challenging to make sure everyone stays up to date on all of the security proceedings that we have to do. So I don't know. That's definitely something I'd be curious to hear how your other clients are handling. Or maybe they're just not working in those industries. I just don't know. But yeah.</v>
+
+00:12:55.746 --> 00:12:55.906
+<v Amit Dubey>Mm.</v>
+
+00:13:06.226 --> 00:13:24.666
+<v Amit Dubey>Yeah, we can we can have those sessions, right? I mean, you're not coming to build it as well, so that's another thing, right? We probably could have used that as a platform to to get you visibility around different things, meeting different partners. Do you guys go to what events do you guys go to?</v>
+
+00:13:11.426 --> 00:13:11.666
+<v Parissa Sedghi>Yeah.</v>
+
+00:13:16.386 --> 00:13:16.706
+<v Parissa Sedghi>Keith.</v>
+
+00:13:18.066 --> 00:13:18.306
+<v Parissa Sedghi>Ault.</v>
+
+00:13:24.946 --> 00:13:25.986
+<v Amit Dubey>Pre or yourself.</v>
+
+00:13:26.706 --> 00:13:47.426
+<v Parissa Sedghi>We're doing a lot of, a lot of, I don't, we don't really do industry events like MSP events. We do a lot of like optometry, ophthalmology conferences. So it's not like you're going to see us at a convention with a bunch of other MSPs. So.</v>
+
+00:13:40.786 --> 00:13:41.266
+<v Amit Dubey>Mhm.</v>
+
+00:13:48.626 --> 00:14:05.746
+<v Parissa Sedghi>The conference we just went through, went to in DC, they have CRS, we actually picked up three clients from there. Yeah, and we're talking to like four other. And we're going to go to another event in September and then another event in October.</v>
+
+00:13:55.826 --> 00:13:56.786
+<v Amit Dubey>Wow, awesome.</v>
+
+00:14:07.906 --> 00:14:08.146
+<v Amit Dubey>Kam.</v>
+
+00:14:09.106 --> 00:14:25.346
+<v Parissa Sedghi>So, but the other thing is, I personally don't like to travel because I've got young kids. So for me to go somewhere, it really has to be something that's going to change our revenue stream or something like that to get me away from my kids kind of thing because they're just so young.</v>
+
+00:14:15.426 --> 00:14:15.906
+<v Amit Dubey>Yep.</v>
+
+00:14:26.066 --> 00:14:45.346
+<v Amit Dubey>Understood, understood. Yeah, let me know. There are a lot of avenues available, Priya. I mean, if you are not able to travel, if you think there are two senior people from your team who can travel, because of course, Build It is a big platform where ITBD has established, right? And this is not about ITBD. This is about all other.</v>
+
+00:14:33.666 --> 00:14:33.786
+<v Parissa Sedghi>Bing.</v>
+
+00:14:40.106 --> 00:14:40.386
+<v Parissa Sedghi>Right.</v>
+
+00:14:43.866 --> 00:14:43.986
+<v Parissa Sedghi>****.</v>
+
+00:14:45.666 --> 00:15:05.506
+<v Amit Dubey>potential opportunities who are coming over, right, and your team gets to meet them, you can pick up business from there. It's no big deal, right? And of course, you will get to experience what we offer, what others are offering, what is available in the market, and there will be a lot of push around automation. So we.</v>
+
+00:14:48.706 --> 00:14:49.186
+<v Parissa Sedghi>Mhm.</v>
+
+00:14:58.706 --> 00:14:59.026
+<v Parissa Sedghi>H.</v>
+
+00:15:04.626 --> 00:15:04.986
+<v Parissa Sedghi>Yeah.</v>
+
+00:15:05.586 --> 00:15:25.706
+<v Amit Dubey>We, I'm certain that your team would benefit from, you know, getting their exposure in terms of what is available for them to adopt internally, not necessarily that they have to take from the people who are talking about it, but this is more around exploring the ideas and discovering the ideas and then brainstorm internally to see what can be developed.</v>
+
+00:15:25.826 --> 00:15:31.346
+<v Amit Dubey>If at all, if you think there is a need for other teams to be involved, of course they can do that.</v>
+
+00:15:31.906 --> 00:15:41.346
+<v Parissa Sedghi>Yeah, have you guys, are you guys partnering with Roost on that, what was it, the KPI dashboard that you guys were working on? What was it called?</v>
+
+00:15:41.186 --> 00:15:46.066
+<v Amit Dubey>Uh, KPI dashboard from Roost, I mean, which is...</v>
+
+00:15:41.906 --> 00:15:42.226
+<v Aman Thakur>Yeah.</v>
+
+00:15:45.346 --> 00:15:51.146
+<v Parissa Sedghi>No, it was your, it was like your, it was like your, oh man, what the heck is it called?</v>
+
+00:15:50.346 --> 00:15:52.946
+<v Sarbjeet Singh>Is it Team GPS Performance Management tool?</v>
+
+00:15:52.146 --> 00:15:56.466
+<v Parissa Sedghi>Yes, yes. Are you guys doing that with Roost now?</v>
+
+00:15:54.386 --> 00:15:54.866
+<v Sarbjeet Singh>Kip.</v>
+
+00:15:57.506 --> 00:16:20.386
+<v Amit Dubey>No, it's our internal automation. So internal automation, internal automation, this has come a long way. It has come a long way because of the push that we have received from internal initiatives that we have built around AI, because we have a complete whole team of automation, would be sort of India, right? So they're constantly working on a lot of internal and external automation.</v>
+
+00:15:58.866 --> 00:16:00.626
+<v Sarbjeet Singh>It's an internal automation tool.</v>
+
+00:16:01.106 --> 00:16:01.666
+<v Parissa Sedghi>OK.</v>
+
+00:16:20.706 --> 00:16:37.426
+<v Amit Dubey>initiatives, including the Team GPS product development team. So they've been able to push a lot of automation into Team GPS, which revolves around, you know, you literally do not have to write anything. It summarizes everything based on a discussion, and there are a lot of other cool features too.</v>
+
+00:16:21.826 --> 00:16:22.146
+<v Parissa Sedghi>Yeah.</v>
+
+00:16:35.746 --> 00:16:36.066
+<v Parissa Sedghi>Me.</v>
+
+00:16:38.386 --> 00:16:38.906
+<v Parissa Sedghi>Okay.</v>
+
+00:16:39.266 --> 00:16:47.266
+<v Amit Dubey>Right, it has the ability to connect to your, you know, whatever ticketing tool that you're using. Are you guys using ConnectFise?</v>
+
+00:16:47.826 --> 00:16:48.306
+<v Parissa Sedghi>Yeah.</v>
+
+00:16:48.706 --> 00:16:59.346
+<v Amit Dubey>Yeah, so it has the ability to connect to the connect wise through the APIs and pull a lot of performance related details into the Team GPS. So that can also be populated.</v>
+
+00:16:51.626 --> 00:16:51.746
+<v Aman Thakur>Yeah.</v>
+
+00:17:00.306 --> 00:17:01.466
+<v Parissa Sedghi>Okay.</v>
+
+00:17:01.986 --> 00:17:02.466
+<v Amit Dubey>Yeah.</v>
+
+00:17:03.666 --> 00:17:23.666
+<v Amit Dubey>So I see there is a potential of at least exploring, not necessarily agreeing to something with ITBD, but looking at how far your business has come and how far we have gone to and how we are currently helping with the market. It makes perfect sense at least for you to.</v>
+
+00:17:07.186 --> 00:17:07.326
+<v Parissa Sedghi>Yeah.</v>
+
+00:17:19.906 --> 00:17:20.306
+<v Parissa Sedghi>Yeah.</v>
+
+00:17:24.466 --> 00:17:38.466
+<v Amit Dubey>get an understanding of where we stand and anybody who is relevant in your team that you want to bring on, at least get them the exposure of how we are helping and collaborating in the market. And then of course, you know, you take it up from there and how do you want to take it, but at least.</v>
+
+00:17:37.266 --> 00:17:42.146
+<v Parissa Sedghi>Yeah, I'd be curious to hear more about some of the workflows that you guys have been developing.</v>
+
+00:17:43.826 --> 00:18:01.426
+<v Amit Dubey>Okay, so it can go this way, right, Priya? I mean, we need a little bit of collaboration as a starting point, right? That Sarbjeet will take it away and probably we want to have a discovery session to understand what your current setup is and where do you need your help so that we can...</v>
+
+00:17:45.026 --> 00:17:45.146
+<v Parissa Sedghi>Yeah.</v>
+
+00:18:02.066 --> 00:18:21.346
+<v Amit Dubey>act as a consultant or recommendations can be given to you which are right fit for your purpose, right? We're not just throwing it out to you everything that is available because there are hundreds of things which are available. So if you agree, only two things that is needed from you, right? One, you...</v>
+
+00:18:13.146 --> 00:18:13.266
+<v Parissa Sedghi>Yeah.</v>
+
+00:18:21.506 --> 00:18:45.226
+<v Amit Dubey>telling us that in addition to you, who else you would want that to be a part of that discussion so that we can include them in the invite and of course the timings and open for a discussion around what you have available, what you want to do, right, what are the challenges you're facing so that our team could start building those recommendations to you, present to you, and then we can take a look and.</v>
+
+00:18:45.346 --> 00:18:47.826
+<v Amit Dubey>Of course, you can decide what, how you want to proceed further.</v>
+
+00:18:48.346 --> 00:18:48.466
+<v Parissa Sedghi>Yeah.</v>
+
+00:18:49.466 --> 00:18:56.226
+<v Parissa Sedghi>Yeah, let me think about it a little bit. I also have two questions. Is Sushant still working with you guys?</v>
+
+00:18:53.906 --> 00:18:54.626
+<v Amit Dubey>Yeah, sure.</v>
+
+00:18:57.666 --> 00:19:01.186
+<v Amit Dubey>He is, but he has moved into a different role.</v>
+
+00:18:58.466 --> 00:18:58.706
+<v Sarbjeet Singh>Kip.</v>
+
+00:19:02.106 --> 00:19:03.826
+<v Parissa Sedghi>What does that mean? What role is he in?</v>
+
+00:19:04.626 --> 00:19:10.786
+<v Amit Dubey>He is more into operations plus he's into his looking after our bench as well.</v>
+
+00:19:12.306 --> 00:19:15.186
+<v Parissa Sedghi>So if I wanted to hire someone, I would work with him.</v>
+
+00:19:16.626 --> 00:19:36.546
+<v Amit Dubey>No, if you want to hire somebody, you still work with Sarbjeet and me, right? So you would still have to let us know that what your requirements are. And of course, him being a bench manager, he works in the background with us. So, you know, in terms of funneling those resources. But at the end of the day, he is a part of that.</v>
+
+00:19:36.706 --> 00:19:37.266
+<v Amit Dubey>Workflow.</v>
+
+00:19:38.226 --> 00:19:40.706
+<v Parissa Sedghi>Okay, what about Todd? I haven't seen Todd in a while.</v>
+
+00:19:42.386 --> 00:19:47.906
+<v Amit Dubey>Oh, I think Sushant messaged you the other day. He was supposed to message you last week. Did he?</v>
+
+00:19:49.426 --> 00:19:52.386
+<v Parissa Sedghi>No, I haven't heard from either of those gentlemen, I don't think.</v>
+
+00:19:52.826 --> 00:20:04.546
+<v Amit Dubey>Yeah, he, he, I think we were discussing me, Natalie, and Sarbjeet while we were trying to get the renewal signed. I think he said, okay, let me reach out to Priya. She will hear me out.</v>
+
+00:19:53.346 --> 00:19:53.426
+<v Parissa Sedghi>The.</v>
+
+00:19:56.986 --> 00:19:57.026
+<v Parissa Sedghi>I.</v>
+
+00:20:06.066 --> 00:20:09.106
+<v Sarbjeet Singh>I can pull him in the call if required.</v>
+
+00:20:09.186 --> 00:20:11.666
+<v Parissa Sedghi>That, yeah, that's why I was curious.</v>
+
+00:20:10.026 --> 00:20:10.946
+<v Amit Dubey>No, no, no, he's...</v>
+
+00:20:12.226 --> 00:20:32.066
+<v Amit Dubey>He's A valuable team member. He's still here. It's just that his scope of work has expanded, right? And he's taking care of two different things right now. But yeah, he will be involved in the process, like you said, Parisa, if you ever are interested in hiring or interviewing somebody, you will see his and his team's name popping up.</v>
+
+00:20:18.106 --> 00:20:18.386
+<v Parissa Sedghi>Yeah.</v>
+
+00:20:32.466 --> 00:20:34.626
+<v Amit Dubey>For those collaborations.</v>
+
+00:20:35.826 --> 00:20:38.466
+<v Parissa Sedghi>Okay. All right, so wait, so what happened to Todd?</v>
+
+00:20:39.986 --> 00:20:48.706
+<v Amit Dubey>Todd can, he moved ahead. He moved ahead and he moved to a different organization. It's about two months ago.</v>
+
+00:20:42.386 --> 00:20:43.186
+<v Sarbjeet Singh>Thought is.</v>
+
+00:20:49.986 --> 00:20:50.466
+<v Parissa Sedghi>Okay.</v>
+
+00:20:51.666 --> 00:21:00.386
+<v Parissa Sedghi>Okay, yeah, I saw something on LinkedIn and I was just curious because Todd was like one of our guys. So I was just kind of curious to learn what was happening there.</v>
+
+00:20:51.826 --> 00:20:52.946
+<v Sarbjeet Singh>He got married, too.</v>
+
+00:20:54.866 --> 00:20:54.906
+<v Sarbjeet Singh>I.</v>
+
+00:20:58.226 --> 00:20:58.706
+<v Amit Dubey>Yeah.</v>
+
+00:21:01.426 --> 00:21:18.146
+<v Amit Dubey>Yeah, no, he, he, I think he, the priorities and other things would have changed. So yeah, he would have made the decision, not very close to what drove the decision for him. But yeah, he's associated with a lot of good stuff that we see in LinkedIn right now.</v>
+
+00:21:18.946 --> 00:21:20.386
+<v Parissa Sedghi>Yeah, yeah, I saw.</v>
+
+00:21:20.066 --> 00:21:21.586
+<v Amit Dubey>Yeah, yeah.</v>
+
+00:21:22.946 --> 00:21:41.266
+<v Parissa Sedghi>Okay. Yeah, let me see who else I can bring, I can think of that might want to be a part of this conversation so we can make sure the right people are on both ends. Do you maybe have just like a document of the services that you provide so I can just kind of maybe pick through that?</v>
+
+00:21:23.906 --> 00:21:24.306
+<v Amit Dubey>Alright.</v>
+
+00:21:30.146 --> 00:21:30.786
+<v Amit Dubey>Sure.</v>
+
+00:21:42.386 --> 00:22:02.426
+<v Amit Dubey>So here's the thing, right, Parisa, we can send you a very high level of what we offer in terms of different services like Team GPS, NOC services, right, dedicated services, what you already have. We can give you a glimpse of the AI and automation as well. But as you can imagine that.</v>
+
+00:22:02.546 --> 00:22:22.906
+<v Amit Dubey>the details around will be huge, right? And it can be confusing, it can be overwhelming also, and probably can create potentially misunderstanding as well. So this is the reason we wanted to limit the information and only share what is relevant to you. So having a quick call to understand what you are expecting.</v>
+
+00:22:10.226 --> 00:22:10.466
+<v Parissa Sedghi>Yeah.</v>
+
+00:22:23.586 --> 00:22:31.506
+<v Amit Dubey>and only presenting what you want to see would make you more involved in terms of what you, you know, what you would like to review.</v>
+
+00:22:29.946 --> 00:22:30.066
+<v Parissa Sedghi>Yeah.</v>
+
+00:22:33.506 --> 00:22:34.066
+<v Parissa Sedghi>OK.</v>
+
+00:22:34.786 --> 00:22:35.186
+<v Amit Dubey>Yeah.</v>
+
+00:22:35.666 --> 00:22:37.426
+<v Parissa Sedghi>I don't like doing things that way, but...</v>
+
+00:22:38.466 --> 00:22:42.066
+<v Amit Dubey>I mean, we can send it. I mean, Sarbjeet would still send to you very high level.</v>
+
+00:22:40.546 --> 00:23:01.466
+<v Parissa Sedghi>Yeah, I mean, I just want to know the like, because, because we like, like, I don't like, it's not like I would even think to tell you, hey, I need someone to review my contracts. Like, I don't put, I don't associate you with operations. So like, I think that's, that's why I want like that piece of paper so I can say, oh, they actually do that. Let me think if that's something that fits.</v>
+
+00:22:52.786 --> 00:22:53.106
+<v Amit Dubey>Yeah.</v>
+
+00:23:02.306 --> 00:23:02.706
+<v Amit Dubey>Yeah.</v>
+
+00:23:02.946 --> 00:23:14.706
+<v Parissa Sedghi>Because right now, all I when I think of you guys, I think of Helpdesk, but you're telling me Roost is a thing now, you're telling me Operations is a thing, so I there's just so much I don't know, so I mean...</v>
+
+00:23:10.786 --> 00:23:11.346
+<v Amit Dubey>Yeah.</v>
+
+00:23:14.066 --> 00:23:14.786
+<v Amit Dubey>Yep, yep.</v>
+
+00:23:15.906 --> 00:23:38.706
+<v Amit Dubey>Let me let me work with Sarbjeet and get it over to you. Let me work with Sarbjeet and get it over to you. So to give you a holistic view of what all we offer, right? So that if you have clear understanding of, you know, technical, non-technical automation and anything that we talk about, it's available for you to take a look. And of course, you let us know what is your interest and we can have a quick call to go through the details.</v>
+
+00:23:15.986 --> 00:23:16.866
+<v Parissa Sedghi>And I mean...</v>
+
+00:23:19.106 --> 00:23:19.426
+<v Parissa Sedghi>Yeah.</v>
+
+00:23:22.066 --> 00:23:22.466
+<v Parissa Sedghi>Mick.</v>
+
+00:23:33.506 --> 00:23:33.746
+<v Parissa Sedghi>If.</v>
+
+00:23:38.226 --> 00:23:41.666
+<v Parissa Sedghi>Yeah, I think that would be helpful. I mean, or if you just want to do like...</v>
+
+00:23:43.506 --> 00:23:57.746
+<v Parissa Sedghi>review of whatever you provide. If you want me to jump on a call and you can do that and we can talk about it, that's fine, versus you just sending the information. But like, I just don't know at all what services we provide. So I can't tell you, oh yeah, I'm interested in this. You know what I'm saying?</v>
+
+00:23:49.026 --> 00:23:49.506
+<v Amit Dubey>Yeah.</v>
+
+00:23:52.546 --> 00:23:53.106
+<v Amit Dubey>Sure.</v>
+
+00:23:55.586 --> 00:23:55.986
+<v Amit Dubey>Okay.</v>
+
+00:23:58.386 --> 00:24:16.986
+<v Amit Dubey>Yep, so I get it, I get it, I get it completely understood. Let's do it, right? So, expect a note from Sarbjeet asking for your availability, right? We can present and talk about it, and you can bring anyone who is you think is, you know...</v>
+
+00:23:59.146 --> 00:24:00.066
+<v Parissa Sedghi>Am I making sense?</v>
+
+00:24:01.346 --> 00:24:01.586
+<v Parissa Sedghi>Yeah.</v>
+
+00:24:10.386 --> 00:24:10.866
+<v Parissa Sedghi>Mhm.</v>
+
+00:24:17.106 --> 00:24:21.786
+<v Amit Dubey>but would want to be a part of that discussion, we can take them through and again, you can take it up from there.</v>
+
+00:24:22.626 --> 00:24:26.706
+<v Parissa Sedghi>Like do you guys do like SEO stuff too or?</v>
+
+00:24:28.946 --> 00:24:33.026
+<v Amit Dubey>It is a possibility, but it's not something that we have done yet.</v>
+
+00:24:29.106 --> 00:24:29.346
+<v Sarbjeet Singh>No.</v>
+
+00:24:33.506 --> 00:24:33.986
+<v Parissa Sedghi>Yeah.</v>
+
+00:24:34.786 --> 00:24:35.186
+<v Amit Dubey>Yeah.</v>
+
+00:24:34.906 --> 00:24:40.386
+<v Parissa Sedghi>Yeah, because I know there's like different areas and some and you know, I don't know what kind of marketing stuff you guys do because...</v>
+
+00:24:41.346 --> 00:24:48.946
+<v Parissa Sedghi>You know, that's always another factor in my job as well, because I'm always trying to do the marketing side.</v>
+
+00:24:46.146 --> 00:24:47.426
+<v Amit Dubey>Yeah, marketing.</v>
+
+00:24:48.306 --> 00:25:08.226
+<v Amit Dubey>I remember during the last build it, a lot of clients were, of our partners were interested looking at how we presented a lot of stuff to them, right? They were really interested in seeing that, you know, who is the marketing team and what all tools they're using. So I know that there were a lot of sessions which were arranged on the back of this.</v>
+
+00:25:02.146 --> 00:25:02.466
+<v Parissa Sedghi>Exit.</v>
+
+00:25:08.586 --> 00:25:27.906
+<v Amit Dubey>just to talk through and of course not as a paid service, this is more of a good to know information, right? And how that would have evolved, we can certainly find out for you. But yeah, I mean, there is, sky's the limit, Teresa, right? Just about you expressing your needs and of course, if that fits into the need or fits into the need.</v>
+
+00:25:26.866 --> 00:25:27.026
+<v Parissa Sedghi>Yeah.</v>
+
+00:25:28.266 --> 00:25:28.346
+<v Parissa Sedghi>The.</v>
+
+00:25:28.626 --> 00:25:30.946
+<v Amit Dubey>ways of offering that, certainly why not.</v>
+
+00:25:30.786 --> 00:25:31.186
+<v Parissa Sedghi>Yes.</v>
+
+00:25:32.866 --> 00:25:33.346
+<v Parissa Sedghi>Okay.</v>
+
+00:25:33.386 --> 00:25:45.986
+<v Amit Dubey>Yeah, all right, perfect. Aman, I'm really sorry that I've taken all this time, but I think it is worth spending the time that at least we were we were able to make her aware of, you know, what value we offer, so...</v>
+
+00:25:45.986 --> 00:25:48.546
+<v Parissa Sedghi>Yeah, sorry, I kind of hijacked the meeting too. Sorry about that.</v>
+
+00:25:48.946 --> 00:25:59.266
+<v Amit Dubey>No, it's absolutely fine. I think, Aman, if you can quickly go through your slides and everything. Any highlights for Hayes, anything for Hayes, Prisa, doubts it?</v>
+
+00:25:50.066 --> 00:25:50.186
+<v Aman Thakur>Yeah.</v>
+
+00:25:58.386 --> 00:25:58.706
+<v Parissa Sedghi>Singh.</v>
+
+00:25:59.986 --> 00:26:14.386
+<v Parissa Sedghi>The only thing feedback I really have for Hayes is that he had a challenging time being on our daily stand-up calls. And I think it's because he's helping clients. So I think there just needs to be that communication piece with Jeff.</v>
+
+00:26:10.266 --> 00:26:10.786
+<v Aman Thakur>Brenda.</v>
+
+00:26:17.186 --> 00:26:38.706
+<v Parissa Sedghi>where he's just like, because it's kind of a joke now in the office, oh, is he going to be on the call, like, because he's never on the call, and we have questions for him. So I think that would be my initial feedback piece. Because it doesn't appear to be scheduled calls. It seems to be like his follow-up calls are always around that time.</v>
+
+00:26:39.066 --> 00:26:58.466
+<v Parissa Sedghi>And I even told, because the whole pod is also having this challenge, so I even told the client success representative, let's move the call to like 4 o'clock in the afternoon. But it doesn't help anybody if it's at the end of the day. So I'm really trying to do it towards the beginning of the day. So there seems to be some challenges.</v>
+
+00:26:58.546 --> 00:27:11.426
+<v Parissa Sedghi>With the team in general, with the joining the stand-up meeting, but I figured maybe, maybe if you have other insights for that, I don't get to hear the big story, so...</v>
+
+00:27:12.986 --> 00:27:20.866
+<v Aman Thakur>No, thank you. I'll make a note of it and discuss with him. So that way we can maybe schedule those tickets later and join the meeting.</v>
+
+00:27:18.386 --> 00:27:18.786
+<v Parissa Sedghi>Yeah.</v>
+
+00:27:22.066 --> 00:27:22.706
+<v Parissa Sedghi>That would be great.</v>
+
+00:27:23.706 --> 00:27:30.386
+<v Aman Thakur>I think I, we already spent 32 minutes, I think, so I can send you the deck if that is fine, or you want, I can share.</v>
+
+00:27:30.546 --> 00:27:38.146
+<v Amit Dubey>Like, let's quickly, we still have two minutes. I know Parisa's supervision is not going to extend it, but at least let's go through the numbers to make sure that we are aligned.</v>
+
+00:27:39.746 --> 00:27:40.306
+<v Parissa Sedghi>Okay.</v>
+
+00:27:41.506 --> 00:27:43.506
+<v Aman Thakur>I think you let me share the screen then.</v>
+
+00:27:42.786 --> 00:27:43.586
+<v Parissa Sedghi>You took it.</v>
+
+00:27:45.746 --> 00:27:49.106
+<v Aman Thakur>All right, thank you Fraser again. Let me know if you can see my screen.</v>
+
+00:27:47.906 --> 00:27:48.226
+<v Parissa Sedghi>Kip.</v>
+
+00:27:49.426 --> 00:27:50.146
+<v Parissa Sedghi>Yes.</v>
+
+00:27:49.986 --> 00:27:52.306
+<v Amit Dubey>Yeah, thank you. Let's sum to the numbers.</v>
+
+00:27:51.666 --> 00:27:51.986
+<v Aman Thakur>Right.</v>
+
+00:27:53.186 --> 00:27:59.706
+<v Aman Thakur>I think I cannot go to the slide. We have the same slide, so I'll just go first.</v>
+
+00:28:00.946 --> 00:28:19.826
+<v Aman Thakur>Just the utilization number, so as always, we target 80%, but yeah, this is for the last month of April, for the whole month. So he was out for two days, three days he was out for PTO, and so we deliver 101% first to third.</v>
+
+00:28:20.226 --> 00:28:27.306
+<v Aman Thakur>Six to 10, same 101%, 103, 102, so overall his billable, 102%.</v>
+
+00:28:29.666 --> 00:28:33.266
+<v Aman Thakur>That was the whole month of April.</v>
+
+00:28:30.546 --> 00:28:30.786
+<v Parissa Sedghi>Mm.</v>
+
+00:28:34.546 --> 00:28:48.546
+<v Aman Thakur>So this number again, I'm picking from the connect ways, right? How many are he's delivering daily? How many ticket he's closing? What is his total utilization? So that's what I collected these all number.</v>
+
+00:28:35.106 --> 00:28:35.506
+<v Parissa Sedghi>Step.</v>
+
+00:28:50.066 --> 00:28:56.146
+<v Parissa Sedghi>Okay, I'll pull Hazes ticket counts for April and give those to you as well, just so we can compare those numbers.</v>
+
+00:28:57.746 --> 00:29:15.746
+<v Aman Thakur>Yeah, I'll move for the ticket closer count. So I have that number too. So she was out like again, he closed 147 ticket the whole month. So week wise, he was out the first week, so 21 tickets, then 40 tickets, then.</v>
+
+00:29:15.106 --> 00:29:16.706
+<v Parissa Sedghi>If this is February.</v>
+
+00:29:18.146 --> 00:29:20.066
+<v Aman Thakur>Oh, sorry, I missed this way.</v>
+
+00:29:21.266 --> 00:29:21.826
+<v Aman Thakur>In Bush.</v>
+
+00:29:23.746 --> 00:29:36.386
+<v Aman Thakur>Yeah, so I think also this slide is not a task, but yeah, but if you can send the number for the closer, yeah, that'll be great, so I can compare. How about the utilization? The number look good at your side.</v>
+
+00:29:30.786 --> 00:29:31.346
+<v Parissa Sedghi>Okay.</v>
+
+00:29:36.866 --> 00:29:44.146
+<v Parissa Sedghi>I don't, I never understood how you guys calculated that. So, yeah, that's fine.</v>
+
+00:29:44.786 --> 00:29:51.266
+<v Aman Thakur>So whatever the error he is delivering per week, that's what we calculate the desired number of working days.</v>
+
+00:29:51.586 --> 00:29:53.586
+<v Parissa Sedghi>Well, how can he have over 100%?</v>
+
+00:29:54.546 --> 00:29:57.666
+<v Aman Thakur>because some days you deliver more than 8 hours.</v>
+
+00:29:59.466 --> 00:29:59.826
+<v Parissa Sedghi>Hmm.</v>
+
+00:30:17.146 --> 00:30:17.666
+<v Parissa Sedghi>Okay.</v>
+
+00:30:17.746 --> 00:30:17.826
+<v Parissa Sedghi>The.</v>
+
+00:30:19.026 --> 00:30:40.066
+<v Amit Dubey>So, one thing Pre Sunidhi can possibly help us with is giving us an extract of his time sheet for the month of April, and Aman can always revalidate the information and we can get back to you on this one, because, like Aman said, right now what he's doing is he's going into, you know, he's doing his board reviews, he's pulling those numbers with him.</v>
+
+00:30:19.106 --> 00:30:19.426
+<v Aman Thakur>Yeah.</v>
+
+00:30:19.506 --> 00:30:20.146
+<v Parissa Sedghi>Ohh.</v>
+
+00:30:32.706 --> 00:30:32.826
+<v Parissa Sedghi>Yeah.</v>
+
+00:30:34.466 --> 00:30:34.866
+<v Parissa Sedghi>It's.</v>
+
+00:30:37.746 --> 00:30:37.906
+<v Parissa Sedghi>Okay.</v>
+
+00:30:40.546 --> 00:30:54.546
+<v Amit Dubey>So you helping us with the information will help us revalidate and get back to you with a confirmation. And along with that, Aman, I would recommend that you send across the calculation as well, so that, you know, we're clear around how things are getting calculated.</v>
+
+00:30:45.906 --> 00:30:46.226
+<v Parissa Sedghi>Hello.</v>
+
+00:30:56.146 --> 00:31:08.866
+<v Aman Thakur>Yeah, or maybe any kind of report if possible. Yeah, maybe some you can probably share the report prior to our service call, so I can prepare that deck, you know, from that particular.</v>
+
+00:30:56.466 --> 00:30:57.026
+<v Parissa Sedghi>Okay.</v>
+
+00:31:08.066 --> 00:31:18.706
+<v Parissa Sedghi>Okay, yeah, I should really make myself a note to do that. Let me see if I can, I'm gonna ask, actually I'm gonna ask his CSR to do that weekly.</v>
+
+00:31:19.346 --> 00:31:26.626
+<v Aman Thakur>Yeah, weekly for the billable hours and the ticket work and ticket close. I think three things that we needed.</v>
+
+00:31:20.706 --> 00:31:20.946
+<v Parissa Sedghi>Yeah.</v>
+
+00:31:23.066 --> 00:31:23.186
+<v Parissa Sedghi>The.</v>
+
+00:31:27.426 --> 00:31:31.746
+<v Parissa Sedghi>Okay, alright, I will look at that.</v>
+
+00:31:33.826 --> 00:31:35.826
+<v Parissa Sedghi>All right, my.</v>
+
+00:31:37.106 --> 00:31:46.706
+<v Parissa Sedghi>My, I'm already getting blown up for other things here. So I'll look for an email from you guys, I guess two different emails. I'll pull data for you and then we'll go from there.</v>
+
+00:31:47.666 --> 00:31:48.386
+<v Amit Dubey>Sure, yeah.</v>
+
+00:31:47.746 --> 00:31:48.586
+<v Aman Thakur>Oh yeah, definitely.</v>
+
+00:31:49.266 --> 00:31:50.786
+<v Parissa Sedghi>All right. Thank you, guys. Have a great day.</v>
+
+00:31:49.706 --> 00:31:54.146
+<v Aman Thakur>And again, yeah, thank you. Take care. Bye, bye.</v>
+
+00:31:51.186 --> 00:31:54.786
+<v Amit Dubey>Pleasure speaking to Brisa. Thank you for your time. Take care. Bye-bye.</v>
+
+00:31:52.786 --> 00:31:53.586
+<v Parissa Sedghi>Think that.</v>

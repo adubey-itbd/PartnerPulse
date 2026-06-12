@@ -1,0 +1,400 @@
+WEBVTT
+NOTE title: Matador Networks | Bi-Weekly Service Call
+NOTE date: 2026-06-01
+NOTE duration: 19m 26s
+
+00:01:36.611 --> 00:01:37.691
+<v Andy Arora>Hello, Matt, how are you?</v>
+
+00:01:38.171 --> 00:01:39.531
+<v Matt Maupin>I'm fine, sir. How about yourself?</v>
+
+00:01:40.691 --> 00:01:41.451
+<v Andy Arora>Doing well.</v>
+
+00:01:42.571 --> 00:01:47.211
+<v Andy Arora>Let me check who is joining from Service. Give me just one minute.</v>
+
+00:02:47.051 --> 00:02:51.451
+<v Andy Arora>Give me just one minute. Matt, let me call Amit and get back to you.</v>
+
+00:02:52.011 --> 00:02:52.811
+<v Matt Maupin>Yeah, okay.</v>
+
+00:02:52.331 --> 00:02:54.411
+<v Andy Arora>Switch it off. Thank you.</v>
+
+00:02:54.491 --> 00:02:55.931
+<v Matt Maupin>I'll just hang here.</v>
+
+00:02:56.731 --> 00:02:57.611
+<v Andy Arora>Thank you. Thank you.</v>
+
+00:02:58.171 --> 00:02:58.571
+<v Matt Maupin>True.</v>
+
+00:04:07.051 --> 00:04:09.331
+<v Keith Rozario>Morning, everyone. Good afternoon.</v>
+
+00:04:08.851 --> 00:04:10.491
+<v Matt Maupin>Hey, Keith, how you doing?</v>
+
+00:04:10.491 --> 00:04:11.291
+<v Andy Arora>I love you.</v>
+
+00:04:10.971 --> 00:04:17.051
+<v Keith Rozario>I am sorry to keep you guys waiting. My system acted all funny on me right now.</v>
+
+00:04:16.091 --> 00:04:18.571
+<v Matt Maupin>Oh, man, you're good. You're good.</v>
+
+00:04:19.611 --> 00:04:25.091
+<v Keith Rozario>And it's not the first time. I think the last three calls it happened. I mean, it's working fine, but as soon as jump on a call, it just...</v>
+
+00:04:25.931 --> 00:04:30.891
+<v Keith Rozario>just goes circles around me. So thank you so much. Thank you, Andy, for backing me up there.</v>
+
+00:04:35.131 --> 00:04:36.571
+<v Keith Rozario>Alrighty, I...</v>
+
+00:04:39.131 --> 00:04:40.491
+<v Keith Rozario>How are things on your end, Matt?</v>
+
+00:04:41.211 --> 00:04:42.251
+<v Matt Maupin>Everything's okay.</v>
+
+00:04:43.891 --> 00:04:45.371
+<v Keith Rozario>Nice. Good to hear that.</v>
+
+00:04:48.491 --> 00:04:53.451
+<v Keith Rozario>I will be sharing my screen with you. We'll quickly talk about how things are with...</v>
+
+00:04:56.491 --> 00:04:58.291
+<v Keith Rozario>Kanika Kaila.</v>
+
+00:05:02.811 --> 00:05:04.171
+<v Keith Rozario>Apologies, just a sec.</v>
+
+00:05:14.651 --> 00:05:18.451
+<v Keith Rozario>You still in touch with Spencer, Matt? I saw your email to him. It was nice.</v>
+
+00:05:18.091 --> 00:05:24.251
+<v Matt Maupin>Yeah, he he had a he had a note that he'd sent to me, and I don't let me see if I...</v>
+
+00:05:21.531 --> 00:05:24.251
+<v Keith Rozario>Yeah, I saw that. That was sweet.</v>
+
+00:05:32.411 --> 00:05:42.851
+<v Matt Maupin>Yeah, I hope he's, I hope he's doing well. He's just, Spencer's just, he's a quality man and he's great to great to work with.</v>
+
+00:05:35.611 --> 00:05:36.091
+<v Keith Rozario>Mhm.</v>
+
+00:05:44.331 --> 00:05:50.611
+<v Matt Maupin>I don't know. He's like a lot. He's like everybody else that I've engaged with at ITBD by design. It just seems to be that.</v>
+
+00:05:51.131 --> 00:05:51.371
+<v Keith Rozario>Right.</v>
+
+00:05:52.091 --> 00:05:57.451
+<v Matt Maupin>People that people that we work with is just great character and great interactions.</v>
+
+00:05:58.331 --> 00:06:01.291
+<v Matt Maupin>Strong from either a technical or management perspective.</v>
+
+00:06:02.971 --> 00:06:06.811
+<v Matt Maupin>Guys have got, you guys have got some good people to be around every day, that's for sure.</v>
+
+00:06:07.451 --> 00:06:14.251
+<v Keith Rozario>We're lucky. We're lucky to have that. I have a great set of individuals in my team. They make me look good on calls. So yeah, thank you for that.</v>
+
+00:06:16.851 --> 00:06:37.851
+<v Keith Rozario>All righty, I'll jump right into it. I've shared the screen for Kaila, the monthly business review for the month of May. I'll jump right into the agenda. The agenda for today will be the check-in, highlights, action tracker, performance analysis, way forward, and recap. We'll do the quick check-in first. How are things with Kaila? How are things with Kanika? How do you think she performed last month?</v>
+
+00:06:37.931 --> 00:06:39.371
+<v Keith Rozario>Any feedback for me or her?</v>
+
+00:06:40.331 --> 00:07:01.051
+<v Matt Maupin>Well, I think it's been an adjustment for all of us not having Spencer here. So we're working with Kaila just on her, whether it's her breaks during the day or especially a meal break. You know, she starts her shift at 7 and ends at 4 P.m. Central.</v>
+
+00:06:47.771 --> 00:06:48.251
+<v Keith Rozario>Yeah.</v>
+
+00:07:02.491 --> 00:07:04.971
+<v Matt Maupin>Austin and Kris, you know, they're 8 to 5.</v>
+
+00:07:06.331 --> 00:07:24.971
+<v Matt Maupin>So, we've been, you know, covering the last hour of the day, so it's been an adjustment. I can, you know, Keith, I'll be able to operate this way for a little while, but you know, we start adding customers back, I'll...</v>
+
+00:07:10.651 --> 00:07:11.131
+<v Keith Rozario>Mhm.</v>
+
+00:07:25.291 --> 00:07:32.251
+<v Matt Maupin>I'm gonna have to make a change with the with the technical headcount, where we could we could manage what we got, but it's not.</v>
+
+00:07:29.531 --> 00:07:29.931
+<v Keith Rozario>OK.</v>
+
+00:07:32.971 --> 00:07:33.451
+<v Keith Rozario>Mhm.</v>
+
+00:07:33.451 --> 00:07:35.771
+<v Matt Maupin>It's not a long-term answer.</v>
+
+00:07:36.571 --> 00:07:55.531
+<v Keith Rozario>Yeah, yeah. Okay. I wish we have Spencer available till then. He'd be happy to work with you guys again, but I'm sure you'll be thrilled as well, equally thrilled. But yeah, it did. It did. I can see the volume that Gaia handled during this period. I mean, immediately after this slide, I can see.</v>
+
+00:07:56.131 --> 00:08:19.691
+<v Keith Rozario>Yeah, Spencer was off-boarded. I think the whole May, Gaia worked alone, working days or 20, the tickets that she handled, 272. That was a good amount of tickets that she worked on. But she is a champ. She's able to handle this without even flinching. So I'm happy she's taking care of things solely. But yeah, if you feel that we have an option to, you know, go up a resource, we can.</v>
+
+00:08:19.811 --> 00:08:22.171
+<v Keith Rozario>Of course, we'll start working on that piece as well, Matt.</v>
+
+00:08:22.811 --> 00:08:25.051
+<v Matt Maupin>I will keep you, certainly keep you posted.</v>
+
+00:08:25.931 --> 00:08:27.291
+<v Keith Rozario>Awesome. Sounds good.</v>
+
+00:08:28.411 --> 00:08:46.811
+<v Keith Rozario>All right. To dig deeper into how things were for Kaila, the average utilization for the month of May was 73.8. The number of tickets, like mentioned in the previous slide, 272 across 20 days that she worked. 76.5% closure rate in total. Out of 272, she was able to close 208 tickets.</v>
+
+00:08:47.171 --> 00:09:09.491
+<v Keith Rozario>20 working days, like I mentioned, there was one sick leave and one Memorial Day, one leave for Memorial Day as well. The best utilization week was 82.3. That week had full 5 working days, that was week two. 59 tickets were handled during that week and 44 were closed. High volume spike on May 6th, 28 tickets handled in a single day, 23 closed out of those, exceptional throughput.</v>
+
+00:09:09.611 --> 00:09:28.691
+<v Keith Rozario>82% closure rate. Spencer, since Spencer got off boarded, of course, she got to work on additional tickets, but she was able to manage them well. Nothing affected the closure rate as such. Week 2 again, strong finish to May with 80 point, rather, at the end of the May, strong finish to May with 80.7 utilization across shortened.</v>
+
+00:09:28.811 --> 00:09:49.371
+<v Keith Rozario>Four day week, 76%. That's the 4th week that we're talking about. 100% closure day, May 11th. All 11 tickets that she managed were closed on the same day. So that was a good day for her, for Matador as a whole as well. If I look into the utilization week on week, the week one, the utilization was 47%, week two, 72.3%, week</v>
+
+00:09:51.131 --> 00:10:09.851
+<v Keith Rozario>Week 4 was 66.5 and week 5, that is between 26th to 29th, is 80.7%. That's the highest utilization, not the highest, well, second highest utilization for the whole month. Average utilization sitting at 73.8%, which is a little below the target that we have, 80%, but she's there, almost there.</v>
+
+00:10:10.171 --> 00:10:28.691
+<v Keith Rozario>especially for two straight weeks, she had 82 and 81%. If I talk about closure, for week one, she was able to close seven out of eight tickets that she managed, 88% utilization there. Week 2, 84% utilization. Week 3, 75, week 4, 66, and week five, she jumped again to 76.</v>
+
+00:10:29.851 --> 00:10:42.891
+<v Keith Rozario>Week 2, like mentioned in the previous slide, she worked on 88 tickets and closed 74 out of them. So 84% of closure rate there. She did pretty well. But what do you have to say on the utilization of the closure for her, Matt?</v>
+
+00:10:44.051 --> 00:11:01.891
+<v Matt Maupin>It was, we started working with some additional workflows inside Autotask just to help with things coming in that were, they might be quarantine reports or they might be other automated generated tickets created by automated systems that.</v>
+
+00:10:59.771 --> 00:10:59.931
+<v Keith Rozario>Mm.</v>
+
+00:11:02.731 --> 00:11:11.211
+<v Matt Maupin>just based on the title or the ticket description can just be changed to a completed status just to be able to just to be able to help with.</v>
+
+00:11:09.051 --> 00:11:09.531
+<v Keith Rozario>Mhm.</v>
+
+00:11:12.651 --> 00:11:31.811
+<v Matt Maupin>The administrative work, and then, of course, the ticket metrics. And so that, you know, we should see some of you just the accuracy of the numbers improve, just as Austin and I are working on these workflows just to get some of the noise out of the ticketing system.</v>
+
+00:11:13.291 --> 00:11:13.691
+<v Keith Rozario>Right.</v>
+
+00:11:16.411 --> 00:11:17.131
+<v Keith Rozario>Mm-hmm.</v>
+
+00:11:32.171 --> 00:11:39.451
+<v Matt Maupin>And we've been getting Kaila, you know, involved in the alerts queue, because really, Keith, our...</v>
+
+00:11:40.491 --> 00:12:00.411
+<v Matt Maupin>you know, the tickets coming in on the service desk queue. I've got some reporting set up just for the inbound call queue, just so we can keep an eye on the number of calls coming in, how many are being answered, how many are being abandoned, just because of, you know, the staff reduction.</v>
+
+00:11:50.611 --> 00:11:51.091
+<v Keith Rozario>Mhm.</v>
+
+00:11:55.611 --> 00:11:55.771
+<v Keith Rozario>Mm.</v>
+
+00:12:01.131 --> 00:12:11.211
+<v Matt Maupin>I just want to make sure that Kaila, my concern is that Kaila would have a lot happening and she's not telling us just because she...</v>
+
+00:12:01.451 --> 00:12:01.611
+<v Keith Rozario>Mm.</v>
+
+00:12:12.371 --> 00:12:14.571
+<v Matt Maupin>You know, wants to.</v>
+
+00:12:15.931 --> 00:12:38.371
+<v Matt Maupin>She just doesn't want to. She wants to, you know, keep doing her job. She just won't say, I got to have help. She'll just, you know, hack it out as best she can. And I don't want her to get overwhelmed. That's why I'm paying attention to these things. And then we're, Austin and I are getting into more of tickets being created, who are frequent flyers, common problems across customers.</v>
+
+00:12:17.771 --> 00:12:18.091
+<v Keith Rozario>Thank you.</v>
+
+00:12:27.051 --> 00:12:28.731
+<v Keith Rozario>Uh, of course. Right.</v>
+
+00:12:36.611 --> 00:12:36.811
+<v Keith Rozario>Team.</v>
+
+00:12:38.811 --> 00:12:44.651
+<v Matt Maupin>What's triggering in the alerts queue? What do we see coming in in the service desk queue? Uh, so we're...</v>
+
+00:12:45.811 --> 00:12:59.931
+<v Matt Maupin>We're paying attention to more so of those things now than we were when Spencer was here, just because, you know, we're down to resource. We don't want Kaila to get bombarded with things that we can, you know, root cause and filter out.</v>
+
+00:12:54.251 --> 00:12:54.451
+<v Keith Rozario>Mmhmm.</v>
+
+00:13:00.651 --> 00:13:01.131
+<v Keith Rozario>Mhm.</v>
+
+00:13:02.571 --> 00:13:15.131
+<v Keith Rozario>Makes sense. Makes sense. Like, like here, week two, as you can see, 88 tickets handled, right? That's close to about 15 plus, more than 15 plus tickets handled in a day. So, yeah, I understand what you're trying to say. And...</v>
+
+00:13:15.411 --> 00:13:28.171
+<v Matt Maupin>I would rather, I would rather Kaya's ticket count; I would like for her ticket count to be as low as it possibly can, and we have these other things that we do for customers that are not.</v>
+
+00:13:24.531 --> 00:13:25.011
+<v Keith Rozario>Mhm.</v>
+
+00:13:29.211 --> 00:13:47.051
+<v Matt Maupin>That may not be related to some ticket that somebody opens that second or that hour, that day. We have other things that Austin and Kris and I work on that we would much rather Kaila be a part of, because it's not this reactive noise that happens in the service desk, and so I...</v>
+
+00:13:33.131 --> 00:13:33.611
+<v Keith Rozario>Mhm.</v>
+
+00:13:35.531 --> 00:13:36.011
+<v Keith Rozario>Mhm.</v>
+
+00:13:48.171 --> 00:14:07.411
+<v Matt Maupin>We're going to see how low we can get these ticket counts to go. That's not a, yes, it's a gauge for what Kai is doing, but there's, she's just, she's a high value resource. There's so many things that she's capable of other than, you know, somebody calling up and saying they can't print.</v>
+
+00:13:53.131 --> 00:13:53.531
+<v Keith Rozario>OK.</v>
+
+00:13:58.491 --> 00:13:58.971
+<v Keith Rozario>Mhm.</v>
+
+00:14:07.611 --> 00:14:08.251
+<v Keith Rozario>Mmhm.</v>
+
+00:14:10.491 --> 00:14:28.571
+<v Keith Rozario>She is, she is. Totally right there. There are, I mean, there are some noise that can be reduced, I think. And of course, a lot, many things can be automated as well. I mean, if there's anything that we can do or any assistance required from our side in the whole process, Matt, just do let us know.</v>
+
+00:14:29.371 --> 00:14:36.731
+<v Keith Rozario>Plus, I, of course, I'll I have my regular connects with Kaila. I'll make sure that she is vocal if she sees any any smoke if she, yep.</v>
+
+00:14:35.451 --> 00:14:37.211
+<v Matt Maupin>Yeah, she needs to be.</v>
+
+00:14:37.851 --> 00:14:43.211
+<v Keith Rozario>Absolutely makes sense, make total sense. Thanks for thinking in that direction, Matt. That was that was very kind of you.</v>
+
+00:14:43.811 --> 00:14:56.251
+<v Matt Maupin>And Keith, there may be things that she's more comfortable bringing up to you than she is to me. And if that's the case, like, it's fine. Even if she doesn't want to tell me and she wants you to tell me, that is okay with me, just as long as somebody tells me.</v>
+
+00:14:48.931 --> 00:14:49.411
+<v Keith Rozario>Mhm.</v>
+
+00:14:51.251 --> 00:14:51.771
+<v Keith Rozario>Mhm.</v>
+
+00:14:57.051 --> 00:15:16.931
+<v Keith Rozario>Absolutely, absolutely. I'm sure she will be sharing things with me. She should have by now, if there's anything at all, I'm pretty sure. I mean, she's a strong individual, a strong engineer, a strong human being as well. So even if the flow is high, I'm pretty sure she's taking it like a champ, but she probably is feeling, you know what, it's fine. It's probably temporary or whatever.</v>
+
+00:15:17.251 --> 00:15:28.811
+<v Keith Rozario>But I'll make sure that's not the case. I'll connect with her and let her know if there's any sorts of burden or anything that she wants us to take off her head. She let me know and I'll connect with you directly, Matt.</v>
+
+00:15:29.371 --> 00:15:29.691
+<v Matt Maupin>K.</v>
+
+00:15:31.211 --> 00:15:31.651
+<v Keith Rozario>Kour.</v>
+
+00:15:34.971 --> 00:15:56.531
+<v Keith Rozario>Bless you. So yeah, looking at the summary and the next steps, May average utilization sitting at 73.8 below the 80% target. Week 3 was sitting at 82.3, week 4 at 80.7, meaning or exceeding it. Week one and two pull the month average down. This is something that we need to work on. Closure rate for May stands at 76.5% overall. Week 2 led at 84% while week 4 dipped.</v>
+
+00:15:56.611 --> 00:16:16.731
+<v Keith Rozario>to 66 percent. So this correlates with higher and open-ended waiting on client tickets that week. Spencer off boarded in the month of May. Kaila is now the sole active engineer on the Matador Networks account. Kaila handled 272 tickets independently across 20 working days, averaging 13.6 tickets average on every day, on active days that she worked on.</v>
+
+00:16:17.451 --> 00:16:31.371
+<v Keith Rozario>So yeah, that pretty much covers what you what you just we were just talking about, Matt, but I think that that's it. The rest of the slides are just informational. Build it. I'm not sure if you anybody connected with you on this piece, but Andy, if you.</v>
+
+00:16:31.691 --> 00:16:33.291
+<v Andy Arora>That is registered for that.</v>
+
+00:16:32.171 --> 00:16:32.651
+<v Keith Rozario>Want to?</v>
+
+00:16:33.771 --> 00:16:46.651
+<v Keith Rozario>Oh, nice, nice, nice, nice. Wow. Okay, Matt, you're going to have fun. I'm sure you already have the agenda with you. And it's going to be a blast is what I heard this time as well, like every other year. But in case you have any questions around Build It, Andy is the guy.</v>
+
+00:16:48.331 --> 00:16:49.451
+<v Matt Maupin>Oh, okay, very good.</v>
+
+00:16:50.571 --> 00:16:50.971
+<v Keith Rozario>Cool.</v>
+
+00:16:52.411 --> 00:17:12.971
+<v Keith Rozario>All right, and Ankur as well. I think you have a regular connect with Ankur and Andy reports to Ankur directly, right? So yeah, in case you need anything, of course, Andy's here and then Ankur, you have a good connect with him as well. The other services that we provide, you're already aware of the services and that would be it. I will be stopping the share, opening the forum for anything else you'd like to share, Matt.</v>
+
+00:17:15.771 --> 00:17:21.531
+<v Matt Maupin>I don't know that I have, I don't know that I have anything else to share today, to be honest.</v>
+
+00:17:22.331 --> 00:17:22.611
+<v Keith Rozario>Yeah.</v>
+
+00:17:23.931 --> 00:17:34.731
+<v Keith Rozario>Right, in case anything pops up, you know, we don't have to wait for these calls. You can just, you know, connect with me over an email or just drop me an email and let me know if anything goes south or anything you want me to take care of. Matt.</v>
+
+00:17:35.811 --> 00:17:43.371
+<v Matt Maupin>I think we've been well, we've I feel like we're we're pretty lined up with each other just over some PTO requests and.</v>
+
+00:17:44.851 --> 00:17:53.611
+<v Matt Maupin>I'll keep you updated just on not only my own, but also Kris and Austin as they put in just so that you don't want Kaila to be aware.</v>
+
+00:17:54.011 --> 00:17:55.211
+<v Keith Rozario>Sure, sure.</v>
+
+00:17:54.651 --> 00:17:56.971
+<v Matt Maupin>Uh, just as as we go, so...</v>
+
+00:17:57.651 --> 00:17:57.851
+<v Keith Rozario>Mm.</v>
+
+00:17:59.051 --> 00:18:06.251
+<v Matt Maupin>Yeah, I'm just, I think you and I think we're okay. And as long as long as Kyle is okay, that's really what matters the most.</v>
+
+00:18:06.811 --> 00:18:20.091
+<v Keith Rozario>Absolutely, absolutely. And yeah, and the dates that you shared with me where you will be unavailable, I've already shared that with Kaila and said just plan her leaves around that those days, make sure it's not falling in that period. So she's aligned with it.</v>
+
+00:18:20.611 --> 00:18:21.371
+<v Matt Maupin>OK, very good.</v>
+
+00:18:22.891 --> 00:18:25.211
+<v Keith Rozario>All right, anything from you, Andy, before we wrap up?</v>
+
+00:18:26.011 --> 00:18:45.291
+<v Andy Arora>Oh yeah, thank you Keith. Matt, thank you for being very kind, thinking about Kaila that she doesn't feel overwhelmed. Let me assure you that she is being handled by the best manager in our site. Keith is the most loved manager and he'll make sure that Kaila feels comfortable and if she's not, we'll find out ways to.</v>
+
+00:18:39.491 --> 00:18:39.531
+<v Keith Rozario>I.</v>
+
+00:18:45.451 --> 00:19:04.491
+<v Andy Arora>make her feel comfortable. And this is a temporary phase and definitely she will be rewarded for this. Once everything is smooth on your side, we'll definitely add more resources. And I'm strongly hoping that it happens soon so that we can get Spencer back if he's not like somewhere else till now.</v>
+
+00:19:04.811 --> 00:19:09.371
+<v Andy Arora>So all the best wishes from our side, Matt. We are with you and thank you for your support.</v>
+
+00:19:10.411 --> 00:19:11.851
+<v Matt Maupin>Thank you guys, I appreciate it.</v>
+
+00:19:13.291 --> 00:19:14.491
+<v Andy Arora>Thank you. Thank you, Keith.</v>
+
+00:19:13.291 --> 00:19:15.691
+<v Keith Rozario>Perfect. Thanks, Manan. Thanks for joining in today.</v>
+
+00:19:15.931 --> 00:19:19.771
+<v Matt Maupin>Okay, gentlemen, have a good rest of the shift and catch you all next time.</v>
+
+00:19:20.651 --> 00:19:22.251
+<v Keith Rozario>All right, thank you. Bye.</v>
+
+00:19:20.811 --> 00:19:22.291
+<v Andy Arora>Thank you. Bye bye.</v>

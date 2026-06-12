@@ -1,0 +1,807 @@
+WEBVTT
+
+NOTE Title: ITBD | Networking Now | Quarterly Business Review
+NOTE Date: 2026-04-30
+NOTE Duration: 44m 0s
+
+00:00:03.667 --> 00:00:12.707
+<v Natalie McKenzie>You're always working hard over there, so always appreciate the time. Let me let my bot in here, so we can get some some notes going.</v>
+
+00:00:08.387 --> 00:00:08.707
+<v Matthew Shellenberger>Yeah.</v>
+
+00:00:14.707 --> 00:00:16.707
+<v Natalie McKenzie>How's everything been going with Harley?</v>
+
+00:00:17.747 --> 00:00:35.347
+<v Matthew Shellenberger>Good, great. Yeah, he's, he's, you know, he's very, you know, very on top of things, you know, nice and eager, and you know, really doing the kind of the follow through and making sure things don't slip through the cracks, which is, you know, what we want.</v>
+
+00:00:36.627 --> 00:00:37.987
+<v Natalie McKenzie>Yeah, I'm glad to hear that.</v>
+
+00:00:39.747 --> 00:00:45.987
+<v Natalie McKenzie>Yeah, so and then I know I don't talk to you too often in general, but</v>
+
+00:00:47.907 --> 00:01:01.427
+<v Natalie McKenzie>I'm managing the customer success managers. So just on our side, you probably see a couple new faces. So me for the most part, unless do you normally come to our build it events? Like your face isn't as familiar to me either.</v>
+
+00:01:01.147 --> 00:01:06.467
+<v Matthew Shellenberger>No, I'm usually there's usually I'm being pulled in different directions and not able to make it so.</v>
+
+00:01:08.147 --> 00:01:15.587
+<v Natalie McKenzie>That's okay, maybe this year, maybe this year. We do have a few partners from that area as well.</v>
+
+00:01:10.147 --> 00:01:10.467
+<v Matthew Shellenberger>Yeah.</v>
+
+00:01:18.067 --> 00:01:29.107
+<v Natalie McKenzie>Cool. Well, we do have a deck to run through today. So I'll go ahead and get that started for you. If you don't have any other comments before we start off.</v>
+
+00:01:29.987 --> 00:01:31.347
+<v Matthew Shellenberger>No, no, I'm good, thanks.</v>
+
+00:01:48.147 --> 00:01:49.027
+<v Amit Dubey>If you are sharing the deck.</v>
+
+00:01:49.987 --> 00:01:51.027
+<v Natalie McKenzie>Now I'm going to share.</v>
+
+00:01:51.347 --> 00:01:51.587
+<v Amit Dubey>Okay.</v>
+
+00:02:01.467 --> 00:02:07.267
+<v Natalie McKenzie>It's just that my robot's not being allowed to come in, but I mean, it's fine. Who needs her anyway?</v>
+
+00:02:08.307 --> 00:02:09.347
+<v Matthew Shellenberger>Gods, yeah.</v>
+
+00:02:15.547 --> 00:02:17.187
+<v Matthew Shellenberger>What do you guys do with the transcripts?</v>
+
+00:02:15.867 --> 00:02:20.547
+<v Natalie McKenzie>But now it's also, but now it's not also not letting me share my screen, so it's almost that.</v>
+
+00:02:21.387 --> 00:02:22.867
+<v Matthew Shellenberger>What do you guys do with the transcripts?</v>
+
+00:02:24.467 --> 00:02:44.907
+<v Natalie McKenzie>So like for us, I'll run them through. We're using Claude now as well. So I'm building out like different skills to actually like create the meeting notes. So we're creating different templates for like QBRs versus service calls. Yeah, we're doing a lot. Actually, I have a little slide in here too, just about like the different agent builds.</v>
+
+00:02:30.507 --> 00:02:30.787
+<v Matthew Shellenberger>Mm.</v>
+
+00:02:45.187 --> 00:03:00.627
+<v Natalie McKenzie>that we have internally. So basically a whole division of AI by design going. I'm going to jump out of the meeting and come back in because I think it's just Teams is, because it's not even letting me share. So give me one second.</v>
+
+00:02:57.667 --> 00:02:58.227
+<v Matthew Shellenberger>Yeah.</v>
+
+00:03:07.507 --> 00:03:09.267
+<v Matthew Shellenberger>Are you guys all bought in the clot over there?</v>
+
+00:03:10.867 --> 00:03:12.707
+<v Amit Dubey>Yeah, pretty much everybody.</v>
+
+00:03:13.427 --> 00:03:13.707
+<v Kip Singh>Okay.</v>
+
+00:03:15.867 --> 00:03:19.267
+<v Matthew Shellenberger>You guys have a leaderboard, see who's got who's using the most tokens.</v>
+
+00:03:21.107 --> 00:03:41.187
+<v Amit Dubey>We do, we do, but still we are using Copilot as well in parallel to that. Yeah, so, but I think the inclination is more towards Claude purely because of the way it does things, right? The integration in Excel, populating the dashboard, I think so much more easier.</v>
+
+00:03:28.227 --> 00:03:28.707
+<v Matthew Shellenberger>Yeah.</v>
+
+00:03:41.427 --> 00:03:48.547
+<v Amit Dubey>in a complex environment. So yeah, it's still a preferred thing, but people are getting their hands on with the co-pilot as well.</v>
+
+00:03:50.787 --> 00:04:09.147
+<v Matthew Shellenberger>Now, do you guys create separate projects for, do you guys have like, how do you guys structure your projects? Is it like you will create a project, invite people into it, and then you have like a detailed like instruction set and special like skills MD files for each of the projects you guys build out?</v>
+
+00:04:09.267 --> 00:04:12.147
+<v Matthew Shellenberger>Or, like, how are you setting up your projects in Claude?</v>
+
+00:04:10.147 --> 00:04:10.627
+<v Amit Dubey>Yeah.</v>
+
+00:04:12.867 --> 00:04:30.227
+<v Amit Dubey>Yeah, so we do have projects and if you based on whoever is needed, right, as it is a corporate account that we're using, so we invite people who want to be a part of the project and then collaborate there. Of course, it has a skills built in, right? And if anything new required to be built into that skill set, we build those two.</v>
+
+00:04:32.027 --> 00:04:42.307
+<v Matthew Shellenberger>You guys use MCP connectors to connect? Do you have like custom MCP connectors or are you using just a built-in API or the built-in MCP connectors to like Notion and Office 365?</v>
+
+00:04:42.947 --> 00:04:55.667
+<v Amit Dubey>No, we do have both, to be honest. So we have the built-in connectors and we have MCP connectors as well for certain tools and applications. So I guess for Team GPS, they are using the MCP connectors.</v>
+
+00:04:57.747 --> 00:05:17.427
+<v Matthew Shellenberger>Oh, cool. So you guys have your own separate like kind of VPS running the connectors out there. So like what like what's your workflow for building a connector or defining like the tools that go into connector? Is it kind of a free for all or do you have a division where you got to go reach out to them and go, I want a connector built like this with these built-in tools to do this type of processing?</v>
+
+00:05:01.267 --> 00:05:02.947
+<v Amit Dubey>Yeah, yeah.</v>
+
+00:05:06.307 --> 00:05:07.507
+<v Amit Dubey>I think.</v>
+
+00:05:18.227 --> 00:05:36.387
+<v Amit Dubey>We do have a specialized team. It's a AI by design team, right, who are essentially responsible for doing all the innovations around AI. And they are the one that we reach out to if we need any sort of, you know, improvement, collaboration, things like these.</v>
+
+00:05:21.027 --> 00:05:21.347
+<v Matthew Shellenberger>Yeah.</v>
+
+00:05:36.667 --> 00:05:59.427
+<v Amit Dubey>But at the same time, we are also promoting it internally and externally, both, wherein we are inviting people to come up with innovations and ideas, where our engineers are expected to come up with, you know, innovations, ideas, what can be solved internally. And we are reviewing it to see if those can be a valid reason for us to go ahead and start sharing with our partners as well.</v>
+
+00:05:59.787 --> 00:06:22.707
+<v Amit Dubey>So this is how we built it. As much as we are focusing on working closely with the partners, talking about AI and the overall experience, at the same time, we are also promoting internally and asking engineers to come and share real-time experiences that they face and if they have a solution for it so that our AI innovation team can help them build.</v>
+
+00:06:22.867 --> 00:06:23.747
+<v Amit Dubey>Build a solution.</v>
+
+00:06:25.267 --> 00:06:40.627
+<v Matthew Shellenberger>Now, do you guys do you guys still keeping everything structured? I'm guessing you guys most of your data is in Microsoft and SharePoint. Have you started migrating data more in the cloud or are you using cloud in Cowork to help organize your like your your documents in SharePoint?</v>
+
+00:06:32.867 --> 00:06:33.267
+<v Amit Dubey>Yeah.</v>
+
+00:06:41.027 --> 00:06:41.987
+<v Amit Dubey>Yeah, the later one.</v>
+
+00:06:42.627 --> 00:07:00.467
+<v Matthew Shellenberger>Yeah, okay. So, like data that goes inside a project would be much more, you would have it as like an artifact, you're structuring the data there, but at the end of the day, the data doesn't live inside that project itself. You optimize it and move it out. Is that kind of your guys' strategy?</v>
+
+00:06:52.947 --> 00:06:53.427
+<v Amit Dubey>True.</v>
+
+00:06:59.267 --> 00:06:59.827
+<v Amit Dubey>True.</v>
+
+00:07:00.947 --> 00:07:02.147
+<v Amit Dubey>That's correct, yes.</v>
+
+00:07:07.427 --> 00:07:08.547
+<v Amit Dubey>Welcome back, Natalie.</v>
+
+00:07:08.627 --> 00:07:20.707
+<v Natalie McKenzie>I like it. You were able to get a AI conversation going while I was out of here. All right, it should it should let me share my screen now. Let me let me see.</v>
+
+00:07:16.467 --> 00:07:18.627
+<v Amit Dubey>Andy, that's a conversation.</v>
+
+00:07:32.907 --> 00:07:33.507
+<v Natalie McKenzie>Aroma.</v>
+
+00:07:34.787 --> 00:07:43.827
+<v Natalie McKenzie>All right. So we'll be running through January and March. So thanks, Matt, for joining us today.</v>
+
+00:07:46.227 --> 00:07:48.147
+<v Natalie McKenzie>Oh, where did the agenda go?</v>
+
+00:07:49.427 --> 00:08:10.707
+<v Natalie McKenzie>That's weird. Apparently the agenda switched slides on me, but that's fine. So just a little bit of what we'll be running through today. We'll go through the leadership team, go through the performance, look at the utilization. We'll do a quick alignment check, go through some open items, definitely the renewal, and just go through kind of the value that we've had there.</v>
+
+00:08:10.947 --> 00:08:30.707
+<v Natalie McKenzie>I put in our AI automation suite, so kind of what that's going to be is the agents that we've built, so we're like customer zero, and then now we kind of have built these use cases and we started demoing some of the agents for our clients as well, so that they can implement internally and then also resell to there.</v>
+
+00:08:31.027 --> 00:08:51.347
+<v Natalie McKenzie>their end users too. And then we'll just look at the overall way forward here. So quick, just of the leadership team here. So you have your service delivery side of everything. Harley's going to be there. You have Kip always, Amit is going to be who Kip reports to, and then we have Lee on the US side, and then</v>
+
+00:08:51.387 --> 00:09:10.587
+<v Natalie McKenzie>always Javid is going to be there if you ever need anything at all. The customer success side, you're going to have Andy, you'll have myself. I report up to Ankur, who handles revenue and CX. And then Cam's been, she's our EOS integrator, and then she's also our president and over revenue.</v>
+
+00:09:11.187 --> 00:09:15.347
+<v Natalie McKenzie>And then we all report up to Sunny at the end of the day.</v>
+
+00:09:18.787 --> 00:09:23.587
+<v Natalie McKenzie>So Kip, I'll pass it to you so you can run through some of Harley's key outcomes.</v>
+
+00:09:25.707 --> 00:09:47.987
+<v Kip Singh>Yep, sure, Natalie. Thank you. So starting with the role advancement, so Harley promoted to advanced administrator in February. He went through the couple of assessments and interviews and also acquired knowledge on multiple technologies and skill sets. And in terms of the user lifecycle management, he</v>
+
+00:09:48.787 --> 00:10:07.667
+<v Kip Singh>He worked on the Active Directory 365 onboarding and offboarding tickets, also addressing the end user tickets as well. And also most importantly, the ITBD glue documentation, which is the top most priority for you because</v>
+
+00:10:08.227 --> 00:10:27.827
+<v Kip Singh>We already mentioned in our previous calls that ITBD glue should be the source of the truth for everything. And in terms of the infrastructure and security, he worked on a couple of projects that includes cloud migration. He also worked on partial automation, MFA enforcement,</v>
+
+00:10:28.387 --> 00:10:46.627
+<v Kip Singh>and RDS and remote access kind of issues. And in terms of the environment stability, he does the patching, do the regular health checks on the servers. That is the part of his daily, well, I mean, everyday cycle. So</v>
+
+00:10:47.267 --> 00:10:48.627
+<v Kip Singh>Yeah, yeah, that's pretty much it.</v>
+
+00:10:49.907 --> 00:10:51.987
+<v Kip Singh>Any question or anything you want to add?</v>
+
+00:10:50.227 --> 00:10:50.547
+<v Natalie McKenzie>Oh.</v>
+
+00:10:53.027 --> 00:10:53.347
+<v Matthew Shellenberger>Nope.</v>
+
+00:10:55.027 --> 00:11:15.267
+<v Amit Dubey>So how the experience has been, Matthew? We know that, you know, when we got him to start after the previous engineer had to leave, he was already there as a level 2 engineer with ITBD design. It's just that he wanted to have the final polish that he needed.</v>
+
+00:10:55.107 --> 00:10:55.707
+<v Natalie McKenzie>Awesome.</v>
+
+00:11:15.427 --> 00:11:27.747
+<v Amit Dubey>to be certified as a L2 engineer. So I think he probably would have got the flavor of him picking up a lot of things as an L2 engineer as compared to the previous engineer. So how the experience has been, nothing overall.</v>
+
+00:11:28.467 --> 00:11:48.147
+<v Matthew Shellenberger>Yeah, it's been really good. And like I said, I think the biggest thing for me is follow through communication and staying on top of tickets. So at the end of the day, I'm not really asking anyone to kind of like solve like really complex problems. It is if I send an email saying,</v>
+
+00:11:48.227 --> 00:12:08.947
+<v Matthew Shellenberger>please follow up with Kathy for the QuickBooks upgrade next Wednesday when she's at home. I expect him to reach out to her, put it on his calendar, follow up. If he's on a call with someone else, message her and say, hey, I'm on a 30 minute, I'm still on this service call. I'll reach out to you in 30 minutes or reschedule.</v>
+
+00:12:09.587 --> 00:12:30.227
+<v Matthew Shellenberger>It's that level of communication, following through, updating in Teams, updating the tickets, and then just keeping an eye on everything, which is, I feel like what separates Harley from the other people I work for or the other people I had from you guys. That was much more of me having to implement a lot of structure.</v>
+
+00:12:30.467 --> 00:12:31.507
+<v Matthew Shellenberger>and a lot of like...</v>
+
+00:12:32.627 --> 00:12:52.707
+<v Matthew Shellenberger>constantly on them to see what's going on. So there is a lot of, like, the integrations I do with clients, it is much more, we send emails, we include people, we write the tickets up so they can see them, and any falls during calls. And that level of just staying on top of everything.</v>
+
+00:12:53.107 --> 00:13:07.827
+<v Matthew Shellenberger>is much is like much improved. That's like, that's what I really want. Instead of chasing people around and looking through and going, why didn't you do this? Like what's going on? It is that that that communication, that update.</v>
+
+00:13:09.587 --> 00:13:11.587
+<v Amit Dubey>Perfect. Thank you for sharing the feedback.</v>
+
+00:13:12.867 --> 00:13:13.347
+<v Amit Dubey>OT Kip.</v>
+
+00:13:14.547 --> 00:13:28.707
+<v Natalie McKenzie>That's awesome. Yep, and then Kip, I know then that just kind of leads into like the overall value drivers that we see and just tying those into some business outcomes that we delivered here. So Kip, you can run us through this.</v>
+
+00:13:32.467 --> 00:13:49.347
+<v Kip Singh>Yeah, so he went through, he worked on a couple of projects. The cloud migration, as I mentioned earlier, as well, automation using PowerShell. And also in terms of reducing the risk, he</v>
+
+00:13:50.387 --> 00:14:10.147
+<v Kip Singh>worked on the alert remediation, the server hardenings things and any configuration issues if there are any outdated endpoints. So he worked on updating them in the 0 friction. So when offboarding, onboarding,</v>
+
+00:14:10.547 --> 00:14:17.107
+<v Kip Singh>Any process caps, so he used the our ITBD glue to document things.</v>
+
+00:14:19.107 --> 00:14:32.627
+<v Natalie McKenzie>Yeah, no, that's awesome. So it seems like he does add a lot to the business overall, Matt. So probably, you know, kind of important to you.</v>
+
+00:14:33.627 --> 00:14:52.307
+<v Matthew Shellenberger>Yeah, no, 100%. Like I said, it is the follow through, is the professionalism, it is the communication. It is not me having to babysit and get a call saying, why wasn't this done? This didn't happen. It is that follow up.</v>
+
+00:14:52.707 --> 00:14:57.427
+<v Matthew Shellenberger>Uh, and staying on top of tickets, which is, which is what I care about most.</v>
+
+00:14:58.707 --> 00:14:59.187
+<v Natalie McKenzie>Passen.</v>
+
+00:15:00.627 --> 00:15:16.627
+<v Natalie McKenzie>And then it sounds like we kind of have an alignment and a priority check, but if there's anything specifically that's jumped out that you haven't already mentioned, we'd love to hear like what, you know, work the best if there's anything else to add on here.</v>
+
+00:15:18.547 --> 00:15:19.107
+<v Matthew Shellenberger>Um...</v>
+
+00:15:20.227 --> 00:15:39.627
+<v Matthew Shellenberger>Yeah, like I said, like I, you know, it's the same same point. It is it is the communication, it is the follow through, it is updating the tickets channel, it is communicating on the teams, it is that level of integration where he where I can assign him things and I'm not having to worry about it.</v>
+
+00:15:23.427 --> 00:15:23.907
+<v Natalie McKenzie>Kam.</v>
+
+00:15:40.627 --> 00:15:44.787
+<v Natalie McKenzie>There you go. Love that. Well, then let's look at how we performed.</v>
+
+00:15:46.387 --> 00:15:48.147
+<v Natalie McKenzie>Kip, you can run us through this.</v>
+
+00:15:52.627 --> 00:15:53.507
+<v Natalie McKenzie>Oh, you're muted.</v>
+
+00:15:52.707 --> 00:15:54.947
+<v Amit Dubey>Yeah, you're on mute, you are muted, Kip.</v>
+
+00:15:55.987 --> 00:16:15.907
+<v Kip Singh>I'm sorry. So this is from Jan till April. So he's been pretty consistent in terms of the utilization. So in Jan, he was at 84% billable utilized. And in February, he was 100%. And in March, he was 99. In Jan, we started with a little slow because</v>
+
+00:16:16.347 --> 00:16:33.187
+<v Kip Singh>users came back from the holiday, New Year and Christmas. So, and also he took some videos in that month. So, so once the users were back in office, so we can see the upward trend in terms of his utilization. So,</v>
+
+00:16:34.507 --> 00:16:37.027
+<v Kip Singh>Yeah, that's perfect. Any any question on this?</v>
+
+00:16:38.867 --> 00:16:39.227
+<v Matthew Shellenberger>Nope.</v>
+
+00:16:40.707 --> 00:17:00.147
+<v Natalie McKenzie>Kip, I know you mentioned some of the automation pieces in there and then some of the tasks that he's just responsible for overall, adding some automation. So Matt, is that in, I mean, the plan to put some automation in there as far as Harley's role?</v>
+
+00:16:50.707 --> 00:16:51.107
+<v Kip Singh>Thanks.</v>
+
+00:17:00.947 --> 00:17:12.547
+<v Natalie McKenzie>Is there anywhere where you kind of need more guidance from our team as well, or Harley can start training? I mean, we have a ton of AI trainings available too here.</v>
+
+00:17:13.667 --> 00:17:32.867
+<v Matthew Shellenberger>Yeah, so I mean, we definitely have, I mean, I don't, so I don't know if he uses it or how much he uses it. There is a Claude Teams account. He's invited to use it. There are projects he's involved in where I write SOPs, write documentation, so he can go in there and look at the documentation.</v>
+
+00:17:33.027 --> 00:17:51.827
+<v Matthew Shellenberger>for how on board a certain client and has all the questions, he can like talk to Claude about what that what is. So I'm not sure how well he's using it or if he's using it for troubleshooting. Example, today I have a client with a 14 year old piece of software called Sage 300.</v>
+
+00:17:52.347 --> 00:17:54.227
+<v Matthew Shellenberger>When she printed, it would crash.</v>
+
+00:17:55.107 --> 00:18:15.347
+<v Matthew Shellenberger>He got the ticket, he called her and went through the basic troubleshooting. Is it an Adobe issue? Is it a printing issue? Then he got back to me and was like, I think there's something getting in Sage. I got to call them. And I was like, their software is no longer supportive. I'll jump on. Went in the event log, saw the errors that was happening when it printed.</v>
+
+00:18:15.667 --> 00:18:28.307
+<v Matthew Shellenberger>posted the error in the cloud and said, what's causing this module to fail? And it was a Visual C 20210 dependency. Ran the repairs on both of those, rebooted her workstation, and it was working. So.</v>
+
+00:18:24.947 --> 00:18:25.187
+<v Kip Singh>Yes.</v>
+
+00:18:29.747 --> 00:18:50.387
+<v Matthew Shellenberger>Using Claude as a way to help do the troubleshoot, but not go. If I say Claude, it's not printing what to do, that's not going to work. But figuring out exactly where it's crashing, having it do like read through the error logs and then pointing in the right direction, I don't know if he's using Claude in that way.</v>
+
+00:18:50.627 --> 00:19:06.307
+<v Matthew Shellenberger>But those tools exist. And that's an example of a ticket that came across his desk that would have been probably a little bit more advanced. It requires you to, you know, dig around and then using Claude to like resolve the issue.</v>
+
+00:19:07.347 --> 00:19:16.307
+<v Natalie McKenzie>So does Claude connect into, I'm not sure, are you using ConnectWise? Is there a connector there like or okay?</v>
+
+00:19:14.867 --> 00:19:33.027
+<v Matthew Shellenberger>Yeah, so I mean, I mean, if you guys want to get into how I use AI, we can, because I can, I like do a lot of, I do a lot of cloud consulting and I can spend an entire hour talking about like how to do the integrations and stuff. But yeah, I have a, I have a, I have a Linux VPS running.</v>
+
+00:19:29.187 --> 00:19:29.587
+<v Natalie McKenzie>Yeah.</v>
+
+00:19:33.147 --> 00:19:50.467
+<v Matthew Shellenberger>with an MCB connector from Cloud Desktop into there with all the API keys connected to my hosted ConnectWise, where we, I have like a whole accounts revenue receivables set up to manage all that. So right now.</v>
+
+00:19:51.587 --> 00:19:59.267
+<v Matthew Shellenberger>Tickets are still entered manually into ConnectWise. What I'm gonna build is a Team integrator, where...</v>
+
+00:20:00.347 --> 00:20:20.547
+<v Matthew Shellenberger>Tickets created in ConnectWise will post automatically to the Teams ticket channel and with all the relevant information. It is much easier to communicate about tickets in Teams in a ticket channel than it is in ConnectWise itself. ConnectWise, it's just inherently A 20-year-old piece of software that still runs like a 20-year-old piece of software.</v>
+
+00:20:20.947 --> 00:20:38.787
+<v Matthew Shellenberger>So a lot of times we'll create it in two places, but we'll discuss tickets in Teams. There will be an automation where once it gets created in ConnectWise, it will automatically generate it in the Teams ticket channel with all the information need, and then we'll discuss things in there.</v>
+
+00:20:39.987 --> 00:21:00.467
+<v Matthew Shellenberger>And then I could actually build something in my dashboard that would like sync or move or do a bunch of stuff around it. But yeah, I have all the API keys that pull things from ConnectWise, pull things from like PAX 8, pull things from OpenVPN to build the agreements to get all the licensing set up. So when the monthly and annual agreements are.</v>
+
+00:20:45.907 --> 00:20:46.147
+<v Natalie McKenzie>Yeah.</v>
+
+00:21:00.627 --> 00:21:11.987
+<v Matthew Shellenberger>built, they're all built inside a console with, but I can still have Claude like analyze and figure things out for me and push it through. I have a whole tool set built in Claude.</v>
+
+00:21:12.787 --> 00:21:33.987
+<v Natalie McKenzie>Oh, that's awesome. And then Harley has access. So yeah, it sounds like Kip, I'm sure Harley probably is utilizing it, but definitely make sure you're close with Claude 2 Kip so you can work hand in hand. And then it sounds like Matt, you can be a consultant. Have you been to our AI accelerators? Like you should be.</v>
+
+00:21:34.267 --> 00:21:37.427
+<v Natalie McKenzie>somebody who's talking about everything that you're doing with Cloud too.</v>
+
+00:21:34.667 --> 00:21:34.867
+<v Matthew Shellenberger>Mm.</v>
+
+00:21:38.067 --> 00:21:57.107
+<v Matthew Shellenberger>I haven't been to them, but I actually do a bunch of, so I get asked all the time, how do you do AI? How do you do AI integration? And so I have about 5 clients where obviously do all the MSP work and now they're bringing me on to do like cloud integration work. So the standard workflow is.</v>
+
+00:21:55.147 --> 00:21:55.747
+<v Natalie McKenzie>Mm-hmm.</v>
+
+00:21:57.747 --> 00:22:16.987
+<v Matthew Shellenberger>We usually do an hour-long call about questions they have about AI, overview, and I show them some demos of what I do. We get them on Cloud Teams. I give them like a week with a bunch of homework. They come back. They're usually very excited but very frustrated because they don't really understand everything. Go through all that.</v>
+
+00:22:06.227 --> 00:22:06.707
+<v Natalie McKenzie>Mhm.</v>
+
+00:22:17.267 --> 00:22:36.787
+<v Matthew Shellenberger>And then what I do is I go, all right, you're going to create projects in Claude, things that you want me to do. You're going to add me to those projects, and your job is to write everything up and instruct it. So when I jump into the project, I should already understand what's going on and work with Claude. If not, then the next meeting.</v>
+
+00:22:37.027 --> 00:22:55.827
+<v Matthew Shellenberger>will work on getting you better using Claude. So you can, you know, put in whatever you're trying to do. I can show you how to like actually create documents, how things saved in there. And then that way I'm trying to get to a place where things that they can do on their own.</v>
+
+00:22:56.067 --> 00:23:15.027
+<v Matthew Shellenberger>We spend a little extra time up front, but they can then teach themselves things that are like setting up the API keys, doing this, and I'm like, listen, you're not really a developer. Let me do some of the heavy lifting in this section, and I'll build that much faster, and then you guys will have a better understanding of what.</v>
+
+00:23:00.307 --> 00:23:01.987
+<v Natalie McKenzie>Yep, it's all the training, right?</v>
+
+00:23:15.347 --> 00:23:18.947
+<v Matthew Shellenberger>You can do internally what you should ask me, and then...</v>
+
+00:23:20.147 --> 00:23:29.827
+<v Matthew Shellenberger>find people in the organization that has the creativity and excitement around this, and find those people, empower those people, and then I can just keep bringing them along.</v>
+
+00:23:30.787 --> 00:23:45.587
+<v Natalie McKenzie>Yeah, no, that's awesome. It's very similar to kind of the model that we're doing here as well. So if you're in any peer groups or looking to join peer groups too, Sunny has his AI peer group.</v>
+
+00:23:43.667 --> 00:23:43.987
+<v Matthew Shellenberger>Yeah.</v>
+
+00:23:46.467 --> 00:24:05.747
+<v Matthew Shellenberger>Yeah, so yeah, so we do, so a long time, for a long time I had a lot of the SOPs written up and documented in IT Glue. I'm moving that into Cloud as a project. So there's an SOPs, I'll write everything up, write all the instructions, all the screenshots, those documents then go in there, and then if it's like.</v>
+
+00:24:06.427 --> 00:24:24.627
+<v Matthew Shellenberger>Like all you have to do is like reference the client code and they're on board and it will have all the instructions and you can just go through it. It will have explanations. The screenshots are all in there. You can talk to Claude about like why we're doing this. And if you don't know what's going on, like if, you know, Harley's like, well, I'm confused about this or this is missing, he can actually add.</v>
+
+00:24:09.427 --> 00:24:09.587
+<v Natalie McKenzie>Yeah.</v>
+
+00:24:24.787 --> 00:24:43.867
+<v Matthew Shellenberger>you know, if you notice that, you know, you just add it to the document at the end as a version control, add some changes or add some notes. When I go into the project, I can go, okay, what are like 5 things he didn't get and then update those. So that's how I use it because that is how I personally do these things. He.</v>
+
+00:24:43.987 --> 00:25:03.027
+<v Matthew Shellenberger>was invited to a project, I don't know how much he does it. He might just have a bunch of things written down or internalized, but that is one way for, I think, MSPs to migrate off using like Word docs or IT glue as your onboarding procedure is to have it much more in this.</v>
+
+00:25:04.227 --> 00:25:06.547
+<v Matthew Shellenberger>dynamic environment that is a cloud project.</v>
+
+00:25:07.507 --> 00:25:23.907
+<v Natalie McKenzie>Yep, for sure, for sure. That's awesome. Cool. Well, yeah, we'll definitely look into that. And then we can even kind of start reporting back, like if he's seeing anything and just adding that into the context that we have when we meet monthly.</v>
+
+00:25:25.027 --> 00:25:39.427
+<v Matthew Shellenberger>Yeah, like I said, he has an account. He's invited to the different projects. He can create his own projects. He can use as a resource. When I try to do things in Claude and I have time, I will give him a bunch of screenshots like this is how I did it.</v>
+
+00:25:41.707 --> 00:25:42.307
+<v Natalie McKenzie>Cool, cool.</v>
+
+00:25:42.667 --> 00:25:42.947
+<v Kip Singh>Yeah.</v>
+
+00:25:43.707 --> 00:26:01.427
+<v Natalie McKenzie>All right, so as far as open items, I know where I think we're missing a CSAT from February. So we would just need to get that one. We can retrigger it to you. So it's top of your inbox. And then I have the information for the renewal here.</v>
+
+00:26:06.067 --> 00:26:24.787
+<v Natalie McKenzie>So just to kind of break down what we're looking at as far as Harley's renewal. So he did upscale a little bit. So in general, our renewals are typically around a 7.5% just based on like the appraisals and how long they've been with us and what have you.</v>
+
+00:26:24.987 --> 00:26:49.267
+<v Natalie McKenzie>So once he received his February advancement, we just took a look at it. We did need to do a little bit higher of an increase than the 7 and a half percent, but 3685, that's still a great price as far as with the advanced system admin. Just to give you some clarity to like, if I was going and I was repositioning him on another account, he would cost $4,500.</v>
+
+00:26:25.867 --> 00:26:26.307
+<v Matthew Shellenberger>Yu.</v>
+
+00:26:49.627 --> 00:27:14.267
+<v Natalie McKenzie>So we still want to make sure like we're being fair. We love that he's on the account. But yeah, just to give you a little bit of an idea about that. We have a few things we already talked about the role. Obviously, we were always going to be looking at areas to expand the scope and maybe even with him jumping into Claude, we do a ton of internal trainings as well that we can share with him.</v>
+
+00:27:14.267 --> 00:27:25.107
+<v Natalie McKenzie>him and then make sure that he's running everything by you. The biggest thing is always just making sure all the guardrails are in place there. They're right, but it sounds like you have it configured pretty well.</v>
+
+00:27:26.307 --> 00:27:28.027
+<v Natalie McKenzie>Oh great, my computer went out.</v>
+
+00:27:28.307 --> 00:27:28.467
+<v Matthew Shellenberger>Mm.</v>
+
+00:27:31.667 --> 00:27:33.267
+<v Natalie McKenzie>You guys still here?</v>
+
+00:27:33.987 --> 00:27:34.787
+<v Amit Dubey>Yeah, we can see you.</v>
+
+00:27:35.267 --> 00:27:54.427
+<v Natalie McKenzie>Okay, I can't see you guys, it's fine. All right, but yeah, so some things that we do, I don't know if you're, you know, but we are SOC 2, type 2 compliance. We're constantly making sure that that's up to date and we're going through that. I love the security assessments, they're my favorite. I do pass them though, so I'm confident.</v>
+
+00:27:55.187 --> 00:28:14.147
+<v Natalie McKenzie>It gives me a little boost there. We do make sure that they're getting into the office on time. We've enhanced overall just QA oversight and then love to hear again about the cloud stuff that's going to help more. We have this career development plan kind of in place and then feel free to add in if there's any internal</v>
+
+00:28:14.947 --> 00:28:34.467
+<v Natalie McKenzie>trainings that we can enroll Harley in. We'd love to get them in there as well, but it's up to you. Like our trainings aren't like official certifications or anything like that. It's all more just going to be just anywhere that we can increase the skill set, whether it's technical or even soft skills.</v>
+
+00:28:35.267 --> 00:28:55.347
+<v Matthew Shellenberger>I would say unify. We do everything with unify. We probably have about 250 unify access point, you know, endpoints out there. So more unified, more Kaseya would be that. I don't know, like, you know, like network proficiency to kind of understand like how to, if I said like.</v>
+
+00:28:35.507 --> 00:28:36.227
+<v Natalie McKenzie>And then...</v>
+
+00:28:37.507 --> 00:28:37.827
+<v Natalie McKenzie>Yeah.</v>
+
+00:28:44.387 --> 00:28:44.907
+<v Natalie McKenzie>Okay.</v>
+
+00:28:48.387 --> 00:28:48.867
+<v Natalie McKenzie>Okay.</v>
+
+00:28:55.507 --> 00:29:06.147
+<v Matthew Shellenberger>set up multiple VLANs or let's do MAC address filtering with like a radius server on a unified dream machine. Like how much you would actually understand those words.</v>
+
+00:29:03.427 --> 00:29:03.747
+<v Amit Dubey>Yeah.</v>
+
+00:29:07.387 --> 00:29:09.907
+<v Natalie McKenzie>Okay, no, that's good. Good to know.</v>
+
+00:29:09.747 --> 00:29:29.907
+<v Amit Dubey>That's doable and Kip himself was a L3 network engineer when he was working as an engineer, Matthew. So, and he works under Kip, which would mean that his journey towards network and anything to do with the network will be much more smoother because his manager himself was a L3 network engineer. So.</v>
+
+00:29:15.667 --> 00:29:17.267
+<v Natalie McKenzie>Yeah, you got the right guy.</v>
+
+00:29:19.827 --> 00:29:20.227
+<v Matthew Shellenberger>Hoh.</v>
+
+00:29:30.307 --> 00:29:50.347
+<v Amit Dubey>We are making a note of the career development plan and of course the skill set advancement that he mentioned. As part of our service reconnect, what we will do, we will keep you updated in terms of which are topics that we have covered with him, right, what's the progress like, and we will aim to have a completion date also shared with you.</v>
+
+00:29:44.547 --> 00:29:44.707
+<v Matthew Shellenberger>Yeah.</v>
+
+00:29:50.427 --> 00:30:12.707
+<v Amit Dubey>Run through started and formally, you know, gone through it, so that we have an idea, month and month, week and week, how the progress is looking like, and you know, when we can start putting in some work related to those things, and of course he will never be stuck purely because of the fact that Kip works next to him, so I'm not expecting him ever to be stuck with anything new that he give it to him, or once he has gone through the training.</v>
+
+00:30:14.387 --> 00:30:32.947
+<v Matthew Shellenberger>Okay, cool. Yeah, I should be like, I like one of the ideas is that go, I want to set up a new VLAN on a UDM with MAC address filtering through radius authentication. Should take about like an hour to do something like that or.</v>
+
+00:30:33.267 --> 00:30:52.067
+<v Matthew Shellenberger>We're going to migrate the OpenVPN connector from this server directly from the UDM into OpenVPN through IPsec. The documentation is already written and, you know, takes like an hour. Many steps you do, but there's a whole, you know, this is how you would do it. So</v>
+
+00:30:48.867 --> 00:30:49.267
+<v Amit Dubey>Yeah.</v>
+
+00:30:49.427 --> 00:30:49.747
+<v Kip Singh>Mm.</v>
+
+00:30:52.467 --> 00:31:00.227
+<v Matthew Shellenberger>As I, you know, as we move through different clients, those network tasks should be pretty straightforward to do and test out.</v>
+
+00:31:01.867 --> 00:31:02.147
+<v Kip Singh>Kour.</v>
+
+00:31:02.227 --> 00:31:02.627
+<v Amit Dubey>Sure.</v>
+
+00:31:06.347 --> 00:31:08.547
+<v Natalie McKenzie>It sounds really exciting, guys. Can't wait.</v>
+
+00:31:09.507 --> 00:31:09.747
+<v Kip Singh>Yes.</v>
+
+00:31:09.507 --> 00:31:28.547
+<v Natalie McKenzie>And then obviously we give the engineer a raise. He we did give him the raise in February. So like we even to like, we're not trying to be like, oh, you know, we want to make sure that he has that skill set and he's worked with you for a little bit. So you kind of understand the increase a little bit more.</v>
+
+00:31:28.827 --> 00:31:33.587
+<v Natalie McKenzie>But do you see any issues with a 10% increase to Kip Harley for another year?</v>
+
+00:31:34.787 --> 00:31:54.427
+<v Matthew Shellenberger>No, that's fine. But like I said, if it's gonna jump up significantly the year after, I'm gonna have, like, I would like to get a good like six months or like a good, at least like three months notification, right? Going, because then it's gonna be like, what?</v>
+
+00:31:45.907 --> 00:31:46.747
+<v Natalie McKenzie>Yeah.</v>
+
+00:31:49.827 --> 00:31:50.707
+<v Natalie McKenzie>Yeah, for sure.</v>
+
+00:31:54.507 --> 00:32:08.067
+<v Matthew Shellenberger>What does that look like for me? Like, I can't, it's me raising my rates by 10% on short notice is not like really possible. So I really need a three to six month notice. So I would say.</v>
+
+00:32:09.427 --> 00:32:14.067
+<v Matthew Shellenberger>We want to have that conversation like three to six months out before the next renewal.</v>
+
+00:32:14.987 --> 00:32:36.467
+<v Natalie McKenzie>Yeah, yeah, absolutely. And I promise we're getting our renewal just timeline and making sure we have some automation in place. But like I've been working with the team too to make sure like, you know, at 90 days we're at least notifying that the renewal is coming up. And then I'd like to be more consistent with every third MBR being a QBR.</v>
+
+00:32:24.867 --> 00:32:25.267
+<v Matthew Shellenberger>Yeah.</v>
+
+00:32:36.787 --> 00:32:57.627
+<v Natalie McKenzie>too, and we can kind of look at different things. Realistically, unless Harley would come back to us and say, I'm looking for more money or I went out, but it sounds like we're investing in him and he seems happy. So I wouldn't see that happening where it becomes like a giant increase because we do look at.</v>
+
+00:32:58.067 --> 00:33:14.867
+<v Natalie McKenzie>a few things. But you never know, economy is changing. It's wild right now. India is not getting hit as much like my Philippines team is definitely, we're seeing a little bit more churn due to salary over there, but we're trying to work with everybody.</v>
+
+00:33:16.227 --> 00:33:17.587
+<v Matthew Shellenberger>No, yeah, no, it makes sense.</v>
+
+00:33:19.347 --> 00:33:38.067
+<v Natalie McKenzie>All righty, right. So I'll send that over. So this is just a little bit of what we're doing. If you want to have like a demo with my AI lead, I can get you on there. But we have the digital dispatcher. That one's pretty cool. It's voice agents as well. So the voice agent, we can kind of customize that to the type.</v>
+
+00:33:38.227 --> 00:34:00.067
+<v Natalie McKenzie>a voice agent that we need, but the digital dispatcher does have a voice agent as well. So it'll be somebody that, well, it'll be an agent that answers the call, goes through the questions with you. We have somebody to monitor on the back end too, and kind of customize it as you're going along, because it is just a monthly reoccurring kind of service that we have for you.</v>
+
+00:34:00.467 --> 00:34:19.667
+<v Natalie McKenzie>You can have it where it's turned on for everybody, or you can just have it as like the rollover as well. So if people don't want to wait on hold, then they can go over to this. But they'll triage, they'll even if they want to, again, they want to wait for a live agent, like once they're on there, they want to be transferred to a live agent, it'll go through that.</v>
+
+00:34:20.067 --> 00:34:31.107
+<v Natalie McKenzie>entire process there and even does some triaging before it sends over and gives some next steps there. So that one's pretty cool. Are you doing anything like that with your customers yet?</v>
+
+00:34:32.147 --> 00:34:37.587
+<v Matthew Shellenberger>No, I don't. Customers, my customers would not like that.</v>
+
+00:34:38.147 --> 00:35:02.147
+<v Natalie McKenzie>Yeah, yeah, well that, and that's what it is like. It's one of those, you give them the option, right? So it's like, hey, I'm implementing this. This is a way to get the ticket resolved faster. But that's also like, if you don't have an issue with that and the humans working just fine, like where you would probably really like it is just having the second layer, which would be like the troubleshooting.</v>
+
+00:35:02.467 --> 00:35:19.267
+<v Natalie McKenzie>piece of it where it actually, once the ticket comes in, so even if it's just an email ticket, it'll actually troubleshoot, triage, give advisement on the next steps, and then we can kind of figure out how to build that in with what you're already doing and go from there as well.</v>
+
+00:35:20.467 --> 00:35:23.747
+<v Matthew Shellenberger>Yeah, no, clients just like to text me and call me.</v>
+
+00:35:24.227 --> 00:35:31.867
+<v Natalie McKenzie>Yeah, no, that's well, that's what you can do: build an agent. It takes from your phone, puts it in there, triages it for you, puts it back.</v>
+
+00:35:31.587 --> 00:35:36.547
+<v Matthew Shellenberger>Oh, I mean, I know how to build it. I'm just, I just know that that's not what they're going to want.</v>
+
+00:35:34.387 --> 00:35:35.027
+<v Natalie McKenzie>Hoh.</v>
+
+00:35:37.067 --> 00:35:56.227
+<v Amit Dubey>You know what, Matt? I mean, hearing you explain the kind of work that you're already doing with Claude, right? And the initial conversation before Natalie even started with this, right? I mean, I feel that there is a great opportunity for us and you. I mean, it's a combined effort, right?</v>
+
+00:35:37.507 --> 00:35:38.147
+<v Matthew Shellenberger>So, anyway.</v>
+
+00:35:44.547 --> 00:35:45.027
+<v Matthew Shellenberger>Yup.</v>
+
+00:35:56.267 --> 00:36:14.987
+<v Amit Dubey>just to be on a platform where we both the parties are talking about an AI thing, because I think you've made a lot of advancement in terms of the developments that you spoke about. And a few of the things which Natalie is showing on screen currently, right? It has a lot of use cases which are built on those.</v>
+
+00:36:00.947 --> 00:36:01.347
+<v Matthew Shellenberger>Yeah?</v>
+
+00:36:15.027 --> 00:36:35.987
+<v Amit Dubey>platforms, the one that you were explaining, right? And I think Natalie, you touched on that point, that you never know that you probably would want to be one of the AI speakers on behalf of ITBD by Design, right? Because of the kind of advancement that you've done. So I don't know how this is going to work, Natalie, but I think it will be great for Matt for, you know, Matt to interact with our AI team.</v>
+
+00:36:36.267 --> 00:36:44.507
+<v Amit Dubey>and the core team, right, to see how can we move forward, at least from that point of view, because I think there is a great collaboration that we can do.</v>
+
+00:36:45.147 --> 00:37:04.027
+<v Natalie McKenzie>Yeah, no, definitely, definitely. But yeah, and then these are the ones that we are kind of putting in place. Again, we're doing the same, like customer zero and then rolling it out from there. As far as just a way forward in general, if you can close out the CSAT, that's great. Would want to confirm.</v>
+
+00:36:45.627 --> 00:36:45.947
+<v Matthew Shellenberger>Yeah.</v>
+
+00:37:04.267 --> 00:37:26.587
+<v Natalie McKenzie>the renewal. So it sounds like we should be good to go there. So Andy, we'll just get that agreement information over to you. And then from there, yeah, we'll definitely make sure that we're in alignment and you have a little bit more advanced notice. And then we're kind of planning as well because Kip can start having the conversations early too. So we can get a gauge, like, is he going to be asking us for more or like, is he kind of just within?</v>
+
+00:37:27.067 --> 00:37:48.347
+<v Natalie McKenzie>the range that we set them and set the expectation at. Definitely we'll look at the upcoming projects, keep driving towards the utilization. He doesn't seem to have an issue with utilizations. I would probably be more concerned to see if he needs a helper at some point, but let's see if we can give him a digital helper and go from there. And then.</v>
+
+00:37:32.427 --> 00:37:32.747
+<v Matthew Shellenberger>Yeah.</v>
+
+00:37:48.507 --> 00:38:02.027
+<v Natalie McKenzie>As far as QBRs, I think if it's cool, we'll just change. I know you already have the MBRs on there. We'll just change every third one to a QBR and then go from there. If we need to reschedule or move anything, we can do that.</v>
+
+00:38:02.987 --> 00:38:04.107
+<v Matthew Shellenberger>Yep, no, that works.</v>
+
+00:38:05.347 --> 00:38:29.907
+<v Natalie McKenzie>And then just to give you some Build It information, so Build It's going to be August 3rd through the 5th, Jersey City. So not too far, same as it's always been. It's going to be super focused on for the CEO, MSPs. We're going to have a lot of heavy hitters, a lot of good speakers. The big off-site that we're doing is going to be the New York</v>
+
+00:38:29.947 --> 00:38:53.787
+<v Natalie McKenzie>Stock Exchange. So that's going to be pretty cool. I've never been there. That one too is only the first 300 people. So you have to sign up for it because they have a 300 person capacity there. So that is something that you're interested in. We're doing a BOGO for partners. So to purchase the ticket, it's $1,495 and then you can get a free ticket.</v>
+
+00:38:54.107 --> 00:39:13.667
+<v Natalie McKenzie>to bring somebody buddy with you as well. Website's going to have some more information. Agenda should be released soon. But yeah, just everything that you're looking to grow, you're looking to get some more leadership advice, and then AI, AI, AI, there's going to be a ton of stuff on AI as well there.</v>
+
+00:39:16.787 --> 00:39:17.547
+<v Matthew Shellenberger>Great, go.</v>
+
+00:39:17.547 --> 00:39:19.867
+<v Natalie McKenzie>Alright, and then with that.</v>
+
+00:39:21.627 --> 00:39:23.627
+<v Natalie McKenzie>Anything else?</v>
+
+00:39:25.307 --> 00:39:27.627
+<v Natalie McKenzie>Questions, concerns.</v>
+
+00:39:25.947 --> 00:39:26.267
+<v Matthew Shellenberger>But...</v>
+
+00:39:28.347 --> 00:39:41.467
+<v Matthew Shellenberger>No, like I said, yeah, the follow up, the communication and staying on top of tickets and tasks and being able to send an email and he keeps track of it is great. That is the most important thing.</v>
+
+00:39:43.547 --> 00:40:03.227
+<v Matthew Shellenberger>I will, I have a bunch of unified things that I need to get done. And what we can do is I will assign it to him and then he can work with UKIP to kind of get better understanding of like where VLANs are, how to do MAC address, all of that inside.</v>
+
+00:39:57.787 --> 00:39:58.067
+<v Kip Singh>Yeah.</v>
+
+00:40:03.387 --> 00:40:22.307
+<v Matthew Shellenberger>unify in these UDMs that we have set up. And then he does have access to Claude, so he should be able to, if I assign him that task and he doesn't really understand it, utilizing you, utilizing Claude, and then explaining it to me about what he's done, I can, you know.</v>
+
+00:40:07.467 --> 00:40:07.947
+<v Kip Singh>Mhm.</v>
+
+00:40:22.427 --> 00:40:28.347
+<v Matthew Shellenberger>That should be, you know, like I said, these are very basic, basic things that I want set up in on a unified platform.</v>
+
+00:40:25.547 --> 00:40:26.027
+<v Kip Singh>Tercha.</v>
+
+00:40:29.387 --> 00:40:30.187
+<v Kip Singh>Yeah, definitely.</v>
+
+00:40:29.427 --> 00:40:40.907
+<v Matthew Shellenberger>And then yeah, reach out to me. Yeah, like I said, I build a lot of things in Claude. I use it like, you know, all the time. So, you know, max tokens.</v>
+
+00:40:39.067 --> 00:40:59.147
+<v Amit Dubey>Yeah, you're getting me excited, Matt. Getting me excited. You're getting me excited, right? I can talk for hours, but I'm hearing from you. One of the things, Kip, that I think I would suggest, right, bringing on the table during the service meetings is giving an overview to Matt about how Harley has been utilizing Claude.</v>
+
+00:40:40.107 --> 00:40:40.427
+<v Kip Singh>Kam.</v>
+
+00:40:59.307 --> 00:40:59.627
+<v Kip Singh>Kour.</v>
+
+00:40:59.467 --> 00:41:22.427
+<v Amit Dubey>for the entire week, right? At least I know that it cannot be measurable, but at least talking about what all areas that he has taken help, right? What are the topics where he has gone and what are the projects that he has worked on, right? What are the topics where he has been more efficient? That would probably give Matt a view of, you know, how frequently he's using Clot and at the same time.</v>
+
+00:41:00.587 --> 00:41:00.867
+<v Kip Singh>Yeah.</v>
+
+00:41:09.707 --> 00:41:09.947
+<v Kip Singh>Yep.</v>
+
+00:41:22.707 --> 00:41:37.547
+<v Amit Dubey>how better he can utilize things, probably something that he's not doing. And of course, we don't have visibility. So bringing that on the table, along with utilization, the other things would make sure that we're bringing that visibility for Matt to review and let us know if there's anything more he can do and be more efficient.</v>
+
+00:41:38.267 --> 00:41:42.027
+<v Kip Singh>Definitely. I already wrote that down, so before we said it.</v>
+
+00:41:39.907 --> 00:41:40.587
+<v Amit Dubey>Fantastic.</v>
+
+00:41:43.067 --> 00:41:46.667
+<v Amit Dubey>Smart you are. You're a part of my team, yeah? Thank you.</v>
+
+00:41:47.227 --> 00:41:54.987
+<v Natalie McKenzie>You can use it like me at the end of the day. I just ask it to check my email if any MSPs are mad at me today. Normally it's pretty good, so.</v>
+
+00:41:53.867 --> 00:41:53.947
+<v Kip Singh>The.</v>
+
+00:41:55.627 --> 00:42:17.227
+<v Matthew Shellenberger>Yeah, no, I mean, I'll go one example is I need to go on site to a client replacing the camera system. I create a new project. I take a photo of the camera system. Cloud automatically identifies all the cameras that they have to make a model of everything, all the replacements. It knows I use access cameras, pulls all that information from ADI.</v>
+
+00:42:17.547 --> 00:42:36.187
+<v Matthew Shellenberger>I do a walkthrough with the electrician, taking photos of where all the cameras are, uploaded to the project. At the end, I go into my car. I then spend 5 minutes just rehashing exactly what's going on in the project. Claude then builds me a migration dashboard of all the cameras and things, the timeline, everything in there.</v>
+
+00:42:36.347 --> 00:42:54.987
+<v Matthew Shellenberger>It then feeds it directly into like my proposal. And then I go back through and I look at all the cameras to suggest, tweak that all, and then, and then through, I wrote a proposal. I don't use Quotal anymore. I wrote my own proposal thing through Claude.</v>
+
+00:42:53.987 --> 00:42:54.107
+<v Kip Singh>Yeah.</v>
+
+00:42:55.227 --> 00:43:15.547
+<v Matthew Shellenberger>So it can take all that information through the MCP, generate a full proposal quote for it. I then tweak it through the website, email it out, has the link and a PDF that they can review. And if everything looks good, then they sign off. So something that would have taken me easily 2 hours to do the walk through and then two hours to sit down.</v>
+
+00:43:15.707 --> 00:43:23.067
+<v Matthew Shellenberger>and another two hours to do all the manual writing it, it happens automatically and then I can go back and like review it all.</v>
+
+00:43:23.427 --> 00:43:41.867
+<v Natalie McKenzie>Yeah, the time saved is the biggest ROI right now, right? Time saved. So it's awesome. Cool, Matt. Well, enjoy the rest of your day. We'll send the agreement over to give you a quick recap here and let us know if anything else pops up and definitely.</v>
+
+00:43:28.907 --> 00:43:29.227
+<v Matthew Shellenberger>Yeah.</v>
+
+00:43:34.787 --> 00:43:35.227
+<v Matthew Shellenberger>Alright.</v>
+
+00:43:42.507 --> 00:43:45.707
+<v Natalie McKenzie>we'll keep you in the loop with our AI team too.</v>
+
+00:43:46.907 --> 00:43:48.187
+<v Matthew Shellenberger>Okay, awesome. Thanks.</v>
+
+00:43:48.587 --> 00:43:49.227
+<v Natalie McKenzie>Bye.</v>
+
+00:43:49.227 --> 00:43:50.827
+<v Amit Dubey>Thank you, Matt. Thank you. Cheers, bye.</v>
+
+00:43:49.707 --> 00:43:50.307
+<v Kip Singh>Thank you, man.</v>
+
+00:43:50.467 --> 00:43:50.987
+<v Andy Arora>Like that.</v>
+
+00:43:50.507 --> 00:43:51.147
+<v Matthew Shellenberger>I guess.</v>
+

@@ -31,7 +31,8 @@ def slugify(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
-# display_name, halo_client_id, halo_search (for SIP name match), teamgps_company
+# display_name, halo_client_id (None = transcript-only, no Halo/TeamGPS),
+# halo_search (for SIP name match), teamgps_company
 NEW = [
     ("Netgain",            120, "NetGain",       "NetGain Technology"),
     ("F12",                775, "F12",           "F12"),
@@ -41,37 +42,67 @@ NEW = [
     ("Granite Networks Inc",                   72, "Granite Networks", "Granite Networks Inc"),
     ("Secure Future Tech Solutions",          835, "Secure Future", "Secure Future Tech Solutions"),
     ("Atlantic PC Inc",                       942, "Atlantic PC",   "Atlantic PC Inc"),
+    # ---- added 2026-06-12: partners whose service-call transcripts Amit can
+    # pull via the M365 connector (calendar audit) ----
+    ("Continuous Networks",          49,  "Continuous Networks", "Continuous Networks LLC"),
+    ("APM IT Solutions",             965, "APM IT",              "APM IT Solutions"),
+    ("Matador Networks",             109, "Matador",             "Matador Networks LLC"),
+    ("Vitis Tech",                   144, "Vitis",               "Vitis Tech"),
+    ("Community IT",                 45,  "Community IT",        "Community IT Innovators"),
+    ("PEI",                          137, "PEI",                 "Dataprise (PEI)"),
+    ("Prevare LLC",                  141, "Prevare",             "Prevare LLC"),
+    ("Perfect Cloud Solutions",      834, "Perfect Cloud",       "Perfect Cloud Solutions"),
+    ("Dependable Solutions",         60,  "Dependable",          "Dependable Solutions Inc"),
+    ("Pegasus Technology Solutions", 135, "Pegasus",             "Pegasus Technology Solutions"),
+    ("Boomtown CIO",                 34,  "Boomtown",            "Boomtown CIO"),
+    ("CW Now",                       None, "CW Now",             "CW Now"),
+    ("Networking Now",               121, "Networking Now",      "Networking Now"),
+    ("Galactica Cybersecurity",      946, "Galactica",           "Galactica CyberSecurity"),
+    ("ICSI",                         80,  "ICSI",                "ICSI"),
+    ("Infopathways",                 83,  "Infopathways",        "Infopathways, Inc."),
+    ("NerdsToGo",                    118, "NerdsToGo",           "NerdsToGo Inc"),
+    ("CMIT Solutions Stamford",      44,  "CMIT",                "CMIT Solutions (Stamford, CT)"),
+    ("Vistitude",                    187, "Vistitude",           "Vistitude Computer Solutions Inc"),
+    ("Mission Technology",           975, "Mission Technology",  "Mission Technology Solutions"),
 ]
 
 
 def build_real(name, client_id, halo_search, teamgps_company, nps_all):
-    client = halo.get_client(client_id)
-    cf = halo.parse_custom_fields(client)
-    emails, domains = halo.get_users(client_id)
-    sips = halo.count_sips(client_id, name_terms=[name, halo_search, client.get("name", "")])
+    if client_id is None:
+        # Transcript-only partner: no Halo client record exists (e.g. CW Now).
+        client, cf, sips = {}, {}, {}
+        csat, nps, historical_calls = [], [], []
+        csat_stats = teamgps.csat_stats(csat)
+        nps_stats = teamgps.nps_stats(nps)
+        account_manager = ""
+    else:
+        client = halo.get_client(client_id)
+        cf = halo.parse_custom_fields(client)
+        emails, domains = halo.get_users(client_id)
+        sips = halo.count_sips(client_id, name_terms=[name, halo_search, client.get("name", "")])
 
-    # TeamGPS CSAT uses a server-side EXACT company-name filter. The short search
-    # terms miss, so fall back to the exact Halo client name (which matches).
-    csat = teamgps.get_csat(teamgps_company)
-    if not csat and client.get("name") and client.get("name") != teamgps_company:
-        csat = teamgps.get_csat(client.get("name"))
-    csat_stats = teamgps.csat_stats(csat)
-    nps = teamgps.filter_nps(nps_all, emails, domains)
-    nps_stats = teamgps.nps_stats(nps)
+        # TeamGPS CSAT uses a server-side EXACT company-name filter. The short search
+        # terms miss, so fall back to the exact Halo client name (which matches).
+        csat = teamgps.get_csat(teamgps_company)
+        if not csat and client.get("name") and client.get("name") != teamgps_company:
+            csat = teamgps.get_csat(client.get("name"))
+        csat_stats = teamgps.csat_stats(csat)
+        nps = teamgps.filter_nps(nps_all, emails, domains)
+        nps_stats = teamgps.nps_stats(nps)
 
-    historical_calls, note_authors = [], Counter()
-    for t in halo.find_service_tickets(client_id, search="Service Call"):
-        notes = halo.get_meeting_notes(t["id"])
-        for n in notes:
-            note_authors[n.get("who")] += 1
-        if notes:
-            historical_calls.append({
-                "ticket_id": t["id"], "summary": t["summary"], "date": t["date"],
-                "notes": "\n\n".join(n["note"] for n in notes),
-            })
+        historical_calls, note_authors = [], Counter()
+        for t in halo.find_service_tickets(client_id, search="Service Call"):
+            notes = halo.get_meeting_notes(t["id"])
+            for n in notes:
+                note_authors[n.get("who")] += 1
+            if notes:
+                historical_calls.append({
+                    "ticket_id": t["id"], "summary": t["summary"], "date": t["date"],
+                    "notes": "\n\n".join(n["note"] for n in notes),
+                })
 
-    account_manager = (note_authors.most_common(1)[0][0] + " (Dedicated Team Lead)"
-                       if note_authors else (client.get("accountmanagertech") or ""))
+        account_manager = (note_authors.most_common(1)[0][0] + " (Dedicated Team Lead)"
+                           if note_authors else (client.get("accountmanagertech") or ""))
 
     # Local .docx transcripts — any Transcripts/ folder matching the partner name
     # (case/punctuation-insensitive) is ingested, same as the registry build path.

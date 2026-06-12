@@ -1,0 +1,1149 @@
+WEBVTT
+
+NOTE title: Dependable Solutions | NOC + MDE Monthly Service Call
+NOTE date: 2026-05-26
+NOTE duration: 41m 10s
+
+00:01:44.711 --> 00:01:45.231
+<v Keith Rozario>Somebody.</v>
+
+00:01:47.311 --> 00:01:49.751
+<v @1>Hello, Lou, surprise.</v>
+
+00:01:51.311 --> 00:01:54.911
+<v Keith Rozario>Jesus, man, I have been on call since 5:30, man.</v>
+
+00:01:52.591 --> 00:01:52.831
+<v @1>So.</v>
+
+00:01:55.951 --> 00:01:56.111
+<v @1>Mm.</v>
+
+00:01:56.591 --> 00:02:02.351
+<v Keith Rozario>And being on one call is fine, but then being on call from 530 to 6 and 6 to 615 and 615 to 30.</v>
+
+00:02:04.751 --> 00:02:05.631
+<v @1>Not Coda.</v>
+
+00:02:06.951 --> 00:02:07.471
+<v Keith Rozario>Mm.</v>
+
+00:02:09.071 --> 00:02:13.551
+<v @1>Maybe I was asking, do I need to keep the way forward slide?</v>
+
+00:02:14.351 --> 00:02:20.831
+<v Keith Rozario>Now, you can you can skip that, just keep the highlight and the data slides, and if possible, keep me before NOC.</v>
+
+00:02:18.271 --> 00:02:18.991
+<v @1>Mm-mm.</v>
+
+00:02:21.831 --> 00:02:23.551
+<v @1>Yeah, you are.</v>
+
+00:02:22.031 --> 00:02:24.991
+<v Keith Rozario>So that, so that after presenting mine, I can get ready now.</v>
+
+00:02:27.751 --> 00:02:38.831
+<v @1>Yeah, and also there are some discrepancies in your slide, data element, no, no, the data is data is correct.</v>
+
+00:02:36.431 --> 00:02:38.711
+<v Keith Rozario>There shouldn't be anything.</v>
+
+00:02:39.671 --> 00:02:40.111
+<v @1>Pearl.</v>
+
+00:02:40.591 --> 00:02:45.311
+<v Keith Rozario>It's still not April-May confusion, right? OK, lovely. Good morning, Steve.</v>
+
+00:02:43.471 --> 00:02:43.871
+<v @1>Yeah.</v>
+
+00:02:45.711 --> 00:02:46.511
+<v @1>Hey, Steve.</v>
+
+00:02:45.831 --> 00:02:46.911
+<v Steve Daniel>Hey guys, how are we doing?</v>
+
+00:02:47.951 --> 00:02:49.311
+<v Keith Rozario>All well, all well, how about you?</v>
+
+00:02:49.711 --> 00:02:50.351
+<v @1>Good.</v>
+
+00:02:50.031 --> 00:02:52.831
+<v Steve Daniel>Did you guys get, did you guys get to have a three-day weekend too?</v>
+
+00:02:54.351 --> 00:02:57.951
+<v Keith Rozario>I was working yesterday. I think you were too, Barry.</v>
+
+00:02:56.431 --> 00:02:56.911
+<v Steve Daniel>Yeah.</v>
+
+00:02:56.551 --> 00:02:58.191
+<v @1>Me too. Yeah.</v>
+
+00:02:59.471 --> 00:03:05.231
+<v @1>But I had Friday also, technically I got the three-day weekend. Yeah, yeah.</v>
+
+00:02:59.871 --> 00:03:00.151
+<v Keith Rozario>Yeah.</v>
+
+00:03:02.471 --> 00:03:07.951
+<v Steve Daniel>Technically, you did have a three, just not the same one we did. Yeah, we had our Memorial Day off yesterday, so.</v>
+
+00:03:03.911 --> 00:03:04.191
+<v Keith Rozario>Yeah.</v>
+
+00:03:09.871 --> 00:03:10.191
+<v @1>Yeah.</v>
+
+00:03:12.511 --> 00:03:22.751
+<v Keith Rozario>So yeah, we were just in the office. There were around 10 to 12 people in the office. Overall, it was very quiet, peaceful though.</v>
+
+00:03:18.991 --> 00:03:19.391
+<v Steve Daniel>Yeah.</v>
+
+00:03:23.471 --> 00:03:28.191
+<v Steve Daniel>Yeah, I mean, if you have a lot of US-based clients, obviously there's a lot of them that weren't working, so.</v>
+
+00:03:23.631 --> 00:03:23.951
+<v @1>Yeah.</v>
+
+00:03:23.951 --> 00:03:24.751
+<v Keith Rozario>With that Vishal.</v>
+
+00:03:28.511 --> 00:03:38.031
+<v Keith Rozario>Yeah, they weren't, and the only ones that were working were Canadian-based, and the Engineers were aligned with Canadian-based lines, so yeah, that's not it.</v>
+
+00:03:33.791 --> 00:03:34.351
+<v Steve Daniel>Sure.</v>
+
+00:03:37.231 --> 00:03:38.111
+<v Steve Daniel>OK, cool.</v>
+
+00:03:38.951 --> 00:03:39.551
+<v Keith Rozario>Morning, Joe.</v>
+
+00:03:39.231 --> 00:03:39.631
+<v Steve Daniel>Awesome!</v>
+
+00:03:40.471 --> 00:03:40.991
+<v Joe Ruskey>Good morning.</v>
+
+00:03:42.111 --> 00:03:42.911
+<v @1>Hey, Joe.</v>
+
+00:03:43.591 --> 00:03:44.111
+<v Joe Ruskey>Hello!</v>
+
+00:03:45.471 --> 00:03:46.511
+<v @1>No, no.</v>
+
+00:03:47.831 --> 00:03:52.751
+<v @1>Okay, I don't believe anybody else will be joining the call.</v>
+
+00:03:54.911 --> 00:03:58.191
+<v Keith Rozario>Uh, Brandon, I'm not sure if Brandon is OK.</v>
+
+00:03:56.911 --> 00:03:59.391
+<v Joe Ruskey>No, let's just start.</v>
+
+00:04:00.471 --> 00:04:01.311
+<v @1>K.</v>
+
+00:04:02.631 --> 00:04:09.311
+<v @1>Okay, I'll set up the screen share. Give me a moment. In the meantime, how was your week, Joe?</v>
+
+00:04:10.351 --> 00:04:11.231
+<v Joe Ruskey>It was good.</v>
+
+00:04:12.671 --> 00:04:13.471
+<v @1>K.</v>
+
+00:04:14.751 --> 00:04:23.231
+<v @1>That's how it should be. I'm trying to share the screen. Do let me know once the screen is visible.</v>
+
+00:04:34.751 --> 00:04:37.071
+<v @1>I believe it is.</v>
+
+00:04:35.951 --> 00:04:38.231
+<v Steve Daniel>Yeah, we got it now.</v>
+
+00:04:39.631 --> 00:04:41.151
+<v @1>Okay, Keith.</v>
+
+00:04:42.471 --> 00:05:01.151
+<v Keith Rozario>Cool. All right. The agenda for today, of course, as you know, the drill, we're going to merge the NOC and the dedicated services call. We talk about the dedicated services first. I'll take over those slides and I'll hand it over to Barry to run the NOC slides. So from dedicated perspective, the agenda would be check in highlights, action tracker, performance analysis.</v>
+
+00:04:51.991 --> 00:04:52.111
+<v Steve Daniel>In.</v>
+
+00:05:01.391 --> 00:05:19.711
+<v Keith Rozario>voice of your customer and then recap. If you move on to the next slide, before I go on to the highlights, I'd like to 1st check with you, Steve, how are things with the Engineers that we have, Sammy and of course, now Dale, how are things with them?</v>
+
+00:05:21.151 --> 00:05:21.831
+<v Joe Ruskey>Yeah, I...</v>
+
+00:05:21.471 --> 00:05:25.551
+<v Steve Daniel>I mean, think things are going well. Joey, you got any comments on Sushant, Sammy?</v>
+
+00:05:25.391 --> 00:05:31.871
+<v Joe Ruskey>Yeah, I think from Sushant perspective, things are going well. We're happy with what we're getting. So yeah, everything's good.</v>
+
+00:05:30.191 --> 00:05:30.511
+<v Keith Rozario>Yes.</v>
+
+00:05:32.591 --> 00:05:47.231
+<v Steve Daniel>Yep, and Dow's been doing well on the service desk side of things. He's very responsive and he had to stick around to the end of the day on Friday to make sure we off boarded somebody right at the end of the day. So he worked a little bit later to get that done. So yeah, been going real well.</v>
+
+00:05:32.711 --> 00:05:33.071
+<v Keith Rozario>S.</v>
+
+00:05:47.991 --> 00:05:58.991
+<v Keith Rozario>Nice. And that will be on leave, I think, tomorrow or the day after on Eid. So, yeah, in case there's any support required from our side, just let us know. Apart from that, too.</v>
+
+00:05:59.151 --> 00:06:19.471
+<v Steve Daniel>Yeah, I think he's taking the 28th off now because he'd switched that. So I think Thursday he's off. And then he had brought up, he was asking for, let's see, what is it, the June 4th and 5th and 8th and 9th, but he said that might be changing. And I told him if that was changing on his end, I wouldn't</v>
+
+00:06:02.191 --> 00:06:02.751
+<v Keith Rozario>20.</v>
+
+00:06:03.791 --> 00:06:04.031
+<v Keith Rozario>Yeah.</v>
+
+00:06:19.511 --> 00:06:37.231
+<v Steve Daniel>lose any sleep over it because Michael, our lead tech for the service desk is actually off those exact same days, so it would be a little short. So if it moves at all or pushes back a little bit, I told him I said, we're great with that because it actually works a little better for us. So I just asked him to give me an update this week, let me know where things stand.</v>
+
+00:06:34.191 --> 00:06:34.591
+<v Keith Rozario>Okay.</v>
+
+00:06:38.271 --> 00:06:57.751
+<v Keith Rozario>Sure, sure. Perfect, perfect. All right, awesome. Good to hear that. Cool. Then very quickly, the highlights. Samy maintained strong utilization above 80% target across all three weeks of May. Ticket volume strong through May, 102 tickets worked and 78 closed for him. Week.</v>
+
+00:06:57.871 --> 00:07:18.831
+<v Keith Rozario>The first week that is from 1st to 9th was the strongest period. 45 tickets he closed, worked with 90%, 90.1% billable utilization, setting a high bar for the month. One PTO day recorded for both. Dale slides, okay, that's something that I, unfortunately, I added Dale's slides like 10 minutes ago.</v>
+
+00:07:18.991 --> 00:07:41.151
+<v Keith Rozario>So I wasn't sure if I'll be able to add Dale's slides. So when I created this highlight slide, I mentioned here that his slide would be added later. But thankfully, with Barry's help, I was able to add those slides. So you can ignore the last two points and you can switch to Sammy's numbers, Barry. Cool. So for week one to 9, his billable utilization was 43.25 hours. The non-billable hours were 4.75.</v>
+
+00:07:19.791 --> 00:07:20.111
+<v Steve Daniel>Mm.</v>
+
+00:07:41.271 --> 00:08:01.471
+<v Keith Rozario>The number of tickets that he worked on were 45, and he closed 33 tickets out of them. Good resolution rate there. The second week, that's between May 11th to May 15th, that was five days. The billable hours were 35.25 on target. Non-billable hours were 4.75 again. He worked on 32 tickets and closed 27 out of them, again, maintaining the high resolution rate.</v>
+
+00:08:02.831 --> 00:08:21.391
+<v Keith Rozario>Then on May, between May 18th and May 22nd, he worked on 25 tickets and closed 18 of them with 36 billable hours and four non-billable hours in total. So his highest week, the strongest week, was the first week where he closed 33 tickets out of 45 that he worked on.</v>
+
+00:08:21.791 --> 00:08:42.271
+<v Keith Rozario>If I jump on to, if I only focus on the closures on the next slide, yeah, so yeah, as you can see, 45 worked, closed 33, second week 32 worked, closed 27, and the third week worked on 25 and closed 18. Overall, his closure rate has been above 70% for all the weeks. The strongest closure rate was in the second week, that is 84%.</v>
+
+00:08:42.551 --> 00:08:48.351
+<v Keith Rozario>closure rate, but anything you have on Sammy, Joe, anything that we need to work on together.</v>
+
+00:08:49.271 --> 00:08:58.511
+<v Joe Ruskey>No, no, we've got a bunch of projects coming up, so his ticket numbers might drop a little bit because it'll be focused more on projects, but, but no, happy with it all.</v>
+
+00:08:59.311 --> 00:09:18.031
+<v Keith Rozario>Nice. I really appreciate his professionalism here. I can bring it up on this forum. His son wasn't really well and you're aware of that, Joe, during this period and he still made sure nothing affected the work, nothing affected the operation. So I really appreciate that. I've already given the kudos from my side to him. And perfect. So.</v>
+
+00:09:15.471 --> 00:09:15.951
+<v Joe Ruskey>Yep.</v>
+
+00:09:18.191 --> 00:09:37.071
+<v Keith Rozario>Moving on to Dale now, which we just added a few minutes ago. For Dale, he, the first week, he, the billable hours for him was 30.32 hours, non-billable 9.68. He worked on 45 tickets and closed 26 out of them. Above average closure, I would say, but he improved it in the...</v>
+
+00:09:37.151 --> 00:09:57.311
+<v Keith Rozario>in the upcoming weeks. For second week between May 11th to May 15th, the billable hours were 31.45 with non-billable hours of 8.55. The tickets that he worked on were 65. That's a good amount of tickets for the five days that he worked, and he was able to close 48 out of them. That was the strongest period where he was able to meet.</v>
+
+00:09:57.631 --> 00:10:21.791
+<v Keith Rozario>78.6% closure rate. May 18th to 22nd, 31.33 billable hours and 8.67 non-billable hours. Tickets worked on 34, close 20 out of them. Again, above average closure rate. If I move on to the closure slide in particular. Barry, thank you. So yeah, the strongest, like I mentioned, was the second week and the MTD resolution rate was 65.3.</v>
+
+00:10:21.871 --> 00:10:34.671
+<v Keith Rozario>Overall, out of 144 tickets, he was able to close 94. So improvement from April's 74% base needs monitoring. But anything else to add on from Dave's perspective, Steve?</v>
+
+00:10:35.471 --> 00:10:45.311
+<v Steve Daniel>So Keith, when you were pulling the numbers on this, is it a combination of the service desk tickets he's working, but also anything that he's working on the server side too, assisting Sammy?</v>
+
+00:10:45.951 --> 00:10:55.151
+<v Keith Rozario>I think this is just related to the service desk tickets. I'm not sure if he's tracking those that he's working with Sammy on. Do you want those to be tracked as well?</v>
+
+00:10:54.431 --> 00:11:01.551
+<v Steve Daniel>Okay, well, are you using that MSP bots KPI that I sent you before? Is that what you're pulling from?</v>
+
+00:11:01.871 --> 00:11:19.511
+<v Keith Rozario>No, these guys are maintaining a special tracker that I've created. I'm using, I used Claude to prepare that tracker and they maintain that tracker for me, both of them. And that's before the call. I pull up the data from there and I work on that. But if you want, you want me to stick to the MSP bot that you helped us with, I can stick to that.</v>
+
+00:11:06.031 --> 00:11:06.431
+<v Steve Daniel>Okay.</v>
+
+00:11:19.591 --> 00:11:20.191
+<v Keith Rozario>Number as well.</v>
+
+00:11:20.031 --> 00:11:41.711
+<v Steve Daniel>No, that's okay. You do what you're doing. I just, I was just curious because I remember that we had that one week where it was really the numbers got skewed because we launched a whole bunch of tickets onto the service desk and by mistakes we had to clear like 1000 tickets out. So I really screwed up the KPIs for that week. So I had to, I had to kind of do my best math on that one to try and get them right for the tax. But it's fine. I just was curious because, you know,</v>
+
+00:11:32.431 --> 00:11:32.751
+<v Keith Rozario>Wow.</v>
+
+00:11:35.231 --> 00:11:35.271
+<v Keith Rozario>I.</v>
+
+00:11:42.191 --> 00:12:00.671
+<v Steve Daniel>If it's a service ticket on server, it would show up in my numbers too. But if he's working project stuff, that's when I wouldn't see it. That's on the reports on pulling. So I'm not pulling from the project side, but I know he's doing some help. But it looks like we're probably getting 30 hours a week out of him, you know, work on the service desk, which is great because</v>
+
+00:11:46.911 --> 00:11:47.071
+<v Keith Rozario>Mm.</v>
+
+00:11:48.271 --> 00:11:48.751
+<v Keith Rozario>Mhm.</v>
+
+00:11:51.151 --> 00:11:51.631
+<v Keith Rozario>Mhm.</v>
+
+00:11:54.871 --> 00:11:55.151
+<v Keith Rozario>Arora.</v>
+
+00:12:01.391 --> 00:12:21.871
+<v Steve Daniel>You know, Joseph's son transitioned on May 4th into an engineering role, so we lost his 40 hours on the service desk. And I've noticed that Dowd's kind of been able to step up. And I think that's why those numbers, especially like the May 11th through 15th really went up because, you know, we're basically we lost a 40 hour week employee. So, so obviously I need Dowd to kind of keep working at a high clip.</v>
+
+00:12:15.711 --> 00:12:15.871
+<v Keith Rozario>Mm.</v>
+
+00:12:21.911 --> 00:12:39.311
+<v Steve Daniel>because it was nice having Dowd when Joseph was here, but now that we lost those 40 hours, you know, we're down a man in a sense or we're back to having everybody have to cover a little more. So I'm seeing Dowd step up. I just need to continue to make sure he's keeping up with that pace as much as he can because we only have three folks working the desk now. So</v>
+
+00:12:31.151 --> 00:12:31.271
+<v Keith Rozario>Yeah.</v>
+
+00:12:40.511 --> 00:12:57.831
+<v Keith Rozario>Okay, happy he's able to contribute. Thanks for sharing that. And the email that I think Joel also sent the other day, is there any other email getting triggered to BJ anymore from Consulting side? I mean, I connected with them personally and got those removed, but then they...</v>
+
+00:12:43.471 --> 00:12:43.951
+<v Steve Daniel>You bet.</v>
+
+00:12:56.751 --> 00:13:06.831
+<v Joe Ruskey>Yeah, I'm still getting stuff. I haven't tracked it, but a lot of the emails that BJ is still getting are coming from your team. So I'll start tracking it and try to figure out exactly which ones they are.</v>
+
+00:13:00.311 --> 00:13:00.831
+<v Keith Rozario>Mhm.</v>
+
+00:13:03.631 --> 00:13:04.031
+<v Keith Rozario>Okay.</v>
+
+00:13:07.351 --> 00:13:26.191
+<v Keith Rozario>Okay, so if you please bear with me, we're still getting them because there are so many monitorings that these guys have in place and different monitorings have different sorts of triggers. So yeah, as you see them, just let me know and make sure I get all of them removed. So I've proactively asked them to just quickly go through all the monitorings and all the alertings that they have for you guys.</v>
+
+00:13:13.951 --> 00:13:14.351
+<v Joe Ruskey>Yep.</v>
+
+00:13:17.231 --> 00:13:17.631
+<v Joe Ruskey>Yep.</v>
+
+00:13:26.391 --> 00:13:34.751
+<v Keith Rozario>and see if anything is being triggered to BJ, just stop that. But in case they missed out on anything, please bear with me and you can just let me know whenever you see them and I'll get them sorted out.</v>
+
+00:13:33.991 --> 00:13:36.831
+<v Joe Ruskey>Yep. Yep. If I get any, I'll forward them your way.</v>
+
+00:13:37.311 --> 00:13:40.751
+<v Keith Rozario>Awesome. Thank you. All right, Barry, over to you.</v>
+
+00:13:42.111 --> 00:14:05.151
+<v @1>Thank you, Keith. Let me move on to the next slides. The agenda for the call for NOC would be highlight summaries, SLA summary, patch compliance, backup compliance, inventory through up and recaps and to do if any. Moving ahead to the highlights for May, we received a very low volume of P1s this month.</v>
+
+00:14:05.511 --> 00:14:29.071
+<v @1>like after last call 28th to today. So there were, I believe, only four P1s that triggered on our end. Both all of them were power outage related. And one of them was so was offline for a bit due to a patching activity, but yeah, everything was sorted out. Strong cross-stream coordination between ITBD, dependable ISPs and the client IT teams.</v>
+
+00:14:29.551 --> 00:14:48.871
+<v @1>Patching guidance maintained across multiple clients, despite intermediate access. Client trust remains intact with the frequent acknowledgement and positive feedback, post resolution, as you guys do share with us. The wins and successes for this month were rapid recovery for multiple offline servers, majorly for 360.</v>
+
+00:14:49.471 --> 00:15:09.311
+<v @1>real estate and Black River within hours of escalating it. The previous concern that was raised that the tickets were kept in resolved status for longer than usual. So we did set up a workflow last month and I did go and check it out and it's still working fine. So that's a win for us this time.</v>
+
+00:15:09.391 --> 00:15:30.751
+<v @1>month as well. Large scale May patching completed across education, finance, and manufacturing clients with minimal residual risk. VPN and 4 unit access successfully used in identifying the underlying cause of the outages, whether it was power related or due to the ISP. Issues and risks, dependencies on ISP outages as usual.</v>
+
+00:15:31.471 --> 00:15:50.911
+<v @1>Created multiple multi-client downtime with no ETAs, and the one thing is, I do like ILO access is not available for all the clients which have physical servers. I believe I was in talk with BJ when during our last call and he was going to set it up, but I'm not sure if he...</v>
+
+00:15:51.391 --> 00:16:10.191
+<v @1>Hadn't had like handed over the task or anything, but yeah, do like we, yeah, yeah, basically what happened was, like, I believe for one client last to last month, an alert got triggered, alert didn't get triggered, but the...</v>
+
+00:15:57.271 --> 00:16:00.991
+<v Joe Ruskey>Which task was this? To have the IDRAC and ILO report?</v>
+
+00:16:10.351 --> 00:16:16.031
+<v @1>There was a disk failure for, and yeah, and then me and BJ, yeah.</v>
+
+00:16:12.271 --> 00:16:12.791
+<v Joe Ruskey>Yeah.</v>
+
+00:16:14.271 --> 00:16:20.751
+<v Joe Ruskey>Yeah, I have a I have Sushant working on that and getting every single server configured for that so that that doesn't happen again.</v>
+
+00:16:20.431 --> 00:16:44.951
+<v @1>Yeah, yeah, so yeah, that's why we, I checked with BJ and got like there were like multiple clients we didn't have ID rack or ILO set up, so I believe he was working in the background for this as well, so I'll connect with Sushant for this, I guess. Learning and improvement opportunities again, I'd reckon ILO availability will greatly assist with incident response as it provides director servers.</v>
+
+00:16:37.351 --> 00:16:37.631
+<v Joe Ruskey>Yep.</v>
+
+00:16:44.951 --> 00:16:55.231
+<v @1>access without requiring on-site interventions. Anything you guys want to add for this month? Anything like for the NOC team?</v>
+
+00:16:56.991 --> 00:17:20.951
+<v Joe Ruskey>No, I think I think focusing on, you know, just like we're doing with I direct ILO, if you guys see any other things, I'm trying to switch the mindset of my entire team, including management. And with BJ leaving, this is a great time to do it. But we're trying to get that remote first mindset, right? So having I direct and ILO configured, we paid for it. Why the heck didn't we have it running? You're right, things like that. So if you see things that will help us, especially since you guys are experts in</v>
+
+00:17:20.951 --> 00:17:29.471
+<v Joe Ruskey>remote, let us know because that's what I want to get our team to do is remote first, on site second. So anything you see, continue to send our way.</v>
+
+00:17:30.271 --> 00:17:32.591
+<v @1>Sure, definitely we'll keep doing that.</v>
+
+00:17:33.751 --> 00:17:52.191
+<v @1>Okay, moving ahead to the SLA slide. Yeah, let me go like down the priority distribution. For P1s, we received 4 P1 tickets, and all four of them met the response SLA and resolution SLA. For P2 tickets, we usually 14 and 13 of them met the response SLA.</v>
+
+00:17:52.471 --> 00:18:12.591
+<v @1>The ticket that got missed out was assigned to an engineer on time, but yeah, the acknowledge written wasn't hit on time with a fraction of delay of like couple of minutes. So our PSA still like marked it down as missing the SLA. But yeah, the resolution part was completed on time and it's sitting at 100%. For P3 cases, we received 22 cases.</v>
+
+00:18:12.991 --> 00:18:31.031
+<v @1>And all 22 cases were handled, like assigned and handled on time with 100% like SLA. For P4, maintains like schedule maintenance, like most like proactive, excuse me, proactive tasks like patching and everything. All 18 tickets were assigned on time and worked as per their schedule.</v>
+
+00:18:32.511 --> 00:18:34.671
+<v @1>Okay, anything you guys want to add here, Team?</v>
+
+00:18:36.111 --> 00:18:36.511
+<v Steve Daniel>Nope.</v>
+
+00:18:36.591 --> 00:18:36.911
+<v Joe Ruskey>Nope.</v>
+
+00:18:38.111 --> 00:18:57.271
+<v @1>Okay, moving ahead to the patching slide. As of now, we are setting at a patching appliance of 85.92%. It's currently down due to, like we had a couple, like in this month there was like a bit of a mix of that.</v>
+
+00:18:57.471 --> 00:19:16.431
+<v @1>The second Tuesday came after the 2nd Wednesday as well, and the 2nd Sunday. So we missed out on like 5 to 6 clients, which, and PDC school district, which is a big chunk of the server list, like I believe it has a lot of servers. So it got missed out. It's sitting at currently 70%, but yeah.</v>
+
+00:19:06.111 --> 00:19:06.351
+<v Steve Daniel>Yeah.</v>
+
+00:19:17.391 --> 00:19:37.151
+<v @1>They will be coming up on in the month of June. Those patches will be installed and we'll get a higher compliance rate as soon as the next window comes. Or if you want us to like push those updates any sooner or anything, you can like let us know and we can do and schedule it over any weekend that's coming up.</v>
+
+00:19:36.591 --> 00:19:47.151
+<v Keith Rozario>That would be, that would make sense, because then you, if you want to move it to June, that'll go to the second week of June, so we'd rather do it before time, if if you have a window for us, uh, Steve or Joe.</v>
+
+00:19:41.711 --> 00:19:42.991
+<v @1>Yeah, yeah.</v>
+
+00:19:48.191 --> 00:20:10.831
+<v Joe Ruskey>Yeah, I would say what I think the normal window is, you could use the same window. I think it's either a Sunday or after hours or something. So use that same window that you normally do and just patch it. And next time, maybe you did tell BJ, but next time, shoot us an email and let's not wait on this meeting to, you know, we could have resolved this right away.</v>
+
+00:19:56.671 --> 00:19:56.951
+<v @1>Yeah.</v>
+
+00:20:09.151 --> 00:20:09.311
+<v Keith Rozario>Mm.</v>
+
+00:20:12.391 --> 00:20:13.711
+<v @1>Sure, sure.</v>
+
+00:20:12.671 --> 00:20:23.471
+<v Keith Rozario>Yep, yep. I think he did drop an email to BJ because I was a part of it, but you're right. We should have kept you guys in loop as well. So this weekend it is then, Barry, right?</v>
+
+00:20:17.711 --> 00:20:17.951
+<v Joe Ruskey>Kour.</v>
+
+00:20:32.631 --> 00:20:33.151
+<v Keith Rozario>Thank you.</v>
+
+00:20:33.191 --> 00:20:33.471
+<v Joe Ruskey>Perfect.</v>
+
+00:20:33.231 --> 00:20:43.151
+<v @1>We'll get like, I'll send over a list to you guys as well, and the MOMI will share over for which clients I'm mentioning here, so that everybody is in loop.</v>
+
+00:20:44.191 --> 00:20:50.831
+<v Steve Daniel>I think Caledonia School District was one of those too, because I remember when I got that, the patch health on that one, it was pretty low too.</v>
+
+00:20:47.471 --> 00:20:49.391
+<v @1>Yeah, what?</v>
+
+00:20:51.231 --> 00:21:07.791
+<v @1>Yeah, Waterford, Caledonia. I believe Caledonia has two schedules, one Sunday and one Wednesday. Both of them got messed up. And I believe there was two others where I'm not like remembering the name as of now, but I'll share it over the email I'll send over.</v>
+
+00:20:53.711 --> 00:20:54.031
+<v Steve Daniel>Mm.</v>
+
+00:21:00.431 --> 00:21:00.671
+<v Steve Daniel>Yeah.</v>
+
+00:21:08.351 --> 00:21:19.671
+<v Steve Daniel>Yeah, that's fine. I do want to talk about the patch health reports and the asset summary reports. I don't know if you want to do it now or at the end or whatever. I just want to kind of talk about that whole process when you guys have a second.</v>
+
+00:21:08.471 --> 00:21:08.991
+<v Joe Ruskey>Okay.</v>
+
+00:21:09.791 --> 00:21:10.351
+<v @1>K.</v>
+
+00:21:20.431 --> 00:21:23.711
+<v @1>Yeah, sure, we can, uh, like for, we can talk right now, yeah.</v>
+
+00:21:24.431 --> 00:21:43.471
+<v Steve Daniel>Okay, so the patch health reports that we get, I think Keith, I sent you a chat a while back asking you to redirect those to the service desk, Helpdesk at DPNDVL. So I don't know if that's been adjusted yet. I think you're following up with your team to get that going. We really want to, I guess the questions I have is,</v>
+
+00:21:43.711 --> 00:21:48.031
+<v Steve Daniel>is should we be getting a patch health report for every one of our clients?</v>
+
+00:21:49.871 --> 00:21:51.791
+<v Steve Daniel>Are they set to run for every client?</v>
+
+00:21:52.911 --> 00:22:09.871
+<v @1>I believe they're not. I believe Sushant has worked on like some of like your clients, but I don't believe there's any job running which will automatically send out for each client. If you want, we can get it scheduled.</v>
+
+00:22:07.871 --> 00:22:08.671
+<v Steve Daniel>Cause we get.</v>
+
+00:22:10.431 --> 00:22:28.751
+<v Steve Daniel>Well, I guess I guess I don't understand the logic again. Obviously, when BJ was here, he was kind of directing this, but we get some patch health reports monthly, but not for all of our clients. And, you know, there's some that are purely kind of server-based ones, but there's plenty that have the workstations included in them too.</v>
+
+00:22:28.991 --> 00:22:48.351
+<v Steve Daniel>And I think that was part of the thing. So I guess an ask for me and Joe, unless you think something different, is I think for every one of our clients, we should get a monthly report just to get an idea of what's coming in and having those sent to the service desk so a ticket gets generated. Because you guys are covering the server end, so anything server related, you're going to</v>
+
+00:22:48.671 --> 00:23:04.031
+<v Steve Daniel>you know, you guys will get those reports correct and then you'll see if they're below or whatever's happening and you guys will address it. But the workstation side is more on our side of the fence, true, that we need to address the workstations if we're finding lower compliance rates. Is that accurate statement?</v>
+
+00:23:06.031 --> 00:23:06.351
+<v @1>Yeah?</v>
+
+00:23:06.231 --> 00:23:06.991
+<v Steve Daniel>Where do you like?</v>
+
+00:23:08.751 --> 00:23:27.711
+<v @1>Yeah, we can work it out that way. But there is, like an automate there is while fetching the report, we can't distinguish between servers and like workstations, we can't get separate reports out of them. So they will have all the assets under client. So we'll have both.</v>
+
+00:23:28.431 --> 00:23:39.231
+<v @1>workstations and servers. And if you still want it, we can get it scheduled for all the clients that we manage and we will send it over to one of your boards on a monthly basis.</v>
+
+00:23:40.111 --> 00:23:41.071
+<v Steve Daniel>Would OK.</v>
+
+00:23:40.191 --> 00:23:57.951
+<v Joe Ruskey>Yeah, that works fine. That gives you what you need, Steve, because it'll have the workstations in there that your guys can dig into. And then we'll be able to see things like did Prairie get missed, Waterford get missed, whatever. It'll help us get better. And we're trying to decide, Barry or Keith, maybe you guys can answer.</v>
+
+00:23:46.751 --> 00:23:47.231
+<v Steve Daniel>Right.</v>
+
+00:23:51.871 --> 00:23:52.271
+<v Steve Daniel>Yeah.</v>
+
+00:23:54.031 --> 00:23:54.751
+<v Steve Daniel>I wonder.</v>
+
+00:23:56.431 --> 00:23:56.751
+<v Steve Daniel>Right.</v>
+
+00:23:58.151 --> 00:24:06.191
+<v Joe Ruskey>We're trying to decide what that compliance should be. Should it be 80? Should it be 85? Should it be 90? What should we shoot for as a company?</v>
+
+00:24:08.111 --> 00:24:09.471
+<v Keith Rozario>Are the batch compliance you're talking about?</v>
+
+00:24:08.351 --> 00:24:08.431
+<v @1>Uh...</v>
+
+00:24:09.991 --> 00:24:10.191
+<v @1>Yeah.</v>
+
+00:24:10.111 --> 00:24:10.511
+<v Joe Ruskey>Yeah.</v>
+
+00:24:10.951 --> 00:24:15.151
+<v Keith Rozario>It should be above 90% for sure. Yep, yep.</v>
+
+00:24:13.471 --> 00:24:14.191
+<v Joe Ruskey>That's what I saw.</v>
+
+00:24:16.591 --> 00:24:35.471
+<v @1>But yeah, once we like we have a certain window set up in those scenarios, it will probably be somewhere around 75 to 85, usually because on a monthly basis at least two or three patches do get like released. So if we have like a set schedule like we have for the servers, so it.</v>
+
+00:24:30.831 --> 00:24:31.071
+<v Joe Ruskey>Yep.</v>
+
+00:24:35.551 --> 00:24:49.551
+<v @1>might vary as like if like the servers do get patched on their window and like in our case, like for this month, like 5 to 6 time got missed out. So yeah, it may vary, but yeah, 90% is a good benchmark for it.</v>
+
+00:24:50.671 --> 00:24:51.071
+<v Joe Ruskey>Okay.</v>
+
+00:24:50.911 --> 00:25:12.111
+<v Steve Daniel>So when you throw the 90% out, I'm looking at one of the patch complaints reports now, there's the bar graph that kind of shows like there's the critical compliance, it's compliance by severity. There's the critical piece, there's the important, moderate, low, and unspecified. So when you say 75 to 85, is that a combination of all of those equals that 75 to 85? Okay.</v>
+
+00:25:01.071 --> 00:25:01.391
+<v @1>Yeah.</v>
+
+00:25:05.871 --> 00:25:06.111
+<v @1>Yeah.</v>
+
+00:25:09.711 --> 00:25:10.031
+<v @1>Yeah.</v>
+
+00:25:12.311 --> 00:25:12.551
+<v @1>Yeah.</v>
+
+00:25:12.511 --> 00:25:25.711
+<v Steve Daniel>Because my thought would be that when we get these reports, you know, focusing on the critical for sure, I mean, I think we want to see critical at 90, if not 100%, right? I mean, that's the stuff we want to make sure that we're hitting.</v>
+
+00:25:27.311 --> 00:25:27.711
+<v @1>Sure.</v>
+
+00:25:28.591 --> 00:25:32.111
+<v Joe Ruskey>Yeah, and I think, Steve, our number that we're aiming for is 85 to 90.</v>
+
+00:25:32.671 --> 00:25:40.111
+<v Steve Daniel>Okay, that would be the aggregate from all of all of them, but we really want, but I think we still want to focus on critical to make sure that that's close to this 100.</v>
+
+00:25:36.591 --> 00:25:36.991
+<v Joe Ruskey>Yep.</v>
+
+00:25:38.751 --> 00:25:40.911
+<v Joe Ruskey>Critical, we definitely want above 90. Yep.</v>
+
+00:25:41.071 --> 00:25:45.631
+<v Steve Daniel>Yeah, okay. And then go ahead. No, go ahead, Keith.</v>
+
+00:25:41.951 --> 00:25:44.431
+<v Keith Rozario>And then, and if in case, sorry, go ahead.</v>
+
+00:25:46.031 --> 00:25:59.151
+<v Keith Rozario>I was just saying if in case that's a number that you're proposing to your clients, I mean, whenever you are trying to pull up a report, just please make sure you're pulling it up after their schedule has been passed, of course. Only then you'll be able to see the accurate numbers.</v>
+
+00:25:55.791 --> 00:25:56.191
+<v Joe Ruskey>Yep.</v>
+
+00:25:56.831 --> 00:25:57.311
+<v Steve Daniel>Right.</v>
+
+00:25:59.711 --> 00:26:00.111
+<v @1>Yeah.</v>
+
+00:25:59.791 --> 00:26:00.191
+<v Joe Ruskey>Yep.</v>
+
+00:26:00.591 --> 00:26:00.991
+<v Keith Rozario>Okay.</v>
+
+00:26:00.831 --> 00:26:20.351
+<v Steve Daniel>Yeah, it's probably not as much providing to the client as just kind of checking our work, checking your work to make sure that we are doing what we need to do. You know what I mean? So do you see these reports, let's say there's 50 clients, do you see 50 individual reports being generated monthly, specific to each client, or is there a way to do an aggregate report? I don't know if that's good or bad, if there is.</v>
+
+00:26:05.791 --> 00:26:06.111
+<v Keith Rozario>Right.</v>
+
+00:26:07.711 --> 00:26:08.351
+<v Keith Rozario>Oh, okay.</v>
+
+00:26:20.631 --> 00:26:21.791
+<v Steve Daniel>I'm just trying to figure out.</v>
+
+00:26:21.151 --> 00:26:27.471
+<v Joe Ruskey>I'd rather have them be separate, Steve. That way your team can attack separately. Then we don't leave it open.</v>
+
+00:26:22.351 --> 00:26:22.671
+<v @1>Burns.</v>
+
+00:26:23.391 --> 00:26:24.351
+<v Steve Daniel>Would you? OK.</v>
+
+00:26:25.791 --> 00:26:45.711
+<v Steve Daniel>That's cool, because yeah, because if 90% of them are all fine, we just close the tickets and if there's one left, I can reassign it to the group or the team or whoever. So, okay, that's cool. So you guys got your kind of marching orders on that one. We want to get every patch compliance report separate for each client sent to our service desk and we'll take it from there.</v>
+
+00:26:29.791 --> 00:26:30.111
+<v Joe Ruskey>Yep.</v>
+
+00:26:33.431 --> 00:26:33.711
+<v Joe Ruskey>Yep.</v>
+
+00:26:43.231 --> 00:26:43.471
+<v @1>Support.</v>
+
+00:26:46.111 --> 00:26:54.031
+<v Steve Daniel>And if it's purely servers, should we, I mean, might as well get the server ones, purely server ones too, right, Joe? I mean, just so we have eyes on them as long as they're coming in.</v>
+
+00:26:46.191 --> 00:26:46.671
+<v Keith Rozario>Sure.</v>
+
+00:26:46.791 --> 00:26:47.071
+<v @1>Sharma.</v>
+
+00:26:54.671 --> 00:27:06.671
+<v Joe Ruskey>Yeah, he said as long as they're in automate, it's coming in anyway. So, you know, like Prairie's not going to necessarily give us the workstations because we don't have the workstations in automate. But, you know, it'll give us anything that's in automate.</v>
+
+00:26:58.191 --> 00:26:58.591
+<v Steve Daniel>Right.</v>
+
+00:26:58.271 --> 00:26:58.671
+<v @1>Yeah.</v>
+
+00:27:03.311 --> 00:27:03.791
+<v Steve Daniel>Right.</v>
+
+00:27:07.151 --> 00:27:20.991
+<v Steve Daniel>Right, it's the schools, we're not going to really see a lot of workstations, but the business clients we will, and that's kind of important to see where we're running with them too. So, okay. So are we, does that make sense, guys? Are we missing anything here or is that a logical thought process?</v>
+
+00:27:12.751 --> 00:27:13.151
+<v Joe Ruskey>Yep.</v>
+
+00:27:15.871 --> 00:27:16.351
+<v Joe Ruskey>Yep.</v>
+
+00:27:18.191 --> 00:27:18.591
+<v @1>Yeah.</v>
+
+00:27:19.871 --> 00:27:20.431
+<v @1>No, no.</v>
+
+00:27:21.071 --> 00:27:21.391
+<v Keith Rozario>Yep.</v>
+
+00:27:21.471 --> 00:27:22.831
+<v @1>Yeah, like this.</v>
+
+00:27:23.071 --> 00:27:41.951
+<v Keith Rozario>Make sense. And when the reports are being forwarded to you, I'm not sure if that's the case with Dependable. I'm just talking in general scenario. You can correct me if I'm wrong, Barry, if it's not the case with Dependable. But if a report is being sent out to you guys, let's say for an XYZ client, we, ITBD is managing this 10 servers for those clients, but the automate has about 20.</v>
+
+00:27:23.711 --> 00:27:24.111
+<v Steve Daniel>Awesome.</v>
+
+00:27:42.311 --> 00:27:53.711
+<v Keith Rozario>When the report is being published, all 20 are going to you. But when we are showcasing the batch compliance for that client, we're just calculating for those 10 that we support. So numbers might differ in your report and our report. So just want to bring that up.</v>
+
+00:27:42.631 --> 00:27:42.831
+<v Joe Ruskey>Yeah.</v>
+
+00:27:52.271 --> 00:27:52.751
+<v Joe Ruskey>Yeah.</v>
+
+00:27:52.791 --> 00:27:53.071
+<v Steve Daniel>Okay.</v>
+
+00:27:54.351 --> 00:28:14.751
+<v Joe Ruskey>Yeah, and I think that's why we want to see those reports. That will help us because the ones, let's say camera servers that maybe you're not managing, if we see that they're, you know, we don't have good numbers on those, that will help us then go to Sushant and say, hey, what do we have this patch schedule set for for automated patching and things like that. So, but I understand your numbers are coming off of the.</v>
+
+00:27:54.911 --> 00:27:55.231
+<v @1>Yeah.</v>
+
+00:28:14.991 --> 00:28:16.591
+<v Joe Ruskey>stuff that we're paying you to manage.</v>
+
+00:28:16.831 --> 00:28:17.231
+<v Keith Rozario>Yep.</v>
+
+00:28:18.671 --> 00:28:29.871
+<v Steve Daniel>Do we think that by the time June, by sometime mid-June or something like that, the next wave of patching, will we have these available to us, do you think? How much time do you guys need to get these set up?</v>
+
+00:28:18.831 --> 00:28:19.151
+<v Keith Rozario>Awesome.</v>
+
+00:28:30.991 --> 00:28:39.231
+<v @1>I believe we can get it set up like in the first, at least till the first week of June.</v>
+
+00:28:40.111 --> 00:28:44.191
+<v @1>I believe that is a promisible deadline for this. Yeah.</v>
+
+00:28:44.911 --> 00:28:59.391
+<v Steve Daniel>Okay. And then, Joe, the other report we get is an asset summary report. And I'm not sure, I mean, that just identifying computers and, you know, network devices. So it kind of just gives us counts.</v>
+
+00:29:03.151 --> 00:29:05.311
+<v Steve Daniel>Should we do the same thing with those two?</v>
+
+00:29:06.471 --> 00:29:07.951
+<v Steve Daniel>It's just like an asset list.</v>
+
+00:29:06.751 --> 00:29:19.631
+<v Joe Ruskey>I guess I'd have to see an asset summary. I mean, basically all is shown is what's an automate. If we're missing something, it's not going to show us that we're missing something because we don't have an automate. So I don't know the, I don't know how valid those reports really are.</v>
+
+00:29:20.111 --> 00:29:32.991
+<v Steve Daniel>Well, that's what I'm trying to think. And, you know, I mean, I'm not sure what to do with those then, because, you know, I mean, obviously they still get generated, but do we want 50 of them coming at us at the service desk in addition to the others, other reports or?</v>
+
+00:29:31.871 --> 00:29:39.951
+<v Joe Ruskey>Yeah, what do you guys use? What do you guys use the asset summaries for? Do you guys use them at all? I mean, all it's doing is listing what's in automate, right?</v>
+
+00:29:40.031 --> 00:29:46.191
+<v @1>Yeah, I don't think we are using the assets and we payboard as of now.</v>
+
+00:29:47.351 --> 00:29:49.471
+<v @1>But I can double check with our team here.</v>
+
+00:29:47.871 --> 00:29:55.551
+<v Joe Ruskey>And is that just a, that's just a report generated in automate, right? You guys probably didn't do it. Did Sushant or somebody set that up?</v>
+
+00:29:50.991 --> 00:29:58.831
+<v @1>Yeah, it'll just, yeah, it'll just list out everything. Yeah, maybe. I'll check with them.</v>
+
+00:29:57.751 --> 00:30:04.431
+<v Joe Ruskey>So I would say, Steve, if there's an asset summary that just send it to Sushant and say, hey, do we need this? If not, shut it off.</v>
+
+00:30:05.871 --> 00:30:06.431
+<v Steve Daniel>Okay.</v>
+
+00:30:07.791 --> 00:30:12.511
+<v Joe Ruskey>But I don't see a need for it unless if the server guys see it, you know, unless if Blaine or Sushant want it.</v>
+
+00:30:14.031 --> 00:30:25.951
+<v Steve Daniel>Yeah, because I was like, I don't even know who has eyes on it now. I mean, like I said, I get a dozen, I get a dozen of them coming in a month, but that's not even the full client base, so I'm not sure if anybody else is getting them too or where those go.</v>
+
+00:30:17.551 --> 00:30:17.871
+<v Joe Ruskey>Yep.</v>
+
+00:30:26.711 --> 00:30:31.071
+<v Joe Ruskey>Yeah, I would check with Sushant, see if he's got a reason for him. If not, you can have him kill him.</v>
+
+00:30:31.591 --> 00:30:33.231
+<v Steve Daniel>Okay, just turn them off. Okay, cool.</v>
+
+00:30:31.871 --> 00:30:32.191
+<v Keith Rozario>Kurt.</v>
+
+00:30:33.151 --> 00:30:33.471
+<v Joe Ruskey>Yep.</v>
+
+00:30:34.031 --> 00:30:52.191
+<v Keith Rozario>So we can do a quick true up on our end, Barry, you can add that as an action item for yourself. We have a report, I mean, we have the inventory, the ones that we manage on Halo, and then of course we can pull up the inventory summary report from the asset summary report from the RMM, and then we can kind of do a quick check and share the delta with Sushant and ask him if.</v>
+
+00:30:52.591 --> 00:30:56.271
+<v Keith Rozario>These need to be managed, or, like, like Joe mentioned, can be killed.</v>
+
+00:30:56.991 --> 00:30:57.391
+<v Joe Ruskey>Yep.</v>
+
+00:30:59.151 --> 00:31:00.111
+<v Steve Daniel>And actually talk.</v>
+
+00:30:59.231 --> 00:31:22.031
+<v Joe Ruskey>Yeah, we are. I mean, there are, you know, just so you guys know, Keith, we've talked about it in the past, but we pulled on a hospital with 60 servers. We will be handing a lot of those over to you guys, probably 50 of them. It's just a matter of we're still working with them. They're very slow because they're afraid to reboot stuff and all that right now. So until we can get those reboot schedules set,</v>
+
+00:31:01.071 --> 00:31:01.631
+<v Steve Daniel>Go ahead, Johal.</v>
+
+00:31:22.591 --> 00:31:28.831
+<v Joe Ruskey>We don't want to turn anything over so that we've got the actual data for you guys. So that's going to come in the next month or two.</v>
+
+00:31:27.151 --> 00:31:27.471
+<v Keith Rozario>Pre.</v>
+
+00:31:29.391 --> 00:31:31.391
+<v Keith Rozario>Okay, got it. Thank you.</v>
+
+00:31:31.871 --> 00:31:38.431
+<v Steve Daniel>And speaking of the true up report, Joe, you're familiar with that report, that monthly report, Joe? Or no?</v>
+
+00:31:38.271 --> 00:31:47.551
+<v Joe Ruskey>I haven't, no, I think what they're talking about is they're going to look at what we're paying them for and then they're going to look at ConnectWise as well and see if there's any other servers that they should be managing.</v>
+
+00:31:48.191 --> 00:32:08.911
+<v Steve Daniel>Yeah, yeah, well, that's kind of, I think that's kind of what the true up report is. It kind of, the true up report shows the servers they're managing for us, and then we look at it and say, this is how the past was and BJ was doing it. I understood that he would look at it and say, oh, that's right, now Houston is gone or something, or we decommissioned a couple of servers. So I saw that report a couple of times.</v>
+
+00:32:05.551 --> 00:32:06.031
+<v Joe Ruskey>Yep.</v>
+
+00:32:09.151 --> 00:32:24.591
+<v Steve Daniel>and I haven't seen it in quite a while. So I guess, I don't know if it's just a cross-check that we need to review it just to make sure that, you know, what we're getting billed for is the actual right amount of servers and all that good stuff or not. So I'm not very familiar with it. I just saw it a couple of times. But again, I don't know where that.</v>
+
+00:32:23.711 --> 00:32:27.151
+<v Joe Ruskey>Is that just a is that just a manual report, Keith?</v>
+
+00:32:25.751 --> 00:32:26.031
+<v Steve Daniel>Matt.</v>
+
+00:32:27.711 --> 00:32:37.151
+<v Keith Rozario>Yeah, I mean, see the inventory that we manage is always a part of this deck. The report that I'm asking Barry to prepare, that's something that we need to do manually, yes. So that's on demand.</v>
+
+00:32:31.951 --> 00:32:32.271
+<v Joe Ruskey>Yeah.</v>
+
+00:32:36.271 --> 00:32:41.471
+<v Joe Ruskey>Yeah, yeah, I would say, I would say maybe once every, what do you think, Keith, once every six months we should do that?</v>
+
+00:32:41.031 --> 00:32:43.151
+<v Keith Rozario>Sure, absolutely, absolutely.</v>
+
+00:32:43.071 --> 00:32:43.471
+<v Joe Ruskey>Yep.</v>
+
+00:32:45.031 --> 00:32:50.431
+<v Steve Daniel>And that would, so that would just stay internal to Sammy would get that. I mean, I'm just curious, do you want to see it, Joe?</v>
+
+00:32:49.231 --> 00:32:52.111
+<v Keith Rozario>We can, we can, we can keep you guys in the loop.</v>
+
+00:32:50.991 --> 00:33:08.991
+<v Joe Ruskey>I definitely want to see it because I'm going to be the one that decides if it needs to be managed or not. Eventually, when it's not me and we have the PS, the professional services manager, it'll be up to them to decide. So I'd say for now, you know, have me on it. And then, you know, I would say we probably run it in June and we run it in December again.</v>
+
+00:32:58.351 --> 00:32:58.831
+<v Steve Daniel>Yeah.</v>
+
+00:33:10.191 --> 00:33:12.111
+<v Joe Ruskey>Then we just keep that cadence going every six months.</v>
+
+00:33:12.511 --> 00:33:15.071
+<v Keith Rozario>Sure, sure. We can change the...</v>
+
+00:33:14.431 --> 00:33:17.951
+<v Joe Ruskey>It lets you think it needs to be more, then I'm fine quarterly. Whatever you think is quarterly.</v>
+
+00:33:16.911 --> 00:33:21.871
+<v Keith Rozario>Yeah, I was about to say that. I mean, we can change that to quarterly as well. It won't be a hassle.</v>
+
+00:33:22.431 --> 00:33:25.551
+<v Joe Ruskey>Let's do quarterly. That way we're not missing anything.</v>
+
+00:33:23.631 --> 00:33:24.031
+<v Keith Rozario>Sure.</v>
+
+00:33:26.431 --> 00:33:27.471
+<v Keith Rozario>OK, please.</v>
+
+00:33:26.751 --> 00:33:31.951
+<v Joe Ruskey>I think it's less am I getting overbilled and more did I forget to tell you to manage a server.</v>
+
+00:33:32.391 --> 00:33:32.911
+<v Keith Rozario>Mmh.</v>
+
+00:33:33.311 --> 00:33:33.471
+<v Steve Daniel>Yeah.</v>
+
+00:33:34.191 --> 00:33:34.591
+<v @1>Yeah.</v>
+
+00:33:35.871 --> 00:33:37.871
+<v Keith Rozario>Right, so you can you can note that down.</v>
+
+00:33:36.271 --> 00:33:44.351
+<v Steve Daniel>So, so that, so that true up report will go to Joe and who else? Anybody else, or is that gonna, is that does Sammy see that then too, or how does that work, Keith?</v>
+
+00:33:44.591 --> 00:33:55.551
+<v Keith Rozario>I mean, it totally on you since I said it's being made manually, so we just need to share it over an email to you guys so it can be sent out to you, all of you guys. I mean, you, Steve, Joe, and then if you want, I can keep Sammy in the loop as well.</v>
+
+00:33:50.151 --> 00:33:50.511
+<v Steve Daniel>Mike.</v>
+
+00:33:56.271 --> 00:34:10.671
+<v Joe Ruskey>Yeah, I would say, I would say me and Steven and Sammy, I think that would be, I never call him Sammy, and that's why I got stuck. I always call him Sushant. Us three, if you send it to us three, I think that should be a good start.</v>
+
+00:34:04.191 --> 00:34:05.471
+<v Steve Daniel>I know, I know.</v>
+
+00:34:05.071 --> 00:34:05.551
+<v Keith Rozario>Okay.</v>
+
+00:34:07.311 --> 00:34:07.711
+<v Keith Rozario>Kour.</v>
+
+00:34:11.271 --> 00:34:12.191
+<v Keith Rozario>Perfect, that works.</v>
+
+00:34:12.831 --> 00:34:13.951
+<v Steve Daniel>Awesome, thanks guys.</v>
+
+00:34:13.631 --> 00:34:17.151
+<v @1>Sure, just making a note of it. Yep.</v>
+
+00:34:18.671 --> 00:34:19.311
+<v @1>Okay.</v>
+
+00:34:18.751 --> 00:34:25.031
+<v Steve Daniel>And we don't want it going to, we don't want it going to BJ anymore, so get that one out of there.</v>
+
+00:34:22.351 --> 00:34:23.151
+<v Joe Ruskey>Exactly.</v>
+
+00:34:23.791 --> 00:34:24.151
+<v @1>Yeah.</v>
+
+00:34:25.951 --> 00:34:45.311
+<v @1>Yeah, let me move him out of the list here. Okay, moving ahead to the backup piece. As of now, we managed 126 servers for backups, and there were 24 failure tickets for the last, since the last call, since 28 till now.</v>
+
+00:34:46.111 --> 00:35:05.871
+<v @1>All of them are resolved, so the backups are currently at 100%. So every backup is running on time and is getting successful. So the ticket account that we had were App Dev on Alaska and Woon Walk got one failure ticket, which got completed. Caledonia, Dodgeville, and PDC received 3 tickets each. So.</v>
+
+00:35:06.031 --> 00:35:25.151
+<v @1>That was a total of 9 tickets across these three clients. Soc Prior got four and Maister Cheese with the highest for this month for like 8 tickets. I don't think I have ever seen this many failure tickets for backups for Maister. But yeah, they all got resolved. But yeah, I'll take a deep dive into it as well.</v>
+
+00:35:24.271 --> 00:35:24.831
+<v Joe Ruskey>So...</v>
+
+00:35:26.351 --> 00:35:35.591
+<v Joe Ruskey>I'm confused. Oh, okay. So, but you're, if you're managing the server, you're managing the backups. Got it. So, okay. And the only ones that you.</v>
+
+00:35:31.871 --> 00:35:32.271
+<v @1>Yeah.</v>
+
+00:35:33.151 --> 00:35:40.671
+<v @1>Yeah, and listen until we are like specifically said that this needs not to be managed for backup.</v>
+
+00:35:41.391 --> 00:35:48.511
+<v Joe Ruskey>Got it, and then the client backup failure, so you're saying like active on Alaska and and Waniwok all got one.</v>
+
+00:35:42.191 --> 00:35:42.671
+<v @1>Yeah.</v>
+
+00:35:49.071 --> 00:35:51.631
+<v @1>Yeah, so that was three across them, yeah.</v>
+
+00:35:49.951 --> 00:35:53.231
+<v Joe Ruskey>Okay, got it. Yep, yep, that makes sense. Okay.</v>
+
+00:35:52.911 --> 00:35:59.391
+<v @1>Yeah, yeah, so total 24 failure tickets and we are setting at 100% backup resolution for now.</v>
+
+00:36:00.471 --> 00:36:02.031
+<v @1>Any questions for the backup piece team?</v>
+
+00:36:02.751 --> 00:36:07.151
+<v Steve Daniel>Joe, is anything changing with on Alaska going forward from then?</v>
+
+00:36:03.191 --> 00:36:03.471
+<v Joe Ruskey>Nope.</v>
+
+00:36:06.511 --> 00:36:15.471
+<v Joe Ruskey>Yeah, but we'll just off board them. We're going to be off boarding on Alaska, but that'll be in June. That'll be in July.</v>
+
+00:36:13.591 --> 00:36:14.031
+<v @1>OK.</v>
+
+00:36:16.991 --> 00:36:18.511
+<v Joe Ruskey>Well, off for the end of June.</v>
+
+00:36:20.151 --> 00:36:38.671
+<v @1>Okay, we would then update the inventory accordingly, moving ahead to the inventory through up. As of now, we are managing 133, so like total devices, 3 hosts, 2 for Citizens Bank and one for 360 and 130 servers, so that.</v>
+
+00:36:38.791 --> 00:36:48.031
+<v @1>Bring us a total of 133, have it as the current latest inventory that we manage along the slide as well, so you can review once I send this over.</v>
+
+00:36:50.351 --> 00:37:07.711
+<v @1>And moving ahead to the informational slides, the services we provide are business locations, New Jersey, 3 locations in India and one in the Philippines. Your escalation matrix, that is your dedicated resources, my manager key to Gary to Sameer to Javid.</v>
+
+00:37:08.351 --> 00:37:21.231
+<v @1>all in the matrix and let me and share my screen and open up the forum. Are there any questions or any like anything you want to add like add your team?</v>
+
+00:37:20.671 --> 00:37:29.071
+<v Joe Ruskey>No, I didn't have this in my schedule. So can you guys forward me this invite in my schedule? I'm sure it would BJ had it. So just forward it to me just so I have it.</v>
+
+00:37:31.111 --> 00:37:35.351
+<v @1>Sure, I'll say the words I speak.</v>
+
+00:37:31.391 --> 00:37:31.711
+<v Keith Rozario>Kour.</v>
+
+00:37:34.831 --> 00:37:56.031
+<v Joe Ruskey>And I am looking at, we're changing the position that BJ had instead of it being a director of operations, we're changing it to a professional services manager. So kind of just focusing on professional services and projects and things. So that person, we're just waiting for the background check to come back and then we will offer them the position. So</v>
+
+00:37:56.311 --> 00:38:08.111
+<v Joe Ruskey>I'm pretty sure on the next meeting, you'll probably get to meet the person we're considering, which is Tim. So more to come on that. And once I find that out, I'll let you guys know so that we can add them to invites and things like that.</v>
+
+00:38:01.551 --> 00:38:01.791
+<v Keith Rozario>Matt.</v>
+
+00:38:08.511 --> 00:38:10.591
+<v Keith Rozario>Sure, sure. Good to hear that.</v>
+
+00:38:10.111 --> 00:38:28.471
+<v @1>Sure, definitely. And one thing I was working with Sushant on this, it was regarding the sites and the connect wise automate. Yeah, so I believe we have like established the way forward and.</v>
+
+00:38:29.231 --> 00:38:29.551
+<v Joe Ruskey>Good.</v>
+
+00:38:29.471 --> 00:38:44.671
+<v @1>We are currently discovering a couple of things, and we will do a test run on one admin server of PVC once we have like gazed everything, so it's on track as well, but yeah, I am in like constant conversation with Sushant on this.</v>
+
+00:38:45.391 --> 00:38:55.831
+<v Joe Ruskey>Good. And then I think you guys were already told we're migrating over to Halo. It was supposed to happen a lot faster than it did, but the project.</v>
+
+00:38:56.871 --> 00:39:16.991
+<v Joe Ruskey>Didn't go smooth, so I stopped it. We now expect that we will be ready for cuddle. They're saying mid to late August, but that's right when all of our schools start. So we don't really think that that's a good idea. So we might wait until October. But I will keep you guys updated as we start seeing how things progress. We changed to it.</v>
+
+00:39:14.111 --> 00:39:14.511
+<v @1>OK.</v>
+
+00:39:17.471 --> 00:39:37.871
+<v Joe Ruskey>Instead of working direct with Halo, we're working with a partner of Halo's, which is based in the US, easier to work our schedules, all that stuff. So it's a lot better. We're not having to wait for a day or two to get an answer. So we'll keep you guys updated on that, but we are definitely doing that. And then next year, we will probably switch over to enable for our RMM.</v>
+
+00:39:38.831 --> 00:39:43.991
+<v Joe Ruskey>So right now we're staying, we're still in contract with ConnectWise, so there's no rush to move forward on that.</v>
+
+00:39:39.151 --> 00:39:39.791
+<v @1>OK.</v>
+
+00:39:45.951 --> 00:39:46.431
+<v @1>Yeah.</v>
+
+00:39:46.231 --> 00:39:47.471
+<v Keith Rozario>Thanks, good choice.</v>
+
+00:39:48.351 --> 00:39:50.431
+<v @1>Yeah, that's what I was gonna say.</v>
+
+00:39:48.671 --> 00:40:08.751
+<v Joe Ruskey>Yeah, are you guys, you guys like enable and Halo both, right? You're on Halo and enable? Yeah, when we're ready to go to enable, it might make some sense to tie you guys in, just to see, you know, recommendations and things like that, so we know it works smooth with the NOC and the Engineers and all that stuff, so that it's an easy handoff.</v>
+
+00:39:51.551 --> 00:39:51.671
+<v Steve Daniel>Yeah.</v>
+
+00:39:53.311 --> 00:39:54.831
+<v @1>Yeah, yeah.</v>
+
+00:40:00.831 --> 00:40:00.991
+<v Keith Rozario>But.</v>
+
+00:40:01.071 --> 00:40:01.471
+<v @1>Yeah.</v>
+
+00:40:09.311 --> 00:40:27.431
+<v Keith Rozario>Absolutely, and in case you have any queries around Halo as well, I think BJ, me and Gary connected twice during that period, since Gary was the one who helped us, you know, migrate to Halo. He was working with the Halo team directly, so he's pretty experienced with that. He has done a lot of automations and dashboard creations on Halo itself.</v>
+
+00:40:14.911 --> 00:40:15.391
+<v Joe Ruskey>Okay.</v>
+
+00:40:27.551 --> 00:40:37.231
+<v Keith Rozario>on his own. So yeah, in case any any sorts of issues, I mean, any sorts of suggestions or anything, just let us know. We can get on a call with Gary as well and sort things out.</v>
+
+00:40:28.031 --> 00:40:28.431
+<v Joe Ruskey>Cool.</v>
+
+00:40:37.911 --> 00:40:39.551
+<v Joe Ruskey>Perfect. Sounds good, guys. Appreciate it.</v>
+
+00:40:40.991 --> 00:40:41.311
+<v Keith Rozario>Addy.</v>
+
+00:40:41.151 --> 00:40:42.111
+<v @1>Kay.</v>
+
+00:40:43.911 --> 00:40:44.751
+<v Keith Rozario>Anything else you have, Barry?</v>
+
+00:40:44.271 --> 00:40:49.951
+<v @1>I guess, no, I was just checking if I had left out something. Nope, everything got covered.</v>
+
+00:40:51.231 --> 00:40:51.711
+<v @1>Fine.</v>
+
+00:41:01.311 --> 00:41:02.271
+<v Joe Ruskey>Nice talking to you guys.</v>
+
+00:41:03.071 --> 00:41:04.911
+<v Keith Rozario>Alrighty, bye-bye. Take care.</v>
+
+00:41:03.471 --> 00:41:05.151
+<v Joe Ruskey>Talk to you guys later. Bye.</v>
+
+00:41:04.911 --> 00:41:06.751
+<v Steve Daniel>Have a good, have a good week, guys. Later.</v>
+
+00:41:06.751 --> 00:41:07.791
+<v Keith Rozario>You too, bye.</v>
+
+00:41:06.911 --> 00:41:08.351
+<v @1>You too, guys. Bye-bye.</v>
+

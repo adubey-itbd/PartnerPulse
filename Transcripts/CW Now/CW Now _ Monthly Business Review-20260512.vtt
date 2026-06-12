@@ -1,0 +1,758 @@
+WEBVTT
+
+NOTE Title: ITBD | CW Now | Monthly Business Review
+NOTE Date: 2026-05-12
+NOTE Duration: 27m 3s
+
+00:00:03.384 --> 00:00:05.104
+<v Sarbjeet Singh>Hey, Austin, good afternoon.</v>
+
+00:00:03.584 --> 00:00:04.304
+<v Kip Singh>Hey, Austin.</v>
+
+00:00:05.704 --> 00:00:06.464
+<v Kip Singh>Good afternoon.</v>
+
+00:00:09.584 --> 00:00:10.624
+<v Sarbjeet Singh>You're speaking.</v>
+
+00:00:10.144 --> 00:00:17.104
+<v Austin Zobec>Sorry for running late. Yeah, we guys muted. Sorry, gentlemen. Hey, Kip, how you doing? Oh, is it Sarjeet? Am I saying that right? Sarjeet?</v>
+
+00:00:10.784 --> 00:00:10.864
+<v Sarbjeet Singh>You?</v>
+
+00:00:12.744 --> 00:00:13.824
+<v Sarbjeet Singh>No worries.</v>
+
+00:00:14.984 --> 00:00:15.544
+<v Kip Singh>No worries.</v>
+
+00:00:17.024 --> 00:00:19.584
+<v Sarbjeet Singh>Yes, yes, you got that right, Austin.</v>
+
+00:00:17.464 --> 00:00:17.784
+<v Kip Singh>Yeah.</v>
+
+00:00:18.544 --> 00:00:19.264
+<v Austin Zobec>Okay, wonderful.</v>
+
+00:00:20.424 --> 00:00:20.944
+<v Austin Zobec>Wonderful.</v>
+
+00:00:22.304 --> 00:00:23.424
+<v Austin Zobec>All right, I...</v>
+
+00:00:22.544 --> 00:00:24.704
+<v Sarbjeet Singh>I believe we are connecting for the first time.</v>
+
+00:00:24.864 --> 00:00:27.904
+<v Austin Zobec>We are, yes, yes, we are. I apologize for running late, but yes, we are.</v>
+
+00:00:26.704 --> 00:00:27.024
+<v Sarbjeet Singh>Kip.</v>
+
+00:00:28.064 --> 00:00:49.584
+<v Sarbjeet Singh>No worries, no worries, completely understandable. I was just talking to Kip to drop you an email. So Austin, just a quick introduction. I'm the CX, I'm the customer success manager for the partnership which we have with ITBD. In total, I have got around 2 decades of work experience and from last 9 1/2 years I have been working with IT by design.</v>
+
+00:00:42.224 --> 00:00:42.624
+<v Austin Zobec>Okay.</v>
+
+00:00:49.984 --> 00:01:07.504
+<v Sarbjeet Singh>Prior to moving into the CX role, I was working with the service delivery team. So feel free to reach out to me in case if there is anything where you need any assistance. And talking about the relationship which I have with CNW, I share a long bond with Dana, with Eric.</v>
+
+00:01:07.984 --> 00:01:08.464
+<v Austin Zobec>Okay.</v>
+
+00:01:09.264 --> 00:01:25.344
+<v Sarbjeet Singh>I'm not sure you are not there. We started with one of an old engineer, it was Nate, even before Vaughn, when he joined the team and I was managing, I was working along with Eric. So it's a pleasure to meet you, Riz.</v>
+
+00:01:15.584 --> 00:01:16.144
+<v Austin Zobec>Okay.</v>
+
+00:01:22.784 --> 00:01:23.264
+<v Austin Zobec>Okay.</v>
+
+00:01:25.104 --> 00:01:26.544
+<v Austin Zobec>It's nice to meet you as well, yes.</v>
+
+00:01:28.144 --> 00:01:30.064
+<v Sarbjeet Singh>And are you located in the same office?</v>
+
+00:01:28.144 --> 00:01:37.344
+<v Austin Zobec>Sorry, I just got done, I just got, I am, yeah, I just got done working out and I haven't had time to change back into my work outfit, but yeah, sorry for that guys.</v>
+
+00:01:34.864 --> 00:01:41.584
+<v Sarbjeet Singh>Perfectly okay. At least you are able to get some time out for your workouts. That's more important.</v>
+
+00:01:39.584 --> 00:01:41.184
+<v Austin Zobec>Yeah, that helps, yeah, yeah, yeah.</v>
+
+00:01:43.584 --> 00:01:58.384
+<v Austin Zobec>So, I apologize. I know I've missed the last two of these, but so I'm here and Halo's going live. That's kind of sucked up a lot of my time. So I appreciate your guys' patience with me on that. And I'm ready when you are.</v>
+
+00:01:59.984 --> 00:02:02.104
+<v Kip Singh>Yep, so how are things going with one?</v>
+
+00:02:03.264 --> 00:02:14.864
+<v Austin Zobec>Uh, they're going, they're going well with Vaughn. I know that I gave you, um, is it last week or two weeks ago? I'm trying to remember. Um, kind of like a project that would like start rolling out for Microsoft Defender.</v>
+
+00:02:10.104 --> 00:02:10.384
+<v Kip Singh>Yeah.</v>
+
+00:02:15.904 --> 00:02:16.344
+<v Kip Singh>Yes.</v>
+
+00:02:16.024 --> 00:02:34.944
+<v Austin Zobec>And what we want that to look like and feel like, because we can't just flip a switch, but we really want our clients to know what that will detail for them, what they'll see, what are differences they might experience, such as a phishing button or a spam button, and what are the differences for them. If they do get a quarantine message, right, like how do they check quarantine?</v>
+
+00:02:23.704 --> 00:02:23.824
+<v Sarbjeet Singh>Yeah.</v>
+
+00:02:27.704 --> 00:02:27.984
+<v Kip Singh>Yeah.</v>
+
+00:02:35.504 --> 00:02:43.504
+<v Austin Zobec>How do they log in and see that items that are quarantined and on quarantine or say, no, this is definitely you should have quarantined this. It's important that we.</v>
+
+00:02:44.704 --> 00:02:51.264
+<v Austin Zobec>We know we provide the value of showing what we're doing for them and how we're keeping them safe. And so, yeah.</v>
+
+00:02:49.704 --> 00:02:49.984
+<v Kip Singh>Yeah.</v>
+
+00:02:52.424 --> 00:02:55.104
+<v Kip Singh>So when we are planning to push this project?</v>
+
+00:02:58.144 --> 00:03:16.064
+<v Austin Zobec>Well, when you guys tell me you have kind of a game plan, we'll review it and then we'll sign a client to it, maybe like a five-person client, push it out, let them know what's going on with it. You know, as part of our ongoing services, we're providing the service for you to help, you know, ensure a better protective security portfolio.</v>
+
+00:03:16.224 --> 00:03:34.464
+<v Austin Zobec>portfolio kind of a deal. And then we'll just say, this is what, these are the changes that will occur for you. You now have the ability to right-click and set, you know, go to phishing or spam. Even though they've already, they've always had this ability, now they'll know what these buttons really do, right? Yeah, I'm going to right-click, send to junk.</v>
+
+00:03:23.744 --> 00:03:24.024
+<v Kip Singh>S.</v>
+
+00:03:29.424 --> 00:03:29.704
+<v Kip Singh>Mm.</v>
+
+00:03:34.944 --> 00:03:47.104
+<v Austin Zobec>or there's a difference between sending it to junk and spam and deleting it. There's all these differences, so it's good that they know. And then how they get to quarantine. And you know, the capabilities of.</v>
+
+00:03:48.304 --> 00:04:11.504
+<v Austin Zobec>I think Defender lets you do, lets you do standard, I'm going to call it standard risk and high risk. I don't think that's what they call it. I think they call it standard and high. I'm trying to think, but just so our clients can know the differences and if they ever need, oh, you know, I think our CFO should be looked at more than our standard users. Let's make sure he's got more things and we want to do that as well.</v>
+
+00:03:48.744 --> 00:03:49.024
+<v Kip Singh>Ch.</v>
+
+00:04:14.024 --> 00:04:31.624
+<v Kip Singh>Sure. So what I will do is I will work with Juan and we'll share the discover work or the plan for the project with you or the email, like how it's going to happen and how we are going to implement it. And then we can work with one of the client and then we can roll out to the others.</v>
+
+00:04:26.304 --> 00:04:26.704
+<v Austin Zobec>Okay.</v>
+
+00:04:34.864 --> 00:04:36.464
+<v Austin Zobec>Yep, sounds good.</v>
+
+00:04:35.064 --> 00:04:35.184
+<v Kip Singh>Yeah.</v>
+
+00:04:36.144 --> 00:04:48.544
+<v Sarbjeet Singh>And Kip, just a suggestion in the interim, while you are going to coordinate with one, can we have some piece of documentation which we can share with Austin to ensure that this is something which we can share with the stakeholders?</v>
+
+00:04:44.424 --> 00:04:44.664
+<v Kip Singh>Yeah.</v>
+
+00:04:46.264 --> 00:04:47.304
+<v Kip Singh>Yeah, that.</v>
+
+00:04:48.984 --> 00:05:09.264
+<v Kip Singh>Yes, that's what I'm talking about. So I will work with one and create the documentation, like the scope of work or the whole, the plan that we are going to implement. And that will be on the documentation and we'll share that with you. You will review it. And once you approve it, then we will work with one of the clients for the implementation.</v>
+
+00:05:10.384 --> 00:05:30.224
+<v Austin Zobec>Okay, yeah, so perfect. Yeah, get me that, I'll review it, and then we'll probably have a meeting of if I have any changes or additions or ask why you're doing something a certain way, and then make sure we understand where we're going there. And I am very big on, like, it's, you know, like, hey, I'm going to give you this. You come back with a rough draft or first draft for me.</v>
+
+00:05:16.264 --> 00:05:16.624
+<v Kip Singh>Yeah.</v>
+
+00:05:30.704 --> 00:05:49.944
+<v Austin Zobec>So because I can do first drafts all day, every day, but that's not my job anymore. I give you, you do first draft, rough draft, you come to me and then we'll solidify it and maybe we do another draft after that. And then we put it into play. And then it's our current goal line for every client here going forward. It's got his name on it and your name on it and it's...</v>
+
+00:05:38.424 --> 00:05:38.664
+<v Kip Singh>Yeah.</v>
+
+00:05:44.504 --> 00:05:45.544
+<v Kip Singh>Yep, absolutely.</v>
+
+00:05:50.064 --> 00:05:51.744
+<v Austin Zobec>part of our repertoire.</v>
+
+00:05:52.664 --> 00:05:56.104
+<v Kip Singh>Yep, absolutely understand. Yeah, sounds like a plan.</v>
+
+00:05:54.384 --> 00:05:54.864
+<v Austin Zobec>Ketan.</v>
+
+00:05:56.944 --> 00:05:57.344
+<v Austin Zobec>Okay.</v>
+
+00:05:57.224 --> 00:06:01.304
+<v Kip Singh>So what else? Anything else? Any other feedback you would like to share from one?</v>
+
+00:06:02.544 --> 00:06:15.584
+<v Austin Zobec>No, no, no, he's doing really well with Halo. I'm sure he's told you about it. Or you, you know, maybe you've seen a little bit of a difference. And the next thing I get to do this month is get my reporting down in place of...</v>
+
+00:06:16.944 --> 00:06:19.024
+<v Austin Zobec>What are the SOPs, kind of like what you were asking about?</v>
+
+00:06:20.064 --> 00:06:20.584
+<v Kip Singh>Mhm.</v>
+
+00:06:20.184 --> 00:06:39.504
+<v Austin Zobec>two months ago when I was in the thick of it. And then I can say, okay, this is what we're doing for, this is what we're going for. And then so by our next meeting, I'll have that data for you. So we can have a hard set data of what we're looking for, what our target goal should be. And the only thing with Vaughn is, and this is not.</v>
+
+00:06:21.984 --> 00:06:22.264
+<v Kip Singh>Yeah.</v>
+
+00:06:30.424 --> 00:06:30.824
+<v Kip Singh>Okay.</v>
+
+00:06:39.664 --> 00:06:58.504
+<v Austin Zobec>Again, this is what he was used to before I came here, which was, hey, I did the work, I'm going to close the ticket out. I did the work, I'm going to close the ticket out. But now our policy is a little bit different and sometimes he's really, really good on it, but sometimes there's a little slip of, hey, I did the work, but now it's just a follow up, make sure that the client knows we did the work.</v>
+
+00:06:58.624 --> 00:07:17.504
+<v Austin Zobec>and either get a response. If we don't get a response, then we put it into the three strike rule, and then we let the system tell us, hey, you went through three strikes, you can just close it out from here on out. We did what we had to do, and then close it out. So it leads to a little bit longer retention of tickets, but ensures our customer quality service is a higher standard than.</v>
+
+00:07:18.464 --> 00:07:23.144
+<v Austin Zobec>Hey, I fixed it and then we don't get those callbacks about, this wasn't fixed, who said that's fixed, right? Like, you know.</v>
+
+00:07:24.584 --> 00:07:38.584
+<v Kip Singh>Sure, sure. Definitely I will share that with Juan and we'll ensure that he follows the same. So with that being said, let me quickly share my screen and let's go through the presentation deck.</v>
+
+00:07:30.984 --> 00:07:31.184
+<v Austin Zobec>Yeah.</v>
+
+00:07:38.864 --> 00:07:39.264
+<v Austin Zobec>Perfect.</v>
+
+00:07:39.864 --> 00:07:41.784
+<v Kip Singh>And let me know once you're able to see my screen.</v>
+
+00:07:42.624 --> 00:07:43.264
+<v Austin Zobec>I see it.</v>
+
+00:07:44.504 --> 00:07:51.944
+<v Kip Singh>Okay, great. So once again, welcome to our monthly business review and this is from 6th March till 1st May.</v>
+
+00:07:53.224 --> 00:08:00.744
+<v Kip Singh>And agenda would be the same. We will start with check-in, highlights, action tracker, performance analysis, voice of a customer, way forward and recap.</v>
+
+00:08:02.664 --> 00:08:10.824
+<v Kip Singh>So we already talked about how things are going with one and yeah, so thank you for sharing the feedback. We appreciate it.</v>
+
+00:08:12.664 --> 00:08:30.504
+<v Kip Singh>So these are some highlights we from based on our previous connects. So we discussed Juan's performance and the assigned projects. He's improving in the ticket closure quality and getting positive client feedback. You also emphasized on capturing technical details like</v>
+
+00:08:30.984 --> 00:08:36.584
+<v Kip Singh>and more details in his ticket notes and I hope he is doing the same.</v>
+
+00:08:38.504 --> 00:08:56.104
+<v Kip Singh>And you also highlighted for stronger documentation habits on all tickets. And we also discussed about the escalation expectations, like he should escalate whenever he's unable to dissolve the ticket, rather than just keeping him, keeping that ticket with him.</v>
+
+00:08:57.064 --> 00:09:00.184
+<v Kip Singh>And also follow the three strike rule as you just said.</v>
+
+00:09:02.224 --> 00:09:02.624
+<v Austin Zobec>Right.</v>
+
+00:09:02.504 --> 00:09:11.624
+<v Kip Singh>And this is the Microsoft Dipon implementation we discussed about. So we will share the plan with you and then we will go from there.</v>
+
+00:09:12.504 --> 00:09:12.864
+<v Austin Zobec>Perfect.</v>
+
+00:09:13.944 --> 00:09:18.664
+<v Kip Singh>And regarding the hello migration, are we still in the process or is it completed?</v>
+
+00:09:19.664 --> 00:09:34.384
+<v Austin Zobec>We're basically done. There's a few more, there's little bits here and there that'll probably drag on for three to four months, but yeah, we're fully in it, we're fully active in it, we're fully using it. Just some things that I gotta...</v>
+
+00:09:35.584 --> 00:09:42.584
+<v Austin Zobec>figure out on my end of how are we going to roll it out. But other than that, yeah, we're good. We're basically live. I'd say we're 85%.</v>
+
+00:09:44.064 --> 00:09:44.384
+<v Kip Singh>Okay.</v>
+
+00:09:44.224 --> 00:09:45.264
+<v Austin Zobec>able to use the product.</v>
+
+00:09:46.584 --> 00:10:06.024
+<v Kip Singh>Yeah, the reason I'm asking, because we discussed about the KPIs alignment for one sometime back before this hello migration started, and we agreed that once this hello migration is completed, we will discuss about the KPIs alignment for one. So just wanted to know, do you have...</v>
+
+00:10:07.464 --> 00:10:19.464
+<v Kip Singh>anything in mind that we can, any KPIs, any that we can, using which we can measure one's performance, like utilization or SLAs or anything.</v>
+
+00:10:16.904 --> 00:10:18.584
+<v Austin Zobec>Not at the moment, like I said, like...</v>
+
+00:10:19.864 --> 00:10:27.304
+<v Austin Zobec>Yeah, at the beginning, I remember I kind of went through, hey, that's my goal this month. So by the time we have our next call, I'll have this data for you that you're looking for.</v>
+
+00:10:27.544 --> 00:10:29.184
+<v Kip Singh>Okay. Okay, correct.</v>
+
+00:10:28.424 --> 00:10:28.664
+<v Austin Zobec>Yeah.</v>
+
+00:10:30.624 --> 00:10:34.904
+<v Kip Singh>And the CX survey for the month of April has already been sent, so keep an eye on.</v>
+
+00:10:33.704 --> 00:10:48.104
+<v Austin Zobec>I missed it. I apologize. Yeah. You know, it's weird when it comes. I always think it's, I guess, to be honest, I always think it's spam. So I apologize for that. ITBD. Where did it go?</v>
+
+00:10:48.984 --> 00:10:50.904
+<v Sarbjeet Singh>It was a monthly feedback for one.</v>
+
+00:10:51.544 --> 00:10:52.024
+<v Austin Zobec>Yeah.</v>
+
+00:10:52.824 --> 00:10:56.984
+<v Sarbjeet Singh>Or if you would like, we can resend it too. Bring it on top of your inbox.</v>
+
+00:11:03.384 --> 00:11:09.224
+<v Austin Zobec>We appreciate pressure building it together. It's how are we doing, right? One minute feedback request, that's the one you're talking about? Yeah.</v>
+
+00:11:07.384 --> 00:11:09.464
+<v Sarbjeet Singh>Yes, that's the one.</v>
+
+00:11:12.184 --> 00:11:15.864
+<v Austin Zobec>Do you call it this way for everybody? How are we doing? One minute feedback request.</v>
+
+00:11:16.424 --> 00:11:36.504
+<v Sarbjeet Singh>There are two, Austin, just to keep you informed. One is the monthly CSAT, which is specifically for one. So the subject line would say monthly feedback for one. It will have three smileys, positive, neutral, or negative, and then space for the comments. Then the second which we send out, that's our NPS. That's like a.</v>
+
+00:11:23.704 --> 00:11:24.184
+<v Austin Zobec>Mhm.</v>
+
+00:11:36.904 --> 00:11:53.464
+<v Sarbjeet Singh>quarterly survey. It's not only for one, it's for the overall services. If you would like, you can share the screen. We can just make sure that we are doing the right one. But most of the time for the LPS survey, we send it out to Eric.</v>
+
+00:11:37.704 --> 00:11:37.864
+<v Kip Singh>So.</v>
+
+00:11:42.424 --> 00:11:43.464
+<v Austin Zobec>Got Team, okay.</v>
+
+00:11:55.944 --> 00:12:01.624
+<v Sarbjeet Singh>For the monthly piece that we send it out to you because you are working directly with one.</v>
+
+00:11:56.464 --> 00:11:57.824
+<v Austin Zobec>No, yeah.</v>
+
+00:11:59.584 --> 00:11:59.784
+<v Austin Zobec>Mm.</v>
+
+00:12:02.424 --> 00:12:21.144
+<v Austin Zobec>Yep, no, I got here. It just, it's no matter what happens, because it says partner feedback, I always think of something else. So if it said like ITBD, I'd probably see it better than just saying partner feedback, just because we are, we have so many, we have so many different vendors that we deal with. So when I see partner feedback.</v>
+
+00:12:09.464 --> 00:12:09.864
+<v Sarbjeet Singh>Okay.</v>
+
+00:12:14.824 --> 00:12:17.064
+<v Sarbjeet Singh>Noted, and that's a good suggestion.</v>
+
+00:12:21.224 --> 00:12:21.544
+<v Kip Singh>Yeah.</v>
+
+00:12:21.424 --> 00:12:28.504
+<v Austin Zobec>I think it, I don't think it was important. Not, it's not you guys, it's just what I'm used to seeing. So, okay.</v>
+
+00:12:26.744 --> 00:12:26.904
+<v Sarbjeet Singh>The.</v>
+
+00:12:30.224 --> 00:12:47.224
+<v Sarbjeet Singh>Perfectly understandable, Austin. Every single day we get so many emails. So I'll share the suggestion. It's a good one. Instead of having monthly feedback, we can just add in ITBD monthly feedback for the engineer. So that at least it's easier for the rest of our partners too.</v>
+
+00:12:34.584 --> 00:12:34.984
+<v Austin Zobec>Yeah, I know.</v>
+
+00:12:44.704 --> 00:12:44.904
+<v Kip Singh>Yeah.</v>
+
+00:12:48.424 --> 00:12:50.104
+<v Austin Zobec>To find it, yeah, yeah.</v>
+
+00:12:49.944 --> 00:12:50.344
+<v Sarbjeet Singh>Yep.</v>
+
+00:12:56.104 --> 00:12:59.704
+<v Austin Zobec>Okay, I have officially done that.</v>
+
+00:13:02.344 --> 00:13:05.144
+<v Austin Zobec>Okay, so Von is done. Thank you.</v>
+
+00:13:04.904 --> 00:13:17.544
+<v Kip Singh>Okay, great. Thank you. Thank you, Austin. Really appreciate it. Moving on to the action tracker, Juan is working on his level up to advanced administrator, which he will be completing by the mid of June.</v>
+
+00:13:07.344 --> 00:13:07.824
+<v Austin Zobec>Mhm.</v>
+
+00:13:20.824 --> 00:13:36.824
+<v Kip Singh>And then we have the ITBD recommended KPIs. We discussed about these some time back. But definitely, I'm sending you this PPT as well at the end of this call. You can go through these.</v>
+
+00:13:32.664 --> 00:13:33.144
+<v Austin Zobec>Okay.</v>
+
+00:13:38.464 --> 00:13:52.984
+<v Kip Singh>ITBD recommended KPIs, and if you see there are some that can align with Vaughn's performance, so we can definitely start capturing that using hello reporting tools and all.</v>
+
+00:13:53.544 --> 00:13:53.944
+<v Austin Zobec>Okay.</v>
+
+00:13:56.104 --> 00:14:15.784
+<v Kip Singh>Let's jump into performance for Vaughn. This is his performance for the last four weeks, starting with 66%, then 68, 69, and he's been pretty consistent. His average utilization had been 68% for these four weeks. He's pretty close to the target, 80%, so improving a little bit.</v>
+
+00:14:16.344 --> 00:14:20.264
+<v Kip Singh>He will definitely reach his target.</v>
+
+00:14:22.024 --> 00:14:22.504
+<v Austin Zobec>Okay.</v>
+
+00:14:23.224 --> 00:14:40.184
+<v Kip Singh>And moving on to his ticket data, his average closure is at 84%. So in total, he worked on 237 tickets and close to 100 of them. So in every week, he was able to exceed a 40 ticket benchmark. So it is a good.</v>
+
+00:14:42.744 --> 00:14:45.544
+<v Austin Zobec>Yeah, that's a good target and it's a good goal and he hits it, he crushes it.</v>
+
+00:14:46.664 --> 00:14:46.944
+<v Kip Singh>Yeah.</v>
+
+00:14:49.184 --> 00:15:07.864
+<v Kip Singh>And way forward, we discussed in our last connect, so to create KBs for the complicated issues or unique issues he worked on. So again, it's part of the documentation part we discussed in our first slide highlights. So we will ensure he is working on the same.</v>
+
+00:15:10.984 --> 00:15:12.104
+<v Austin Zobec>Yeah, I'm trying to see if...</v>
+
+00:15:15.464 --> 00:15:16.344
+<v Kip Singh>So, this is the...</v>
+
+00:15:15.624 --> 00:15:16.984
+<v Austin Zobec>Our system doesn't tell me.</v>
+
+00:15:17.704 --> 00:15:18.024
+<v Kip Singh>Hello!</v>
+
+00:15:19.064 --> 00:15:20.344
+<v Austin Zobec>Go ahead, go ahead.</v>
+
+00:15:21.144 --> 00:15:23.344
+<v Kip Singh>Yeah, so this is the AI by design.</v>
+
+00:15:25.704 --> 00:15:27.784
+<v Kip Singh>So, sir, you want to take a...</v>
+
+00:15:26.984 --> 00:15:46.024
+<v Sarbjeet Singh>Let me help you out over here. Perfect. You can stop the screen sharing Kip if we have covered everything. So a few things, Austin, just to keep you informed. Though Eric is already a part of our AI initiative, so for the month of August, we are going to hold our annual event.</v>
+
+00:15:27.704 --> 00:15:28.744
+<v Austin Zobec>Oh, okay, got it. Yeah.</v>
+
+00:15:34.504 --> 00:15:34.984
+<v Kip Singh>Okay.</v>
+
+00:15:46.424 --> 00:16:06.344
+<v Sarbjeet Singh>that is known as Build IT Live. So that's our 8th event in series. Let me bring it up on the website so that I can share more details. Eric is already registered for this event. In addition to that, he has already been actively participating. So this is where the more the merrier I would say. So I'll.</v>
+
+00:16:06.824 --> 00:16:25.064
+<v Sarbjeet Singh>wanted to make sure that you have the information available. So if you would like to tag along with Derek, feel free to let me know. I'll drop him a text or if you would like, you can share it with him. So this year, we are hosting this event in New Jersey. That's Hyatt Regency for three days. That's August 3rd, 4th, 5th.</v>
+
+00:16:16.264 --> 00:16:16.704
+<v Austin Zobec>OK.</v>
+
+00:16:25.864 --> 00:16:45.624
+<v Sarbjeet Singh>Even for our partners, we have on August 2nd, we have one pre-event as well. And on August 5th, which is the last day, we are going to have the AI discussions where whatever the innovations, the automations, which we have already implemented, we have the digital dispatcher, we have the L1 agents that has been developed.</v>
+
+00:16:46.104 --> 00:17:04.504
+<v Sarbjeet Singh>for our partners specifically, which are the custom agents. The last call which I had with Eric, it was regarding the QBR automation so that you can reach out to your end users or the partners for your quarterly reviews too. So this is about the date, then what the event is all about.</v>
+
+00:17:04.664 --> 00:17:24.424
+<v Sarbjeet Singh>more than 550 plus attendees would be there, 70 plus channel influencers would be participating, 50 plus tools and templates, the processes which we have already inbuilt, inculcated into our system that will be shared with the partners, 0 sales pitches. Talking about the speakers, we will have John C. Maxwell, Dan Sullivan,</v>
+
+00:17:24.824 --> 00:17:45.624
+<v Sarbjeet Singh>and the industry leaders from different MSPs will be joining in. The focus as of now, it's more on monetization of the AI for our business growth, how you can scale sustainability and intelligently. The EBITDA enterprise value, so the team will be working on creating custom dashboards as well, AI leadership strategy.</v>
+
+00:17:31.704 --> 00:17:31.944
+<v Austin Zobec>Khan.</v>
+
+00:17:46.024 --> 00:18:04.664
+<v Sarbjeet Singh>And then the MSP tools, which I have already talked about. The ticket is priced at 1495 for our early bird or the partners. We have the BOGO offer. I'll put the code in the chat for you. So let's say in case if you would like to bring along someone, it will be half the price.</v>
+
+00:18:05.144 --> 00:18:05.464
+<v Austin Zobec>Yeah.</v>
+
+00:18:05.224 --> 00:18:24.424
+<v Sarbjeet Singh>And as Eric has already registered, so in case if more members should be coming in from your organization, you can just drop me a text. I'll talk to my leadership team and see in case if we can get some more discounted rate. These are some of the industry leaders who will be coming in. Habib Malik from MSP Corp from Thrive.</v>
+
+00:18:24.704 --> 00:18:35.384
+<v Sarbjeet Singh>from logically from Red Helm who will be participating as speakers. And this is the venue. This is for the third day specifically. We are taking our partners for the...</v>
+
+00:18:37.384 --> 00:18:57.984
+<v Sarbjeet Singh>for the event. That's New York Stock Exchange. Prior to this, we were able to take our partners to NASA. We booked the MetLife Stadium, so we were able to take it to the Statue of Liberty as well. So this time it's New York Stock Exchange, where the party team will be on Great Gatsby. So you have plenty of time to get your tuxedos ready.</v>
+
+00:18:38.744 --> 00:18:39.144
+<v Austin Zobec>Ketan.</v>
+
+00:18:58.584 --> 00:19:16.664
+<v Sarbjeet Singh>Rest, if there is any other queries, you can always reach out to me. So think of me as a part of your extended team. I'm sending out the link for your reference so that you can go through the details. And I'll also, once Kip will send you the deck, I'll also.</v>
+
+00:18:59.864 --> 00:19:00.504
+<v Austin Zobec>Yeah, right.</v>
+
+00:19:09.624 --> 00:19:10.104
+<v Austin Zobec>Key.</v>
+
+00:19:16.944 --> 00:19:21.624
+<v Sarbjeet Singh>share some additional information, probably like a single pager, which will be beneficial for you.</v>
+
+00:19:22.224 --> 00:19:22.584
+<v Austin Zobec>Okay.</v>
+
+00:19:23.344 --> 00:19:44.184
+<v Sarbjeet Singh>Perfect. Let me put the code as well so that if you would like to go for the discounted price, you will be able to do so. In the referral, you can add my name if you will be going ahead with the registration. Here is the code. That's BOGO BOGO 1495. I have put it in the text window for you in the chat window.</v>
+
+00:19:43.704 --> 00:19:45.144
+<v Austin Zobec>Thank you, I see that. Thank you.</v>
+
+00:19:45.064 --> 00:19:58.704
+<v Sarbjeet Singh>Perfect. Anything else where you think that our assistance is required, whether it's project, whether it's NOC services, SOC, we have plenty of other services for our partners. So you are not limited with code.</v>
+
+00:19:57.304 --> 00:20:03.224
+<v Austin Zobec>No, I just have a, I do have a general question which is, so Von's been asking about...</v>
+
+00:20:00.664 --> 00:20:01.224
+<v Sarbjeet Singh>Mmh.</v>
+
+00:20:15.384 --> 00:20:15.864
+<v Sarbjeet Singh>Mhm.</v>
+
+00:20:15.944 --> 00:20:17.704
+<v Austin Zobec>Up, so I know.</v>
+
+00:20:20.144 --> 00:20:39.024
+<v Austin Zobec>when you've been doing it as long as I think Von's been doing it, 10, 15 years, right? You kind of get that, that itch to be like, I'm ready to do something greater now, right? So, and I understand that, right? So that's why I'm like trying to give him this project, right? Like, because I think one thing in his skill set is, hey, if I'm, your boss gives you a project.</v>
+
+00:20:29.544 --> 00:20:30.424
+<v Sarbjeet Singh>True, true.</v>
+
+00:20:34.824 --> 00:20:35.064
+<v Sarbjeet Singh>Team.</v>
+
+00:20:39.904 --> 00:20:58.904
+<v Austin Zobec>What does that look like? Do you have those skills? If not, then let's build up those skills for you. That's not the same as a server build, but it is skills. The idea is I'd love Vaughn to stay on board, right? But I'm not blind to what Vaughn wants to do and what I can provide and what I can't provide.</v>
+
+00:20:52.744 --> 00:20:53.224
+<v Sarbjeet Singh>Mhm.</v>
+
+00:20:59.344 --> 00:21:06.024
+<v Austin Zobec>So I want to make sure one, Vaughn is happy and Vaughn's good, but if there is a potential...</v>
+
+00:20:59.464 --> 00:20:59.864
+<v Sarbjeet Singh>Yep.</v>
+
+00:21:07.024 --> 00:21:28.104
+<v Austin Zobec>What do I say here? If there is an availability for Vaughn to do something great in his life, there will be no hard feelings, especially with you guys in ITBD. All I ask is that you guys can be someone just as good as Vaughn if and when that comes. But if we can keep him with filling a different role for him, maybe that he can</v>
+
+00:21:25.104 --> 00:21:25.224
+<v Sarbjeet Singh>Yeah.</v>
+
+00:21:28.824 --> 00:21:29.304
+<v Sarbjeet Singh>Mhm.</v>
+
+00:21:29.704 --> 00:21:49.704
+<v Austin Zobec>he can be, see, he's still be happy with, then I'd like to make sure that that's possible for him. We just don't do a lot of servers. We just, maybe at one point they did here, and the idea is for us to not really get away from them, but the idea is to go more SharePoint side more, and our clients that we have here are small, medium business, and whatever.</v>
+
+00:21:33.504 --> 00:21:33.704
+<v Kip Singh>In.</v>
+
+00:21:46.544 --> 00:21:46.904
+<v Sarbjeet Singh>S.</v>
+
+00:21:50.024 --> 00:21:51.064
+<v Austin Zobec>The pricing comes up with.</v>
+
+00:21:52.344 --> 00:22:11.944
+<v Austin Zobec>cloud pricing for servers, everyone gets sticker shock. They're like, oh my God, sticker shock, right? So we're just trying to, I want to be realistic with his expectations. He's told me this a few times, which I appreciate, and I want him to be on board. I also don't want someone to be miserable at work.</v>
+
+00:21:54.304 --> 00:21:54.584
+<v Sarbjeet Singh>S.</v>
+
+00:21:54.744 --> 00:21:55.064
+<v Kip Singh>Namit.</v>
+
+00:22:07.384 --> 00:22:07.864
+<v Sarbjeet Singh>Mhm.</v>
+
+00:22:12.104 --> 00:22:26.264
+<v Austin Zobec>Right? Nobody wants that. So that's like this project, I think will be a real good shoe in for him to be like, okay, I could do this. I enjoyed it. It was good. It was off the beaten path of what I'm normally doing. And what else you got for me after this? I was saying, great. Now it's.</v>
+
+00:22:27.304 --> 00:22:42.504
+<v Austin Zobec>Now it's implement this for everyone. Great, that was your project. You implement this for all clients. Next step is, let's work on this for all of our clients. And you do the same thing, build a project out, build a scope out, get it to me. Austin, I think is, and I, you know, then I can just let him go. Right.</v>
+
+00:22:44.264 --> 00:23:02.104
+<v Sarbjeet Singh>Thank you, first of all, Austin. I'm glad that you are addressing this. That's really candid feedback for us too, and I appreciate that. So coming in from engineer perspective, we all know that yes, everyone wants to have some more kind of challenging task assigned to them.</v>
+
+00:22:53.744 --> 00:22:53.944
+<v Austin Zobec>Kip.</v>
+
+00:23:02.424 --> 00:23:22.024
+<v Sarbjeet Singh>But that does not mean that I'll ask my guys to go, okay, now you would like to try, now go ahead and try to fly this airplane. So I'll ask him to hold on to his horses, let him trained on these things first. So Kip, probably we can take it internally.</v>
+
+00:23:11.224 --> 00:23:12.304
+<v Austin Zobec>Right, right, right, right.</v>
+
+00:23:12.344 --> 00:23:13.144
+<v Kip Singh>It makes me.</v>
+
+00:23:18.944 --> 00:23:19.224
+<v Kip Singh>Yeah.</v>
+
+00:23:22.744 --> 00:23:23.224
+<v Kip Singh>Mhm.</v>
+
+00:23:23.464 --> 00:23:46.584
+<v Sarbjeet Singh>you, Amit, can have a one-on-one discussion. Obviously, even we want that the kind of partnership which we have with C&W, that should not get impacted simultaneously. We need to also focus on the career growth path for Vaunt so that he should also feel that he's being aligned with the challenging task. In case if it's not with Austin, he's already taking care of the things.</v>
+
+00:23:34.024 --> 00:23:34.424
+<v Austin Zobec>Yeah.</v>
+
+00:23:38.584 --> 00:23:38.904
+<v Austin Zobec>Right.</v>
+
+00:23:46.864 --> 00:24:06.064
+<v Sarbjeet Singh>particularly aligning one on the current project which he has. However, for long run, something we should have as a plan of action for us. So probably, Austin, we can take it along with our return team internally. Rest, if there is anything at all where you think.</v>
+
+00:23:52.024 --> 00:23:52.504
+<v Kip Singh>Mhm.</v>
+
+00:24:00.024 --> 00:24:00.504
+<v Austin Zobec>Okay.</v>
+
+00:24:06.144 --> 00:24:25.304
+<v Sarbjeet Singh>that we can utilize one, not specifically on the server side, probably Azure, even in the SharePoint migration, you have got plenty of things where we can utilize him. Or now he's been there in the system for such a long time. We also want to make sure that we are able to utilize his skill set effectively.</v>
+
+00:24:15.384 --> 00:24:15.784
+<v Austin Zobec>Right.</v>
+
+00:24:20.264 --> 00:24:20.504
+<v Austin Zobec>Yeah.</v>
+
+00:24:25.544 --> 00:24:27.224
+<v Sarbjeet Singh>not just dealing with the...</v>
+
+00:24:28.664 --> 00:24:47.984
+<v Sarbjeet Singh>the L1 kind of task. So, and in case if there is any need, though I don't think, but just to make sure that we have got all our ducks in thorough. So if there is any need where we think that, okay, if something would be at stake, we will make sure that you have a different engineer.</v>
+
+00:24:30.024 --> 00:24:31.784
+<v Austin Zobec>Right. Agreed.</v>
+
+00:24:48.064 --> 00:25:06.264
+<v Sarbjeet Singh>who will be of the same caliber because right now our focus is more aligned for the Helpdesk assistance. So probably we'll work out some plan and then we can think about it during our upcoming calls. But thank you. Thank you for bringing this to our attention. Thank you.</v>
+
+00:24:49.944 --> 00:24:50.344
+<v Austin Zobec>Okay.</v>
+
+00:24:55.904 --> 00:24:56.184
+<v Austin Zobec>Okay.</v>
+
+00:25:02.264 --> 00:25:03.944
+<v Austin Zobec>Yeah, no, I appreciate that. Yeah, you.</v>
+
+00:25:05.144 --> 00:25:17.384
+<v Austin Zobec>Of course, yeah. And, you know, Andy's got a new baby on the way, and I appreciate that. And I know, you know, as a dad, that puts a little fire on you as well, right? That you want to, you want to, you're ready, you're ready to go, go, go. So I appreciate you guys. Thank you.</v>
+
+00:25:12.904 --> 00:25:13.184
+<v Sarbjeet Singh>Cruz.</v>
+
+00:25:18.344 --> 00:25:20.024
+<v Sarbjeet Singh>Thank you. Kip.</v>
+
+00:25:19.304 --> 00:25:37.384
+<v Kip Singh>Yeah, and even if you share any of these kind of projects with Juan, so I mean we have plenty of resources to help him out. I can help him out. We have plenty of resources internally in ITBD. So don't worry about it. So we will take care of everything.</v>
+
+00:25:19.464 --> 00:25:19.784
+<v Austin Zobec>Yeah.</v>
+
+00:25:28.824 --> 00:25:29.304
+<v Austin Zobec>Okay.</v>
+
+00:25:37.624 --> 00:25:39.464
+<v Austin Zobec>Yeah, no, I appreciate it, guys. Aubrey.</v>
+
+00:25:39.704 --> 00:25:39.944
+<v Kip Singh>S.</v>
+
+00:25:39.904 --> 00:26:04.144
+<v Sarbjeet Singh>And just to add on to Kip's point, Austin, though I know we want to make sure that one is feeling challenged with the task which we are assigning to him. However, we have dedicated project teams as well. Let's say in case if you would like, let's say whether it's server migration, SharePoint migration, even Hello PSA, a backups migration. So we can go on a call separately where we can decide.</v>
+
+00:25:53.864 --> 00:25:54.264
+<v Austin Zobec>Okay.</v>
+
+00:26:04.184 --> 00:26:23.424
+<v Sarbjeet Singh>the scope of work, the number of hours being utilized, and then these engineers can take care of those tasks specifically for you, ensuring that rest of the things are being taken care by the Helpdesk team specifically. So we do have the NOC services, we do have the SOC services, and then the dedicated project.</v>
+
+00:26:17.944 --> 00:26:18.424
+<v Austin Zobec>Okay.</v>
+
+00:26:22.464 --> 00:26:22.584
+<v Kip Singh>Yeah.</v>
+
+00:26:23.504 --> 00:26:23.784
+<v Sarbjeet Singh>Team.</v>
+
+00:26:25.624 --> 00:26:29.464
+<v Sarbjeet Singh>So feel free to utilize us wherever you think that we could be of any help.</v>
+
+00:26:25.704 --> 00:26:26.104
+<v Austin Zobec>OK.</v>
+
+00:26:30.184 --> 00:26:32.664
+<v Austin Zobec>I can do that. I can do that. Yeah, I appreciate that.</v>
+
+00:26:31.704 --> 00:26:31.864
+<v Sarbjeet Singh>Yeah.</v>
+
+00:26:32.424 --> 00:26:32.544
+<v Kip Singh>Yeah.</v>
+
+00:26:33.424 --> 00:26:49.544
+<v Sarbjeet Singh>Perfect. Rest, one thing which I would like to add in case if there is anything at all, no matter how small it is, please do not wait for these calls. Me, Kip, Amit, all of us are working as a part of your extended team. So we guys are just a text away. You can always reach out to us.</v>
+
+00:26:50.504 --> 00:26:50.984
+<v Austin Zobec>Perfect.</v>
+
+00:26:51.864 --> 00:26:52.264
+<v Sarbjeet Singh>Kip.</v>
+
+00:26:52.984 --> 00:26:53.464
+<v Austin Zobec>Thank you.</v>
+
+00:26:53.384 --> 00:26:58.904
+<v Sarbjeet Singh>Thank you so much, Austin and Rest. I believe we are all good. Same here. Pleasure talking with you.</v>
+
+00:26:54.584 --> 00:26:54.864
+<v Kip Singh>Okay.</v>
+
+00:26:54.864 --> 00:26:58.184
+<v Austin Zobec>Sarbjeet, it was a pleasure to meet you. Kip, good to see you again, as always.</v>
+
+00:26:55.864 --> 00:26:59.384
+<v Kip Singh>Yep. Thank you, Austin, for your time. Have a wonderful day. Bye bye.</v>
+
+00:26:59.464 --> 00:27:00.104
+<v Austin Zobec>Thanks, gentlemen.</v>
+
+00:26:59.904 --> 00:27:00.904
+<v Sarbjeet Singh>Take care, bye.</v>
+
+00:27:00.904 --> 00:27:01.304
+<v Austin Zobec>Bye bye.</v>
