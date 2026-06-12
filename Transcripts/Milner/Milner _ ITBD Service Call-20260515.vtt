@@ -1,0 +1,778 @@
+WEBVTT
+NOTE title: Milner | ITBD Service Call
+NOTE date: 2026-05-15
+NOTE duration: 38m 48s
+
+00:01:01.564 --> 00:01:02.644
+<v Aman Thakur>Good morning, Kris.</v>
+
+00:01:04.964 --> 00:01:06.244
+<v Chris Gaines>Hey, good morning, how are you?</v>
+
+00:01:06.804 --> 00:01:09.684
+<v Aman Thakur>Thank you. How about you? Good to see you after a long time.</v>
+
+00:01:09.444 --> 00:01:14.724
+<v Chris Gaines>Yeah, yeah, I'm doing good, man. I'm doing real good. Hope you are as well.</v>
+
+00:01:15.444 --> 00:01:16.884
+<v Aman Thakur>Yeah, everything going good.</v>
+
+00:01:18.724 --> 00:01:19.364
+<v Chris Gaines>Awesome.</v>
+
+00:01:20.644 --> 00:01:28.244
+<v Chris Gaines>So is this what the inside of one of your guys' offices look like, or is this just a created AI image?</v>
+
+00:01:29.284 --> 00:01:34.724
+<v Aman Thakur>No, I created it my own, but yeah, yeah, but the actual office also look like the same.</v>
+
+00:01:31.204 --> 00:01:31.684
+<v Chris Gaines>Did you?</v>
+
+00:01:37.444 --> 00:01:39.044
+<v Chris Gaines>Yeah, I was looking, you know, out there.</v>
+
+00:01:37.684 --> 00:01:42.324
+<v Aman Thakur>If you see the background and everything, yeah, that's exactly look like same for.</v>
+
+00:01:40.324 --> 00:01:40.964
+<v Chris Gaines>Right.</v>
+
+00:01:43.724 --> 00:01:43.844
+<v Aman Thakur>Yeah.</v>
+
+00:01:46.044 --> 00:01:46.164
+<v Aman Thakur>Play.</v>
+
+00:01:46.804 --> 00:01:51.124
+<v Chris Gaines>Yeah, I was just looking at the buildings in the background and stuff, and I'm like, oh, that's kind of cool.</v>
+
+00:01:52.404 --> 00:02:07.364
+<v Aman Thakur>That's the new, yeah, we're shifting the current office here in this location. So yeah, but the next few months is going to be shift a new building altogether. But the other office that we have in the other location, that is similar like this.</v>
+
+00:02:08.324 --> 00:02:08.484
+<v Chris Gaines>Mm.</v>
+
+00:02:09.204 --> 00:02:10.244
+<v Aman Thakur>Hey, morning, Luce.</v>
+
+00:02:13.684 --> 00:02:14.964
+<v Lewis Mcdowell>Good morning.</v>
+
+00:02:16.244 --> 00:02:16.884
+<v Aman Thakur>How are we doing?</v>
+
+00:02:18.164 --> 00:02:25.524
+<v Lewis Mcdowell>Wonderful, wonderful. It's A Friday. Blessed as always. Just happy to be alive.</v>
+
+00:02:28.084 --> 00:02:39.524
+<v Aman Thakur>So, for me, it is opposite. Yeah, Friday is always like Monday for me, because all the migration schedule, everything cut over happen on a weekend, so...</v>
+
+00:02:29.444 --> 00:02:30.164
+<v Chris Gaines>Yeah, we.</v>
+
+00:02:31.204 --> 00:02:31.524
+<v Chris Gaines>Yeah.</v>
+
+00:02:40.244 --> 00:02:41.044
+<v Lewis Mcdowell>Oh.</v>
+
+00:02:43.684 --> 00:02:44.484
+<v Aman Thakur>Morning, Linden.</v>
+
+00:02:45.684 --> 00:02:46.164
+<v Linden Ault>Bye.</v>
+
+00:02:47.724 --> 00:02:55.684
+<v Aman Thakur>Amit is on a different call, so I'm the only one from my ITBD side. Luis, who's gonna be Paul is going to join?</v>
+
+00:02:56.724 --> 00:03:03.204
+<v Lewis Mcdowell>Looks like Kris is flying on his way to your location to drop some bombs, so watch out.</v>
+
+00:02:59.604 --> 00:03:00.164
+<v Aman Thakur>Oh yeah.</v>
+
+00:03:01.604 --> 00:03:01.724
+<v Chris Gaines>And.</v>
+
+00:03:01.764 --> 00:03:02.164
+<v Aman Thakur>Cool.</v>
+
+00:03:04.324 --> 00:03:04.484
+<v Chris Gaines>Kip.</v>
+
+00:03:04.564 --> 00:03:07.284
+<v Aman Thakur>Hey, Lee is here, though. Good morning, Lee.</v>
+
+00:03:06.484 --> 00:03:10.004
+<v Lee Cavellier>Boy, I walked in at the most interesting possible moment, didn't I?</v>
+
+00:03:07.084 --> 00:03:07.284
+<v Lewis Mcdowell>But.</v>
+
+00:03:08.404 --> 00:03:09.044
+<v Chris Gaines>Okay.</v>
+
+00:03:10.884 --> 00:03:19.444
+<v Aman Thakur>Yeah, the good thing about today meeting is the background of ours look pretty cool, yeah.</v>
+
+00:03:12.324 --> 00:03:12.884
+<v Linden Ault>Yeah.</v>
+
+00:03:13.604 --> 00:03:14.404
+<v Lee Cavellier>All right.</v>
+
+00:03:17.844 --> 00:03:18.724
+<v Lee Cavellier>I love it.</v>
+
+00:03:20.164 --> 00:03:27.444
+<v Lee Cavellier>I'm loving this theme. It's great. Hey, everybody, how's it going? Look, Kris.</v>
+
+00:03:23.844 --> 00:03:43.044
+<v Chris Gaines>Yeah, we got a, mainly, yeah, we got a little contest. We have a little Friday huddle today, so I got a contest with everybody. We're going to vote on it next Friday, who has the coolest background. So I started changing my background like every 30 seconds or so on our meeting.</v>
+
+00:03:26.484 --> 00:03:26.724
+<v Linden Ault>Okay.</v>
+
+00:03:26.724 --> 00:03:27.284
+<v Lewis Mcdowell>Daily.</v>
+
+00:03:38.604 --> 00:03:38.724
+<v Lee Cavellier>But.</v>
+
+00:03:39.204 --> 00:03:39.284
+<v Aman Thakur>Ahh.</v>
+
+00:03:43.444 --> 00:03:43.684
+<v Chris Gaines>Hey.</v>
+
+00:03:43.924 --> 00:03:47.444
+<v Lee Cavellier>Just to up your chances that you like hit on the one.</v>
+
+00:03:46.004 --> 00:03:56.804
+<v Chris Gaines>Yeah. And then, and then Linden and Lewis and others all started partaking in it. So</v>
+
+00:03:56.004 --> 00:03:57.044
+<v Lee Cavellier>That's so funny.</v>
+
+00:03:57.764 --> 00:04:01.724
+<v Chris Gaines>I was like, all right, well, let's make a contest. Let's see who can come up with the coolest background.</v>
+
+00:04:02.524 --> 00:04:05.444
+<v Lee Cavellier>That's an awesome, that's an awesome contest. I love it.</v>
+
+00:04:05.444 --> 00:04:09.284
+<v Aman Thakur>Oh, here we go. Now we have the full audience. Amit is here too.</v>
+
+00:04:07.044 --> 00:04:07.524
+<v Lee Cavellier>Guys.</v>
+
+00:04:08.644 --> 00:04:10.804
+<v Lee Cavellier>Yeah, and I mean, I...</v>
+
+00:04:09.764 --> 00:04:13.284
+<v Amit Dubey>That's a lot of color on screen. Luis, I love it.</v>
+
+00:04:12.404 --> 00:04:19.444
+<v Lee Cavellier>Yeah, we were just, we were just remarking. Now I feel like I should find better backgrounds for these calls going forward.</v>
+
+00:04:18.244 --> 00:04:18.564
+<v Amit Dubey>No.</v>
+
+00:04:18.324 --> 00:04:28.884
+<v Chris Gaines>Yeah, you know, and I'm a big Top Gun fan, so, you know, so it's like it's only fitting that, you know, I fly the jets, you know what I'm saying, because...</v>
+
+00:04:29.484 --> 00:04:31.444
+<v Amit Dubey>Yeah, it looks awesome. It looks awesome.</v>
+
+00:04:29.964 --> 00:04:30.804
+<v Lee Cavellier>Very nice.</v>
+
+00:04:32.084 --> 00:04:32.884
+<v Lee Cavellier>Very nice.</v>
+
+00:04:32.244 --> 00:04:35.444
+<v Aman Thakur>Tim is not Tim is not participating in the competition.</v>
+
+00:04:36.884 --> 00:04:40.004
+<v Lee Cavellier>His is too, his is way too good. Oh.</v>
+
+00:04:41.124 --> 00:04:41.684
+<v Lewis Mcdowell>Ha ha ha!</v>
+
+00:04:41.284 --> 00:04:41.804
+<v Chris Gaines>Team.</v>
+
+00:04:42.404 --> 00:04:43.204
+<v Linden Ault>You're muted.</v>
+
+00:04:42.484 --> 00:04:45.364
+<v Amit Dubey>Somebody, somebody has to be on our side, right?</v>
+
+00:04:43.604 --> 00:04:49.364
+<v Tim Standard>Yeah, I'm working on it. I'm trying to find some good ones I had from the past here, yeah.</v>
+
+00:04:43.924 --> 00:04:45.284
+<v Lewis Mcdowell>We have a winner!</v>
+
+00:04:46.284 --> 00:04:46.724
+<v Lewis Mcdowell>Yeah.</v>
+
+00:04:49.684 --> 00:04:51.844
+<v Lee Cavellier>That's so funny, so.</v>
+
+00:04:51.364 --> 00:04:55.364
+<v Aman Thakur>I might join a little late, so they're running a contest where the background.</v>
+
+00:04:56.324 --> 00:04:58.804
+<v Aman Thakur>For, that's why they have a different background today.</v>
+
+00:04:59.564 --> 00:05:00.484
+<v Amit Dubey>Yeah, that.</v>
+
+00:04:59.844 --> 00:05:00.324
+<v Lee Cavellier>Yeah.</v>
+
+00:05:01.524 --> 00:05:19.884
+<v Lee Cavellier>So team, Aman, I don't want to step on your normal agenda, but I'm going to have to jump in a minute. I've got a small emergency I've got to go take care of. I wanted to be sure to be on though to say hello. And also if we could take two minutes to talk.</v>
+
+00:05:01.684 --> 00:05:02.164
+<v Amit Dubey>Awesome.</v>
+
+00:05:05.804 --> 00:05:05.924
+<v Aman Thakur>Yeah.</v>
+
+00:05:20.444 --> 00:05:29.204
+<v Lee Cavellier>to talk about strategic steps with Vincent and Maxwell.</v>
+
+00:05:30.964 --> 00:05:43.364
+<v Lee Cavellier>I said Vincent, Valer and Maxwell, forgive, because I know it was brought up in the email thread. Aman and I and Aman talked about it a little bit, and I want to make sure that us as a group are all on the same page about it.</v>
+
+00:05:31.124 --> 00:05:33.204
+<v Aman Thakur>Weather, weather, weather.</v>
+
+00:05:33.364 --> 00:05:34.004
+<v Amit Dubey>Yep, yep.</v>
+
+00:05:37.444 --> 00:05:37.524
+<v Aman Thakur>Oh.</v>
+
+00:05:45.524 --> 00:05:58.964
+<v Lee Cavellier>We can, and I think it's probably the right move to make steps to do swaps. What I want to make sure from you all's perspective, and Lewis and Kris, you guys in particular,</v>
+
+00:06:01.924 --> 00:06:19.684
+<v Lee Cavellier>I want to make sure that whatever we do as far as a replacement strategy, it factors in an immediate need and a future facing need, right? I know that there's been challenge for workload with regards to the efforts that are going on now.</v>
+
+00:06:21.364 --> 00:06:41.284
+<v Lee Cavellier>And I want to make sure that we're driving efforts in the right way there, just putting out for consideration if we know that as we continue to stabilize more and more and we move, we keep moving the goalpost right as we keep saying, when it gets moved, what's our what's our?</v>
+
+00:06:41.764 --> 00:06:46.244
+<v Lee Cavellier>kind of ideal operational state and who are the right.</v>
+
+00:06:47.444 --> 00:07:07.284
+<v Lee Cavellier>bodies, skills to be in those seats working overnight in that time frame? Is it going to be entirely Helpdesk focus? Probably not, right? It's an after hours. Is it going to be, you know, what, which begs the question then, okay, what's going to be the value proposition of having those team members?</v>
+
+00:07:07.524 --> 00:07:26.764
+<v Lee Cavellier>there, what's the work that can be offloaded to that time frame? Is it change management work, maintenance, the type of checking the systems for recurring or the ninja RMM alerts? I just want to make sure that we understand.</v>
+
+00:07:27.124 --> 00:07:32.324
+<v Lee Cavellier>what that future state looks like so that we can appropriately find the right person for the right seat.</v>
+
+00:07:34.964 --> 00:07:49.284
+<v Lee Cavellier>That was my start. So Lewis, Kris, I don't know if you have thoughts or feedback and we don't even have to answer that question. I just wanted to make sure I got to interject my thoughts on it before we dig deeper into the discussion of moving forward with it.</v>
+
+00:07:50.324 --> 00:07:57.844
+<v Chris Gaines>Yeah, so I guess for the sake of time and staying on track and focus, Lee, if you want to...</v>
+
+00:07:59.524 --> 00:08:08.564
+<v Chris Gaines>get 20 minutes or so of mine and Louis's time independently of the call. We'll be glad to share.</v>
+
+00:08:05.604 --> 00:08:06.244
+<v Lee Cavellier>Sounds great.</v>
+
+00:08:10.924 --> 00:08:28.564
+<v Chris Gaines>where the future forward-looking path is and where we're going to end up ultimately. So we can do that. And then that way you have some clarity and insight into the direction we're headed.</v>
+
+00:08:16.124 --> 00:08:16.644
+<v Lee Cavellier>Beautiful.</v>
+
+00:08:29.364 --> 00:08:52.244
+<v Lee Cavellier>Really appreciate that. All right, so what I'll do is, and it won't be in the next few minutes, but by the end of the day, I'll send out some windows that work for me for next week. And we'll jump on a few of us and talk about that. And that way we can come back with a clear action plan on our side, Amit and Amit and I can have a clear path forward.</v>
+
+00:08:53.044 --> 00:09:11.324
+<v Lee Cavellier>Awesome. In that case, I appreciate you all. Aman, I'll hand it back to you and I may jump on in a little bit from my mobile, but I've just got to jump and take care of something really quickly. So I appreciate it. Cheers, everybody. Oh, thank you so much, Chris. Good to see you, Tim. Good to see you, Linden. Lewis, pleasure as always.</v>
+
+00:09:06.084 --> 00:09:07.124
+<v Chris Gaines>Have a good weekend, Lee.</v>
+
+00:09:09.524 --> 00:09:09.724
+<v Linden Ault>Yes.</v>
+
+00:09:20.684 --> 00:09:22.244
+<v Amit Dubey>Hey, you gotta unmute yourself, Aman.</v>
+
+00:09:24.164 --> 00:09:38.084
+<v Aman Thakur>happened with me today. Okay, cool. So I think, Lewis, we can jump to our normal agenda. So I think I'll start with you first. How's everything going overall? You know, the entire week, you know, how the team is progressing.</v>
+
+00:09:26.164 --> 00:09:26.324
+<v Chris Gaines>Mm.</v>
+
+00:09:40.804 --> 00:10:00.804
+<v Lewis Mcdowell>As far as this week, I mean, obviously, we've turned some, you know, automation on, you know, you know, we broke the news to everybody as far as, hey, this is the new ConnectWise workflow, where now we're progressing down the ownership path versus, you know, the previous ways.</v>
+
+00:09:43.284 --> 00:09:43.324
+<v Aman Thakur>I.</v>
+
+00:09:54.244 --> 00:09:54.284
+<v Aman Thakur>I.</v>
+
+00:10:01.204 --> 00:10:19.044
+<v Lewis Mcdowell>which, you know, we pretty much sunset next ticket, you know, to that degree as far as the way we did it. But the point is, yeah, we enabled some automations to now flow tickets, so that way, you know, we're...</v>
+
+00:10:20.564 --> 00:10:40.804
+<v Lewis Mcdowell>Now, trying to put a lot of responsibilities on the ticket owners. So, you know, through this week and obviously next week, we're going to be monitoring a lot of utilization time. We're going to be monitoring a lot of first call responses to the new tickets that come in, because, you know, we want every ticket assigned, we want every ticket managed, every ticket</v>
+
+00:10:40.844 --> 00:11:00.724
+<v Lewis Mcdowell>you know, going in the right direction as far as either flowing in one of two ways. Either that ticket is going to be closed as quick as possible, or that ticket is going to be escalated and then eventually closed, you know, in that degree. But looking at the command center dashboard, we're definitely noticing an awesome trend.</v>
+
+00:11:01.084 --> 00:11:22.324
+<v Lewis Mcdowell>where, you know, our tickets that are 7 plus days old is slowly going down. It's diminishing to the point where, you know, it's, you know, eventually, if everything goes right, it's only going to be a small number. And that's only because of certain reasons, like we're waiting for a vendor or we're waiting for an RMA, you know, something that.</v>
+
+00:11:22.564 --> 00:11:46.324
+<v Lewis Mcdowell>we can't move any faster than, you know, mail. You know, because you got to ship in a computer or something like that. I can't make that move faster, you know, make a semi-truck, you know, put on turbo jets and, you know, drive faster down a lane. But the point is, is, yeah, that number we're noticing, hey, it's getting to the reasonable, understandable type tickets as far as why we have tickets older than seven days.</v>
+
+00:11:46.804 --> 00:12:11.524
+<v Lewis Mcdowell>And then with tickets that are three to seven, I mean, from our markers, we're hitting green numbers for the most part, where we're just like, okay, there's, you know, that number is now reducing dramatically, you know, to that degree. Also, with that said, because that's a low number, that means we're now getting into the areas of where tickets are being reviewed, triaged, trouble shot,</v>
+
+00:12:11.724 --> 00:12:34.964
+<v Lewis Mcdowell>and then also a resolution provided within the zero to seven, you know, a zero to three day period. So, you know, you know, we have 65 tickets that are in zero to three days, but the point is, is that we tackle those really quickly, lately. So we're doing a good job in that area, you know, with that. Obviously, there's still room for improvement. I can't say this is.</v>
+
+00:12:35.004 --> 00:12:57.844
+<v Lewis Mcdowell>Perfect. You know, so we are definitely moving toward getting to that dream goal, you know, with that said. So, yeah, with that said, we're, you know, like I said, monitoring the utilization, monitoring the first call response, monitoring the first call resolutions. You know, we want to improve on those stats, especially the first call resolution.</v>
+
+00:12:58.324 --> 00:13:17.444
+<v Lewis Mcdowell>We need to figure out, you know, why tickets can't be closed on that call, you know, to that degree. And, you know, that's the things that we're definitely going to be focusing on for the next few weeks, as to, you know, the reason why, you know, you know, with that said, we want to have, you know, industry standard first call resolutions, you know, ninety-five percent.</v>
+
+00:13:17.764 --> 00:13:36.484
+<v Lewis Mcdowell>as far as making sure that anything that comes in should be able to be handled by that technician, you know, with that. So, I mean, if it's training, access, whatever, hey, we'll come to that, we'll deal with that, whatever. But yeah, the point is, is things are moving in a good direction.</v>
+
+00:13:36.964 --> 00:13:43.844
+<v Lewis Mcdowell>And, you know, it's not perfect, obviously, still need to be worked on, but yeah, everything's looking good and going in the right direction.</v>
+
+00:13:45.284 --> 00:14:04.604
+<v Aman Thakur>No, very glad to hear Luis that, especially about I personally want to thank you for the entire team, the way you build that. So the ITBD team is very happy with the new moment, you know, so they the way they were struggling on the next ticket tool. So now they have the fair idea of ticket assignment is on time. So I'm just started.</v>
+
+00:14:05.124 --> 00:14:25.764
+<v Aman Thakur>you know, kind of collecting the information from the team. What are the area that we can improve? What are the changes that we can made on the tool so that we give the more transparency on the ticket side, assignment, ownership of the ticket. So I have started already, you know, reviewing those points. A few things which I probably was noticed yesterday while I was connecting.</v>
+
+00:14:25.844 --> 00:14:44.724
+<v Aman Thakur>with the team and reviewing their board on their tickets. So I think when the auto sign happened, for example, Jonad has a ticket at 9:00, right? So there's another ticket which get assigned automatically for 9, 10, for after like a 10 minute interval or 15 interval. So he's busy on another call.</v>
+
+00:14:45.124 --> 00:15:05.884
+<v Aman Thakur>So when I was asking the team, what if you're busy on a call and you get another ticket, either you proactively reviewing your board every day after 5 minutes, 10 minutes, but what if you stuck on a customer, you're talking to the customer and there's a P1 which assigned you next 10 minutes. So what are you guys doing on that case? So as of now, again, this is a new thing that we implemented. Yeah.</v>
+
+00:15:06.284 --> 00:15:26.964
+<v Aman Thakur>We really appreciate your effort that you're putting, but I ask them proactive, just keep eyes if there is kind of ticket that you're getting in the same windows, keep the team posted, you know, let Linden know though I have another ticket in next 10 minutes, but I'm already on a call. So that way we don't miss the SLA, right? And the customer is get a response on the time, you know.</v>
+
+00:15:27.684 --> 00:15:47.204
+<v Aman Thakur>So if you think, I think another was a few ticket they get from a different board, you know, which I think they don't work. So then the team is, you know, I ask them to make sure you redirect those ticket to the right board. If you are able to do it, do it. If not, let the team know, let Linden know, let Luis know. So that way the other team can handle those ticket.</v>
+
+00:15:47.524 --> 00:16:09.084
+<v Aman Thakur>So that's kind of an investigation I was doing with the team to make sure whatever the feedback they shared, the way the tool is going to, you know, give us better outcome of whatever we are implementing, you know, because they are the only right person who is going to work, going to judge that tool, how it is working, what are challenges they are facing. So I've asked them to, you know, keep you posted, keep me posted if they're stuck on anywhere.</v>
+
+00:15:47.924 --> 00:15:48.604
+<v Lewis Mcdowell>Correct.</v>
+
+00:16:10.084 --> 00:16:11.524
+<v Aman Thakur>It was really nice mode, yeah.</v>
+
+00:16:10.244 --> 00:16:30.724
+<v Lewis Mcdowell>Very, very good points. Yeah, very good points on those very good observations. That's exactly what we saw on our side, especially since we incorporated the SCs. There's, you know, no dispatch, no SCs to that degree. So there, you know, we, you know, saw obviously, as far as their part of their triages,</v>
+
+00:16:12.804 --> 00:16:12.884
+<v Aman Thakur>The.</v>
+
+00:16:17.364 --> 00:16:17.524
+<v Aman Thakur>No.</v>
+
+00:16:26.364 --> 00:16:26.524
+<v Aman Thakur>Yeah.</v>
+
+00:16:31.124 --> 00:16:53.604
+<v Lewis Mcdowell>Yeah, they were the ones that were dumping tickets that were for the ECR vault, for example, to the ECR board and so on and so forth. So now that we spread that responsibility out to more people, they're able to get those tickets out to, you know, whatever board a lot faster than one person just focused on just constantly doing it over and over, you know, to that degree, because it was bearing them down.</v>
+
+00:16:54.324 --> 00:17:16.404
+<v Lewis Mcdowell>as far as a lot of tickets coming their way, but now that responsibility is spread out. So yeah, definitely good observation on that. And yeah, definitely, you know, speak with Linden or Tim or Tier 2s, you know, and they can communicate, you know, obviously through the chat as far as where a ticket might go if it belongs to another board. And yeah, we're more than happy to tell them, hey, this is where it goes. We were</v>
+
+00:17:17.124 --> 00:17:40.804
+<v Lewis Mcdowell>that because yeah, that's what we're noticing as far as, you know, as we incorporated those responsibilities into the other service side. And then, yeah, you're absolutely right. As far as the scheduling piece, the round robin for tier ones on how it does it is it looks for the next availability on their calendar schedule if they already have a ticket at that point in time, it'll</v>
+
+00:17:41.124 --> 00:18:03.044
+<v Lewis Mcdowell>bump it up to, okay, here's the slotted time. So because of that, yeah, it's going to pick an available time and from there say, hey, it looks like there's a gap. Let me slide this ticket in for you to do next. And we totally understand. We're not coming down on any button on our end, let alone on your end as far as if a ticket is saying, hey,</v>
+
+00:18:03.284 --> 00:18:27.044
+<v Lewis Mcdowell>I'm scheduled for 915, you need to get to me. We're not going to be hard on that in any way because we totally understand you could be on a call, you could be dealing with a ticket that's continuing, you know, to that degree. It was a lot harder than expected. That's fine. It was more in order to fulfill the automation round robin system to be able to assign all these new tickets that comes in.</v>
+
+00:18:27.444 --> 00:18:49.284
+<v Lewis Mcdowell>That piece unfortunately had to come in. It was the way ConnectWise is set up. It's one of those that it is what it is and you can't take it out of the system. But with that said, yeah, we even told our people, hey, just because it might slot for, you know, 915 or 10 o'clock and it's currently 830 right now to that degree.</v>
+
+00:18:49.924 --> 00:19:08.244
+<v Lewis Mcdowell>go do it, you know, keep yourself busy, look at each other's cues, knock it out, you know, for the most part. If you all of a sudden found an availability to knock it out, help each other out, communicate that these exist, and with that, work together to get that, you know, resolution, the response, all these pieces that we're looking at for the most part. So</v>
+
+00:19:08.484 --> 00:19:11.684
+<v Lewis Mcdowell>Great observation, good points. That's exactly what we're looking at as well.</v>
+
+00:19:12.964 --> 00:19:31.844
+<v Aman Thakur>Thank you, Lisa. Teamwork, so it's not me only that's doing that. You people are on the front face, on the back end, I'm supporting the team and whatever the skill set that I have, I definitely will contribute more on your side, you know. Another piece, just add the escalation process. Yeah, that's well defined. The team is fully aligned with what they need to do.</v>
+
+00:19:32.244 --> 00:19:39.284
+<v Aman Thakur>So they know now where they need to escalate that ticket, you know, what step they need to follow. So they are clear on that side too.</v>
+
+00:19:41.524 --> 00:19:42.924
+<v Aman Thakur>Cool, and how about, yeah?</v>
+
+00:19:42.324 --> 00:20:03.924
+<v Lewis Mcdowell>Speaking of escalation, I'm waiting on Heidi to give me a response. She had to actually get with ConnectWise support regarding one of the workflows. The workflow actually is tied to if you put it into the escalated tier 2 or the escalated tier 3 status, the workflow wasn't working properly and we actually had to bring it up.</v>
+
+00:20:04.004 --> 00:20:27.284
+<v Lewis Mcdowell>to the ConnectWise support, they even noticed, okay, yeah, something's wrong, you know, with that said, because everything is set up correctly. They even verified it's correct. And then at that point was like, yeah, something's broke. So they're taking a look at it, at that. So if you, you know, wonder why when you set it to the escalated tier 2, it doesn't seem to be moving anywhere. It's because that workflow.</v>
+
+00:20:27.604 --> 00:20:43.204
+<v Lewis Mcdowell>is right now not working properly. So there is a manual process of making sure that it does get to a tier 2 at this point in time. But yes, that's exactly seen, noticed, and right now being worked on by their support.</v>
+
+00:20:43.844 --> 00:21:02.324
+<v Aman Thakur>Okay, and just one more clarity question. How do you monitoring the SLA compliance and SLA breach for the tickets? Have you configured anything at your site where it give you kind of report, the what all ticket SLA breached, you know, and what are SLA compliance percentage, week-wise or monthly? Anything that you have in play?</v>
+
+00:21:01.524 --> 00:21:02.084
+<v Lewis Mcdowell>Daum.</v>
+
+00:21:03.044 --> 00:21:08.804
+<v Lewis Mcdowell>We have MSP Bot Dashboard that pretty much monitors those pieces of information.</v>
+
+00:21:04.004 --> 00:21:04.124
+<v Aman Thakur>Yeah.</v>
+
+00:21:05.964 --> 00:21:06.164
+<v Aman Thakur>Mm.</v>
+
+00:21:09.724 --> 00:21:23.604
+<v Aman Thakur>Okay, okay. Yeah, I think I mean if I can probably get kind of overview of that report too, so that way I'm also aware if anything that I can help or maybe the team is behind running on those parameters, so when I can align those two for that side.</v>
+
+00:21:24.244 --> 00:21:30.724
+<v Lewis Mcdowell>Okay, I'll pull where the link is when I get a moment as far as the dashboard and then send it to you.</v>
+
+00:21:25.204 --> 00:21:25.284
+<v Aman Thakur>Ohh.</v>
+
+00:21:32.524 --> 00:21:41.284
+<v Aman Thakur>Thank you. Yeah, so I think let me share my screen then. We'll jump to our regular agenda. Let me know if you can see my screen.</v>
+
+00:21:44.284 --> 00:21:44.884
+<v Tim Standard>Yes, yeah.</v>
+
+00:21:45.204 --> 00:21:47.524
+<v Lewis Mcdowell>I don't see you in there. Why are you not in the picture?</v>
+
+00:21:45.284 --> 00:21:45.604
+<v Aman Thakur>All right.</v>
+
+00:21:47.924 --> 00:21:48.084
+<v Aman Thakur>No.</v>
+
+00:21:49.564 --> 00:21:52.084
+<v Aman Thakur>Well, they're gonna update the new picture very soon, you know.</v>
+
+00:21:51.604 --> 00:21:55.204
+<v Lewis Mcdowell>Oh, okay, okay, they better because you better you need to be in there.</v>
+
+00:21:55.684 --> 00:22:01.204
+<v Aman Thakur>There is always a backup disaster person, you know, so I'm the backup person.</v>
+
+00:22:01.844 --> 00:22:02.244
+<v Lewis Mcdowell>Ha ha ha!</v>
+
+00:22:03.724 --> 00:22:25.124
+<v Aman Thakur>Thank you again. Thank you for weekly service review. So the data that I have for the last week, no changes in the agenda. Everything remains same. We already checked how are things going at the moment. These were the few highlights for the last week. So a new escalation process has been implemented and ITBD team is fully aligned.</v>
+
+00:22:25.684 --> 00:22:45.764
+<v Aman Thakur>Ticket Management, so ticket auto assigned process has been implemented and of course the team is aligned. Talk about performance overall, so just pulled the data for last April for the entire month. So the team overall utilization was 65%, right, below the target, but yeah, that was the overall target.</v>
+
+00:22:45.884 --> 00:23:03.404
+<v Aman Thakur>which we include Bernie and Abdul data also. So, because they recently onboarded, their utilization pretty low on that side. So, but yeah, overall 65% where the team stands. End user CSAT report that I get for last week, 98.84%.</v>
+
+00:23:06.564 --> 00:23:21.284
+<v Aman Thakur>No neutral or any deset. Good feedback what I saw in the comment and everything for all the engineers. Abdul we on boarded, so he has been successfully taken over Tina role and responsibility and doing pretty good.</v>
+
+00:23:23.284 --> 00:23:41.764
+<v Aman Thakur>So we have the action item tracker, few things, SLA and KPA reporting. So I'm just keeping it in progress. The few report that I know, the one for SLA compliance and SLA breach, ticket closure. And yeah, for the CSAT I'm getting, last week I got the report.</v>
+
+00:23:42.404 --> 00:23:49.284
+<v Aman Thakur>Maxwell and Vela replacement, yes, so Lee is going to connect separately with Kris to discuss further and make a plan.</v>
+
+00:23:50.284 --> 00:24:11.444
+<v Aman Thakur>Tina, we already offloaded her last week. That task has been completed. The 4th one is team low utilization discussion. I think that's one piece that we are still, I'm trying to find a way to where, especially in the weekend shift, you know. So the people who are working the weekend shift, they had low utilization on.</v>
+
+00:24:11.924 --> 00:24:31.764
+<v Aman Thakur>less work on that side, but proactive, I ask them to make sure they are checking the tickets individually if there is a response required. So they proactive work on those ticket. So I think Linden, probably even Lucy was planning to anything else they can take care on the weekend on whatever they do on a regular basis.</v>
+
+00:24:32.964 --> 00:24:36.724
+<v Aman Thakur>If anything, they can take care of different task on the weekend, especially.</v>
+
+00:24:37.604 --> 00:24:46.484
+<v Linden Ault>I think I forwarded you over that device health SLP. Like it's the D work, but only to be done when there's no actual work.</v>
+
+00:24:37.924 --> 00:24:38.564
+<v Aman Thakur>Vishal film.</v>
+
+00:24:42.724 --> 00:24:43.684
+<v Aman Thakur>Yeah, so...</v>
+
+00:24:47.604 --> 00:25:07.444
+<v Aman Thakur>Okay, yeah, so I think I'll align the team. So, Kundan and Max will, the D said that we received last survey that I have already connected with both, right? Share the feedback that what all improvement we needed and I ask Kundan also to kind of get a fair idea.</v>
+
+00:25:07.924 --> 00:25:14.564
+<v Aman Thakur>from your side where he's lacking what all improvement that needed, you know. So he's fully aligned on that side.</v>
+
+00:25:16.324 --> 00:25:16.444
+<v Aman Thakur>Play.</v>
+
+00:25:16.404 --> 00:25:16.724
+<v Linden Ault>Okay.</v>
+
+00:25:17.964 --> 00:25:37.524
+<v Aman Thakur>Right, and shift for this month, for the entire May, we have already sent you the roster for the whole week, like the month. So one changes that we made this week, Paulak that used to be working in the weekend shift, now we have pulled her back to the regular shift 8 to 5.</v>
+
+00:25:38.404 --> 00:25:53.604
+<v Aman Thakur>Monday to Friday and Abdul is going to recover the weekend shift. So Kundan and Abdul, so one experienced person, one new person, kind of make a combination. And for Palak, we kept as a regular 8 to 5 shift, you know.</v>
+
+00:25:54.644 --> 00:26:03.924
+<v Aman Thakur>So she's working full time, right? Whatever the other people or engineer are doing, same way. So probably whatever the tickets the other engineer are handling, she is doing the same way.</v>
+
+00:26:05.444 --> 00:26:24.964
+<v Lewis Mcdowell>I remember a conversation in regards to pulling her back completely as far as backup, so that way, regarding the utilization conversation, that would put more on the other members. Was that still, was that a good plan later down the road or was?</v>
+
+00:26:25.004 --> 00:26:26.724
+<v Lewis Mcdowell>What's how's that conversation going?</v>
+
+00:26:27.444 --> 00:26:46.964
+<v Aman Thakur>So I think two, Amit probably can add one more on that point, but one thing which we probably, so I think one challenge which I noticed, you know, in few cases, if someone is going to on a PTO, right? So like example, that's kind of emergency case like Waylor and Maxwell or other people, if someone is on a week off, right, and suddenly there's an emergency.</v>
+
+00:26:47.204 --> 00:26:51.604
+<v Aman Thakur>So then on that particular shift, no one going to be available to cover that shift.</v>
+
+00:26:52.764 --> 00:26:53.924
+<v Aman Thakur>Yeah, maybe you can add, yeah.</v>
+
+00:26:53.284 --> 00:27:12.644
+<v Amit Dubey>So, Louis, I mean, yes, we are sticking to the plan. As of now, the expectation is that if the entire team is working, she is not expected to work on any tickets, so that the overall utilization is getting balanced out across the team. But, of course, talking about a situation when you know somebody has called in sick.</v>
+
+00:26:57.084 --> 00:26:57.204
+<v Aman Thakur>Yeah.</v>
+
+00:27:13.844 --> 00:27:31.124
+<v Amit Dubey>Last minute, we see that there is no coverage for a shift. That's when we are using her. And we will try this model for quite some time, let's say about two to three weeks time, right? Once the team stabilizes, that we can circle back again and see what the next step should be. But yes.</v>
+
+00:27:31.484 --> 00:27:34.804
+<v Amit Dubey>If everything is in, she's not expected to work on any tickets.</v>
+
+00:27:35.604 --> 00:27:42.564
+<v Lewis Mcdowell>Okay, Roger that. Sounds good. And yeah, I understand. PTO, sick days. Yeah, definitely understand.</v>
+
+00:27:36.804 --> 00:27:37.004
+<v Aman Thakur>Yeah.</v>
+
+00:27:45.044 --> 00:28:03.124
+<v Aman Thakur>Thank you. Yeah, so we'll add that into our action tracker. Right, so I'll move for the next slide about their performance. So just kept the data for two week to just kind of compare. Talk about Junad, 73% overall utilization, doing pretty good as usual.</v>
+
+00:28:04.484 --> 00:28:22.964
+<v Aman Thakur>The last week, 68%, Kundan 56, so the last week was the number was low, 36% overall, Maxwell 85%, and the last week 84, Wheeler 62, then last week 64.</v>
+
+00:28:23.444 --> 00:28:40.724
+<v Aman Thakur>Bernie, 40% and the last week, 34. Abdul was an out for a few days due to his father's issue, so 36 to 32%. So any question for any of the numbers or anything that you observe apart from these number?</v>
+
+00:28:40.004 --> 00:29:02.044
+<v Lewis Mcdowell>Well, I noticed that Maxwell, he, I don't know what, maybe a message got to him, something, but I did notice a spike as far as an increase in his utilization towards actually doing a lot of the D work for the most part. I saw, because we see closure tickets a report every month.</v>
+
+00:29:02.124 --> 00:29:21.764
+<v Lewis Mcdowell>day that comes in in the morning from the following night, you know, you know, with that said. And yeah, we're noticing that, hey, he's, I don't know what got to him, maybe, you know, whatever as far as how that's concerned. So whatever you, you know, y'all did or he decided to do to get that urge to start, you know, progressing down that path, that's great.</v>
+
+00:29:22.484 --> 00:29:42.324
+<v Lewis Mcdowell>Because yeah, that's the stuff that, you know, if you can't find other stuff, hey, keep yourself busy with the D work, keep knocking it out, keep, you know, and so yeah, I'm starting to see a now an increase in that area. So if, you know, and I'm more than happy to let him continue. I just want him to actually continue, you know, with that said, so.</v>
+
+00:29:42.844 --> 00:30:01.364
+<v Aman Thakur>Yes, I had connect with them, both Will and MX. Well, and they both have the connect with Ruben. So we want to make sure the people are who logged in, they are accountable for delivery 8 hours. So they are taking care if they don't have any tickets, whatever they do on a regular basis, they should work to the CD grade work, you know.</v>
+
+00:30:02.724 --> 00:30:16.724
+<v Aman Thakur>So help desk, check the Helpdesk board. If they don't see anything, move for the next C-level work. Then if there is nothing on that side too, then move for the D-level work. Rather sitting idle or not doing anything. But yeah, contribute on that side too.</v>
+
+00:30:18.084 --> 00:30:25.604
+<v Linden Ault>And you did say they are looking at the board or are you just looking at tickets that are unassigned or they're reviewing tickets that are assigned to other techs as well?</v>
+
+00:30:38.004 --> 00:30:38.484
+<v Linden Ault>Sandhu.</v>
+
+00:30:38.564 --> 00:30:39.124
+<v Aman Thakur>Anything.</v>
+
+00:30:40.084 --> 00:30:51.284
+<v Linden Ault>Can you have them also look at the tickets that are scheduled remote? Because some of those are actionable, but considering they may come in on Friday, rather than have somebody wait for Monday, it can probably be worked.</v>
+
+00:30:52.484 --> 00:31:04.084
+<v Aman Thakur>Sure, I definitely can ask because scheduled ticket, they don't task because probably as for the ticket status, this ticket is already scheduled for other days per maybe customer request or maybe, yeah. Yeah.</v>
+
+00:31:01.924 --> 00:31:06.484
+<v Linden Ault>Yeah, it's case by case, but you know, if it can be moved, it can be worked.</v>
+
+00:31:07.284 --> 00:31:10.804
+<v Aman Thakur>Definitely, I will update both for the same.</v>
+
+00:31:13.764 --> 00:31:19.764
+<v Aman Thakur>All right, I think we're good. Any other point that we missed or anything that you want shared from your side?</v>
+
+00:31:21.924 --> 00:31:29.044
+<v Aman Thakur>And again, we're always open for the feedback suggestion that you want to beta, so I can align the team for the same.</v>
+
+00:31:30.764 --> 00:31:31.124
+<v Linden Ault>Okay.</v>
+
+00:31:33.604 --> 00:31:53.204
+<v Aman Thakur>Yeah, I'll keep sharing my finding. I think I forget to share one more thing, which Luis, I emailed you about the ticket title. So the practice, last week I done some practice where I was trying to see the trend of the ticket, what is the most ticket flow that you have.</v>
+
+00:31:53.244 --> 00:32:08.484
+<v Aman Thakur>in a Helpdesk, maybe you're getting email issues more frequently, you're getting printer issues. So what happening with the ticket title? It's not clear on the ticket title, what is the issue? Ticket title has something else. In the ticket notes, customer has mentioned something else.</v>
+
+00:32:09.444 --> 00:32:27.844
+<v Aman Thakur>So I maybe shared that email with you that the ticket convinced like the title what should be the title. Let's see other MSP follow. So that give us very clear picture that for after month we want to see the trend that oh how many ticket we are getting for backup or how many ticket we are getting for server related issue.</v>
+
+00:32:17.404 --> 00:32:17.524
+<v Lewis Mcdowell>It.</v>
+
+00:32:26.684 --> 00:32:28.724
+<v Amit Dubey>What's our recommendation, Aman?</v>
+
+00:32:29.604 --> 00:32:30.324
+<v Amit Dubey>Are we?</v>
+
+00:32:30.004 --> 00:32:38.004
+<v Aman Thakur>I, yeah, well I suggested maybe we can can probably share my screen once again.</v>
+
+00:32:38.644 --> 00:33:00.964
+<v Lewis Mcdowell>Well, I can't say yes. I saw that email. I did see you even put in the recommendation in regards to that email as well. And I will definitely admit as far as from the history, yes, whether it comes in by email, whether it comes in by, you know, a phone call,</v>
+
+00:32:39.204 --> 00:32:39.684
+<v Aman Thakur>Support.</v>
+
+00:32:41.524 --> 00:32:41.924
+<v Aman Thakur>Yeah.</v>
+
+00:33:01.244 --> 00:33:22.324
+<v Lewis Mcdowell>It's even happening on a phone call, which I'm sitting here, like you're on the phone, you're literally talking to the person, and yet your subject line does not match the actual issue, you know, to that degree. And then on top of that, the subject line is pretty much distorted to the point where it's like, you either have a paragraph in the subject line and it's like, well, why is it so long?</v>
+
+00:33:11.044 --> 00:33:11.524
+<v Aman Thakur>Issue.</v>
+
+00:33:22.604 --> 00:33:41.924
+<v Lewis Mcdowell>you know, to that degree, which, you know, obviously is an issue as well. So I can say that I am starting up an SOP. This process is going to probably take a minute because not only do I have to build this out and then with that, have everyone agree that this is what we're going to do moving forward.</v>
+
+00:33:23.044 --> 00:33:23.324
+<v Aman Thakur>Yeah.</v>
+
+00:33:35.764 --> 00:33:36.084
+<v Aman Thakur>Yeah.</v>
+
+00:33:42.284 --> 00:34:06.924
+<v Lewis Mcdowell>The hurdle that I'm going to most likely see is the actual technicians that are doing the tickets as far as, you know, setting out the whole, hey, I'm going to, you know, go and do this if you don't do this. And you know, it's that part that I'm positive that I'm going to have to run into. So, but the point is, is yes, I actually got one started and at that point,</v>
+
+00:34:07.004 --> 00:34:27.044
+<v Lewis Mcdowell>I'm going to get with the team to make sure that we all agree that this is what it's going to be going forward. I'll let you know when we get that completed to send out, so that way, once that occurs, obviously you can get your team to, you know, respect the SOP as far as what the new one is going to be, while we try to work on our end and getting our teams to, you know.</v>
+
+00:34:27.204 --> 00:34:42.884
+<v Lewis Mcdowell>do the same thing as respect what the new SOP is going to be going forward. So as far as, yeah, this conversation, definitely heard and understood. You're absolutely right, was needed way before I even started. But the point is, is it is now in progress.</v>
+
+00:34:43.764 --> 00:35:02.084
+<v Aman Thakur>No, definitely. I'm gonna throw a few ideas, whatever I noticed and saw on the other partner, which I, you know, saw that we're getting benefit out of it, because the one ticket I was, because the practice that I follow, I connect with everyone, I review their tickets, you know, so one ticket I get a day before yesterday while I was working with Janad, so...</v>
+
+00:35:02.484 --> 00:35:27.004
+<v Aman Thakur>I was just trying to see the customer trend where this customer reported this issue earlier as well. So when I search by that particular issue, I don't see anything listed in the entire closed history, you know. But if there is a proper title, yeah, it'll give me the clear picture of this customer has reported this issue. We can take that reference, that ticket note. So we already tried this step. We don't need to repeat this step. Let's try something else. So if you don't see that reference.</v>
+
+00:35:13.364 --> 00:35:13.924
+<v Lewis Mcdowell>Mhm.</v>
+
+00:35:13.524 --> 00:35:14.084
+<v Linden Ault>Yeah.</v>
+
+00:35:25.764 --> 00:35:29.164
+<v Lewis Mcdowell>Yeah, one of the things that, yeah, one of the...</v>
+
+00:35:26.164 --> 00:35:26.644
+<v Linden Ault>Norm.</v>
+
+00:35:27.044 --> 00:35:27.524
+<v Aman Thakur>Priya.</v>
+
+00:35:27.884 --> 00:35:36.324
+<v Linden Ault>Yeah, normally I just do a search for ticket notes and do a wild card. That's how I find it, but I get I get it. It's easier if we just had a proper naming.</v>
+
+00:35:30.004 --> 00:35:30.164
+<v Aman Thakur>Mm.</v>
+
+00:35:31.644 --> 00:35:31.764
+<v Aman Thakur>Yeah.</v>
+
+00:35:34.244 --> 00:35:34.364
+<v Aman Thakur>Yeah.</v>
+
+00:35:35.764 --> 00:35:37.844
+<v Aman Thakur>Title, yeah, yeah.</v>
+
+00:35:37.084 --> 00:35:56.724
+<v Lewis Mcdowell>Yeah, and then people need to learn how to actually go and go back to the ticket and update it, you know, instead of just, oh, that's fine. I'm sure this ticket can be searchable in some magical way, right? We got a wild card everything. No, but yeah, you're absolutely right. There's a lot of room for improvement. I can't deny that.</v>
+
+00:35:39.204 --> 00:35:39.324
+<v Aman Thakur>Yeah.</v>
+
+00:35:42.644 --> 00:35:42.804
+<v Aman Thakur>Yeah.</v>
+
+00:35:57.764 --> 00:36:17.124
+<v Aman Thakur>Well, that's my suggestions. It's your call, like whatever thing that you need for my side. I'm trying to figure out a build something different where I can, you know, see if I can track those all numbers and everything that I have a centralized location to see the number and everything for the entire team and for the entire clients. What is the workflow?</v>
+
+00:36:17.284 --> 00:36:27.124
+<v Aman Thakur>which client report or create most of the tickets, you know, what are the high number of the client side, what are the reasons, so kind of, so we'll get a fair idea of those tickets, you know.</v>
+
+00:36:28.244 --> 00:36:31.284
+<v Aman Thakur>We'll keep sharing. Yeah, so let me know if anything that's needed.</v>
+
+00:36:33.844 --> 00:36:44.644
+<v Aman Thakur>Cool, I think we're good. So we missed the call. Then yeah, thank you so much for all your time and have a great weekend. Yeah, thank you, Kris. Yeah, now it's green tree. Thank you. Good luck, everyone.</v>
+
+00:36:34.324 --> 00:36:34.964
+<v Lewis Mcdowell>Will do.</v>
+
+00:36:43.684 --> 00:36:47.204
+<v Amit Dubey>Now leaving us with a lot of green, lush green, yeah, thank you.</v>
+
+00:36:44.844 --> 00:36:45.164
+<v Linden Ault>Kurt.</v>
+
+00:36:45.604 --> 00:36:46.244
+<v Tim Standard>Thank you.</v>
+
+00:36:47.604 --> 00:36:47.724
+<v Tim Standard>Yeah.</v>
+
+00:36:48.564 --> 00:36:49.524
+<v Lewis Mcdowell>Take care, everyone.</v>
+
+00:36:49.484 --> 00:36:52.084
+<v Amit Dubey>Alright, take care. Have a wonderful weekend ahead. Thank you. Bye.</v>
+
+00:36:49.524 --> 00:36:50.724
+<v Aman Thakur>Take care, bye-bye, bye.</v>
+
+00:36:49.764 --> 00:36:50.004
+<v Tim Standard>Yeah.</v>
+
+00:36:52.084 --> 00:36:52.404
+<v Aman Thakur>Bye.</v>

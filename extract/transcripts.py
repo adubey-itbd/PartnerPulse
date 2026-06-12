@@ -86,7 +86,7 @@ _VTT_TIME_RE = re.compile(r"^(\d{2}):(\d{2}):(\d{2})\.\d{3}\s+-->\s+")
 # Speaker-tagged payload: <v Speaker Name>text</v>
 _VTT_VOICE_RE = re.compile(r"<v\s+([^>]+)>(.*?)</v>", re.S)
 # Optional metadata header we write when saving: "NOTE key: value"
-_VTT_NOTE_RE = re.compile(r"^NOTE\s+(title|date|duration):\s*(.+)$", re.M)
+_VTT_NOTE_RE = re.compile(r"^NOTE\s+(title|date|duration):\s*(.+)$", re.M | re.I)
 
 
 def parse_vtt(path) -> dict:
@@ -94,7 +94,7 @@ def parse_vtt(path) -> dict:
     Consecutive cues from the same speaker are merged into one dialogue turn."""
     path = Path(path)
     raw = path.read_text(encoding="utf-8")
-    meta = dict(_VTT_NOTE_RE.findall(raw))
+    meta = {k.lower(): v.strip() for k, v in _VTT_NOTE_RE.findall(raw)}
 
     dialogue = []
     ts = ""

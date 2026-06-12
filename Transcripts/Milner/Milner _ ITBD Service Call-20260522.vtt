@@ -1,0 +1,842 @@
+WEBVTT
+NOTE title: Milner | ITBD Service Call
+NOTE date: 2026-05-22
+NOTE duration: 42m 35s
+
+00:01:06.544 --> 00:01:07.024
+<v Aman Thakur>Really?</v>
+
+00:01:08.784 --> 00:01:09.184
+<v Aman Thakur>Morning.</v>
+
+00:01:10.144 --> 00:01:11.504
+<v Lee Cavellier>Hey, Aman, how you doing?</v>
+
+00:01:12.064 --> 00:01:13.424
+<v Aman Thakur>Yeah, doing good. How about you?</v>
+
+00:01:14.544 --> 00:01:17.104
+<v Lee Cavellier>I'm doing pretty well, thank you.</v>
+
+00:01:18.984 --> 00:01:20.544
+<v Aman Thakur>I think Amit is enough today, so...</v>
+
+00:01:21.344 --> 00:01:21.744
+<v Lee Cavellier>Yeah.</v>
+
+00:01:21.664 --> 00:01:22.824
+<v Aman Thakur>That's gonna be join.</v>
+
+00:01:26.464 --> 00:01:26.624
+<v Aman Thakur>Yeah.</v>
+
+00:01:30.624 --> 00:01:34.224
+<v Lee Cavellier>I do have a hard stop at 11:30 at the very latest.</v>
+
+00:01:35.824 --> 00:01:36.384
+<v Aman Thakur>Okay.</v>
+
+00:01:56.224 --> 00:01:57.904
+<v Aman Thakur>It's empty, nothing is written on this.</v>
+
+00:02:15.104 --> 00:02:20.784
+<v Aman Thakur>So, before the join, do we want to discuss about the incident that they shared?</v>
+
+00:02:22.384 --> 00:02:30.624
+<v Aman Thakur>Kind of give them overview what they think that the ITBD training is the problem, right? But that's not the actual case, so how you want to convey on it here.</v>
+
+00:02:24.824 --> 00:02:25.024
+<v Lee Cavellier>Kip.</v>
+
+00:02:30.624 --> 00:02:37.824
+<v Lee Cavellier>I think that you're, I still think if we think that we're not the problem, that we are missing something.</v>
+
+00:02:38.224 --> 00:02:39.824
+<v Aman Thakur>Yeah, so I think...</v>
+
+00:02:39.184 --> 00:02:59.664
+<v Lee Cavellier>because we get this we get the feedback like this a lot and it's remember the end user is reporting how they felt the situation went right they're not reporting the nuance or the actual skill set of the engineer they're reporting how the engineer made them</v>
+
+00:02:47.584 --> 00:02:47.704
+<v Aman Thakur>Kam.</v>
+
+00:02:52.064 --> 00:02:52.264
+<v Aman Thakur>Yeah.</v>
+
+00:02:59.824 --> 00:03:00.224
+<v Lee Cavellier>Dio.</v>
+
+00:03:01.344 --> 00:03:19.984
+<v Lee Cavellier>That's the challenge, right? So what we need to really figure out, like I don't want to bring that up as a means of like digging into that incident. If we bring it up, it should be as a means of figuring out, okay, let's talk about, let's talk about what training looks like and.</v>
+
+00:03:19.344 --> 00:03:21.504
+<v Aman Thakur>Okay, adding Linden.</v>
+
+00:03:20.464 --> 00:03:26.864
+<v Lee Cavellier>how we can partner. Yeah, I see. Yeah, and how we can partner to drive improvements. Yeah.</v>
+
+00:03:27.504 --> 00:03:28.704
+<v Aman Thakur>Morning, morning then, then.</v>
+
+00:03:30.144 --> 00:03:30.784
+<v Lee Cavellier>Hey, Linden.</v>
+
+00:03:34.864 --> 00:03:35.584
+<v Lee Cavellier>Sunny day.</v>
+
+00:03:37.104 --> 00:03:37.904
+<v Linden Ault>Yeah.</v>
+
+00:03:39.664 --> 00:03:45.264
+<v Linden Ault>It looks like Lewis is still on another call, but I guess if you want to kick it off or you want to give him a few more minutes.</v>
+
+00:03:48.384 --> 00:03:51.184
+<v Aman Thakur>Yeah, and take film, then we can wait, Lee. What do you say?</v>
+
+00:03:52.144 --> 00:03:52.704
+<v Linden Ault>That works.</v>
+
+00:03:54.144 --> 00:03:54.704
+<v Aman Thakur>Sit.</v>
+
+00:03:54.144 --> 00:04:06.864
+<v Lee Cavellier>Sure. How about we give him two more minutes? We start at 11.05 and when he joins, if there's anything we need to touch base on, we can. But overall, I want to make sure we're not wasting your time either.</v>
+
+00:03:54.464 --> 00:03:55.024
+<v Linden Ault>Alright, so.</v>
+
+00:04:07.584 --> 00:04:09.184
+<v Linden Ault>That's fun. Appreciate it.</v>
+
+00:04:10.224 --> 00:04:11.984
+<v Aman Thakur>The computation is still going on.</v>
+
+00:04:10.944 --> 00:04:11.664
+<v Lee Cavellier>How's everything going?</v>
+
+00:04:13.024 --> 00:04:13.584
+<v Lee Cavellier>Oh, yeah.</v>
+
+00:04:13.424 --> 00:04:15.424
+<v Linden Ault>No, he finished it today.</v>
+
+00:04:16.144 --> 00:04:17.264
+<v Lee Cavellier>Oh, okay, who won?</v>
+
+00:04:16.224 --> 00:04:17.344
+<v Aman Thakur>Who was the winner?</v>
+
+00:04:19.824 --> 00:04:25.104
+<v Linden Ault>Uh, accounts receivable. Yeah, she won. She won with the patriotic beam, so can't beat that.</v>
+
+00:04:20.624 --> 00:04:20.944
+<v Lee Cavellier>Is it?</v>
+
+00:04:22.224 --> 00:04:22.704
+<v Lee Cavellier>Okay.</v>
+
+00:04:26.024 --> 00:04:26.304
+<v Lee Cavellier>Vaid.</v>
+
+00:04:27.424 --> 00:04:31.104
+<v Linden Ault>And Louis will probably come with some craziness in a minute.</v>
+
+00:04:27.584 --> 00:04:28.944
+<v Lee Cavellier>Alright, I was gonna say it.</v>
+
+00:04:31.904 --> 00:04:37.264
+<v Lee Cavellier>Is it gonna be The Walking Dead because he had The Walking Dead the other day and I was like, no, we don't need that.</v>
+
+00:04:32.384 --> 00:04:33.104
+<v Linden Ault>He had one.</v>
+
+00:04:35.904 --> 00:04:41.664
+<v Linden Ault>Yeah, he doubled back with that one. It caught me off guard.</v>
+
+00:04:43.424 --> 00:04:43.984
+<v Lee Cavellier>Yep.</v>
+
+00:04:45.504 --> 00:04:58.544
+<v Lee Cavellier>The other day we were, I was on with Kris and he kept like every, I don't know, 7 minutes or so, he changed his background. He just flipped through him. We were off for maybe 40 minutes. He did like 6 times. I was like, come on, man.</v>
+
+00:05:00.544 --> 00:05:01.104
+<v Lee Cavellier>Funny.</v>
+
+00:05:04.944 --> 00:05:05.344
+<v Linden Ault>All right.</v>
+
+00:05:07.184 --> 00:05:29.584
+<v Linden Ault>So yeah, early in the week, we did have like a spike in tickets, but that was, we thought it was like customers, but that was due to some tickets being misplaced on wrong boards. There's a couple of issues that I noticed that the ITBD staff are running across. Being that we're auto signing tickets, we are seeing that they're getting tickets. Any ticket from any board will go in the triage.</v>
+
+00:05:30.304 --> 00:05:43.904
+<v Linden Ault>Now the challenge is for them to learn where it goes and who it should go to. So that's definitely something that I could see that if they do have utilization issues this week, that can probably be one of the reasons. So just as a heads up.</v>
+
+00:05:45.584 --> 00:05:50.304
+<v Lee Cavellier>is that they're getting tickets that aren't appropriate for appropriately within scope.</v>
+
+00:05:45.904 --> 00:05:46.024
+<v Aman Thakur>Yeah.</v>
+
+00:05:45.984 --> 00:05:46.464
+<v Linden Ault>Kurt.</v>
+
+00:05:51.104 --> 00:06:13.104
+<v Linden Ault>Correct. In terms of like, it'll be C2S, PSG, they might not have view into those boards, but we're already working on a solution for that. It'll be a status that workflows into the board. So it'll save them some trouble. They don't have to reach out, like, where should this go? Because like my chat's going all day. What should I do with this? What's the action plan on this?</v>
+
+00:06:13.584 --> 00:06:16.224
+<v Linden Ault>But they're definitely communicating when they hit those.</v>
+
+00:06:17.184 --> 00:06:37.104
+<v Lee Cavellier>Good. Good. This is one of the biggest things. From my perspective, there are kind of like three things that I think are really important right now. One is that they're communicating. That's like kind of first and foremost. So I'm glad to hear that. The other things are making sure that they</v>
+
+00:06:27.664 --> 00:06:27.984
+<v Linden Ault>Ohh.</v>
+
+00:06:37.744 --> 00:06:59.424
+<v Lee Cavellier>are engaging with things within their scope as effectively and efficiently as possible. And I think that means if there's opportunity for retrain on some stuff, then we should talk about where the gaps appear to be, right? Things that you guys are seeing, whether they're technical or</v>
+
+00:06:56.784 --> 00:06:57.184
+<v Linden Ault>Yeah.</v>
+
+00:06:59.464 --> 00:07:18.264
+<v Lee Cavellier>process slash communication. I think we should narrow that down and figure out, okay, well if it's processed, which is something that's Miller specific, if it is then great, let's talk with you guys about how you can help. And then if it's and and or offer us content so that we can help together. If it's</v>
+
+00:07:18.624 --> 00:07:37.624
+<v Lee Cavellier>communication kind of stuff or standard process that is just expected of Helpdesk. We want to help facilitate cleanup or further development on those fronts. So keep with, you know, we can use this as an opportunity to dig into some of those instances. I'm not particularly worried about like...</v>
+
+00:07:22.504 --> 00:07:22.984
+<v Linden Ault>Mhm.</v>
+
+00:07:35.584 --> 00:07:36.064
+<v Linden Ault>Yeah.</v>
+
+00:07:37.744 --> 00:07:52.464
+<v Lee Cavellier>individual examples acceptance so far as they drive attention to trends that we're seeing and can help us pinpoint where we're going to get the most bang for our buck if we all dedicate time and attention to growing the team member skill set.</v>
+
+00:07:42.224 --> 00:07:42.704
+<v Linden Ault>Mhm.</v>
+
+00:07:49.984 --> 00:07:50.384
+<v Linden Ault>Yeah.</v>
+
+00:07:53.264 --> 00:08:13.024
+<v Linden Ault>Like what I've seen, and I brought this to Aman's attention earlier in the week, like, we're getting a lot of okay, buts. Now, okay, but in terms of crew ratings, I don't necessarily see them as negative. They just mean there's room for improvement. In most of those instances I'll reach out, it comes down to either you took too long,</v>
+
+00:07:58.264 --> 00:07:58.384
+<v Lee Cavellier>Yeah.</v>
+
+00:08:03.464 --> 00:08:04.064
+<v Lee Cavellier>Mm.</v>
+
+00:08:13.184 --> 00:08:32.544
+<v Linden Ault>to resolve my issue. You took too long before you escalated, or it was just an overall communication thing, or it was a feel. But if a customer feels a way regarding communication, I can't really help that in terms of like how they're speaking with the customer, I'm sure they're doing it in a professional manner.</v>
+
+00:08:27.584 --> 00:08:28.024
+<v Lee Cavellier>Yeah.</v>
+
+00:08:32.944 --> 00:08:52.104
+<v Linden Ault>But time has definitely been always, it's always been a concern of customers. Like sometimes they call and they don't want the first voice or the first interaction to be with ITBD on text sometimes. Like customers that like Pincus and Carrier, one of our customers, Dorothy will hang up the phone.</v>
+
+00:08:53.224 --> 00:08:54.544
+<v Linden Ault>Until she gets somebody else.</v>
+
+00:08:56.624 --> 00:09:00.304
+<v Lee Cavellier>Regardless of which, which regardless of which ITBD text she gets.</v>
+
+00:08:56.784 --> 00:08:57.184
+<v Linden Ault>An.</v>
+
+00:09:00.944 --> 00:09:06.704
+<v Linden Ault>Yeah, she will hang up. It's just, I don't know if it's the experience she's had. I've, I think it's.</v>
+
+00:09:08.304 --> 00:09:17.504
+<v Linden Ault>She just knows that certain people can't do it. Like, like I want to, I want to raise their faith in the technicians on the phone. It shouldn't matter who answers.</v>
+
+00:09:12.704 --> 00:09:12.984
+<v Lee Cavellier>Mm.</v>
+
+00:09:18.104 --> 00:09:19.024
+<v Lee Cavellier>Absolutely.</v>
+
+00:09:18.384 --> 00:09:19.664
+<v Linden Ault>But, yeah.</v>
+
+00:09:18.704 --> 00:09:18.944
+<v Aman Thakur>Yeah.</v>
+
+00:09:20.464 --> 00:09:31.984
+<v Lee Cavellier>Interesting. Yeah, that's obviously something we want to avoid or fix the perception of. But also, like, what does, you know, that's a good example. So now,</v>
+
+00:09:24.984 --> 00:09:25.464
+<v Linden Ault>Mhm.</v>
+
+00:09:33.744 --> 00:09:46.544
+<v Lee Cavellier>And similarly, like I saw one of the crew who things from earlier in the week, right? Aman shared with us that we got these, a few of these okay, but so I'm not, I'm not surprised. And I appreciate you calling it out.</v>
+
+00:09:47.264 --> 00:09:47.744
+<v Linden Ault>Mhm.</v>
+
+00:09:47.984 --> 00:09:52.624
+<v Lee Cavellier>What I'm what I'm working with Aman and Amit on is.</v>
+
+00:10:09.264 --> 00:10:09.664
+<v Linden Ault>Yeah.</v>
+
+00:10:09.984 --> 00:10:28.944
+<v Lee Cavellier>Well, but there's what you just said, you know, there's a certain manner in which if you communicate cleanly and clearly and their experience is good up until you escalate it, you know, did they have to wait 45 minutes because the 1st 30 minutes were with somebody who didn't know the answer? Yeah.</v>
+
+00:10:30.544 --> 00:10:50.304
+<v Lee Cavellier>If they had a good enough experience and communication in that 30 minutes, will they complain about it? Probably not. Like it may not be the best experience. They probably won't send a good survey, but they won't go out of their way to call attention to it if a team's communicating cleanly and clearly.</v>
+
+00:10:41.024 --> 00:10:41.504
+<v Linden Ault>Mhm.</v>
+
+00:10:43.784 --> 00:10:44.784
+<v Linden Ault>Because I think...</v>
+
+00:10:50.944 --> 00:10:54.424
+<v Lee Cavellier>Kind of part of my mindset on it. Sorry, go ahead, Linden.</v>
+
+00:10:55.104 --> 00:11:13.904
+<v Linden Ault>Oh no, so I was saying, yeah, so I was saying with the, in terms of the communication, they are working on it in terms of time, they need to pay attention for tickets, especially by priority. We do have times that we set where if you see it going outside of that time limit,</v>
+
+00:10:55.624 --> 00:10:57.264
+<v Lee Cavellier>Everybody ready? Yeah.</v>
+
+00:11:15.104 --> 00:11:33.584
+<v Linden Ault>Even if you're sure, like either reach out for confirmation if you can proceed, if you're confident you're going to get this done, or escalate it within that period of time. Like for like a VPN, I don't expect you to take 3 hours. If it's taking you 3 hours, obviously, you probably need to get another set of eyes on that.</v>
+
+00:11:25.584 --> 00:11:26.704
+<v Lee Cavellier>Yeah, yeah.</v>
+
+00:11:33.664 --> 00:11:54.544
+<v Lee Cavellier>You're not finding it. Yeah, you're not finding it. Yeah, absolutely. Absolutely. And us understanding those thresholds are good. Communication from my perspective, Linden, means both. It means what you just described regarding communicating either the need for escalation or assistance versus the fact that I'm going to be able to</v>
+
+00:11:51.024 --> 00:11:51.264
+<v Linden Ault>Yeah.</v>
+
+00:11:55.584 --> 00:12:18.504
+<v Lee Cavellier>I confident I'm going to close this in that extra 10 minutes. So just give me 10 more minutes kind of thing. But it also means, it also means making the end user feel comfortable and confident, right? Maybe not, maybe not. Maybe you don't find the answer. So I'm confident that it's okay that they're talking to you because if you can't find it, you're going to find the person who will find it.</v>
+
+00:12:00.624 --> 00:12:01.024
+<v Linden Ault>Yeah.</v>
+
+00:12:09.344 --> 00:12:09.664
+<v Linden Ault>Yeah.</v>
+
+00:12:18.544 --> 00:12:39.424
+<v Linden Ault>But just to bring up, sorry about that. So we did rework our escalation channels. So there'll be the tier ones communicating with the tier twos. We're not, we got away with the, they're just going to reach out to the tier threes. So we pushed collaboration. They are communicating if they're escalating.</v>
+
+00:12:19.264 --> 00:12:20.184
+<v Lee Cavellier>And, and yeah.</v>
+
+00:12:22.224 --> 00:12:22.704
+<v Lee Cavellier>Oh, go ahead.</v>
+
+00:12:25.984 --> 00:12:26.384
+<v Lee Cavellier>Okay.</v>
+
+00:12:39.704 --> 00:12:49.664
+<v Linden Ault>They're putting it in that chat. They're owning it until it's handed off. If they need help, they're reaching out. So we've taken steps and they are doing it actively, just so you know.</v>
+
+00:12:50.784 --> 00:13:11.624
+<v Lee Cavellier>Oh, good. No, I'm very glad to hear that. What I'm conscientious of now then is figuring out how to move the solution closer to the end user regardless. All right. Glad that they're being vocal and escalating. What I would love for us to figure out is what are the</v>
+
+00:13:12.784 --> 00:13:33.864
+<v Lee Cavellier>top five escalations we see, if there's like recurring themes of types of technical issues, devices, whatever they are. And maybe we can pinpoint some training around, hey, here's where you find this information or, oh, this lives in somebody's head, let's document that, or this has existed forever and you guys just started following it. Let's</v>
+
+00:13:33.984 --> 00:13:52.744
+<v Lee Cavellier>Let's figure out where the gap is. You know, that kind of runs the gamut of, you know, not at all their fault to, yeah, maybe they got some improvement to do. But if we can figure out what we're seeing as trends, we should be able to, we should be able to drive behavior in the right way. And, and</v>
+
+00:13:48.584 --> 00:13:48.784
+<v Linden Ault>Mm.</v>
+
+00:13:53.184 --> 00:13:55.024
+<v Lee Cavellier>You know, do some focused.</v>
+
+00:13:56.024 --> 00:14:13.344
+<v Lee Cavellier>training to get them realigned with some of these things, because I'm glad that they're communicating escalation. But for me, the faster, the fusion is going to come faster if it can come from them instead of them having to escalate, right? So.</v>
+
+00:14:01.424 --> 00:14:01.864
+<v Linden Ault>Okay.</v>
+
+00:14:13.264 --> 00:14:13.664
+<v Linden Ault>Okay.</v>
+
+00:14:14.864 --> 00:14:17.584
+<v Lee Cavellier>Oh, you picked a safe one, Lewis. I appreciate that.</v>
+
+00:14:19.504 --> 00:14:25.304
+<v Lee Cavellier>I spoke too soon, Linden. You know he's about to change it. He's now looking for his walking dad or something like that.</v>
+
+00:14:28.064 --> 00:14:46.784
+<v Lee Cavellier>Anyway, hey Lewis, we were just touching base about some of these okay butts on the crew who and overall kind of where the team members are sitting with regards to their communication. So Linden was saying that they're getting better.</v>
+
+00:14:47.344 --> 00:14:59.344
+<v Lee Cavellier>and having greatly increased their interaction and collaboration with the team that they're calling attention when they need help. I'm saying that's great, but if we're getting end users saying.</v>
+
+00:15:00.304 --> 00:15:18.944
+<v Lee Cavellier>Yeah, the first person didn't know what to do. The second person picked it up and fixed it in 5 minutes. I want to make sure that we move the solution closer to the end user, get the team solid on whatever trends we're seeing, where we're getting that type of feedback. Because it's not that they're doing anything wrong within SLA or contractual.</v>
+
+00:15:19.504 --> 00:15:37.904
+<v Lee Cavellier>Right, but if we can make it faster, we should, and if we can, you know, support them and in that development, then we're happy to, we're happy to help with that. So, I guess the action that I have, and this is something I see your hand on, and give me one second to finish the point.</v>
+
+00:15:38.064 --> 00:15:57.264
+<v Lee Cavellier>and then I'll toss it your way. The action that I have is we can find the top five escalations that we're seeing and maybe we can evaluate for underpinning reason and Aman, Amit and myself can work together, work with you guys</v>
+
+00:15:39.424 --> 00:15:40.344
+<v Aman Thakur>Thank you.</v>
+
+00:15:57.984 --> 00:16:16.184
+<v Lee Cavellier>to figure out, okay, this is something that's Milner specific process and you guys should retrain on or something that's not Milner specific and we can help take up training, put something in front of you guys and then get it in front of them. Like I just want to find our opportunities to further develop so that you guys</v>
+
+00:16:16.624 --> 00:16:23.264
+<v Lee Cavellier>and your customer base especially, you get increasingly more trust in outcomes from those team members.</v>
+
+00:16:29.984 --> 00:16:52.544
+<v Aman Thakur>Yeah, good. I think I can add one point, but what I did when we get the that crew report and what you sent in the last week, so I did some analysis for specific Abzur and Vernie, so I think what the challenge and the gap which I found, so what is happening here, you know, which leading to a customer, OK, you know, C set and the response that maybe the technician.</v>
+
+00:16:34.304 --> 00:16:34.704
+<v Lee Cavellier>Kurt.</v>
+
+00:16:53.184 --> 00:17:12.784
+<v Aman Thakur>maybe have less experience about the technologies. What is happening, what I observed, and the connect that I had with both. So what happened when they pick a call, right? So I think the challenge is only when they're getting incoming call, right? So for example, Abdul get a call. He started working on the ticket because he's new in the process. Customer asked him.</v>
+
+00:17:12.944 --> 00:17:32.464
+<v Aman Thakur>any XYZ information, right? He's not sure where that information is, right? So you have to go to ITBD and check ID glue, check with Juna, check with other team member. So whatever the time that is taking two, 3 minute to check that, client is waiting on that side, thinking that, oh, this person don't know, he's probably checking it somewhere.</v>
+
+00:17:33.504 --> 00:17:53.344
+<v Aman Thakur>So 2 things which I implemented this week before they started working on a ticket, just go ahead and check the tickets note, check the issue titles, what is the issue, where that information is on server, on the IT glue, on group, whatever the information, click those all information, right, and then call the user. So if user ask anything or...</v>
+
+00:17:53.624 --> 00:18:14.104
+<v Aman Thakur>So they have the excellent plan in short word already ready, what they need to perform and work with the customer. So I think that can fill that gap and whatever the customer is experienced, that delay in the response, because I think the elastic that you forward about that printer, right? So Abdul worked on ticket, he followed the same regular process and the...</v>
+
+00:18:14.264 --> 00:18:33.584
+<v Aman Thakur>tickets note and troubleshooting step. After sparing 30, 35 minute, he reached out to the next level. I got this ticket. Then he came to know this ticket, this printer is not supported Wi-Fi. They only have LAN, you know. So that information was missing on that time. After the ticket got escalated.</v>
+
+00:18:33.744 --> 00:18:51.264
+<v Aman Thakur>The next person just inform the customer in next 10 minute or you only have the LAN printer supported. So what the crew sees at that customer sent, that previous technician spent 40 minute, maybe you don't have enough knowledge, but next person give me the fix within 5 minute.</v>
+
+00:18:52.464 --> 00:18:57.024
+<v Aman Thakur>So I think that's what I observed in the last few days in the ticket that they worked, you know.</v>
+
+00:18:58.304 --> 00:19:13.904
+<v Aman Thakur>So I think the better plan is to be before calling the customer, review the tickets note, review the customer, ask, check with the team, you know, validate the information on ITBD, then call the customer so that they have the complete action plan ready to just fill that gap.</v>
+
+00:19:25.984 --> 00:19:33.704
+<v Aman Thakur>I think that's only in when it's an incoming call that I've asked them to check, review every ticket before they call the customer.</v>
+
+00:19:35.984 --> 00:19:58.224
+<v Lee Cavellier>Yeah. I mean, that should be standard. That should be standard operating procedure. So I'm glad we're reinforcing that. The additional component of that is that there will be scenarios wherein searching for information is a requirement. That will always be the case too. What we what I'd like to do also is understand where the</v>
+
+00:19:37.384 --> 00:19:37.824
+<v Linden Ault>Kurt.</v>
+
+00:19:58.664 --> 00:20:17.104
+<v Lee Cavellier>where the team members sit on the scale of comfort of communicating their actions to the people they're talking with, right? There's a very big difference between being on the Verizon and Verizon saying, what's your issue? And I tell them, oh, my...</v>
+
+00:20:07.784 --> 00:20:08.144
+<v Aman Thakur>Yep.</v>
+
+00:20:17.184 --> 00:20:37.664
+<v Lee Cavellier>phone signal is not working and then silently going and searching things without giving me any context, being like, okay. And then I hear nothing for 10 minutes, right? Or even if it's three minutes, like every second of silence is uncomfortable, especially when you're calling with an issue.</v>
+
+00:20:28.064 --> 00:20:28.224
+<v Aman Thakur>Yeah.</v>
+
+00:20:37.944 --> 00:20:46.464
+<v Lee Cavellier>So let's take that back too. And I don't know, Linden and Lewis, I think you guys have calls recorded from time to time.</v>
+
+00:20:47.544 --> 00:20:48.464
+<v Lee Cavellier>Is that right?</v>
+
+00:20:49.184 --> 00:20:55.264
+<v Lewis Mcdowell>Uh, I believe, yeah, all out or inbound call recordings and outbounds are recorded.</v>
+
+00:20:52.864 --> 00:20:53.024
+<v Lee Cavellier>Okay.</v>
+
+00:20:56.344 --> 00:21:15.504
+<v Lee Cavellier>So it might be, it might be worth what we get items like that, you guys sharing with us how to call, like the call recording, if you, if that's not, if that's within compliance, if you're comfortable doing so, even if it's not sent to us, even if you're able to like share it on a quick call, so we can just like say, oh, well, here's the problem.</v>
+
+00:21:15.744 --> 00:21:26.624
+<v Lee Cavellier>You know, he went dark for 90 seconds while he went looking for something, didn't communicate it to him. I think, again, Lewis, my point to him when before you joined was...</v>
+
+00:21:28.144 --> 00:21:29.904
+<v Lee Cavellier>If, if I'm on for...</v>
+
+00:21:31.344 --> 00:21:33.824
+<v Lee Cavellier>If I'm on with somebody who's making me feel comfortable.</v>
+
+00:21:35.664 --> 00:21:39.344
+<v Lee Cavellier>They may not be as knowledgeable, but I'm probably not taking the time to.</v>
+
+00:21:40.504 --> 00:21:41.104
+<v Lee Cavellier>Complain.</v>
+
+00:21:42.544 --> 00:22:01.504
+<v Lee Cavellier>or to make note of it. You know what I mean? Like, I have faith that they'll, I have faith that they'll develop whatever skill set. And I, and I have, you know, that they finally found, they did find the right person to help solve my issue, even if it wasn't them. And there's a process that's in place that I understand they're supposed to follow.</v>
+
+00:21:45.184 --> 00:21:45.504
+<v Lewis Mcdowell>Yeah.</v>
+
+00:22:01.864 --> 00:22:08.304
+<v Lee Cavellier>That's how IT works. But if they're on, and again, they're not.</v>
+
+00:22:09.264 --> 00:22:18.064
+<v Lee Cavellier>being cordial or making the person feel comfortable, that's a skill set that can be worked. And I think we might want to take it back and figure out.</v>
+
+00:22:19.584 --> 00:22:36.784
+<v Lee Cavellier>And this is just me guessing because I didn't hear the call, but I feel like that's probably what this scenario was. 30 minutes isn't a terribly long delay in being able to do things. If the user was on the call the whole time, that's something that...</v>
+
+00:22:37.824 --> 00:22:40.224
+<v Lee Cavellier>And there probably would have.</v>
+
+00:22:41.424 --> 00:22:44.704
+<v Lee Cavellier>Figured out a way to navigate more.</v>
+
+00:22:46.144 --> 00:23:06.024
+<v Lee Cavellier>tactfully, I guess, is what I'm trying to get at. So yeah, is that something that you guys are able to do? Like, are you able to share those with us when, when we have scenarios, even if they're like, I know this wasn't a fire and it's not a huge negative, but it's something, it's an area of improvement. I want to take it seriously.</v>
+
+00:23:06.384 --> 00:23:06.504
+<v Lee Cavellier>Yeah.</v>
+
+00:23:08.864 --> 00:23:09.184
+<v Linden Ault>Ohh.</v>
+
+00:23:13.584 --> 00:23:13.904
+<v Linden Ault>Oh.</v>
+
+00:23:15.264 --> 00:23:20.144
+<v Linden Ault>Lewis, are we able to like, like in terms of calls?</v>
+
+00:23:19.024 --> 00:23:19.584
+<v Lewis Mcdowell>What?</v>
+
+00:23:21.704 --> 00:23:40.704
+<v Lewis Mcdowell>Well, well, yeah, not provide him the access into the call environment, and that's not going to happen. But as far as providing him call recordings, yeah, that's it's okay to provide him call recordings in regards to ITBD members. That's not a problem for the most part. Yeah, yeah, because it's a learning.</v>
+
+00:23:22.944 --> 00:23:23.984
+<v Lee Cavellier>Call recording is one.</v>
+
+00:23:27.904 --> 00:23:28.224
+<v Linden Ault>Yeah.</v>
+
+00:23:27.984 --> 00:23:29.264
+<v Lee Cavellier>No, no, but like...</v>
+
+00:23:30.304 --> 00:23:30.704
+<v Linden Ault>Yeah.</v>
+
+00:23:40.864 --> 00:24:01.024
+<v Lewis Mcdowell>training experience and coaching experience as well. They need to understand what all took place to better facilitate the entire issue. And, you know, to Lee's point, it's absolutely right. Like, I might not necessarily know everything, but if I was there communicating that I'm following procedures,</v>
+
+00:23:43.664 --> 00:23:43.984
+<v Aman Thakur>Yep.</v>
+
+00:23:44.224 --> 00:23:44.784
+<v Lee Cavellier>Yeah.</v>
+
+00:24:01.304 --> 00:24:22.304
+<v Lewis Mcdowell>The procedures tell me that I need to do steps one through 10, and I communicate that to the client, and we're both on the same page that I'm doing this because that's procedurally I'm supposed to do this. Then usually 9 times out of 10, the clients are understandable in that area that you're doing this process because that's what you have to do. It's your job in this area.</v>
+
+00:24:07.824 --> 00:24:08.024
+<v Aman Thakur>Yeah.</v>
+
+00:24:22.664 --> 00:24:42.864
+<v Lewis Mcdowell>But compare that to somebody that doesn't know everything where they're approaching it. You hear dead air for a good period of time. And then when you don't, when you finally hear something, you're dealing with somebody that's sitting there kind of fumbling around through the entire situation, not really giving you the specifics or anything.</v>
+
+00:24:43.064 --> 00:25:02.104
+<v Lewis Mcdowell>You're hearing a lot of, let me try this. I think this might be it. Maybe this, and every single time, it's not that, it's not that, it's not that. You're, just get me to someone that can, you know, if I hear a, it's a, here's the answer, found it for you, done, I'm good, you know, to that degree. So, yeah.</v>
+
+00:24:48.544 --> 00:24:50.464
+<v Lee Cavellier>Right, right.</v>
+
+00:25:00.304 --> 00:25:03.024
+<v Lee Cavellier>Yeah, exactly. Yeah.</v>
+
+00:25:02.784 --> 00:25:21.944
+<v Lewis Mcdowell>So I can understand in that area as far as his point. And then probably, I mean, for me, when I was on the desk, any time I escalated something, it was due to usually one of two reasons. Either A, I knew it had to be escalated because it</v>
+
+00:25:22.024 --> 00:25:43.584
+<v Lewis Mcdowell>I didn't have the access. I just can't do it. It's impossible for me to do it. So I had to escalate. But then on another side of the coin, as far as escalation was, I didn't, I did all the procedural steps, but I didn't know what to do. You know, I didn't know what the problem was or what, you know, what to look at at this point. I now came to a dead end.</v>
+
+00:25:43.904 --> 00:26:08.144
+<v Lewis Mcdowell>When that type of escalation point came in, I always was proactive. And maybe this is something that Aman can take back to his team as far as, okay, if that came to the situation where I just don't know, I ran into a dead end, this is where now it's a knowledge issue. I was proactively, I would take my notepad out, write the ticket number down, and then with that,</v>
+
+00:26:08.624 --> 00:26:30.384
+<v Lewis Mcdowell>let it flow through its process as far as the escalation and getting dealt with by someone else, but I would personally do a follow-up on that particular ticket to see, hey, what could I have done to actually solve this from my level, you know, to that degree? And sometimes through discoveries, yeah, I find out it's something I couldn't have done.</v>
+
+00:26:26.984 --> 00:26:27.264
+<v Lee Cavellier>Yep.</v>
+
+00:26:30.504 --> 00:26:50.384
+<v Lewis Mcdowell>Fine, that's it. I understand, but at least I know. But then on the other hands, it's something I could have done that myself. Man, I'm surprised I didn't think about that. And then once again, just put that into my bag of tools. And with that, now I know for the, you know, going forward. So I would say, you know, that as far as, you know, anybody.</v>
+
+00:26:50.504 --> 00:27:01.744
+<v Lewis Mcdowell>you know, that's from a tier, you know, tier one, even tier 2. That needs to be a proactive trait that needs to be done to say, hey, what could have I done, you know, to make it better, you know, for the most part.</v>
+
+00:27:03.424 --> 00:27:08.624
+<v Lee Cavellier>Yeah, love that thinking, Lewis. Aman, do you have any questions about about?</v>
+
+00:27:09.544 --> 00:27:13.424
+<v Lee Cavellier>what we're discussing here, what the message is with the team.</v>
+
+00:27:14.624 --> 00:27:18.064
+<v Aman Thakur>Clearly, thank you for all the insight. Yeah, we aligned.</v>
+
+00:27:17.904 --> 00:27:37.584
+<v Lee Cavellier>Yeah, at the last, the last note I'll make about it, Aman, which is worth relaying, and I can be there, so you check in with the engineers if you find that valuable, if you don't think that's going to throw them. But the other thing that's worth noting about what Lewis just said, and if you're if you're explaining, yeah, oh, okay.</v>
+
+00:27:38.064 --> 00:27:59.344
+<v Lee Cavellier>let me do the, here's what the protocol is, here's the process I'm going to follow, because that's going to usually find your solution fastest. It also gives them an opportunity to say, oh, you know, you're following steps and that's fair, but I know somebody else has dealt with this in the past with me. Can you check with this person?</v>
+
+00:27:59.664 --> 00:28:18.224
+<v Lee Cavellier>or, I'm sorry, I don't have time. They can raise the flag and they can, the customer can escalate quicker if they understand and they feel like it's more urgent than that. So it gives an opportunity for, again, the solution to get closer to the end user, you know.</v>
+
+00:28:18.464 --> 00:28:22.304
+<v Lee Cavellier>if they understand what's happening. So, yeah.</v>
+
+00:28:23.424 --> 00:28:28.224
+<v Aman Thakur>Yeah, I made a note of this to do, yeah, to just quickly connect with the team.</v>
+
+00:28:24.384 --> 00:28:24.624
+<v Lee Cavellier>Uh...</v>
+
+00:28:26.624 --> 00:28:46.144
+<v Lee Cavellier>Thank you. I have a I have a hard stop in 2 minutes myself, but I appreciate the discussion. I'm going to be completely didn't do yours yet. If you want to jump into your stuff, appreciate that. But Lewis, Linden, pleasure to see you both. Thank you for the collaboration on that and the insight and</v>
+
+00:28:47.664 --> 00:28:50.224
+<v Lee Cavellier>And I'll hand it over to Aman and I'll probably drop off.</v>
+
+00:28:51.264 --> 00:28:51.744
+<v Linden Ault>Ready?</v>
+
+00:28:51.424 --> 00:28:52.304
+<v Aman Thakur>Thank you, Lee, yeah.</v>
+
+00:28:52.704 --> 00:28:53.184
+<v Lee Cavellier>Thank you.</v>
+
+00:28:56.824 --> 00:29:02.624
+<v Aman Thakur>Okay, thank you. Then I can start our agenda. Let me share my screen.</v>
+
+00:29:04.904 --> 00:29:05.984
+<v Aman Thakur>Let me know if you can see it.</v>
+
+00:29:08.864 --> 00:29:09.344
+<v Linden Ault>Yeah.</v>
+
+00:29:09.664 --> 00:29:29.224
+<v Aman Thakur>Yeah, thank you again. So this is for last week. Data, that's legal for agenda. No changes in the agenda, everything remains same. We already checked and discussed, you know, how are the things at the moment. So these are the highlight for the last week. Yeah, thank you.</v>
+
+00:29:29.864 --> 00:29:35.504
+<v Aman Thakur>Lucent, I got the report for the closure also, and for the C. set also.</v>
+
+00:29:36.664 --> 00:29:58.144
+<v Aman Thakur>So, and so accent tracker, I think KP is one we already completed. The one second Maxwell and Valor, I'm not sure Lee and Kris about to connect, so I have to check with Lee what was the outcome of the discussion, Valor and Maxwell replacement. I think he's supposed to connect last.</v>
+
+00:29:58.544 --> 00:30:20.704
+<v Aman Thakur>this Monday, but I'm not sure if that happened or not. Vernin Abdul, the Amber ECC set that we got, we already discussed here. I already updated both. So they are aligned, yeah, but a few to-dos, which I'm going to connect with them. So we have, so what do you suggest, mean, I think only the gap, but I observe is.</v>
+
+00:30:21.344 --> 00:30:40.304
+<v Aman Thakur>not as a technical standpoint of view, only I think the process related, because Junad remember everything by heart, right? What client, what server they are using, but since these both are new and they are kind of checking with here, you know, so I think that's what probably more about to learn what client base.</v>
+
+00:30:40.624 --> 00:31:03.424
+<v Aman Thakur>what information the client have, what printer server they're using. So I think that's going to fill that gap. And again, if their job is not only just going to fix the customer issue, but kind of lose very well said, just kind of repo build to the customer, because I also work as an engineer, right? When I don't have anything to do and I'm working in the back end, I start talking to customer, checking with how they are doing, what all they.</v>
+
+00:31:03.904 --> 00:31:15.984
+<v Aman Thakur>You know, times kind of repo build, so customer feel comfortable. Even end of the call, I may be not able to fix the issue, you know. So probably I'll let them know to kind of build that relationship with the customer.</v>
+
+00:31:17.984 --> 00:31:20.224
+<v Aman Thakur>So the PTO that I think.</v>
+
+00:31:22.224 --> 00:31:40.544
+<v Aman Thakur>These were the PTO that we have. Let me, you can see the note pad, right? I'm going to drop you the email, but just want to check with you. So for Abdul, that was his plan PTO before we onboarded him, right? For May 25th, then 26th, Monday, Tuesday. So.</v>
+
+00:31:41.104 --> 00:31:58.464
+<v Aman Thakur>All the shifts are covered on that particular day. No backup required. Junet brother bedding is next month, so he's as requested, but again, I'm just giving the proposal, then let me know. June 10th, 11, 12th, Palak will be available on that shift.</v>
+
+00:32:01.984 --> 00:32:10.304
+<v Aman Thakur>For 3 days, and Abdul will be available 15 and 16, and Palak both are available on that shift to cover.</v>
+
+00:32:12.064 --> 00:32:24.944
+<v Aman Thakur>And Kundan has also some PTO plan, so he's traveling his home time to meet his parents, so, but yeah, so the shift is covered on that all during any of absence of any of the engineer.</v>
+
+00:32:29.744 --> 00:32:43.424
+<v Aman Thakur>So I can send you the email with all the details, but just want to bring it here so you are aware that yeah, I validated everything, the shift timing and everything that yeah, we have the people available to cover on those all shift.</v>
+
+00:32:46.784 --> 00:33:05.904
+<v Aman Thakur>I will email you the same information. Yeah, we'll talk about the performance. So just to compare, yeah, I also saw the metal spike in the utilization side comparison to the last week. So for the two week of data, so Junead, second to 9th was 68% and this week, like previous week, 79.</v>
+
+00:33:07.264 --> 00:33:25.504
+<v Aman Thakur>30 ticket he closed this week and then 36, Gunden 36, and then yeah, 52. Maxwell 84 and 88, Wheeler 64 to 88, Morning 34, May 2nd to 9th. Yeah, but last week was 42.</v>
+
+00:33:25.984 --> 00:33:40.464
+<v Aman Thakur>Abdul, he was out for two days, so only worked for three days, so 30 to 65 percent. I saw good improvement on the billable utilization side, making sure the quality and hygiene of the ticket are good, you know.</v>
+
+00:33:42.704 --> 00:33:51.984
+<v Aman Thakur>I think that's what I have. Probably I can show you one more thing, which is I'm trying to build a working of the last, I think, more than month.</v>
+
+00:33:54.544 --> 00:33:54.744
+<v Aman Thakur>Alright.</v>
+
+00:33:55.704 --> 00:33:59.504
+<v Aman Thakur>If that help you to anything, then let me know.</v>
+
+00:34:00.704 --> 00:34:01.824
+<v Aman Thakur>You can see my screen, right?</v>
+
+00:34:04.384 --> 00:34:23.104
+<v Aman Thakur>So what we what I have built here, I mean we get I think two months back when Paul has provided the API access for the connect device. So this is what it is fetching the connect device data on live what the board they used to work. So which will give me the so I no need to go now for.</v>
+
+00:34:23.504 --> 00:34:41.904
+<v Aman Thakur>ConnectWise here to check individually tickets, their board review, how many tickets, notes they are working, closing, right? That's what I used to follow that practice earlier. You know, a lot of manually efforts and time consuming process. So from here, I can see all the numbers on the board.</v>
+
+00:34:43.624 --> 00:35:01.224
+<v Aman Thakur>how many tickets they have, what is the resolution rate that we have, how many ticket they resolved today. So this connect wise is how many open tickets we have, how many P1 we have, average ticket handle time, how many ticket we have on Helpdesk, on backup board.</v>
+
+00:34:52.944 --> 00:34:52.984
+<v Lewis Mcdowell>Oh.</v>
+
+00:35:01.344 --> 00:35:21.104
+<v Aman Thakur>how many we have on unassigned. Similar go for ITBD specific. So I can see individually everyone performance. I can see for the whole group what is their billable, non-billable percentage utilization, how many ticket they work, last three months performance. So this I can check.</v>
+
+00:35:21.264 --> 00:35:22.384
+<v Aman Thakur>Everything from...</v>
+
+00:35:23.464 --> 00:35:42.944
+<v Aman Thakur>this single dashboard which will give me the maybe syncing every after two minutes the data from there. So I mean another piece I build is this. So this is checking your entire ConnectWise flow of the ticket overall health of all the boards.</v>
+
+00:35:44.304 --> 00:36:01.784
+<v Aman Thakur>ticket status, how many ticket we have reopen, what is the escalation percentage, SLA compliance, average resolution, first touch, ticket volume trend, SLA breach, and ticket flow as a technology wise that they are getting.</v>
+
+00:36:03.104 --> 00:36:11.224
+<v Aman Thakur>So this I build, still I'm working on it, which will give me the clear idea of the entire board. Same goes for the...</v>
+
+00:36:13.104 --> 00:36:31.504
+<v Aman Thakur>ticket quality for the entire part. What is the compliance of the ticket? So this compliance parameter is included. All the ticket hygienic tickets notes that they're putting. So if maybe example, any engineer work on a password reset ticket. As per his notes.</v>
+
+00:36:31.984 --> 00:36:52.064
+<v Aman Thakur>The time should be maybe 10 minutes spent on the ticket, but if the time is entered maybe 15 minutes, it will give me that the time is exceeding as per the ticket notes, what engineer has mentioned in the notes. So I think it's very pretty cool information where I can see.</v>
+
+00:36:52.304 --> 00:37:05.184
+<v Aman Thakur>the entire pod, everything information at one platform. Similar for your CSAT report that you crew that you sent. So I can see individual report, but the customer comment.</v>
+
+00:37:06.064 --> 00:37:09.584
+<v Aman Thakur>And overall, what is the percentage of the team?</v>
+
+00:37:14.784 --> 00:37:33.424
+<v Aman Thakur>Yeah, so I'm still building this. Let's see how it'll be going to be complete, and once that will be fully in a build, probably I can share access to you guys if you think it's gonna help anything at your side, so all because Sunny is more involved into the AI side, so...</v>
+
+00:37:33.704 --> 00:37:54.784
+<v Aman Thakur>Being an apartment manager, I'm also trying to get manual work less and, you know, doing everything on a centralized board, you know, checking, so I connect with them, but earlier I just go to ticket. I was just reviewing this ticket morning, go to ticket, open it, see the notes, what is the SLA, when the engineer started working on the ticket, et cetera, but now from here.</v>
+
+00:37:55.184 --> 00:37:57.024
+<v Aman Thakur>I can check and see everything.</v>
+
+00:37:59.584 --> 00:38:06.224
+<v Aman Thakur>So I think once this be completely build, I will definitely, if you need the access, I can probably give you the access to.</v>
+
+00:38:07.264 --> 00:38:25.664
+<v Aman Thakur>So nothing, only we have just the read access for the EPA. It was just it fetching the numbers from the connect wedge and just reflecting as a kind of centralized dashboard for everything. I think we don't have any mechanism where we, I think maybe you have the MSP ward, right, where you track the SLA, first touch resolution, et cetera, everything.</v>
+
+00:38:27.024 --> 00:38:45.984
+<v Aman Thakur>So I think it's a similar way it is going to work, but yeah, in a broader way where you can check individual ticket, you can check overall. And I think I'm trying to add, figure out the client-wise volume of your ticket, that which client send or open most of the tickets, you know. So this client opened this week.</v>
+
+00:38:46.384 --> 00:39:05.904
+<v Aman Thakur>30 tickets, this client 20, so who is the less number and who is the higher side to see the trend of what is the reason why this client is, you know, opening these many ticket, what is the repeated issue? So to kind of give us a broader picture, I think another thing is the technology wise. So how many ticket we are getting for each?</v>
+
+00:39:05.944 --> 00:39:25.464
+<v Aman Thakur>email issue, how many ticket we are getting for the server. So end of the month, we can just kind of compliance that report to see what are the trend of this month. So we get this month for 30% of ticket for alert only and 40% of the end user support. So kind of analyze all those ticket and kind of make a better plan.</v>
+
+00:39:28.864 --> 00:39:45.104
+<v Aman Thakur>Fred, think anything from your side. I'm open to for any input suggestion that you think can help us to centralize the data and, you know, see in a broader picture. I can definitely make those changes, whatever the suggestion you think would be.</v>
+
+00:39:30.624 --> 00:39:31.024
+<v Lewis Mcdowell>Kour.</v>
+
+00:39:46.544 --> 00:39:47.664
+<v Aman Thakur>Work for my side.</v>
+
+00:39:49.664 --> 00:39:57.344
+<v Lewis Mcdowell>No, I mean, right now, just kind of thinking it over. I mean, all good ideas. It looks pretty neat.</v>
+
+00:40:00.864 --> 00:40:10.144
+<v Lewis Mcdowell>So yeah, just thinking it over for the most part. But just a side question, dealing with crew who, did you get a chance to test your access?</v>
+
+00:40:12.544 --> 00:40:25.024
+<v Aman Thakur>I got the thing I was trying to, so I have to check today because I saw your email, but I only saw the report, yeah. But I can check and just reply the email to you today.</v>
+
+00:40:18.624 --> 00:40:18.944
+<v Lewis Mcdowell>OK.</v>
+
+00:40:22.544 --> 00:40:23.024
+<v Lewis Mcdowell>Gaur.</v>
+
+00:40:25.064 --> 00:40:42.864
+<v Lewis Mcdowell>You should be able to log into the portal and everything, from my understanding, and be able to interact for the most part and see, or the objective was to, hey, now you don't even have to rely on the report. You should be able to pull your own report or at least look at everything.</v>
+
+00:40:31.264 --> 00:40:31.664
+<v Aman Thakur>See that.</v>
+
+00:40:40.704 --> 00:40:41.424
+<v Aman Thakur>I see they do.</v>
+
+00:40:44.944 --> 00:40:50.144
+<v Aman Thakur>I'm going to use, yeah, I saw what about the credential, a separate one or?</v>
+
+00:40:52.944 --> 00:40:56.144
+<v Lewis Mcdowell>From my understanding, you already had an account.</v>
+
+00:40:57.504 --> 00:41:00.384
+<v Aman Thakur>On the crew, no, I think I have only connect to his account.</v>
+
+00:41:02.544 --> 00:41:06.304
+<v Aman Thakur>So if you have the URL, the credential, what I'm going to use.</v>
+
+00:41:07.664 --> 00:41:08.864
+<v Aman Thakur>Then I can verify that.</v>
+
+00:41:14.464 --> 00:41:20.944
+<v Aman Thakur>So once you created the account, am I supposed to get any kind of welcome email to set the credential first time or?</v>
+
+00:41:22.304 --> 00:41:22.944
+<v Lewis Mcdowell>Um...</v>
+
+00:41:23.904 --> 00:41:43.344
+<v Lewis Mcdowell>I mean, if there was, like I said, from my understanding, or at least what she's ending to is you already had one, so I can only assume one was done a long time ago. So I'm messaging her now to see about that, and I'll respond back to you, or at least let you know.</v>
+
+00:41:28.944 --> 00:41:30.144
+<v Aman Thakur>My only.</v>
+
+00:41:43.904 --> 00:42:02.464
+<v Aman Thakur>Yeah, I think that was for the previous person who was managing. Shane was there. Probably his account was set up, but not mine. Because I remember I never get anything for crew account, you know. Yeah, so let me know if probably I'm going to get any welcome email or anything, then I can set up the password and everything, then let you know.</v>
+
+00:42:03.224 --> 00:42:03.584
+<v Lewis Mcdowell>Okay.</v>
+
+00:42:05.624 --> 00:42:22.064
+<v Aman Thakur>I think, all right, I think we're good. Yeah, thank you again for highlighting and making things, you know, more better way. So again, I appreciate the immediate feedback, right? Rather waiting for the weekly call to happen and we can take immediate action and we'll see those improvement on the side.</v>
+
+00:42:23.104 --> 00:42:23.504
+<v Lewis Mcdowell>Okay.</v>
+
+00:42:24.544 --> 00:42:25.184
+<v Linden Ault>All right.</v>
+
+00:42:24.624 --> 00:42:28.144
+<v Aman Thakur>All right, thanks so much. Enjoy the rest of the day, and you have a good weekend.</v>
+
+00:42:29.344 --> 00:42:30.624
+<v Linden Ault>OK. Thank you.</v>
+
+00:42:30.224 --> 00:42:31.104
+<v Aman Thakur>Take care. Bye.</v>
+
+00:42:30.784 --> 00:42:32.304
+<v Lewis Mcdowell>Okay, appreciate it. Bye.</v>
+
+00:42:32.304 --> 00:42:32.464
+<v Aman Thakur>But.</v>
+

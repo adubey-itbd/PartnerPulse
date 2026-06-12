@@ -1,0 +1,936 @@
+WEBVTT
+NOTE title: Netgain Technology | ITBD Service Call
+NOTE date: 2026-05-04
+NOTE duration: 45m 56s
+
+
+00:00:26.282 --> 00:00:27.522
+<v Aaron Guglani>Good morning, Sai. How are you?</v>
+
+00:00:29.202 --> 00:00:29.802
+<v Sai Chelikani>Morning.</v>
+
+00:00:45.642 --> 00:00:46.362
+<v Keith Rozario>Morning, say.</v>
+
+00:00:46.962 --> 00:00:47.402
+<v Sai Chelikani>Morning.</v>
+
+00:00:48.642 --> 00:00:49.322
+<v Aaron Guglani>Hi, Keith.</v>
+
+00:00:50.202 --> 00:00:50.842
+<v Keith Rozario>Hello.</v>
+
+00:00:55.962 --> 00:00:58.682
+<v Keith Rozario>How was your last week, Sai? You got relaxed?</v>
+
+00:01:00.242 --> 00:01:11.082
+<v Sai Chelikani>I didn't have time off. I was meeting with some of the other leaders here in the headquarters in Minnesota. So, but it was good. I had a good time.</v>
+
+00:01:07.082 --> 00:01:07.722
+<v Keith Rozario>Ahh.</v>
+
+00:01:10.042 --> 00:01:12.842
+<v Keith Rozario>Ah, okay, okay, nice.</v>
+
+00:01:15.162 --> 00:01:17.962
+<v Keith Rozario>I thought you went on vacation or something. I was happy about it.</v>
+
+00:01:18.842 --> 00:01:19.642
+<v Sai Chelikani>I wish.</v>
+
+00:01:20.282 --> 00:01:20.922
+<v Keith Rozario>Yeah.</v>
+
+00:01:22.522 --> 00:01:23.642
+<v Keith Rozario>Hey, Kevin, good morning.</v>
+
+00:01:23.882 --> 00:01:24.842
+<v Kevin Lynott>Morning, Hayden.</v>
+
+00:01:25.562 --> 00:01:29.842
+<v Keith Rozario>All well, all well. How are you? Nice.</v>
+
+00:01:27.722 --> 00:01:28.122
+<v Kevin Lynott>Good.</v>
+
+00:01:29.682 --> 00:01:30.522
+<v Aaron Guglani>Morning, Kevin.</v>
+
+00:01:31.082 --> 00:01:31.802
+<v Kevin Lynott>Good morning.</v>
+
+00:01:39.242 --> 00:01:44.842
+<v Keith Rozario>Sameer wanted to connect with you, Sai. So do you have time tomorrow? Can I book some slot?</v>
+
+00:01:46.442 --> 00:01:48.042
+<v Keith Rozario>regarding the same discussion that you were having.</v>
+
+00:01:46.522 --> 00:01:46.842
+<v Sai Chelikani>Yeah.</v>
+
+00:01:50.442 --> 00:02:12.002
+<v Sai Chelikani>Just as a heads up, what I'm trying to get, what I was trying to get was some initial information and pricing to see if we can move forward. Likely the decision on that NOC piece won't happen until later in July once we finish replacing our alerting system because we're completely replacing our alerting system.</v>
+
+00:01:54.682 --> 00:01:54.842
+<v Kevin Lynott>Yeah.</v>
+
+00:01:56.842 --> 00:01:57.082
+<v Keith Rozario>Kirk.</v>
+
+00:02:06.322 --> 00:02:06.522
+<v Keith Rozario>Mm.</v>
+
+00:02:12.122 --> 00:02:32.362
+<v Sai Chelikani>with Logic Monitor and going to Zabbix. So we're only gonna, we would only make a decision for that after, but it would be good to understand what the pricing is and likely there would need to be, you know, several other rounds of demos and, you know, meetings before we would make.</v>
+
+00:02:17.242 --> 00:02:17.722
+<v Keith Rozario>Make that.</v>
+
+00:02:21.402 --> 00:02:21.882
+<v Keith Rozario>Fair enough.</v>
+
+00:02:30.042 --> 00:02:30.442
+<v Keith Rozario>True.</v>
+
+00:02:32.602 --> 00:02:38.922
+<v Sai Chelikani>A final decision on that, but I just, so I just want to set expectations that there wouldn't be a decision made immediately.</v>
+
+00:02:35.242 --> 00:02:35.642
+<v Keith Rozario>True.</v>
+
+00:02:39.562 --> 00:03:01.642
+<v Keith Rozario>No worries, no worries. And he has certain things in place to showcase. I mean, there are multiple plans that we have in NOC. There are four that I'm aware of. So yeah, he probably has the best price available, wants to showcase it to you, what all will be supported and what plan and scope. So I think that's probably what he wants to discuss about. And yeah, I'll set the expectations right with him as well.</v>
+
+00:03:05.802 --> 00:03:09.242
+<v Keith Rozario>Alrighty, just a second, please.</v>
+
+00:03:22.602 --> 00:03:26.762
+<v Keith Rozario>Alright, I'll share my screen real quick with you guys. Just let me know once it's visible, please.</v>
+
+00:03:32.922 --> 00:03:34.602
+<v Keith Rozario>And there you go.</v>
+
+00:03:40.362 --> 00:03:40.762
+<v Keith Rozario>Right.</v>
+
+00:03:42.122 --> 00:03:43.642
+<v Keith Rozario>One second, please.</v>
+
+00:03:51.482 --> 00:04:10.682
+<v Keith Rozario>Right, jump right into it. We look at the agenda first, check-in, highlights, action tracker, performance analysis, AI by design, way forward, and recap. We'll start with how things are. Anything, I mean, we connected last to last week. Anything since then? I mean, we, of course, we connected every second day as well after that. There were a couple of.</v>
+
+00:04:11.002 --> 00:04:27.882
+<v Keith Rozario>issues that came up which we were working on as well regarding the usage of the escalation channel and all sorts of things. But yeah, just wanted to check with you, Sai, since you were out last week, but probably Kason must have reached out to you with something or you have any feedback you'd like to share that you haven't shared yet.</v>
+
+00:04:31.402 --> 00:04:32.602
+<v Keith Rozario>Mute, unmute, type.</v>
+
+00:04:34.602 --> 00:04:54.922
+<v Sai Chelikani>My bad. The urgent issues piece was one of the biggest ones for me in terms of trying to understand how do we do better in that workflow, right? I mean, overnight catching, you know, outside of normal business hours, those pieces are the biggest concern for us because we consistently are failing in</v>
+
+00:04:45.562 --> 00:04:45.642
+<v Keith Rozario>The.</v>
+
+00:04:55.002 --> 00:05:14.402
+<v Sai Chelikani>in handling those in the best way, right, in terms of either not following up as we supposed to or, you know, not following the right process and not being aligned. So that's my biggest concern. So I think I offered that I would be able to be available to provide the training myself.</v>
+
+00:05:14.482 --> 00:05:25.322
+<v Sai Chelikani>and that's fine if you want to do that. So I'm not sure if you shared a plan with Kason as to what that plan is, you know, in terms of training, retraining on that.</v>
+
+00:05:27.642 --> 00:05:32.042
+<v Sai Chelikani>So, I mean, it would be great if you could email me some information related to that.</v>
+
+00:05:32.722 --> 00:05:52.442
+<v Keith Rozario>We will share something today itself. The plan for just an overview. We are picking up chunk of three engineers each. Aaron will connect with those engineers in small groups and we'll train them again. So it'll be a round of good three, 4 training sessions that he's going to conduct with three individuals each again. And we'll cover the entire.</v>
+
+00:05:53.162 --> 00:06:11.882
+<v Keith Rozario>team, which is off hours and business hours. And once that's done, we will connect with you, maybe schedule a connect with you and them. And if you want to assess them with whatever queries or maybe scenarios that you have so that you have clarity on where they stand now, that'll be something that we would be doing maybe at.</v>
+
+00:06:12.602 --> 00:06:27.562
+<v Keith Rozario>Aaron, I think you have a plan in place. I'll just quickly review that before you share it with Sai and Kason, of course. So we'll share something by the end of the day today, Sai. A quick plan. I would like to know if you are aligned with it and you'd like to do that assessment that we're talking about at the end of the session.</v>
+
+00:06:29.282 --> 00:06:29.562
+<v Sai Chelikani>Kam.</v>
+
+00:06:30.202 --> 00:06:30.322
+<v Keith Rozario>And.</v>
+
+00:06:31.562 --> 00:06:45.082
+<v Sai Chelikani>Outside of that, I think we had the conversation about Diksha, right? So that was the other concern that she wasn't really meeting our L2 standard when it came down to doing her final assessment in that category.</v>
+
+00:06:31.642 --> 00:06:32.122
+<v Keith Rozario>Kour.</v>
+
+00:06:41.922 --> 00:06:42.042
+<v Keith Rozario>Yeah.</v>
+
+00:06:49.242 --> 00:06:53.322
+<v Sai Chelikani>That was, that was a concern. So, what, what's your plan around that?</v>
+
+00:06:49.762 --> 00:06:49.882
+<v Keith Rozario>Yeah.</v>
+
+00:06:51.642 --> 00:06:51.762
+<v Keith Rozario>Yeah.</v>
+
+00:06:54.042 --> 00:07:14.962
+<v Keith Rozario>I was having a word. I had a small chat with Javid about it. I want to have a bigger discussion and detailed discussion with him after that as well. I couldn't connect with him since he was caught up with the Kaseya piece last week, the conference. But yeah, I need to connect with him because I think to start with, and this is my view and I think he is aligned with it, but still we will.</v>
+
+00:07:15.042 --> 00:07:33.802
+<v Keith Rozario>try to find a middle ground and sort things out for you guys as well. But if you find that there are certain areas where she needs to focus on, then of course, since she just started, I was thinking of, you know, giving her the area to improve, giving her the opportunity to improve. If there are any...</v>
+
+00:07:35.322 --> 00:07:53.282
+<v Keith Rozario>Again, like I said, I don't remember the individuals who connected with Dikshay and figured out that she was lacking on a few skill sets. If you share those things with us, me, Aaron, and I'm sorry, Aaron and other individuals here, we can definitely, you know, take some, take a few sessions with her, whatever training is required, we can definitely.</v>
+
+00:07:54.122 --> 00:08:15.562
+<v Keith Rozario>conduct those internally and make sure she's, you know, powered up and meeting your expectations because she just started, went through a good two rounds of interviews and I think I think she we should we should, you know, at least provide the individual with with a chance. So that is something that I would like to propose, but still let me.</v>
+
+00:08:15.722 --> 00:08:20.762
+<v Keith Rozario>Take this concern to Javid once again and get back to you and we'll let you know what he feels about it.</v>
+
+00:08:22.682 --> 00:08:30.362
+<v Sai Chelikani>Yeah, so the issues that we had with her, again, you can probably get that from Kason. I think he was the one who...</v>
+
+00:08:31.962 --> 00:08:52.642
+<v Sai Chelikani>Had that feedback? I'm trying to, I'm trying to look for it. I don't, I don't see recently. OK, so yeah, so I think the issues were not necessarily process related, but they were more of a issue with wasn't a net gain process related, it was more of understanding of the.</v>
+
+00:08:34.362 --> 00:08:36.762
+<v Keith Rozario>Yeah, he did drop a message, yes.</v>
+
+00:08:53.482 --> 00:09:12.562
+<v Sai Chelikani>cloud environment in AVD. There were some critical pieces and troubleshooting. The way she engaged troubleshooting was incorrect, you know, of where she was looking. There were things that were obvious that a L2 would have known where she didn't know. And that was replicated across three separate tickets on three different.</v>
+
+00:09:12.642 --> 00:09:27.482
+<v Sai Chelikani>different issues and clients. So because she wasn't looking at that, I mean, we feel pretty confident saying she right now is more of an L1 in terms of what we categorize them at versus the L2.</v>
+
+00:09:30.042 --> 00:09:45.082
+<v Keith Rozario>And if I may, like I said, I need to connect with Javid to get this piece straightened out for you guys, but if I may understand your, I mean, your, I mean, what do you suggest here, your recommendation? What do you think should be done in this case?</v>
+
+00:09:45.562 --> 00:10:09.402
+<v Sai Chelikani>She has a higher ceiling than one of the L1 ones. So I think #1 is that we should go ahead and put a posting out for another L2 and go down that path. She right now is an L1, although she is at a, yeah, she has a higher ceiling comparatively to the other L1s that we have. So what I think we should do is we should replace</v>
+
+00:09:50.762 --> 00:09:50.922
+<v Keith Rozario>Mm.</v>
+
+00:10:03.402 --> 00:10:03.882
+<v Keith Rozario>Mhm.</v>
+
+00:10:05.962 --> 00:10:06.122
+<v Keith Rozario>Mm.</v>
+
+00:10:09.562 --> 00:10:24.362
+<v Sai Chelikani>likely Gautam and keep Diksha and look at getting another L2 on the team. But we would have to work out what that would mean in terms of cost and all of that, putting all of that together.</v>
+
+00:10:27.002 --> 00:10:46.162
+<v Keith Rozario>Okay, so, because Disha already replaced Paxton, and then that's how the contract was designed for her, because Paxton, in that case, Paxton's last, I mean, the renewal date was, I think, December something. Kevin, you can correct me if I'm wrong, and then that's how Disha's.</v>
+
+00:10:46.322 --> 00:10:53.802
+<v Keith Rozario>renewal date was changed to December. So it was not a one-year contract. Her contract was matched with what Paxton was since she was a replacement for him.</v>
+
+00:10:56.442 --> 00:11:02.042
+<v Keith Rozario>Plus, I need to work on the email that came out from Kevin today regarding a few changes that are needed, so...</v>
+
+00:11:03.282 --> 00:11:22.442
+<v Keith Rozario>need to check on Gautam's piece as well. Sai, I need a little time here. And for Luis, I'm not sure. I mean, Sai, me and you had a conversation about it. I don't think Kevin was informed. We are also looking for Luis's replacement. And I have a few people in mind who I would like you to interview.</v>
+
+00:11:22.562 --> 00:11:34.442
+<v Keith Rozario>Because if you remember, I talked to you about his health. It's kind of going in the bad direction. We would be needing to relieve him soon because he's not in a very good condition right now.</v>
+
+00:11:33.402 --> 00:11:33.722
+<v Sai Chelikani>Yeah.</v>
+
+00:11:35.962 --> 00:11:54.762
+<v Sai Chelikani>I'm fine with doing that with Luis. I think that was expected and that's okay. I think more with Diksha, we are planning in the short term, when I say short term in the next three weeks of moving to a whole new upgraded Connect Y system and plan where having the right people and having a greater L2</v>
+
+00:11:40.682 --> 00:11:41.162
+<v Keith Rozario>Yeah.</v>
+
+00:11:55.002 --> 00:12:16.602
+<v Sai Chelikani>availability is key. You know, having the L2 resources that we need online are key. So I am okay with doing that. One, we need to move quickly. We can't be, you know, slowing down in some of these things. When we talk about Diksha's replacement and the contract related to that, I mean, I know Kevin might have more comments related to that piece specifically.</v>
+
+00:11:57.322 --> 00:11:57.802
+<v Keith Rozario>Mhm.</v>
+
+00:12:08.922 --> 00:12:09.602
+<v Keith Rozario>Yeah, mhm.</v>
+
+00:12:16.922 --> 00:12:36.762
+<v Sai Chelikani>But we're, I mean, she's, I mean, we would either just replace her outright with another L2, right? Because if she's not meeting the mark of what we are thinking is there, or we look at replacing, you know, keeping her, but replacing, you know, one of the L1s that's already in existence. So we can consider that like an in-place upgrade and looking at replacing the shell with another show.</v>
+
+00:12:17.082 --> 00:12:17.562
+<v Keith Rozario>Mhm.</v>
+
+00:12:37.562 --> 00:12:46.602
+<v Sai Chelikani>I don't want to delay on that on our end in getting interviews and making the decision for whatever we need to work it way out. So Kevin, do you have any thoughts?</v>
+
+00:12:40.482 --> 00:12:40.642
+<v Keith Rozario>Uh-huh.</v>
+
+00:12:42.122 --> 00:12:42.762
+<v Keith Rozario>Of course.</v>
+
+00:12:44.202 --> 00:12:45.642
+<v Keith Rozario>But me, I...</v>
+
+00:12:46.922 --> 00:13:05.562
+<v Kevin Lynott>Well, when it comes to the contract agreement, so the agreements for the roles, and so we're not replacing, eliminating the role within the contract, we're just replacing the resource due to, like you say, the ability concerns. And I think that's within our agreements that we can do that, especially</v>
+
+00:13:05.562 --> 00:13:06.042
+<v Keith Rozario>Mhm.</v>
+
+00:13:05.882 --> 00:13:16.842
+<v Kevin Lynott>Early on, so I don't think replacing or is is is has anything is is not within the realm of the agreement.</v>
+
+00:13:18.442 --> 00:13:21.242
+<v Keith Rozario>You said availability concerns, Kevin, if I heard that right.</v>
+
+00:13:22.602 --> 00:13:27.482
+<v Kevin Lynott>No, not availability. The skill, the capability.</v>
+
+00:13:25.562 --> 00:13:26.362
+<v Sai Chelikani>Capability.</v>
+
+00:13:27.082 --> 00:13:28.602
+<v Keith Rozario>Capability, okay, okay.</v>
+
+00:13:35.482 --> 00:13:53.162
+<v Keith Rozario>Okay, let me, let me, I've noted down the things you've mentioned, Sai and Kevin, you as well. Let me get back to you on this piece, if you guys don't mind. And correct me if I'm wrong, Kevin, I've read the contract myself. I might be wrong here, but.</v>
+
+00:13:54.042 --> 00:14:12.522
+<v Keith Rozario>Are you planning to downsize the team as well, Sai? Because I think for a self-managed account, in order for an account to remain in the self-managed scope, we need to have at least 10 engineers in the team. If that is, I think we're sticking to that. I mean, yes, we have 10 right now, but then are we thinking of downsizing the team since you?</v>
+
+00:14:12.682 --> 00:14:26.762
+<v Keith Rozario>Like you mentioned, Kevin, replacing the bunch with two engineers. So is that a future plan where we are downsizing the number of the count of engineers in the team? Because 10 is something that I think is the minimum count to maintain for a self-managed account.</v>
+
+00:14:28.442 --> 00:14:46.842
+<v Kevin Lynott>I don't think we're necessarily looking to downside. I think what we're necessarily doing is get a better overall configuration of folks within the roles. Like I said, I think they're after what we what we requested today.</v>
+
+00:14:48.282 --> 00:14:51.562
+<v Kevin Lynott>Gives us a better configuration of the team, and then...</v>
+
+00:14:52.762 --> 00:15:04.442
+<v Kevin Lynott>Uh, then possibly looking at the division of L2, but we'll have to look at the 10 mark, but I don't know if that has should have any bearing on what we requested today at this point.</v>
+
+00:15:04.522 --> 00:15:23.162
+<v Keith Rozario>No, no, of course not. Of course, I was just telling you in future if that's the plan where we're replacing 2 L1s with one L2. If we continue to do that, then of course the size will reduce. I'm just letting you guys know and if you can go through it again, I can go through myself. I didn't go through it lately. That's kind of what I remember. But yeah, we'll definitely, that's a talking piece. We can do that later.</v>
+
+00:15:14.042 --> 00:15:14.522
+<v Kevin Lynott>Yeah.</v>
+
+00:15:21.562 --> 00:15:22.042
+<v Sai Chelikani>Kour.</v>
+
+00:15:23.562 --> 00:15:23.842
+<v Keith Rozario>Yeah.</v>
+
+00:15:23.962 --> 00:15:43.162
+<v Sai Chelikani>We're at the minimum, we're a 24, minimum 24-5 organization, right? So that means that there's a minimum requirement for what is available on that team, right? So at this point, we're probably at the minimum resources to support a 24-5</v>
+
+00:15:29.482 --> 00:15:30.522
+<v Keith Rozario>Mhm, mhm.</v>
+
+00:15:36.402 --> 00:15:36.602
+<v Keith Rozario>Mm.</v>
+
+00:15:42.282 --> 00:15:42.762
+<v Keith Rozario>Mhm.</v>
+
+00:15:43.202 --> 00:15:54.842
+<v Sai Chelikani>organization. So I wouldn't see us going less resources than we have today. You know, at least from the current plan, I think we're in a good.</v>
+
+00:15:44.802 --> 00:15:45.082
+<v Keith Rozario>Mm.</v>
+
+00:15:49.242 --> 00:15:49.642
+<v Keith Rozario>OK.</v>
+
+00:15:52.202 --> 00:15:52.682
+<v Keith Rozario>Mhm.</v>
+
+00:15:56.362 --> 00:16:14.922
+<v Sai Chelikani>Place now, what what we move is transfer of the L1s to being L2s, but again, we we, you know, we're covering you, you know, the schedule, you've seen it just as much as I have. We're probably, you know, we're one person in some of these off-hour locations and we have a forward commitment to our clients to.</v>
+
+00:16:01.442 --> 00:16:01.922
+<v Keith Rozario>Mmh.</v>
+
+00:16:12.482 --> 00:16:12.962
+<v Keith Rozario>Mhm.</v>
+
+00:16:15.002 --> 00:16:33.802
+<v Sai Chelikani>to be a 24-5 organization. So, you know, we're pretty much at that point. We've even had to shift some people around one or two hours just to try to get that coverage, you know, from the prime shift. So, you know, I think we're at a number where we are today in terms of that. So that gives you some insight.</v>
+
+00:16:15.562 --> 00:16:15.602
+<v Keith Rozario>I.</v>
+
+00:16:18.202 --> 00:16:18.522
+<v Keith Rozario>No.</v>
+
+00:16:25.682 --> 00:16:26.162
+<v Keith Rozario>Mhm.</v>
+
+00:16:29.002 --> 00:16:29.162
+<v Keith Rozario>Mm.</v>
+
+00:16:31.722 --> 00:16:33.402
+<v Keith Rozario>Okay, okay, yeah.</v>
+
+00:16:34.482 --> 00:16:55.242
+<v Keith Rozario>Fair enough, fair enough. And this reminds me, just a quick out of the topic thing because I don't want to forget it later. Uri, I think walked up to you as well. Aaron, he came up to me as well. I've shared this in the past with you regarding the role that he's playing in the team. He feels he's underutilized and he's fair enough. I mean, it's completely justified on his end to come and discuss.</v>
+
+00:16:55.402 --> 00:17:17.642
+<v Keith Rozario>about these things with me. In fact, I really appreciate this kind of conversation where he's asking for more work, right? So have you, since I think Luis and Uri, they kind of, I think Uri almost handles almost about the same things as Luis does. Have you ever thought of upgrading Uri to NL2? What do you think? Have you received that kind of feedback from Kason before about his skill set and?</v>
+
+00:17:17.842 --> 00:17:37.962
+<v Keith Rozario>What do you think? Because he did come to me twice last week and I told him I'll connect with Sai probably on the service call and we'll discuss about this, wherein he thinks he's being underutilized when it comes to the quality of work, not not the not the amount of tickets he's receiving, but the kind of work he's doing, and he things he can do more and provide more values, which is which is very thoughtful of him as well, so.</v>
+
+00:17:38.402 --> 00:17:39.882
+<v Keith Rozario>What do you think about that site?</v>
+
+00:17:42.522 --> 00:17:42.922
+<v Sai Chelikani>Um...</v>
+
+00:17:44.442 --> 00:17:51.962
+<v Sai Chelikani>We are currently in the process of trying to identify what's L1 work and what's L2 work and all these things.</v>
+
+00:17:53.162 --> 00:17:58.682
+<v Sai Chelikani>Our goal is at that point to right size at that point, what are, what are you know, you know, um...</v>
+
+00:17:54.042 --> 00:17:54.202
+<v Keith Rozario>Mm.</v>
+
+00:18:00.162 --> 00:18:06.282
+<v Sai Chelikani>Which wall and Piyali are definitely our better performing L ones in the group.</v>
+
+00:18:06.402 --> 00:18:07.242
+<v Keith Rozario>Yeah, yeah.</v>
+
+00:18:07.962 --> 00:18:08.202
+<v Sai Chelikani>Um...</v>
+
+00:18:10.042 --> 00:18:28.522
+<v Sai Chelikani>just because he's an L1 or an L2 is more of an internal designation for what kind of work we're asking him to tackle, what's needed internally. So one of the things that we haven't yet discussed, because we're working on it internally, is looking at</v>
+
+00:18:19.482 --> 00:18:19.962
+<v Keith Rozario>Mhm.</v>
+
+00:18:28.922 --> 00:18:50.242
+<v Sai Chelikani>doing the whole ConnectWise rework. And this is going to get a better idea for us to determine what the capacity available is required and from an L1 level, from an L2 level, and from an L3 level. So once we finish that, we would, and we get the numbers to say, here's the amount of L1 work</v>
+
+00:18:46.602 --> 00:18:47.082
+<v Keith Rozario>Mhm.</v>
+
+00:18:50.362 --> 00:19:12.362
+<v Sai Chelikani>coming in, L2, L3, not just what they're closing, but actually the kind of work related to, we're gonna map out, you know, these types of issues are gonna be L, should be L1, this should be L2, all that kind of thing. Once we get that, then we'll have a better idea for what work goes where and where we need to spend our dollars in, you know,</v>
+
+00:19:12.762 --> 00:19:36.562
+<v Sai Chelikani>you know, related to that. But that isn't necessarily, you know, the money piece doesn't necessarily mean anything from his standpoint, right? Because he's just going to be his price. But that's, you know, I'm looking at it on where we should position Bujwal and Piyali. You know, what I am leaning more towards is that they're going to stay L1s and they're going to be doing more volume.</v>
+
+00:19:37.642 --> 00:19:57.362
+<v Sai Chelikani>Right, because as we're reducing by, we're changing and having two more L2s, right? So we're having more of the complex work move away, but then, you know, we move Piyali to be earlier during the day. Same thing with Atul to be earlier during the day in prime shift. So they're going to be more available to take more volume and knock out.</v>
+
+00:19:38.122 --> 00:19:38.602
+<v Keith Rozario>Mhm.</v>
+
+00:19:41.402 --> 00:19:41.522
+<v Keith Rozario>Yeah.</v>
+
+00:19:54.042 --> 00:19:54.522
+<v Keith Rozario>Mmh.</v>
+
+00:19:57.442 --> 00:20:18.362
+<v Sai Chelikani>these things quicker. And that knowledge is important, being more experienced and being able to knock out these easier ones at a higher volume. Because we're going to jump from, you know, our long-term plan is that our L1 volumes going to go, expectations are going to go from, you know, the 8 tickets a day we have now to something more like 15 to.</v>
+
+00:20:00.602 --> 00:20:01.122
+<v Keith Rozario>Mmh.</v>
+
+00:20:07.642 --> 00:20:08.122
+<v Keith Rozario>Mhm.</v>
+
+00:20:18.602 --> 00:20:33.002
+<v Sai Chelikani>you know, 15 to 18 tickets per day. And we're going to need experienced resources to be able to handle that volume. So Ujwal and Piyali will be critical in making that happen. I don't know that I'm going to immediately make them a, you know, a tier 2 right now.</v>
+
+00:20:34.522 --> 00:20:55.162
+<v Keith Rozario>Okay, okay. Yeah, that discussion that you're talking about where you'll be deciding what role would be doing what, that's totally understandable. That's something that we would do as well, of course. For now, do we have any, any, I think you said you're going to be migrating from logic monitors soon. Do you think you need require people there to, you know, kind of carry that out for you?</v>
+
+00:20:55.242 --> 00:21:06.362
+<v Keith Rozario>Maybe some responsibilities would come, if some responsibilities are maybe some modules or tasks can be routed to his towards him would be a little morale booster, I would say.</v>
+
+00:21:07.882 --> 00:21:08.362
+<v Keith Rozario>If...</v>
+
+00:21:08.242 --> 00:21:28.762
+<v Sai Chelikani>The work we're doing there is, from a project perspective, is someone who already understands Zabbix in its entirety, and it's a migration effort, so it's not a, you know, work to do effort, it's a migration effort where they need, where that person would be training and understanding the platform, and realistically.</v>
+
+00:21:16.762 --> 00:21:17.002
+<v Keith Rozario>Mm.</v>
+
+00:21:19.962 --> 00:21:20.122
+<v Keith Rozario>Mm.</v>
+
+00:21:21.162 --> 00:21:21.202
+<v Kevin Lynott>I.</v>
+
+00:21:29.002 --> 00:21:49.802
+<v Sai Chelikani>that project is already in place, it's already in flight, and the stages are already there. So I think this is probably a discussion we table for now. And then we probably talk about on our Tuesday call with Kason and Marlon and see what we can do. But we'll see. We'll need to benchmark.</v>
+
+00:21:44.162 --> 00:21:44.442
+<v Keith Rozario>Yeah.</v>
+
+00:21:49.882 --> 00:22:09.122
+<v Sai Chelikani>right? I mean, realistically, I understand, you know, you know, we had a discussion earlier, although we feel Piyali and Anuj Johal are great, you know, we compared them similar in skill to Diksha, who we're saying is not an L2. So, you know, there still is a gap.</v>
+
+00:21:51.162 --> 00:21:51.402
+<v Keith Rozario>True.</v>
+
+00:22:06.922 --> 00:22:07.162
+<v Keith Rozario>Hmm.</v>
+
+00:22:09.722 --> 00:22:28.562
+<v Sai Chelikani>in terms of how quickly we get to the answers, what we're checking that is there. We will spend some more time training. We will do additional things. I think that's what I'll commit to later on is that once we get some of these things in place and we become a little bit more efficient in our platforms in the next month or two, we can go back and look at training.</v>
+
+00:22:27.202 --> 00:22:27.682
+<v Keith Rozario>Mhm.</v>
+
+00:22:28.642 --> 00:22:34.762
+<v Sai Chelikani>providing specific training with L2s and L3s, training Diksha, training.</v>
+
+00:22:35.722 --> 00:22:59.162
+<v Sai Chelikani>Piyali and Ujwal to get them up to a better skill rate where they could at that point become an L2. But right now I cannot afford, I cannot, I don't want to make any changes until I have the numbers available for where the capacity is and where the inbound volume is. That's number one goal right now before I make any changes.</v>
+
+00:22:43.522 --> 00:22:43.722
+<v Keith Rozario>Mm.</v>
+
+00:22:48.362 --> 00:22:48.842
+<v Keith Rozario>Of course.</v>
+
+00:22:59.882 --> 00:23:19.082
+<v Keith Rozario>Sure, makes sense. Makes sense. And yes, we can have that discussion with Kason as well on our Tuesday call for sure, because we, me and you, we both know where this satisfaction can, what it can lead to. Like, I don't want to be dissatisfied and then start looking for options, of course. Me and you, we don't want to lose them.</v>
+
+00:23:19.562 --> 00:23:38.042
+<v Keith Rozario>So yeah, let's definitely discuss about that in detail with Kason as well and see if he has anything, any extra work at least to start with so that we can, you know, divert him from the dissatisfaction that he has right now. But yeah, that's something on my list. We talk about this on our Tuesday call. Remind me if I forget, Aaron.</v>
+
+00:23:38.322 --> 00:23:42.842
+<v Keith Rozario>But I'll proceed now. Again, I hope my screen is still visible to you guys.</v>
+
+00:23:44.042 --> 00:23:44.522
+<v Sai Chelikani>Yep.</v>
+
+00:23:44.842 --> 00:23:45.482
+<v Aaron Guglani>Boles.</v>
+
+00:23:45.162 --> 00:23:45.642
+<v Keith Rozario>Kour.</v>
+
+00:23:46.522 --> 00:24:08.202
+<v Keith Rozario>All right, very quickly, the highlights, it's pretty much how it was the last time. QA process introduced with the team, maintain quality standard notes on tickets, calibration sessions scheduled every Friday for week on week quality ticket audits. Clear upward trend and utilization, we will check that as well on this call. You'll notice some good upward direction when it comes to the utilization for the engineers who were.</v>
+
+00:24:08.602 --> 00:24:27.802
+<v Keith Rozario>pretty low on our last call. And I started performing regular ticket orders for the team for better documentation experience. He's sharing those scores with the individuals and providing feedback regularly. I've noticed that he keeps me on those emails as well. Closure performance aligned with demand, maintaining quality and ownership standards. Prince off boarded has been completed successfully on April 25th.</v>
+
+00:24:28.362 --> 00:24:42.762
+<v Keith Rozario>Ongoing consistent feedback provided to engineers to ensure stronger alignment with customer expectations. That piece I was just talking about. CSAT remains strong. We're currently setting a 92% something. We'll talk about that in detail. And also the negative or neutral seats as that came along.</v>
+
+00:24:44.442 --> 00:25:03.002
+<v Keith Rozario>We will jump on the action tracker. Just one item open right now, L3L4 candidate hiring. That's of course, that was before this deck was created before I got an email from you, Kevin. But yeah, that's something I need to discuss with Ketan, like I told you. Kevin, I will get back to you today itself. ITBD recommended KPIs. I can skip this slide.</v>
+
+00:25:03.642 --> 00:25:07.242
+<v Keith Rozario>And we'll jump on to the utilization. Sorry, one sec.</v>
+
+00:25:11.242 --> 00:25:12.762
+<v Keith Rozario>Screen seems to.</v>
+
+00:25:14.122 --> 00:25:15.402
+<v Keith Rozario>You're still seeing my screen, right?</v>
+
+00:25:16.442 --> 00:25:16.762
+<v Sai Chelikani>Yep.</v>
+
+00:25:17.562 --> 00:25:20.762
+<v Keith Rozario>Why is it? It's sort of flickering on my end just a sec.</v>
+
+00:25:35.242 --> 00:25:36.362
+<v Keith Rozario>Sharing again.</v>
+
+00:25:42.122 --> 00:25:43.722
+<v Keith Rozario>Alright, please let me know once it's visible.</v>
+
+00:25:45.442 --> 00:25:46.202
+<v Aaron Guglani>It is Keith.</v>
+
+00:25:46.842 --> 00:25:47.322
+<v Keith Rozario>Cool.</v>
+
+00:25:48.442 --> 00:26:08.202
+<v Keith Rozario>Thank you. Right, very quickly, we'll talk about the utilization trends. Last time it was suggested we which we could we should show off hours separately as compared to the prime hour engineers. So starting with the off hours first, this group is a non-standard shift of course, so the 80% benchmark applies, but absolute hour volume will naturally naturally read.</v>
+
+00:26:08.442 --> 00:26:27.722
+<v Keith Rozario>Lower than the prime shift our engineers that we have. So, with that context noted, Shridhar, as you can see, is sitting at 84.2%, which is pretty high as compared to the benchmark that we have. So, he did well. Harshad is sitting at 81.1%, both above the target. Akshay is likely below the target, sitting at 72.4.</v>
+
+00:26:27.922 --> 00:26:50.482
+<v Keith Rozario>trending in the right direction though. He was way lower in the previous month. We talk about the overall team average. If I just talk about these guys, it's averaging between 60 to 79% over the period. If I jump on to the prime hour engineers, Luis led the group at 97%, followed by Piyali at 87% again. Himanshu at 84.7%. He was pretty low last time.</v>
+
+00:26:50.762 --> 00:27:10.202
+<v Keith Rozario>Gautam setting at 82.2%, all four above the 80% target. There are only two individuals who are currently below the target. That's 68% for Udjal, and then Diksha setting at 69.6%, which is almost 70%. So they both are below the target, yes, but they're heading in the right direction. Yes, so both have headroom. We are working with them and closing the gap.</v>
+
+00:27:10.242 --> 00:27:25.242
+<v Keith Rozario>But anything you'd like to add for Ujwal? I think you were working on that piece. Aaron, anything you'd like to add about his utilization? It's not very low, and we usually see his name above the target, but this time it was slightly below the 80% target. Any views on this?</v>
+
+00:27:24.522 --> 00:27:24.682
+<v Aaron Guglani>Mm.</v>
+
+00:27:26.042 --> 00:27:44.442
+<v Aaron Guglani>Yes, regarding the Diksha, first week was pretty low because she just on boarded and in the second week she picked up the pace and able to reach like 70%. But moving on to the Ujval, I did check that like for two, three days he was going through a toothache and he was on completely well and focused.</v>
+
+00:27:44.882 --> 00:27:50.522
+<v Aaron Guglani>Though he picked up the good number of tickets, but unfortunately because of the health issues, he was pretty low.</v>
+
+00:27:51.962 --> 00:27:56.122
+<v Aaron Guglani>He was like not completely focused 2-3 days, so that was the prime reason.</v>
+
+00:27:52.362 --> 00:27:52.602
+<v Keith Rozario>Mm.</v>
+
+00:27:55.642 --> 00:27:57.642
+<v Keith Rozario>Was he on leave as well, you said?</v>
+
+00:27:57.802 --> 00:28:06.282
+<v Aaron Guglani>No, he was not on leave here. There was a tooth take, so he was like took a rest for one or two hours. So during that time he was like non-billable and that's the reason.</v>
+
+00:28:04.122 --> 00:28:04.282
+<v Keith Rozario>Mm.</v>
+
+00:28:08.602 --> 00:28:11.482
+<v Keith Rozario>Was he off the calls for a while during that period?</v>
+
+00:28:10.842 --> 00:28:14.602
+<v Aaron Guglani>Yes, for next two to three hours, yeah, for those two days.</v>
+
+00:28:12.842 --> 00:28:12.962
+<v Keith Rozario>Yeah.</v>
+
+00:28:16.282 --> 00:28:23.562
+<v Keith Rozario>OK, OK. Did he find now? I'm sorry, I'm asking this question in front of you, because I wasn't aware of it. OK, thank you.</v>
+
+00:28:19.562 --> 00:28:21.402
+<v Aaron Guglani>Is he better? He is better now, yeah.</v>
+
+00:28:22.682 --> 00:28:23.802
+<v Aaron Guglani>It's much better now, yeah.</v>
+
+00:28:24.762 --> 00:28:30.602
+<v Keith Rozario>Thank you so much. Or any questions do you guys have, Sai or Kevin on the utilization bed?</v>
+
+00:28:33.402 --> 00:28:51.322
+<v Sai Chelikani>Nope, I mean, we're at that 80% minimum rate. So I think we probably need to provide you with some additional pieces. We talked about some of the charge codes and things that we've added. I don't know if that has been shared with the team or not. We've also added the lunch hour charge code. So hopefully that's been shared.</v>
+
+00:28:52.522 --> 00:29:09.962
+<v Sai Chelikani>So I think what we would appreciate is probably on our Tuesday, Thursday call is look at what we're doing, you know, in those efforts to close that gap, right? And making sure what we can do from training from our end or any questions from our end.</v>
+
+00:29:10.362 --> 00:29:29.882
+<v Sai Chelikani>in terms of making sure we're notating that time. Again, off hours, I understand, but especially prime hours, Diksha's, you know, been on the board for a while now, right? I mean, that's going to be one of our concerns as we look into some of these plans, but if, you know, Diksha's not able to follow our current process at all, then, you know, we would need to look at replacing her altogether if she's not meeting the bar.</v>
+
+00:29:29.322 --> 00:29:29.922
+<v Keith Rozario>Mhm.</v>
+
+00:29:31.962 --> 00:29:32.442
+<v Keith Rozario>All right.</v>
+
+00:29:34.682 --> 00:29:55.162
+<v Keith Rozario>Yep, I mean, being, well, again, that's debatable, but yeah, considering like Luis, for example, being in L2, yeah, I don't expect him to close as many tickets as others are closing, of course, but his utilization should be above the target, of course, because he's getting more complex ticket, he can spend more time on tickets, and that's how they can manage their utilization well.</v>
+
+00:29:55.522 --> 00:30:15.162
+<v Keith Rozario>But yeah, that's the feedback that we'd like to take. Thank you for that. So overall, the trend is positive. If we check the numbers of the entire team together, the team is moving toward and above the target, I would say it. So the gaps we see are identified and we'd make sure we manage them. If we jump into the ticket closure rate.</v>
+
+00:30:15.642 --> 00:30:38.042
+<v Keith Rozario>Now looking at the ticket closures, this is the output side of the equation. The target is 8 to 10%, 8 to 10 tickets a day, minimum being 8 tickets that should be resolved in a day. With that said, Akshay closed 90 tickets and the closure rate is sitting at 95.7%. Shridhar is sitting at 71 ticket closures with 98.6% closure rate.</v>
+
+00:30:38.362 --> 00:30:58.202
+<v Keith Rozario>Harshit sitting at 74 tickets closed with 91.4% closure rate. So that's consistent throughput across the board for this group. I want to reemphasize these volumes are proportional to shift duration, right? Again, working in the off hours, but still in fact, a couple of numbers we see are better than the prime hours because they had the logic monitor alerts to handle as well.</v>
+
+00:30:58.682 --> 00:31:17.482
+<v Keith Rozario>If I jump into the prime hours performance, Piyali led with 74 tickets that she closed, which with the closure rate of 94.9%, Himachu at 63 with 98.4%, Gautam closed 58, the least out of the lot, at 98.3%. So near perfect closure rates from both.</v>
+
+00:31:17.802 --> 00:31:39.642
+<v Keith Rozario>And Ujwal, as you can see, delivered 100% closure rate there along with Prince, who's, we removed his number from here, but yeah, he did well last month as well. But we're talking about Ujwal, he worked on 59 tickets and closed 59 tickets out of the funds, of course, that he handled. The number of tickets was low as compared to the other individuals, like Aaron mentioned, because he was off.</v>
+
+00:31:40.762 --> 00:32:00.602
+<v Keith Rozario>the calls for a couple of hours, but yeah, whatever he handled, he was able to close them to perfection. And then also worked on 19 tickets, closed 19. Of course, the volume is relatively low. We haven't added him in the chart here, but as mentioned last time, we're not going to include him in the chart. And of course, I'll share, I'd rather discuss about his performance separately with Isaac.</v>
+
+00:32:00.722 --> 00:32:19.722
+<v Keith Rozario>but he's doing good as well. That's the kind of feedback I've received. Overall, the headline is the closure rates across the team is exceptionally strong. I would say the majority are above 95% where, you know, the volume gap exists. We have line of sight on root cause, but would like to hear from you guys as well. Sai, Kevin, anything on this?</v>
+
+00:32:22.842 --> 00:32:26.682
+<v Sai Chelikani>Nope, um, like I said, what we're I'm excited to share.</v>
+
+00:32:23.442 --> 00:32:23.802
+<v Kevin Lynott>Yu.</v>
+
+00:32:25.362 --> 00:32:25.482
+<v Keith Rozario>And.</v>
+
+00:32:27.802 --> 00:32:49.442
+<v Sai Chelikani>Some of the things relating to the Connectorisory work that hopefully we'll get, you know, as we do towards that and as we move towards the L3 as well, we'll consolidate some of these things, but you know, our goal, our goal to for the L1s as we kind of move that group smaller and make the L2 group bigger is the L1s and Piyali and...</v>
+
+00:32:38.602 --> 00:32:38.842
+<v Keith Rozario>Rana.</v>
+
+00:32:49.882 --> 00:33:09.002
+<v Sai Chelikani>Ujwal should be more of our high performers. I think both of them will move towards being, you know, more towards our daytime shift, our prime hour shift. So they should be able to knock out, you know, as many tickets as possible. Our L3, Dipon Shu as he comes in, you know, he's going to be onboarding obviously for a month.</v>
+
+00:33:09.042 --> 00:33:28.762
+<v Sai Chelikani>but there's obviously a significant volume that he's going to be able to tackle with the, you know, some of those concerns. So I think, you know, piggybacking off of, I think maybe a comment that maybe you made, Keith, or maybe Aaron made, Keith, you know, a couple weeks ago on that there were, you know, maybe some hours during the week where, you know, people didn't have work.</v>
+
+00:33:28.962 --> 00:33:50.682
+<v Sai Chelikani>you know, to do in not enough inbound volume, especially now as we come out of the tax season, just for, you know, we'll see a 5 to 10% maybe dip in total amount of tickets. We're, you know, as we consolidate that group, we're expecting these people to be able to keep up with demand. So we've got to make sure we keep our finger on the pulse and make sure that we're</v>
+
+00:33:41.522 --> 00:33:41.682
+<v Keith Rozario>Mm.</v>
+
+00:33:51.642 --> 00:34:08.682
+<v Sai Chelikani>you know, they're doing okay and we're not adding to a backlog if, you know, in that case. But I don't expect it will, as far as I understand. But I think from your guys' end, what we need is just to, again, keep a keep a keep our finger on the pulse and make sure that they're all doing okay as we move towards that.</v>
+
+00:34:01.322 --> 00:34:01.802
+<v Keith Rozario>Mmh.</v>
+
+00:34:08.282 --> 00:34:08.522
+<v Keith Rozario>OK.</v>
+
+00:34:10.122 --> 00:34:12.202
+<v Keith Rozario>Makes sense. Noted. Thanks, Sai. Thanks for that.</v>
+
+00:34:13.722 --> 00:34:34.362
+<v Keith Rozario>All right, I will very quickly jump on to the customer satisfaction. We're sitting at 91.42% now. The target is 95%. So we're slightly below the target because of the recent two negative CSATs and one neutral CSAT that we received. Overall, surveys received 35. The positive ones set at 32 in total. There was one negative for Swechha, one for Prince.</v>
+
+00:34:34.762 --> 00:34:44.322
+<v Keith Rozario>I think those two were discussed, correct me if I'm wrong, Aaron, and one neutral for Piyali. Do you do you have the the reason behind Piyali's neutral CSAT?</v>
+
+00:34:43.642 --> 00:35:01.882
+<v Aaron Guglani>No, Keith, because Kason and Piyali had a connect with them and there were no fault of Piyali. I mean, she shared with me like she did everything well. Even Kason appreciated that, but there was something missing from the customer's end. So that's why I didn't follow up on that part.</v>
+
+00:35:04.282 --> 00:35:23.722
+<v Keith Rozario>Okay, so we'll probably follow up with Kason on Tuesday and see if, because aside just an FYI, we create internal scorecards for these individuals as well, right? For the internal appraisals and whatever. So this currently is a part of her CSAT. So the one neutral is currently added to her numbers. If.</v>
+
+00:35:24.042 --> 00:35:44.682
+<v Keith Rozario>Kason suggests this shouldn't be added to her overall score. I will remove it from my score as well. So yeah, we will discuss this on Tuesday for sure. But that's how the team performed. Percentage wise, almost all of them are above 100%. Piyali sitting at 87.50. Prince unfortunately sitting at 66.67, but I'll remove his number from here. Going forward, Shridhar is sitting at 75.</v>
+
+00:35:44.722 --> 00:35:49.842
+<v Keith Rozario>percent. That's where we are sitting on, but any questions you have on the CSAT bit?</v>
+
+00:35:51.082 --> 00:36:11.722
+<v Sai Chelikani>Nope, we're getting to hard targets as we go into next month, moving to, you know, a target of, you know, our base minimum is, you know, 92%, as in if we're not hitting 92%, we've got major problems in terms of, you know, this is the expectations we're setting.</v>
+
+00:35:53.402 --> 00:35:53.642
+<v Keith Rozario>Yeah.</v>
+
+00:36:12.002 --> 00:36:30.122
+<v Sai Chelikani>In terms of leader to leadership to Sameet, to Todd, and everyone else that we at minimum be no less than 90, 92 percent. Our goal is 95 percent. The target is correct, as you have on the screen. It is, you know, 95 percent is where we're looking to end up. But, you know,</v>
+
+00:36:13.762 --> 00:36:14.242
+<v Keith Rozario>Mhm.</v>
+
+00:36:24.522 --> 00:36:24.562
+<v Keith Rozario>I.</v>
+
+00:36:26.362 --> 00:36:26.522
+<v Keith Rozario>Mm.</v>
+
+00:36:31.082 --> 00:36:50.562
+<v Sai Chelikani>We've, you know, where we have to look at is anybody like, you know, that is, that's here. I know he only got one negative, but you know, we've got to put a lot more intensity on any negative that's coming in to make sure that we're, we're, you know, shoring these up, 'cause ninety-one, ninety-two percent, I mean, are...</v>
+
+00:36:45.722 --> 00:36:45.882
+<v Keith Rozario>Mm.</v>
+
+00:36:51.322 --> 00:36:59.962
+<v Sai Chelikani>our competitors are going to be at 97%. So we're not even at that level. So we need to step up our game in terms of getting to the right spot.</v>
+
+00:36:57.322 --> 00:36:57.802
+<v Keith Rozario>Mmh.</v>
+
+00:37:00.842 --> 00:37:19.722
+<v Keith Rozario>Absolutely, absolutely. And last time I remember we were above the target, 95% when we presented the numbers here. Yes, Piyali is neutral did dip the number. Otherwise, if I just include Prince and Shridhar, it was sitting at 95%. And if Kason says, or Kason suggests we should remove that, of course, the percentage will.</v>
+
+00:37:20.522 --> 00:37:44.562
+<v Keith Rozario>you know, dive up, but yes, I think the standard, like you mentioned, 97%, that's something that we'll keep in mind and we'll make sure that's something that we're trying to achieve, not just 95%. So that's in our radar. Also, one thing to look out, the team worked on good amount of tickets last, I mean, during this period, and we received 35 surveys, so which I think response rate should be counted over here as well. We should get, we should have gotten more surveys so we can discuss internally.</v>
+
+00:37:44.642 --> 00:38:04.042
+<v Keith Rozario>on how we can achieve that. Like for example, Piyali closed to about 60, 70 tickets, but then getting C sats on eight of them, I think that's pretty low. I also want to understand from you, Sai, and maybe if you have the answer for that, Aaron, are we, are the surveys being shot on every ticket that they close or they're just the call, the tickets handled on the calls are?</v>
+
+00:38:04.202 --> 00:38:05.722
+<v Keith Rozario>Triggering surveys, how does it work?</v>
+
+00:38:06.842 --> 00:38:18.202
+<v Aaron Guglani>No, Keith, for each and every ticket, whenever they work on, be it like LM alert or the chats or the email tickets or the phone call, the trigger gets done on every ticket. So it's not that done.</v>
+
+00:38:08.562 --> 00:38:08.802
+<v Keith Rozario>Yeah.</v>
+
+00:38:18.842 --> 00:38:20.922
+<v Keith Rozario>Yes, so yeah, that was.</v>
+
+00:38:19.402 --> 00:38:40.162
+<v Sai Chelikani>Not on LM alerts. It doesn't go out on LM alerts, but generally our response rate historically has been about 11%, between 8 and 11%. That's a separate issue that we, yes, I agree. We need to look at improving our response rate.</v>
+
+00:38:29.762 --> 00:38:30.122
+<v Keith Rozario>11.</v>
+
+00:38:32.602 --> 00:38:33.242
+<v Keith Rozario>Mm mm.</v>
+
+00:38:35.322 --> 00:38:35.642
+<v Keith Rozario>Yeah.</v>
+
+00:38:41.002 --> 00:38:50.202
+<v Sai Chelikani>So the amount of responses is within expected. We had, I think, not last week, a week before, we had a pretty heavy volume that week at over 500 tickets.</v>
+
+00:38:51.242 --> 00:39:03.882
+<v Sai Chelikani>As I'm sure people are trying to, we're trying to finish into the tax deadlines, but anyways, yes, received. That is something we need to work on in improving our response rate.</v>
+
+00:38:59.962 --> 00:39:00.442
+<v Keith Rozario>Mhm.</v>
+
+00:39:03.962 --> 00:39:04.362
+<v Keith Rozario>Yeah.</v>
+
+00:39:05.562 --> 00:39:27.402
+<v Keith Rozario>Absolutely, I mean, with kind of calls that Piyali takes, I've heard it myself. She does a very good job. And then still out of 60, 70 plus tickets that she works on or she speaks to, she is able to convert only eight of them into a CSAT or maybe getting them to fill the CSAT is pretty low. So yeah, there's something that we need to do internally or maybe some.</v>
+
+00:39:25.562 --> 00:39:26.042
+<v Sai Chelikani>Pre.</v>
+
+00:39:28.282 --> 00:39:48.202
+<v Sai Chelikani>I'm happy with you giving the direction to the tech, you know, technicians, especially Piyali, and you know, number one, getting Piyali to help train from a customer service perspective to Diksha as well, I think is going to be important. I think we look at, you know, our really great customer service people like Piyali and figure out.</v>
+
+00:39:29.322 --> 00:39:29.482
+<v Keith Rozario>Yeah.</v>
+
+00:39:33.562 --> 00:39:33.882
+<v Keith Rozario>Yeah.</v>
+
+00:39:42.762 --> 00:39:42.922
+<v Keith Rozario>Yeah.</v>
+
+00:39:48.442 --> 00:40:07.602
+<v Sai Chelikani>how we can get them to help us train some of the other resources. You know, I think, you know, when we when you talked earlier about how do we engage like Ujwal and some of these things, right? I think a key opportunity is looking at what he's doing now and figuring out how he can help his other teammates of, you know, if he if he's got.</v>
+
+00:40:07.682 --> 00:40:26.682
+<v Sai Chelikani>time free, then look at, okay, how does he, how do we put together time that which wall is going to train, you know, Gautam or, you know, one of the other, you know, folks that we're keeping in terms of that. So that's an area of responsibility if you want to give them a happy, but anyway, I think importantly, you know.</v>
+
+00:40:21.562 --> 00:40:22.042
+<v Keith Rozario>Mmh.</v>
+
+00:40:27.242 --> 00:40:47.162
+<v Sai Chelikani>I'm okay with people like Piyali or Diksha. We, you know, as long as Diksha's doing well on the phones, I'm not sure if you've evaluated her yet, but you know, of them changing our questions on the phone. I think you guys did a first round of phone call QA session, I believe. So</v>
+
+00:40:39.082 --> 00:40:39.242
+<v Keith Rozario>Mm.</v>
+
+00:40:47.722 --> 00:41:06.162
+<v Sai Chelikani>you know, adding something in there in terms of a closing statement to say, hey, if you had a great, good interaction or, you know, you'll get a, letting them know that they're going to get a CSAT survey and we'd appreciate the response. We've already modified a couple of our standard notes to include that, but I'm happy to push on that further.</v>
+
+00:41:05.002 --> 00:41:05.162
+<v Keith Rozario>Mm.</v>
+
+00:41:08.682 --> 00:41:27.642
+<v Keith Rozario>Sure, sure. And if ever you think it's feasible or a good option for Aaron, as I mean, maybe to do a quick soup call with the customers, or maybe, for example, sitting and just checking, okay, the PRD closed like 20 tickets last week, but only one of them got converted to a CSAT, let me.</v>
+
+00:41:27.682 --> 00:41:43.482
+<v Keith Rozario>Let me, you know, pick up a good call and call the end user and check with them if everything is working fine, and if everything is good, quickly ask them to, you know, if they could spare some time and put a survey for us. Do you think that kind of activity would help you, wherein Aaron maybe can connect with the end users and get them to fill the CSATs?</v>
+
+00:41:45.562 --> 00:42:08.282
+<v Sai Chelikani>Yes, it would. But I want to be careful in that we're not only engaging and doing that in tickets that we did positively on, right? Because I think that's a slippery slope on we start doing that, but we only do that on the good tickets and now we, you know, overinflate our CSAT score there. So</v>
+
+00:41:49.082 --> 00:41:49.242
+<v Keith Rozario>Mm.</v>
+
+00:41:56.762 --> 00:41:56.922
+<v Keith Rozario>Mm.</v>
+
+00:41:59.562 --> 00:42:00.762
+<v Keith Rozario>Yeah, true, true, true.</v>
+
+00:42:02.042 --> 00:42:02.362
+<v Keith Rozario>Yeah.</v>
+
+00:42:04.042 --> 00:42:04.522
+<v Keith Rozario>Mmh.</v>
+
+00:42:06.642 --> 00:42:06.922
+<v Keith Rozario>And.</v>
+
+00:42:08.522 --> 00:42:30.082
+<v Sai Chelikani>We are the QA portion is a critical piece in which we are adding to the ConnectWise rework. And I think it's going to be a lot easier on Aaron and the team when they do the QA process. It's a critical piece of the function. So when we discuss it likely tomorrow of what</v>
+
+00:42:09.322 --> 00:42:10.522
+<v Keith Rozario>Yeah, yeah, absolutely.</v>
+
+00:42:19.562 --> 00:42:19.722
+<v Keith Rozario>Mm.</v>
+
+00:42:30.162 --> 00:42:49.682
+<v Sai Chelikani>that ConnectWise free work looks like, then we can go over what that looks like and maybe we introduce a portion of that, not necessarily into every call, but maybe more of a random number of QA calls for us to go back and have that and, you know.</v>
+
+00:42:49.802 --> 00:42:51.082
+<v Sai Chelikani>From that perspective, so.</v>
+
+00:42:54.402 --> 00:42:55.642
+<v Sai Chelikani>Yeah, we'll talk about it tomorrow.</v>
+
+00:42:56.842 --> 00:42:59.882
+<v Keith Rozario>Absolutely. Makes sense. Thank you.</v>
+
+00:43:02.122 --> 00:43:22.842
+<v Keith Rozario>I think that would be it. A few couple of comments that were shared by our customers on one of the Harshit's CSAT quick response from the team. Gautam, perfect and quick. Ujwal and Deeksha on a ticket. Deeksha was very professional and helpful through the process. And then one for Piyali was easy fix and so glad she was patient and understanding.</v>
+
+00:43:24.042 --> 00:43:43.842
+<v Keith Rozario>That would be it. AI by Design, that initiative our CEO Sunny has initiated. The team GPS, our ingrown product, the build it is something that I don't think you guys are aware of. I mean, this is one event since I, you're new to the organization, since this is one event that Sunny hosts every year in August.</v>
+
+00:43:44.322 --> 00:44:03.082
+<v Keith Rozario>where all our MSPs are present. This time, like last year, this time as well, we have John C. Maxwell who will be there, and along with all the other big leaders, and of course, they all share their experience, and it's a very, very good event. It's A three-day event happening at the Hyatt Regency, so.</v>
+
+00:44:03.562 --> 00:44:22.682
+<v Keith Rozario>If you guys are interested, there's a QR code on the right. Press plus, I'll ask my CX team to drop an email to you guys. For now, they'll send the email to you, Sai, Kevin, and Kason. So just go through it and just let us know if things work for you. Would really, really love you guys to go there and of course meet our leaders.</v>
+
+00:44:24.922 --> 00:44:27.402
+<v Sai Chelikani>Yeah, I'm interested. Just send me an email about it.</v>
+
+00:44:33.482 --> 00:44:49.082
+<v Keith Rozario>Absolutely. Perfect. Thank you. All right. That is it. The other services that we provide, we'll talk about IMS probably tomorrow. I need to get a window from your side, so whenever you're available, or you want to share one right now, that'll help so that I can book your calendar and some use calendar as well.</v>
+
+00:44:52.682 --> 00:45:00.442
+<v Sai Chelikani>Likely going to be more like Wednesday, probably in the morning is my best. So my morning's clear on Wednesday.</v>
+
+00:45:01.322 --> 00:45:12.122
+<v Keith Rozario>Wednesday. I'll sort that out. Perfect. All right, I think we're good. I've unshared my screen. Opening the forum for you guys to share any last comments, anything you'd like to add before we wrap up.</v>
+
+00:45:14.202 --> 00:45:22.282
+<v Kevin Lynott>So you're going to get back to us on our upgrade? Yeah, you're going to get back to us today on this upgrade plan that we have or the...</v>
+
+00:45:16.282 --> 00:45:17.162
+<v Keith Rozario>Sorry, Kevin.</v>
+
+00:45:23.722 --> 00:45:39.402
+<v Keith Rozario>Yes, I have to because Dipon Shu is available only today. Tomorrow, he'll be, you know, in the market for other partners to interview. So I need to take the decision today itself if we need to stay with him. So I'll share the information with you, Kevin.</v>
+
+00:45:40.122 --> 00:45:42.762
+<v Kevin Lynott>Yeah, I mean, if it's all good, we're good to go with that.</v>
+
+00:45:44.122 --> 00:45:50.682
+<v Keith Rozario>Perfect. That works out. All right. Thank you so much, gentlemen. Thanks for joining in today, and we will stay in touch.</v>
+
+00:45:51.802 --> 00:45:52.522
+<v Kevin Lynott>Great, thanks.</v>
+
+00:45:53.082 --> 00:45:54.122
+<v Keith Rozario>Alright, bye.</v>
+
+00:45:53.122 --> 00:45:53.882
+<v Aaron Guglani>Thanks, everyone.</v>
+
+00:45:54.442 --> 00:45:55.002
+<v Kevin Lynott>Yep.</v>
+
+00:45:54.922 --> 00:45:55.122
+<v Aaron Guglani>Kour.</v>
+
