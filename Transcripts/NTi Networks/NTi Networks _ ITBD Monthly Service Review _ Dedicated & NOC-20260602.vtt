@@ -1,0 +1,794 @@
+WEBVTT
+NOTE title: NTi Networks | ITBD Monthly Service Review | Dedicated & NOC
+NOTE date: 2026-06-02
+NOTE duration: 24m 13s
+
+00:00:03.926 --> 00:00:17.726
+<v Kawandeep Sandhu>Yep, yep, that's on your side, it's different, and on our side, it's like, and it's way too hot. Eddie can tell you and everything about it, right, Eddie? Just give me a moment then.</v>
+
+00:00:08.806 --> 00:00:09.046
+<v Ben Bierbaum>Hmm.</v>
+
+00:00:09.126 --> 00:00:09.206
+<v Ben Bierbaum>The.</v>
+
+00:00:12.566 --> 00:00:12.966
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:00:13.126 --> 00:00:13.366
+<v Ashley Popkin Wilson>Oh.</v>
+
+00:00:14.126 --> 00:00:14.966
+<v Addy Kumar>Good morning, everyone.</v>
+
+00:00:16.566 --> 00:00:16.886
+<v Addy Kumar>Yeah.</v>
+
+00:00:16.566 --> 00:00:17.206
+<v Kobe Kumar>Morning, everyone.</v>
+
+00:00:28.326 --> 00:00:29.526
+<v Ben Bierbaum>How's the house, Ashley?</v>
+
+00:00:30.246 --> 00:00:34.086
+<v Ashley Popkin Wilson>It's good. It's coming along. Boxes everywhere.</v>
+
+00:00:36.646 --> 00:00:40.886
+<v Ashley Popkin Wilson>I'm uh working on my office today, my.</v>
+
+00:00:42.326 --> 00:00:43.446
+<v Ashley Popkin Wilson>Gotta get that set up.</v>
+
+00:00:44.926 --> 00:00:47.366
+<v Ben Bierbaum>I can hear the it sounds like a lack of.</v>
+
+00:00:49.326 --> 00:00:54.246
+<v Ben Bierbaum>Picture, like you know, it sounds like, you know, like, like you're in an empty, like an empty room.</v>
+
+00:00:50.726 --> 00:00:52.966
+<v Ashley Popkin Wilson>A lack of stuff. It's very echoing.</v>
+
+00:00:55.046 --> 00:00:55.766
+<v Ashley Popkin Wilson>Correct.</v>
+
+00:00:56.806 --> 00:00:57.606
+<v Ashley Popkin Wilson>Correct.</v>
+
+00:00:59.726 --> 00:01:03.206
+<v Ashley Popkin Wilson>It's okay. At least I know it'll be it's permanent this time.</v>
+
+00:01:26.286 --> 00:01:27.646
+<v Kawandeep Sandhu>Hey, sorry guys.</v>
+
+00:01:28.926 --> 00:01:37.646
+<v Kawandeep Sandhu>Okay, so yeah, before we start, Addy, if you just want to, you know, start with things on the NOC end, and then I can take over. Thanks.</v>
+
+00:01:39.446 --> 00:01:46.006
+<v Addy Kumar>Thank you, Evan. So I think NOC part is pretty sorted. Evan, any feedback for us?</v>
+
+00:01:48.366 --> 00:01:59.526
+<v Ben Bierbaum>The only thing I would say is I want to continue to encourage the our three ITBD people to</v>
+
+00:02:02.406 --> 00:02:10.806
+<v Ben Bierbaum>to reach out to. So we're having an issue where someone will put in a ticket for a company and then...</v>
+
+00:02:10.406 --> 00:02:10.886
+<v Addy Kumar>Mhm.</v>
+
+00:02:13.126 --> 00:02:33.246
+<v Ben Bierbaum>The person who's getting contacted is the main contact for the company rather than the person who put in the ticket. I've gotten a couple calls on that of like, why are they calling me? And so typically it's when, I don't know, it might have to do just do with our system not having the right numbers in there, but</v>
+
+00:02:33.366 --> 00:02:35.366
+<v Ben Bierbaum>Um, um...</v>
+
+00:02:37.126 --> 00:02:44.406
+<v Ben Bierbaum>Just make sure when the ticket comes in that we're trying first to reach out to whoever put in the ticket.</v>
+
+00:02:46.446 --> 00:02:46.846
+<v Addy Kumar>Okay.</v>
+
+00:02:46.726 --> 00:02:57.446
+<v Ben Bierbaum>not calling the main contact on the company and asking them to be forwarded. So one of the feedbacks I got was like, they're always calling me and asking me to forward to this person, but.</v>
+
+00:02:58.646 --> 00:03:17.526
+<v Ben Bierbaum>you know, like this would be a company that has, that doesn't have a receptionist. It's just someone else in the company that they're calling. So I think we talked about that internally. I think we're going to be working on that. But the other, yeah, the other thing, the other, yeah, just one other thing before I forget, like,</v>
+
+00:03:12.526 --> 00:03:15.286
+<v Ashley Popkin Wilson>Well, yeah, I think it's some sorry, but I was just...</v>
+
+00:03:18.166 --> 00:03:24.566
+<v Ben Bierbaum>The I continue to see where like a ticket can't be worked on because they're like, hey, I tried to contact you and I couldn't.</v>
+
+00:03:25.646 --> 00:03:46.646
+<v Ben Bierbaum>A lot of times they don't need to talk to the person in order to work on the ticket. So I think we're doing better on that. We talked about it last time, but just keep working on that. That's something that would be my feedback. Other than that, I think, you know, most of the most of the feedback is pretty good. I mean, you know, we've got one client who</v>
+
+00:03:31.806 --> 00:03:31.966
+<v Addy Kumar>Mm.</v>
+
+00:03:47.046 --> 00:03:47.446
+<v Ben Bierbaum>Um...</v>
+
+00:03:48.766 --> 00:03:55.206
+<v Ben Bierbaum>I'm talking about R360 guys. They're like, can you make sure that only Jeremy or Nolan handles our tickets, please?</v>
+
+00:03:51.206 --> 00:03:51.766
+<v Ashley Popkin Wilson>Mhm.</v>
+
+00:03:56.526 --> 00:04:02.326
+<v Ben Bierbaum>That kind of stuff, you know, I mean, some clients are just goofy like that, but...</v>
+
+00:04:02.246 --> 00:04:02.926
+<v Ashley Popkin Wilson>Mhm.</v>
+
+00:04:03.766 --> 00:04:04.166
+<v Ben Bierbaum>Um...</v>
+
+00:04:06.086 --> 00:04:24.206
+<v Ben Bierbaum>But I am, that is one of the feedback that I got back from R360 is like, you know, Jeremy or Nolan, great. The other people, sometimes they're good. Sometimes they don't know what the problem is. It takes too long. So I don't know. I mean, it's, like I said, overall, I think</v>
+
+00:04:19.806 --> 00:04:20.286
+<v Addy Kumar>Mhm.</v>
+
+00:04:24.726 --> 00:04:26.726
+<v Ben Bierbaum>They're doing really good, but...</v>
+
+00:04:28.886 --> 00:04:29.366
+<v Ben Bierbaum>Oh.</v>
+
+00:04:29.326 --> 00:04:30.926
+<v Addy Kumar>All right. Thank you, Vince.</v>
+
+00:04:29.766 --> 00:04:47.286
+<v Ashley Popkin Wilson>I was just going to follow up to Ben's thing is that I think part of it too, and it's not just them, it's all our whole team, need to read through the ticket, number one when assigning, but also when working on it and making sure they adjust the contact on the ticket if it's not correct.</v>
+
+00:04:42.446 --> 00:04:42.926
+<v Addy Kumar>Mhm.</v>
+
+00:04:48.406 --> 00:04:48.806
+<v Ben Bierbaum>Yeah.</v>
+
+00:04:49.246 --> 00:04:52.566
+<v Addy Kumar>Yep, then that is noted. I'll I'll cascade the social team.</v>
+
+00:04:52.086 --> 00:05:06.166
+<v Ben Bierbaum>Yeah, I had the same problem. I'll look at a ticket, I'll look at the details on the ticket, and I'll just start working on it. And then, oh, wait a minute, the contact is wrong, you know, and I just have to make a habit of checking the contact and making sure that it's.</v>
+
+00:04:59.446 --> 00:05:00.046
+<v Ashley Popkin Wilson>Mm-hmm.</v>
+
+00:05:01.646 --> 00:05:02.046
+<v Addy Kumar>That.</v>
+
+00:05:07.126 --> 00:05:21.286
+<v Ben Bierbaum>that it's correct. But yeah, I mean, I've been reviewing some tickets. I think the notes that are getting put in there are real nice and usually pretty informative. So I think it's, I think we're doing pretty good.</v>
+
+00:05:11.566 --> 00:05:12.446
+<v Addy Kumar>It's.</v>
+
+00:05:18.606 --> 00:05:19.086
+<v Addy Kumar>Mhm.</v>
+
+00:05:22.366 --> 00:05:28.246
+<v Addy Kumar>Yeah, so when point taken, I'll cascade this to the team and we'll make sure this will not happen again.</v>
+
+00:05:26.206 --> 00:05:26.326
+<v Ben Bierbaum>Okay.</v>
+
+00:05:27.926 --> 00:05:37.366
+<v Ben Bierbaum>Yeah, and then just make sure we, you know, emphasize that if they feel like a ticket is dragging or customers getting annoyed, just...</v>
+
+00:05:39.366 --> 00:05:41.686
+<v Ben Bierbaum>Ask for help. It's not a problem to ask for help.</v>
+
+00:05:42.626 --> 00:05:42.986
+<v Addy Kumar>Yep.</v>
+
+00:05:47.366 --> 00:06:07.606
+<v Ben Bierbaum>My only other thing I wanted to say, and then I'll stop talking, is I have been coming up with some things for Annie to work on after hours. I'm kind of finalizing some checklists and things. So I should have that ready by the end of this week. Some things like here are some regular after hours things that can be done as far as</v>
+
+00:06:07.766 --> 00:06:16.646
+<v Ben Bierbaum>checklist, like, you know, pick, I'm even, I have a thing where I might pick one client per week, maybe two.</v>
+
+00:06:17.606 --> 00:06:36.326
+<v Ben Bierbaum>depends on how quickly she can get through them and then just kind of go through that client on this checklist and things that were, you know, things that make sure that there'll be certain things to say, do I have their, you know, this in their documentation? Like for instance, do I have their Wi-Fi?</v>
+
+00:06:36.966 --> 00:06:57.926
+<v Ben Bierbaum>information coded? Do I have their ISP? Things like, just things like that that I've been kind of doing some cyber reviews. And when I go to the customer, that's when I catch these things that are missing, either from documentation or something we're supposed to be doing that we're not. I'd rather do that more often than not. So like I'm only checking it once a year.</v>
+
+00:06:59.686 --> 00:07:05.366
+<v Ben Bierbaum>If we could get, so let's say we have 100 customers, if we could check one or two.</v>
+
+00:07:00.726 --> 00:07:00.926
+<v Kawandeep Sandhu>Mm.</v>
+
+00:07:06.326 --> 00:07:18.126
+<v Ben Bierbaum>every day we might get, they might each cut client might get kind of checked over three or three times a year rather than once a year. So anyway, I'll keep working on that.</v>
+
+00:07:16.526 --> 00:07:17.846
+<v Kawandeep Sandhu>Yep, yeah.</v>
+
+00:07:17.526 --> 00:07:17.846
+<v Addy Kumar>Okay.</v>
+
+00:07:20.166 --> 00:07:38.446
+<v Kawandeep Sandhu>Thank you. Thank you, Ben. I think to be honest with you, you just stole my words because I was about to cover this piece, but that's okay. But before we jump in on our side, anything from the NOC end, did we cover everything? Otherwise, we can let them go and we can continue with our side.</v>
+
+00:07:37.046 --> 00:07:55.846
+<v Ben Bierbaum>Yeah, I think NOC part is going okay. I still want to try to get, we need to get our Halo, like when tickets come into the NOC, they're not, that I need to look at. I mean, I get these, I get emails that say like, you know, resource assigned.</v>
+
+00:07:46.726 --> 00:07:47.206
+<v Addy Kumar>Mmh.</v>
+
+00:07:56.046 --> 00:08:11.846
+<v Ben Bierbaum>And that's my name, but I don't think originally when a NOC ticket would come in that I need to look at, it would create a ticket in ConnectWise. And then we got off of ConnectWise and it didn't happen. But now we're on Halo and I think we're not.</v>
+
+00:08:12.726 --> 00:08:21.926
+<v Ben Bierbaum>hooked up or something. Like, you know, if there's a ticket that I need to look at, I don't think our systems are linked anymore.</v>
+
+00:08:25.006 --> 00:08:29.326
+<v Kawandeep Sandhu>So, I mean, just to be sure about Halo.</v>
+
+00:08:25.446 --> 00:08:25.766
+<v Ben Bierbaum>We.</v>
+
+00:08:26.246 --> 00:08:26.566
+<v Addy Kumar>And.</v>
+
+00:08:30.126 --> 00:08:35.566
+<v Kawandeep Sandhu>I know you switched from your previous BS it to Halo.</v>
+
+00:08:36.086 --> 00:08:36.566
+<v Ben Bierbaum>Mhm.</v>
+
+00:08:38.446 --> 00:08:46.126
+<v Kawandeep Sandhu>So do you still need support with Halo? Because from our side, we can do our best to support you with Halo. But you just need to.</v>
+
+00:08:44.566 --> 00:08:59.286
+<v Ben Bierbaum>Well, I think we need to a couple things. I mean, if you had like a Halo consultant who could we could buy some time from to like sit with us, I mean, Ashley's doing a pretty good job, but I mean, we have other things that</v>
+
+00:08:52.126 --> 00:08:52.446
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:08:53.726 --> 00:08:54.366
+<v Kawandeep Sandhu>Exactly.</v>
+
+00:09:00.566 --> 00:09:01.606
+<v Ben Bierbaum>Maybe we would...</v>
+
+00:09:02.566 --> 00:09:06.646
+<v Ben Bierbaum>I don't know, maybe someone just to kind of review how we're doing. I don't know, I asked you, how do you feel about that?</v>
+
+00:09:06.086 --> 00:09:13.366
+<v Ashley Popkin Wilson>No, I mean, I agree. I think there's some things that we probably aren't doing that we should be doing, or maybe we're not doing correctly.</v>
+
+00:09:13.686 --> 00:09:32.886
+<v Ben Bierbaum>I'm talking about like, so there's a company here in Atlanta called Decision Digital and their whole consulting, they used to be an MSP like this, but now their whole consulting practice, the whole entire thing that they do is they get with companies like us and they say, are you using the system properly? And we could look for something like that.</v>
+
+00:09:33.006 --> 00:09:52.446
+<v Ben Bierbaum>But since ITBD is using Halo, maybe you have that offering that we can do. I don't know, think about that. Like, hey, let me just do a review with you. Are you using this properly? That's one part. And the other part is for the NOC, do we need to relink our, you know, like when we had ConnectWise,</v>
+
+00:09:46.526 --> 00:09:46.686
+<v Kawandeep Sandhu>Mm.</v>
+
+00:09:57.086 --> 00:09:57.286
+<v Addy Kumar>Mm.</v>
+
+00:10:08.646 --> 00:10:09.126
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:10:09.166 --> 00:10:22.966
+<v Ben Bierbaum>We're going to help do a review of how your Halo is set up by someone who really knows what they're doing with Halo and kind of give us some feedback. And then the other part is, do we have some things we need to do with the NOC to get it put it to get it put in there?</v>
+
+00:10:14.966 --> 00:10:15.446
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:10:23.606 --> 00:10:29.846
+<v Addy Kumar>So like connector is still active, I can see one ticket that is escalated to us.</v>
+
+00:10:29.126 --> 00:10:33.686
+<v Kawandeep Sandhu>It should not be, it should not be right, Ben. I think ConnectWise is no longer.</v>
+
+00:10:33.046 --> 00:10:44.486
+<v Ben Bierbaum>I mean, we still have ConnectWise, like 1 user, but we don't use it. I never log in. It's only used for like old stuff. So if it's connected to our ConnectWise, that's, we're never using it or looking at it.</v>
+
+00:10:35.206 --> 00:10:35.606
+<v Kawandeep Sandhu>Okay.</v>
+
+00:10:46.486 --> 00:10:46.886
+<v Addy Kumar>Okay.</v>
+
+00:10:46.566 --> 00:10:59.206
+<v Vishal Dogra>No, we hear you, we hear you, Ben, regarding the hello bot. Let me just look into this internally. We do have Helpdesk sitting with us, so...</v>
+
+00:10:46.726 --> 00:10:48.326
+<v Kawandeep Sandhu>So basically the transition.</v>
+
+00:11:00.486 --> 00:11:02.886
+<v Vishal Dogra>Let me just check that internally and come back to you on that.</v>
+
+00:11:02.726 --> 00:11:04.326
+<v Ben Bierbaum>Okay, yeah, just...</v>
+
+00:11:04.006 --> 00:11:04.206
+<v Vishal Dogra>Yeah.</v>
+
+00:11:07.126 --> 00:11:07.926
+<v Ben Bierbaum>Yeah.</v>
+
+00:11:07.366 --> 00:11:28.486
+<v Kawandeep Sandhu>Thank you, thank you, thank you, Vishal. And also, Ben, if you can just share, you know, a few pain points as per Halo, maybe your top five or top ten that can also help us, you know, we look internally, just like, just we just want to do our homework before we set up that call so that we can save your time and we are ready with all the answers. So if you can just give us top.</v>
+
+00:11:25.926 --> 00:11:26.406
+<v Ben Bierbaum>Mhm.</v>
+
+00:11:28.566 --> 00:11:38.806
+<v Kawandeep Sandhu>Five or top ten, as per your convenience. You can just share it over the email, or maybe you can just message me over Team Channel, and then we can look into it.</v>
+
+00:11:40.246 --> 00:11:40.646
+<v Ben Bierbaum>Okay.</v>
+
+00:11:43.686 --> 00:11:45.686
+<v Kawandeep Sandhu>Yeah, and then accordingly we can let you know.</v>
+
+00:11:44.566 --> 00:12:02.566
+<v Ben Bierbaum>Yeah, I'll get with Ashley on that. Ashley's doing pretty good on getting everything set up, but like, we're, it just, you know, so it might be nice to have, we're going on figuring it out as we go versus someone saying, oh, no, wait a minute, you're doing it this way. No, this is a better way to do it. You know, that's the kind of thing I'm looking for.</v>
+
+00:11:52.206 --> 00:11:52.886
+<v Ashley Popkin Wilson>Let's take you.</v>
+
+00:12:01.046 --> 00:12:01.206
+<v Kawandeep Sandhu>Kip.</v>
+
+00:12:03.526 --> 00:12:14.166
+<v Kawandeep Sandhu>So what I'm hearing is it's just like a general check, right? Just to make sure that things are set up the way it should be. And if you do run into any roadblocks, then we can help you.</v>
+
+00:12:12.006 --> 00:12:30.886
+<v Ben Bierbaum>At first, yeah. And then if you guys identify any things that can be done better, you know, we could help us do that or what. But I mean, I feel like it's pretty good, but we still have things that, I don't know, like yesterday, this is not something that you guys would do.</v>
+
+00:12:18.166 --> 00:12:18.806
+<v Kawandeep Sandhu>Mm-hmm.</v>
+
+00:12:31.126 --> 00:12:44.806
+<v Ben Bierbaum>help with, but Ashley, like, I don't know, Mary Beth talked to you, but cost you put in some time and we could not figure out how to make it go to an invoice. Sit on there, ready to bill, boom, it never would show up, no matter what we did. That counts.</v>
+
+00:12:33.926 --> 00:12:34.326
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:12:35.206 --> 00:12:35.606
+<v Kawandeep Sandhu>It.</v>
+
+00:12:42.566 --> 00:12:42.806
+<v Kawandeep Sandhu>Yep.</v>
+
+00:12:43.886 --> 00:12:49.606
+<v Kawandeep Sandhu>That, that's exactly what I'm looking for, you know, those pain points, you know, of yours, which we can, you know, help you.</v>
+
+00:12:44.206 --> 00:12:44.646
+<v Ashley Popkin Wilson>Akshay.</v>
+
+00:12:48.566 --> 00:12:48.886
+<v Ben Bierbaum>Yeah.</v>
+
+00:12:49.446 --> 00:13:01.126
+<v Ashley Popkin Wilson>I know, I will say that I think that the biggest pain point is Mary Beth having to deal with the billing because that's still, we're still working on that side and like making sure that.</v>
+
+00:12:59.286 --> 00:12:59.446
+<v Kawandeep Sandhu>Mm.</v>
+
+00:13:01.846 --> 00:13:02.246
+<v Ben Bierbaum>Yeah.</v>
+
+00:13:02.486 --> 00:13:05.686
+<v Ashley Popkin Wilson>It it travels correctly to the right to the endpoint.</v>
+
+00:13:07.686 --> 00:13:10.246
+<v Ben Bierbaum>Yeah. All right, let's move on from that.</v>
+
+00:13:08.166 --> 00:13:26.246
+<v Kawandeep Sandhu>Fair enough. Yep. Yeah, you know, here's the funny part. You know, I was thinking it's like you bought a new car and you just want to make sure that the new car is working fine, right? You just want to take it to the person, you know, service guy, just to have a check and make sure that it's running great.</v>
+
+00:13:27.166 --> 00:13:27.486
+<v Ben Bierbaum>Yeah.</v>
+
+00:13:27.286 --> 00:13:31.206
+<v Kawandeep Sandhu>So, it's similar to the same thing, yeah, so, but we'll figure it out.</v>
+
+00:13:29.886 --> 00:13:52.886
+<v Vishal Dogra>What we can do right now, I, you know, one immediate decision I would have, Addy, if you can just check with Gary, right, and just have someone from his team to just have a quick conversation with Ashley. I think, I don't see these are big, big changes or big problems that we are talking about. He just like, Ashley will have some generic questions, especially around billing.</v>
+
+00:13:53.366 --> 00:14:01.926
+<v Vishal Dogra>So maybe someone from Gary team can just have a quick conversation and it could be a quick conversation, a quick resolution for her problem. So if you can just do that, that would be great.</v>
+
+00:13:54.086 --> 00:13:54.246
+<v Addy Kumar>Mm.</v>
+
+00:14:00.526 --> 00:14:00.726
+<v Ben Bierbaum>Yeah.</v>
+
+00:14:01.206 --> 00:14:01.606
+<v Addy Kumar>Like.</v>
+
+00:14:02.446 --> 00:14:04.006
+<v Addy Kumar>Yeah, sure, sure. Let me check then.</v>
+
+00:14:04.646 --> 00:14:05.446
+<v Vishal Dogra>Thank you so much, Addy.</v>
+
+00:14:08.246 --> 00:14:17.446
+<v Vishal Dogra>And from there onwards, we can see if you have some more concerns, some more problems that we need to address regarding Hello, and then we can just, you know, decide the way forward, Ben.</v>
+
+00:14:08.566 --> 00:14:09.206
+<v Kawandeep Sandhu>Rick.</v>
+
+00:14:18.926 --> 00:14:19.366
+<v Ben Bierbaum>OK.</v>
+
+00:14:20.886 --> 00:14:21.366
+<v Vishal Dogra>Thank you.</v>
+
+00:14:21.926 --> 00:14:31.126
+<v Kawandeep Sandhu>Okay, thank you, Vishal. We have 16 minutes, so I'll quickly share my screen and we'll go through the presentation.</v>
+
+00:14:22.886 --> 00:14:22.926
+<v Vishal Dogra>I.</v>
+
+00:14:32.286 --> 00:14:36.366
+<v Kawandeep Sandhu>All right, gentlemen. Ladies and gentlemen, I hope you can see my screen.</v>
+
+00:14:38.246 --> 00:14:57.446
+<v Kawandeep Sandhu>Okay, great. So welcome to our monthly service check-in for NTI networks. You look at May month's performance. Agenda item stays pretty much the same. We'll go through the highlights, performance analysis, holiday schedule, yeah by design, team GPS, way forward, and then meeting minutes. Highlights, as you all know, that</v>
+
+00:14:43.846 --> 00:14:44.446
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:14:57.526 --> 00:15:06.726
+<v Kawandeep Sandhu>Akshay, he is now SC300 and AZ104 certified. Rachel is SC900 certified. They continue to work.</v>
+
+00:15:05.526 --> 00:15:08.326
+<v Ben Bierbaum>What's SC 300? What are the SC tests?</v>
+
+00:15:09.286 --> 00:15:10.806
+<v Kawandeep Sandhu>It's the security ones.</v>
+
+00:15:10.966 --> 00:15:11.846
+<v Ben Bierbaum>Security, okay.</v>
+
+00:15:12.246 --> 00:15:17.046
+<v Kawandeep Sandhu>Yeah, so I did I think I did share the certificate with you.</v>
+
+00:15:17.846 --> 00:15:21.606
+<v Ashley Popkin Wilson>You told us, I think you told us. I don't know about the actual script, but...</v>
+
+00:15:19.366 --> 00:15:20.806
+<v Ben Bierbaum>Yeah, you told us about it last time.</v>
+
+00:15:22.086 --> 00:15:24.006
+<v Kawandeep Sandhu>Yeah, I think if you...</v>
+
+00:15:25.206 --> 00:15:30.086
+<v Kawandeep Sandhu>If you look at my email, there's a link. If you look at that, I mean, if you click that link, you'll get the certificate as well.</v>
+
+00:15:29.686 --> 00:15:30.166
+<v Ashley Popkin Wilson>Okay.</v>
+
+00:15:32.126 --> 00:15:40.646
+<v Kawandeep Sandhu>Yeah, I just wanted to make sure that you were sharing it with your partners, users, just to make sure that the engineers are, you know, the engineer that they're working with are certified.</v>
+
+00:15:41.846 --> 00:15:47.366
+<v Vishal Dogra>So this is security compliance and identity fundamentals Ben.</v>
+
+00:15:42.766 --> 00:15:43.046
+<v Ben Bierbaum>Yeah.</v>
+
+00:15:44.726 --> 00:15:45.046
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:15:49.206 --> 00:15:49.606
+<v Ben Bierbaum>OK.</v>
+
+00:15:51.766 --> 00:16:05.846
+<v Kawandeep Sandhu>Okay, and rest, they continue to make sure that they are working on meeting the expectations and focusing on their KPIs. Before we move on to the next one, anything that you want to add, Jeremy, Ben, Megan, Lee? Ashley?</v>
+
+00:16:07.966 --> 00:16:09.126
+<v Jeremy Campbell>Nope, I thought on my end.</v>
+
+00:16:08.806 --> 00:16:08.966
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:16:10.646 --> 00:16:13.926
+<v Kawandeep Sandhu>Okay, cool. Getting into the performance analysis.</v>
+
+00:16:15.926 --> 00:16:34.486
+<v Kawandeep Sandhu>Rachel, Akshay, they have been the rock star for me. I know Annie has been struggling, but from Rachel, Akshay perspective, they have been exceeding their numbers. So I think Ben, as we were discussing about how we can make sure that Annie is utilized, I had a connect with the...</v>
+
+00:16:34.886 --> 00:16:52.806
+<v Kawandeep Sandhu>Rachel and Akshay just to make sure if we can give her some kind of a checks, right, like device checks, infra checks so that she can work after hours when she has time to help the team. And I think that will definitely improve her utilization.</v>
+
+00:16:41.846 --> 00:16:42.166
+<v Ben Bierbaum>Yeah.</v>
+
+00:16:50.006 --> 00:16:50.326
+<v Ben Bierbaum>Yeah.</v>
+
+00:16:53.206 --> 00:17:09.846
+<v Ben Bierbaum>Yeah, I have a list of things, like I said, and when I'm done with that, it probably would be, I'll have a call with her and review unless you think we need more people, but I could probably just go through it with her and she'll have plenty of work to do.</v>
+
+00:17:05.286 --> 00:17:05.766
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:17:10.486 --> 00:17:26.726
+<v Kawandeep Sandhu>Exactly, and I'm sure she has time after, you know, 5:00. Then, I mean, she's just waiting for the voice calls, right? Apart from that, that workload is not heavy, and I think she can very well manage all the checks. And then if she needs any help, then we can support her.</v>
+
+00:17:14.686 --> 00:17:14.966
+<v Ben Bierbaum>Yeah.</v>
+
+00:17:18.166 --> 00:17:18.646
+<v Ben Bierbaum>Okay.</v>
+
+00:17:24.646 --> 00:17:24.966
+<v Ben Bierbaum>Yeah.</v>
+
+00:17:30.166 --> 00:17:51.966
+<v Kawandeep Sandhu>Okay, as per the ticket closure rate, team has been doing fine with the closure rate. I don't have any, I don't see any major issues, but I think the only piece that we just want to cover is the checks for any. That's pretty much on my side. Going as per the holiday schedule, it looks good. I think the next one is July 3rd.</v>
+
+00:17:52.886 --> 00:17:58.406
+<v Kawandeep Sandhu>I'll follow up with Ashley and Jeremy close to July 3rd to see if you need.</v>
+
+00:17:59.926 --> 00:18:00.486
+<v Kawandeep Sandhu>No.</v>
+
+00:18:01.726 --> 00:18:09.046
+<v Kawandeep Sandhu>ITBD team on that day. Otherwise, you know, we can have everyone taking a day off on July 3rd.</v>
+
+00:18:02.166 --> 00:18:02.406
+<v Ben Bierbaum>S.</v>
+
+00:18:10.126 --> 00:18:11.206
+<v Ben Bierbaum>My third.</v>
+
+00:18:10.886 --> 00:18:16.086
+<v Kawandeep Sandhu>Apart from that, I haven't received any other PD requests. As soon as I get it, I'll share it with you.</v>
+
+00:18:19.606 --> 00:18:31.606
+<v Kawandeep Sandhu>Okay, rest, I just want to give a shout out to Jeremy, Ashley for being very supportive when it comes to PTOs and all the conversation that I keep on having offline on Team channel. I just want to say thank you so much for that.</v>
+
+00:18:20.406 --> 00:18:20.806
+<v Ben Bierbaum>I was.</v>
+
+00:18:34.326 --> 00:18:54.086
+<v Kawandeep Sandhu>All right, moving on shift schedule, it remains the same. They all know which, what shift they are supposed to cover. If it's the on call piece or the regular one, it stay the same. I don't see any change from your end, Ben, and any change that you see coming up, which I highly doubt.</v>
+
+00:18:54.806 --> 00:18:56.006
+<v Kawandeep Sandhu>Just wanted to check.</v>
+
+00:18:55.206 --> 00:18:56.726
+<v Ben Bierbaum>I think this is good, yeah.</v>
+
+00:18:58.646 --> 00:18:59.766
+<v Kawandeep Sandhu>All right.</v>
+
+00:19:01.606 --> 00:19:18.726
+<v Kawandeep Sandhu>Next up, we have our build it. We have discussed this last time, so I just wanted to reiterate. If it's feasible, we would love to have you during our build it. You have the code on the screen, QR, you can scan it, and you can reserve your seat.</v>
+
+00:19:04.726 --> 00:19:04.846
+<v Ben Bierbaum>And</v>
+
+00:19:21.606 --> 00:19:24.406
+<v Kawandeep Sandhu>Okay, we will cover Ayra by design.</v>
+
+00:19:23.286 --> 00:19:25.606
+<v Vishal Dogra>You're coming to build it. You're coming to build it, Ben.</v>
+
+00:19:26.326 --> 00:19:28.486
+<v Ashley Popkin Wilson>Yeah, we already have our tickets.</v>
+
+00:19:27.206 --> 00:19:27.606
+<v Ben Bierbaum>Yeah.</v>
+
+00:19:27.446 --> 00:19:28.086
+<v Vishal Dogra>Great.</v>
+
+00:19:29.606 --> 00:19:36.926
+<v Vishal Dogra>Great, because hello people would be there as well. So that would be great opportunity to interact. Just want to highlight that, yeah.</v>
+
+00:19:34.806 --> 00:19:35.286
+<v Ben Bierbaum>Okay.</v>
+
+00:19:34.886 --> 00:19:35.606
+<v Ashley Popkin Wilson>Yes.</v>
+
+00:19:38.646 --> 00:19:39.606
+<v Vishal Dogra>Great, thank you.</v>
+
+00:19:40.646 --> 00:19:58.966
+<v Kawandeep Sandhu>Okay, moving on quickly, as for the way forward, it remains the same. We just want to make sure that team is aligned with NTI Network's priorities and we are making the adjustments accordingly as we move forward. And that is pretty much it from my side. I'm going to stop sharing my screen. I'll go around the table.</v>
+
+00:19:59.366 --> 00:20:02.406
+<v Kawandeep Sandhu>I'll start with Megan.</v>
+
+00:20:05.766 --> 00:20:08.246
+<v Kawandeep Sandhu>Any questions, concerns, or feedback for us?</v>
+
+00:20:11.206 --> 00:20:11.526
+<v Kawandeep Sandhu>Ohh.</v>
+
+00:20:11.566 --> 00:20:18.166
+<v Megan Ehmen>I really work a whole lot with the text. I'm just kind of here. But everything that I've seen from them has been good.</v>
+
+00:20:19.126 --> 00:20:26.486
+<v Kawandeep Sandhu>Right, we love to have you as always, Megan. We appreciate your feedback as well. So thank you so much. Ashley.</v>
+
+00:20:27.686 --> 00:20:30.086
+<v Ashley Popkin Wilson>Nothing from me at this time.</v>
+
+00:20:31.766 --> 00:20:33.766
+<v Kawandeep Sandhu>Okay, cool. Thank you. Jerome.</v>
+
+00:20:35.046 --> 00:20:35.606
+<v Jeremy Campbell>Um...</v>
+
+00:20:37.606 --> 00:20:57.046
+<v Jeremy Campbell>I mean, the only thing I can really say is, you know, as usual, I'm always a resource for them if, you know, actually Rachel, Annie, if they ever need help for anything. I do just want to make sure that, you know, they are just really hammered into them that they're making sure to have the ticket updated and read through all the notes before contacting the client or asking me for help.</v>
+
+00:20:40.166 --> 00:20:40.326
+<v Ben Bierbaum>In.</v>
+
+00:20:43.246 --> 00:20:43.366
+<v Ben Bierbaum>Yes.</v>
+
+00:20:57.806 --> 00:21:18.286
+<v Jeremy Campbell>Because there's a lot of situation to which I'm not going to sugarcoat it. I get dumb questions for stuff that is kind of clearly spilled on the ticket. So it happens. I've done it too. Sometimes the answer is right in front of you and you just kind of just gloss over because you're in autopilot mode. The job can do it to you. As long as they're reading stuff and...</v>
+
+00:21:03.206 --> 00:21:03.366
+<v Kawandeep Sandhu>Mm.</v>
+
+00:21:07.126 --> 00:21:07.366
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:21:10.206 --> 00:21:10.326
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:21:18.406 --> 00:21:18.886
+<v Jeremy Campbell>You know.</v>
+
+00:21:20.086 --> 00:21:38.646
+<v Jeremy Campbell>Make sure they're calling the right numbers that are for the right people. And utilize the signatures is a kind of a big thing. I was talking to Meg about the whole thing, just kind of in relation to the whole calling the wrong number for someone that didn't even submit the ticket. Oftentimes a lot of our clients just have the phone numbers right there in their signatures.</v>
+
+00:21:25.926 --> 00:21:26.246
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:21:38.286 --> 00:21:38.766
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:21:39.046 --> 00:21:55.846
+<v Jeremy Campbell>I kind of want them to make sure that they're kind of borderline using that as their default rather than what's in Halo, because our Halo stuff is still, it's a work in progress. It's until we can kind of like fully confidently say that we are 100% where it's supposed to be. I want to make sure that they're using those.</v>
+
+00:21:39.686 --> 00:21:39.846
+<v Kawandeep Sandhu>Mm.</v>
+
+00:21:47.326 --> 00:21:48.006
+<v Kawandeep Sandhu>Understood.</v>
+
+00:21:56.966 --> 00:21:57.286
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:21:57.006 --> 00:21:58.006
+<v Jeremy Campbell>when necessary.</v>
+
+00:21:59.126 --> 00:22:09.766
+<v Kawandeep Sandhu>That's a great point, Jerome, that you just made because we have the habit of checking ConnectWise, taking the number from there and then calling the user, right? We generally don't look at the signatures.</v>
+
+00:21:59.206 --> 00:21:59.526
+<v Jeremy Campbell>Um...</v>
+
+00:22:05.526 --> 00:22:06.006
+<v Jeremy Campbell>Mhm.</v>
+
+00:22:07.766 --> 00:22:25.926
+<v Jeremy Campbell>Yeah, yeah. Like I said, it's very easy to kind of go to autopilot on this whole thing, but it's just for the rest of us, it's just kind of common sense. We see you submitted the ticket through signature there. I'm probably going to use that one first before I will use whatever's in Halo or ConnectWise, you know, and so on. So, but otherwise, no.</v>
+
+00:22:17.606 --> 00:22:17.926
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:22:20.566 --> 00:22:21.046
+<v Kawandeep Sandhu>Understood.</v>
+
+00:22:24.006 --> 00:22:24.326
+<v Kawandeep Sandhu>Yep.</v>
+
+00:22:25.206 --> 00:22:25.846
+<v Kawandeep Sandhu>Point noted.</v>
+
+00:22:26.486 --> 00:22:34.406
+<v Jeremy Campbell>That's about it. The guy's been doing fine. Everyone's been talking to me when they need help and stuff, and I'm kind of pointing in the right direction. So they're doing good.</v>
+
+00:22:35.726 --> 00:22:46.726
+<v Kawandeep Sandhu>Awesome. Thank you. Thank you, Jeremy. And point noted. I'll just make sure that I reiterate the same, and hopefully you'll see the improvement. Thank you so much for the feedback. Appreciate it. Ben, over to you.</v>
+
+00:22:44.806 --> 00:22:45.606
+<v Jeremy Campbell>Of course.</v>
+
+00:22:47.926 --> 00:22:52.246
+<v Ben Bierbaum>I already had all my feedback at the beginning, so nothing else from me.</v>
+
+00:22:52.966 --> 00:22:56.806
+<v Kawandeep Sandhu>Okay, cool. Addy, anything from your end?</v>
+
+00:23:00.126 --> 00:23:02.006
+<v Addy Kumar>No coming, I'm good. Thank you.</v>
+
+00:23:02.806 --> 00:23:04.406
+<v Kawandeep Sandhu>Thanks, Andy.</v>
+
+00:23:07.406 --> 00:23:21.206
+<v Andy Arora>Thank you, Evan. Hello, everyone. Sorry for joining the meeting late. I missed the initial feedback part and I'll collect that from Kavan. And just wanted to ensure that when you have the hotel link for booking the rooms, the block we have.</v>
+
+00:23:22.406 --> 00:23:23.046
+<v Andy Arora>Open it.</v>
+
+00:23:23.286 --> 00:23:27.206
+<v Ben Bierbaum>Oh, my very best handling that for me, so I'm sure she does.</v>
+
+00:23:26.246 --> 00:23:27.166
+<v Andy Arora>Okay, yeah, yeah.</v>
+
+00:23:28.606 --> 00:23:31.126
+<v Andy Arora>Like, that was a query I have. Thank you, thank you everyone.</v>
+
+00:23:30.646 --> 00:23:35.846
+<v Ashley Popkin Wilson>The block, I have not gotten an email about that because I'll need to book one too. Thank you.</v>
+
+00:23:34.006 --> 00:23:36.206
+<v Andy Arora>I'll send you the link. I'll send.</v>
+
+00:23:35.286 --> 00:23:38.566
+<v Ben Bierbaum>Yeah, send us the link because we need to go get go ahead and get our rooms.</v>
+
+00:23:38.646 --> 00:23:40.846
+<v Ashley Popkin Wilson>Yeah, and all that stuff, yeah.</v>
+
+00:23:39.366 --> 00:23:41.286
+<v Andy Arora>Right, I'll send it right to them. Thank you.</v>
+
+00:23:42.246 --> 00:23:42.446
+<v Ben Bierbaum>Yeah.</v>
+
+00:23:43.686 --> 00:23:48.006
+<v Kawandeep Sandhu>Awesome. Thank you. Thank you, Andy, for covering that. I actually missed that piece, so thank you so much.</v>
+
+00:23:46.286 --> 00:23:47.206
+<v Ben Bierbaum>Yeah, that's coming up.</v>
+
+00:23:48.486 --> 00:23:48.966
+<v Ashley Popkin Wilson>Mmhmm.</v>
+
+00:23:49.606 --> 00:23:49.886
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:23:50.886 --> 00:23:52.646
+<v Kawandeep Sandhu>Okay, Vishal, how about you?</v>
+
+00:23:55.366 --> 00:24:00.166
+<v Vishal Dogra>I'm all good, Kavan. Thank you so much. Thank you, Ben, Ashley, Megan, for your time. Thank you, Jeremy.</v>
+
+00:24:01.206 --> 00:24:01.526
+<v Jeremy Campbell>Yep.</v>
+
+00:24:02.566 --> 00:24:14.086
+<v Kawandeep Sandhu>Okay, thank you, Vishal. Well, ladies and gentlemen, I gave you 6 minutes back. So thank you so much for the time today. Thank you so much for joining in. We'll speak to you next month. Till then, have a good one. Take care. Bye bye. Bye bye.</v>
+
+00:24:07.206 --> 00:24:07.766
+<v Ben Bierbaum>Thank you.</v>
+
+00:24:08.406 --> 00:24:08.886
+<v Ashley Popkin Wilson>Well.</v>
+
+00:24:11.846 --> 00:24:13.766
+<v Jeremy Campbell>Awesome. Thank you guys. Bye bye.</v>
+
+00:24:11.926 --> 00:24:14.246
+<v Ashley Popkin Wilson>Take care. Thanks, guys. Bye.</v>
+
+00:24:12.166 --> 00:24:13.046
+<v Ben Bierbaum>Alright, bye.</v>
+

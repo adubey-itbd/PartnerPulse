@@ -1,6 +1,12 @@
 """Re-render partners' executive-overview rows in index.html from their built
 data/{slug}.json caches.
 
+DEPRECATED (2026-06-13): the AI-Driven Operational Intelligence dashboard is
+data-driven — index.html renders from data/_overview.json and no longer carries an
+embedded partner array. This script is a no-op there and is kept only for historical
+reference / rollback to the pre-AIODI backup. To refresh the live dashboard's data run
+`python scripts/build_overview.py` (the final sync-cycle step) instead.
+
 Companion to scripts/build_real_partners.py: its inject_exec only manages the
 BEGIN/END marker block, but the registry partners' rows live in the static part
 of the embedded array — a full sync rebuilds their caches without ever touching
@@ -73,6 +79,14 @@ def remove(slug):
 
 
 def main():
+    # The live dashboard is data-driven (no embedded array) — bail out clearly rather
+    # than silently "appending" rows nothing reads.
+    html0 = EXEC.read_text(encoding="utf-8")
+    if "const partners = [" not in html0 and "BEGIN real partners" not in html0:
+        print("index.html is data-driven (renders from data/_overview.json) — exec-row "
+              "injection is no longer used. Run `python scripts/build_overview.py` instead.",
+              file=sys.stderr)
+        return
     if len(sys.argv) == 3 and sys.argv[1] == "--remove":
         remove(sys.argv[2])
         return

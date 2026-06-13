@@ -1,0 +1,482 @@
+WEBVTT
+NOTE title: Servicad I ITBD Service Call
+NOTE date: 2026-05-22
+NOTE duration: 22m 53s
+
+00:00:03.059 --> 00:00:13.979
+<v Gagan Chowdhary>for making time for this meeting, and thank you, Andy, for joining in. Shall we start recording of this call, which we usually do for service calls?</v>
+
+00:00:14.419 --> 00:00:14.939
+<v Andy Arora>So that you can.</v>
+
+00:00:15.419 --> 00:00:15.819
+<v Gagan Chowdhary>S.</v>
+
+00:00:15.419 --> 00:00:16.619
+<v Scott Coates>Looks like it's already happening.</v>
+
+00:00:17.579 --> 00:00:18.779
+<v Andy Arora>I just started. Thank you.</v>
+
+00:00:18.779 --> 00:00:19.899
+<v Gagan Chowdhary>Oh, thank you, Andy.</v>
+
+00:00:23.579 --> 00:00:40.379
+<v Gagan Chowdhary>So welcome, happy Friday, and happy long weekend. I know in Canada you already celebrated on this Monday, but for US Eastern, for US ADMIN, we will be having on Monday. So yeah, bye.</v>
+
+00:00:38.939 --> 00:00:42.059
+<v Scott Coates>Yeah, yeah, ours is ours is passed now, yes.</v>
+
+00:00:39.099 --> 00:00:39.259
+<v Vishal Dogra>Yeah.</v>
+
+00:00:42.219 --> 00:00:42.699
+<v Gagan Chowdhary>Yeah.</v>
+
+00:00:44.299 --> 00:01:02.939
+<v Gagan Chowdhary>Yeah, you know, I become aware when Armando requests for a holiday, he reminds me that Gagan, we are following Canadian calendar, so you know, I'll be out on this day. So I always ask him, do I need to check with Scott or is that a true information? Okay.</v>
+
+00:01:03.499 --> 00:01:07.819
+<v Gagan Chowdhary>So thank you, Scott. Are we expecting Peter or Simon on this call?</v>
+
+00:01:09.179 --> 00:01:11.739
+<v Scott Coates>Uh, maybe?</v>
+
+00:01:12.899 --> 00:01:13.419
+<v Scott Coates>To see.</v>
+
+00:01:14.459 --> 00:01:15.499
+<v Gagan Chowdhary>Okay, thank you.</v>
+
+00:01:16.059 --> 00:01:16.539
+<v Scott Coates>Yeah.</v>
+
+00:01:19.139 --> 00:01:19.419
+<v Gagan Chowdhary>Yeah.</v>
+
+00:01:20.859 --> 00:01:22.619
+<v Gagan Chowdhary>Thank you, Vishal, for joining in.</v>
+
+00:01:22.419 --> 00:01:22.539
+<v Scott Coates>Yeah.</v>
+
+00:01:27.019 --> 00:01:27.779
+<v Vishal Dogra>No problem.</v>
+
+00:01:28.619 --> 00:01:30.139
+<v Vishal Dogra>Good morning, Scott. Good to meet you.</v>
+
+00:01:30.939 --> 00:01:31.979
+<v Scott Coates>It's good to meet you.</v>
+
+00:01:40.539 --> 00:01:43.099
+<v Scott Coates>They usually don't, but I know...</v>
+
+00:01:44.459 --> 00:01:46.499
+<v Scott Coates>Nope, either. Okay, we're good to go.</v>
+
+00:01:47.499 --> 00:01:48.699
+<v Gagan Chowdhary>Okay, thank you.</v>
+
+00:01:52.099 --> 00:02:10.739
+<v Gagan Chowdhary>All right, thank you, James. I think we are good to present the presentation. And so along with that, we'll have discussion as per the slides. Thank you, everyone, once again, on this MBR, which I mean doesn't happen monthly, but yeah, the format is monthly business review.</v>
+
+00:02:11.299 --> 00:02:21.499
+<v Gagan Chowdhary>wherein we'll be reviewing Armando's performance throughout these months. So let me know once my screen is visible to everyone, quickly sharing and...</v>
+
+00:02:23.259 --> 00:02:26.019
+<v Gagan Chowdhary>It must be there on your screens in a few seconds.</v>
+
+00:02:27.899 --> 00:02:28.139
+<v Gagan Chowdhary>Up.</v>
+
+00:02:29.659 --> 00:02:31.419
+<v Gagan Chowdhary>Let me full screen it first.</v>
+
+00:02:44.459 --> 00:02:45.579
+<v Gagan Chowdhary>It must be there by now.</v>
+
+00:02:46.899 --> 00:02:47.579
+<v Scott Coates>Yep, there it is.</v>
+
+00:02:48.539 --> 00:02:48.579
+<v Gagan Chowdhary>I.</v>
+
+00:02:50.939 --> 00:03:09.739
+<v Gagan Chowdhary>Thank you, Team. So, this is we are doing in the month of May, and I don't know, last time when you joined, whether you were able to see this presentation with these graphics. So, we had an ITBD picture over here on the team when there was did, you know, last build it.</v>
+
+00:03:09.899 --> 00:03:20.299
+<v Gagan Chowdhary>Last year, so you'll see some of the India and the U.S. team and Philippines team, you know, joined together and attended that seminar.</v>
+
+00:03:21.819 --> 00:03:40.299
+<v Gagan Chowdhary>Moving on to your agenda items, so we have highlights, performance analysis of Armando, ITBD C set, move way forward with Sarbjeet, AI by design, holiday schedule, and of course, recap, which we usually share after this call via email with M events.</v>
+
+00:03:41.499 --> 00:03:51.219
+<v Gagan Chowdhary>And I don't have to say it, you know the drill. So please feel free to chime in wherever you have any updates, any feedback, any insights about anything. Okay.</v>
+
+00:03:52.579 --> 00:03:52.699
+<v Scott Coates>It.</v>
+
+00:03:54.139 --> 00:04:13.699
+<v Gagan Chowdhary>These are some of the highlights I captured for this period, mainly for the month of April, which just passed. So Armando met his available target for the month of April, 2026. And he proactively supported team and dispatching tickets. So he always, you know, I always ask him just like,</v>
+
+00:04:13.819 --> 00:04:32.139
+<v Gagan Chowdhary>I always tell you, I ask him what value are you adding apart from your KRs, regular KRs and KPIs, anything extra you're putting in. So he says, yeah, whenever Kelly is out. So I proactively, you know, ask Team to, I volunteer myself to.</v>
+
+00:04:32.579 --> 00:04:45.739
+<v Gagan Chowdhary>a dispatch ticket and I do my job. And so that goes side by side. I hope you must have observed that. So he's consistently doing that and I hope this is adding value in your environment.</v>
+
+00:04:47.179 --> 00:04:47.579
+<v Scott Coates>Yep.</v>
+
+00:04:47.259 --> 00:04:47.539
+<v Gagan Chowdhary>Kip.</v>
+
+00:04:48.539 --> 00:05:05.819
+<v Gagan Chowdhary>And apart from that, we would like to hear from you. If you notice, there is something that Armando can, you know, add on to his plate to add value in your organization. So we would like to hear from you as well before we move on to the rest of the points.</v>
+
+00:05:06.779 --> 00:05:15.179
+<v Scott Coates>Sure, yeah, right now I think we're good at the moment. We're doing some stuff internally and having some discussions, but currently everything's good.</v>
+
+00:05:17.739 --> 00:05:19.339
+<v Gagan Chowdhary>Thank you, Scott. Appreciating that.</v>
+
+00:05:21.419 --> 00:05:41.299
+<v Gagan Chowdhary>And he had a value in reporting tasks as well. When I asked him the last time, you know, when I do some board reviews with him, not frequently, because he's a tenured, mature individual. So a couple of times in a week when we connect. So he told me that now he's consistently getting projects from</v>
+
+00:05:41.739 --> 00:05:51.659
+<v Gagan Chowdhary>Peter and the team, which is about strengthening, you know, security policies, right?</v>
+
+00:05:52.779 --> 00:05:53.179
+<v Scott Coates>Kip.</v>
+
+00:05:52.779 --> 00:06:12.579
+<v Gagan Chowdhary>So those are the things he's working on. And we appreciate also, so we can team for approving his one week PTO, which was required for his spouse surgery. So that went well, successfully, and she's back home.</v>
+
+00:06:12.699 --> 00:06:23.259
+<v Gagan Chowdhary>Yeah, so Armando is happy that, so, so we can team and ITBD team supported him in his needs, so thank you everyone for doing that.</v>
+
+00:06:24.779 --> 00:06:46.219
+<v Gagan Chowdhary>Moving on to performance analysis. So since we connected the last time, which is why I'm presenting, although we present data for of last four weeks, but here I'm presenting data of last three months so that you have visibility. I know you work with him very closely, but this is from our side, the data that he entered so on.</v>
+
+00:06:47.099 --> 00:06:59.179
+<v Gagan Chowdhary>on MS forms that we ask him to fill every day so that we have consistent visibility and transparency, how he's performing and what he's doing, and if he needs any assistance.</v>
+
+00:07:00.459 --> 00:07:20.939
+<v Gagan Chowdhary>so that internal team can assist him with the same thing, which is me, of course, his POC at ITBD side. In the month of February, his available still at 97.66%, in March, 90.63, and in April, 95.56%.</v>
+
+00:07:22.619 --> 00:07:40.939
+<v Gagan Chowdhary>So, as we decided last time, you said you have, you know, good, you know, plenty of tasks coming onto his plate, so which is why target billable targets were was increased from 80 to 90%, you said, you know, that is achievable easily, so, and I see that.</v>
+
+00:07:41.299 --> 00:07:42.699
+<v Gagan Chowdhary>It is meeting very easily.</v>
+
+00:07:44.059 --> 00:07:49.339
+<v Gagan Chowdhary>If you think there is any alteration required in this target, so please feel free to let us know.</v>
+
+00:07:50.699 --> 00:08:08.699
+<v Gagan Chowdhary>And his non-available remain in these three months, in February, 3%, in March, 10%, and in April, 4%. So overall, I do not see any challenge meeting his productivity time. Any thoughts from you, Scott?</v>
+
+00:08:11.019 --> 00:08:12.539
+<v Scott Coates>No, it looks all good.</v>
+
+00:08:14.059 --> 00:08:24.059
+<v Gagan Chowdhary>Thank you. And I think this is for you as well. For you and Vishal, anything you observe, any insights, feedback, please feel free to chime in. Thank you.</v>
+
+00:08:25.659 --> 00:08:43.339
+<v Gagan Chowdhary>Moving on to ticket closure trends. So in the month of April, he achieved 71.67%. However, if you see from February till April, February was a little low. I think till that time,</v>
+
+00:08:44.939 --> 00:09:03.259
+<v Gagan Chowdhary>No, I think until the month of January, we were capturing on a day-to-day basis how many tickets he's working on and closing. But as we discussed the last time, I mean, he gets some of the project tasks. Those run for a few days instead of getting closed on the single day. So.</v>
+
+00:09:03.819 --> 00:09:18.619
+<v Gagan Chowdhary>Based on that feedback from you, we are measuring his performance on a weekly basis. So number of tickets he is getting in his bucket and out of those tickets, how many he is able to close. So in the month of February, he is...</v>
+
+00:09:19.779 --> 00:09:27.259
+<v Gagan Chowdhary>Based on those, you know, almost 50% is the number of projects he's getting in his bin.</v>
+
+00:09:29.019 --> 00:09:49.979
+<v Gagan Chowdhary>He worked on 123, of which he was able to complete 84 tickets. So blue bar is the number of tickets he worked, and green represents the number of tickets he completed. And if you see, the bar did increase in the month of March. I know we had less number of days in February as well. It was of 28 days.</v>
+
+00:09:50.259 --> 00:10:09.499
+<v Gagan Chowdhary>Of course, there were a few PTS as well. And in the month of March, he worked on 168 ticket. That was impressive and was able to complete 117. Result rate is on little lower side. I believe this is because of the projects he's.</v>
+
+00:10:09.899 --> 00:10:21.499
+<v Gagan Chowdhary>being involved in. But if you have any different thoughts, you may please share so that if there's any room for improvement, we'll work with them and assist them with those things.</v>
+
+00:10:22.379 --> 00:10:23.099
+<v Scott Coates>No, it's all good.</v>
+
+00:10:24.459 --> 00:10:42.619
+<v Gagan Chowdhary>Okay, thank you. But we see that in the month of April, he picked up, every month he is picking up by 2%. I don't know, it is coincidence, but in the month of April, he achieved 72%. And yeah, these are his numbers.</v>
+
+00:10:44.139 --> 00:11:03.019
+<v Gagan Chowdhary>Moving on to CSAT, till now CSATs are going directly to Peter and we're mostly here till the month of January. We have received 100% CSAT, but I believe he might have been occupied with many other priorities on his plate at the same time.</v>
+
+00:11:03.499 --> 00:11:22.219
+<v Gagan Chowdhary>So, which is why we anticipate he couldn't fail, he said, for the month of February and March. But we did receive neutral surveys, you know, for the month of April for Armando. If you have any thoughts, any idea, if that was a part of internal discussion with your team.</v>
+
+00:11:22.699 --> 00:11:35.179
+<v Gagan Chowdhary>We would like to hear from you. If there's anything, you know, which Peter thought may be a mistake or if there is something Peter thinks he needs to improve on, we would like to hear from you.</v>
+
+00:11:35.899 --> 00:11:37.739
+<v Scott Coates>Yeah, Peter will set up a call to discuss that.</v>
+
+00:11:38.859 --> 00:11:39.899
+<v Gagan Chowdhary>Okay, thank you.</v>
+
+00:11:42.459 --> 00:11:45.339
+<v Gagan Chowdhary>Moving on to ITBD holidays, 2026.</v>
+
+00:11:46.299 --> 00:11:54.539
+<v Gagan Chowdhary>I believe you already have this, so compulsory holidays can be marked on the calendar and...</v>
+
+00:11:53.819 --> 00:12:14.699
+<v Vishal Dogra>Sorry, sorry, Gagan, if you can just go back to the previous slide. I'm sorry, I was talking on mute when we were talking about CSAT. Yeah, I'm so sorry, sorry to interrupt the flow. Scott, so this is the neutral survey we got from Peter. I'm sorry, I missed the update. Did you say that Peter is going to have an have a call with us or?</v>
+
+00:11:59.499 --> 00:12:00.219
+<v Gagan Chowdhary>Oh, okay.</v>
+
+00:12:14.739 --> 00:12:16.779
+<v Vishal Dogra>You, you were referring to the internal call.</v>
+
+00:12:17.739 --> 00:12:23.179
+<v Scott Coates>No, Peter will set up a call to go over the survey that he submitted.</v>
+
+00:12:24.339 --> 00:12:25.259
+<v Scott Coates>will be separate from this.</v>
+
+00:12:24.859 --> 00:12:25.419
+<v Vishal Dogra>Okay.</v>
+
+00:12:26.939 --> 00:12:33.419
+<v Vishal Dogra>Okay, we tried to reach out to Peter earlier. I tried to schedule a call as well. So thank you for the update.</v>
+
+00:12:32.059 --> 00:12:37.419
+<v Scott Coates>Yeah, yeah, he'll he'll he'll reach out. Yeah, yeah, I don't have any feedback on that. It's something that you'll have to discuss with Peter.</v>
+
+00:12:39.179 --> 00:12:41.099
+<v Vishal Dogra>Okay, no worries. I'll do that. Thank you so much.</v>
+
+00:12:41.899 --> 00:12:42.019
+<v Scott Coates>Yeah.</v>
+
+00:12:43.539 --> 00:12:49.019
+<v Gagan Chowdhary>Thank you, Vishal. Moving on to holidays, ITBD holidays, 2026, so...</v>
+
+00:12:53.579 --> 00:13:12.219
+<v Gagan Chowdhary>So, Scott, so he has decided to take option holiday. I mean, we have, you know, quite a few months to get a reach that date, but they'll be on October 20th, Dish Ayra. That's an Indian festival. If he does not take this, so he will take the following one, which is in the...</v>
+
+00:13:12.259 --> 00:13:18.459
+<v Gagan Chowdhary>which is in the month of November on the 9th, which is Indian Festival Diwali.</v>
+
+00:13:19.979 --> 00:13:29.179
+<v Gagan Chowdhary>However, we will communicate that to you at least two to three weeks or four weeks in advance that this is confirmed by Armando. Okay.</v>
+
+00:13:30.139 --> 00:13:30.459
+<v Scott Coates>Kurt.</v>
+
+00:13:31.019 --> 00:13:49.459
+<v Gagan Chowdhary>Thank you. And way forward, nothing much. My emphasis will remain on to continue to connect with Armando to understand his requirements. I do not believe he has any challenges on a daily basis, but just to understand if there are any, we can assist him.</v>
+
+00:13:49.579 --> 00:14:07.419
+<v Gagan Chowdhary>with those things. And our team sits together in the office. So if he has any kind of issues, they interact, collaborate with each other and understand and discuss where they need attention, where they need support. So</v>
+
+00:14:08.459 --> 00:14:28.059
+<v Gagan Chowdhary>My only job is to just have visibility and, you know, keep team collaborative with each other, so that things can move in, you know, smoothly. Yeah, from ITBD standpoint and from personal standpoint, what we do, you know it.</v>
+
+00:14:28.219 --> 00:14:47.179
+<v Gagan Chowdhary>We collaborate on a weekly basis and also monthly and quarterly basis for outdoor lunches or sometime in the cafeteria so that Armando and the rest of the team who work with other partners at the same time, they feel inclusive and feel</v>
+
+00:14:47.339 --> 00:15:00.539
+<v Gagan Chowdhary>Feel ITBD unit team as family as their home. These are our initiatives. Anything you think we should be adding, probably maybe we are missing, but we need inputs from your end as well.</v>
+
+00:15:01.779 --> 00:15:03.819
+<v Andy Arora>And employee orientation.</v>
+
+00:15:03.139 --> 00:15:05.499
+<v Scott Coates>Uh, no, it's uh, all looks good.</v>
+
+00:15:06.619 --> 00:15:25.979
+<v Gagan Chowdhary>Okay. And also I would like to know, because we, everyone is busy because we are in a daily routine, we try to fix a lot of things. If there is anything that you can leave Armando or your team maybe needing assistance with, please feel free to let us know.</v>
+
+00:15:08.139 --> 00:15:08.379
+<v Andy Arora>Other.</v>
+
+00:15:26.539 --> 00:15:42.619
+<v Gagan Chowdhary>Being, I being his team lead or you know my team, they'll be they'll be willing to assist you with anything, any challenges or anything that you need assistance with. Maybe it's technical or non-technical from management side as well.</v>
+
+00:15:34.699 --> 00:15:34.939
+<v Andy Arora>Kip.</v>
+
+00:15:38.819 --> 00:15:39.259
+<v Andy Arora>Yes, Manan.</v>
+
+00:15:44.059 --> 00:15:44.379
+<v Scott Coates>Okay.</v>
+
+00:15:45.179 --> 00:15:45.819
+<v Gagan Chowdhary>Like you.</v>
+
+00:15:46.939 --> 00:15:48.219
+<v Gagan Chowdhary>Andy, over to you.</v>
+
+00:15:49.419 --> 00:16:06.779
+<v Andy Arora>Thank you. Thank you, Gagan. Hi, Scott. I am from the customer experience team and we have our next big event coming. That's Build It in August 3rd to 5th. Have you received any emails about it or do you already have any idea about it or shall we brief you about it?</v>
+
+00:16:08.139 --> 00:16:12.059
+<v Scott Coates>Uh, for this time period over the next while, we won't be traveling to the United States.</v>
+
+00:16:13.259 --> 00:16:18.219
+<v Andy Arora>Okay, okay, okay, okay, right. Any particular reason for that?</v>
+
+00:16:19.579 --> 00:16:21.419
+<v Scott Coates>None that I'm willing to discuss.</v>
+
+00:16:21.899 --> 00:16:39.979
+<v Andy Arora>Okay, perfect, perfect. Your choice. Perfect, Scott. And second question from my side would be, is there anything which we can improve on, not only for the engineer, but for your overall experience with ITBD? Any feedback or suggestions from your side for the overall experience anywhere?</v>
+
+00:16:41.979 --> 00:16:45.259
+<v Scott Coates>Uh, no, right now we're we're satisfied with the way things are going.</v>
+
+00:16:46.059 --> 00:16:57.019
+<v Andy Arora>Okay, perfect, perfect, Scott. And in future, if we have virtual sessions for AI by design, would you be interested in joining that for AI specifically, virtual sessions?</v>
+
+00:16:57.739 --> 00:16:59.499
+<v Scott Coates>No, we have other partners we work with for that.</v>
+
+00:17:00.059 --> 00:17:04.939
+<v Andy Arora>Okay, okay, perfect. Right, Scott, those are the questions from my side. Back to you, Gagan. Thank you.</v>
+
+00:17:06.259 --> 00:17:28.219
+<v Gagan Chowdhary>Sure, thank you. And I know this was again for you, but I believe this has already been discussed with Scott. So whenever they have any kind of requirement, if they're experiencing, there's a need for these things to incorporate with the tools, so they can always scan this QR code, and our team will be ready to give you the demo.</v>
+
+00:17:29.179 --> 00:17:33.179
+<v Gagan Chowdhary>Because it has improved since the last time when you saw the demo previously.</v>
+
+00:17:34.059 --> 00:17:49.419
+<v Gagan Chowdhary>Thank you. Let me unshare my screen. And there's one more point I would like to touch upon, Scott, that was about strengthening conditional access policy that you discussed the other day that you were implementing in your environment.</v>
+
+00:17:52.059 --> 00:17:56.459
+<v Scott Coates>Oh, the setting up Armando on a cloud PC.</v>
+
+00:17:57.179 --> 00:17:58.179
+<v Gagan Chowdhary>That is right, yeah.</v>
+
+00:17:58.539 --> 00:18:09.979
+<v Scott Coates>Yeah, yeah, no, it's coming. We just need to set it up, get it ready. I think we're going to have him actually do the work to get it going. But we just, we've been busy, so we haven't had a chance to actually set up a ticket for him to actually do the work.</v>
+
+00:18:11.499 --> 00:18:13.579
+<v Gagan Chowdhary>Sure, thank you. So, because...</v>
+
+00:18:12.939 --> 00:18:32.219
+<v Scott Coates>Yeah, but yeah, essentially the idea, just the idea, I guess, to fill in some context, we have a lot of companies that we're taking on that are financial services and as well as insurance based and they have a lot of compliance regulatory and regulatory requirements they need to meet. So having someone</v>
+
+00:18:29.419 --> 00:18:29.899
+<v Gagan Chowdhary>Mhm.</v>
+
+00:18:32.379 --> 00:18:52.499
+<v Scott Coates>who is not within Canada accessing their environment from a PC that is not in Canada is basically causing some issues. So we're going to set up a cloud PC in the Microsoft environment. We have a few of them already set up, so we're just going to add this one into what we already have.</v>
+
+00:18:54.299 --> 00:19:12.859
+<v Scott Coates>And basically moving, once that's set up, moving forward, all Server CAD data and real client data, anything he's accessing it from Server CAD will be only on that cloud PC. It shouldn't be exist any further or any longer on any ITBD.</v>
+
+00:19:13.179 --> 00:19:31.739
+<v Scott Coates>or personal or anything else that he uses. I think he pretty much just works in Office now. There isn't any personal devices that he would be accessing it from. So it's just basically trying to make sure our data is our data. It's located within Canada, in a data center in Canada, and it just makes our clients a little happier.</v>
+
+00:19:33.179 --> 00:19:51.179
+<v Gagan Chowdhary>Absolutely, completely makes sense, and which is why, so we had internal discussion with our CX team as well. So, and I did reply to your email accordingly. So if you have thoughts on, you know, a reply, I mean, we would like to hear from you.</v>
+
+00:19:45.179 --> 00:19:45.419
+<v Scott Coates>Yep.</v>
+
+00:19:51.739 --> 00:19:54.859
+<v Gagan Chowdhary>You know, if any support that you need from ITBD and...</v>
+
+00:19:56.939 --> 00:19:57.899
+<v Scott Coates>Yep, nothing at this point.</v>
+
+00:19:58.699 --> 00:19:59.899
+<v Gagan Chowdhary>Okay, thank you.</v>
+
+00:20:01.179 --> 00:20:03.739
+<v Gagan Chowdhary>Uh, Andy, anything from your end or Vishal?</v>
+
+00:20:12.539 --> 00:20:13.179
+<v Gagan Chowdhary>Absolutely.</v>
+
+00:20:19.979 --> 00:20:20.299
+<v Scott Coates>Kurt.</v>
+
+00:20:20.339 --> 00:20:21.419
+<v Andy Arora>From my side, back to Evan.</v>
+
+00:20:22.059 --> 00:20:42.059
+<v Gagan Chowdhary>Yeah, many of the other engineers who work, you know, with me, their partners have also set up their environment same way. So every day they come to your office, they do not have to open anything on their ITBD machines. So firstly, either is a VPN, you know, by which they connect to the machines in the US or Canada.</v>
+
+00:20:42.539 --> 00:21:02.859
+<v Gagan Chowdhary>Or they can simply take, you know, RMM access to their machine. Just they just need one access that is RMM, the remote into their machine situated in the US or Canada office. And from there, they open all the tools and whatever they need to access. So that, yeah, that completely makes sense because</v>
+
+00:21:03.899 --> 00:21:25.419
+<v Gagan Chowdhary>Most of the clients that do have geo-blocking IP restrictions, and yeah, so you very well mentioned in the email, it is not possible, and you know, for every partner to enable or permit India geolocation or India IP addresses, yeah, that is not feasible and able.</v>
+
+00:21:26.139 --> 00:21:34.779
+<v Gagan Chowdhary>you may open some more bridges. Yep. So thank you. Completely understandable. Before we close this call, Vishal, anything from your end?</v>
+
+00:21:36.619 --> 00:21:51.899
+<v Vishal Dogra>No, no, I'm good. Again, nice meeting you, Scott. And regarding the last point, please let us know if we could give could be of any help to set up that ABD part. We are open for discussion. Anything that comes from us, we are absolutely here for you. Thank you so much for your time.</v>
+
+00:21:51.579 --> 00:21:53.339
+<v Scott Coates>Okay. No problem. Thank you.</v>
+
+00:21:54.139 --> 00:22:09.579
+<v Gagan Chowdhary>Thank you, Scott. And before we drop, so I just need to confirm, since we are not having, as per our previous discussion, we are not having this call on a monthly basis, but would it be a good time to keep it on a monthly basis or in the same format?</v>
+
+00:22:10.059 --> 00:22:11.099
+<v Scott Coates>No, same format's fine.</v>
+
+00:22:11.979 --> 00:22:12.379
+<v Andy Arora>You too.</v>
+
+00:22:11.979 --> 00:22:21.179
+<v Gagan Chowdhary>Okay, so let's connect after two months, maybe in the month of July or August. Okay.</v>
+
+00:22:14.179 --> 00:22:14.299
+<v Scott Coates>Yeah.</v>
+
+00:22:14.619 --> 00:22:15.099
+<v Andy Arora>giving up.</v>
+
+00:22:20.299 --> 00:22:25.779
+<v Scott Coates>No, the quarterly, like was originally discussed. Yeah, quarterly. Yeah.</v>
+
+00:22:22.619 --> 00:22:23.179
+<v Gagan Chowdhary>Quarterly.</v>
+
+00:22:24.459 --> 00:22:42.379
+<v Gagan Chowdhary>Okay, so we'll connect in August now. All right, thank you team for connecting and we'll send you the minutes or minutes after this call. And if you have any challenges, anything, any feedback, please, you don't have to wait for this call. Just share. I'm just a caller, text or email away. Okay.</v>
+
+00:22:27.179 --> 00:22:27.579
+<v Scott Coates>Yes.</v>
+
+00:22:43.139 --> 00:22:44.619
+<v Scott Coates>All right, perfect. Thank you.</v>
+
+00:22:44.939 --> 00:22:46.299
+<v Gagan Chowdhary>Thank you very much, everyone.</v>
+
+00:22:45.339 --> 00:22:50.859
+<v Andy Arora>Wish you a good rest of the day and happy weekend, Scott. See you soon. Bye.</v>
+
+00:22:49.259 --> 00:22:49.739
+<v Scott Coates>Yes.</v>
+
+00:22:49.419 --> 00:22:49.739
+<v Gagan Chowdhary>Yeah.</v>
+
+00:22:51.419 --> 00:22:51.819
+<v Scott Coates>Mate.</v>
+
+00:22:51.579 --> 00:22:53.059
+<v Gagan Chowdhary>Thank you. Happy weekend.</v>
+

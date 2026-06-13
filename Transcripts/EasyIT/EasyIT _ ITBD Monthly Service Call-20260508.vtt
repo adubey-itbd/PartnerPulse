@@ -1,0 +1,1010 @@
+WEBVTT
+NOTE title: EasyIT | ITBD Monthly Service Call
+NOTE date: 2026-05-08
+NOTE duration: 26m 16s
+
+00:01:17.289 --> 00:01:18.089
+<v Andrea Canlas>Hi, Jacob.</v>
+
+00:01:19.209 --> 00:01:19.849
+<v Jacob Lowe>Hello.</v>
+
+00:01:20.889 --> 00:01:22.009
+<v Andrea Canlas>Good morning, how are you?</v>
+
+00:01:22.889 --> 00:01:23.929
+<v Jacob Lowe>I'm doing well, how are you?</v>
+
+00:01:25.049 --> 00:01:30.249
+<v Andrea Canlas>Doing good. Is it just me or your video is missing?</v>
+
+00:01:29.849 --> 00:01:33.529
+<v Jacob Lowe>It's not you, it's me. I don't know what's going on.</v>
+
+00:01:35.289 --> 00:01:41.689
+<v Andrea Canlas>Okay, I thought it's something going on with Twitter. It's just white. All I can see.</v>
+
+00:01:36.849 --> 00:01:37.769
+<v Jacob Lowe>My gosh.</v>
+
+00:01:40.809 --> 00:01:44.089
+<v Jacob Lowe>Yeah, it's just telling me that I'm connecting, so I don't know what.</v>
+
+00:01:44.569 --> 00:01:50.489
+<v Andrea Canlas>Okay, gotcha. We'll probably give that a few seconds and hopefully it works. How are you so far?</v>
+
+00:01:51.529 --> 00:01:52.089
+<v Jacob Lowe>Not too bad?</v>
+
+00:01:52.689 --> 00:02:11.289
+<v Andrea Canlas>Oh, not too bad, gotcha. Yeah, I'm just here to have this service call and I'm supposed to be with someone. However, I got a bit of an emergency this morning, so I'm meeting you instead. So, all right, let me just go ahead and share my screen.</v>
+
+00:02:06.169 --> 00:02:06.809
+<v Jacob Lowe>Okay.</v>
+
+00:02:12.049 --> 00:02:21.609
+<v Jacob Lowe>Unfortunately, I'm not going to be able to see anything because I don't know what's going on. I'm going to try to shut down teams and rejoin. Yeah, I'll be back in a moment.</v>
+
+00:02:15.369 --> 00:02:16.089
+<v Andrea Canlas>Ohh.</v>
+
+00:02:17.049 --> 00:02:17.849
+<v Andrea Canlas>Do you want to?</v>
+
+00:02:18.569 --> 00:02:20.009
+<v Andrea Canlas>Sure, rejoin. That's okay.</v>
+
+00:02:22.209 --> 00:02:23.289
+<v Andrea Canlas>No problem. Take your time.</v>
+
+00:03:12.249 --> 00:03:13.049
+<v Andrea Canlas>And you're back.</v>
+
+00:03:13.769 --> 00:03:15.929
+<v Jacob Lowe>Okay, how about now? Let's see.</v>
+
+00:03:17.609 --> 00:03:18.569
+<v Andrea Canlas>I can see you now.</v>
+
+00:03:19.689 --> 00:03:22.969
+<v Jacob Lowe>All right, there we go. That was that was fun.</v>
+
+00:03:20.969 --> 00:03:22.009
+<v Andrea Canlas>Better, Okay.</v>
+
+00:03:25.229 --> 00:03:26.509
+<v Andrea Canlas>All you know, teens.</v>
+
+00:03:27.569 --> 00:03:28.329
+<v Andrea Canlas>It happens.</v>
+
+00:03:27.929 --> 00:03:28.569
+<v Jacob Lowe>Yep.</v>
+
+00:03:31.209 --> 00:03:33.049
+<v Andrea Canlas>Alright, can you see my screen?</v>
+
+00:03:33.609 --> 00:03:34.249
+<v Jacob Lowe>I sure can.</v>
+
+00:03:34.889 --> 00:03:40.729
+<v Andrea Canlas>Okay, perfect. So we're just doing our monthly business review for the month of April to just talk about.</v>
+
+00:03:39.969 --> 00:03:40.249
+<v Jacob Lowe>Mm.</v>
+
+00:03:42.409 --> 00:04:01.649
+<v Andrea Canlas>anything that has changed and of course checks performance. So before we go ahead and move on, I just wanted to let you know that even though Groch is not here now, he definitely didn't leave IT by Design. So he's still with us. I know that I think you and checked.</v>
+
+00:04:01.769 --> 00:04:21.169
+<v Andrea Canlas>was able to talk about it, but Rodge has taken a more senior role currently. Happy for him. But now we are going to introduce to you a new team lead for co-manage. So he was supposed to be here, to be honest, but unfortunately he got into a motorcycle accident.</v>
+
+00:04:08.289 --> 00:04:08.729
+<v Jacob Lowe>OK.</v>
+
+00:04:16.969 --> 00:04:17.209
+<v Jacob Lowe>Yeah.</v>
+
+00:04:21.329 --> 00:04:40.729
+<v Andrea Canlas>Not good. Yeah, but he's okay now at the hospital resting. But he should be here next week so that you and him can be able to have a catch up. So he's been in the industry for 12 years now. So doing incident management, technical.</v>
+
+00:04:22.249 --> 00:04:22.809
+<v Jacob Lowe>Ohh.</v>
+
+00:04:39.289 --> 00:04:39.409
+<v Jacob Lowe>Yeah.</v>
+
+00:04:41.169 --> 00:04:54.769
+<v Andrea Canlas>and everything along the lines of the MSP community. So he's very much aware of how things are going. Recently sorted, but still slowly acclimating to everything. So yeah.</v>
+
+00:04:46.849 --> 00:04:47.329
+<v Jacob Lowe>Mhm.</v>
+
+00:04:54.169 --> 00:04:54.929
+<v Jacob Lowe>Yep, OK.</v>
+
+00:04:56.449 --> 00:05:04.929
+<v Andrea Canlas>Soon, you'll meet him, but moving on, you'll have to deal with me, Jacob, unfortunately. Yeah, thank you.</v>
+
+00:05:03.889 --> 00:05:06.009
+<v Jacob Lowe>I don't know of the check.</v>
+
+00:05:07.809 --> 00:05:23.009
+<v Andrea Canlas>Gotcha. So same agenda, check in highlights, action tracker, performance, KPI, and user CSAT, way forward and recap these are our agenda for today. So how are things? How are you? How is everything? And Jack, of course.</v>
+
+00:05:18.409 --> 00:05:18.729
+<v Jacob Lowe>Yeah.</v>
+
+00:05:21.009 --> 00:05:21.289
+<v Jacob Lowe>Yeah.</v>
+
+00:05:25.129 --> 00:05:42.569
+<v Jacob Lowe>Me, I'm good. As I'm sure you saw in the emails, Steve is no longer with Easy IT, so I'm now the client services super, or I'm the manager, no longer a supervisor. So I'm still currently</v>
+
+00:05:29.729 --> 00:05:30.209
+<v Andrea Canlas>Mhm.</v>
+
+00:05:39.249 --> 00:05:40.049
+<v Andrea Canlas>Congrats, son.</v>
+
+00:05:43.529 --> 00:05:53.129
+<v Jacob Lowe>overseeing the plot of engineers that Jack is a part of. So for the time being, I'm still supervisor for him.</v>
+
+00:05:48.209 --> 00:05:48.689
+<v Andrea Canlas>Mhm.</v>
+
+00:05:55.249 --> 00:06:04.009
+<v Jacob Lowe>That may change. We are looking at hiring a new supervisor, but we'll discuss that down the road when we get there. So no big deal, but yeah.</v>
+
+00:06:01.449 --> 00:06:02.049
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:06:04.929 --> 00:06:22.449
+<v Andrea Canlas>Gotcha. Appreciate it. And also just wanted to let you know, I'm not sure if you're part of the email, but Lisa did renew with us already for the 7%. So glad for that. I already had an annual conversation or annual appraisal for a project as well. So that should be taken care of.</v>
+
+00:06:12.929 --> 00:06:13.409
+<v Jacob Lowe>Mhm.</v>
+
+00:06:23.289 --> 00:06:23.609
+<v Jacob Lowe>Okay.</v>
+
+00:06:24.209 --> 00:06:41.969
+<v Andrea Canlas>All right, perfect. Highlights, so Derek has been one of, has been on a perfect attendance week for the month of April, no late absences. He's just on top of it. And I think for the past quarter, we just don't have any issues with him at all. It's not like I threaten him, but we just talk of it.</v>
+
+00:06:34.889 --> 00:06:35.209
+<v Jacob Lowe>Yeah.</v>
+
+00:06:38.009 --> 00:06:38.489
+<v Jacob Lowe>Right.</v>
+
+00:06:43.409 --> 00:07:02.969
+<v Andrea Canlas>Just talk about it, and he's just here earlier than I do, so just a very, very good thing. Next is, Derek's impressive CSAT score is driven by workflow discipline and quality of work provided, which we're going to see at a later date. I did provide the feedback that we discussed last QBR about the quality.</v>
+
+00:06:46.449 --> 00:06:46.969
+<v Jacob Lowe>Mhm.</v>
+
+00:06:49.129 --> 00:06:49.249
+<v Jacob Lowe>With.</v>
+
+00:07:03.209 --> 00:07:11.009
+<v Andrea Canlas>Of his tickets, so the TFA was able to get that sorted out, you know, slowly, but had to progress within it.</v>
+
+00:07:04.729 --> 00:07:05.209
+<v Jacob Lowe>Mhm.</v>
+
+00:07:11.169 --> 00:07:11.769
+<v Jacob Lowe>Mm-hmm.</v>
+
+00:07:12.609 --> 00:07:13.729
+<v Andrea Canlas>All right, any questions so far?</v>
+
+00:07:14.329 --> 00:07:14.609
+<v Jacob Lowe>No.</v>
+
+00:07:16.449 --> 00:07:26.529
+<v Andrea Canlas>All right, action tracker. So we did send it out, the feedback for April. Not sure if you've seen it. If not, then I can just retrigger that.</v>
+
+00:07:25.369 --> 00:07:26.209
+<v Jacob Lowe>Ice.</v>
+
+00:07:27.209 --> 00:07:29.129
+<v Jacob Lowe>Thought I responded to it.</v>
+
+00:07:29.969 --> 00:07:32.289
+<v Andrea Canlas>Oh, you did? Yeah, if you did, then that's fine.</v>
+
+00:07:31.369 --> 00:07:32.889
+<v Jacob Lowe>I think I did.</v>
+
+00:07:33.449 --> 00:07:38.929
+<v Andrea Canlas>Okay, gotcha. I'll just look up, if not, then I'll just send you an email. Easy.</v>
+
+00:07:35.369 --> 00:07:35.649
+<v Jacob Lowe>Yeah.</v>
+
+00:07:39.009 --> 00:07:40.409
+<v Jacob Lowe>Okay, yeah, that sounds good.</v>
+
+00:07:40.129 --> 00:07:59.929
+<v Andrea Canlas>All right, perfect. Performance analysis. So we know our best practices. Utilization trend and analysis. So overall utilization, of course, it's 100%. That means that he's tracking all of his time, non-billable or billable. But overall, billable utilization average is 85%.</v>
+
+00:07:56.089 --> 00:07:56.569
+<v Jacob Lowe>Mhm.</v>
+
+00:08:00.049 --> 00:08:21.089
+<v Andrea Canlas>exceeding our target for him, which is 80%. Week one and four is the highest billable week for him, driven by a lighter internal meeting load. And I'm sorry if I'm pulling him out sometimes that I gotta talk to him. But yeah, it's just me and his previous, his current team lead that had that catch up.</v>
+
+00:08:12.009 --> 00:08:12.169
+<v Jacob Lowe>Mm.</v>
+
+00:08:14.129 --> 00:08:14.649
+<v Jacob Lowe>That's OK.</v>
+
+00:08:21.289 --> 00:08:21.969
+<v Andrea Canlas>like a one-on-one.</v>
+
+00:08:23.009 --> 00:08:36.129
+<v Andrea Canlas>Moving forward, Marky, Marky is his name, the new team lead. He'll be able to reach out to, I didn't want to just add him to the group chat before I actually introduced him to you, so I didn't add him yet.</v>
+
+00:08:32.409 --> 00:08:32.889
+<v Jacob Lowe>Yeah.</v>
+
+00:08:35.369 --> 00:08:35.849
+<v Jacob Lowe>Sure.</v>
+
+00:08:37.489 --> 00:08:56.169
+<v Andrea Canlas>Inside, you know, the admin person spikes in weeks two, three, and 5th, which are 17% lunch, learning, and study time. And I hope that he is putting in like the definition of what study time means and what he's trying to train and study for, not a chronic.</v>
+
+00:08:52.249 --> 00:08:52.729
+<v Jacob Lowe>Mhm.</v>
+
+00:08:56.449 --> 00:09:04.129
+<v Andrea Canlas>billable drift and as opposed to freak 4 shows the optimal ballot lowest admin time and second highest billable full hours locked.</v>
+
+00:09:06.689 --> 00:09:07.409
+<v Andrea Canlas>Any questions?</v>
+
+00:09:08.169 --> 00:09:08.409
+<v Jacob Lowe>Nope.</v>
+
+00:09:09.569 --> 00:09:11.409
+<v Andrea Canlas>numbers looks the same from your end.</v>
+
+00:09:12.409 --> 00:09:14.169
+<v Jacob Lowe>Let me check.</v>
+
+00:09:14.729 --> 00:09:15.009
+<v Andrea Canlas>Okay.</v>
+
+00:09:15.849 --> 00:09:16.649
+<v Jacob Lowe>Let's see.</v>
+
+00:09:18.649 --> 00:09:21.529
+<v Jacob Lowe>So we consider utilization a little bit different.</v>
+
+00:09:22.289 --> 00:09:22.809
+<v Andrea Canlas>Okay.</v>
+
+00:09:24.569 --> 00:09:31.049
+<v Jacob Lowe>So utilization would be time spent working tickets, so would be his total time minus admin time.</v>
+
+00:09:28.129 --> 00:09:28.929
+<v Andrea Canlas>Tickets.</v>
+
+00:09:32.049 --> 00:09:32.449
+<v Andrea Canlas>Yes.</v>
+
+00:09:32.409 --> 00:09:39.849
+<v Jacob Lowe>would be his utilization and then billable would be what of that utilization was billable. So if we take a look at...</v>
+
+00:09:38.009 --> 00:09:38.689
+<v Andrea Canlas>Mm.</v>
+
+00:09:42.489 --> 00:09:43.929
+<v Jacob Lowe>Is for April.</v>
+
+00:09:44.609 --> 00:09:44.809
+<v Andrea Canlas>Okay.</v>
+
+00:09:49.769 --> 00:09:51.049
+<v Jacob Lowe>Able to...</v>
+
+00:09:55.449 --> 00:09:56.089
+<v Jacob Lowe>So...</v>
+
+00:09:58.409 --> 00:10:00.689
+<v Jacob Lowe>He had an average of 89 percent.</v>
+
+00:10:01.809 --> 00:10:02.649
+<v Jacob Lowe>So that would...</v>
+
+00:10:03.609 --> 00:10:09.129
+<v Jacob Lowe>Match, if you look at the admin time, it would average out and then his billable was 85.</v>
+
+00:10:07.249 --> 00:10:07.729
+<v Andrea Canlas>Mhm.</v>
+
+00:10:09.969 --> 00:10:10.529
+<v Andrea Canlas>Okay.</v>
+
+00:10:11.129 --> 00:10:12.249
+<v Jacob Lowe>Average for the month.</v>
+
+00:10:13.649 --> 00:10:17.729
+<v Andrea Canlas>Gotcha, understood. Um, Steve has...</v>
+
+00:10:16.209 --> 00:10:18.649
+<v Jacob Lowe>So those are well above what our.</v>
+
+00:10:20.369 --> 00:10:21.009
+<v Andrea Canlas>Targets are.</v>
+
+00:10:21.769 --> 00:10:23.049
+<v Jacob Lowe>Yeah, so he's doing great.</v>
+
+00:10:22.609 --> 00:10:43.329
+<v Andrea Canlas>Gotcha. Perfect. That's good to hear though. I was given an access to some of your KPI, but it's just a view access that Steve has given me. So there was no filter of understanding what is the month where it was. I was seeing past.</v>
+
+00:10:37.329 --> 00:10:37.809
+<v Jacob Lowe>Mhm.</v>
+
+00:10:43.409 --> 00:10:54.929
+<v Andrea Canlas>six months or quarterly date. So is there a way for me to see that monthly or even not me marquee moving forward so we can actually trace and get it?</v>
+
+00:10:47.089 --> 00:10:47.609
+<v Jacob Lowe>This is.</v>
+
+00:10:54.809 --> 00:11:00.889
+<v Jacob Lowe>So let's see. So you guys are getting information from BrightGauge, I believe.</v>
+
+00:10:57.209 --> 00:10:57.689
+<v Andrea Canlas>Mhm.</v>
+
+00:11:00.289 --> 00:11:01.009
+<v Andrea Canlas>Yes.</v>
+
+00:11:02.409 --> 00:11:06.329
+<v Jacob Lowe>So let me pull up his dashboard and see what...</v>
+
+00:11:05.089 --> 00:11:05.569
+<v Andrea Canlas>K.</v>
+
+00:11:07.809 --> 00:11:11.089
+<v Andrea Canlas>Just to give you an idea of what was shared, this was it.</v>
+
+00:11:12.009 --> 00:11:13.849
+<v Jacob Lowe>Yeah, so that looks right.</v>
+
+00:11:12.849 --> 00:11:13.249
+<v Andrea Canlas>Yeah.</v>
+
+00:11:14.329 --> 00:11:14.809
+<v Andrea Canlas>Mmh.</v>
+
+00:11:15.769 --> 00:11:25.329
+<v Andrea Canlas>It's just a matter of, you know, filtering it out for that one, what's going on. I was like, uh, I don't know how to actually check this out.</v>
+
+00:11:19.529 --> 00:11:20.409
+<v Jacob Lowe>Right.</v>
+
+00:11:24.089 --> 00:11:25.689
+<v Jacob Lowe>Yeah, so.</v>
+
+00:11:27.769 --> 00:11:40.489
+<v Jacob Lowe>I need to go through and clean this up because it's a bit of a mess. And some of the information is a little redundant and doesn't make sense. So that's kind of part of my task, like things that I want to get accomplished.</v>
+
+00:11:30.929 --> 00:11:31.649
+<v Andrea Canlas>PH.</v>
+
+00:11:34.129 --> 00:11:34.369
+<v Andrea Canlas>Mmhmm.</v>
+
+00:11:36.369 --> 00:11:36.689
+<v Andrea Canlas>Yeah.</v>
+
+00:11:40.929 --> 00:11:41.409
+<v Andrea Canlas>Mhm.</v>
+
+00:11:48.009 --> 00:11:50.489
+<v Jacob Lowe>Previous month, have a previous month.</v>
+
+00:11:53.129 --> 00:11:58.569
+<v Jacob Lowe>No, see, that's the thing is we don't, we have all this information, but none of it is previous month. So...</v>
+
+00:11:58.209 --> 00:11:58.929
+<v Andrea Canlas>I gotcha.</v>
+
+00:12:00.129 --> 00:12:03.889
+<v Andrea Canlas>Yeah, don't sweat. That's okay, 'cause we'll be fine. I can wait.</v>
+
+00:12:02.329 --> 00:12:09.289
+<v Jacob Lowe>Yeah, if you pull that sheet back up for me real quick, I want to see you at the top of it.</v>
+
+00:12:06.929 --> 00:12:07.329
+<v Andrea Canlas>Sure.</v>
+
+00:12:11.409 --> 00:12:11.889
+<v Andrea Canlas>This one.</v>
+
+00:12:14.889 --> 00:12:15.289
+<v Jacob Lowe>Okay.</v>
+
+00:12:16.489 --> 00:12:18.409
+<v Jacob Lowe>So it doesn't seem to show you.</v>
+
+00:12:19.529 --> 00:12:21.449
+<v Jacob Lowe>This, why not?</v>
+
+00:12:23.009 --> 00:12:28.849
+<v Andrea Canlas>So I'm not sure if this was just downloaded, so it's not a live dashboard.</v>
+
+00:12:28.329 --> 00:12:33.209
+<v Jacob Lowe>No, that's a just a like a snapshot of the report of at that time, so...</v>
+
+00:12:30.929 --> 00:12:32.049
+<v Andrea Canlas>Exactly.</v>
+
+00:12:33.409 --> 00:12:34.049
+<v Andrea Canlas>Exactly.</v>
+
+00:12:35.609 --> 00:12:40.889
+<v Jacob Lowe>Yeah, I'll have to figure that out and see what we can do to make it a little bit cleaner for you.</v>
+
+00:12:38.569 --> 00:12:39.049
+<v Andrea Canlas>Mmh.</v>
+
+00:12:41.209 --> 00:12:41.809
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:12:42.569 --> 00:12:47.129
+<v Jacob Lowe>So I'm assuming I'm going to have to set up something so I can get you guys this every week now.</v>
+
+00:12:47.489 --> 00:12:47.969
+<v Andrea Canlas>Mhm.</v>
+
+00:12:49.369 --> 00:12:52.249
+<v Jacob Lowe>So, let me, let me work on that today.</v>
+
+00:12:52.529 --> 00:13:01.889
+<v Andrea Canlas>Sure, that's okay. For, so do you don't think that we can have like a view visibility for the dashboard itself?</v>
+
+00:13:01.089 --> 00:13:02.089
+<v Jacob Lowe>No, so...</v>
+
+00:13:03.129 --> 00:13:04.809
+<v Jacob Lowe>Unfortunately, no, because of...</v>
+
+00:13:03.249 --> 00:13:03.649
+<v Andrea Canlas>Fair.</v>
+
+00:13:06.249 --> 00:13:10.969
+<v Jacob Lowe>ConnectWise and the way they have pushed single sign-on.</v>
+
+00:13:11.569 --> 00:13:14.129
+<v Andrea Canlas>Okay, so you need credentials. Gotcha.</v>
+
+00:13:14.329 --> 00:13:19.129
+<v Jacob Lowe>Yeah, you'd have to have an account within our tenant and our security team won't allow that.</v>
+
+00:13:17.449 --> 00:13:17.929
+<v Andrea Canlas>Mhm.</v>
+
+00:13:19.809 --> 00:13:21.409
+<v Andrea Canlas>I know, gotcha, understood.</v>
+
+00:13:21.849 --> 00:13:24.009
+<v Jacob Lowe>Yeah, it's unfortunate.</v>
+
+00:13:24.369 --> 00:13:42.929
+<v Andrea Canlas>Okay, end of report it is. So we'll just wait for that report weekly so that we can track it and, you know, give you a better number because doing business review and giving a different number from what you're seeing doesn't really make sense. So I wanted to make sure that the numbers are accurate. So we're actually looking at</v>
+
+00:13:36.889 --> 00:13:37.769
+<v Jacob Lowe>Yeah.</v>
+
+00:13:43.249 --> 00:13:44.689
+<v Andrea Canlas>The same thing.</v>
+
+00:13:43.329 --> 00:13:49.649
+<v Jacob Lowe>Yeah, so the numbers are accurate of what you're seeing. So like that second section where it says,</v>
+
+00:13:47.049 --> 00:13:47.529
+<v Andrea Canlas>Mhm.</v>
+
+00:13:51.649 --> 00:13:53.809
+<v Andrea Canlas>Average, oops, this one.</v>
+
+00:13:55.729 --> 00:13:59.169
+<v Jacob Lowe>Well, no, so if you look at our data.</v>
+
+00:13:56.049 --> 00:13:56.609
+<v Andrea Canlas>Overall.</v>
+
+00:14:01.009 --> 00:14:04.369
+<v Andrea Canlas>Oh, the previous, okay. Let me just go back to that, this one.</v>
+
+00:14:05.169 --> 00:14:09.729
+<v Jacob Lowe>Yeah, so on that, that first one that says utilization all texts.</v>
+
+00:14:10.049 --> 00:14:10.529
+<v Andrea Canlas>Mhm.</v>
+
+00:14:11.569 --> 00:14:16.169
+<v Jacob Lowe>So you can see that the weak utilization, 88.3%, that is the...</v>
+
+00:14:14.289 --> 00:14:14.849
+<v Andrea Canlas>Mhm.</v>
+
+00:14:15.809 --> 00:14:16.289
+<v Andrea Canlas>Mhm.</v>
+
+00:14:18.529 --> 00:14:20.049
+<v Jacob Lowe>Total time minus ADMIN.</v>
+
+00:14:21.969 --> 00:14:22.369
+<v Andrea Canlas>Okay.</v>
+
+00:14:22.409 --> 00:14:39.169
+<v Jacob Lowe>divided by total time. So basically, he has 8 hours on his time sheet because he has whatever he tracked from tickets plus admin equals 8 hours. You take whatever the time is without the admin, divide that by 8 to 88.3. So that's utilization.</v>
+
+00:14:31.609 --> 00:14:31.769
+<v Andrea Canlas>Mm.</v>
+
+00:14:40.609 --> 00:14:50.529
+<v Andrea Canlas>Okay. And then for last week, this is 87, including the total billable hours and utilize hours. Gotcha. Okay.</v>
+
+00:14:44.409 --> 00:14:44.889
+<v Jacob Lowe>Mhm.</v>
+
+00:14:47.089 --> 00:14:47.889
+<v Jacob Lowe>Correct.</v>
+
+00:14:48.849 --> 00:14:49.489
+<v Jacob Lowe>Correct.</v>
+
+00:14:51.609 --> 00:14:52.289
+<v Andrea Canlas>to allow it.</v>
+
+00:14:53.969 --> 00:14:55.169
+<v Jacob Lowe>So I wonder if...</v>
+
+00:15:01.249 --> 00:15:04.049
+<v Jacob Lowe>Is there a way for me to do something like this?</v>
+
+00:15:06.449 --> 00:15:06.689
+<v Jacob Lowe>Mm.</v>
+
+00:15:07.889 --> 00:15:08.769
+<v Jacob Lowe>Export.</v>
+
+00:15:12.009 --> 00:15:25.649
+<v Jacob Lowe>Oh, interesting. Let me try this really quick while we're here. If you want to continue going on, I'm going to try exporting some data here, because if this is more helpful, then I can send you this instead.</v>
+
+00:15:14.849 --> 00:15:15.249
+<v Andrea Canlas>Sure.</v>
+
+00:15:17.249 --> 00:15:18.209
+<v Andrea Canlas>Yeah, okay.</v>
+
+00:15:20.609 --> 00:15:20.929
+<v Andrea Canlas>Sure.</v>
+
+00:15:24.529 --> 00:15:25.049
+<v Andrea Canlas>Mhm.</v>
+
+00:15:26.209 --> 00:15:27.049
+<v Andrea Canlas>Sure, okay.</v>
+
+00:15:29.729 --> 00:15:31.009
+<v Andrea Canlas>That's completely fine.</v>
+
+00:15:34.689 --> 00:15:35.489
+<v Andrea Canlas>Okay.</v>
+
+00:15:39.609 --> 00:16:00.729
+<v Andrea Canlas>All right. Same with the ticket closure trend and analysis that we've had. So overall, he did work under a total of 274 tickets and closed out to 134 out of those. Week one was the highest recorded weekly rate at 96%, where all 36 tickets in the queue were</v>
+
+00:16:00.929 --> 00:16:21.009
+<v Andrea Canlas>all cleared that he touched. Week four was the strong of full week performance at 88, combining high volume and efficient closure. So week 3 maintained 81%, but April 20 was this just standout single day. So 23 tickets worked and 22 closed, the highest single day throughput recorded.</v>
+
+00:16:21.329 --> 00:16:39.889
+<v Andrea Canlas>So your resolution rate was a bit on a dip side on the last week, which is 78% on every single working day. I had a coaching time with him. It's not because of failing below that floor. It's just that</v>
+
+00:16:40.049 --> 00:16:45.169
+<v Andrea Canlas>the consistency that he had as much as the volume is really low at that time.</v>
+
+00:16:44.889 --> 00:16:45.369
+<v Jacob Lowe>Mhm.</v>
+
+00:16:47.649 --> 00:16:48.129
+<v Jacob Lowe>Yep.</v>
+
+00:16:48.049 --> 00:16:54.049
+<v Andrea Canlas>So yeah, so average closure all through and through is 85% for April.</v>
+
+00:16:56.449 --> 00:16:56.849
+<v Jacob Lowe>Okay.</v>
+
+00:16:57.329 --> 00:17:15.649
+<v Andrea Canlas>All right, perfect. So for CSAT, we have a total of CSAT responses of 18, which is a good thing. Out of 18, he had like 17 responses that has given him 10 as a score, which is a 94% CSAT, which is same with our target.</v>
+
+00:17:16.689 --> 00:17:35.249
+<v Andrea Canlas>However, for their response rate, we are targeting 30% of that, which he did achieve. So only one ticket pulled the score below 10, but it's still 8. So not really something that I worry about. But we wanted to, of course, aim for a score of 10 overall.</v>
+
+00:17:23.649 --> 00:17:24.129
+<v Jacob Lowe>Okay.</v>
+
+00:17:36.369 --> 00:17:36.849
+<v Jacob Lowe>Okay.</v>
+
+00:17:37.729 --> 00:17:40.449
+<v Andrea Canlas>Other than that, no CSID scores were recorded.</v>
+
+00:17:42.289 --> 00:18:04.809
+<v Andrea Canlas>All right, so way forward, we wanted to shift focus from tickets work to ticket close and aging reduction. So before with other engineers, what I did was I also tracked the carried over from the previous month or the previous week to the week following for that, so that we wanted to make sure that if there are a lot of carried</v>
+
+00:18:04.929 --> 00:18:23.969
+<v Andrea Canlas>carry over from the past week so we can actually understand the efficiency of the engineer through and through. So I'll start showing you that next week. Well, next month, not next week, it's just a monthly. So we do it next month so that we understand his efficiency more.</v>
+
+00:18:16.609 --> 00:18:17.089
+<v Jacob Lowe>Mhm.</v>
+
+00:18:18.129 --> 00:18:19.089
+<v Jacob Lowe>This is.</v>
+
+00:18:24.289 --> 00:18:43.209
+<v Andrea Canlas>And again, set an admin and training guardrail target of less than 8% weekly. So it will lower down that 17% that we had this month. And of course, we had that ITBD holiday Memorial Day on the 25th. So just wanted to know if you need him.</v>
+
+00:18:43.289 --> 00:18:45.249
+<v Andrea Canlas>to come in and work at the time.</v>
+
+00:18:44.769 --> 00:18:47.969
+<v Jacob Lowe>No, we're off that day, so he's good to have that day off.</v>
+
+00:18:48.529 --> 00:19:08.369
+<v Andrea Canlas>Cool, I'll make sure that we do let the team know also. So I'll let him know that he's out on the 25th. He'll be happy. And also, I think I was told briefly by him that he has a, he's about to file a.</v>
+
+00:18:58.529 --> 00:19:00.049
+<v Jacob Lowe>Yeah, I'm sure.</v>
+
+00:19:08.609 --> 00:19:21.889
+<v Andrea Canlas>the PTO, I think on June 1st and 2nd, if I'm not mistaken, but they'll send you that email so you can approve it forward. So, still a month away, anyway.</v>
+
+00:19:17.569 --> 00:19:17.889
+<v Jacob Lowe>Okay.</v>
+
+00:19:20.609 --> 00:19:21.009
+<v Jacob Lowe>Yep.</v>
+
+00:19:23.969 --> 00:19:39.729
+<v Andrea Canlas>Gotcha. Yeah, and on the next meeting that we have, Jacob, you're going to meet our TTL so that we can give him necessary access from what you are showing me. So we can probably add him to that distro list for that report.</v>
+
+00:19:33.929 --> 00:19:34.369
+<v Jacob Lowe>Okay.</v>
+
+00:19:37.369 --> 00:19:37.729
+<v Jacob Lowe>Okay.</v>
+
+00:19:41.409 --> 00:19:44.689
+<v Jacob Lowe>Okay, so I just sent you an email with two attachments.</v>
+
+00:19:45.489 --> 00:19:46.849
+<v Andrea Canlas>Let me check that out.</v>
+
+00:19:47.809 --> 00:19:54.929
+<v Jacob Lowe>So the first one is the usual one that I send weekly with the ticket report, but the PDF is the one I want you to open.</v>
+
+00:19:48.289 --> 00:19:48.769
+<v Andrea Canlas>Yeah.</v>
+
+00:19:52.569 --> 00:19:53.169
+<v Andrea Canlas>Mhm.</v>
+
+00:19:56.049 --> 00:19:56.609
+<v Andrea Canlas>Okay.</v>
+
+00:19:58.209 --> 00:20:00.049
+<v Andrea Canlas>Opener.</v>
+
+00:20:09.089 --> 00:20:09.729
+<v Andrea Canlas>Oops.</v>
+
+00:20:17.649 --> 00:20:19.009
+<v Andrea Canlas>I'll just download it first.</v>
+
+00:20:47.969 --> 00:20:51.809
+<v Andrea Canlas>Okay. Oh, this looks nice. Let me just share my screen.</v>
+
+00:20:51.169 --> 00:20:51.329
+<v Jacob Lowe>Yeah.</v>
+
+00:20:52.689 --> 00:20:53.089
+<v Jacob Lowe>Yep.</v>
+
+00:20:53.249 --> 00:20:53.809
+<v Andrea Canlas>Oh.</v>
+
+00:20:55.649 --> 00:20:57.649
+<v Jacob Lowe>So this should hopefully be easier to read.</v>
+
+00:21:00.209 --> 00:21:02.369
+<v Jacob Lowe>Then the brake gauge.</v>
+
+00:21:01.569 --> 00:21:02.049
+<v Andrea Canlas>Okay.</v>
+
+00:21:03.409 --> 00:21:12.849
+<v Jacob Lowe>So this is a snapshot of Derek, as you can see in the top left, for the entire month of March, or sorry, April.</v>
+
+00:21:07.329 --> 00:21:07.809
+<v Andrea Canlas>Mhm.</v>
+
+00:21:11.929 --> 00:21:12.449
+<v Andrea Canlas>Uh-huh.</v>
+
+00:21:14.369 --> 00:21:15.409
+<v Jacob Lowe>So you can see.</v>
+
+00:21:15.009 --> 00:21:16.849
+<v Andrea Canlas>Okay.</v>
+
+00:21:17.969 --> 00:21:28.729
+<v Jacob Lowe>So since this is just a PDF, you're not going to be able to like change these settings or anything, but you can see the average utilization at the top, 91.65%, with an average billable of 85.08%.</v>
+
+00:21:18.369 --> 00:21:18.929
+<v Andrea Canlas>91.</v>
+
+00:21:20.609 --> 00:21:21.649
+<v Andrea Canlas>Yeah, true.</v>
+
+00:21:29.409 --> 00:21:29.929
+<v Andrea Canlas>Mhm.</v>
+
+00:21:30.089 --> 00:21:34.849
+<v Jacob Lowe>And then below that, down to the bottom part on the left, you can see the breakdown daily.</v>
+
+00:21:35.449 --> 00:21:35.929
+<v Andrea Canlas>Mmh.</v>
+
+00:21:36.369 --> 00:21:42.609
+<v Jacob Lowe>So each day you can see what those different percentages are and how they fluctuate. So then you have on the right.</v>
+
+00:21:37.409 --> 00:21:37.969
+<v Andrea Canlas>Billable.</v>
+
+00:21:39.729 --> 00:21:40.449
+<v Andrea Canlas>Ooh.</v>
+
+00:21:42.129 --> 00:21:42.249
+<v Andrea Canlas>The.</v>
+
+00:21:45.089 --> 00:21:49.329
+<v Jacob Lowe>Those top three don't really matter much for Jack because he's always remote.</v>
+
+00:21:49.929 --> 00:21:50.409
+<v Andrea Canlas>Mhm.</v>
+
+00:21:52.289 --> 00:21:55.289
+<v Jacob Lowe>And he always submits his PTO in advance because he's...</v>
+
+00:21:56.369 --> 00:22:00.369
+<v Jacob Lowe>He's planning. And then the next three boxes are...</v>
+
+00:22:01.569 --> 00:22:12.289
+<v Jacob Lowe>just a breakdown of showing the different days and how the texts are, allows us to find trends if someone's like continually slacking on a specific day, we can find out what's going on. And then just a...</v>
+
+00:22:01.969 --> 00:22:02.769
+<v Andrea Canlas>Utilization.</v>
+
+00:22:03.889 --> 00:22:04.369
+<v Andrea Canlas>Mhm.</v>
+
+00:22:11.329 --> 00:22:11.889
+<v Andrea Canlas>Mhm.</v>
+
+00:22:13.729 --> 00:22:16.369
+<v Jacob Lowe>a nice line graph of those different utilizations over time.</v>
+
+00:22:18.049 --> 00:22:30.049
+<v Andrea Canlas>Gotcha. Wow, this is, yeah, way better. Yeah, so this is what I wanted to probably get. If you can send this every, I don't know, Friday, maybe.</v>
+
+00:22:21.569 --> 00:22:21.969
+<v Jacob Lowe>Okay.</v>
+
+00:22:23.969 --> 00:22:24.369
+<v Jacob Lowe>Okay.</v>
+
+00:22:31.329 --> 00:22:33.089
+<v Jacob Lowe>So it may be better if I send it.</v>
+
+00:22:33.809 --> 00:22:34.209
+<v Andrea Canlas>Partner.</v>
+
+00:22:34.649 --> 00:22:39.249
+<v Jacob Lowe>What if I send it on Wednesday with the same ticket report for the previous week? Is that okay?</v>
+
+00:22:39.809 --> 00:22:41.329
+<v Andrea Canlas>Yeah, that's okay. That's fine.</v>
+
+00:22:41.249 --> 00:22:49.929
+<v Jacob Lowe>Okay, so we'll just, yeah, I'll send both at the same time and I'll just grab a snapshot of the previous week. And then if you want to have a full month when we're doing the...</v>
+
+00:22:46.649 --> 00:22:47.169
+<v Andrea Canlas>Mmh.</v>
+
+00:22:51.569 --> 00:22:56.289
+<v Jacob Lowe>Do you want to have a full month worth of data at once like this? We can always, you can always ask for it.</v>
+
+00:22:51.889 --> 00:22:52.049
+<v Andrea Canlas>Okay.</v>
+
+00:22:53.129 --> 00:22:53.209
+<v Andrea Canlas>The.</v>
+
+00:22:56.929 --> 00:23:11.489
+<v Andrea Canlas>Yeah, definitely. So I just wanted to track it like for the TTLL's perspective so that they can actually see what's happening, if there is any trend alongside that, so that they can work with bid check locally. So.</v>
+
+00:23:03.169 --> 00:23:03.649
+<v Jacob Lowe>Mhm.</v>
+
+00:23:07.289 --> 00:23:07.769
+<v Jacob Lowe>Mhm.</v>
+
+00:23:09.409 --> 00:23:09.889
+<v Jacob Lowe>Right.</v>
+
+00:23:11.489 --> 00:23:16.449
+<v Jacob Lowe>Yeah, so if you look at the average billable day, you can always see Wednesday is going to be his lowest day.</v>
+
+00:23:14.529 --> 00:23:15.089
+<v Andrea Canlas>Mhm.</v>
+
+00:23:17.489 --> 00:23:18.529
+<v Andrea Canlas>Is there a reason for that?</v>
+
+00:23:17.609 --> 00:23:29.489
+<v Jacob Lowe>And there is. We have our, well, it's changed now. So we used to have a weekly all hands meeting every Wednesday.</v>
+
+00:23:20.129 --> 00:23:20.609
+<v Andrea Canlas>Mhm.</v>
+
+00:23:24.449 --> 00:23:24.929
+<v Andrea Canlas>Mhm.</v>
+
+00:23:30.209 --> 00:23:32.849
+<v Andrea Canlas>Oh, okay. How many hours? Two?</v>
+
+00:23:32.209 --> 00:23:33.489
+<v Jacob Lowe>It's one.</v>
+
+00:23:33.809 --> 00:23:34.689
+<v Andrea Canlas>One hour, gotcha.</v>
+
+00:23:35.729 --> 00:23:47.969
+<v Jacob Lowe>However, that's no longer weekly. It's going to be once a month. So hopefully that number will be more closer to the regular other day. But also previously, whilst also having that one hour.</v>
+
+00:23:41.569 --> 00:23:42.049
+<v Andrea Canlas>Better.</v>
+
+00:23:49.009 --> 00:23:56.049
+<v Jacob Lowe>All hands meeting right after that we had our 30 minute pod meeting. So he had an hour and a half straight of meetings that aren't billable. So.</v>
+
+00:23:53.329 --> 00:23:54.129
+<v Andrea Canlas>Ohh.</v>
+
+00:23:56.449 --> 00:23:57.809
+<v Andrea Canlas>Back to back, I got to.</v>
+
+00:23:58.049 --> 00:24:08.289
+<v Jacob Lowe>Yeah. So it always costs his Wednesday to look lower. So yeah. So they're just not billables. That's why you see the billables lower. But when you look at the utilization next to it, he's very close.</v>
+
+00:23:59.249 --> 00:24:00.209
+<v Andrea Canlas>Meetings.</v>
+
+00:24:01.929 --> 00:24:02.369
+<v Andrea Canlas>Gotcha.</v>
+
+00:24:05.249 --> 00:24:05.769
+<v Andrea Canlas>Mhm.</v>
+
+00:24:08.209 --> 00:24:20.209
+<v Andrea Canlas>Yeah, very close. I gotcha. Great. I love this PDF. I love this report, Jacob. So this would help me out a lot. So yeah, I'll wait for this.</v>
+
+00:24:09.969 --> 00:24:10.449
+<v Jacob Lowe>So...</v>
+
+00:24:15.729 --> 00:24:17.329
+<v Jacob Lowe>Yep. Okay.</v>
+
+00:24:19.169 --> 00:24:23.169
+<v Jacob Lowe>Yeah, so it doesn't provide any of the end user CSATs right now.</v>
+
+00:24:22.609 --> 00:24:23.969
+<v Andrea Canlas>Mhm, mhm.</v>
+
+00:24:24.289 --> 00:24:26.609
+<v Jacob Lowe>So I'm not sure how important that is.</v>
+
+00:24:27.729 --> 00:24:34.849
+<v Andrea Canlas>Um, I think he does fill it out anyway. I usually just ask him to send me those, so...</v>
+
+00:24:33.969 --> 00:24:39.329
+<v Jacob Lowe>Okay, because he has access, he should have access to the BrightGauge dashboard himself.</v>
+
+00:24:37.569 --> 00:24:37.729
+<v Andrea Canlas>Yeah.</v>
+
+00:24:39.689 --> 00:24:40.329
+<v Andrea Canlas>Mmh.</v>
+
+00:24:40.769 --> 00:24:42.489
+<v Jacob Lowe>And he can get that information from there.</v>
+
+00:24:43.249 --> 00:25:02.289
+<v Andrea Canlas>Sure. I usually for the CSAT, I just get it month end so that I have all the compilation of the CSAT that he accrued over over that month. So I'm pretty cool with that. Unless of course there is a bad CSAT review that I got to I got to work with him about.</v>
+
+00:24:50.689 --> 00:24:51.169
+<v Jacob Lowe>Yep.</v>
+
+00:24:56.049 --> 00:24:56.449
+<v Jacob Lowe>Okay.</v>
+
+00:25:00.369 --> 00:25:01.009
+<v Jacob Lowe>Sure.</v>
+
+00:25:02.609 --> 00:25:13.009
+<v Andrea Canlas>All right, perfect. Thank you very much. Appreciate this so much. How about, how about the quality now, Jacob? Did it improve since last time we talked?</v>
+
+00:25:13.809 --> 00:25:28.049
+<v Jacob Lowe>I'm going to be real with you, I haven't had a lot of time to dig into it. Things have changed. Things have been kind of wild around here, so I've been quite busy. So hopefully next month I'll have a better understanding of what that looks like.</v>
+
+00:25:17.169 --> 00:25:17.809
+<v Andrea Canlas>This.</v>
+
+00:25:18.689 --> 00:25:19.289
+<v Andrea Canlas>Yeah.</v>
+
+00:25:22.209 --> 00:25:22.689
+<v Andrea Canlas>I know.</v>
+
+00:25:24.889 --> 00:25:25.489
+<v Andrea Canlas>Anderson.</v>
+
+00:25:28.449 --> 00:25:49.009
+<v Andrea Canlas>Sure, I gotcha. No rush. I just wanted to make sure that you're progressing and just in case he needs further help, which he rarely really needs help. He's very self-sufficient, to be honest with you. But again, those are the things, or some of the things that he missed because he's just doing this on a daily basis, right?</v>
+
+00:25:32.129 --> 00:25:32.529
+<v Jacob Lowe>Yep.</v>
+
+00:25:34.929 --> 00:25:35.249
+<v Jacob Lowe>Yeah.</v>
+
+00:25:40.849 --> 00:25:41.649
+<v Jacob Lowe>I know.</v>
+
+00:25:49.289 --> 00:26:08.169
+<v Andrea Canlas>which is why we're here for. But yeah, no rush on your side of the fence. I know there's a lot of moving pieces. Left, right and center. Tell me about it. But yeah, I'll meet you next time and I'll make sure that we progress and I'll have this report soon. So thank you so much. Appreciate it. Any questions?</v>
+
+00:25:49.609 --> 00:25:50.089
+<v Jacob Lowe>Mhm.</v>
+
+00:25:51.569 --> 00:25:51.969
+<v Jacob Lowe>Yep.</v>
+
+00:25:54.969 --> 00:25:56.289
+<v Jacob Lowe>Yep.</v>
+
+00:26:07.449 --> 00:26:09.729
+<v Jacob Lowe>Yeah, you're welcome. Nope, I don't have any.</v>
+
+00:26:08.369 --> 00:26:08.769
+<v Andrea Canlas>So far.</v>
+
+00:26:10.289 --> 00:26:15.009
+<v Andrea Canlas>Okay, I know you're bestie, so I'll get you back to it. Thank you very much for attending. Have a good day.</v>
+
+00:26:14.449 --> 00:26:15.969
+<v Jacob Lowe>Yeah, thank you. See ya.</v>
+
+00:26:15.969 --> 00:26:16.369
+<v Andrea Canlas>Bye-bye.</v>
+

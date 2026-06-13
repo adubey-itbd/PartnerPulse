@@ -42,18 +42,21 @@ STEP_TIMEOUT_S = 1800  # per step; full registry rebuild runs ~5 min normally
 # markitdown, which some machines lack; the other steps still refresh Halo/
 # TeamGPS data and the portfolio index).
 SYNC_STEPS = [
+    {"id": "transcripts",
+     "label": "Pull call transcripts (app-only Graph → Transcripts/)",
+     "cmd": [sys.executable, str(ROOT / "scripts" / "pull_graph_transcripts.py"), "--write"]},
     {"id": "registry",
      "label": "Registry partners — full rebuild (Halo + TeamGPS + docs + AI)",
      "cmd": [sys.executable, "-m", "extract.build_all"]},
     {"id": "real-extras",
-     "label": "Additional real partners + exec-overview injection",
+     "label": "Additional real partners (extra Halo clients + transcript-only)",
      "cmd": [sys.executable, str(ROOT / "scripts" / "build_real_partners.py")]},
-    {"id": "exec-rows",
-     "label": "Executive-overview rows refresh (embedded array ← caches)",
-     "cmd": [sys.executable, str(ROOT / "scripts" / "refresh_exec_row.py"), "--all"]},
     {"id": "reindex",
      "label": "Portfolio index regeneration",
      "cmd": [sys.executable, "-m", "extract.build_all", "--reindex"]},
+    {"id": "overview",
+     "label": "Operational-intelligence feed (data/_overview.json ← caches)",
+     "cmd": [sys.executable, str(ROOT / "scripts" / "build_overview.py")]},
 ]
 
 # Live-activity translation: the build scripts emit one tagged stderr line per
@@ -91,10 +94,12 @@ def parse_activity(line: str, ctx: dict):
     if "churn analysis" in line:
         partner = ctx.get("partner")
         return (f"{partner}: " if partner else "") + "running AI churn analysis (gpt-5.4)"
-    if line.startswith("Injected") or line.startswith("Refreshed"):
-        return "updating executive-overview partner array"
     if line.startswith("Reindexed"):
         return "portfolio index rebuilt"
+    if line.startswith("Wrote") and "_overview" in line:
+        return "rebuilding operational-intelligence feed"
+    if line.startswith("WRITE —") or line.startswith("scanned "):
+        return "pulling call transcripts from Graph"
     m = TAG_LINE.match(line)
     if m and m.group(1) in TAG_ACTIVITY:
         partner = ctx.get("partner")

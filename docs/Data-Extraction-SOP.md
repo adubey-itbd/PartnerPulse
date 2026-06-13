@@ -124,7 +124,23 @@ The service-call recordings live in `desmanagement@itbd.net`'s OneDrive `Recordi
 
 `extract/transcripts.py: parse_vtt` parses `.vtt` natively (no markitdown): NOTE metadata, cue timestamps → `M:SS`, consecutive same-speaker cues merged into dialogue turns — same schema as the `.docx` path.
 
-> ⚠️ **Access constraint:** Graph returns **403 "User does not have access to lookup meeting"** unless the signed-in connector user was an **invitee/participant** of that meeting. (Verified: Atlantic PC's calls are not retrievable by `Amit.Dubey@itbd.net`, who is not invited; Logically/Milner/ION247/Premier/Netgain/MSP Corp CRDS are.) Delegated calendar access is enough to *find* the events but not to *read transcripts* of meetings you didn't attend.
+> ⚠️ **Access constraint:** Graph returns **403 "User does not have access to lookup meeting"** unless the signed-in connector user was an **invitee/participant** of that meeting. (Verified: Atlantic PC's calls are not retrievable by `Amit.Dubey@itbd.net`, who is not invited; Logically/Milner/ION247/Premier/Netgain/MSP Corp CRDS are.) Delegated calendar access is enough to *find* the events but not to *read transcripts* of meetings you didn't attend. **Option D supersedes this for bulk pulls** — the app identity has no attendee constraint.
+
+### Option D: Bulk app-only Graph pull — `scripts/pull_graph_transcripts.py` (preferred since 2026-06-13)
+
+Uses the `DESManagement@itbd.net` app registration (client-credentials, `GRAPH_*` in `.env`; see `docs/IT-Request-Graph-Transcript-Access.md`) to pull **every partner service call organized under the DES Teams identity — no attendee constraint**, unlike Option C. Dry run first, then `--write`:
+
+```powershell
+python scripts/pull_graph_transcripts.py            # plan only
+python scripts/pull_graph_transcripts.py --write     # download + save
+```
+
+Flow: page DES `/events` (the `onlineMeeting.joinUrl` is reliable there — `/calendarView` intermittently drops it) → keep partner service/review/business calls (`CALL_RE`), drop interviews/onboarding/internal (`EXCLUDE_RE`) → dedupe to unique series by join URL → resolve each by the organizer's **object id** (the `Oid` in the join URL's `context` param; addressing by UPN returns a masking 404) → list transcripts → per occurrence ≥ `--since`, fetch `/content?$format=text/vtt`, keep the longest when a day has split recordings → write `Transcripts/{Partner}/<subject>-<YYYYMMDD>.vtt` with the same NOTE header Option C produces. Partner-folder routing reuses `resolve_partner_dir` (matches existing folders; new partners get their own folder).
+
+Verified limits (2026-06-13 first full pull — 148 written across ~70 folders):
+- **Content retention ~90 days.** A series *lists* every occurrence back years, but `/content` 404s ("content expired") for calls older than ~3 months. The first pull recovered Apr–Jun 2026 cleanly; Jan–early-Mar were all expired. **Run monthly** so nothing ages out.
+- **QBRs 403.** `ITBD x <Partner> : Quarterly Business Review` and similar are organized under a *different* identity than DES, so the Teams policy doesn't cover them — they fail to resolve. Granting the policy to that organizer would be needed.
+- **`.docx` folders deferred by default.** Folders that already hold manual `.docx` exports (MSPCorp, Premier, Stasmayer) are skipped to avoid the double-ingest bug (freeform `.docx` dates can't be matched); pull them with `--include-docx-folders` after checking date overlap.
 
 ---
 
@@ -251,7 +267,7 @@ Official review meeting notes, summaries, and action items are captured in the n
 
 ### A. Step 1: Find Service Review Tickets
 * **Endpoint**: `GET /api/Tickets?client_id={client_id}&search=Bi-Weekly Service call&page_size=5&pageinate=true`
-* **Usage**: Retrieve the list of recent service call tickets. (Capped to `page_size=5` for performance).
+* **Usage**: Retrieve the list of recent service call tickets. Halo returns these newest-first, so `page_size=5` still covers the most recent calls.
 
 ### B. Step 2: Fetch Actions for Each Ticket
 * **Endpoint**: `GET /api/Actions?ticket_id={ticket_id}`
@@ -277,6 +293,12 @@ def clean_html(raw_html):
 
 #### Meeting Notes Identifier
 Filter the cleaned action notes for key markers: `"meeting summary"`, `"action items"`, `"discussion points"`, or `"join the call"`. This isolates the actual meeting write-up from automated system logs (such as status changes or email auto-responses).
+
+#### Call date = the meeting NOTE's datetime (NOT the ticket's `dateoccurred`)
+**Changed 2026-06-13.** Each `historical_calls` entry's `date` is the **latest matching action note's `datetime`**, not the ticket's `dateoccurred`. Recurring/bi-weekly service tickets keep an early `dateoccurred` (set at creation) while the actual call note is appended later — e.g. Logically ticket `0755301`: `dateoccurred` 2026-05-27, note `2026-06-12`. Using `dateoccurred` made "last call" stale for every recurring-ticket partner. See `extract/build_partner.py` / `scripts/build_real_partners.py` and `docs/HaloPSA-API-SOP.md` Addendum (2026-06-13). `build_overview.py` then takes the union of these note dates and transcript dates for the dashboard's "last call".
+
+#### Incremental rebuild (cost/time control)
+**Added 2026-06-13.** `extract/ai.py:analyze()` caches the gpt-5.4 result by a hash of its input (`build_context`) — unchanged partners reuse the cached churn analysis (no LLM call, no score drift). Deck markdown is reused by attachment id (no re-`markitdown`). So a re-sync re-fetches Halo/TeamGPS (to detect changes) but only re-runs the LLM / deck conversion for partners whose inputs actually changed. `extract.build_all --force-ai` (or `build_real_partners.py --force-ai`) forces a full re-analysis.
 
 ---
 

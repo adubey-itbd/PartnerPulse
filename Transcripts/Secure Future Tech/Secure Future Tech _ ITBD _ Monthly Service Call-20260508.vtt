@@ -1,0 +1,977 @@
+WEBVTT
+NOTE title: Secure Future Tech | ITBD | Monthly Service Call
+NOTE date: 2026-05-08
+NOTE duration: 27m 16s
+
+00:00:42.247 --> 00:00:43.367
+<v Ayra Macatol>Hi, Joseline.</v>
+
+00:00:44.567 --> 00:00:45.447
+<v Ayra Macatol>Good afternoon.</v>
+
+00:00:45.487 --> 00:00:46.487
+<v Jocelyn DiCesare>Hi, how are you?</v>
+
+00:00:47.687 --> 00:00:50.007
+<v Ayra Macatol>I'm doing great. How about you? How was your day?</v>
+
+00:00:50.247 --> 00:00:54.567
+<v Jocelyn DiCesare>Good, good. Sorry, I have my light off because I started getting a little bit of a headache.</v>
+
+00:00:53.767 --> 00:00:53.927
+<v Ayra Macatol>Yeah.</v>
+
+00:00:56.127 --> 00:01:07.527
+<v Ayra Macatol>Really? Okay, no worries. It's okay. It's Friday. Anything that's been challenging? Yeah, I can. Hey, Andy, thanks for joining.</v>
+
+00:00:56.967 --> 00:00:57.367
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:01:01.927 --> 00:01:03.127
+<v Jocelyn DiCesare>You can still see me.</v>
+
+00:01:08.407 --> 00:01:08.887
+<v Jocelyn DiCesare>Hey.</v>
+
+00:01:08.487 --> 00:01:10.247
+<v Andrea Canlas>Hello. Hi, Jocelyn. How are you?</v>
+
+00:01:10.727 --> 00:01:11.527
+<v Jocelyn DiCesare>Good, how are you?</v>
+
+00:01:13.527 --> 00:01:13.647
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:01:15.007 --> 00:01:16.007
+<v Sage Khattri>Good morning, Jocelyn.</v>
+
+00:01:15.767 --> 00:01:16.407
+<v Andrea Canlas>This is good.</v>
+
+00:01:16.887 --> 00:01:18.487
+<v Jocelyn DiCesare>Hi, Sage, how are you?</v>
+
+00:01:19.207 --> 00:01:20.087
+<v Sage Khattri>Doing good, how are you?</v>
+
+00:01:21.287 --> 00:01:23.687
+<v Jocelyn DiCesare>Living the dream, man, you know.</v>
+
+00:01:23.527 --> 00:01:24.007
+<v Sage Khattri>Mhm.</v>
+
+00:01:25.887 --> 00:01:32.887
+<v Jocelyn DiCesare>I don't know how you guys do it with all the clients you manage, seriously. So, good for you. Good for you.</v>
+
+00:01:33.807 --> 00:01:38.807
+<v Andrea Canlas>I have the same question sometimes, Jocelyn, but keep going.</v>
+
+00:01:37.127 --> 00:01:37.447
+<v Jocelyn DiCesare>Pff.</v>
+
+00:01:37.167 --> 00:01:37.247
+<v Sage Khattri>It.</v>
+
+00:01:39.247 --> 00:01:43.447
+<v Jocelyn DiCesare>Like, yeah, you just keep going. That's all you can do. Good morning. How are you?</v>
+
+00:01:39.607 --> 00:01:40.647
+<v Addy Kumar>Good morning, Jocelyn.</v>
+
+00:01:43.887 --> 00:01:44.167
+<v Sage Khattri>Right.</v>
+
+00:01:44.487 --> 00:01:45.687
+<v Addy Kumar>Doing good, how about you?</v>
+
+00:01:46.287 --> 00:01:47.447
+<v Jocelyn DiCesare>Good, good, good, good.</v>
+
+00:01:48.647 --> 00:01:49.687
+<v Jocelyn DiCesare>All right.</v>
+
+00:01:50.647 --> 00:01:52.727
+<v Jocelyn DiCesare>So, who wants to go first?</v>
+
+00:01:54.807 --> 00:01:57.127
+<v Ayra Macatol>Wanna go first, Sage, Eddie?</v>
+
+00:01:59.047 --> 00:02:01.047
+<v Sage Khattri>Okay, you want me to start first? I can.</v>
+
+00:02:00.887 --> 00:02:01.287
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:02:02.367 --> 00:02:02.887
+<v Jocelyn DiCesare>Go for it.</v>
+
+00:02:02.407 --> 00:02:07.287
+<v Sage Khattri>OK, alright, perfect. Just give me one second, Jocelyn. Let me.</v>
+
+00:02:06.887 --> 00:02:07.367
+<v Jocelyn DiCesare>Sure.</v>
+
+00:02:08.727 --> 00:02:09.687
+<v Sage Khattri>Share my screen.</v>
+
+00:02:16.407 --> 00:02:20.087
+<v Jocelyn DiCesare>I appreciate you guys doing this all together. It's just a lot easier.</v>
+
+00:02:22.927 --> 00:02:26.647
+<v Sage Khattri>No, not a problem, Justin. OK, I hope you can see the screen now.</v>
+
+00:02:27.047 --> 00:02:27.367
+<v Jocelyn DiCesare>Yep.</v>
+
+00:02:29.847 --> 00:02:46.087
+<v Sage Khattri>Right, so Jocelyn, we will start with the monthly service call. So we will discuss about the same agenda. We will talk about the SLA matrix, the patching, backup compliance, the feedback, challenges and updates, and any to-dos from the previous and the current meeting.</v>
+
+00:02:48.887 --> 00:03:10.567
+<v Sage Khattri>All right, so Justin, the data in this sheet is for the month of April, the entire month of April. So if I look at the response SLA, we are doing good on the response SLA. P1 is on 100%, P3, P4 is also on 100. P2 is on 99%. There is 1 ticket on which the response SLA was missed.</v>
+
+00:03:11.447 --> 00:03:18.007
+<v Sage Khattri>So that was just by the dispatcher, which took a few minutes extra to assign the ticket, but that was on a P2.</v>
+
+00:03:18.967 --> 00:03:19.327
+<v Jocelyn DiCesare>Okay.</v>
+
+00:03:19.607 --> 00:03:38.287
+<v Sage Khattri>And if I look at the resolution SLA, resolution SLA is also going good. P1 is on 100%, P2 is 99, P3 is 98%, and P4 is again on 100. So there were total of three tickets where we missed the SLA. Two were related.</v>
+
+00:03:38.407 --> 00:03:52.407
+<v Sage Khattri>to the backups and there was one problem ticket that we were working on. So the problem ticket remained open for a few days, so that's why the SLA was missed. But apart from it, we were good on the SLA. But do you have any questions on the SLA?</v>
+
+00:03:52.207 --> 00:03:54.727
+<v Jocelyn DiCesare>Nope, nope, I do not.</v>
+
+00:03:54.327 --> 00:03:54.807
+<v Sage Khattri>OK.</v>
+
+00:03:56.007 --> 00:03:56.567
+<v Sage Khattri>Thank you.</v>
+
+00:03:58.887 --> 00:04:20.007
+<v Sage Khattri>Okay, this is the patch status, Jocelyn. So I exported the patch report today from the RMM tool. So it shows 25 servers which are fully patched. There are reboot pending for 26 devices. So I have checked with the team and I have shared the data with the team and I have asked them to follow the reboot schedule for these servers.</v>
+
+00:04:20.327 --> 00:04:40.727
+<v Sage Khattri>and they will be rebooted as per the schedule. There are four devices that are showing no data, so that is actually an issue with the RMM. So I have shared that data with the team as well. So they will be working on that to fix the no data issue. So this usually comes up sometimes after the patching, it shows no data. I have seen it few times.</v>
+
+00:04:41.127 --> 00:04:43.207
+<v Sage Khattri>but our RM team is able to fix it.</v>
+
+00:04:43.687 --> 00:04:44.247
+<v Jocelyn DiCesare>Okay.</v>
+
+00:04:44.807 --> 00:04:53.367
+<v Sage Khattri>And they are approved pending patches on 35 devices. So these will be patched as per their schedule in the coming weeks.</v>
+
+00:04:54.007 --> 00:04:54.327
+<v Jocelyn DiCesare>Okay.</v>
+
+00:04:55.527 --> 00:04:56.727
+<v Sage Khattri>But do you have any questions?</v>
+
+00:04:55.607 --> 00:04:58.487
+<v Jocelyn DiCesare>And everybody has access to that schedule, right?</v>
+
+00:04:59.367 --> 00:05:00.407
+<v Sage Khattri>Yes, everyone.</v>
+
+00:04:59.647 --> 00:05:04.327
+<v Jocelyn DiCesare>because I know there was some confusion for one of the clients, I think.</v>
+
+00:05:05.887 --> 00:05:22.367
+<v Sage Khattri>Yes, I believe there was, you messaged me in the chat, right? So I'm working with the team on it, Jocelyn. So I have made sure they all have access and I'm following up with them in this month. So I'll make sure all the servers are rebooted in the month as per the correct schedule.</v>
+
+00:05:06.647 --> 00:05:07.767
+<v Jocelyn DiCesare>Okay, alright.</v>
+
+00:05:10.087 --> 00:05:10.887
+<v Jocelyn DiCesare>Yeah, yeah.</v>
+
+00:05:23.047 --> 00:05:24.247
+<v Jocelyn DiCesare>Perfect. Thank you.</v>
+
+00:05:25.047 --> 00:05:25.687
+<v Sage Khattri>No problem.</v>
+
+00:05:28.927 --> 00:05:48.327
+<v Sage Khattri>Okay, this is the backup and this is the last month data, Jocelyn. So total tickets we received last month were 168 on the backup board. And the success rate for backup was on 99.04%. And these are the quarterly test restores which we completed on the right hand side.</v>
+
+00:05:48.487 --> 00:05:52.007
+<v Sage Khattri>So we completed for 29 clients last month.</v>
+
+00:05:53.767 --> 00:05:58.087
+<v Sage Khattri>But any questions you have on the backups?</v>
+
+00:05:58.327 --> 00:06:05.287
+<v Jocelyn DiCesare>Um, no, I think I'd have to look at it, but I'd have to see.</v>
+
+00:06:02.567 --> 00:06:02.807
+<v Sage Khattri>No.</v>
+
+00:06:06.047 --> 00:06:06.487
+<v Sage Khattri>Mhm.</v>
+
+00:06:06.807 --> 00:06:10.087
+<v Jocelyn DiCesare>There were a couple where the screenshots weren't happening.</v>
+
+00:06:11.767 --> 00:06:12.167
+<v Jocelyn DiCesare>Um.</v>
+
+00:06:12.007 --> 00:06:12.487
+<v Sage Khattri>Okay.</v>
+
+00:06:13.287 --> 00:06:19.687
+<v Jocelyn DiCesare>They were giving errors. I don't know if those are April or May. I have to look up the ticket. You guys sent me the...</v>
+
+00:06:18.647 --> 00:06:32.407
+<v Addy Kumar>Those were for April, April, Jocelyn. That was for Eager DC. I believe that is still ongoing because they have made some changes and we are still figuring out what went wrong there.</v>
+
+00:06:21.447 --> 00:06:22.167
+<v Jocelyn DiCesare>Okay.</v>
+
+00:06:26.527 --> 00:06:27.047
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:06:32.807 --> 00:06:38.407
+<v Jocelyn DiCesare>Yeah, there's a couple of them. Professional security was one. So I just.</v>
+
+00:06:39.367 --> 00:06:41.927
+<v Jocelyn DiCesare>Want to make sure those aren't any.</v>
+
+00:06:39.887 --> 00:06:40.367
+<v Sage Khattri>Mhm.</v>
+
+00:06:43.927 --> 00:06:48.087
+<v Jocelyn DiCesare>lingering issues or something that I need to do.</v>
+
+00:06:49.767 --> 00:06:53.047
+<v Jocelyn DiCesare>I'm pulling up the ticket. Yeah, that's...</v>
+
+00:06:51.887 --> 00:06:56.407
+<v Sage Khattri>Yeah, and Eddie, do you have the data for the open tickets on the board right now?</v>
+
+00:06:57.607 --> 00:07:00.007
+<v Jocelyn DiCesare>Yeah, I think I have those two.</v>
+
+00:06:59.367 --> 00:07:01.207
+<v Addy Kumar>Yes, I.</v>
+
+00:07:02.487 --> 00:07:10.887
+<v Jocelyn DiCesare>Knock backup tickets. Prosec. Yeah, professional security screenshot.</v>
+
+00:07:10.007 --> 00:07:11.367
+<v Addy Kumar>Yeah, prosec DC.</v>
+
+00:07:11.767 --> 00:07:16.167
+<v Jocelyn DiCesare>Yeah, yeah, that one PC ran into a problem.</v>
+
+00:07:17.687 --> 00:07:27.127
+<v Jocelyn DiCesare>Yeah, so I just want to make sure I don't lose sight of those. And if there's anything we need to do or we need to get the client to do, let me know right away.</v>
+
+00:07:28.727 --> 00:07:29.287
+<v Jocelyn DiCesare>All right.</v>
+
+00:07:29.007 --> 00:07:40.647
+<v Addy Kumar>Sure, so Joycelyn, for now, Team is checking with support. So we'll exhaust all our resources first. And if anything is required from your end, I'll definitely let you know.</v>
+
+00:07:35.367 --> 00:07:35.847
+<v Jocelyn DiCesare>Okay.</v>
+
+00:07:40.967 --> 00:07:41.607
+<v Jocelyn DiCesare>Thank you.</v>
+
+00:07:44.087 --> 00:07:46.087
+<v Sage Khattri>Yeah, perfect. Thank you, Eddie.</v>
+
+00:07:44.167 --> 00:07:44.607
+<v Jocelyn DiCesare>Thanks.</v>
+
+00:07:48.487 --> 00:07:59.207
+<v Sage Khattri>All right, feedback, challenges and updates. So, Jocelyn, this is for you. Anything that you want to highlight, anything that you want to mention, or anything that you need me already to focus on?</v>
+
+00:08:00.967 --> 00:08:01.607
+<v Jocelyn DiCesare>Ohh.</v>
+
+00:08:02.807 --> 00:08:03.287
+<v Jocelyn DiCesare>Two.</v>
+
+00:08:04.567 --> 00:08:11.287
+<v Jocelyn DiCesare>No, I don't think so right now. Update would be that Waller, Smith and Palmer.</v>
+
+00:08:07.407 --> 00:08:07.927
+<v Sage Khattri>Mhm.</v>
+
+00:08:12.367 --> 00:08:12.727
+<v Sage Khattri>K.</v>
+
+00:08:12.367 --> 00:08:14.167
+<v Jocelyn DiCesare>We're going to be off-boarding.</v>
+
+00:08:15.607 --> 00:08:29.527
+<v Jocelyn DiCesare>The client, they were observed, they were absorbed by another law firm. That other law firm is just ridiculous and their IT director is just, he, he.</v>
+
+00:08:15.687 --> 00:08:16.087
+<v Sage Khattri>OK.</v>
+
+00:08:22.727 --> 00:08:23.207
+<v Sage Khattri>Mhm.</v>
+
+00:08:30.727 --> 00:08:52.167
+<v Jocelyn DiCesare>He doesn't know what he's doing, so I'm just trying to get a final schedule with him of when we're going to be removing all of our services. So when that's done, I'll make sure I get that over to you guys to off-board them, but it's going to be a complete off-board. So all the servers going away, the backups, so.</v>
+
+00:08:32.727 --> 00:08:33.207
+<v Sage Khattri>Okay.</v>
+
+00:08:36.607 --> 00:08:37.087
+<v Sage Khattri>Mmh.</v>
+
+00:08:39.527 --> 00:08:40.847
+<v Sage Khattri>OK.</v>
+
+00:08:49.127 --> 00:08:49.527
+<v Sage Khattri>Okay.</v>
+
+00:08:51.287 --> 00:08:51.767
+<v Sage Khattri>Mhm.</v>
+
+00:08:52.367 --> 00:08:55.607
+<v Jocelyn DiCesare>networking. Yeah. Okay. That's it.</v>
+
+00:08:54.847 --> 00:08:55.607
+<v Sage Khattri>Okay, sure.</v>
+
+00:08:56.527 --> 00:09:17.367
+<v Sage Khattri>All right. And Jocelyn, yes, so we also checked the SonicWall NSM. So we are able to see 137 firewalls there and we are able to manage. And data networking also we checked. So thank you for giving us the permission. So we now have all that we needed. Just wanted to confirm one more thing. So for network monitoring, are you using any tool?</v>
+
+00:09:15.287 --> 00:09:15.687
+<v Jocelyn DiCesare>Yep.</v>
+
+00:09:17.847 --> 00:09:20.087
+<v Sage Khattri>Uh, like, or any other?</v>
+
+00:09:20.407 --> 00:09:20.887
+<v Jocelyn DiCesare>No.</v>
+
+00:09:21.847 --> 00:09:23.567
+<v Jocelyn DiCesare>Nope. Nope.</v>
+
+00:09:22.087 --> 00:09:22.407
+<v Sage Khattri>No.</v>
+
+00:09:23.287 --> 00:09:34.807
+<v Sage Khattri>So how do you generate the tickets on the PSA? Let's say any firewall goes offline or any switch goes offline or any other issue. So are you receiving tickets on the PSA?</v>
+
+00:09:35.367 --> 00:09:38.087
+<v Jocelyn DiCesare>So we get emails.</v>
+
+00:09:40.007 --> 00:09:40.487
+<v Sage Khattri>Okay.</v>
+
+00:09:40.807 --> 00:10:02.647
+<v Jocelyn DiCesare>And honestly, the SonicWalls, we don't really see that happen. The Datto networking, we do see it happen. So I just have alerts that come through from the Datto networking page. I just have alerts that come over to support. So I have to look at this and how you guys are going to manage. I had a call with SonicWall today.</v>
+
+00:09:48.127 --> 00:09:48.607
+<v Sage Khattri>Mmh.</v>
+
+00:09:52.247 --> 00:09:52.967
+<v Sage Khattri>From the email.</v>
+
+00:09:55.047 --> 00:09:55.527
+<v Sage Khattri>Mmh.</v>
+
+00:09:57.847 --> 00:09:58.327
+<v Sage Khattri>Okay.</v>
+
+00:10:02.887 --> 00:10:15.927
+<v Jocelyn DiCesare>We're still not 100% if the licensing is staying the same just yet. So I would say the focus will be on the data networking portion first.</v>
+
+00:10:16.407 --> 00:10:16.887
+<v Sage Khattri>Okay.</v>
+
+00:10:18.407 --> 00:10:20.807
+<v Jocelyn DiCesare>So, I need to look at that and see what that.</v>
+
+00:10:22.567 --> 00:10:27.367
+<v Jocelyn DiCesare>I don't know if I should just forward that to you guys or how you want to do that.</v>
+
+00:10:29.047 --> 00:10:29.127
+<v Sage Khattri>It.</v>
+
+00:10:30.567 --> 00:10:31.047
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:10:30.807 --> 00:10:49.287
+<v Sage Khattri>So let me, I think we have the permission, we should be able to review the configuration there, the alerts configuration that you have done. So I believe if there is any email connector that we have for the NOC board, I think we can use that to create the tickets directly on the NOC board. I think that would be better. But yeah.</v>
+
+00:10:43.687 --> 00:10:44.007
+<v Jocelyn DiCesare>Okay.</v>
+
+00:10:47.367 --> 00:10:48.567
+<v Jocelyn DiCesare>Yeah, I think so too.</v>
+
+00:10:49.447 --> 00:10:52.167
+<v Sage Khattri>But let me review it and then I can let you know.</v>
+
+00:10:52.487 --> 00:11:12.727
+<v Jocelyn DiCesare>Yeah, let me know, because then I'll tell my support team, hey, you don't have to worry about it. It's going to be the same thing as, you know, with the servers. If something happens or the backups, the NOC will let us know. They'll escalate a ticket to us. If a switch goes offline, what have you. Okay, so data networking.</v>
+
+00:11:06.847 --> 00:11:07.367
+<v Sage Khattri>Yes.</v>
+
+00:11:10.327 --> 00:11:10.887
+<v Sage Khattri>Yes.</v>
+
+00:11:13.607 --> 00:11:18.247
+<v Jocelyn DiCesare>That's gonna be knock sage to get back. OK.</v>
+
+00:11:22.087 --> 00:11:23.447
+<v Jocelyn DiCesare>Okay, cool.</v>
+
+00:11:23.207 --> 00:11:29.527
+<v Sage Khattri>All right, so I'll create a to-do for myself, Jocelyn. I will provide you the information by Monday or Tuesday.</v>
+
+00:11:30.007 --> 00:11:30.407
+<v Jocelyn DiCesare>Okay.</v>
+
+00:11:32.887 --> 00:11:33.767
+<v Sage Khattri>Right, so...</v>
+
+00:11:35.527 --> 00:11:42.647
+<v Sage Khattri>No to-dos were there from the previous meeting, Jocelyn, just one to-do from this one, so I will get back to you regarding the data networking.</v>
+
+00:11:43.367 --> 00:11:43.887
+<v Jocelyn DiCesare>Thanks.</v>
+
+00:11:44.807 --> 00:11:50.887
+<v Sage Khattri>And Jocelyn, you must have received a survey today, so if you could take a minute and fill the survey for us.</v>
+
+00:11:52.287 --> 00:11:57.127
+<v Jocelyn DiCesare>Let me see if I have it. No, no. I don't have anything today.</v>
+
+00:11:58.727 --> 00:11:59.607
+<v Jocelyn DiCesare>So far.</v>
+
+00:12:00.087 --> 00:12:02.647
+<v Sage Khattri>Maybe today or yesterday you might have received it.</v>
+
+00:12:00.967 --> 00:12:01.447
+<v Jocelyn DiCesare>Team.</v>
+
+00:12:02.807 --> 00:12:08.887
+<v Jocelyn DiCesare>Uh, I received for the Philippines. I didn't receive for you guys.</v>
+
+00:12:10.087 --> 00:12:11.367
+<v Sage Khattri>Not yet? Okay.</v>
+
+00:12:10.407 --> 00:12:10.687
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:12:12.727 --> 00:12:16.367
+<v Sage Khattri>Let me try and send it to you again. No problem. Okay.</v>
+
+00:12:14.727 --> 00:12:16.407
+<v Jocelyn DiCesare>Okay. Yeah.</v>
+
+00:12:17.327 --> 00:12:29.047
+<v Sage Khattri>All right, so I think that's all the data I had for today's call, Jocelyn. So these are your dedicated resources. So anything you need related to NOC, just let me know. Ping me in the teams, and I'll be here.</v>
+
+00:12:31.327 --> 00:12:36.567
+<v Jocelyn DiCesare>Okay, yeah, you're my, you're my first, my first guy that I go to.</v>
+
+00:12:37.847 --> 00:12:45.847
+<v Sage Khattri>Yep, alright. Thank you, Jocelyn. Thank you so much for the time. Alright, so Ayra, you can start the presentation now.</v>
+
+00:12:40.487 --> 00:12:41.367
+<v Jocelyn DiCesare>Thank you.</v>
+
+00:12:43.527 --> 00:12:44.647
+<v Ayra Macatol>Thank you, Sage.</v>
+
+00:12:46.247 --> 00:12:49.447
+<v Ayra Macatol>Okay, sure. I'll quickly share my screen.</v>
+
+00:12:53.447 --> 00:12:54.967
+<v Ayra Macatol>I may know, once you see it.</v>
+
+00:13:04.807 --> 00:13:05.607
+<v Jocelyn DiCesare>Thing.</v>
+
+00:13:05.207 --> 00:13:23.927
+<v Ayra Macatol>All good? Okay. So, perfect. So, Joselyn, thank you for joining our monthly business review. This is going to be for the month of April. Same agenda items. This one, this is for you. How are things at this moment? Do you have any feedback you want to share?</v>
+
+00:13:06.727 --> 00:13:07.607
+<v Jocelyn DiCesare>I can see it now.</v>
+
+00:13:25.367 --> 00:13:42.727
+<v Jocelyn DiCesare>I am a little concerned about Dave. So I think I, yeah, this morning I mentioned, you know, he let me know that he had a meeting with you. That's fine. I'd rather it come from you than hear it from the employee.</v>
+
+00:13:44.887 --> 00:13:50.647
+<v Jocelyn DiCesare>I'm just concerned about his time out of the office. So what's going on with him?</v>
+
+00:13:53.287 --> 00:14:11.767
+<v Andrea Canlas>Yeah, that's something that I would like to talk to you about as well, which is why I joined the call, is because, aside from I miss you and haven't seen you for a while, but yeah, I just wanted to talk about Dave. So recently he had been</v>
+
+00:13:59.607 --> 00:14:00.727
+<v Jocelyn DiCesare>I was wondering why.</v>
+
+00:14:04.567 --> 00:14:05.847
+<v Jocelyn DiCesare>I was in trouble.</v>
+
+00:14:12.007 --> 00:14:31.287
+<v Andrea Canlas>having a difficult time sleeping. And when we tried to, you know, ask further questions, unfortunately, we found out that he is clinically diagnosed as that has depression and anxiety disorder. That's why he was having a difficult time sleeping, trauma here and there. I just don't want to.</v>
+
+00:14:25.687 --> 00:14:26.087
+<v Jocelyn DiCesare>Okay.</v>
+
+00:14:31.367 --> 00:14:50.007
+<v Andrea Canlas>you know, drill in on that side of things, but I wanted to make sure that he's trying to get better. So that's the reason why. But I wanted to also let you know that I know that we wanted to make sure that he gets better. I know that we're trying to help where we can, but I also wanted to highlight that, of course,</v>
+
+00:14:50.247 --> 00:15:14.407
+<v Andrea Canlas>at the end of the day, we have a business to run and this is it. And you have a business to run as well. So I wanted to be fair with you, because currently I looked at it and it's currently, he's currently at 8.5 SLs and we're not even at the half of the year. So it's not looking good. And just in case you have any questions with those BLs and SLs, just in case,</v>
+
+00:14:52.087 --> 00:14:52.407
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:15:08.327 --> 00:15:08.727
+<v Jocelyn DiCesare>Right.</v>
+
+00:15:15.207 --> 00:15:33.847
+<v Andrea Canlas>they accumulated more than they should, which is 12 for VLs and 12 for sick leaves, then we're going to get a true up on December so that you can get a credit back just in case. But before that even happens, I wanted to know, how was the impact on your side of the fence, Joseman?</v>
+
+00:15:34.247 --> 00:15:35.047
+<v Jocelyn DiCesare>So.</v>
+
+00:15:37.607 --> 00:15:39.127
+<v Jocelyn DiCesare>He, he does great.</v>
+
+00:15:41.047 --> 00:15:44.407
+<v Jocelyn DiCesare>And I'm happy you shared those details with me.</v>
+
+00:15:45.127 --> 00:15:45.607
+<v Andrea Canlas>Mhm.</v>
+
+00:15:46.007 --> 00:15:56.087
+<v Jocelyn DiCesare>Because I can see such a major difference between Dave and the rest of the team, including Christian.</v>
+
+00:15:55.607 --> 00:15:56.327
+<v Andrea Canlas>Yeah, mhm.</v>
+
+00:15:56.967 --> 00:16:16.167
+<v Jocelyn DiCesare>Okay, I can see it. I can hear it. I can almost feel it. So, you know, he is so incredibly soft-spoken. He's not outgoing. He's not, he doesn't seem 100% focused. He's.</v>
+
+00:16:02.487 --> 00:16:02.887
+<v Andrea Canlas>Yeah.</v>
+
+00:16:16.327 --> 00:16:16.967
+<v Andrea Canlas>Yes.</v>
+
+00:16:16.567 --> 00:16:31.367
+<v Jocelyn DiCesare>And listen, work is work, right? If I didn't have to work, I wouldn't. Okay, I would be on the beach. But I do have to, this is how, you know, I do have to work and...</v>
+
+00:16:19.767 --> 00:16:20.127
+<v Andrea Canlas>Yeah.</v>
+
+00:16:22.007 --> 00:16:22.647
+<v Andrea Canlas>Exactly.</v>
+
+00:16:23.607 --> 00:16:24.007
+<v Andrea Canlas>Babe.</v>
+
+00:16:26.967 --> 00:16:27.927
+<v Andrea Canlas>Oh, God, dude.</v>
+
+00:16:30.327 --> 00:16:30.807
+<v Andrea Canlas>Mhm.</v>
+
+00:16:32.247 --> 00:16:38.207
+<v Jocelyn DiCesare>I cannot wear, you know, my personal issues.</v>
+
+00:16:38.567 --> 00:16:38.887
+<v Andrea Canlas>True.</v>
+
+00:16:39.167 --> 00:16:58.007
+<v Jocelyn DiCesare>when I come to work, right? So we all have to kind of make that switch a bit. But I can definitely see it in him that it's not, he's just not, he's not in it. He's not. He seems very closed off, seems again, very quiet. I knew he had issues with his sister.</v>
+
+00:16:40.887 --> 00:16:41.447
+<v Andrea Canlas>Yes.</v>
+
+00:16:43.607 --> 00:16:44.087
+<v Andrea Canlas>Mhm.</v>
+
+00:16:48.887 --> 00:16:49.167
+<v Andrea Canlas>Yeah.</v>
+
+00:16:56.247 --> 00:16:56.967
+<v Andrea Canlas>Guarded.</v>
+
+00:16:58.247 --> 00:17:13.207
+<v Jocelyn DiCesare>I knew that things were going on, so I was like, oh, well, you know, he's got stuff. He's got stuff. And now that you said that, it kind of all makes sense. It all makes sense. So whereas Christian,</v>
+
+00:17:04.167 --> 00:17:04.567
+<v Andrea Canlas>True.</v>
+
+00:17:15.527 --> 00:17:37.047
+<v Jocelyn DiCesare>might drive me a little crazy sometimes because he is such an outgoing person, personality. He's A go-getter. He wants to do everything. He wants to do it right away. He wants to do it well. You know, he was forgetting to capitalize people's names. And I said, hey, you can't, you gotta, I get it, slow down. Let's, and he's like, it won't happen again.</v>
+
+00:17:24.007 --> 00:17:24.127
+<v Andrea Canlas>Yeah.</v>
+
+00:17:29.687 --> 00:17:30.007
+<v Andrea Canlas>Yeah.</v>
+
+00:17:33.487 --> 00:17:34.007
+<v Andrea Canlas>Low down.</v>
+
+00:17:35.687 --> 00:17:36.167
+<v Andrea Canlas>Mhm.</v>
+
+00:17:37.287 --> 00:17:58.967
+<v Jocelyn DiCesare>I'm like, okay. I'm like, I get it. Accidents happen, but it was, you know, a few times. But, and he's asking me, hey, do we have any of these, any clients with this type of firewall? Cause I'm doing, I'm like, why are you doing training? He's like, yeah. And I'm like, we do have a client with that firewall, but you're not allowed to touch that. And I said, it has nothing to do with you. It's just that client is not nice.</v>
+
+00:17:43.967 --> 00:17:44.447
+<v Andrea Canlas>Mhm.</v>
+
+00:17:59.247 --> 00:18:23.887
+<v Jocelyn DiCesare>That client is a problem client. So I'm like, he's like, no, I'll just read the ticket. I'm like, absolutely, read the ticket. Look at the other ticket notes that are in there. I'm like, that's fine. He's like, got it. All right. He, Christian is more a go-getter. Like he's more, I could, yeah, he is. He is where Dave is more reserved. And I can appreciate that because there are times that you need to be reserved, but I can definitely see.</v>
+
+00:17:59.687 --> 00:18:00.167
+<v Andrea Canlas>Yes.</v>
+
+00:18:01.687 --> 00:18:02.167
+<v Andrea Canlas>Mhm.</v>
+
+00:18:14.807 --> 00:18:16.007
+<v Andrea Canlas>He's A fireball, really.</v>
+
+00:18:23.967 --> 00:18:37.927
+<v Jocelyn DiCesare>He's not, he's not in it. So I'll be making some decisions soon on what we'll be doing. Full transparency. I don't know that we'll be keeping him. I don't know if we'll hire someone else right away.</v>
+
+00:18:26.247 --> 00:18:26.727
+<v Andrea Canlas>Mhm.</v>
+
+00:18:29.087 --> 00:18:29.607
+<v Andrea Canlas>Mhm.</v>
+
+00:18:30.727 --> 00:18:33.847
+<v Andrea Canlas>Yes. Exactly.</v>
+
+00:18:35.487 --> 00:18:36.087
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:18:40.167 --> 00:18:58.727
+<v Jocelyn DiCesare>I think off-boarding some of the items to the NOC team is going to help free up some people and some things. I still have some discussions to be had internally. So full transparency, you know, I'm happy you told me because I can see it. So.</v>
+
+00:18:50.727 --> 00:18:51.287
+<v Andrea Canlas>Mhm.</v>
+
+00:18:58.967 --> 00:19:00.407
+<v Jocelyn DiCesare>Okay, it makes sense now.</v>
+
+00:18:59.607 --> 00:19:00.087
+<v Andrea Canlas>I got.</v>
+
+00:19:01.447 --> 00:19:20.807
+<v Andrea Canlas>I gotcha. And that's what we wanted to also let you know, that looking forward and, you know, looking at the holistic view of things, it might be, it's going to happen soon down the line. So just want to let you know that if a replacement is necessary, which you said that you're still thinking about,</v>
+
+00:19:04.967 --> 00:19:05.367
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:19:21.047 --> 00:19:21.527
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:19:21.447 --> 00:19:41.127
+<v Andrea Canlas>You still have that replacement anytime that you needed it. So if you wanted to see profile, you just let me know and then we'll work on it. But yeah, all the necessary documentation and admin stuff is happening locally, so you don't have to worry about it. We got you covered on that aspect.</v>
+
+00:19:28.007 --> 00:19:28.487
+<v Jocelyn DiCesare>Sure.</v>
+
+00:19:30.167 --> 00:19:30.727
+<v Jocelyn DiCesare>Thank you.</v>
+
+00:19:39.927 --> 00:19:40.287
+<v Jocelyn DiCesare>Okay.</v>
+
+00:19:41.447 --> 00:19:46.327
+<v Jocelyn DiCesare>Can I ask something? And this is more something that I just don't know.</v>
+
+00:19:46.967 --> 00:19:47.367
+<v Andrea Canlas>Sure.</v>
+
+00:19:47.487 --> 00:19:49.207
+<v Jocelyn DiCesare>What is so?</v>
+
+00:19:50.407 --> 00:20:05.287
+<v Jocelyn DiCesare>Here in the United States, we, if somebody is diagnosed with clinical depression, you know, bipolar anxiety, you have the ability to apply for what are called,</v>
+
+00:19:52.407 --> 00:19:52.727
+<v Andrea Canlas>Uh-huh.</v>
+
+00:19:57.807 --> 00:19:58.447
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:20:00.687 --> 00:20:00.807
+<v Andrea Canlas>Okay.</v>
+
+00:20:05.367 --> 00:20:05.687
+<v Jocelyn DiCesare>Um...</v>
+
+00:20:07.607 --> 00:20:21.367
+<v Jocelyn DiCesare>There are just certain benefits that you can apply for, right? It's almost like a disability where you get paid to be at home. Do you have that in the Philippines? Is there some kind of, yeah.</v>
+
+00:20:11.527 --> 00:20:12.167
+<v Andrea Canlas>Mhm.</v>
+
+00:20:14.167 --> 00:20:14.727
+<v Andrea Canlas>Yes.</v>
+
+00:20:16.327 --> 00:20:16.847
+<v Andrea Canlas>Mhm.</v>
+
+00:20:19.127 --> 00:20:19.767
+<v Andrea Canlas>Are we?</v>
+
+00:20:22.247 --> 00:20:41.207
+<v Andrea Canlas>Yeah, we have, you can apply for that benefit, like a disability benefit, but it doesn't pay you while you're at home. It doesn't give you that benefit altogether, like living expense and all the other stuff. But it actually just gives you a bit of a discount here and there, everywhere you go.</v>
+
+00:20:30.647 --> 00:20:31.127
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:20:36.807 --> 00:20:37.167
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:20:41.607 --> 00:20:49.447
+<v Andrea Canlas>And when it comes to applying for a job, we ask for it, but it's not really taken against them.</v>
+
+00:20:42.807 --> 00:20:43.447
+<v Jocelyn DiCesare>Okay.</v>
+
+00:20:50.327 --> 00:21:08.647
+<v Jocelyn DiCesare>Right. Got it. Okay. Yeah, see here, it's a little bit, it's a little bit different. And honestly, I like that idea where it's just like, okay, if you do have them, it gives you breaks on other things. Where here you get a government check and you sit at home and that's it.</v>
+
+00:20:56.047 --> 00:20:56.527
+<v Andrea Canlas>Mhm.</v>
+
+00:21:00.927 --> 00:21:01.407
+<v Andrea Canlas>Mmh.</v>
+
+00:21:03.127 --> 00:21:03.687
+<v Andrea Canlas>Yes.</v>
+
+00:21:05.967 --> 00:21:06.167
+<v Andrea Canlas>And.</v>
+
+00:21:09.207 --> 00:21:13.767
+<v Jocelyn DiCesare>So I like the model that you guys have a little bit better. I think that...</v>
+
+00:21:09.527 --> 00:21:10.007
+<v Andrea Canlas>Yeah.</v>
+
+00:21:11.207 --> 00:21:11.527
+<v Andrea Canlas>Yes.</v>
+
+00:21:13.367 --> 00:21:13.847
+<v Andrea Canlas>Mhm.</v>
+
+00:21:14.967 --> 00:21:23.527
+<v Jocelyn DiCesare>probably helps people and it also helps them keep their dignity while they're going through things, right?</v>
+
+00:21:21.767 --> 00:21:22.167
+<v Andrea Canlas>True.</v>
+
+00:21:23.447 --> 00:21:24.087
+<v Andrea Canlas>Very true.</v>
+
+00:21:25.047 --> 00:21:26.567
+<v Jocelyn DiCesare>Because here you can work.</v>
+
+00:21:25.247 --> 00:21:26.647
+<v Andrea Canlas>and keep their mind out of.</v>
+
+00:21:27.927 --> 00:21:43.527
+<v Jocelyn DiCesare>But you can't. If you make, you know, they tell you you can work, but you can't make, they don't pay you enough. They pay you below poverty level here, but they tell you.</v>
+
+00:21:36.567 --> 00:21:37.047
+<v Andrea Canlas>Mhm.</v>
+
+00:21:42.487 --> 00:21:42.567
+<v Andrea Canlas>Ohh.</v>
+
+00:21:44.487 --> 00:22:03.007
+<v Jocelyn DiCesare>You can work, but you can't work over a certain number of hours, because if you do, you'll get kicked off your other benefits. And of course, here, it's hard to get medical coverage. It's a whole thing. It's not a great setup. So I like your model better. All right. Well, thank you for telling me that.</v>
+
+00:21:53.367 --> 00:21:53.767
+<v Andrea Canlas>Ohh.</v>
+
+00:21:56.247 --> 00:21:56.727
+<v Andrea Canlas>Mhm.</v>
+
+00:22:01.527 --> 00:22:06.807
+<v Andrea Canlas>Yeah, and it keeps him busy, so helps him a lot. Yeah, do something else.</v>
+
+00:22:04.247 --> 00:22:04.727
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:22:06.007 --> 00:22:06.407
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:22:07.687 --> 00:22:09.287
+<v Jocelyn DiCesare>Yeah, OK.</v>
+
+00:22:08.727 --> 00:22:18.647
+<v Andrea Canlas>Any updates with how you wanted to go? I just wanted to be very transparent with you. If you want, if there's any update with that, let me know and then we can get that sorted for you.</v>
+
+00:22:19.247 --> 00:22:20.247
+<v Jocelyn DiCesare>Okay, thank you.</v>
+
+00:22:21.447 --> 00:22:23.207
+<v Andrea Canlas>Thank you very much. Back to you, Ayra.</v>
+
+00:22:24.087 --> 00:22:43.167
+<v Ayra Macatol>All right. Thank you for that conversation. That's very productive. And moving on to the next slide, we have the highlights. So over the period of April, we maintained 0 escalations for you, Joselyn, and then we maintained uninterrupted coverage throughout the month with no service gap.</v>
+
+00:22:44.367 --> 00:23:05.937
+<v Ayra Macatol>For the performance analysis, these are the ITBD recommended KPIs, and you're already aware of this. If you have questions, let me know. For utilization trend and analysis, this is for the both of them. So Christian closed at 108%, and then Dave, he closed at 98%.</v>
+
+00:23:06.007 --> 00:23:24.327
+<v Ayra Macatol>Both were, they reached the target, which is the 80%, which is very good. I can see that they're making use of their time. They're doing trainings, they're checking on tickets and everything. So that's why we can see that they have a very high utilization rate.</v>
+
+00:23:25.127 --> 00:23:47.207
+<v Ayra Macatol>For ticket closure trend here, we have for the both of them, for Christian, he closed 95% resolution rate. That's 88 closed tickets. And then if we're going to get the average, that's going to be 5. For Dave, it's 103. That's very good. He closed 110</v>
+
+00:23:47.287 --> 00:23:59.847
+<v Ayra Macatol>tickets for the month of April and the average was 6. I can see that they're working very well. If they get tickets, they make sure that they close it. Any questions on this part?</v>
+
+00:24:00.487 --> 00:24:00.967
+<v Jocelyn DiCesare>Nope.</v>
+
+00:24:01.367 --> 00:24:21.047
+<v Ayra Macatol>Okay, moving on to CSAT, we have two for each. Dave from Jeff Gray, he mentioned that, although I'm assuming that Dave's appearance was professional, we only talked over the phone, so I never saw him. Otherwise, his service was stellar, prompt, efficient, professional, and effective.</v>
+
+00:24:21.767 --> 00:24:42.967
+<v Ayra Macatol>So, there's another one for Dave from Lee's current result quickly and my panic is now subsided. Thank you. For me, this is for Christian, the last part, the last two. So, this is from David. He mentioned that had a bug in Samsung and Outlook Calendar and it took a while to fix.</v>
+
+00:24:30.167 --> 00:24:30.327
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:24:43.287 --> 00:25:03.607
+<v Ayra Macatol>to come from Outlook, but Christian was persistent and when update occurred, he contacted me to resolve the issue. All set now. And last one from this company, Falvi. He mentioned it. It was a very great experience. So it's nice to see that we are receiving this kind of CSAT for our guys.</v>
+
+00:24:54.727 --> 00:24:55.207
+<v Jocelyn DiCesare>Mhm.</v>
+
+00:25:00.687 --> 00:25:01.127
+<v Jocelyn DiCesare>Yes.</v>
+
+00:25:03.367 --> 00:25:03.847
+<v Jocelyn DiCesare>Yes.</v>
+
+00:25:04.567 --> 00:25:10.247
+<v Ayra Macatol>For way forward, you mentioned yesterday that we don't have work on the coming May 25th, right?</v>
+
+00:25:11.447 --> 00:25:26.407
+<v Jocelyn DiCesare>Yep, that's our holiday, right? If I'm not wrong, I'm going to check Monday. Let's see. Oh, for Pete's sakes, I know I just told you the other day. Memorial Day, we are closed. Yes.</v>
+
+00:25:12.327 --> 00:25:12.727
+<v Ayra Macatol>Okay.</v>
+
+00:25:15.767 --> 00:25:16.367
+<v Ayra Macatol>Yes.</v>
+
+00:25:24.327 --> 00:25:24.567
+<v Ayra Macatol>He.</v>
+
+00:25:25.527 --> 00:25:39.447
+<v Ayra Macatol>Yes. All right. I'll let them know. And for the upcoming PDO for Christian, we already talked about this. So I mentioned this to Dave and he promised that he's going to be there for coverage while Christian's out.</v>
+
+00:25:31.287 --> 00:25:31.687
+<v Jocelyn DiCesare>Yeah.</v>
+
+00:25:39.847 --> 00:25:47.207
+<v Jocelyn DiCesare>Okay, and now I realize he might not be here by that time, but it's fine. It's fine. We'll work it out, whatever.</v>
+
+00:25:48.407 --> 00:25:52.407
+<v Ayra Macatol>Okay, let us know so we can we can help you decide.</v>
+
+00:25:49.767 --> 00:25:50.567
+<v Jocelyn DiCesare>Absolutely.</v>
+
+00:25:52.327 --> 00:25:53.047
+<v Jocelyn DiCesare>Thank you.</v>
+
+00:25:53.607 --> 00:26:02.167
+<v Ayra Macatol>You're welcome. And for Build It Live, that's going to be on August 325. Have you registered, Jocelyn?</v>
+
+00:26:02.487 --> 00:26:05.927
+<v Jocelyn DiCesare>Yeah, I'm already going. I registered last year before we left.</v>
+
+00:26:04.247 --> 00:26:04.687
+<v Ayra Macatol>Okay.</v>
+
+00:26:07.047 --> 00:26:25.287
+<v Ayra Macatol>All right, wonderful. That's great. If you have questions for these, we have Andrea and the rest of the team to answer for you. And Team GPS, you already know that. And the other IT by design products, so if you're interested, you can let us know. And this is the end of my slide, Jocelyn.</v>
+
+00:26:25.927 --> 00:26:31.447
+<v Ayra Macatol>This is the part where we discuss. Do you have anything else to say to us?</v>
+
+00:26:32.007 --> 00:26:33.367
+<v Jocelyn DiCesare>No, that's it.</v>
+
+00:26:32.847 --> 00:26:35.127
+<v Ayra Macatol>Okay, I'm gonna stop sharing my screen.</v>
+
+00:26:35.847 --> 00:26:43.367
+<v Jocelyn DiCesare>Yeah, just thank you for being so responsive. And, you know, we're always on teams together, which I appreciate. So thank you.</v>
+
+00:26:36.807 --> 00:26:36.967
+<v Ayra Macatol>How?</v>
+
+00:26:39.207 --> 00:26:39.367
+<v Ayra Macatol>Yeah.</v>
+
+00:26:44.247 --> 00:26:49.447
+<v Ayra Macatol>Thank you. You too, Jocelyn. How about you, Andy? You have anything to add?</v>
+
+00:26:50.087 --> 00:27:01.607
+<v Andrea Canlas>No, not really. Just wanted to follow up with what we talked about today. If you have any confirmation and wanted to talk about it more, just let me know and we can jump in a call.</v>
+
+00:27:02.767 --> 00:27:04.487
+<v Jocelyn DiCesare>Perfect. Thank you.</v>
+
+00:27:04.167 --> 00:27:05.287
+<v Andrea Canlas>Thank you very much.</v>
+
+00:27:06.087 --> 00:27:07.527
+<v Jocelyn DiCesare>Alright, see you then.</v>
+
+00:27:06.487 --> 00:27:07.447
+<v Ayra Macatol>And what you say?</v>
+
+00:27:08.647 --> 00:27:08.967
+<v Jocelyn DiCesare>Oh.</v>
+
+00:27:09.047 --> 00:27:10.327
+<v Ayra Macatol>All good, Okay.</v>
+
+00:27:09.047 --> 00:27:13.007
+<v Sage Khattri>Yes, nothing from my side. Thank you, Justin. Thank you so much for your time today. Yeah.</v>
+
+00:27:11.767 --> 00:27:16.087
+<v Ayra Macatol>Alright, have a good day, everyone. Happy weekend. Bye-bye.</v>
+
+00:27:13.047 --> 00:27:14.247
+<v Andrea Canlas>Happy weekend!</v>
+
+00:27:13.127 --> 00:27:16.087
+<v Jocelyn DiCesare>Thanks, guys. You too. Bye.</v>
+
+00:27:14.247 --> 00:27:15.367
+<v Sage Khattri>Thank you, everyone. Yeah.</v>
+
+00:27:16.127 --> 00:27:16.567
+<v Andrea Canlas>Bye.</v>
+
+00:27:16.567 --> 00:27:16.967
+<v Sage Khattri>Bye.</v>
+

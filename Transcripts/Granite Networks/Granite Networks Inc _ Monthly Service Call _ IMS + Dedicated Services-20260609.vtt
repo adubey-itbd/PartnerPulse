@@ -1,0 +1,965 @@
+WEBVTT
+NOTE title: Granite Networks Inc | Monthly Service Call | IMS + Dedicated Services
+NOTE date: 2026-06-09
+NOTE duration: 31m 35s
+
+00:00:12.521 --> 00:00:13.721
+<v Keith Rozario>Hey, Andy, hey, Mark.</v>
+
+00:00:15.961 --> 00:00:16.441
+<v Marky Mangune>Bye.</v>
+
+00:00:16.161 --> 00:00:16.761
+<v Andrea Canlas>Hello.</v>
+
+00:00:30.121 --> 00:00:30.921
+<v Vishal Kashyap>Hi, everyone.</v>
+
+00:00:34.681 --> 00:00:35.241
+<v Keith Rozario>You sure?</v>
+
+00:01:22.361 --> 00:01:25.961
+<v Andrea Canlas>If a mom's taken, Paul is a tax aid.</v>
+
+00:01:27.641 --> 00:01:28.681
+<v Andrea Canlas>Conference.</v>
+
+00:01:29.641 --> 00:01:32.761
+<v Keith Rozario>I do not recall, not sure.</v>
+
+00:01:33.841 --> 00:01:34.361
+<v Keith Rozario>Not sure.</v>
+
+00:01:34.161 --> 00:01:38.041
+<v Andrea Canlas>Yeah, I was, I just saw it on his LinkedIn, so...</v>
+
+00:01:37.681 --> 00:01:39.561
+<v Keith Rozario>Oh, you did? Okay. Okay.</v>
+
+00:01:39.321 --> 00:01:43.161
+<v Andrea Canlas>Yeah, I'm not sure if he'll be able to come in though.</v>
+
+00:01:41.961 --> 00:01:42.121
+<v Keith Rozario>Mm.</v>
+
+00:01:44.961 --> 00:01:45.481
+<v Keith Rozario>OK.</v>
+
+00:01:46.561 --> 00:01:47.561
+<v Keith Rozario>Michael should join though.</v>
+
+00:01:51.921 --> 00:01:53.321
+<v Keith Rozario>Can you check with Michael once Vishal?</v>
+
+00:01:55.521 --> 00:01:57.961
+<v Vishal Kashyap>No, Michael doesn't join these calls.</v>
+
+00:01:58.601 --> 00:01:59.641
+<v Keith Rozario>It doesn't just ball.</v>
+
+00:01:59.801 --> 00:02:01.321
+<v Vishal Kashyap>Now, on this call, or...</v>
+
+00:02:04.281 --> 00:02:04.681
+<v Keith Rozario>Kour.</v>
+
+00:02:04.441 --> 00:02:05.721
+<v Vishal Kashyap>There was another guy.</v>
+
+00:02:09.801 --> 00:02:11.001
+<v Andrea Canlas>I think it's Blake.</v>
+
+00:02:11.561 --> 00:02:12.361
+<v Vishal Kashyap>Blake, yeah.</v>
+
+00:02:13.401 --> 00:02:14.761
+<v Andrea Canlas>Yeah, let me just...</v>
+
+00:02:15.481 --> 00:02:18.081
+<v Andrea Canlas>Send Paul or like a chat one moment.</v>
+
+00:02:33.241 --> 00:02:33.401
+<v Andrea Canlas>Right.</v>
+
+00:02:35.561 --> 00:02:35.761
+<v Vishal Kashyap>Kip.</v>
+
+00:02:37.041 --> 00:02:37.081
+<v Andrea Canlas>I.</v>
+
+00:02:49.881 --> 00:02:50.081
+<v Andrea Canlas>No.</v>
+
+00:02:51.161 --> 00:02:51.401
+<v Andrea Canlas>Kip.</v>
+
+00:02:55.321 --> 00:02:56.201
+<v Michael Abt>Hello, everybody.</v>
+
+00:02:57.201 --> 00:02:57.881
+<v Keith Rozario>Hey, Michael.</v>
+
+00:02:59.481 --> 00:03:05.001
+<v Michael Abt>Paul is not going to be joining. He is at a Pax 8 conference in Utah.</v>
+
+00:03:04.681 --> 00:03:06.241
+<v Keith Rozario>Mhm, mhm.</v>
+
+00:03:05.961 --> 00:03:06.441
+<v Vishal Kashyap>Mhm.</v>
+
+00:03:06.841 --> 00:03:07.241
+<v Michael Abt>So.</v>
+
+00:03:08.321 --> 00:03:08.561
+<v Keith Rozario>Okay.</v>
+
+00:03:11.121 --> 00:03:12.041
+<v Keith Rozario>No worries.</v>
+
+00:03:17.361 --> 00:03:17.481
+<v Vishal Kashyap>Yeah.</v>
+
+00:03:23.881 --> 00:03:26.041
+<v Keith Rozario>So you're okay if we can run the deck by you, Michael?</v>
+
+00:03:27.241 --> 00:03:29.321
+<v Michael Abt>Yep, we can we can go through.</v>
+
+00:03:31.321 --> 00:03:31.801
+<v Keith Rozario>OK.</v>
+
+00:03:32.521 --> 00:03:33.001
+<v Vishal Kashyap>Sure.</v>
+
+00:03:47.321 --> 00:03:49.161
+<v Vishal Kashyap>I hope my screen is visible to you now.</v>
+
+00:03:49.641 --> 00:03:50.841
+<v Michael Abt>I can see your screen.</v>
+
+00:03:51.521 --> 00:03:52.041
+<v Vishal Kashyap>Perfect.</v>
+
+00:03:54.921 --> 00:04:12.681
+<v Vishal Kashyap>So Michael, first we will be discussing about the NOC services and in that we will be discussing the SLA, summary patch and backup compliance, inventory true up and recap and to do's. This is the data for last month, May. So overall we received 66 tickets in May. Out of these 66 tickets,</v>
+
+00:04:13.041 --> 00:04:17.481
+<v Vishal Kashyap>64 met the response SLA and 65 met the resolution SLA. So there.</v>
+
+00:04:18.441 --> 00:04:37.321
+<v Vishal Kashyap>Okay, yeah, there was two tickets from P2 category which got missed out but did not impact the target that we have. But if we talk about the resolution SLA, there was only one ticket which missed out, but it was just a miss from Engineers and he forgot to resolve the ticket and just kept it on hold. But apart from that, all the other...</v>
+
+00:04:37.481 --> 00:04:43.001
+<v Vishal Kashyap>priorities P1, P2, and P3 were excellent. They were 100% in terms of response or resolution essentially.</v>
+
+00:04:44.161 --> 00:04:44.361
+<v Vishal Kashyap>Okay.</v>
+
+00:04:47.681 --> 00:04:48.681
+<v Vishal Kashyap>Any other questions, Michael?</v>
+
+00:04:49.401 --> 00:04:50.001
+<v Michael Abt>No.</v>
+
+00:04:51.401 --> 00:04:52.041
+<v Vishal Kashyap>Perfect.</v>
+
+00:04:53.321 --> 00:05:11.561
+<v Vishal Kashyap>If you talk about the patch compliance, currently we are sitting at 92%. Last patches were released on 12th of May and new have been released today. Right now there are three devices which have 3 patches approved each, FS01, host01 and TDICJB. These will be taken care.</v>
+
+00:05:11.881 --> 00:05:15.161
+<v Vishal Kashyap>during our maintenance cycle, which is second and 4th Saturday.</v>
+
+00:05:15.881 --> 00:05:33.481
+<v Michael Abt>Okay, the TDIC job box one that actually might get done today at 6. We have to do a server reboot on that one. So I'm wondering if it's going to auto flag and start auto installing or if.</v>
+
+00:05:17.961 --> 00:05:18.081
+<v Vishal Kashyap>Yeah.</v>
+
+00:05:23.081 --> 00:05:23.801
+<v Vishal Kashyap>Ohh, OK.</v>
+
+00:05:28.081 --> 00:05:29.801
+<v Vishal Kashyap>No, yep, prob.</v>
+
+00:05:33.481 --> 00:05:33.721
+<v Vishal Kashyap>Yeah.</v>
+
+00:05:34.841 --> 00:05:41.241
+<v Michael Abt>So if it doesn't continue on the, you know, our maintenance cycle on that second Saturday.</v>
+
+00:05:42.601 --> 00:05:51.961
+<v Vishal Kashyap>Yep, I think it will be installed today if you are rebooting it because they just need a quick reboot. But yep, I will check in case it fails, we'll push it again.</v>
+
+00:05:48.201 --> 00:05:48.561
+<v Michael Abt>Yeah.</v>
+
+00:05:52.681 --> 00:05:53.081
+<v Michael Abt>Okay.</v>
+
+00:05:55.321 --> 00:05:58.921
+<v Vishal Kashyap>If you talk about the backup compliance, there were no failures in last month.</v>
+
+00:06:00.121 --> 00:06:09.561
+<v Vishal Kashyap>So there were no tickets that came to our board. Neither when and Gina prepared the sheet, they found any failures. So backup has been great. Any other questions, Michael?</v>
+
+00:06:10.841 --> 00:06:11.641
+<v Michael Abt>No.</v>
+
+00:06:12.001 --> 00:06:12.361
+<v Vishal Kashyap>S.</v>
+
+00:06:12.681 --> 00:06:12.841
+<v Michael Abt>No.</v>
+
+00:06:13.441 --> 00:06:13.961
+<v Vishal Kashyap>Perfect.</v>
+
+00:06:16.201 --> 00:06:23.081
+<v Vishal Kashyap>Moving on to the inventory, currently we are managing 20 devices for Granite. Any changes in this inventory?</v>
+
+00:06:24.121 --> 00:06:25.761
+<v Michael Abt>Not at this time, no.</v>
+
+00:06:26.681 --> 00:06:27.081
+<v Vishal Kashyap>Okay.</v>
+
+00:06:29.881 --> 00:06:41.241
+<v Vishal Kashyap>Moving on to the to-dos, there were no to-dos from the last meeting we had. Anything that should be added here? I mean, for the NOC team that you want us to do, anything.</v>
+
+00:06:45.641 --> 00:06:58.921
+<v Michael Abt>Nothing that I have at this moment. And I asked Paul before the meeting kicked off and everything. He didn't have any questions or anything about the patching side or any of that stuff. So.</v>
+
+00:06:50.521 --> 00:06:51.001
+<v Vishal Kashyap>Mhm.</v>
+
+00:07:00.801 --> 00:07:18.281
+<v Vishal Kashyap>Perfect, perfect. Michael, I just had a question regarding the tickets that we escalate. So sometimes we have seen that the workflow either doesn't work or, I mean, something gets changed in Hello. Is someone on your side is also managing Hello, who changes the workflow?</v>
+
+00:07:17.081 --> 00:07:17.401
+<v Michael Abt>Ah.</v>
+
+00:07:19.001 --> 00:07:34.921
+<v Michael Abt>Paul is the only one that does the workflows. There's no one and no one else that has admin besides Paul and Blaine. I don't know if you have ever met him. He's the only, those are the only two that have admin access to Halo for our side.</v>
+
+00:07:32.281 --> 00:07:32.521
+<v Vishal Kashyap>Yeah.</v>
+
+00:07:36.961 --> 00:07:39.081
+<v Vishal Kashyap>Okay, let me check with Paul regarding that, but...</v>
+
+00:07:37.641 --> 00:07:56.681
+<v Michael Abt>But I did notice that there's an I did notice that there's an escalated ticket for that WMS 100 server. It needs to get a reboot, which I'm trying to kill that one off. It's just a little hard. Some devices still showing up domain joined. They're like, hey,</v>
+
+00:07:44.681 --> 00:07:45.321
+<v Vishal Kashyap>Right.</v>
+
+00:07:56.881 --> 00:08:07.641
+<v Michael Abt>I found this computer. It was in the desk drawer under five years of dust. So I'm having a hard time getting rid of all that server right there right now.</v>
+
+00:08:08.841 --> 00:08:29.881
+<v Vishal Kashyap>Okay, yep, I mean, I have noticed that sometimes when we escalate the ticket, it doesn't go to your board or gets assigned to someone, it goes to unassigned state. So in that situation, should we, so our dispatch continuously monitor your board as well, and if they see this, shall they assign tickets to someone from your team or?</v>
+
+00:08:19.401 --> 00:08:20.361
+<v Michael Abt>Yeah, I guess so.</v>
+
+00:08:26.081 --> 00:08:26.361
+<v Michael Abt>What?</v>
+
+00:08:30.601 --> 00:08:33.401
+<v Vishal Kashyap>Like, let it be on on the unassigned date.</v>
+
+00:08:30.761 --> 00:08:50.121
+<v Michael Abt>I would I would assign them to assign them to myself or Merhead. Those are the only two that really get in there to do any of that. Or if you flip it into the support, I don't know in Halo where the queue is to tell it from not</v>
+
+00:08:42.681 --> 00:08:43.161
+<v Vishal Kashyap>Mhm.</v>
+
+00:08:46.761 --> 00:08:47.161
+<v Vishal Kashyap>You.</v>
+
+00:08:49.481 --> 00:08:50.201
+<v Vishal Kashyap>Kip bye.</v>
+
+00:08:50.161 --> 00:08:54.161
+<v Michael Abt>being in knock to be in to support support.</v>
+
+00:08:51.441 --> 00:08:52.201
+<v Vishal Kashyap>Yep, I got that.</v>
+
+00:08:56.041 --> 00:08:59.401
+<v Vishal Kashyap>Yep, the I got that. I, I, I have the adoption.</v>
+
+00:09:00.041 --> 00:09:00.441
+<v Michael Abt>Okay.</v>
+
+00:09:01.641 --> 00:09:08.681
+<v Vishal Kashyap>Perfect, I'll cascade that message. Perfect. Moving on to the dedicated services. Over to you, Mark.</v>
+
+00:09:10.321 --> 00:09:12.841
+<v Marky Mangune>Alright, thank you, Vishal. Hi, Michael.</v>
+
+00:09:13.241 --> 00:09:13.801
+<v Michael Abt>Hello.</v>
+
+00:09:14.681 --> 00:09:35.881
+<v Marky Mangune>Hi, so I'm going to be discussing the dedicated services overviews for the previous month. So highlights first, performance. So Sophia, which is the new staff member, a replacement for Mon, is now handling tickets independently without any restrictions. So she's doing ticket management in full swing. So</v>
+
+00:09:36.841 --> 00:09:56.161
+<v Marky Mangune>She's doing a great job at the moment, but feel free to raise some feedbacks if you notice there's something that needs to be discussed in regards to Sophia's performance. And the next one is assistance. So Anton was able to support Sophia after Mon left.</v>
+
+00:09:56.281 --> 00:10:16.041
+<v Marky Mangune>Overall, Sophia feels supported by the Granite team. So aside from Anton, Sophia mentioned that across Granite, if she needs something like assistance or documentations that she's looking for, basically the Granite team is the one.</v>
+
+00:10:16.521 --> 00:10:36.121
+<v Marky Mangune>who's supporting or basically other technicians or engineers that you guys have are also helping her. So thank you so much for doing that in terms of assisting Sophia. And third one, in the client side of things as well, Sophia shared this.</v>
+
+00:10:21.961 --> 00:10:22.521
+<v Michael Abt>Mhm.</v>
+
+00:10:36.521 --> 00:10:55.881
+<v Marky Mangune>that she is gradually getting to know the clients better. And she also enjoys the challenges and sees them as a learning opportunity. So every ticket that is new to her, she deals with it like a learning curve for her. So it's</v>
+
+00:10:56.001 --> 00:11:11.321
+<v Marky Mangune>Still in work in progress for Sophia, but I think she's doing a great job in helping in regards to the tickets that the team is handling. So any questions so far, Michael, or concerns?</v>
+
+00:11:08.641 --> 00:11:08.921
+<v Michael Abt>Yep.</v>
+
+00:11:11.881 --> 00:11:27.401
+<v Michael Abt>Nope. Sophie is doing exactly what we're wanting her to and doing a good job. She already has at least one on our Granite website board for our review back.</v>
+
+00:11:27.961 --> 00:11:28.441
+<v Marky Mangune>Mhm.</v>
+
+00:11:30.681 --> 00:11:38.681
+<v Michael Abt>I haven't heard anything from customers, and I go to customer sites quite frequently, and I haven't heard anything.</v>
+
+00:11:37.401 --> 00:11:37.881
+<v Marky Mangune>Mhm.</v>
+
+00:11:39.801 --> 00:11:40.041
+<v Michael Abt>On.</v>
+
+00:11:40.121 --> 00:11:40.761
+<v Marky Mangune>Just great.</v>
+
+00:11:41.641 --> 00:11:44.681
+<v Michael Abt>It is good. You know, you don't want bad feedback.</v>
+
+00:11:45.241 --> 00:11:47.001
+<v Marky Mangune>Scores, yes, for sure.</v>
+
+00:11:47.801 --> 00:11:48.121
+<v Michael Abt>Um...</v>
+
+00:11:49.721 --> 00:11:53.481
+<v Michael Abt>Besides that, she's still kind of on the...</v>
+
+00:11:55.481 --> 00:12:15.241
+<v Michael Abt>The only thing I've ever had, like kind of not a talk with her, but an issue in a sense was that it was more a user came, not called him, but sent him an email for a ticket and instead of getting like the point of contact's approval to add the person,</v>
+
+00:12:14.201 --> 00:12:14.761
+<v Marky Mangune>Mhm.</v>
+
+00:12:15.841 --> 00:12:16.321
+<v Marky Mangune>Mmh.</v>
+
+00:12:15.921 --> 00:12:16.201
+<v Michael Abt>Um...</v>
+
+00:12:17.161 --> 00:12:36.321
+<v Michael Abt>But it was also my confusion because I didn't even know that that person got fired and I was on their site yesterday, you know, like the day before. And I was like, I just physically talked to this user. Why is, why are we sharing the mailbox to somebody without authorization?</v>
+
+00:12:26.441 --> 00:12:26.601
+<v Marky Mangune>Mm.</v>
+
+00:12:35.401 --> 00:12:35.961
+<v Marky Mangune>Okay.</v>
+
+00:12:36.641 --> 00:12:53.801
+<v Michael Abt>But that was the only thing. And we discussed with her and said, hey, we just gotta make sure that we, if you think you need an approval because you don't know who this person is, it's never a bad thing to just to ask. So.</v>
+
+00:12:49.801 --> 00:12:50.281
+<v Marky Mangune>Mhm.</v>
+
+00:12:53.241 --> 00:12:53.641
+<v Marky Mangune>Yeah.</v>
+
+00:12:56.121 --> 00:12:57.481
+<v Michael Abt>Yeah, I don't want.</v>
+
+00:12:56.361 --> 00:13:02.761
+<v Marky Mangune>So every request that you guys have, there's a primary or secondary authorizer for some ticket request or...</v>
+
+00:13:03.721 --> 00:13:21.961
+<v Michael Abt>It's more for like adding licenses or like say a random user puts in an HR form, but it didn't come through like a new user form and stuff like that, but it didn't come through HR. Well, we</v>
+
+00:13:20.481 --> 00:13:20.681
+<v Marky Mangune>Mm.</v>
+
+00:13:22.441 --> 00:13:35.881
+<v Michael Abt>need to verify that this is happening. You know, sometimes the HR people, they go on vacation and they don't tell us and stuff like that. So we got to now go back and be like, are they authorized to give us this information?</v>
+
+00:13:31.561 --> 00:13:32.041
+<v Marky Mangune>Mmh.</v>
+
+00:13:37.801 --> 00:13:48.841
+<v Marky Mangune>Okay. So there's no frequent updates in regards to the changes. So you guys were just going to chase the approver or who's the next approver for this specific request.</v>
+
+00:13:43.241 --> 00:13:44.521
+<v Michael Abt>No, most.</v>
+
+00:13:48.521 --> 00:14:05.721
+<v Michael Abt>Yep. And some of our most of our tickets, when they like you click into the ticket and stuff like that, and it goes to the inside the ticket in Halo, it does pop up saying, hey, only these people were allowed to approve. There's little pop-up ticket notes and stuff like that.</v>
+
+00:13:59.481 --> 00:14:00.041
+<v Marky Mangune>Mmh.</v>
+
+00:14:06.361 --> 00:14:06.841
+<v Marky Mangune>Mmh.</v>
+
+00:14:07.881 --> 00:14:17.001
+<v Michael Abt>And we try to keep updated on that, but sometimes, you know, things kind of get a little on the back burner while running through everything. So.</v>
+
+00:14:17.881 --> 00:14:34.281
+<v Marky Mangune>Is there any plan in place in regards to those kind of, you know, changes like after a week or two, it'll go back to the original process? Is it well communicated from the client side or it's going to be their discretion?</v>
+
+00:14:34.681 --> 00:14:55.201
+<v Michael Abt>It's kind of their discretion. They just kind of say, hey, I'm back or whatever. But most of the time, it's not that bad. I was just, I was, it was an email for a user that I just like had a conversation with the day before that ticket came in. I was like, why are we doing this? And</v>
+
+00:14:36.721 --> 00:14:36.881
+<v Marky Mangune>Mm.</v>
+
+00:14:56.521 --> 00:14:58.761
+<v Michael Abt>Um, I was just kind of curious on...</v>
+
+00:14:58.521 --> 00:14:59.161
+<v Marky Mangune>Support.</v>
+
+00:14:59.721 --> 00:15:13.241
+<v Michael Abt>you know, following, I wasn't like tracking her tickets or anything, but it was still in there. And I just kind of looked at it for ticket notes wise. And I was like, okay, doing good, doing good. It was right around when she first joined us, joined us.</v>
+
+00:15:14.841 --> 00:15:22.081
+<v Michael Abt>And I think she was just doing more of her first independent style of taking the tickets.</v>
+
+00:15:14.921 --> 00:15:15.481
+<v Marky Mangune>Okay.</v>
+
+00:15:23.641 --> 00:15:27.321
+<v Marky Mangune>Okay, take note of that. Thanks so much. Yeah.</v>
+
+00:15:25.401 --> 00:15:28.121
+<v Michael Abt>Just some coaching, just coaching, yeah.</v>
+
+00:15:29.401 --> 00:15:52.801
+<v Marky Mangune>All right, thanks, Michael. So next one, action tracker. So item one or task number one has been done in terms of the training roadmap for Sophia. And now she's on full swing on supporting clients without any issues, hopefully in the coming weeks as well. And the only pending that we have is the CSAT review or</v>
+
+00:15:52.881 --> 00:16:10.121
+<v Marky Mangune>feedback for Anton that will be for Paul, sorry. So I'll just going to send a follow up with him. I know he's on a convention or something today, but hopefully by next week I'll just going to send a follow up just for him to take the CSAT feedback.</v>
+
+00:16:05.561 --> 00:16:05.881
+<v Michael Abt>Yeah.</v>
+
+00:16:10.921 --> 00:16:11.361
+<v Michael Abt>OK.</v>
+
+00:16:12.041 --> 00:16:12.521
+<v Marky Mangune>All right.</v>
+
+00:16:15.321 --> 00:16:33.161
+<v Marky Mangune>All right, so for a ticket closure trend and analysis, I didn't add Pia, Sophia at the moment because she's just a few weeks old. So by hope, because by hopefully next month, I'll just going to add her up in terms of the ticket closure trend analysis as well.</v>
+
+00:16:33.521 --> 00:16:52.721
+<v Marky Mangune>So in regards to this, this is for Anton. Average ticket close per day is the target is 8, but inside is overall the ticket resolution performance showed a positive upward trend across four weeks with the average resolution rate consistently meeting the exceeding.</v>
+
+00:16:53.721 --> 00:17:12.641
+<v Marky Mangune>target, which is 80%. Week 4 recorded the highest resolution rate, which is at 94%, with 31 tickets closed out of 33 worked on tickets. The lowest resolution rate was observed in week one at 81%, though it was still slightly exceeded the 80%.</v>
+
+00:17:13.641 --> 00:17:17.641
+<v Marky Mangune>Target. Any questions on that part, Michael?</v>
+
+00:17:18.281 --> 00:17:29.641
+<v Michael Abt>Nope, it looks like he's rebuilding himself after almost two weeks off of the illness, the virus that he had or whatever. So.</v>
+
+00:17:24.281 --> 00:17:24.761
+<v Marky Mangune>Yes.</v>
+
+00:17:29.281 --> 00:17:32.921
+<v Marky Mangune>Yeah, from 81 it goes up to 94 in the 4th week, so...</v>
+
+00:17:32.761 --> 00:17:33.321
+<v Michael Abt>Yeah.</v>
+
+00:17:33.961 --> 00:17:36.281
+<v Marky Mangune>Yeah, okay.</v>
+
+00:17:39.321 --> 00:17:58.601
+<v Marky Mangune>So for customer satisfaction, I just add Sophia here because I wanted to share that in the span of less than a month, she already have at least three reviews, 2 CSATs and one neutral. But for Anton, he's doing a great job.</v>
+
+00:17:58.881 --> 00:18:18.081
+<v Marky Mangune>percentage is 100% overall. So Anton achieved 100% CSAT with seven positive feedbacks and no neutral or negative responses. Like I said, for Sophia, three total feedbacks, including two positive and one neutral, resulting to 66.7% for CSAT.</v>
+
+00:18:18.441 --> 00:18:20.641
+<v Marky Mangune>So any reactions for that?</v>
+
+00:18:23.481 --> 00:18:24.521
+<v Michael Abt>So it sounds good.</v>
+
+00:18:27.001 --> 00:18:31.001
+<v Michael Abt>Glad that they're getting good positive feedbacks and everything, so...</v>
+
+00:18:27.401 --> 00:18:28.041
+<v Andrea Canlas>Um...</v>
+
+00:18:32.281 --> 00:18:38.041
+<v Andrea Canlas>Yeah, Michael, do you know what those neutral survey is? Or yeah, like...</v>
+
+00:18:37.161 --> 00:18:38.441
+<v Michael Abt>I, I don't.</v>
+
+00:18:39.241 --> 00:18:46.761
+<v Andrea Canlas>Oh, you don't. Okay, I gotcha. I think we can, Mark, you and I can work with Paul once he's back regarding this neutral.</v>
+
+00:18:44.521 --> 00:18:44.841
+<v Marky Mangune>I...</v>
+
+00:18:45.801 --> 00:18:47.081
+<v Michael Abt>Yep, yep.</v>
+
+00:18:46.361 --> 00:18:53.241
+<v Marky Mangune>I think, yeah, I think I have that data because I have access on their simple set already.</v>
+
+00:18:53.801 --> 00:18:54.281
+<v Andrea Canlas>Mhm.</v>
+
+00:18:54.921 --> 00:18:56.361
+<v Marky Mangune>Are they?</v>
+
+00:18:56.281 --> 00:19:02.521
+<v Andrea Canlas>So this neutral, is it engineer dependent or is there any other factors?</v>
+
+00:19:01.401 --> 00:19:18.761
+<v Marky Mangune>Yes, this is engineer dependent because it says there on the information from Sarah, they said they completed the reboot but didn't contact me after a few hours after that. So there's no call back made after the reboot. So.</v>
+
+00:19:18.841 --> 00:19:27.241
+<v Marky Mangune>I think that's the reason why Sarah, which is the client, provided the neutral feedback. Yeah, Sarah Cooney.</v>
+
+00:19:23.401 --> 00:19:24.681
+<v Michael Abt>Sarah C., right?</v>
+
+00:19:27.081 --> 00:19:38.521
+<v Michael Abt>Yeah, yeah, Sarah Cooney. She's new to the organization for Catholic charities. Trying to get her feet wet. She's our vendor relations over there. So.</v>
+
+00:19:37.961 --> 00:19:38.121
+<v Marky Mangune>Mm.</v>
+
+00:19:38.201 --> 00:19:38.361
+<v Andrea Canlas>Mm.</v>
+
+00:19:39.481 --> 00:19:40.201
+<v Marky Mangune>Okay.</v>
+
+00:19:40.921 --> 00:19:48.841
+<v Andrea Canlas>Gotcha. Did we coach Sophia or did we find out why he was unable or she wasn't able to retalk to the client?</v>
+
+00:19:49.481 --> 00:19:49.961
+<v Michael Abt>I.</v>
+
+00:19:50.921 --> 00:19:51.201
+<v Marky Mangune>Yeah.</v>
+
+00:19:51.321 --> 00:19:56.281
+<v Michael Abt>I did not, because I don't even know what ticket number that was going to be on, so.</v>
+
+00:19:56.841 --> 00:19:59.801
+<v Andrea Canlas>Oh, okay. But for Mark or?</v>
+
+00:19:57.561 --> 00:19:57.801
+<v Marky Mangune>Okay.</v>
+
+00:19:58.441 --> 00:20:01.641
+<v Michael Abt>That, that's from a Paul thing, that's a that.</v>
+
+00:20:01.241 --> 00:20:14.961
+<v Marky Mangune>Yeah, for Marky's side, I did, and she promised that it will not happen again. She just forgot to call back straight up after completing the reboot.</v>
+
+00:20:01.401 --> 00:20:03.121
+<v Andrea Canlas>Yeah, that's okay, Michael.</v>
+
+00:20:07.321 --> 00:20:07.801
+<v Andrea Canlas>Mhm.</v>
+
+00:20:16.441 --> 00:20:24.121
+<v Marky Mangune>But Michael, if you want, I can send you the ticket number because it's here on the details of the review.</v>
+
+00:20:24.281 --> 00:20:26.041
+<v Michael Abt>putting it in the chat there.</v>
+
+00:20:26.681 --> 00:20:27.161
+<v Marky Mangune>Okay.</v>
+
+00:20:27.841 --> 00:20:29.321
+<v Michael Abt>And then I can actually review it and...</v>
+
+00:20:30.481 --> 00:20:30.921
+<v Marky Mangune>Yeah, sure.</v>
+
+00:20:34.361 --> 00:20:53.401
+<v Andrea Canlas>Great. So before we move on, Michael, thank you very much for that. We'll discuss that also with Paul, because again, just like what we usually talked about, your clients is very, very much important. How I know that utilization and ticket resolution are equally important, but your clients are</v>
+
+00:20:35.801 --> 00:20:36.201
+<v Marky Mangune>There.</v>
+
+00:20:45.681 --> 00:20:46.281
+<v Michael Abt>Mm-hmm.</v>
+
+00:20:53.481 --> 00:21:12.361
+<v Andrea Canlas>like 100% of what we wanted to make sure that they're okay with the service that we provide. So we'll make sure that coaching is done for Sophie. I know that he's, you know, still trying to acclimate, but we wanted to make sure that, you know, the service that we provide, even though the engineer is still new, is still up to par.</v>
+
+00:21:12.601 --> 00:21:21.121
+<v Andrea Canlas>So, we'll coach her, and then probably once Paul is back, we'll catch up with him and talk about this, OK?</v>
+
+00:21:21.561 --> 00:21:30.281
+<v Michael Abt>Okay, that's actually the wrong ticket number, the 67877. That's for TDIC, Heather.</v>
+
+00:21:30.921 --> 00:21:33.561
+<v Marky Mangune>Oh, is that not the one? Let me double check.</v>
+
+00:21:37.321 --> 00:21:38.121
+<v Michael Abt>She Gary.</v>
+
+00:21:39.281 --> 00:21:40.841
+<v Michael Abt>A good smiley face on it.</v>
+
+00:21:44.801 --> 00:21:46.921
+<v Andrea Canlas>Which is what we want. That's what we want.</v>
+
+00:21:46.281 --> 00:21:47.801
+<v Marky Mangune>Try, try that, Michael.</v>
+
+00:21:47.641 --> 00:21:47.841
+<v Michael Abt>Yeah.</v>
+
+00:21:48.681 --> 00:21:50.281
+<v Marky Mangune>67913</v>
+
+00:21:55.001 --> 00:21:58.681
+<v Michael Abt>7913. Alright, there's a Siri.</v>
+
+00:22:00.921 --> 00:22:01.481
+<v Marky Mangune>Is that it?</v>
+
+00:22:00.921 --> 00:22:02.201
+<v Michael Abt>OK, but not great yet.</v>
+
+00:22:03.481 --> 00:22:07.961
+<v Michael Abt>Yeah, so it's got the middle neutral ticket. That's why you were saying neutral.</v>
+
+00:22:08.961 --> 00:22:09.401
+<v Marky Mangune>This is.</v>
+
+00:22:12.441 --> 00:22:16.121
+<v Michael Abt>And it was a wipe and reload of an old computer. Okay.</v>
+
+00:22:18.041 --> 00:22:21.961
+<v Michael Abt>I'll take a look at it and see what we can come up with on her with that one.</v>
+
+00:22:22.601 --> 00:22:41.961
+<v Marky Mangune>Sure, thank you. So way forward, it's ITBD holiday on June 12, which is Philippine Independence Day. So I've coordinated this one to Paul and he responded yesterday. And the team here is not required to report to work on Friday.</v>
+
+00:22:42.521 --> 00:22:45.001
+<v Marky Mangune>So I just want to let you know as well, Michael.</v>
+
+00:22:45.641 --> 00:23:01.561
+<v Michael Abt>All right. Thank you for giving them holidays off. It works. Because to be honest, they actually work when we have some holidays and stuff like that, which works out for us as being in different</v>
+
+00:22:48.281 --> 00:22:48.521
+<v Marky Mangune>Right.</v>
+
+00:22:56.281 --> 00:22:56.761
+<v Marky Mangune>Mhm.</v>
+
+00:23:02.601 --> 00:23:12.281
+<v Michael Abt>regions and stuff like that and holidays and everything. Because we like our 4th of July. We just had Memorial Day weekend, which I don't know if they were working too, but.</v>
+
+00:23:13.641 --> 00:23:20.521
+<v Marky Mangune>Yeah, in regards to that, Michael, do you guys have work on July 3? It's A Friday as well.</v>
+
+00:23:21.481 --> 00:23:23.761
+<v Michael Abt>July 3rd.</v>
+
+00:23:25.081 --> 00:23:29.881
+<v Marky Mangune>July 3rd, because July 4th of July will be on a Saturday, if I'm not mistaken.</v>
+
+00:23:26.001 --> 00:23:26.041
+<v Michael Abt>I...</v>
+
+00:23:30.441 --> 00:23:35.721
+<v Michael Abt>Yeah, and I think our policy is that we have the, I think we'll have the Monday off.</v>
+
+00:23:37.161 --> 00:23:39.241
+<v Marky Mangune>Okay, I'll chase that.</v>
+
+00:23:38.201 --> 00:23:48.281
+<v Michael Abt>But I will, I will, I will double check that with with Paul, and then because, well, actually, he'd have to check with his partner and stuff like that, because...</v>
+
+00:23:49.761 --> 00:23:51.641
+<v Michael Abt>He goes, I don't know what holidays are.</v>
+
+00:23:50.281 --> 00:23:50.561
+<v Marky Mangune>Yeah.</v>
+
+00:23:52.841 --> 00:24:14.041
+<v Marky Mangune>Okay, I'm going to chase that up with Paul once he gets back. Thank you. So one more thing. We're planning to establish a utilization tracker for Anton and Sophia. So for example, there's some special or admin tasks that they are doing without any tickets.</v>
+
+00:24:14.441 --> 00:24:32.841
+<v Marky Mangune>So what we're planning to do is, is it possible, Michael, that we can create just an internal or admin ticket that they can put a time entry on so that we can track their utilization if it's billable or not billable? Is there any internal?</v>
+
+00:24:33.801 --> 00:24:42.841
+<v Marky Mangune>Client that they can add in terms of creating an admin ticket so that they can put in a time entry for their utilization.</v>
+
+00:24:41.241 --> 00:24:58.361
+<v Michael Abt>They are, yeah, they're actually able to put in a, like, they can create a new ticket and they're starting to do an admin thing and they can put it under the Granite networks as the client in themselves and stuff like that.</v>
+
+00:24:51.721 --> 00:24:51.881
+<v Marky Mangune>Mm.</v>
+
+00:24:56.441 --> 00:24:57.081
+<v Marky Mangune>Okay.</v>
+
+00:25:00.521 --> 00:25:09.801
+<v Michael Abt>Because we do know that they need their, we know that they need to get their KPIs and stuff like that and everything met.</v>
+
+00:25:00.681 --> 00:25:01.961
+<v Andrea Canlas>For the ADMIN.</v>
+
+00:25:09.561 --> 00:25:10.041
+<v Marky Mangune>Mmh.</v>
+
+00:25:10.841 --> 00:25:11.081
+<v Michael Abt>O.</v>
+
+00:25:13.721 --> 00:25:19.881
+<v Andrea Canlas>So Michael, for the, what do you call this, for the admin, that is the non-billable ones, right?</v>
+
+00:25:20.841 --> 00:25:27.641
+<v Michael Abt>Yes, so if it goes into the Granite Networks client, it's not billable. We don't charge ourselves.</v>
+
+00:25:22.041 --> 00:25:22.441
+<v Andrea Canlas>Okay.</v>
+
+00:25:26.761 --> 00:25:27.321
+<v Andrea Canlas>Gotcha.</v>
+
+00:25:28.281 --> 00:25:28.841
+<v Marky Mangune>Okay.</v>
+
+00:25:28.361 --> 00:25:36.161
+<v Andrea Canlas>Got it. Okay. And of course, if it's a ticket that they're handling, they should be putting their time on that specific ticket. Correct? Okay.</v>
+
+00:25:34.601 --> 00:25:55.681
+<v Michael Abt>Correct. Also, if it's for a client that they're doing admin stuff on, like say Catholic Charities and stuff like that, they're going through and auditing, making sure shared mailboxes are actually in a blocked sign-in status, they can put the client, Catholic Charities, and under the users,</v>
+
+00:25:50.561 --> 00:25:51.081
+<v Andrea Canlas>Mhm.</v>
+
+00:25:55.761 --> 00:25:57.801
+<v Michael Abt>There's usually a general user.</v>
+
+00:25:58.481 --> 00:25:58.961
+<v Andrea Canlas>Mhm.</v>
+
+00:25:59.481 --> 00:26:12.281
+<v Michael Abt>that they could just put, you know, click on and then it, yeah, and it doesn't assign it to anybody, like as in their email and stuff like that. And then they can claim the ticket.</v>
+
+00:26:02.401 --> 00:26:03.241
+<v Andrea Canlas>As a contact, yeah.</v>
+
+00:26:06.881 --> 00:26:07.361
+<v Andrea Canlas>Mhm.</v>
+
+00:26:13.641 --> 00:26:17.721
+<v Andrea Canlas>Gotcha, but it's under that specific line. Understood. Okay.</v>
+
+00:26:16.721 --> 00:26:33.401
+<v Michael Abt>Yeah, every client has a general user because sometimes, yeah, we do a lot of admin stuff on the backside that the clients don't know, like removing DNS off of a server and putting it on the firewall so we can demo, decom their server and stuff like that.</v>
+
+00:26:30.361 --> 00:26:30.761
+<v Andrea Canlas>True.</v>
+
+00:26:34.921 --> 00:26:35.401
+<v Andrea Canlas>Gotcha.</v>
+
+00:26:35.721 --> 00:26:41.801
+<v Michael Abt>They're able to put in any, they're able to create any ticket that they need to for time-wise.</v>
+
+00:26:43.401 --> 00:27:02.441
+<v Andrea Canlas>Got it. Okay, we'll make sure we'll do that and we'll ask the guys to make sure because you know, it's not just about the engineer that we have for you guys. There is a lot of engineers that has issues with the ticket team. So we wanted to reestablish that again and make sure that they're actually putting their time on the ticket.</v>
+
+00:27:02.841 --> 00:27:15.281
+<v Andrea Canlas>on a timely manner. Sometimes if you do it at the end of the day, you really forgot what happened and what you did on a specific ticket. I don't know what I did an hour ago, so I'll make sure that.</v>
+
+00:27:05.641 --> 00:27:06.241
+<v Michael Abt>Mm-hmm.</v>
+
+00:27:09.961 --> 00:27:10.601
+<v Michael Abt>Yeah.</v>
+
+00:27:14.601 --> 00:27:15.161
+<v Michael Abt>It is.</v>
+
+00:27:16.121 --> 00:27:24.201
+<v Michael Abt>It's like running a notepad of what I did today. Hey, I got a drink of water. You know?</v>
+
+00:27:18.441 --> 00:27:20.201
+<v Andrea Canlas>Exactly, exactly.</v>
+
+00:27:24.761 --> 00:27:38.681
+<v Andrea Canlas>Yeah, but it's very important they put it in and the notes that they add on the ticket, it's very important also because if it's off there, it can happen. So wanted to make sure that we reestablish that since we have a new joiner also.</v>
+
+00:27:39.401 --> 00:27:46.921
+<v Michael Abt>Okay, yeah, because like I have clients that kind of Teams private message me and I'm like, uh...</v>
+
+00:27:45.121 --> 00:27:45.601
+<v Andrea Canlas>Mhm.</v>
+
+00:27:49.081 --> 00:28:02.041
+<v Michael Abt>Okay, 2 seconds. I'm going to do it real quick. But most of the time I will forward or create a ticket for that user and then paste in the chat message and then we'll build the ticket off of that.</v>
+
+00:27:57.081 --> 00:27:57.681
+<v Andrea Canlas>Mhm.</v>
+
+00:28:02.921 --> 00:28:10.921
+<v Michael Abt>or if they privately emailed me, I would forward it to the support desk so that I have my time being tracked and stuff like that as well.</v>
+
+00:28:03.241 --> 00:28:03.801
+<v Andrea Canlas>Yeah.</v>
+
+00:28:05.441 --> 00:28:05.961
+<v Andrea Canlas>Mhm.</v>
+
+00:28:08.001 --> 00:28:08.601
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:28:11.601 --> 00:28:14.761
+<v Andrea Canlas>True, very true. That's the MSP way.</v>
+
+00:28:13.961 --> 00:28:22.121
+<v Michael Abt>Because if, yeah, because if I don't show that I'm actually productive, I don't think Paul and my other boss would keep me around.</v>
+
+00:28:24.201 --> 00:28:41.961
+<v Andrea Canlas>Yeah, true, very true. So we want to make sure that we provide also our value there. So yeah, moving forward, we'll make sure that we reestablish that and probably a bit of a refresher with Anton. I know he knows it already, but a bit of a refresher will be able to help a lot. So, great.</v>
+
+00:28:39.241 --> 00:28:39.721
+<v Michael Abt>Mhm.</v>
+
+00:28:41.561 --> 00:28:54.521
+<v Michael Abt>Yeah, sometimes it goes and then all of a sudden, you know, it kind of gets a little on the last daisy and then you totally forget and then you get back to, you're like, oh yeah, I got to do this and then, yeah.</v>
+
+00:28:49.721 --> 00:28:50.041
+<v Andrea Canlas>Kip.</v>
+
+00:28:51.161 --> 00:28:51.321
+<v Andrea Canlas>Yep.</v>
+
+00:28:55.161 --> 00:28:58.121
+<v Andrea Canlas>Yeah, tell me about it. All right, go ahead, Marky.</v>
+
+00:29:00.041 --> 00:29:03.401
+<v Marky Mangune>Yep, I think that's it for me, Vishal.</v>
+
+00:29:05.641 --> 00:29:13.641
+<v Vishal Kashyap>Yep, Michael, next slides would be just information on the other services we provide our office locations and the escalation matrix.</v>
+
+00:29:15.801 --> 00:29:22.201
+<v Vishal Kashyap>I'll just stop the screen share now and open the forum for any last comments or questions, Michael, before we end our call.</v>
+
+00:29:25.241 --> 00:29:43.001
+<v Michael Abt>No questions on this side over here. I'm going to review the ticket and see what I can do because I have been also helping as Sophia is pretty much onboarding and stuff like that. Some of our documentation is getting a little outdated and she has brought it up.</v>
+
+00:29:43.041 --> 00:30:02.041
+<v Michael Abt>to my attention in that point. And I'm like, oh yeah, so this is how we do this. And she's like, I'm putting that to my notepad. Anton, he pretty much has it kind of already down and already knows, but we forget to come back to our documentation to update it sometimes.</v>
+
+00:30:02.521 --> 00:30:13.881
+<v Michael Abt>because we're in the middle of working on the client's issue. And then we're like, oh yeah, as soon as this gets done, I'll fix this document. But another phone call comes in or.</v>
+
+00:30:13.161 --> 00:30:13.881
+<v Marky Mangune>****.</v>
+
+00:30:14.161 --> 00:30:14.441
+<v Andrea Canlas>Yeah.</v>
+
+00:30:16.201 --> 00:30:21.081
+<v Andrea Canlas>Do you think that Sophia can update that if you give her instructions?</v>
+
+00:30:16.361 --> 00:30:16.921
+<v Michael Abt>You like it?</v>
+
+00:30:22.681 --> 00:30:23.001
+<v Andrea Canlas>Yeah.</v>
+
+00:30:33.561 --> 00:30:34.241
+<v Andrea Canlas>Mhm.</v>
+
+00:30:34.281 --> 00:30:40.641
+<v Michael Abt>in the whole way to do it. And I'm going to go ahead and let her update that document for the client and stuff like that. So.</v>
+
+00:30:40.401 --> 00:30:58.801
+<v Andrea Canlas>Great. That's perfect. So if she has any type of documentation that she needed to update, Marky and I are here to actually help her out if she needs anything. But probably just the information that she needed to put in there would help a lot because it would expose her also.</v>
+
+00:30:59.121 --> 00:31:01.521
+<v Andrea Canlas>Sooner or later, she's gonna do that herself, so...</v>
+
+00:31:01.921 --> 00:31:20.481
+<v Michael Abt>Correct. Yep. She's going to say, hey, that's right. You guys, I remember seeing this in conversation in our tech chat that we no longer are using that type of stuff for this onboarding. So let's remove, let's remove it. Let's update it.</v>
+
+00:31:03.281 --> 00:31:03.881
+<v Andrea Canlas>Mhm.</v>
+
+00:31:09.161 --> 00:31:09.641
+<v Andrea Canlas>Mhm.</v>
+
+00:31:14.321 --> 00:31:14.801
+<v Andrea Canlas>Mhm.</v>
+
+00:31:17.361 --> 00:31:18.881
+<v Andrea Canlas>I'll update this. Yeah.</v>
+
+00:31:20.801 --> 00:31:22.721
+<v Michael Abt>And yeah, go from there.</v>
+
+00:31:21.161 --> 00:31:21.641
+<v Andrea Canlas>Mhm.</v>
+
+00:31:23.761 --> 00:31:26.721
+<v Andrea Canlas>Gotcha. All right, we'll do that moving forward then.</v>
+
+00:31:27.921 --> 00:31:28.561
+<v Michael Abt>Thank you.</v>
+
+00:31:28.321 --> 00:31:28.481
+<v Marky Mangune>Ohh.</v>
+
+00:31:29.681 --> 00:31:30.401
+<v Vishal Kashyap>Thanks, Michael.</v>
+
+00:31:29.721 --> 00:31:30.641
+<v Andrea Canlas>Very much welcome.</v>
+
+00:31:31.361 --> 00:31:31.841
+<v Marky Mangune>All right.</v>
+
+00:31:31.961 --> 00:31:32.241
+<v Vishal Kashyap>Bye.</v>
+
+00:31:33.041 --> 00:31:34.241
+<v Marky Mangune>Thanks, Michael. Bye bye.</v>
+
+00:31:34.561 --> 00:31:34.961
+<v Michael Abt>Bye.</v>
+
+00:31:35.041 --> 00:31:35.201
+<v Vishal Kashyap>Okay.</v>
+

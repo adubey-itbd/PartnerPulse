@@ -5,6 +5,7 @@ structured churn insight: a risk score + band, the drivers behind it, proactive
 remediation, extracted action items, and sentiment trend. Designed to be merged
 back into the partner JSON under the `ai` key and rolled up on the portfolio view.
 """
+import hashlib
 import json
 
 from openai import AzureOpenAI
@@ -92,10 +93,21 @@ def build_context(data: dict) -> str:
     return "\n".join(str(p) for p in parts)
 
 
-def analyze(data: dict) -> dict:
+def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
     """Run gpt-5.4 churn analysis for one partner. Returns the insight dict (with
-    an `_error` key if the call/parse failed)."""
+    an `_error` key if the call/parse failed).
+
+    Incremental: the LLM input (`build_context`) is hashed into `_input_hash`. When
+    `cached_ai` carries the same hash and a valid prior result, that result is reused
+    verbatim — no LLM call. This makes a full rebuild skip the expensive, score-drifting
+    gpt-5.4 call for any partner whose inputs are unchanged. Pass `force=True` to override.
+    """
     context = build_context(data)
+    input_hash = hashlib.sha256(context.encode("utf-8")).hexdigest()
+    if (not force and cached_ai and cached_ai.get("_input_hash") == input_hash
+            and cached_ai.get("risk_score") is not None):
+        cached_ai["_cached"] = True            # marker for callers/logs; harmless in the UI
+        return cached_ai
     try:
         resp = _client_singleton().chat.completions.create(
             model=config.AZURE_OPENAI_DEPLOYMENT,
@@ -108,6 +120,7 @@ def analyze(data: dict) -> dict:
         )
         insight = json.loads(resp.choices[0].message.content)
         insight["_model"] = config.AZURE_OPENAI_DEPLOYMENT
+        insight["_input_hash"] = input_hash
         return insight
     except Exception as e:
         return {"_error": str(e), "risk_score": None, "risk_band": "Unknown",

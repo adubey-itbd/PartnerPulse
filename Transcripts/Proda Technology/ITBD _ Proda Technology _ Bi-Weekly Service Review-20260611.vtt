@@ -1,0 +1,809 @@
+WEBVTT
+NOTE title: ITBD | Proda Technology | Bi-Weekly Service Review
+NOTE date: 2026-06-11
+NOTE duration: 37m 16s
+
+00:00:03.327 --> 00:00:03.527
+<v Alan Vanderhave>Right.</v>
+
+00:00:04.087 --> 00:00:06.407
+<v Manish (Max) Mahajan>I'm doing good, thanks for asking. How about you?</v>
+
+00:00:07.447 --> 00:00:08.327
+<v Alan Vanderhave>Doing alright.</v>
+
+00:00:09.687 --> 00:00:10.327
+<v Manish (Max) Mahajan>Great.</v>
+
+00:00:11.527 --> 00:00:17.847
+<v Manish (Max) Mahajan>So, I'm just waiting for Vishal to join in, and then we can start the presentation.</v>
+
+00:00:22.767 --> 00:00:26.967
+<v Manish (Max) Mahajan>Okay, let's give one more minute and he should be here any moment.</v>
+
+00:00:36.247 --> 00:00:38.007
+<v Manish (Max) Mahajan>Oh, here he is. Hi, Vishal.</v>
+
+00:00:39.687 --> 00:00:42.647
+<v Vishal Dogra>Hey, good morning, Max. Very good morning, Ellen, Matt.</v>
+
+00:00:43.567 --> 00:00:44.087
+<v Alan Vanderhave>Vishal.</v>
+
+00:00:44.207 --> 00:00:44.807
+<v Matt Myrick>Good morning.</v>
+
+00:00:48.167 --> 00:01:00.247
+<v Manish (Max) Mahajan>So yeah, welcome to our bi-weekly business review. Let me present my screen. Before we get into the presentation, anything we want to talk about before we jump into the presentation or you want to do that later?</v>
+
+00:01:04.367 --> 00:01:13.607
+<v Manish (Max) Mahajan>Let's do it later. Let me bring up the presentation 1st and then hope we're done. Once we're done with it, we can talk about the other things.</v>
+
+00:01:06.047 --> 00:01:06.247
+<v Alan Vanderhave>Yep.</v>
+
+00:01:12.247 --> 00:01:12.407
+<v Alan Vanderhave>Yes.</v>
+
+00:01:16.167 --> 00:01:18.407
+<v Manish (Max) Mahajan>K so.</v>
+
+00:01:19.927 --> 00:01:22.807
+<v Manish (Max) Mahajan>I believe my screen must be visible by now.</v>
+
+00:01:24.007 --> 00:01:24.647
+<v Alan Vanderhave>Yeah, we got it.</v>
+
+00:01:25.647 --> 00:01:26.287
+<v Manish (Max) Mahajan>Perfect.</v>
+
+00:01:27.607 --> 00:01:47.727
+<v Manish (Max) Mahajan>Good morning, everyone. I welcome you to our bi-weekly business review. We'll be going through the agenda that will be to talk about the summary. We'll be talking about the performance analysis, any queries if you have, and then we'll be talking about way forward. And finally, we'll be going ahead with the recap.</v>
+
+00:01:48.167 --> 00:01:52.567
+<v Manish (Max) Mahajan>That's going to be a slide which I'll update with the minutes of meeting before I send it across.</v>
+
+00:01:54.007 --> 00:02:12.927
+<v Manish (Max) Mahajan>Okay, so talking about the executive summary, like our focus is to ensure that all the Helpdesk things are in place. Okay, so we want the strong billable utilization, all the KPIs to be met by the engineers. And if you talk about</v>
+
+00:02:13.207 --> 00:02:33.527
+<v Manish (Max) Mahajan>I would say the ticket handling, we want things to be in place on that front as well. All our engineers should be having equal kind of tasks to be performing so that their KPs are met. And the item, we have a lot of calls on that. I need not to talk.</v>
+
+00:02:33.687 --> 00:02:47.767
+<v Manish (Max) Mahajan>talk much about it over here. So that is again something which are senior leadership. Matt and Alan, you are involved into that one as well. So we are working on that to streamline and smoothen the process on that front.</v>
+
+00:02:49.127 --> 00:03:08.327
+<v Manish (Max) Mahajan>Okay, so talking about the performance analysis, this is the data like we changed the frequency. In fact, we changed the occurrence of this particular call. So this time, like it's almost about 3 weeks of data that I'm presenting over here. I have also</v>
+
+00:03:08.887 --> 00:03:23.687
+<v Manish (Max) Mahajan>shown previous two times data as well so that we can compare it. So talking about over here for data from 21st May to 10th of June, that is yesterday, like.</v>
+
+00:03:24.567 --> 00:03:45.767
+<v Manish (Max) Mahajan>98% utilization for Henry and there was 2% for non-billable utilization. In fact, the utilization, like they have worked on a lot of tickets in last few weeks, like in the last two weeks, which also included the changes that were made in True Bridge regarding...</v>
+
+00:03:46.247 --> 00:04:04.967
+<v Manish (Max) Mahajan>determinations and all that stuff which happened. So like if you talk about the utilization engineers, both of them are increased, like they're consistently exceeding the targets that we have set up. So utilization has gone up for last.</v>
+
+00:04:05.927 --> 00:04:25.127
+<v Manish (Max) Mahajan>to, in fact, for last one month from 96 to 98. And if you talk about the utilization across this data in picture, we have seen 23% improvement, like 23% of the things that they've</v>
+
+00:04:25.287 --> 00:04:45.607
+<v Manish (Max) Mahajan>achieved, overachieved as far as the target is concerned. This is for Henry and similar picture is for Kamal. So if you talk about the utilization, 95% is the billable and 5% is the non-billable, again, exceeding the targets. And if you talk about for him, he has.</v>
+
+00:04:46.087 --> 00:04:48.647
+<v Manish (Max) Mahajan>exceeded the targets by 18.3%.</v>
+
+00:04:50.727 --> 00:04:53.687
+<v Manish (Max) Mahajan>Any questions in here before I move on to the ticket resolve rate?</v>
+
+00:04:54.767 --> 00:05:01.767
+<v Matt Myrick>No, no, no questions. Yeah, we're seeing, I mean, our data shows the same thing. We're, everyone's overutilized right now.</v>
+
+00:05:03.687 --> 00:05:18.967
+<v Manish (Max) Mahajan>So talking about the ticket closure rate, if you talk about the closure rate, there was like they're exceeding the targets. However, for these three weeks, like he just...</v>
+
+00:05:20.567 --> 00:05:39.047
+<v Manish (Max) Mahajan>exceeded the target by 1%. Though, as I mentioned, there were a lot of tickets that we're working on, majority of them are open, so that's why it is at 76%. Otherwise, if you talk about the previous week, so it was way above the target. And if you talk about...</v>
+
+00:05:39.887 --> 00:05:58.327
+<v Manish (Max) Mahajan>like 11% is the percentage that you've exceeded in last three sample rates that we have in here. This is for Henry talking about Kamal identical picture, 89% was for the</v>
+
+00:06:00.247 --> 00:06:07.607
+<v Manish (Max) Mahajan>for the last three weeks and again, exceeding the targets with a quite comfortable margin over here.</v>
+
+00:06:10.047 --> 00:06:16.247
+<v Manish (Max) Mahajan>OK, so moving on to the next one, uh, like holidays, uh, the the how we.</v>
+
+00:06:17.207 --> 00:06:37.807
+<v Manish (Max) Mahajan>The upcoming one is the 4th of July. That is considering it's a Saturday, so we will be having it around 3rd. So that's the mandatory holiday that is coming up. And I'm sure you're aware about the optional holidays that we have in place for our engineers. So Henry opted in for Holi and Diwali.</v>
+
+00:06:38.567 --> 00:06:57.767
+<v Manish (Max) Mahajan>One has already consumed, one will be in the month of November. Though Diwali is a major festival in India. Okay, so all majority of the engineers want to opt in for Diwali. Okay, and I checked out, this is, I, like we can touch on it.</v>
+
+00:06:58.127 --> 00:07:17.767
+<v Manish (Max) Mahajan>in a bit later as well. Just want to bring it over here. I see that Diwali is a holiday at Drew Bridge End as well. So considering what we had on the Labor Day when it was Labor Day in India, so I believe the same thing can apply over here. So I believe if it is convenient, if you don't need any</v>
+
+00:07:05.447 --> 00:07:06.167
+<v Matt Myrick>Correct.</v>
+
+00:07:18.087 --> 00:07:22.647
+<v Manish (Max) Mahajan>coverage on that specific day, I can ask all the engineers to take off on that specific day.</v>
+
+00:07:22.167 --> 00:07:31.127
+<v Matt Myrick>Yeah, they, yeah, they will, they will not be needed. The customer will not be working Diwali, and so none of us will, so we won't need them for Diwali.</v>
+
+00:07:32.327 --> 00:07:37.247
+<v Manish (Max) Mahajan>Perfect, so I'll ask, I can let them know, because that again, it's a beautiful.</v>
+
+00:07:35.567 --> 00:07:37.527
+<v Alan Vanderhave>Matt, Matt, you're not working Diwali either, right?</v>
+
+00:07:37.927 --> 00:07:38.247
+<v Matt Myrick>Two.</v>
+
+00:07:40.167 --> 00:07:41.367
+<v Matt Myrick>Yeah, I don't think I...</v>
+
+00:07:40.647 --> 00:07:42.727
+<v Manish (Max) Mahajan>Be my guest, Matt, come to India.</v>
+
+00:07:42.407 --> 00:07:43.687
+<v Alan Vanderhave>Right, what do you need to work for?</v>
+
+00:07:45.047 --> 00:07:45.127
+<v Manish (Max) Mahajan>Ha.</v>
+
+00:07:45.207 --> 00:07:46.567
+<v Matt Myrick>I'm sure I can find something to do.</v>
+
+00:07:48.087 --> 00:07:48.407
+<v Alan Vanderhave>One.</v>
+
+00:07:48.407 --> 00:07:53.687
+<v Manish (Max) Mahajan>I would say utilize that time, come to India, and we'll show you how they celebrate your day here.</v>
+
+00:07:53.847 --> 00:08:11.287
+<v Matt Myrick>You know, you know, I won't come in the summer, so November is not the summer. You know, yeah, yeah. So honestly, Holi and Diwali are especially, they're on my list of things to do eventually in India, right?</v>
+
+00:07:59.687 --> 00:08:01.287
+<v Manish (Max) Mahajan>Yeah, that's not the sum.</v>
+
+00:08:10.367 --> 00:08:10.887
+<v Manish (Max) Mahajan>Nice.</v>
+
+00:08:12.207 --> 00:08:12.967
+<v Matt Myrick>Yeah, so...</v>
+
+00:08:15.127 --> 00:08:21.527
+<v Manish (Max) Mahajan>Nice. We love to see you here, Matt. And Alan, you're also invited. I'm not leaving you behind as well.</v>
+
+00:08:20.007 --> 00:08:20.167
+<v Matt Myrick>Mm.</v>
+
+00:08:21.207 --> 00:08:22.727
+<v Alan Vanderhave>Matt's more welcome, don't worry.</v>
+
+00:08:22.727 --> 00:08:23.447
+<v Matt Myrick>Yeah.</v>
+
+00:08:26.287 --> 00:08:46.447
+<v Manish (Max) Mahajan>Okay, so yeah, moving on to the next part, build IT event. We have already talked about it, so I'm sure Natalie must have reached out to you regarding it. So let us know in case anything is required, any information is required. I can ask, like she can get in touch with you for that. And moving on to the next one.</v>
+
+00:08:46.807 --> 00:09:05.407
+<v Manish (Max) Mahajan>way forward. This is something that we are focusing in next few weeks. That is the check-ins are going to continue with the engineers. That's how we are working here. Surya, he's the recent addition to the team and he's right now in the learning phase.</v>
+
+00:09:05.607 --> 00:09:24.007
+<v Manish (Max) Mahajan>going through the different processes and he will be completing his transition. Kamal working on his easy 900. So we will be like he will be working on that and I'll keep you posted on the dates when he gets it gets completed. Shaliv and Surya.</v>
+
+00:09:24.367 --> 00:09:43.207
+<v Manish (Max) Mahajan>They're working on the item projects. I mentioned it for next two weeks because I'm expecting Shalib to be out of item in next two weeks time because by that time, Sudia will be settled in. So that's why I mentioned two weeks over here in case anything changes. So we can always look out for.</v>
+
+00:09:43.607 --> 00:09:45.527
+<v Manish (Max) Mahajan>we can modify the time frame in here.</v>
+
+00:09:53.367 --> 00:09:53.647
+<v Manish (Max) Mahajan>Mm.</v>
+
+00:10:05.447 --> 00:10:05.927
+<v Manish (Max) Mahajan>Mhm.</v>
+
+00:10:06.247 --> 00:10:24.967
+<v Matt Myrick>Our next focus, and I think the message has already been sent over here, is we're looking to add, yeah, we want to move Shukla back so he can he can return to Noida, but we really need to make sure we get another engineer in there before we can let Shukla fully back out. Yep, see you, Vishal. Yep, I know you're on that.</v>
+
+00:10:25.767 --> 00:10:30.567
+<v Matt Myrick>So, so right now, Shalabh is there. We are expecting another.</v>
+
+00:10:32.487 --> 00:10:41.767
+<v Matt Myrick>potential high volume week coming and we're working around some challenges with the space with the customer and so there's more to come on that. So but for right now definitely need.</v>
+
+00:10:39.447 --> 00:10:39.687
+<v Manish (Max) Mahajan>Yep.</v>
+
+00:10:43.127 --> 00:10:50.247
+<v Matt Myrick>I definitely need both engineers there until we're fully settled, and are in an operating capacity where we...</v>
+
+00:10:51.407 --> 00:11:12.967
+<v Matt Myrick>where things are smooth and reliable. So right now, having the two is extremely beneficial. And I've explained to Shalabh already, so this shouldn't be news to him that he is week to week until further notice. And again, I want to get him back on the desk as quickly as possible because we're seeing the increased utilization rates. You know, the team is working</v>
+
+00:11:02.887 --> 00:11:03.127
+<v Manish (Max) Mahajan>Yeah.</v>
+
+00:11:11.767 --> 00:11:12.087
+<v Manish (Max) Mahajan>Kour.</v>
+
+00:11:13.127 --> 00:11:16.487
+<v Matt Myrick>Pretty hard to pull that extra seat amongst them.</v>
+
+00:11:18.247 --> 00:11:38.327
+<v Manish (Max) Mahajan>Yeah, that's right. Yeah, as I mentioned, we can always revisit the timeline in here. So I always, I speak to Charlie about, say, 5 to 10 times a day. And every Friday, that's the discussion point, like whether I need to come to Delhi office or the Noida office on Monday. So that's what we are taking it as.</v>
+
+00:11:24.407 --> 00:11:24.807
+<v Matt Myrick>Yep.</v>
+
+00:11:38.687 --> 00:11:41.127
+<v Manish (Max) Mahajan>one step at a time, one week at a time for now.</v>
+
+00:11:41.527 --> 00:11:42.007
+<v Matt Myrick>Perfect.</v>
+
+00:11:43.007 --> 00:11:59.527
+<v Manish (Max) Mahajan>Okay, so that brings us to the end of the presentation. I thank you for your time for this presentation. I'll be sending you a copy of this in the email. Do let us know in case you come across any questions regarding this. And let me stop presenting my screen.</v>
+
+00:12:01.127 --> 00:12:15.047
+<v Manish (Max) Mahajan>Okay, so as I mentioned, we'll go through this presentation and then we can cover the discussion points in case there are any. So over to you, Matt. I'll start with you in case you want to share anything.</v>
+
+00:12:13.607 --> 00:12:33.687
+<v Matt Myrick>Yeah, I don't have a lot of, don't have a lot of feedback right now. The team, the service delivery team is doing great. Charlotte and Syria have made a live headway on the backlog, so appreciate that. We are in, you know, I'm meeting with them.</v>
+
+00:12:33.807 --> 00:12:57.927
+<v Matt Myrick>once at least, twice a day right now, just making sure that we keep things on track for ITAM. So I had a productive, contentious, but productive call with the customer yesterday. I think they understand some of the challenges. And so we're between all three parties here, we're working on solutions. So my main focus is to make sure, Vishal, that</v>
+
+00:12:58.247 --> 00:13:10.887
+<v Matt Myrick>All of our outstanding recalls are touched every day, that they all have a status. We've made some additional changes to the statuses at the customer's request. Those have been communicated to the team this morning. And so</v>
+
+00:13:13.287 --> 00:13:17.847
+<v Matt Myrick>Again, as long as we're as long as we're following the process, we should be good.</v>
+
+00:13:20.927 --> 00:13:21.927
+<v Manish (Max) Mahajan>Nice, yep.</v>
+
+00:13:22.407 --> 00:13:39.047
+<v Matt Myrick>In terms of, I know Vishal, one of the things I talked to Vishal about this morning, right, is the ask to have the display, make, model, and serial number, right? So we can get the manufacturer and the serial number from</v>
+
+00:13:41.927 --> 00:14:01.127
+<v Matt Myrick>from asset sonar, and so I showed him how to do that today, right? So model I think is irrelevant. I think if we can get the make, I think if we can get the manufacturer and the serial number, that should suffice. He was stressing a little bit over the model, but I think that's got to be secondary. If you've got a Lenovo display with a serial number, the</v>
+
+00:14:02.407 --> 00:14:03.847
+<v Matt Myrick>I can't imagine the...</v>
+
+00:14:03.127 --> 00:14:11.847
+<v Vishal Dogra>Yeah, serial number is the, yeah, serial number is the, I think that if if you are able to get the serial number, I think we should be, we should be good. I agree, Mohti is secondary, yeah.</v>
+
+00:14:05.127 --> 00:14:06.647
+<v Matt Myrick>Yeah, yeah.</v>
+
+00:14:09.767 --> 00:14:30.087
+<v Matt Myrick>Yeah, okay. So yeah, so I just, yeah, he was a little, I think he was under the impression that he had to have the model as well, which is a little harder to get, but you know, we know who made it, we know the serial number, and we should be able to get that. So I know that that's a requirement, obviously, for the bailman agreement. And what I would say is,</v>
+
+00:14:28.287 --> 00:14:28.647
+<v Vishal Dogra>Yep.</v>
+
+00:14:30.407 --> 00:14:54.967
+<v Matt Myrick>I still need the displays to, when there's a resource contention or a time constraint between getting operational stuff done or getting the display serial number, I would rather the operational stuff get handled because we have a lot of employees who have not received their FNF on the customer's end, right? So this is reputational for the customer. And so we need to focus on</v>
+
+00:14:55.447 --> 00:15:15.207
+<v Matt Myrick>on that. So the serial numbers for the computers themselves, we can we can handily get and easily get, but I want to make sure that the displays aren't causing an undo administrative overhead, that we can get those after the fact, you know, if needed. So I just want to call that out because I</v>
+
+00:15:15.327 --> 00:15:35.407
+<v Matt Myrick>I want to make sure that my guys are mainly focused on the operational aspect, and then we can come back and get a little bit better at the, you know, maybe trying to proactively capture the display data, right? I mean, worked in large ITAM type situations before, we didn't.</v>
+
+00:15:35.847 --> 00:15:55.487
+<v Matt Myrick>We didn't serialize, you know, we didn't track displays by serial. You know, I know you guys have got to do that for legal reasons, but there's a reason you don't typically track peripherals and displays by serial because that is just an incredible burden, right? You serialize and track the assets. So just want to make sure that we're on the same page there if...</v>
+
+00:15:39.767 --> 00:15:40.247
+<v Alan Vanderhave>Yeah.</v>
+
+00:15:43.527 --> 00:15:43.927
+<v Vishal Dogra>Yep.</v>
+
+00:15:55.927 --> 00:16:03.287
+<v Matt Myrick>If there's a there's a conflict between operational cadence and and a display, I need the display to be secondary.</v>
+
+00:16:04.407 --> 00:16:09.287
+<v Matt Myrick>We still get it, right? It's not that we're saying we won't get it, but I just need that to be the lower priority.</v>
+
+00:16:10.807 --> 00:16:28.807
+<v Vishal Dogra>I just want to ensure that we are able to work out of these all the legal and compliance issues over there. And I believe in case if we are able to resolve these warehouse problems and if we are able to fix on it, then we will not really bother for those development agreements at all.</v>
+
+00:16:25.607 --> 00:16:27.247
+<v Matt Myrick>I mean, I, I mean, I have a...</v>
+
+00:16:28.727 --> 00:16:52.647
+<v Matt Myrick>Yeah, I haven't. Well, that's, you know, and I'm with you on that, but that's going to be a little while, right? That's not something that's going to happen overnight. So the other option here is I can give one of you access into asset sonar and Shalab can provide you guys with the serial numbers for the computers and I can show you how to go get those. I can show you how to go get those serial numbers for the displays.</v>
+
+00:16:33.687 --> 00:16:35.847
+<v Vishal Dogra>Yeah, I understand that. I understand that, yeah.</v>
+
+00:16:55.687 --> 00:17:01.767
+<v Vishal Dogra>I'm pretty sure Shaliv and Sanya will learn that and eventually they should be able to do that. That should be fine. Yeah.</v>
+
+00:17:00.167 --> 00:17:23.767
+<v Matt Myrick>It's not about whether they can or not, it's about whether that's a good use of their time, right? And so that's my concern. So I can add other people in here. We can grant additional access and make it so that someone on the admin team can go get this information, considering, you know, quite bluntly, that's where our roadblock is. So I'm happy to push this to someone who caused the problem, right, rather than someone</v>
+
+00:17:04.647 --> 00:17:07.247
+<v Vishal Dogra>No, no, I, I get that, I get, I, I, I get.</v>
+
+00:17:21.487 --> 00:17:22.087
+<v Vishal Dogra>Get that.</v>
+
+00:17:23.887 --> 00:17:24.647
+<v Matt Myrick>trying to solve it.</v>
+
+00:17:26.687 --> 00:17:44.967
+<v Vishal Dogra>And I hear you, Matt. OK, and trust me, trying to be on the same page with you on that one, trying to resolve with ASAP. OK, lots of back and forth conversation we are trying to resolve within ITBD, you know, me and Natalie, and at least we are able to make some progress, and I really appreciate your support on that.</v>
+
+00:17:31.927 --> 00:17:32.327
+<v Matt Myrick>Yeah.</v>
+
+00:17:45.687 --> 00:18:00.087
+<v Vishal Dogra>Aaron, you must have seen the email, the message from Natalie this morning on Team chat regarding the paperwork we are expecting to process today. Let us let me or Natalie know in case if you need any any help on that or if you have any any further question on this.</v>
+
+00:18:01.207 --> 00:18:20.167
+<v Alan Vanderhave>Let me see, hang on, I have not. This morning has been absolutely ridiculous. It's not Max. I'm working on the working on the template now. The person who they have designated to sign this, the same person that signed before, and they're leaving like halfway through Friday, so that's the...</v>
+
+00:18:20.407 --> 00:18:22.007
+<v Alan Vanderhave>That's the plan.</v>
+
+00:18:23.687 --> 00:18:32.567
+<v Alan Vanderhave>Before that person had to provide like additional pieces of information if I remember correctly. They had to provide like a...</v>
+
+00:18:34.567 --> 00:18:48.167
+<v Alan Vanderhave>a PAN card and like a few other things. Now the person who's signing, it might change depending on the time of week and things like that. So they...</v>
+
+00:18:49.127 --> 00:19:02.487
+<v Alan Vanderhave>Yeah, what what what they what was requested was a PAN card and AADHAR card and heart card, yeah, and then a self-attested.</v>
+
+00:18:57.687 --> 00:18:59.727
+<v Vishal Dogra>Aadhaar Aadhaar Aadhaar card here.</v>
+
+00:19:03.927 --> 00:19:14.567
+<v Alan Vanderhave>some document, a unique identification authority of India document. So are these needed every...</v>
+
+00:19:15.847 --> 00:19:20.087
+<v Alan Vanderhave>Are these needed in addition to the signature every single time or just one time or?</v>
+
+00:19:23.527 --> 00:19:40.567
+<v Vishal Dogra>I I can check with them, but my understanding is that will be the requirement, along with the rebailment agreement. If you're doing it with the with the wherever we're doing the rebailment agreement for those devices of getting the batches, I think that is what my my understanding is, but I I can double check that for you.</v>
+
+00:19:40.567 --> 00:19:41.647
+<v Alan Vanderhave>Yeah, and, and...</v>
+
+00:19:40.727 --> 00:19:41.847
+<v Vishal Dogra>if we need it every time.</v>
+
+00:19:57.927 --> 00:20:00.967
+<v Vishal Dogra>That, that later, yeah, that.</v>
+
+00:20:07.767 --> 00:20:08.167
+<v Vishal Dogra>Yep.</v>
+
+00:20:08.367 --> 00:20:13.567
+<v Alan Vanderhave>And so ideally we can just include that every single time and not anything else.</v>
+
+00:20:15.767 --> 00:20:19.207
+<v Alan Vanderhave>You know, not make them like, yeah, Reese.</v>
+
+00:20:17.007 --> 00:20:20.327
+<v Vishal Dogra>Yeah, I believe we can do that. Just to be on a safe side, we can do that every time.</v>
+
+00:20:21.047 --> 00:20:22.727
+<v Alan Vanderhave>Say that one more time, sorry.</v>
+
+00:20:25.167 --> 00:20:39.287
+<v Vishal Dogra>No, I can double check that for you in case if we need to include it every time. And regarding these, I'm just seeing that email, I believe that banner or Aadika message is over there. I think that was sent to you by Ankur, right?</v>
+
+00:20:29.687 --> 00:20:30.167
+<v Alan Vanderhave>Okay.</v>
+
+00:20:42.167 --> 00:20:42.647
+<v Alan Vanderhave>Um...</v>
+
+00:20:43.687 --> 00:20:43.727
+<v Vishal Dogra>Uhh...</v>
+
+00:20:44.087 --> 00:20:45.807
+<v Alan Vanderhave>I can't, I think it, I can't remember.</v>
+
+00:20:44.967 --> 00:20:46.647
+<v Vishal Dogra>Because these are the editions.</v>
+
+00:20:47.687 --> 00:20:48.127
+<v Alan Vanderhave>Go ahead.</v>
+
+00:20:49.687 --> 00:21:01.847
+<v Vishal Dogra>Yeah, I mean, I'm just going through one of all the emails that I see over there. These are the additional documents they need along with bailment agreement. So I think that will be a requirement every time we sign that bailment agreement.</v>
+
+00:20:54.047 --> 00:20:54.327
+<v Alan Vanderhave>Uh-huh.</v>
+
+00:21:04.087 --> 00:21:08.647
+<v Alan Vanderhave>Is the the PAN card and ADHAR card just just those two things?</v>
+
+00:21:09.927 --> 00:21:28.567
+<v Vishal Dogra>Yes, and then if even if I look into the self-attested document that you're asking for, that is the same Aadhaar card, but that is just with the signature of the person who is signing those bailment agreements. So it's a self-attested document, but he's using the same Aadhaar card over there.</v>
+
+00:21:29.687 --> 00:21:45.447
+<v Alan Vanderhave>Yeah, and yeah, yeah, yeah. And what I don't understand about the self-attested document is, so these items at the top, these first two pages, that's generic, right? Like that could be the same thing every time. This can be the same thing every time. Where it gets interesting is whatever this is. I don't.</v>
+
+00:21:29.927 --> 00:21:31.207
+<v Vishal Dogra>If you just open that here.</v>
+
+00:21:36.647 --> 00:21:36.767
+<v Vishal Dogra>Yeah.</v>
+
+00:21:40.127 --> 00:21:40.407
+<v Vishal Dogra>Yeah.</v>
+
+00:21:46.447 --> 00:21:52.567
+<v Alan Vanderhave>I don't understand this, this third page, this, this right here, like, is, what is this?</v>
+
+00:21:51.927 --> 00:21:55.687
+<v Vishal Dogra>It looks like this is one of the bank statements. It's a bank statement.</v>
+
+00:21:53.127 --> 00:21:54.207
+<v Manish (Max) Mahajan>A bank statement.</v>
+
+00:21:54.967 --> 00:21:56.247
+<v Alan Vanderhave>Ohh, a bank statement.</v>
+
+00:21:56.807 --> 00:21:57.287
+<v Vishal Dogra>Yep.</v>
+
+00:22:01.527 --> 00:22:05.047
+<v Alan Vanderhave>That's part of the requirement on the self-attested thing.</v>
+
+00:22:04.487 --> 00:22:04.527
+<v Vishal Dogra>I.</v>
+
+00:22:07.527 --> 00:22:20.367
+<v Vishal Dogra>I'm seeing it for the first time, Alan, so I just need to check that. I'm not a finance expert, to be honest. Yeah, so I can check if this is one-time requirement or they need it every time we do this bailment agreement. So I can check that for you. Yeah.</v>
+
+00:22:10.807 --> 00:22:11.687
+<v Alan Vanderhave>There, yeah, yeah.</v>
+
+00:22:18.727 --> 00:22:19.127
+<v Alan Vanderhave>Cool.</v>
+
+00:22:20.407 --> 00:22:22.967
+<v Alan Vanderhave>Got it, okay. Okay, that works, yep. And we're...</v>
+
+00:22:23.127 --> 00:22:27.207
+<v Vishal Dogra>So, Ashish, Ashish, he's going to the same person who's signing this time as well.</v>
+
+00:22:28.807 --> 00:22:43.007
+<v Alan Vanderhave>Yeah, he will be at this time providing that we get them the document in time. But they have said that this resource will likely change depending on the week. So it's going to be a...</v>
+
+00:22:44.807 --> 00:23:04.407
+<v Alan Vanderhave>a collaborative group of people, right? Because we interact with the, we interact with the US entity, right? There's of course the, they have the India entity, but we don't interact with that leadership. All of our communication goes through the US side. They then communicate with the leadership in India side. They then say, what are these Americans telling us to do?</v>
+
+00:22:48.247 --> 00:22:50.127
+<v Vishal Dogra>Yeah, if it I mean my</v>
+
+00:22:52.487 --> 00:22:53.047
+<v Vishal Dogra>Okay.</v>
+
+00:23:04.647 --> 00:23:24.807
+<v Alan Vanderhave>All right, let's go figure out, and you know why they asking us to do this ridiculous, crazy stuff. Okay, who can sign this document real quick? Like, right? You know, like, that's the process. And then, and of course, they understand it better than we do, but it's, you know, it's, as you can see, it like it comes from ITBD to us, to us, to the customer state side, to the customer state side, to...</v>
+
+00:23:11.847 --> 00:23:11.887
+<v Manish (Max) Mahajan>I.</v>
+
+00:23:13.767 --> 00:23:14.327
+<v Vishal Dogra>Yeah.</v>
+
+00:23:24.887 --> 00:23:44.007
+<v Alan Vanderhave>to the Indian entity and so like they can be lost in translation between two groups of Americans there. And so as clear and concise as we can be, the better. But I've made the template. I'm gonna go ahead because we're resource constrained. I'm gonna go ahead and populate this asset field.</v>
+
+00:23:45.127 --> 00:23:49.527
+<v Alan Vanderhave>right here with everything that we have documented. That way it'll cut down a little bit on what...</v>
+
+00:23:51.167 --> 00:23:53.767
+<v Alan Vanderhave>Shalab and Syria have to do.</v>
+
+00:23:54.967 --> 00:24:10.407
+<v Alan Vanderhave>The the the problem is that they're not they're not like labeled for for for people with what was with what was sent, it's just it's just a master, it's just like a master list of things, so that's that that's where I don't I don't know how.</v>
+
+00:24:11.567 --> 00:24:30.807
+<v Alan Vanderhave>I don't really know how Shalab is going to, I mean, he's literally going to have to go through and validate this for every single return because this is, Natalie did this, which is great, but it doesn't break down like whose device this was. So it's not like he can just go and say, okay, I don't know, well, I'll have to see what system he's using to pull all this information, really.</v>
+
+00:24:30.327 --> 00:24:30.487
+<v Vishal Dogra>Mm.</v>
+
+00:24:33.127 --> 00:24:51.767
+<v Matt Myrick>He's grabbing it, he's using a, he's using a mix of, he's using a mix of, so for the desktops, right? We're getting that from Intune and Intra. So we don't, the customer's not sending us serial numbers, right? We don't have that. We get names and then we have to cross reference and go find it, right? So it's already a...</v>
+
+00:24:33.607 --> 00:24:34.007
+<v Alan Vanderhave>Either one.</v>
+
+00:24:34.167 --> 00:24:34.887
+<v Vishal Dogra>Yeah.</v>
+
+00:24:35.527 --> 00:24:35.847
+<v Alan Vanderhave>Okay.</v>
+
+00:24:47.607 --> 00:24:48.247
+<v Alan Vanderhave>Yeah.</v>
+
+00:24:50.967 --> 00:25:03.127
+<v Alan Vanderhave>That's what that's what I'm saying, and so, like, if I populate if I populate the document with this list right here, it doesn't represent names, it's just a random, you know, random monitors and desktops.</v>
+
+00:24:52.647 --> 00:24:52.967
+<v Matt Myrick>Yeah.</v>
+
+00:25:02.247 --> 00:25:04.727
+<v Vishal Dogra>And then the device name and serial number here.</v>
+
+00:25:05.207 --> 00:25:17.367
+<v Alan Vanderhave>Yeah, I don't know if he's not easily going to be able to know where the gaps are. So he's literally going to have to check every single one of these. So Matt, I don't know if it's beneficial for me to just take what Natalie put and put it in our document or just have him start from scratch.</v>
+
+00:25:17.927 --> 00:25:22.887
+<v Matt Myrick>No, I would just take that because I mean, for the bailman agreement, the name doesn't matter.</v>
+
+00:25:24.167 --> 00:25:24.407
+<v Manish (Max) Mahajan>Yeah.</v>
+
+00:25:24.167 --> 00:25:30.247
+<v Alan Vanderhave>Okay. Right, right, right. It's more of just, it's more just efficiency of him being able to, you get it. Okay.</v>
+
+00:25:25.447 --> 00:25:26.567
+<v Matt Myrick>Yeah, I mean.</v>
+
+00:25:26.807 --> 00:25:27.287
+<v Vishal Dogra>Yep.</v>
+
+00:25:29.847 --> 00:25:47.847
+<v Matt Myrick>Yeah, he's probably got a dozen sheets on his own machine that he's keeping track of this stuff, right? So, you know, that's trying to reduce the duplicate and triplicate effort that he's doing has been has been the challenge, because we so right now I've put not I've put asset sonar as a complete secondary.</v>
+
+00:25:34.967 --> 00:25:36.167
+<v Alan Vanderhave>I know, I know.</v>
+
+00:25:49.447 --> 00:26:07.687
+<v Matt Myrick>We'll come back to that and reconcile, but we have a source of truth in it. But so anyway, I know he's keeping track of this in multiple places and I'm trying my best to reduce how much of that administrative work he's doing. The more times we copy paste, the more times we manually put something in, you know, the less fidelity the data has.</v>
+
+00:26:08.327 --> 00:26:16.407
+<v Alan Vanderhave>Yep. Okay, I know we're coming up at time. Only other feedback for you, Vishal, from our meeting yesterday.</v>
+
+00:26:19.127 --> 00:26:37.767
+<v Alan Vanderhave>So that was like the first, this was the, so our main point of contact was on there. This was the longest call that we've had talking through challenges. This was the most direct he's been and the, just to quote him, he said, quote, it feels like IT by design.</v>
+
+00:26:37.847 --> 00:26:46.647
+<v Alan Vanderhave>Signed up to do more than what they can do, and it feels like we're figuring that out now, and so...</v>
+
+00:26:47.727 --> 00:26:55.367
+<v Alan Vanderhave>We've been talking about it for months, the dance that Matt and I have been doing and the spin and the trying to keep everything.</v>
+
+00:26:56.487 --> 00:27:21.407
+<v Alan Vanderhave>you know, without showing them, you know, behind the curtains, but they're starting to realize it. So what allowed them to say this statement was around the lack of storage and the bailman agreement, right? The bailman agreement, I just explained like, hey, this is to, I explained the purpose of it. And they're like, okay, that's annoying, yada, yada, yada. The storage facility, that's the thing that Matt and I, I know we've been talking about it for a while. That's what we've been very hesitant to bring up to them because we knew.</v>
+
+00:27:21.407 --> 00:27:42.487
+<v Alan Vanderhave>knew it was not gonna be received well, and it was not received well, right? They were like, well, I was under the impression that IT by Design was gonna have sufficient warehouse storage to store more than just the original order and yada, yada, yada. This is crazy. And you know, so Matt and I had to run some damage control, right? It is what it is. They wanna explore the warehouse piece, so I'd say let's continue down that path.</v>
+
+00:27:42.807 --> 00:28:02.087
+<v Alan Vanderhave>I would say it's probably a 25% chance they go down that path. I think most likely what they're going to do is have us as quickly as we can on top of everything else that we're doing, all the assets that are coming in, evaluate them quickly, re-image them, and ship them to their other office in Chandigarh.</v>
+
+00:27:47.727 --> 00:27:48.207
+<v Vishal Dogra>Mhm.</v>
+
+00:28:02.247 --> 00:28:04.327
+<v Alan Vanderhave>That's the current working plan.</v>
+
+00:28:03.887 --> 00:28:05.047
+<v Matt Myrick>Not Chandigarh, Chennai.</v>
+
+00:28:05.367 --> 00:28:21.447
+<v Alan Vanderhave>Chennai, I apologize in Chennai. Now, this plan could change today. It could change next week. They're trying to figure it out. This is the plan they came up with with a scramble on the call. And they, of course, have to do checks and balances on their side. But they have an office in Chandigarh.</v>
+
+00:28:06.407 --> 00:28:06.967
+<v Matt Myrick>Chauhan.</v>
+
+00:28:22.007 --> 00:28:22.647
+<v Matt Myrick>Tina.</v>
+
+00:28:22.727 --> 00:28:26.247
+<v Alan Vanderhave>Shenai, I apologize. They have an office in Shenai with a book.</v>
+
+00:28:24.887 --> 00:28:34.167
+<v Vishal Dogra>We, we are at Chandigar, we are at Chandigar, so every time that rings, every time it ranks, yeah, every time it rings a bell, every time it rings a bell, and I thought we can.</v>
+
+00:28:26.887 --> 00:28:27.927
+<v Matt Myrick>There in Chandigarh.</v>
+
+00:28:27.207 --> 00:28:27.527
+<v Manish (Max) Mahajan>Yeah.</v>
+
+00:28:28.247 --> 00:28:47.447
+<v Alan Vanderhave>Yeah, okay. In Chennai, in Chennai. So down in, down in Chennai. Yeah, yeah. So, so they are not keen on having another entity involved in their assets. The liability of it, the just the just the all of it, they would honestly rather pay more in shipping.</v>
+
+00:28:31.127 --> 00:28:31.367
+<v Manish (Max) Mahajan>Yeah.</v>
+
+00:28:47.687 --> 00:29:11.687
+<v Alan Vanderhave>to send it to a facility that might not even use this equipment for a year. They like that idea more than allowing another entity to get involved, which is that is what we feared. But it is what it is, right? And so they may still have to do the warehouse piece, which is why we don't want to wait on that. I explained to them, hey, when we get through all these returns, what we have processed and what you've processed, we are at max capacity we can't take anymore.</v>
+
+00:29:05.487 --> 00:29:05.967
+<v Vishal Dogra>Mhm.</v>
+
+00:29:11.967 --> 00:29:32.407
+<v Alan Vanderhave>So this is a, they understand the urgency of this. They understand that they can't stop the returns and they don't have space in their Mumbai location either, really. So Chandigarh is there, they're hoping that they can make that happen. What that requires from our side is, again, rapidly moving through these devices that have come in.</v>
+
+00:29:32.567 --> 00:29:46.007
+<v Alan Vanderhave>reimage it, ship them 10, 15 at a time as quickly as we can get so that we remove the bottleneck of physical space so that we can still allow more to come in. So that's their idea.</v>
+
+00:29:44.567 --> 00:30:07.127
+<v Matt Myrick>And so I talked to Syria and Shala briefly about this today, and this is right, we're not currently on track to start doing any of this yet, right? That's not our number one focus remains dealing with the backlog so these employees can get their FNF. So I would say our next phase would potentially include that shipping to Chennai.</v>
+
+00:30:01.127 --> 00:30:01.527
+<v Alan Vanderhave>Yeah.</v>
+
+00:30:08.007 --> 00:30:26.487
+<v Matt Myrick>But it's a little bit more complex than just that too, because there was another ask buried in that conversation yesterday, which is we want to evaluate the older assets, right, non-functional assets or computers that are old. One of the things that the</v>
+
+00:30:26.567 --> 00:30:33.767
+<v Matt Myrick>The that will need, and we had never, we we haven't gotten to this point yet, so really the next phase of this and one of the things that...</v>
+
+00:30:35.207 --> 00:30:53.687
+<v Matt Myrick>brought this whole endeavor about is secure disposal, right? So being able to securely dispose of old assets with certificates of destruction and things like that. So that would be my, that would be sort of the next ask and that helps us all, right? That's fewer assets in the building, right? So.</v>
+
+00:30:54.247 --> 00:30:54.727
+<v Matt Myrick>Um...</v>
+
+00:30:56.567 --> 00:31:17.367
+<v Matt Myrick>Do you guys currently have a vendor? And you probably don't know the answer to this, but that would be my next ask is who do we, who do you, who does ITBD use for secure disposal? You guys are SOC 2 type 2, so I'm sure you're doing your own secure disposals. So that'll help us with space, that'll help us with liability, right? So</v>
+
+00:31:17.687 --> 00:31:38.407
+<v Matt Myrick>We did get the green light from the customer yesterday, you know, hey, devices that are five years and older, let's start the process of evaluating those and getting those securely disposed. Those will be well out of warranty. Those are not candidates for redeployment. You know, if we have e-waste, I'm sure there's going to be a ton of broken displays. Hey, let's start working our way through those.</v>
+
+00:31:17.927 --> 00:31:18.327
+<v Alan Vanderhave>Okay.</v>
+
+00:31:38.887 --> 00:31:58.167
+<v Matt Myrick>Let's get that, let's get it identified, tagged, and moved along. If it doesn't have data on it, you know, we don't have to worry about secure disposal, obviously. So, those are those are really the next steps for us as we as we think about what the future looks like and how we handle what sits, what's sitting in, you know, your office right now.</v>
+
+00:31:58.407 --> 00:32:15.927
+<v Matt Myrick>right? So I'm hoping that next week our picture of our backlog looks a lot smaller, right? I expect us to continue to receive assets, but in terms of dealing with the backlog, we're getting close. We've got a lot more assets in transit now than we did last week.</v>
+
+00:32:17.287 --> 00:32:18.167
+<v Matt Myrick>And so...</v>
+
+00:32:19.567 --> 00:32:42.327
+<v Matt Myrick>My hope is that next week we can start doing some evaluations of the equipment that we've received so we can start making determinations and putting them in buckets. Hey, this is going to go for disposal. These can be reset and reused, and then we can start setting things aside. I know there was a question too from Shiloh about boxes. I know we're going to need boxes, so let's identify what type of boxes we need, what sizes. That's not going to be</v>
+
+00:32:35.447 --> 00:32:35.927
+<v Vishal Dogra>Yeah.</v>
+
+00:32:42.807 --> 00:32:59.687
+<v Matt Myrick>you know, an issue. We know we're getting stuff back in bags. It can't go out in bags, right? So, you know, so if there's, we just need to focus on kind of those things and to get us ready to be prepared for, you know, the next step in this.</v>
+
+00:33:03.847 --> 00:33:05.607
+<v Matt Myrick>I feel like we lost Vishal again.</v>
+
+00:33:05.687 --> 00:33:05.927
+<v Vishal Dogra>Yep.</v>
+
+00:33:07.287 --> 00:33:07.447
+<v Vishal Dogra>Yeah.</v>
+
+00:33:07.607 --> 00:33:08.887
+<v Matt Myrick>You're frozen.</v>
+
+00:33:08.327 --> 00:33:08.887
+<v Manish (Max) Mahajan>All right.</v>
+
+00:33:08.607 --> 00:33:28.647
+<v Vishal Dogra>I don't know. Can you hear me now? Is it? I mean, yeah, sorry, some problem with my network today. Apologies for that. No, no, I hear you regarding the security, you know, dismantling those devices. I'm primarily our IT team. We take care of that. I can check with them. How can we proceed with those devices?</v>
+
+00:33:11.527 --> 00:33:11.927
+<v Alan Vanderhave>Yep.</v>
+
+00:33:28.807 --> 00:33:36.727
+<v Vishal Dogra>You're getting from through which, so that that could be doable, but yeah, we we can we can we can talk about that.</v>
+
+00:33:37.607 --> 00:33:56.887
+<v Matt Myrick>Okay, all right, well, cool. Yeah, I I didn't feel I didn't feel like that was something you'd have the answer to. That's probably more a Niraj and and and Mohit question as to how how disposals are done. So understanding the vendor and what type of certificate of destruction we can get, you know, that'll be important because that'll help, again, that'll help us big time.</v>
+
+00:33:46.887 --> 00:33:47.207
+<v Vishal Dogra>Yeah.</v>
+
+00:33:57.527 --> 00:34:04.727
+<v Matt Myrick>if we can start to reduce the number of assets that are sitting in there, right? We can get rid of the ones that we can't use, frees up space.</v>
+
+00:33:58.087 --> 00:33:58.567
+<v Alan Vanderhave>Yep.</v>
+
+00:34:05.367 --> 00:34:16.487
+<v Alan Vanderhave>Yeah, and same thing with monitors, right? They, they, that's another piece that they say they, they, they, that's another lever that they might pull, might just start throwing away monitors for space purposes, so...</v>
+
+00:34:19.047 --> 00:34:40.727
+<v Alan Vanderhave>As you can see, not ideal from their side. So they're pushing through it, but that was the most direct and unhappy I've seen the main point of contact. I won't belabor the point, but that's the, we've been waiting, we've been waiting for this and that was basically dropped yesterday.</v>
+
+00:34:20.207 --> 00:34:20.567
+<v Vishal Dogra>Yep.</v>
+
+00:34:41.047 --> 00:34:41.367
+<v Alan Vanderhave>Oh.</v>
+
+00:34:45.287 --> 00:34:47.207
+<v Vishal Dogra>No, I can understand that.</v>
+
+00:34:47.687 --> 00:34:48.007
+<v Alan Vanderhave>Yeah.</v>
+
+00:34:49.527 --> 00:34:50.887
+<v Alan Vanderhave>Well, good, that's where we're at.</v>
+
+00:34:49.607 --> 00:34:51.047
+<v Vishal Dogra>I'm sorry, again, my internet is...</v>
+
+00:34:55.007 --> 00:35:14.007
+<v Matt Myrick>Eventually, we'll get to a point, I hope, where we can start, we can talk about ITAM a lot less. I know Vishal is like so tired of talking about this. It's not easy to stand up in front of stand up in front of us and then handle things that were promised by others. So, I appreciate you doing it nonetheless, Vishal.</v>
+
+00:34:59.527 --> 00:35:00.407
+<v Alan Vanderhave>Haha, yeah.</v>
+
+00:35:00.487 --> 00:35:00.647
+<v Manish (Max) Mahajan>Yeah.</v>
+
+00:35:16.567 --> 00:35:34.967
+<v Vishal Dogra>No, I'm glad we are making some progress where we started when I was, you know, I came on board. At least we're trying to make some progress. So they're very happy with the progress we're making with backlogs. And I think once we are good with this bailment agreement, at least we should be able to, we should be in a position where we are not really.</v>
+
+00:35:35.367 --> 00:35:56.807
+<v Vishal Dogra>Going back and forth to the compliance team, you know, talking about these devices which we are supposed to receive. Once that is done, at least we are, you know, and then trying to create some process over there, trying to put some workflow, how going onwards, how it should work, like you know, when we receive a request from the client, at what time we are going to request for the agreement, and once that is there, so just trying to make this process more smooth.</v>
+
+00:35:57.527 --> 00:36:00.807
+<v Vishal Dogra>And eventually, I'm pretty certain we will be there.</v>
+
+00:36:01.847 --> 00:36:25.847
+<v Matt Myrick>And I've brought in another engineer on the US side to, I'm just reading him into the ITAM stuff right now, but I may leverage him, you know, when I think about the overhead for getting the display serial numbers, that may be something I leverage him for. Because I mean, honestly, I don't, I really don't want Syria and Shalab trying to track down</v>
+
+00:36:21.927 --> 00:36:22.407
+<v Vishal Dogra>Okay.</v>
+
+00:36:26.327 --> 00:36:46.807
+<v Matt Myrick>Display serial numbers. That's a it's a cumbersome process. It takes, you know, for each display, it's five, 6 clicks, copy, paste. You know, it's doing that 100 times. It's just too much time. And so we need to be, we'll need to think about ways to do that, which is why I offered up, hey, I can give somebody on the admin team access to this and show them how to get this information, right? So.</v>
+
+00:36:48.247 --> 00:37:01.927
+<v Matt Myrick>Just want to make sure we're making the most efficient use of their time. But anyway, appreciate it. I've got Kamal waiting on me for his same page, so I'm running behind. So let me jump over and take care of him. But unless you got anything else, Alan, I'm good.</v>
+
+00:36:56.487 --> 00:36:56.887
+<v Vishal Dogra>Yeah.</v>
+
+00:37:03.607 --> 00:37:05.047
+<v Vishal Dogra>I'm good for now, no problem.</v>
+
+00:37:05.447 --> 00:37:09.527
+<v Matt Myrick>I think Alan said he's good too. He's a alright.</v>
+
+00:37:07.687 --> 00:37:09.047
+<v Alan Vanderhave>Yep, yep, I'm good, guys.</v>
+
+00:37:10.967 --> 00:37:14.807
+<v Manish (Max) Mahajan>Okay. Thank you. Thank you, Matt. Thank you, Alan. Have a great day ahead.</v>
+
+00:37:11.167 --> 00:37:13.287
+<v Matt Myrick>Appreciate it. See you guys. Thanks.</v>
+
+00:37:11.647 --> 00:37:12.727
+<v Vishal Dogra>Thank you so much. Take care.</v>
+
+00:37:11.687 --> 00:37:12.407
+<v Alan Vanderhave>Appreciate it. Bye.</v>
+
+00:37:13.687 --> 00:37:14.007
+<v Vishal Dogra>Bye.</v>
+
+00:37:15.007 --> 00:37:15.527
+<v Alan Vanderhave>Me too.</v>
+
+00:37:16.527 --> 00:37:16.887
+<v Manish (Max) Mahajan>Thank you.</v>
+

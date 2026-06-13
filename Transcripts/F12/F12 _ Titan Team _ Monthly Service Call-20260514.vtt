@@ -1,0 +1,392 @@
+WEBVTT
+NOTE title: F12 | Titan Team | Monthly Service Call
+NOTE date: 2026-05-14
+NOTE duration: 11m 16s
+
+00:00:48.481 --> 00:00:49.121
+<v Nick Djordjevic>Hello.</v>
+
+00:00:52.801 --> 00:00:54.241
+<v Shashank Agarwal>Hey, Nick, how are you?</v>
+
+00:00:55.361 --> 00:00:56.481
+<v Nick Djordjevic>I'm good, how are you doing?</v>
+
+00:00:57.441 --> 00:01:00.241
+<v Shashank Agarwal>I'm good too. How's everything going on your end?</v>
+
+00:00:59.041 --> 00:01:06.041
+<v Nick Djordjevic>Busy, busy, busy, swamped with stuff going on right now, so yeah.</v>
+
+00:01:01.481 --> 00:01:01.601
+<v Shashank Agarwal>Yeah.</v>
+
+00:01:03.601 --> 00:01:03.841
+<v Shashank Agarwal>Right.</v>
+
+00:01:04.961 --> 00:01:09.761
+<v Shashank Agarwal>What happened because of the engineer leaving your bombarded with work or something else?</v>
+
+00:01:08.281 --> 00:01:16.961
+<v Nick Djordjevic>No, no, no, no, no, no, just busy today. Lots of access issues from various clients.</v>
+
+00:01:17.921 --> 00:01:18.641
+<v Shashank Agarwal>Okay.</v>
+
+00:01:18.641 --> 00:01:20.561
+<v Nick Djordjevic>Yeah, anyways.</v>
+
+00:01:22.601 --> 00:01:28.881
+<v Nick Djordjevic>Yeah, so yeah, we've got Ramil starting next week, so that's great.</v>
+
+00:01:22.881 --> 00:01:23.521
+<v Shashank Agarwal>Okay.</v>
+
+00:01:28.721 --> 00:01:46.801
+<v Shashank Agarwal>Yeah, Tuesday. That's it. He has already joined ITBD and I'll tell you one thing about him. He has been constantly poking me, give me some stuff that I can read about F12 and everything. I said, no, dude, I cannot give you. I do not, first of all, I do not have access. Secondly.</v>
+
+00:01:30.161 --> 00:01:30.481
+<v Nick Djordjevic>Yep.</v>
+
+00:01:44.401 --> 00:01:44.641
+<v Nick Djordjevic>Yeah.</v>
+
+00:01:47.001 --> 00:02:06.361
+<v Shashank Agarwal>Since you haven't joined, you cannot get it. So he's really excited and that's one thing I'm loving about him. He's keeping me updated. So I see that thing where he is asking me each and everything. He's keeping me aware about his whereabouts. The next thing is.</v>
+
+00:01:51.681 --> 00:01:52.481
+<v Nick Djordjevic>That's good.</v>
+
+00:02:07.601 --> 00:02:18.961
+<v Shashank Agarwal>I have already given him a download on what the best practice is of F2Y because we know like all the engineers and everything. So I guess he should be good.</v>
+
+00:02:20.161 --> 00:02:22.321
+<v Shashank Agarwal>In beginning, I think he will take some time.</v>
+
+00:02:20.561 --> 00:02:39.641
+<v Nick Djordjevic>Yeah, he's going to be training the first day, so to review all our policies and that kind of stuff. And then that's day one and then day two. Unfortunately, I'm on vacation next week, so I won't be around, but I've talked to Luke already. My team lead is going to walk him through a bunch of stuff.</v>
+
+00:02:28.081 --> 00:02:28.321
+<v Shashank Agarwal>Yeah.</v>
+
+00:02:35.601 --> 00:02:36.001
+<v Shashank Agarwal>Ohh.</v>
+
+00:02:39.761 --> 00:03:00.001
+<v Nick Djordjevic>on the Wednesday, go over some of the clients with them. And I'm not going to just give him password reset tickets. We'll just start him off with even some tier one type tickets and make sure he kind of jumps right in, right? Starts working on this stuff.</v>
+
+00:02:40.561 --> 00:02:40.881
+<v Shashank Agarwal>Yeah.</v>
+
+00:02:54.161 --> 00:02:54.481
+<v Shashank Agarwal>Yeah.</v>
+
+00:02:59.041 --> 00:02:59.601
+<v Shashank Agarwal>Yeah.</v>
+
+00:03:00.161 --> 00:03:08.481
+<v Nick Djordjevic>But I'll check in, I'll check in with him when I get back on Monday and and make sure everything's good, but yeah.</v>
+
+00:03:00.561 --> 00:03:02.081
+<v Shashank Agarwal>Yeah, sure. No worries.</v>
+
+00:03:05.841 --> 00:03:06.161
+<v Shashank Agarwal>Yeah.</v>
+
+00:03:08.081 --> 00:03:26.121
+<v Shashank Agarwal>Yeah, one point to note, like Nick, just as per your team, what are the best practices? Ask Luca to give him a download, like what are the best practices of ConnectWise manage and help him navigate through ConnectWise manage and after how do you...</v>
+
+00:03:24.801 --> 00:03:25.121
+<v Nick Djordjevic>Yeah.</v>
+
+00:03:26.201 --> 00:03:45.841
+<v Shashank Agarwal>you do. And particularly I've seen this one challenge with one of the ISCs and one of the engineers. The engineer was unaware about the status that he should use. So just a walkthrough of which starter should be used when, because if every, every, every, I would say client like.</v>
+
+00:03:27.161 --> 00:03:27.681
+<v Nick Djordjevic>For sure.</v>
+
+00:03:41.441 --> 00:03:42.001
+<v Nick Djordjevic>For sure.</v>
+
+00:03:46.161 --> 00:03:54.001
+<v Shashank Agarwal>If 12 or every of a partner, they have different statuses. So just what's the need of which?</v>
+
+00:03:53.001 --> 00:04:12.001
+<v Nick Djordjevic>Yeah, Luca will go over that with him on the Wednesday after he's finished the basic training. Yeah, Luca will set up at least an hour with him to just go over how we do the tickets, exactly what status we set, how we set it, what the SLAs are on the tickets, that kind of stuff.</v>
+
+00:03:55.841 --> 00:03:56.161
+<v Shashank Agarwal>Yeah.</v>
+
+00:04:12.881 --> 00:04:13.201
+<v Shashank Agarwal>Sure.</v>
+
+00:04:12.881 --> 00:04:16.001
+<v Nick Djordjevic>Uh, yeah, he'll he'll go through all that with him on Wednesday.</v>
+
+00:04:16.881 --> 00:04:17.201
+<v Shashank Agarwal>Yeah.</v>
+
+00:04:18.921 --> 00:04:19.201
+<v Nick Djordjevic>Yep.</v>
+
+00:04:19.921 --> 00:04:20.881
+<v Shashank Agarwal>Sounds great.</v>
+
+00:04:20.321 --> 00:04:21.681
+<v Nick Djordjevic>Oh yeah, Atlas.</v>
+
+00:04:22.641 --> 00:04:34.881
+<v Shashank Agarwal>Yeah, let me share one of my screen. I'll tell you one of the interesting stories about Atlas. I have one other client which I manage and the client name is Atlas.</v>
+
+00:04:35.601 --> 00:04:35.761
+<v Nick Djordjevic>Yeah.</v>
+
+00:04:37.601 --> 00:04:39.361
+<v Nick Djordjevic>That's interesting.</v>
+
+00:04:40.241 --> 00:04:58.321
+<v Shashank Agarwal>Yeah, so that's one of the other things. So let's start with the review. Agenda stays the same. I can see overall Atlas performance has improved. His data is showing positive trends. He loves working with Atul. I talked to him about it. He's very happy.</v>
+
+00:04:41.761 --> 00:04:42.001
+<v Nick Djordjevic>Yeah.</v>
+
+00:04:43.761 --> 00:04:44.241
+<v Nick Djordjevic>Sure.</v>
+
+00:04:49.441 --> 00:04:49.921
+<v Nick Djordjevic>Mhm.</v>
+
+00:04:58.801 --> 00:05:10.401
+<v Shashank Agarwal>and he gets ample support from F12. And Rimaljit, we don't like he's joining on 19th May. Any feedback for Atlas which you want to share? Any recent or anything?</v>
+
+00:05:05.601 --> 00:05:06.001
+<v Nick Djordjevic>Yep.</v>
+
+00:05:10.641 --> 00:05:29.361
+<v Nick Djordjevic>No, he's been great. I did have to talk to him today about a ticket he didn't respond to. The user had made three attempts to ask for an update through the ticket and he didn't get around to responding to it. So I...</v>
+
+00:05:29.521 --> 00:05:32.161
+<v Nick Djordjevic>did ask him to respond to it today.</v>
+
+00:05:34.481 --> 00:05:42.641
+<v Nick Djordjevic>That's the only one I can think of, the one ticket where he didn't get back to the user on time. Other than that,</v>
+
+00:05:41.441 --> 00:05:47.201
+<v Shashank Agarwal>But apart from that, generally, do you see this behavior feed behavior in oh?</v>
+
+00:05:45.321 --> 00:06:05.441
+<v Nick Djordjevic>No, no, I don't. Normally he's, and I checked all his other tickets and he's responded in the last day to all of them. So, just a miss on the one. So, but not a big deal. I'm just mentioning because it just happened today. Yeah, exactly. It is a busy day. Like I told you today's</v>
+
+00:05:55.321 --> 00:05:56.161
+<v Shashank Agarwal>Yeah, that's good.</v>
+
+00:05:58.241 --> 00:05:58.561
+<v Shashank Agarwal>Yeah.</v>
+
+00:06:00.241 --> 00:06:04.481
+<v Shashank Agarwal>Maybe a busy day, yeah, can be a busy day, and...</v>
+
+00:06:05.841 --> 00:06:14.001
+<v Nick Djordjevic>really busy. We're all swamped right now. So yeah, for sure. But other than that, it's good.</v>
+
+00:06:07.041 --> 00:06:07.401
+<v Shashank Agarwal>Yeah.</v>
+
+00:06:11.841 --> 00:06:18.161
+<v Shashank Agarwal>Just let me know if anything of this sort happens. Definitely we can talk to him. Yeah.</v>
+
+00:06:16.641 --> 00:06:36.721
+<v Nick Djordjevic>No problem. Yep, he was off the other week for his sister's wedding and then he had an engagement. So yeah, I'm aware. So obviously his hours and numbers dropped that week, but other than that, he's been good. Like he's 7 to 8 hours per day.</v>
+
+00:06:22.561 --> 00:06:22.881
+<v Shashank Agarwal>Yep.</v>
+
+00:06:25.761 --> 00:06:26.161
+<v Shashank Agarwal>Yeah.</v>
+
+00:06:32.241 --> 00:06:32.721
+<v Shashank Agarwal>Yeah.</v>
+
+00:06:37.761 --> 00:06:39.921
+<v Nick Djordjevic>being reported in, so it's good.</v>
+
+00:06:37.921 --> 00:06:38.161
+<v Shashank Agarwal>Yeah.</v>
+
+00:06:39.401 --> 00:06:43.681
+<v Shashank Agarwal>You see, you see the time time entry changes since the last time we talked.</v>
+
+00:06:43.521 --> 00:06:45.841
+<v Nick Djordjevic>Oh yeah, yeah, absolutely. Yep.</v>
+
+00:06:45.281 --> 00:07:04.721
+<v Shashank Agarwal>Yeah. That means the feedback is working. That's great. Great to hear that. Yeah. Moving on, next action tracker, no to-dos from previous meeting. Performance analysis, his utilization is 80%, so that's growing. So that means he's entering the time correctly. So that's great.</v>
+
+00:06:46.801 --> 00:06:47.121
+<v Nick Djordjevic>Good.</v>
+
+00:06:49.361 --> 00:06:51.601
+<v Nick Djordjevic>Yep, for sure. Yep.</v>
+
+00:07:00.881 --> 00:07:01.281
+<v Nick Djordjevic>Yep.</v>
+
+00:07:05.361 --> 00:07:05.921
+<v Nick Djordjevic>Perfect.</v>
+
+00:07:05.681 --> 00:07:24.161
+<v Shashank Agarwal>Ticket closures, it's less from March, but obviously he was off on last week of March, sorry, April. So, but still, that's really good count, working seven days less, and obviously March had higher number of days and April has less. So obviously that also.</v>
+
+00:07:11.361 --> 00:07:12.161
+<v Nick Djordjevic>Yeah, I.</v>
+
+00:07:17.201 --> 00:07:17.841
+<v Nick Djordjevic>It is.</v>
+
+00:07:24.401 --> 00:07:27.121
+<v Shashank Agarwal>Accounting, but overall, his ticket closures are going good.</v>
+
+00:07:25.041 --> 00:07:25.441
+<v Nick Djordjevic>Yeah.</v>
+
+00:07:28.401 --> 00:07:28.601
+<v Nick Djordjevic>Yeah.</v>
+
+00:07:29.121 --> 00:07:46.801
+<v Shashank Agarwal>Moving in next CSAT, he got one DSAT and we discussed in the last call when we had like the ticket was came in around 4.30 and he actioned his next day and obviously the DSAT was given because of that and the only reason that was delayed.</v>
+
+00:07:29.841 --> 00:07:30.321
+<v Nick Djordjevic>I agree.</v>
+
+00:07:44.321 --> 00:07:46.001
+<v Nick Djordjevic>Yeah, yeah, understood.</v>
+
+00:07:47.441 --> 00:07:47.761
+<v Shashank Agarwal>Yeah.</v>
+
+00:07:48.361 --> 00:07:57.841
+<v Nick Djordjevic>Correct. I don't have a problem with that. It was end of day. I wouldn't expect the tech to pick something up with 15 minutes left in the day.</v>
+
+00:07:49.761 --> 00:07:50.321
+<v Shashank Agarwal>So...</v>
+
+00:07:51.601 --> 00:07:52.081
+<v Shashank Agarwal>Yeah.</v>
+
+00:07:53.601 --> 00:07:53.921
+<v Shashank Agarwal>Yeah.</v>
+
+00:07:58.721 --> 00:07:59.121
+<v Shashank Agarwal>Yeah.</v>
+
+00:08:00.801 --> 00:08:20.241
+<v Shashank Agarwal>And thanks, thanks for showing such a confidence with that. Really appreciate it. Moving on next, overall non-planned leaves, only planned leaves. So that's going great. One holiday is coming up, so that's on Monday.</v>
+
+00:08:05.841 --> 00:08:06.081
+<v Nick Djordjevic>Yep.</v>
+
+00:08:14.961 --> 00:08:15.361
+<v Nick Djordjevic>Yep.</v>
+
+00:08:21.281 --> 00:08:39.361
+<v Shashank Agarwal>Initially I was not aware, but entire F12 was closed on Monday apart from the after hours team. Yeah, yeah. Mark is working. So that's it. And moving on next, like continue with Atlas. I'm regularly talking to him.</v>
+
+00:08:21.961 --> 00:08:22.081
+<v Nick Djordjevic>Yeah.</v>
+
+00:08:25.121 --> 00:08:25.841
+<v Nick Djordjevic>Correct.</v>
+
+00:08:27.761 --> 00:08:28.321
+<v Nick Djordjevic>That's right.</v>
+
+00:08:33.561 --> 00:08:33.761
+<v Nick Djordjevic>Yeah.</v>
+
+00:08:39.601 --> 00:08:50.881
+<v Shashank Agarwal>around once in a month or so and asking him about his details and everything. So he's consistent and he should remain consistent like that. So that's really good.</v>
+
+00:08:52.001 --> 00:09:08.641
+<v Nick Djordjevic>He is. I also have a one-on-one with him on a monthly basis and I review some of his tickets on a regular basis. I haven't seen anything negative on any of that stuff. So it's been positive all the way with him.</v>
+
+00:09:05.681 --> 00:09:06.161
+<v Shashank Agarwal>Okay.</v>
+
+00:09:08.401 --> 00:09:08.521
+<v Shashank Agarwal>Yes.</v>
+
+00:09:09.681 --> 00:09:21.361
+<v Shashank Agarwal>Great, great to hear that and really love these kind of feedbacks. This really motivates me as a TL like the things are going in the right direction. So thank you so much for your feedback.</v>
+
+00:09:11.601 --> 00:09:11.841
+<v Nick Djordjevic>Yeah.</v>
+
+00:09:19.761 --> 00:09:20.961
+<v Nick Djordjevic>Yeah, that.</v>
+
+00:09:21.921 --> 00:09:30.801
+<v Nick Djordjevic>And talking to Ramiljit, I wouldn't expect anything less from him either. He seems like a very nice and smart guy.</v>
+
+00:09:31.361 --> 00:09:43.841
+<v Shashank Agarwal>Yeah, to be honest, I took his interview for at ITBD level. So that's why I propose it to you so that he sits in the right seat.</v>
+
+00:09:40.881 --> 00:09:41.161
+<v Nick Djordjevic>Yeah.</v>
+
+00:09:44.561 --> 00:09:57.281
+<v Nick Djordjevic>Yeah, I interviewed five other candidates from different era and none of them came close to his interview. So yeah, I went back to the first one and said, yeah, that's the guy.</v>
+
+00:09:52.241 --> 00:09:52.361
+<v Shashank Agarwal>Yeah.</v>
+
+00:09:53.721 --> 00:09:54.001
+<v Shashank Agarwal>Blake.</v>
+
+00:10:00.681 --> 00:10:00.921
+<v Nick Djordjevic>Yeah.</v>
+
+00:10:05.041 --> 00:10:05.321
+<v Nick Djordjevic>Yeah.</v>
+
+00:10:05.361 --> 00:10:27.561
+<v Shashank Agarwal>Philippines stuff. We do have, I checked with my with my leaders and definitely we want to expand our partnership with F12 when we are growing in Philippines as well. So next time if any requirement comes or any of your peer SDMs are looking for a resource specifically from Philippines.</v>
+
+00:10:27.961 --> 00:10:28.441
+<v Nick Djordjevic>Mhm.</v>
+
+00:10:28.281 --> 00:10:34.441
+<v Shashank Agarwal>just ask them to raise that to us as well. So I've already informed...</v>
+
+00:10:29.401 --> 00:10:29.801
+<v Nick Djordjevic>Okay.</v>
+
+00:10:32.761 --> 00:10:41.721
+<v Nick Djordjevic>Sure, yeah, I interviewed a few from the Philippines from our other from Microsource, and they were not anywhere near as good as LG, so...</v>
+
+00:10:42.601 --> 00:11:00.921
+<v Shashank Agarwal>Yeah, so anytime they have a requirement, they can reach out to us and we'll definitely take care of that. Yeah, so from Philippines as well. And I already informed HR about it. Yeah, so they are also onboarded on that. So anytime the request comes, they can share it with us.</v>
+
+00:10:46.601 --> 00:10:47.001
+<v Nick Djordjevic>Okay.</v>
+
+00:10:54.441 --> 00:10:55.321
+<v Nick Djordjevic>Okay, perfect.</v>
+
+00:11:01.641 --> 00:11:02.841
+<v Nick Djordjevic>Okay, sounds good.</v>
+
+00:11:03.641 --> 00:11:03.841
+<v Shashank Agarwal>Out.</v>
+
+00:11:04.601 --> 00:11:09.881
+<v Nick Djordjevic>Thanks for your time. Yep, thank you. Thanks for the good text you're sending me.</v>
+
+00:11:04.921 --> 00:11:08.281
+<v Shashank Agarwal>Thanks, Nick. Sameer, and I...</v>
+
+00:11:11.801 --> 00:11:15.961
+<v Shashank Agarwal>Okay, thank you so much. You have a great day. Thanks, bye.</v>
+
+00:11:13.641 --> 00:11:16.441
+<v Nick Djordjevic>Alright, thanks. You too. Bye.</v>
+

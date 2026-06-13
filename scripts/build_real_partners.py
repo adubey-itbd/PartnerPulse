@@ -3,10 +3,13 @@
 Runs the same extraction as extract.build_partner (Halo client fields + SIP
 counts + service-review meeting notes + TeamGPS CSAT/NPS + local .docx
 transcripts when a matching Transcripts/{Partner}/ folder exists) then the
-gpt-5.4 churn analysis (extract.ai). Transcript ingestion needs markitdown; if
-it is missing the step is skipped with a warning instead of failing. Skips the
-deck path. Writes data/{slug}.json (no demo flag) and injects an exec-overview
-object for each into the hardcoded real-partner array.
+gpt-5.4 churn analysis (extract.ai). Service-deck attachments (PDF/PPTX) on the
+review tickets are converted to Markdown like the registry path (added
+2026-06-12 — previously skipped, which left every extras partner with an empty
+Service Decks tab). Deck conversion and transcript ingestion need markitdown;
+if it is missing both are skipped with a warning instead of failing. Writes
+data/{slug}.json (no demo flag) and injects an exec-overview object for each
+into the hardcoded real-partner array.
 
     python scripts/build_real_partners.py            # build all
     python scripts/build_real_partners.py netgain    # build one (by slug) — smoke test
@@ -70,7 +73,28 @@ NEW = [
 ]
 
 
-def build_real(name, client_id, halo_search, teamgps_company, nps_all):
+def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=False):
+    # markitdown-backed module, used for both deck conversion and .docx
+    # transcripts; None when markitdown is missing (both are then skipped).
+    try:
+        from extract import transcripts as transcripts_mod
+    except ImportError:
+        transcripts_mod = None
+        print("  [decks/transcripts] markitdown not installed — skipping deck "
+              "conversion and transcript ingestion", file=sys.stderr)
+
+    decks = []
+    # Deck caching: reuse already-converted deck markdown (markitdown is slow) by the
+    # stable attachment id, so a rebuild only re-converts genuinely new decks.
+    prev_decks = {}
+    _pc = DATA / f"{slugify(name)}.json"
+    if _pc.exists() and not force_ai:
+        try:
+            for dk in (json.loads(_pc.read_text(encoding="utf-8")).get("decks") or []):
+                if dk.get("attachment_id") is not None:
+                    prev_decks[dk["attachment_id"]] = dk
+        except (ValueError, OSError):
+            pass
     if client_id is None:
         # Transcript-only partner: no Halo client record exists.
         client, cf, sips = {}, {}, {}
@@ -99,32 +123,54 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all):
             for n in notes:
                 note_authors[n.get("who")] += 1
             if notes:
+                # Call date = latest meeting-NOTE datetime, not ticket dateoccurred
+                # (recurring tickets keep an early dateoccurred — see build_partner.py).
+                note_dt = max((n.get("datetime") or "") for n in notes) or t["date"]
                 historical_calls.append({
-                    "ticket_id": t["id"], "summary": t["summary"], "date": t["date"],
+                    "ticket_id": t["id"], "summary": t["summary"], "date": note_dt,
                     "notes": "\n\n".join(n["note"] for n in notes),
                 })
+            # Service-deck attachments (PDF/PPTX -> Markdown), same as the
+            # registry path in extract/build_partner.py.
+            if transcripts_mod is not None:
+                for a in halo.list_attachments(t["id"]):
+                    fn = (a.get("filename") or "").lower()
+                    ext = fn.rsplit(".", 1)[-1] if "." in fn else ""
+                    if a.get("id") and ext in ("pdf", "pptx"):
+                        if a["id"] in prev_decks:        # already converted — reuse
+                            decks.append(prev_decks[a["id"]])
+                            continue
+                        try:
+                            raw = halo.download_attachment(a["id"])
+                            deck = transcripts_mod.deck_to_markdown(
+                                raw, f"{slugify(name)}_{t['id']}_{a['id']}", ext=ext)
+                            decks.append({
+                                "ticket_id": t["id"], "attachment_id": a["id"],
+                                "filename": a.get("filename"),
+                                "md_path": deck["md_path"], "markdown": deck["markdown"],
+                            })
+                            print(f"  [deck] {a.get('filename')} -> "
+                                  f"{len(deck['markdown'])} md chars", file=sys.stderr)
+                        except Exception as e:
+                            print(f"  [deck] FAILED {a.get('filename')}: {e}", file=sys.stderr)
 
         account_manager = (note_authors.most_common(1)[0][0] + " (Dedicated Team Lead)"
                            if note_authors else (client.get("accountmanagertech") or ""))
 
-    # Local .docx transcripts — any Transcripts/ folder matching the partner name
-    # (case/punctuation-insensitive) is ingested, same as the registry build path.
+    # Local .docx/.vtt transcripts — any Transcripts/ folder matching the partner
+    # name (case/punctuation-insensitive) is ingested, same as the registry path.
     tx = []
-    try:
-        from extract import transcripts as transcripts_mod
+    if transcripts_mod is not None:
         tx = transcripts_mod.parse_partner_transcripts(name)
         if tx:
             print(f"  [transcripts] {len(tx)} parsed", file=sys.stderr)
-    except ImportError:
-        print("  [transcripts] markitdown not installed — skipping transcript ingestion",
-              file=sys.stderr)
 
     data = {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "partner": name,
             "sources": {"csat": len(csat), "nps": len(nps), "calls": len(historical_calls),
-                        "decks": 0, "transcripts": len(tx)},
+                        "decks": len(decks), "transcripts": len(tx)},
         },
         "client": {
             "id": client.get("id"), "name": name, "vip": bool(client.get("is_vip")),
@@ -137,9 +183,17 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all):
         "csat_stats": csat_stats, "csat_comments": csat,
         "nps_stats": nps_stats, "nps_comments": nps,
         "historical_calls": historical_calls,
-        "action_items": [], "decks": [], "transcripts": tx,
+        "action_items": [], "decks": decks, "transcripts": tx,
     }
-    data["ai"] = ai.analyze(data)
+    # Reuse cached AI when LLM inputs are unchanged (skips gpt-5.4 + avoids score drift).
+    prev_ai = None
+    cache = DATA / f"{slugify(name)}.json"
+    if cache.exists() and not force_ai:
+        try:
+            prev_ai = json.loads(cache.read_text(encoding="utf-8")).get("ai")
+        except (ValueError, OSError):
+            prev_ai = None
+    data["ai"] = ai.analyze(data, cached_ai=prev_ai, force=force_ai)
     return data
 
 
@@ -210,6 +264,15 @@ def inject_exec(objs):
     open_marker = "    const partners = [\n"
     begin = "        // ---- BEGIN real partners pulled by build_real_partners.py ----\n"
     end = "        // ---- END real partners ----\n"
+    # The AI-Driven Operational Intelligence dashboard is data-driven (renders from
+    # data/_overview.json, no embedded array). When index.html has neither the BEGIN/END
+    # block nor the `const partners = [` anchor, there is nothing to inject — skip
+    # gracefully. The partner JSONs this script just wrote still feed _index.json and the
+    # _overview.json rollup (build_overview.py, the final sync step).
+    if begin not in html and open_marker not in html:
+        print("  index.html is data-driven (no embedded partner array) — skipping "
+              "exec-row injection; the dashboard reads data/_overview.json.", file=sys.stderr)
+        return
     if begin in html and end in html:
         pre, rest = html.split(begin, 1)
         block, post = rest.split(end, 1)
@@ -254,7 +317,8 @@ def warn_unmatched_transcript_dirs():
 
 
 def main():
-    only = {a.lower() for a in sys.argv[1:]}
+    force_ai = "--force-ai" in sys.argv
+    only = {a.lower() for a in sys.argv[1:] if a.lower() != "--force-ai"}
     targets = [n for n in NEW if not only or slugify(n[0]) in only]
     warn_unmatched_transcript_dirs()
     print(f"Fetching TeamGPS NPS set once…", file=sys.stderr)
@@ -264,7 +328,7 @@ def main():
     exec_objs = []
     for name, cid, hs, tg in targets:
         print(f"\n=== {name} (Halo {cid}) ===", file=sys.stderr)
-        data = build_real(name, cid, hs, tg, nps_all)
+        data = build_real(name, cid, hs, tg, nps_all, force_ai=force_ai)
         slug = slugify(name)
         (DATA / f"{slug}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
         aih = data["ai"]

@@ -1,0 +1,1409 @@
+WEBVTT
+NOTE title: MDE | PH | Microcomputer Consulting Group, Inc. | IT by Design | ITBD Monthly Service Call
+NOTE date: 2026-05-05
+NOTE duration: 41m 42s
+
+00:00:08.783 --> 00:00:09.503
+<v Andrea Canlas>Hi, Joe.</v>
+
+00:00:11.383 --> 00:00:12.143
+<v Joseph Larrosa>Hey, Andy, how you doing?</v>
+
+00:00:11.903 --> 00:00:11.983
+<v Andrea Canlas>The.</v>
+
+00:00:13.263 --> 00:00:14.063
+<v Andrea Canlas>Good, how are you?</v>
+
+00:00:17.343 --> 00:00:21.263
+<v Joseph Larrosa>Good, good. Give me two seconds. I just want to get a charger for my computer. Hold on.</v>
+
+00:00:18.983 --> 00:00:19.103
+<v Andrea Canlas>He.</v>
+
+00:00:21.423 --> 00:00:22.463
+<v Andrea Canlas>Sure, take your time.</v>
+
+00:00:40.543 --> 00:00:41.063
+<v Mark Paolo Mangune>Okay.</v>
+
+00:00:49.503 --> 00:00:52.623
+<v Joseph Larrosa>I mean, a lot of works by now.</v>
+
+00:00:58.943 --> 00:01:00.383
+<v Joseph Larrosa>I could find it.</v>
+
+00:01:01.423 --> 00:01:02.303
+<v Joseph Larrosa>Yes.</v>
+
+00:01:24.773 --> 00:01:27.413
+<v Joseph Larrosa>All right, thank you for your patience, guys. Sorry about that.</v>
+
+00:01:28.453 --> 00:01:31.253
+<v Andrea Canlas>All good. How was your week so far? Good?</v>
+
+00:01:32.213 --> 00:01:38.293
+<v Joseph Larrosa>Good, good. Just working out a couple things, but doing pretty well. What about you guys? How are you guys doing?</v>
+
+00:01:39.653 --> 00:01:58.053
+<v Andrea Canlas>Oh, you know, busy. Front, right and center, we're all busy. But just like what I promised last week, I'm here to introduce to you to whatever team leads for co-manage, and he'll be the one assisting with Jacob, with myself, and you guys, of course. So I'll give the floor to Mark. Go ahead.</v>
+
+00:01:42.893 --> 00:01:43.053
+<v Joseph Larrosa>But.</v>
+
+00:01:56.613 --> 00:01:56.813
+<v Joseph Larrosa>PH.</v>
+
+00:01:58.373 --> 00:01:58.933
+<v Joseph Larrosa>Perfect.</v>
+
+00:01:59.413 --> 00:02:00.053
+<v Mark Paolo Mangune>I like that.</v>
+
+00:01:59.493 --> 00:01:59.813
+<v Andrea Canlas>Thank you.</v>
+
+00:02:01.653 --> 00:02:03.093
+<v Joseph Larrosa>Hey, Mark, pleasure to meet you.</v>
+
+00:02:03.653 --> 00:02:16.933
+<v Mark Paolo Mangune>Yeah, nice to meet you too. So, yeah, just introduce myself. You call me Marty. I've been in the industry for about 12 years, being a team lead and also...</v>
+
+00:02:13.093 --> 00:02:13.253
+<v Joseph Larrosa>Kip.</v>
+
+00:02:16.453 --> 00:02:17.093
+<v Andrea Canlas>Sorry.</v>
+
+00:02:18.213 --> 00:02:22.173
+<v Andrea Canlas>How do you call it out? You're a bit buffled, I think. I think it's a mic.</v>
+
+00:02:18.453 --> 00:02:18.693
+<v Mark Paolo Mangune>Mark.</v>
+
+00:02:22.933 --> 00:02:23.653
+<v Mark Paolo Mangune>Lady.</v>
+
+00:02:24.213 --> 00:02:30.373
+<v Andrea Canlas>Yeah, try to change it a bit. Yeah, I was like, huh, that's alright.</v>
+
+00:02:25.453 --> 00:02:29.173
+<v Joseph Larrosa>Thank you, thank you, Andy. I was just about to say that. I didn't want to throw them.</v>
+
+00:02:26.133 --> 00:02:26.533
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:02:27.653 --> 00:02:27.893
+<v Mark Paolo Mangune>Pre.</v>
+
+00:02:31.253 --> 00:02:34.213
+<v Mark Paolo Mangune>Okay, I was saying, I'm just gonna say that.</v>
+
+00:02:31.533 --> 00:02:32.933
+<v Andrea Canlas>He's introducing himself, so...</v>
+
+00:02:34.933 --> 00:02:36.453
+<v Andrea Canlas>That's alright, really good time.</v>
+
+00:02:40.653 --> 00:02:40.773
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:02:45.213 --> 00:02:46.693
+<v Mark Paolo Mangune>Hello, how about now?</v>
+
+00:02:47.013 --> 00:02:48.693
+<v Andrea Canlas>Better, that's clearer.</v>
+
+00:02:48.293 --> 00:02:48.933
+<v Joseph Larrosa>Much better.</v>
+
+00:02:49.653 --> 00:03:09.893
+<v Mark Paolo Mangune>Okay, so yeah, like I said, you can call me Marky Joseph and I've been in MSP industry for about 12 years now. Aside from being a team lead, I've been an incident manager before for high priority tickets like P1 and P0s.</v>
+
+00:02:51.093 --> 00:02:51.653
+<v Andrea Canlas>Oh, yeah.</v>
+
+00:03:10.293 --> 00:03:16.693
+<v Mark Paolo Mangune>And also a dispatch coordinator role on my previous company, so...</v>
+
+00:03:18.453 --> 00:03:21.493
+<v Mark Paolo Mangune>Yeah, if you have any questions, just feel free to ask.</v>
+
+00:03:23.053 --> 00:03:47.573
+<v Joseph Larrosa>Yeah, no, I think that those are definitely good qualities to have and obviously you have some experience. Same goes on my end, so if you need anything, you know, for me, I'm service manager from MCG, so obviously as well as working with Jacob, we have our own team here at MCG. We do have some documentation stuff that I can give you access to as well, like a link for our public documentation for IT glue.</v>
+
+00:03:47.973 --> 00:03:59.573
+<v Joseph Larrosa>that Jacob looks at. I definitely would like you to take a look at it. Let me know if there's any improvements or changes that you recommend that we should make. And I will post and update the documentation as well.</v>
+
+00:03:48.213 --> 00:03:48.693
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:04:00.213 --> 00:04:01.333
+<v Mark Paolo Mangune>Yeah, sure. Okay.</v>
+
+00:04:03.693 --> 00:04:22.093
+<v Andrea Canlas>Great. Okay. So as for Jacob and Marky, Joe. So usually, I think Jacob comes in at 3pm, 4pm Eastern time. So 4pm, right? Is it possible for Marky and him to connect?</v>
+
+00:04:16.533 --> 00:04:17.733
+<v Joseph Larrosa>4 PM Eastern Time.</v>
+
+00:04:22.173 --> 00:04:37.413
+<v Andrea Canlas>probably around 4.30 or 5 P.m. because they needed to have like a connect. But usually whenever I reach out to Jacob, I know that he's just so busy with tickets. I think you guys have like a huddle on a daily basis once he comes in.</v>
+
+00:04:38.773 --> 00:04:59.333
+<v Joseph Larrosa>Not always. I read the recent weeks has been a little bit difficult because we have been pretty busy, you know, with my items as well. So I've kind of done it only maybe once or twice a week. We don't always huddle, but if there are situations that I want Jacob to address, I will ask him to just, hey, you know, as you just come in, just do me a favor, give me a buzz or</v>
+
+00:04:43.973 --> 00:04:44.453
+<v Andrea Canlas>Mhm.</v>
+
+00:04:49.573 --> 00:04:50.053
+<v Andrea Canlas>Mhm.</v>
+
+00:04:59.893 --> 00:05:19.413
+<v Joseph Larrosa>ring me and we can talk real quick about, you know, X, Y, Z, or I will tell him what the priority is because he does have some schedule items, as you know, the reports he does with the audits and stuff like that that he does. I'll tell him to, hey, let's put that to the side real quick, prioritize, for example, tickets, because we're a little bit backlogged on tickets, for example. So there is always constant communication in teams.</v>
+
+00:04:59.933 --> 00:05:00.093
+<v Andrea Canlas>Uh-huh.</v>
+
+00:05:03.293 --> 00:05:03.813
+<v Andrea Canlas>Mhm.</v>
+
+00:05:08.173 --> 00:05:09.253
+<v Andrea Canlas>Yeah, true.</v>
+
+00:05:10.133 --> 00:05:10.613
+<v Andrea Canlas>Mhm.</v>
+
+00:05:19.733 --> 00:05:31.613
+<v Joseph Larrosa>In terms of call, I do try to have a call from at least once a week to check in with him, see where he's at. And if anything else arises, you know, I always make self available for him to give me a call if he needs it. So, yeah.</v>
+
+00:05:23.253 --> 00:05:23.773
+<v Andrea Canlas>Mhm.</v>
+
+00:05:31.093 --> 00:05:40.693
+<v Andrea Canlas>Gotcha. Do you have, do you think, do you have a specific time in mind on when you think Marky can work and have like a coaching session with Jacob maybe?</v>
+
+00:05:41.093 --> 00:05:59.973
+<v Joseph Larrosa>I think, Mark, Mark, what time are you in till? Like, so for example, if it was, is there any way we could push the call to maybe 530 or later, that would probably be best because that's the time when, you know, our office is officially closed. So after our request,</v>
+
+00:06:00.013 --> 00:06:19.013
+<v Joseph Larrosa>requests are not as heavy as tickets that may be coming in or tasks that he may have to do between 4 and 5 30. If that timing is not possible, then I would say probably a 5 P.m. call would be best. So that way it's only maybe about half an hour and I'll notify Maddie, who's our, you know, like team lead basically here and let her know.</v>
+
+00:06:19.173 --> 00:06:26.213
+<v Joseph Larrosa>in regards to triaging of tickets and resource availability that Jacob will be unavailable at 5. So let me know what works out best for you guys.</v>
+
+00:06:26.453 --> 00:06:26.933
+<v Mark Paolo Mangune>Okay.</v>
+
+00:06:28.733 --> 00:06:37.333
+<v Andrea Canlas>Yeah, he'll he'll be working with Jacob to get that sorted out. He can do slide shift if necessary, so we'll we can talk about it, right?</v>
+
+00:06:38.693 --> 00:06:39.013
+<v Joseph Larrosa>Kip.</v>
+
+00:06:38.693 --> 00:06:45.013
+<v Andrea Canlas>Cool, thank you very much. So let me just go ahead and share my screen so we can start with our...</v>
+
+00:06:46.693 --> 00:07:07.173
+<v Andrea Canlas>Monthly business review for the month of April. I know it just had the creative VR, but that was late again. So, but we're going to talk about April now and then we're going to talk about the action items that was left for the past meeting. So just go ahead. Forward, you know the agenda, usual check-in, highlights, action tracker,</v>
+
+00:07:07.453 --> 00:07:18.133
+<v Andrea Canlas>performance analysis, way forward, and our recap. So I think we were able to check how things are within ourselves, but how are things at the moment when it comes to Jacob?</v>
+
+00:07:19.653 --> 00:07:40.453
+<v Joseph Larrosa>It's going pretty well. The one item I want to, not specific to Jacob, but I do recall that with Brian and Jerome, we used to get the surveys, I think, on a monthly basis. I just want to confirm if those surveys are still going out. And if they are, had they been filled recently, as an example,</v>
+
+00:07:25.573 --> 00:07:26.053
+<v Andrea Canlas>Mhm.</v>
+
+00:07:33.333 --> 00:07:33.813
+<v Andrea Canlas>Mhm.</v>
+
+00:07:35.733 --> 00:07:36.373
+<v Andrea Canlas>Yes.</v>
+
+00:07:40.573 --> 00:08:00.853
+<v Joseph Larrosa>because I don't recall receiving them. I know I've tried to make some Outlook rules to make sure that they get flagged specifically so I could, you know, as a like a different color tone and stuff like that to make sure I can address them, but I don't think I've received any. So I'm concerned just, I just want to make sure that I can give you guys the feedback also in the surveys because I'm pretty sure that's a good thing to have for you guys internally because I always.</v>
+
+00:07:47.733 --> 00:07:48.213
+<v Andrea Canlas>Mhm.</v>
+
+00:08:01.133 --> 00:08:10.773
+<v Joseph Larrosa>Praise you guys, always appreciate your work in the partnership. So I want to make sure it's visible in those surveys. But I also want to make sure that, for example, for Jacob, that's the case as well. So just if we could check in on that.</v>
+
+00:08:02.493 --> 00:08:02.973
+<v Andrea Canlas>Mhm.</v>
+
+00:08:05.973 --> 00:08:06.133
+<v Andrea Canlas>Yeah.</v>
+
+00:08:09.013 --> 00:08:29.173
+<v Andrea Canlas>Yeah, definitely. Yeah, it was very timely because I was checking in on it. I was making sure the deck was ready today. I did look and I think the email address that they only have there was Rebecca. So I'm going to re-trigger that again. I'm going to add your email address so that you'll be able to receive them. So we were able to send it out for March.</v>
+
+00:08:29.493 --> 00:08:34.333
+<v Andrea Canlas>So I'll just re-trigger March, and then I'll resend April as well, so you can receive them both.</v>
+
+00:08:35.253 --> 00:08:53.573
+<v Joseph Larrosa>Okay, all right. And did you get a response to the last one? Because I know that Rebecca sometimes, okay. Yeah, so don't be afraid to just let me know. Like I said, I want to make sure that I can correct my Outlook rule so I can flag those. I get a, excuse my language, I get a **** ton of emails. So I want to make sure that I can.</v>
+
+00:08:38.133 --> 00:08:38.613
+<v Andrea Canlas>Nah.</v>
+
+00:08:39.653 --> 00:08:40.133
+<v Andrea Canlas>No.</v>
+
+00:08:44.093 --> 00:08:44.533
+<v Andrea Canlas>Okay.</v>
+
+00:08:47.653 --> 00:08:48.053
+<v Andrea Canlas>Sure.</v>
+
+00:08:52.533 --> 00:08:53.493
+<v Andrea Canlas>Tell me about it.</v>
+
+00:08:54.853 --> 00:09:10.133
+<v Joseph Larrosa>I just want to make sure I can see it because it's like it's something so critical. And like I have stuff lagged obviously for like our leadership and stuff like that. And this is just as important for me and, you know, to make sure I can get it done. So let me know when you send those and I'll check the rule and make sure we can get everything working properly.</v>
+
+00:08:58.453 --> 00:08:58.933
+<v Andrea Canlas>Yeah.</v>
+
+00:09:00.933 --> 00:09:01.573
+<v Andrea Canlas>True.</v>
+
+00:09:03.693 --> 00:09:04.293
+<v Andrea Canlas>Mhm.</v>
+
+00:09:07.253 --> 00:09:07.493
+<v Andrea Canlas>Just.</v>
+
+00:09:10.853 --> 00:09:27.493
+<v Andrea Canlas>Yeah, man, appreciate it. Appreciate you wanting to provide feedback, to be honest. But yeah, I think it was just that on the email side, it was just Rebecca instead of your email, but I'll already trigger that. So you can receive them starting March, April, and then moving forward. Okay.</v>
+
+00:09:28.213 --> 00:09:47.093
+<v Joseph Larrosa>Gotcha. And regarding Jacob specifically, he's, you know, continued to do well. We had, you know, a brief situation. And just so you guys are aware, we had a brief situation where we didn't have every, I guess, I would say the proper documentation. So there was a slight issue.</v>
+
+00:09:29.693 --> 00:09:30.053
+<v Andrea Canlas>Yeah.</v>
+
+00:09:34.853 --> 00:09:35.333
+<v Andrea Canlas>Mhm.</v>
+
+00:09:47.413 --> 00:10:06.453
+<v Joseph Larrosa>with a recent ticket regarding applications and where the applications are created under. So I had a conversation and check in with Jacob about ensuring obviously that for these type of tickets, especially for these clients, that if the apps do not exist specifically under their IT glue.</v>
+
+00:10:01.573 --> 00:10:02.053
+<v Andrea Canlas>Mhm.</v>
+
+00:10:06.693 --> 00:10:27.133
+<v Joseph Larrosa>than to, you know, mark the ticket basically as an escalation for our team to review the following day and determine if either we need to cross the accounts, you know, maybe we need to get permission from the PLC for this. But I'd rather I also have a manual check in the morning as one of our technicians kind of worked with them hand in hand for that account. So he would have, you know, he has a.</v>
+
+00:10:18.173 --> 00:10:18.533
+<v Andrea Canlas>Uh-huh.</v>
+
+00:10:25.573 --> 00:10:26.053
+<v Andrea Canlas>Mhm.</v>
+
+00:10:27.573 --> 00:10:46.613
+<v Joseph Larrosa>I guess a good report too with the client, so it'd be easier for us to just verify if they want us to cross, you know, into another domain's applications as an example. So it was a mistake, but it was a learning mistake. And it also points out the fact that we did not have everything documented, so we're working on the documentation with the client for the applications.</v>
+
+00:10:39.893 --> 00:10:40.373
+<v Andrea Canlas>Mhm.</v>
+
+00:10:46.853 --> 00:10:56.533
+<v Joseph Larrosa>But that's not negative feedback. It's more of like, hey, this was a mistake. We're going from it. You know, I, you know, we're acknowledging it and Jacob is not aware of the process going forward.</v>
+
+00:10:54.653 --> 00:10:55.133
+<v Andrea Canlas>Mmh.</v>
+
+00:10:57.413 --> 00:11:04.693
+<v Andrea Canlas>Gotcha. So the process wasn't there, but then she, he didn't know technically what he's supposed to be doing. And.</v>
+
+00:11:10.293 --> 00:11:10.853
+<v Andrea Canlas>Mhm.</v>
+
+00:11:22.373 --> 00:11:22.813
+<v Andrea Canlas>Thank you.</v>
+
+00:11:22.853 --> 00:11:44.973
+<v Joseph Larrosa>have a Notion account and so he created underneath there, but that that was technically not the right not the right process to take. So not at fault though, he was, he did anticipate that it could be a problem, so he actually did not send out the credentials to the user or to the client, which was good on his behalf. And I told him, I said, I acknowledged that and that was actually a great call on your behalf.</v>
+
+00:11:26.373 --> 00:11:26.653
+<v Andrea Canlas>Mm.</v>
+
+00:11:29.453 --> 00:11:29.933
+<v Andrea Canlas>Gotcha.</v>
+
+00:11:41.133 --> 00:11:41.693
+<v Andrea Canlas>Mhm.</v>
+
+00:11:44.013 --> 00:11:45.973
+<v Andrea Canlas>At least, yeah, mhm.</v>
+
+00:11:45.253 --> 00:11:59.613
+<v Joseph Larrosa>because had they had the credentials and they accessed information they shouldn't have, it definitely would have been a much bigger, you know, potential bigger problem, you know, on our end and obviously with the client, but it never got to that point. So we were able to adjust and now we're trying to collect all the information that we do need so it doesn't happen again.</v>
+
+00:11:50.293 --> 00:11:50.733
+<v Andrea Canlas>Problem.</v>
+
+00:11:52.013 --> 00:11:52.333
+<v Andrea Canlas>Yeah.</v>
+
+00:11:54.093 --> 00:11:54.693
+<v Andrea Canlas>Mhm.</v>
+
+00:12:00.573 --> 00:12:20.813
+<v Andrea Canlas>Gotcha, understood. Yeah, I don't think it's going to be a definitely know-how for him. And then building that probably SOP for that application would definitely help him. Understood. So if it's not there, like moving forward, Joe, if it's not there on IT Lou and it's not listed under that specific partner.</v>
+
+00:12:20.853 --> 00:12:31.133
+<v Andrea Canlas>It's like a brother or sister company, whatever. Does he need to escalate it either to you, to the senior level, ask for the POC? I don't know.</v>
+
+00:12:32.293 --> 00:12:33.853
+<v Andrea Canlas>What should should be the process there?</v>
+
+00:12:32.653 --> 00:12:51.493
+<v Joseph Larrosa>I think at the, I think at the moment, Brian, and we spoke about these specific subset of clients, and just for reference, right, so you guys know off the bat here, obviously the AI will take the notes, but this is specific for Origin, Eagle Security Alliance, Liberty Paving Partners, and</v>
+
+00:12:41.293 --> 00:12:41.773
+<v Andrea Canlas>Mmh.</v>
+
+00:12:43.533 --> 00:12:44.013
+<v Andrea Canlas>Mhm.</v>
+
+00:12:51.653 --> 00:13:12.333
+<v Joseph Larrosa>Springdale and I believe there's EBS account. So there are five companies that kind of stem from, you know, one source, kind of the Springdale accounts, kind of like the primary domain now. And they each have similar applications, but the intent is for them to separate and have each one have their own.</v>
+
+00:13:00.253 --> 00:13:00.733
+<v Andrea Canlas>Mmh.</v>
+
+00:13:12.893 --> 00:13:35.613
+<v Joseph Larrosa>login, for example, for Notion, it would have its own account under, for example, Liberty Paying Partners, and that's how it should be addressed going forward. The problem is that we're not there yet. So in the meantime, you know, sometimes they'll say, even though this user belongs to, for example, Origin, we want you to create the applications under Liberty Paying Partners. And that's a request that the client needs to specifically make.</v>
+
+00:13:14.333 --> 00:13:14.573
+<v Andrea Canlas>Hi.</v>
+
+00:13:22.013 --> 00:13:22.253
+<v Andrea Canlas>Mm.</v>
+
+00:13:32.893 --> 00:13:32.973
+<v Andrea Canlas>Um...</v>
+
+00:13:35.933 --> 00:14:00.133
+<v Joseph Larrosa>So that's why I don't have anything, I can't say for certain, for example, right now, hey, if we don't have it here, reach out to the client and have them do it. I'd rather have the B team just do a double check and confirm with their HR what they want to do instead of, you know, having Jacob handle it overnight. Just to double check. And also right now, there's a little bit of tension with the customer as we're trying to iron out this process. So I just want to.</v>
+
+00:13:36.413 --> 00:13:37.133
+<v Andrea Canlas>Call it back.</v>
+
+00:13:42.813 --> 00:13:43.293
+<v Andrea Canlas>Mhm.</v>
+
+00:13:51.293 --> 00:13:51.453
+<v Andrea Canlas>A.</v>
+
+00:14:00.213 --> 00:14:05.613
+<v Joseph Larrosa>want to make sure we can give it that little extra look and TLC in the morning before we address it.</v>
+
+00:14:00.413 --> 00:14:00.973
+<v Andrea Canlas>Mhm.</v>
+
+00:14:04.893 --> 00:14:05.373
+<v Andrea Canlas>Sure.</v>
+
+00:14:06.573 --> 00:14:12.173
+<v Andrea Canlas>Gotcha. All right. We'll make sure we'll get that across Jacob also once we connect with him as well.</v>
+
+00:14:13.373 --> 00:14:17.053
+<v Andrea Canlas>All right, perfect. Thank you very much. Let's move on.</v>
+
+00:14:18.413 --> 00:14:37.693
+<v Andrea Canlas>So one of, we have like 3 highlights today. So one of the highlights would be he has like perfect attendance for the month of April, as he is. He has no absence aside from the fact that we were on holiday, but that was May 1st, right? And then again, we have our new technical team lead, which is recently joined our team. So</v>
+
+00:14:37.973 --> 00:14:55.133
+<v Andrea Canlas>Marky will be able to help me and Jacob with the day-to-day tasks as well with operations moving forward. And last but not least, Jacob had a strong and consistent April for the utilization resolution rate, which we would be showing you at a later slide. Any questions?</v>
+
+00:14:55.973 --> 00:14:56.333
+<v Joseph Larrosa>Nope.</v>
+
+00:14:56.973 --> 00:15:12.973
+<v Andrea Canlas>All right, so for the action tracker, this is just for the feedback for the month of April, but I'll add March in it as well, and then I'll just re-trigger that for you. And then we have like a pending discussion about remember audit task and bright gauge.</v>
+
+00:15:13.933 --> 00:15:14.493
+<v Joseph Larrosa>Yes.</v>
+
+00:15:14.653 --> 00:15:25.773
+<v Andrea Canlas>Yeah, so I was able to do some digging, and in order for us to actually have like an accurate report in Bride Cage, we need to add another category from from auto task.</v>
+
+00:15:27.133 --> 00:15:46.733
+<v Andrea Canlas>as an escalation and then there is another way for us to add escalated to and escalated from. So I don't have specific access with auto task. I can give you like the step to step of how we can do it from the auto task side. I would assume that you are an admin from auto task, right?</v>
+
+00:15:35.533 --> 00:15:36.053
+<v Joseph Larrosa>Okay.</v>
+
+00:15:39.613 --> 00:15:39.853
+<v Mark Paolo Mangune>Oh.</v>
+
+00:15:47.293 --> 00:15:50.813
+<v Joseph Larrosa>Correct, yeah, if you, if you sorry, go ahead.</v>
+
+00:15:48.093 --> 00:15:49.293
+<v Andrea Canlas>Gotcha, so I'll send.</v>
+
+00:15:51.213 --> 00:15:51.573
+<v Mark Paolo Mangune>Kip.</v>
+
+00:15:51.373 --> 00:16:00.093
+<v Andrea Canlas>Yeah, I'll send you the step by step and then what it would actually look like just in case we can sync that with Bright Sage also.</v>
+
+00:15:55.213 --> 00:15:55.493
+<v Mark Paolo Mangune>Without.</v>
+
+00:15:58.013 --> 00:15:58.733
+<v Mark Paolo Mangune>Ohh, see.</v>
+
+00:16:01.133 --> 00:16:22.173
+<v Joseph Larrosa>Okay, yeah, and that absolutely makes sense. I know that in the bright gauge, I've been working on creating some of the dashboards for our Helpdesk. I created a few. I will queue to create Jacob so I can share the link. Or actually, no, I won't share a link. I'll give viewer access to Mark so you can actually view the data.</v>
+
+00:16:09.613 --> 00:16:10.093
+<v Andrea Canlas>Mhm.</v>
+
+00:16:11.173 --> 00:16:11.653
+<v Andrea Canlas>Mhm.</v>
+
+00:16:20.093 --> 00:16:20.573
+<v Andrea Canlas>Mhm.</v>
+
+00:16:22.493 --> 00:16:23.053
+<v Andrea Canlas>Yes.</v>
+
+00:16:23.053 --> 00:16:35.133
+<v Joseph Larrosa>Because there's like a drill down you can do within BrightGauge and as a viewer you'll be able to do it, but if you just have the public link you won't be able to do that. So I just need Mark's email address when you get a chance.</v>
+
+00:16:26.493 --> 00:16:26.653
+<v Andrea Canlas>Ohh.</v>
+
+00:16:30.013 --> 00:16:31.293
+<v Andrea Canlas>Yeah, just see it.</v>
+
+00:16:35.453 --> 00:16:44.413
+<v Andrea Canlas>Yeah, he'll be able to send the recap of everything by email later, so you'll be able to get his email address. Okay.</v>
+
+00:16:45.053 --> 00:16:45.693
+<v Joseph Larrosa>Fantastic.</v>
+
+00:16:46.173 --> 00:16:50.733
+<v Andrea Canlas>All right, perfect. Yeah, I'll send that over to you and how it looks like so.</v>
+
+00:16:48.293 --> 00:16:48.573
+<v Mark Paolo Mangune>Johnson.</v>
+
+00:16:52.413 --> 00:17:03.293
+<v Andrea Canlas>Gotcha. So let's move on. So moving on to performance analysis. This is what I was talking about earlier. Again, just looking at the service desk best practice from ITBD design.</v>
+
+00:17:05.533 --> 00:17:19.213
+<v Andrea Canlas>One thing that we have for the utilization, as you, you know, we have like 80%, which is our target, right? 75 is the previous target that we set for him, but he has been...</v>
+
+00:17:13.373 --> 00:17:13.613
+<v Mark Paolo Mangune>Ohh.</v>
+
+00:17:20.413 --> 00:17:39.253
+<v Andrea Canlas>reaching and moving past that. So ITBD standards should be 80%. So as you can see, all throughout April, he has been hitting that 80% mark. There was just a slight dip within the weeks of four and five, which we wanted to also, one of the topics that will be talking to him would</v>
+
+00:17:20.493 --> 00:17:20.893
+<v Mark Paolo Mangune>Chicken.</v>
+
+00:17:35.293 --> 00:17:35.533
+<v Mark Paolo Mangune>Oh.</v>
+
+00:17:39.333 --> 00:17:58.813
+<v Andrea Canlas>be the monitor ticket complexity? Is it how difficult the ticket was? Or is it just because we escalated it due to, you know, the previous reasons were that the, I think the users weren't available due to the schedule. So I wanted to make sure that that's still the reason why.</v>
+
+00:17:56.173 --> 00:17:56.453
+<v Mark Paolo Mangune>No.</v>
+
+00:17:56.453 --> 00:17:56.813
+<v Joseph Larrosa>Correct.</v>
+
+00:17:59.133 --> 00:18:18.813
+<v Andrea Canlas>And this is all because of, you know, performance issue, which I don't think that it would be. So utilization is strong, but major variants week on week, which is expected. Limit simultaneous open tickets and close before opening a new one, said stick hygiene that we wanted to ask.</v>
+
+00:18:04.653 --> 00:18:04.973
+<v Mark Paolo Mangune>No.</v>
+
+00:18:10.653 --> 00:18:10.893
+<v Mark Paolo Mangune>Oh.</v>
+
+00:18:12.373 --> 00:18:12.973
+<v Mark Paolo Mangune>Perfect.</v>
+
+00:18:18.413 --> 00:18:20.093
+<v Mark Paolo Mangune>Ask all it, all.</v>
+
+00:18:18.893 --> 00:18:37.693
+<v Andrea Canlas>all engineers, all across the partners that we have, to be honest with you, Joe. It seems like the guys that we have also are seniors, but you wouldn't know how many engineers are having difficulty putting in their time accurately, which is not giving them justice for the work that they've done.</v>
+
+00:18:24.093 --> 00:18:24.453
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:18:35.733 --> 00:18:35.973
+<v Mark Paolo Mangune>Object.</v>
+
+00:18:37.773 --> 00:18:56.453
+<v Andrea Canlas>So keep on, got to keep on reminding them about it. And you got to make sure that we stabilize utilization and make sure that the workload are coming in as predictable as we have. Because looking at this number, looks very predictable, but on the third week, that's where he actually peaked for the utilization.</v>
+
+00:18:39.173 --> 00:18:39.373
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:18:40.573 --> 00:18:40.613
+<v Joseph Larrosa>I.</v>
+
+00:18:41.213 --> 00:18:41.613
+<v Mark Paolo Mangune>And...</v>
+
+00:18:57.253 --> 00:19:19.653
+<v Joseph Larrosa>Correct, correct. And for the month of April, this was expected, right? Because usually we have accounting clients, so usually they will submit tickets after hours typically, right? So it wasn't expected to increase that utilization, which is kind of what we saw at least in the weeks two and three, where we're 86 and 88.</v>
+
+00:19:02.133 --> 00:19:02.293
+<v Andrea Canlas>Uh-huh.</v>
+
+00:19:06.653 --> 00:19:07.173
+<v Andrea Canlas>Mmh.</v>
+
+00:19:09.933 --> 00:19:10.173
+<v Andrea Canlas>Yeah.</v>
+
+00:19:14.733 --> 00:19:15.213
+<v Andrea Canlas>Mhm.</v>
+
+00:19:18.813 --> 00:19:18.973
+<v Andrea Canlas>Mm.</v>
+
+00:19:20.093 --> 00:19:20.573
+<v Andrea Canlas>Yes.</v>
+
+00:19:20.253 --> 00:19:39.333
+<v Joseph Larrosa>I do expect that now that we're heading to summer, for example, a lot of our companies, sorry, a lot of our clients also have Summer Fridays now. So I expect there to be a little bit more of a dip in overall utilization. So going, you know, going back to your increase to the 80%,</v>
+
+00:19:30.653 --> 00:19:30.853
+<v Andrea Canlas>Mm.</v>
+
+00:19:39.773 --> 00:19:40.333
+<v Andrea Canlas>Mhm.</v>
+
+00:19:39.773 --> 00:19:58.253
+<v Joseph Larrosa>I'm okay with that and I'd like definitely like to monitor that because I think he does consistently hit above that, you know, but I do expect a dip. So I don't know if there's a way to kind of put two lines here, 75 being like the minimum and like 80% being like where we, you know, where we'd like to, you know, be at if.</v>
+
+00:19:45.133 --> 00:19:45.773
+<v Andrea Canlas>Mhm.</v>
+
+00:19:53.693 --> 00:19:54.093
+<v Andrea Canlas>Sure.</v>
+
+00:19:56.493 --> 00:19:57.053
+<v Andrea Canlas>Max.</v>
+
+00:19:58.573 --> 00:19:59.213
+<v Andrea Canlas>Sweet spot.</v>
+
+00:19:58.733 --> 00:20:14.573
+<v Joseph Larrosa>you know, overachieve, right, basically, at that 80%. Because obviously I also want to take into account not burning out Jacob. That is one of my primary things with not just Jacob, but with the team, make sure that does not burn out either. So I think the sweet spot is between 75 and 80.</v>
+
+00:20:00.733 --> 00:20:01.453
+<v Andrea Canlas>Yeah.</v>
+
+00:20:02.893 --> 00:20:03.293
+<v Andrea Canlas>Sure.</v>
+
+00:20:10.813 --> 00:20:11.293
+<v Andrea Canlas>Mhm.</v>
+
+00:20:12.733 --> 00:20:13.293
+<v Andrea Canlas>Truck.</v>
+
+00:20:15.293 --> 00:20:29.293
+<v Andrea Canlas>Gotcha. We'll do that. We'll make sure that there's a line for 75 and 80. And then at least we can monitor if he's going up and down. That means that that is their actual speed spot for the utilization overall, including after hours also.</v>
+
+00:20:29.533 --> 00:20:29.853
+<v Joseph Larrosa>Kip.</v>
+
+00:20:30.893 --> 00:20:49.133
+<v Andrea Canlas>All right, let's move on to ticket closure and trend analysis. So overall, he had like 250 tickets worked. So we have 50 first week, 56, 57, 56, and 50. Tickets closed are not really that far ahead, but again, slight dip over the</v>
+
+00:20:49.453 --> 00:21:08.373
+<v Andrea Canlas>end of the month. Escalated, the average escalated is probably 2 tickets a day, but there's just a bit of a difference for week 3, which is 11 tickets, which is understandable because he handled more tickets during that time. Resolution rate, 93, 94, 8.</v>
+
+00:20:51.053 --> 00:20:51.533
+<v Joseph Larrosa>Derek.</v>
+
+00:21:05.533 --> 00:21:06.053
+<v Joseph Larrosa>Correct.</v>
+
+00:21:08.573 --> 00:21:27.133
+<v Andrea Canlas>It's still within the average resolution rate. Average is 85%. We have just peaked on the week 5th, which is 70% resolution. So again, may that be the reschedule, may that be the schedule issue of the end user that they're not available. So.</v>
+
+00:21:27.293 --> 00:21:34.173
+<v Andrea Canlas>Using that dashboard that we are trying to make, I think that would make a lot of sense once we have it.</v>
+
+00:21:33.853 --> 00:21:34.253
+<v Joseph Larrosa>Agreed.</v>
+
+00:21:35.373 --> 00:21:37.293
+<v Andrea Canlas>Gotcha. Any questions so far?</v>
+
+00:21:38.013 --> 00:21:39.133
+<v Joseph Larrosa>Nope, think we're good.</v>
+
+00:21:40.173 --> 00:21:40.653
+<v Andrea Canlas>All right.</v>
+
+00:21:41.933 --> 00:22:05.213
+<v Andrea Canlas>So here are the things that we are needing your help with for that Pride Sage dashboard. We want to make sure that we have our SLA tracker. So the reason why actually that we wanted Mukherjee to have that is because we can see it live. And if there's anything that is having issues and ongoing when it comes to Jacob, we can have, we will be able to assist him live.</v>
+
+00:22:04.853 --> 00:22:05.293
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:22:05.613 --> 00:22:26.213
+<v Andrea Canlas>So those are the things that we wanted. We did not want to be reactive on it. So these are the things that I talked to Mark about. So we wanted to be proactive with everything that we do. So I did not want you guys to receive an SLA that is so way out of line. And then we don't even know about it. And so these are just the dashboard that you wanted.</v>
+
+00:22:12.333 --> 00:22:12.573
+<v Mark Paolo Mangune>Ohh.</v>
+
+00:22:23.853 --> 00:22:24.333
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:22:26.373 --> 00:22:46.893
+<v Andrea Canlas>So you have ticket SLA compliance, it's the same day resolution rate, which is part of the resolution rates already, but we in ITBD wanted to also see if it's just first touch also, like same day, which is 24 hours. Next is first touch, which would include in your escalation already. So let's see if we can have that.</v>
+
+00:22:40.893 --> 00:22:41.333
+<v Joseph Larrosa>Okay.</v>
+
+00:22:47.533 --> 00:22:54.093
+<v Andrea Canlas>But yeah, that is pretty much it, the dashboard that we wanted to see on BrightGage. Cool. Questions?</v>
+
+00:22:55.373 --> 00:23:14.333
+<v Joseph Larrosa>No questions, more of I definitely would like to either work with you or Mark on that portion. So we do have SLAs implemented within auto task. I think we're still working through modifying what kind of makes sense. So right, so what we see in the SLAs is definitely going to be a good way of.</v>
+
+00:23:05.773 --> 00:23:06.333
+<v Andrea Canlas>Mhm.</v>
+
+00:23:14.413 --> 00:23:33.693
+<v Joseph Larrosa>you know, understanding if the current SLA makes sense or we really need to adjust it overall as a company. So I definitely want to work with you guys and point with you guys on what exactly we want to see and how we want to display it. So if we could probably set up a meeting for next week, that would work for me if you guys are available.</v>
+
+00:23:15.853 --> 00:23:16.173
+<v Andrea Canlas>Ohh.</v>
+
+00:23:18.213 --> 00:23:18.733
+<v Andrea Canlas>Mhm.</v>
+
+00:23:27.573 --> 00:23:28.053
+<v Andrea Canlas>Mmh.</v>
+
+00:23:30.733 --> 00:23:31.133
+<v Andrea Canlas>Sure.</v>
+
+00:23:36.013 --> 00:23:37.373
+<v Andrea Canlas>Definitely, we are.</v>
+
+00:23:36.333 --> 00:23:37.373
+<v Joseph Larrosa>See.</v>
+
+00:23:36.653 --> 00:23:37.933
+<v Mark Paolo Mangune>Yeah, of course.</v>
+
+00:23:38.293 --> 00:23:44.333
+<v Andrea Canlas>What time do you think you're free? Or day, maybe, next week?</v>
+
+00:23:46.093 --> 00:24:00.013
+<v Joseph Larrosa>So as of right now, because I want to make sure that I can dedicate the time as much as you guys are going to get time to get it done. The best days right now are technically Fridays. Fridays, I don't typically schedule anything ahead of time.</v>
+
+00:23:54.973 --> 00:23:55.453
+<v Andrea Canlas>Mmh.</v>
+
+00:24:00.413 --> 00:24:01.053
+<v Andrea Canlas>Mhm.</v>
+
+00:24:02.973 --> 00:24:06.293
+<v Andrea Canlas>I'm free Friday afternoon.</v>
+
+00:24:03.213 --> 00:24:04.133
+<v Joseph Larrosa>But that.</v>
+
+00:24:09.373 --> 00:24:10.333
+<v Joseph Larrosa>Friday.</v>
+
+00:24:09.613 --> 00:24:10.173
+<v Andrea Canlas>if you are.</v>
+
+00:24:13.613 --> 00:24:14.893
+<v Joseph Larrosa>So.</v>
+
+00:24:17.413 --> 00:24:22.013
+<v Joseph Larrosa>Either the 8th or the 15th, so I have availability this Friday.</v>
+
+00:24:22.653 --> 00:24:23.133
+<v Andrea Canlas>Mhm.</v>
+
+00:24:22.933 --> 00:24:23.773
+<v Joseph Larrosa>Does that work for you?</v>
+
+00:24:24.733 --> 00:24:29.533
+<v Andrea Canlas>This Friday, what time do you have? Like 4 or 3.30? I'm free.</v>
+
+00:24:29.213 --> 00:24:29.693
+<v Joseph Larrosa>And...</v>
+
+00:24:30.773 --> 00:24:33.213
+<v Joseph Larrosa>Yeah, 330 makes sense. That's fine.</v>
+
+00:24:33.213 --> 00:24:36.573
+<v Andrea Canlas>Okay, cool. Are you free marking 330 Friday?</v>
+
+00:24:37.133 --> 00:24:38.093
+<v Mark Paolo Mangune>Yeah, I think so.</v>
+
+00:24:38.813 --> 00:24:48.013
+<v Andrea Canlas>Yeah, you should be. So he will be, he will be free. All right, so I'll send that invite. We'll send that invite 330 on Friday. Cool.</v>
+
+00:24:41.373 --> 00:24:41.533
+<v Mark Paolo Mangune>No.</v>
+
+00:24:42.973 --> 00:24:43.373
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:24:49.813 --> 00:25:06.493
+<v Mark Paolo Mangune>Yeah, maybe on Friday I have a lot of questions with you, Joe, in regards to the bright cage that you guys have. As long as we have the visibility, I think it's going to be helpful for us to, you know, being proactive and making some precautions just to avoid, you know, missing SLAs or breaches.</v>
+
+00:24:56.733 --> 00:24:57.213
+<v Andrea Canlas>Okay, this.</v>
+
+00:25:01.173 --> 00:25:01.373
+<v Andrea Canlas>It.</v>
+
+00:25:09.093 --> 00:25:14.813
+<v Andrea Canlas>So you can probably also provide us what would SLA metrics have you set currently, Joe?</v>
+
+00:25:16.653 --> 00:25:19.773
+<v Joseph Larrosa>Um, well, I mean, that we have...</v>
+
+00:25:20.973 --> 00:25:21.533
+<v Joseph Larrosa>We're not.</v>
+
+00:25:22.973 --> 00:25:43.453
+<v Joseph Larrosa>enforcing the SLA metrics yet. That would be the right way to say it with anybody in the team, nor the Das, nor, you know, nor Jacob after hours. So what I'm trying to get from this is how to gauge those metrics properly, like once they're visible. So I want to give you access for you guys to go see it. I think Jacob would be a good resource to.</v>
+
+00:25:25.613 --> 00:25:25.813
+<v Andrea Canlas>Mm.</v>
+
+00:25:27.493 --> 00:25:27.933
+<v Andrea Canlas>Okay.</v>
+
+00:25:32.733 --> 00:25:33.253
+<v Andrea Canlas>Mhm.</v>
+
+00:25:44.653 --> 00:26:02.573
+<v Joseph Larrosa>you know, gauge it on, at least how to apply it and, you know, for the team. And then obviously I kind of need some recommendations, I guess, from you guys as well on it. And that's why I said I'd rather jump on a call with you guys once we can give you access to the BrightGauge.</v>
+
+00:25:46.173 --> 00:25:46.653
+<v Andrea Canlas>Mhm.</v>
+
+00:25:49.853 --> 00:25:50.333
+<v Andrea Canlas>Mhm.</v>
+
+00:26:02.973 --> 00:26:22.013
+<v Joseph Larrosa>So you can see what metrics we are tracking. And I do have an SLA one, which is very, I think, very generic. It might not be the best yet, but we could work on developing something that makes sense for Jacob. And if we can fine tune it, then I would definitely like to apply it also to our desk as well, the rest of our desk.</v>
+
+00:26:03.053 --> 00:26:03.533
+<v Andrea Canlas>Mhm.</v>
+
+00:26:22.573 --> 00:26:41.773
+<v Andrea Canlas>Gotcha. Sure. We'll have something ready for you Friday. You also have to keep in mind that Jacob's dynamics kind of different because he handled a bit of a emphasis hours and a lot of after hours. So we will be taking that into consideration as well. Cool.</v>
+
+00:26:33.293 --> 00:26:33.693
+<v Joseph Larrosa>Yeah.</v>
+
+00:26:37.613 --> 00:26:38.093
+<v Joseph Larrosa>Correct.</v>
+
+00:26:40.973 --> 00:26:41.533
+<v Joseph Larrosa>Yes.</v>
+
+00:26:41.933 --> 00:26:45.053
+<v Andrea Canlas>All right, so yeah, we'll do that. I'll send you the invite after this call.</v>
+
+00:26:45.973 --> 00:26:46.493
+<v Joseph Larrosa>Sounds good.</v>
+
+00:26:47.253 --> 00:27:07.253
+<v Andrea Canlas>Perfect. All right, moving on. So our way forward, we still have yet to talk about our CSAT or your CSAT program that you wanted to implement. So I think we've talked about this for when was it? Last week during our QBR. So I wanted to know what is the...</v>
+
+00:27:07.693 --> 00:27:10.053
+<v Andrea Canlas>applications you guys are using for the CSAT.</v>
+
+00:27:12.253 --> 00:27:22.413
+<v Joseph Larrosa>It's auto task, right? We haven't used anything else. So it's the built-in surveys from auto task and then we use that to use BrightGage to basically show the statistics for it.</v>
+
+00:27:13.773 --> 00:27:14.733
+<v Andrea Canlas>Oh, okay.</v>
+
+00:27:17.533 --> 00:27:18.013
+<v Andrea Canlas>Gotcha.</v>
+
+00:27:23.133 --> 00:27:34.573
+<v Andrea Canlas>Gotcha, so it auto reports CSAT from from auto task to BrightGate, right? Gotcha. Does it does it have click rates also? No, maybe.</v>
+
+00:27:30.333 --> 00:27:30.813
+<v Joseph Larrosa>Correct.</v>
+
+00:27:34.813 --> 00:27:36.013
+<v Joseph Larrosa>You said quick rates?</v>
+
+00:27:36.253 --> 00:27:37.613
+<v Andrea Canlas>Click, click rates.</v>
+
+00:27:39.853 --> 00:27:42.493
+<v Joseph Larrosa>No, it does not. That's yeah, I don't think.</v>
+
+00:27:41.373 --> 00:27:41.813
+<v Andrea Canlas>Okay.</v>
+
+00:27:44.493 --> 00:28:02.893
+<v Joseph Larrosa>Autotask will give us the basics, so, like, we could see terminal service submitted, what is the rate per technician, like, for example, you know, what the rating is individually, what the rating is as a whole, but it doesn't give like detailed information, like, for example, if a client clicked on clicked on server, opened it, but didn't action it, like, we won't be able to see that type of data, yeah.</v>
+
+00:27:46.933 --> 00:27:47.133
+<v Andrea Canlas>Mm.</v>
+
+00:27:54.493 --> 00:27:55.053
+<v Andrea Canlas>Mhm.</v>
+
+00:28:00.973 --> 00:28:01.373
+<v Andrea Canlas>Yeah.</v>
+
+00:28:02.813 --> 00:28:03.453
+<v Andrea Canlas>Gotcha.</v>
+
+00:28:03.053 --> 00:28:06.093
+<v Joseph Larrosa>No, it's very, it's very generic.</v>
+
+00:28:05.133 --> 00:28:05.773
+<v Andrea Canlas>Generic.</v>
+
+00:28:08.533 --> 00:28:09.933
+<v Joseph Larrosa>So, you know, like...</v>
+
+00:28:12.093 --> 00:28:30.333
+<v Joseph Larrosa>And this will develop later, right? So one of the things we're going to be doing is for the help desk, which will include Jacob, although Jacob I think will be a little bit of a, not a little bit, I think a disadvantage, is we're going to base our...</v>
+
+00:28:14.573 --> 00:28:15.053
+<v Andrea Canlas>Mhm.</v>
+
+00:28:23.853 --> 00:28:23.933
+<v Andrea Canlas>Oh.</v>
+
+00:28:26.333 --> 00:28:26.813
+<v Andrea Canlas>Mhm.</v>
+
+00:28:30.333 --> 00:28:30.573
+<v Andrea Canlas>Vaid.</v>
+
+00:28:30.413 --> 00:28:49.773
+<v Joseph Larrosa>Like, either I'm still confirming if we could do it monthly or quarterly, it will be like a little bit of a HD, you know, competition or goal, right? And it is doable, right? I think I don't know if we discussed this specifically in the last call, but the purpose of it would be 1 to increase our overall surveys, because as an example, we only received about 50 surveys.</v>
+
+00:28:38.893 --> 00:28:39.293
+<v Andrea Canlas>Yeah.</v>
+
+00:28:50.053 --> 00:29:10.973
+<v Joseph Larrosa>out of what, 700 plus tickets that we had the month before. So that's pretty low, right? Yeah, it's pretty low survey response. And that might also come from the fact that it's auto task and it's not something a little bit more, how do I put it? Exactly, 100%. It's not as engaging as like, oh, you know, like.</v>
+
+00:28:53.613 --> 00:28:55.453
+<v Andrea Canlas>Wow. Yeah.</v>
+
+00:29:04.653 --> 00:29:07.493
+<v Andrea Canlas>Not pretty, it's not engaging.</v>
+
+00:29:10.413 --> 00:29:11.133
+<v Andrea Canlas>Exactly.</v>
+
+00:29:11.173 --> 00:29:30.813
+<v Joseph Larrosa>Even the most simple, like a :) that's green, red, or yellow, right? Something as simple as that already attracts somebody to click on it more than just saying, here, you know, submit your service stuff. But which, that's a whole different dynamic I need to approach with our management team. But I definitely want to see if we can increase.</v>
+
+00:29:14.973 --> 00:29:15.693
+<v Andrea Canlas>Definitely.</v>
+
+00:29:16.973 --> 00:29:17.453
+<v Andrea Canlas>True.</v>
+
+00:29:19.853 --> 00:29:20.653
+<v Andrea Canlas>Callers.</v>
+
+00:29:21.933 --> 00:29:22.493
+<v Andrea Canlas>Yeah.</v>
+
+00:29:26.413 --> 00:29:26.893
+<v Andrea Canlas>Mhm.</v>
+
+00:29:27.853 --> 00:29:28.333
+<v Andrea Canlas>Mhm.</v>
+
+00:29:30.893 --> 00:29:50.653
+<v Joseph Larrosa>this, you know, the survey count by also incentivizing our technicians to complete or improve their KPIs with an incentive of money based on whoever either, there's going to be two prizes, right? One will be the prize for total number of who has the highest number of surveys.</v>
+
+00:29:36.853 --> 00:29:37.133
+<v Andrea Canlas>Yeah.</v>
+
+00:29:41.013 --> 00:29:41.613
+<v Andrea Canlas>Mhm.</v>
+
+00:29:50.813 --> 00:29:51.293
+<v Andrea Canlas>Mhm.</v>
+
+00:29:50.973 --> 00:30:12.973
+<v Joseph Larrosa>in either the month or the quarter, depending, again, not sure on that yet, or, and sorry, whoever has the highest survey rating, right, across, you know, again, either that month or the quarter. So I gotta speak with the team because I also wanna make sure that they can work with the clients and build that rapport and obviously that.</v>
+
+00:30:04.293 --> 00:30:04.533
+<v Andrea Canlas>Uh-huh.</v>
+
+00:30:13.053 --> 00:30:33.213
+<v Joseph Larrosa>extra, you know, TLC for the client so they can say, hey, you know, I'm glad everything worked out great. You know, you could do me a favor. You know, can you please submit a survey? You know, that really helps me. Something like that that can help them get there for the incentive, right, and create that little bit of competition amongst themselves to improve the KPIs, but also increase our total surveys because.</v>
+
+00:30:13.533 --> 00:30:13.933
+<v Andrea Canlas>True.</v>
+
+00:30:15.293 --> 00:30:15.773
+<v Andrea Canlas>Yeah.</v>
+
+00:30:18.733 --> 00:30:19.693
+<v Andrea Canlas>Yeah, was that Ray?</v>
+
+00:30:23.133 --> 00:30:23.533
+<v Andrea Canlas>True.</v>
+
+00:30:29.693 --> 00:30:30.253
+<v Andrea Canlas>Mhm.</v>
+
+00:30:33.373 --> 00:30:44.893
+<v Joseph Larrosa>we're kind of lacking on them, right? Like 50 out of 700, that's a huge deficit, you know. So, yeah, well, we're working through that. And the goal is that eventually...</v>
+
+00:30:35.133 --> 00:30:35.373
+<v Andrea Canlas>Yeah.</v>
+
+00:30:37.133 --> 00:30:40.813
+<v Andrea Canlas>Yeah. True.</v>
+
+00:30:39.693 --> 00:30:39.853
+<v Mark Paolo Mangune>He.</v>
+
+00:30:46.333 --> 00:31:04.813
+<v Joseph Larrosa>If I could show the benefits of this process is to also get a program that, you know, whether it's maybe, I think Team GPS can help in that regard, or I know there's another one out there that is specific for like surveys.</v>
+
+00:30:57.293 --> 00:30:58.413
+<v Andrea Canlas>Mhm, yeah.</v>
+
+00:31:05.013 --> 00:31:05.533
+<v Andrea Canlas>Mhm.</v>
+
+00:31:06.173 --> 00:31:25.693
+<v Joseph Larrosa>that we can maybe implement, right? So I just have to show the value behind it, right, behind doing it. And then hopefully we can get another program that can be more extensive, right, to show like the clicks, to show, to give it a little bit, you know, make it prettier, make it, you know, more captivating for the client, engaging for the client, exactly, to be able to want to click on it.</v>
+
+00:31:09.973 --> 00:31:11.373
+<v Andrea Canlas>Sure. Yeah.</v>
+
+00:31:18.013 --> 00:31:18.333
+<v Andrea Canlas>Yeah.</v>
+
+00:31:21.693 --> 00:31:23.613
+<v Andrea Canlas>Engineering, yeah, true.</v>
+
+00:31:25.253 --> 00:31:25.773
+<v Andrea Canlas>Mhm.</v>
+
+00:31:25.773 --> 00:31:26.893
+<v Joseph Larrosa>So we're working through that.</v>
+
+00:31:27.373 --> 00:31:33.693
+<v Andrea Canlas>Gotcha, definitely. And if you wanted a demo for that team GPS, you guys let me know. We can have that.</v>
+
+00:31:34.413 --> 00:31:53.933
+<v Joseph Larrosa>It's been in the back of my mind. We had a we had one a while ago and it that's where I got the whole concept of trying to implement the surveys because we didn't have surveys before. So a year ago we didn't have surveys, right? We only started that about again about a year ago and I think that was really right after the team GPS.</v>
+
+00:31:38.133 --> 00:31:38.613
+<v Andrea Canlas>Mhm.</v>
+
+00:31:44.173 --> 00:31:44.733
+<v Andrea Canlas>Idea.</v>
+
+00:31:46.173 --> 00:31:46.733
+<v Andrea Canlas>Mhm.</v>
+
+00:31:47.933 --> 00:31:48.413
+<v Andrea Canlas>Mhm.</v>
+
+00:31:51.613 --> 00:31:52.093
+<v Andrea Canlas>Mhm.</v>
+
+00:31:54.253 --> 00:32:12.973
+<v Joseph Larrosa>where we realize, you know, we kind of need to implement the whole surveys to get a better understand of our clients. And while we're getting a lot of positive feedback, our rating is consisting of about 5. The engagement is the low part, right? As you notice, 50 out of 700. So working through it, working through it. But definitely I'll let you know if we want to re-engage on maybe another demo.</v>
+
+00:31:54.413 --> 00:31:54.893
+<v Andrea Canlas>Mhm.</v>
+
+00:31:59.453 --> 00:31:59.973
+<v Andrea Canlas>Mhm.</v>
+
+00:32:06.653 --> 00:32:07.053
+<v Andrea Canlas>Yeah.</v>
+
+00:32:08.293 --> 00:32:08.653
+<v Andrea Canlas>Yes.</v>
+
+00:32:13.453 --> 00:32:13.853
+<v Andrea Canlas>Sure.</v>
+
+00:32:14.093 --> 00:32:15.533
+<v Joseph Larrosa>And then, you know, we'll go from there.</v>
+
+00:32:16.173 --> 00:32:35.693
+<v Andrea Canlas>Yeah, and definitely you can use also that, not just for the CSAC, but you can remember that you mentioned that you wanted to give them some incentives and all that other stuff. You can give them, just like bonusly, you can give them points there. So in Team GPS, you can give them points for, you know, a good job and everything that you do, la la la la.</v>
+
+00:32:35.973 --> 00:32:48.493
+<v Andrea Canlas>And then you can do performance manage as well. So it's just like a one-stop shop. So quarterly business, quarterly review, annual review can be there. Even the scorecards can be there. Yeah, so.</v>
+
+00:32:43.933 --> 00:32:44.093
+<v Mark Paolo Mangune>Oh.</v>
+
+00:32:46.293 --> 00:32:47.133
+<v Joseph Larrosa>Can be there as well.</v>
+
+00:32:48.333 --> 00:33:06.973
+<v Joseph Larrosa>Gotcha. Okay, yeah, that that would be interesting. I that I remember the name I was Kruhu, if not wrong, we've used a separate company, so yeah, we we definitely want to look at something eventually to implement, just working my way through showing the value now, and hopefully we can, you know...</v>
+
+00:32:52.333 --> 00:32:52.813
+<v Andrea Canlas>Mhm.</v>
+
+00:32:55.213 --> 00:32:56.253
+<v Andrea Canlas>Yeah, Kris.</v>
+
+00:32:57.813 --> 00:32:58.293
+<v Andrea Canlas>Mhm.</v>
+
+00:33:02.173 --> 00:33:02.653
+<v Andrea Canlas>Mhm.</v>
+
+00:33:05.133 --> 00:33:05.533
+<v Andrea Canlas>Sure.</v>
+
+00:33:07.133 --> 00:33:10.173
+<v Joseph Larrosa>implement other pieces of software like either Team GPS or Gaurav eventually.</v>
+
+00:33:07.773 --> 00:33:07.853
+<v Andrea Canlas>Oh.</v>
+
+00:33:10.173 --> 00:33:29.773
+<v Andrea Canlas>Gotcha. Sure, definitely. Okay, thank you very much for that. So we are already sorted out with the BrightGauge access. So we'll talk about that Friday as well. And last but not least, that would be the Q2 development goal for Jacob. So I think we did talk about this, that aside from him.</v>
+
+00:33:18.813 --> 00:33:19.213
+<v Joseph Larrosa>Yep.</v>
+
+00:33:30.013 --> 00:33:50.653
+<v Andrea Canlas>you know, fixing tickets, working his daily tasks. He also wanted Jacob to be able to make sure that he gained skills, he improved on that side of the fence also. Maybe we can treat it as his, I don't know, orderly rock maybe. Is there anything that you think that can help him? Maybe I think the fundamental</v>
+
+00:33:45.053 --> 00:33:45.613
+<v Joseph Larrosa>Is that?</v>
+
+00:33:51.453 --> 00:34:05.613
+<v Andrea Canlas>certifications that we have is what, AZ 900, MS 900. So those are the basics that I have. Do you think Jacob would actually gain something from that inclusive of the things that he does on a daily basis with you guys?</v>
+
+00:33:58.493 --> 00:33:58.813
+<v Joseph Larrosa>Right.</v>
+
+00:34:06.333 --> 00:34:14.173
+<v Joseph Larrosa>So I think he has a certification for the MS900. If I'm not wrong, we paid for it and he got the certification for the MS900.</v>
+
+00:34:09.373 --> 00:34:09.773
+<v Andrea Canlas>Mm.</v>
+
+00:34:12.533 --> 00:34:13.133
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:34:17.293 --> 00:34:34.733
+<v Joseph Larrosa>So this is where I'm stuck a little bit on, right? And I can definitely, definitely want to engage you guys a little bit more on this. Because you guys touch a lot more other MSPs, a lot of the companies, you know, you guys deal with a lot more, you know, technicians, Helpdesk and stuff like that across, you know, several industries.</v>
+
+00:34:20.373 --> 00:34:20.853
+<v Andrea Canlas>Mhm.</v>
+
+00:34:26.973 --> 00:34:27.613
+<v Andrea Canlas>Down with India.</v>
+
+00:34:29.133 --> 00:34:29.773
+<v Andrea Canlas>Yes.</v>
+
+00:34:33.173 --> 00:34:33.333
+<v Andrea Canlas>Mm.</v>
+
+00:34:35.053 --> 00:34:35.653
+<v Andrea Canlas>Mhm.</v>
+
+00:34:36.333 --> 00:34:54.733
+<v Joseph Larrosa>What are some of the, I guess, certifications that a level, you know, level one, level 2, level 3 Helpdesk could potentially look for achieved that is a benefit to, you know, across, you know, again, multiple MSPs? What are you guys seeing? Because I am having a hard time trying to...</v>
+
+00:34:55.053 --> 00:35:15.453
+<v Joseph Larrosa>think about a curriculum which is I guess something of my personal goals, right, but not covered in my goals and service managers to try and develop something for the entire team. So not just Jake, I am trying to take into account the entire team, but I'm trying to, I don't know where to necessarily start when it comes to what certifications make sense for a Helpdesk, right, or a Helpdesk technician.</v>
+
+00:34:58.973 --> 00:34:59.493
+<v Andrea Canlas>Mhm.</v>
+
+00:35:06.133 --> 00:35:06.293
+<v Andrea Canlas>Uh-huh.</v>
+
+00:35:17.133 --> 00:35:37.173
+<v Joseph Larrosa>One of the areas that I know that are the owner of the company, Ken, is really focusing on is AI. And Jacob has worked on and starting to develop some agents for some of the tasks that he does. You know, and I try to give him time for the research and time for actually the implementation, which is okay.</v>
+
+00:35:17.693 --> 00:35:18.053
+<v Andrea Canlas>Okay.</v>
+
+00:35:24.493 --> 00:35:24.973
+<v Andrea Canlas>Mhm.</v>
+
+00:35:31.493 --> 00:35:31.973
+<v Andrea Canlas>Mmh.</v>
+
+00:35:34.893 --> 00:35:35.373
+<v Andrea Canlas>Mmh.</v>
+
+00:35:37.573 --> 00:35:38.173
+<v Andrea Canlas>Mhm.</v>
+
+00:35:38.973 --> 00:35:56.973
+<v Joseph Larrosa>But that's probably one of the only things I could say is something that we're heavily focused on. But I'm looking for recommendations from you guys, hopefully something that, you know, and again, I wouldn't expect you to go crazy, maybe just one particular item at a time, right? One particular item at a time, because I don't want to necessarily think about like a...</v>
+
+00:35:43.013 --> 00:35:43.493
+<v Andrea Canlas>Mhm.</v>
+
+00:35:50.653 --> 00:35:53.533
+<v Andrea Canlas>Yeah, the basic. Exactly.</v>
+
+00:35:55.053 --> 00:35:55.533
+<v Andrea Canlas>Mhm.</v>
+
+00:35:57.453 --> 00:36:15.173
+<v Joseph Larrosa>full 20 item list, right? I think maybe a three item list of possible certifications that the desk can go for. And then we can talk about whether it be a quarterly or maybe a semi-annual situation or annual situation, you know, for the training, stuff like that, we can have a further conversation. But hoping you guys can give me some insight on that.</v>
+
+00:35:58.893 --> 00:35:59.293
+<v Andrea Canlas>True.</v>
+
+00:36:03.453 --> 00:36:03.973
+<v Andrea Canlas>Mhm.</v>
+
+00:36:07.453 --> 00:36:07.933
+<v Andrea Canlas>Mhm.</v>
+
+00:36:15.773 --> 00:36:32.493
+<v Andrea Canlas>Yeah, true, very much true. And I was leaning towards AI as well, because the last time that we talked during our QBR, we had that bit of a talk when it comes to AI, where you wanted to go from the AI side, right? So I think top of mind that I can think of right now, probably Roost, have you heard of that?</v>
+
+00:36:20.173 --> 00:36:24.653
+<v Joseph Larrosa>I get in the page.</v>
+
+00:36:33.373 --> 00:36:34.333
+<v Andrea Canlas>Bruce Training.</v>
+
+00:36:35.213 --> 00:36:42.093
+<v Joseph Larrosa>Hi, OK. No, I have not heard of the certification, but I have heard of Roost, yes.</v>
+
+00:36:35.453 --> 00:36:36.173
+<v Andrea Canlas>Certification.</v>
+
+00:36:42.333 --> 00:37:02.133
+<v Andrea Canlas>So I think that's something pretty basic that we can start on when it comes to AI and how automation actually works. So I can give you details about it. You can also search it off if you want to, and then we can talk about if that's something. And then Marky and I can probably talk about two more so that you can choose which one would</v>
+
+00:36:44.013 --> 00:36:44.413
+<v Joseph Larrosa>Vaid.</v>
+
+00:36:45.493 --> 00:36:52.493
+<v Joseph Larrosa>Hey, Cortana.</v>
+
+00:36:49.453 --> 00:36:49.773
+<v Mark Paolo Mangune>No.</v>
+
+00:36:55.053 --> 00:36:58.413
+<v Joseph Larrosa>I know.</v>
+
+00:36:57.053 --> 00:36:57.213
+<v Mark Paolo Mangune>One.</v>
+
+00:37:02.653 --> 00:37:07.133
+<v Andrea Canlas>definitely benefit not just Jacob, but of course, your other team members as well.</v>
+
+00:37:02.693 --> 00:37:02.893
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:37:04.413 --> 00:37:22.413
+<v Joseph Larrosa>Yeah, definitely, if you can send me any details that you have, I think the AI portion is a good way to start, and then we can see, obviously, how to implement it for Jacob, and I'll take a look at how I can implement it for the rest of the team.</v>
+
+00:37:11.573 --> 00:37:12.053
+<v Andrea Canlas>Mmh.</v>
+
+00:37:12.893 --> 00:37:13.013
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:37:15.733 --> 00:37:16.213
+<v Andrea Canlas>Mhm.</v>
+
+00:37:22.653 --> 00:37:23.373
+<v Joseph Larrosa>That'd be perfect.</v>
+
+00:37:23.053 --> 00:37:27.853
+<v Andrea Canlas>Sure, definitely. I'll add that to the email we'll be sending you.</v>
+
+00:37:25.493 --> 00:37:25.653
+<v Mark Paolo Mangune>Other.</v>
+
+00:37:28.573 --> 00:37:29.453
+<v Joseph Larrosa>Perfect. Thank you.</v>
+
+00:37:28.733 --> 00:37:47.453
+<v Andrea Canlas>All right. Cool. All right. So I think that is it. I just wanted to talk to you about AI by design. We've already discussed this during our QVR if you needed some consulting. I think Natalie will still be rescheduling, would be scheduling that call, I think, for AI.</v>
+
+00:37:35.493 --> 00:37:35.533
+<v Mark Paolo Mangune>I.</v>
+
+00:37:43.053 --> 00:37:44.093
+<v Joseph Larrosa>OK.</v>
+
+00:37:47.693 --> 00:38:06.413
+<v Andrea Canlas>So I'll follow up with her. And also Build It Live 2026. So it will happen August 3 to 5, 2026. It's on Hyatt in Hudson, Jersey City. So let me know if you want, if you guys wanted to go, if Rebecca wanted to go, so that we can have you registered.</v>
+
+00:37:48.093 --> 00:37:48.413
+<v Joseph Larrosa>Okay.</v>
+
+00:37:55.053 --> 00:37:55.973
+<v Joseph Larrosa>I'm about to welcome.</v>
+
+00:37:57.213 --> 00:37:57.533
+<v Joseph Larrosa>Yeah.</v>
+
+00:37:59.053 --> 00:38:00.773
+<v Joseph Larrosa>Okay. Mhm.</v>
+
+00:38:06.573 --> 00:38:07.173
+<v Andrea Canlas>Service seat.</v>
+
+00:38:08.173 --> 00:38:14.253
+<v Joseph Larrosa>Okay, no, yeah, absolutely. I think a follow-up email reminder to Ken, Rebecca, and I would probably be the best approach.</v>
+
+00:38:14.653 --> 00:38:15.053
+<v Andrea Canlas>Sure.</v>
+
+00:38:17.053 --> 00:38:17.853
+<v Joseph Larrosa>Um, you know...</v>
+
+00:38:19.933 --> 00:38:41.373
+<v Joseph Larrosa>Yeah, yeah, sorry. I'm just thinking real quick in the back of my head. Yeah, any of a reminder would probably be best and then we can discuss internally. We have our huddles in the morning on, you know, Rebecca, Ken and I on Tuesdays and Thursdays. So if you send out something between today and tomorrow, I can flag it and have a follow-up conversation with them on Thursday.</v>
+
+00:38:24.013 --> 00:38:24.333
+<v Andrea Canlas>Sure.</v>
+
+00:38:34.613 --> 00:38:35.093
+<v Andrea Canlas>Mhm.</v>
+
+00:38:42.093 --> 00:38:44.013
+<v Andrea Canlas>Gotcha. Consider done. I'll set it today.</v>
+
+00:38:44.893 --> 00:38:45.453
+<v Joseph Larrosa>Awesome.</v>
+
+00:38:45.133 --> 00:39:03.373
+<v Andrea Canlas>All right, perfect. All right, so again, team GPS, one-on-one, employee engagement, these are the things that we talked about. If you are ready for that demo, I'll send a stack to you so you can scan that QR code that still works, and then we can work something out with the demo.</v>
+
+00:39:04.413 --> 00:39:10.733
+<v Joseph Larrosa>All right, and then one question regarding this slide. Team GPS, would it integrate with Autotask for the stats?</v>
+
+00:39:07.333 --> 00:39:07.933
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:39:12.253 --> 00:39:29.493
+<v Andrea Canlas>That we can work with our AI team. We can probably integrate that. I think we've done that with one of the partners as well, because AutoTask is something that we work with usually. Aside from AutoTask, we use Halo as well and ConnectWise Manage. So yeah.</v>
+
+00:39:15.133 --> 00:39:16.133
+<v Mark Paolo Mangune>The ITBD.</v>
+
+00:39:29.613 --> 00:39:48.333
+<v Joseph Larrosa>Okay. All right, good. That's definitely good to know. Yeah, like I said, well, I'm definitely keeping the team GPS flow in the back of my mind. And especially because we're partnered with you guys already. Between you and I, I'm maybe more biased and lead to resist instead of crew, just because we can definitely, you know, ping you guys for additional support if needed.</v>
+
+00:39:37.333 --> 00:39:37.813
+<v Andrea Canlas>Mmh.</v>
+
+00:39:43.813 --> 00:39:43.933
+<v Andrea Canlas>Yeah.</v>
+
+00:39:44.853 --> 00:39:44.973
+<v Mark Paolo Mangune>Hey.</v>
+
+00:39:45.133 --> 00:39:45.613
+<v Andrea Canlas>Mhm.</v>
+
+00:39:48.333 --> 00:39:48.733
+<v Andrea Canlas>Yeah.</v>
+
+00:39:49.533 --> 00:40:04.573
+<v Joseph Larrosa>But we'll see. Yeah, we'll definitely see. Like, I definitely want to keep this up there and flag to my end because in the long term, after I can show the benefits of this upcoming quarter, I would want us to invest potentially on this. So yeah, I'll get back to you on that.</v>
+
+00:39:49.853 --> 00:39:50.493
+<v Andrea Canlas>Just holler.</v>
+
+00:40:00.493 --> 00:40:00.973
+<v Andrea Canlas>Mhm.</v>
+
+00:40:03.853 --> 00:40:04.333
+<v Andrea Canlas>Cool.</v>
+
+00:40:05.213 --> 00:40:25.133
+<v Andrea Canlas>Gotcha. Thank you very much. All right, so these are just the agents. If you needed it, I'll send it on the deck also as a PDF so you have a copy of it. And these are the services that we have, co-managed infrastructure, Helpdesk, Build It, Shield IT, and now we have AI by Design, AI as a service, by the way.</v>
+
+00:40:25.613 --> 00:40:31.213
+<v Andrea Canlas>So yeah, that is pretty much it. I'll stop sharing my screen. Do you have any questions so far?</v>
+
+00:40:25.773 --> 00:40:26.333
+<v Joseph Larrosa>Gotcha.</v>
+
+00:40:32.093 --> 00:40:33.693
+<v Joseph Larrosa>No, I think you guys answered everything.</v>
+
+00:40:34.973 --> 00:40:53.733
+<v Andrea Canlas>Okay, so I'll be following up. Marky will be sending you the minutes of this meeting, the recap and all that, including the deck itself. After that, I'll be sending you a separate email with everything that we talked about, including the steps for the auto task to bride gauge, that's one, to another email for</v>
+
+00:40:53.813 --> 00:40:58.253
+<v Andrea Canlas>build it live that we're going to send out to you, Rebecca, and Ken.</v>
+
+00:40:59.373 --> 00:41:00.893
+<v Joseph Larrosa>Perfect. Yep.</v>
+
+00:40:59.693 --> 00:41:11.693
+<v Andrea Canlas>Cool. All right. Thank you very much. I think that is it. If you need anything, Joe, you know where to find us. So I'll add Marky to that group. Just holler and then we'll be able to help you with it or with anything.</v>
+
+00:41:07.373 --> 00:41:07.613
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:41:11.413 --> 00:41:30.253
+<v Joseph Larrosa>Yep, and just one more piece of information, Sandra. Andy, as you kind of seen, I'm pretty responsive in Teams. Mark, well, Mark, if you need to communicate with me for anything official, like if you need like an approval for anything, I would still recommend an email just so that Rebecca's on it, and I'll probably give the approval if I can, or if not, I'll let you know in the email.</v>
+
+00:41:12.173 --> 00:41:12.693
+<v Mark Paolo Mangune>Kip.</v>
+
+00:41:30.493 --> 00:41:30.893
+<v Mark Paolo Mangune>Okay.</v>
+
+00:41:30.533 --> 00:41:37.093
+<v Joseph Larrosa>what's going on. But anything else, you could probably reach out to me directly in Teams. That's probably the quickest way to reach me if you need something. All right.</v>
+
+00:41:37.133 --> 00:41:38.213
+<v Mark Paolo Mangune>All right, thank you.</v>
+
+00:41:37.733 --> 00:41:42.053
+<v Andrea Canlas>Thank you. Thanks, Johal. Have a good day. Bye. Great day. Bye bye.</v>
+
+00:41:38.973 --> 00:41:40.213
+<v Joseph Larrosa>Appreciate it, guys. Have a great day.</v>
+
+00:41:41.093 --> 00:41:42.133
+<v Mark Paolo Mangune>Good day, bye-bye.</v>
+
+00:41:41.093 --> 00:41:42.133
+<v Joseph Larrosa>You too. Bye-bye.</v>
+

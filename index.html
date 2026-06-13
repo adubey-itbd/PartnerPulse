@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PartnerPulse — Executive Overview</title>
+<title>AI-Driven Operational Intelligence</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<!-- Chart.js 4.4.4 vendored locally (no CDN — works fully offline) -->
-<script src="vendor/chart.umd.min.js"></script>
 <style>
+/* AI-Driven Operational Intelligence — Executive Overview + Partner 360.
+   Data-driven: both views render from data/_overview.json (built by
+   scripts/build_overview.py from the same caches partner.html uses). There is
+   NO embedded partner array — the feed is the single source of truth. */
 :root {
     --bg-primary: #c9c6ee; --bg-shell: #f7f7fd; --bg-secondary: #ffffff; --border-color: #ececf8;
     --text-primary: #171a2c; --text-secondary: #4b5168; --text-muted: #9298ad;
@@ -27,8 +29,7 @@
     --shadow-grad: 0 10px 22px rgba(109,94,240,0.38);
     --shadow-float: 0 30px 70px rgba(64,58,150,0.22), 0 8px 20px rgba(64,58,150,0.10);
     --transition-fast: 0.15s ease; --transition-normal: 0.25s ease;
-    --card-track: #f4f5fb;
-    --radius-card: 22px;
+    --card-track: #f4f5fb; --radius-card: 22px;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -37,121 +38,93 @@ body {
     font-family: var(--font-body); font-size: 0.95rem; line-height: 1.6;
     overflow-x: hidden; min-height: 100vh;
 }
-/* Soft ambient blobs behind the floating panels (decorative only) */
-body::before, body::after {
-    content: ""; position: fixed; border-radius: 50%;
-    filter: blur(70px); pointer-events: none; z-index: 0;
-}
+body::before, body::after { content: ""; position: fixed; border-radius: 50%; filter: blur(70px); pointer-events: none; z-index: 0; }
 body::before { width: 460px; height: 460px; background: rgba(255,255,255,0.5); top: -140px; right: -120px; }
 body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bottom: -200px; left: -140px; }
 .app-container { display: flex; min-height: 100vh; width: 100vw; gap: 20px; padding: 18px; position: relative; z-index: 1; }
 
-/* ---------- Sidebar (light, matches PartnerPulse redesign) ---------- */
-.sidebar {
-    width: 264px; background-color: var(--bg-secondary);
-    border-radius: 26px; box-shadow: var(--shadow-float);
-    display: flex; flex-direction: column; justify-content: space-between;
-    padding: 22px 18px; flex-shrink: 0;
-    position: sticky; top: 18px; height: calc(100vh - 36px); overflow-y: auto;
-}
+.sidebar { width: 264px; background-color: var(--bg-secondary); border-radius: 26px; box-shadow: var(--shadow-float);
+    display: flex; flex-direction: column; justify-content: space-between; padding: 22px 18px; flex-shrink: 0;
+    position: sticky; top: 18px; height: calc(100vh - 36px); overflow-y: auto; }
 .brand-section { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding: 0 6px; }
-.brand-logo {
-    width: 42px; height: 42px; background: var(--grad-primary);
-    border-radius: 13px; display: flex; align-items: center; justify-content: center;
-    color: #fff; font-weight: 700; font-size: 1.25rem; font-family: var(--font-heading);
-    box-shadow: var(--shadow-grad);
-}
-.brand-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.5px; line-height: 1.1; }
+.brand-logo { width: 42px; height: 42px; background: var(--grad-primary); border-radius: 13px; display: flex; align-items: center;
+    justify-content: center; color: #fff; font-weight: 800; font-size: 0.95rem; font-family: var(--font-heading); box-shadow: var(--shadow-grad); flex-shrink: 0; }
+.brand-name { font-family: var(--font-heading); font-size: 1.02rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.3px; line-height: 1.15; }
 .brand-tag { font-size: 0.72rem; color: var(--text-muted); }
 .nav-menu { display: flex; flex-direction: column; gap: 8px; list-style: none; flex-grow: 1; }
-.nav-link {
-    display: flex; align-items: center; gap: 12px; padding: 13px 16px;
-    color: var(--text-secondary); text-decoration: none; border-radius: 13px; font-weight: 600;
-    transition: var(--transition-fast); cursor: pointer;
-}
+.nav-link { display: flex; align-items: center; gap: 12px; padding: 13px 16px; color: var(--text-secondary); text-decoration: none;
+    border-radius: 13px; font-weight: 600; transition: var(--transition-fast); cursor: pointer; }
 .nav-link:hover { background-color: var(--primary-light); color: var(--primary-hover); }
 .nav-item.active .nav-link { background: var(--grad-primary); color: #fff; font-weight: 700; box-shadow: var(--shadow-grad); }
 .nav-link svg { width: 20px; height: 20px; flex-shrink: 0; }
 .sidebar-footer { padding-top: 16px; margin-top: 16px; }
 .data-sources-title { font-size: 0.7rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; padding: 0 6px; }
 .data-source-row { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-secondary); padding: 3px 6px; }
-
-/* Insights snapshot card (sidebar) — mirrors the portfolio KPIs, filled by renderKPIs() */
-.insights-card {
-    background: var(--bg-secondary); border: 1px solid var(--border-color);
-    border-radius: 16px; padding: 16px; box-shadow: var(--shadow-sm); margin-bottom: 8px;
-}
-.insights-head {
-    display: flex; align-items: center; gap: 9px;
-    font-family: var(--font-heading); font-weight: 700; font-size: 0.9rem; color: var(--text-primary);
-    padding-bottom: 12px; border-bottom: 1px solid var(--card-track);
-}
-.insights-bolt {
-    width: 26px; height: 26px; border-radius: 8px; flex-shrink: 0;
-    background: var(--primary-light); color: var(--primary);
-    display: flex; align-items: center; justify-content: center;
-}
-.insights-bolt svg { width: 14px; height: 14px; }
-.insight-stat { padding: 11px 0; border-bottom: 1px solid var(--card-track); }
-.insight-label { font-size: 0.76rem; font-weight: 600; color: var(--text-secondary); }
-.insight-value { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; line-height: 1.25; }
-.insight-sub { font-size: 0.7rem; color: var(--text-muted); }
-.insights-link {
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-    margin-top: 14px; padding: 10px 12px;
-    border: 1px solid var(--border-color); border-radius: 11px;
-    color: var(--primary); font-weight: 700; font-size: 0.8rem; text-decoration: none;
-    transition: var(--transition-fast);
-}
-.insights-link:hover { background: var(--primary-light); border-color: transparent; }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .status-dot.ok { background: var(--success); box-shadow: 0 0 0 3px rgba(16,185,129,0.15); }
 .status-dot.ai { background: var(--primary); box-shadow: 0 0 0 3px rgba(99,102,241,0.15); }
 
-/* ---------- Main ---------- */
-.main-content {
-    flex-grow: 1; display: flex; flex-direction: column; min-height: calc(100vh - 36px);
-    overflow: hidden; background-color: var(--bg-shell);
-    border-radius: 26px; box-shadow: var(--shadow-float);
-}
-.top-header {
-    min-height: 88px; background-color: transparent;
-    display: flex; align-items: center; justify-content: space-between; padding: 22px 32px 6px; flex-shrink: 0; gap: 16px;
-}
+.main-content { flex-grow: 1; display: flex; flex-direction: column; min-height: calc(100vh - 36px); overflow: hidden;
+    background-color: var(--bg-shell); border-radius: 26px; box-shadow: var(--shadow-float); }
+.top-header { min-height: 88px; display: flex; align-items: center; justify-content: space-between; padding: 22px 32px 6px; flex-shrink: 0; gap: 16px; }
 .header-title-section h1 { font-family: var(--font-heading); font-size: 1.7rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.5px; }
 .header-subtitle { font-size: 0.85rem; color: var(--text-muted); margin-top: 1px; }
+/* Data-coverage window chips (under the title) */
+.data-window { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.dw-chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 9px; background: var(--bg-secondary);
+    border: 1px solid var(--border-color); font-size: 0.74rem; color: var(--text-secondary); box-shadow: var(--shadow-sm); }
+.dw-chip b { color: var(--text-primary); font-weight: 700; }
+.dw-chip svg { width: 13px; height: 13px; color: var(--primary); flex-shrink: 0; }
+.dw-chip.dw-asof { background: var(--primary-light); border-color: #ddd6fb; color: var(--primary-hover); }
+.dw-chip.dw-asof b { color: var(--primary-hover); }
 .header-badges { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+/* Manual data-sync button (driven by refresh.js → server.py /api/refresh) */
+.sync-btn { display: inline-flex; align-items: center; gap: 8px; margin-left: 16px; padding: 10px 18px;
+    border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-secondary); color: var(--text-primary);
+    font-family: inherit; font-size: 0.85rem; font-weight: 700; cursor: pointer; white-space: nowrap; box-shadow: var(--shadow-sm);
+    transition: border-color .15s, color .15s, background-color .15s; }
+.sync-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--primary-hover); background-color: var(--primary-light); }
+.sync-btn:disabled { cursor: default; opacity: .75; }
+.sync-btn .sync-icon { width: 16px; height: 16px; flex-shrink: 0; }
+.sync-btn.syncing .sync-icon { animation: sync-spin 1s linear infinite; }
+.sync-btn.syncing { border-color: var(--primary); color: var(--primary-hover); }
+@keyframes sync-spin { to { transform: rotate(360deg); } }
+.sync-stamp { margin-left: 16px; font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
+.sync-panel { position: fixed; z-index: 1000; min-width: 300px; max-width: 400px; padding: 14px 16px;
+    border: 1px solid var(--border-color); border-radius: 14px; background-color: var(--bg-secondary, #fff); color: var(--text-secondary);
+    box-shadow: var(--shadow-md); font-size: 0.8rem; line-height: 1.35; text-align: left; }
+.sync-panel-title { font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+.sync-step { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; }
+.sync-step-icon { width: 14px; flex-shrink: 0; text-align: center; font-weight: 700; }
+.sync-step.ok .sync-step-icon { color: var(--success); }
+.sync-step.failed .sync-step-icon { color: var(--danger); }
+.sync-step.running .sync-step-icon { color: var(--primary); display: inline-block; animation: sync-spin 1s linear infinite; }
+.sync-step.pending { opacity: .55; }
+.sync-step-body { min-width: 0; }
+.sync-step-detail { margin-top: 2px; color: var(--primary); font-weight: 600; }
+.sync-step.failed .sync-step-detail { color: var(--danger); }
 .page-container { flex-grow: 1; padding: 32px; overflow-y: auto; animation: fadeIn var(--transition-normal); }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 
-/* ---------- Badges ---------- */
 .badge { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 11px; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 .badge-outline { background-color: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-secondary); }
-.badge-success { background-color: var(--success-light); color: var(--success-dark); }
-.badge-warning { background-color: var(--warning-light); color: var(--warning-dark); }
-.badge-danger { background-color: var(--danger-light); color: var(--danger-dark); }
 .badge-info { background-color: var(--info-light); color: var(--info-dark); }
-.badge-primary { background-color: var(--primary-light); color: var(--primary-hover); }
 
-/* ---------- Cards ---------- */
 .card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-card); box-shadow: var(--shadow-sm); padding: 24px; transition: var(--transition-normal); margin-bottom: 24px; }
 .card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 18px; gap: 16px; }
-.card-title { font-family: var(--font-heading); font-size: 1.12rem; font-weight: 700; color: var(--text-primary); }
+.card-title { font-family: var(--font-heading); font-size: 1.12rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 10px; }
 .card-subtitle { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
 
-/* ---------- KPI tiles (soft pastel, first one gradient) ---------- */
+.section-label { font-family: var(--font-heading); font-size: 0.82rem; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.6px; color: var(--text-muted); margin: 4px 2px 14px; display: flex; align-items: center; gap: 10px; }
+
 .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 24px; }
-.kpi-card {
-    background-color: var(--bg-secondary); border-radius: 24px; padding: 20px 22px;
-    display: flex; flex-direction: column;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), var(--shadow-sm);
-}
+.kpi-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.kpi-card { position: relative; background-color: var(--bg-secondary); border-radius: 24px; padding: 20px 22px; display: flex; flex-direction: column;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), var(--shadow-sm); }
 .kpi-top { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-.kpi-icon-wrapper {
-    width: 44px; height: 44px; border-radius: 13px; flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-    background-color: var(--bg-secondary); box-shadow: 0 2px 8px rgba(20,22,52,0.10);
-}
+.kpi-icon-wrapper { width: 44px; height: 44px; border-radius: 13px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    background-color: var(--bg-secondary); box-shadow: 0 2px 8px rgba(20,22,52,0.10); }
 .kpi-icon-wrapper svg { width: 22px; height: 22px; }
 .kpi-card.primary { background: var(--grad-primary); box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 18px 34px rgba(109,94,240,0.42); }
 .kpi-card.primary .kpi-icon-wrapper { background-color: rgba(255,255,255,0.22); box-shadow: none; color: #fff; }
@@ -163,192 +136,102 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
 .kpi-card.warning .kpi-icon-wrapper { color: var(--warning); }
 .kpi-card.danger { background-color: var(--danger-light); box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 16px 30px rgba(239,68,68,0.18); }
 .kpi-card.danger .kpi-icon-wrapper { color: var(--danger); }
+.kpi-card.info { background-color: var(--info-light); box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 16px 30px rgba(14,165,233,0.18); }
+.kpi-card.info .kpi-icon-wrapper { color: var(--info); }
 .kpi-label { font-size: 0.82rem; color: var(--text-secondary); font-weight: 700; }
 .kpi-value { font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--text-primary); line-height: 1.15; }
 .kpi-sub { font-size: 0.74rem; color: var(--text-muted); margin-top: 2px; }
 
-/* ---------- Chart ---------- */
-.chart-box { position: relative; height: 400px; width: 100%; }
-.chart-box canvas { max-width: 100%; }
-
-/* ---------- Risk-ranking chart: tier filters + collapse/expand ---------- */
-.trend-key { color: var(--danger); font-weight: 700; }
-.rank-legend { display: flex; gap: 14px; flex-wrap: wrap; padding-top: 6px; flex-shrink: 0; }
+.page-filter { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; background: var(--bg-secondary); border: 1px solid var(--border-color);
+    border-radius: 16px; box-shadow: var(--shadow-sm); padding: 13px 20px; margin-bottom: 24px; }
+.page-filter-label { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
 .filter-pills { display: flex; gap: 8px; flex-wrap: wrap; }
-.filter-pill {
-    padding: 8px 16px; border-radius: 9999px; font-size: 0.8rem; font-weight: 700;
-    border: 1px solid transparent; color: var(--text-secondary);
-    background: var(--bg-secondary); cursor: pointer; transition: var(--transition-fast);
-    user-select: none; white-space: nowrap;
-    box-shadow: 0 3px 10px rgba(76,70,160,0.12);
-}
+.filter-pill { padding: 8px 16px; border-radius: 9999px; font-size: 0.8rem; font-weight: 700; border: 1px solid transparent; color: var(--text-secondary);
+    background: var(--bg-secondary); cursor: pointer; transition: var(--transition-fast); user-select: none; white-space: nowrap; box-shadow: 0 3px 10px rgba(76,70,160,0.12); }
 .filter-pill:hover { border-color: var(--primary); color: var(--primary); }
 .filter-pill.active { background: var(--grad-primary); border-color: transparent; color: #fff; box-shadow: var(--shadow-grad); }
-
-/* Global page filter bar */
-.page-filter {
-    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
-    background: var(--bg-secondary); border: 1px solid var(--border-color);
-    border-radius: 16px; box-shadow: var(--shadow-sm);
-    padding: 13px 20px; margin-bottom: 24px;
-    position: sticky; top: 0; z-index: 20;
-}
-.page-filter-label { font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
 .page-filter-count { margin-left: auto; font-size: 0.82rem; color: var(--text-secondary); font-weight: 600; }
-.rank-scroll { max-height: 540px; overflow-y: auto; overflow-x: hidden; margin: 0 -6px; padding: 0 6px; }
-.rank-box { position: relative; width: 100%; height: 340px; }
-.rank-empty { padding: 32px; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
-.rank-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--card-track); }
-.rank-count { font-size: 0.8rem; color: var(--text-muted); }
-.rank-toggle {
-    font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; color: var(--primary);
-    background: var(--bg-secondary); border: 1px solid transparent; border-radius: 11px;
-    padding: 8px 16px; cursor: pointer; transition: var(--transition-fast);
-    box-shadow: 0 3px 10px rgba(76,70,160,0.12);
-}
-.rank-toggle:hover { background: var(--primary-light); border-color: var(--primary); }
-.rank-toggle[hidden] { display: none; }
 
-/* Side-by-side row: risk-ranking chart + at-risk table (stacks on narrow screens) */
-.overview-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 24px; align-items: start; }
-.overview-split .card { margin-bottom: 24px; }
-.overview-split .table-wrapper { max-height: 560px; overflow-y: auto; }
-.overview-split .custom-table th { position: sticky; top: 0; z-index: 1; background-color: var(--bg-secondary); }
-
-/* ---------- Sentiment rows ---------- */
-.sent-legend { display: flex; gap: 18px; margin-bottom: 18px; flex-wrap: wrap; }
-.legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text-secondary); }
-.legend-dot { width: 10px; height: 10px; border-radius: 50%; }
-.sent-row { display: grid; grid-template-columns: 200px 1fr 56px; align-items: center; gap: 14px; margin-bottom: 12px; }
-.sent-name { font-weight: 600; font-size: 0.86rem; color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sent-bar { height: 22px; display: flex; border-radius: 6px; overflow: hidden; background: var(--card-track); }
-.sent-seg { height: 100%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.66rem; font-weight: 700; transition: var(--transition-normal); }
-.seg-pos { background-color: var(--success); }
-.seg-neu { background-color: var(--neutral); }
-.seg-neg { background-color: var(--danger); }
-.sent-pct { font-family: var(--font-heading); font-weight: 700; font-size: 0.86rem; color: var(--success-dark); text-align: right; }
-
-/* ---------- Voice of partner ---------- */
-.voice-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-bottom: 24px; }
-.voice-card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); }
-.voice-card-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
-.voice-name { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; color: var(--text-primary); }
-.tone-pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 9999px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
-.tone-pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
-.tone-Negative { background: var(--danger-light); color: var(--danger-dark); }
-.tone-Mixed { background: var(--warning-light); color: var(--warning-dark); }
-.tone-Positive { background: var(--success-light); color: var(--success-dark); }
-.theme-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-.theme-tag { padding: 4px 11px; border-radius: 9999px; border: 1px solid var(--border-color); font-size: 0.72rem; background: var(--card-track); color: var(--text-secondary); }
-.voice-points { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; flex-grow: 1; }
-.voice-points li { position: relative; padding-left: 18px; font-size: 0.84rem; color: var(--text-secondary); }
-.voice-points li::before { content: "›"; position: absolute; left: 4px; top: -1px; color: var(--primary); font-weight: 700; }
-.voice-foot { font-size: 0.74rem; color: var(--text-muted); border-top: 1px solid var(--card-track); padding-top: 10px; }
-.paraphrase-note { font-size: 0.74rem; color: var(--text-muted); font-style: italic; margin-bottom: 16px; }
-
-.recurring-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-.recurring-col h3 { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-.recurring-col h3 .dot { width: 9px; height: 9px; border-radius: 50%; }
-.recurring-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; border: 1px solid var(--border-color); border-radius: 11px; background: var(--card-track); margin-bottom: 8px; }
-.recurring-theme { font-size: 0.86rem; font-weight: 600; color: var(--text-primary); }
-.recurring-meta { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; }
-
-/* ---------- Table ---------- */
 .table-wrapper { overflow-x: auto; }
 .custom-table { width: 100%; border-collapse: collapse; text-align: left; }
-.custom-table th { background-color: var(--bg-secondary); padding: 11px 14px; font-weight: 700; font-size: 0.73rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color); }
-.custom-table td { padding: 13px 14px; border-bottom: 1px solid var(--card-track); font-size: 0.86rem; color: var(--text-primary); }
+.custom-table th { background-color: var(--bg-secondary); padding: 11px 14px; font-weight: 700; font-size: 0.73rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid var(--border-color); white-space: nowrap; }
+.custom-table td { padding: 13px 14px; border-bottom: 1px solid var(--card-track); font-size: 0.86rem; color: var(--text-primary); vertical-align: middle; }
 .custom-table tr:hover td { background-color: var(--card-track); }
 .tier-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 10px; vertical-align: middle; }
 .cell-name { font-weight: 700; }
+.cell-sub { font-size: 0.74rem; color: var(--text-muted); }
 .risk-num { font-family: var(--font-heading); font-weight: 800; font-size: 1rem; }
-.pill { display: inline-flex; padding: 4px 11px; border-radius: 8px; font-size: 0.72rem; font-weight: 700; }
+.pill { display: inline-flex; align-items: center; gap: 5px; padding: 4px 11px; border-radius: 8px; font-size: 0.72rem; font-weight: 700; }
 .pill-danger { background: var(--danger-light); color: var(--danger-dark); }
 .pill-warning { background: var(--warning-light); color: var(--warning-dark); }
 .pill-success { background: var(--success-light); color: var(--success-dark); }
+.pill-muted { background: var(--card-track); color: var(--text-muted); }
+.pill-info { background: var(--info-light); color: var(--info-dark); }
+.flag-stale { font-size: 0.66rem; font-weight: 700; color: var(--warning-dark); background: var(--warning-light); border-radius: 6px; padding: 1px 6px; margin-left: 6px; white-space: nowrap; }
+.sip-count { font-family: var(--font-heading); font-weight: 800; }
 
-.footnote { font-size: 0.76rem; color: var(--text-muted); margin-top: 8px; line-height: 1.6; max-width: 1000px; }
+/* Sample-size badge */
+.nbadge { display: inline-flex; align-items: center; gap: 4px; font-size: 0.7rem; font-weight: 700; color: var(--text-muted); }
+.nbadge.low { color: var(--warning-dark); }
+.lowsample-tag { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; color: var(--warning-dark);
+    background: var(--warning-light); border-radius: 6px; padding: 1px 6px; margin-left: 6px; }
 
-/* ---------- Accessibility ---------- */
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+/* Sentiment rows */
+.sent-legend { display: flex; gap: 18px; margin-bottom: 18px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text-secondary); }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+.sent-row { display: grid; grid-template-columns: 220px 1fr 150px; align-items: center; gap: 14px; margin-bottom: 12px; }
+.sent-name { font-weight: 600; font-size: 0.86rem; color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sent-bar { height: 22px; display: flex; border-radius: 6px; overflow: hidden; background: var(--card-track); }
+.sent-seg { height: 100%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.66rem; font-weight: 700; }
+.seg-pos { background-color: var(--success); } .seg-neu { background-color: var(--neutral); } .seg-neg { background-color: var(--danger); }
+.sent-meta { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.sent-pct { font-family: var(--font-heading); font-weight: 700; font-size: 0.86rem; color: var(--success-dark); text-align: right; }
+.nps-chip { font-size: 0.7rem; font-weight: 800; border-radius: 7px; padding: 2px 7px; }
+.nps-good { background: var(--success-light); color: var(--success-dark); }
+.nps-mid { background: var(--warning-light); color: var(--warning-dark); }
+.nps-bad { background: var(--danger-light); color: var(--danger-dark); }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 1380px) {
-    .overview-split { grid-template-columns: 1fr; }
-}
-@media (max-width: 1100px) {
-    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-    .voice-grid { grid-template-columns: 1fr; }
-    .recurring-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 760px) {
-    .sidebar { display: none; }
-    .kpi-grid { grid-template-columns: 1fr; }
-    .sent-row { grid-template-columns: 120px 1fr 44px; gap: 8px; }
-    .page-container, .top-header { padding-left: 18px; padding-right: 18px; }
-}
-/* Manual data-sync button (refresh.js drives it against /api/refresh) */
-.sync-btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-left: 16px; padding: 10px 18px;
-    border: 1px solid var(--border-color); border-radius: 12px;
-    background-color: var(--bg-secondary); color: var(--text-primary);
-    font-family: inherit; font-size: 0.85rem; font-weight: 700;
-    cursor: pointer; white-space: nowrap; box-shadow: var(--shadow-sm);
-    transition: border-color .15s, color .15s, background-color .15s;
-}
-.sync-btn:hover:not(:disabled) {
-    border-color: var(--primary); color: var(--primary-hover);
-    background-color: var(--primary-light);
-}
-.sync-btn:disabled { cursor: default; opacity: .75; }
-.sync-btn .sync-icon { width: 16px; height: 16px; flex-shrink: 0; }
-.sync-btn.syncing .sync-icon { animation: sync-spin 1s linear infinite; }
-.sync-btn.syncing { border-color: var(--primary); color: var(--primary-hover); }
-@keyframes sync-spin { to { transform: rotate(360deg); } }
+/* Recurring themes */
+.recurring-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.recurring-col h3 { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.recurring-col h3 .dot { width: 9px; height: 9px; border-radius: 50%; }
+.recurring-item { border: 1px solid var(--border-color); border-radius: 11px; background: var(--card-track); margin-bottom: 8px; overflow: hidden; }
+.recurring-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; cursor: pointer; transition: var(--transition-fast); }
+.recurring-row:hover { background: var(--primary-light); }
+.recurring-theme { font-size: 0.86rem; font-weight: 600; color: var(--text-primary); }
+.recurring-meta { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.recurring-caret { transition: transform .15s ease; display: inline-block; }
+.recurring-item.open .recurring-caret { transform: rotate(180deg); }
+.recurring-partners { display: none; flex-wrap: wrap; gap: 6px; padding: 10px 14px; border-top: 1px dashed var(--border-color); background: var(--bg-secondary); }
+.recurring-item.open .recurring-partners { display: flex; }
+.rp-link { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 9999px; background: var(--bg-secondary);
+    border: 1px solid var(--border-color); font-size: 0.74rem; color: var(--primary-hover); text-decoration: none; font-weight: 600; transition: var(--transition-fast); }
+.rp-link:hover { background: var(--primary-light); border-color: var(--primary); }
 
-/* "Last sync" timestamp (injected before the button by refresh.js) */
-.sync-stamp {
-    margin-left: 16px;
-    font-size: 0.75rem; color: var(--text-muted);
-    white-space: nowrap;
-}
+/* Action backlog */
+.backlog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.backlog-card { border: 1px solid var(--border-color); border-radius: 14px; padding: 14px 16px; background: var(--card-track); }
+.backlog-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.backlog-name { font-weight: 700; font-size: 0.9rem; }
+.backlog-am { font-size: 0.74rem; color: var(--text-muted); }
+.backlog-stats { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.footnote { font-size: 0.76rem; color: var(--text-muted); margin-top: 14px; line-height: 1.6; }
+.empty { padding: 24px; text-align: center; color: var(--text-muted); }
 
-/* Live sync progress panel (injected under the button by refresh.js) */
-.sync-panel {
-    position: fixed; z-index: 1000;
-    min-width: 300px; max-width: 400px;
-    padding: 14px 16px;
-    border: 1px solid var(--border-color); border-radius: 14px;
-    background-color: var(--bg-secondary, #fff); color: var(--text-secondary);
-    box-shadow: var(--shadow-md);
-    font-size: 0.8rem; line-height: 1.35; text-align: left;
-}
-.sync-panel-title { font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
-.sync-step { display: flex; align-items: flex-start; gap: 8px; padding: 4px 0; }
-.sync-step-icon { width: 14px; flex-shrink: 0; text-align: center; font-weight: 700; }
-.sync-step.ok .sync-step-icon { color: var(--success); }
-.sync-step.failed .sync-step-icon { color: var(--danger); }
-.sync-step.running .sync-step-icon {
-    color: var(--primary);
-    display: inline-block; animation: sync-spin 1s linear infinite;
-}
-.sync-step.pending { opacity: .55; }
-.sync-step-body { min-width: 0; }
-.sync-step-detail { margin-top: 2px; color: var(--primary); font-weight: 600; }
-.sync-step.failed .sync-step-detail { color: var(--danger); }
+@media (max-width: 1100px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } .recurring-grid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .sidebar { display: none; } .kpi-grid { grid-template-columns: 1fr; } .sent-row { grid-template-columns: 120px 1fr 90px; gap: 8px; } }
 </style>
 </head>
 <body>
 <div class="app-container">
-    <!-- Sidebar -->
     <aside class="sidebar">
         <div>
             <div class="brand-section">
-                <div class="brand-logo">P</div>
+                <div class="brand-logo">AI</div>
                 <div>
-                    <div class="brand-name">PartnerPulse</div>
-                    <div class="brand-tag">Churn Intelligence</div>
+                    <div class="brand-name">AI-Driven Operational Intelligence</div>
+                    <div class="brand-tag">Partner health &amp; churn risk</div>
                 </div>
             </div>
             <ul class="nav-menu">
@@ -367,146 +250,115 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
             </ul>
         </div>
         <div class="sidebar-footer">
-            <!-- Insights snapshot — same portfolio-wide numbers as the KPI tiles, filled by renderKPIs() -->
-            <div class="insights-card">
-                <div class="insights-head">
-                    <span class="insights-bolt"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg></span>
-                    Insights Snapshot
-                </div>
-                <div class="insight-stat">
-                    <div class="insight-label">High Risk Partners</div>
-                    <div class="insight-value" id="ins-high" style="color:var(--danger)">—</div>
-                    <div class="insight-sub">churn risk ≥ 45</div>
-                </div>
-                <div class="insight-stat">
-                    <div class="insight-label">Renewals at Risk</div>
-                    <div class="insight-value" id="ins-renewals" style="color:var(--warning)">—</div>
-                    <div class="insight-sub">derived: risk + call tone</div>
-                </div>
-                <div class="insight-stat">
-                    <div class="insight-label">Avg Churn Risk</div>
-                    <div class="insight-value" id="ins-avg" style="color:var(--primary)">—</div>
-                    <div class="insight-sub">scale 0–100</div>
-                </div>
-                <a class="insights-link" href="#at-risk" id="insights-viewall">View all insights <span aria-hidden="true">→</span></a>
-            </div>
             <div class="data-sources-title">Data Sources</div>
             <div class="data-source-row"><span class="status-dot ok"></span> HALO PSA</div>
             <div class="data-source-row"><span class="status-dot ok"></span> TeamGPS · CSAT/NPS</div>
             <div class="data-source-row"><span class="status-dot ok"></span> Transcripts &amp; Decks</div>
             <div class="data-source-row"><span class="status-dot ai"></span> Azure gpt-5.4</div>
+            <div class="data-sources-title" style="margin-top:16px;">Data</div>
+            <div class="data-source-row" id="feed-stamp" style="font-size:0.74rem;">loading…</div>
         </div>
     </aside>
 
-    <!-- Main -->
     <main class="main-content" id="top">
         <header class="top-header">
             <div class="header-title-section">
                 <h1 id="view-title">Executive Overview</h1>
-                <p class="header-subtitle" id="view-subtitle">Real-time overview of partner health and churn risk</p>
+                <p class="header-subtitle" id="view-subtitle">Real-time partner health, churn risk &amp; operational signal across the book</p>
+                <div class="data-window" id="data-window"></div>
             </div>
-            <div class="header-badges" id="header-badges"></div>
+            <div class="header-badges">
+                <span class="badge badge-info">Azure gpt-5.4</span>
+            </div>
             <button class="sync-btn" id="sync-btn" type="button" title="Pull fresh HaloPSA + TeamGPS data and re-run the AI analysis">
                 <svg class="sync-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>
                 <span class="sync-label">Sync Data</span>
             </button>
         </header>
 
+        <!-- View: Executive Overview -->
         <section class="page-container" id="view-overview">
-            <!-- Global filter — one control drives every per-partner section below.
-                 Defaults to the flagged book so leadership isn't shown all 50 at once. -->
+            <div class="section-label">Portfolio health</div>
+            <div class="kpi-grid" id="kpi-health"></div>
+
+            <div class="section-label">Operational &amp; experience signal</div>
+            <div class="kpi-grid kpi-grid-3" id="kpi-new"></div>
+
             <div class="page-filter">
                 <span class="page-filter-label">Show partners</span>
-                <div class="filter-pills" id="global-filters" role="tablist" aria-label="Filter all partner sections by risk tier">
+                <div class="filter-pills" id="global-filters" role="tablist" aria-label="Filter partner sections by risk tier">
                     <span class="filter-pill active" data-tier="Attention" role="tab">Needs attention</span>
                     <span class="filter-pill" data-tier="High" role="tab">High</span>
                     <span class="filter-pill" data-tier="Watch" role="tab">Watch</span>
                     <span class="filter-pill" data-tier="Healthy" role="tab">Healthy</span>
                     <span class="filter-pill" data-tier="All" role="tab">All</span>
                 </div>
-                <span class="page-filter-count" id="page-filter-count"></span>
+                <span class="page-filter-count" id="filter-count"></span>
             </div>
 
-            <!-- 1. KPI strip — portfolio-wide totals (the filter scopes the lists, not the summary) -->
-            <div class="kpi-grid" id="kpi-grid"></div>
-
-            <!-- 2. Who needs attention (chart) + at-risk table, side by side -->
-            <div class="overview-split">
+            <!-- At-risk partners -->
             <div class="card">
                 <div class="card-header">
                     <div>
-                        <h2 class="card-title">Who needs attention</h2>
-                        <div class="card-subtitle">Partners ranked by churn risk, worst first · <span class="trend-key">▼</span> = declining trend · expand for the full filtered list</div>
-                    </div>
-                    <div class="rank-legend" aria-hidden="true">
-                        <span class="legend-item"><span class="legend-dot" style="background:var(--danger)"></span> High</span>
-                        <span class="legend-item"><span class="legend-dot" style="background:var(--warning)"></span> Watch</span>
-                        <span class="legend-item"><span class="legend-dot" style="background:var(--success)"></span> Healthy</span>
-                    </div>
-                </div>
-                <div class="rank-scroll">
-                    <div class="rank-box" id="rank-box">
-                        <canvas id="riskRankChart" role="img" aria-label="Horizontal bar chart ranking partners by churn risk, worst first, coloured by risk tier."></canvas>
-                    </div>
-                </div>
-                <div class="rank-empty" id="rank-empty" hidden>No partners in this tier.</div>
-                <div class="rank-footer">
-                    <span class="rank-count" id="rank-count"></span>
-                    <button type="button" class="rank-toggle" id="rank-toggle"></button>
-                </div>
-                <div class="sr-only" id="bubble-fallback"></div>
-            </div>
-
-            <!-- At-risk partners table -->
-            <div class="card" id="at-risk">
-                <div class="card-header">
-                    <div>
                         <h2 class="card-title">At-risk partners</h2>
-                        <div class="card-subtitle">Filtered accounts ranked by churn risk · renewal risk derived from risk + call tone</div>
+                        <div class="card-subtitle">Filtered accounts ranked by churn risk · select a partner to open their Partner 360 detail</div>
                     </div>
                 </div>
                 <div class="table-wrapper">
                     <table class="custom-table">
                         <thead>
                             <tr>
-                                <th>Partner</th><th>Risk</th><th>Call tone</th><th>Top driver</th><th>Renewal risk</th>
+                                <th>Partner</th>
+                                <th>Risk</th>
+                                <th>Call tone</th>
+                                <th>Top driver</th>
+                                <th>SIP</th>
+                                <th>Action Driver</th>
                             </tr>
                         </thead>
                         <tbody id="risk-table-body"></tbody>
                     </table>
                 </div>
-                <p class="footnote">
-                    Sentiment is sourced from TeamGPS CSAT (NPS where CSAT is unavailable). Churn risk, drivers, and talking points are produced by Azure gpt-5.4; call themes are paraphrased from service-review transcripts (never verbatim). HALO PSA contributes meeting minutes and action items only.
-                    Call tone is derived from sentiment trend and negative share. No revenue figures, historical trends, or bulk ticket SLA/resolution metrics are shown — this view is account-by-account, and SLA is an end-customer signal rather than a partner-churn signal.
-                </p>
+                <p class="footnote" id="table-foot"></p>
             </div>
-            </div><!-- /overview-split -->
 
-            <!-- 3. Customer sentiment per partner -->
+            <!-- Action backlog -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Action backlog</h2>
+                        <div class="card-subtitle">Open service-review actions by partner · overdue = past a firm due date · sorted by overdue, then open</div>
+                    </div>
+                </div>
+                <div class="backlog-grid" id="backlog-grid"></div>
+                <p class="footnote">Most open actions carry no firm due date (“TBD/Ongoing”) — itself a governance signal the AI assessments repeatedly flag. Only items with a concrete past date count as <b>overdue</b>.</p>
+            </div>
+
+            <!-- Customer sentiment per partner -->
             <div class="card">
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">Customer sentiment per partner</h2>
-                        <div class="card-subtitle">TeamGPS CSAT sentiment split (NPS where CSAT is unavailable) · sorted by negative share</div>
+                        <div class="card-subtitle">TeamGPS CSAT split (NPS where CSAT is unavailable) · sample size shown, low-n flagged · per-partner NPS = promoters − detractors</div>
                     </div>
                 </div>
-                <div class="sent-legend" aria-hidden="true">
+                <div class="sent-legend">
                     <span class="legend-item"><span class="legend-dot" style="background:var(--success)"></span> Positive</span>
                     <span class="legend-item"><span class="legend-dot" style="background:var(--neutral)"></span> Neutral</span>
                     <span class="legend-item"><span class="legend-dot" style="background:var(--danger)"></span> Negative</span>
+                    <span class="legend-item"><span class="lowsample-tag">low n</span> fewer than 10 rated responses</span>
                 </div>
                 <div id="sentiment-rows"></div>
             </div>
 
-            <!-- 4. Voice of partner -->
+            <!-- Recurring themes -->
             <div class="card">
                 <div class="card-header">
                     <div>
-                        <h2 class="card-title">Voice of partner — from call transcripts</h2>
-                        <div class="card-subtitle">Key themes per account, paraphrased by gpt-5.4 from service-review transcripts (never verbatim)</div>
+                        <h2 class="card-title">Recurring themes across partners</h2>
+                        <div class="card-subtitle">gpt-5.4 theme tags aggregated over the filtered partners · click any theme to reveal — and open — the partners behind it</div>
                     </div>
                 </div>
-                <div class="voice-grid" id="voice-grid"></div>
                 <div class="recurring-grid">
                     <div class="recurring-col">
                         <h3><span class="dot" style="background:var(--danger)"></span> Recurring concerns</h3>
@@ -518,10 +370,9 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <!-- View: Partner 360 — the full clickable partner list -->
+        <!-- View: Partner 360 — full clickable partner list -->
         <section class="page-container" id="view-partners" style="display:none;">
             <div class="card">
                 <div class="card-header">
@@ -546,7 +397,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                         <tbody id="p360-table-body"></tbody>
                     </table>
                 </div>
-                <div class="rank-empty" id="p360-empty" hidden>No partners in this tier.</div>
+                <div class="empty" id="p360-empty" hidden>No partners in this tier.</div>
             </div>
         </section>
     </main>
@@ -555,306 +406,46 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
 <script>
 (function () {
     "use strict";
-
-    // =========================================================================
-    // DATA MODEL — real ITBD partners (built from HALO PSA + TeamGPS + Azure gpt-5.4,
-    // mirrored from data/_index.json and the per-partner caches). Swap this array for
-    // a live feed and the whole page re-derives.
-    //
-    // Field provenance:
-    //   churnRisk ........ gpt-5.4 churn engine (risk_score)
-    //   csatPositivePct .. positive share of TeamGPS CSAT sentiment; NPS promoters where
-    //                      CSAT is unavailable. Same denominator as `sentiment`.
-    //   reviewVolume ..... count of CSAT responses (NPS responses where CSAT is absent)
-    //   sentiment ........ TeamGPS CSAT split (NPS split where CSAT absent), sums to 100
-    //   sentimentTrend ... gpt-5.4 sentiment_trend
-    //   topDriver/themes . gpt-5.4 churn drivers (paraphrased factors — not verbatim quotes)
-    //   talkingPoints .... paraphrased from the gpt-5.4 account summary (non-verbatim)
-    //   lastCall/calls ... HALO PSA service-review (historical) calls
-    // callTone is DERIVED below from sentimentTrend + negative share (no raw transcript
-    //   tone signal exists in the source yet — see deriveCallTone). TODO(feed): replace
-    //   with a real per-call tone label once transcript analysis emits one.
-    // =========================================================================
-    const partners = [
-        // ---- BEGIN real partners pulled by build_real_partners.py ----
-        { name: "Netgain", slug: "netgain", churnRisk: 26, csatPositivePct: 93, reviewVolume: 118,
-          sentiment: { positive: 93, neutral: 7, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Account team rates churn risk low and says the account is improving",
-          themes: ["Account team rates churn risk low and says the account is improving", "Minor service improvement plan remains active", "Recent reviews report positive engagement and no major escalations", "Quality issues were raised earlier around updates, documentation, and troubleshooting"],
-          talkingPoints: ["Netgain appears generally healthy with strong recent service reviews, positive CSAT, and no major escalations, though the account remains Amber due to a minor SIP and lingering quality/documentation concerns..", "Recent sentiment suggests the relationship is moving in the right direction rather than deteriorating.."],
-          lastCall: "2026-06-01", callsAnalyzed: 3 },
-        { name: "F12", slug: "f12", churnRisk: 22, csatPositivePct: 88, reviewVolume: 114,
-          sentiment: { positive: 88, neutral: 9, negative: 3 }, sentimentTrend: "Improving",
-          topDriver: "Strong overall partner sentiment and executive sponsorship",
-          themes: ["Strong overall partner sentiment and executive sponsorship", "Recent service reviews were broadly positive across teams", "Open role coverage and staffing continuity being actively managed", "Recurring named-engineer process/attendance/productivity concerns"],
-          talkingPoints: ["F12 appears healthy with strong recent service review feedback, multiple promoter NPS responses, and account-team ground truth marked Green/Low cancel risk..", "Some isolated engineer-specific coaching items remain, but there are no broad service escalations and recent reviews emphasize stability, improvement, and positive contribution across teams.."],
-          lastCall: "2026-06-10", callsAnalyzed: 5 },
-        { name: "RedHelm - 1Path", slug: "redhelm-1path", churnRisk: 32, csatPositivePct: 98, reviewVolume: 133,
-          sentiment: { positive: 98, neutral: 2, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong customer sentiment and service satisfaction",
-          themes: ["Strong customer sentiment and service satisfaction", "Account team indicates moderate but not acute churn exposure", "Recent business review and contract renewal are positive retention signals", "Open staffing and coverage planning create delivery risk"],
-          talkingPoints: ["Relationship health appears generally positive with renewed contracts, a recently strong QBR, closed SIPs, and consistently strong CSAT/NPS sentiment..", "Residual churn risk remains from NOC offboarding, open staffing needs, and several operational improvement items that were still being worked through in recent service reviews.."],
-          lastCall: "2026-06-07", callsAnalyzed: 2 },
-        { name: "Proda Technologies", slug: "proda-technologies", churnRisk: 72, csatPositivePct: 88, reviewVolume: 8,
-          sentiment: { positive: 88, neutral: 12, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Account officially marked Red with high cancel risk tied to hardware project issues",
-          themes: ["Account officially marked Red with high cancel risk tied to hardware project issues", "Active service improvement/escalation in place", "Open operational issues in ITAM and hardware logistics", "Recent delivery inconsistency from named engineer"],
-          talkingPoints: ["The relationship shows strong historical satisfaction and recent praise for engineers, but churn risk remains high because the account is explicitly flagged Red due to unresolved issues in the Hardware Project and an active SIP..", "Operational concerns around ITAM/hardware logistics and at least one recent delivery miss indicate execution risk despite otherwise positive sentiment.."],
-          lastCall: "2026-06-02", callsAnalyzed: 1 },
-        { name: "Amoskeag Network Consulting Group LLC", slug: "amoskeag-network-consulting-group-llc", churnRisk: 34, csatPositivePct: 100, reviewVolume: 16,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Operational transition with replacement engineer",
-          themes: ["Operational transition with replacement engineer", "Training progress needs monitoring", "Strong partner satisfaction and communication", "Consistently positive support experience"],
-          talkingPoints: ["Overall sentiment is positive with perfect CSAT and promoter NPS, but the account carries a medium churn flag due to a staff replacement and the need to ensure successful training progress..", "Current risk appears operational rather than relationship-driven.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "Granite Networks Inc", slug: "granite-networks-inc", churnRisk: 22, csatPositivePct: 100, reviewVolume: 49,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Direct positive partner feedback on service quality", "Active engineer performance development focus", "Coaching needed for named engineers and service process discipline"],
-          talkingPoints: ["Granite Networks appears healthy with consistently strong CSAT/NPS and explicit praise for the NOC team..", "The main risk is limited to engineer performance development and coaching, particularly around Anton/Sophia, but current account-team flags remain low risk and hypercare green.."],
-          lastCall: "2026-06-07", callsAnalyzed: 1 },
-        { name: "Secure Future Tech Solutions", slug: "secure-future-tech-solutions", churnRisk: 42, csatPositivePct: 100, reviewVolume: 29,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Engineer offboarding creates account instability",
-          themes: ["Engineer offboarding creates account instability", "Named-engineer performance concerns impacted trust/value perception", "Need to sustain value with remaining engineer", "Strong customer satisfaction offsets churn pressure"],
-          talkingPoints: ["Overall partner sentiment is very positive with strong CSAT/NPS and recent praise for both engineers, but churn risk is elevated by the planned offboarding of Dave due to attendance and overhead concerns..", "The relationship appears stable today, with risk concentrated around proving ongoing value and utilization after Dave’s June 12 departure.."],
-          lastCall: "2026-05-05", callsAnalyzed: 1 },
-        { name: "Atlantic PC Inc", slug: "atlantic-pc-inc", churnRisk: 8, csatPositivePct: 100, reviewVolume: 12,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong partner satisfaction and advocacy",
-          themes: ["Strong partner satisfaction and advocacy", "Consistently positive service feedback", "Named engineer performance is viewed positively", "Operational performance improved in the most recent review"],
-          talkingPoints: ["Atlantic PC appears very healthy, with strong positive feedback, perfect recent CSAT/NPS, and no service concerns raised in the latest reviews..", "Performance trends are stable to improving, and the few open items are administrative rather than risk-related.."],
-          lastCall: "2026-05-20", callsAnalyzed: 2 },
-        { name: "Continuous Networks", slug: "continuous-networks", churnRisk: 12, csatPositivePct: 100, reviewVolume: 45,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Repeated praise for ITBD team quality and partnership value", "Named engineers viewed as valued assets", "Recent staffing transition creates minor continuity risk"],
-          talkingPoints: ["Continuous Networks appears healthy with consistently strong CSAT/NPS sentiment and multiple explicit endorsements of the ITBD team..", "The only notable risk is the recent staffing transition related to Kelly's maternity replacement, but the account is currently flagged green/low risk.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "APM IT Solutions", slug: "apm-it-solutions", churnRisk: 61, csatPositivePct: 100, reviewVolume: 0,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Account is in hypercare with explicit customer-experience concerns",
-          themes: ["Account is in hypercare with explicit customer-experience concerns", "Operational visibility gaps are affecting confidence", "Access/setup dependencies remain unresolved", "Project execution delays on customer-facing compliance work"],
-          talkingPoints: ["APM IT Solutions shows moderate churn risk driven by active hypercare, account-team concern over asset setup and customer experience, and unresolved visibility/access issues impacting trust and execution..", "Recent notes indicate collaboration is continuing, but key actions remain open and project delays around the Mercer Street Friends audit are a material concern.."],
-          lastCall: "2026-05-18", callsAnalyzed: 1 },
-        { name: "Matador Networks", slug: "matador-networks", churnRisk: 12, csatPositivePct: 100, reviewVolume: 51,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently strong customer satisfaction",
-          themes: ["Consistently strong customer satisfaction", "Direct praise for engineers and leadership", "Operational support viewed as business-critical", "Minor governance gap from overdue QBR"],
-          talkingPoints: ["Matador Networks appears healthy with consistently strong CSAT/NPS and repeated praise for both dedicated engineers and ITBD leadership support..", "The only notable gap is an overdue QBR and a pending request to help define an ITBD-recommended KPI.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "Vitis Tech", slug: "vitis-tech", churnRisk: 12, csatPositivePct: 100, reviewVolume: 13,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong partner satisfaction and advocacy",
-          themes: ["Strong partner satisfaction and advocacy", "No active delivery risk or escalation", "Successful onboarding and positive view of replacements", "New engineers not yet at full productivity"],
-          talkingPoints: ["The Vitis Tech relationship appears healthy with strong CSAT/NPS, no active escalations, and positive feedback on account management and service delivery..", "The only notable watchpoint is that newly onboarded engineers are still ramping and need continued coaching to reach full productivity over the next 60-90 days.."],
-          lastCall: "2026-06-09", callsAnalyzed: 1 },
-        { name: "Community IT", slug: "community-it", churnRisk: 38, csatPositivePct: 97, reviewVolume: 77,
-          sentiment: { positive: 97, neutral: 3, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong partner satisfaction and advocacy",
-          themes: ["Strong partner satisfaction and advocacy", "Account team flags medium cancel risk tied to contract/flex arrangement", "Named engineer performance and coaching needs remain active", "Some service quality concerns on attention to detail and communication"],
-          talkingPoints: ["Community IT appears generally healthy with strong CSAT/NPS sentiment and repeated praise for ITBD management and engineers, but the account still carries medium cancel risk tied to Sandro's Flex Agreement and there are active coaching/performance gaps for named engineers..", "Recent reviews show improvement in utilization and billing accuracy, though several operational and training action items remain open or TBD.."],
-          lastCall: "2026-05-20", callsAnalyzed: 4 },
-        { name: "PEI", slug: "pei", churnRisk: 32, csatPositivePct: 100, reviewVolume: 12,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Exceptionally strong partner advocacy and satisfaction",
-          themes: ["Exceptionally strong partner advocacy and satisfaction", "Utilization below target is an active commercial risk", "Ticket hygiene and time-entry governance need improvement", "No named-engineer performance issue; one engineer explicitly cleared and another praised"],
-          talkingPoints: ["PEI appears generally healthy with very strong promoter NPS and repeated praise for the engineering team and partnership..", "The main churn risk is operational: persistent utilization/time-entry compliance issues and ticket hygiene concerns could trigger stakeholder scrutiny on staffing if not corrected.."],
-          lastCall: "2026-04-22", callsAnalyzed: 4 },
-        { name: "Prevare LLC", slug: "prevare-llc", churnRisk: 14, csatPositivePct: 93, reviewVolume: 16,
-          sentiment: { positive: 93, neutral: 7, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently positive engineer feedback",
-          themes: ["Consistently positive engineer feedback", "Strong customer satisfaction signals", "Minor documentation quality slippage", "KPI reporting setup still incomplete"],
-          talkingPoints: ["Relationship health appears strong with repeated positive partner feedback for Samreen and no meaningful churn indicators in recent reviews..", "Minor operational improvement items remain open around KPI reporting, ticket note detail, and proactive escalation, but they are not presented as dissatisfaction drivers.."],
-          lastCall: "2026-05-22", callsAnalyzed: 5 },
-        { name: "Perfect Cloud Solutions", slug: "perfect-cloud-solutions", churnRisk: 34, csatPositivePct: 100, reviewVolume: 14,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Recent agreement renewal supports retention",
-          themes: ["Recent agreement renewal supports retention", "Consistently positive customer satisfaction", "Positive advocacy but mostly passive NPS mix", "Business contraction reducing service demand"],
-          talkingPoints: ["The relationship appears generally healthy with a recent renewal, all-positive CSAT, and no NPS detractors..", "Churn risk remains moderate because the account team explicitly flags medium cancel risk and notes reduced business volume that already led to ending a temporary resource.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "Dependable Solutions", slug: "dependable-solutions", churnRisk: 6, csatPositivePct: 100, reviewVolume: 32,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently strong customer advocacy",
-          themes: ["Consistently strong customer advocacy", "Perfect CSAT profile among rated responses", "High praise for service quality and responsiveness", "Strong embedded-team relationship"],
-          talkingPoints: ["Dependable Solutions appears very healthy with no account-team churn flags and consistently excellent customer sentiment..", "CSAT and NPS are uniformly positive, with repeated praise for responsiveness, communication, reliability, and team integration.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "Pegasus Technology Solutions", slug: "pegasus-technology-solutions", churnRisk: 18, csatPositivePct: 100, reviewVolume: 42,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong positive customer satisfaction",
-          themes: ["Strong positive customer satisfaction", "Overwhelmingly positive NPS and partner advocacy", "Recent operational concern around procedure adherence", "Account team indicates low current churn risk"],
-          talkingPoints: ["Relationship health appears strong overall, with green account status, a closed SIP, perfect CSAT distribution among rated surveys, and predominantly promoter NPS feedback praising responsiveness and engineer quality..", "The main caution is a recent detractor comment citing procedure failures in the NOC that reportedly caused downstream client SLA breaches.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "Boomtown CIO", slug: "boomtown-cio", churnRisk: 28, csatPositivePct: 100, reviewVolume: 27,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently strong partner sentiment and advocacy",
-          themes: ["Consistently strong partner sentiment and advocacy", "Engineer performance is viewed positively with no named-resource complaints", "Utilization remains materially below agreed target, creating commercial risk", "Some agreed development and workload actions are slipping or still unresolved"],
-          talkingPoints: ["The relationship appears healthy with consistently strong promoter feedback, perfect CSAT, and repeated praise for Varun’s responsiveness and ownership..", "Primary risk is commercial/utilization-related rather than service-quality-related, as Flex alignment and below-target utilization remain open themes.."],
-          lastCall: "2026-05-31", callsAnalyzed: 3 },
-        { name: "Networking Now", slug: "networking-now", churnRisk: 8, csatPositivePct: 100, reviewVolume: 20,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Recent successful renewal and green account status",
-          themes: ["Recent successful renewal and green account status", "Consistently positive engineer feedback", "Strong customer satisfaction signals", "Minor engagement risk from missed recent review"],
-          talkingPoints: ["The relationship appears healthy with renewal completed at a 10% revised rate, consistently positive CSAT/NPS, and repeated positive feedback for Harley..", "The only minor caution is a missed June service call and several open/ongoing action items, but there is no evidence of service dissatisfaction or churn intent.."],
-          lastCall: "2026-06-09", callsAnalyzed: 3 },
-        { name: "Galactica Cybersecurity", slug: "galactica-cybersecurity", churnRisk: 12, csatPositivePct: 100, reviewVolume: 5,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently positive engineer feedback",
-          themes: ["Consistently positive engineer feedback", "Positive customer satisfaction signals", "Stable delivery and client confidence", "KPI framework still not finalized"],
-          talkingPoints: ["Relationship health appears strong with repeated positive feedback for Kasey, positive CSAT, and no active risk flags or service concerns..", "The only mild gaps are administrative follow-through on KPI definition and a slipped certification target, neither of which currently indicates churn risk.."],
-          lastCall: "2026-04-19", callsAnalyzed: 4 },
-        { name: "ICSI", slug: "icsi", churnRisk: 22, csatPositivePct: 100, reviewVolume: 22,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong renewal and positive account health flag",
-          themes: ["Strong renewal and positive account health flag", "Consistently positive customer feedback", "Named-engineer operational concern", "Some historical technician friction"],
-          talkingPoints: ["ICSI appears healthy with renewal completed, strong CSAT/NPS, and repeated positive feedback about key engineers Hayes and Sushant..", "The main watchout is a recent operational concern around Hayes' stand-up attendance and validation of utilization/reporting data, but there is no indication of broader dissatisfaction.."],
-          lastCall: "2026-05-17", callsAnalyzed: 2 },
-        { name: "Infopathways", slug: "infopathways", churnRisk: 10, csatPositivePct: 100, reviewVolume: 42,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Consistently strong partner sentiment toward named engineers",
-          themes: ["Consistently strong partner sentiment toward named engineers", "Excellent customer satisfaction and advocacy", "Account team reports no churn concern", "Minor process gap in ticket classification affecting billing accuracy"],
-          talkingPoints: ["The Infopathways relationship appears very healthy, with repeated positive feedback for named engineers, perfect CSAT to date, and all recorded NPS responses in promoter range..", "Minor operational improvement areas exist around triage accuracy and capability-development follow-through, but there are no active churn flags or service recovery concerns.."],
-          lastCall: "2026-04-19", callsAnalyzed: 4 },
-        { name: "NerdsToGo", slug: "nerdstogo", churnRisk: 38, csatPositivePct: 100, reviewVolume: 12,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Business loss flagged by account team",
-          themes: ["Business loss flagged by account team", "Open service improvement/escalation process", "Strong partner satisfaction and advocacy", "Named engineer highly valued by partner"],
-          talkingPoints: ["Relationship sentiment appears positive based on consistently strong CSAT/NPS and specific praise for engineer Tanmoy, but account-level churn risk remains elevated to Medium due to business loss and an open SIP..", "Recent review notes provide limited operational insight and show a missed/awaiting connection for the service call.."],
-          lastCall: "2026-04-08", callsAnalyzed: 1 },
-        { name: "CMIT Solutions Stamford", slug: "cmit-solutions-stamford", churnRisk: 24, csatPositivePct: 88, reviewVolume: 15,
-          sentiment: { positive: 88, neutral: 12, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Recent performance improvement acknowledged by partner",
-          themes: ["Recent performance improvement acknowledged by partner", "Earlier concerns on ticket comprehension and documentation clarity", "Partner wants stronger coaching and development support", "Open expectations around ownership expansion and CDP delivery"],
-          talkingPoints: ["Overall relationship health is good with no active cancellation risk, positive CSAT/NPS, and recent service reviews noting clear improvement in Nick’s performance..", "Residual concerns remain around coaching, documentation quality, and follow-through on development/ownership expectations, but recent sentiment is favorable.."],
-          lastCall: "2026-04-22", callsAnalyzed: 2 },
-        { name: "Vistitude", slug: "vistitude", churnRisk: 14, csatPositivePct: 87, reviewVolume: 36,
-          sentiment: { positive: 87, neutral: 13, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong recent engineer feedback and stable service delivery",
-          themes: ["Strong recent engineer feedback and stable service delivery", "Account renewed, reducing immediate churn risk", "Very strong customer advocacy in NPS", "Named engineer has some recent performance coaching needs"],
-          talkingPoints: ["Vistitude appears healthy with strong recent partner feedback, no active delivery escalations, and a completed renewal despite minor coaching points around Ankit’s strategic ownership and productivity consistency..", "Overall sentiment is positive and stable-to-improving, with relationship strength supported by very strong NPS and no detractor signals.."],
-          lastCall: "2026-04-07", callsAnalyzed: 1 },
-        { name: "Mission Technology", slug: "mission-technology", churnRisk: 18, csatPositivePct: 100, reviewVolume: 0,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "No active account risk flags",
-          themes: ["No active account risk flags", "No reported customer dissatisfaction signals", "Insufficient recent service-review evidence"],
-          talkingPoints: ["There are no documented risk flags, CSAT/NPS responses, or service-review notes/decks provided for this partner..", "With no negative evidence and no engagement history to assess, churn risk appears low but confidence is limited by the absence of data.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-        { name: "C&W Computers", slug: "c-w-computers", churnRisk: 18, csatPositivePct: 100, reviewVolume: 20,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong customer satisfaction and advocacy",
-          themes: ["Strong customer satisfaction and advocacy", "Named engineer receiving repeated positive feedback", "Some concerns on proactive communication of available capacity", "Process improvement requests on documentation and closure discipline"],
-          talkingPoints: ["The relationship appears healthy with consistently strong CSAT/NPS and repeated positive feedback for Von..", "Minor operational risks remain around proactive capacity communication, documentation, and several open follow-ups tied to Defender planning and KPI/reporting alignment.."],
-          lastCall: "2026-05-31", callsAnalyzed: 2 },
-        // ---- END real partners ----
-        { name: "MSP Corp", slug: "mspcorp", churnRisk: 76, csatPositivePct: 88, reviewVolume: 115,
-          sentiment: { positive: 88, neutral: 11, negative: 1 }, sentimentTrend: "Stable",
-          topDriver: "Multiple active performance escalations on named engineers",
-          themes: ["Multiple active performance escalations on named engineers", "Commercial/relationship deterioration signaled by cancellation notice", "Replacement delays and staffing instability", "Recent customer feedback cites compliance and recurring coaching issues"],
-          talkingPoints: ["MSP Corp shows mixed service health: some pods and individual engineers are improving, but the relationship remains materially at risk due to multiple active SIPs/PIPs, named-resource performance concerns, and an AP agreement cancellation already received..", "Recent feedback is somewhat better operationally, but unresolved staffing and compliance issues keep churn risk elevated.."],
-          lastCall: "2026-06-08", callsAnalyzed: 2 },
-
-        { name: "Milner", slug: "milner", churnRisk: 27, csatPositivePct: 93, reviewVolume: 114,
-          sentiment: { positive: 93, neutral: 6, negative: 1 }, sentimentTrend: "Improving",
-          topDriver: "Strong overall customer satisfaction and positive partner sentiment",
-          themes: ["Strong overall customer satisfaction and positive partner sentiment", "Recent service review indicates performance stabilization", "Named engineer performance concerns have been recurring", "Escalation/process adherence still needs reinforcement"],
-          talkingPoints: ["Relationship health appears generally stable to positive, with strong CSAT/NPS, improving engineer performance, and agreement to retain previously at-risk resources..", "Main watchouts are recurring named-engineer execution/escalation concerns and an open renewal process that still needs follow-through.."],
-          lastCall: "2026-06-03", callsAnalyzed: 1 },
-
-        { name: "Logically", slug: "logically", churnRisk: 33, csatPositivePct: 95, reviewVolume: 514,
-          sentiment: { positive: 95, neutral: 4, negative: 1 }, sentimentTrend: "Improving",
-          topDriver: "Engineer-specific performance issues required formal intervention",
-          themes: ["Engineer-specific performance issues required formal intervention", "Named engineer reliability/availability complaints impacted confidence", "Recent service reviews show measurable operational improvement", "Some action items remain ongoing or without firm due dates"],
-          talkingPoints: ["Logically remains broadly healthy with strong NPS, solid service reviews, and recent operational improvement, but relationship risk persists due to repeated engineer-specific performance and reliability concerns..", "Current churn risk appears contained rather than acute, with Mazid under SIP monitoring and backup coverage actions still being worked through.."],
-          lastCall: "2026-05-13", callsAnalyzed: 3 },
-
-        { name: "Alliance InfoSystems LLC", slug: "alliance-infosystems", churnRisk: 34, csatPositivePct: 45, reviewVolume: 11,
-          sentiment: { positive: 45, neutral: 55, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong satisfaction with current engineers",
-          themes: ["Strong satisfaction with current engineers", "Partner business pressure affecting renewal timing", "Utilization and time-entry concerns around Vishnu remain active", "Passive NPS feedback indicates engagement and listening concerns"],
-          talkingPoints: ["Alliance InfoSystems is broadly satisfied with the current engineer team and recent service reviews are positive, but churn risk is moderated by the partner's loss of a major client, a renewal pushed by 3 months, and continued concern around Vishnu's utilization/time-entry visibility..", "Relationship sentiment remains mostly positive, though some feedback suggests meetings feel less valuable and the partner feels repeated on utilization topics.."],
-          lastCall: "2026-06-02", callsAnalyzed: 2 },
-
-        { name: "Computer Weavers", slug: "computer-weavers", churnRisk: 18, csatPositivePct: 100, reviewVolume: 9,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong partner advocacy for named engineer Arnie",
-          themes: ["Strong partner advocacy for named engineer Arnie", "Consistently positive CSAT with no negative feedback", "No active churn or escalation signals from account team", "Partner engagement gap on latest review cadence"],
-          talkingPoints: ["The relationship appears healthy with strong qualitative feedback for Arnie, no active escalations, and 9/9 positive CSAT..", "Some delivery/process signals need monitoring, including repeated low billable utilization, a long-running open action item, and the partner missing the latest service call.."],
-          lastCall: "2026-02-02", callsAnalyzed: 1 },
-
-        { name: "Premier Technologies", slug: "premier-technologies", churnRisk: 18, csatPositivePct: 100, reviewVolume: 20,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Recent partner sentiment is strongly positive toward the assigned engineer",
-          themes: ["Recent partner sentiment is strongly positive toward the assigned engineer", "Account team reports no active churn concern", "Historic named-engineer dissatisfaction exists but appears resolved after replacement", "Operational follow-through is slipping on KPI/reporting setup"],
-          talkingPoints: ["Premier Technologies appears healthy with consistently positive recent service reviews, strong feedback for Malkeet, and account-team risk flags marked Green with no cancel risk..", "Minor delivery/process gaps remain around KPI automation and an earlier email migration prerequisite miss, but these do not appear to be materially harming the relationship.."],
-          lastCall: "2026-04-15", callsAnalyzed: 3 },
-
-        { name: "RealTime, LLC", slug: "realtime-it", churnRisk: 16, csatPositivePct: 83, reviewVolume: 6,
-          sentiment: { positive: 83, neutral: 17, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong named-engineer satisfaction",
-          themes: ["Strong named-engineer satisfaction", "Consistently strong customer advocacy", "Performance concerns softened over time", "Some follow-through gaps on reporting/action items"],
-          talkingPoints: ["RealTime appears healthy with consistently positive partner feedback, strong NPS, and explicit confirmation that Vibhu is performing well and meeting expectations..", "Minor process friction around KPI/reporting finalization and one older unscheduled reporting item remain, but recent sentiment is positive and stable-to-improving.."],
-          lastCall: "2026-06-08", callsAnalyzed: 4 },
-
-        { name: "Liongard", slug: "liongard", churnRisk: 14, csatPositivePct: 99, reviewVolume: 156,
-          sentiment: { positive: 99, neutral: 1, negative: 0 }, sentimentTrend: "Improving",
-          topDriver: "Strong partner satisfaction and advocacy",
-          themes: ["Strong partner satisfaction and advocacy", "Account team reports low churn risk with no escalations", "Partner praises engineer quality and team performance", "Some service quality/process improvement opportunities remain open"],
-          talkingPoints: ["Liongard appears healthy with very strong CSAT/NPS sentiment, no active escalations, and explicit account-team assessment of low cancel risk..", "Minor process-improvement items remain open, but recent feedback is overwhelmingly positive and one prior action item has already been completed.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-
-        { name: "Ion247", slug: "ion247", churnRisk: 8, csatPositivePct: 100, reviewVolume: 7,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Very strong partner advocacy and satisfaction",
-          themes: ["Very strong partner advocacy and satisfaction", "Named engineer feedback is strongly positive", "No current operational or account risk flags", "Service delivery described as stable with no escalations"],
-          talkingPoints: ["Ion247 appears very healthy with consistently strong partner sentiment, perfect recent CSAT/NPS, and no account-team churn flags or escalations..", "The only notable concern is a long-open reporting action item that has slipped across review cycles, but it has not translated into dissatisfaction.."],
-          lastCall: "2026-06-01", callsAnalyzed: 0 },
-
-        { name: "Stasmayer Inc.", slug: "stasmayer", churnRisk: 11, csatPositivePct: 100, reviewVolume: 3,
-          sentiment: { positive: 100, neutral: 0, negative: 0 }, sentimentTrend: "Stable",
-          topDriver: "Strong partner satisfaction with named engineer",
-          themes: ["Strong partner satisfaction with named engineer", "Very positive executive feedback/NPS", "No active service issues or escalations", "Recent utilization softness"],
-          talkingPoints: ["The Stasmayer relationship appears healthy with repeated partner praise for Adley, strong promoter-only NPS, and no reported service escalations or performance concerns..", "Minor watchouts are limited to timesheet discipline and lower recent billable utilization, but these have not translated into dissatisfaction.."],
-          lastCall: "2026-05-29", callsAnalyzed: 4 },
-    ];
-
-    // ---------- Helpers ----------
     const $ = (id) => document.getElementById(id);
     const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    const cssVar = (n) => getComputedStyle(document.body).getPropertyValue(n).trim();
-    const r0 = (n) => Math.round(n);
-    const fmtDate = (iso) => {
+    const COL = { success: "#10b981", warning: "#f59e0b", danger: "#ef4444", neutral: "#94a3b8" };
+
+    function tierOf(r) { return r >= 45 ? "High" : r >= 25 ? "Watch" : "Healthy"; }
+    function tierColor(t) { return t === "High" ? COL.danger : t === "Watch" ? COL.warning : COL.success; }
+    function renewalRisk(p) {
+        const s = (p.churnRisk >= 45 ? 2 : p.churnRisk >= 25 ? 1 : 0) + (p.callTone === "Negative" ? 2 : p.callTone === "Mixed" ? 1 : 0);
+        return s >= 2 ? "High" : s === 1 ? "Medium" : "Low";
+    }
+    function renewalPill(r) { return r === "High" ? "pill-danger" : r === "Medium" ? "pill-warning" : "pill-success"; }
+    function tonePill(p) {
+        if (!p.toneConfident) return "pill-muted";
+        return p.callTone === "Negative" ? "pill-danger" : p.callTone === "Mixed" ? "pill-warning" : "pill-success";
+    }
+    function npsChipClass(s) { return s == null ? "" : s >= 50 ? "nps-good" : s >= 0 ? "nps-mid" : "nps-bad"; }
+    function fmtDays(d) { return d == null ? "no calls" : d === 0 ? "today" : d === 1 ? "1 day ago" : `${d} days ago`; }
+    function fmtDate(iso) {
         if (!iso) return "—";
         const d = new Date(iso + "T00:00:00");
         return isNaN(d) ? iso : d.toLocaleDateString("en-US", { day: "2-digit", month: "short", year: "numeric" });
-    };
-
-    const COL = { primary: "#6366f1", success: "#10b981", warning: "#f59e0b", danger: "#ef4444", neutral: "#94a3b8" };
-
-    // ---------- Tier + derived renewal risk (single tunable spot) ----------
-    function tierOf(risk) { return risk >= 45 ? "High" : risk >= 25 ? "Watch" : "Healthy"; }
-    function tierColor(tier) { return tier === "High" ? COL.danger : tier === "Watch" ? COL.warning : COL.success; }
-
-    // Call tone derived from real sentiment trend + negative share + risk (transparent + tunable).
-    function deriveCallTone(p) {
-        const neg = p.sentiment.negative, t = p.sentimentTrend, r = p.churnRisk;
-        if (t === "Declining" || neg >= 15 || r >= 70) return "Negative";
-        if (r < 25 && neg <= 5 && t !== "Declining") return "Positive";
-        return "Mixed";
     }
-    partners.forEach((p) => { p.callTone = deriveCallTone(p); });
-
-    // Derived renewal risk — no revenue, no dates. Weighting kept here so it's easy to tune.
-    function renewalRisk(p) {
-        const score = (p.churnRisk >= 45 ? 2 : p.churnRisk >= 25 ? 1 : 0)
-                    + (p.callTone === "Negative" ? 2 : p.callTone === "Mixed" ? 1 : 0);
-        return score >= 2 ? "High" : score === 1 ? "Medium" : "Low";
+    function shortName(am) {
+        const s = String(am == null ? "" : am).trim();
+        if (!s || /^\d+$/.test(s)) return "Unassigned";
+        return s.replace(/\s*\([^)]*\)/g, "").replace(/\s{2,}/g, " ").trim() || s;
     }
-    function renewalPillClass(r) { return r === "High" ? "pill-danger" : r === "Medium" ? "pill-warning" : "pill-success"; }
-    function tonePillClass(t) { return t === "Negative" ? "pill-danger" : t === "Mixed" ? "pill-warning" : "pill-success"; }
-
-    // Theme classifier — maps each (real) gpt-5.4 driver factor to a canonical theme + polarity.
-    // First match wins; validated against the live driver set. TODO(feed): replace with
-    // polarity/theme tags emitted directly by transcript analysis.
+    function fmtMonYr(iso) {
+        if (!iso) return "—";
+        const d = new Date(iso + "T00:00:00");
+        return isNaN(d) ? iso : d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+    }
+    function fmtRange(a, b) {
+        if (!a || !b) return "—";
+        const da = new Date(a + "T00:00:00"), db = new Date(b + "T00:00:00");
+        if (!isNaN(da) && !isNaN(db) && da.getFullYear() === db.getFullYear())
+            return da.toLocaleDateString("en-US", { month: "short" }) + " – " + db.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+        return fmtMonYr(a) + " – " + fmtMonYr(b);
+    }
+    // Theme classifier — maps each gpt-5.4 driver factor to a canonical theme + polarity.
     const THEME_RULES = [
         ["Healthy / no active escalations", "positive", ["no active churn", "no escalation", "no recent escalation", "no concerns", "no detractors", "low churn", "on track", "no service complaints", "no reported escalations", "no planned escalation", "well managed", "remains healthy", "improving operational", "relationship as healthy"]],
         ["Named-engineer performance & quality", "concern", ["performance", "underperforming", "quality", "reliability", "coverage", "consistency", "follow-through", "troubleshooting", "end-to-end ownership", "growth in", "dissatisfaction", "residual risk"]],
@@ -867,330 +458,213 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         ["Strong partner satisfaction & advocacy", "positive", ["satisfaction", "advocacy", "loyalty", "positive", "strong", "sentiment"]],
     ];
     function classifyTheme(factor) {
-        const s = factor.toLowerCase();
+        const s = String(factor).toLowerCase();
         for (const [theme, polarity, kws] of THEME_RULES) {
             if (kws.some((k) => s.includes(k))) return { theme, polarity };
         }
         return { theme: "Other operational watchpoint", polarity: "concern" };
     }
 
-    // ---------- KPIs ----------
-    function renderKPIs() {
-        const tracked = partners.length;
-        const avgRisk = r0(partners.reduce((s, p) => s + p.churnRisk, 0) / tracked);
-        const highRisk = partners.filter((p) => p.churnRisk >= 45).length;
-        const renewalsAtRisk = partners.filter((p) => renewalRisk(p) === "High").length;
-
-        const svg = (path) => `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="${path}" /></svg>`;
-        const ICONS = {
-            partners: svg("M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"),
-            chart: svg("M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"),
-            shield: svg("M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286Z"),
-            renew: svg("M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"),
-        };
-        const cards = [
-            { label: "Partners Tracked", value: tracked, sub: "active accounts", cls: "primary", icon: ICONS.partners },
-            { label: "Avg Churn Risk", value: avgRisk, sub: "scale 0–100", cls: avgRisk >= 45 ? "danger" : avgRisk >= 25 ? "warning" : "success", icon: ICONS.chart },
-            { label: "High Risk", value: highRisk, sub: "risk ≥ 45", cls: "danger", icon: ICONS.shield },
-            { label: "Renewals at Risk", value: renewalsAtRisk, sub: "derived: risk + call tone", cls: "warning", icon: ICONS.renew },
-        ];
-        $("kpi-grid").innerHTML = cards.map((c) => `
-            <div class="kpi-card ${c.cls}">
-                <div class="kpi-top">
-                    <div class="kpi-icon-wrapper">${c.icon}</div>
-                    <span class="kpi-label">${c.label}</span>
-                </div>
-                <span class="kpi-value">${c.value}</span>
-                <span class="kpi-sub">${c.sub}</span>
-            </div>`).join("");
-
-        // Sidebar insights snapshot mirrors the same portfolio-wide numbers.
-        const setIns = (id, v) => { const el = $(id); if (el) el.textContent = v; };
-        setIns("ins-high", highRisk);
-        setIns("ins-renewals", renewalsAtRisk);
-        setIns("ins-avg", avgRisk);
-
-        $("header-badges").innerHTML = `
-            <span class="badge badge-outline">${tracked} Partners</span>
-            <span class="badge badge-info">Azure gpt-5.4</span>`;
-    }
-
-    // ---------- Global filter — one source of truth for every per-partner section ----------
-    // Defaults to the flagged book (High + Watch) so leadership sees only the
-    // accounts to worry about, not all 50. KPIs stay portfolio-wide on purpose.
-    const filterState = { tier: "Attention" };
-
-    function tierMatch(p) {
-        const t = filterState.tier;
-        if (t === "All") return true;
-        if (t === "Attention") return p.churnRisk >= 25;   // High + Watch
-        return tierOf(p.churnRisk) === t;
-    }
-    // All per-partner sections render from this, worst-first.
-    function filteredPartners() {
-        return partners.filter(tierMatch).sort((a, b) => b.churnRisk - a.churnRisk);
-    }
-
-    // ---------- "Who needs attention" — collapsible risk-ranking bars ----------
-    // Worst-first horizontal bars; collapses to the top 10 of the filtered set so
-    // a wide filter (e.g. All) never floods the card. The chart is rebuilt on
-    // every state change.
-    const COLLAPSED_N = 10;
-    let rankExpanded = false;
-    let rankChart = null;
-
-    function tierBarColor(t) { return t === "High" ? COL.danger : t === "Watch" ? COL.warning : COL.success; }
-    // Left→right bar gradient per tier (pure styling; tier semantics unchanged).
-    function tierGradient(t) {
-        return t === "High" ? ["#ef4444", "#fb7185"] : t === "Watch" ? ["#f59e0b", "#fbbf24"] : ["#10b981", "#34d399"];
-    }
-
-    function rankRows() { return filteredPartners(); }
-
-    // Print the risk value just past the end of each bar so the magnitude is
-    // readable without hovering.
-    const barValueLabel = {
-        id: "barValueLabel",
-        afterDatasetsDraw(chart) {
-            const { ctx } = chart;
-            const ds = chart.data.datasets[0];
-            ctx.save();
-            ctx.font = '700 11px "Plus Jakarta Sans", sans-serif';
-            ctx.textBaseline = "middle";
-            ctx.textAlign = "left";
-            chart.getDatasetMeta(0).data.forEach((bar, i) => {
-                ctx.fillStyle = ds.borderColor[i];
-                ctx.fillText(String(ds.data[i]), bar.x + 6, bar.y);
-            });
-            ctx.restore();
-        },
+    const svg = (path) => `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="${path}" /></svg>`;
+    const ICONS = {
+        users: svg("M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"),
+        chart: svg("M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"),
+        shield: svg("M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286Z"),
+        renew: svg("M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"),
+        flag: svg("M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5"),
+        list: svg("M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"),
+        smiley: svg("M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"),
     };
 
-    function renderRiskRank() {
-        const canvas = $("riskRankChart");
-        if (!canvas) return;
-        const grid = "rgba(148,163,184,0.20)";
-        const tick = "#8a90a6";
-        const label = "#3c4257";
+    let DATA = null, partners = [], filterState = "Attention", p360Tier = "All";
 
-        const all = rankRows();
-        const shown = rankExpanded ? all : all.slice(0, COLLAPSED_N);
-
-        // Empty-tier guard (e.g. filtering Healthy when none qualify).
-        $("rank-empty").hidden = shown.length > 0;
-        $("rank-box").style.display = shown.length ? "" : "none";
-
-        // Size the plot to the row count (~34px/row); .rank-scroll caps the
-        // visible height and scrolls when the full book is expanded.
-        $("rank-box").style.height = Math.max(120, shown.length * 34 + 16) + "px";
-
-        if (rankChart) rankChart.destroy();
-        if (shown.length) {
-            rankChart = new Chart(canvas, {
-                type: "bar",
-                data: {
-                    // ▼ flags a declining trend so "what's getting worse" reads at a glance.
-                    labels: shown.map((p) => (p.sentimentTrend === "Declining" ? "▼ " : "") + p.name),
-                    datasets: [{
-                        data: shown.map((p) => p.churnRisk),
-                        backgroundColor: (c) => {
-                            const { ctx, chartArea } = c.chart;
-                            const p = shown[c.dataIndex] || shown[0];
-                            const [from, to] = tierGradient(tierOf(p.churnRisk));
-                            if (!chartArea) return from;
-                            const g = ctx.createLinearGradient(chartArea.left, 0, chartArea.right, 0);
-                            g.addColorStop(0, from); g.addColorStop(1, to);
-                            return g;
-                        },
-                        // borderColor still drives the value-label colour in barValueLabel.
-                        borderColor: shown.map((p) => tierBarColor(tierOf(p.churnRisk))),
-                        borderWidth: 0, borderRadius: 999, borderSkipped: false,
-                        barPercentage: 0.55, categoryPercentage: 0.82,
-                    }],
-                },
-                plugins: [barValueLabel],
-                options: {
-                    indexAxis: "y", responsive: true, maintainAspectRatio: false,
-                    layout: { padding: { right: 42 } },
-                    animation: { duration: 300 },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                title: (items) => shown[items[0].dataIndex].name,
-                                label: (c) => {
-                                    const p = shown[c.dataIndex];
-                                    return [`Churn risk: ${p.churnRisk} (${tierOf(p.churnRisk)})`,
-                                            `Top driver: ${p.topDriver}`,
-                                            `Positive sentiment: ${p.csatPositivePct}% · trend ${p.sentimentTrend}`,
-                                            `Feedback volume: ${p.reviewVolume}`];
-                                },
-                            },
-                        },
-                    },
-                    scales: {
-                        x: { min: 0, max: 100, grid: { color: grid }, ticks: { color: tick, font: { size: 10 } },
-                             title: { display: true, text: "Churn risk (0–100)", color: tick, font: { size: 11 } } },
-                        y: { grid: { display: false }, ticks: { color: label, font: { size: 11 }, autoSkip: false } },
-                    },
-                },
-            });
-        }
-
-        $("rank-count").textContent = `Showing ${shown.length} of ${all.length} partner${all.length === 1 ? "" : "s"}`;
-        const toggle = $("rank-toggle");
-        if (all.length <= COLLAPSED_N) { toggle.hidden = true; }
-        else { toggle.hidden = false; toggle.textContent = rankExpanded ? "Collapse" : `Show all ${all.length}`; }
-
-        $("bubble-fallback").innerHTML = "Partner churn-risk ranking (worst first): " + all.map((p) =>
-            `${p.name}, churn risk ${p.churnRisk}, ${tierOf(p.churnRisk)} tier, trend ${p.sentimentTrend}, positive sentiment ${p.csatPositivePct}%.`).join(" ");
+    function kpiCard(c) {
+        return `<div class="kpi-card ${c.cls}">
+            <div class="kpi-top"><div class="kpi-icon-wrapper">${c.icon}</div><span class="kpi-label">${c.label}</span></div>
+            <span class="kpi-value">${c.value}</span><span class="kpi-sub">${c.sub}</span></div>`;
     }
 
-    // ---------- Global filter wiring ----------
-    const TIER_LABEL = { Attention: "needing attention", High: "in the High tier", Watch: "in the Watch tier", Healthy: "in the Healthy tier", All: "tracked" };
+    function renderKPIs() {
+        const f = DATA.portfolio;
+        $("kpi-health").innerHTML = [
+            { label: "Partners Tracked", value: f.tracked, sub: "active accounts", cls: "primary", icon: ICONS.users },
+            { label: "Avg Churn Risk", value: f.avgRisk, sub: "scale 0–100", cls: f.avgRisk >= 45 ? "danger" : f.avgRisk >= 25 ? "warning" : "success", icon: ICONS.chart },
+            { label: "High Risk", value: f.highRisk, sub: "risk ≥ 45", cls: "danger", icon: ICONS.shield },
+            { label: "Renewals at Risk", value: f.renewalsAtRisk, sub: "derived: risk + call tone", cls: "warning", icon: ICONS.renew },
+        ].map(kpiCard).join("");
 
-    function applyFilter() {
-        rankExpanded = false;         // a new filter always starts collapsed
-        renderRiskRank();
-        renderSentiment();
-        renderVoice();
-        renderTable();
-        const n = partners.filter(tierMatch).length;
-        $("page-filter-count").textContent = `${n} of ${partners.length} partner${n === 1 ? "" : "s"} ${TIER_LABEL[filterState.tier]}`;
+        $("kpi-new").innerHTML = [
+            { label: "Active SIPs", value: f.activeSIPs, sub: `across ${f.partnersWithSIP} partners`, cls: "danger", icon: ICONS.flag },
+            { label: "Open Actions", value: f.openActions, sub: `${f.overdueActions} overdue · ${f.openNoDate} no firm date`, cls: "warning", icon: ICONS.list },
+            { label: "Portfolio NPS", value: (f.portfolioNPS == null ? "—" : f.portfolioNPS), sub: `promoters − detractors · n=${f.npsResponses}`, cls: "success", icon: ICONS.smiley },
+        ].map(kpiCard).join("");
     }
 
-    function setupFilters() {
-        document.querySelectorAll("#global-filters .filter-pill").forEach((pill) => {
-            pill.addEventListener("click", () => {
-                document.querySelectorAll("#global-filters .filter-pill").forEach((p) => p.classList.remove("active"));
-                pill.classList.add("active");
-                filterState.tier = pill.getAttribute("data-tier");
-                applyFilter();
-            });
-        });
-        $("rank-toggle").addEventListener("click", () => {
-            rankExpanded = !rankExpanded;
-            renderRiskRank();
-        });
+    function tierMatch(p) {
+        if (filterState === "All") return true;
+        if (filterState === "Attention") return p.churnRisk >= 25;
+        return tierOf(p.churnRisk) === filterState;
+    }
+    function filtered() { return partners.filter(tierMatch).sort((a, b) => b.churnRisk - a.churnRisk); }
+
+    function toneCell(p) {
+        const stale = p.calls.stale ? `<span class="flag-stale" title="Last call ${fmtDays(p.calls.daysSince)}">stale</span>` : "";
+        const label = p.toneConfident ? p.callTone : "No calls";
+        const title = p.toneConfident ? `Last call ${fmtDays(p.calls.daysSince)} · ${p.calls.count} analysed`
+                                      : "No service-review calls analysed — tone suppressed";
+        return `<span class="pill ${tonePill(p)}" title="${esc(title)}">${label}</span>${stale}`;
+    }
+    function sipCell(p) {
+        if (!p.sip.open && !p.sip.closed) return `<span class="cell-sub">none</span>`;
+        const cls = p.sip.open > 0 ? "pill-danger" : "pill-success";
+        return `<span class="pill ${cls}" title="${esc(p.sip.ticket || "")}"><span class="sip-count">${p.sip.open}</span> open${p.sip.closed ? ` · ${p.sip.closed} closed` : ""}</span>`;
+    }
+    function actionCell(p) {
+        if (!p.actions.open) return `<span class="cell-sub">0</span>`;
+        const od = p.actions.overdue ? ` <span class="pill pill-danger" title="${p.actions.overdue} past a firm due date">${p.actions.overdue} overdue</span>` : "";
+        return `<span class="sip-count">${p.actions.open}</span> open${od}`;
     }
 
-    // ---------- Sentiment rows ----------
+    function renderTable() {
+        const rows = filtered();
+        const tb = $("risk-table-body");
+        if (!rows.length) { tb.innerHTML = `<tr><td colspan="6" class="empty">No partners in this tier.</td></tr>`; return; }
+        tb.innerHTML = rows.map((p) => {
+            const tier = tierOf(p.churnRisk);
+            return `<tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
+                <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span>
+                    <div class="cell-sub" style="margin-left:20px;">last call ${fmtDays(p.calls.daysSince)}</div></td>
+                <td><span class="risk-num" style="color:${tierColor(tier)}">${p.churnRisk}</span> <span class="cell-sub">${tier}</span></td>
+                <td>${toneCell(p)}</td>
+                <td style="color:var(--text-secondary);">${esc(p.topDriver)}</td>
+                <td>${sipCell(p)}</td>
+                <td>${actionCell(p)}</td>
+            </tr>`;
+        }).join("");
+        wireRowClicks(tb);
+        $("filter-count").textContent = `${rows.length} of ${partners.length} partners shown`;
+        $("table-foot").innerHTML = "<b>SIP</b>: active Service Improvement Plans (open/closed). <b>Action Driver</b>: open service-review actions with an overdue count. Call tone is derived from sentiment trend + negative share, muted to “No calls” where none were analysed and flagged “stale” when the last call is &gt;60 days old. Sentiment from TeamGPS CSAT (NPS where unavailable); churn risk, top driver and themes from Azure gpt-5.4; SIPs and action items from HaloPSA.";
+    }
+
+    function renderBacklog() {
+        const rows = partners.filter((p) => p.actions.open > 0)
+            .sort((a, b) => b.actions.overdue - a.actions.overdue || b.actions.open - a.actions.open).slice(0, 9);
+        const host = $("backlog-grid");
+        if (!rows.length) { host.innerHTML = `<div class="empty">No open actions.</div>`; return; }
+        host.innerHTML = rows.map((p) => `
+            <div class="backlog-card">
+                <div class="backlog-top">
+                    <span class="backlog-name">${esc(p.name)}</span>
+                    <span class="pill ${tierOf(p.churnRisk) === "High" ? "pill-danger" : tierOf(p.churnRisk) === "Watch" ? "pill-warning" : "pill-success"}">risk ${p.churnRisk}</span>
+                </div>
+                <div class="backlog-am">Owner: ${esc(shortName(p.accountManager))} · last call ${fmtDays(p.calls.daysSince)}</div>
+                <div class="backlog-stats">
+                    <span class="pill pill-warning">${p.actions.open} open</span>
+                    ${p.actions.overdue ? `<span class="pill pill-danger">${p.actions.overdue} overdue</span>` : ""}
+                    ${p.sip.open ? `<span class="pill pill-danger">${p.sip.open} SIP</span>` : ""}
+                    ${p.actions.completed ? `<span class="pill pill-success">${p.actions.completed} done</span>` : ""}
+                </div>
+            </div>`).join("");
+    }
+
     function renderSentiment() {
-        const rows = partners.filter(tierMatch).sort((a, b) => b.sentiment.negative - a.sentiment.negative);
-        if (!rows.length) { $("sentiment-rows").innerHTML = `<div class="rank-empty">No partners in this tier.</div>`; return; }
-        $("sentiment-rows").innerHTML = rows.map((p) => {
-            const s = p.sentiment;
-            const seg = (cls, val, title) => val > 0
-                ? `<div class="sent-seg ${cls}" style="width:${val}%" title="${title}: ${r0(val)}%">${val >= 10 ? r0(val) + "%" : ""}</div>` : "";
-            return `
-                <div class="sent-row">
-                    <div class="sent-name" title="${esc(p.name)}">${esc(p.name)}</div>
-                    <div class="sent-bar" role="img" aria-label="${esc(p.name)}: ${r0(s.positive)}% positive, ${r0(s.neutral)}% neutral, ${r0(s.negative)}% negative">
-                        ${seg("seg-pos", s.positive, "Positive")}
-                        ${seg("seg-neu", s.neutral, "Neutral")}
-                        ${seg("seg-neg", s.negative, "Negative")}
-                    </div>
-                    <div class="sent-pct">${r0(s.positive)}%</div>
-                </div>`;
+        const rows = partners.filter(tierMatch).sort((a, b) => b.csat.negShare - a.csat.negShare || b.churnRisk - a.churnRisk);
+        const host = $("sentiment-rows");
+        if (!rows.length) { host.innerHTML = `<div class="empty">No partners in this tier.</div>`; return; }
+        const seg = (cls, v, t) => v > 0 ? `<div class="sent-seg ${cls}" style="width:${v}%" title="${t}: ${v}%">${v >= 12 ? v + "%" : ""}</div>` : "";
+        host.innerHTML = rows.map((p) => {
+            const c = p.csat, pos = c.rated ? Math.round(c.positive / c.rated * 100) : 0,
+                  neu = c.rated ? Math.round(c.neutral / c.rated * 100) : 0,
+                  neg = c.rated ? Math.round(c.negative / c.rated * 100) : 0;
+            const lowTag = c.lowSample ? `<span class="lowsample-tag" title="Only ${c.rated} rated responses">low n</span>` : "";
+            const nps = p.nps.score;
+            const npsChip = nps == null ? `<span class="nps-chip nps-mid" title="No NPS responses">NPS —</span>`
+                : `<span class="nps-chip ${npsChipClass(nps)}" title="${p.nps.promoters} promoters − ${p.nps.detractors} detractors over ${p.nps.responses} responses${p.nps.lowSample ? " (low sample)" : ""}">NPS ${nps}</span>`;
+            return `<div class="sent-row">
+                <div class="sent-name" title="${esc(p.name)}">${esc(p.name)} <span class="nbadge ${c.lowSample ? "low" : ""}">n=${c.rated}</span>${lowTag}</div>
+                <div class="sent-bar" role="img" aria-label="${esc(p.name)}: ${pos}% positive, ${neu}% neutral, ${neg}% negative over ${c.rated} rated responses">
+                    ${seg("seg-pos", pos, "Positive")}${seg("seg-neu", neu, "Neutral")}${seg("seg-neg", neg, "Negative")}
+                </div>
+                <div class="sent-meta"><span class="sent-pct">${pos}%</span>${npsChip}</div>
+            </div>`;
         }).join("");
     }
 
-    // ---------- Voice of partner ----------
-    function renderVoice() {
-        const flagged = filteredPartners();
-        $("voice-grid").innerHTML = flagged.length ? flagged.map((p) => `
-            <div class="voice-card">
-                <div class="voice-card-head">
-                    <span class="voice-name">${esc(p.name)}</span>
-                    <span class="tone-pill tone-${p.callTone}">${p.callTone}</span>
-                </div>
-                <div class="theme-tags">${p.themes.slice(0, 4).map((t) => `<span class="theme-tag">${esc(t)}</span>`).join("")}</div>
-                <div class="voice-foot">Last call ${fmtDate(p.lastCall)} · ${p.callsAnalyzed} ${p.callsAnalyzed === 1 ? "call" : "calls"} analyzed</div>
-            </div>`).join("") : `<div class="rank-empty">No partners in this tier.</div>`;
-
-        // Aggregate canonical themes across the FILTERED partners' drivers, split by polarity.
+    // Recurring themes — click a theme to reveal the contributing partners (each links to Partner 360).
+    function renderRecurring() {
+        const flagged = filtered();
         const aggregate = (polarity) => {
             const map = new Map();
-            flagged.forEach((p) => p.themes.forEach((factor) => {
+            flagged.forEach((p) => (p.themes || []).forEach((factor) => {
                 const { theme, polarity: pol } = classifyTheme(factor);
                 if (pol !== polarity) return;
-                if (!map.has(theme)) map.set(theme, { mentions: 0, partners: new Set() });
-                const e = map.get(theme); e.mentions++; e.partners.add(p.name);
+                if (!map.has(theme)) map.set(theme, { mentions: 0, partners: new Map() });
+                const e = map.get(theme); e.mentions++; e.partners.set(p.slug, p.name);
             }));
-            return [...map.entries()].map(([theme, e]) => ({ theme, mentions: e.mentions, partners: e.partners.size }))
-                .sort((a, b) => b.mentions - a.mentions || b.partners - a.partners || a.theme.localeCompare(b.theme));
+            return [...map.entries()].map(([theme, e]) => ({
+                theme, mentions: e.mentions,
+                partners: [...e.partners].map(([slug, name]) => ({ slug, name })),
+            })).sort((a, b) => b.mentions - a.mentions || b.partners.length - a.partners.length || a.theme.localeCompare(b.theme));
         };
-        const renderList = (items) => items.map((x) => `
+        const renderList = (items) => items.length ? items.map((x) => `
             <div class="recurring-item">
-                <span class="recurring-theme">${esc(x.theme)}</span>
-                <span class="recurring-meta">${x.mentions} ${x.mentions === 1 ? "mention" : "mentions"} · ${x.partners} ${x.partners === 1 ? "partner" : "partners"}</span>
-            </div>`).join("");
+                <div class="recurring-row">
+                    <span class="recurring-theme">${esc(x.theme)}</span>
+                    <span class="recurring-meta">${x.mentions} ${x.mentions === 1 ? "mention" : "mentions"} · ${x.partners.length} ${x.partners.length === 1 ? "partner" : "partners"} <span class="recurring-caret">▾</span></span>
+                </div>
+                <div class="recurring-partners">${x.partners.map((p) => `<a class="rp-link" href="partner.html?partner=${encodeURIComponent(p.slug)}" onclick="event.stopPropagation()">${esc(p.name)}</a>`).join("")}</div>
+            </div>`).join("") : `<div class="cell-sub" style="padding:6px 2px;">None in this tier.</div>`;
         $("recurring-concerns").innerHTML = renderList(aggregate("concern"));
         $("recurring-positives").innerHTML = renderList(aggregate("positive"));
+        document.querySelectorAll(".recurring-item .recurring-row").forEach((row) => {
+            row.addEventListener("click", () => row.parentElement.classList.toggle("open"));
+        });
     }
 
-    // ---------- At-risk table ----------
-    function renderTable() {
-        const rows = filteredPartners();
-        if (!rows.length) { $("risk-table-body").innerHTML = `<tr><td colspan="5" class="rank-empty">No partners in this tier.</td></tr>`; return; }
-        $("risk-table-body").innerHTML = rows.map((p) => {
-            const tier = tierOf(p.churnRisk);
-            const ren = renewalRisk(p);
-            return `
-                <tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
-                    <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span></td>
-                    <td><span class="risk-num" style="color:${tierColor(tier)}">${p.churnRisk}</span> <span style="color:var(--text-muted);font-size:0.78rem;">${tier}</span></td>
-                    <td><span class="pill ${tonePillClass(p.callTone)}">${p.callTone}</span></td>
-                    <td style="color:var(--text-secondary);">${esc(p.topDriver)}</td>
-                    <td><span class="pill ${renewalPillClass(ren)}">${ren}</span></td>
-                </tr>`;
-        }).join("");
-        // Drill into the per-partner page.
-        $("risk-table-body").querySelectorAll("tr.partner-row").forEach((tr) => {
+    function renderCoverage() {
+        const cov = DATA.coverage || {};
+        const cal = svg("M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5");
+        const fb = (cov.feedbackCount || 0).toLocaleString();
+        $("data-window").innerHTML = `
+            <span class="dw-chip dw-asof">${cal}<span>Data as of <b>${fmtDate(cov.asOf)}</b></span></span>
+            <span class="dw-chip"><span>Service reviews <b>${fmtRange(cov.callsStart, cov.callsEnd)}</b> · ${cov.callsCount || 0} calls</span></span>
+            <span class="dw-chip"><span>CSAT/NPS feedback <b>${fmtRange(cov.feedbackStart, cov.feedbackEnd)}</b> · ${fb} responses</span></span>`;
+    }
+
+    function wireRowClicks(container) {
+        container.querySelectorAll("tr.partner-row").forEach((tr) => {
             const slug = tr.getAttribute("data-slug");
             if (!slug) return;
-            tr.addEventListener("click", () => {
-                location.href = `partner.html?partner=${encodeURIComponent(slug)}`;
-            });
+            tr.addEventListener("click", () => { location.href = `partner.html?partner=${encodeURIComponent(slug)}`; });
         });
     }
 
     // ---------- Partner 360 — full clickable partner list ----------
-    // Its own tier filter, independent of the Executive Overview global filter.
-    let p360Tier = "All";
     function trendCell(t) {
         if (t === "Declining") return `<span style="color:var(--danger)">▼ ${esc(t)}</span>`;
         if (t === "Improving") return `<span style="color:var(--success)">▲ ${esc(t)}</span>`;
         return `<span style="color:var(--text-muted)">● ${esc(t || "Stable")}</span>`;
     }
     function renderAllPartners() {
-        const rows = partners
-            .filter((p) => p360Tier === "All" || tierOf(p.churnRisk) === p360Tier)
+        const rows = partners.filter((p) => p360Tier === "All" || tierOf(p.churnRisk) === p360Tier)
             .sort((a, b) => b.churnRisk - a.churnRisk);
         const empty = $("p360-empty");
         if (!rows.length) { $("p360-table-body").innerHTML = ""; empty.hidden = false; return; }
         empty.hidden = true;
         $("p360-table-body").innerHTML = rows.map((p) => {
-            const tier = tierOf(p.churnRisk);
-            const ren = renewalRisk(p);
-            return `
-                <tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
-                    <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span></td>
-                    <td><span class="risk-num" style="color:${tierColor(tier)}">${p.churnRisk}</span> <span style="color:var(--text-muted);font-size:0.78rem;">${tier}</span></td>
-                    <td>${trendCell(p.sentimentTrend)}</td>
-                    <td>${r0(p.csatPositivePct)}%</td>
-                    <td><span class="pill ${tonePillClass(p.callTone)}">${p.callTone}</span></td>
-                    <td><span class="pill ${renewalPillClass(ren)}">${ren}</span></td>
-                    <td style="color:var(--text-muted);">→</td>
-                </tr>`;
+            const tier = tierOf(p.churnRisk), ren = renewalRisk(p);
+            const tone = p.toneConfident ? p.callTone : "No calls";
+            return `<tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
+                <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span></td>
+                <td><span class="risk-num" style="color:${tierColor(tier)}">${p.churnRisk}</span> <span class="cell-sub">${tier}</span></td>
+                <td>${trendCell(p.sentimentTrend)}</td>
+                <td>${Math.round(p.csat.positivePct)}%</td>
+                <td><span class="pill ${tonePill(p)}">${tone}</span></td>
+                <td><span class="pill ${renewalPill(ren)}">${ren}</span></td>
+                <td style="color:var(--text-muted);">→</td>
+            </tr>`;
         }).join("");
-        $("p360-table-body").querySelectorAll("tr.partner-row").forEach((tr) => {
-            const slug = tr.getAttribute("data-slug");
-            if (!slug) return;
-            tr.addEventListener("click", () => {
-                location.href = `partner.html?partner=${encodeURIComponent(slug)}`;
-            });
-        });
+        wireRowClicks($("p360-table-body"));
     }
     function setupP360Filters() {
         document.querySelectorAll("#p360-filters .filter-pill").forEach((pill) => {
@@ -1203,10 +677,23 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         });
     }
 
-    // ---------- View switching (Executive Overview ⇄ Partner 360) ----------
+    function renderOverview() { renderTable(); renderBacklog(); renderSentiment(); renderRecurring(); }
+
+    function setupFilters() {
+        document.querySelectorAll("#global-filters .filter-pill").forEach((pill) => {
+            pill.addEventListener("click", () => {
+                document.querySelectorAll("#global-filters .filter-pill").forEach((p) => p.classList.remove("active"));
+                pill.classList.add("active");
+                filterState = pill.getAttribute("data-tier");
+                renderOverview();
+            });
+        });
+    }
+
+    // ---------- View switching ----------
     const VIEW_TITLE = { overview: "Executive Overview", partners: "Partner 360" };
     const VIEW_SUB = {
-        overview: "Real-time overview of partner health and churn risk",
+        overview: "Real-time partner health, churn risk & operational signal across the book",
         partners: "Every partner ranked by churn risk — select one to drill in",
     };
     function showView(view) {
@@ -1214,6 +701,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         $("view-partners").style.display = (view === "partners") ? "" : "none";
         $("view-title").textContent = VIEW_TITLE[view] || VIEW_TITLE.overview;
         $("view-subtitle").textContent = VIEW_SUB[view] || VIEW_SUB.overview;
+        $("data-window").style.display = (view === "partners") ? "none" : "flex";
         document.querySelectorAll(".nav-link[data-view]").forEach((a) => {
             a.parentElement.classList.toggle("active", a.getAttribute("data-view") === view);
         });
@@ -1222,30 +710,32 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
     }
     function setupNav() {
         document.querySelectorAll(".nav-link[data-view]").forEach((a) => {
-            a.addEventListener("click", (e) => {
-                e.preventDefault();
-                showView(a.getAttribute("data-view"));
-            });
-        });
-        // Sidebar "View all insights" jumps to the at-risk table (switching back to the overview if needed).
-        const viewAll = $("insights-viewall");
-        if (viewAll) viewAll.addEventListener("click", (e) => {
-            e.preventDefault();
-            showView("overview");
-            const target = $("at-risk");
-            if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+            a.addEventListener("click", (e) => { e.preventDefault(); showView(a.getAttribute("data-view")); });
         });
     }
 
-    // ---------- Init ----------
-    Chart.defaults.font.family = "'Plus Jakarta Sans', sans-serif";
-    renderKPIs();
-    setupFilters();
-    setupP360Filters();
-    setupNav();
-    applyFilter();   // renders the ranking, sentiment, voice and table for the default filter
+    async function init() {
+        setupNav();
+        try {
+            const res = await fetch("data/_overview.json", { cache: "no-store" });
+            if (!res.ok) throw new Error("HTTP " + res.status);
+            DATA = await res.json();
+        } catch (e) {
+            document.querySelector(".main-content").innerHTML =
+                `<div class="page-container"><div class="card"><div class="empty">Could not load <code>data/_overview.json</code>.<br><small>${esc(e.message)} — run <code>python scripts/build_overview.py</code>, then serve via <code>python server.py</code>.</small></div></div></div>`;
+            return;
+        }
+        partners = DATA.partners || [];
+        $("feed-stamp").textContent = `as of ${DATA.as_of} · ${partners.length} partners`;
+        renderCoverage();
+        renderKPIs();
+        setupFilters();
+        setupP360Filters();
+        renderOverview();
+    }
+    document.addEventListener("DOMContentLoaded", init);
 })();
 </script>
-    <script src="refresh.js"></script>
+<script src="refresh.js"></script>
 </body>
 </html>

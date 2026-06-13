@@ -30,7 +30,8 @@ pip install -r requirements.txt
 python -m extract.build_all                  # build all partners + AI + portfolio index
 python -m extract.build_partner "Logically"  # build a single partner
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
-python scripts/build_real_partners.py        # pull the extra real Halo clients + inject into exec overview
+python scripts/build_real_partners.py        # pull the extra real Halo clients (writes their data/*.json)
+python scripts/build_overview.py             # build data/_overview.json (the dashboard feed) from the caches
 python server.py                             # serve the dashboard at http://localhost:8000
 ```
 
@@ -51,17 +52,19 @@ extract/                      Python extraction + AI engine
 
 scripts/                      operational entry-point scripts
   build_real_partners.py      pull a hardcoded set of real Halo clients (+ transcripts,
-                              + AI analysis) and inject them into the exec-overview array
-  refresh_exec_row.py         re-render embedded exec-overview rows from data/{slug}.json
-                              caches (one slug, --all as the sync cycle's exec-rows step,
-                              or --remove <slug> for offboarding)
+                              + AI analysis) into their data/{slug}.json caches
+  build_overview.py           roll the caches up into data/_overview.json — the feed the
+                              dashboard fetches (SIP/action/NPS rollups, coverage window)
+  refresh_exec_row.py         DEPRECATED — no-op against the data-driven dashboard
+                              (kept for rollback; use build_overview.py instead)
   setup_graph_transcript_access.ps1   for IT: completes the Graph app-registration
                               provisioning for transcript ingestion (see
                               docs/IT-Request-Graph-Transcript-Access.md)
   probe_graph_transcripts.py  acceptance test for that app registration (token ->
                               meeting -> transcript fetch; GRAPH_* creds from .env)
 
-index.html                    Executive Overview (Chart.js charts, embedded partner array)
+index.html                    AI-Driven Operational Intelligence — Executive Overview +
+                              Partner 360, data-driven (fetches data/_overview.json)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,
                               Action Tracker, CSAT & NPS, Transcripts, Service Decks
 refresh.js                    "Sync Data" header button + live progress panel (per-step

@@ -1,0 +1,689 @@
+WEBVTT
+NOTE title: Uptime USA | Co-Managed | Bi-Weekly Service Call
+NOTE date: 2026-04-27
+NOTE duration: 32m 32s
+
+00:00:04.645 --> 00:00:07.925
+<v Kawandeep Sandhu>Hey, go again. Hello, Brandy. Nice to meet you, as always.</v>
+
+00:00:08.085 --> 00:00:08.885
+<v Brandy Roque>Hello!</v>
+
+00:00:10.565 --> 00:00:10.725
+<v Gagan Chowdhary>Yeah.</v>
+
+00:00:10.605 --> 00:00:12.565
+<v Kawandeep Sandhu>Hope everyone is OK on your side.</v>
+
+00:00:13.165 --> 00:00:13.445
+<v Brandy Roque>Hmm?</v>
+
+00:00:13.445 --> 00:00:17.245
+<v Gagan Chowdhary>She's done with flu, uh, so yeah.</v>
+
+00:00:14.725 --> 00:00:14.845
+<v Brandy Roque>Yeah.</v>
+
+00:00:17.125 --> 00:00:18.285
+<v Kawandeep Sandhu>She's under the weather.</v>
+
+00:00:17.205 --> 00:00:17.525
+<v Brandy Roque>Yeah.</v>
+
+00:00:20.005 --> 00:00:27.125
+<v Kawandeep Sandhu>I hope you feel better soon, Randy. Nobody wants to fall sick. I hate to fall sick.</v>
+
+00:00:20.245 --> 00:00:21.365
+<v Gagan Chowdhary>Yeah, possibly.</v>
+
+00:00:21.765 --> 00:00:24.085
+<v Brandy Roque>Oh, thank you. Yep, this will be my...</v>
+
+00:00:26.085 --> 00:00:30.165
+<v Brandy Roque>Yeah, this will be my last call for the day and then I am going to take a nap.</v>
+
+00:00:29.525 --> 00:00:29.845
+<v Kawandeep Sandhu>Ohh.</v>
+
+00:00:31.285 --> 00:00:49.925
+<v Gagan Chowdhary>Oh, sure. So we'll start this really quick and we'll give you some rest. So, all right, team, so thank you for joining in. And so this is like, you know, last week call didn't happen, so which is why we having, I mean, anyhow, we needed to have this call. So in this call, we'll be reviewing data.</v>
+
+00:00:31.605 --> 00:00:33.685
+<v Kawandeep Sandhu>Well, Gagan, let's make it quick then.</v>
+
+00:00:50.645 --> 00:00:56.645
+<v Gagan Chowdhary>for the last week, also the previous week when we did not have a call. So.</v>
+
+00:00:58.085 --> 00:01:04.165
+<v Gagan Chowdhary>So let me share my screen really quick and let me know once it's there on your screens. Just a moment.</v>
+
+00:01:12.405 --> 00:01:13.605
+<v Brandy Roque>All right, I can see it.</v>
+
+00:01:14.725 --> 00:01:15.285
+<v Gagan Chowdhary>Thank you.</v>
+
+00:01:20.885 --> 00:01:31.045
+<v Gagan Chowdhary>Before I start, I wanted to ask you, I know this is PST, but I was confused last time. Do you work in the same location or are you in MST?</v>
+
+00:01:31.445 --> 00:01:35.925
+<v Brandy Roque>I live Mountain Time, but I work Pacific hours.</v>
+
+00:01:36.325 --> 00:01:55.045
+<v Gagan Chowdhary>Yeah, OK, so yeah, just like Shiv. So, you know, you know, most of our employees, they work for EST, but with this, you know, Uptime USA, so they'll be working for PST. OK, just wanted to be on the same page in terms of time difference.</v>
+
+00:01:39.445 --> 00:01:39.605
+<v Brandy Roque>It.</v>
+
+00:01:55.165 --> 00:01:55.765
+<v Gagan Chowdhary>Thank you.</v>
+
+00:01:55.365 --> 00:01:55.845
+<v Brandy Roque>Mhm.</v>
+
+00:01:57.765 --> 00:02:16.965
+<v Gagan Chowdhary>All right, so Brandon, this is because this is a start with the ITBD and Uptime USA, and which is why we have weekly calls going forward as we feel comfortable, you know, with our monthly calls. So this cadence may be changed to monthly, but</v>
+
+00:02:17.285 --> 00:02:36.565
+<v Gagan Chowdhary>You know, after maybe 3 months. Okay. So this data is from April 20th till 24th. And agenda for this week is we have highlights, performance analysis, ITBD service offerings, AI by design.</v>
+
+00:02:20.565 --> 00:02:21.045
+<v Brandy Roque>Mhm.</v>
+
+00:02:36.725 --> 00:02:55.245
+<v Gagan Chowdhary>holiday schedule of both Phoebe and Shiv, way forward with Uptime USA, and of course, Recap, which I'll be sharing after this call via email as well. And during this call, please feel free to share your thoughts because this is not only be me who will be presenting this slide, but</v>
+
+00:02:55.765 --> 00:03:13.125
+<v Gagan Chowdhary>This needs to be strict, you know, interactive for both of us. Okay, so whatever you think, please feel free to chime in. We would love to hear from you and because your feedback is, you know, will always help us improve further in adding value.</v>
+
+00:03:15.845 --> 00:03:35.125
+<v Gagan Chowdhary>Not much, but these are a few of the highlights that I captured for the last two weeks. Shiv and Phoebe completed their training and shadowing with the Uptime USA team successfully, I believe so. But I would like to hear from you as well. And Cher just told me,</v>
+
+00:03:29.205 --> 00:03:29.765
+<v Brandy Roque>Yes.</v>
+
+00:03:35.285 --> 00:03:46.805
+<v Gagan Chowdhary>You know, after the weekend when he came in the shift today, that he completed certification for AZ 900 for Azure on April 24th, which is on this Friday.</v>
+
+00:03:47.365 --> 00:03:48.965
+<v Brandy Roque>Ohh, nice. That's awesome.</v>
+
+00:03:49.765 --> 00:04:09.285
+<v Gagan Chowdhary>Oh yeah. So we always encourage our engineers, our team to learn and grow further in their person and professional lives. So I think, so I'm glad that he's imbibing by this. So Phoebe and Shiv were happy to be a part of Uptime USA. Just like you, I mean,</v>
+
+00:04:09.525 --> 00:04:10.005
+<v Gagan Chowdhary>I think.</v>
+
+00:04:11.685 --> 00:04:30.565
+<v Gagan Chowdhary>Just like, you know, when we are good, we find, you know, other people good at the same time. So I think just like, you know, you always praise them whenever I write an email, although whether we are, I ask board PTOs or something else or it rescheduling of the meeting, I'd love to hear from you that you always, you know, never.</v>
+
+00:04:19.205 --> 00:04:19.685
+<v Brandy Roque>Mhm.</v>
+
+00:04:30.765 --> 00:04:53.765
+<v Gagan Chowdhary>forget to mention our team that how they are performing. You said they both are doing good, which is, which was really awesome to hear from you. So this exactly from the other hand, I hear from both of these two, my team members, Shiv and Phoebe. They always say that they are really, really happy with the team and they're just trying to.</v>
+
+00:04:34.885 --> 00:04:35.285
+<v Brandy Roque>Yes.</v>
+
+00:04:54.085 --> 00:04:56.445
+<v Gagan Chowdhary>Jill Moore, trying to understand the environment.</v>
+
+00:04:58.285 --> 00:05:12.005
+<v Gagan Chowdhary>On a daily basis, I think this is a gradual process, but yeah, so they're improving every day, but I would like to love to hear from you. I know, apart from positive feedback, anything else you you notice specifically?</v>
+
+00:05:12.645 --> 00:05:37.085
+<v Brandy Roque>It's all positive so far. I'm still getting messages from other people on the team saying how much they're enjoying working with Phoebe and Shiv. They've been very impressed about the way Phoebe and Shiv both take troubleshooting steps and the questions they ask. And over the past couple weeks, I've seen them slowly kind of ask more questions and take more tickets and pull more onto their plate and work</v>
+
+00:05:37.085 --> 00:05:45.045
+<v Brandy Roque>work with the team more. So they're progressing really well and the team really does enjoy working with them. So I couldn't ask for anything better.</v>
+
+00:05:46.485 --> 00:06:04.725
+<v Gagan Chowdhary>Thank you very much. I really love to hear that. Moving on to your performance analysis. And so here I'm presenting data from April 13th to 17th and April 2024. So just like I said, so Kennedy, I do not have any</v>
+
+00:06:05.205 --> 00:06:22.885
+<v Gagan Chowdhary>access to any tool. So I've asked both of these team members to honestly, genuinely just mention your time on a daily basis. You know, we have a form, we do, we use MS Forms, so I ask them to fill that form every day.</v>
+
+00:06:24.325 --> 00:06:44.965
+<v Gagan Chowdhary>You know, wherein they mentioned how many tickets they touched in a day, they just note down separately, and because we do understand we are a SOL compliant company, so you know, so they just captured those all those, they write it down on their notepad, how many tickets they touched, how many tickets they closed in a day, and</v>
+
+00:06:42.485 --> 00:06:42.885
+<v Brandy Roque>Okay.</v>
+
+00:06:45.765 --> 00:07:00.405
+<v Gagan Chowdhary>how many total billable hours they had during this week, every day, every single day. So based on that data that they fill in every day, April 13th to 17th, Phoebe.</v>
+
+00:07:01.605 --> 00:07:13.365
+<v Gagan Chowdhary>The available time remained 76.05% and non-available was 16.88% and so the total utilization remained 93% and.</v>
+
+00:07:15.925 --> 00:07:35.205
+<v Gagan Chowdhary>Shiv last week has billable remained 64.63% and non-available 21.53% and the total utilization remained 86%. At ITBD, we want to we want them to have billable at least 80%, but</v>
+
+00:07:35.365 --> 00:07:54.645
+<v Gagan Chowdhary>I would like to, you know, as we are moving further with a partnership, so I'd like to know from you, we'll be going forward to your expectation. So how much should be total utilization? What mark should they be touching, you know, a daily, weekly or monthly basis?</v>
+
+00:07:55.685 --> 00:08:15.125
+<v Gagan Chowdhary>So far, they're doing good, but I would like to know from you so that I know we are human beings, so when we get into your comfort zone, so sometimes, or let's say if some ticket flow is not coming that good from the back end. So I always encourage my team to, even if you're not getting...</v>
+
+00:07:57.245 --> 00:07:57.685
+<v Brandy Roque>Yu.</v>
+
+00:08:15.445 --> 00:08:35.325
+<v Gagan Chowdhary>ticket flow regularly. You should always be asking your dispatch team or any other person that you're working closely with. If they have something extra for you, they can align you somewhere else so that you're always adding value, not in terms of tickets, but anything that you may have on your plate.</v>
+
+00:08:37.525 --> 00:09:00.005
+<v Brandy Roque>Looking at these numbers, it lines up with what I have on my side too. I know Shiv took that vacation, so it looks a little low, but got to look at the whole story. But yeah, they've been doing great. I know there was a little bit of drop in tickets last week and I saw Shiv was kind of going in and helping clean up some of the alerts and the monitoring. So he kept himself busy, which was really nice to see as well.</v>
+
+00:08:37.845 --> 00:08:38.165
+<v Gagan Chowdhary>Uh...</v>
+
+00:08:44.085 --> 00:08:44.405
+<v Gagan Chowdhary>Yeah.</v>
+
+00:09:01.285 --> 00:09:22.205
+<v Gagan Chowdhary>Yeah, thank you for sharing that. We'll also see a ticket slide on the next one. So in the last week, from April 20th to 24th, I'll just quickly wrap it up really quick. So in this last week, so Phoebe's utilization billable remains 73.40 and her non-billable 26.60%.</v>
+
+00:09:22.485 --> 00:09:41.685
+<v Gagan Chowdhary>So total utilization remain 100%. So I did observe last week and then I asked Phoebe, how come your utilization is, I mean, for some days it was above 100%, which is not possible. So she said, you know, that day I bring, I didn't bring my Tiffin. So</v>
+
+00:09:42.325 --> 00:09:53.365
+<v Gagan Chowdhary>So, you know, which is why I, you know, I did not take, you know, enough break, so I just, you know, remained seated at my seat, and you know, we kept working for that day.</v>
+
+00:09:49.925 --> 00:09:50.085
+<v Brandy Roque>Mm.</v>
+
+00:09:53.165 --> 00:09:53.645
+<v Brandy Roque>Mhm.</v>
+
+00:10:14.125 --> 00:10:14.725
+<v Brandy Roque>Mm-hmm.</v>
+
+00:10:14.805 --> 00:10:33.685
+<v Gagan Chowdhary>Shiv last week, his available number remained at 69.96% and non-billable remained 20.17%, 17. And his total utilization was 90%. So we'll see the ticket trend.</v>
+
+00:10:33.765 --> 00:10:55.365
+<v Gagan Chowdhary>on the next slide. But do you have any questions for this one before we move on? Okay. Okay. So here I mentioned that as you said, so Shiv from April, yeah, 20th to 24th this last week. So Shiv was out for two days for on the 20th and 21st. So he worked only for three days. So which is why</v>
+
+00:10:38.365 --> 00:10:39.285
+<v Brandy Roque>No questions.</v>
+
+00:10:57.525 --> 00:11:13.925
+<v Gagan Chowdhary>Previous week, week before this, his daily ticket touch average was higher, but this week, I mean, it came down a bit to 9.6 tickets per day. Hi, Rick, thank you for joining in.</v>
+
+00:11:17.565 --> 00:11:17.685
+<v Gagan Chowdhary>Yeah.</v>
+
+00:11:19.365 --> 00:11:37.925
+<v Gagan Chowdhary>So moving on to ticket closure trend. Yeah, in the first week, I was surprised. I mean, right from the beginning. So Phoebe, I mean, touched 101 tickets in that week. She was present the entire week. And so the blue</v>
+
+00:11:33.925 --> 00:11:34.325
+<v Brandy Roque>But.</v>
+
+00:11:38.045 --> 00:11:58.165
+<v Gagan Chowdhary>bar is for the number of tickets she touched, and the green bar represents number of tickets she closed. So that week, she touched the marker 85.15%. That is her ticket closure rate. And Shiv's ticket touched that week remained 56, almost 1/2.</v>
+
+00:11:44.885 --> 00:11:45.365
+<v Brandy Roque>Mmh.</v>
+
+00:11:59.405 --> 00:12:10.965
+<v Gagan Chowdhary>So, and he completed out of 56, 44 tickets, so that brought his ticket closer rate to 78.57%.</v>
+
+00:12:11.605 --> 00:12:11.845
+<v Brandy Roque>Ohh.</v>
+
+00:12:13.165 --> 00:12:33.685
+<v Gagan Chowdhary>On the following week, he needed to pick it up, but I think unfortunately he needed to take a leave for two days, so which is why Shiv's total ticket charge remained 19, you know, as per his honesty. And he completed 13 tickets and his ticket resolve rate remained 68.42%. And Phoebe consistently</v>
+
+00:12:18.925 --> 00:12:19.325
+<v Brandy Roque>Thank you.</v>
+
+00:12:25.685 --> 00:12:26.205
+<v Brandy Roque>Mmh.</v>
+
+00:12:34.325 --> 00:12:35.365
+<v Gagan Chowdhary>She's.</v>
+
+00:12:36.325 --> 00:12:59.285
+<v Gagan Chowdhary>kept touching more tickets. However, I'm not sure the exact reason, but maybe there was less ticket flow during this week. So she had 73 tickets, out of which she was able to complete 44. If the ticket resolve rate is not that higher, it came down to a 60.27%. So</v>
+
+00:12:52.485 --> 00:12:52.725
+<v Brandy Roque>What?</v>
+
+00:13:00.325 --> 00:13:17.925
+<v Gagan Chowdhary>Possibly, there were some tickets, you know, that took longer, which is why those cannot be closed the same day. So, I also tell you how we calculate these ticket resolve rate. So, any ticket that...</v>
+
+00:13:04.965 --> 00:13:05.165
+<v Brandy Roque>Okay.</v>
+
+00:13:18.485 --> 00:13:37.245
+<v Gagan Chowdhary>our team member is closing the same day, although they might close the other day, the next day, but we are counting on day-to-day basis. If they are handling 10 tickets today and they are closing on the 8th, so I will, today, maybe, you know, after following up with the same user tomorrow, the other day.</v>
+
+00:13:27.525 --> 00:13:28.005
+<v Brandy Roque>Mhm.</v>
+
+00:13:37.685 --> 00:13:43.925
+<v Gagan Chowdhary>It will get closed, but they will not get counted in their ticket closure rate for today.</v>
+
+00:13:44.485 --> 00:13:44.685
+<v Brandy Roque>Mm.</v>
+
+00:13:44.885 --> 00:13:54.085
+<v Gagan Chowdhary>So, which is why I mean this number shows a drastic difference, but I will we will love to hear from you how you calculate if you think.</v>
+
+00:13:48.645 --> 00:13:49.245
+<v Brandy Roque>Mm-hmm.</v>
+
+00:13:57.045 --> 00:14:05.605
+<v Gagan Chowdhary>I mean, I must know from you, I mean, whether do you need to take your closure away for the same day or my next day, or how would you like to go about this?</v>
+
+00:14:06.965 --> 00:14:25.285
+<v Brandy Roque>Same day is good data. I know there's a lot of tickets out there that are what we call quick hits. It's stuff like a password reset, distribution group update, those things that you can knock out that maybe don't require the end user to interact with you. And that's, I know what a lot of these were. We had like a lot of background maintenance things that came in.</v>
+
+00:14:09.125 --> 00:14:09.525
+<v Gagan Chowdhary>Okay.</v>
+
+00:14:20.885 --> 00:14:21.365
+<v Gagan Chowdhary>Mhm.</v>
+
+00:14:26.645 --> 00:14:46.565
+<v Brandy Roque>And then the other ones, maybe like you said, is exactly right. We work on it one day and we're waiting until the next day. The user's like, yep, good to go and we're able to close it. So open and closed on same day hasn't really been something that we've tracked internally, but it is something that we are able to report on and do like looking at from time to time.</v>
+
+00:14:34.805 --> 00:14:35.045
+<v Gagan Chowdhary>Yep.</v>
+
+00:14:47.605 --> 00:14:48.725
+<v Gagan Chowdhary>Okay, thank you.</v>
+
+00:14:50.805 --> 00:15:11.125
+<v Gagan Chowdhary>And do you also get a track or do you have rigor on, you know, reducing aging tickets? Or what tickets do you consider aged or stale tickets? Maybe sometimes say any tickets after which is more than three days old or maybe seven days old, maybe</v>
+
+00:15:11.325 --> 00:15:19.765
+<v Gagan Chowdhary>10 years old, so we should have some focus on that. So I want to know so that, you know, I can work with my team on these things as well.</v>
+
+00:15:20.645 --> 00:15:39.445
+<v Brandy Roque>Yeah, aging tickets isn't something we've looked at either. We get a lot of tickets in where the customer will submit something on a Monday, but we can't actually work on it until maybe a Friday or next week, like an employee onboarding or an off-boarding, something like that, or we have to schedule something out in the future. So</v>
+
+00:15:33.925 --> 00:15:34.525
+<v Gagan Chowdhary>Mm-hmm.</v>
+
+00:15:39.725 --> 00:16:00.965
+<v Brandy Roque>That's just one of the metrics that we haven't found fully useful just because of what the client needs from us. The biggest thing we report on is our SLAs, making sure that we at least respond to the ticket by a certain time. So then if it's open for 10 days, that's great, but at least we've responded to it within, say, 4 hours. We've updated the customer and now.</v>
+
+00:15:53.125 --> 00:15:53.525
+<v Gagan Chowdhary>Okay.</v>
+
+00:15:59.885 --> 00:16:00.005
+<v Gagan Chowdhary>Bing.</v>
+
+00:16:01.125 --> 00:16:04.165
+<v Brandy Roque>We're scheduling the next batch of work that has to happen in the future.</v>
+
+00:16:05.285 --> 00:16:22.685
+<v Gagan Chowdhary>All right, great. Thank you. Nice to hear from you. So we call them, so I mean, so I understand your requirement is SLA, that means adopting best ticketing practices, right? Okay, thank you. Yeah, that's very, very important.</v>
+
+00:16:19.165 --> 00:16:19.765
+<v Brandy Roque>Mm-hmm.</v>
+
+00:16:24.645 --> 00:16:44.325
+<v Gagan Chowdhary>I'll sit and sit with Shiv and Fab and I will also like to understand, you know, what are your total, what best practices you follow in terms of ticketing. So that, you know, I also understand. So the next time when I, you know, randomly sit with them, so I know what questions, you know, I need to ask them. And</v>
+
+00:16:33.805 --> 00:16:34.085
+<v Brandy Roque>Hmm?</v>
+
+00:16:45.285 --> 00:17:05.525
+<v Gagan Chowdhary>Okay, I'm sure team is doing good and my only emphasis or rigor is to keep them on track all the time. I know we are human beings and you know things do happen to air is human, but so, but the graph may move, you know, in a zigzag moment, but...</v>
+
+00:16:48.245 --> 00:16:48.325
+<v Brandy Roque>The.</v>
+
+00:16:53.365 --> 00:16:53.485
+<v Brandy Roque>And.</v>
+
+00:16:59.645 --> 00:17:00.125
+<v Brandy Roque>Mhm.</v>
+
+00:17:04.805 --> 00:17:05.365
+<v Brandy Roque>Mhm.</v>
+
+00:17:05.925 --> 00:17:23.765
+<v Gagan Chowdhary>We need to bring it back on track all the time. Thank you. Moving on to ITBD services, I think we did touch upon this the last time, you must be aware. So we do have our homegrown tool that is Team GPS. So whenever...</v>
+
+00:17:09.845 --> 00:17:10.165
+<v Brandy Roque>Who?</v>
+
+00:17:24.485 --> 00:17:37.045
+<v Gagan Chowdhary>I mean, these are some of the examples this tool does. Collaborative one-on-one group meetings, employee engagement, client management, performance management, reward, and rewards and recognition.</v>
+
+00:17:37.925 --> 00:17:57.885
+<v Gagan Chowdhary>strategic goals alignment, and many more. So the reason saying this or putting this in our slide is so that you also know that not only Phoebe and Shiv, but ITBD does much more. If you're looking for something outside, so you should...</v>
+
+00:17:57.965 --> 00:18:11.445
+<v Gagan Chowdhary>you can let us know that this is something you're looking for. And if a team or a tool can help you in anything that you're trying to achieve in your environment, so we'll be glad to help you with that.</v>
+
+00:18:12.085 --> 00:18:36.445
+<v Brandy Roque>Yeah, Team GPS is something I know that has been on our radar. We've been interested in. I think we did a small demo of it, but getting like the whole uptime team onboarded into it at some point is kind of where we wanted to go. So we have some other software packages that we're evaluating right now, not like this, but like a new phone system and things like that. So we're kind of going down the list, but this is definitely.</v>
+
+00:18:12.325 --> 00:18:12.725
+<v Gagan Chowdhary>Okay.</v>
+
+00:18:22.645 --> 00:18:22.805
+<v Gagan Chowdhary>Mm.</v>
+
+00:18:34.165 --> 00:18:34.605
+<v Gagan Chowdhary>Okay.</v>
+
+00:18:36.445 --> 00:18:39.125
+<v Brandy Roque>Definitely something that we want to revisit in the future.</v>
+
+00:18:39.925 --> 00:18:58.805
+<v Gagan Chowdhary>Sure, yeah. So, whenever you have these, whenever you have time for a team for a 30-minute demo, you can always scan this QR code, and our team will be really, really happy to give you the demo. Thank you, I believe, Rick.</v>
+
+00:18:58.885 --> 00:19:07.845
+<v Gagan Chowdhary>or someone from CX team must have shared this email with you regarding these tools that ITBD is into. Yeah, Rick, you may touch upon this.</v>
+
+00:19:00.165 --> 00:19:00.805
+<v Rick Arora>Yep.</v>
+
+00:19:02.245 --> 00:19:02.885
+<v Rick Arora>Soon.</v>
+
+00:19:04.325 --> 00:19:05.285
+<v Rick Arora>Yeah, Pre.</v>
+
+00:19:08.005 --> 00:19:25.205
+<v Rick Arora>Yeah, we have a call tomorrow, so that's what I want to make sure. So, Brandy, thank you for accepting the invite. I think Kian is also will be joining, right? Okay, perfect, perfect. No, we are excited for the tomorrow's call. Let's go for that. Thank you, thank you.</v>
+
+00:19:09.725 --> 00:19:09.925
+<v Brandy Roque>Yep.</v>
+
+00:19:10.685 --> 00:19:10.885
+<v Gagan Chowdhary>Mm.</v>
+
+00:19:17.045 --> 00:19:18.005
+<v Brandy Roque>He will, yes.</v>
+
+00:19:22.645 --> 00:19:22.805
+<v Brandy Roque>Mm.</v>
+
+00:19:25.845 --> 00:19:29.445
+<v Gagan Chowdhary>Yeah, that's nice. Thank you for sharing, Rick. I didn't know that. Thank you.</v>
+
+00:19:31.045 --> 00:19:54.165
+<v Gagan Chowdhary>Okay, ITBD holidays. So I did share this the last time. So this is just so that in case it is not on the calendar, many of these compulsory holidays can be marked on your calendar. However, as I said, so it does not mean that if you have special requirements on that particular day, a team would not be available.</v>
+
+00:19:54.965 --> 00:20:12.245
+<v Gagan Chowdhary>So you can let us know in advance. Do you need people present on these specific days? So we can speak to them and they can take complimentary off later on and they can schedule themselves to be present on that specific day to meet business requirements.</v>
+
+00:20:13.925 --> 00:20:35.925
+<v Gagan Chowdhary>For now, yeah, option holidays. So we have five options to choose, two option holidays. So currently, Phoebe and Shiv have chosen Diwali. Shiv has already taken one, so this will be second option holiday for Shiv. And Phoebe has currently has decided only one.</v>
+
+00:20:36.645 --> 00:20:48.885
+<v Gagan Chowdhary>But I think she has ample time till October and November. She can decide her second later on. But we will definitely let you know at least two to three weeks in advance. Okay. Thank you.</v>
+
+00:20:40.045 --> 00:20:40.285
+<v Brandy Roque>Yeah.</v>
+
+00:20:50.645 --> 00:21:09.765
+<v Gagan Chowdhary>Way forward with Uptime USA, Phoebe and Shiv to remain focused on the KP as in further learning. This is going to be in our focus most and all the time, I would say. And ITBD lead to continue to encourage and support team in identifying areas where they can add value.</v>
+
+00:21:09.925 --> 00:21:10.965
+<v Gagan Chowdhary>in your environment.</v>
+
+00:21:12.085 --> 00:21:22.725
+<v Gagan Chowdhary>And yeah, of course, yeah, team lead to continue to organize team collaboration activities such as team lunches, you know, so that we can keep them motivated.</v>
+
+00:21:23.125 --> 00:21:23.365
+<v Brandy Roque>Hi.</v>
+
+00:21:25.605 --> 00:21:46.085
+<v Gagan Chowdhary>So this quarter, this is Q2. So yeah, this, so I mean, previously they were a part of a different team, so now they are a part of my team. So soon, very soon, we'll have, yeah, we'll sit outside to dine together, to have lunch with the dinner, and we'll share pictures with you. I mean, how we celebrate here in India.</v>
+
+00:21:46.805 --> 00:22:05.205
+<v Gagan Chowdhary>And I'm sure you'll be happy seeing those. Yeah, so that's about it, and I'll unshare my screen. So, these were these were the slides, you know, which I prepared and showed you last time as well, but I would I would like to hear from you.</v>
+
+00:21:55.365 --> 00:21:55.565
+<v Brandy Roque>No.</v>
+
+00:22:05.365 --> 00:22:19.205
+<v Gagan Chowdhary>anything that I probably did or did not show to you or present this to you that you would like to see specifically in these presentations. So we would like to incorporate into that.</v>
+
+00:22:20.405 --> 00:22:30.725
+<v Brandy Roque>Nothing I can think of. I mean, this is great information and I like hearing feedback from your side of things and how they're doing and how they're feeling as well. So nothing else I can think to add right now.</v>
+
+00:22:32.005 --> 00:22:38.245
+<v Gagan Chowdhary>Okay, thank you very much. I think, let me see if I have some questions written down.</v>
+
+00:22:39.605 --> 00:22:53.205
+<v Gagan Chowdhary>Yeah, that's not, I mean, big, but I just wanted to ask you, so that we remain on the same page. So, Brandy, I did observe that on a daily basis, they, when they entered their...</v>
+
+00:22:54.365 --> 00:23:03.925
+<v Gagan Chowdhary>available time, non-available time for all the activities they perform in your environment. So on the bottom it does also say total hours.</v>
+
+00:23:04.245 --> 00:23:04.805
+<v Brandy Roque>Yes.</v>
+
+00:23:05.445 --> 00:23:24.805
+<v Gagan Chowdhary>So different clients have different requirements. So do you want those total hours to be always, I mean, I know you have 1 1/2 hour break time, one hour break and two 15 minute breather. So we, I can say a 1 1/2 hour break. So that means from.</v>
+
+00:23:25.205 --> 00:23:31.765
+<v Gagan Chowdhary>Out of nine hours, they have 1 1/2 hour break time. So that means they have 7 1/2 hours work time.</v>
+
+00:23:32.325 --> 00:23:32.565
+<v Brandy Roque>Yeah.</v>
+
+00:23:32.645 --> 00:23:43.325
+<v Gagan Chowdhary>Okay, so do you want their, I think break hour is also included in their non-available time, right? What they, okay.</v>
+
+00:23:41.605 --> 00:23:50.645
+<v Brandy Roque>It is, yes. Yeah, it's considered non-billable and then internal time is what it shows up as in some of our reports.</v>
+
+00:23:48.965 --> 00:23:49.365
+<v Gagan Chowdhary>Yeah.</v>
+
+00:23:51.365 --> 00:23:51.845
+<v Gagan Chowdhary>Okay.</v>
+
+00:23:52.725 --> 00:23:56.965
+<v Gagan Chowdhary>So my question, for instance, someday they have...</v>
+
+00:23:58.205 --> 00:24:18.165
+<v Gagan Chowdhary>relatively less tickets. Let's say they have, sometimes they may have 8 hours of productivity. If someday they have 7 hours of productivity, they are losing 30 minutes. So how should they be entering time? Should this always be 9 hours?</v>
+
+00:24:19.365 --> 00:24:22.325
+<v Gagan Chowdhary>You know, on the portal or what?</v>
+
+00:24:22.805 --> 00:24:41.085
+<v Brandy Roque>We expect a little bit of fluctuation in what they enter for the whole team even. We call it kind of lost time, and that's probably time where maybe they're on a call, they're talking with other people on the team about different things, and there's no real place for them to enter that.</v>
+
+00:24:31.925 --> 00:24:32.485
+<v Gagan Chowdhary>Mmh.</v>
+
+00:24:38.485 --> 00:24:39.085
+<v Gagan Chowdhary>Mm-hmm.</v>
+
+00:24:41.205 --> 00:25:01.485
+<v Brandy Roque>lost time because it may be discussing 3 customers. Something that I'm working on right now and I'll have to talk to them about is we're coming up with new buckets to track some of that time specifically. We're coming up with categories like internal meetings and dream work.</v>
+
+00:24:45.045 --> 00:24:45.325
+<v Gagan Chowdhary>Yeah.</v>
+
+00:24:55.045 --> 00:24:55.525
+<v Gagan Chowdhary>Mhm.</v>
+
+00:25:01.605 --> 00:25:21.845
+<v Brandy Roque>and internal IT. So internal IT being maybe they're helping me because, you know, my password needs reset or something. It's for uptime internally. And then DreamWork being that time where if they're caught up on tickets and there's nothing new coming in, they could take 30 minutes or an hour and actually like study.</v>
+
+00:25:22.165 --> 00:25:41.925
+<v Brandy Roque>like Shiv studying for another certification or something. We want to be able to give them that time back if it's available to them to do something or researching a new product, things like that that may help the company or like planning for a presentation. So a lot of that is that lost time we've discovered is we've kind of looked at people's studies.</v>
+
+00:25:41.965 --> 00:25:48.645
+<v Brandy Roque>time sheets and talk to them about it. So we're trying to find a way to categorize those so we can fill out the time sheets more thoroughly.</v>
+
+00:25:50.565 --> 00:26:09.405
+<v Gagan Chowdhary>Nice, that sounds like a good plan and idea. And I also, when I was speaking to Shiv and Phoebe, it really liked the idea of a virtual box that you have in your environment. That's great. So whenever they have, so I mean, they said.</v>
+
+00:26:04.485 --> 00:26:04.885
+<v Brandy Roque>Uh-huh.</v>
+
+00:26:05.925 --> 00:26:06.725
+<v Brandy Roque>Yeah, yeah.</v>
+
+00:26:10.005 --> 00:26:29.285
+<v Gagan Chowdhary>You know, we just, you know, get into that workshop box, and you know, we can interact with other team members at the same time, and we can ask, I mean, what can be done? Well, I mean, that's a that's a really good, I think, option, and we can we can adopt in our environment as well, so that's a really good concept.</v>
+
+00:26:28.485 --> 00:26:49.205
+<v Brandy Roque>Yeah, it's been helpful because after COVID and everything, people started working remote more and you kind of lost that sense of being able to turn around and say over the cubicle, hey, I need some help. And so, yeah, the virtual office is something we came up with and everybody's encouraged to hop in and just kind of sit there, maybe listen because</v>
+
+00:26:41.285 --> 00:26:41.845
+<v Gagan Chowdhary>Yeah.</v>
+
+00:26:49.525 --> 00:27:00.805
+<v Brandy Roque>You never know, somebody might come in with an issue and you know the answer and you can help them in 5 minutes instead of them spending 2 hours trying to figure it out on their own. So we really encourage that channel to be used a lot.</v>
+
+00:27:01.605 --> 00:27:03.445
+<v Gagan Chowdhary>Oh, yeah, that's pretty nice.</v>
+
+00:27:05.365 --> 00:27:08.005
+<v Gagan Chowdhary>Kevin, I passed this to you. Anything from your end?</v>
+
+00:27:10.485 --> 00:27:29.445
+<v Kawandeep Sandhu>Thank you, Gagan. Thank you, Brandy, for all your feedback and valuable insight, we truly appreciate it. I can see Gagan spending a lot of time with Phoebe and Shiv just to make sure that things are on track. But we do understand that when it comes to service delivery, there will be certain fluctuations.</v>
+
+00:27:18.045 --> 00:27:18.325
+<v Brandy Roque>Who?</v>
+
+00:27:29.845 --> 00:27:30.165
+<v Brandy Roque>One.</v>
+
+00:27:29.925 --> 00:27:48.885
+<v Kawandeep Sandhu>And that's where we just want to work together to see how we can get back on track. Having said that, I believe there are a couple of open positions that we're supposed to close. So any thoughts on that, Brandy? Maybe next month or end of Q2?</v>
+
+00:27:36.885 --> 00:27:37.045
+<v Brandy Roque>Mm.</v>
+
+00:27:50.405 --> 00:28:09.845
+<v Brandy Roque>To bring on more people or? Yeah, I was talking to Keenan about that and just finished a call with Ronald as well. And so we're still looking to maybe bring one to two tier threes on board towards the end of May. I saw Ronald did send me a quick email with a link for.</v>
+
+00:27:52.245 --> 00:27:52.485
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:27:59.525 --> 00:27:59.725
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:28:09.925 --> 00:28:31.045
+<v Brandy Roque>filling out the form to start at least moving that forward. We're not in a rush right now, but it is something that we will be doing. The other question I had asked Ronald was recently, because we are an M&A company and we're acquiring and merging with other businesses, the latest one we did in November doubled us in size.</v>
+
+00:28:10.325 --> 00:28:10.805
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:28:27.605 --> 00:28:28.085
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:28:31.085 --> 00:28:54.245
+<v Brandy Roque>size. And so we just merged all the phone systems together into one. And with that, the phones are ringing everybody's line whenever a call comes in. So trying to figure out if there was a position that you guys offer that could be that like initial triage person, they answer the phone.</v>
+
+00:28:54.485 --> 00:29:13.045
+<v Brandy Roque>They see if it's an existing ticket or a new ticket. They get a ticket created. They know where to route it to or direct the phone call. So that was one. And then the other question I had was procurement. So one of the things that we handle internally, if a customer needs a new laptop or...</v>
+
+00:28:58.285 --> 00:28:58.445
+<v Kawandeep Sandhu>Mm.</v>
+
+00:29:13.445 --> 00:29:34.805
+<v Brandy Roque>a new license or something. We had a procurement department we were starting to build, but we had to kind of restructure the organization. And we have one person doing that right now, but it's not meant to be his job in the end. He's really just kind of doing it to keep everything moving forward. The customer's happy, but we were hoping to.</v>
+
+00:29:35.125 --> 00:29:53.285
+<v Brandy Roque>find out where that role can go by the end of June, if possible. So again, I don't know if that's a role that's offered by your team. Ronald said it's something we could look into, like a tier one of some sort. So that's where I left off with him with filling some positions in the near future.</v>
+
+00:29:44.965 --> 00:29:45.445
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:29:46.645 --> 00:29:47.045
+<v Kawandeep Sandhu>Yep.</v>
+
+00:29:54.645 --> 00:30:13.125
+<v Kawandeep Sandhu>That's great to, you know, hear that, Brandy, that we have all these open positions, and I'm happy that Ronald is working with you. From our side, we just want to make sure that we have that form that you talked about, because that form will help us to identify the right fit for uptime.</v>
+
+00:30:08.085 --> 00:30:08.325
+<v Brandy Roque>No.</v>
+
+00:30:13.605 --> 00:30:30.725
+<v Kawandeep Sandhu>And that's why we need all those details so that we can find the right fit for you. And then accordingly, we can move forward. It is just that, you know, build it is one of our biggest annual events that's coming up. So we are in a, we are building a pipeline which.</v>
+
+00:30:13.725 --> 00:30:13.925
+<v Brandy Roque>Mm.</v>
+
+00:30:31.765 --> 00:30:46.965
+<v Kawandeep Sandhu>in the future will help you with the right talent that you're looking for. So going forward, you will hear build it very often. So in the meantime, yeah, as soon as you fill that form, I will be more than happy to look into all the requirements.</v>
+
+00:30:39.925 --> 00:30:40.485
+<v Brandy Roque>Mmh.</v>
+
+00:30:40.165 --> 00:30:40.405
+<v Gagan Chowdhary>Yeah.</v>
+
+00:30:47.685 --> 00:30:48.725
+<v Brandy Roque>Thank you so much.</v>
+
+00:30:49.245 --> 00:30:52.725
+<v Kawandeep Sandhu>You're most welcome. Thank you so much, Brandon. Rick, over to you for any questions.</v>
+
+00:30:51.205 --> 00:30:51.685
+<v Brandy Roque>Mhm.</v>
+
+00:30:54.765 --> 00:31:01.605
+<v Rick Arora>No, I think I'm good. But to answer that procurement one, I think if that's needed in the US, then definitely we can help.</v>
+
+00:31:02.805 --> 00:31:12.405
+<v Rick Arora>and we can cover maybe on our next call or Kanav can confirm this. But this time, good, we will connect tomorrow for AI regarding. Thank you, Brandy. Thank you, Kanav.</v>
+
+00:31:12.645 --> 00:31:13.125
+<v Brandy Roque>Mhm.</v>
+
+00:31:13.885 --> 00:31:19.285
+<v Kawandeep Sandhu>Great, thanks a lot. So we'll keep you posted, Brandy, as per the procurement position.</v>
+
+00:31:15.205 --> 00:31:15.965
+<v Gagan Chowdhary>So...</v>
+
+00:31:17.765 --> 00:31:18.085
+<v Brandy Roque>Right.</v>
+
+00:31:19.685 --> 00:31:20.645
+<v Brandy Roque>Perfect. Thank you.</v>
+
+00:31:21.485 --> 00:31:22.085
+<v Kawandeep Sandhu>Welcome.</v>
+
+00:31:21.845 --> 00:31:42.325
+<v Gagan Chowdhary>Thank you, Brandy, for joining in. Despite, you know, being unwell, you still, you know, didn't move this meeting to, you know, to some other day. I really, really do appreciate that, you know, for joining this meeting. Origins, so thank you for joining in, and I will share meeting minutes after this call. And so please, you know,</v>
+
+00:31:42.565 --> 00:32:02.085
+<v Gagan Chowdhary>I mean, give us feedback if you feel like. And as this month is ending, today is 27th. So after, I mean, in the first week of next month, so we shoot our CSAT surveys. So should we direct this CSAT for Phoebe and Shiv to you?</v>
+
+00:31:58.325 --> 00:31:58.565
+<v Brandy Roque>Okay.</v>
+
+00:32:02.645 --> 00:32:03.845
+<v Brandy Roque>Yeah, that'll come to me.</v>
+
+00:32:04.645 --> 00:32:17.765
+<v Gagan Chowdhary>Okay, so they will come to you and so please, I mean, please find some time to fill out that server. I mean, we already are hearing a lot, but we would love to hear from you from in the form of server response as well.</v>
+
+00:32:18.325 --> 00:32:18.485
+<v Brandy Roque>Oh.</v>
+
+00:32:20.005 --> 00:32:28.005
+<v Gagan Chowdhary>All right, thank you very much team for joining in. Hope you all have a great day and Brittany have good rest and wish you get built quick. Thank you.</v>
+
+00:32:27.285 --> 00:32:29.605
+<v Brandy Roque>All right, thank you so much. Thank you both.</v>
+
+00:32:30.165 --> 00:32:31.285
+<v Kawandeep Sandhu>Thank you, Brandy. Have a good one.</v>
+
+00:32:30.245 --> 00:32:31.285
+<v Gagan Chowdhary>Thank you. Bye-bye.</v>
+
+00:32:31.765 --> 00:32:32.165
+<v Brandy Roque>Bye.</v>
+

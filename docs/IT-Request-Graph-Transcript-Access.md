@@ -116,6 +116,51 @@ Recommended afterwards: rotate
 the client secret (it was shared over email) and hand the new value over via a
 password manager.
 
+**Retest (2026-06-12, later same day):** IT has since granted
+`OnlineMeetings.Read.All` — the token now carries all four application
+permissions, so **item 2 is done**. Items 3 and 4 are still outstanding:
+meeting/transcript reads on DESManagement now fail with the definitive
+`403 "No application access policy found for this app"` (Teams policy not
+created), and an out-of-scope mailbox calendar still reads fine (Exchange
+scoping absent). Both are completed by
+`scripts/setup_graph_transcript_access.ps1`. Probe gotcha found during the
+retest: app-only `/users/{id}/onlineMeetings` calls must address the organizer
+by **object id** — by UPN, Graph returns an empty `404 UnknownError` that
+masks the real policy error. The probe script now derives the object id from
+the join URL's `Oid` context parameter (also corrected: that Oid shows the
+Atlantic PC 2026-05-22 acceptance meeting was organized by **DESManagement**,
+not MDEManagement).
+
+**✅ ACCEPTANCE TEST PASSED (2026-06-12, evening):** Neeraj Chopra (IT) ran
+`scripts/setup_graph_transcript_access.ps1`. The Teams policy grant to
+**DESManagement succeeded** and `python scripts/probe_graph_transcripts.py`
+went green end-to-end within minutes: meeting resolved from join URL → 17
+transcripts listed → VTT content fetched (24,691 chars, Atlantic PC
+2026-05-22). **Transcript ingestion is unblocked.**
+
+The script then halted on `Grant-CsApplicationAccessPolicy … MDEManagement@itbd.net`
+with `"User does not exist"`. Findings from the calendar data:
+
+- **Confirmed (Amit, 2026-06-12): MDEManagement and SBDManagement are SMTP
+  aliases of the DESManagement mailbox**, not separate users — which is why
+  calendar reads resolve for all three addresses but the Teams policy grant
+  ("binds to a real user identity") fails on the aliases.
+- It doesn't matter for coverage: every partner service call — including events
+  whose organizer *email* shows MDE/SBDManagement — carries **DESManagement's
+  object id** (`3f79ace1-8cf8-4033-9432-3e4243b3c8c8`) in its join URL, i.e.
+  all Teams meetings are created under the DES identity, which is now granted.
+- Meetings organized by personal accounts (sbhatia@, tanya.khurana@) remain
+  outside the policy (verified 403) — the recent ones are internal interviews,
+  not partner calls, so no action needed unless a partner call shows up under
+  a personal organizer.
+
+Still outstanding because the script stopped at the MDE error: **Step 3,
+Exchange calendar scoping (item 4)**. The script was revised same day
+(`$OrganizerAccounts` reduced to DESManagement only, alias note added) — Neeraj
+re-runs the revised script; it is idempotent and will skip Steps 1–2, completing
+Step 3 + verification. The secret-rotation recommendation above also still
+stands.
+
 **Update to item 4 of the original request (2026-06-12):** Microsoft now says
 *"Don't create new App Access Policies"* — `New-ApplicationAccessPolicy` is
 superseded by [RBAC for Applications](https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac)
@@ -129,3 +174,22 @@ Exchange RBAC grants are additive, so the tenant-wide consent must go for the
 scope to bind; calendar reads then authorize via the Exchange role and the
 token no longer carries a `Calendars.Read` claim). Verification:
 `Test-ServicePrincipalAuthorization` (replaces `Test-ApplicationAccessPolicy`).
+
+## Coverage gap found by the bulk dry-run (2026-06-13) — PARKED
+
+A `pull_graph_transcripts.py --include-docx-folders` **dry run** (900 calendar events
+scanned) showed the DES Teams policy does **not** cover every partner call: of the series
+found, **28 resolved 403** because they're organized under an identity outside the policy:
+- **All Quarterly/Monthly Business Reviews** (`ITBD x <Partner> : Quarterly Business Review`
+  — Granite, Amoskeag, OmegaCor, Secure Future, Microcomputer, Easy IT, Blackline, Matador,
+  NTi, Lerner, Acrisure, …), and
+- several service/monthly calls under other organizers (Atlas PS, Omega Systems, Mytech
+  Partners, Amoskeag, Innovative Technology Solutions (ITS), Computer Weavers, Stasmayer,
+  IT Partners+).
+
+Closing this would need IT to extend the Teams application access policy to those organizer
+identities (same mechanism as the DESManagement grant). **Parked at Amit's direction
+(2026-06-13)** — access to the other organizer identities isn't available. Not blocking
+dashboard accuracy: **call dates for these partners come from HaloPSA meeting notes**
+(reliable; see HaloPSA-API-SOP Addendum 2026-06-13), with transcripts as a best-effort
+supplement. Re-open if QBR transcript content is needed on the dashboard.

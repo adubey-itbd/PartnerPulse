@@ -1,0 +1,554 @@
+WEBVTT
+NOTE title: Service Call | Think Unified
+NOTE date: 2026-05-07
+NOTE duration: 26m 48s
+
+00:00:03.090 --> 00:00:05.090
+<v Walter Cox>Oh yeah, long time no see.</v>
+
+00:00:03.210 --> 00:00:04.050
+<v Sarbjeet Singh>Good afternoon.</v>
+
+00:00:06.210 --> 00:00:12.610
+<v Gagan Chowdhary>I was about to say this to you. Thank you. Yeah, it's pretty long. I mean, you know, I'm seeing you.</v>
+
+00:00:08.730 --> 00:00:08.930
+<v Walter Cox>Yeah.</v>
+
+00:00:13.410 --> 00:00:15.090
+<v Walter Cox>Yeah, definitely.</v>
+
+00:00:17.250 --> 00:00:21.730
+<v Gagan Chowdhary>You must have been tied up with many, many other important commitments.</v>
+
+00:00:17.410 --> 00:00:19.010
+<v Walter Cox>Everybody's been doing well, I hope.</v>
+
+00:00:21.250 --> 00:00:26.050
+<v Walter Cox>Oh, well, lots of different things. Yeah, it just popped up over time and...</v>
+
+00:00:27.050 --> 00:00:28.930
+<v Walter Cox>Glad to get back together with you.</v>
+
+00:00:29.810 --> 00:00:30.210
+<v Gagan Chowdhary>Yeah.</v>
+
+00:00:31.410 --> 00:00:50.290
+<v Gagan Chowdhary>Truly, but again, you know, very, really happy to see you. You know, I just dropped an email. I thought, you know, Morgan would also be, you know, going busy, which is why, you know, she don't turn up to this call. I just spoke into her yesterday.</v>
+
+00:00:46.770 --> 00:00:47.410
+<v Walter Cox>Yeah.</v>
+
+00:00:51.010 --> 00:01:05.810
+<v Gagan Chowdhary>you know, about the CSAT, which we'll be discussing, you know, this call, you know, which was pending. So I thought team is going really, really busy, which is why I mean, they might skip to this point to this CSAT server.</v>
+
+00:01:06.450 --> 00:01:08.130
+<v Walter Cox>Yeah, definitely.</v>
+
+00:01:08.930 --> 00:01:12.930
+<v Gagan Chowdhary>But I hope overall things are moving in the right direction positively at your end.</v>
+
+00:01:12.050 --> 00:01:16.770
+<v Walter Cox>Yeah, yep, yep, keeping busy as all get out, which is a good thing.</v>
+
+00:01:18.210 --> 00:01:21.730
+<v Gagan Chowdhary>That's great. So, sir, have you met Walter before?</v>
+
+00:01:22.690 --> 00:01:27.730
+<v Sarbjeet Singh>Not exactly. I believe this is our first time, Walter. So let me quickly introduce myself.</v>
+
+00:01:25.490 --> 00:01:28.610
+<v Walter Cox>Yeah, yeah, yeah, nice to meet you.</v>
+
+00:01:26.170 --> 00:01:26.530
+<v Gagan Chowdhary>Okay.</v>
+
+00:01:28.970 --> 00:01:35.490
+<v Sarbjeet Singh>Pleasure is all mine. I really like the wallpaper. I love traveling to mountain, so it just like really nostalgic.</v>
+
+00:01:33.570 --> 00:01:41.650
+<v Walter Cox>Yeah, yeah, yeah, I figured it should be the background. It just seemed too nice to look at just one time in a picture.</v>
+
+00:01:44.050 --> 00:02:00.770
+<v Sarbjeet Singh>So, Walter, I am your Customer Success Manager, along with Gagan with Vishal. Think of me as a part of your extended team. In total, I have got around 2 decades of work experience prior to moving into the CX role. I have been a part of the service delivery for almost...</v>
+
+00:02:01.330 --> 00:02:15.810
+<v Sarbjeet Singh>9, 9 1/2 years I have been working with ITBD by design. So this is a little bit about me. Rest in case if there is anything, no matter how small it is, feel free to reach out to me, Gagan, to any one of us.</v>
+
+00:02:17.330 --> 00:02:18.690
+<v Walter Cox>That sounds great.</v>
+
+00:02:20.610 --> 00:02:21.490
+<v Sarbjeet Singh>What do you Gagan?</v>
+
+00:02:22.410 --> 00:02:36.130
+<v Gagan Chowdhary>Well, thank you. So, I think it's already been 313, so we should get it started, you know, in respecting everyone's time. So, Walter, would anyone else be joining? Should we expect...</v>
+
+00:02:35.970 --> 00:02:38.610
+<v Walter Cox>I don't think so at this time, no.</v>
+
+00:02:39.490 --> 00:02:40.370
+<v Gagan Chowdhary>Okay, sure.</v>
+
+00:02:41.570 --> 00:02:55.250
+<v Gagan Chowdhary>So firstly, once again, welcome team to this, our monthly business review call. We also call it service call. And so I'll share my screen for the presentation and let's review it together. Thank you.</v>
+
+00:02:57.170 --> 00:03:00.690
+<v Gagan Chowdhary>You may let me know once it's there on your screens.</v>
+
+00:03:03.570 --> 00:03:04.770
+<v Walter Cox>Yeah, there it is.</v>
+
+00:03:05.650 --> 00:03:16.530
+<v Gagan Chowdhary>Thank you. So we just entered in the month of May, so which is what it is representing. However, we'll be...</v>
+
+00:03:17.890 --> 00:03:21.010
+<v Gagan Chowdhary>Seeing data, we'll be reviewing data for the month of April.</v>
+
+00:03:21.570 --> 00:03:21.970
+<v Walter Cox>Yeah.</v>
+
+00:03:22.450 --> 00:03:41.570
+<v Gagan Chowdhary>Agenda items have not changed much, so I'll just quickly walk you through. So we have highlights, performance analysis of Maverick, of course, ITBD, he said that we send on a monthly basis. Way forward with Think Unified, AI by Design, that is IT by</v>
+
+00:03:41.650 --> 00:03:51.730
+<v Gagan Chowdhary>designs initiative on AI, holiday schedule, and recap that we send after this call via email with minutes of meetings.</v>
+
+00:03:53.170 --> 00:04:12.210
+<v Gagan Chowdhary>I don't have to say it, but I say it all the time. So please feel free to chime in whenever you think you have some insights or you have some feedback, because that is always invaluable for us to, that helps us improve our service to your standards. Thank you.</v>
+
+00:04:06.490 --> 00:04:07.490
+<v Walter Cox>Definitely.</v>
+
+00:04:13.650 --> 00:04:33.170
+<v Gagan Chowdhary>So Walter, so these are some of the few highlights that I captured for the month of April. So Maverick continued to exceed his TRR, which is ticket resolve rate. And previously, it was 81 point some percent. I'll show you on the following slide. So this month,</v>
+
+00:04:33.570 --> 00:04:37.730
+<v Gagan Chowdhary>In the month of April, he exceeded to 88.14%.</v>
+
+00:04:38.930 --> 00:04:58.450
+<v Gagan Chowdhary>And he depicted accountability in adding value in documenting SOPs. So he told me that, and Morgan did appreciate last time as well, that he's taking part in clearing some boards. I think one of the boards they worked on was backup. So they cleaned up that.</v>
+
+00:04:56.770 --> 00:04:57.170
+<v Walter Cox>Yeah.</v>
+
+00:04:58.490 --> 00:05:17.770
+<v Gagan Chowdhary>Board drastically, so, so I was I was checking with Maverick that, what special are you doing? I always ask him bluntly that what value are you adding apart from what is being asked from you to do? So he said, we, I mean, we...</v>
+
+00:05:18.050 --> 00:05:35.810
+<v Gagan Chowdhary>Maverick and the Think Unified team that work together collaboratively. And apart from cleaning of the board, now the emphasis is to improve documentation, SOPs. So we named a few SOPs, I'll tell you.</v>
+
+00:05:37.010 --> 00:05:41.890
+<v Gagan Chowdhary>So he said, these are the SOPs he worked on, and...</v>
+
+00:05:44.130 --> 00:06:02.770
+<v Gagan Chowdhary>Yeah, so M365 decommissioning doc, that's a genetic for all that can be used for all the partners. And GNT scan to folder SOP. The other one was decommissioning a user, that's a master sheet.</v>
+
+00:05:51.250 --> 00:05:52.770
+<v Walter Cox>Yeah, yeah.</v>
+
+00:06:03.330 --> 00:06:03.810
+<v Walter Cox>Yeah.</v>
+
+00:06:03.330 --> 00:06:07.250
+<v Gagan Chowdhary>and licensing checklist. These are...</v>
+
+00:06:08.410 --> 00:06:12.690
+<v Gagan Chowdhary>Some force of his that he, you know, told me he worked on.</v>
+
+00:06:12.450 --> 00:06:13.170
+<v Walter Cox>Yeah.</v>
+
+00:06:13.810 --> 00:06:13.930
+<v Gagan Chowdhary>Yeah.</v>
+
+00:06:15.410 --> 00:06:19.570
+<v Gagan Chowdhary>Anything, anything that you might have observed before we move on further?</v>
+
+00:06:20.770 --> 00:06:21.410
+<v Gagan Chowdhary>Overall.</v>
+
+00:06:21.570 --> 00:06:32.450
+<v Walter Cox>I think everything looked good. Yeah, there were a few wording things that kind of looked at on those and decided to make some changes on, but other than that, I think you did a great job. Hit it right on the head.</v>
+
+00:06:33.530 --> 00:06:53.810
+<v Gagan Chowdhary>Thank you. It was great to hear from you. And he took corrective measures on ticketing hygiene. So this was one of the key areas of improvement that Morgan highlighted in the previous call that I know, she said, we know that, you know, this is not for him, but for everyone in the team that</v>
+
+00:06:54.090 --> 00:07:13.450
+<v Gagan Chowdhary>Sometimes they have back-to-back tickets or they're working on multiple tickets or multiple things at the same time. But at the same time, it is important to maintain hygiene. So whenever they work on a ticket, so they should be changing status, updating status at the same time. And</v>
+
+00:07:15.410 --> 00:07:34.690
+<v Gagan Chowdhary>and update their ticket notes in a timely manner. So which is important for the entire team to understand who, you know, this ticket has been attended by someone. And so they are not losing on SLA. So Maverick said, so I check with him. I do board reviews, not every day, but</v>
+
+00:07:19.490 --> 00:07:19.970
+<v Walter Cox>Yeah.</v>
+
+00:07:22.650 --> 00:07:22.770
+<v Walter Cox>Yeah.</v>
+
+00:07:35.970 --> 00:07:59.250
+<v Gagan Chowdhary>once, twice a week, depending upon his and my, you know, availability that matches each other's time. So he said, yeah, he has been meeting the expectation on this criteria. So I wanted to hear from you on that as well. I mean, I understand you sometimes, you know, do not work closely with him. So Morgan does.</v>
+
+00:07:59.890 --> 00:08:02.690
+<v Gagan Chowdhary>But if you have any feedback, we would love to hear from you.</v>
+
+00:08:00.050 --> 00:08:00.450
+<v Walter Cox>Yeah.</v>
+
+00:08:03.250 --> 00:08:04.210
+<v Walter Cox>Definitely.</v>
+
+00:08:04.850 --> 00:08:29.450
+<v Gagan Chowdhary>Okay. And yeah, in the month of April, I'm highlighting this. So his attendance was 100%. He did not, in the month of March as well as in the month of April. So he did not take a PTO. I think, which is why, you know, he's taking a five-day PTO this time. He got approved from.</v>
+
+00:08:29.530 --> 00:08:34.690
+<v Gagan Chowdhary>From from your team, so I truly, truly appreciate for that, so...</v>
+
+00:08:32.130 --> 00:08:35.730
+<v Walter Cox>Yeah, definitely. He deserves it. He's worked a lot.</v>
+
+00:08:36.770 --> 00:08:55.450
+<v Gagan Chowdhary>I don't know whether he should or not. So he's getting married near end of year, you know, this year. And so he said, you know, post marriage, it will not be feasible for me to take this much long leave. So I need to celebrate my bachelorette with my friends.</v>
+
+00:08:44.210 --> 00:08:44.930
+<v Walter Cox>Ohh, great!</v>
+
+00:08:55.890 --> 00:08:57.730
+<v Walter Cox>Yep, yep, that's true.</v>
+
+00:08:55.970 --> 00:08:58.450
+<v Sarbjeet Singh>It's still time, Gagan, stop him.</v>
+
+00:09:00.050 --> 00:09:00.730
+<v Sarbjeet Singh>Okay.</v>
+
+00:09:02.450 --> 00:09:11.170
+<v Gagan Chowdhary>Yeah, so like a team. So that was it as far as the highlights are concerned. So moving on to performance analysis.</v>
+
+00:09:12.770 --> 00:09:32.290
+<v Gagan Chowdhary>So you see two graphs in comparison with the month of March. So in the month of April, his billable utilization stood 71.36% and non-available 28.64%. The total is 100% utilization. When I checked with him,</v>
+
+00:09:32.770 --> 00:09:52.050
+<v Gagan Chowdhary>you know, why there's a drop and is a billable utilization. So he said it is because of the positive thing that happened. There was effectively, they worked on board cleanup as well as they worked effectively on reducing ticket aging.</v>
+
+00:09:52.850 --> 00:10:13.570
+<v Gagan Chowdhary>So the moment ticket aging reduced, so duplicate efforts reduced on the same ticket. So now he said I have very limited ticket on my board, so whatever tickets are, most of the tickets are fresh and he has no backlog, no stale tickets.</v>
+
+00:10:13.650 --> 00:10:30.210
+<v Gagan Chowdhary>which is why it did affect to some extent his billable utilization. So if call flow to flow increases, this number you will see is going to meeting your target that is 75% at least.</v>
+
+00:10:30.690 --> 00:10:31.170
+<v Walter Cox>Yeah.</v>
+
+00:10:33.530 --> 00:10:43.730
+<v Gagan Chowdhary>Apart from that, yeah, I did not see any challenge with him. However, we will discuss, you know, on this. So before we come to this slide.</v>
+
+00:10:45.730 --> 00:11:04.530
+<v Gagan Chowdhary>Anything, I'm again asking, I'm not sure whether you did get a chance to work closely with Maverick, but if anything that you think that is ADF improvement, or maybe not at Maverick side, but anything that you are trying to address.</v>
+
+00:11:04.690 --> 00:11:14.410
+<v Gagan Chowdhary>Inside, thank you, at the moment, where either Maverick or ITBD, you know, we as team can assist you, help you in that regard.</v>
+
+00:11:15.210 --> 00:11:33.810
+<v Walter Cox>Yeah, I think so far we're okay, and you know he's really done a great job, you know, and he's made improvements where we've suggested, you know, a little more documentation, you know, in the customer-facing side of it, then that's increased, and we've appreciated that a lot, you know, a lot more details for what we've done for them, so that...</v>
+
+00:11:34.370 --> 00:11:48.690
+<v Walter Cox>you know, more than one person seeing a ticket or, you know, it is on included from a company, then, you know, then they'll know, you know, rather than if you talk to them on the phone with one person, the other person may not know that it's resolved, you know, or how it was resolved.</v>
+
+00:11:35.210 --> 00:11:35.570
+<v Gagan Chowdhary>S.</v>
+
+00:11:47.490 --> 00:11:48.850
+<v Gagan Chowdhary>True, absolutely.</v>
+
+00:11:50.290 --> 00:12:08.850
+<v Gagan Chowdhary>That is absolutely true. And I always tell my team that, do you understand, you know, that's my view of, you know, letting them know, do you understand why systems do exist? One of the major reasons systems do exist is so that everyone, I mean, do not have to stand.</v>
+
+00:12:09.010 --> 00:12:28.770
+<v Gagan Chowdhary>you know, at your shoulder to see what you're doing. Whatever you put in the system, the other person, although the team is sitting thousands of miles apart, they'll be able to see what you're doing. And the other person who is monitoring, his job is also to ensure SLA is meeting.</v>
+
+00:12:11.890 --> 00:12:12.610
+<v Walter Cox>Yeah.</v>
+
+00:12:27.890 --> 00:12:28.290
+<v Walter Cox>Yeah.</v>
+
+00:12:29.330 --> 00:12:42.370
+<v Gagan Chowdhary>close tickets in a timely manner. So they take action accordingly. So it is collaborative efforts of, you know, from everyone to achieve a common goal of the team.</v>
+
+00:12:32.330 --> 00:12:32.650
+<v Walter Cox>Yeah.</v>
+
+00:12:42.410 --> 00:12:43.410
+<v Walter Cox>Definitely.</v>
+
+00:12:45.410 --> 00:13:06.130
+<v Gagan Chowdhary>So, Walter, in the month of April, so week by week, you can see comparison from April 6 to 10. Blue bar represents the number of tickets he walked and the green bar represents the number of tickets he completed result. So out of 40, 37, then 41, 35,</v>
+
+00:13:06.170 --> 00:13:24.930
+<v Gagan Chowdhary>out of 50, 43, 46, 41. So that makes his ticket result rate come to 88.14%, which is higher than the previous month. Yeah, which was 81.95% previously in the month of March. And this month it is 88.14.</v>
+
+00:13:25.970 --> 00:13:26.690
+<v Walter Cox>Yeah.</v>
+
+00:13:26.770 --> 00:13:44.730
+<v Gagan Chowdhary>So our emphasis is to keep meeting at least 80% of the target, which is the benchmark from ITBD. And if you see the amber line on the top, that represents the ticket resolve rate. 93 in the first week.</v>
+
+00:13:44.810 --> 00:13:54.530
+<v Gagan Chowdhary>then 85, 86, 89. So almost in every week, he was able to meet his ticket, resolve it, target.</v>
+
+00:13:53.970 --> 00:13:55.810
+<v Walter Cox>Yeah, it's great.</v>
+
+00:13:56.810 --> 00:14:05.570
+<v Gagan Chowdhary>No, thank you. So, Sarbjeet, this is for you as well. So, anywhere you feel like you have any input, please feel free to share your comments. Thank you.</v>
+
+00:14:02.850 --> 00:14:03.410
+<v Sarbjeet Singh>Thank you.</v>
+
+00:14:07.010 --> 00:14:25.730
+<v Gagan Chowdhary>Moving on to CSAT, I didn't want to keep this blank, but we need partnership on that. I completely understand your team must have been really, really busy. So CSATs are currently being directed to Morgan. And I'm sure, you know, she will fill these up.</v>
+
+00:14:22.210 --> 00:14:22.610
+<v Walter Cox>Yeah.</v>
+
+00:14:26.210 --> 00:14:33.570
+<v Gagan Chowdhary>But if I take this from you verbally, how is Maverick doing overall? Is it meeting your expectation?</v>
+
+00:14:34.690 --> 00:14:59.530
+<v Walter Cox>Yeah, definitely. Yeah, I think he's really, you know, developed in his efficiency for us. You know, I'd definitely give him a 95 or 100, you know, for both months. And I know Morgan, I asked her about that in the meeting this morning when we were going over some stuff and she said she was going to go find the CSATs and make sure all of them were done if she missed them.</v>
+
+00:14:39.170 --> 00:14:39.650
+<v Sarbjeet Singh>Mhm.</v>
+
+00:14:45.730 --> 00:14:46.210
+<v Gagan Chowdhary>Okay.</v>
+
+00:14:47.730 --> 00:14:48.610
+<v Gagan Chowdhary>Thank you very much.</v>
+
+00:14:59.610 --> 00:15:16.370
+<v Walter Cox>in the email. And so, you know, she let me know just before lunchtime, she was looking at that just to make sure, you know, that you might see that you might check and verify, you know, later on to make sure and if not resend them, you can include me in those, you know, and be glad to make sure we're up to date.</v>
+
+00:15:01.570 --> 00:15:01.810
+<v Gagan Chowdhary>Yeah.</v>
+
+00:15:17.890 --> 00:15:28.610
+<v Gagan Chowdhary>Thank you. So now I can happily give him 10% weightage, which is what he said on his scorecard to Maverick, and I'm sure he'll be happy to receive that.</v>
+
+00:15:24.690 --> 00:15:25.410
+<v Walter Cox>Yeah.</v>
+
+00:15:27.490 --> 00:15:27.970
+<v Walter Cox>Great.</v>
+
+00:15:29.890 --> 00:15:49.050
+<v Gagan Chowdhary>Thank you. And way forward, nothing much has changed or I changed on this slide. So my regular focus or continued focus would be to have regular connects with him at least once or twice a week so that I understand what are his challenges and</v>
+
+00:15:49.410 --> 00:16:09.410
+<v Gagan Chowdhary>But if I hear any idea for improvements from your end, I can address those issues while working with Maverick and he understands what are your thoughts, what are your expectations? So that those can be addressed in a timely manner. Yeah. And second thing is quite related.</v>
+
+00:16:02.290 --> 00:16:02.930
+<v Walter Cox>Yeah.</v>
+
+00:16:11.330 --> 00:16:16.290
+<v Gagan Chowdhary>We want him to consistently meet his KRAs, KPIs.</v>
+
+00:16:17.570 --> 00:16:37.330
+<v Gagan Chowdhary>on a daily basis. I understand once or twice a week, it may happen sometimes due to any so and so reason, if someone is not able to meet, but weekly basis or monthly basis, he must be meeting his targets to bring ROI.</v>
+
+00:16:38.130 --> 00:16:39.410
+<v Gagan Chowdhary>Uh, you know, in the Team.</v>
+
+00:16:39.890 --> 00:16:40.130
+<v Sarbjeet Singh>Stop.</v>
+
+00:16:41.010 --> 00:16:59.370
+<v Gagan Chowdhary>And yeah, continue to encourage Maverick to develop his and strengthen his skills to technologies, of course, which will be relevant, firstly, in your environment. So which is why, Walter, I was asking, sir, if there's anything, sometimes we may move from</v>
+
+00:16:59.650 --> 00:17:18.130
+<v Gagan Chowdhary>We may migrate from one tool to the other, or we onboard some new logos, some new partners, and they may have some distinct requirements on certain things. Some may say, oh, we have more business on Azure, or we do Intune more.</v>
+
+00:17:05.330 --> 00:17:06.130
+<v Walter Cox>Yeah.</v>
+
+00:17:18.770 --> 00:17:36.770
+<v Gagan Chowdhary>So if there's any kind of area where he needs improvement, you can let us know, or he needs to upgrade his level of skill set. So we will be glad to hear and work with memory accordingly.</v>
+
+00:17:37.650 --> 00:17:38.370
+<v Walter Cox>Great.</v>
+
+00:17:40.090 --> 00:17:43.970
+<v Gagan Chowdhary>Thank you, I pass to set up on this, sir.</v>
+
+00:17:44.770 --> 00:18:03.410
+<v Sarbjeet Singh>Thank you, Gagan. First of all, Walter, thank you so much for sharing this valuable feedback. I'm glad that Maverick is able to reach up to your expectations. Gagan, just to keep you informed, we have already got the CSAT from Morgan for the month of February and April, so we are all good there. Thank you.</v>
+
+00:18:01.650 --> 00:18:02.370
+<v Gagan Chowdhary>Ohh, great.</v>
+
+00:18:04.050 --> 00:18:25.810
+<v Sarbjeet Singh>So talking about our most awaited event of the year, Walter. So every year our CEO, Sunny, we make sure that we are able to connect with our partners with the MSP World. So this is the 8th event in the row. We were able to take our partners to NASA Space Center before that. It was MetLife Stadium, which was booked, and then we booked Statue of Liberty as well.</v>
+
+00:18:26.290 --> 00:18:45.330
+<v Sarbjeet Singh>So this time we are taking our partners to New York Stock Exchange. So it's a three day event. Gagan, if you don't mind, you can stop the screen sharing. Let me take Walter to our website. Thank you. Let me bring it up on the screen for us. So I'll send this link to you, Walter.</v>
+
+00:18:45.570 --> 00:19:06.530
+<v Sarbjeet Singh>once we are done with the call so that you can have it for your reference. So this is happening on August 3rd to 5th. That's New Jersey, where the state would be at Hyatt. And then the more than 70 plus channel influencers will be there, 550 plus attendees. The focus will be more on the AI automation with the growth, with the leadership.</v>
+
+00:19:07.010 --> 00:19:27.570
+<v Sarbjeet Singh>zero sales pitches specifically. So this is what we are talking about personally, more aligned with the AI innovations. We have recently developed custom agents who can take care of the dispatching agents has been developed who can take care of the L1 kind of steps, QBR.</v>
+
+00:19:28.450 --> 00:19:51.490
+<v Sarbjeet Singh>Everything that can be automated, that's already there. So there's a pre-event and post-event as well. So for our AI peer group, we are connecting on the very last day on August 5th. And then we, on the August 5th as well, later in the evening, we were able to take our partners to the New York Stock Exchange. This time, the...</v>
+
+00:19:51.810 --> 00:20:10.450
+<v Sarbjeet Singh>The theme is Great Gatsby. So we have plenty of time to get the dresses ready. This is the speaker lineup. Major MSP partners would be joining in along with the famous leaders, John C. Maxwell, Dan Sullivan will also be coming in there. So</v>
+
+00:20:10.930 --> 00:20:29.890
+<v Sarbjeet Singh>mention the venue, that's Hyatt Regency, Jersey City, that's on Hudson. That's where the event will be happening for three days. For a quick access, I'm just sending out the link right away. Rest, I'll also send you a single pager so that you can share it with the leadership team too. For our...</v>
+
+00:20:29.970 --> 00:20:52.130
+<v Sarbjeet Singh>Early bird partners right now, we are providing 1 + 1 offer. The current price of the tickets are 1495. And in case if you will be bringing someone else from the team, it will be reduced to half around 7:50, as you are getting 1 + 1 offer. The rest, any questions, any clarity required on the...</v>
+
+00:20:53.010 --> 00:20:53.650
+<v Sarbjeet Singh>Event.</v>
+
+00:20:54.770 --> 00:21:00.290
+<v Walter Cox>Oh, definitely so far. I'll share that with Kyle and see if he's interested in attending this year, you know.</v>
+
+00:21:00.370 --> 00:21:12.370
+<v Sarbjeet Singh>We would love to have you there. The more the merrier, Walter, and in case if you would like me to reach out to Kyle specifically over a separate call, I'll be glad to do so.</v>
+
+00:21:05.170 --> 00:21:05.810
+<v Walter Cox>Mhm.</v>
+
+00:21:13.170 --> 00:21:16.290
+<v Walter Cox>Yeah, I'll let him know and then email you back.</v>
+
+00:21:16.930 --> 00:21:36.770
+<v Sarbjeet Singh>Awesome. Would love to hear from you. Perfect. The rest, one thing which I'll continue to say, if there is anything at all, Walter, no matter how small it is, you don't have to wait for these service call. Me and Gagan, all of us are just a text away. So feel free to let us know. We can reach out to you directly.</v>
+
+00:21:37.530 --> 00:21:38.450
+<v Walter Cox>Definitely.</v>
+
+00:21:37.570 --> 00:21:43.570
+<v Sarbjeet Singh>This time, all good. It was a pleasure talking with you, Walter. Thank you, Gagan, over to you.</v>
+
+00:21:47.810 --> 00:21:49.330
+<v Sarbjeet Singh>Ohh, we cannot hear you, Gagan.</v>
+
+00:21:50.130 --> 00:21:52.210
+<v Gagan Chowdhary>Oh, it was audible now.</v>
+
+00:21:51.050 --> 00:21:52.930
+<v Sarbjeet Singh>Next week, yep, yep.</v>
+
+00:21:53.810 --> 00:21:54.130
+<v Gagan Chowdhary>Okay.</v>
+
+00:21:54.090 --> 00:21:55.050
+<v Sarbjeet Singh>visible and notable.</v>
+
+00:21:56.530 --> 00:21:57.890
+<v Gagan Chowdhary>Is my screen visible back?</v>
+
+00:21:58.690 --> 00:22:00.530
+<v Sarbjeet Singh>Yes, visible and audible both.</v>
+
+00:21:59.730 --> 00:22:00.130
+<v Gagan Chowdhary>OK.</v>
+
+00:22:01.330 --> 00:22:09.970
+<v Gagan Chowdhary>All right, thank you. So, sir, have these AI initiatives been addressed already with the team?</v>
+
+00:22:02.130 --> 00:22:02.610
+<v Walter Cox>Yeah.</v>
+
+00:22:04.690 --> 00:22:05.010
+<v Sarbjeet Singh>Kanav.</v>
+
+00:22:10.690 --> 00:22:28.930
+<v Sarbjeet Singh>Yes, we discussed it with Morgan during our last connect, but just to keep you informed, these are some of the other AI initiatives, Walter, which we are focusing on, Roost consulting, agent as a services where the AI agent can take care of the work. So the focus is not to remove the</v>
+
+00:22:14.450 --> 00:22:14.850
+<v Gagan Chowdhary>Okay.</v>
+
+00:22:29.490 --> 00:22:50.290
+<v Sarbjeet Singh>man workforce, we focus is to have the digital workforce working along with us. So that's what the agent of the service is. Then AI Leadership accelerator, that's our peer group specifically limited to certain partners in case if you think that you are already implementing AI within your systems.</v>
+
+00:22:50.850 --> 00:23:11.410
+<v Sarbjeet Singh>we can also go ahead and discuss more in detail over a separate call. Then Team GPS, that's our performance management tool that has also been enabled with the AI features, creating customer surveys, custom surveys, performance management, giving a shout out to someone who is taking a good job. So all these are part of our AI by design services.</v>
+
+00:23:14.850 --> 00:23:18.050
+<v Gagan Chowdhary>Thank you, sir, and I believe...</v>
+
+00:23:15.210 --> 00:23:18.370
+<v Sarbjeet Singh>Thank you very much. We can skip this one. This is also covered.</v>
+
+00:23:19.490 --> 00:23:24.930
+<v Gagan Chowdhary>Thank you, yeah, absolutely. I'm sure, you know, Walter is already team is aware, whenever you think...</v>
+
+00:23:26.570 --> 00:23:37.970
+<v Gagan Chowdhary>It is, you're looking for any third-party tool, you know, for these kind of features, so you can always scan this QR code and Atul will be glad to give you the demo.</v>
+
+00:23:38.770 --> 00:23:39.330
+<v Walter Cox>Right.</v>
+
+00:23:39.970 --> 00:23:45.330
+<v Gagan Chowdhary>And this also has some AI features enabled in it. Thank you.</v>
+
+00:23:49.090 --> 00:24:07.170
+<v Gagan Chowdhary>Calendar, as we share every month, so nothing has changed much. So compulsory holidays will remain the same. Optional holidays, which Maverick has planned, would be in the month of November on the 9th and 24th. These are two Indian</v>
+
+00:24:08.290 --> 00:24:27.170
+<v Gagan Chowdhary>festivals. So composite holidays can be marked on your calendar. However, if there will be any business requirements, you can let us know and we'll speak to Maverick so that he can make adjustments accordingly and take complementary of later on and work on.</v>
+
+00:24:27.410 --> 00:24:32.450
+<v Gagan Chowdhary>those days when there's requirement for business standpoint. Thank you.</v>
+
+00:24:34.130 --> 00:24:54.610
+<v Gagan Chowdhary>That is really all from our end. So Walter, anything that we probably did or did not cover in the slide, we will be glad to add those. So that, I mean, we present and address those things, which you are probably inclined to see in these slides.</v>
+
+00:24:55.970 --> 00:25:07.490
+<v Walter Cox>Great. No, it looked great. Glad to go through it with you. Good to see Maverick's increased results. He's definitely a go-getter and achiever, so we're glad to have him.</v>
+
+00:25:08.610 --> 00:25:19.970
+<v Gagan Chowdhary>Thank you. It's always great to hear from you, you know, good feedback. But my emphasis, because we have, apart from KRS and KPIs, we always</v>
+
+00:25:23.330 --> 00:25:41.810
+<v Gagan Chowdhary>you know, put our emphasis on adding value. That means anything, anything apart from your KPIs, which is why I was asking right in the beginning if there is anything internally at the moment you think this is think unified or this team is struggling with where</v>
+
+00:25:41.970 --> 00:25:56.210
+<v Gagan Chowdhary>you know, I being TTLs or my team can assist you or Maverick should be looking at to assist you. So please feel free to share those, I mean, those details and we'll be glad to assist you in those pieces.</v>
+
+00:25:56.770 --> 00:25:58.370
+<v Walter Cox>That sounds great. Thank you.</v>
+
+00:26:03.170 --> 00:26:05.970
+<v Sarbjeet Singh>Looks like Gagan. OK, you are back.</v>
+
+00:26:05.890 --> 00:26:11.010
+<v Gagan Chowdhary>Oh, I think I was disconnected. I, for a moment, I had disconnected from...</v>
+
+00:26:08.690 --> 00:26:13.730
+<v Walter Cox>Yeah, I've been having weird stuff with teams all day. Yeah, it's definitely been problematic.</v>
+
+00:26:14.850 --> 00:26:37.570
+<v Gagan Chowdhary>Yeah, so I don't know how much, you know, for how much time, you know, it was cut off. So that was my only emphasis. So I hope you know everything is going great, but please feel free to let us know if there's anything that needs attention. We'll be glad to assist you with that. That was the team from my end, Walter. So thank you for joining in and thank you, Sarah, for your inputs.</v>
+
+00:26:31.170 --> 00:26:32.050
+<v Walter Cox>Will do.</v>
+
+00:26:38.130 --> 00:26:44.130
+<v Gagan Chowdhary>We'll connect next time, next month with more exciting and positive updates. Thank you.</v>
+
+00:26:44.610 --> 00:26:45.970
+<v Sarbjeet Singh>Thank you, Walter. Have a good one.</v>
+
+00:26:44.970 --> 00:26:47.410
+<v Walter Cox>Sounds good, thanks. You too, bye.</v>
+
+00:26:47.450 --> 00:26:48.770
+<v Gagan Chowdhary>Yeah, buy one.</v>
+

@@ -1,0 +1,1118 @@
+WEBVTT
+NOTE title: Amoskeag | ITBD | Monthly Service Call
+NOTE date: 2026-05-15
+NOTE duration: 34m 34s
+
+00:01:45.483 --> 00:01:47.363
+<v Andrea Canlas>Hi, Dan. Good morning.</v>
+
+00:01:53.523 --> 00:01:58.483
+<v Dan Tenters>Hey, good morning. Sorry about. How are you guys doing? How are you guys doing?</v>
+
+00:01:57.763 --> 00:01:58.563
+<v Justin Samson>Morning, Dan.</v>
+
+00:01:59.683 --> 00:02:03.683
+<v Andrea Canlas>Good, but I think there is an echo somewhere. Can you speak?</v>
+
+00:02:02.963 --> 00:02:05.283
+<v Dan Tenters>Yeah, is it sound better now?</v>
+
+00:02:05.523 --> 00:02:07.443
+<v Andrea Canlas>Yeah, better. That's better. How are you?</v>
+
+00:02:08.883 --> 00:02:09.523
+<v Dan Tenters>Yourself.</v>
+
+00:02:10.483 --> 00:02:16.643
+<v Andrea Canlas>Doing fine. It's Friday, so it's a good news. Is Jim joining? Do you think? No?</v>
+
+00:02:13.523 --> 00:02:13.803
+<v Dan Tenters>Yeah.</v>
+
+00:02:17.043 --> 00:02:20.723
+<v Dan Tenters>Jim's on the road right now, so he probably will not be here.</v>
+
+00:02:21.523 --> 00:02:40.323
+<v Andrea Canlas>Gotcha, understood. All right, so yeah, I think you may be looking at different people. I think we haven't actually met yet. I met Jim, but we haven't actually met during monthly business review, but just wanted to introduce myself. My name is Andy. I'm the service delivery manager for Co-Manage and working alongside.</v>
+
+00:02:40.443 --> 00:02:42.323
+<v Andrea Canlas>Rodge, which you met in the past, right?</v>
+
+00:02:43.123 --> 00:02:43.763
+<v Dan Tenters>Correct.</v>
+
+00:02:44.163 --> 00:03:02.563
+<v Andrea Canlas>Gotcha. So right now, just wanted to also update you with the current structure right now for co-management for IT by Design. So Rodge did take a more senior role within IT by Design, which is why I'm here as well as Mark.</v>
+
+00:03:02.803 --> 00:03:16.483
+<v Andrea Canlas>Mark will be the new team lead for Amaskeg, which means that he will be directly working alongside Joanna and Joseph. So Mark, why not introduce yourself? Go ahead.</v>
+
+00:03:13.603 --> 00:03:14.003
+<v Dan Tenters>Okay.</v>
+
+00:03:16.603 --> 00:03:34.163
+<v Mark Paolo Mangune>Hi Dan, day after Friday. So basically I'm the new team lead for a co-manage. So before joining ITBD, I was working for an Australian-based company, which is First Focus. It's also MSP company.</v>
+
+00:03:20.163 --> 00:03:21.043
+<v Dan Tenters>Thanks, you too.</v>
+
+00:03:35.603 --> 00:03:55.203
+<v Mark Paolo Mangune>I've been working there for about four years, and I'm managing their After Hours team, which is a globally distributed team of 18 support staff members. That's from Manila, Australia, India, Ireland, and South Africa. So, aside from being the team lead for their After Hours...</v>
+
+00:03:55.603 --> 00:04:16.483
+<v Mark Paolo Mangune>I'm also doing the incident manager role during weekends, responsible for P1 and P0 tickets, coordination from the client side and also from the support side, so that the client will know what's happening on the outage that we are handling during those times. And not just that, I'm also doing the dispatch coordinator role.</v>
+
+00:04:16.883 --> 00:04:32.763
+<v Mark Paolo Mangune>during the weekend, so responsible for assigning tickets and making sure that all the tickets that has been raised by the VIP clients that we have during weekends are actioned as well on a timely manner. So I'm looking forward to work with you guys and yeah.</v>
+
+00:04:33.883 --> 00:04:34.243
+<v Mark Paolo Mangune>S.</v>
+
+00:04:33.923 --> 00:04:38.163
+<v Dan Tenters>Awesome, well, nice, nice to meet you and welcome aboard.</v>
+
+00:04:38.883 --> 00:04:39.603
+<v Mark Paolo Mangune>Thanks.</v>
+
+00:04:41.043 --> 00:04:43.043
+<v Andrea Canlas>Alright, thank you. Have you met Justin now?</v>
+
+00:04:45.523 --> 00:04:49.123
+<v Dan Tenters>I don't know if I don't think I have, no.</v>
+
+00:04:45.683 --> 00:04:46.803
+<v Andrea Canlas>Dan, not yet.</v>
+
+00:04:50.163 --> 00:04:50.483
+<v Andrea Canlas>Alright.</v>
+
+00:04:50.163 --> 00:04:51.843
+<v Justin Samson>I, I don't think so, so.</v>
+
+00:04:52.723 --> 00:05:11.923
+<v Andrea Canlas>All right, so I just wanted to introduce Justin. Justin is our customer relations success, right? Yeah, OK, sorry. Customer Success Manager for Amiskeg. So, she's working alongside Natalie, if you've met Natalie in the past, and she will be taking care, or he will be taking care of Amiskeg also.</v>
+
+00:04:59.043 --> 00:05:00.563
+<v Justin Samson>Success Manager, yeah.</v>
+
+00:05:12.243 --> 00:05:15.683
+<v Andrea Canlas>So if you need anything customer related to YC, you may reach out to him.</v>
+
+00:05:16.643 --> 00:05:18.083
+<v Dan Tenters>Awesome. Nice to meet you.</v>
+
+00:05:18.443 --> 00:05:19.363
+<v Justin Samson>Nice to meet you, Dan.</v>
+
+00:05:20.483 --> 00:05:29.923
+<v Andrea Canlas>All right, okay, let me just go ahead and share my screen and then we can go ahead and go through our month of April.</v>
+
+00:05:32.643 --> 00:05:50.923
+<v Andrea Canlas>Okay. All right. So same agenda, Dan, it will be to check in highlights, action tracker, performance analysis, way forward, and recap. Same agenda as before, but before that, how are things currently? I know that we have a bit of an issue with the current ticket yesterday.</v>
+
+00:05:51.123 --> 00:06:00.403
+<v Andrea Canlas>I think, but you were able to sort that out. But aside from that, anything that you want to talk about for two engineers?</v>
+
+00:05:59.883 --> 00:06:20.053
+<v Dan Tenters>No, no, I think I think everything's been going well as usual. Some of it, you know, as far as that particular issue, you know, there was just, it's kind of a one-off situation. So, you know, I think it's just, just the overall, you know, just working on communication.</v>
+
+00:06:13.363 --> 00:06:13.763
+<v Andrea Canlas>Yeah.</v>
+
+00:06:20.283 --> 00:06:28.243
+<v Dan Tenters>between myself and Jim with Joseph and Joanna, you know, when things like, I mean, Joseph and Joanna both.</v>
+
+00:06:22.403 --> 00:06:22.683
+<v Andrea Canlas>Yeah.</v>
+
+00:06:29.003 --> 00:06:29.483
+<v Andrea Canlas>Mhm.</v>
+
+00:06:29.763 --> 00:06:50.203
+<v Dan Tenters>You know, we talk daily, you know, and multiple times a day, so we're always going over things together. I typically work on all the tickets with them. I mean, not all of them, but any of them that are, you know, a little more in-depth. Obviously, I work with them on those. So we do have a good communication there. I think it was just the</v>
+
+00:06:32.323 --> 00:06:32.803
+<v Andrea Canlas>Mhm.</v>
+
+00:06:35.763 --> 00:06:36.243
+<v Andrea Canlas>Mhm.</v>
+
+00:06:44.723 --> 00:06:45.323
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:06:50.723 --> 00:07:10.163
+<v Dan Tenters>with Joseph ticket, it was because something was requested after hours, but I think it was like, like I wasn't aware of the after hours part of it. But the customer was insistent on having it done and, you know, wanted, didn't care about paying or whatever. So, and it ended up being.</v>
+
+00:07:01.763 --> 00:07:02.283
+<v Andrea Canlas>Mhm.</v>
+
+00:07:10.563 --> 00:07:30.123
+<v Dan Tenters>you know, hardware related. So it's overall, you know, problem solved, you know, not a big deal, but you know, that it, yeah, I think it was just, you know, miscommunication at the time and dealing with particular issues or whatnot. But other than that, you know, everything, like I said, everything's been going well.</v>
+
+00:07:12.723 --> 00:07:13.203
+<v Andrea Canlas>Yeah.</v>
+
+00:07:17.363 --> 00:07:17.923
+<v Andrea Canlas>True.</v>
+
+00:07:24.163 --> 00:07:24.643
+<v Andrea Canlas>Mmh.</v>
+
+00:07:30.643 --> 00:07:31.123
+<v Andrea Canlas>Mhm.</v>
+
+00:07:30.803 --> 00:07:38.803
+<v Dan Tenters>As you know, previously reported, you know, no, no other complaints on any other stuff, so...</v>
+
+00:07:40.323 --> 00:07:58.883
+<v Andrea Canlas>Good. All right, that's perfect here. And I would just wanted to just deep dive into that because I did provide a bit of an what happened on that ticket. And I think there was a missing time entry also. So I think when Jim was actually looking at the ticket, he wasn't able to see what were the progress was.</v>
+
+00:07:59.283 --> 00:08:19.523
+<v Andrea Canlas>that has been made. So that has been coached already also to Joseph. And I do understand and believe that it was a one-off situation wherein, because Joseph is not even used to doing after hours work, right? So, but he did file it and made sure that it was okay.</v>
+
+00:07:59.763 --> 00:08:00.083
+<v Dan Tenters>Yep.</v>
+
+00:08:10.483 --> 00:08:10.803
+<v Dan Tenters>Yeah.</v>
+
+00:08:15.283 --> 00:08:15.603
+<v Dan Tenters>Right.</v>
+
+00:08:19.763 --> 00:08:39.363
+<v Andrea Canlas>And then I think that's where the gap was when it comes to the time entry. But yeah, I'll give you more details into that right after this. Okay. All right, moving on. So I just wanted to highlight a few things since we had our monthly business review. So I just wanted to highlight performance base.</v>
+
+00:08:24.003 --> 00:08:25.283
+<v Dan Tenters>Right, right, yeah.</v>
+
+00:08:28.643 --> 00:08:29.003
+<v Dan Tenters>Okay.</v>
+
+00:08:39.683 --> 00:09:03.363
+<v Andrea Canlas>Both engineers wanted to make sure that you know that they are equally grateful and grateful for you guys. Usually this is the other way around, right? But right now they just wanted to make sure that they extended that gratefulness and thank you for you guys for consistent support, collaboration on a day to day. Just like what you mentioned, you guys talked on a daily basis.</v>
+
+00:08:55.523 --> 00:08:55.843
+<v Dan Tenters>Okay.</v>
+
+00:08:57.043 --> 00:08:57.363
+<v Dan Tenters>Yep.</v>
+
+00:09:03.643 --> 00:09:17.843
+<v Andrea Canlas>And they just wanted to make sure that they say and extend their things because it helped them a lot. And not just help them in resolving the concern, but actually learn more. And that's what we actually want for them. So appreciate you guys so much.</v>
+
+00:09:16.403 --> 00:09:16.723
+<v Dan Tenters>Pre.</v>
+
+00:09:17.883 --> 00:09:18.803
+<v Dan Tenters>Yep, absolutely.</v>
+
+00:09:19.443 --> 00:09:38.963
+<v Andrea Canlas>All right, next is upscale. So just, I'm not sure if you're aware, but both engineers, Joseph and Joanna, have successfully passed their level of process. So kudos to them because it's not really that easy to schedule the assessment and then the interview so that you can pass your.</v>
+
+00:09:29.883 --> 00:09:30.083
+<v Dan Tenters>Okay.</v>
+
+00:09:39.243 --> 00:09:56.963
+<v Andrea Canlas>your level of process within IT by design. So just wanted to give them that kudos. Yep, great news. Next is attendance, of course. Perfect attendance with new unplanned absences, making sure that we have 0 gaps and making sure that there is coverage every time.</v>
+
+00:09:44.563 --> 00:09:45.603
+<v Dan Tenters>Yes, that's great.</v>
+
+00:09:58.323 --> 00:09:58.563
+<v Dan Tenters>Right.</v>
+
+00:09:59.283 --> 00:10:21.083
+<v Andrea Canlas>And last but not least would be the new technical team lead, which is Marky that has been introduced himself. So moving forward, any sort of issues, concerns, may that be with engineer, admin related, holiday, whatever, Marky will be your point of contact, including myself. So if you needed some urgency or</v>
+
+00:10:21.123 --> 00:10:26.883
+<v Andrea Canlas>you wanted to escalate something, just let me know and I can work on that myself. Okay?</v>
+
+00:10:27.483 --> 00:10:28.363
+<v Dan Tenters>All right, sounds good.</v>
+
+00:10:28.963 --> 00:10:29.403
+<v Andrea Canlas>Perfect.</v>
+
+00:10:32.603 --> 00:10:52.123
+<v Andrea Canlas>All right, so for the action tracker, we did have, we sent this, I think, early May, May 1st, for the CSAT for Joanne and Joseph for the month of April. I'm not sure if you receive it, but if you did, just asking if you can submit the CSAT surveys for both of them.</v>
+
+00:10:52.763 --> 00:11:04.283
+<v Dan Tenters>Yeah, where would that have come from? Or what email address? Because I mean, I know I received a lot from last month, but I don't remember seeing this one.</v>
+
+00:11:00.603 --> 00:11:01.083
+<v Andrea Canlas>Mmh.</v>
+
+00:11:04.843 --> 00:11:14.203
+<v Andrea Canlas>Oh, okay. Maybe you've seen the March one. If you want, we can just re-trigger it from Halo PSA, and then you should be able to receive it today.</v>
+
+00:11:15.003 --> 00:11:19.803
+<v Dan Tenters>And I might, I just want to verify too, like my email address is on there, correct?</v>
+
+00:11:19.803 --> 00:11:22.523
+<v Andrea Canlas>Yes, yes, it has been changed from Jim, yes.</v>
+
+00:11:21.003 --> 00:11:21.363
+<v Dan Tenters>Okay.</v>
+
+00:11:23.243 --> 00:11:25.163
+<v Dan Tenters>Yeah, because I don't, like, I mean...</v>
+
+00:11:27.723 --> 00:11:30.203
+<v Dan Tenters>The ones I'm looking at right now are...</v>
+
+00:11:29.803 --> 00:11:30.403
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:11:31.243 --> 00:11:32.363
+<v Andrea Canlas>Is it says March?</v>
+
+00:11:31.483 --> 00:11:31.603
+<v Dan Tenters>Um...</v>
+
+00:11:34.683 --> 00:11:39.003
+<v Dan Tenters>Let's let me let me look back again here real quick. Wanna make sure that.</v>
+
+00:11:37.883 --> 00:11:38.363
+<v Andrea Canlas>Kurt.</v>
+
+00:11:41.043 --> 00:11:53.883
+<v Dan Tenters>Because I see, you know, like over the last like several weeks, you know, in regards to this service call, then time off request.</v>
+
+00:11:45.003 --> 00:11:45.603
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:11:50.603 --> 00:11:50.763
+<v Andrea Canlas>Uh-huh.</v>
+
+00:11:53.323 --> 00:11:54.963
+<v Andrea Canlas>Mhm, mhm.</v>
+
+00:11:56.923 --> 00:11:58.203
+<v Dan Tenters>See what this one is.</v>
+
+00:11:59.723 --> 00:12:00.603
+<v Dan Tenters>That was.</v>
+
+00:12:08.603 --> 00:12:10.683
+<v Dan Tenters>Yeah, I don't, I don't see anything.</v>
+
+00:12:12.123 --> 00:12:17.403
+<v Dan Tenters>since that last one I did as far as, you know, doing the survey.</v>
+
+00:12:18.203 --> 00:12:31.403
+<v Andrea Canlas>Gotcha, no problem. I'll we'll just re-trigger it, make sure that you have the we have the accurate email address. I don't know, maybe there's there was a typo there, so we'll be let's resend that Mark key and then...</v>
+
+00:12:19.403 --> 00:12:19.723
+<v Dan Tenters>Yeah.</v>
+
+00:12:22.283 --> 00:12:22.603
+<v Dan Tenters>Okay.</v>
+
+00:12:30.523 --> 00:12:33.643
+<v Mark Paolo Mangune>Yeah, I'm doing it right now as we speak, just to be sure.</v>
+
+00:12:33.323 --> 00:12:52.843
+<v Andrea Canlas>Cool. Gotcha. So just make sure that maybe there was some type of the email address maybe. Okay, thank you very much, Nan. All right, moving forward, let's go to the performance analysis. All right, so just what we just wanted to highlight utilization. Again, ITBD standard target with</v>
+
+00:12:41.643 --> 00:12:41.963
+<v Dan Tenters>Yep.</v>
+
+00:12:53.003 --> 00:13:12.283
+<v Andrea Canlas>the 80% for engineers. They didn't meet the utilization target, but I know that this is because of the volume of tickets that you guys receive on a daily basis. So, and this is related to also how they process tickets, not just.</v>
+
+00:13:08.203 --> 00:13:08.683
+<v Dan Tenters>Right.</v>
+
+00:13:12.603 --> 00:13:20.683
+<v Andrea Canlas>within the ticket that are incoming. So wait times, including installation updates, are not included on the time entries, if I'm not mistaken, right?</v>
+
+00:13:22.603 --> 00:13:24.363
+<v Dan Tenters>I'm sorry, say that again. The...</v>
+
+00:13:24.123 --> 00:13:36.963
+<v Andrea Canlas>So for, for example, installation or Windows update, so you might probably wait for like, I don't know, 3 hours or two hours for that to complete. So it's not added, it's not added doc and utilization. I gotcha.</v>
+
+00:13:31.803 --> 00:13:34.323
+<v Dan Tenters>Oh yeah, yeah, exactly. Yeah.</v>
+
+00:13:36.123 --> 00:13:36.603
+<v Dan Tenters>Right.</v>
+
+00:13:37.723 --> 00:13:38.043
+<v Dan Tenters>Yeah.</v>
+
+00:13:39.163 --> 00:13:51.083
+<v Andrea Canlas>I just wanted to ask, I know that there are low utilization, but do you think, is there any type of maybe small projects that you guys can use both engineer, maybe, train them?</v>
+
+00:13:51.163 --> 00:14:12.043
+<v Dan Tenters>We, well, yeah, that's the thing, like I had said in the last call, you know, we are going to be having some projects coming up. Some of them are, you know, much larger ones. Other ones are going to be, like I'm working on building a new server right now. We're going to be doing a migration from an old server.</v>
+
+00:13:54.083 --> 00:13:54.683
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:13:56.803 --> 00:13:57.283
+<v Andrea Canlas>Mhm.</v>
+
+00:13:59.243 --> 00:13:59.483
+<v Andrea Canlas>But...</v>
+
+00:14:03.963 --> 00:14:04.043
+<v Andrea Canlas>Oh.</v>
+
+00:14:09.643 --> 00:14:10.123
+<v Andrea Canlas>Cool.</v>
+
+00:14:12.523 --> 00:14:36.123
+<v Dan Tenters>to the new one. And it's a smaller company, but that would be something that, you know, I can work with them on that to get them involved in doing that move. There is some, the company has some older stuff, so we're working on migrating them over to this new Hyper-V server and then upgrading their servers from where they are now.</v>
+
+00:14:12.603 --> 00:14:12.843
+<v Andrea Canlas>Yeah.</v>
+
+00:14:15.923 --> 00:14:16.523
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:14:27.963 --> 00:14:28.443
+<v Andrea Canlas>Mhm.</v>
+
+00:14:36.363 --> 00:14:54.363
+<v Dan Tenters>You know, up to 2019 or 2022, depending on, you know, which platform they're using, but that that would probably be something that we can get them involved in, you know, on that project and what we, you know, that these times of year, you know, like especially like...</v>
+
+00:14:36.683 --> 00:14:36.843
+<v Andrea Canlas>Mm.</v>
+
+00:14:40.083 --> 00:14:40.603
+<v Andrea Canlas>Mhm.</v>
+
+00:14:47.683 --> 00:14:48.043
+<v Andrea Canlas>Great.</v>
+
+00:14:55.443 --> 00:15:06.683
+<v Dan Tenters>coming into summer too, things tend to slow down a little bit. They fluctuate, you know, between spring and summer, you know. Normally at this time of year, we see more of the daily.</v>
+
+00:14:59.563 --> 00:15:00.163
+<v Andrea Canlas>Mhm.</v>
+
+00:15:02.723 --> 00:15:03.243
+<v Andrea Canlas>Mhm.</v>
+
+00:15:07.643 --> 00:15:21.403
+<v Dan Tenters>you know, day-to-day things versus the projects. Summertime, we see very, you know, the tickets drop down, you know, the day-to-day tickets, but we'll have more projects to do at those times. Yeah.</v>
+
+00:15:12.803 --> 00:15:13.443
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:15:19.963 --> 00:15:23.083
+<v Andrea Canlas>Oh, okay. So it's one or the other sometimes.</v>
+
+00:15:23.803 --> 00:15:28.763
+<v Dan Tenters>Yeah, yeah, it definitely fluctuates. I mean, and especially around, you know, like...</v>
+
+00:15:29.843 --> 00:15:39.323
+<v Dan Tenters>holidays and things like that around here are like, you know, schools are out, things like that. You know, a lot, we see a lot of people going on vacation, so tickets will, you know, the...</v>
+
+00:15:32.923 --> 00:15:33.403
+<v Andrea Canlas>Mhm.</v>
+
+00:15:40.003 --> 00:15:42.203
+<v Andrea Canlas>Eventually go down, yeah.</v>
+
+00:15:40.483 --> 00:15:51.083
+<v Dan Tenters>The volume volume of daily ticket drop, but then we'll have like, oh, well, we wanna we wanna redo something in the network, so we'll do it that week because there's not gonna be a lot of people on site, so...</v>
+
+00:15:43.883 --> 00:15:44.363
+<v Andrea Canlas>Hello.</v>
+
+00:15:52.123 --> 00:16:04.883
+<v Andrea Canlas>That makes sense. I got to understand. Was there ever a time that, I don't know, given the history, was there ever a time that they actually hit, I don't know, 80%, 70% of utilization a month?</v>
+
+00:15:53.763 --> 00:15:54.923
+<v Dan Tenters>Yeah, yeah.</v>
+
+00:16:06.003 --> 00:16:06.283
+<v Andrea Canlas>Singh.</v>
+
+00:16:06.203 --> 00:16:12.043
+<v Dan Tenters>Yeah, I believe like, you know, right now, like I said, you know, things have been a little bit slower.</v>
+
+00:16:11.043 --> 00:16:11.563
+<v Andrea Canlas>Mhm.</v>
+
+00:16:12.523 --> 00:16:13.083
+<v Andrea Canlas>Mhm.</v>
+
+00:16:13.963 --> 00:16:15.723
+<v Dan Tenters>But I would say, you know...</v>
+
+00:16:16.923 --> 00:16:35.723
+<v Dan Tenters>At the, at the beginning, yeah, at the beginning of, you know, them starting with us and then, you know, moving up until probably towards the end of last year, that would have been more consistent around that number. And again, it's not, it's not lack of their doing work at this point. It's just the, you know,</v>
+
+00:16:17.083 --> 00:16:17.803
+<v Andrea Canlas>Thords.</v>
+
+00:16:21.643 --> 00:16:22.203
+<v Andrea Canlas>Mhm.</v>
+
+00:16:25.323 --> 00:16:26.003
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:16:29.683 --> 00:16:29.923
+<v Andrea Canlas>And.</v>
+
+00:16:35.163 --> 00:16:35.683
+<v Andrea Canlas>Mmh.</v>
+
+00:16:36.043 --> 00:16:48.443
+<v Dan Tenters>We had, we we also have things situated to a point where we're able to actually drop down ticket counts because we've already resolved things before they actually start, so...</v>
+
+00:16:45.243 --> 00:16:45.723
+<v Andrea Canlas>Mmh.</v>
+
+00:16:48.563 --> 00:16:49.163
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:16:50.083 --> 00:17:08.083
+<v Andrea Canlas>Gotcha, understood. Thank you so much. So yeah, that's something actually we're looking forward to, you know, small projects so that they can actually shadow, understand, and learn more when it comes to those little projects or big projects that you guys have. It's an additional knowledge on their side of the fence. So yeah, I'm excited.</v>
+
+00:16:52.803 --> 00:16:53.043
+<v Dan Tenters>Yeah.</v>
+
+00:17:06.683 --> 00:17:25.563
+<v Dan Tenters>Yep, and like I mentioned too, this server project that I'm working on is actually, because I did a test run on it at our co-location ahead of time just to make sure things were going to work. And because it's an older server, so their domain controller is a 2008 R2.</v>
+
+00:17:10.603 --> 00:17:11.923
+<v Andrea Canlas>Mhm, mhm.</v>
+
+00:17:14.363 --> 00:17:14.843
+<v Andrea Canlas>Mhm.</v>
+
+00:17:16.123 --> 00:17:16.603
+<v Andrea Canlas>Mmh.</v>
+
+00:17:19.243 --> 00:17:19.723
+<v Andrea Canlas>Mhm.</v>
+
+00:17:25.563 --> 00:17:25.963
+<v Andrea Canlas>Wow.</v>
+
+00:17:26.683 --> 00:17:44.963
+<v Dan Tenters>Yeah. And we've been pushing them for years to upgrade, but they finally decided now to do those. And the upgrade process actually involves a lot of steps that you don't normally have to do anymore because it's almost obsolete.</v>
+
+00:17:30.843 --> 00:17:31.323
+<v Andrea Canlas>Mhm.</v>
+
+00:17:33.163 --> 00:17:34.603
+<v Andrea Canlas>Yay. Okay.</v>
+
+00:17:42.923 --> 00:17:43.483
+<v Andrea Canlas>Yeah.</v>
+
+00:17:45.243 --> 00:18:03.723
+<v Dan Tenters>So it would be kind of, it would be nice for them to see this because it's something I learned, you know, 20 something years ago. Yeah. And it's not something that you normally have to deal with now. So for them to be able to get a handle on those types of things, you know, to get a background in how things used to be.</v>
+
+00:17:45.483 --> 00:17:45.963
+<v Andrea Canlas>Yes.</v>
+
+00:17:53.163 --> 00:17:54.843
+<v Andrea Canlas>Back in the day, yeah.</v>
+
+00:17:57.803 --> 00:17:58.363
+<v Andrea Canlas>True.</v>
+
+00:18:00.483 --> 00:18:01.003
+<v Andrea Canlas>Mhm.</v>
+
+00:18:04.123 --> 00:18:04.523
+<v Andrea Canlas>True.</v>
+
+00:18:04.203 --> 00:18:04.603
+<v Dan Tenters>Yeah.</v>
+
+00:18:05.603 --> 00:18:20.043
+<v Andrea Canlas>And those little tasks, you know, those are the little tasks that, ah, okay, so this is how it does, or this is how it goes. That explains it, all that stuff, I understand. Yeah, it's a very good opportunity for them, and I think they'll be excited to be part of that.</v>
+
+00:18:10.843 --> 00:18:11.403
+<v Dan Tenters>Right.</v>
+
+00:18:12.283 --> 00:18:12.563
+<v Dan Tenters>Yeah.</v>
+
+00:18:19.563 --> 00:18:21.083
+<v Dan Tenters>Yeah, yep.</v>
+
+00:18:21.723 --> 00:18:40.283
+<v Andrea Canlas>Okay, let's move on to ticket closure trends. So I think this is one of the things that are very, very vital on the side of ITBD by design, especially if you're not getting a lot of tickets, meaning that your ticket closure has been magnified because</v>
+
+00:18:40.683 --> 00:19:00.603
+<v Andrea Canlas>If you're getting less than, I don't know, 20 tickets a day or in a week even, it is very vital for you to actually close them within that week or within that day when you receive them, which is very good because currently the target average of tickets that we needed to close in a day is 8.</v>
+
+00:18:53.003 --> 00:18:53.323
+<v Dan Tenters>Right.</v>
+
+00:19:00.843 --> 00:19:21.483
+<v Andrea Canlas>They're not meaning that, obviously, because of the volume of the tickets. But then I think I wanted to highlight that out of the tickets that they've worked on and they've handled, they were able to close the equal amount of tickets, which means that we do not have a carryover or a backlog from previous month, which is very good and improved an SLA as well.</v>
+
+00:19:21.643 --> 00:19:33.963
+<v Andrea Canlas>So we have 100% resolution for both of them. And both didn't meet 8 tickets, but then 100% resolution is a very good thing. So I wanted to highlight that also.</v>
+
+00:19:22.523 --> 00:19:22.843
+<v Dan Tenters>Right.</v>
+
+00:19:33.083 --> 00:19:33.403
+<v Dan Tenters>Yep.</v>
+
+00:19:35.563 --> 00:19:53.723
+<v Andrea Canlas>All right. Moving on to way forward. So we wanted to make sure that we address the low utilization, which you and I talked about already. So we should be good for that. Next is our holiday. It would be a holiday on your side of the fence, if I'm not mistaken, Memorial Day.</v>
+
+00:19:45.323 --> 00:19:45.643
+<v Dan Tenters>Yep.</v>
+
+00:19:53.963 --> 00:19:56.603
+<v Andrea Canlas>So do you need both of them to cover to be in?</v>
+
+00:19:57.323 --> 00:20:00.163
+<v Dan Tenters>I will double check with Jim, but I don't.</v>
+
+00:20:01.163 --> 00:20:02.043
+<v Dan Tenters>I don't think.</v>
+
+00:20:03.563 --> 00:20:14.123
+<v Dan Tenters>It'll be required for either one of them because we're closed and I'm fairly certain all of our customers are closed too, but what I'll do is...</v>
+
+00:20:05.323 --> 00:20:05.803
+<v Andrea Canlas>Mhm.</v>
+
+00:20:11.883 --> 00:20:12.443
+<v Andrea Canlas>Yeah.</v>
+
+00:20:15.403 --> 00:20:15.883
+<v Andrea Canlas>Mhm.</v>
+
+00:20:19.123 --> 00:20:20.883
+<v Andrea Canlas>Yeah, he's traveling, yeah.</v>
+
+00:20:22.043 --> 00:20:22.203
+<v Andrea Canlas>True.</v>
+
+00:20:24.283 --> 00:20:24.763
+<v Andrea Canlas>Mhm.</v>
+
+00:20:32.043 --> 00:20:34.523
+<v Andrea Canlas>Yeah, yeah, Marky, he goes by Marky.</v>
+
+00:20:35.323 --> 00:20:53.683
+<v Dan Tenters>Okay. So I could, what I'll do is I'll check with, I'll check with Jim on that because I don't do the scheduling, you know, and I actually don't, I don't do the scheduling or like approval of time off and stuff like that. Jim handles that. I just do more of the day-to-day stuff with Joseph and Joanna. So.</v>
+
+00:20:40.763 --> 00:20:41.283
+<v Andrea Canlas>Mmh.</v>
+
+00:20:43.643 --> 00:20:44.283
+<v Andrea Canlas>I gotcha.</v>
+
+00:20:48.683 --> 00:20:49.163
+<v Andrea Canlas>Mhm.</v>
+
+00:20:50.443 --> 00:20:50.923
+<v Andrea Canlas>Mhm.</v>
+
+00:20:54.763 --> 00:20:59.803
+<v Dan Tenters>I don't want to say, you know, yes or no at this point, but I will check with him and report back.</v>
+
+00:20:55.243 --> 00:20:55.643
+<v Andrea Canlas>One.</v>
+
+00:20:57.643 --> 00:20:58.283
+<v Andrea Canlas>That's OK.</v>
+
+00:21:00.203 --> 00:21:03.003
+<v Andrea Canlas>Sure, that's fine. Yeah, just reach.</v>
+
+00:21:02.003 --> 00:21:09.803
+<v Dan Tenters>But I'm assuming, I'm assuming it, because we're closed, I'm assuming that it's not going to be required, but again, I'll double check.</v>
+
+00:21:10.523 --> 00:21:23.443
+<v Andrea Canlas>Gotcha, no problem. So for that, once you get an answer from Jim, you can send an email directly to Mark. We'll drop the email address here on this chat so you can send it over to him. Okay.</v>
+
+00:21:22.003 --> 00:21:22.203
+<v Dan Tenters>Okay.</v>
+
+00:21:23.603 --> 00:21:24.843
+<v Dan Tenters>That'd be great. Thank you.</v>
+
+00:21:25.163 --> 00:21:43.003
+<v Andrea Canlas>No, no problem. All right. I think that is pretty much it. And just wanted to give you an update of what happened with that ticket. So we were able to provide series of events of what happened. And to be honest with you, this is not just happening by just one engineer. I do handle multiple partners and</v>
+
+00:21:43.283 --> 00:22:03.163
+<v Andrea Canlas>multiple engineers as well. And ticket hygiene is sometimes being neglected, not by all means necessary. It's just that sometimes you're just too focused on what you do. You're focused on the outcome of it, wherein you forgot that, okay, I need to put in what I did for the time being.</v>
+
+00:22:03.443 --> 00:22:22.363
+<v Andrea Canlas>and then put in again, put in another time entry once I continue with the troubleshooting. And that's where I think the miscommunication is also is because if I'm an outsider and I'm going to, if Jim was in the road and was just looking at the ticket, I would want to see everything that has happened from day one to.</v>
+
+00:22:22.483 --> 00:22:41.483
+<v Andrea Canlas>whatever day it is currently, right? And I think he wasn't able to see that. And I did mention also to, with the help of Mark, you did mention that making sure that whatever you do, it's on the ticket. Because if you spend like 10 hours on it and it's not on the ticket, it didn't happen. That's just the rule of thumb, right?</v>
+
+00:22:24.763 --> 00:22:25.643
+<v Dan Tenters>Right, right.</v>
+
+00:22:41.883 --> 00:22:42.603
+<v Dan Tenters>Right, right.</v>
+
+00:22:41.883 --> 00:23:00.203
+<v Andrea Canlas>So it has been, it has been delivered and coaching has been made also. And Joseph understood, we just got to make sure that it's a practice on a daily basis. So it just comes in like you're breathing, it's natural already. So yeah, that's our opportunities currently.</v>
+
+00:22:56.763 --> 00:22:57.163
+<v Dan Tenters>Right.</v>
+
+00:22:58.683 --> 00:22:59.083
+<v Dan Tenters>Yep.</v>
+
+00:23:01.323 --> 00:23:11.803
+<v Andrea Canlas>But again, this is not happening daily. So I would want to give that to him, but I just wanted to make sure also that if there's any gap there, we fill that as soon as possible.</v>
+
+00:23:12.603 --> 00:23:32.283
+<v Dan Tenters>Right. Yeah, and the other thing too, like I've encouraged Joseph and Joanna, and I know that they do it quite often, or for the most part, I should say, the way our ticketing system works, like if you go in, there's two sections. One is a discussion section, and that</v>
+
+00:23:13.803 --> 00:23:14.203
+<v Andrea Canlas>Alright.</v>
+
+00:23:15.323 --> 00:23:15.643
+<v Andrea Canlas>Mm.</v>
+
+00:23:20.763 --> 00:23:21.243
+<v Andrea Canlas>Mhm.</v>
+
+00:23:31.083 --> 00:23:31.603
+<v Andrea Canlas>Mhm.</v>
+
+00:23:32.443 --> 00:23:44.763
+<v Dan Tenters>That shows notes and that also gets sent to our customer. But there's also an internal section. Yes. So that one is good because...</v>
+
+00:23:34.363 --> 00:23:35.803
+<v Andrea Canlas>Any email?</v>
+
+00:23:37.563 --> 00:23:38.203
+<v Andrea Canlas>Yes.</v>
+
+00:23:40.123 --> 00:23:40.763
+<v Andrea Canlas>Internal.</v>
+
+00:23:43.563 --> 00:23:45.803
+<v Andrea Canlas>Wherein it's just within your org, right?</v>
+
+00:23:46.203 --> 00:24:05.203
+<v Dan Tenters>Right, yeah. So then we see it and it doesn't necessarily like, you know, like you said, if you're working on this for 10 hours, but eight of those hours are waiting for updates to finish. You know, those eight hours don't have to get billed. So it's like you can go on that internal section and say, you know, spent.</v>
+
+00:23:48.683 --> 00:23:49.323
+<v Andrea Canlas>Mmh.</v>
+
+00:23:52.923 --> 00:23:53.083
+<v Andrea Canlas>Mm.</v>
+
+00:23:56.843 --> 00:23:57.323
+<v Andrea Canlas>True.</v>
+
+00:24:02.723 --> 00:24:03.363
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:24:04.923 --> 00:24:06.443
+<v Andrea Canlas>So that we know what's happening, right?</v>
+
+00:24:05.723 --> 00:24:07.843
+<v Dan Tenters>You know. Exactly. Yeah.</v>
+
+00:24:08.683 --> 00:24:28.043
+<v Andrea Canlas>Gotcha. Yep, that's what we wanted to wanted our engineers to know also the difference between our resolution, internal, and discussion. It's been it's been a debate on how to use it, because you know, different organization uses differently, but for at least for Amoskeg, we're...</v>
+
+00:24:09.083 --> 00:24:09.403
+<v Dan Tenters>Yep.</v>
+
+00:24:26.843 --> 00:24:27.163
+<v Dan Tenters>Right.</v>
+
+00:24:28.083 --> 00:24:49.323
+<v Andrea Canlas>doing it as we should, which is very, very nice as well. So yeah, we'll be making sure that they know how to use those time entries and making sure that they put in the accurate time entries and when they are working on the ticket. Speaking of ConnectWise, I had an assignment for Jim actually.</v>
+
+00:24:30.443 --> 00:24:30.763
+<v Dan Tenters>Yep.</v>
+
+00:24:43.643 --> 00:24:43.963
+<v Dan Tenters>Got it.</v>
+
+00:24:49.883 --> 00:25:09.203
+<v Andrea Canlas>that we were talking about a current workflow that we can implement in Connect twice for a ticket not to be reopened if it's more than, I don't know, X amount of days, which is I think 5 days. I have that, I can probably send it to him or you. Is it still an issue? Like when your ticket gets reopened every time that...</v>
+
+00:25:09.323 --> 00:25:18.763
+<v Andrea Canlas>I don't know, maybe it's triggered by an email, it's triggered by them, the customer responding to the ticket, la la la la, does it still happening?</v>
+
+00:25:18.363 --> 00:25:41.163
+<v Dan Tenters>Yeah, so it's, yeah, so it's, if a ticket gets reopened, that would be the customer responded to the, like, when we close out a ticket, it sends them a response saying, ticket's been completed, here's the resolution, blah, blah, blah. And then it does have a survey at the end where they could respond to that and give positive feedback or any kind of feedback for that matter.</v>
+
+00:25:22.843 --> 00:25:23.323
+<v Andrea Canlas>Mhm.</v>
+
+00:25:25.803 --> 00:25:26.283
+<v Andrea Canlas>Mhm.</v>
+
+00:25:29.163 --> 00:25:29.643
+<v Andrea Canlas>Mhm.</v>
+
+00:25:31.763 --> 00:25:32.243
+<v Andrea Canlas>Mhm.</v>
+
+00:25:33.803 --> 00:25:34.283
+<v Andrea Canlas>Mhm.</v>
+
+00:25:38.123 --> 00:25:38.723
+<v Andrea Canlas>Mhm.</v>
+
+00:25:40.923 --> 00:25:41.323
+<v Andrea Canlas>Okay.</v>
+
+00:25:41.963 --> 00:26:01.003
+<v Dan Tenters>If they feel that something like say something reoccurred or, you know, they realized, oh, actually this part was missing, they can respond to that email and it reopens the ticket automatically. So I mean, that does happen from time to time. You know, there are some things that.</v>
+
+00:25:47.563 --> 00:25:48.203
+<v Andrea Canlas>Mhm.</v>
+
+00:25:53.523 --> 00:25:54.003
+<v Andrea Canlas>Mhm.</v>
+
+00:25:55.403 --> 00:25:55.923
+<v Andrea Canlas>Mhm.</v>
+
+00:26:00.043 --> 00:26:00.523
+<v Andrea Canlas>Mhm.</v>
+
+00:26:01.323 --> 00:26:15.243
+<v Dan Tenters>We've seen over the years, you know, things reoccur or it might be something different that is directly related to that ticket. So they'll reopen it. That way we can go in and we have the notes already there in the ticket.</v>
+
+00:26:05.483 --> 00:26:05.963
+<v Andrea Canlas>Mmh.</v>
+
+00:26:11.043 --> 00:26:11.643
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:26:13.643 --> 00:26:14.123
+<v Andrea Canlas>Okay.</v>
+
+00:26:15.883 --> 00:26:16.363
+<v Andrea Canlas>Mhm.</v>
+
+00:26:16.923 --> 00:26:23.803
+<v Dan Tenters>So, so I'm not so what do you what exactly are you were you just wondering how that happens or?</v>
+
+00:26:24.443 --> 00:26:38.763
+<v Andrea Canlas>Yes, I think we were talking about maybe after X amount of days, the partner or the customer or the user will be able to reopen a ticket after it has been closed, because completed is different from closed. Do you guys close tickets?</v>
+
+00:26:39.963 --> 00:26:52.523
+<v Dan Tenters>We, I mean, we, it's more of the completion. The closed tickets, you know, like if we get a, if we get a ticket, like we close it, someone will reopen it to say thank you.</v>
+
+00:26:44.163 --> 00:26:44.363
+<v Andrea Canlas>Mm.</v>
+
+00:26:46.363 --> 00:26:46.923
+<v Andrea Canlas>Billing.</v>
+
+00:26:51.883 --> 00:26:52.483
+<v Andrea Canlas>Mhm.</v>
+
+00:26:53.403 --> 00:26:54.123
+<v Andrea Canlas>Yeah.</v>
+
+00:26:53.803 --> 00:27:00.923
+<v Dan Tenters>But that when they respond saying thank you, it reopens the tickets. So then we just hit close. Like we don't have to complete it again, you know.</v>
+
+00:26:55.643 --> 00:26:56.043
+<v Andrea Canlas>True.</v>
+
+00:26:57.683 --> 00:27:17.763
+<v Andrea Canlas>True. Yeah. Yes, exactly. Email triggers. Gotcha. So I think what we were talking about was after five days of no reply, after it has been completed, then it won't be able to get triggered, even though the user responded or made that.</v>
+
+00:27:03.803 --> 00:27:04.723
+<v Dan Tenters>Right, yeah.</v>
+
+00:27:17.843 --> 00:27:29.083
+<v Andrea Canlas>be an automatic email that, hey, this ticket has been completed. You may send an email through this email so it can generate a new one, kind of like that, so that it doesn't reopen the entire ticket itself.</v>
+
+00:27:30.123 --> 00:27:30.403
+<v Andrea Canlas>Okay.</v>
+
+00:27:30.363 --> 00:27:38.763
+<v Dan Tenters>Yeah, they, we, I mean, we've had customers where I had one not too long ago, and it was literally like four or five months later.</v>
+
+00:27:35.763 --> 00:27:36.123
+<v Andrea Canlas>Uh-huh.</v>
+
+00:27:39.083 --> 00:27:39.763
+<v Andrea Canlas>Just.</v>
+
+00:27:40.283 --> 00:27:59.643
+<v Dan Tenters>that they responded to that closed ticket. And I was like, you know, I had to I had to go back and read through it again, because I've, you know, done 1000 tickets since then. So I don't really remember. But so I mean, in a way, it is helpful when it reopens it, because then it just it brings back all the information right there.</v>
+
+00:27:42.043 --> 00:27:42.523
+<v Andrea Canlas>Mhm.</v>
+
+00:27:44.043 --> 00:27:44.363
+<v Andrea Canlas>Yeah.</v>
+
+00:27:50.043 --> 00:27:50.283
+<v Andrea Canlas>It.</v>
+
+00:27:51.483 --> 00:27:52.003
+<v Andrea Canlas>Mhm.</v>
+
+00:27:54.763 --> 00:27:55.283
+<v Andrea Canlas>Mhm.</v>
+
+00:28:00.123 --> 00:28:06.843
+<v Dan Tenters>Um, I mean, obviously, we encourage our customers, like, if, if it's something you know, like...</v>
+
+00:28:00.323 --> 00:28:00.723
+<v Andrea Canlas>Okay.</v>
+
+00:28:07.803 --> 00:28:15.963
+<v Dan Tenters>We don't really have a time frame. It's just, you know, if you need to reopen the ticket, you can, but if it's something that...</v>
+
+00:28:10.683 --> 00:28:10.883
+<v Andrea Canlas>Mm.</v>
+
+00:28:12.803 --> 00:28:13.403
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:28:17.043 --> 00:28:17.523
+<v Andrea Canlas>Different.</v>
+
+00:28:17.083 --> 00:28:30.363
+<v Dan Tenters>You know, like I said, if it's like six months out, they might they might want to just, you know, send in a new ticket and be like reference ticket number, whatever, you know, and then we can pull it up in our system and then go from there, but...</v>
+
+00:28:20.043 --> 00:28:20.283
+<v Andrea Canlas>Yeah.</v>
+
+00:28:29.803 --> 00:28:30.003
+<v Andrea Canlas>Mm.</v>
+
+00:28:31.083 --> 00:28:43.363
+<v Andrea Canlas>So it's not actually a new ones we're in, you know, there's just a number of things that happens to that ticket all the time. So do you like get, you know, I don't know, a reasonable amount, maybe?</v>
+
+00:28:44.363 --> 00:29:03.243
+<v Dan Tenters>Yeah, and I mean, it's again, it's not very often that that happens. It certainly has happened where people will reopen a ticket, but for the most part, people will just submit a new ticket and then we have to like look back for things. But like I said, we do have</v>
+
+00:28:48.163 --> 00:28:48.883
+<v Andrea Canlas>But okay.</v>
+
+00:28:53.043 --> 00:28:53.523
+<v Andrea Canlas>Mhm.</v>
+
+00:28:54.723 --> 00:28:55.203
+<v Andrea Canlas>Mhm.</v>
+
+00:29:04.283 --> 00:29:20.283
+<v Dan Tenters>We do have a handful of users that will reopen a ticket, you know, even like I said, even, you know, months later, you know, because they feel like something was missing, but more often than not, nothing is missing and it's completely unrelated to that particular ticket. So.</v>
+
+00:29:06.563 --> 00:29:06.643
+<v Andrea Canlas>The.</v>
+
+00:29:11.763 --> 00:29:12.083
+<v Andrea Canlas>Okay.</v>
+
+00:29:21.283 --> 00:29:22.403
+<v Andrea Canlas>Gotcha. All right.</v>
+
+00:29:21.763 --> 00:29:27.803
+<v Dan Tenters>I think it's more force of habit of some of our customers. They just do that automatically.</v>
+
+00:29:28.723 --> 00:29:42.163
+<v Andrea Canlas>Understood. Okay, then. If that's not a really, I don't know, a high priority thing that it's happening on a daily basis, then I don't think we should change anything within your workflow, but just in case.</v>
+
+00:29:41.283 --> 00:29:44.443
+<v Dan Tenters>No, if it, yeah, if, if it was something like.</v>
+
+00:29:45.563 --> 00:30:04.443
+<v Dan Tenters>We'll just, we'll use, you know, Joanna as an example. So she closes a ticket today, then tomorrow it gets reopened, she closes it, and then it gets reopened the next day. Like, if it's getting reopened multiple times, then obviously there's an issue there. So like, I would step in and be like, talk to the customer, like, what?</v>
+
+00:29:49.203 --> 00:29:49.683
+<v Andrea Canlas>Mhm.</v>
+
+00:29:51.283 --> 00:29:51.763
+<v Andrea Canlas>Mhm.</v>
+
+00:29:55.603 --> 00:29:56.083
+<v Andrea Canlas>Mhm.</v>
+
+00:30:01.603 --> 00:30:02.003
+<v Andrea Canlas>Yeah.</v>
+
+00:30:03.563 --> 00:30:04.803
+<v Andrea Canlas>What's happening? Yeah.</v>
+
+00:30:04.563 --> 00:30:25.243
+<v Dan Tenters>So, what's going on here? You know, so we do, we will interject in those types of situations, but again, that's very, very rare that we see that happen. You know, there have been occasions, you know, and I think the one that Jim brought up was we were more concerned about the customer getting angry about having to, you know, reopen the ticket because the computer was still...</v>
+
+00:30:13.803 --> 00:30:14.163
+<v Andrea Canlas>Cool.</v>
+
+00:30:17.123 --> 00:30:17.723
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:30:25.483 --> 00:30:30.763
+<v Dan Tenters>Not going to sleep, but ended up being, you know, ended up being a hardware issue, so it was kind of a...</v>
+
+00:30:26.563 --> 00:30:27.603
+<v Andrea Canlas>Persisting, yeah.</v>
+
+00:30:31.643 --> 00:30:32.203
+<v Dan Tenters>You know.</v>
+
+00:30:33.403 --> 00:30:39.963
+<v Dan Tenters>Wasn't like Joseph was doing something wrong. It was just, you know, we, it's hard to tell with some of those things, you know, so.</v>
+
+00:30:36.243 --> 00:30:36.643
+<v Andrea Canlas>Yes.</v>
+
+00:30:40.683 --> 00:30:57.483
+<v Andrea Canlas>True. Gotcha. All right, then I'll keep that. There's no need for that anymore. But just in case you need anything, is there anything else that, you know, an opportunity maybe for us that we can provide assistance with, help with, do you think?</v>
+
+00:30:58.763 --> 00:31:12.443
+<v Dan Tenters>I can't think of anything right now. Like I said, I mean, we probably will be having some more projects come up. You know, like I said, I'll have Joseph and Joanna take a look at that. But other than those things, I think we're good at this point.</v>
+
+00:31:05.963 --> 00:31:06.603
+<v Andrea Canlas>Mmh.</v>
+
+00:31:13.483 --> 00:31:25.123
+<v Andrea Canlas>Gotcha. Thank you very much. So I think we're just going to wait for your confirmation for the Memorial Day, and I think that's pretty much it. Marky, we're able to re-trigger that CSAT.</v>
+
+00:31:15.803 --> 00:31:16.043
+<v Dan Tenters>Yeah.</v>
+
+00:31:22.523 --> 00:31:22.763
+<v Dan Tenters>Vaid.</v>
+
+00:31:24.523 --> 00:31:25.643
+<v Mark Paolo Mangune>Yep, I did.</v>
+
+00:31:25.723 --> 00:31:32.283
+<v Dan Tenters>Yeah, I just, I was going to say I did get, I got, I actually got two for Joseph and one for Joanna.</v>
+
+00:31:26.283 --> 00:31:26.523
+<v Andrea Canlas>Ohh.</v>
+
+00:31:32.443 --> 00:31:40.763
+<v Mark Paolo Mangune>Yeah, at least maybe just one for Joseph. I think it's the same. I just retriggered just to be sure. And then one for Joanna. Thanks so much.</v>
+
+00:31:37.243 --> 00:31:37.603
+<v Dan Tenters>Yeah.</v>
+
+00:31:38.843 --> 00:31:39.083
+<v Dan Tenters>Yep.</v>
+
+00:31:42.203 --> 00:31:42.843
+<v Andrea Canlas>Alrighty.</v>
+
+00:31:42.443 --> 00:31:49.083
+<v Dan Tenters>And are you, did you say you were going to send in the chat the email address?</v>
+
+00:31:49.643 --> 00:31:50.523
+<v Andrea Canlas>Of working, yes.</v>
+
+00:31:51.163 --> 00:31:51.803
+<v Dan Tenters>Yeah, OK.</v>
+
+00:31:52.323 --> 00:31:52.643
+<v Andrea Canlas>Yeah.</v>
+
+00:31:52.443 --> 00:31:53.323
+<v Mark Paolo Mangune>I'm gonna send it now.</v>
+
+00:31:54.043 --> 00:32:00.763
+<v Andrea Canlas>Yeah, you can send it now so he can access it. Also, by the way, Dan, I...</v>
+
+00:32:01.963 --> 00:32:11.003
+<v Andrea Canlas>I just noticed that we don't have like chat on Teams. Is your federation allowed or enabled so that we can talk, I don't know, maybe easier?</v>
+
+00:32:10.443 --> 00:32:28.723
+<v Dan Tenters>Yeah, I think, yeah, you just you just sent sent me one now, but yeah, I mean, you should be able to just, you should be able to just message me directly too. I talk to outside vendors and customers every so often, so yeah.</v>
+
+00:32:16.683 --> 00:32:17.403
+<v Andrea Canlas>but usually.</v>
+
+00:32:20.683 --> 00:32:20.763
+<v Andrea Canlas>The.</v>
+
+00:32:24.683 --> 00:32:25.323
+<v Andrea Canlas>Oh, okay.</v>
+
+00:32:27.203 --> 00:32:27.723
+<v Andrea Canlas>Perfect.</v>
+
+00:32:29.243 --> 00:32:38.443
+<v Andrea Canlas>Gotcha, I'll try that later to message you directly and then probably create a group chat for you, myself and Marky so that we can, you know, easily communicate it.</v>
+
+00:32:38.923 --> 00:32:54.043
+<v Dan Tenters>Yeah, okay. Yeah, that I I oftentimes refer that to versus I mean, I like emailing obviously to keep records and stuff, but the messaging is just more instantaneous, so it's good for good for, you know, the.</v>
+
+00:32:46.203 --> 00:32:48.123
+<v Andrea Canlas>Yeah, black and white, yes.</v>
+
+00:32:50.683 --> 00:32:51.163
+<v Andrea Canlas>Yes.</v>
+
+00:32:52.243 --> 00:32:52.443
+<v Andrea Canlas>Yes.</v>
+
+00:32:54.763 --> 00:32:56.603
+<v Andrea Canlas>Support operations, definitely.</v>
+
+00:32:57.163 --> 00:32:57.563
+<v Dan Tenters>Right.</v>
+
+00:32:58.283 --> 00:33:17.083
+<v Andrea Canlas>Gotcha. All right. Moving on. So I just wanted to invite you guys to build it live. I'm not sure if Jim was able to receive this invite already, but yeah, I just wanted to let you know also that we're having build it live in on August 3rd to 5th. It's in head.</v>
+
+00:33:16.443 --> 00:33:16.843
+<v Dan Tenters>Okay.</v>
+
+00:33:17.483 --> 00:33:32.123
+<v Andrea Canlas>on Hudson, Jersey City. So yeah, it's going to be a good and great event. Everybody's excited about it. So if you want to join, probably you can talk to Jim. We would love to have you guys there.</v>
+
+00:33:33.803 --> 00:33:38.603
+<v Dan Tenters>All right, sounds good. Yeah, I'll check with Jim and see if he received that and we'll go from there.</v>
+
+00:33:39.323 --> 00:33:41.723
+<v Andrea Canlas>Yeah, perfect. Have you been here in the past? Not yet.</v>
+
+00:33:42.683 --> 00:33:44.043
+<v Dan Tenters>Uh, I have not, no.</v>
+
+00:33:44.523 --> 00:34:00.683
+<v Andrea Canlas>Gotcha. You should convince Jim to bring you. All right. Next is, you know, what Team GPS is. If you want to use Team GPS, let me know, and then we can, you know, do a full demo for you guys.</v>
+
+00:33:45.803 --> 00:33:46.043
+<v Dan Tenters>No.</v>
+
+00:33:47.803 --> 00:33:48.523
+<v Dan Tenters>Yeah.</v>
+
+00:34:00.923 --> 00:34:02.683
+<v Dan Tenters>Okay, alright, sounds good.</v>
+
+00:34:03.403 --> 00:34:13.643
+<v Andrea Canlas>And I think that is it. Thank you very much. I'll stop sharing my screen. Other than that, is there anything else that you'd like to discuss, talk about? No?</v>
+
+00:34:14.203 --> 00:34:16.843
+<v Dan Tenters>Nope, I can't think of anything else. I think we covered it.</v>
+
+00:34:17.803 --> 00:34:27.163
+<v Andrea Canlas>Okay, perfect. I think that is pretty much it for me. Again, I'll create that group chat. I'll send you one. And if I have any, encounter any problems, I'll let you know. Okay.</v>
+
+00:34:27.923 --> 00:34:28.763
+<v Dan Tenters>All right, sounds good.</v>
+
+00:34:29.243 --> 00:34:32.363
+<v Andrea Canlas>Alright, thank you very much, Dad. Have a good day. Bye.</v>
+
+00:34:30.683 --> 00:34:33.403
+<v Mark Paolo Mangune>Thanks, Dan. Happy weekend. Bye-bye.</v>
+
+00:34:31.883 --> 00:34:34.923
+<v Dan Tenters>Alright, thank you guys. Have a good day. Alright, bye.</v>
+

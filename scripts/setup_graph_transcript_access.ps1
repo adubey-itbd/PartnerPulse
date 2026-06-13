@@ -5,29 +5,41 @@
 .DESCRIPTION
     Finishes provisioning the existing Entra app registration (client id below) so
     PartnerPulse can read Teams meeting transcripts of partner service calls,
-    scoped to the three shared organizer accounts ONLY.
+    scoped to the shared organizer account ONLY.
+
+    REVISION 2026-06-12 (after Neeraj's first run): the organizer list is now the
+    single account DESManagement@itbd.net. MDEManagement@itbd.net and
+    SBDManagement@itbd.net - listed as separate accounts in the original request -
+    are SMTP ALIASES of the same DESManagement mailbox, not real users, which is
+    why the first run failed on "Grant-CsApplicationAccessPolicy ...
+    MDEManagement" with "User does not exist" (Teams policies bind to real user
+    identities; aliases have none). Confirmed in the calendar data: every service
+    call's join URL carries DESManagement's object id even when the event's
+    organizer email shows an alias. The first run already completed Steps 1-2
+    (the DESManagement grant succeeded and transcript reads are verified working);
+    re-running this script skips those and completes Step 3 + verification.
 
     What this script does, in order:
       Step 1 - Adds the missing "OnlineMeetings.Read.All" Microsoft Graph
                application permission to the app registration and grants
                tenant-wide admin consent for it.
       Step 2 - Creates a Teams *application access policy* and grants it to the
-               three organizer accounts. Without this, every transcript read
+               organizer account. Without this, every transcript read
                fails 403 ("Application is not allowed to perform operations on
                the user") even though the permission is consented.
-      Step 3 - Scopes the app's calendar access to the three accounts using
+      Step 3 - Scopes the app's calendar access to the organizer account using
                Exchange Online "RBAC for Applications" (management scope over a
                mail-enabled security group + "Application Calendars.Read" role
                assignment), then REMOVES the tenant-wide Calendars.Read consent
                in Entra. Today the app can read EVERY mailbox's calendar in the
-               tenant; after this step it can read only the three.
+               tenant; after this step it can read only the organizer's.
                NOTE: this deliberately does NOT use New-ApplicationAccessPolicy —
                Microsoft's docs now say "Don't create new App Access Policies";
                RBAC for Applications is the replacement.
                https://learn.microsoft.com/exchange/permissions-exo/application-rbac
       Step 4 - Verifies: prints the consented Graph roles and runs
                Test-ServicePrincipalAuthorization to prove the Exchange scoping
-               (the three accounts => InScope True, any other mailbox => False).
+               (the organizer account => InScope True, any other mailbox => False).
 
     Background / original request: docs/IT-Request-Graph-Transcript-Access.md
     in the PartnerPulse repo.
@@ -75,12 +87,13 @@ $ErrorActionPreference = 'Stop'
 $TenantId        = 'd3ce7374-043d-42ad-9d54-b68633f244c9'   # itbd.net
 $AppClientId     = 'c7bc5538-590e-41b4-ad4f-cf0099572983'   # app: "DESManagement@itbd.net" (PartnerPulse transcripts)
 
-# The three shared accounts that organize partner service calls. The app may
-# touch ONLY these mailboxes/meetings once Steps 2 and 3 are in place.
+# The shared account that organizes partner service calls. The app may touch
+# ONLY this mailbox/its meetings once Steps 2 and 3 are in place.
+# Do NOT add MDEManagement@itbd.net / SBDManagement@itbd.net here - they are
+# SMTP aliases of this same mailbox, not users; Teams policy grants and
+# group-membership adds fail on them ("User does not exist").
 $OrganizerAccounts = @(
-    'DESManagement@itbd.net',
-    'MDEManagement@itbd.net',
-    'SBDManagement@itbd.net'
+    'DESManagement@itbd.net'
 )
 
 $TeamsPolicyName = 'PartnerPulse-Transcripts-Policy'
@@ -179,7 +192,7 @@ if ($teamsPolicy) {
     Write-Host "Policy '$TeamsPolicyName' already exists - skipping creation." -ForegroundColor Green
 } else {
     New-CsApplicationAccessPolicy -Identity $TeamsPolicyName -AppIds $AppClientId `
-        -Description 'PartnerPulse transcript ingestion (read service-call transcripts of the 3 organizer accounts)'
+        -Description 'PartnerPulse transcript ingestion (read service-call transcripts of the shared organizer account)'
     Write-Host "Created policy '$TeamsPolicyName' for app $AppClientId." -ForegroundColor Green
 }
 
@@ -196,7 +209,7 @@ Write-Host "NOTE: Teams policy grants can take up to ~30 minutes to propagate." 
 # Calendars.Read consented in Entra is tenant-wide. The supported way to limit
 # it to specific mailboxes is now RBAC for Applications (the older
 # New-ApplicationAccessPolicy is flagged "don't create new" by Microsoft):
-#   3a. mail-enabled security group containing the three organizer accounts
+#   3a. mail-enabled security group containing the organizer account
 #       (DIRECT members only - nested groups are NOT honored by the scope)
 #   3b. Exchange pointer to the app's Entra service principal
 #   3c. management scope = "members of that group"
@@ -208,14 +221,14 @@ Write-Host "`n=== Step 3: Exchange RBAC for Applications (scoped Calendars.Read)
 Write-Host "Sign in as an Exchange Administrator (member of Organization Management)."
 Connect-ExchangeOnline -ShowBanner:$false
 
-# 3a. Mail-enabled security group holding the three organizer accounts.
+# 3a. Mail-enabled security group holding the organizer account.
 $group = $null
 try { $group = Get-DistributionGroup -Identity $ExoGroupName -ErrorAction Stop } catch {}
 if ($group) {
     Write-Host "Group '$ExoGroupName' already exists - ensuring membership." -ForegroundColor Green
 } else {
     $group = New-DistributionGroup -Name $ExoGroupName -Alias $ExoGroupAlias -Type Security `
-        -Members $OrganizerAccounts -Notes 'PartnerPulse transcript ingestion - calendar-read scope (3 organizer accounts)'
+        -Members $OrganizerAccounts -Notes 'PartnerPulse transcript ingestion - calendar-read scope (shared organizer account)'
     Write-Host "Created mail-enabled security group '$ExoGroupName'." -ForegroundColor Green
 }
 $members = Get-DistributionGroupMember -Identity $ExoGroupName | Select-Object -ExpandProperty PrimarySmtpAddress
@@ -293,7 +306,7 @@ $roleNames = Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $appSp.
 }
 Write-Host "Consented Graph application permissions: $($roleNames -join ', ')"
 
-# 4b. Exchange scoping - each organizer account must be InScope True for
+# 4b. Exchange scoping - the organizer account must be InScope True for
 #     Calendars.Read; any other mailbox must be False. This cmdlet evaluates
 #     live (no propagation/cache wait).
 foreach ($account in $OrganizerAccounts) {
@@ -303,9 +316,9 @@ foreach ($account in $OrganizerAccounts) {
 Test-ServicePrincipalAuthorization -Identity $AppClientId -Resource 'Amit.Dubey@itbd.net' |
     ForEach-Object { Write-Host ("Out-of-scope Amit.Dubey@itbd.net: {0} InScope={1} (expected: False)" -f $_.RoleName, $_.InScope) }
 
-Write-Host "`nDone. After ~30 minutes (Teams policy propagation), PartnerPulse will" -ForegroundColor Cyan
-Write-Host "re-run its acceptance test: fetching a service-call transcript organized by" -ForegroundColor Cyan
-Write-Host "one of the three accounts via the app identity." -ForegroundColor Cyan
+Write-Host "`nDone. PartnerPulse will re-run its acceptance test: fetching a" -ForegroundColor Cyan
+Write-Host "service-call transcript organized by DESManagement via the app identity" -ForegroundColor Cyan
+Write-Host "(already verified working after the first run's Step 2 grant)." -ForegroundColor Cyan
 Write-Host "`nRECOMMENDED FOLLOW-UP: the current client secret was shared over email/chat;" -ForegroundColor Yellow
 Write-Host "once this setup is verified, rotate the secret in the portal (App registration" -ForegroundColor Yellow
 Write-Host "> Certificates & secrets) and hand the new value over via a password manager." -ForegroundColor Yellow

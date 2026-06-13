@@ -66,6 +66,8 @@ def index_row(data: dict) -> dict:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-ai", action="store_true")
+    ap.add_argument("--force-ai", action="store_true",
+                    help="re-run gpt-5.4 even when inputs are unchanged (default: reuse cached AI)")
     ap.add_argument("--no-decks", action="store_true")
     ap.add_argument("--only", nargs="*", help="limit to these partner names")
     ap.add_argument("--reindex", action="store_true",
@@ -101,12 +103,20 @@ def main():
         print(f"\n=== {p.name} ===", file=sys.stderr)
         try:
             data = build(p.name, with_decks=not args.no_decks, nps_all=nps_all)
-            if not args.no_ai:
-                print("  running gpt-5.4 churn analysis…", file=sys.stderr)
-                data["ai"] = ai.analyze(data)
-                print(f"  risk: {data['ai'].get('risk_score')} "
-                      f"({data['ai'].get('risk_band')})", file=sys.stderr)
             out = config.DATA_DIR / f"{slugify(p.name)}.json"
+            if not args.no_ai:
+                # Reuse the cached AI result when the LLM inputs are unchanged (skips the
+                # gpt-5.4 call + avoids score drift); --force-ai re-runs regardless.
+                prev_ai = None
+                if out.exists() and not args.force_ai:
+                    try:
+                        prev_ai = json.loads(out.read_text(encoding="utf-8")).get("ai")
+                    except (ValueError, OSError):
+                        prev_ai = None
+                data["ai"] = ai.analyze(data, cached_ai=prev_ai, force=args.force_ai)
+                print(f"  risk: {data['ai'].get('risk_score')} "
+                      f"({data['ai'].get('risk_band')})"
+                      f"{' [cached]' if data['ai'].get('_cached') else ' [gpt-5.4]'}", file=sys.stderr)
             out.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
             all_data.append(data)
         except Exception as e:

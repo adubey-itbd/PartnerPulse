@@ -1,0 +1,452 @@
+WEBVTT
+NOTE title: F12 | C&A Team | Monthly Service Call
+NOTE date: 2026-05-20
+NOTE duration: 24m 57s
+
+00:01:23.905 --> 00:01:25.665
+<v Shashank Agarwal>Hey, Mike, how are you?</v>
+
+00:01:26.625 --> 00:01:27.585
+<v Mike Gilbert>Hey, good, how are you doing?</v>
+
+00:01:28.385 --> 00:01:31.025
+<v Shashank Agarwal>I am doing good. How's everything going on here in?</v>
+
+00:01:32.705 --> 00:01:36.225
+<v Mike Gilbert>Pretty good, pretty good due to Blue Busy, which is always good.</v>
+
+00:01:37.265 --> 00:01:48.145
+<v Shashank Agarwal>Yeah, Sameer. I've been busy. A lot of things ongoing. Okay, that's great. Great to hear that. Let me share my screen. Let me know once it's visible.</v>
+
+00:01:49.625 --> 00:01:51.185
+<v Mike Gilbert>Sounds good. Yeah, I can see it.</v>
+
+00:01:51.385 --> 00:02:10.385
+<v Shashank Agarwal>Yeah, so I checked in with Manu. He is doing pretty good. He has worked on a lot of changes on the automation hub. So first of all, he into search intelligence, search intelligence capability for users to navigate easily.</v>
+
+00:02:10.785 --> 00:02:29.345
+<v Shashank Agarwal>then some keyboard shortcuts as well. He added rule-based access control, which is really an important part because without that, everyone would have the same access and then we'll lose control over it. For documentation, I saw his documentation.</v>
+
+00:02:29.745 --> 00:02:48.705
+<v Shashank Agarwal>That was really good. He just gave me a gist of it. Like earlier he had created around what, like 20, 30 pages, and then he squeezed to two pages. So that was really good. And also he implemented that with the platform, so that's good. And the next thing is he.</v>
+
+00:02:48.745 --> 00:03:08.305
+<v Shashank Agarwal>He's not only working on automation and everything, but he's clearly creating documentation around it. So that goes a very long way. So that's really a good progress on his part. This tooltip functionality, that's also good. And Hover-based interactive tile descriptions.</v>
+
+00:02:58.945 --> 00:02:59.145
+<v Mike Gilbert>Yeah.</v>
+
+00:03:08.705 --> 00:03:28.185
+<v Shashank Agarwal>that really helps the users. I know I have seen this on a new tool. This really is very helpful for us. Okay. And for Helpdesk automation, which is a part of automation hub, so account password reset, MFA reset, mailbox and calendar permission management, account unlock.</v>
+
+00:03:28.465 --> 00:03:47.105
+<v Shashank Agarwal>So this is good and this really saves the time for the engineers because they don't have to go and open Office 365 and everything and they don't have to go open an AD. They just open the tool and then do it. So this definitely cuts down the time by at least 10 minutes. So.</v>
+
+00:03:47.145 --> 00:04:06.385
+<v Shashank Agarwal>That's good, that's really a good innovation. I do not know who gave the idea whether it was Manu or somebody else, but yes, that's a really good innovation on getting this resolved. Apart from that, on backup side, he did review the complete Veeam environment, like configuration valid.</v>
+
+00:04:06.785 --> 00:04:24.145
+<v Shashank Agarwal>validation, environment assessment and physical health checks. So that's really good. Apart from this, he did not tell me any other thing, but this is obviously a very comprehensive list that he has worked on in the month of April. Anything you would like to add, Mike?</v>
+
+00:04:25.785 --> 00:04:32.705
+<v Mike Gilbert>No, no, I think that that covers it all, because there is all the operational stuff that he's been handling there as well, which is a big part of it too, so...</v>
+
+00:04:34.745 --> 00:04:38.385
+<v Mike Gilbert>But I think that, excuse me, sorry, I think that sums that up pretty well.</v>
+
+00:04:39.105 --> 00:04:41.585
+<v Shashank Agarwal>Oh, and your feedback about him.</v>
+
+00:04:44.545 --> 00:05:03.425
+<v Mike Gilbert>Yeah, I think it's, he's been doing really well. So we've definitely been happy to have him on the team there. So it's definitely, well, I mean, you can see right here, it's made quite an impact because none of this stuff would have been even like it all still would be on the drawing board if we didn't have him, right? Definitely good.</v>
+
+00:05:02.865 --> 00:05:03.185
+<v Shashank Agarwal>Yeah.</v>
+
+00:05:04.625 --> 00:05:23.345
+<v Shashank Agarwal>So going on to this, last time when we met you said there is a lot of backlog. So working on all these aspects, this is again in regional work that he is doing, not working on the backlogs and everything. So how is that coming out? Do you see?</v>
+
+00:05:04.945 --> 00:05:05.265
+<v Mike Gilbert>So.</v>
+
+00:05:11.425 --> 00:05:11.665
+<v Mike Gilbert>Mm.</v>
+
+00:05:23.825 --> 00:05:30.385
+<v Shashank Agarwal>see a challenge in the backlog and everything, or with these automations and everything, some of the backlog has cut down.</v>
+
+00:05:31.985 --> 00:05:47.225
+<v Mike Gilbert>I think this will, this helps, I think, on the service side, but I think really the infrastructure and environment reviews, that was definitely backlog and that'll have an impact on like reducing the amount of work that we have. I think some of what we have backlogged is more just</v>
+
+00:05:48.545 --> 00:06:07.985
+<v Mike Gilbert>like the full infrastructure review where we produce standards and then validate it and all that. We want to do that for like every tool we have, just roll through them all and then one by one, get them all up to that same level of review and configuration. And I think that's the other part in the backlog in there is like now that we've done.</v>
+
+00:06:08.145 --> 00:06:19.185
+<v Mike Gilbert>this part here, I'm probably going to have him work on. There's 2 items coming up that are probably the big ones that I've talked to him about. One of them was drop suite.</v>
+
+00:06:20.025 --> 00:06:27.985
+<v Mike Gilbert>which he's familiar with. But the more likely one is going to be we're in the process of migrating to Halo.</v>
+
+00:06:29.265 --> 00:06:29.745
+<v Shashank Agarwal>Okay.</v>
+
+00:06:29.425 --> 00:06:41.185
+<v Mike Gilbert>from ConnectWise. And what we'll need to do is update all of our automation to make sure that it's using, it'll work with Halo and continue to work with Halo. So that's one of the projects that we'll have for.</v>
+
+00:06:42.305 --> 00:06:42.825
+<v Shashank Agarwal>Okay.</v>
+
+00:06:42.305 --> 00:06:56.945
+<v Mike Gilbert>So we're not doing the actual migration ourselves like our team. That's a different team here. But we got to make sure all the everything we built now works with the new system. So that'll be a lot of testing and everything like that.</v>
+
+00:06:57.825 --> 00:07:10.785
+<v Shashank Agarwal>Yeah, last time we discussed about automating the checks through automation. Is that really ongoing or is that kind of put on hold because of failure and everything?</v>
+
+00:07:06.025 --> 00:07:06.225
+<v Mike Gilbert>Yeah.</v>
+
+00:07:12.545 --> 00:07:31.585
+<v Mike Gilbert>That will be done sort of in smaller pieces as we go. And some of that is when we do the tool by tool sort of uplift, that's when we're going to hit a lot of those. So we'll do it sort of as we go and as it makes sense, because there's part of it is we need to do the automation for the checks, but.</v>
+
+00:07:31.825 --> 00:07:51.185
+<v Mike Gilbert>Part of it is we need to make sure we're checking the right things. And I think that second part is the, that's the tricky part is a lot of it, it's like, oh yeah, we set up these standards four or five years ago. Stuff has changed. So now we got to update them all. And because automation's in play, we can be a little bit more granular, like fine.</v>
+
+00:07:35.025 --> 00:07:35.505
+<v Shashank Agarwal>Correct.</v>
+
+00:07:51.505 --> 00:07:56.465
+<v Mike Gilbert>with what we're checking rather than it just being sort of a general make sure the tool is set up right.</v>
+
+00:07:57.665 --> 00:08:17.425
+<v Shashank Agarwal>So one thing I wanted was, and just that's for the knowledge purpose. So suppose you onboard a new customer, you have a checklist for that. You did that onboarding now down the lane three, four years. How are you going to maintain consistency that newer checks which you are implementing</v>
+
+00:08:03.145 --> 00:08:03.345
+<v Mike Gilbert>Mm.</v>
+
+00:08:17.705 --> 00:08:34.705
+<v Shashank Agarwal>because of the vulnerabilities and everything. How are they going to be rechecked across all the customers? Because I guess F12 has around 600, 700 customers. So how are we going to maintain consistency post onboarding as well? Is that some area that you're looking into?</v>
+
+00:08:20.385 --> 00:08:20.865
+<v Mike Gilbert>Mhm.</v>
+
+00:08:28.865 --> 00:08:29.185
+<v Mike Gilbert>Yeah.</v>
+
+00:08:36.225 --> 00:08:54.145
+<v Mike Gilbert>Yeah, that's the automation portion as much as you know, you can, some of it you can't, which then that'll have to be some sort of manual review. But the what we want to do with as we sort of update these standards and stuff is retroactively apply the monitoring. And the monitoring will at least.</v>
+
+00:08:55.145 --> 00:09:08.385
+<v Mike Gilbert>through the automation will give us the visibility in what needs to be done. And then we can sort of quantify how much work that is and then figure out how we can tackle it as much as possible. I'd love that to be through automation, but some of it it's like.</v>
+
+00:09:09.745 --> 00:09:28.465
+<v Mike Gilbert>there's a lot of, well, in this situation, do it this way, but this one, do it this way, and this one, do it that way. And it's by the time you get the automation done, a person would have gone through and done that five times. So like it's making sure that we understand how much work it is before we actually start the process of building the automation for it.</v>
+
+00:09:20.625 --> 00:09:21.185
+<v Shashank Agarwal>Correct.</v>
+
+00:09:28.905 --> 00:09:50.305
+<v Shashank Agarwal>Correct, Mike. And one thing I would like to add, like in Beam, we did all the checks and everything. Now, if we see like Beam is on a good standard. Now, how we make sure that going forward, suppose a customer's customer is aborted, or we are not handling that customer anymore.</v>
+
+00:09:40.065 --> 00:09:40.345
+<v Mike Gilbert>Yeah.</v>
+
+00:09:50.625 --> 00:10:09.465
+<v Shashank Agarwal>How do we make sure that cleaning is done? And suppose there's a customer X which has onboarded two or three servers. Are we taking into account that whenever an onboarding happens or anything like that, that automation automatically detects that and clears out?</v>
+
+00:09:51.585 --> 00:09:51.745
+<v Mike Gilbert>Mm.</v>
+
+00:10:09.545 --> 00:10:17.705
+<v Shashank Agarwal>to review or it creates a ticket for someone to review and actually go ahead and change the plan.</v>
+
+00:10:19.465 --> 00:10:38.505
+<v Mike Gilbert>So we have that for some tools in certain ways, and most of that has to do with the status, comparing the status in ConnectWise against what the actual state for the client is. Or if a device goes offline, then that device will start showing up in failures because it's not an expected state. Right now, most of the...</v>
+
+00:10:36.745 --> 00:10:37.225
+<v Shashank Agarwal>Correct.</v>
+
+00:10:38.905 --> 00:10:41.225
+<v Mike Gilbert>response and remediation to that is all manual.</v>
+
+00:10:42.745 --> 00:10:45.705
+<v Shashank Agarwal>Okay, okay, so have it.</v>
+
+00:10:44.505 --> 00:11:04.665
+<v Mike Gilbert>So there's an opportunity there, but it's also, we have to be careful because the last thing we want to do is, you know, one of those changes and then have it clean up a client that's actually active and somebody made a mistake about, because we've had that before where they accidentally put it in the wrong status and then flip it back. But if our automation is quick enough, then maybe it.</v>
+
+00:11:04.905 --> 00:11:18.105
+<v Mike Gilbert>removed a bunch of stuff. So that's why right now we're putting it in just the state of like, hey, make a ticket. And then later on we'll talk, like we'll work through like how do we automate something in a very careful, controlled way.</v>
+
+00:11:18.825 --> 00:11:37.785
+<v Shashank Agarwal>Correct. And how do we actually control this thing? Like, okay, the customer is one of the surveys about it. Now, we made sure that we have removed that from the backup, but there is already a plan existing on that, and that plan would keep triggering it.</v>
+
+00:11:37.865 --> 00:11:56.345
+<v Shashank Agarwal>So that would be unnecessary usage on it on Veeam or something like that. So are we going to plan something around it? Like, okay, this device is not showing on the portal, but there is a plan linked to it. So are we going to work on some of that pieces as well?</v>
+
+00:11:53.385 --> 00:11:53.705
+<v Mike Gilbert>Yeah.</v>
+
+00:11:57.705 --> 00:11:58.665
+<v Mike Gilbert>Yeah, I think...</v>
+
+00:11:59.545 --> 00:12:19.705
+<v Mike Gilbert>Going forward, some of those scenarios, we kind of have to map them out as we go, depending on what they are. But a lot of those scenarios, we should, the first thing we need is to make sure that that process and procedure is in place, and it's defined well enough that you could do it manually. And then make sure that that's, so everybody understands this is how you're supposed to do it.</v>
+
+00:12:20.185 --> 00:12:39.265
+<v Mike Gilbert>And then we can find, so what a lot of this automation, the plan is to have it sort of run every day and check the state. So every day it checks to see, hey, is there these out of state or is this out of, is there a configuration drift essentially, where we're not seeing exactly what we're expecting one way or the other.</v>
+
+00:12:39.385 --> 00:12:47.145
+<v Mike Gilbert>and then make a ticket on that. But ideally, the other part in there is that whole initial offboarding should be.</v>
+
+00:12:48.465 --> 00:13:02.425
+<v Mike Gilbert>in a set up in a way where you can do it in one. But some of that's procedure. Some of it too, it's like people miss stuff. So exactly like what you're saying, a plan that has a server in it, even though the server was decommissioned.</v>
+
+00:12:58.425 --> 00:12:58.825
+<v Shashank Agarwal>Okay.</v>
+
+00:13:03.305 --> 00:13:22.385
+<v Shashank Agarwal>Yeah, so I'm just trying to explore one opportunity here. So suppose if a server is aborted. Now in that ticket, you get like this survey showing is offline. This is active plans. Now if you click this button, it will do all the remediation like it will remove.</v>
+
+00:13:08.785 --> 00:13:08.985
+<v Mike Gilbert>Yeah.</v>
+
+00:13:22.505 --> 00:13:30.665
+<v Shashank Agarwal>from the portal or something like that. Are you working on this kind of aspect or is just that it would be a manual task?</v>
+
+00:13:31.945 --> 00:13:52.345
+<v Mike Gilbert>Right now, we want to leave it as manual, and it's just for the controls that are on there. We can set up the automation for some things, and some of it's even really easy to set up the automation. It's just a lot of those are irreversible actions. So if we go to set it up, what it would want to do is actually set it up with an approval process where it's never one person.</v>
+
+00:13:46.745 --> 00:13:47.225
+<v Shashank Agarwal>Correct.</v>
+
+00:13:52.585 --> 00:14:12.905
+<v Mike Gilbert>that approves the removal or something along those lines. Otherwise, you get in a scenario where we've made it really easy to make a big mistake. And then that can happen. So it's like those scenarios, and we've run into a few of them before. It's like somebody sets the client to an active. And then now we go and we start to clean everything up.</v>
+
+00:14:03.305 --> 00:14:04.345
+<v Shashank Agarwal>Good, good, alright.</v>
+
+00:14:13.385 --> 00:14:32.985
+<v Mike Gilbert>Meanwhile, the client wasn't supposed to be inactive. It was supposed to be like we have a special note, which is like an inactive status, and then we have active special note. And if they get those mixed up, now they've put it in an inactive state, which usually means we're supposed to be cleaning it up.</v>
+
+00:14:16.185 --> 00:14:16.745
+<v Shashank Agarwal>Correct.</v>
+
+00:14:33.785 --> 00:14:57.305
+<v Mike Gilbert>So that's the part that I'm really hesitant to build all of that automation until on the process and procedure side, we have a more robust way of handling that. And I think an approval process is definitely part of that. But I think the procedures around managing those clients also needs to be better before we can really start automating the whole process.</v>
+
+00:14:47.065 --> 00:14:47.625
+<v Shashank Agarwal>Correct.</v>
+
+00:14:57.705 --> 00:15:16.265
+<v Shashank Agarwal>Correct, correct. And I guess I have seen this happen. So what we used to do in one of the clients, so whenever any customer reports, there is an approval for the SDM, then if SDM approves, then there is next level of approval for that.</v>
+
+00:15:09.785 --> 00:15:10.265
+<v Mike Gilbert>Mhm.</v>
+
+00:15:17.385 --> 00:15:38.745
+<v Shashank Agarwal>region GM because they both would have, even if SDM does it incorrectly, then GM has the next check. And if GM approved it, then automation works. So in this case, we have multiple level approvals and once we get those approvals, then we can do. So in this way, we have a better control on the systems.</v>
+
+00:15:26.905 --> 00:15:27.225
+<v Mike Gilbert>Yeah.</v>
+
+00:15:39.785 --> 00:15:58.025
+<v Mike Gilbert>Yeah, yeah, and I'm thinking a system like that is a lot of what we need and we need, but we're at the ground floor right now of the procedure doesn't exist in a way that we can even start at that. So we have to do some more like before we even do the tech work part of it, we got to make sure.</v>
+
+00:15:58.265 --> 00:16:02.745
+<v Mike Gilbert>the companies up for like improving their business practice.</v>
+
+00:16:03.945 --> 00:16:04.905
+<v Shashank Agarwal>Yeah, sure.</v>
+
+00:16:04.945 --> 00:16:08.345
+<v Mike Gilbert>And that's the part that we're working through right now.</v>
+
+00:16:09.145 --> 00:16:09.665
+<v Shashank Agarwal>Correct.</v>
+
+00:16:10.665 --> 00:16:28.665
+<v Shashank Agarwal>And I guess this roadmap, I guess it would go from one technology to another, or maybe we can say one area to another, like first we handle backups, then we handle storage, then we handle compute, and then we handle...</v>
+
+00:16:25.305 --> 00:16:25.465
+<v Mike Gilbert>Mm.</v>
+
+00:16:29.625 --> 00:16:49.625
+<v Shashank Agarwal>end user machines, all those things, then we handle vulnerabilities and everything. Yeah, so that's how I think we should actually capture it. Once you build a base around one and we know like this part is done, okay, we do not need to touch it for next one year or two year and.</v>
+
+00:16:35.065 --> 00:16:35.385
+<v Mike Gilbert>Yeah.</v>
+
+00:16:48.625 --> 00:16:48.825
+<v Mike Gilbert>Yeah.</v>
+
+00:16:49.785 --> 00:16:52.785
+<v Shashank Agarwal>this area is complete. So is this a...</v>
+
+00:16:54.425 --> 00:17:01.265
+<v Shashank Agarwal>Process that you're following is just like, like for backups, we have done this thing. Now let's move to storage, something like that.</v>
+
+00:17:02.665 --> 00:17:22.345
+<v Mike Gilbert>Yeah, that's pretty similar to how it is. It's supposed to be done right now as a project where with all of those elements being tracked separately so that we have clear auditing. And right now what we're struggling with is just consistency at that level. That procedure isn't even being followed 100%.</v>
+
+00:17:22.505 --> 00:17:41.865
+<v Mike Gilbert>So we have to get that sort of ironed out so that we can improve upon it and get everybody to agree on exactly how we want to do it and make sure that they're actually following that. So I think that's the other reason on like right now the alerting that we're focusing on is the visibility into it so that we can tell when it is.</v>
+
+00:17:41.945 --> 00:18:01.065
+<v Mike Gilbert>isn't done that way. And then when it isn't done that way, then we have some things that let us like circle back and fall and be like, all right, so this was missed because this, and this is how you guys are supposed to do this. We can have those conversations. Otherwise, it can just sort of silently get missed in the background and then you never know, right? Like it.</v>
+
+00:18:01.185 --> 00:18:08.985
+<v Mike Gilbert>turns into a much harder scenario to catch and manage because it's, they took a shortcut and nobody found it.</v>
+
+00:18:09.865 --> 00:18:28.745
+<v Shashank Agarwal>Yeah, correct. So Mike, one question I would like to ask, so when you build the processes, and there are four regions, so do you, when you need to get approval from all the regions, do you go to directors, or you work with SDMs to get that done, or do you do it centralized?</v>
+
+00:18:16.985 --> 00:18:17.465
+<v Mike Gilbert>Mhm.</v>
+
+00:18:29.705 --> 00:18:49.945
+<v Mike Gilbert>Usually directors, it is a little tricky because that's something I think that we need to just actually work out better, to be completely honest, is that we usually are going through the directors, but we want to make sure that we actually have the impact that we're trying to have. And it can kind of get diluted as you go.</v>
+
+00:18:39.225 --> 00:18:39.625
+<v Shashank Agarwal>Okay.</v>
+
+00:18:50.425 --> 00:19:00.425
+<v Mike Gilbert>further away from the people you talk to until you talk to a project tech who's like, I don't know what you're even, that's not even a thing. So that's why we want to make sure that it's.</v>
+
+00:19:01.465 --> 00:19:21.905
+<v Mike Gilbert>all the way through. And some of the procedures too, like we don't necessarily, my team doesn't own. And that also gets tricky. So like on the finance side and all that stuff, we're so far away from that that we shouldn't even create a procedure for it. But what we do want to do is make sure that they have one and that we are also following that.</v>
+
+00:19:22.665 --> 00:19:24.985
+<v Mike Gilbert>So, there's some tricky parts on that, too.</v>
+
+00:19:23.865 --> 00:19:24.385
+<v Shashank Agarwal>And.</v>
+
+00:19:25.465 --> 00:19:39.785
+<v Shashank Agarwal>And I might be missing what part which we might have covered earlier in the last one. So generally an onboarding and onboarding, that's handled by the central team. Any new customer on boots or off boots, that's done by our central team, correct?</v>
+
+00:19:41.305 --> 00:20:00.265
+<v Mike Gilbert>Those ones are done by the project teams. So the project teams are regional. So each region actually has a project team. There's a few elements that are done centrally, but that's usually tool or task base, not necessarily like so those one elements are sort of pulled out of the project and say, okay, you guys do this.</v>
+
+00:19:45.705 --> 00:19:46.185
+<v Shashank Agarwal>Okay.</v>
+
+00:20:16.185 --> 00:20:16.785
+<v Shashank Agarwal>Okay.</v>
+
+00:20:16.825 --> 00:20:22.745
+<v Mike Gilbert>handled like it's a project. But so regionally is really what it's handled. Here's how those are handled.</v>
+
+00:20:21.985 --> 00:20:22.465
+<v Shashank Agarwal>Okay.</v>
+
+00:20:23.625 --> 00:20:42.465
+<v Shashank Agarwal>Now I get where the things are coming on, where the inconsistency lies. It's mostly because, yes, something is being done by the IST infrastructure techs, and they might not have the complete documentation, or they might miss out on the process rather than the project team. Got it. Totally understood.</v>
+
+00:20:29.905 --> 00:20:30.225
+<v Mike Gilbert>Yeah.</v>
+
+00:20:42.465 --> 00:20:42.745
+<v Mike Gilbert>Yeah.</v>
+
+00:20:43.745 --> 00:21:03.185
+<v Mike Gilbert>Yeah, it's a really wide group to try to push the controls down to. So that's, I think, where we're losing some of it too. If it was something that's as small as like me and my team and like the rest of proactive services, then it's a lot easier to control. But there's a lot of different people in different positions.</v>
+
+00:20:50.625 --> 00:20:50.945
+<v Shashank Agarwal>Yeah.</v>
+
+00:21:03.585 --> 00:21:09.585
+<v Mike Gilbert>that need to be on board with some of these processes changes and stuff like that for them to be successful.</v>
+
+00:21:09.905 --> 00:21:30.225
+<v Shashank Agarwal>Yeah, and I know there is one of the customers that I work with and they have a very clear process, like they have a monthly maintenance task. And I'll tell you very clearly, they have all the tasks listed out over there. And when any engineer is working on a specific thing, he needs to mark that task complete. That happens in Management.</v>
+
+00:21:29.745 --> 00:21:30.225
+<v Mike Gilbert>Mhm.</v>
+
+00:21:30.305 --> 00:21:49.185
+<v Shashank Agarwal>I do not know how that is can be done in Halo as well, but to streamline the process or anything, I can suggest like you can go over and do like this task week task base work like for every offboarding, these are the tasks that needs to be listed and there is a comment for that. So even if.</v>
+
+00:21:49.185 --> 00:21:49.345
+<v Mike Gilbert>Me.</v>
+
+00:21:49.465 --> 00:22:02.865
+<v Shashank Agarwal>it does not apply, they need to set it not applicable so that they have the complete checklist and they follow each and everything with a very clear documented way. I think that can help as well in bringing consistency.</v>
+
+00:21:59.825 --> 00:22:00.105
+<v Mike Gilbert>Yeah.</v>
+
+00:22:01.625 --> 00:22:17.545
+<v Mike Gilbert>And we kind of drifted away from that and that's what we got to get back to. Otherwise, there's not like it's a doesn't apply. You're exactly right. Like you still need to say it doesn't apply, but you need to, you're responsible for making sure that that is true. Like whoever is doing the work, I mean.</v>
+
+00:22:05.905 --> 00:22:06.305
+<v Shashank Agarwal>Okay.</v>
+
+00:22:15.825 --> 00:22:16.305
+<v Shashank Agarwal>Correct.</v>
+
+00:22:18.425 --> 00:22:34.225
+<v Shashank Agarwal>Yeah, and then it would be easy to check why this thing got missed. Is it a process-related issue? It was a runtime issue, or this tick is generally missing out. So in that way, you would be able to narrow it down.</v>
+
+00:22:18.865 --> 00:22:19.185
+<v Mike Gilbert>Yeah.</v>
+
+00:22:31.585 --> 00:22:31.865
+<v Mike Gilbert>Yeah.</v>
+
+00:22:35.425 --> 00:22:36.705
+<v Mike Gilbert>Yeah, yeah, exactly.</v>
+
+00:22:37.705 --> 00:22:56.665
+<v Shashank Agarwal>Great. Thanks for that. Thanks for such a detailed conversation. It really excites me to talk to you because this was, this is one of my key areas. I really like to strategize and talk about these things. Yeah, so that's really great. Thanks for that. Moving on next.</v>
+
+00:22:43.585 --> 00:22:44.225
+<v Mike Gilbert>Stories.</v>
+
+00:22:53.185 --> 00:22:53.505
+<v Mike Gilbert>Yeah.</v>
+
+00:22:55.905 --> 00:23:16.305
+<v Mike Gilbert>No worries. Yeah, we have a lot of opportunities in there that we want to work towards. And that's partly where when I'm talking about a backlog, that's kind of also what I want to. So there's just a lot of, some of these are a lot of just like leadership conversations and things like that that need to happen, but happen in a way where it's more than just, hey, this is what I think we should do and turn it into.</v>
+
+00:22:57.585 --> 00:22:57.665
+<v Shashank Agarwal>I.</v>
+
+00:22:59.145 --> 00:22:59.345
+<v Shashank Agarwal>Pre.</v>
+
+00:23:16.385 --> 00:23:21.025
+<v Mike Gilbert>fully into everybody committing on for their own teams to do it, right? So.</v>
+
+00:23:21.825 --> 00:23:40.305
+<v Shashank Agarwal>That's correct. Moving on next, action tracker. No to-dos from previous meeting. This is attendance data. So there was one unplanned leave for Manu that was 6th April when he got to LN and he could not come to office. Apart from that, things are going good. Way forward, there's nothing.</v>
+
+00:23:29.265 --> 00:23:29.745
+<v Mike Gilbert>Mhm.</v>
+
+00:23:40.625 --> 00:24:03.185
+<v Shashank Agarwal>major like continue Manu to be consistent. He is consistent, he is delivering the best and I cannot say how happy we are with his performance with the changes that he is doing and with the great feedbacks that you have been sharing. So really, Manu is one of those sticks where we do not have to do a check in regularly.</v>
+
+00:23:57.745 --> 00:23:58.065
+<v Mike Gilbert>Yeah.</v>
+
+00:24:03.505 --> 00:24:15.905
+<v Shashank Agarwal>is just that how other things are going, what changes have you done, do you need any help? That's all the conversation we have around once in two weeks max, not more than that. That's really great.</v>
+
+00:24:14.785 --> 00:24:27.425
+<v Mike Gilbert>Yeah, no, it definitely really easy to work with that way. So it's definitely good. And I know there's a lot of stuff that's going to come up in the last, or in the next couple of months here around like the Halo stuff and all that. So he's going to have a lot of new and</v>
+
+00:24:28.385 --> 00:24:30.545
+<v Mike Gilbert>slightly different stuff than what he's been working on now.</v>
+
+00:24:31.505 --> 00:24:51.985
+<v Shashank Agarwal>Yeah, great. Great to hear that. Thank you so much, Mike, for your time. You took out time from a busy schedule. This really means a lot to us. We'll meet again next month. And in case you need to talk, you can definitely ping me and I will be able to share my thoughts.</v>
+
+00:24:46.705 --> 00:24:47.225
+<v Mike Gilbert>Sounds good.</v>
+
+00:24:53.425 --> 00:24:56.145
+<v Mike Gilbert>Sounds good. Cool. All right. Thank you.</v>
+
+00:24:55.385 --> 00:24:57.825
+<v Shashank Agarwal>Thanks. Have a great day. Thanks. Bye.</v>
+

@@ -1,0 +1,1559 @@
+WEBVTT
+NOTE title: F12 | After-Hours Team | Monthly Service Call
+NOTE date: 2026-06-11
+NOTE duration: 51m 2s
+
+00:00:24.786 --> 00:00:25.586
+<v Manuj (Mark) Rattan>I don't think it.</v>
+
+00:00:29.586 --> 00:00:31.746
+<v Shashank Agarwal>Hey, Kaila, how are you?</v>
+
+00:00:31.586 --> 00:00:36.306
+<v Kyle Wilson>Good morning, not too bad or afternoon, probably evening for you.</v>
+
+00:00:38.786 --> 00:00:41.426
+<v Shashank Agarwal>It's 11.30 in the night.</v>
+
+00:00:42.786 --> 00:01:02.066
+<v Shashank Agarwal>You can call it evening. But the good thing is in this hot, hot, hot summers, where the temperatures were reaching around 40, 42 degrees, we had a very good rain. And now the temperature might have dropped to around 26, 28 degrees.</v>
+
+00:00:49.786 --> 00:00:49.906
+<v Kyle Wilson>Yeah.</v>
+
+00:01:02.146 --> 00:01:21.426
+<v Shashank Agarwal>In the day as well, it was like 32 degrees. So the temperature dropped down well below and pleasant and cool and it's really soothing. So Manuj was saying to me, like Mark was saying to me, like, let me go outside the hand room. I said, no. When I cannot, you also cannot.</v>
+
+00:01:11.706 --> 00:01:12.306
+<v Kyle Wilson>Okay.</v>
+
+00:01:21.786 --> 00:01:21.906
+<v Shashank Agarwal>Yeah.</v>
+
+00:01:22.226 --> 00:01:22.426
+<v Kyle Wilson>But.</v>
+
+00:01:24.306 --> 00:01:24.346
+<v Kyle Wilson>Uhh...</v>
+
+00:01:25.426 --> 00:01:26.586
+<v Shashank Agarwal>How's the weather over there?</v>
+
+00:01:27.266 --> 00:01:28.706
+<v Kyle Wilson>Uh, starting to heat up again.</v>
+
+00:01:30.226 --> 00:01:32.706
+<v Kyle Wilson>I think this weekend we're hitting 30.</v>
+
+00:01:33.986 --> 00:01:34.226
+<v Kyle Wilson>Oh.</v>
+
+00:01:35.346 --> 00:01:36.146
+<v Kyle Wilson>Getting up there.</v>
+
+00:01:38.146 --> 00:01:41.906
+<v Shashank Agarwal>So, what's the maximum temperature that reaches there in Canada?</v>
+
+00:01:43.106 --> 00:01:43.666
+<v Kyle Wilson>Um...</v>
+
+00:01:45.106 --> 00:01:59.586
+<v Kyle Wilson>Earlier, I was on Reddit and they had a post of the highest temperatures in Canada. And in 2021, there was a place in my province in BC here that hit 49.6.</v>
+
+00:02:01.946 --> 00:02:20.866
+<v Kyle Wilson>which is extreme. It's not normal, but that's like the hottest it's been. Absolutely insane. Usually we'll get up to around 30, around where I live, sometimes 32 is usually the maximum. And it doesn't last too long.</v>
+
+00:02:03.946 --> 00:02:04.306
+<v Shashank Agarwal>Yes.</v>
+
+00:02:08.466 --> 00:02:09.026
+<v Shashank Agarwal>Thank you.</v>
+
+00:02:20.066 --> 00:02:20.546
+<v Shashank Agarwal>That's great.</v>
+
+00:02:21.826 --> 00:02:32.706
+<v Shashank Agarwal>32 is for us as well. It's bearable. It's actually good in summers because it can reach more than 50 normally.</v>
+
+00:02:33.506 --> 00:02:35.266
+<v Kyle Wilson>I don't like anything over 25.</v>
+
+00:02:38.706 --> 00:02:45.506
+<v Kyle Wilson>Because once you hit 25, then even the breeze starts to get warm and I'm like, no, I'm just going to go in the air conditioning now. Thank you.</v>
+
+00:02:39.106 --> 00:02:39.586
+<v Shashank Agarwal>So...</v>
+
+00:02:46.146 --> 00:02:46.306
+<v Shashank Agarwal>Yeah.</v>
+
+00:02:48.866 --> 00:02:52.946
+<v Shashank Agarwal>Or, uh, Kaila, how are the things looking like on your end?</v>
+
+00:02:55.186 --> 00:03:14.226
+<v Kyle Wilson>We're doing pretty good. Had a nice chat with one of the TLs this morning about the EPDR project. Apparently we're scaring people. Because, yeah, after I see them during the day, they're phoning and going, hey, we need to get in your computer, work on your...</v>
+
+00:03:14.866 --> 00:03:15.626
+<v Kyle Wilson>antivirus.</v>
+
+00:03:16.946 --> 00:03:25.026
+<v Kyle Wilson>But the users, they don't know the after-hours tags. They're very particular about who they deal with, so...</v>
+
+00:03:25.586 --> 00:03:26.266
+<v Shashank Agarwal>Correct.</v>
+
+00:03:26.186 --> 00:03:33.986
+<v Kyle Wilson>They're like, oh, we'll call you back. And honestly, I think that's a great response from the users because it means they're actually security aware. So.</v>
+
+00:03:35.186 --> 00:03:42.226
+<v Kyle Wilson>I take that as a win. It just makes it a little difficult for us to deal with all the EPDR stuff.</v>
+
+00:03:40.706 --> 00:03:41.026
+<v Shashank Agarwal>Yeah.</v>
+
+00:03:43.186 --> 00:04:02.306
+<v Shashank Agarwal>Yeah, but in this case, like the shift rotates and everything, and you can just let the ISTs know, like they can let the customers know, like these are the techs from after hours who are working specifically on EPDR projector or anything, and they might call you for updating the antivirus or...</v>
+
+00:04:02.386 --> 00:04:21.026
+<v Shashank Agarwal>working on them so it's a legit call from F12 to secure your systems. Kind of an automated email which can go from F12 to all the users whose EPDR devices are pending to be updated. So maybe that can help. And there's one more thing, Kyle.</v>
+
+00:04:16.346 --> 00:04:16.466
+<v Kyle Wilson>Yeah.</v>
+
+00:04:22.386 --> 00:04:28.106
+<v Shashank Agarwal>We can do a backstage work as well in this or we need to take control of the computer.</v>
+
+00:04:28.786 --> 00:04:47.826
+<v Kyle Wilson>At the point we're at now, a lot of it does need us to take control. Some of it, we can backstage it. We do have automations for automatically pushing it. We're starting to run out of the missing tickets, which is a good thing. We're getting everything deployed.</v>
+
+00:04:45.506 --> 00:04:45.906
+<v Shashank Agarwal>Yep.</v>
+
+00:04:49.106 --> 00:05:05.586
+<v Kyle Wilson>But once we get into the failures, a lot of those will need direct intervention. A lot of them will be just a reboot of the device, but some are going to need to have the antivirus removed and reinstalled, which is going to be a lot of scheduling.</v>
+
+00:05:06.546 --> 00:05:26.386
+<v Kyle Wilson>Honestly, we can probably pass some of that over to the ISTs to go, hey, we need to schedule a time, leave it on, because they will need a reboot, very likely. So we can schedule the user to leave the device on overnight. We can get the night guys to do it, or maybe even schedule it during people's lunch breaks.</v>
+
+00:05:28.026 --> 00:05:34.306
+<v Kyle Wilson>So there's going to be some back and forth on the failures, but we're working through it.</v>
+
+00:05:30.786 --> 00:05:40.146
+<v Shashank Agarwal>Yeah, we have seen that in the previous project when Manuj was not in, what was that project? I forgot that there was a lot of through.</v>
+
+00:05:41.266 --> 00:05:49.746
+<v Shashank Agarwal>I do not remember which was the last project. Not firewalls. There was one more project between the firewalls and the CPDR, I guess.</v>
+
+00:05:41.426 --> 00:05:41.586
+<v Kyle Wilson>Mm.</v>
+
+00:05:42.226 --> 00:05:43.066
+<v Manuj (Mark) Rattan>Firewalls.</v>
+
+00:05:49.986 --> 00:05:55.026
+<v Kyle Wilson>The NSM, the Sonic Wells in the portal.</v>
+
+00:05:52.386 --> 00:05:52.866
+<v Shashank Agarwal>I.</v>
+
+00:05:55.986 --> 00:05:57.586
+<v Kyle Wilson>We have a VNSM portal.</v>
+
+00:05:58.586 --> 00:06:00.866
+<v Kyle Wilson>So we were adjusting.</v>
+
+00:05:58.866 --> 00:05:59.186
+<v Shashank Agarwal>Okay.</v>
+
+00:06:02.706 --> 00:06:12.706
+<v Kyle Wilson>I was using the portal. No, that's right. We had to change a lot of passwords because there was the breach with the backups. Sonic was online backups.</v>
+
+00:06:07.586 --> 00:06:08.146
+<v Shashank Agarwal>Yes.</v>
+
+00:06:11.466 --> 00:06:11.986
+<v Manuj (Mark) Rattan>Correct.</v>
+
+00:06:11.986 --> 00:06:12.306
+<v Shashank Agarwal>Yeah.</v>
+
+00:06:14.146 --> 00:06:14.386
+<v Kyle Wilson>Yeah.</v>
+
+00:06:14.386 --> 00:06:34.986
+<v Shashank Agarwal>That will, and there also we saw a lot of to and pro, and so Kyle, when we have these projects coming in and there might be other projects coming in, so my future state goals in like, how can we build a process so that it becomes easy? I know.</v>
+
+00:06:35.066 --> 00:06:54.106
+<v Shashank Agarwal>that users are very familiar with the takes of the ISDs and everything. But how we do make it easy for our after our takes is this is 1 project. Maybe some other thing comes in and maybe they say like the updates are not getting installed and you, your team needs to take care of that.</v>
+
+00:06:39.866 --> 00:06:40.066
+<v Kyle Wilson>No.</v>
+
+00:06:54.306 --> 00:07:14.666
+<v Shashank Agarwal>In that case, again, we would have to connect with the users and get their machines rebooted and everything and maybe fix the patches issues and everything. So in that case, again, we'll see these pushbacks coming in from the users. So we need to put in some process in place where the users know.</v>
+
+00:07:14.906 --> 00:07:27.586
+<v Shashank Agarwal>Like these are the after hours tech team or maybe the ISTs inform like we have one more team who works centrally for all the regions and everything and they might contact you and these are the users in those teams.</v>
+
+00:07:26.306 --> 00:07:26.546
+<v Kyle Wilson>Yeah.</v>
+
+00:07:29.266 --> 00:07:30.146
+<v Shashank Agarwal>Something like that.</v>
+
+00:07:29.506 --> 00:07:53.026
+<v Kyle Wilson>Yeah, that's probably what's going to have to happen down the road a bit, because if they're needing to talk to people, we can't, like there's, for the IC that we were talking about this morning, there's 35 tickets, and it's not something that we can just dump on them. They don't want it. We don't want to dump it to them because we want to deal with it ourselves.</v>
+
+00:07:49.666 --> 00:07:50.226
+<v Shashank Agarwal>Correct.</v>
+
+00:07:53.746 --> 00:07:55.186
+<v Shashank Agarwal>And we cannot do it.</v>
+
+00:07:53.986 --> 00:07:54.546
+<v Kyle Wilson>So...</v>
+
+00:07:56.466 --> 00:07:57.706
+<v Kyle Wilson>Getting the...</v>
+
+00:07:58.586 --> 00:08:09.106
+<v Kyle Wilson>Getting the end users up to speed with, hey, you're going to get a call from these people. It's fine. It's likely going to be something we're going to be doing down the road.</v>
+
+00:08:11.506 --> 00:08:26.226
+<v Shashank Agarwal>One question, Kaila, I would like to ask because I'm not knowledgeable about this. Are these users available on Teams with us? Like suppose any end declined which is there, are they available on Teams with us?</v>
+
+00:08:29.266 --> 00:08:30.546
+<v Kyle Wilson>Some of them might be.</v>
+
+00:08:31.746 --> 00:08:50.866
+<v Kyle Wilson>I don't want to set the precedence with end users that we reach out through Teams because we have had issues where threat actors have reached out through Teams. So doing it that way, then they start going, oh, well, it's fine because F12 does this. We don't want that as a communication method that end users.</v>
+
+00:08:39.506 --> 00:08:40.066
+<v Shashank Agarwal>I got it.</v>
+
+00:08:41.146 --> 00:08:44.146
+<v Shashank Agarwal>And then they start interacting only on Teams.</v>
+
+00:08:49.986 --> 00:08:51.346
+<v Shashank Agarwal>No, got it, that's.</v>
+
+00:08:52.226 --> 00:08:54.226
+<v Shashank Agarwal>That's totally a valid and fair point.</v>
+
+00:08:52.386 --> 00:08:53.746
+<v Kyle Wilson>Like, we do.</v>
+
+00:08:54.946 --> 00:09:16.706
+<v Kyle Wilson>We do end up talking to end users sometimes on Teams if it's something we need to chat back and forth with them, but we don't need to actually be on a phone call. We might, after the initial phone call, we might set up, hey, we're just going to talk to your Teams. Keep an eye out for messages from me. We'll work through this and get to a solution.</v>
+
+00:09:17.186 --> 00:09:19.186
+<v Kyle Wilson>But, as a...</v>
+
+00:09:20.306 --> 00:09:20.346
+<v Kyle Wilson>Uh...</v>
+
+00:09:22.706 --> 00:09:25.826
+<v Kyle Wilson>as a general communication.</v>
+
+00:09:27.426 --> 00:09:29.586
+<v Kyle Wilson>Not something we want them to get used to.</v>
+
+00:09:30.386 --> 00:09:48.626
+<v Shashank Agarwal>Okay, this again lands me with a very big question in my mind. Like if the users are rejecting because of the security reasons. Now, when they are connecting with F12 win offers, these users would again connect to someone non-familiar.</v>
+
+00:09:49.506 --> 00:09:54.226
+<v Kyle Wilson>Correct, but they're calling into F12, so it's not a...</v>
+
+00:09:49.586 --> 00:09:51.186
+<v Shashank Agarwal>So, wouldn't that raise it?</v>
+
+00:09:57.026 --> 00:09:57.586
+<v Shashank Agarwal>Correct.</v>
+
+00:10:11.906 --> 00:10:12.706
+<v Shashank Agarwal>Okay, alright.</v>
+
+00:10:12.786 --> 00:10:26.626
+<v Kyle Wilson>call of, hey, we want to jump into your device. And honestly, I want to just tell them, hey, if it comes from F12, it's fine, but it's so easy to spoof a number that I would rather that they be cautious.</v>
+
+00:10:12.866 --> 00:10:12.986
+<v Shashank Agarwal>Yeah.</v>
+
+00:10:27.906 --> 00:10:47.266
+<v Shashank Agarwal>Yeah, yeah, yeah, that's totally correct. The approach is totally right. I was just trying to explore so that I could give my ideas and suggestions. I usually do not discuss all these things with Mark on a day-to-day basis because I want to keep coming up with fresh ideas, otherwise he would.</v>
+
+00:10:36.146 --> 00:10:36.306
+<v Kyle Wilson>Mm.</v>
+
+00:10:46.786 --> 00:10:47.386
+<v Kyle Wilson>Mm-hmm.</v>
+
+00:10:47.586 --> 00:10:53.346
+<v Shashank Agarwal>overload my mind with his thoughts and I do not want to portray the same thoughts here. Yeah.</v>
+
+00:10:54.626 --> 00:11:02.546
+<v Shashank Agarwal>He might be saying like, oh, I have already done this communication with Kyle. Why is he doing that again? But maybe a new flavor that I want to bring into.</v>
+
+00:10:55.186 --> 00:10:55.746
+<v Kyle Wilson>All good.</v>
+
+00:10:59.786 --> 00:10:59.906
+<v Kyle Wilson>Yes.</v>
+
+00:11:02.306 --> 00:11:02.626
+<v Kyle Wilson>Nope.</v>
+
+00:11:04.306 --> 00:11:05.186
+<v Kyle Wilson>Absolutely.</v>
+
+00:11:05.826 --> 00:11:18.786
+<v Shashank Agarwal>Yeah, let's start with the presentation. I have a lot of things to discuss because this time Mark has really helped me in building a good presentation because of his excellent data.</v>
+
+00:11:20.466 --> 00:11:39.106
+<v Shashank Agarwal>So agenda stays the same. Key change means like the service delivery was stable. Overall, we saw a reduced missed call. It has gone up way too high. And today, during our strategy meet in the morning,</v>
+
+00:11:39.506 --> 00:11:58.466
+<v Shashank Agarwal>Manuj showed, sorry, I keep switching between Manuj and Mark. So Manuj showed like the numbers in December were around 79 missed calls and this quarter when we see, it's down to 78 to 37. That's...</v>
+
+00:11:58.666 --> 00:12:09.186
+<v Shashank Agarwal>What, and that's a great achievement reduction in 50% of the missed calls, and plus we have engineers who are transitioned in new and...</v>
+
+00:12:10.146 --> 00:12:28.946
+<v Shashank Agarwal>This is definitely a stronger point that I see and what I see mainly is team moving towards consistency. That's going great. So Manish told me like there haven't been any escalations in the recent times. All things are going good.</v>
+
+00:12:18.946 --> 00:12:19.506
+<v Kyle Wilson>Yes.</v>
+
+00:12:29.346 --> 00:12:50.546
+<v Shashank Agarwal>So that's also good, like volume increase, but missed call wins down, no escalation, that's going good. Overall CSAT that I see is 97% for the last month. It could have been 100, but there was one DSAT for Sarah and only one DSAT, one. Yeah, and I understand and.</v>
+
+00:12:42.306 --> 00:12:42.466
+<v Kyle Wilson>Mm.</v>
+
+00:12:44.386 --> 00:12:46.986
+<v Kyle Wilson>Yeah, there's the one for Sarah and...</v>
+
+00:12:49.666 --> 00:13:07.986
+<v Kyle Wilson>I looked at it, I'm like, well, like it's a recurring issue, so that's probably most of what triggered the VSAT. But at the same time, when I listened to the calls, she was a little slow, and it was probably her first time dealing with that part of the auth point.</v>
+
+00:12:59.426 --> 00:12:59.586
+<v Shashank Agarwal>Yeah.</v>
+
+00:13:10.266 --> 00:13:14.866
+<v Kyle Wilson>So I don't fault her for being slow. She was cautious. She got to the resolution.</v>
+
+00:13:16.146 --> 00:13:26.706
+<v Kyle Wilson>User's a little unhappy. We kept that one with her, but I don't see it as a problem. Like, I'm not concerned that she got that desat.</v>
+
+00:13:25.026 --> 00:13:25.266
+<v Shashank Agarwal>Yeah.</v>
+
+00:13:27.586 --> 00:13:48.226
+<v Shashank Agarwal>Yeah. Overall, we see a greater utilization across the team. It's not only one tech, every tech is achieving a high utilization. So that's great. Even when we are running with one person less, we are running 24 cross 7 operations. We have an interview scheduled today.</v>
+
+00:13:48.706 --> 00:14:07.106
+<v Shashank Agarwal>So hopefully he should be a good, yeah, hopefully he should be a good fit. I have seen him. He's in Chandigarh itself. I think he has worked with Mark before in his previous assignment, or maybe not. I'm just skeptical because can be.</v>
+
+00:13:48.826 --> 00:13:50.306
+<v Kyle Wilson>Yep, right after this meeting.</v>
+
+00:14:07.346 --> 00:14:26.626
+<v Shashank Agarwal>So overall, key improvements, shift coverage is optimized. We are seeing the heat map and everything, and based on that, we are optimizing our shift. And the weekend support is also enhanced. Missed call tracking, and what I got to know from Mark is that he...</v>
+
+00:14:26.906 --> 00:14:45.666
+<v Shashank Agarwal>He's doing a weekly call which starts every week on either on Saturday or Sunday, so that he has a maximum availability. And that's what driving the team I see. When they see their numbers on a weekly basis, they see that's going good in everything. Just give me one minute.</v>
+
+00:14:40.106 --> 00:14:40.626
+<v Kyle Wilson>Yes.</v>
+
+00:14:55.186 --> 00:15:13.346
+<v Shashank Agarwal>Sorry, so he is regularly going over with the procedures and standards and that's helping the team as well. And I've seen this previously when I was handling a direct team where the team was working with me, I was working in shared knock.</v>
+
+00:14:56.386 --> 00:14:56.506
+<v Kyle Wilson>Yeah.</v>
+
+00:15:15.266 --> 00:15:35.266
+<v Shashank Agarwal>It happens generally, like if we do not reiterate the process, sometimes they become reluctant in everything and then they miss out on the process. So they might be falling nine things out of 10, they might be missing out one. And it's with all the teams that this happens. So regular.</v>
+
+00:15:35.826 --> 00:15:54.906
+<v Shashank Agarwal>review of processes, reinforcing them, that really helps. Okay. And Manuj, they'll build a structured onboarding approach for onboarding new team members. He built a 90-60-90 plan for them so that we can onboard techs.</v>
+
+00:15:55.506 --> 00:16:06.386
+<v Shashank Agarwal>Correctly, on in a structured way, and that's really helping. We can see Sarah and Hector improving in a better way, and we already see that the experimentation worked in Kris, and he's...</v>
+
+00:16:01.906 --> 00:16:02.466
+<v Kyle Wilson>Yes.</v>
+
+00:16:07.826 --> 00:16:09.186
+<v Shashank Agarwal>Good, even good output.</v>
+
+00:16:10.306 --> 00:16:28.706
+<v Shashank Agarwal>So improve ticket routing guidance and workflow efficiency across shifts. So that's again, manage ideas. And performance consistency, like the team knows where they are going down, when their performance is going up and down. So that is really helping them.</v>
+
+00:16:29.146 --> 00:16:48.226
+<v Shashank Agarwal>track their matrix. Plus I know Manuj has done one more thing. Also he has done on Saturday and Sunday, but I know the way he works. He has asked him to track their own matrix as well. So that they are using the Brij gauge and everything so that they know where they are lacking and.</v>
+
+00:16:48.706 --> 00:17:08.026
+<v Shashank Agarwal>they do not need guidance. And me and Manuj were discussing this last Friday. We want to make this team self-sustainable so that going forward in next couple of weeks or maybe months, we see that Manuj comes in normal shift.</v>
+
+00:17:17.546 --> 00:17:17.746
+<v Kyle Wilson>Yeah.</v>
+
+00:17:17.786 --> 00:17:25.346
+<v Shashank Agarwal>every day, putting in deep checks, checking if everything is going right or not. So that's our goal moving forward.</v>
+
+00:17:28.066 --> 00:17:30.946
+<v Shashank Agarwal>So, Kaila, I want to know one thing.</v>
+
+00:17:32.546 --> 00:17:42.786
+<v Shashank Agarwal>Once the team gets stable, they are familiar with the process and everything, Manuj is taking care of that, all the things. What's next for Manuj?</v>
+
+00:17:45.426 --> 00:17:46.706
+<v Kyle Wilson>Gonna replace me, I'm gonna quit.</v>
+
+00:17:48.546 --> 00:18:01.266
+<v Shashank Agarwal>No, you, you, you, you have a different role as well, so he's not gonna replace you, but yes, what's additional coming in from Manuj?</v>
+
+00:17:58.346 --> 00:17:58.466
+<v Kyle Wilson>Yeah.</v>
+
+00:18:02.226 --> 00:18:03.026
+<v Kyle Wilson>Um...</v>
+
+00:18:04.626 --> 00:18:17.906
+<v Kyle Wilson>Like he's doing fantastic where he is right now. Like he's really saving me from being the one in 24 hours because he's just as crazy as me and there all the time.</v>
+
+00:18:22.786 --> 00:18:26.386
+<v Kyle Wilson>I don't know, like refining process more.</v>
+
+00:18:28.226 --> 00:18:40.306
+<v Kyle Wilson>I would see growing the team in the near future, but that's going to be at least a few months down the road, but he's going to have a few more people to look after.</v>
+
+00:18:42.706 --> 00:18:43.346
+<v Kyle Wilson>Um...</v>
+
+00:18:44.946 --> 00:18:45.426
+<v Kyle Wilson>I don't know.</v>
+
+00:18:46.586 --> 00:18:49.906
+<v Kyle Wilson>Mark, what do you want to do? Where do you want to go from where you're at?</v>
+
+00:18:47.266 --> 00:18:47.586
+<v Shashank Agarwal>Let's.</v>
+
+00:18:49.026 --> 00:18:49.186
+<v Shashank Agarwal>Sure.</v>
+
+00:18:50.546 --> 00:18:51.826
+<v Manuj (Mark) Rattan>Projects, projects.</v>
+
+00:18:52.706 --> 00:18:53.986
+<v Kyle Wilson>You want to deal with projects?</v>
+
+00:18:53.026 --> 00:18:56.066
+<v Manuj (Mark) Rattan>Send me to project. Yeah, send me to onboardings.</v>
+
+00:19:00.226 --> 00:19:01.186
+<v Manuj (Mark) Rattan>Project Manager.</v>
+
+00:19:00.386 --> 00:19:01.266
+<v Kyle Wilson>That would probably...</v>
+
+00:19:03.426 --> 00:19:05.586
+<v Kyle Wilson>be a drastic improvement to what's going on right now.</v>
+
+00:19:07.586 --> 00:19:09.746
+<v Manuj (Mark) Rattan>Right, data speaks for itself.</v>
+
+00:19:11.506 --> 00:19:17.426
+<v Shashank Agarwal>Yeah, but before we move ahead with that, Manuj, what I say is...</v>
+
+00:19:18.306 --> 00:19:38.986
+<v Shashank Agarwal>Consistency is the key. Once we see that this is consistently happening, then we can look at it. I am talking not about the near future, I'm talking about the future that's there in next three to six months for you. That is, we'll see where it takes you. Next, I want to talk about Hersh.</v>
+
+00:19:19.106 --> 00:19:19.346
+<v Kyle Wilson>Yeah.</v>
+
+00:19:29.906 --> 00:19:30.066
+<v Kyle Wilson>Mm.</v>
+
+00:19:40.066 --> 00:19:40.106
+<v Shashank Agarwal>Uhh...</v>
+
+00:19:41.586 --> 00:20:01.026
+<v Shashank Agarwal>That's one area that we want to discuss. He has completed his training and everything. He was able to successfully upgrade himself. Now what's next for him? Should we, and he has been technically doing very good in terms of his learning and everything. He just needs a...</v>
+
+00:20:01.426 --> 00:20:20.306
+<v Shashank Agarwal>real-time experience while working on the tickets. Should we start using him in after hours or should we propose him to an IST and then obviously bring in another?</v>
+
+00:20:21.346 --> 00:20:23.906
+<v Shashank Agarwal>Dispatcher who takes care of his work.</v>
+
+00:20:27.746 --> 00:20:46.786
+<v Kyle Wilson>For the time being, like once we get the team stabilized, hopefully Vince is good. Harish is doing, I touch base with him periodically. And yeah, it sounds like he's doing good, getting up to where he needs to be.</v>
+
+00:20:48.866 --> 00:20:57.986
+<v Kyle Wilson>We can likely start looking at either moving him into an IST or onto the after hours team. And then we would need to backfill his.</v>
+
+00:21:00.226 --> 00:21:03.666
+<v Kyle Wilson>His triage position, um, if they do that.</v>
+
+00:21:02.386 --> 00:21:02.706
+<v Shashank Agarwal>Yeah.</v>
+
+00:21:04.866 --> 00:21:05.826
+<v Shashank Agarwal>Yeah, what?</v>
+
+00:21:04.866 --> 00:21:07.506
+<v Kyle Wilson>So he's completely done all his training now?</v>
+
+00:21:08.306 --> 00:21:26.986
+<v Shashank Agarwal>Yes, he's done. And my next step was you said that you would review him technically. So that's one thing I want because we reviewed him technically, not me, but in another tier from another location, reviewed him and he was able to clear his level of assessment as well. But</v>
+
+00:21:09.266 --> 00:21:09.586
+<v Kyle Wilson>Okay.</v>
+
+00:21:14.786 --> 00:21:15.066
+<v Kyle Wilson>Yeah.</v>
+
+00:21:27.106 --> 00:21:29.906
+<v Shashank Agarwal>I want you to do it from an Atul perspective.</v>
+
+00:21:27.146 --> 00:21:28.146
+<v Kyle Wilson>Okay, good.</v>
+
+00:21:30.866 --> 00:21:32.226
+<v Kyle Wilson>I'll schedule.</v>
+
+00:21:33.666 --> 00:21:51.986
+<v Kyle Wilson>Basically an interview. I'll run through my tricky question list that confuses a lot of people. We'll see how he does this. Now he didn't do bad the first time. Did a little more training and by the sounds of it, if he's all done on your side.</v>
+
+00:21:37.746 --> 00:21:38.226
+<v Shashank Agarwal>Yeah.</v>
+
+00:21:41.346 --> 00:21:41.586
+<v Shashank Agarwal>Yeah.</v>
+
+00:21:52.866 --> 00:21:53.026
+<v Manuj (Mark) Rattan>Mm.</v>
+
+00:21:53.586 --> 00:22:09.266
+<v Kyle Wilson>that we can start looking at shuffling him out of triage and into a more technical role. So I'll get that scheduled possibly for tomorrow. I'll see what my schedule looks like. We'll get it done sooner than later, and then we can see where we can move them.</v>
+
+00:22:01.106 --> 00:22:01.426
+<v Shashank Agarwal>Yeah.</v>
+
+00:22:10.066 --> 00:22:10.386
+<v Shashank Agarwal>Yeah.</v>
+
+00:22:11.906 --> 00:22:31.426
+<v Shashank Agarwal>Thank you for that. Moving on next, no to do from previous meeting, performance analysis, utilization overall looks good. As I said, like everyone is crossing the mark of 80%. That was our end goal and few people are already reaching above 90%. Thanks, Kumar.</v>
+
+00:22:31.466 --> 00:22:33.986
+<v Shashank Agarwal>for bringing the consistency in the team.</v>
+
+00:22:32.426 --> 00:22:32.906
+<v Kyle Wilson>Mhm.</v>
+
+00:22:37.306 --> 00:22:56.386
+<v Manuj (Mark) Rattan>Thanks, Seamus. For a minute, your graph, I was like, what? But no, no, it makes perfect sense now. Yeah, if you look at it, Kyle, for the month of April, that's in blue, right? Kane was with me. Kris, he was halfway there.</v>
+
+00:22:38.786 --> 00:22:39.226
+<v Shashank Agarwal>Okay.</v>
+
+00:22:52.626 --> 00:22:53.026
+<v Shashank Agarwal>Yes.</v>
+
+00:22:56.706 --> 00:23:15.186
+<v Manuj (Mark) Rattan>Let's keep it that way, right? And then same goes for Sarah. She was under the onboarding phase, right? Ryder had a few PTOs and some sick leaves. So that's why he's a bit on the left side, on the lower side, I should say.</v>
+
+00:22:57.626 --> 00:22:57.826
+<v Kyle Wilson>And.</v>
+
+00:23:02.546 --> 00:23:02.866
+<v Kyle Wilson>Kip.</v>
+
+00:23:07.226 --> 00:23:07.706
+<v Kyle Wilson>Mhm.</v>
+
+00:23:15.666 --> 00:23:26.306
+<v Manuj (Mark) Rattan>But you should see improvement overall, right? That this is kind of my report card, so Sharma, sorry for taking over the call, but yes, right, we are actively.</v>
+
+00:23:19.306 --> 00:23:19.586
+<v Kyle Wilson>Yeah.</v>
+
+00:23:25.026 --> 00:23:33.026
+<v Shashank Agarwal>But overall we can see the upward trend as well for all the employees. So that's...</v>
+
+00:23:30.786 --> 00:23:35.026
+<v Manuj (Mark) Rattan>Absolutely, absolutely. Yeah, Kyle, if we talk about...</v>
+
+00:23:31.826 --> 00:23:32.146
+<v Kyle Wilson>Yeah.</v>
+
+00:23:33.906 --> 00:23:52.146
+<v Kyle Wilson>Mike, there's always going to be some up and down, but this past month, everybody's over the 80, which is fantastic. Hector's first month in is already over 80%. So, and that's going to come down to the onboarding program that you've got for everybody there, Mark.</v>
+
+00:23:45.186 --> 00:23:45.586
+<v Manuj (Mark) Rattan>Yeah.</v>
+
+00:23:52.466 --> 00:23:55.346
+<v Manuj (Mark) Rattan>Correct, correct. Yeah, so...</v>
+
+00:23:52.506 --> 00:23:53.826
+<v Kyle Wilson>So, good job on that.</v>
+
+00:23:55.026 --> 00:23:59.026
+<v Kyle Wilson>There's already hitting ninety-nine, like we're we're we're doing it.</v>
+
+00:23:59.986 --> 00:24:12.546
+<v Manuj (Mark) Rattan>Absolutely, absolutely. Seamus, I think when you built this presentation of yours, right, you will see improvement on Hector's side as well.</v>
+
+00:24:13.426 --> 00:24:33.666
+<v Manuj (Mark) Rattan>I have moved, Kyle, this is just FYI for you and Seamus. I've moved Sarah down to the 1pm to 10pm Eastern shift so that everything that she has learned with me while working with me in the 6 to 3 prime shift, she's going to convey and pass on all the information plus hold Hector's hand.</v>
+
+00:24:33.986 --> 00:24:53.506
+<v Manuj (Mark) Rattan>to get him up to speed in the process, not on getting the numbers back up, but just on the process side. Seamus, I think you are not aware about this, but one of the T3s, Stephen, there was some misunderstanding when Hector reached out for help and he wasn't sure about the process.</v>
+
+00:24:37.746 --> 00:24:37.906
+<v Kyle Wilson>Mm.</v>
+
+00:24:53.546 --> 00:25:12.226
+<v Manuj (Mark) Rattan>process. Of course, he was new. He got confused between the how to contact a T3, right? So I've shared feedback with him as well. And like I said, Kyle, we spoke about this on Monday as well. You will see improvements starting next week or actually.</v>
+
+00:25:12.466 --> 00:25:17.506
+<v Manuj (Mark) Rattan>They are coming back in the same shift tomorrow, right? Yeah, you would see improvement tomorrow.</v>
+
+00:25:19.466 --> 00:25:19.986
+<v Shashank Agarwal>Anand.</v>
+
+00:25:20.066 --> 00:25:20.866
+<v Manuj (Mark) Rattan>Not this week.</v>
+
+00:25:21.506 --> 00:25:37.026
+<v Shashank Agarwal>And I am okay with the process misses happening with the newer techs because they will learn with the misses as well. We cannot see everything picture perfect. You like it that way, but I know if everything is picture perfect, it's a watermelon effect.</v>
+
+00:25:31.346 --> 00:25:31.666
+<v Kyle Wilson>Yeah.</v>
+
+00:25:37.506 --> 00:25:46.466
+<v Kyle Wilson>Nobody's going to be perfect out of the gate. It's his first month. He's already over 80%. So he's done good on his utilization right out of the gate.</v>
+
+00:25:39.906 --> 00:25:40.386
+<v Shashank Agarwal>Yes.</v>
+
+00:25:40.706 --> 00:25:42.306
+<v Manuj (Mark) Rattan>Alright, alright.</v>
+
+00:25:47.626 --> 00:25:57.866
+<v Kyle Wilson>So that's a win right there. As long as he keeps it up. Yeah, there's some process misses, but like Seamus said, like it will help them learn.</v>
+
+00:25:59.986 --> 00:26:00.386
+<v Kyle Wilson>Bill.</v>
+
+00:26:00.706 --> 00:26:01.226
+<v Manuj (Mark) Rattan>Cool.</v>
+
+00:26:02.226 --> 00:26:02.506
+<v Shashank Agarwal>Yeah.</v>
+
+00:26:03.386 --> 00:26:03.986
+<v Manuj (Mark) Rattan>Thanks, Seamus.</v>
+
+00:26:03.506 --> 00:26:23.986
+<v Shashank Agarwal>Moving on next, for the ticket closures, Hector, we know like he was below the targets. He started on 9th May, so that he was obviously less. Kane, Kris, Rattan, Ryder, and Sarah, all are going good. So again, the ticket count varies month to month. We cannot put in a consistency because again.</v>
+
+00:26:09.586 --> 00:26:09.746
+<v Kyle Wilson>Mm.</v>
+
+00:26:13.106 --> 00:26:13.386
+<v Kyle Wilson>Yeah.</v>
+
+00:26:24.266 --> 00:26:43.266
+<v Shashank Agarwal>When the shift changes, somebody is between 8 and 5, obviously their ticket counts will be less because they would be working on EPDR project. And again, they might not be able to close the tickets because users might not be available, they might not talk to them, and they might call back the IST. So again, we know like this.</v>
+
+00:26:31.066 --> 00:26:31.506
+<v Kyle Wilson>Yes.</v>
+
+00:26:43.586 --> 00:26:46.066
+<v Shashank Agarwal>Trained, we would see up and down.</v>
+
+00:26:46.706 --> 00:27:00.146
+<v Kyle Wilson>Yeah. The ticket closures, as long as they hit their time and they're not padding time, which we do, we check for, I know they're not because we check it. But as long as they're hitting their time,</v>
+
+00:26:47.746 --> 00:26:48.466
+<v Shashank Agarwal>And again.</v>
+
+00:26:54.066 --> 00:26:54.626
+<v Shashank Agarwal>Vikram.</v>
+
+00:26:56.306 --> 00:27:00.826
+<v Shashank Agarwal>They can't tell the time Manuj is there, they can't.</v>
+
+00:27:01.586 --> 00:27:16.626
+<v Kyle Wilson>Ticket closures, yeah, it's going to struggle sometimes. They also have fun with the EPDR tickets because the board that they're on doesn't have the background workflow to allow them to complete the tickets.</v>
+
+00:27:17.786 --> 00:27:23.986
+<v Kyle Wilson>So we need to go through those and then I can close them for them, which they still get credit for the close, but.</v>
+
+00:27:25.146 --> 00:27:46.386
+<v Kyle Wilson>A lot of those also drag along because they had time, they work on it, things are getting done, but some of them, they just, right, so they don't get closed right away. Sometimes some devices, we're actually working on clearing out some of the backlog on those for devices that have been offline for 90 days.</v>
+
+00:27:47.186 --> 00:27:59.626
+<v Kyle Wilson>We're just popping those out of enable. We can easily put them back in if somebody calls in from that device. But that'll allow for more closures. So some of these closure numbers are going to go up.</v>
+
+00:28:00.826 --> 00:28:01.226
+<v Kyle Wilson>This month.</v>
+
+00:28:01.026 --> 00:28:01.426
+<v Shashank Agarwal>Sure.</v>
+
+00:28:04.306 --> 00:28:22.146
+<v Shashank Agarwal>Moving on next, CSAT, everyone at 100%, Hector 2 service, first month 2 service, that's great. Gain for, Crayshade, Rita for, Ripintent, Sarah 3, one DSAT. Yeah, obviously it was a mess. It was an regular account lock.</v>
+
+00:28:09.666 --> 00:28:09.786
+<v Kyle Wilson>Yeah.</v>
+
+00:28:16.666 --> 00:28:16.866
+<v Kyle Wilson>Yep.</v>
+
+00:28:22.546 --> 00:28:29.026
+<v Shashank Agarwal>It could have been handled a different way, but yes, we understand the users frustration and.</v>
+
+00:28:27.946 --> 00:28:41.266
+<v Kyle Wilson>It's entirely possible that regardless of, even if she fixed it in 5 minutes, she quite possibly still could have gotten a desat on that. That user's been frustrated for a while by the sounds of it, so.</v>
+
+00:28:37.186 --> 00:28:37.666
+<v Shashank Agarwal>Yes.</v>
+
+00:28:43.666 --> 00:28:45.746
+<v Kyle Wilson>Again, I'm not concerned about that DSAT.</v>
+
+00:28:48.066 --> 00:29:08.466
+<v Shashank Agarwal>Same. Moving in next, leaves overall, this is the leaves unplanned. We can see the number has gone down relatively. So Hector 1, Sarah 1 and Rita 1 rest all are good. So upcoming leaves crash is on 25th to 29th June, Sarah 2nd, 3rd and 4th July.</v>
+
+00:29:09.186 --> 00:29:15.506
+<v Shashank Agarwal>I guess the last leaves are denied like 15, 18, and 19. Those are denied, Kyle, correct?</v>
+
+00:29:14.866 --> 00:29:17.906
+<v Kyle Wilson>Well, that's 100% denied because they're also wrong.</v>
+
+00:29:19.986 --> 00:29:25.906
+<v Kyle Wilson>He changed it this morning. He tried to change it this morning.</v>
+
+00:29:20.146 --> 00:29:20.306
+<v Shashank Agarwal>No.</v>
+
+00:29:22.626 --> 00:29:22.946
+<v Shashank Agarwal>Lee.</v>
+
+00:29:24.146 --> 00:29:24.706
+<v Shashank Agarwal>I guess.</v>
+
+00:29:26.786 --> 00:29:29.186
+<v Shashank Agarwal>Okay, it's 14th, 15th, and 18th.</v>
+
+00:29:27.586 --> 00:29:28.746
+<v Kyle Wilson>I haven't talked to him about it.</v>
+
+00:29:30.386 --> 00:29:31.826
+<v Shashank Agarwal>OK, yeah.</v>
+
+00:29:33.026 --> 00:29:38.306
+<v Shashank Agarwal>The deck is prepared in advance, so, and again, we...</v>
+
+00:29:34.066 --> 00:29:34.306
+<v Kyle Wilson>Yeah.</v>
+
+00:29:35.586 --> 00:29:39.666
+<v Kyle Wilson>Yeah, it was this morning that he changed it, so it's...</v>
+
+00:29:37.706 --> 00:29:38.146
+<v Manuj (Mark) Rattan>Right.</v>
+
+00:29:39.546 --> 00:29:58.226
+<v Shashank Agarwal>And again, we had a strategy meet that went for three, 3 1/2 hours. Then there was, I had a call with Titan. Nick is really happy. He had a lot of team movements happening and then a recent tech joint and that's working really well for him. Rimal.</v>
+
+00:29:59.346 --> 00:30:02.746
+<v Shashank Agarwal>Mark, for your knowledge, he recently joined, and...</v>
+
+00:30:03.746 --> 00:30:10.626
+<v Shashank Agarwal>He is doing great, so that's why Nick and that took out my time as well.</v>
+
+00:30:06.066 --> 00:30:06.706
+<v Kyle Wilson>Excellent.</v>
+
+00:30:12.226 --> 00:30:12.786
+<v Shashank Agarwal>So.</v>
+
+00:30:13.906 --> 00:30:17.626
+<v Shashank Agarwal>I'll I have those details, I'll update in my tracker as well.</v>
+
+00:30:19.506 --> 00:30:19.626
+<v Kyle Wilson>Yeah.</v>
+
+00:30:21.266 --> 00:30:23.506
+<v Kyle Wilson>I haven't spoken to Mark about it yet, but it's all denied.</v>
+
+00:30:21.746 --> 00:30:22.146
+<v Shashank Agarwal>Oh.</v>
+
+00:30:24.786 --> 00:30:24.866
+<v Shashank Agarwal>Ha.</v>
+
+00:30:28.146 --> 00:30:52.186
+<v Shashank Agarwal>Moving on next way forward, like before moving to way forward, I wanted to ask like Kyle, if there is any tech who wants to work in IST and who does not want to work in after hours because of the rotational shifts and everything. Maybe, and it's a preference that they want to grow into that specific area.</v>
+
+00:30:50.146 --> 00:30:50.466
+<v Kyle Wilson>No.</v>
+
+00:30:52.186 --> 00:30:53.106
+<v Shashank Agarwal>Yeah, so...</v>
+
+00:30:54.066 --> 00:31:04.706
+<v Shashank Agarwal>Should we look into that? Or should we, how should we approach it? I just want to know from your angle, how should we do it?</v>
+
+00:31:05.986 --> 00:31:27.906
+<v Kyle Wilson>If we're going to start going down that road where people want to transition out into ISTs, we need to be able to backfill them well before they transition out so that we don't get left in an 8 tech when the 9 is what we need. Like we're doing surprisingly well. No, no, no. If they want to transfer out.</v>
+
+00:31:14.866 --> 00:31:15.346
+<v Shashank Agarwal>Yes.</v>
+
+00:31:23.826 --> 00:31:25.506
+<v Shashank Agarwal>No, I was just asking.</v>
+
+00:31:28.386 --> 00:31:29.346
+<v Kyle Wilson>You and I see.</v>
+
+00:31:30.466 --> 00:31:39.266
+<v Kyle Wilson>It's a growth opportunity, absolutely, for them. So if that's something that they're interested in, it's definitely something we can look at.</v>
+
+00:31:41.826 --> 00:31:51.586
+<v Kyle Wilson>But again, as long as we have the lead time, the backfill and get the new person up to speed before anybody leaves.</v>
+
+00:31:42.146 --> 00:31:42.866
+<v Shashank Agarwal>Like, I...</v>
+
+00:31:52.466 --> 00:32:10.786
+<v Shashank Agarwal>Yeah, so I would be very specific in this. So what we'll do in case this happens, if any text registers his interest in moving to NIST, our simple process would be that we will align some person before.</v>
+
+00:32:10.946 --> 00:32:26.546
+<v Shashank Agarwal>there would be a complete transition of one or two months and then he can move on to an IST. Also, this depends if there is an open position in an IST, these two factors. Mark, you want to add anything?</v>
+
+00:32:22.386 --> 00:32:22.946
+<v Kyle Wilson>Yes.</v>
+
+00:32:25.666 --> 00:32:26.146
+<v Kyle Wilson>Is.</v>
+
+00:32:27.906 --> 00:32:32.226
+<v Manuj (Mark) Rattan>I think you answered 50% of my my.</v>
+
+00:32:33.666 --> 00:32:41.266
+<v Manuj (Mark) Rattan>Thoughts, right? But have we done this in the past, Kyle? Is it a frequent thing where people move?</v>
+
+00:32:38.626 --> 00:32:39.026
+<v Kyle Wilson>No.</v>
+
+00:32:40.226 --> 00:32:41.666
+<v Kyle Wilson>It, it hasn't happened before.</v>
+
+00:32:42.066 --> 00:33:01.906
+<v Shashank Agarwal>Yeah, this has happened before, wherein the dispatch team moved into access team and then access team, when it got dismantled, they moved into tech and again, access team from access team, people used to move into IST. That has happened. I guess Ian and Russell, they were initially in dispatch team.</v>
+
+00:32:47.266 --> 00:32:47.506
+<v Kyle Wilson>Yeah.</v>
+
+00:33:02.306 --> 00:33:13.346
+<v Kyle Wilson>They were triaged when we had the techs, one tech per region for the after hours. Jain and Russell would essentially triage overnight.</v>
+
+00:33:02.386 --> 00:33:03.746
+<v Shashank Agarwal>And then they moved into...</v>
+
+00:33:14.626 --> 00:33:22.866
+<v Kyle Wilson>and then it would go to the tax. They worked on some tickets, but not a whole lot, some of the alerts.</v>
+
+00:33:24.946 --> 00:33:33.746
+<v Kyle Wilson>But yeah, they transitioned in. We've never transitioned anybody out of the after hours team into an IST yet. Has anybody expressed any interest?</v>
+
+00:33:31.906 --> 00:33:33.106
+<v Manuj (Mark) Rattan>Would we consider?</v>
+
+00:33:32.066 --> 00:33:32.306
+<v Shashank Agarwal>Yeah.</v>
+
+00:33:34.706 --> 00:33:35.426
+<v Manuj (Mark) Rattan>Um...</v>
+
+00:33:37.746 --> 00:33:39.826
+<v Manuj (Mark) Rattan>Yes and no.</v>
+
+00:33:37.746 --> 00:33:40.946
+<v Shashank Agarwal>Not right now, Kyle, uh, so yeah.</v>
+
+00:33:41.746 --> 00:33:53.666
+<v Manuj (Mark) Rattan>Yeah, yeah, you and I are on the same page, Seamus. Like, we've sensed it, Kaila. It's more of a hunch that I have, right?</v>
+
+00:33:48.066 --> 00:33:48.546
+<v Kyle Wilson>Mhm.</v>
+
+00:33:51.986 --> 00:34:07.986
+<v Kyle Wilson>Okay, yeah. I was just curious if anybody voiced a thought of transitioning to an ISD. I'm not opposed to it. If that's something that they're interested in, absolutely. We just need to make sure that there's no drop in quality for the after hours.</v>
+
+00:33:58.866 --> 00:34:00.426
+<v Manuj (Mark) Rattan>To be honest, I...</v>
+
+00:33:59.186 --> 00:33:59.506
+<v Shashank Agarwal>Yeah.</v>
+
+00:34:04.106 --> 00:34:04.586
+<v Manuj (Mark) Rattan>Mhm.</v>
+
+00:34:08.386 --> 00:34:26.146
+<v Manuj (Mark) Rattan>Absolutely. No, absolutely. All this stemmed from my thought process and I went to Seamus that, hey, how would you like this idea if we propose it, right? If we try to run with it further, how far we would go. And that's why this conversation is coming into picture now. Right again.</v>
+
+00:34:08.786 --> 00:34:10.146
+<v Shashank Agarwal>No, no, absolutely.</v>
+
+00:34:23.506 --> 00:34:23.986
+<v Kyle Wilson>Mhm.</v>
+
+00:34:25.586 --> 00:34:25.986
+<v Shashank Agarwal>Yeah.</v>
+
+00:34:27.906 --> 00:34:40.546
+<v Manuj (Mark) Rattan>Seamus is all about growth, right? Seamus is all about keeping both sides happy, right? And so am I. For me, my customers need to stay happy. That's how I see it. Okay, let's talk.</v>
+
+00:34:33.186 --> 00:34:33.426
+<v Kyle Wilson>Yeah.</v>
+
+00:34:38.226 --> 00:34:38.626
+<v Kyle Wilson>S.</v>
+
+00:34:40.066 --> 00:34:54.706
+<v Shashank Agarwal>One thing I would like to add, Manuj, like there was one scenario that happened. Now I'll tell you. Sam Arora, he was first interviewed by Mark, not Mark, I forgot his name, Matt.</v>
+
+00:34:42.146 --> 00:34:42.626
+<v Manuj (Mark) Rattan>Mhm.</v>
+
+00:34:54.706 --> 00:34:55.346
+<v Kyle Wilson>Matt.</v>
+
+00:34:55.866 --> 00:35:07.266
+<v Shashank Agarwal>Yeah, Matt for access team. Now, he had interviewed Sam, he liked Sam, Sam when he onboarded with access team. He clearly said, I do not want to do this work.</v>
+
+00:35:08.466 --> 00:35:09.346
+<v Manuj (Mark) Rattan>Oh, okay.</v>
+
+00:35:08.786 --> 00:35:12.026
+<v Shashank Agarwal>Okay, and then he got interviewed with...</v>
+
+00:35:13.026 --> 00:35:14.946
+<v Shashank Agarwal>Jack steam, I forgot to.</v>
+
+00:35:15.666 --> 00:35:18.626
+<v Manuj (Mark) Rattan>Jack man, uh, IST Polaris.</v>
+
+00:35:16.866 --> 00:35:20.946
+<v Shashank Agarwal>Yes, any, no, no, no, Polaris is Jennifer.</v>
+
+00:35:19.906 --> 00:35:21.186
+<v Kyle Wilson>Napolis.</v>
+
+00:35:22.306 --> 00:35:23.426
+<v Manuj (Mark) Rattan>I know which one.</v>
+
+00:35:22.546 --> 00:35:22.626
+<v Shashank Agarwal>Ah.</v>
+
+00:35:23.746 --> 00:35:24.866
+<v Kyle Wilson>Jay, he's in Ontario.</v>
+
+00:35:26.066 --> 00:35:27.746
+<v Manuj (Mark) Rattan>Yeah, yeah.</v>
+
+00:35:28.386 --> 00:35:48.226
+<v Shashank Agarwal>Yeah. So he was working there for almost a year. Then his health was not stable. So he moved out of F12 when he's not aligned with any of the partners we have. He's on bench trying to recover. So that was one of the things that has already happened.</v>
+
+00:35:48.266 --> 00:36:07.186
+<v Shashank Agarwal>because he clearly said, I do not want to do this work within the first week. And then it, Matt was super happy, Lakhwinder was super happy that, okay, we did not move forward. And then we put in some other person in place of, so.</v>
+
+00:35:48.946 --> 00:35:49.106
+<v Kyle Wilson>Play.</v>
+
+00:35:59.746 --> 00:35:59.906
+<v Kyle Wilson>Mm.</v>
+
+00:36:07.586 --> 00:36:21.186
+<v Shashank Agarwal>Again, Rudra was there who transitioned out of Jack's team and then she moved into Matt's team and then again he moved into Jack's team. So that was an interchange that happened.</v>
+
+00:36:21.986 --> 00:36:23.666
+<v Manuj (Mark) Rattan>Got it. Thank you.</v>
+
+00:36:22.946 --> 00:36:27.266
+<v Kyle Wilson>Yeah, we've shuffled people before, just it's never happened with the after hours.</v>
+
+00:36:23.266 --> 00:36:24.106
+<v Shashank Agarwal>And it was a...</v>
+
+00:36:25.186 --> 00:36:25.426
+<v Shashank Agarwal>Yep.</v>
+
+00:36:28.146 --> 00:36:28.386
+<v Shashank Agarwal>Yeah.</v>
+
+00:36:30.706 --> 00:36:37.266
+<v Shashank Agarwal>Mark, remember this date, 23rd March, 2025. This is when After Hours came into force.</v>
+
+00:36:39.746 --> 00:36:40.386
+<v Manuj (Mark) Rattan>Really?</v>
+
+00:36:40.866 --> 00:36:58.706
+<v Shashank Agarwal>Yes, full-fledged, like complete after hours where we had seven, 6, 7 ticks covering complete after hours. Before that it was just Ian and Russell doing some of the after hours work, but complete ticket handling.</v>
+
+00:36:53.306 --> 00:36:53.546
+<v Kyle Wilson>Yeah.</v>
+
+00:36:59.906 --> 00:37:19.026
+<v Shashank Agarwal>Taking calls and everything, and yeah, go like, and and we started off without any process, just small nits and bits and pieces, and post that when things when you came in there was a lot of processes that were built.</v>
+
+00:37:01.666 --> 00:37:02.626
+<v Manuj (Mark) Rattan>To go live.</v>
+
+00:37:03.666 --> 00:37:04.786
+<v Kyle Wilson>The full go live.</v>
+
+00:37:24.226 --> 00:37:26.546
+<v Kyle Wilson>There was a lot of trial and error at the start there.</v>
+
+00:37:24.306 --> 00:37:24.546
+<v Manuj (Mark) Rattan>Mm.</v>
+
+00:37:26.626 --> 00:37:26.786
+<v Shashank Agarwal>Right.</v>
+
+00:37:26.706 --> 00:37:27.906
+<v Manuj (Mark) Rattan>Yeah, yeah.</v>
+
+00:37:28.066 --> 00:37:31.746
+<v Shashank Agarwal>Yeah, so that's there.</v>
+
+00:37:32.866 --> 00:37:46.866
+<v Shashank Agarwal>Overall, so my Mark has said like his focus is to reduce the missed calls further. I know it cannot go less than 1% because I know the stats.</v>
+
+00:37:46.226 --> 00:38:00.226
+<v Kyle Wilson>There's always going to be something and you can't touch anything. Yeah, there's always going to be something. As long as we keep it low, we do what we can. We call them back as soon as possible.</v>
+
+00:37:48.626 --> 00:37:51.026
+<v Shashank Agarwal>Yeah, every time it's going to be missed.</v>
+
+00:37:52.106 --> 00:37:52.786
+<v Shashank Agarwal>Yeah, we cannot.</v>
+
+00:37:56.306 --> 00:37:56.626
+<v Shashank Agarwal>Yeah.</v>
+
+00:38:00.786 --> 00:38:01.266
+<v Manuj (Mark) Rattan>Sage.</v>
+
+00:38:02.706 --> 00:38:08.866
+<v Shashank Agarwal>And I was talking to Mark regarding this. I said, okay, tell me one thing in order to do a resource planning.</v>
+
+00:38:10.546 --> 00:38:11.906
+<v Shashank Agarwal>Which dates?</v>
+
+00:38:13.026 --> 00:38:32.626
+<v Shashank Agarwal>of Saturday and Sunday or which dates of the month you see a heavy call flow and we need that data and we can analyze that. I'll help you do that. He said that I had already analyzed and there's no specific trend which I can find because sometimes it's Saturday, next week it's Sunday.</v>
+
+00:38:28.226 --> 00:38:28.386
+<v Kyle Wilson>Stop.</v>
+
+00:38:32.946 --> 00:38:51.666
+<v Shashank Agarwal>Again, next week it can be Sunday and the last week can be Saturday. So we do not have any specific trend where we can say like, okay, we can increase the resources on Saturday or Sunday. But this is how things work. Sometimes we have to work on just, and that's where I come from. Like we cannot.</v>
+
+00:38:33.226 --> 00:38:33.506
+<v Kyle Wilson>Yeah.</v>
+
+00:38:51.706 --> 00:38:59.186
+<v Shashank Agarwal>go below 1%, 1% is the minimum that we would be able to achieve. It can.</v>
+
+00:38:58.906 --> 00:38:59.146
+<v Kyle Wilson>Yeah.</v>
+
+00:39:00.346 --> 00:39:12.866
+<v Shashank Agarwal>And Mike, you are very optimistic. I still say like not below 2%. And 2% is optimal in my case, because perfect state cannot be attained in operation.</v>
+
+00:39:11.986 --> 00:39:21.266
+<v Kyle Wilson>We may get lucky and get the odd week where it's perfect, but for an entire month, I don't think we're ever going to get 0 missed calls. There's always going to be a couple.</v>
+
+00:39:21.626 --> 00:39:30.186
+<v Shashank Agarwal>It's, it's can be, it can be luck, it can be luck, but no, we cannot go below a certain percentage, and...</v>
+
+00:39:21.746 --> 00:39:22.146
+<v Manuj (Mark) Rattan>Vaid.</v>
+
+00:39:29.026 --> 00:39:29.346
+<v Kyle Wilson>Just.</v>
+
+00:39:31.586 --> 00:39:34.866
+<v Shashank Agarwal>Being realistic is it's what I see.</v>
+
+00:39:31.986 --> 00:39:32.386
+<v Kyle Wilson>But.</v>
+
+00:39:35.986 --> 00:39:43.346
+<v Kyle Wilson>With the tech, with the team the way it is, we may get certain periods of the year, like December.</v>
+
+00:39:44.426 --> 00:39:50.786
+<v Kyle Wilson>We could get a 0 missed call month because generally things start to slow down in December.</v>
+
+00:39:46.546 --> 00:39:47.026
+<v Shashank Agarwal>Yes.</v>
+
+00:39:52.146 --> 00:39:53.266
+<v Kyle Wilson>We could get away with it.</v>
+
+00:39:54.426 --> 00:40:10.626
+<v Kyle Wilson>It is possible. I don't think it's very likely on a regular basis. Coming into summer, we might also get lucky in July or August because a lot of people take vacations. They're not wanting to deal with anything. They want to go outside.</v>
+
+00:40:11.546 --> 00:40:13.026
+<v Kyle Wilson>Enjoy the sun, so.</v>
+
+00:40:14.386 --> 00:40:19.506
+<v Kyle Wilson>There's some periods of the year where we could get below that 2%. It's possible.</v>
+
+00:40:21.186 --> 00:40:22.226
+<v Kyle Wilson>But I wouldn't bank on it.</v>
+
+00:40:23.346 --> 00:40:24.786
+<v Shashank Agarwal>He's not happy hearing that.</v>
+
+00:40:24.066 --> 00:40:24.306
+<v Kyle Wilson>S.</v>
+
+00:40:26.546 --> 00:40:26.666
+<v Manuj (Mark) Rattan>Yeah.</v>
+
+00:40:26.946 --> 00:40:35.906
+<v Shashank Agarwal>But yes, see, I have seen this trend and not only MSP and I go back to enterprise as well.</v>
+
+00:40:37.186 --> 00:40:55.946
+<v Shashank Agarwal>Always the call abandon percentage or missed call percentage basically is that I've seen in large organizations, it's 10%. When I was in BPO, I would say working for a UK client, it was around 12%. In MSP.</v>
+
+00:40:51.146 --> 00:40:51.386
+<v Kyle Wilson>Sure.</v>
+
+00:40:55.586 --> 00:40:55.706
+<v Kyle Wilson>Yeah.</v>
+
+00:40:56.226 --> 00:41:15.026
+<v Shashank Agarwal>We are targeting 2 to 5, less than 5%, which is good. Again, you are being ambitious, trying to reduce 2%. If you can do it for consistently, six months, we all are happy. Me, Kai, you, Lakhwinder, everyone is happy. But don't let it take a toll on you, like.</v>
+
+00:41:10.426 --> 00:41:10.706
+<v Kyle Wilson>Yeah.</v>
+
+00:41:15.266 --> 00:41:21.906
+<v Shashank Agarwal>Okay, it's gone to 2.5 percent. Oh, it has increased. Like, let's be realistic, this can happen.</v>
+
+00:41:15.386 --> 00:41:15.506
+<v Kyle Wilson>Yeah.</v>
+
+00:41:17.506 --> 00:41:17.626
+<v Kyle Wilson>But.</v>
+
+00:41:23.986 --> 00:41:33.186
+<v Kyle Wilson>Yeah, don't let it hurt you. If you can get it below, fantastic. Everybody will cheer you on, but don't stress too much on.</v>
+
+00:41:24.266 --> 00:41:25.106
+<v Manuj (Mark) Rattan>No, I hear you.</v>
+
+00:41:24.626 --> 00:41:24.866
+<v Shashank Agarwal>OK.</v>
+
+00:41:26.066 --> 00:41:26.626
+<v Shashank Agarwal>Yeah.</v>
+
+00:41:29.546 --> 00:41:29.826
+<v Shashank Agarwal>Yes.</v>
+
+00:41:34.706 --> 00:41:53.066
+<v Kyle Wilson>on fighting it. There's always going to be some misses. It's the nature of what it is. You could get, like when the data center had the issue, how many calls did we miss on that? Because the phone was just constantly ringing. There's nothing you can do. It is what it is. We know what the issue is.</v>
+
+00:41:35.986 --> 00:41:36.546
+<v Manuj (Mark) Rattan>Got it.</v>
+
+00:41:36.106 --> 00:41:36.226
+<v Shashank Agarwal>Yeah.</v>
+
+00:41:48.946 --> 00:41:49.666
+<v Manuj (Mark) Rattan>Exactly.</v>
+
+00:41:50.546 --> 00:41:51.266
+<v Manuj (Mark) Rattan>Exactly.</v>
+
+00:41:53.906 --> 00:42:00.306
+<v Kyle Wilson>It's being worked on. We just have to catch as many calls as we can and call everybody back and let them know what's going on.</v>
+
+00:42:01.586 --> 00:42:02.066
+<v Kyle Wilson>So.</v>
+
+00:42:03.226 --> 00:42:07.026
+<v Kyle Wilson>We're gonna run into things like that. It's not the last time that that's gonna happen.</v>
+
+00:42:08.546 --> 00:42:11.426
+<v Kyle Wilson>Hopefully it happens later at night when people don't notice, but...</v>
+
+00:42:13.026 --> 00:42:13.826
+<v Shashank Agarwal>We never know.</v>
+
+00:42:15.026 --> 00:42:27.106
+<v Shashank Agarwal>We never know when a vulnerability would hit. Like what was that vulnerability, Kyle, that hit? That was AV vulnerability where the systems started crashing. There was one antivirus.</v>
+
+00:42:16.546 --> 00:42:16.786
+<v Kyle Wilson>Yeah.</v>
+
+00:42:27.906 --> 00:42:29.186
+<v Kyle Wilson>Oh, the CrowdStrike.</v>
+
+00:42:27.986 --> 00:42:28.786
+<v Manuj (Mark) Rattan>Bit different.</v>
+
+00:42:29.986 --> 00:42:31.026
+<v Manuj (Mark) Rattan>Ohh yeah, crowd, right?</v>
+
+00:42:29.986 --> 00:42:42.946
+<v Shashank Agarwal>Yeah, CrowdStrike. Yeah, that had affected that that that affected one of the airlines. I do not remember that entire airlines had gone down for a couple of hours.</v>
+
+00:42:31.986 --> 00:42:33.546
+<v Kyle Wilson>Where it took everybody down.</v>
+
+00:42:35.746 --> 00:42:35.906
+<v Kyle Wilson>S.</v>
+
+00:42:39.106 --> 00:42:39.266
+<v Kyle Wilson>Yeah.</v>
+
+00:42:40.546 --> 00:42:40.826
+<v Kyle Wilson>Yeah.</v>
+
+00:42:43.426 --> 00:42:43.746
+<v Kyle Wilson>Yeah.</v>
+
+00:42:43.986 --> 00:42:47.426
+<v Shashank Agarwal>Yeah, uh, yeah, that was really...</v>
+
+00:42:45.666 --> 00:42:48.306
+<v Kyle Wilson>There was a whole lot of everything affected on that day.</v>
+
+00:42:48.786 --> 00:43:02.466
+<v Shashank Agarwal>And in that case, Mark, what would you have done? Your phone would have been constantly cleaning. You cannot ask like Team. Okay, you cannot take breaks for the next six hours. These things happen and we need to be ready for them as well.</v>
+
+00:43:04.466 --> 00:43:05.306
+<v Shashank Agarwal>Just stay patient.</v>
+
+00:43:06.146 --> 00:43:06.466
+<v Kyle Wilson>Yup.</v>
+
+00:43:06.546 --> 00:43:06.786
+<v Manuj (Mark) Rattan>Yeah.</v>
+
+00:43:08.466 --> 00:43:26.786
+<v Shashank Agarwal>Okay. Performance consistency, that's our target. That's what we are looking forward to, that we need to sustain it at least three or four months where we see constant productivity happening. And focus is always on quality improvement.</v>
+
+00:43:27.186 --> 00:43:37.506
+<v Shashank Agarwal>Manuj is regularly doing coaching and development. That's helping the team. We have seen the growth. And the next thing that Manuj is working on so that he can be...</v>
+
+00:43:38.386 --> 00:43:57.666
+<v Shashank Agarwal>three of those regular checks and dip checks. So he's trying to develop a shift lead ownership wherein some key players have been identified where they would focus on handling the shift. It would be their responsibility. Again, it would serve them.</v>
+
+00:43:58.306 --> 00:44:11.506
+<v Shashank Agarwal>as a platform where they can grow, maybe as a TL or maybe as a senior leader or senior engineer who takes care of the leads, leadership. So that's there.</v>
+
+00:44:00.866 --> 00:44:01.346
+<v Kyle Wilson>Mhm.</v>
+
+00:44:06.426 --> 00:44:06.706
+<v Kyle Wilson>Yep.</v>
+
+00:44:12.426 --> 00:44:14.786
+<v Kyle Wilson>Let's be honest, Mark's never going to stop his dip checks.</v>
+
+00:44:12.706 --> 00:44:13.346
+<v Shashank Agarwal>And last, but...</v>
+
+00:44:17.506 --> 00:44:19.426
+<v Shashank Agarwal>I was just being too optimistic.</v>
+
+00:44:23.346 --> 00:44:35.586
+<v Shashank Agarwal>Yeah, and yeah, like the last point, data-driven decision making, yeah, that would always stay there. Till the time mark is there, that was always be there.</v>
+
+00:44:37.346 --> 00:44:45.346
+<v Shashank Agarwal>data checks would be in place. Apart from this, anything Kyle you want to share with us? Anything specific?</v>
+
+00:44:47.586 --> 00:44:50.626
+<v Kyle Wilson>I think we're moving in the right direction.</v>
+
+00:44:53.226 --> 00:45:13.386
+<v Kyle Wilson>In the case of having to dismiss a tech in the future, we need to speed up the process for these interviews, I think. Because we're dragging a bit and we're making it work, but we need to keep that consistent nine people. I know it was a bit of a snap decision to dismiss, but...</v>
+
+00:44:59.746 --> 00:45:00.066
+<v Shashank Agarwal>Two.</v>
+
+00:45:06.066 --> 00:45:06.546
+<v Shashank Agarwal>I know.</v>
+
+00:45:14.146 --> 00:45:22.866
+<v Kyle Wilson>We need to be more, just quicker on the replacement track. And I know you guys are trying to get us the best possible options, but...</v>
+
+00:45:14.306 --> 00:45:14.546
+<v Shashank Agarwal>Yeah.</v>
+
+00:45:24.866 --> 00:45:25.746
+<v Kyle Wilson>Just need to be quick.</v>
+
+00:45:25.106 --> 00:45:45.186
+<v Shashank Agarwal>Yeah, Kyle, and honestly, it's not on Mark, it's on us. Even he did not knew like this sudden decision would be made by HR. So we were already trying to figure out a way to retain him. We could have done that, but there were some major issues because of which we could not do that.</v>
+
+00:45:29.346 --> 00:45:29.466
+<v Kyle Wilson>Yeah.</v>
+
+00:45:45.026 --> 00:45:45.186
+<v Kyle Wilson>Mm.</v>
+
+00:45:45.506 --> 00:46:04.186
+<v Shashank Agarwal>And that's where we lost the mark. But thankfully, we had already added Kris as a resource who would be there in these situations. So that helped us. But yes, we'll make sure any transition going forward, we'll have tech ready.</v>
+
+00:45:55.506 --> 00:45:55.666
+<v Kyle Wilson>Mm.</v>
+
+00:46:04.386 --> 00:46:19.506
+<v Shashank Agarwal>in advance before we move any of the text or before we commit any of the text that they can move into YST or anything. We'll definitely have a detailed plan and a strategy around it. It would not be random.</v>
+
+00:46:13.866 --> 00:46:14.066
+<v Kyle Wilson>Mm.</v>
+
+00:46:20.386 --> 00:46:22.466
+<v Kyle Wilson>Yeah, I also look back through the.</v>
+
+00:46:23.746 --> 00:46:25.986
+<v Kyle Wilson>The tracking for the the.</v>
+
+00:46:26.986 --> 00:46:48.746
+<v Kyle Wilson>text and he was kind of dragging the team down a bit. So it was probably the right decision. So they're like, if it needs to happen, it needs to happen. It is what it is. Just going forward, we need to make sure that we have somebody in the pipe that we can start interviewing and.</v>
+
+00:46:34.146 --> 00:46:34.706
+<v Shashank Agarwal>Correct.</v>
+
+00:46:48.946 --> 00:46:52.226
+<v Kyle Wilson>Get that done as soon as possible.</v>
+
+00:46:54.546 --> 00:47:13.386
+<v Shashank Agarwal>No worries, we are going to meet with Vance in the next 13 minutes. Hopefully that should turn out good. He is a very sincere resource. He's working in offers as of now, and he committed on being present at 12 P.m. PST.</v>
+
+00:46:59.266 --> 00:46:59.586
+<v Kyle Wilson>Yep.</v>
+
+00:47:13.506 --> 00:47:13.986
+<v Shashank Agarwal>Soap.</v>
+
+00:47:13.946 --> 00:47:14.386
+<v Kyle Wilson>Okay.</v>
+
+00:47:15.266 --> 00:47:16.786
+<v Shashank Agarwal>Yeah, he should be there.</v>
+
+00:47:18.786 --> 00:47:19.426
+<v Kyle Wilson>Excellent.</v>
+
+00:47:22.786 --> 00:47:23.426
+<v Shashank Agarwal>Okay.</v>
+
+00:47:23.186 --> 00:47:25.666
+<v Manuj (Mark) Rattan>You want me to be on that interview or?</v>
+
+00:47:26.146 --> 00:47:27.986
+<v Kyle Wilson>Yeah, if you want to come in, absolutely.</v>
+
+00:47:29.506 --> 00:47:30.946
+<v Manuj (Mark) Rattan>Okay, I'll see.</v>
+
+00:47:31.506 --> 00:47:39.826
+<v Shashank Agarwal>So Mark, you drive, you start the recording and everything. I won't join since you're joining. You start the recording and everything.</v>
+
+00:47:37.666 --> 00:47:50.066
+<v Manuj (Mark) Rattan>Yeah, right. No, no, no, no, it doesn't work like that. It needs to get Seamus's seal of approval. He's a tough nut, Kyle. He's a tough nut, right?</v>
+
+00:47:49.666 --> 00:47:52.146
+<v Kyle Wilson>Just gonna show up and click a button and run away.</v>
+
+00:47:50.026 --> 00:47:50.146
+<v Shashank Agarwal>Yeah.</v>
+
+00:47:52.466 --> 00:47:53.186
+<v Manuj (Mark) Rattan>No.</v>
+
+00:47:53.266 --> 00:48:09.586
+<v Shashank Agarwal>Yeah, yeah, yeah, you haven't been in any of the interviews, so I just need to start the recording, introduce, and then drop off. That's a criteria that F12 has said, like the anyone from ITBD cannot stay on the interview.</v>
+
+00:48:05.346 --> 00:48:05.746
+<v Kyle Wilson>Yep.</v>
+
+00:48:10.706 --> 00:48:12.786
+<v Manuj (Mark) Rattan>Okay, makes sense now.</v>
+
+00:48:12.066 --> 00:48:13.706
+<v Shashank Agarwal>Since you are at 12, you can stay.</v>
+
+00:48:12.586 --> 00:48:12.706
+<v Kyle Wilson>Yeah.</v>
+
+00:48:14.546 --> 00:48:28.626
+<v Manuj (Mark) Rattan>I would I would skip this one chance, right? Yeah, I'm gonna skip this one, right? Yeah, I I worked with him in the past for a few months, right? And I don't want to give out the impression, right?</v>
+
+00:48:17.266 --> 00:48:18.226
+<v Kyle Wilson>You gonna skip it? Okay.</v>
+
+00:48:19.546 --> 00:48:20.066
+<v Kyle Wilson>That's fine.</v>
+
+00:48:30.466 --> 00:48:40.706
+<v Kyle Wilson>Okay, yeah, no, absolutely. Like, it's up to you if you want to join or not for any of the interviews. You're going to be dealing with them. Generally, I think you talk to them before I do.</v>
+
+00:48:30.546 --> 00:48:31.346
+<v Manuj (Mark) Rattan>So...</v>
+
+00:48:32.666 --> 00:48:33.106
+<v Manuj (Mark) Rattan>Right.</v>
+
+00:48:42.226 --> 00:48:48.466
+<v Kyle Wilson>So you already have your opinion going into it. So yeah, that's absolutely fine.</v>
+
+00:48:42.466 --> 00:48:43.906
+<v Manuj (Mark) Rattan>Yeah, yeah.</v>
+
+00:48:49.826 --> 00:48:59.346
+<v Manuj (Mark) Rattan>Thank you. Cool. Then, that's all I had. Seamus, thank you so much for backing me up, Kyle. As always, please approve. Have advice.</v>
+
+00:48:57.666 --> 00:48:58.546
+<v Kyle Wilson>Absolutely.</v>
+
+00:48:59.866 --> 00:49:01.586
+<v Kyle Wilson>Put it into Dayforce.</v>
+
+00:48:59.986 --> 00:49:03.426
+<v Shashank Agarwal>No, those are not approved. I reject them as well.</v>
+
+00:49:05.106 --> 00:49:08.466
+<v Manuj (Mark) Rattan>You want me to put it into Dayforce? I'll do that. Okay.</v>
+
+00:49:06.546 --> 00:49:07.666
+<v Kyle Wilson>Put in day for us, yep.</v>
+
+00:49:09.586 --> 00:49:27.266
+<v Shashank Agarwal>Kyle, just one quick query, like in Dayforce, is it for all? So I'll go with Manuj on this Manuj, just do one thing, just have a check, like if you can see all the F2V engineers which are from ITBD on Dayforce, no? It's only after us, that's their own.</v>
+
+00:49:09.666 --> 00:49:10.386
+<v Manuj (Mark) Rattan>No problems.</v>
+
+00:49:15.506 --> 00:49:15.986
+<v Manuj (Mark) Rattan>Mhm.</v>
+
+00:49:23.826 --> 00:49:24.306
+<v Manuj (Mark) Rattan>No.</v>
+
+00:49:25.506 --> 00:49:26.066
+<v Manuj (Mark) Rattan>No.</v>
+
+00:49:26.146 --> 00:49:29.186
+<v Kyle Wilson>I just see the after hours team and the triage team.</v>
+
+00:49:30.146 --> 00:49:31.026
+<v Kyle Wilson>That's all I see.</v>
+
+00:49:31.586 --> 00:49:32.746
+<v Manuj (Mark) Rattan>Correct, and...</v>
+
+00:49:32.146 --> 00:49:32.706
+<v Shashank Agarwal>Okay.</v>
+
+00:49:33.506 --> 00:49:35.106
+<v Kyle Wilson>And the escalation team, but...</v>
+
+00:49:33.906 --> 00:49:39.426
+<v Manuj (Mark) Rattan>In Day Force, no one reports to me. It has not been set up that way.</v>
+
+00:49:37.386 --> 00:49:37.506
+<v Kyle Wilson>Yeah.</v>
+
+00:49:40.226 --> 00:49:56.546
+<v Shashank Agarwal>Okay, no, I just wanted to check because I see an inconsistency over here. Like after our team just put in their leaves and efforts, right, other people they might not be putting in. So just wanted to check if we have this.</v>
+
+00:49:55.586 --> 00:50:02.546
+<v Kyle Wilson>Yeah, everybody should be putting it in through day force, whether they're in an IST or after hours.</v>
+
+00:49:55.746 --> 00:49:56.226
+<v Manuj (Mark) Rattan>Oh.</v>
+
+00:49:59.626 --> 00:49:59.906
+<v Shashank Agarwal>Yeah.</v>
+
+00:50:03.506 --> 00:50:04.866
+<v Kyle Wilson>Everybody should be doing.</v>
+
+00:50:06.306 --> 00:50:06.706
+<v Manuj (Mark) Rattan>Okay.</v>
+
+00:50:07.666 --> 00:50:08.906
+<v Shashank Agarwal>Me and...</v>
+
+00:50:08.026 --> 00:50:21.106
+<v Kyle Wilson>So we have the initial emails where we go, hey, did the user request, hey, can I get this time off? Yep, cool, go put it in Dayforce. And then I can approve it. It helps us track it on our side.</v>
+
+00:50:22.546 --> 00:50:30.066
+<v Kyle Wilson>That's been an absolute nightmare to try and find the time off that they booked in Day Force, because it it touchy, but...</v>
+
+00:50:31.146 --> 00:50:33.506
+<v Kyle Wilson>As long as we recorded in there, then everything's good.</v>
+
+00:50:34.346 --> 00:50:34.706
+<v Manuj (Mark) Rattan>OK.</v>
+
+00:50:35.826 --> 00:50:36.466
+<v Manuj (Mark) Rattan>Makes sense.</v>
+
+00:50:38.066 --> 00:50:43.826
+<v Shashank Agarwal>Okay, so in day force you can only see after I see not any other tech.</v>
+
+00:50:43.986 --> 00:50:45.906
+<v Kyle Wilson>I can't see any of the ISD texts now.</v>
+
+00:50:46.866 --> 00:50:50.626
+<v Shashank Agarwal>Okay, great, thanks. I'll check with them one by one in that case.</v>
+
+00:50:52.386 --> 00:50:52.706
+<v Kyle Wilson>Pre.</v>
+
+00:50:53.586 --> 00:50:53.906
+<v Shashank Agarwal>Ohh.</v>
+
+00:50:53.666 --> 00:50:54.226
+<v Kyle Wilson>Awesome.</v>
+
+00:50:55.426 --> 00:50:56.066
+<v Shashank Agarwal>Thanks.</v>
+
+00:50:55.506 --> 00:50:58.866
+<v Kyle Wilson>Thank you very much. We will check you.</v>
+
+00:50:57.586 --> 00:50:58.066
+<v Manuj (Mark) Rattan>Kour.</v>
+
+00:50:57.586 --> 00:50:59.106
+<v Shashank Agarwal>Have a great day ahead, Khan.</v>
+
+00:50:59.666 --> 00:51:00.786
+<v Kyle Wilson>Yep, bye.</v>
+
+00:51:02.346 --> 00:51:02.786
+<v Manuj (Mark) Rattan>Thanks.</v>
+

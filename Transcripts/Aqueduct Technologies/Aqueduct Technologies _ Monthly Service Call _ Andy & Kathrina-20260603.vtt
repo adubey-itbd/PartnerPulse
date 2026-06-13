@@ -1,0 +1,899 @@
+WEBVTT
+NOTE title: Aqueduct Technologies | Monthly Service Call | Andy & Kathrina
+NOTE date: 2026-06-03
+NOTE duration: 33m 48s
+
+00:00:14.162 --> 00:00:14.962
+<v Mark Paolo Mangune>Hi, Manu.</v>
+
+00:00:15.362 --> 00:00:15.682
+<v Mark Paolo Mangune>He.</v>
+
+00:00:16.562 --> 00:00:17.122
+<v Manu Sharma>H.</v>
+
+00:00:19.202 --> 00:00:20.242
+<v Manu Sharma>Long time no see.</v>
+
+00:00:21.682 --> 00:00:22.482
+<v Mark Paolo Mangune>It's been a while.</v>
+
+00:00:23.682 --> 00:00:23.842
+<v Manu Sharma>PH.</v>
+
+00:03:10.734 --> 00:03:15.214
+<v Manu Sharma>Oh, Mark, if they don't join, we need to send an email after 5 minutes.</v>
+
+00:03:16.894 --> 00:03:22.654
+<v Mark Paolo Mangune>Yep, Michael sent a message earlier that he'll be joining, so...</v>
+
+00:03:23.294 --> 00:03:23.694
+<v Manu Sharma>Okay.</v>
+
+00:03:31.694 --> 00:03:32.334
+<v Michael R. Sheehan>Hi, everyone.</v>
+
+00:03:32.654 --> 00:03:34.574
+<v Mark Paolo Mangune>Hi, Michael, good day. How are you?</v>
+
+00:03:35.214 --> 00:03:36.494
+<v Michael R. Sheehan>I'm doing well, yourselves.</v>
+
+00:03:36.574 --> 00:03:43.614
+<v Mark Paolo Mangune>Thank you for asking. I'm good as well. So, how's everything going right now?</v>
+
+00:03:44.974 --> 00:04:06.294
+<v Michael R. Sheehan>Going well. So the, I wanted to make sure that I made this meeting because I'm going to, remember I said there's been a plan where I've been scaling up the service desk, trying to make sure that we get them to do X, Y, and Z. So I'm going to be, I'm going to be turning that, I'm going to be turning that dial up. So I'm going to be, I'm going to be having them do a bit more, especially with the escalation procedures. I'm going to be having them do more with</v>
+
+00:03:55.294 --> 00:03:55.774
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:03:59.294 --> 00:03:59.934
+<v Mark Paolo Mangune>Okay.</v>
+
+00:04:06.374 --> 00:04:21.214
+<v Michael R. Sheehan>the SLL configurations. I want to make sure that it's like, you know, just more of what they're doing. I may also have them start doing actually true level one support for end user services, back support, things along those lines. I.</v>
+
+00:04:15.334 --> 00:04:15.934
+<v Mark Paolo Mangune>Mm-hmm.</v>
+
+00:04:20.014 --> 00:04:37.574
+<v Mark Paolo Mangune>Yeah, I have some questions as well in regards to that later after I present their numbers or especially for Andy, because for Kat, I didn't add her up on the scorecards at the moment since it's her second month.</v>
+
+00:04:22.494 --> 00:04:22.894
+<v Michael R. Sheehan>Good.</v>
+
+00:04:38.014 --> 00:04:56.654
+<v Mark Paolo Mangune>But hopefully by next month, we're going to add her up in regards to the scorecard. So yeah, Michael, Manu will going to join us because unfortunately, Andrea is not in today. I think she called in sick earlier. So yeah, shall we start?</v>
+
+00:04:45.374 --> 00:04:45.694
+<v Michael R. Sheehan>Yep.</v>
+
+00:04:52.734 --> 00:04:53.294
+<v Michael R. Sheehan>That's fine.</v>
+
+00:04:57.374 --> 00:05:18.294
+<v Michael R. Sheehan>No, actually, no. So it's one of the things, one of the things you're going to find out is that when it comes to the scorecards and things along those lines, I waste of time with me. It's, it's, I'm already, I already know what tickets they're on. I already know what they're, what they're doing. It's, it's for me, this is more about a feedback session. This is more about have you got anything from Andy as well as what I need for the business. That's why nine times out of 10, I end up canceling.</v>
+
+00:05:05.934 --> 00:05:06.094
+<v Mark Paolo Mangune>Mm.</v>
+
+00:05:10.974 --> 00:05:11.134
+<v Mark Paolo Mangune>Mh.</v>
+
+00:05:18.494 --> 00:05:41.814
+<v Michael R. Sheehan>these meetings is because it's a matter of I'm like, okay, I get it. They're working on service reviews. I get it. They took X amount of tickets today. I get it, been here, done that. I've seen it with every other vendor. I don't need that data. I need that data when it starts going south. I need that data when KPIs aren't being met. I need that data when it's, you know, I need the data, but I can, you guys can always email it to me. You can always send it to me. You can always everything else.</v>
+
+00:05:19.454 --> 00:05:19.854
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:05:25.694 --> 00:05:25.854
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:05:26.894 --> 00:05:27.374
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:05:30.334 --> 00:05:30.654
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:05:42.094 --> 00:05:42.654
+<v Mark Paolo Mangune>Mmh.</v>
+
+00:05:42.574 --> 00:05:49.294
+<v Michael R. Sheehan>I'm not big on the dog and pony show of like, this is what we're doing with the executive. I'm like, no, it is a waste of my time.</v>
+
+00:05:49.614 --> 00:05:50.534
+<v Mark Paolo Mangune>Yeah, that's correct.</v>
+
+00:05:50.574 --> 00:06:09.654
+<v Michael R. Sheehan>What is what is not a waste of my time is us having a conversation of like, okay, let's start talking about like Andy taking more Mac calls. Let's talk about exactly how we want the how we want your individuals to be speaking with like end users. Let's talk about how we want to scale this up on where it is. I know Andy and Katrina have, they've got the room.</v>
+
+00:06:03.294 --> 00:06:03.774
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:06:09.934 --> 00:06:10.494
+<v Mark Paolo Mangune>Mmh.</v>
+
+00:06:10.174 --> 00:06:21.774
+<v Michael R. Sheehan>Right? We established this that I wasn't going to have your people just jump right in and just start taking tickets and start doing everything. I didn't want that because I knew it would be a problem. I had to figure out exactly to make sure that this model was going to work.</v>
+
+00:06:16.414 --> 00:06:17.014
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:06:22.454 --> 00:06:22.574
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:06:23.374 --> 00:06:37.134
+<v Michael R. Sheehan>All right, so now what I want to talk about is how do we get more? How do we end up getting add more numbers? How do we end up taking more tickets? I know they're only working in about 25% efficiency. I know that because I did that on purpose.</v>
+
+00:06:34.494 --> 00:06:35.534
+<v Mark Paolo Mangune>Correct. Yeah.</v>
+
+00:06:38.014 --> 00:06:56.454
+<v Mark Paolo Mangune>And Michael, just want to confirm something because I had a catch up with Andy a week ago. And I just want to confirm the billable and non-billable is not measured as long as the tickets has been handled, like all the tickets that they're handling, they're ensured that all time entries are there.</v>
+
+00:06:56.734 --> 00:07:00.654
+<v Mark Paolo Mangune>Like, regardless if it's billable or not billable.</v>
+
+00:06:57.214 --> 00:06:57.694
+<v Michael R. Sheehan>Mhm.</v>
+
+00:07:01.534 --> 00:07:02.014
+<v Michael R. Sheehan>Mhm.</v>
+
+00:07:02.494 --> 00:07:10.894
+<v Mark Paolo Mangune>And the only important thing, correct me if I'm wrong, is the response rate and the closure of tickets, as per Andy. I just want to confirm.</v>
+
+00:07:12.494 --> 00:07:30.974
+<v Michael R. Sheehan>The closure of tickets is not as important. It is a number I want to look at, but in my opinion, it's not a measuring stick, at least not yet. It's a KPI to look at from an intriguing standpoint from where I'm sitting, but it is not a, would I consider this successful based on closed tickets?</v>
+
+00:07:26.654 --> 00:07:27.134
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:07:31.094 --> 00:07:34.574
+<v Michael R. Sheehan>And the answer is no. It is.</v>
+
+00:07:35.854 --> 00:07:56.134
+<v Michael R. Sheehan>It is what I consider successful is do we have the metrics of them communicating appropriately with the individual crew, right? And the reason for that is, is that we're in a situation where Andy and Katrina could be escalating to 15 different people, right? Did they meet the escalation SLOs? Did they meet the communication patterns? Those are numbers I care about.</v>
+
+00:07:50.974 --> 00:07:51.534
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:07:57.614 --> 00:08:08.254
+<v Michael R. Sheehan>because the closure rate specifically may not be within their power. Like it's not on them to close these tickets. So if they do have the ability to close the tickets, fantastic.</v>
+
+00:08:04.654 --> 00:08:05.214
+<v Mark Paolo Mangune>That's right.</v>
+
+00:08:09.134 --> 00:08:29.934
+<v Michael R. Sheehan>What I want them to do is start looking at our SLOs and start looking at our SLAs and making sure that they're chasing after the appropriate people. I want them to take the time and actually start assigning tickets based on categories, or at least until I can get proper automation up and running to do it for us. These are things that, in other words, I need them to start doing more heavy lifting.</v>
+
+00:08:16.574 --> 00:08:17.054
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:08:25.614 --> 00:08:25.934
+<v Mark Paolo Mangune>Right.</v>
+
+00:08:30.334 --> 00:08:30.734
+<v Michael R. Sheehan>Right.</v>
+
+00:08:30.414 --> 00:08:30.614
+<v Mark Paolo Mangune>Mm.</v>
+
+00:08:31.814 --> 00:08:38.654
+<v Michael R. Sheehan>So that was always the plan. It was just a matter of when can we get to the point where we felt comfortable enough to do it. We're there.</v>
+
+00:08:39.694 --> 00:08:55.774
+<v Mark Paolo Mangune>Yeah, and Michael, I just want to give you an update because Andy mentioned to me that he had a knock training for authentication for operating a network like ICE deployment for MLS.</v>
+
+00:08:48.974 --> 00:08:49.374
+<v Michael R. Sheehan>Sunny.</v>
+
+00:08:54.254 --> 00:08:55.334
+<v Michael R. Sheehan>Yeah, yeah.</v>
+
+00:08:56.814 --> 00:08:57.294
+<v Michael R. Sheehan>Yep.</v>
+
+00:08:58.174 --> 00:09:04.894
+<v Mark Paolo Mangune>And is he the only one who's having this training or a cat as well?</v>
+
+00:09:05.454 --> 00:09:24.654
+<v Michael R. Sheehan>I don't know, I gotta run back on it. I wasn't exactly keen on him getting that training because that wasn't the original goal from my vision. So I don't have the full information on that. I'm still at the, why did he get it? So I think what ended up happening was that he was invited to an, whoever did, I'm.</v>
+
+00:09:13.694 --> 00:09:14.014
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:09:25.214 --> 00:09:34.854
+<v Michael R. Sheehan>99.99% certain. The reason why he got invited was because they didn't invite the individuals, they invited a notification group.</v>
+
+00:09:35.854 --> 00:09:39.574
+<v Michael R. Sheehan>And Andy was invited because he was in that notification group.</v>
+
+00:09:35.934 --> 00:09:36.494
+<v Mark Paolo Mangune>Okay.</v>
+
+00:09:40.814 --> 00:09:43.854
+<v Mark Paolo Mangune>Okay, which she wasn't supposed to be there.</v>
+
+00:09:41.454 --> 00:09:42.734
+<v Michael R. Sheehan>And, and I'm.</v>
+
+00:09:44.574 --> 00:10:02.974
+<v Michael R. Sheehan>Right, that's correct. He wasn't he wasn't supposed to be there. Andy was not supposed to be there. So this is this is where I go. OK, and this is this is me. I have to go to I have to go to individuals outside of my of my control. I just had a meeting about this with the owner of the company where I'm like.</v>
+
+00:09:48.894 --> 00:09:49.054
+<v Mark Paolo Mangune>Mm.</v>
+
+00:10:01.814 --> 00:10:02.294
+<v Mark Paolo Mangune>Mmh.</v>
+
+00:10:03.294 --> 00:10:12.414
+<v Michael R. Sheehan>You gotta stop using those notification groups to email invite to a training scenario. They're notification emails, not I need to get ahold of everybody.</v>
+
+00:10:08.574 --> 00:10:08.974
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:10:12.774 --> 00:10:13.254
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:10:13.854 --> 00:10:29.214
+<v Michael R. Sheehan>Right, so Andy went. And I'm like, he shouldn't have been there. So it's, that's one of those, yes, you're very confused. You should be. He wasn't supposed to be there and the invite was out of my control in the 1st place.</v>
+
+00:10:25.614 --> 00:10:26.094
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:10:30.574 --> 00:10:40.654
+<v Mark Paolo Mangune>Okay, and how about the senior technicians try to have a catch up with them like Rob and Aku doing catch-ups with Andy?</v>
+
+00:10:39.934 --> 00:10:40.254
+<v Michael R. Sheehan>Yeah.</v>
+
+00:10:41.294 --> 00:10:51.134
+<v Michael R. Sheehan>That's perfectly fine there, and I have no problem with the knock people doing the same thing. So, but the original role, the original senior people that they were supporting was Rob and Aku.</v>
+
+00:10:42.574 --> 00:10:43.094
+<v Mark Paolo Mangune>Okay.</v>
+
+00:10:52.214 --> 00:10:53.374
+<v Michael R. Sheehan>That's how this whole thing started.</v>
+
+00:10:55.054 --> 00:10:55.534
+<v Michael R. Sheehan>So...</v>
+
+00:10:55.054 --> 00:11:00.894
+<v Mark Paolo Mangune>So basically, all the knowledge transfer or the training should be coming from Rob and Aku.</v>
+
+00:11:01.774 --> 00:11:07.974
+<v Michael R. Sheehan>For end user services, there's also a whole another level of group of individuals that they're going to be speaking to over on the NOC.</v>
+
+00:11:03.294 --> 00:11:03.854
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:11:08.974 --> 00:11:27.734
+<v Michael R. Sheehan>See, Service Desk is going to be a shared resource. Service Desk is a shared resource. They're going to be a shared resource between end user services and Network Operations Center. And the primary role for them is going to be service delivery tickets, making sure that they're making first contact, assigning the tickets appropriately.</v>
+
+00:11:27.814 --> 00:11:45.254
+<v Michael R. Sheehan>I'm adding that as a purview, making sure that we meet SLOs and SLAs. That's already being done now at a certain level. And on where it can be level 1 troubleshooting with end user customers, on end user services. Sorry.</v>
+
+00:11:33.294 --> 00:11:33.574
+<v Mark Paolo Mangune>Mm.</v>
+
+00:11:35.414 --> 00:11:35.894
+<v Mark Paolo Mangune>Okay.</v>
+
+00:11:43.054 --> 00:11:43.814
+<v Mark Paolo Mangune>Which they can.</v>
+
+00:11:44.974 --> 00:11:50.694
+<v Mark Paolo Mangune>Yeah, which they can, which they can handle and close, close them out. OK, alright.</v>
+
+00:11:48.614 --> 00:11:49.774
+<v Michael R. Sheehan>Correct, correct.</v>
+
+00:11:51.574 --> 00:12:01.414
+<v Michael R. Sheehan>Right now, the trick with that is that one of the issues I keep tripping over this, but it's like, well, how come they're not doing it now? I go, the reason why they're not doing it now is because our documentation sucks something awful.</v>
+
+00:12:02.174 --> 00:12:02.654
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:12:02.374 --> 00:12:13.974
+<v Michael R. Sheehan>So it's all tribal knowledge. I need to get away from that. It is one of the things that has angered me greatly about my organization is that they're like, well, just write the docs. I'm like, Craig, when? I'm already working 60 hours a week.</v>
+
+00:12:16.254 --> 00:12:27.814
+<v Michael R. Sheehan>So it's this, I'm not kidding. From 1 P.m. Eastern to 2 P.m. Eastern, I had this very conversation with the owner of the company.</v>
+
+00:12:28.854 --> 00:12:37.374
+<v Mark Paolo Mangune>So last time we've talked, so last time we've talked, we don't have the stable, like the guidelines and processes, and up to this day, it's still the same.</v>
+
+00:12:29.174 --> 00:12:30.134
+<v Michael R. Sheehan>He brought me in.</v>
+
+00:12:38.054 --> 00:12:46.454
+<v Michael R. Sheehan>It's still the same because what ends up happening is the organization's transactional. This is also a very small org filling in very large boots.</v>
+
+00:12:38.974 --> 00:12:39.494
+<v Mark Paolo Mangune>Ashish.</v>
+
+00:12:47.334 --> 00:13:01.894
+<v Michael R. Sheehan>So, I don't allow new processes to be given to Andy or Katrina until I am satisfied that the documentation is correct, and it's only happened a few times. So, no, Manu, yes, sir.</v>
+
+00:12:58.454 --> 00:12:58.934
+<v Mark Paolo Mangune>Okay.</v>
+
+00:13:00.094 --> 00:13:01.014
+<v Mark Paolo Mangune>Clear, OK.</v>
+
+00:13:03.094 --> 00:13:21.414
+<v Manu Sharma>Yeah, thank you, Michael. I think we are speaking after a very long time. I don't even know if you remember when when you interviewed Andy and Jensen, we had a before that we had we had a small conversation. I don't normally come on these calls and Andy, Andrea does. She's on sick leave today, so I thought of.</v>
+
+00:13:21.094 --> 00:13:21.894
+<v Michael R. Sheehan>That's fine, I got that.</v>
+
+00:13:22.614 --> 00:13:41.134
+<v Manu Sharma>jumping on the call. And thank you for sharing the feedback, the honest feedback that you're not interested in looking at those decks and everything and you want to see the real results. And I understand, what I understand till now is that the utilization for Andy and Katrina is 25%.</v>
+
+00:13:41.614 --> 00:13:51.814
+<v Manu Sharma>And there is a reason of that is that you don't have the documentation and you, you're giving, you are giving giving them time to catch up, right? So, but...</v>
+
+00:13:50.294 --> 00:13:50.854
+<v Michael R. Sheehan>Yeah.</v>
+
+00:13:51.894 --> 00:14:12.774
+<v Michael R. Sheehan>One of the things, one side note, let me elaborate on that. If you go back and look at the numbers, you're going to see why are they not being used to their full extent? Yeah, that is by choice. We're doing that to ourselves. And it's because until we can internally make sure that these guidelines are appropriate, we're not going to let someone, because that, in my opinion, on a professional level, that's a setup to fail for you and that's not fair.</v>
+
+00:14:13.094 --> 00:14:13.574
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:14:13.934 --> 00:14:29.014
+<v Michael R. Sheehan>And then once you fail, everyone else on my team is going to fail because they have to do the extra workload. So I'm like, I'm like, I'm not going to finger point and set you up to fail and say, well, it's the service desk fault. I loathe that type of operation. So.</v>
+
+00:14:29.414 --> 00:14:50.054
+<v Manu Sharma>Yeah. And one of the USPs that we have, and Michael, we talked about it when we were talking about, you know, you getting engineers from us, is that you have Mark and you have Andrea, who are the dedicated TTLs and service delivery managers. And we also have a learning and development team here in the Philippines.</v>
+
+00:14:43.494 --> 00:14:43.654
+<v Michael R. Sheehan>Okay.</v>
+
+00:14:50.374 --> 00:15:10.214
+<v Manu Sharma>We have a trainer. I used to be a trainer once upon a time. So if you can help us with, you know, what needs to be done in next two, three weeks or a month, if it's training these two folks on something, you know, Microsoft 365 knocks.</v>
+
+00:15:08.134 --> 00:15:08.614
+<v Michael R. Sheehan>Mhm.</v>
+
+00:15:10.374 --> 00:15:29.934
+<v Manu Sharma>You tell us the training or the technology, and we will make sure that they get trained. That's one thing, because we want to make sure that, you know, when you're paying us, you're getting the value out of it. And the second is the documentation part. You mentioned that you spend like 16 hours or 60 hours a week. We want to help you there.</v>
+
+00:15:30.134 --> 00:15:43.094
+<v Manu Sharma>So any documentation that you want these two folks to do, and then Mark K is there to help as well, and Andrea is there. We have a team. We can do that for you.</v>
+
+00:15:44.294 --> 00:15:51.654
+<v Michael R. Sheehan>I appreciate it. Just so you know that our budget right now is pretty dry. So I just want to make sure that this is something that's already included in the services we're getting now.</v>
+
+00:15:52.054 --> 00:15:52.774
+<v Manu Sharma>Absolutely.</v>
+
+00:15:54.454 --> 00:15:55.014
+<v Michael R. Sheehan>Alright, bye.</v>
+
+00:15:56.694 --> 00:15:57.814
+<v Michael R. Sheehan>Let me get back to you on that.</v>
+
+00:15:58.214 --> 00:15:58.494
+<v Manu Sharma>Yeah.</v>
+
+00:15:59.494 --> 00:16:12.294
+<v Mark Paolo Mangune>Yeah, and I just want to confirm as well, Michael, last time we've talked, you mentioned that all of the guidelines for the processes that you guys have, the troubleshooting guidelines and everything,</v>
+
+00:16:14.854 --> 00:16:20.614
+<v Mark Paolo Mangune>That will be coming from your, from you or from the organization.</v>
+
+00:16:21.734 --> 00:16:35.734
+<v Mark Paolo Mangune>So is it okay if we're going to train them internally and then you can just implement the process that you guys wanted? As long as they have the exposure, like for example in Office 365 and other structures.</v>
+
+00:16:35.414 --> 00:16:55.214
+<v Michael R. Sheehan>Well, understand, right, that we're in an MSP for MSP operations scenario here, which means that, sure, I mean, if you guys want to start, I can give you a list of the things I want you to start learning, but it's got to be the standard stuff. And the reason I bring this up is because that's not the problem. The problem is our own customers implementing it in their own way.</v>
+
+00:16:40.294 --> 00:16:40.614
+<v Mark Paolo Mangune>Ohh.</v>
+
+00:16:48.334 --> 00:16:48.814
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:16:55.334 --> 00:16:55.894
+<v Michael R. Sheehan>*****.</v>
+
+00:16:56.854 --> 00:16:57.014
+<v Mark Paolo Mangune>Mm.</v>
+
+00:16:57.014 --> 00:17:06.934
+<v Michael R. Sheehan>Right, so it's the, well, this is how you run, you know, a Microsoft tenant. I'm like, yeah, cool, but customer A runs theirs different than customer B, and you need to know which is which.</v>
+
+00:17:08.614 --> 00:17:18.694
+<v Michael R. Sheehan>Right? It's the, well, this is how you patch a Meraki. Cool. Well, here's how you patch a Catalyst, you know, network device or a Nexus. And I go, yeah.</v>
+
+00:17:20.054 --> 00:17:24.534
+<v Michael R. Sheehan>But here are the rules that you have to abide by because customer A, customer B, and customer C are different.</v>
+
+00:17:25.134 --> 00:17:25.614
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:17:26.054 --> 00:17:44.214
+<v Manu Sharma>How we do it, Michael, customers or other partners is that we look at the top call drivers of the engineers that they are handling right now. And then you mentioned that you want them to do some heavy lifting. So if you can give us top call drivers, what kind of tickets do you want them to do?</v>
+
+00:17:26.214 --> 00:17:26.774
+<v Michael R. Sheehan>So...</v>
+
+00:17:44.454 --> 00:18:03.414
+<v Manu Sharma>to start picking up in next one week, two weeks, three weeks, a month or two months. Then we can start training them on those technologies. So for example, I'm just giving an example, onboarding or offboarding tickets, right? Or Mac tickets, or printer tickets, VPN tickets. I'm just giving an example.</v>
+
+00:17:47.734 --> 00:17:47.774
+<v Michael R. Sheehan>I.</v>
+
+00:18:03.814 --> 00:18:05.974
+<v Manu Sharma>Entra ID, Microsoft Intune.</v>
+
+00:18:04.454 --> 00:18:04.614
+<v Michael R. Sheehan>Mm.</v>
+
+00:18:07.454 --> 00:18:22.534
+<v Manu Sharma>Right, you want them to do a small project, right? Re-imaging of machines. These are a lot of some of the examples that I can give you so that we have a plan for them that they start.</v>
+
+00:18:23.734 --> 00:18:29.334
+<v Manu Sharma>picking those tickets from the queue based on those top call drivers.</v>
+
+00:18:29.654 --> 00:18:34.454
+<v Michael R. Sheehan>I'm not ignoring you, I write notes. So that's why I'm like, I'm listening to everything you were saying.</v>
+
+00:18:32.534 --> 00:18:34.454
+<v Manu Sharma>Hey, no, I can see that you're writing.</v>
+
+00:18:34.894 --> 00:18:35.334
+<v Mark Paolo Mangune>Listen.</v>
+
+00:18:39.174 --> 00:18:57.734
+<v Michael R. Sheehan>This is exceptionally helpful. So it is, let me, because this changes the way I was about to do things for the next two weeks. Let me think on this for a little bit. Like for example, right now off the bat, I definitely want Andy to be brought up to speed on enterprise level of tech support for a Mac.</v>
+
+00:18:58.294 --> 00:19:14.854
+<v Michael R. Sheehan>I need Mac support. I need somebody who's familiar with Mac platform. We've already run into an issue where somebody went down the wrong road because it was Macintosh. All right, so it was Apple. I need that now. Now the upside is I do believe he uses it on a personal level. So he's already part of the way there.</v>
+
+00:18:58.534 --> 00:18:58.694
+<v Manu Sharma>No.</v>
+
+00:19:02.734 --> 00:19:03.214
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:19:15.734 --> 00:19:19.014
+<v Manu Sharma>Yeah, we have a Mac in our office. We have a Mac.</v>
+
+00:19:17.974 --> 00:19:28.214
+<v Michael R. Sheehan>Yep, I need Mac support. I need Service Desk working with a customer, Mac support. I can get some of the other tools as far as remote and things along those lines.</v>
+
+00:19:32.094 --> 00:19:33.974
+<v Michael R. Sheehan>Are you teaching your people, Apple Business Manager?</v>
+
+00:19:36.214 --> 00:19:39.174
+<v Manu Sharma>Not as a part of the training, but yes, we can do that.</v>
+
+00:19:39.894 --> 00:20:01.174
+<v Michael R. Sheehan>All right, so that's one of the key things we're running into. However, the downside to Apple Business Manager is that it's not pleasant. It is Apple, Apple was forced to do it because of the amount of Macs that are in the enterprise world. They didn't want to do it because of the company culture. And it's like, no, you have to do this in order for us to get like MDMs and things along those lines to work.</v>
+
+00:20:01.814 --> 00:20:02.374
+<v Michael R. Sheehan>Um...</v>
+
+00:20:08.294 --> 00:20:18.294
+<v Michael R. Sheehan>This is literally the reason why I came to this call for this week. You'll see me cancel a lot of them. It's like, nope, I got things to talk about. So it's...</v>
+
+00:20:14.774 --> 00:20:15.174
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:20:17.494 --> 00:20:20.294
+<v Manu Sharma>I wish I could have come on this call earlier.</v>
+
+00:20:20.854 --> 00:20:21.014
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:20:21.094 --> 00:20:41.334
+<v Michael R. Sheehan>No, no, no, it's fine. It's fine. Don't worry about it. When I need to talk, that's when I show up, when I have questions, and that's, if it's the dog and pony show of the slide show, I'm like, look, we all know I'm not using them to full capacity. This is by design. I'm not blaming anyone but me. So it's now the cool part is, is those I literally had this.</v>
+
+00:20:34.774 --> 00:20:35.254
+<v Manu Sharma>Mhm.</v>
+
+00:20:41.374 --> 00:20:49.614
+<v Michael R. Sheehan>I had this discussion. It wasn't a fight, it wasn't anything else. The owner of the company was like, why haven't you done this? And I said, because I don't want them to fail. We need this to work.</v>
+
+00:20:49.814 --> 00:20:50.294
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:20:50.214 --> 00:20:50.534
+<v Manu Sharma>Ohh.</v>
+
+00:20:50.574 --> 00:20:51.894
+<v Michael R. Sheehan>And I go in our own.</v>
+
+00:20:55.334 --> 00:20:58.534
+<v Michael R. Sheehan>Or operations internally is why things are failing.</v>
+
+00:20:59.094 --> 00:20:59.334
+<v Mark Paolo Mangune>The.</v>
+
+00:20:59.574 --> 00:21:05.734
+<v Michael R. Sheehan>So yeah, you go into an owner of a business and tell them why shit's not working because it's the way they built the company.</v>
+
+00:21:06.694 --> 00:21:11.254
+<v Manu Sharma>Yeah, I report to the owner of the company. He's my boss.</v>
+
+00:21:07.014 --> 00:21:07.214
+<v Mark Paolo Mangune>Okay.</v>
+
+00:21:09.774 --> 00:21:10.054
+<v Michael R. Sheehan>Yeah.</v>
+
+00:21:10.694 --> 00:21:10.814
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:21:10.934 --> 00:21:25.174
+<v Michael R. Sheehan>So it's yeah, so, but to be fair, this is also one of the reasons why I'm here. This is what I do for a living. It's I go in, I don't go to places that are working properly. I go to places that are being challenged. So it's.</v>
+
+00:21:18.494 --> 00:21:18.614
+<v Manu Sharma>Yeah.</v>
+
+00:21:26.054 --> 00:21:26.454
+<v Michael R. Sheehan>But.</v>
+
+00:21:42.694 --> 00:21:43.334
+<v Michael R. Sheehan>Figure it out.</v>
+
+00:21:43.374 --> 00:21:43.894
+<v Manu Sharma>Just.</v>
+
+00:21:46.054 --> 00:21:46.454
+<v Michael R. Sheehan>Yep.</v>
+
+00:21:46.054 --> 00:21:48.454
+<v Manu Sharma>That's it, so...</v>
+
+00:21:48.214 --> 00:21:49.014
+<v Michael R. Sheehan>Yep, it's...</v>
+
+00:21:50.054 --> 00:22:03.094
+<v Michael R. Sheehan>Yep, I go to places where it's like for years, my wife was like, you are not allowed to complain about your job anymore. And I'm like, why not? And she goes, because you don't get hired by places that are working. You get hired by places that are broken.</v>
+
+00:22:04.294 --> 00:22:04.454
+<v Mark Paolo Mangune>Mm.</v>
+
+00:22:04.534 --> 00:22:05.494
+<v Michael R. Sheehan>And I'm like.</v>
+
+00:22:06.934 --> 00:22:16.534
+<v Michael R. Sheehan>There. It's, yeah. So this is, but that's, I'm good at it. And as you pointed out, it's like, well, it's broken. I'm like, I'll figure it out.</v>
+
+00:22:09.054 --> 00:22:09.454
+<v Manu Sharma>Okay.</v>
+
+00:22:17.574 --> 00:22:37.294
+<v Michael R. Sheehan>You know, I'm one of those guys where I forced myself through the, I forced myself through the entire onboarding process. Like when I came on board, they're like, okay, we're going to skip all this. We're going to do this just so you can get hit the ground running. I'm like, well, me hitting the ground running is going through your onboarding process, right? And I was like, well, this is broken right off the bat. You know, it's a little thing. So I've been able to repair that.</v>
+
+00:22:37.414 --> 00:22:41.574
+<v Michael R. Sheehan>I, you know, how we're accessing our client's sites, how you know.</v>
+
+00:22:42.934 --> 00:22:52.934
+<v Michael R. Sheehan>how tribal information is not getting out of people's heads, things along those lines. So this is going to be me over the next couple of weeks really hammering down on this.</v>
+
+00:22:56.774 --> 00:23:14.094
+<v Michael R. Sheehan>I'm going to be empowering Andy and Katrina to start micromanaging the very people that they're supporting, which is kind of what I wanted in the beginning. That was always my vision, where it's like, wait a minute, are they telling people further up the chain what to do? And I go, yeah.</v>
+
+00:23:15.494 --> 00:23:16.694
+<v Michael R. Sheehan>That was the point.</v>
+
+00:23:17.894 --> 00:23:42.494
+<v Michael R. Sheehan>So I have been given the authority to be like, no one's holding you back, get it done. And I'm like, okay. I said, I'm going to be on today's meeting. So that's how this is going to work. More SLOs, more of them going, you're dropping the ball on this, more of what we can do. Katrina has been very busy on the weekend. So that's actually turning out the way that I</v>
+
+00:23:42.574 --> 00:24:01.814
+<v Michael R. Sheehan>I expected it to be. Some of the training between the two of them is going to be a little bit different because I'm going to want Katrina to do certain things in a certain way on the weekends. I've already gotten the feedback on that. The feedback I've gotten about the individuals about her already, it's pretty much in line of what I expected. There were no surprises there. So that's a compliment.</v>
+
+00:24:01.854 --> 00:24:04.414
+<v Michael R. Sheehan>Take it as is, and the...</v>
+
+00:24:06.094 --> 00:24:11.494
+<v Michael R. Sheehan>A lot of the complaining that's happening on my end is because, well, we found holes in our processes.</v>
+
+00:24:12.774 --> 00:24:22.774
+<v Michael R. Sheehan>You know, and this is, this is, they're like, well, they're not doing this. You know, the feedback is, Andy and Katrina's not doing this. I went, no, they're doing it exactly the way he wrote it, which means it's broken.</v>
+
+00:24:23.814 --> 00:24:24.134
+<v Manu Sharma>Yeah.</v>
+
+00:24:25.174 --> 00:24:44.294
+<v Michael R. Sheehan>Right? So it's, you know, so I hope that they're not getting frustrated. They need to be reminded that it was broken before they got here. It's, they're just, I just need to make sure that they, when they're confused, it gets to me because I need to know that because I know for a fact, I'm like, yeah, this is *** ****. I got to fix this.</v>
+
+00:24:35.574 --> 00:24:36.054
+<v Mark Paolo Mangune>Is.</v>
+
+00:24:45.734 --> 00:24:46.454
+<v Michael R. Sheehan>So.</v>
+
+00:24:47.974 --> 00:24:51.014
+<v Michael R. Sheehan>You have, you've done something very well here. You've given me something to think about.</v>
+
+00:24:52.454 --> 00:24:52.934
+<v Manu Sharma>Yes.</v>
+
+00:24:52.534 --> 00:24:54.054
+<v Michael R. Sheehan>on exactly how we can get this done.</v>
+
+00:24:55.214 --> 00:24:56.614
+<v Michael R. Sheehan>Including the documentation.</v>
+
+00:24:59.094 --> 00:25:17.334
+<v Manu Sharma>Yes, so we will figure it out. Michael, just tell us what do you want us to do, right? Because I'll tell you why. We have been an MSP for 15 years. And then we're not an MSP anymore. We stopped that business three, four years back.</v>
+
+00:25:05.734 --> 00:25:06.134
+<v Michael R. Sheehan>Let me.</v>
+
+00:25:10.774 --> 00:25:11.254
+<v Michael R. Sheehan>Mhm.</v>
+
+00:25:17.734 --> 00:25:36.294
+<v Manu Sharma>But being an MSP for 15 years has given us that operational maturity and we know the pain points of the MSPs. So we are not just a staffing company. I just want to let you know that. We are there to support you. You want help with the documentation.</v>
+
+00:25:27.334 --> 00:25:27.814
+<v Michael R. Sheehan>OK.</v>
+
+00:25:36.614 --> 00:25:55.734
+<v Manu Sharma>you want these guys to be trained on like you give an example of Mac. You just tell us, give us the top call drivers, tell us what kind of tickets do you want them to start picking up from the queue or start working on. We will create a training plan for them and then we'll take it from there.</v>
+
+00:25:56.774 --> 00:26:16.454
+<v Michael R. Sheehan>I've been down this road before with another managed services organization, not in the traditional sense. They did, that was with Ziffo out of India, where they all do lab services and lab managed services and IT within a laboratory, within a sealed laboratory environment. But they have a very similar model.</v>
+
+00:26:16.494 --> 00:26:31.894
+<v Michael R. Sheehan>Like, okay, your documentation for your Hamilton 5600 is not working right. Shoot it our way, we'll fix up the docs because we already have the originals from Hamilton themselves. Right? So I wasn't aware that you had a similar model.</v>
+
+00:26:33.734 --> 00:26:34.854
+<v Manu Sharma>Yes, we have.</v>
+
+00:26:37.254 --> 00:26:45.574
+<v Michael R. Sheehan>Yeah, let me get back to you. Then the only other thing that I want to point out is that this organization, this is, I always repeat this, as of right now,</v>
+
+00:26:47.334 --> 00:27:06.374
+<v Michael R. Sheehan>We're not a Teams, we're not a Microsoft Teams organization. This organization has made a lot of money on WebEx. They're a very Cisco set culture. The original organization started off as a third party reseller and managed service provider and business partner of Cisco. So it's Cisco, Cisco, Cisco, Cisco.</v>
+
+00:26:58.014 --> 00:26:58.494
+<v Manu Sharma>Mhm.</v>
+
+00:27:06.774 --> 00:27:14.214
+<v Michael R. Sheehan>So just do me a favor. If you need to get in contact with me, do not rely on Microsoft Teams through the Teams itself, at least not as of today.</v>
+
+00:27:17.254 --> 00:27:33.094
+<v Michael R. Sheehan>Okay, there's a growing coup of all us new people going, can we use Microsoft Teams, please, now? Can we? Can we? Can we? So it's email me, please. Email me and the contacts, everything else. That's the easiest way to get out. That's the best way to get ahold of me as of right now.</v>
+
+00:27:34.254 --> 00:27:35.254
+<v Michael R. Sheehan>So I just want to make sure of that.</v>
+
+00:27:34.454 --> 00:27:34.574
+<v Manu Sharma>Yeah.</v>
+
+00:27:36.294 --> 00:27:36.694
+<v Manu Sharma>Yeah.</v>
+
+00:27:40.454 --> 00:27:48.694
+<v Michael R. Sheehan>I am going to think on this and I need a little time. Give me a couple days to think on this. I'd like to circle back on some of this information before the end of the week though, okay?</v>
+
+00:27:45.574 --> 00:27:45.894
+<v Mark Paolo Mangune>Yep.</v>
+
+00:27:49.254 --> 00:27:50.054
+<v Manu Sharma>Yeah, sure.</v>
+
+00:27:50.694 --> 00:27:52.054
+<v Michael R. Sheehan>Let's schedule something for Friday.</v>
+
+00:27:50.854 --> 00:27:59.774
+<v Mark Paolo Mangune>Yeah, take time to, yeah, take time to thank Michael, and then if you have the list, you can just email it to us, and from there we can discuss it further.</v>
+
+00:28:00.374 --> 00:28:10.854
+<v Michael R. Sheehan>All right, as of right now, with it being recorded with the transcription on though, please get Andy started on whatever training is necessary for Enterprise Mac Support.</v>
+
+00:28:11.734 --> 00:28:12.214
+<v Mark Paolo Mangune>Okay.</v>
+
+00:28:12.814 --> 00:28:31.334
+<v Michael R. Sheehan>All right, as far as I know, everyone we're going to be involved in is going to be on a MacBook. I don't think any of our customers are on IMAX. I think it's all MacBooks. There may be a Mac Pro every now and then, but I doubt it it's going to be a MacBook Pro or something like that.</v>
+
+00:28:13.414 --> 00:28:14.294
+<v Mark Paolo Mangune>Well, technically.</v>
+
+00:28:32.294 --> 00:28:53.294
+<v Michael R. Sheehan>I'm actually having a discussion with the ownership here to get like two or three of the nanos in. So the brand new tiny little apple, I don't need it for performance. I need it for the operating system. Like Apple's made it even harder to virtualize that gear. So it's like, like it was hard before, now it's damn near impossible. So it's, I'm doing the same thing with my own people internally.</v>
+
+00:28:46.774 --> 00:28:47.254
+<v Mark Paolo Mangune>Mmh.</v>
+
+00:28:53.414 --> 00:29:08.054
+<v Michael R. Sheehan>So yeah, that's for me, that's the marching orders right now. This minute is circle back on Friday because I'm going to have some thoughts. I'm really going to think about this. Thank you for that. That really is a, that's a good thing for me. I enjoy that. And get Andy up.</v>
+
+00:29:09.574 --> 00:29:24.134
+<v Michael R. Sheehan>get Andy going on Mac. I may have Katrina, but I got to go back over the tickets to see whether or not they're coming in on the weekends. But I may have her do it as well, but I don't have the answer for you. Give me some time on that, please. All right.</v>
+
+00:29:23.454 --> 00:29:23.814
+<v Mark Paolo Mangune>Sure.</v>
+
+00:29:23.734 --> 00:29:32.934
+<v Manu Sharma>Yeah, sure. We can schedule something on Friday, as you mentioned. So if you can give us time for Friday and then we can book your calendar.</v>
+
+00:29:25.574 --> 00:29:26.294
+<v Michael R. Sheehan>All right, cool.</v>
+
+00:29:32.214 --> 00:29:32.614
+<v Michael R. Sheehan>Yep.</v>
+
+00:29:38.214 --> 00:29:38.294
+<v Michael R. Sheehan>Ahh.</v>
+
+00:29:40.214 --> 00:29:42.694
+<v Michael R. Sheehan>Anytime after 1 P.m. Eastern.</v>
+
+00:29:44.294 --> 00:29:45.494
+<v Manu Sharma>Okay, how about 3?</v>
+
+00:29:44.454 --> 00:29:45.014
+<v Mark Paolo Mangune>Okay.</v>
+
+00:29:46.694 --> 00:29:49.094
+<v Michael R. Sheehan>3 P.m. Eastern? Fine. Perfect.</v>
+
+00:29:48.374 --> 00:30:01.734
+<v Manu Sharma>Yeah, okay. So Marky is going to book the calendar for you and then I'll be there on the call. I'll keep joining these calls because so that we are on the same page.</v>
+
+00:30:02.214 --> 00:30:19.574
+<v Michael R. Sheehan>That one, I'm going to ask you to bring some of the slides of the training. That I want to see some, in that particular case, I do want to see some slide decks. I do want to see some presentation. Bring some, you know, I call it the salesy dog and pony show, but bring me something to look at for me to go, okay,</v>
+
+00:30:19.814 --> 00:30:22.054
+<v Michael R. Sheehan>You can train your people exactly how does this look like?</v>
+
+00:30:23.174 --> 00:30:41.934
+<v Michael R. Sheehan>All right, and feel free to make it standardized, right? So it's like, as well as examples, like, okay, we can do this with Microsoft and Trada, we can do this with this, we can do this with this, we can do this with this, right? Because what we're getting at here is that if we had your people trained, then I would have to make major changes to the processes here in order to leverage that.</v>
+
+00:30:33.654 --> 00:30:33.894
+<v Manu Sharma>Yeah.</v>
+
+00:30:42.214 --> 00:30:49.734
+<v Michael R. Sheehan>which I'm fine with. I just need to make sure of what the new processes should look like, because that's what's killing me here in the 1st place.</v>
+
+00:30:50.694 --> 00:30:51.254
+<v Mark Paolo Mangune>Mmh.</v>
+
+00:30:52.654 --> 00:31:00.854
+<v Manu Sharma>Yeah, so you mentioned Mac, Michael, and now Mac is pretty vast as an operating system, so...</v>
+
+00:30:58.614 --> 00:31:06.774
+<v Michael R. Sheehan>Yeah, it, it, it's I, I that one, I need Andy to be hitting the ground running on that one as soon as possible, because there is a very specific reason for it.</v>
+
+00:31:07.494 --> 00:31:14.374
+<v Manu Sharma>Yeah, but do you have any call drivers for Mac that we can start with so that we are, you know, actually get the...</v>
+
+00:31:13.974 --> 00:31:16.214
+<v Michael R. Sheehan>End user support. End user support.</v>
+
+00:31:15.894 --> 00:31:18.294
+<v Manu Sharma>Okay, okay, sure.</v>
+
+00:31:16.774 --> 00:31:17.334
+<v Mark Paolo Mangune>Okay.</v>
+
+00:31:17.414 --> 00:31:27.574
+<v Michael R. Sheehan>Right? Password resets, software updates, software installations, pure end user support.</v>
+
+00:31:28.454 --> 00:31:28.854
+<v Manu Sharma>Okay.</v>
+
+00:31:29.334 --> 00:31:37.654
+<v Michael R. Sheehan>Now, as far as onboarding with a Mac and getting like Business Manager and things along those lines, let me get back to you on that between now and Friday.</v>
+
+00:31:39.094 --> 00:31:39.494
+<v Mark Paolo Mangune>All right.</v>
+
+00:31:39.094 --> 00:31:44.294
+<v Manu Sharma>Yeah, we'll have something for you when we when we are on that call on Friday.</v>
+
+00:31:44.934 --> 00:31:45.894
+<v Michael R. Sheehan>Alright, I appreciate it.</v>
+
+00:31:46.494 --> 00:31:46.654
+<v Manu Sharma>Yeah.</v>
+
+00:31:46.694 --> 00:31:57.134
+<v Mark Paolo Mangune>Okay, and Michael, before anything else, Andrea asked me to ask you for the QBR schedule. Do you want us to reschedule that?</v>
+
+00:31:50.694 --> 00:31:50.854
+<v Michael R. Sheehan>Yeah.</v>
+
+00:31:55.334 --> 00:32:04.854
+<v Michael R. Sheehan>Yes, yes, yes, yes, yes, yes, I kept rescheduling the QBR, because now we're getting into the into the second QBR, kind of.</v>
+
+00:32:04.134 --> 00:32:04.694
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:32:10.774 --> 00:32:13.494
+<v Michael R. Sheehan>Can I make the crack joke say wait till June? Oh wait.</v>
+
+00:32:14.534 --> 00:32:15.254
+<v Michael R. Sheehan>Um...</v>
+
+00:32:18.294 --> 00:32:21.254
+<v Michael R. Sheehan>Because I asked for it, so that's why I'm like...</v>
+
+00:32:21.854 --> 00:32:21.974
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:32:35.094 --> 00:32:38.534
+<v Michael R. Sheehan>Wednesday the 10th at 11am, but I may change that.</v>
+
+00:32:39.334 --> 00:32:39.894
+<v Mark Paolo Mangune>Okay.</v>
+
+00:32:40.374 --> 00:32:47.654
+<v Michael R. Sheehan>I keep thinking I got something going down on the 10th, but I don't know, like it's completely wide open and I'm like, why? Did I block something for another reason?</v>
+
+00:32:50.454 --> 00:32:52.054
+<v Mark Paolo Mangune>All right, I'm just gonna take one of that.</v>
+
+00:32:50.614 --> 00:33:01.254
+<v Michael R. Sheehan>My whole personal life is falling apart too, so I'm trying to balance personal with business and blah, blah, blah, blah, blah. I swear to God, I'm learning AI. I'm learning a genic AI just to run my own damn life. It's.</v>
+
+00:33:00.974 --> 00:33:01.334
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:33:04.214 --> 00:33:04.934
+<v Michael R. Sheehan>Yeah.</v>
+
+00:33:06.374 --> 00:33:11.494
+<v Michael R. Sheehan>June 10th, 11 A.m. Eastern. Let's aim for that for the QBR.</v>
+
+00:33:12.134 --> 00:33:14.214
+<v Mark Paolo Mangune>Okay, I'll take note of that. Thank you.</v>
+
+00:33:14.814 --> 00:33:15.494
+<v Michael R. Sheehan>All right, appreciate it.</v>
+
+00:33:16.374 --> 00:33:17.734
+<v Mark Paolo Mangune>Alright, so.</v>
+
+00:33:18.774 --> 00:33:27.894
+<v Mark Paolo Mangune>I think we're just gonna see you on Friday for us to continue this and shortlist the things that you want us to, you know, train Andy for.</v>
+
+00:33:28.734 --> 00:33:28.934
+<v Michael R. Sheehan>Yeah.</v>
+
+00:33:29.734 --> 00:33:30.294
+<v Mark Paolo Mangune>Okay.</v>
+
+00:33:31.174 --> 00:33:39.014
+<v Michael R. Sheehan>Yes, and we'll talk about Andy and Katrina on Friday, as well as some of the examples of where we can help, including the documentation. I, you've given me something to think about.</v>
+
+00:33:39.814 --> 00:33:40.454
+<v Manu Sharma>Yeah, sure.</v>
+
+00:33:40.294 --> 00:33:40.694
+<v Mark Paolo Mangune>TA.</v>
+
+00:33:41.494 --> 00:33:41.974
+<v Michael R. Sheehan>All right.</v>
+
+00:33:42.774 --> 00:33:44.774
+<v Michael R. Sheehan>Thank you very much, gentlemen. We'll talk soon.</v>
+
+00:33:42.894 --> 00:33:43.254
+<v Mark Paolo Mangune>All right.</v>
+
+00:33:44.454 --> 00:33:46.614
+<v Mark Paolo Mangune>Thank you so much, Michael. Have a great day.</v>
+
+00:33:46.454 --> 00:33:47.814
+<v Michael R. Sheehan>Thank you. Bye.</v>
+
+00:33:47.254 --> 00:33:48.214
+<v Manu Sharma>Thanks, Michael. Bye.</v>
+
+00:33:47.894 --> 00:33:48.374
+<v Mark Paolo Mangune>Alright.</v>
+

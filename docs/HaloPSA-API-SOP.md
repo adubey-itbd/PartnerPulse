@@ -314,6 +314,25 @@ on this in `halo.find_service_tickets`; the sync UI reports the step failed.)
 
 ---
 
+## ⚠️ Addendum — service-ticket `dateoccurred` ≠ actual call date (2026-06-13 session)
+
+For **recurring / bi-weekly service-review tickets**, the ticket's `dateoccurred` is set
+at creation and does **not** track the actual meeting; the real call date is the
+**`datetime` of the meeting-note action** added later. Verified on Logically ticket
+`0755301`: `dateoccurred = 2026-05-27` but the meeting-note action `datetime = 2026-06-12`
+(the real call). **Take the call date from the latest matching action's `datetime`, not
+from the ticket's `dateoccurred`.** The pipeline previously used `dateoccurred`, which
+pinned "last call" to the ticket-creation date for every recurring-ticket partner (fixed
+in `extract/build_partner.py` + `scripts/build_real_partners.py`).
+
+Also confirmed this session: `GET /api/Tickets?client_id={id}&search=Service Call` returns
+rows **newest-first by default** (the newest service ticket is row 0), so the `page_size=5`
+cap does capture the most recent calls — the missing-call symptom was the `dateoccurred`
+mis-dating above, not the cap. An explicit `order=dateoccurred&orderdesc=true` is available
+if a strict guarantee is ever needed.
+
+---
+
 ## Data Inventory (reachable endpoints)
 
 Counts as of 2026-06-06 on the ITBD tenant. "—" = count not reported by the API

@@ -1,0 +1,959 @@
+WEBVTT
+NOTE title: Ryan Creek Technology | Weekly Service Call
+NOTE date: 2026-06-05
+NOTE duration: 27m 21s
+
+00:00:19.080 --> 00:00:19.600
+<v Candace Mancone>Hello!</v>
+
+00:00:19.200 --> 00:00:21.840
+<v Andrea Canlas>Hi, Candace. Hello.</v>
+
+00:00:20.640 --> 00:00:23.200
+<v Mark Paolo Mangune>Hi, Candice! Happy Friday!</v>
+
+00:00:20.800 --> 00:00:21.680
+<v Candace Mancone>How are you?</v>
+
+00:00:23.400 --> 00:00:23.520
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:00:23.440 --> 00:00:24.400
+<v Candace Mancone>Happy Friday!</v>
+
+00:00:25.760 --> 00:00:26.160
+<v Mark Paolo Mangune>Are you?</v>
+
+00:00:27.120 --> 00:00:32.560
+<v Candace Mancone>I am, I'll be better once I can get this one MFA to work properly.</v>
+
+00:00:33.080 --> 00:00:33.200
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:00:39.074 --> 00:00:39.634
+<v Mark Paolo Mangune>Pretty good.</v>
+
+00:00:40.994 --> 00:00:41.474
+<v Andrea Canlas>Not me.</v>
+
+00:00:41.074 --> 00:00:42.114
+<v Mark Paolo Mangune>Not sure with Andrea.</v>
+
+00:00:42.754 --> 00:00:43.074
+<v Candace Mancone>It.</v>
+
+00:00:44.274 --> 00:00:49.914
+<v Andrea Canlas>Yeah, I was out of tech for like the past few days, so not good. It's fine.</v>
+
+00:00:49.554 --> 00:00:50.914
+<v Candace Mancone>It's been going around.</v>
+
+00:00:51.754 --> 00:00:55.434
+<v Andrea Canlas>Yeah, it is. I think it's the weather for some reason, maybe.</v>
+
+00:00:55.194 --> 00:00:55.714
+<v Candace Mancone>Mhm.</v>
+
+00:00:56.474 --> 00:00:56.594
+<v Mark Paolo Mangune>He.</v>
+
+00:00:56.714 --> 00:00:58.394
+<v Andrea Canlas>Good, yeah, I'm good.</v>
+
+00:01:01.794 --> 00:01:03.474
+<v Mark Paolo Mangune>All right, so shall we start?</v>
+
+00:01:04.434 --> 00:01:05.954
+<v Candace Mancone>Absolutely, ready when you guys are.</v>
+
+00:01:04.834 --> 00:01:05.154
+<v Andrea Canlas>Yeah.</v>
+
+00:01:06.354 --> 00:01:08.434
+<v Mark Paolo Mangune>Okay, I'm just going to share my screen.</v>
+
+00:01:11.674 --> 00:01:22.434
+<v Mark Paolo Mangune>All right, so this is a feedback session again for Jericho. So that's going to be for week 2 to 4, just to wrap it up for this month. So.</v>
+
+00:01:24.274 --> 00:01:40.034
+<v Mark Paolo Mangune>Agenda, again, check-ins, highlights, action tracker, performance analysis, way forward, and recap. So before we start, Candice, I just want to ask, is there any updates or anything that we need to know for us to cascade it to the team here?</v>
+
+00:01:41.874 --> 00:02:00.114
+<v Candace Mancone>No, I think all is well. You know, he's still learning, but he's still also being proactive and isn't afraid to kind of dive in. He communicates well. I will say that we have, we've implemented kind of begin of week and end of week.</v>
+
+00:02:01.474 --> 00:02:20.274
+<v Candace Mancone>team meetings with the owner, sales, like everyone, kind of like almost like a town hall, but it's very, it's just kind of specific with us on this side. And then we do some others to kind of start the weekend and then end the week. He's been a little quiet in those meetings, but that always, it just takes time and he's still learning. And</v>
+
+00:02:07.514 --> 00:02:08.034
+<v Mark Paolo Mangune>Mmh.</v>
+
+00:02:20.594 --> 00:02:31.554
+<v Candace Mancone>the systems and, you know, training. So I don't expect a whole lot from him kind of in those. But I would say all in all, he's handling himself well and handling his tickets well.</v>
+
+00:02:32.754 --> 00:02:50.994
+<v Mark Paolo Mangune>That's great. I think he's a shy type guy. So I think he's gonna he's gonna use to how things work here in the organization. So hopefully after a few months, you're gonna participate or at least talk or respond to the things that you guys are.</v>
+
+00:02:52.274 --> 00:02:53.394
+<v Mark Paolo Mangune>Talking about so.</v>
+
+00:02:54.274 --> 00:03:12.514
+<v Candace Mancone>Yeah, I will say if he's asked, you know, a direct question, if there's something that I know he was specifically working on, he responds clearly and he articulates himself very well. It's kind of just that follow up. Does anyone have anything else, anything we may have missed or something you're working on or you've noticed?</v>
+
+00:03:12.994 --> 00:03:26.954
+<v Candace Mancone>that he hasn't really kind of stepped up just yet as far as those kind of end of meeting questions. But yeah, if he's if he's directly asked about something he's been involved in, he's he articulates well. He's very he's communicative.</v>
+
+00:03:18.994 --> 00:03:19.154
+<v Mark Paolo Mangune>Mm.</v>
+
+00:03:26.194 --> 00:03:26.674
+<v Mark Paolo Mangune>Okay.</v>
+
+00:03:27.794 --> 00:03:48.514
+<v Mark Paolo Mangune>That's nice. All right, thanks so much for that. So let's move on. So highlights, observation first. Angela has noted that Jericho onboarding has freed her capacity to take on more complex tickets, reflecting early integration success, which is great. It regards the performance within his first week.</v>
+
+00:03:44.754 --> 00:03:45.234
+<v Candace Mancone>Mhm.</v>
+
+00:03:48.554 --> 00:04:07.514
+<v Mark Paolo Mangune>Jerome has proactively taken ownership of alerts, backups, and patching responsibilities previously handled by Angela, demonstrating strong initiative and a smooth transition. So I think we have some capacities for Angela that you can like.</v>
+
+00:03:57.794 --> 00:03:57.994
+<v Candace Mancone>No.</v>
+
+00:04:07.794 --> 00:04:19.954
+<v Mark Paolo Mangune>assign much more complex tickets or because I've talked to her earlier and she's doing off-boarding tickets. Correct me if I'm wrong. Okay. All right.</v>
+
+00:04:10.594 --> 00:04:11.074
+<v Candace Mancone>Aman.</v>
+
+00:04:16.634 --> 00:04:35.234
+<v Candace Mancone>She has been, yes. Yes. And now starting, we've ordered the equipment as of today, so probably mid next week. And then most of the following week, she will be onboarding, which I think will be a little bit more of a deeper dive in opposed to just passing off information. She's going to</v>
+
+00:04:30.274 --> 00:04:30.434
+<v Mark Paolo Mangune>Mm.</v>
+
+00:04:35.594 --> 00:04:42.994
+<v Candace Mancone>have more of a hands-on, so she's going to be onboarding in the next, I'd say, week, week and a half, a new client. So that's.</v>
+
+00:04:45.074 --> 00:04:49.794
+<v Candace Mancone>See how that plays out. It's gonna be interesting. Let her, let her, let her get her hands dirty.</v>
+
+00:04:46.754 --> 00:05:04.794
+<v Mark Paolo Mangune>Yeah, so for the most, yeah, okay, and in regards to monitoring, in addition to the existing auto task gauge that I created for Jericho, I've also added Jericho to the real-time spreadsheet tracker that I've that I have here, so that...</v>
+
+00:05:04.434 --> 00:05:04.674
+<v Candace Mancone>Yeah.</v>
+
+00:05:05.474 --> 00:05:27.594
+<v Mark Paolo Mangune>for me to ensure full visibility on his tickets volume and utilization going forward. But I just want to inform you as well, Candace, that I'm trying to gauge their utilization, but unfortunately earlier when I tried to check their auto task, the non-billables are not recorded as well in auto task. So.</v>
+
+00:05:25.554 --> 00:05:26.354
+<v Candace Mancone>Yeah, they're not.</v>
+
+00:05:28.034 --> 00:05:32.114
+<v Mark Paolo Mangune>Yeah, let's talk about it on the next slide. So let's move on.</v>
+
+00:05:32.434 --> 00:05:50.274
+<v Candace Mancone>Yeah, that's been an ongoing kind of thing for us. We are actively, I had an additional consulting call yesterday, actively moving into the ConnectWise PSA. So the goal is it's always going to be, you know, the first part of the next month.</v>
+
+00:05:41.794 --> 00:05:42.274
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:05:44.954 --> 00:05:45.434
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:05:52.674 --> 00:05:52.994
+<v Candace Mancone>About.</v>
+
+00:05:53.874 --> 00:06:13.474
+<v Candace Mancone>Once we are in the PSA, those little areas, I know we're going to be able to dabble deeper into. So that's been kind of an ongoing problem on this side of auto task. But moving forward, as soon as we're actively in the PSA, and I'm hoping that happens as of July 1st, you should have a better view.</v>
+
+00:05:58.474 --> 00:05:58.714
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:06:12.354 --> 00:06:23.394
+<v Mark Paolo Mangune>Yeah, for sure. Yes. Plus, based on my experience, Connectwise is much user-friendly and it's much easier for them to navigate. So</v>
+
+00:06:25.714 --> 00:06:45.394
+<v Mark Paolo Mangune>All right, so performance reviews, ticket closure trend and analysis. So overview, this is for week two, three, and four for May. So basically across the three reporting periods, May 11 to 29, Jerome processed at least 49 total tickets and successfully closed 19.</v>
+
+00:06:45.874 --> 00:07:08.754
+<v Mark Paolo Mangune>tickets resulting in an overall average resolution rate of 48%. Lowest performance is made 25 to 29, but he just bugged me earlier, at least less than a minute, and he added something on week 25 and 29. So this is not accurate, the 25 and 29, because he added at least.</v>
+
+00:07:09.034 --> 00:07:29.554
+<v Mark Paolo Mangune>14 tickets there, so a total of 739, if I'm not mistaken. But yeah, he's doing great in terms of the numbers, tickets work on and also ticket closures. But yeah, I'm looking forward for him to be confident enough to work on some complicated things.</v>
+
+00:07:10.794 --> 00:07:11.074
+<v Candace Mancone>Mm.</v>
+
+00:07:29.594 --> 00:07:33.554
+<v Mark Paolo Mangune>Tickets with the help of Angela and other colleagues that you guys have, so...</v>
+
+00:07:36.514 --> 00:07:47.394
+<v Andrea Canlas>Question, Marky. Yeah, if we can go back to that. Yep. So it's a bit low for the ticket close. Do we know why the resolution rate has dipped?</v>
+
+00:07:38.194 --> 00:07:38.594
+<v Mark Paolo Mangune>Yep.</v>
+
+00:07:48.994 --> 00:08:05.954
+<v Mark Paolo Mangune>Yes, because of the correction. Earlier, it's supposed to be like this, but the total tickets that he updated just less than a minute earlier before we start the meeting is, let me check how many.</v>
+
+00:08:08.114 --> 00:08:09.954
+<v Candace Mancone>Well, there he is in his personal life.</v>
+
+00:08:12.114 --> 00:08:12.754
+<v Mark Paolo Mangune>Sorry.</v>
+
+00:08:13.154 --> 00:08:13.314
+<v Candace Mancone>Yeah.</v>
+
+00:08:14.274 --> 00:08:22.594
+<v Mark Paolo Mangune>I'll just get a double check just to be sure. Utilization, yeah, it's 77% for week 4.</v>
+
+00:08:17.114 --> 00:08:17.594
+<v Andrea Canlas>Okay.</v>
+
+00:08:24.274 --> 00:08:42.234
+<v Mark Paolo Mangune>Total tickets, yeah, 77%. Yes, resolution rate for week 4. Because earlier we only have three tickets there that he closed, but he modified the tracker and now it's running 17. So the total percentage of resolution rate is already 27%.</v>
+
+00:08:24.314 --> 00:08:27.354
+<v Andrea Canlas>77% is the resolution.</v>
+
+00:08:44.714 --> 00:09:05.514
+<v Andrea Canlas>Okay, gotcha. So probably you needed to also advise him and make sure that he knows to update a tracker real time, so that you won't have any problems with getting the accurate data for him. Because I feel like he's doing a lot of things, but since the only source of truth that we have right now is the utilization tracker,</v>
+
+00:08:58.274 --> 00:08:58.594
+<v Mark Paolo Mangune>Yep.</v>
+
+00:09:06.234 --> 00:09:11.354
+<v Andrea Canlas>then we won't be able to give justice to the things that he do on a daily basis.</v>
+
+00:09:11.954 --> 00:09:14.434
+<v Mark Paolo Mangune>Right, I agree. Okay.</v>
+
+00:09:13.634 --> 00:09:33.314
+<v Candace Mancone>And I will say to add to that as well, there is a little bit on this side of that as well, not necessarily updating tickets in real time. Not that he's not doing it. He is updating tickets. And when he does, his notes are very clear, very concise. Anyone could pick it up and take over.</v>
+
+00:09:25.994 --> 00:09:26.474
+<v Andrea Canlas>Mhm.</v>
+
+00:09:33.794 --> 00:09:53.474
+<v Candace Mancone>But I have had to ask a couple of times for an update that he had. He just hadn't quite added the note to the ticket just yet. So I'll continue on my side as well to kind of pick at that. So, you know, but that's, I think he may just be doing that, just getting it all done and then updating.</v>
+
+00:09:34.034 --> 00:09:34.554
+<v Andrea Canlas>Mhm.</v>
+
+00:09:43.514 --> 00:09:44.154
+<v Andrea Canlas>Ticket AG.</v>
+
+00:09:45.274 --> 00:09:45.754
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:09:46.994 --> 00:09:47.274
+<v Andrea Canlas>Yeah.</v>
+
+00:09:49.914 --> 00:09:50.314
+<v Andrea Canlas>True.</v>
+
+00:09:53.714 --> 00:09:55.074
+<v Candace Mancone>opposed to updating in real time.</v>
+
+00:09:54.074 --> 00:09:54.554
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:09:54.394 --> 00:09:54.954
+<v Andrea Canlas>Yeah.</v>
+
+00:09:55.554 --> 00:09:57.874
+<v Mark Paolo Mangune>Yeah, so more on ticket management, basically.</v>
+
+00:09:58.034 --> 00:09:58.594
+<v Candace Mancone>Yeah.</v>
+
+00:09:59.394 --> 00:10:18.634
+<v Mark Paolo Mangune>Okay, I'll take note of that. Once I have a catch up with him, I'm going to address those concerns. Thank you. So let's move on to Way Forward. So again, Angela stays available to support Jericho's technical growth on an as needed basis, ensuring continuity,</v>
+
+00:10:18.714 --> 00:10:37.234
+<v Mark Paolo Mangune>without affecting her capacity gains. For the meantime, for us to capture the utilization, agree or disagree, that's okay, Candace. But I suggest for the meantime, both Angela and Jericho will create a ticket, like for monitoring or admin tasks, so that they can.</v>
+
+00:10:37.474 --> 00:10:56.474
+<v Mark Paolo Mangune>you know, capture the time, how long did they spend on specific ticket on the alert, especially in Altaro, because they mentioned that if they see some alerts on Altaro, they don't create ticket. They're just going to jump into that alert straight up and try to fix it without.</v>
+
+00:10:56.554 --> 00:10:58.114
+<v Mark Paolo Mangune>them, you know, tracking their time.</v>
+
+00:10:59.314 --> 00:11:19.874
+<v Candace Mancone>Yeah, no, that's perfectly, that's perfectly fine. And if you want to, and I can do this on my end as well, when they're creating that ticket, because I'm actively trying to move everyone into everything's a ticket. And even myself, I'll get caught up in a conversation and just go do something and not think to create a ticket for it. So</v>
+
+00:10:59.394 --> 00:10:59.874
+<v Mark Paolo Mangune>So...</v>
+
+00:11:13.954 --> 00:11:14.194
+<v Mark Paolo Mangune>Uh-huh.</v>
+
+00:11:20.154 --> 00:11:39.714
+<v Candace Mancone>It's something we're all actively working to just be better for, you know, best practices. But for a company name on that ticket, if they'll just select RCTA, it's not going to attach to any individual company. So when it comes into the end of month billing, it's not going to affect anything.</v>
+
+00:11:24.594 --> 00:11:25.154
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:11:31.314 --> 00:11:31.794
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:11:39.954 --> 00:11:48.234
+<v Candace Mancone>it would just show their time. So that's a really good ticket and a good company to associate it with so they can subtract.</v>
+
+00:11:40.234 --> 00:11:40.714
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:11:41.954 --> 00:11:42.434
+<v Mark Paolo Mangune>Okay.</v>
+
+00:11:48.834 --> 00:12:07.794
+<v Mark Paolo Mangune>Okay, all right. I'll take note of that. Thank you. So we're going to start doing this by Monday, just for us to, you know, try it and let's see what's going to be the result for their utilization. So that's for the meantime. And in regards to a long-term solution,</v>
+
+00:11:56.034 --> 00:11:56.194
+<v Candace Mancone>No.</v>
+
+00:12:08.754 --> 00:12:28.114
+<v Mark Paolo Mangune>for accurately capturing utilization, we recommend, like you mentioned, you're going to be migrating to ConnectWise. So best suggestion is to migrate alerts from AutoTask or from Altaro going to ConnectWise. It will going to create a specific ticket for a specific alert so that</v>
+
+00:12:28.234 --> 00:12:40.994
+<v Mark Paolo Mangune>they'll not gonna create a ticket for like monitoring or admin tasks that the guys are doing. This approach will provide more precise and reliable data for tracking individual staff utilization.</v>
+
+00:12:41.634 --> 00:12:42.274
+<v Candace Mancone>Absolutely.</v>
+
+00:12:43.314 --> 00:12:45.794
+<v Mark Paolo Mangune>Okay, alright, next, uh, yeah.</v>
+
+00:12:44.034 --> 00:12:45.474
+<v Andrea Canlas>Yeah, so usually...</v>
+
+00:12:46.914 --> 00:13:07.874
+<v Andrea Canlas>Yeah, so usually Candace, I think it's an API. We can grab the API from Altaro and then just integrate that to ConnectWise, just so it's automatically closed also. So what we did in the past, or what I've done in the past, is I have a monitoring tool. I've been using Avic in the past. So every time that there was an alert from Avic,</v>
+
+00:12:47.154 --> 00:12:47.554
+<v Mark Paolo Mangune>One.</v>
+
+00:12:51.554 --> 00:12:52.034
+<v Candace Mancone>Mhm.</v>
+
+00:13:08.034 --> 00:13:28.114
+<v Andrea Canlas>from that monitoring tool, it will create a ticket. And then in order for you to actually clear out that ticket, it sets to autocomplete once that alert from the tool itself has been cleared out. So you don't have to manually close this alert ticket. It would automatically clear it out once.</v>
+
+00:13:28.474 --> 00:13:39.794
+<v Andrea Canlas>you were able to clear out also in the monitoring tool, meaning they don't have to manually close tickets. They just put their time entry. Once it's cleared out to the monitoring tool, it should be completed also.</v>
+
+00:13:40.514 --> 00:14:00.034
+<v Candace Mancone>Perfect. Absolutely. I'm really looking forward to us being fully integrated into the PSA. It's just taken me so long to get everything built up. It's a lot to manually build and not to make it messy and make it very clean and is exactly what we need to be. It's a lot of work.</v>
+
+00:13:42.994 --> 00:13:43.554
+<v Andrea Canlas>So, yeah.</v>
+
+00:13:46.194 --> 00:13:46.514
+<v Andrea Canlas>Yeah.</v>
+
+00:13:47.234 --> 00:13:47.474
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:13:48.194 --> 00:13:48.434
+<v Andrea Canlas>Yeah.</v>
+
+00:13:49.554 --> 00:13:50.274
+<v Andrea Canlas>A long time.</v>
+
+00:13:51.954 --> 00:13:52.434
+<v Andrea Canlas>True.</v>
+
+00:13:53.594 --> 00:13:54.194
+<v Andrea Canlas>Yeah.</v>
+
+00:13:56.674 --> 00:13:58.114
+<v Andrea Canlas>True structure.</v>
+
+00:14:00.594 --> 00:14:02.354
+<v Candace Mancone>Um, I'm excited to...</v>
+
+00:14:00.754 --> 00:14:10.994
+<v Andrea Canlas>Definitely. And this is not just the, yeah, and this is not, ConnectWise is not just about the partner also, it's about the billing, the invoices, SOWs.</v>
+
+00:14:09.714 --> 00:14:22.994
+<v Candace Mancone>That's where we've had the biggest, that has been my biggest struggle currently is because Ryan Creek has been customized for its entirety.</v>
+
+00:14:11.194 --> 00:14:11.554
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:14:15.714 --> 00:14:16.274
+<v Andrea Canlas>Mhm.</v>
+
+00:14:24.434 --> 00:14:43.554
+<v Candace Mancone>My product catalog, it's not clear, right? So one product will cost several different prices for several different companies, right? So it's like making sure all of those little fine details are exactly right and the agreements are set up properly. So it's</v>
+
+00:14:27.874 --> 00:14:28.274
+<v Andrea Canlas>Oh, no.</v>
+
+00:14:29.874 --> 00:14:30.274
+<v Andrea Canlas>Yeah.</v>
+
+00:14:35.554 --> 00:14:35.714
+<v Andrea Canlas>PH.</v>
+
+00:14:36.914 --> 00:14:37.394
+<v Andrea Canlas>Yes.</v>
+
+00:14:39.394 --> 00:14:39.714
+<v Andrea Canlas>Yeah.</v>
+
+00:14:40.914 --> 00:14:41.234
+<v Andrea Canlas>Yeah.</v>
+
+00:14:42.834 --> 00:14:44.674
+<v Andrea Canlas>Exactly. True.</v>
+
+00:14:44.354 --> 00:15:01.234
+<v Candace Mancone>It's been a lot of back, a lot of re-watching the same webinar 15 times to pause it just right to make sure I'm getting it, getting it just right. But it's, I think I'll know everything. I'll probably be an expert by the time I'm done with it, but it's, that's the goal at least.</v>
+
+00:14:49.114 --> 00:14:49.554
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:14:49.314 --> 00:14:49.874
+<v Andrea Canlas>He.</v>
+
+00:14:51.714 --> 00:14:51.874
+<v Andrea Canlas>Yeah.</v>
+
+00:14:52.874 --> 00:14:52.994
+<v Andrea Canlas>Yeah.</v>
+
+00:14:53.994 --> 00:14:54.154
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:14:58.394 --> 00:15:15.634
+<v Andrea Canlas>Exactly. Exactly. Even with the time entries, even with this patch portal, you have to set those up for the guys also so they can actually use them. I hear you. It's a lot of struggle, but it has a payoff. Payoff afterwards.</v>
+
+00:15:06.634 --> 00:15:07.154
+<v Candace Mancone>Mm.</v>
+
+00:15:12.114 --> 00:15:12.914
+<v Candace Mancone>It is.</v>
+
+00:15:14.034 --> 00:15:18.754
+<v Candace Mancone>It does, it doesn't. I'm so looking forward to it. So looking forward to it.</v>
+
+00:15:14.594 --> 00:15:15.074
+<v Mark Paolo Mangune>****.</v>
+
+00:15:18.034 --> 00:15:37.634
+<v Andrea Canlas>Perfect. Gotcha. But for the meantime, just like what Marky mentioned earlier today, we wanted to make sure that you also know what these guys are doing. Even though you're miles away, you probably know what they're doing, but you got to make sure that, you know, when you present it to the executives also within or internally, then you can show them numbers. I think that's the easiest way.</v>
+
+00:15:19.634 --> 00:15:20.194
+<v Mark Paolo Mangune>Okay.</v>
+
+00:15:37.674 --> 00:15:41.234
+<v Andrea Canlas>way for them to understand what these guys are doing. So we're going to do that.</v>
+
+00:15:40.394 --> 00:15:43.074
+<v Candace Mancone>And I really, really appreciate that.</v>
+
+00:15:44.354 --> 00:15:52.434
+<v Andrea Canlas>You're welcome. We're going to do that for you. And I think it's a great practice also, because once you move to ConnectWise Manage, everything will be on the ticket. So.</v>
+
+00:15:44.674 --> 00:15:45.794
+<v Candace Mancone>Really appreciate that.</v>
+
+00:15:52.674 --> 00:16:04.514
+<v Candace Mancone>Yes, yes, yes. It should all, yeah, it should be. I'm gonna have to send you a couple of tickets and you let me know what areas don't quite look right. But it should, it should all be there.</v>
+
+00:15:54.114 --> 00:15:54.274
+<v Mark Paolo Mangune>Mm.</v>
+
+00:15:54.994 --> 00:15:56.994
+<v Andrea Canlas>****. All right, go.</v>
+
+00:15:56.674 --> 00:15:56.834
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:15:59.234 --> 00:15:59.354
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:16:02.674 --> 00:16:03.554
+<v Andrea Canlas>Definitely.</v>
+
+00:16:02.914 --> 00:16:03.234
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:16:05.154 --> 00:16:08.114
+<v Andrea Canlas>Yeah, gotcha. Thanks, Candace. Go ahead, Marky.</v>
+
+00:16:08.834 --> 00:16:20.194
+<v Mark Paolo Mangune>Okay, so last one is, it's an ITBD holiday on June 12th, which is Independence Day. So Candice, do you need manpower during that day? It's A Friday, next Friday.</v>
+
+00:16:21.954 --> 00:16:29.794
+<v Candace Mancone>Let me just look at the calendar to see what is going on. Make sure I don't have anything.</v>
+
+00:16:32.274 --> 00:16:34.914
+<v Candace Mancone>That is pressing, pressing.</v>
+
+00:16:36.754 --> 00:16:37.314
+<v Candace Mancone>Um...</v>
+
+00:16:39.394 --> 00:16:40.834
+<v Candace Mancone>That should...</v>
+
+00:16:43.154 --> 00:16:44.194
+<v Candace Mancone>That should be okay.</v>
+
+00:16:45.314 --> 00:16:50.434
+<v Candace Mancone>The 12th, yeah, we have our, yeah, um, well...</v>
+
+00:16:45.874 --> 00:16:46.234
+<v Mark Paolo Mangune>Okay.</v>
+
+00:16:47.234 --> 00:16:47.794
+<v Andrea Canlas>You sure?</v>
+
+00:16:51.514 --> 00:17:02.114
+<v Candace Mancone>Would I hate to take away holidays? You just know that I hate to take away holidays, but if maybe we can do a split schedule.</v>
+
+00:16:55.954 --> 00:16:56.434
+<v Andrea Canlas>Yeah.</v>
+
+00:16:56.914 --> 00:16:56.954
+<v Mark Paolo Mangune>I.</v>
+
+00:17:00.674 --> 00:17:00.834
+<v Andrea Canlas>Mm.</v>
+
+00:17:03.314 --> 00:17:12.034
+<v Candace Mancone>Maybe do just a couple of hours, just half day of maybe monitoring, but the.</v>
+
+00:17:08.514 --> 00:17:09.394
+<v Andrea Canlas>Sure, we can do that.</v>
+
+00:17:10.594 --> 00:17:12.434
+<v Andrea Canlas>Yeah, first half, second half.</v>
+
+00:17:14.794 --> 00:17:15.474
+<v Candace Mancone>First half.</v>
+
+00:17:16.194 --> 00:17:17.954
+<v Andrea Canlas>Okay, do you want both of them?</v>
+
+00:17:17.154 --> 00:17:17.794
+<v Candace Mancone>First half.</v>
+
+00:17:19.074 --> 00:17:19.234
+<v Candace Mancone>Um...</v>
+
+00:17:19.314 --> 00:17:19.994
+<v Andrea Canlas>For StaAna.</v>
+
+00:17:22.594 --> 00:17:42.994
+<v Candace Mancone>Let me get back to you. I have a meeting with ownership later today. I hate to take away a holiday. I really, truly do hate to take away a holiday. It would bother me literally all week to do that. So let me have a meeting with ownership later this afternoon and I'll bring that to him and discuss it and</v>
+
+00:17:24.354 --> 00:17:24.754
+<v Andrea Canlas>Okay.</v>
+
+00:17:26.754 --> 00:17:27.234
+<v Andrea Canlas>All right.</v>
+
+00:17:28.954 --> 00:17:29.114
+<v Mark Paolo Mangune>PH.</v>
+
+00:17:30.914 --> 00:17:31.554
+<v Mark Paolo Mangune>Okay.</v>
+
+00:17:31.074 --> 00:17:31.514
+<v Andrea Canlas>It's Harish.</v>
+
+00:17:35.154 --> 00:17:35.634
+<v Andrea Canlas>Okay.</v>
+
+00:17:43.954 --> 00:17:47.634
+<v Candace Mancone>And I'll let you know by end of day how next Friday will look.</v>
+
+00:17:46.954 --> 00:17:47.314
+<v Mark Paolo Mangune>Okay.</v>
+
+00:17:47.314 --> 00:17:47.634
+<v Andrea Canlas>Kour.</v>
+
+00:17:48.394 --> 00:17:49.234
+<v Mark Paolo Mangune>All right, thank you.</v>
+
+00:17:48.514 --> 00:17:48.914
+<v Andrea Canlas>Alright.</v>
+
+00:17:50.874 --> 00:17:59.714
+<v Mark Paolo Mangune>Okay, so move on. Let's move on to Build It Live 2026. So Candace, is someone going to attend this?</v>
+
+00:18:00.514 --> 00:18:18.194
+<v Candace Mancone>Unfortunately, we are not able to attend this year. My goal is to attend next year, but each week you just keep rubbing this one in my face like I want to be there so bad and I can't this year. But my goal is to absolutely be a part of it next year. Would love that.</v>
+
+00:18:04.514 --> 00:18:04.834
+<v Mark Paolo Mangune>Ohh.</v>
+
+00:18:06.194 --> 00:18:06.394
+<v Mark Paolo Mangune>Haha.</v>
+
+00:18:09.634 --> 00:18:09.754
+<v Mark Paolo Mangune>****.</v>
+
+00:18:11.234 --> 00:18:11.354
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:18:12.114 --> 00:18:12.234
+<v Andrea Canlas>Yeah.</v>
+
+00:18:12.994 --> 00:18:13.154
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:18:13.994 --> 00:18:14.114
+<v Andrea Canlas>The.</v>
+
+00:18:18.914 --> 00:18:19.634
+<v Mark Paolo Mangune>Okay.</v>
+
+00:18:19.154 --> 00:18:25.394
+<v Andrea Canlas>Gotcha. Just please keep in mind, Candice, that we have BOGO promo. If you wanted that code, let me know.</v>
+
+00:18:26.914 --> 00:18:45.954
+<v Candace Mancone>My schedule wouldn't allow it. I've got, I've got my sister's getting married and you know, it's just, yeah, between the kids and just life changes for people closest to me. I can only, I've got one in November that I'm able to get away</v>
+
+00:18:28.354 --> 00:18:28.514
+<v Mark Paolo Mangune>Haha.</v>
+
+00:18:28.354 --> 00:18:28.714
+<v Andrea Canlas>Yeah.</v>
+
+00:18:30.434 --> 00:18:30.554
+<v Andrea Canlas>Yeah.</v>
+
+00:18:33.474 --> 00:18:36.114
+<v Andrea Canlas>Oh wow, congratulations.</v>
+
+00:18:37.314 --> 00:18:37.554
+<v Andrea Canlas>Kip.</v>
+
+00:18:42.514 --> 00:18:42.954
+<v Andrea Canlas>Gaur.</v>
+
+00:18:46.194 --> 00:19:05.034
+<v Candace Mancone>from but literally my kids are every other day. When are you leaving us again? You are not being abandoned. I'm just going to be gone like 4 days. You can drive a car like you are old enough to be sustained for a couple of days while I'm not here. So yeah.</v>
+
+00:18:46.874 --> 00:18:46.994
+<v Andrea Canlas>He.</v>
+
+00:18:59.994 --> 00:19:00.114
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:19:01.074 --> 00:19:01.274
+<v Andrea Canlas>Yeah.</v>
+
+00:19:03.554 --> 00:19:03.674
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:19:04.794 --> 00:19:05.554
+<v Andrea Canlas>That's sweet.</v>
+
+00:19:05.954 --> 00:19:13.154
+<v Candace Mancone>Unfortunately, I'm not able to do a whole lot of the fun stuff this year because I got to do the other kind of fun stuff.</v>
+
+00:19:11.154 --> 00:19:11.794
+<v Mark Paolo Mangune>Okay.</v>
+
+00:19:11.154 --> 00:19:12.034
+<v Andrea Canlas>How about Tim?</v>
+
+00:19:14.674 --> 00:19:16.674
+<v Andrea Canlas>How about Tim? Does he wanna?</v>
+
+00:19:17.554 --> 00:19:19.794
+<v Candace Mancone>Tim is no longer with Ryan Creek.</v>
+
+00:19:20.354 --> 00:19:22.514
+<v Andrea Canlas>Oh, I didn't know that.</v>
+
+00:19:22.674 --> 00:19:40.114
+<v Candace Mancone>Yeah, no, he decided that for his just career goals and where his life path was taking him, that he went back to the Department of Defense. Because locally here in Alabama, in Huntsville where he is, that's where NASA is.</v>
+
+00:19:28.874 --> 00:19:29.394
+<v Andrea Canlas>Mhm.</v>
+
+00:19:32.834 --> 00:19:33.954
+<v Andrea Canlas>Okay.</v>
+
+00:19:40.194 --> 00:20:02.434
+<v Candace Mancone>So the space program, all the things. And that's kind of his background. And the previous ownership of Ryan Creek, they were very friendly. I worked in the same building and kind of he needed a break from that world of classification, right? You know, like the Department of Defense and</v>
+
+00:19:40.994 --> 00:19:41.474
+<v Andrea Canlas>Mhm.</v>
+
+00:19:43.314 --> 00:19:44.594
+<v Andrea Canlas>Wow, fancy.</v>
+
+00:19:53.754 --> 00:19:54.274
+<v Andrea Canlas>Mm.</v>
+
+00:20:00.674 --> 00:20:01.154
+<v Andrea Canlas>Yeah.</v>
+
+00:20:02.754 --> 00:20:07.714
+<v Candace Mancone>So he was with Brian Creek for several years and decided to...</v>
+
+00:20:08.914 --> 00:20:28.354
+<v Candace Mancone>to go back into that. So he's still very much a part of the team. He assists us often, still. We all still have several questions that would randomly pop up. I know him and Angela still communicate if she kind of gets stuck on something. But yeah, he is no longer with us on a day-to-day. He is back.</v>
+
+00:20:09.074 --> 00:20:09.474
+<v Andrea Canlas>Kip.</v>
+
+00:20:11.634 --> 00:20:12.594
+<v Andrea Canlas>I'm happy for him.</v>
+
+00:20:13.754 --> 00:20:14.114
+<v Andrea Canlas>Yeah.</v>
+
+00:20:16.994 --> 00:20:17.554
+<v Andrea Canlas>Mhm.</v>
+
+00:20:23.154 --> 00:20:23.794
+<v Andrea Canlas>Yeah.</v>
+
+00:20:23.394 --> 00:20:23.634
+<v Mark Paolo Mangune>The.</v>
+
+00:20:26.514 --> 00:20:27.034
+<v Andrea Canlas>Mhm.</v>
+
+00:20:28.754 --> 00:20:29.954
+<v Candace Mancone>Back with the government.</v>
+
+00:20:30.674 --> 00:20:31.394
+<v Mark Paolo Mangune>Aww.</v>
+
+00:20:31.074 --> 00:20:32.674
+<v Andrea Canlas>Got to. I'm happy for him.</v>
+
+00:20:33.194 --> 00:20:37.794
+<v Candace Mancone>Me too. I'm very happy for him. But we do a check-in every once in a while.</v>
+
+00:20:34.034 --> 00:20:36.434
+<v Andrea Canlas>It, yeah, it's...</v>
+
+00:20:40.034 --> 00:20:40.514
+<v Andrea Canlas>It's a.</v>
+
+00:20:42.194 --> 00:20:42.754
+<v Andrea Canlas>Yeah.</v>
+
+00:20:42.834 --> 00:20:57.634
+<v Candace Mancone>the ownership of Ryan Creek. They're in a lot of the same local, like Rotary clubs and things like that. So they still go on mission trips together. So he's still very much a part of the family and the culture. He just, we don't get him on a day to day anymore.</v>
+
+00:20:45.474 --> 00:20:46.034
+<v Andrea Canlas>Mhm.</v>
+
+00:20:47.234 --> 00:20:48.354
+<v Andrea Canlas>That says a lot, you know.</v>
+
+00:20:53.114 --> 00:20:53.394
+<v Andrea Canlas>Wow.</v>
+
+00:20:58.114 --> 00:21:07.474
+<v Andrea Canlas>Yeah, but there's a lot about him and how his relationship is with you guys, right? Is there any, is there anybody that replaced him currently?</v>
+
+00:21:02.114 --> 00:21:03.634
+<v Candace Mancone>Oh, absolutely.</v>
+
+00:21:08.194 --> 00:21:29.434
+<v Candace Mancone>Not currently. I know that ownership and like sales, the VP of Sales, they are, they're working in their first year of Evolve. So that's kind of eaten up a lot of that, trying to find that balance, right, of the quarterly reviews and they being away and</v>
+
+00:21:09.954 --> 00:21:10.354
+<v Andrea Canlas>Okay.</v>
+
+00:21:22.354 --> 00:21:22.514
+<v Andrea Canlas>Mm.</v>
+
+00:21:26.514 --> 00:21:26.994
+<v Andrea Canlas>Mhm.</v>
+
+00:21:29.794 --> 00:21:30.314
+<v Andrea Canlas>Mhm.</v>
+
+00:21:29.794 --> 00:21:50.434
+<v Candace Mancone>the call, so they're working that. So I think collectively across the board, we are all pretty stationary outside of Evolve, and then we'll go to the Big Evolve conference in November. That's the one I think at this point in our company growth, in our personal growth, we don't have a whole lot of bandwidth to add too much more.</v>
+
+00:21:42.274 --> 00:21:42.914
+<v Andrea Canlas>Gotcha.</v>
+
+00:21:48.194 --> 00:21:48.754
+<v Andrea Canlas>Mmh.</v>
+
+00:21:51.394 --> 00:22:10.354
+<v Andrea Canlas>Gotcha. Speaking of QBR, Candace, I feel like we haven't really known, I feel, I know that we haven't really had a QBR since we started in December, I think. Yeah, so we should have like our first QBR already, but since we have...</v>
+
+00:22:06.194 --> 00:22:06.594
+<v Candace Mancone>Yep.</v>
+
+00:22:10.394 --> 00:22:28.594
+<v Andrea Canlas>Not because there are a lot of things happening on your end, and we just recently add Jericho. So, what we're gonna do is to create that QBR or two QBRs in one, if you want. What we what we can do is the first quarter, second quarter, wrap into one presentation, so that we can also add a bit of...</v>
+
+00:22:14.834 --> 00:22:15.234
+<v Candace Mancone>Yeah.</v>
+
+00:22:19.954 --> 00:22:20.834
+<v Candace Mancone>Okay, yeah.</v>
+
+00:22:29.474 --> 00:22:37.314
+<v Andrea Canlas>a data from Jericho's side of the fence, even though he doesn't have much yet, but at least he can see it from here. Okay.</v>
+
+00:22:37.554 --> 00:22:59.154
+<v Candace Mancone>Absolutely. And I would love to have ownership on that call as well for them to, because I always take back the information from the calls that we have each week and kind of give them all the information and the updates and our plan of actions and things like that. So, but I think it would be good for them to be at least a part of that conversation.</v>
+
+00:22:40.714 --> 00:22:41.074
+<v Andrea Canlas>Yes.</v>
+
+00:22:42.514 --> 00:22:42.914
+<v Andrea Canlas>Sure.</v>
+
+00:22:44.274 --> 00:22:44.754
+<v Andrea Canlas>If...</v>
+
+00:22:46.274 --> 00:22:46.754
+<v Andrea Canlas>Mhm.</v>
+
+00:22:48.514 --> 00:22:49.034
+<v Andrea Canlas>Mhm.</v>
+
+00:23:08.834 --> 00:23:09.154
+<v Candace Mancone>Yeah.</v>
+
+00:23:09.234 --> 00:23:18.514
+<v Andrea Canlas>speak of July. But yeah, just let me know when is the date that you guys are all free and then we'll schedule appropriately. Okay.</v>
+
+00:23:17.634 --> 00:23:31.954
+<v Candace Mancone>Absolutely. And so I'll talk like I'll talk with them a little later this afternoon and I'll try and lock in that date and I'll so I can inform you about the 12th and that date at the same time would be is definitely my goal for the day.</v>
+
+00:23:25.314 --> 00:23:25.794
+<v Andrea Canlas>Sure.</v>
+
+00:23:30.914 --> 00:23:31.234
+<v Andrea Canlas>Sure.</v>
+
+00:23:32.514 --> 00:23:33.074
+<v Mark Paolo Mangune>Okay.</v>
+
+00:23:32.674 --> 00:23:34.274
+<v Andrea Canlas>Gotcha. Thank you so much.</v>
+
+00:23:34.154 --> 00:23:34.754
+<v Mark Paolo Mangune>Thank you.</v>
+
+00:23:35.874 --> 00:23:56.754
+<v Mark Paolo Mangune>All right, so Team GPS, so I'm not sure if Andy already explained this to you, but if you're interested, please let us know. We'll be happy to walk you through in regards to Team GPS. So with that being said, any questions, feedbacks, anything in particular that you want to raise, Candace?</v>
+
+00:23:45.394 --> 00:23:45.634
+<v Candace Mancone>What?</v>
+
+00:23:57.154 --> 00:24:09.394
+<v Candace Mancone>I don't think so. We always tend to kind of discuss most of just how every day is going throughout the calls. I think both Angela and Jerome are doing great.</v>
+
+00:24:11.314 --> 00:24:29.954
+<v Candace Mancone>I really have no complaints, truly. They're both phenomenal. Even with the little things of, you know, maybe having to ask for an update on a ticket that he, Jerome, has worked and those are little minor things that can easily be adjusted.</v>
+
+00:24:28.354 --> 00:24:28.754
+<v Andrea Canlas>Okay.</v>
+
+00:24:31.154 --> 00:24:43.154
+<v Candace Mancone>No, I think they're doing an amazing job. They allow me a peace of mind to do the things like a product catalog for the PSA. And I appreciate that with them.</v>
+
+00:24:44.114 --> 00:25:04.754
+<v Candace Mancone>So no, there's no true areas of concern. Just will continue to build and grow and learn. And I look forward to the working the onboarding with Angela, us both kind of working that. And I'm glad that she feels comfortable to kind of that she has Jerome as backup.</v>
+
+00:25:04.834 --> 00:25:19.794
+<v Candace Mancone>to her and will clear her mind in a way where she can, will do her absolute best work on the onboarding. Without that, you know, that nagging, there's something waiting in the background. I'm really glad that we now have that in place for her where she can get some relief from that.</v>
+
+00:25:05.234 --> 00:25:05.794
+<v Mark Paolo Mangune>Mmh.</v>
+
+00:25:11.914 --> 00:25:12.434
+<v Mark Paolo Mangune>Das.</v>
+
+00:25:15.074 --> 00:25:15.714
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:25:15.154 --> 00:25:15.394
+<v Andrea Canlas>Yes.</v>
+
+00:25:17.114 --> 00:25:17.314
+<v Andrea Canlas>PH.</v>
+
+00:25:20.194 --> 00:25:22.114
+<v Mark Paolo Mangune>Yeah, at least she can focus now.</v>
+
+00:25:22.194 --> 00:25:24.834
+<v Candace Mancone>Yes, yes, I was.</v>
+
+00:25:24.674 --> 00:25:43.594
+<v Andrea Canlas>Speaking of, Candace, I know that they have a pending onboarding plan with you. So sorry I was out for like 2 days, but I'll just share it with you. This is the thing or the document that I had in the past. I had to look it up from the chest.</v>
+
+00:25:25.994 --> 00:25:26.354
+<v Candace Mancone>Hello.</v>
+
+00:25:32.834 --> 00:25:34.114
+<v Candace Mancone>That's okay. Now you're okay.</v>
+
+00:25:43.674 --> 00:26:04.114
+<v Andrea Canlas>but this is it. This is the client onboarding I have. It includes prerequisite, the discovery, the config, and the go live. So I'll send this to you, but yeah, no problem. But these are just the contents of that. Pre onboarding, prerequisite, even the post go live. It's all here.</v>
+
+00:25:54.154 --> 00:25:56.274
+<v Candace Mancone>Appreciate that. Absolutely.</v>
+
+00:26:04.274 --> 00:26:23.754
+<v Andrea Canlas>So the preparation, who are the time teams, kickoff, network backup, Office 365, and end user support. I think those are the four basic things that we offer as an MSP. So that's what I used in the past also. Network assessment, end user environment assessment, network setup, backup. There's just a lot.</v>
+
+00:26:13.914 --> 00:26:14.354
+<v Candace Mancone>Mmh.</v>
+
+00:26:23.874 --> 00:26:45.474
+<v Andrea Canlas>And this also would include the go live before we actually hand it over from project, right, to the team itself. And it also included the handoff to service delivery, because I feel like this is very, very important. But people don't usually do. And then post go live also.</v>
+
+00:26:30.114 --> 00:26:30.514
+<v Candace Mancone>Right.</v>
+
+00:26:39.874 --> 00:26:40.674
+<v Candace Mancone>Eddie has.</v>
+
+00:26:41.794 --> 00:26:42.034
+<v Candace Mancone>The.</v>
+
+00:26:45.514 --> 00:27:01.234
+<v Andrea Canlas>We got to make sure that just like what we do with you guys, you check with your end of the client if they're actually happy with the current service. So this is going to be it. I'll share it with you. Let me know if it helps and let me know if you need anything else. OK.</v>
+
+00:27:01.234 --> 00:27:02.674
+<v Candace Mancone>I appreciate that very much.</v>
+
+00:27:03.794 --> 00:27:07.554
+<v Andrea Canlas>You're welcome. All right. Anything else aside from those?</v>
+
+00:27:09.074 --> 00:27:10.034
+<v Candace Mancone>I think I'm okay.</v>
+
+00:27:11.154 --> 00:27:12.674
+<v Andrea Canlas>All right. Perfect. Parky.</v>
+
+00:27:13.954 --> 00:27:17.554
+<v Mark Paolo Mangune>Nothing else. Happy Friday and happy weekend.</v>
+
+00:27:16.674 --> 00:27:19.714
+<v Candace Mancone>Happy Friday! You guys as well. We'll talk soon.</v>
+
+00:27:18.674 --> 00:27:21.234
+<v Andrea Canlas>Happy Friday. You too, bye.</v>
+
+00:27:20.674 --> 00:27:20.834
+<v Mark Paolo Mangune>Hi.</v>
+
+00:27:21.154 --> 00:27:21.714
+<v Candace Mancone>Hi.</v>
+

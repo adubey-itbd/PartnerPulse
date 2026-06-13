@@ -85,16 +85,33 @@ def build(partner_name: str, with_decks: bool = True, verbose: bool = True,
     # 6-7. Service tickets -> notes + decks -----------------------------------
     historical_calls, decks = [], []
     note_authors = Counter()
+    # Deck caching: markitdown conversion is slow; reuse already-converted markdown for
+    # attachments seen in the prior cache (keyed by the stable attachment id).
+    prev_decks = {}
+    _cache = config.DATA_DIR / f"{slugify(p.name)}.json"
+    if _cache.exists():
+        try:
+            for dk in (json.loads(_cache.read_text(encoding="utf-8")).get("decks") or []):
+                if dk.get("attachment_id") is not None:
+                    prev_decks[dk["attachment_id"]] = dk
+        except (ValueError, OSError):
+            pass
     for t in halo.find_service_tickets(client_id, search=p.ticket_search):
         tid = t["id"]
         notes = halo.get_meeting_notes(tid)
         for n in notes:
             note_authors[n.get("who")] += 1
         if notes:
+            # Call date = the most recent meeting-NOTE datetime, NOT the ticket's
+            # dateoccurred. Recurring/bi-weekly service tickets keep an early
+            # dateoccurred while the actual call note is added later — e.g. Logically
+            # ticket 0755301: dateoccurred 2026-05-27 but the call note is 2026-06-12.
+            # Using dateoccurred made "last call" stale for every such partner.
+            note_dt = max((n.get("datetime") or "") for n in notes) or t["date"]
             historical_calls.append({
                 "ticket_id": tid,
                 "summary": t["summary"],
-                "date": t["date"],
+                "date": note_dt,
                 "notes": "\n\n".join(n["note"] for n in notes),
             })
         if with_decks:
@@ -102,6 +119,9 @@ def build(partner_name: str, with_decks: bool = True, verbose: bool = True,
                 fn = (a.get("filename") or "").lower()
                 ext = fn.rsplit(".", 1)[-1] if "." in fn else ""
                 if a.get("id") and ext in ("pdf", "pptx"):
+                    if a["id"] in prev_decks:        # already converted — reuse
+                        decks.append(prev_decks[a["id"]])
+                        continue
                     try:
                         raw = halo.download_attachment(a["id"])
                         deck = transcripts.deck_to_markdown(

@@ -29,10 +29,11 @@ graph TD
     subgraph Data Cache (Gitignored)
         Index[data/_index.json]
         PartnerC[data/{partner-slug}.json]
+        Overview[data/_overview.json — dashboard feed]
     end
 
     subgraph Presentation Layer (Frontend)
-        IndexUI[index.html — Executive Overview + Partner 360, embedded partner array]
+        IndexUI[index.html — Executive Overview + Partner 360, data-driven]
         DetailUI[partner.html / partner.js]
         Server[server.py]
     end
@@ -48,15 +49,21 @@ graph TD
     Engine --> Portfolio
     Portfolio -->|Portfolio Aggregates| Index
     Engine -->|Partner Rows| Index
-    Scripts -->|Inject partner objects| IndexUI
     Scripts -->|Write/refresh caches| PartnerC
+    Index -->|build_overview.py| Overview
+    PartnerC -->|build_overview.py| Overview
 
     Server -->|Serve Assets| IndexUI
     Server -->|Serve Assets| DetailUI
+    Overview -->|Runtime fetch| IndexUI
     PartnerC -->|Runtime fetch| DetailUI
 ```
 
-> **Note:** `index.html` does **not** fetch `data/_index.json` at runtime — its partner array is **embedded in the page** and kept in sync by the injection scripts (see §4). Only `partner.html`/`partner.js` fetch JSON (`data/{slug}.json`) at runtime.
+> **Note (changed 2026-06-13, beta.8):** `index.html` is **data-driven** — both the
+> Executive Overview and Partner 360 views `fetch` `data/_overview.json` at runtime
+> (built by `scripts/build_overview.py` from `data/_index.json` + the per-partner
+> caches). There is **no embedded partner array**. `partner.html`/`partner.js` fetch
+> `data/{slug}.json` as before.
 
 ### Repository layout
 
@@ -64,9 +71,12 @@ graph TD
 index.html / partner.html / partner.js / refresh.js / styles.css / vendor/   the dashboard (served from repo root)
 server.py / setup.ps1 / requirements.txt                        entry points (server.py also hosts the sync API)
 extract/        ingestion + AI pipeline (Python package, run via python -m extract.*)
-scripts/        operational scripts (build_real_partners.py, refresh_exec_row.py,
-                setup_graph_transcript_access.ps1, probe_graph_transcripts.py)
-data/           generated caches (whole dir gitignored): {slug}.json, _index.json, decks/, _sync.log
+scripts/        operational scripts (build_real_partners.py, build_overview.py,
+                setup_graph_transcript_access.ps1, probe_graph_transcripts.py;
+                refresh_exec_row.py kept but DEPRECATED)
+backups/        saved copies of replaced dashboards (e.g. index_pre-AIODI_2026-06-13.html)
+data/           generated caches (whole dir gitignored): {slug}.json, _index.json,
+                _overview.json (dashboard feed), decks/, _sync.log
 Transcripts/    input meeting transcripts, per partner (.docx Teams exports + .vtt Graph pulls)
 docs/           architecture, changelog, SOPs, LLM-SOP, archive/
 legacy/         superseded single-partner files
@@ -177,7 +187,7 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 * **Tradeoff:** The dashboard displays cached data. Updates are not live — they are triggered by the dashboard's **"Sync Data"** header button (see *Manual Sync API* below), a recurring task (e.g., cron job), or manual execution of `python -m extract.build_all`.
 
 ### Manual Sync API + Dashboard Button
-* **Choice:** `server.py` exposes a small stdlib-only sync API — `POST /api/refresh` starts a single-flight sync cycle (409 if one is running; optional `{"steps": [...]}` body runs a subset), `GET /api/refresh/status` reports per-step progress plus a live `activity` string. The cycle shells out sequentially to the existing entry points (`extract.build_all` → `scripts/build_real_partners.py` → `scripts/refresh_exec_row.py --all` → `extract.build_all --reindex`), one subprocess per step, **continue-on-failure**. The `exec-rows` step keeps the registry partners' static exec-overview rows in `index.html` in lockstep with the rebuilt caches — without it a full sync updates `data/*.json` but leaves those embedded rows stale (the two-data-layer drift). Each step's output is **streamed line-by-line** into `data/_sync.log`, and the pipeline's tagged phase lines (`=== Partner ===`, `[csat]`, `[nps]`, `[transcripts]`, "running gpt-5.4 churn analysis…", …) are translated by `parse_activity()` into the human-readable activity (e.g. "Logically: syncing TeamGPS CSAT"). The shared `refresh.js` wires the header "Sync Data" button on both pages: confirm dialog, polled progress (2s), a progress panel under the button listing every step (✓/⟳/✕) with the live activity, page reload when at least one step succeeded. The panel CSS is duplicated in `styles.css` and `index.html`'s inline `<style>` (the latter loads no external CSS).
+* **Choice:** `server.py` exposes a small stdlib-only sync API — `POST /api/refresh` starts a single-flight sync cycle (409 if one is running; optional `{"steps": [...]}` body runs a subset), `GET /api/refresh/status` reports per-step progress plus a live `activity` string. The cycle shells out sequentially to the existing entry points (`scripts/pull_graph_transcripts.py --write` → `extract.build_all` → `scripts/build_real_partners.py` → `extract.build_all --reindex` → `scripts/build_overview.py`), one subprocess per step, **continue-on-failure**. The first `transcripts` step pulls fresh call transcripts from Graph into `Transcripts/` (so a Sync refreshes transcripts alongside HaloPSA + TeamGPS; caveats: skips manual-`.docx` folders, QBRs 403, ~90-day Teams retention), which the registry build then ingests. The final `overview` step rebuilds `data/_overview.json` (the feed the dashboard renders from) from the freshly rebuilt caches + index — so a sync is only reflected on the page after it runs. (The former `exec-rows` step, which refreshed the now-removed embedded array, was dropped.) Each step's output is **streamed line-by-line** into `data/_sync.log`, and the pipeline's tagged phase lines (`=== Partner ===`, `[csat]`, `[nps]`, `[transcripts]`, "running gpt-5.4 churn analysis…", …) are translated by `parse_activity()` into the human-readable activity (e.g. "Logically: syncing TeamGPS CSAT"). The shared `refresh.js` wires the header "Sync Data" button on both pages: confirm dialog, polled progress (2s), a progress panel under the button listing every step (✓/⟳/✕) with the live activity, page reload when at least one step succeeded. The panel CSS is duplicated in `styles.css` and `index.html`'s inline `<style>` (the latter loads no external CSS).
 * **Why:** Source systems change daily (e.g., a Halo SIP open today is closed tomorrow); the exec needs a way to know the dashboard is current *now* without touching a terminal. Subprocesses (rather than in-process imports) isolate module-level API caches, keep the server dependency-free, and make a missing optional dependency (e.g. `markitdown` for the registry step) degrade to a per-step failure instead of breaking the whole cycle.
 * **Tradeoff:** A full cycle takes minutes and spends live Halo/TeamGPS calls + Azure gpt-5.4 tokens — hence manual, confirm-guarded, and single-flight. On machines without `markitdown` the registry step reports failed while the other steps still refresh Halo/TeamGPS data and the index.
 
@@ -189,18 +199,21 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 * **Choice:** `halo.download_attachment` handles two delivery modes transparently: some attachments return inline raw bytes; others return a JSON envelope `{"link": <pre-signed CDN URL>}` that must be followed with a second HTTP request.
 * **Why:** HaloPSA's attachment API changed behaviour across versions and partner configurations. Handling both modes in one function keeps `build_partner.py` clean.
 
-### Vanilla Frontend Stack + Vendored Chart.js
-* **Choice:** Pure HTML5, CSS, and modern ES6 JavaScript (inline `<script>` in `index.html`, plus `partner.js`) with Chart.js 4.4.4 vendored locally under `vendor/`.
-* **Why:** Eliminates React/Angular/Vue build steps. The frontend runs instantly on a basic HTTP file server (`server.py`) and works fully offline — no CDN dependency at runtime.
+### Incremental rebuild (AI + deck caching)
+* **Choice:** the per-partner build reuses expensive prior results instead of recomputing them every sync. `ai.analyze()` hashes the gpt-5.4 input (`build_context`) into `_input_hash`; if the partner's prior cache carries the same hash, the cached churn result is returned without an LLM call. Deck markdown is reused by attachment id (skips `markitdown`). Halo/TeamGPS are still fetched each run so changes are detected; only the two expensive operations (LLM, deck conversion) are conditional. `--force-ai` overrides.
+* **Why:** a full rebuild re-ran gpt-5.4 on all ~38 partners (slow, costly, and — because the model re-scores run-to-run — it churned the numbers) and re-converted every deck (`markitdown` ~20–30 s each), which together blew past the sync's 30-min per-step timeout. Caching makes re-syncs fast, keeps steps inside the timeout, and stops score drift for unchanged partners.
+* **Call date precision:** `historical_calls` dates come from the latest **meeting-note datetime** on the ticket, not the ticket's `dateoccurred` (recurring/bi-weekly tickets hold an early `dateoccurred` while the note is added later). `build_overview.py` then takes the union of Halo-note dates and transcript dates for "last call".
+
+### Vanilla Frontend Stack
+* **Choice:** Pure HTML5, CSS, and modern ES6 JavaScript (inline `<script>` in `index.html`, plus `partner.js`). Chart.js 4.4.4 is vendored under `vendor/` and used by `partner.html` only — `index.html` no longer renders any chart (the "Who needs attention" bar chart was dropped in the beta.8 redesign).
+* **Why:** Eliminates React/Angular/Vue build steps. The frontend runs on a basic HTTP file server (`server.py`).
 * **History:** The original portfolio SPA (`portfolio.js` + a separate `portfolio.html`) was retired; its Partner 360 list view now lives inside `index.html` as a second view (`view-partners`) alongside the Executive Overview, switched via the sidebar.
 
-### Embedded Exec-Overview Array vs. Runtime Fetch (TWO data layers — keep in sync)
-* **Choice:** `index.html` carries a **hardcoded `const partners = [...]` array** inside its inline `<script>`, mirrored from `data/_index.json`. Only `partner.html`/`partner.js` fetch JSON at runtime.
-* **Why:** The Executive Overview renders instantly with zero fetch latency and survives being opened as a plain file; the data is build-time anyway.
-* **Tradeoff / gotcha:** Any change to the partner set must land in **both** places or the two views disagree. The injection scripts own this sync:
-  * `scripts/build_real_partners.py` splices real-partner objects between `// ---- BEGIN/END real partners ... ----` markers in `index.html` (replace-by-slug, append if new); `extract.build_all --reindex` regenerates `data/_index.json` from every per-partner cache.
-  * `scripts/refresh_exec_row.py <slug>|--all|--remove <slug>` re-renders (or, with `--remove`, deletes) exec-overview rows from the rebuilt `data/{slug}.json` caches — needed because the registry partners' rows live in the **static** part of the array (outside the markers), where `build_real_partners.py` never touches them and would otherwise append a duplicate. `--all` runs as the sync cycle's `exec-rows` step so a full sync keeps every embedded row in lockstep with the caches. Single-partner refresh recipe: `build_all --only <Name>` → `build_all --reindex` → `refresh_exec_row.py <slug>`.
-  * Each exec-overview object carries an explicit `slug` field because slug ≠ `slugify(display name)` for several real partners (`MSP Corp` → `mspcorp`, `RealTime, LLC` → `realtime-it`, etc.) — never derive the drilldown link from the display name client-side.
+### Data-driven dashboard via `data/_overview.json` (changed 2026-06-13, beta.8)
+* **Choice:** `index.html` (both Executive Overview and Partner 360) `fetch`es a single feed, `data/_overview.json`, at runtime. There is **no embedded `const partners` array** — the feed is the single source of truth, consistent with how `partner.html` already fetches `data/{slug}.json`.
+* **Why:** The earlier design embedded a hardcoded array in `index.html` and kept it in sync with the caches via injection scripts. That created a standing **two-data-layer drift** risk and could not carry the richer rollups the redesign needs (SIP/action counts, real NPS, CSAT sample size, coverage window). A computed feed removes the drift and is far simpler to extend.
+* **How it's built:** `scripts/build_overview.py` reads `data/_index.json` + every per-partner `data/{slug}.json` and emits `data/_overview.json` — per-partner SIP open/closed, open/overdue/no-date action counts, CSAT split + sample size + low-n flag, real per-partner NPS, honest call tone (`toneConfident=false` ⇒ render "No calls"), last-call date/staleness, the gpt-5.4 driver factors as `themes`, plus portfolio rollups (Active SIPs, Open Actions, Portfolio NPS, CSAT coverage) and a coverage window. It is the **final step of the sync cycle** and can be run standalone after any data change.
+* **Consequences:** `scripts/build_real_partners.py`'s `inject_exec` and `scripts/refresh_exec_row.py` are now no-ops (they detect the missing array and skip); they are retained only for rollback to `backups/index_pre-AIODI_2026-06-13.html`. Each feed object still carries an explicit `slug` (slug ≠ `slugify(display name)` for several partners — `MSP Corp` → `mspcorp`, `RealTime, LLC` → `realtime-it`) so drilldown links are never derived from the display name.
 
 ### Portfolio Aggregates Derived In-Process
 * **Choice:** `extract/portfolio.py` builds all four chart datasets (risk distribution, weekly sentiment trend, feedback mix, top themed churn drivers) from the per-partner caches already in memory during `build_all.py`, with no additional API calls.

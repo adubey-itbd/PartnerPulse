@@ -1,0 +1,659 @@
+WEBVTT
+NOTE title: Marco | ITBD Monthly Service Call | Shail & Sahil
+NOTE date: 2026-06-12
+NOTE duration: 30m 56s
+
+00:00:13.415 --> 00:00:14.775
+<v Shashank Agarwal>Isit, how are you?</v>
+
+00:00:15.255 --> 00:00:16.855
+<v Seth Luby>Oh, pretty good. How are you?</v>
+
+00:00:18.375 --> 00:00:23.375
+<v Shashank Agarwal>I'm good too. Everything is going fine. How about you? How are the things going on your end?</v>
+
+00:00:23.495 --> 00:00:23.615
+<v Shashank Agarwal>Yeah.</v>
+
+00:00:24.855 --> 00:00:40.295
+<v Seth Luby>Just working away. Been working on some, building some co-pilot agents for Marco. Just, you know, fun. I enjoy doing that. So that's fun. Building the agents of the company can ingest.</v>
+
+00:00:42.095 --> 00:01:00.095
+<v Shashank Agarwal>Okay, and how is this working out for you? Are they able to deliver the expected results or they are going haywire? Sometimes we see like we build agents, but they are not performing as required or the output is not.</v>
+
+00:01:00.495 --> 00:01:02.575
+<v Shashank Agarwal>Correct, so how do you see?</v>
+
+00:01:01.895 --> 00:01:02.375
+<v Seth Luby>So...</v>
+
+00:01:03.455 --> 00:01:22.855
+<v Seth Luby>So far they're working, I mean, I'm building a subset of agents to kind of answer like tooling related questions. I mean, but so far, you know, I'm only in the initial phases essentially, but the first agent is doing really well. The ground, like all the stuff that I'm.</v>
+
+00:01:13.055 --> 00:01:13.615
+<v Shashank Agarwal>Okay.</v>
+
+00:01:20.735 --> 00:01:21.535
+<v Shashank Agarwal>Oh, great.</v>
+
+00:01:22.895 --> 00:01:46.455
+<v Seth Luby>built so far is doing well. It's just some of the more nuanced tools that don't necessarily like the like connect wise is everything is behind the login prompt. So like building an agent that's grounded with their knowledge base is I'm not there yet. I haven't figured out a good solution for that, but I don't need to at the moment because it's not.</v>
+
+00:01:46.695 --> 00:02:06.375
+<v Seth Luby>a priority. So that'll come. But yeah, we've got a whole like, they call it the innovation team and that is literally their sole job is basically they're in every AI platform. They are, you know, working with Foundry and Microsoft and doing all the things like kind of.</v>
+
+00:01:48.575 --> 00:01:48.895
+<v Shashank Agarwal>Yeah.</v>
+
+00:02:06.775 --> 00:02:27.855
+<v Seth Luby>as they come out that day, really learning what everything can and can't do. So it's been pretty neat to have, well, they're moving real quick, getting everything deployed. And yeah, but my role is just so intertwined with our tooling that I'm doing a subset of agents for that kind of main orchestrator that they've done.</v>
+
+00:02:28.135 --> 00:02:28.295
+<v Seth Luby>Bill.</v>
+
+00:02:29.295 --> 00:02:30.575
+<v Shashank Agarwal>Ohh, great.</v>
+
+00:02:29.415 --> 00:02:45.895
+<v Seth Luby>So yeah, fun stuff. That's kind of part of the reason why I was hired into my role is just my experience with like Claude and their enterprise work and building platforms is essentially like, you know, this is the fun stuff. But yeah.</v>
+
+00:02:44.415 --> 00:02:52.175
+<v Shashank Agarwal>Yeah, and sometimes it feels a lot exciting when you have to do something out of the regular work.</v>
+
+00:02:53.375 --> 00:03:03.055
+<v Shashank Agarwal>This happens with me as well. If I get something to work on, which is out of my regular work, I'll find more excitement in this. At least something is new.</v>
+
+00:03:02.415 --> 00:03:02.775
+<v Seth Luby>Yeah.</v>
+
+00:03:03.975 --> 00:03:25.335
+<v Seth Luby>I like building and I like troubleshooting things that are getting built. And I mean, that is like me. That's my engineer background. Like it just, it feels fun to build something and see the results happen versus just fixing fires and little things here and there. Like I can do that. I'm good at that, but it's not necessarily</v>
+
+00:03:09.535 --> 00:03:09.895
+<v Shashank Agarwal>Okay.</v>
+
+00:03:17.575 --> 00:03:17.855
+<v Shashank Agarwal>Yep.</v>
+
+00:03:25.655 --> 00:03:28.495
+<v Seth Luby>Like what I wake up for, so yeah.</v>
+
+00:03:28.775 --> 00:03:29.055
+<v Shashank Agarwal>Yeah.</v>
+
+00:03:30.815 --> 00:03:33.455
+<v Shashank Agarwal>Kind of a good thing.</v>
+
+00:03:34.895 --> 00:03:38.015
+<v Shashank Agarwal>Okay, let's move on to the presentation.</v>
+
+00:03:38.455 --> 00:03:38.855
+<v Seth Luby>Awesome.</v>
+
+00:03:39.775 --> 00:03:58.335
+<v Shashank Agarwal>Yeah, so agenda stays the same. So we can see that these two guys have improved a lot post our discussion. And the last feedback that we got from you first was the communication gap. So where the engineers are not communicating properly.</v>
+
+00:03:47.815 --> 00:03:48.215
+<v Seth Luby>Yeah.</v>
+
+00:03:58.495 --> 00:04:17.135
+<v Shashank Agarwal>to you when they're coming via me. So I said clearly that you're aligned with SIT. Any problem that you have, any confusion that you have, just go ahead and ask questions. Do not wait for me. And I said, like, it personally comes on me as well, where I would have given you.</v>
+
+00:04:17.375 --> 00:04:35.935
+<v Shashank Agarwal>this clarity that you can go ahead and ask questions with Seth rather than me communicating because obviously this is creating a miscommunication. It's creating a time gap because I might be meeting you after a month and that thing has gone stale plus.</v>
+
+00:04:20.855 --> 00:04:21.255
+<v Seth Luby>Yeah.</v>
+
+00:04:36.335 --> 00:04:41.615
+<v Shashank Agarwal>It has created other issues in your understanding, so that that's clarified.</v>
+
+00:04:39.335 --> 00:04:58.215
+<v Seth Luby>Yeah. And they're doing that. They're doing that for the most part. I think last week was pretty rough. So I mean, either way, like, and it wasn't necessarily directly related to them. So, so yeah, I mean, I appreciate that help. And yeah, we'll just see kind of how it goes moving forward. Yeah.</v>
+
+00:04:57.055 --> 00:04:57.295
+<v Shashank Agarwal>Yeah.</v>
+
+00:04:59.055 --> 00:05:18.375
+<v Shashank Agarwal>Yeah, second I spoke with Sahil and explained him and I said it to Shal as well, like just for the sake of giving an idea, do not give it because that does not make sense if you're just finding out some information from an automation tool, anybody can do that.</v>
+
+00:05:18.655 --> 00:05:37.455
+<v Shashank Agarwal>Everyone knows like this is coming from there. So just make sure you share only that information which you feel holds true and you have experience in which you think it's not implemented already. So they got the gist.</v>
+
+00:05:21.975 --> 00:05:22.375
+<v Seth Luby>Ma'am.</v>
+
+00:05:35.815 --> 00:05:36.855
+<v Seth Luby>Exactly, yeah.</v>
+
+00:05:37.695 --> 00:05:57.455
+<v Shashank Agarwal>And I said, like, if you're not sharing this or not sharing any information, that does not mean you're lagging behind. Maybe the team has advanced so much which falls out of your purview. So that's okay. But anything you find new or anything, just share it. But do not re-share the same information or do not re-share.</v>
+
+00:05:57.615 --> 00:05:59.295
+<v Shashank Agarwal>just a copied information.</v>
+
+00:05:59.735 --> 00:06:01.215
+<v Seth Luby>Yeah, perfect.</v>
+
+00:06:00.175 --> 00:06:00.815
+<v Shashank Agarwal>That was it.</v>
+
+00:06:02.175 --> 00:06:24.055
+<v Shashank Agarwal>Yeah, and for process understanding, which was a third main gap, like I would call out, although that was an incorrect part on the last thing, like escalation. So I said, if you have any process related confusion, just go ahead, check the documentation first. If you're unable to find any documentation or any clarity on it.</v>
+
+00:06:02.615 --> 00:06:03.215
+<v Seth Luby>Perfect.</v>
+
+00:06:24.255 --> 00:06:43.775
+<v Shashank Agarwal>raise it to set like set, you said this, I've understood this. Again, can you clarify this for us so that we are, we all working on the same page? So that's there. And then they told me like, you already took a disk space session for the entire team.</v>
+
+00:06:30.135 --> 00:06:30.535
+<v Seth Luby>Yep.</v>
+
+00:06:44.335 --> 00:06:47.855
+<v Shashank Agarwal>So yeah, they said that clarity was helpful for them.</v>
+
+00:06:44.615 --> 00:06:44.935
+<v Seth Luby>Yep.</v>
+
+00:06:49.095 --> 00:07:09.095
+<v Seth Luby>Yep, and we're going to, just so you're aware, I mean, it doesn't need, there's nothing to do here, but we have a meeting on Thursday, the normal, you know, team meeting that Wes runs, and we're going to kind of go through a lot of it and talk about the escalations and the processes. So they'll have even more clarity as we move through it all.</v>
+
+00:06:49.215 --> 00:06:49.775
+<v Shashank Agarwal>Okay.</v>
+
+00:07:08.735 --> 00:07:09.055
+<v Shashank Agarwal>Yeah.</v>
+
+00:07:10.415 --> 00:07:27.375
+<v Shashank Agarwal>So all these concerns you won't find it again. That's clarified because it was just one discussion that we needed to do. That's done. So that's okay, that's sorted. Moving on next for performance analysis, the utilization is constantly at 98%. That's good.</v>
+
+00:07:16.175 --> 00:07:16.455
+<v Seth Luby>Yeah.</v>
+
+00:07:28.295 --> 00:07:28.935
+<v Seth Luby>Perfect.</v>
+
+00:07:30.095 --> 00:07:49.055
+<v Shashank Agarwal>The ticket closures for Shal, I see the first week going low and the last week. Last week, we know like on May 25th to 29th, there was a holiday and Shal took a sick leave. So that's why the numbers are showing skewed in that. Again, when I see a look at Sahil.</v>
+
+00:07:30.895 --> 00:07:31.255
+<v Seth Luby>Yeah.</v>
+
+00:07:32.455 --> 00:07:32.695
+<v Seth Luby>Kip.</v>
+
+00:07:44.695 --> 00:07:44.815
+<v Seth Luby>Kip.</v>
+
+00:07:49.855 --> 00:08:08.255
+<v Shashank Agarwal>Again, for the last week, he had taken one leave and one holiday. That's why it's slower. Overall, it looks good. So escalations, I can see very less and resolutions more. I have one more slide which I thought and I...</v>
+
+00:07:57.095 --> 00:07:57.575
+<v Seth Luby>Mhm.</v>
+
+00:08:08.655 --> 00:08:30.895
+<v Shashank Agarwal>build it. So overall ticket trends that I see. So Shal is working mainly on service related and disk space alerts. So service related is around 44%, disk space 31, offline alerts 14%. But what I was, my main thing which I wanted to ask was service related.</v>
+
+00:08:31.375 --> 00:08:37.615
+<v Shashank Agarwal>Why are there so many service related alerts generating? Do we have any automation in place for this?</v>
+
+00:08:39.415 --> 00:08:58.775
+<v Seth Luby>I mean, every ticket has automation in place. So I mean, yes, the service related tickets are created after automation is unable to get a service to start or it's missing. So like we basically have two monitors in automate and now in RMM and.</v>
+
+00:08:51.135 --> 00:08:51.535
+<v Shashank Agarwal>Okay.</v>
+
+00:08:59.175 --> 00:09:18.335
+<v Seth Luby>What they do is if the service is all of a sudden missing, but it wasn't there, or it was there before, we'll get an alert. That's sometimes related to just, it's uninstalled, no big deal, like it's part of a project, whatever, is stopped. Basically the automation attempts to start it.</v>
+
+00:09:06.655 --> 00:09:07.215
+<v Shashank Agarwal>Connect.</v>
+
+00:09:19.575 --> 00:09:31.415
+<v Seth Luby>I think it's three times and then it also depends some of the services, the automations review logs and then do certain things. But not every service is that way. So yeah, I mean.</v>
+
+00:09:32.615 --> 00:09:43.015
+<v Seth Luby>Everybody asks me that same question. It's like, well, yeah, there's automation, but there's still tickets that need users to just go look at it and figure out what's happening. But yeah.</v>
+
+00:09:40.575 --> 00:09:41.055
+<v Shashank Agarwal>Yeah.</v>
+
+00:09:42.895 --> 00:09:43.215
+<v Shashank Agarwal>Yeah.</v>
+
+00:09:44.575 --> 00:10:04.935
+<v Shashank Agarwal>Yeah, so like 150 tickets for one engineer in a month. That's that was I and that's what I wanted to discuss on this. Similarly for Sahil, majorly service related disk space and offline alerts. Service related a bit less like 29% disk space, 22%.</v>
+
+00:09:44.935 --> 00:09:45.415
+<v Seth Luby>Yeah.</v>
+
+00:10:17.575 --> 00:10:17.895
+<v Seth Luby>Yeah.</v>
+
+00:10:18.055 --> 00:10:26.815
+<v Shashank Agarwal>for him. Yeah, so that's there. Now you have given me clarity on why the service related are still high. That brings a lot of...</v>
+
+00:10:25.735 --> 00:10:26.455
+<v Seth Luby>I mean.</v>
+
+00:10:27.895 --> 00:10:46.535
+<v Seth Luby>Yeah, and just to give you a little more clarity, like we alert on something like two to three dozen different services. So I mean, they're just inherently going to be a high amount of those tickets. Same with disk space. Although disk space are...</v>
+
+00:10:30.695 --> 00:10:31.095
+<v Shashank Agarwal>Yep.</v>
+
+00:10:44.215 --> 00:10:44.615
+<v Shashank Agarwal>Support.</v>
+
+00:10:46.935 --> 00:11:03.415
+<v Seth Luby>mostly P5s. So disk space is real low priority. That's something that we were going to talk about in the meeting this week, but either way, yeah, like that's expected that we just see a lot of service related.</v>
+
+00:11:04.375 --> 00:11:22.775
+<v Shashank Agarwal>Yeah, one question I had said, like, there is a service that starts when there is a specific action happened, then it stops. So are we getting alerts on those services as well? And just in case, if there is some service...</v>
+
+00:11:23.135 --> 00:11:32.135
+<v Shashank Agarwal>which is not started all the time and which happens to work only at a specific time, then...</v>
+
+00:11:30.935 --> 00:11:31.815
+<v Seth Luby>That's not.</v>
+
+00:11:33.255 --> 00:11:51.735
+<v Seth Luby>Yeah, I mean, the automation isn't that dumb. Like, it's smarter than that. So, I mean, it understands those. The automations are per service. So it's not just like across the board every service. It's specific services and each service has its own automation designed for that specific service.</v>
+
+00:11:38.295 --> 00:11:38.775
+<v Shashank Agarwal>Okay.</v>
+
+00:11:52.295 --> 00:12:10.855
+<v Seth Luby>So, and then, you know, the thing that a lot of techs don't know, the team should know if there's a reason for the service to be stopped or it's no longer relevant, moving the service to disabled or stopped and to not auto start.</v>
+
+00:11:52.695 --> 00:11:53.015
+<v Shashank Agarwal>Okay.</v>
+
+00:11:54.375 --> 00:11:54.615
+<v Shashank Agarwal>Yeah.</v>
+
+00:12:11.655 --> 00:12:25.975
+<v Seth Luby>disables the entire alert, so it won't alert again. It's intelligent enough to know if we choose to, we can basically turn the service off and it won't continue to alert.</v>
+
+00:12:27.655 --> 00:12:45.895
+<v Shashank Agarwal>Okay, so suppose there's a Service X and there's an automatically on automation which starts whenever something happens. So in this case, would they move to stop and then the alerting would stop?</v>
+
+00:12:28.735 --> 00:12:29.015
+<v Seth Luby>Yeah.</v>
+
+00:12:42.455 --> 00:12:42.855
+<v Seth Luby>What?</v>
+
+00:12:46.175 --> 00:13:07.375
+<v Seth Luby>Wait, we wouldn't get an alert on services like that. We're talking like core services, like DFSR or like DNS or the domain controller core services that are running all the time. Like, we're not talking transient, like little services that we don't necessarily care about.</v>
+
+00:12:50.535 --> 00:12:50.935
+<v Shashank Agarwal>Okay.</v>
+
+00:12:57.255 --> 00:12:57.655
+<v Shashank Agarwal>Yep.</v>
+
+00:13:05.655 --> 00:13:06.135
+<v Shashank Agarwal>Okay.</v>
+
+00:13:07.975 --> 00:13:17.735
+<v Seth Luby>We were talking about like basically the automation if you want to know, like the automation goes through and looks at, okay, what roles does this DC have?</v>
+
+00:13:08.375 --> 00:13:09.495
+<v Shashank Agarwal>OK, got you.</v>
+
+00:13:18.695 --> 00:13:40.735
+<v Seth Luby>We'll alert based on those roles and the services for those roles. It's not like a dumb kind of like, okay, this service is started, but now it's stopped. But we have a whole like service catalog that kind of defines this for clients. I could probably send that to you so you understand they can see what.</v>
+
+00:13:40.815 --> 00:13:56.695
+<v Seth Luby>they like what exactly we do alert on. But yeah, I mean, no, so in the scenario you're describing, we shouldn't get an alert because it just wouldn't be a part of the catalog or just wouldn't make sense for us to even alert on.</v>
+
+00:13:49.095 --> 00:13:49.495
+<v Shashank Agarwal>Okay.</v>
+
+00:13:57.655 --> 00:14:09.335
+<v Shashank Agarwal>Got it, understood. So it's a very intelligent alerting that you have put in not a normal like these other services, they need to be monitored, these are off, just send an alert.</v>
+
+00:14:08.455 --> 00:14:27.015
+<v Seth Luby>Yeah, I mean, I think our services monitor for one of the services is something like 5000 long lines long. Like, it's not just like start, stop, is it running? It's like very action and event oriented on what is happening with the service. So</v>
+
+00:14:17.095 --> 00:14:17.415
+<v Shashank Agarwal>Oh.</v>
+
+00:14:28.535 --> 00:14:47.775
+<v Seth Luby>And I don't throw the number out just to like say, oh, we've got a long script. I'm just articulating that these are, you know, these are 20 something years in development, these service monitors. So like they're not, they're very mature or robust. There's always room for improvement and that is,</v>
+
+00:14:41.655 --> 00:14:41.895
+<v Shashank Agarwal>Blake.</v>
+
+00:14:48.375 --> 00:15:06.535
+<v Seth Luby>part of what I have a plan for, which is after we migrate from automate to ConnectWise RM, we're making our own project where it is, okay, now that we've got everything moved over and we're done worrying about automate, we're going to go through every single automation.</v>
+
+00:15:07.015 --> 00:15:25.975
+<v Seth Luby>and look for improvements or changes or whatever. The last year and few months has been focused on creating parity between automate and RMM before we cut off automate. But RMM brings a whole new slew of features and potentials</v>
+
+00:15:26.215 --> 00:15:36.455
+<v Seth Luby>that we didn't have an automate. So it's just a kind of first things first type thing. Making all those changes during a migration project of the size.</v>
+
+00:15:37.415 --> 00:15:42.375
+<v Seth Luby>I mean, we would never end the migration if we did this. So we got to kind of phase it.</v>
+
+00:15:41.375 --> 00:15:41.815
+<v Shashank Agarwal>Rick.</v>
+
+00:15:43.895 --> 00:15:48.615
+<v Shashank Agarwal>Yeah, and when are you expecting this migration to complete?</v>
+
+00:15:44.135 --> 00:15:45.495
+<v Seth Luby>So, so yeah.</v>
+
+00:15:50.055 --> 00:15:53.575
+<v Seth Luby>We're probably 1/4 out, two, three months.</v>
+
+00:15:55.175 --> 00:16:14.615
+<v Seth Luby>RMM, we've been working with, we're ConnectWise is one of their biggest partners. So I mean, we're working directly with their developers. A lot of the things that we've done have broken the tool, like in the back end. Like we've had to help them build better Docker containers in the back end because it wasn't able to.</v>
+
+00:16:15.015 --> 00:16:37.175
+<v Seth Luby>do what our mass needs. So we've been, we're slowly working with them to develop. So yeah, we're about three months out because there's about two major functions that nobody knew was, they had an issue with like Docker not replicating and recreating. There's a hung Docker service for the entire org.</v>
+
+00:16:38.375 --> 00:16:59.375
+<v Seth Luby>that we kind of help them identify and they've been working on that. Like there's certain things that are just kind of being stopped by ConnectWise, but from our perspective, we should be through the migration on, I'm saying optimistically two months, more like three months, just because the more clients we move, the more little.</v>
+
+00:17:00.695 --> 00:17:16.615
+<v Seth Luby>things we run into with the platform. So it's just a slow process, but I'd say a good three months at the most is our kind of expected time frame. So we're halfway through June, so I guess I would say 2 1/2 months now.</v>
+
+00:17:17.495 --> 00:17:27.175
+<v Shashank Agarwal>Okay, and then you would, your team would train the entire organization on that, the people who you use.</v>
+
+00:17:28.135 --> 00:17:51.255
+<v Seth Luby>We're doing that in tandem. So we've already, I've met with all 12 or 15 different teams that have service people that use RMM. We've had one-on-one sessions with those teams. So the admins have walked through and showed them the portals, showed them how to do things.</v>
+
+00:17:51.655 --> 00:18:11.175
+<v Seth Luby>We've done, we do what we're calling IT services learning, which is led by another team, but like one every month has a new theme. Last month was ConnectWise RMM. This month we have four sessions scheduled and then a fifth one in July.</v>
+
+00:18:11.575 --> 00:18:24.935
+<v Seth Luby>where it's an hour long, that we call them open hours or open sessions where basically technicians can join when they want. We're going to deep dive into each section of ConnectWise RMM for the whole org.</v>
+
+00:18:27.255 --> 00:18:47.295
+<v Seth Luby>And then, yeah, we have like, we use something called Brainer for training, like for, you know, when a new user onboards that you gotta go do all the like, you know, Marco kind of HR stuff in that system. We're also building required training for like on new techs.</v>
+
+00:18:47.415 --> 00:19:06.775
+<v Seth Luby>and current text to be able to watch more videos and learn more things. So yeah, training, that's also kind of part of the reason why the project is a little slower is because we've got to build all that and slow roll the prior projects so everybody can kind of get all that knowledge in.</v>
+
+00:18:55.295 --> 00:18:55.735
+<v Shashank Agarwal>Rick.</v>
+
+00:19:08.295 --> 00:19:11.735
+<v Seth Luby>So yeah, that's, yeah, we're doing that or that's part of it.</v>
+
+00:19:13.975 --> 00:19:31.895
+<v Shashank Agarwal>Okay, great, great insights. A lot of changes happening and thanks for giving those insights on the automation part. Yes, because I've seen every company using a different kind of alerting and automation.</v>
+
+00:19:20.375 --> 00:19:21.095
+<v Seth Luby>Yeah.</v>
+
+00:19:32.375 --> 00:19:32.775
+<v Seth Luby>Yeah.</v>
+
+00:19:33.015 --> 00:19:51.575
+<v Shashank Agarwal>I would be happy to deep dive into per alert type and have more knowledge session with you in the next calls and everything. Like, because one of my key forte is driving automation.</v>
+
+00:19:52.215 --> 00:20:11.655
+<v Shashank Agarwal>In my previous organization, what I was doing, I was driving automation for my project and I was working with one of the enterprise and literally I was able to make changes into the low hanging fruits that we say we.</v>
+
+00:20:10.375 --> 00:20:10.615
+<v Seth Luby>Yeah.</v>
+
+00:20:18.375 --> 00:20:19.015
+<v Seth Luby>So...</v>
+
+00:20:19.055 --> 00:20:22.135
+<v Shashank Agarwal>I did things, so yeah.</v>
+
+00:20:22.375 --> 00:20:42.175
+<v Seth Luby>I'll send you a link. I don't think I'm going to send it to you through Teams like we've chatted before. I don't think you'll have access to view it, but I'm sending you the link so Shale or Sahil might be able to show you because they would have access to it. This isn't set up for RMM yet.</v>
+
+00:20:30.455 --> 00:20:30.775
+<v Shashank Agarwal>No.</v>
+
+00:20:42.255 --> 00:20:49.975
+<v Seth Luby>but you can presume that the logic in the links, the library that I'm about to send you is.</v>
+
+00:20:52.255 --> 00:20:54.215
+<v Seth Luby>Correct, essentially what we did.</v>
+
+00:20:57.735 --> 00:21:13.815
+<v Seth Luby>is we made what we're calling the automation library. Right now we have all 257 different automations that run within automate documented. You don't see the code in these, but you see like...</v>
+
+00:21:14.775 --> 00:21:37.815
+<v Seth Luby>The variables that the scripts use, you see the sequence of actions and steps that they use. Now, granted, some of these are built for automate, so they may be different as they are today in RMM. But those have been sent to Shale and Sahil a few times, not necessarily like directly.</v>
+
+00:21:30.535 --> 00:21:30.655
+<v Shashank Agarwal>Yeah.</v>
+
+00:21:38.135 --> 00:21:58.215
+<v Seth Luby>But, or like, I've sent it to the group. I've never, I haven't sent it to them like directly to say, hey, review this. But I've encouraged the group if they have any like suggestions on automations, I would say go review this first and then determine if what you're doing or adding is.</v>
+
+00:21:58.375 --> 00:22:16.135
+<v Seth Luby>Additive or you know, regressions or what, so, so yeah, that that's if you're curious, it's available for public consumption through, I mean, like, obviously through our IT glue and structure, but yeah, that's available.</v>
+
+00:22:15.015 --> 00:22:16.615
+<v Shashank Agarwal>That's really insightful.</v>
+
+00:22:17.415 --> 00:22:19.415
+<v Seth Luby>Yeah, it has all of it.</v>
+
+00:22:21.415 --> 00:22:33.255
+<v Seth Luby>I mean, you know, just even from like how we uninstall umbrella, like here's, you know, it's there's the process for it. Actually, I can just share my screen real quick and I'll show you like.</v>
+
+00:22:35.015 --> 00:22:56.575
+<v Seth Luby>Inside IT glue, it essentially has, okay, so for the Cisco uninstall, roaming client uninstall, essentially, this is, you know, these are the script steps. This is what it does. These are the outputs of it. You know, how does it do error handling? You know, some just quick notes about how it works or whatever.</v>
+
+00:22:57.015 --> 00:22:57.575
+<v Seth Luby>Um...</v>
+
+00:22:58.775 --> 00:23:00.855
+<v Seth Luby>I mean, that's a really basic one, but...</v>
+
+00:23:04.135 --> 00:23:24.455
+<v Seth Luby>You know, like the how it installs CrowdStrike, kind of same idea, like the requirements for installing. Now some of these aren't really related to the team, so there's a lot in here. But this is just kind of give you an idea. Like there's like with this one, we're doing a lot of SQL queries within the automation. So it's just, you know.</v>
+
+00:23:14.935 --> 00:23:15.495
+<v Shashank Agarwal>Correct.</v>
+
+00:23:24.855 --> 00:23:43.095
+<v Seth Luby>There's a lot of info here. We've been looking at the data and frankly, I think for a lot of our techs, the stuff is above their kind of their head a little bit, but we wanted to get it out there just so people can say, oh, I see what you're doing, but I see something that we might be able to do better.</v>
+
+00:23:44.935 --> 00:24:04.455
+<v Seth Luby>You know, so it's all there. Shale and Sahil have the access to it. So if you're ever curious or spend some time with them, like you guys can go through and look at it. I mean, we're always open to suggestions. The only thing I'd say too is, you know, these are for the automate side. So we know fundamentally automate and RM.</v>
+
+00:24:04.655 --> 00:24:23.655
+<v Seth Luby>different. So there's some nuance with us migrating from automate to RMM. So some of these may have already changed. Once we get into RMM, we're going to have the same thing.</v>
+
+00:24:06.015 --> 00:24:06.375
+<v Shashank Agarwal>Rick.</v>
+
+00:24:24.455 --> 00:24:37.895
+<v Seth Luby>Yeah, what happened there? But yeah, we're going to have the kind of the same thing in the RMM scripts with, you know, all the automation stuff. So yeah, that's there, that's available. It's all for everybody at Marco. You can see that.</v>
+
+00:24:39.375 --> 00:24:45.175
+<v Shashank Agarwal>Great, I'll definitely have a look on a couple of them and see how you have.</v>
+
+00:24:39.735 --> 00:24:40.215
+<v Seth Luby>Um...</v>
+
+00:24:46.535 --> 00:24:58.135
+<v Seth Luby>Yeah, and like, you know, the part of the reason why we didn't share the code is because we have our own Azure Git, Azure DevOps repo. We do a bunch of like...</v>
+
+00:24:46.615 --> 00:24:47.495
+<v Shashank Agarwal>Done that, so.</v>
+
+00:24:59.095 --> 00:25:11.335
+<v Seth Luby>our own code signing. We've kind of got in our minds a little bit of some proprietary stuff there. So we, I don't even have access to that purposefully. I don't want it. I don't need it.</v>
+
+00:25:13.175 --> 00:25:29.015
+<v Seth Luby>But yeah, it's a pretty, I mean, so far, at least in the Marco world, no one, no other team is even code signing or doing any sort of like audit. Yeah, we have a lot of linting and all that good stuff kind of in that whole pipeline. So yeah.</v>
+
+00:25:30.855 --> 00:25:50.135
+<v Seth Luby>The 2 Jason's are basically developers at the end of the day. They're really not admins. But yeah, hopefully that'll help you out if you're looking for that or kind of curious. The only, there was one other thing that I was directed. Dennis wanted me to ask or find out.</v>
+
+00:25:31.495 --> 00:25:31.895
+<v Shashank Agarwal>Amit.</v>
+
+00:25:36.895 --> 00:25:37.015
+<v Shashank Agarwal>Yeah.</v>
+
+00:25:50.775 --> 00:25:58.855
+<v Seth Luby>about Sahil contract. I know we're on monthly with Shale. When is Sahil up? Do you know? Like, is it?</v>
+
+00:26:01.335 --> 00:26:05.575
+<v Shashank Agarwal>I had that information handy. Just give me one more minute.</v>
+
+00:26:04.775 --> 00:26:10.535
+<v Seth Luby>You're fine. I know I kind of threw that at you at the end out of nowhere. So yeah, no worries.</v>
+
+00:26:09.095 --> 00:26:09.255
+<v Shashank Agarwal>Ah.</v>
+
+00:26:11.175 --> 00:26:15.095
+<v Shashank Agarwal>No worries, just have a look at it.</v>
+
+00:26:17.375 --> 00:26:17.775
+<v Shashank Agarwal>S.</v>
+
+00:26:35.495 --> 00:26:42.215
+<v Vishal Dogra>This will be around 20 in August, Seth, and last last week of August. Yeah, last week of August.</v>
+
+00:26:39.735 --> 00:26:40.135
+<v Shashank Agarwal>Yeah.</v>
+
+00:26:39.735 --> 00:26:58.775
+<v Seth Luby>In August? Okay. I'll let Dennis know. Dennis did ask me to basically kind of verbally just say, hey, when Sahil, let's move him to the monthly like shale. I'll keep you in the loop. I don't know all the details, but that's just what I was told to kind of let you guys know about.</v>
+
+00:26:43.495 --> 00:26:43.895
+<v Shashank Agarwal>Yeah.</v>
+
+00:26:52.615 --> 00:26:53.095
+<v Vishal Dogra>Okay.</v>
+
+00:26:59.495 --> 00:27:08.375
+<v Seth Luby>If you guys have any questions, I can relay that over to Dennis. But that's the idea. We just want to move, do that, move them to monthly after that.</v>
+
+00:27:03.415 --> 00:27:03.895
+<v Shashank Agarwal>Yes.</v>
+
+00:27:09.455 --> 00:27:13.095
+<v Shashank Agarwal>No, it's on 25 August, the specific date.</v>
+
+00:27:12.295 --> 00:27:12.615
+<v Seth Luby>Okay.</v>
+
+00:27:14.615 --> 00:27:25.015
+<v Vishal Dogra>Yep, no worries. We can we can have that conversation when that time arrives. We can have that. We can we can engage you or Dennis on that. That should be fine. No, no worries.</v>
+
+00:27:17.255 --> 00:27:17.495
+<v Seth Luby>Kip.</v>
+
+00:27:26.375 --> 00:27:51.175
+<v Seth Luby>Okay, cool. That was really the only thing from my side as far as to bring to you guys, aside from, yeah, I mean, they're, Shale and Sahil are doing great. The only thing I got to reschedule now for the third time with Shale. We set up one-on-one and Shale, I think she had, you guys had like a company-wide IT by design thing on last Friday.</v>
+
+00:27:27.855 --> 00:27:28.415
+<v Shashank Agarwal>Perfect.</v>
+
+00:27:51.255 --> 00:28:12.295
+<v Seth Luby>or something. So she was, she missed the one-on-one and then I had rescheduled it for Monday and just no showed that meeting. So just, I mean, she's working tickets, so I'm not necessarily like mad about it or frustrated, but I just wanted to bring that to your attention. Like I scheduled one-on-ones.</v>
+
+00:27:51.295 --> 00:27:51.415
+<v Shashank Agarwal>Yeah.</v>
+
+00:28:11.335 --> 00:28:11.495
+<v Shashank Agarwal>Yes.</v>
+
+00:28:13.335 --> 00:28:31.455
+<v Seth Luby>for everybody because they, you know, everybody wanted them and we want to do those so I can hear what they're running into. So yeah, I kind of purposefully on the second one didn't ping her, wanted to see if she'd show up or say anything and I just never heard from her. So yeah.</v>
+
+00:28:31.015 --> 00:28:42.535
+<v Shashank Agarwal>Sure, sir. We'll make sure, like, because these are equally important, so we'll see, and I'll try and talk why this is happening, so that we understand.</v>
+
+00:28:37.575 --> 00:28:38.215
+<v Seth Luby>Yeah.</v>
+
+00:28:41.335 --> 00:29:00.135
+<v Vishal Dogra>These are most important. These are most important. We can just reiterate that said, you know, yes, we do have our internal connect. Sometimes it's an org wise and that is where we hear important org updates. It is important, but as I said, connect with you, connect with Marco is most important. I'm not very sure how much doable this is that, you know.</v>
+
+00:28:41.655 --> 00:28:42.215
+<v Seth Luby>And I...</v>
+
+00:28:43.815 --> 00:28:44.375
+<v Seth Luby>Yeah.</v>
+
+00:28:43.815 --> 00:28:44.215
+<v Shashank Agarwal>Yeah.</v>
+
+00:28:45.615 --> 00:28:45.735
+<v Seth Luby>Kour.</v>
+
+00:28:53.655 --> 00:28:54.055
+<v Seth Luby>Yeah.</v>
+
+00:29:00.255 --> 00:29:18.975
+<v Vishal Dogra>If you, whenever you set up a connect with your people, if you want to keep Shashank in CC, he's not going to join those calls, but that comes as a kind of information to him, right? So that he knows and then he can just keep a follow up with the person, hey, are you going to join it? If not, what is the reason for that? That should, yeah.</v>
+
+00:29:09.295 --> 00:29:10.455
+<v Seth Luby>Yeah, okay.</v>
+
+00:29:15.735 --> 00:29:16.135
+<v Seth Luby>M.</v>
+
+00:29:17.255 --> 00:29:17.975
+<v Seth Luby>Yeah, and...</v>
+
+00:29:19.175 --> 00:29:40.455
+<v Seth Luby>I'm okay, I get it. Like I want to work in tickets. So like if she's working a ticket and on a client call, all I ask is like a little Teams message, like, hey, I'm not gonna be able to join, can we reschedule? Just the communication is the only thing. And I don't wanna inundate them with meetings because I know they already meet with Wes.</v>
+
+00:29:34.055 --> 00:29:36.055
+<v Vishal Dogra>Absolutely, absolutely agree.</v>
+
+00:29:34.935 --> 00:29:35.575
+<v Shashank Agarwal>Correct.</v>
+
+00:29:40.695 --> 00:30:02.775
+<v Seth Luby>on a cadence. So meeting with me is another meeting. I get that. Ours are meant to be more high level where they can bring tickets to Wes and then me and the team meet, you know, one-on-one just for anything outside of that or, you know, what, whatever problems with Wes, like who knows, anything that's kind of the floor is open.</v>
+
+00:29:42.895 --> 00:29:43.495
+<v Vishal Dogra>Mhm.</v>
+
+00:30:01.735 --> 00:30:02.375
+<v Shashank Agarwal>Correct.</v>
+
+00:30:03.095 --> 00:30:17.815
+<v Seth Luby>And I mean, yeah, we'll talk about food. Like it's not necessarily always about work, just like talking, get to know each other. So yeah, that's all. No, no, nothing major. I don't want it to be a big thing. I'm just, you know, communication.</v>
+
+00:30:17.255 --> 00:30:17.655
+<v Vishal Dogra>No.</v>
+
+00:30:19.015 --> 00:30:27.655
+<v Vishal Dogra>I understand communication looking for. We are definitely going to address it with her. I understand that this verity, but don't worry, we'll take care of that. This is on our set.</v>
+
+00:30:23.495 --> 00:30:23.895
+<v Seth Luby>Awesome.</v>
+
+00:30:28.175 --> 00:30:31.175
+<v Seth Luby>Perfect. Yes, that's all. I appreciate it.</v>
+
+00:30:33.655 --> 00:30:36.375
+<v Shashank Agarwal>Thanks, Vishal, you want to add on anything?</v>
+
+00:30:35.175 --> 00:30:50.855
+<v Vishal Dogra>Okay, thank you. No, I'm good. It was a very detailed conversation. Thank you so much for your time, Seth. I always, you know, join this call, listen to you. It's always a pleasure. So I appreciate your time and have a good weekend.</v>
+
+00:30:51.335 --> 00:30:53.175
+<v Seth Luby>You as well. You guys have a great weekend.</v>
+
+00:30:54.215 --> 00:30:55.015
+<v Vishal Dogra>Thank you so much.</v>
+
+00:30:55.415 --> 00:30:56.295
+<v Seth Luby>Thank you, bye.</v>
+

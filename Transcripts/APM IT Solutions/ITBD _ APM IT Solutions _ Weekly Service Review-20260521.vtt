@@ -1,0 +1,1469 @@
+WEBVTT
+NOTE title: ITBD | APM IT Solutions | Weekly Service Review
+NOTE date: 2026-05-21
+NOTE duration: 1h 15m 1s
+
+00:00:15.310 --> 00:00:15.430
+<v Karen Modes>And</v>
+
+00:00:21.008 --> 00:00:22.248
+<v Aman Thakur>Hey, good afternoon, Karen.</v>
+
+00:00:22.368 --> 00:00:23.568
+<v Karen Modes>Hello, how are you?</v>
+
+00:00:24.368 --> 00:00:25.808
+<v Aman Thakur>I'm doing good. How about you?</v>
+
+00:00:26.288 --> 00:00:27.008
+<v Karen Modes>Come on God.</v>
+
+00:00:28.608 --> 00:00:29.408
+<v Aman Thakur>Das.</v>
+
+00:00:31.728 --> 00:00:32.928
+<v Aman Thakur>Aleks, you want to join?</v>
+
+00:00:33.808 --> 00:00:34.928
+<v Karen Modes>I believe he is.</v>
+
+00:00:40.928 --> 00:00:41.888
+<v Aman Thakur>How's everything going?</v>
+
+00:00:42.768 --> 00:00:44.688
+<v Karen Modes>It's going good, and you?</v>
+
+00:00:45.568 --> 00:00:47.728
+<v Aman Thakur>Yeah, good to hear, too.</v>
+
+00:00:49.728 --> 00:00:51.328
+<v Karen Modes>Is it sunny or rainy there?</v>
+
+00:00:52.248 --> 00:00:56.128
+<v Aman Thakur>Hi, we're in the middle of summer, so it's pretty hot outside.</v>
+
+00:00:55.568 --> 00:00:56.128
+<v Karen Modes>Daum.</v>
+
+00:00:59.328 --> 00:01:05.088
+<v Karen Modes>We were hot yesterday, and then last night the rain came, so we're back down to 60 degrees.</v>
+
+00:01:06.128 --> 00:01:11.568
+<v Aman Thakur>Ohh, yeah, but no, for us, yeah, for next two months, I think it's gonna be...</v>
+
+00:01:07.168 --> 00:01:07.688
+<v Karen Modes>I believe.</v>
+
+00:01:12.768 --> 00:01:14.128
+<v Aman Thakur>Very, very hot on outsides.</v>
+
+00:01:15.248 --> 00:01:19.808
+<v Karen Modes>I think Vincent was telling me rain comes in August, is that correct?</v>
+
+00:01:21.568 --> 00:01:22.048
+<v Aman Thakur>Sorry.</v>
+
+00:01:22.288 --> 00:01:24.528
+<v Karen Modes>The rainy season is in August.</v>
+
+00:01:25.008 --> 00:01:30.528
+<v Aman Thakur>Yeah, OK. It started normally in July, then yeah, July, I guess the end in September.</v>
+
+00:01:30.928 --> 00:01:31.488
+<v Karen Modes>Okay.</v>
+
+00:02:01.408 --> 00:02:01.568
+<v Karen Modes>Kip.</v>
+
+00:02:12.608 --> 00:02:13.088
+<v Aman Thakur>Thanks.</v>
+
+00:02:15.408 --> 00:02:16.208
+<v Amit Dubey>Aman Karen.</v>
+
+00:02:17.488 --> 00:02:18.208
+<v Karen Modes>Hello.</v>
+
+00:02:20.688 --> 00:02:23.168
+<v Aman Thakur>Think Amit meeting first time, right?</v>
+
+00:02:24.128 --> 00:02:43.248
+<v Amit Dubey>Yeah, meeting was the first time. I was on a call with Alex yesterday. Karen, this is Amit Dubey. I am based out of IT by Design's location, where you have most of the engineers working out of. Amit is a part of my team. I'm a service manager here, responsible for...</v>
+
+00:02:31.408 --> 00:02:31.568
+<v Aman Thakur>Yeah.</v>
+
+00:02:43.568 --> 00:02:58.448
+<v Amit Dubey>the services that we cater to our several clients. So I would be overseeing to make sure that, you know, engineers are delivering to your expectations and, you know, what is the best that we can do and continue to keep ourselves aligned with your expectations.</v>
+
+00:02:59.328 --> 00:02:59.728
+<v Karen Modes>Okay.</v>
+
+00:03:00.808 --> 00:03:00.928
+<v Amit Dubey>Yeah.</v>
+
+00:03:01.888 --> 00:03:06.128
+<v Karen Modes>I just checked with Alex. He said he'll be here in a moment. He's on with Sameer.</v>
+
+00:03:04.928 --> 00:03:13.488
+<v Amit Dubey>Oh, I was literally getting added on a call with Sameer and Alex. While I'm here, let me see if they want me to join. I'll...</v>
+
+00:03:10.208 --> 00:03:10.608
+<v Karen Modes>Up.</v>
+
+00:03:15.008 --> 00:03:18.208
+<v Amit Dubey>I'll come back in, just give me one quick moment.</v>
+
+00:03:18.528 --> 00:03:18.928
+<v Karen Modes>Okay.</v>
+
+00:03:32.568 --> 00:03:32.928
+<v Amit Dubey>Rick.</v>
+
+00:03:34.048 --> 00:03:34.768
+<v Rick Arora>Hi, everyone.</v>
+
+00:03:36.128 --> 00:03:37.488
+<v Rick Arora>Hey, Karen, hi, Aman.</v>
+
+00:03:36.928 --> 00:03:37.568
+<v Karen Modes>Hello.</v>
+
+00:03:40.328 --> 00:03:40.528
+<v Karen Modes>Yeah.</v>
+
+00:04:07.488 --> 00:04:10.528
+<v Karen Modes>This is the first time we're meeting in like 2 weeks or something, isn't it?</v>
+
+00:04:11.328 --> 00:04:14.928
+<v Aman Thakur>Yeah, Henry, I think Alex rescheduled the last week call.</v>
+
+00:04:15.488 --> 00:04:16.048
+<v Karen Modes>Yeah.</v>
+
+00:04:23.688 --> 00:04:23.888
+<v Karen Modes>Yeah.</v>
+
+00:04:33.408 --> 00:04:34.448
+<v Karen Modes>Ohh.</v>
+
+00:08:59.248 --> 00:09:00.368
+<v Aman Thakur>Hey, good afternoon, Aleks.</v>
+
+00:09:00.808 --> 00:09:01.328
+<v Aleks P. Mednis>Hi.</v>
+
+00:09:02.608 --> 00:09:04.048
+<v Aman Thakur>Good to see you. How are you doing?</v>
+
+00:09:03.488 --> 00:09:17.328
+<v Aleks P. Mednis>Good to see you. Did you, I think you made that background after we had a call. Didn't it show you? I think you did. I think I inspired you to make an IT by design background. Yeah, that's cool.</v>
+
+00:09:10.288 --> 00:09:11.248
+<v Aman Thakur>Uh, yeah, that's right.</v>
+
+00:09:12.408 --> 00:09:12.568
+<v Aman Thakur>Okay.</v>
+
+00:09:16.288 --> 00:09:28.448
+<v Aman Thakur>Yeah, I tried, but yeah, give me a very good, I tried, but using ChatGPT, then I was not getting the result what I was looking for, then I used Claude, then yeah, it gave me a perfect picture the way I want.</v>
+
+00:09:28.848 --> 00:09:46.128
+<v Aleks P. Mednis>Oh, good. Oh, all right. I've been using Gemini for images. I haven't actually been using. All right. So I just hung on the phone with Amit and Sameer. You may have known I was on the call with them. But yeah, so</v>
+
+00:09:30.208 --> 00:09:30.448
+<v Aman Thakur>Yeah.</v>
+
+00:09:47.528 --> 00:09:47.648
+<v Aleks P. Mednis>Yeah.</v>
+
+00:09:49.408 --> 00:09:53.248
+<v Aleks P. Mednis>Yeah, from your side, I suppose, you know, weekly review. Hi, Rick, how you doing, man?</v>
+
+00:09:54.848 --> 00:09:55.808
+<v Rick Arora>Good to see you, Aleks.</v>
+
+00:09:56.368 --> 00:10:01.088
+<v Aleks P. Mednis>See you as well. Been a while. How are you feeling today, by the way, Aman? You been doing better?</v>
+
+00:10:01.728 --> 00:10:02.608
+<v Rick Arora>Yep, yep.</v>
+
+00:10:02.048 --> 00:10:02.448
+<v Aman Thakur>Yeah.</v>
+
+00:10:02.848 --> 00:10:09.248
+<v Aleks P. Mednis>I was out yesterday too, basically. I mean, I went to a couple of meetings, but I was out most of the day trying to recover.</v>
+
+00:10:03.608 --> 00:10:04.128
+<v Aman Thakur>All good.</v>
+
+00:10:11.568 --> 00:10:18.768
+<v Aleks P. Mednis>from illness. But yeah, well, well, go for it, man. I mean, are you going to do a PowerPoint? I'm on or are we just going to talk?</v>
+
+00:10:19.808 --> 00:10:20.608
+<v Aman Thakur>So, I think we were...</v>
+
+00:10:20.648 --> 00:10:23.328
+<v Aleks P. Mednis>The PowerPoint, to be honest, but...</v>
+
+00:10:23.168 --> 00:10:40.368
+<v Aman Thakur>I know I was, I was just just before this call I was discussing with Amit. Oh, I have the deck ready, but Aleks don't like words, PowerPoints, you know, but he said, you know, get ready the data, you know, but if you want to, we can say it.</v>
+
+00:10:38.488 --> 00:10:38.848
+<v Aleks P. Mednis>Yeah.</v>
+
+00:10:41.168 --> 00:11:00.808
+<v Aleks P. Mednis>Yeah, I think right now data to me, like, you know, there's, yeah, it's okay. We don't, we don't necessarily need. And I actually saw, I think I put a little heart or a clap on a LinkedIn post that your boss, your boss put up, which Sunny, Sunny was all, you know, very, he</v>
+
+00:10:58.128 --> 00:10:58.368
+<v Aman Thakur>Yep.</v>
+
+00:11:00.928 --> 00:11:17.248
+<v Aleks P. Mednis>very much bragged about your use of AI to review time sheets. I think that's what it was. You know, so you don't have to like bang your head against the wall, look at everybody's time sheets, all again, you know, hopefully save a lot of time. But yeah, look, I mean...</v>
+
+00:11:07.808 --> 00:11:08.288
+<v Aman Thakur>I will.</v>
+
+00:11:18.608 --> 00:11:33.808
+<v Aleks P. Mednis>Yeah, it's not so scalable for you to constantly be writing these reports for, you know, hundreds of, you know, or you know, 100 people, you know, so it's hard to do, and so if you can automate any of that, that's great, but look, I mean...</v>
+
+00:11:25.328 --> 00:11:26.208
+<v Aman Thakur>Yeah, great.</v>
+
+00:11:35.568 --> 00:11:54.208
+<v Aleks P. Mednis>You know, if you, if you statistically speaking, you know, right now, and you know, you know, some of the times in, you know, in the past when we've done these calls, you know, there's like a slide deck, a slide deck says, you know, so and so, Shivani worked with these accounts, her utilization rates are this.</v>
+
+00:11:54.328 --> 00:12:12.288
+<v Aleks P. Mednis>Her response times are there, she's closing these tickets, et cetera. The real, the story right now is truthfully, we don't have a very high ticket value, very, very low ticket value. Okay. I very much stress the fact that the team should learn how to learn things more deeply, generate documentation.</v>
+
+00:12:04.208 --> 00:12:04.528
+<v Aman Thakur>Yeah.</v>
+
+00:12:13.328 --> 00:12:32.448
+<v Aleks P. Mednis>You know, become proactive minded, and you know some of the proactive stuff we have not even started. I've been I've been spending two two to three weeks with with Animesh, really, you know, sort of getting this whole we had a high priority issue with Veeam, so Veeam needed its.</v>
+
+00:12:33.648 --> 00:12:43.168
+<v Aleks P. Mednis>you know, attention. Oh my gosh, my AI is not even in the call. Oh, that's horrible. This is not good. Did you kick my AI out of the call?</v>
+
+00:12:44.368 --> 00:12:48.288
+<v Aman Thakur>No, I want to get the pop-up. I thought, yeah, please.</v>
+
+00:12:45.968 --> 00:12:48.768
+<v Aleks P. Mednis>I gotta add it. Let me see if I can add it real quick.</v>
+
+00:12:52.408 --> 00:12:54.608
+<v Aleks P. Mednis>Whoa, you guys have a big air conditioner over there?</v>
+
+00:12:55.648 --> 00:13:07.968
+<v Aman Thakur>Yeah, it's very big. It's entire the floor that we have, so it's centralized for one place, and you know this was along the floor. I think we have 20 to 25th floor in the building.</v>
+
+00:13:00.608 --> 00:13:01.008
+<v Aleks P. Mednis>Yeah.</v>
+
+00:13:10.288 --> 00:13:13.408
+<v Aleks P. Mednis>You're on the 25th floor? Really? Wow.</v>
+
+00:13:12.848 --> 00:13:17.168
+<v Aman Thakur>No, we're in the 6th, but in the building is like a 26th floor. We're on the 6th floor.</v>
+
+00:13:17.488 --> 00:13:18.528
+<v Aleks P. Mednis>Ohh, the 6th floor.</v>
+
+00:13:18.448 --> 00:13:19.888
+<v Aman Thakur>But, yeah.</v>
+
+00:13:19.928 --> 00:13:23.248
+<v Aleks P. Mednis>But I, but your, I hear some noise, like a big fan. Is that a big?</v>
+
+00:13:25.048 --> 00:13:25.728
+<v Aleks P. Mednis>Yeah, yeah.</v>
+
+00:13:25.808 --> 00:13:28.448
+<v Aman Thakur>Hearing from from my earphone, Rick?</v>
+
+00:13:27.408 --> 00:13:28.368
+<v Aleks P. Mednis>Karen, do you hear that?</v>
+
+00:13:27.888 --> 00:13:29.888
+<v Rick Arora>Some voice is coming, some voice is coming.</v>
+
+00:13:29.088 --> 00:13:31.488
+<v Karen Modes>I heard it, but I thought it was from here.</v>
+
+00:13:33.168 --> 00:13:34.288
+<v Aleks P. Mednis>Oh, maybe it's from here.</v>
+
+00:13:33.408 --> 00:13:35.248
+<v Aman Thakur>Yeah, yeah, they...</v>
+
+00:13:37.488 --> 00:13:43.568
+<v Aleks P. Mednis>I know, you know, just important things to meet to discuss during your meeting. I'm going to start capture my Fireflies.</v>
+
+00:13:46.208 --> 00:13:48.448
+<v Aleks P. Mednis>Should should pop in here for in a second.</v>
+
+00:13:50.968 --> 00:13:57.568
+<v Aleks P. Mednis>So, yeah, so Aramesh, you know, his shift schedule shift started on Monday.</v>
+
+00:13:53.288 --> 00:13:53.408
+<v Aman Thakur>Yes.</v>
+
+00:14:00.288 --> 00:14:17.568
+<v Aleks P. Mednis>you know, and that was fine. And I'm happy with that. And he's been very responsive. Like I said on yesterday's call in regards to some of the, you know, constructive criticism, you know, it's a big growth change for him. This entire job change has been a very, very big change for him from</v>
+
+00:14:14.048 --> 00:14:14.448
+<v Aman Thakur>Yep.</v>
+
+00:14:21.472 --> 00:14:22.632
+<v Aleks P. Mednis>There, he's definitely...</v>
+
+00:14:23.992 --> 00:14:32.792
+<v Aleks P. Mednis>He's definitely eager to do that. So, and I'm very happy with him. He's a very good, good person, you know, very, very good person, very important.</v>
+
+00:14:35.752 --> 00:14:50.872
+<v Aleks P. Mednis>But yeah, so yeah, I mean, if there's anything you want to share with me in regards to what you have studied that you are going to present in the deck that you think is a significant to bring up, Amman?</v>
+
+00:14:51.912 --> 00:15:10.152
+<v Aman Thakur>Yeah, so I think I have a few points because in the last call we had just like a small conversation like what we need to achieve. So I think I need, it's more kind of clarity question from your side, right? So I think the one thing, what we follow right and what do you follow. So kind of.</v>
+
+00:15:10.312 --> 00:15:29.912
+<v Aman Thakur>Because since we are a team, right? So we want to make sure that we are on the same page. So the engineers are on the same page, right? So I think the first thing would be the way we evaluate our engineer, right? Because they're accountable for delivery 8 hours, right? We don't want the common office, they don't have work to do and they're sitting idle, right? That's first important.</v>
+
+00:15:11.152 --> 00:15:11.832
+<v Aleks P. Mednis>Mhm.</v>
+
+00:15:30.072 --> 00:15:49.392
+<v Aman Thakur>the first thing. So, but the secondary is how we're going to evaluate them. So like, we know that the feedback is good and MS is doing pretty good, right? But if we check after six months or downtime maybe after a year, right, the numbers matter, right? If the numbers are somewhere, that's where we can evaluate.</v>
+
+00:15:49.512 --> 00:16:08.592
+<v Aman Thakur>Right, I know personally, I know he's very good, but if I go and ask Javed or Lee, probably they don't know, right? That how he's doing, what he's doing, they're gonna see the numbers, show me the numbers, right? What he's doing good, so that's I was trying to figure out how we evaluate.</v>
+
+00:15:50.232 --> 00:15:50.312
+<v Aleks P. Mednis>Oh.</v>
+
+00:15:55.672 --> 00:15:55.792
+<v Aleks P. Mednis>Yeah.</v>
+
+00:15:58.152 --> 00:15:58.712
+<v Aleks P. Mednis>Right, ma'am.</v>
+
+00:16:00.232 --> 00:16:00.792
+<v Aleks P. Mednis>Right.</v>
+
+00:16:04.872 --> 00:16:05.272
+<v Aleks P. Mednis>Yeah.</v>
+
+00:16:08.672 --> 00:16:27.792
+<v Aman Thakur>how we calculate what they are doing, whatever the task that you are giving them, are they completing that on time? Are they able to achieve those numbers? So that is, I think, my first clarity question. And the second one is, because I know as we're looking at trend.</v>
+
+00:16:28.072 --> 00:16:48.632
+<v Aman Thakur>because the practice I started, which I follow for the other engineer, I sit with them daily for maybe 30 minute, I review their ticket, what all they are doing, how many ticket they have assigned, right, what technology they are working, what all training they are doing. So that give me a fair amount of idea where this person stand, if it need any support, he need a training.</v>
+
+00:16:48.952 --> 00:17:07.912
+<v Aman Thakur>He's good at 365, but on the backup side, he needs support, he needed training. So kind of judge them all. But what I have noticed in a couple of days, you know, they work on different everything, just a VM server, anything that work. So I think maybe the challenge.</v>
+
+00:17:08.152 --> 00:17:15.432
+<v Aman Thakur>is going to be, they are good at 365, but not on the other technology where they need support. So, yeah.</v>
+
+00:17:14.232 --> 00:17:21.992
+<v Aleks P. Mednis>So, I, I think, I think, I think part of the like, I don't think there are the only the only real problem in my mind is that.</v>
+
+00:17:24.312 --> 00:17:30.072
+<v Aleks P. Mednis>I mean, look, I gotta look at this like, okay, so contextually.</v>
+
+00:17:32.392 --> 00:17:36.672
+<v Aleks P. Mednis>Well, okay, the most obvious short-term problem is the fact that...</v>
+
+00:17:38.192 --> 00:17:41.352
+<v Aleks P. Mednis>Um, I haven't even started with Vincent.</v>
+
+00:17:42.232 --> 00:17:48.712
+<v Aleks P. Mednis>Okay? Like I haven't even started what I want to watch with Vincent and even Shivani. I started them on...</v>
+
+00:17:43.272 --> 00:17:43.672
+<v Aman Thakur>Yes.</v>
+
+00:17:49.912 --> 00:18:00.472
+<v Aleks P. Mednis>I mean, and there, and there, I mean, I shouldn't say I haven't started at all, but I feel the work that I need to do in order to make them successful, right, has not been done.</v>
+
+00:18:01.552 --> 00:18:07.752
+<v Aleks P. Mednis>Okay, and where I also need them from productivity standpoint, that work has not been done.</v>
+
+00:18:08.552 --> 00:18:08.952
+<v Aman Thakur>Okay.</v>
+
+00:18:10.152 --> 00:18:29.232
+<v Aleks P. Mednis>You know, and so, and then you say, well, why hasn't that been done? Well, you know, number one, we look at like a timeline where we were at. I would say we've only gained some degree of stability in the past like 30 days.</v>
+
+00:18:29.352 --> 00:18:33.192
+<v Aleks P. Mednis>OK, so once with stability.</v>
+
+00:18:32.352 --> 00:18:32.472
+<v Aman Thakur>Yeah.</v>
+
+00:18:35.032 --> 00:18:52.472
+<v Aleks P. Mednis>That's good. We have then Samar that is going to also join us, which also gives us a little bit of scale and a little bit more stability, even though it seems like there isn't that much to do. But there is a tremendous amount to do. Because</v>
+
+00:18:39.432 --> 00:18:39.752
+<v Aman Thakur>No.</v>
+
+00:18:54.152 --> 00:19:14.312
+<v Aleks P. Mednis>I am, I'm very happy because now I have, I'll have 4 resources that are full-time in, and I have my own resources here, plus you, plus Rick, plus, you know, so we have a very robust sort of group, right? Then I can start to accelerate. Then I can start to put pressure on individuals.</v>
+
+00:19:05.832 --> 00:19:06.032
+<v Aman Thakur>Yeah.</v>
+
+00:19:14.552 --> 00:19:36.312
+<v Aleks P. Mednis>to get things done, right? And I should, and that said, I could do more pressure now, and not just pressure, but again, responsibility in a very structured way, where I have said, I think on probably the previous call, only in the past, you know, well, yeah, in the, maybe like 30 days ago, I said to this to you guys, 40, maybe, maybe, maybe two months ago.</v>
+
+00:19:36.712 --> 00:19:51.672
+<v Aleks P. Mednis>But Vincent and Shivani are going to need to be working in my cybersecurity stack standards and insurance, and that's not a ticket. You know, that is a, that is a, you know, requirement to audit and deploy.</v>
+
+00:19:42.952 --> 00:19:43.352
+<v Aman Thakur>OK.</v>
+
+00:19:52.872 --> 00:20:06.632
+<v Aleks P. Mednis>Our, you know, software stack in our customer environment and ensuring that those, you know, endpoints are audited. So, right now, for example, they were given a project about a month ago for Mercer Street Friends, right?</v>
+
+00:20:07.632 --> 00:20:27.272
+<v Aleks P. Mednis>Mercer Street Friends has, and I gave them, I gave them only a small, I gave them a startup, a starter part of it. It's not even the, it's a, it's okay, make sure you identify all the valid assets in the environment, make sure that they are all Intune enrolled, make sure that...</v>
+
+00:20:07.712 --> 00:20:08.072
+<v Aman Thakur>Okay.</v>
+
+00:20:27.832 --> 00:20:46.152
+<v Aleks P. Mednis>They have, you know, these three or four pieces of software which are automatically deployed in Intune. So, what happens is the goal here is for them to, you know, start to get those training wheels on understanding and, and you know, and get in getting that muscle memory to.</v>
+
+00:20:29.992 --> 00:20:30.232
+<v Aman Thakur>Yeah.</v>
+
+00:20:46.392 --> 00:21:07.112
+<v Aleks P. Mednis>to do this. And if they're not doing it, they are slowing, they're going too slow. Because this should have been done by now, right? So the question is, what may they be waiting on? I'm not sure if they're waiting again for me. But my ultimate goal is that India, my team in India, it doesn't matter if they're located in India or Pennsylvania.</v>
+
+00:21:07.352 --> 00:21:26.112
+<v Aleks P. Mednis>right? If they were physically in this physical office, they can do the same exact thing for all of our customers that they can from India, right? So I think there's a bit of a mental disconnect. Sometimes it's actually positive, but it can also be very negative where they think they're so distant from the client, but they're not.</v>
+
+00:21:08.552 --> 00:21:09.272
+<v Aman Thakur>Yeah, that's right.</v>
+
+00:21:26.712 --> 00:21:46.712
+<v Aleks P. Mednis>They've been given all the contact information. They have responsibilities at L3. L3 and, you know, Shivani and Vincent are a very good team. Okay, Shivani has great customer service capabilities. She's extremely professional and she enjoys talking to people. Sometimes I think I see Vincent maybe being a little too shy.</v>
+
+00:21:26.952 --> 00:21:27.752
+<v Aman Thakur>Yeah, I know.</v>
+
+00:21:46.952 --> 00:22:05.992
+<v Aleks P. Mednis>You know, not taking the front seat and maybe, you know, so whatever's happening with Mercer Street Friends, we need to look at resolving that to make sure that, you know, Vincent and Shivani have been completing that responsibility. We could share the ticket and share the screen if you want. I could probably put it up on the screen.</v>
+
+00:22:06.352 --> 00:22:14.952
+<v Aleks P. Mednis>Because that's the recurring, our goal, like I told you guys, when I told back in, you know, when we started the relationship, our goal is to...</v>
+
+00:22:16.232 --> 00:22:34.872
+<v Aleks P. Mednis>build a team that can execute on our standards, right? And the basis of us even hiring anybody was to be able to execute across 12, our existing 12 customers that would have a golden standard and then double our customer base and double our customer base, yeah?</v>
+
+00:22:35.512 --> 00:22:36.152
+<v Aman Thakur>Yeah, great.</v>
+
+00:22:35.592 --> 00:22:56.112
+<v Aleks P. Mednis>So, we need to ensure that those standards are deployed, and my team in India is directly responsible to ensure that we meet these standards, right? So, so, so for that is that is the most critical thing. I can, you know, I would love to share even some of the slides that I've had.</v>
+
+00:22:44.272 --> 00:22:44.472
+<v Aman Thakur>Yeah.</v>
+
+00:22:56.472 --> 00:23:15.432
+<v Aleks P. Mednis>You know, I, I should put a slide deck together for you, because, because I can share some of the every week we have a slide deck that we have as a team, and I'm not sure if they've shared those with you. You know, have you been able to see any of those slide decks or they share those with you at all? No, because they...</v>
+
+00:23:04.472 --> 00:23:05.752
+<v Aman Thakur>Yeah, right.</v>
+
+00:23:07.352 --> 00:23:07.432
+<v Aman Thakur>The.</v>
+
+00:23:11.432 --> 00:23:11.592
+<v Aman Thakur>Mm.</v>
+
+00:23:14.792 --> 00:23:16.712
+<v Aman Thakur>I can check probably it's in the folder, yeah.</v>
+
+00:23:15.592 --> 00:23:37.432
+<v Aleks P. Mednis>I share the philosophy, I share the philosophy, and it's all very good. I mean, I think I hope they really, I think it really works well in terms of getting everybody on the same page. But my goal is for Shivani and Vincent and to be true level 2 L2L3s. I guess, what's a real L3?</v>
+
+00:23:37.672 --> 00:23:40.312
+<v Aleks P. Mednis>Vincent's a real L3 and then he can perform.</v>
+
+00:23:42.312 --> 00:23:59.832
+<v Aleks P. Mednis>help desk ticket, but our help desk tickets are only like two to three a day. That's it. That's it. And we don't even want more. You know, we can't measure people based on that. We don't want to measure people based on performing help desk work because that's not even our target market. You know, our target market is our cybersecurity rollout, right?</v>
+
+00:24:00.312 --> 00:24:20.792
+<v Aleks P. Mednis>So our cybersecurity program are all out. You know, and if we start to produce more tickets as a result of that, that's fine. But, you know, so most of the time should be spent on, you know, our posture. Vincent has been, you know, his responsibility. And maybe this is another good point.</v>
+
+00:24:21.512 --> 00:24:39.432
+<v Aleks P. Mednis>If he's not interested in it, let me know now. Because his responsibility in the cybersecurity stack is certainly very real. So Enforcer is a product that he has been told now for two to three weeks that he needs to learn. He's been on calls, he's required to take training.</v>
+
+00:24:24.232 --> 00:24:24.512
+<v Karen Modes>Yes.</v>
+
+00:24:24.792 --> 00:24:25.592
+<v Aman Thakur>No, no, maybe.</v>
+
+00:24:39.672 --> 00:25:00.672
+<v Aleks P. Mednis>and he's required to execute on baseline assessments. I would say, look, I'm not, I don't want to create an anxious phone call. I don't need to do that. It's not really an anxious situation. But that's the sense of urgency around what we need to accomplish</v>
+
+00:24:44.352 --> 00:24:44.472
+<v Karen Modes>Play.</v>
+
+00:24:48.352 --> 00:24:48.712
+<v Karen Modes>Cortana.</v>
+
+00:25:02.232 --> 00:25:20.312
+<v Aleks P. Mednis>And I would just say that it's, like I said, the timeline with Animesh, you know, it's been taking me longer to get him to where, you know, and it's not his fault. It's just, it just didn't take longer that, you know, you know, we're longer time on Veeam.</v>
+
+00:25:20.552 --> 00:25:40.632
+<v Aleks P. Mednis>A little bit longer on Veeam, and then you know, but we're all only talking about like two to three or four weeks of time, really. So, as I shift away and I can turn back to Vincent and Shivani, as well as Sameer, to roll out additional, you know...</v>
+
+00:25:40.792 --> 00:25:59.432
+<v Aleks P. Mednis>clarity on responsibilities and what we need to do. But Mercer's Three Friends was one that was given about a month ago to be an opportunity for training and understanding. That's an easy one. It's an easy one, right? It's not a hard one. It's okay, you got to make sure we can execute this on a 90 seat, you know,</v>
+
+00:26:00.312 --> 00:26:20.792
+<v Aleks P. Mednis>organization has 90 seats, make sure you know exactly which computers, you know, we already have them in VSA, you know, we have the RMM tool, we have them in Intune, we have the customer provides a hardware list, you need to reconcile all of that, make sure they're all in VSA, make sure they all show up in Huntress, make sure they all show up in...</v>
+
+00:26:21.192 --> 00:26:21.752
+<v Aleks P. Mednis>Um...</v>
+
+00:26:24.152 --> 00:26:42.072
+<v Aleks P. Mednis>Cyber QP, you know, and I think that was pretty much it. Hunter, Cyber QP, Windows Defender, and and that type of thing. That's a very contained set of requirements, and we can we can look at those spreadsheets if you want. I could pull them up.</v>
+
+00:26:42.632 --> 00:26:54.312
+<v Aleks P. Mednis>I might as well. I mean, you can certainly, I see Rick like, I don't know if Rick's thinking, I don't know what's going on with Rick's head right now. Rick's, I don't know what's going on with Rick. I don't even know what's going on with you, Aman. I'm trying to figure out what's going on.</v>
+
+00:26:48.712 --> 00:26:49.272
+<v Aman Thakur>I think, yeah.</v>
+
+00:26:53.672 --> 00:27:12.192
+<v Aman Thakur>No, no, no, I'm aligned. So I think the question would be, thank you for all this insight. So I think what I noticed here, a little small gap is whatever the task they have, so I think that's what I need your support, whatever the task they have given, right? I want to make sure that I'm aware, right? If they are running behind.</v>
+
+00:26:56.152 --> 00:26:56.632
+<v Aleks P. Mednis>Okay.</v>
+
+00:27:12.312 --> 00:27:32.352
+<v Aman Thakur>I probably reach out them. So this is what the task is given to you. Where do you stand on this particular task? How far we reached? What is the challenge? Where are you stuck anywhere? So I think that's probably more kind of visibility things. If I get any, I think I'm not sure if that worked for you the way I do that practice for the.</v>
+
+00:27:32.952 --> 00:27:52.312
+<v Aman Thakur>other client, right? Because everything is in ConnectWise, right? All the notes they're putting, what is the status of the project, how far we reached. So the way we get these information, rather because what happens sometime or they are busy most of the time they're on call, so I cannot go and separately sit with them and you know.</v>
+
+00:27:52.432 --> 00:28:11.872
+<v Aman Thakur>I check individually tickets, go to their ConnectWise board and review what all they have done. So I think if it's feasible for ConnectWise API key, API access, just like only the read. So that way I have that information, what all tickets they're working, what all project they have, how far they have.</v>
+
+00:28:12.552 --> 00:28:31.432
+<v Aman Thakur>completed the project, what all the stuff is performed, if they have any stack, anything, that everything is on ticket site. So that way I have the overall visibility for each individual engineer so I can see their tickets, can review, you know, but nowadays what I'm doing just walking to their workstation, connecting with them.</v>
+
+00:28:31.752 --> 00:28:52.712
+<v Aman Thakur>individually reviewing their ticket, which are a lot of time consuming. And of course, if they are on call, they cannot give me 1/2 an hour hours to just go to the board and check individually, you know, the tickets. So with that, I probably, the way I think the post that you saw, so what was that outcome? But another good example of the client, the individuality of the client.</v>
+
+00:28:41.752 --> 00:28:41.912
+<v Aleks P. Mednis>Mm.</v>
+
+00:28:53.112 --> 00:29:12.232
+<v Aman Thakur>or the engineer performance, what they all doing. So with the help of what we build, where we can see their SLA compliance, we can see their KPIs, how many projects they close, what is the status of the project, what is the status of the tickets, is it putting notes correctly, is it build customer correctly, whatever the activities they are doing.</v>
+
+00:29:12.312 --> 00:29:31.272
+<v Aman Thakur>non-billable or anything that it. So that keep track of all the activities they are doing in the entire day. If they are running behind on any of the tasks, I can proactively see at my end, oh, this is what the task has been assigned to you last month. There's no progress made on it. I can see the tickets note. So I can do a follow-up.</v>
+
+00:29:31.672 --> 00:29:50.352
+<v Aman Thakur>If they need, for example, for Vincent, so if he's running out of any support or anything for these security side or any other thing, I can review those things. If he need training, I can do that. If he needs my support to deliver those tasks, so I can do that. I think overall, if the visibility is more to me.</v>
+
+00:29:50.792 --> 00:29:53.832
+<v Aman Thakur>So, where I can review these things at my my side, you know?</v>
+
+00:29:54.232 --> 00:30:11.992
+<v Aleks P. Mednis>Yeah, I mean, so that, okay, so your visibility, just focusing on that for a minute. You, you, you, I'm not, I'm not sure if you actually just meant API just now that you wanted an API interface. Okay, so that could be that could be a little challenging unless you can provide me maybe a source IP address.</v>
+
+00:30:04.872 --> 00:30:05.112
+<v Aman Thakur>Yeah.</v>
+
+00:30:12.632 --> 00:30:31.112
+<v Aleks P. Mednis>That is, that is permissible. I mean, I mean, we we don't have, obviously, we don't have any public facing. Everything goes through our secure, you know, secure access, secure edge, so yeah, we don't we don't expose ConnectWise publicly, so...</v>
+
+00:30:31.512 --> 00:30:47.592
+<v Aleks P. Mednis>to get you the least secure I can go, which is not even the happiest I'd be, was if you give me your IP address, source IP, then I can provide an API for you to get in. And we can look at even.</v>
+
+00:30:41.032 --> 00:30:41.272
+<v Aman Thakur>Yeah.</v>
+
+00:30:45.752 --> 00:30:48.072
+<v Aman Thakur>And it's only, yeah, the read access.</v>
+
+00:30:48.952 --> 00:31:08.832
+<v Aleks P. Mednis>Yeah, and then you have to look at roles because if you look at security roles, you'll see things like different companies. Here's the IT, well, like PAX 8, they have a role. And if you look at PAX 8, they have very specific requirements. So have you prepared a specific</v>
+
+00:30:54.952 --> 00:30:55.432
+<v Aman Thakur>Mhm.</v>
+
+00:31:09.032 --> 00:31:29.112
+<v Aleks P. Mednis>list of requirements in ConnectWise so that we can provide exactly the correct skill level. Because we've done this with many other vendors. I mean, we've done this with Omentum, we've done with, you can see here, CrewHoo, Cloud Radial, you know, even IT Glue has a role, MSP Process has a role.</v>
+
+00:31:13.912 --> 00:31:14.632
+<v Aman Thakur>Yeah, so...</v>
+
+00:31:18.632 --> 00:31:19.352
+<v Aman Thakur>So, I think.</v>
+
+00:31:22.752 --> 00:31:22.872
+<v Aman Thakur>Yeah.</v>
+
+00:31:25.312 --> 00:31:25.432
+<v Aman Thakur>Yeah.</v>
+
+00:31:29.392 --> 00:31:36.552
+<v Aleks P. Mednis>So these are all different providers that we do have API keys, API membership, right? So.</v>
+
+00:31:36.232 --> 00:31:39.432
+<v Aman Thakur>So I think only the read access, that's what required.</v>
+
+00:31:40.312 --> 00:31:46.872
+<v Aleks P. Mednis>I understand, but the trouble is, like, for example, see, look, it's not about having read access across the entire infrastructure.</v>
+
+00:31:40.872 --> 00:31:41.592
+<v Aman Thakur>Nothing, yeah.</v>
+
+00:31:46.952 --> 00:32:05.952
+<v Aman Thakur>No, no, specific on the board that they work. So the ticket, you probably have the different board right where all the tickets come like for Helpdesk tickets on Helpdesk board, right? Or maybe any other ticket on a project board. So just only specific access, only read access, only those were not everything from the.</v>
+
+00:32:06.432 --> 00:32:07.432
+<v Aman Thakur>The Connectways.</v>
+
+00:32:09.032 --> 00:32:14.472
+<v Aleks P. Mednis>Yeah, I understand, but are you asking for an API interface or are you asking for a member login?</v>
+
+00:32:15.672 --> 00:32:23.592
+<v Aman Thakur>The API key is if you create an API key for particular my account, so any admin probably yeah.</v>
+
+00:32:19.912 --> 00:32:34.952
+<v Aleks P. Mednis>Right. Yeah, so it would be it would be an API member like we have over here. We have we have API members, but the API member has a role ID and it's not, you know, it's not only specific to a board like.</v>
+
+00:32:24.752 --> 00:32:25.352
+<v Aman Thakur>That's right.</v>
+
+00:32:28.192 --> 00:32:28.472
+<v Rick Arora>Yep.</v>
+
+00:32:36.032 --> 00:32:54.792
+<v Aleks P. Mednis>Like they have a role ID that's very restricted in terms of what they're able to see. So, okay, I mean, I'll work on that, but I just want to point out that every other vendor, if you want to document, and as you should, especially if you're, you know, SOC 2 compliant, you want to document exactly what you need.</v>
+
+00:32:52.832 --> 00:32:53.072
+<v Aman Thakur>Yeah.</v>
+
+00:32:55.512 --> 00:33:00.872
+<v Aleks P. Mednis>You know, you know, because, you know, just saying, oh, I need read access doesn't mean.</v>
+
+00:33:02.032 --> 00:33:12.472
+<v Aleks P. Mednis>you know, what do you click, what kind of security role do you configure precisely, right? Because the security role is where the security is specific in ConnectWise.</v>
+
+00:33:11.112 --> 00:33:26.872
+<v Rick Arora>I can, I can, I can help. Aman, Gary, Gary has that thing, what Alex is looking for, so either me or Gary can help you on that, and then Alex, maybe Aman can share that exact what you're looking for, these role permissions, what exactly would need.</v>
+
+00:33:27.032 --> 00:33:46.312
+<v Aleks P. Mednis>Yeah, I mean, it's basically this screen. I mean, you guys have ConnectWise. If you go into the security role, you'll see exactly what you need. And I can't know exactly necessarily what you need unless, of course, I can give you a very restricted account, but that might not allow you to get everything that you need. Like I could just pick service board.</v>
+
+00:33:30.072 --> 00:33:31.112
+<v Rick Arora>Yep, yep, yep.</v>
+
+00:33:31.032 --> 00:33:31.352
+<v Aman Thakur>Yeah.</v>
+
+00:33:33.112 --> 00:33:33.512
+<v Rick Arora>Yep.</v>
+
+00:33:38.552 --> 00:33:39.272
+<v Rick Arora>Exactly.</v>
+
+00:33:46.752 --> 00:34:02.632
+<v Aleks P. Mednis>which I can do by default. That's probably what I would do, but it might actually be too difficult for you to do your work that way. It might mirror something like MSP process, for example. Like this is MSP process, and they...</v>
+
+00:34:02.312 --> 00:34:03.992
+<v Aman Thakur>Let me check that I have a...</v>
+
+00:34:03.992 --> 00:34:12.072
+<v Aleks P. Mednis>You can see almost everything is none, right? Except for exactly what they need. Because API is a much more powerful tool than a...</v>
+
+00:34:12.952 --> 00:34:22.552
+<v Aman Thakur>No one, I'm checking the current ConnectWise AP I have, so I'll just verifying the role that I have assigned.</v>
+
+00:34:13.152 --> 00:34:13.432
+<v Aleks P. Mednis>Then.</v>
+
+00:34:39.992 --> 00:34:40.552
+<v Aleks P. Mednis>And.</v>
+
+00:34:42.072 --> 00:34:55.752
+<v Aleks P. Mednis>I mean, you can get back to the role, we can get back to the roles, you know, and basically that's the takeaway. Like one of the things you want to get back to me is what you need your security roles to be configured as under all types of, you know, permissions, but...</v>
+
+00:34:47.672 --> 00:34:47.912
+<v Aman Thakur>Yeah.</v>
+
+00:34:57.352 --> 00:35:17.912
+<v Aleks P. Mednis>I think the other thing is, like, I mean, while it's great for you, I think that's a great, number one, I think it's great you have, you know, you're using a tool like that to be much more efficient and get better visibility across engineers. But the other practical issues, like, you know, we're ultimately have aging tickets, we're going to start assigning those.</v>
+
+00:35:18.232 --> 00:35:21.592
+<v Aleks P. Mednis>To Vincent and Sameer, I think that.</v>
+
+00:35:22.552 --> 00:35:31.672
+<v Aleks P. Mednis>Animesh, one of the things I think, sometimes I have really high expectations when somebody's hired, right? Let me see, I gotta move the camera over because I don't know where to look.</v>
+
+00:35:34.072 --> 00:35:54.992
+<v Aleks P. Mednis>And, you know, I would, I'd like to accelerate, but then I slow down a lot. Like, I'll slow down a lot because I'm slowing down to make sure that I'm not overwhelming anybody, right? So I've slowed down a lot with Animesh and Vincent a little, you know, a little bit, but we're going to have to speed back up and...</v>
+
+00:35:55.592 --> 00:35:56.872
+<v Aleks P. Mednis>Make sure that...</v>
+
+00:35:57.592 --> 00:36:18.112
+<v Aleks P. Mednis>or even assigning older tickets to them. I don't want Vincent falling asleep, you know? You know, I don't want him to get into a habit where, you know, so I think that it's very important for me to start utilizing, you know, increasing utilization rates.</v>
+
+00:36:05.032 --> 00:36:05.912
+<v Aman Thakur>No, I agreed.</v>
+
+00:36:19.632 --> 00:36:25.272
+<v Aleks P. Mednis>of Vincent and so it all becomes a lot easier to do when...</v>
+
+00:36:26.272 --> 00:36:39.112
+<v Aleks P. Mednis>you know, you have more resources because they can work off of each other much more, much better. It's very hard for me to do that when I only have two, even 3, because, you know, again, Animesh was...</v>
+
+00:36:40.632 --> 00:36:59.752
+<v Aleks P. Mednis>You know, he couldn't hit the ground running the day he showed up. That just was not going to, you know, he couldn't because it would have been too overwhelming. And he needed to work. I wanted to focus him on a specific area. So fundamentally, I haven't really shifted that much in terms of capacity, because I haven't just focused on Veeam.</v>
+
+00:37:00.712 --> 00:37:01.352
+<v Aleks P. Mednis>Um...</v>
+
+00:37:02.472 --> 00:37:14.632
+<v Aleks P. Mednis>So, but I think when Sameer joins, it's really going to help the dynamic A lot. When Sameer joins, it's going to really help the dynamic. And then I can, you know, really turn up the pace and responsibilities around what we're doing.</v>
+
+00:37:02.712 --> 00:37:03.672
+<v Aman Thakur>So, anyways.</v>
+
+00:37:15.512 --> 00:37:28.792
+<v Aman Thakur>Okay, so Animes is specific. I mean, I got for the Vincent and Shivani role, right? They're going to more into security side and so for Vince, for Animes is going to be more into the backup things that he's doing currently.</v>
+
+00:37:29.672 --> 00:37:32.632
+<v Aleks P. Mednis>Yeah, I think the thing here with with Animesh was...</v>
+
+00:37:33.832 --> 00:37:52.792
+<v Aleks P. Mednis>Well, we had a situation where our backup disaster recovery systems were absolutely not being managed correctly. So getting that all under control is exceptionally important. And not only that, we want it to be a very well-managed platform so I can turn on more customers easily. So yes, he's primarily...</v>
+
+00:37:53.112 --> 00:38:10.072
+<v Aleks P. Mednis>So I discussed this with Anamesh extensively. I say, okay, about, you know, maybe about, well, right now, 100% of his job is mean, but it's going to be probably about 30% of his job, you know, 30%, then another 30% is going to be things like.</v>
+
+00:38:06.232 --> 00:38:06.552
+<v Aman Thakur>Okay.</v>
+
+00:38:12.392 --> 00:38:13.512
+<v Aleks P. Mednis>you know, proactive.</v>
+
+00:38:14.552 --> 00:38:17.672
+<v Aleks P. Mednis>Well, first when I hired him, I told him he was going to...</v>
+
+00:38:18.832 --> 00:38:35.192
+<v Aleks P. Mednis>work on Veeam, he was an infrastructure as a service engineer, desktop as a service engineer, working on Citrix, networking, a lot. Like it would have meant ensuring that, you know, all of this environment is optimized and...</v>
+
+00:38:37.992 --> 00:38:57.032
+<v Aleks P. Mednis>All, you know, all, all of there's a lot like our data center services, I think it's gonna work a lot better when Sameer is on board, you know, he'll actually take on some of these responsibilities and divide them between him and Autamesh, but okay, let's talk about Autamesh still, 30%.</v>
+
+00:38:54.712 --> 00:38:55.112
+<v Aman Thakur>Thank you.</v>
+
+00:38:57.192 --> 00:39:06.832
+<v Aleks P. Mednis>Veeam, 30% infrastructure as a Service Management, and probably about 20%...</v>
+
+00:39:10.232 --> 00:39:33.432
+<v Aleks P. Mednis>you know, project services that occur overnight, like file migration, server upgrades, things like that, right? You got to upgrade a server, maybe from Windows this to Windows that. You have to migrate files from one server to another for shared files, maybe even some Microsoft Cloud projects regarding migrating files. That's 20% and under 20% might be tickets.</v>
+
+00:39:33.472 --> 00:39:34.152
+<v Aleks P. Mednis>Like, you know.</v>
+
+00:39:35.232 --> 00:39:55.552
+<v Aleks P. Mednis>meaning like between 8 A.m. or 7 A.m. to 9 A.m. He's also monitoring overnight. So monitoring if there's any server outages, disk utilization issues, anything that could be done that's off peak, right? And also assuring that the environments are all up and running and optimal by, you know, 6 or 7 A.m. for our customers.</v>
+
+00:39:49.352 --> 00:39:49.752
+<v Aman Thakur>Yep.</v>
+
+00:39:56.072 --> 00:40:09.992
+<v Aleks P. Mednis>So, you know, he hasn't been loaded up with all this yet, because that would just be too much to load him up with. And I don't want to take his concentration away from doing Veeam and being very focused on.</v>
+
+00:40:11.432 --> 00:40:18.712
+<v Aleks P. Mednis>optimizing that environment and understanding it better. And we have to finish that project. He's also, I mean, I have to...</v>
+
+00:40:19.992 --> 00:40:23.512
+<v Aleks P. Mednis>In the next week, hopefully, we will be completing.</v>
+
+00:40:24.872 --> 00:40:46.672
+<v Aleks P. Mednis>a revamp in regards to the balance of our existing customers. So about 10 on-site installs we're going to be reseeding from scratch their Veeam backups. We're going to be wiping out their local appliance backups. And the reseed is going to be a encrypted backup.</v>
+
+00:40:46.792 --> 00:40:55.592
+<v Aleks P. Mednis>that is now going to our new Cloud Connect server with a new retention policy.</v>
+
+00:40:56.472 --> 00:41:14.712
+<v Aleks P. Mednis>And we're also at the same time adding Wasabi with immutable storage, a new Wasabi instance. So I'm going to set up one, and then I'm going to allow him to do the rest. So I'll set it up, give him the instructions on the rest of them, and then he'll go ahead and complete the rest of them.</v>
+
+00:41:15.192 --> 00:41:20.072
+<v Aleks P. Mednis>That's sort of over the next few days, hopefully can finally get done.</v>
+
+00:41:23.192 --> 00:41:41.512
+<v Aleks P. Mednis>If you have a few more minutes, I can show you like a number of slide decks where I can even forward them to you. I would be concerned about like leakage of my information or sharing of it. I guess that's one of the reasons I stay working directly with only my group instead of really</v>
+
+00:41:28.272 --> 00:41:29.192
+<v Aman Thakur>Yeah, yeah, definitely.</v>
+
+00:41:41.832 --> 00:42:03.032
+<v Aleks P. Mednis>opening it up during a discussion with like you or other members of the team, because I don't want it to become, I don't want my proprietary knowledge to become general knowledge that's provided to other MSPs, right? That becomes, it's sort of not, I mean, you can't, and you say, okay, you know, it's just only natural, a human being, you're going to learn stuff and then you're going to share it with others. I'm not going to say that.</v>
+
+00:41:53.992 --> 00:41:54.472
+<v Aman Thakur>Got you.</v>
+
+00:42:03.272 --> 00:42:09.192
+<v Aleks P. Mednis>That's a horrible, that's a good thing too, but like, I don't want all my work to be become.</v>
+
+00:42:09.192 --> 00:42:10.632
+<v Aman Thakur>Got it. No, I got your point.</v>
+
+00:42:10.792 --> 00:42:30.472
+<v Aleks P. Mednis>the rest of the MSPs work. So, you know, for me, for me to, you know, so that's the, that's like, that's sort of my preface when I, when I'm about, let's say, to share some of my documents, you know, I get concerned about a little bit about that. I also just get concerned about that in general, like.</v>
+
+00:42:30.952 --> 00:42:49.672
+<v Aleks P. Mednis>And that's one of the reasons I want to make sure Shivani has a new computer. We're going to have fingerprint readers on all the machines. Those will all be restricted. Nobody can log into them except for those users without my, you know, consent, because those machines have all of our proprietary information on them. So</v>
+
+00:42:47.072 --> 00:42:47.752
+<v Aman Thakur>No, no, I get it.</v>
+
+00:42:50.072 --> 00:43:11.432
+<v Aleks P. Mednis>That's why the fingerprint reader thing has been bugging me so much, especially with Anamesh and Vincent, because the way that we set them up, everything runs local on those machines. So they are currently exposed, like those machines are exposed. With the ITBD ADMIN account, by the way, which you guys use.</v>
+
+00:43:12.072 --> 00:43:31.072
+<v Aleks P. Mednis>without using, like my security is better than your security, I can tell you that right now. Because you guys have a shared ITBD ADMIN account that you share internally that admins actually use to log into machines. We don't do anything like that. We're using just-in-time accounts with no standing privilege.</v>
+
+00:43:31.752 --> 00:43:51.992
+<v Aleks P. Mednis>Zero standing privilege, all just-in-time accounts. So our security profile is higher than IT by designs, and I got to make sure that's utilized all the way down to the endpoints that we use at your site. And it's a selling point. I'm selling this to my customers. I say, I reassure them that we have full management all the way down to the machine level.</v>
+
+00:43:31.992 --> 00:43:33.112
+<v Aman Thakur>I don't know, I get it.</v>
+
+00:43:53.432 --> 00:44:02.792
+<v Aleks P. Mednis>Because the first thing, you know, one of the things they think when I'm working with a company in India, they say, oh, well, that, they have security concerns that immediately come up.</v>
+
+00:44:03.832 --> 00:44:11.832
+<v Aleks P. Mednis>So, so that's the thing. Anyway, so I guess I could, if you want to take another few minutes, I can show you maybe a couple of different things.</v>
+
+00:44:10.712 --> 00:44:11.272
+<v Aman Thakur>Yeah, sure.</v>
+
+00:44:16.632 --> 00:44:29.112
+<v Aleks P. Mednis>All right, so you've had my screen up. And well, let's finish the discussion on this ticket that I brought up. So just searching by Vincent.</v>
+
+00:44:30.232 --> 00:44:35.352
+<v Aleks P. Mednis>And, and here, and um, I also do not, I don't look at the board.</v>
+
+00:44:38.232 --> 00:44:42.152
+<v Aleks P. Mednis>Daily, and then I even mentioned to you yesterday on the call.</v>
+
+00:44:42.992 --> 00:44:49.112
+<v Aleks P. Mednis>Yeah, they saw, you know, Lee talks about a service manager. I'm like, I don't have a service manager. I don't need a service. Like, well, if I...</v>
+
+00:44:51.992 --> 00:45:00.792
+<v Aleks P. Mednis>Service manager for what? Anyway, so, you know, my thought, my immediate thought about that is like...</v>
+
+00:45:01.912 --> 00:45:13.032
+<v Aleks P. Mednis>I don't want to treat my people like children, right? They're not children. They are given tasks and they have to get things done. And that's they have a job to do. And so if it requires me to continue to follow up with them.</v>
+
+00:45:14.112 --> 00:45:17.992
+<v Aleks P. Mednis>you know, I'm obviously overpaying for people, right? Because...</v>
+
+00:45:19.152 --> 00:45:37.352
+<v Aleks P. Mednis>you know, you're paid to be, once you're given an assignment, and if you're stuck, you need to reach out to your, you know, people and figure out how to get unstuck. You know, it's not my job to, you know, beg them to get unstuck. You understand? So.</v>
+
+00:45:36.872 --> 00:45:37.752
+<v Aman Thakur>Yeah, I get it.</v>
+
+00:45:38.312 --> 00:45:47.672
+<v Aleks P. Mednis>So, all right, so let's look at like this is a, this one right here is, is was their number one project that I gave to Shivani and Vincent. Okay.</v>
+
+00:45:48.712 --> 00:45:49.352
+<v Aleks P. Mednis>And...</v>
+
+00:45:50.632 --> 00:46:05.832
+<v Aleks P. Mednis>Yeah, I got the trouble is they're dabbling in it. They're not getting it done. They're dabbling. Okay, like, and I'm saying that I haven't even looked at this ticket for three weeks. And see, even my, I have an appointment on here. I'm going to just delete it and it doesn't how long to get rid of it.</v>
+
+00:46:07.352 --> 00:46:09.992
+<v Aleks P. Mednis>You know, let's go all the way back to the assignment.</v>
+
+00:46:13.192 --> 00:46:13.672
+<v Aleks P. Mednis>Ault.</v>
+
+00:46:16.232 --> 00:46:17.032
+<v Aleks P. Mednis>Okay, so...</v>
+
+00:46:20.072 --> 00:46:22.712
+<v Aleks P. Mednis>Okay, this was an initial description.</v>
+
+00:46:24.872 --> 00:46:28.632
+<v Aleks P. Mednis>Okay, initial description. So the initial description right here.</v>
+
+00:46:36.872 --> 00:46:38.152
+<v Aleks P. Mednis>I can't really see it.</v>
+
+00:46:44.472 --> 00:46:54.072
+<v Aleks P. Mednis>And now it's like, why am I doing all this? I'm going to put a bowl, I'm going to blow it up so we can all see it, because I can't see it myself. My eyes are... All right, good evening.</v>
+
+00:46:48.992 --> 00:46:49.912
+<v Aman Thakur>Yeah, good.</v>
+
+00:46:54.952 --> 00:47:12.312
+<v Aleks P. Mednis>We need to complete a full inventory of all devices and map each asset and its assigned user. This includes to verify every device is properly enrolled in Intune and compliant with our security and device management standards. All right.</v>
+
+00:47:13.872 --> 00:47:25.832
+<v Aleks P. Mednis>Okay, so this is our goal. During the audit, okay, we identified, and this is my initial email after I spoke to Vincent and Kira, or Vincent and Shivani.</v>
+
+00:47:25.912 --> 00:47:26.392
+<v Aman Thakur>Sunny.</v>
+
+00:47:27.432 --> 00:47:32.872
+<v Aleks P. Mednis>To move forward, you know, I asked them for an asset list, so I did that to sort of help help.</v>
+
+00:47:34.592 --> 00:47:34.872
+<v Aleks P. Mednis>Um...</v>
+
+00:47:35.952 --> 00:47:36.832
+<v Aleks P. Mednis>Javani Vincent.</v>
+
+00:47:37.992 --> 00:47:42.872
+<v Aleks P. Mednis>I have the meetings recorded in Fireflies. They have a copy of the meetings as well.</v>
+
+00:47:44.152 --> 00:48:05.112
+<v Aman Thakur>So I think that's what probably the things I was looking, like the women, now you have the visibility, right? You can see the ticket, right? So if I can get that kind of visibility to what they are doing, where they stuck, what all they have on their plate. So that'll give me a clear picture where I can do a follow-up, I can do a check if they need support help, and then.</v>
+
+00:47:45.192 --> 00:47:45.752
+<v Aleks P. Mednis>So.</v>
+
+00:48:05.592 --> 00:48:10.152
+<v Aman Thakur>We, we can at least, you know, achieve that or complete that task on time.</v>
+
+00:48:08.952 --> 00:48:09.272
+<v Aleks P. Mednis>Right.</v>
+
+00:48:10.552 --> 00:48:23.592
+<v Aleks P. Mednis>So look at this. This is the, like, if, and this is what me looking, I say, okay, this is the updated Intune sheet. All right, last update on the spreadsheet is April 27th. Okay.</v>
+
+00:48:24.752 --> 00:48:30.792
+<v Aleks P. Mednis>But the ticket's open, the spreadsheet's on being updated, and nobody's telling me it's done, right?</v>
+
+00:48:31.832 --> 00:48:32.392
+<v Aleks P. Mednis>So...</v>
+
+00:48:35.112 --> 00:48:36.392
+<v Aleks P. Mednis>Yeah, I'll open this up.</v>
+
+00:48:39.272 --> 00:48:51.192
+<v Aleks P. Mednis>And they made their, they were trying to make their own, you know, they make their own spreadsheet, okay? I don't need to know how they want to go about doing it, but at the end of the day, the goal is...</v>
+
+00:48:52.952 --> 00:49:11.032
+<v Aleks P. Mednis>I guess, so what's compliant, what's not compliant, what's on DNS filter, what's on. So, you know, we need this done. Well, this is good. I mean, this looks good. I like, I like what this looks like. Okay, so okay, on Intune, boom, I gotta make it, make sure Intune enrolled on it. Okay, the Intune enrollment needs to be done.</v>
+
+00:49:11.592 --> 00:49:16.952
+<v Aleks P. Mednis>These Avengers sitting here, not done. They have to be done. And then all of this...</v>
+
+00:49:18.152 --> 00:49:37.112
+<v Aleks P. Mednis>BitLocker, DNS filter, and so on Hunter. So, I actually started with an easy task. We have like 30 security products, Aman. OK, we're not even, we're not even touching, we haven't even touched VPen test yet, Dark Web ID, Keeper Enterprise. We haven't rolled any of that software out.</v>
+
+00:49:27.592 --> 00:49:30.472
+<v Aman Thakur>So, how do you, how do you?</v>
+
+00:49:34.512 --> 00:49:34.872
+<v Aman Thakur>Yeah.</v>
+
+00:49:37.432 --> 00:49:57.112
+<v Aleks P. Mednis>I can't roll out any new software. This is our Mercer Street Friends, this particular customer that's on the screen. This is our ideal customer. So we're trying to, I am trying to ensure we can execute on our ideal customer and then repeat that on our other customers. We're pretty far behind on executing this as an ideal customer.</v>
+
+00:49:53.992 --> 00:49:54.472
+<v Aman Thakur>Yeah, yeah.</v>
+
+00:49:57.672 --> 00:49:58.152
+<v Aleks P. Mednis>So...</v>
+
+00:49:57.872 --> 00:50:14.952
+<v Aman Thakur>But how do you keep a track of these tasks, whether they completed or not? Only I can what I saw it just going to the tickets and looking their tickets notes, you know, I think it's not feasible every time to go individually and see the notes what all they've done, right? So what the way you send, yeah.</v>
+
+00:50:13.752 --> 00:50:32.632
+<v Aleks P. Mednis>Oh yeah, I mean, I mean, I can deduce right now, like on this call, okay, like technically, I've only spent, technically, I've only spent 5 minutes looking at this. Mercer Street Friends. I talked about it a little bit, and then I looked at it. So within a matter of a couple of minutes, I know it's not done, right? I just can see. I can see a screen. I can see this spreadsheet is not done.</v>
+
+00:50:25.672 --> 00:50:26.232
+<v Aman Thakur>Yeah, yeah.</v>
+
+00:50:32.872 --> 00:50:52.552
+<v Aleks P. Mednis>right? And if the ticket's done, it's going to be marked completed and there's going to be a summary. So I can always look at this last entry. It's very simple. You know, I can see here, I saw it right away that is it possible to coordinate? So we're still in this, is it possible to coordinate, you know, phase, which would be way past that, which would be</v>
+
+00:50:38.792 --> 00:50:39.592
+<v Aman Thakur>Yeah, take it in.</v>
+
+00:50:52.632 --> 00:51:12.432
+<v Aleks P. Mednis>Like, we should have already, everybody, everything should be worked out. This is my, how I started our phone call earlier today. I said, well, it shouldn't be like, you know, I mean, it shouldn't feel like you guys like are a million miles away. Like, you're, we are one IT team. I've given Vincent and Shivani all the information they need to get this done.</v>
+
+00:51:07.192 --> 00:51:07.512
+<v Aman Thakur>Yeah.</v>
+
+00:51:13.432 --> 00:51:35.032
+<v Aleks P. Mednis>They have all the contact information. They've had all the introductions. They've had all the, you know, friendly emails. They've spoken with Kira and Lisa. So I guess my question is, is Vincent senior enough, right? That's what my next question becomes in my mind. I'm like, how senior do I need someone to be in order for me not to be involved?</v>
+
+00:51:28.392 --> 00:51:28.952
+<v Aman Thakur>Yeah, right.</v>
+
+00:51:35.192 --> 00:51:44.952
+<v Aleks P. Mednis>Who do I need on our team so that I can say, make sure this company, this customer, I'm selling. If I was out selling all day long.</v>
+
+00:51:45.992 --> 00:51:50.872
+<v Aleks P. Mednis>It's impossible, right? Because now I'm still on this phone call talking about getting 90 machines.</v>
+
+00:51:47.792 --> 00:51:48.072
+<v Aman Thakur>Yeah.</v>
+
+00:51:51.912 --> 00:51:59.992
+<v Aleks P. Mednis>you know, on to VSA and Intune. That should be reconciled. There should be a total reconciliation.</v>
+
+00:52:00.872 --> 00:52:19.832
+<v Aleks P. Mednis>you know, and completion. And so, you know, that's the challenge, right? I would say this, though. I don't expect 100% accuracy. I actually never had expected that with larger accounts. Like if it's a larger account, it's very hard to get 100% accuracy.</v>
+
+00:52:20.312 --> 00:52:39.792
+<v Aleks P. Mednis>But if, but I need somebody who's in the technical chair, right? Who's like a senior tech that says it's done, like it's complete. We've checked everything. You know, as of this day, it's accurate and it's complete. There's sometimes movement and then you get some inaccuracy over.</v>
+
+00:52:39.872 --> 00:52:58.632
+<v Aleks P. Mednis>period of time. Maybe there's like somebody's, you know, that does something wrong and there's something documented incorrect and that's fine. And I've had this with other customers of ours that have, you know, 100, 200 computers. I'd say, as long as we're 95% accurate, I'm happy. But we need to be able to go through an audit quickly. So if there's a point in time that.</v>
+
+00:52:58.872 --> 00:53:17.432
+<v Aleks P. Mednis>we're starting to drift, configuration drift. Somebody on the technical team needs to be able to quickly audit that and verify, okay, we're good. Huntress is installed on everything, DNS filters installed on everything, everything's in tune and rolled, all the machines are compliant.</v>
+
+00:53:17.912 --> 00:53:33.272
+<v Aleks P. Mednis>We know who's using each computer. All good. We've deleted all the computers that no longer exist in Intune. We need to be confident enough that we can delete all the computers in Intune that aren't in use. We need to be confident enough to do that, right? So I need engineers to do this. It's not my job.</v>
+
+00:53:34.312 --> 00:53:37.912
+<v Aleks P. Mednis>You know, so I need engineers to work with.</v>
+
+00:53:36.112 --> 00:53:36.472
+<v Aman Thakur>Yeah.</v>
+
+00:53:39.032 --> 00:53:58.352
+<v Aleks P. Mednis>you know, the customers technical, you know, so I got to ask myself, what do I need for IT operations to work so I could be selling? Because I know all the technical products I want to use, right? I've spent now the past two to three years deciding what we want to sell, how we want to sell it, you know, and</v>
+
+00:53:50.792 --> 00:53:51.272
+<v Aman Thakur>Okay.</v>
+
+00:53:58.952 --> 00:54:08.712
+<v Aleks P. Mednis>Now, I now I need the technical people to be able to execute execute on it, so that that gives you a better picture of where I'm at, so...</v>
+
+00:54:02.152 --> 00:54:03.112
+<v Aman Thakur>To complete, yeah.</v>
+
+00:54:05.032 --> 00:54:05.992
+<v Aman Thakur>So, I think...</v>
+
+00:54:08.312 --> 00:54:28.312
+<v Aman Thakur>No, no, I completely agreed with your point. I agree. So I think only I will definitely get these things done right, but I think the visibility is more kind of my overview to how do I know what they are doing, right? So how comfortable, I think the one way, I'm not sure, like, because again, I will probably work with you. The one way I have the own.</v>
+
+00:54:28.632 --> 00:54:37.032
+<v Aman Thakur>my separate ConnectWise credential, right, where I can log in, see there the way you check the ticket, right? I can check those all, what all are pending.</v>
+
+00:54:37.992 --> 00:54:39.352
+<v Aman Thakur>Other way to just, yeah.</v>
+
+00:54:48.792 --> 00:54:49.072
+<v Aman Thakur>Yeah.</v>
+
+00:54:49.112 --> 00:55:07.832
+<v Aleks P. Mednis>I think Karen's also involved in that. Like Karen, who's on the call right now, you know, she's watching the board, you know, and that's sort of been my number one priority to make sure that like, I'm on a phone call with you and the sky doesn't fall, right? I could sit here on a phone call with you and I don't hang up the phone and...</v>
+
+00:54:59.152 --> 00:54:59.232
+<v Aman Thakur>The.</v>
+
+00:55:02.392 --> 00:55:02.632
+<v Aman Thakur>Yeah.</v>
+
+00:55:04.112 --> 00:55:04.512
+<v Aman Thakur>Agreed.</v>
+
+00:55:08.272 --> 00:55:26.912
+<v Aleks P. Mednis>you know, find out that, you know, 3 customers are upset about something. You know, that was my short term goal. The other end of the spectrum is everything that we were just talking about where, you know, and it's, and it's, so when you look at tickets and you look at tickets that are assigned to Shivani and Vincent, and I also, again, I</v>
+
+00:55:12.152 --> 00:55:12.512
+<v Aman Thakur>Amit.</v>
+
+00:55:13.472 --> 00:55:13.952
+<v Aman Thakur>None, yeah.</v>
+
+00:55:27.032 --> 00:55:46.752
+<v Aleks P. Mednis>I praise them. I praised them on our call yesterday because it's sort of unfair for me to, it's fair for me to bring it up during this call because you're the boss. Like you're the senior guy who can help me get to where we need to go on this stuff and understand where we are in the phase and where I'm going to go forward on this.</v>
+
+00:55:41.712 --> 00:55:42.032
+<v Aman Thakur>Yep.</v>
+
+00:55:46.792 --> 00:55:59.712
+<v Aleks P. Mednis>and what we're going to do to ultimately be successful. Because that's the only way we're going to be successful. That's the only way, everything that I've described regarding basic things that I need my L2 and L3s to do.</v>
+
+00:56:00.592 --> 00:56:20.192
+<v Aleks P. Mednis>from an execution standpoint, that's the only way we're going to be able to grow and hire people. And then we will be able, you know, and that's just even to do our existing customer base and then grow our customer base. Because I know exactly the cybersecurity product I want to sell to our customers, right? That's just the cybersecurity component. And then we have the AI component, which, you know, we don't even.</v>
+
+00:56:15.552 --> 00:56:15.952
+<v Aman Thakur>Yep.</v>
+
+00:56:20.512 --> 00:56:29.472
+<v Aleks P. Mednis>You know, we talked about a little bit about, but I have a project, some projects coming up for that. But I definitely think that between...</v>
+
+00:56:30.632 --> 00:56:43.472
+<v Aleks P. Mednis>I think Vincent, Shivani, and Sameer, and even Animesh, all of this can take place, right? I think all of this can work out pretty well with that team, and...</v>
+
+00:56:45.152 --> 00:57:03.152
+<v Aleks P. Mednis>You know, I want them to sort of get some sort of momentum around that. But look, again, I'm not, I'm not, I'm not really complaining. I think, but I, but hopefully, hopefully, you know, because I don't, I don't want to like.</v>
+
+00:57:04.312 --> 00:57:25.312
+<v Aleks P. Mednis>The fact of the matter is, if I had an issue, I would have been talking with Shivani and Vincent directly. Like I just specifically haven't had time to do that. But I do think that you can help me get where I need to go. And I think that, I think that they could have done this by now, like this particular specific thing for Mercer Street Friends.</v>
+
+00:57:09.112 --> 00:57:09.712
+<v Aman Thakur>Yeah, yep.</v>
+
+00:57:25.872 --> 00:57:44.032
+<v Aleks P. Mednis>So I think maybe that's a good thing to focus on. And when you have visibility via API at all the tickets, I, you know, again, as you don't necessarily know what's going on in my head regarding what, like there could be one ticket like that I keep talking about, that's more important than all the tickets, all the other tickets combined, you know.</v>
+
+00:57:37.312 --> 00:57:37.872
+<v Aman Thakur>Yeah, yeah.</v>
+
+00:57:44.512 --> 00:58:00.432
+<v Aleks P. Mednis>you know, regarding what I want Shivani and Vincent, you know, doing so that they can do it again and again and again. So I think that's probably the best thing to think about taking away from this call. And I should just stop talking at some point.</v>
+
+00:58:01.632 --> 00:58:18.752
+<v Aman Thakur>No, no, I agreed with you. All the points are valid, right? So, because if they have given the task, they should complete, right? Even if they stuck, they should either reach out to you, let me know that this is what we have given, but we stuck on this point and the deadline is this is and why it's not completed.</v>
+
+00:58:19.832 --> 00:58:27.072
+<v Aman Thakur>There should be a reason and a proper update of the communication to the team, right? This is why we are not able to, no.</v>
+
+00:58:24.472 --> 00:58:35.592
+<v Aleks P. Mednis>And I'm gonna, I'm gonna know what they're gonna say. They're gonna say they're waiting for somebody to call them. They're doing, you know, they're gonna, they haven't done the, you know what I mean? Those things. But that doesn't, that doesn't help.</v>
+
+00:58:33.752 --> 00:58:51.872
+<v Aman Thakur>No, no, but because, yeah, because I work on a project when the deadline that we need to complete this project next 30 days, so that mean 30 days, right? So challenges will be there, up and down will be there. But yeah, but if the deadline is there, that has to be complete with that particular time, you know.</v>
+
+00:58:36.512 --> 00:58:36.992
+<v Aleks P. Mednis>You know.</v>
+
+00:58:52.392 --> 00:59:01.752
+<v Aleks P. Mednis>And I have to think about, because they're going to say, well, Aleks, you know, I have to think about, again, how senior of a person do I need so that.</v>
+
+00:59:03.152 --> 00:59:21.992
+<v Aleks P. Mednis>Somebody aside from myself will make sure it gets done and like including getting on, like scheduling a phone call with the customer, right? Okay, schedule a Team call with the points of contact to say, all right, these are the things we need to reconcile. If we're not getting it done, let's figure out how to get it done.</v>
+
+00:59:24.352 --> 00:59:44.712
+<v Aleks P. Mednis>Because if I still get pulled into that, it's very hard for, it's just one example, but I should be working on about 12 to 20 of these, but I need, again, I sent it to you guys yesterday on a call where I want to hire, there's one gentleman that I want to hire from a University of Maine who's getting his PhD in cybersecurity, and I want him to be a part of our team.</v>
+
+00:59:45.352 --> 01:00:04.192
+<v Aleks P. Mednis>There's another gentleman who is a CISO. He's 65 years old and he's worked for a lot of Fortune 500 companies and financial firms. I can bring him on part-time as well. Maybe those are some of the people that are going to have to be involved in some of these conversations so that we make sure that we're achieving these goals</v>
+
+01:00:04.752 --> 01:00:23.872
+<v Aleks P. Mednis>And we're ultimately going to have, you know, compliance documentation that shows, you know, because we have Kaseya compliance GRC as a product as well that we have. So, you know, that provides us a central point to ensure we're following security posture, because at the end of the day, we want to leverage</v>
+
+01:00:24.352 --> 01:00:30.112
+<v Aleks P. Mednis>security frameworks, we have CIS controls, right? So like...</v>
+
+01:00:31.392 --> 01:00:37.912
+<v Aleks P. Mednis>I mean, how many of your teams are focused on CRS controls, right? That's where Shivani and Vincent.</v>
+
+01:00:35.712 --> 01:00:36.032
+<v Aman Thakur>Yep.</v>
+
+01:00:38.872 --> 01:00:45.312
+<v Aleks P. Mednis>Need their heads like talk understanding that we're, you know, we're our goals have to do with.</v>
+
+01:00:46.672 --> 01:01:01.792
+<v Aleks P. Mednis>having our customer security posture match our baselines, right? Match our baselines that are promised as an outcome, as a deliverable. So our baselines of security, which</v>
+
+01:01:03.312 --> 01:01:26.512
+<v Aleks P. Mednis>You know, I haven't put the big picture out. And I think that's a good thing to think about is like, I got to think about, well, how do I give you the big, give them the big picture as well? But I've given Vincent, for example, he's supposed to be coming in through enforcer. So see what he's doing there. I'll look at what he's doing in training with enforcer, because he's been now on 2 calls with me and enforcer.</v>
+
+01:01:26.992 --> 01:01:29.552
+<v Aleks P. Mednis>an enforcer, have you ever heard of that before?</v>
+
+01:01:31.112 --> 01:01:50.352
+<v Aleks P. Mednis>Enforcer? Have you heard of enforcer? Okay, so, and it's been, I've used the word enforcer at least 35 times on calls with Vincent. And I think even Karen has heard me say enforcer a number of times on calls. I said, you got to get trained up. You got to be in there.</v>
+
+01:01:31.632 --> 01:01:33.432
+<v Aman Thakur>No, no, no, no.</v>
+
+01:01:50.672 --> 01:02:08.512
+<v Aleks P. Mednis>I need somebody like that wants to eagerly bite off exactly what I'm telling them to do, which enforcers supposed to enforce Microsoft security baselines in your Microsoft tenants. It's A multi-tenant platform for us to build our baselines, right, to...</v>
+
+01:02:09.472 --> 01:02:28.992
+<v Aleks P. Mednis>to, you know, to push out across our customers. Those are things like, you know, conditional access policies and things like that. Microsoft security scores are also tracked in there. So Microsoft security baselines. So who's the engineer that's going to be responsible to do that? And is Vincent senior enough to do that?</v>
+
+01:02:29.472 --> 01:02:38.832
+<v Aleks P. Mednis>Right? Or is he actually an L2? Because that's the question to me. And I brought that up on a couple of calls. Like, to me an L3 absolutely can do that.</v>
+
+01:02:39.872 --> 01:02:40.832
+<v Aman Thakur>No, yeah, that's right.</v>
+
+01:02:39.912 --> 01:03:03.952
+<v Aleks P. Mednis>Okay, you know, so don't tell, no, don't sell me an L3 if I, that's not an L3. Okay, so, so that's the thing, you know, and I, you know, so that's what I want from Sameer and Vincent. I want them to be true L3s that can, that can really move these things. Because I don't, like I said, I don't even know what an L4 is. Like an L4 is somebody that doesn't work day to day on computers.</v>
+
+01:02:45.632 --> 01:02:45.952
+<v Aman Thakur>Thank you.</v>
+
+01:03:04.512 --> 01:03:06.672
+<v Aleks P. Mednis>In my opinion, you know.</v>
+
+01:03:04.632 --> 01:03:06.752
+<v Aman Thakur>Yeah, no, I agree. Yeah, I agree.</v>
+
+01:03:07.632 --> 01:03:08.032
+<v Aleks P. Mednis>Yeah?</v>
+
+01:03:08.752 --> 01:03:28.592
+<v Aman Thakur>So I think, yeah, I have to do for this meeting. I think only if you can figure out any better way to for more transparent way to get the visibility, right, what they are doing, where they are lacking, what all they need support from my side, so that I can help them. And of course, we can work as a team and get those number achieved.</v>
+
+01:03:23.472 --> 01:03:23.952
+<v Aleks P. Mednis>Yeah.</v>
+
+01:03:27.632 --> 01:03:28.112
+<v Aleks P. Mednis>Yeah.</v>
+
+01:03:29.312 --> 01:03:51.952
+<v Aleks P. Mednis>I think, I think from our last call, I shouldn't point, right? Is that even more, is that rude to point on a Zoom call? Last week we talked about getting you an email. Maybe this is part of the way we solve this problem is, you know, if I give you an APM, somehow I'll log in and then you can, and I can say, okay, look at these.</v>
+
+01:03:52.192 --> 01:04:12.792
+<v Aleks P. Mednis>all these PowerPoints and these meetings and things like that, because that's where you're going to see most of what we're, you know, we're doing. And I should be confident that these are not the wrong way to do things, because if you're working with L3s, there's a level of, you know, theory and sophistication that needs to be able to translate to execution.</v>
+
+01:04:13.632 --> 01:04:31.312
+<v Aleks P. Mednis>You know, so, you know, and I've had the good fortune that my two of my sons, I mean, one son has an AI engineer, he works out of home, so I'm very close to the way engineers work. The coders are working and things like that. And so, you know,</v>
+
+01:04:32.392 --> 01:04:52.392
+<v Aleks P. Mednis>For me to, again, make everything into a ticket and micromanage is just like not a really good use of time for anybody. And it's also not even pleasant. Like, this is an opportunity for people to do work in a pleasant way, because they're able to be more creative and they're not being tracked.</v>
+
+01:04:40.192 --> 01:04:40.992
+<v Aman Thakur>No, no, maybe.</v>
+
+01:04:52.792 --> 01:05:13.672
+<v Aleks P. Mednis>hour by hour and they're not, you know, I'm 100% outcome oriented, like 100% outcome oriented. And, you know, I think the biggest fault I've ever had is the fact that I give people too much rope and they can choke themselves, you know? And I give them too much rope and then, you know, three or six months goes by and I'm like,</v>
+
+01:05:14.552 --> 01:05:25.352
+<v Aleks P. Mednis>You know, on the other hand, they need guidance, right? So there's that part where you need to guide and be coaching too. So I think the guidance and coaching is very important as well day to day. So.</v>
+
+01:05:21.392 --> 01:05:21.672
+<v Aman Thakur>Yeah.</v>
+
+01:05:25.152 --> 01:05:44.072
+<v Aman Thakur>No, yeah, I'm aligned with that, right? So yeah, I can definitely discuss with them, right? Get what support they needed, right? Whatever the task they are doing. So if you maybe can kind of make a plan how we probably get visibility, what way you think is to be safe, secure, right? So it's not like just to add your point.</v>
+
+01:05:45.312 --> 01:06:05.592
+<v Aman Thakur>If I am talking to you, if I have your information, that's the only. So and whatever happened in Las Vegas will live in Las Vegas. That's what I can say. So whatever information I have, but other client, they always stay separate. It's not that what if you are sharing anything, because the partner, one of that I'm working, they have for.</v>
+
+01:05:59.792 --> 01:06:00.272
+<v Aleks P. Mednis>Mhm.</v>
+
+01:06:05.632 --> 01:06:26.552
+<v Aman Thakur>And my team might 18 engineer for that client, which include L1, L2, L3, and pod lead for the entire team, for 18 people, you know. So whatever information, whatever the discussion we have, we always keep them as separate. It's not that you shared something, I'm going to share that with, oh, APM IT is using this mechanism to do that.</v>
+
+01:06:26.592 --> 01:06:28.712
+<v Aman Thakur>do this, why don't you apply, you know?</v>
+
+01:06:29.592 --> 01:06:30.232
+<v Aleks P. Mednis>All right, right.</v>
+
+01:06:29.592 --> 01:06:49.912
+<v Aman Thakur>Because the reason everything is recorded right when we do on these calls, we have a separate quality team who record, monitor, and evaluate all our calls that happen on the service call. So we have our scoring and everything which is under the compliance, whatever we are discussing. So I cannot share or discuss with you. I have this partner who is...</v>
+
+01:06:41.952 --> 01:06:42.552
+<v Aleks P. Mednis>Mm-hmm.</v>
+
+01:06:51.102 --> 01:06:57.502
+<v Aman Thakur>doing this, using this tool or using this technology on their side, right? It's completely restricted.</v>
+
+01:06:58.872 --> 01:06:59.432
+<v Aman Thakur>So.</v>
+
+01:06:58.872 --> 01:07:17.512
+<v Aleks P. Mednis>Yeah, I think the way I, you know, for you to, you're not, tickets are going to be such a limited view of what I expect as a result out of the, as far as outcomes are concerned. I think, you know, the outcomes discussion that I've provided, I believe if I give you some secure way to log in,</v>
+
+01:07:05.952 --> 01:07:06.072
+<v Aman Thakur>Yeah.</v>
+
+01:07:19.432 --> 01:07:38.792
+<v Aleks P. Mednis>to our environment might really be helpful. And besides, we're talking about working on other projects. So we have, you know, every customer I want to talk to about all of our new initiatives, you know, with artificial intelligence.</v>
+
+01:07:28.112 --> 01:07:28.312
+<v Aman Thakur>Yeah.</v>
+
+01:07:38.872 --> 01:07:57.752
+<v Aleks P. Mednis>and, you know, leveraging, you know, new automations, I want to leverage new engineers for that. I don't, you know, so I want to talk, you know, put you on the calls and then, you know, because again, there's no scale. My goal is always to scale everything. If I'm doing the work myself.</v>
+
+01:07:57.992 --> 01:08:17.352
+<v Aleks P. Mednis>I might make a little bit of money, but it's not, it doesn't design a system that scales. So I'm trying to design a system that can scale so that we can execute on some AI projects and continue to bring on more, and you guys will learn more. We're all learning, right? AI is a very new thing. So, you know, leveraging.</v>
+
+01:08:14.712 --> 01:08:15.832
+<v Aman Thakur>Yeah, maybe.</v>
+
+01:08:18.472 --> 01:08:33.592
+<v Aleks P. Mednis>agents, you know, agentic AI with Copilot and and and and Claude. So, but yeah, so then we were going to give you a login anyway for that. And then so you can sort of do both using essentially you're an employee now.</v>
+
+01:08:20.912 --> 01:08:21.112
+<v Karen Modes>Okay.</v>
+
+01:08:31.272 --> 01:08:31.512
+<v Aman Thakur>Yeah.</v>
+
+01:08:34.352 --> 01:08:52.512
+<v Aman Thakur>No, I agree again. So the one thing which I mean, I probably 100% agree with your point, because managing 35 people, I mean, I really don't like to be micromanaged anyone to go around their desk, check what they're doing. That's what I have set up broader way to everyone. So I can check, I can see from.</v>
+
+01:08:52.632 --> 01:09:13.512
+<v Aman Thakur>my desk on my seat that what this person is doing rather than going on his desk or share your screen, show me your ticket, what all you're doing. So that's completely waste of the time. They are on call, they're doing different tasks. So that's completely on the broader picture I can see on my seat or this person is doing this. So where I have the complete visibility, but I think.</v>
+
+01:09:14.552 --> 01:09:31.112
+<v Aman Thakur>Last couple of week, I'm trying to understand the entire your client infra, checking with them what all you do, what kind of client that you have, what security things that you're doing, what are you implementing, what support you needed, right, where they are lacking. So kind of evaluation for each individual engineer. They have.</v>
+
+01:09:26.952 --> 01:09:27.112
+<v Aleks P. Mednis>Mm.</v>
+
+01:09:29.352 --> 01:09:48.712
+<v Aleks P. Mednis>Yeah, yeah, and I think maybe you and I have to have a different like framed calls, you know, where you and I, I can do exactly that and more focus on that, not even a specific engineer, but show you exactly what we were doing, what our infra looks like, you know, what our, you know, customer base looks like.</v>
+
+01:09:35.112 --> 01:09:35.392
+<v Aman Thakur>Yeah.</v>
+
+01:09:48.832 --> 01:10:00.672
+<v Aleks P. Mednis>what our goals look like and what I want each engineer to be doing, which, you know, I think we need to have discussions about that. I think that.</v>
+
+01:09:49.352 --> 01:09:49.992
+<v Aman Thakur>Yeah, alright.</v>
+
+01:09:58.712 --> 01:10:19.032
+<v Aman Thakur>No, no, let's just agree, yeah, because the ticket you brought in today, right? Because I don't have visibility anything for that, what is happening if that visibility has there, maybe this task has been completed already, you know, because I can walk up them 10 day in a day, right? That why this task is not done, where you need support, what are the stacks, so I can fix that from my side immediately, rather.</v>
+
+01:10:19.432 --> 01:10:38.072
+<v Aman Thakur>when they reach out to you or you checked after a week because I know the busy schedule, then you're on meeting other side, so difficult to check sometime. At the end of that, you expect the result, what is the outcome. So I can fix that quickly, rather waiting for a week or, you know, that's kind of looking for more broader visibility from my side to see.</v>
+
+01:10:38.632 --> 01:10:45.432
+<v Aleks P. Mednis>Yeah, okay, so, so takeaways, yeah, I guess we'll wait till...</v>
+
+01:10:44.472 --> 01:10:44.632
+<v Karen Modes>Yeah.</v>
+
+01:10:46.512 --> 01:10:49.672
+<v Aleks P. Mednis>You know, I mean, I don't want to drag on the call any longer than we have already.</v>
+
+01:10:49.832 --> 01:10:50.112
+<v Aman Thakur>Yeah.</v>
+
+01:10:52.312 --> 01:11:11.272
+<v Aleks P. Mednis>That I think it was very productive, like exchange, and so you know, I think you're so you're so receptive, I just it's fantastic, like I really, really appreciate it. I think we'll solve these problems, yeah, I think we'll solve solve all this. It's just...</v>
+
+01:10:55.392 --> 01:10:55.752
+<v Aman Thakur>Yeah.</v>
+
+01:11:06.152 --> 01:11:08.712
+<v Aman Thakur>Oh, yeah. I want to work as a team.</v>
+
+01:11:11.672 --> 01:11:30.792
+<v Aleks P. Mednis>You know, we gotta talk about it, be able to solve the problems, and then I gotta get my composure around a lot of these things, right? Because, you know, it's again, there's no, you know, we've only really been stable with, you know, IT by design for like 30 days.</v>
+
+01:11:30.952 --> 01:11:47.592
+<v Aleks P. Mednis>you know, days. So, you know, we finally reached the stability I was looking for in January. So like, I'm not, you know, am I disappointed that we're behind schedule? Yeah, but I think that we're on the right track and I think we have the right people. So, you know.</v>
+
+01:11:32.392 --> 01:11:32.672
+<v Aman Thakur>Yeah.</v>
+
+01:11:47.432 --> 01:12:07.272
+<v Aman Thakur>Yeah, I think the people we have now, I think it's a fantastic team, experienced people. I think only they need a proper guidance, right? Set the right explanation, this is what they need to be complete. So that's kind of, again, a team efforts, right? I'm here to support you, whatever you think. And again, I'm not the manager who is.</v>
+
+01:11:55.432 --> 01:11:55.912
+<v Aleks P. Mednis>Mhm.</v>
+
+01:12:02.792 --> 01:12:03.192
+<v Aleks P. Mednis>Yeah.</v>
+
+01:12:07.592 --> 01:12:30.872
+<v Aman Thakur>people management manager who just check the report or the engineer reach office on time, he get the cab on time, no, but my main focus is on more on the technology side. Sometime I personally work with the engineer on the desk and I spend hours, 30 minutes on a P1. Let's wait. If you're not able to fix it, let me fix it and show you how you can fix next time so that will help you.</v>
+
+01:12:31.432 --> 01:12:32.952
+<v Aman Thakur>Give you the live example, you know.</v>
+
+01:12:33.712 --> 01:12:37.832
+<v Aleks P. Mednis>Yeah, yeah, that's awesome. So exciting! I love it. I love it.</v>
+
+01:12:34.632 --> 01:12:36.072
+<v Aman Thakur>That's gonna be Andy.</v>
+
+01:12:36.352 --> 01:12:36.472
+<v Karen Modes>Yeah.</v>
+
+01:12:39.112 --> 01:12:47.752
+<v Aman Thakur>Technical is my main passion in out of my 100% people management thing. 70% I spent on a technical side entire day.</v>
+
+01:12:40.952 --> 01:12:41.512
+<v Aleks P. Mednis>Yeah.</v>
+
+01:12:46.792 --> 01:12:49.672
+<v Aleks P. Mednis>That's great. That's great. I appreciate it.</v>
+
+01:12:50.232 --> 01:13:04.632
+<v Aman Thakur>Yeah, so you let me know whatever the plan that you have, how you want to, you know, further proceed with this plan so that we have more visibility, clarity and transparency. So that way I will, you know, communicate the team same way so they are on the same page.</v>
+
+01:13:02.152 --> 01:13:02.552
+<v Aleks P. Mednis>Yeah.</v>
+
+01:13:05.032 --> 01:13:22.952
+<v Aleks P. Mednis>I want to keep them engaged in, you know, activities, training. Again, if they're stuck on something, then they should be focused on that. They shouldn't sit there and just like spin the mouse around. You know, you know, so if they're stuck on something, they need to figure out how to get unstuck. They got to figure out why are these tickets aging.</v>
+
+01:13:12.352 --> 01:13:12.632
+<v Aman Thakur>Yep.</v>
+
+01:13:16.312 --> 01:13:17.032
+<v Aman Thakur>Exactly.</v>
+
+01:13:24.072 --> 01:13:43.072
+<v Aleks P. Mednis>So I do think, again, good stuff. We'll take it from there and we'll make progress. We have a call next week. Hopefully next week, you know, I'm not going to say I want it to be shorter. I would like to maybe build agendas around some of our meetings. I want to make sure you have enough time. I don't want to</v>
+
+01:13:37.912 --> 01:13:38.552
+<v Aman Thakur>Yeah, that's right.</v>
+
+01:13:43.352 --> 01:13:47.912
+<v Aleks P. Mednis>You know, I get anxious about a longer call, obviously, than I don't want it scheduled for, because...</v>
+
+01:13:47.472 --> 01:14:09.192
+<v Aman Thakur>No, it's fine, but they initially call to understand everything right again. So if you find anything that need to be addressed immediately, I think we have the team channel open. I mean, you can feel free to ping me on that time. This is what the task is pending. Maybe just kind of a subject line of the ticket or whatever you think will be you comfortable sharing over the team. I can reach out.</v>
+
+01:13:49.432 --> 01:13:49.912
+<v Aleks P. Mednis>You know.</v>
+
+01:13:58.152 --> 01:13:58.632
+<v Aleks P. Mednis>Mhm.</v>
+
+01:14:09.432 --> 01:14:14.952
+<v Aman Thakur>People and check the update, you know, rather just waiting for a week to have this kind of discussion, I know.</v>
+
+01:14:15.912 --> 01:14:30.432
+<v Aleks P. Mednis>Yeah, yeah, I'll probably also think about setting up your login, right? So you can get into the PowerPoint presentations because I don't want to email our PowerPoint presentations outside of our organization. You know, I'd rather have you log in to access those. Okay.</v>
+
+01:14:24.952 --> 01:14:25.272
+<v Aman Thakur>No.</v>
+
+01:14:27.832 --> 01:14:28.312
+<v Aman Thakur>Agreed.</v>
+
+01:14:30.152 --> 01:14:47.192
+<v Aman Thakur>Yeah, okay. So let me know if whatever information do you think you need in a security point of view, right? So probably we can set that if any requirement. So that way, if API access worked, that's fine. So that way we have more broader visibility for what they are doing, everything, you know.</v>
+
+01:14:48.272 --> 01:14:50.552
+<v Aleks P. Mednis>Okay, that sounds good. All right.</v>
+
+01:14:50.312 --> 01:14:56.232
+<v Aman Thakur>Thank you, yeah, we have a good day, then enjoy the rest of your day, and thank you again for giving your time out of your busy schedule.</v>
+
+01:14:56.472 --> 01:15:01.752
+<v Aleks P. Mednis>Oh, thanks for spending it with me. Appreciate it. All right. See you. Bye bye.</v>
+
+01:14:58.512 --> 01:15:01.792
+<v Aman Thakur>Yeah, thank you. Take care. Have a good day. Take care. Bye, bye.</v>
+
+01:14:58.952 --> 01:15:01.032
+<v Karen Modes>Thanks. Bye.</v>
+

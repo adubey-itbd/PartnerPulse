@@ -1,0 +1,248 @@
+WEBVTT
+NOTE title: ISOutsource | ITBD Service Call
+NOTE date: 2026-04-17
+NOTE duration: 12m 52s
+
+00:02:25.043 --> 00:02:25.843
+<v Keith Rozario>Hey, Joshua.</v>
+
+00:02:26.883 --> 00:02:27.363
+<v Joshua Key>Hello?</v>
+
+00:02:28.083 --> 00:02:28.283
+<v Keith Rozario>Yeah.</v>
+
+00:02:30.723 --> 00:02:31.763
+<v Keith Rozario>Have you been in for a while?</v>
+
+00:02:34.083 --> 00:02:35.203
+<v Joshua Key>Um, yeah.</v>
+
+00:02:36.443 --> 00:02:47.283
+<v Joshua Key>A little over maybe a minute, minute and a half. Sorry, I should have said something. You were just, you're on a mute, no cameras. So I was like, oh, maybe he's doing something.</v>
+
+00:02:37.523 --> 00:02:44.523
+<v Keith Rozario>My screen, my screen was, my screen was minimized.</v>
+
+00:02:46.163 --> 00:02:46.483
+<v Keith Rozario>Yeah.</v>
+
+00:02:49.443 --> 00:02:58.843
+<v Keith Rozario>Usually I get a pop-up to allow somebody in the room and I was just working on some of the stuff and I just realized I should ping you and I know it will be there.</v>
+
+00:02:56.803 --> 00:03:01.603
+<v Joshua Key>Yeah, that's the other thing is it let me in the room. I don't know if that's...</v>
+
+00:03:01.203 --> 00:03:01.443
+<v Keith Rozario>Yeah.</v>
+
+00:03:03.123 --> 00:03:04.163
+<v Joshua Key>New, but anyway.</v>
+
+00:03:05.363 --> 00:03:09.683
+<v Keith Rozario>Good. All right. How are things on your end?</v>
+
+00:03:06.803 --> 00:03:06.923
+<v Joshua Key>Yeah.</v>
+
+00:03:10.883 --> 00:03:20.083
+<v Joshua Key>Slow, as you could probably see from Vishal's utilization. I mean, I, and he's not the only one I have.</v>
+
+00:03:16.323 --> 00:03:17.843
+<v Keith Rozario>Yeah, yeah.</v>
+
+00:03:21.323 --> 00:03:40.043
+<v Joshua Key>two other senior engineers that are hovering under 50%. So the big problem we're having right now is hardware. We have servers that have been ordered that are not going to be delivered for two months.</v>
+
+00:03:27.443 --> 00:03:27.603
+<v Keith Rozario>Mm.</v>
+
+00:03:36.643 --> 00:03:36.803
+<v Keith Rozario>Mm.</v>
+
+00:03:40.723 --> 00:03:53.283
+<v Joshua Key>It's taken us weeks to get firewalls. Like it's, we have almost 20 projects backed up in our pipeline due to needing hardware. So that's part of it.</v>
+
+00:03:54.323 --> 00:03:55.843
+<v Keith Rozario>Okay. Okay.</v>
+
+00:03:57.363 --> 00:03:57.603
+<v Keith Rozario>Mm.</v>
+
+00:03:58.483 --> 00:04:17.443
+<v Keith Rozario>No worries, I probably just a phase. Hopefully things work out. But yeah, you're right. I mean, I had to connect with Vishal yesterday while I was preparing this deck, and he did tell me about the low volume and also did mention that, yeah, he was, I asked him if he was constantly in touch with you and Nick.</v>
+
+00:04:01.363 --> 00:04:01.843
+<v Joshua Key>Yeah.</v>
+
+00:04:04.043 --> 00:04:04.403
+<v Joshua Key>Yeah.</v>
+
+00:04:17.923 --> 00:04:32.563
+<v Keith Rozario>For any sort of work, or at least informing them that you don't have much work, so he said he did that on a daily basis. I'm glad he's being more, you know, proactive in this case, but yeah, I mean, we we can definitely look into the numbers as well. Are you able to see my screen?</v>
+
+00:04:27.843 --> 00:04:28.323
+<v Joshua Key>Yep.</v>
+
+00:04:32.883 --> 00:04:33.363
+<v Joshua Key>I am.</v>
+
+00:04:33.883 --> 00:04:34.763
+<v Keith Rozario>Okay, cool.</v>
+
+00:04:36.323 --> 00:04:54.483
+<v Keith Rozario>So yeah, the agenda would be the same. Check in, highlights, action tracker, performance analysis, of course, recap way forward and recap again. I'll remove that from there. Check in, but apart from the volume, whatever work he did get, how about that? I mean, any issues, any complaints from the end users?</v>
+
+00:04:52.883 --> 00:05:02.403
+<v Joshua Key>Yeah, no issues that I know, no complaints. We had a consultant ask today to have him work on something, so that's good.</v>
+
+00:05:03.363 --> 00:05:03.923
+<v Keith Rozario>No, nice.</v>
+
+00:05:04.483 --> 00:05:07.683
+<v Joshua Key>So yeah, nothing, nothing of note.</v>
+
+00:05:05.803 --> 00:05:06.243
+<v Keith Rozario>OK.</v>
+
+00:05:08.723 --> 00:05:27.203
+<v Keith Rozario>Okay, perfect, perfect. All right, cool. I'll talk about that in a bit. So I'll quickly walk through the highlights of this month so far. This is something that he had shared with me. I just made it look good. So QA environment migration, executed QA for greatest.</v>
+
+00:05:24.323 --> 00:05:24.483
+<v Joshua Key>Yeah.</v>
+
+00:05:27.283 --> 00:05:50.763
+<v Keith Rozario>Greater Seattle concrete DPP environment migration off current MSP migration steps validated, clean handover confirmed. Autopilot and hybrid join, multi-day deep dive into autopilot failures and hybrid join issues. April 1st to 3rd contributed research and resolution steps proactively. Beam issue resolution, identified and resolved Beam related backup issues on April 7th and April 13th, ensuring backup integrity for client environment.</v>
+
+00:05:51.523 --> 00:06:11.203
+<v Keith Rozario>ESP plus VPN script work, resolved ESP provisioning issues and contributed VPN scripted development on April 2nd, adding value beyond standard ticket scope. Intune training and upskilling, utilize idle periods productively, completed Intune training to enhance skill set and future client service capability. Good job there, PMO, attendance and coordination.</v>
+
+00:06:11.563 --> 00:06:31.603
+<v Keith Rozario>Attended PMO meeting on April 7th, coordinated device setup and remote login issues with James and Johal, active team participation. That's key highlights for the month of April so far. These are recommended KPIs that we've probably talked about in the past. We can skip that for now. Daily board review is just constantly happening along with Vishal, with the help of Vishal rather.</v>
+
+00:06:32.323 --> 00:06:52.643
+<v Keith Rozario>And we jump into the numbers. So in the month of April so far, he worked on 26 tickets in total, was able to close 11 of them, billable hours 13.3% unfortunately, billable utilization is 16%. If we get into details for April, we've divided the whole month so far into three parts. So first week.</v>
+
+00:06:52.723 --> 00:07:15.443
+<v Keith Rozario>was from April 1st to 3rd. So 3 days there. Overall billable percentage was 24.7, rounding up to 25. And the admin hours was 15 hours out of the 16, 17 hours that he spent during these three days. So 75% admin hours. For the second week between April 6th to 10th, there were five days of course. The billable hours were 8.6%.</v>
+
+00:07:16.483 --> 00:07:35.283
+<v Keith Rozario>billable percentage, sorry, it was 8.6%, the hours were 2.95, and the admin hours were 31.52, which is of course 91% out of the lot. April 13th to 16th, 4 working days, 19.3 billable percentage, and 81% was the admin hours, the non-billable hours.</v>
+
+00:07:36.403 --> 00:07:54.643
+<v Keith Rozario>If I look into the key insights, billable utilization is 16%, well below the 80% target, of course, primary cause and sufficient work assigned by the partner, of course. Week 2 was the worst at 8.6% billable. Week 3 shows clear improvement at 19.3%. And of course, excluding.</v>
+
+00:07:54.803 --> 00:08:18.283
+<v Keith Rozario>the client availability gaps. Active working days show positive billable trajectory and improving week over week engagement. Now these were the utilization. If I look into the ticket closures out of in the first week, he worked on 8 tickets, closed to second week worked on 9 tickets. He was able to close three and third week he was able to work on 9 and close six out of them. 26 tickets in total again, out of which 11 were closed.</v>
+
+00:08:18.563 --> 00:08:40.963
+<v Keith Rozario>Week one and two closure rates were impacted by non-assignable tickets. Unfortunately, there were less tickets, but there were a couple of tickets which are still pending for reboots and they're waiting on client approvals and client a window from the client. So there are many. I think when I was checking the tickets, there were three at least where he was waiting on reboot windows or approvals from the end users.</v>
+
+00:08:41.603 --> 00:08:59.763
+<v Keith Rozario>But this is the summary so far. And like you mentioned, low volume on your end as well for your internal eyes outsource engineers. I hope that works out for you guys as well soon. And but talking about the tickets, if you remember wherein ITBD was not allowed to.</v>
+
+00:09:00.203 --> 00:09:15.043
+<v Keith Rozario>handle the tickets. I think during Maddy and, wow, what was the name of the other engineer? Aarav. Yeah, so you were able to, I think there was one client you were able to unlock for Vishal, but.</v>
+
+00:09:06.483 --> 00:09:07.683
+<v Joshua Key>Aarav, yeah.</v>
+
+00:09:13.043 --> 00:09:13.123
+<v Joshua Key>The.</v>
+
+00:09:14.163 --> 00:09:32.803
+<v Joshua Key>Yeah, I think there's three clients now that we've unlocked. And then that list is in the hands of our new consulting vice president. And so he's going to take some steps to see what he can do to unlock the rest of those clients or some of the rest of those clients, as we've talked before, some of those clients have</v>
+
+00:09:16.883 --> 00:09:18.723
+<v Keith Rozario>Oh, nice. Oh, great.</v>
+
+00:09:23.843 --> 00:09:24.443
+<v Keith Rozario>Mm-hmm.</v>
+
+00:09:33.283 --> 00:09:48.483
+<v Joshua Key>restrictions due to their own requirements of, you know, no foreign, you know, workers, no non-U.S. citizens, things like that. So some of those may</v>
+
+00:09:40.283 --> 00:09:40.763
+<v Keith Rozario>Mhm.</v>
+
+00:09:43.043 --> 00:09:43.563
+<v Keith Rozario>Okay.</v>
+
+00:09:49.443 --> 00:09:52.963
+<v Joshua Key>you know, perpetually be unlocked, but we're seeing what we can do about the rest of them.</v>
+
+00:09:53.723 --> 00:10:12.163
+<v Keith Rozario>Perfect. That's so nice of you. Thank you. And thank you for your support here. I mean, I was again, during my connect with Vishal, he didn't mention that he gets a great amount of support from you guys. So thanks for that. So this is on the numbers perspective. If I get into key bins again, shared by Vishal, I will quickly read it out for you.</v>
+
+00:10:12.403 --> 00:10:33.603
+<v Keith Rozario>VPN deployment via Intune, took full ownership of deploying VPN configuration through Intune for a separate project, reviewed existing setup, aligned approach with Intune policies, and implemented A reliable solution deployable across devices. Critical gap identified for YWCA Autopilot during hybrid Autopilot review, identified the missing Intune connector for Active Directory, a prerequisite for hybrid deployment, flagged</v>
+
+00:10:33.763 --> 00:10:53.683
+<v Keith Rozario>early and added to the implementation plan, preventing device provisioning issues. Recognize for troubleshooting tenacity, received direct appreciation from Nick. If you, from Nick, thanks. Apologies for the light. We have a bad without here. Thanks for your tenacity and persistence in troubleshooting items. It is truly appreciated, reflecting commitment.</v>
+
+00:10:53.723 --> 00:11:12.563
+<v Keith Rozario>into resolution on complex issues and expand into QA responsibilities, completed initial QA involvement and began contributing to QA related tickets, broadening scope beyond regular support and project work and demonstrating readiness to take on wider responsibilities. So this is a mix of this month and of course end of last month as well.</v>
+
+00:11:13.283 --> 00:11:24.003
+<v Keith Rozario>Talk about Kevin from March and a slight of I think the first week of April, but anything you think should have been part of this slide or anything you want to add?</v>
+
+00:11:25.763 --> 00:11:36.883
+<v Joshua Key>No, not off the top of my head. I mean, he's been doing good. He's been contributing to the team. Good ideas. So, I mean, you can add that, but that's just kind of a general statement.</v>
+
+00:11:27.763 --> 00:11:28.243
+<v Keith Rozario>Mhm.</v>
+
+00:11:33.123 --> 00:11:33.603
+<v Keith Rozario>Mhm.</v>
+
+00:11:37.943 --> 00:11:38.423
+<v Keith Rozario>Cool.</v>
+
+00:11:40.523 --> 00:12:02.323
+<v Keith Rozario>Right, right, perfect. And he, rest of his slides are just informational, the AI by design, the GPS, team GPS, the in grown ITBD product, and that would be it. And I was talking about the leaves for next month with him. He said there are two days that he would be needing. Next month, he hasn't confirmed the date yet, and I've told him that he has to share that with me before the 23rd, so I can share it with you guys.</v>
+
+00:12:02.643 --> 00:12:09.203
+<v Keith Rozario>So he'll be giving it to me probably by tomorrow by Monday max, and as soon as I have it, the dates, I'll share those with you.</v>
+
+00:12:09.923 --> 00:12:25.603
+<v Joshua Key>Okay, that sounds good. And then just a comment, I am out on PTO next week. I'm still technically available by email and phone and just slow response. But I am technically on PTO next week, so.</v>
+
+00:12:11.443 --> 00:12:12.883
+<v Keith Rozario>Cool, I.</v>
+
+00:12:16.323 --> 00:12:16.563
+<v Keith Rozario>Okay.</v>
+
+00:12:18.763 --> 00:12:19.243
+<v Keith Rozario>Mhm.</v>
+
+00:12:21.843 --> 00:12:22.163
+<v Keith Rozario>Okay.</v>
+
+00:12:26.243 --> 00:12:33.363
+<v Keith Rozario>Cool, no worries, and, and you know, and as you know, the call has been changed to biweekly now, so next we'll be connecting on the 1st of May.</v>
+
+00:12:31.603 --> 00:12:31.923
+<v Joshua Key>Yep.</v>
+
+00:12:34.123 --> 00:12:35.683
+<v Joshua Key>Okay, sounds good.</v>
+
+00:12:35.363 --> 00:12:40.803
+<v Keith Rozario>Right, but that doesn't mean if you have anything, we have to wait till then. Of course, I'm just one chat away. Just let me know.</v>
+
+00:12:41.763 --> 00:12:42.643
+<v Joshua Key>Yep, sounds good.</v>
+
+00:12:43.283 --> 00:12:48.323
+<v Keith Rozario>Awesome. All right. Thank you. Thank you for joining in today, Joshua. Always nice talking to you.</v>
+
+00:12:47.523 --> 00:12:50.083
+<v Joshua Key>Yeah, yeah, good talking to you.</v>
+
+00:12:50.603 --> 00:12:51.763
+<v Keith Rozario>Alright, bye.</v>
+
+00:12:52.203 --> 00:12:52.483
+<v Joshua Key>Bye.</v>
+

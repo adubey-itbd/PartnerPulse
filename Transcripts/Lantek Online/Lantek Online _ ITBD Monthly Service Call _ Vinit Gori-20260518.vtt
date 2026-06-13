@@ -1,0 +1,434 @@
+WEBVTT
+NOTE title: Lantek Online | ITBD Monthly Service Call | Vinit Gori
+NOTE date: 2026-05-18
+NOTE duration: 14m 23s
+
+00:01:32.483 --> 00:01:33.603
+<v Andy Arora>Hello, Kelsey, how are you?</v>
+
+00:01:34.403 --> 00:01:35.363
+<v Kelsey Magill>Good, how are you?</v>
+
+00:01:36.563 --> 00:01:37.843
+<v Andy Arora>Doing fine, thank you.</v>
+
+00:01:39.763 --> 00:01:40.483
+<v Kawandeep Sandhu>Hey, go see.</v>
+
+00:01:41.883 --> 00:01:42.723
+<v Michael Prebosnyak>Hey, how are ya?</v>
+
+00:01:41.923 --> 00:01:42.883
+<v Kelsey Magill>Hey, how are ya?</v>
+
+00:01:42.003 --> 00:01:42.723
+<v Kawandeep Sandhu>Hey, Michael.</v>
+
+00:01:43.923 --> 00:01:45.283
+<v Kawandeep Sandhu>Doing very well, Kelsey.</v>
+
+00:01:45.843 --> 00:01:46.483
+<v Michael Prebosnyak>Hello.</v>
+
+00:01:47.083 --> 00:01:47.763
+<v Andy Arora>Hello, Michael.</v>
+
+00:01:47.283 --> 00:01:47.603
+<v Manish (Max) Mahajan>But.</v>
+
+00:01:48.123 --> 00:01:49.923
+<v Kawandeep Sandhu>Hey Michael, is Sean joining?</v>
+
+00:01:50.883 --> 00:01:52.483
+<v Michael Prebosnyak>Let me check here.</v>
+
+00:01:53.723 --> 00:01:53.963
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:01:53.843 --> 00:01:55.283
+<v Manish (Max) Mahajan>Hey, Kelsey, he might go.</v>
+
+00:01:56.963 --> 00:01:57.763
+<v Kelsey Magill>Hello.</v>
+
+00:01:57.043 --> 00:01:57.763
+<v Michael Prebosnyak>Hello!</v>
+
+00:02:00.043 --> 00:02:00.483
+<v Kelsey Magill>Partner.</v>
+
+00:02:20.086 --> 00:02:20.206
+<v Michael Prebosnyak>That.</v>
+
+00:02:24.046 --> 00:02:32.366
+<v Michael Prebosnyak>All right. I don't believe Sean is joining yet. I'm still waiting to hear back from him on Team, but I want to make sure here.</v>
+
+00:02:33.206 --> 00:02:33.566
+<v Kawandeep Sandhu>Yep.</v>
+
+00:02:44.206 --> 00:02:54.286
+<v Kawandeep Sandhu>Yeah, because I just wanted to introduce Manish to everyone. So if Sean can join, that would be great. Otherwise, that's fine. I mean, you can update Sean. No worries.</v>
+
+00:02:57.886 --> 00:03:02.366
+<v Michael Prebosnyak>Yeah, he's on with one of our clients right now, but hopefully he'll be free soon.</v>
+
+00:03:01.006 --> 00:03:01.406
+<v Kawandeep Sandhu>Oh.</v>
+
+00:03:03.646 --> 00:03:24.206
+<v Kawandeep Sandhu>Okay, no worries. In the meantime, we can start. So first of all, thank you so much everyone for joining in. And I have Manish with me. So you will see more of Manish going forward. I'll be joining the call. But since we are making some internal changes, so Atlantic will be managed by Manish going forward.</v>
+
+00:03:24.606 --> 00:03:34.926
+<v Kawandeep Sandhu>OK, so we'll be working more closely with Banmeet, and together they'll make sure that if there are any concerns which I doubt, then Manish can help us. OK.</v>
+
+00:03:36.286 --> 00:03:36.846
+<v Michael Prebosnyak>All right.</v>
+
+00:03:36.646 --> 00:03:39.726
+<v Kawandeep Sandhu>Hi, Manish, why don't you take a minute and introduce yourself?</v>
+
+00:03:40.686 --> 00:04:01.286
+<v Manish (Max) Mahajan>Sure. Thank you, Kobe. Hi, Michael. Hi, Kelsey. My name is Manish. I'm working with IT by Design for 11 plus years now. Okay, and I started as a level 1 engineer, and now I have, I'm working in a capacity of a senior technical team lead, and I've been</v>
+
+00:04:01.926 --> 00:04:08.886
+<v Manish (Max) Mahajan>in the people management role for last three years, 3 1/2 years now.</v>
+
+00:04:12.046 --> 00:04:21.166
+<v Manish (Max) Mahajan>And that's the story for me so far. Started as a level 1 engineer growing up and now working as a senior technical team lead.</v>
+
+00:04:25.166 --> 00:04:34.366
+<v Kawandeep Sandhu>OK, thank you, Manish, and I believe you already know who Andy is. I don't have to tell this group about Andy. That's great. OK.</v>
+
+00:04:30.446 --> 00:04:30.846
+<v Michael Prebosnyak>Yep.</v>
+
+00:04:35.806 --> 00:04:38.846
+<v Kawandeep Sandhu>Next up, I'm going to share my screen and...</v>
+
+00:04:40.246 --> 00:04:41.966
+<v Kawandeep Sandhu>Let me know, and you can see it.</v>
+
+00:04:43.566 --> 00:04:44.286
+<v Michael Prebosnyak>I can see it.</v>
+
+00:04:44.446 --> 00:04:44.846
+<v Kelsey Magill>Yep.</v>
+
+00:04:45.726 --> 00:04:46.206
+<v Kawandeep Sandhu>Awesome.</v>
+
+00:04:47.286 --> 00:05:06.486
+<v Kawandeep Sandhu>All right, so ladies and gentlemen, welcome to our monthly service review for LandTech. We'll be looking at April month's data. By getting into the agenda items, it stays pretty much the same. We'll go through the highlights, performance analysis, holiday schedule, build it 2026, team GPS, way forward, and then meeting minutes.</v>
+
+00:05:08.606 --> 00:05:27.406
+<v Kawandeep Sandhu>Getting into the highlights, Vineet and Michael, you worked on restoring the VM for Partner plane and fancy, so that was great. Vineet was very happy about that, so thank you. He also investigated the root cause for a GPU processing delay for Partner ASA, which was excellent.</v>
+
+00:05:27.966 --> 00:05:39.086
+<v Kawandeep Sandhu>Apart from this, he has been helping the team with the escalator tickets. So these are the highlights from last month. Before we get on to the next slide, Michael, Kelsey, anything that you want to add to this?</v>
+
+00:05:43.086 --> 00:05:58.686
+<v Michael Prebosnyak>No, Vineet's been very helpful. He actually found a lot of tools, especially with that restore. It was on a very, very old version of VMware. And we had to force it into backwards compatibility mode, and he was a great resource for that.</v>
+
+00:05:51.246 --> 00:05:51.406
+<v Kelsey Magill>****.</v>
+
+00:05:53.526 --> 00:05:53.566
+<v Kelsey Magill>I.</v>
+
+00:05:58.206 --> 00:05:58.286
+<v Kelsey Magill>The.</v>
+
+00:06:00.446 --> 00:06:04.286
+<v Kawandeep Sandhu>Yep, he's a one-man army. That's what we call him. He's a tank.</v>
+
+00:06:02.046 --> 00:06:02.166
+<v Michael Prebosnyak>Yes.</v>
+
+00:06:03.326 --> 00:06:03.486
+<v Kelsey Magill>It.</v>
+
+00:06:06.766 --> 00:06:08.526
+<v Kawandeep Sandhu>Okay, great. Kelsey, anything from your end?</v>
+
+00:06:09.486 --> 00:06:16.726
+<v Michael Prebosnyak>No, Vineet's great, as always. We had an email hack for one of our clients a couple days ago.</v>
+
+00:06:09.646 --> 00:06:26.366
+<v Kelsey Magill>No, Vineet's great as always. We had an email hack for one of our clients a few days ago. Vineet reached out. He was grumpy and didn't want our help, but Vineet was pretty much key in figuring out what was going on.</v>
+
+00:06:17.966 --> 00:06:18.126
+<v Kawandeep Sandhu>Mm.</v>
+
+00:06:23.446 --> 00:06:23.566
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:06:28.886 --> 00:06:48.446
+<v Kawandeep Sandhu>Brilliant. Yeah, he is one of those individuals who just wants to do things by himself. So that's the best part. That's his strength and weakness as well, because he just wanted to make sure that he's working, finding the solution, and getting the job done. So happy to hear that. Thank you so much, Michael, Kelsey.</v>
+
+00:06:48.846 --> 00:06:53.486
+<v Kawandeep Sandhu>Moving on, as per his performance, looking at his...</v>
+
+00:06:56.286 --> 00:07:14.886
+<v Kawandeep Sandhu>Matrix starting from April, starting from Jan till April, his average billable utilization is 72%. There's a dip in April when I was going through his tickets and board. Last month he spent quite a bit of time working on like doing some research.</v>
+
+00:07:15.166 --> 00:07:33.806
+<v Kawandeep Sandhu>finding the resolution and that is why you see that kind of a dip. But otherwise, you know, as per his performance, I have no complaints. He worked on three projects, closed 56 tickets, top call drivers, projects, migrations, internal escalated tickets, server and phishing alerts. So that's his.</v>
+
+00:07:34.286 --> 00:07:41.806
+<v Kawandeep Sandhu>report card if you want to call it. Okay. Again, I'll go back to Michael, you and Kelsey for anything that you want to add.</v>
+
+00:07:44.726 --> 00:08:03.326
+<v Michael Prebosnyak>I will say something that doesn't necessarily reflect in a lot of these that Vineet's been a big help with in the last month. We've actually had him investigate some of our current client setups as far as, you know, what kind of VMs they have and help us really pull together a full scope for.</v>
+
+00:07:47.086 --> 00:07:47.246
+<v Kelsey Magill>No.</v>
+
+00:07:50.166 --> 00:07:50.446
+<v Kelsey Magill>S.</v>
+
+00:07:53.166 --> 00:07:53.206
+<v Kelsey Magill>I.</v>
+
+00:07:55.206 --> 00:07:55.486
+<v Kelsey Magill>S.</v>
+
+00:07:56.846 --> 00:07:57.046
+<v Kelsey Magill>Just.</v>
+
+00:08:03.606 --> 00:08:19.806
+<v Michael Prebosnyak>you know, upcoming migrations, whether it be moving people up to Intune and Azure and getting them off of on-prem servers. So it doesn't necessarily show as billable and tickets, but it's going to lead to a lot more in the coming months.</v>
+
+00:08:12.046 --> 00:08:12.646
+<v Kawandeep Sandhu>Mm-hmm.</v>
+
+00:08:16.206 --> 00:08:17.486
+<v Kawandeep Sandhu>Yeah, exactly.</v>
+
+00:08:20.766 --> 00:08:41.086
+<v Kawandeep Sandhu>Absolutely. Yep. And that's exactly what I heard. And when I was going through his board, I also figured it out that majority of the time that he's spending is on the researching, trying to figure out things by himself, as Kelsey mentioned, that, you know, he's one of those individuals who just wants to find the resolution and make sure that solution is there. So.</v>
+
+00:08:40.206 --> 00:08:40.446
+<v Michael Prebosnyak>Ohh.</v>
+
+00:08:41.246 --> 00:08:41.726
+<v Kawandeep Sandhu>Thank you.</v>
+
+00:08:43.326 --> 00:08:51.406
+<v Kawandeep Sandhu>Moving on, as for the holiday, the upcoming holiday is on Monday, next Monday. So I believe you don't need Vineet, right?</v>
+
+00:08:49.446 --> 00:08:49.806
+<v Michael Prebosnyak>Yep.</v>
+
+00:08:52.606 --> 00:08:53.326
+<v Michael Prebosnyak>Correct.</v>
+
+00:08:52.686 --> 00:08:53.166
+<v Kelsey Magill>Right.</v>
+
+00:08:54.206 --> 00:08:54.686
+<v Kawandeep Sandhu>Okay.</v>
+
+00:08:58.046 --> 00:09:02.206
+<v Kawandeep Sandhu>A big thing, build it 2026. So is Sean coming this year?</v>
+
+00:09:04.366 --> 00:09:06.446
+<v Michael Prebosnyak>I don't know, actually.</v>
+
+00:09:07.566 --> 00:09:09.726
+<v Andy Arora>Yes, Sean is registered, I think.</v>
+
+00:09:09.886 --> 00:09:20.926
+<v Kawandeep Sandhu>Okay, okay, perfect. Then maybe he should get Michael, you or Kelsey. Because I'm not sure. Andy, do you see anyone else registered apart from Sean?</v>
+
+00:09:10.926 --> 00:09:11.246
+<v Andy Arora>Yeah.</v>
+
+00:09:21.486 --> 00:09:25.246
+<v Andy Arora>I see one more name, Brady. Is it right?</v>
+
+00:09:27.206 --> 00:09:31.326
+<v Michael Prebosnyak>Yeah, Brady would probably also be there. He's the other owner of LandTech.</v>
+
+00:09:31.166 --> 00:09:32.446
+<v Andy Arora>Okay, okay, right.</v>
+
+00:09:32.046 --> 00:09:50.846
+<v Kawandeep Sandhu>Okay, perfect. Yep, I'm sure they'll have an amazing time. So I feel for you and all of us because we will not be there. But you never know, maybe next year. All right, thank you. AI design, so this time around it will be part of our build it, so.</v>
+
+00:09:32.486 --> 00:09:33.326
+<v Michael Prebosnyak>Lozy is.</v>
+
+00:09:41.646 --> 00:09:41.806
+<v Kelsey Magill>Yeah.</v>
+
+00:09:42.126 --> 00:09:42.246
+<v Andy Arora>Yeah.</v>
+
+00:09:51.246 --> 00:10:05.726
+<v Kawandeep Sandhu>Sean and Brandy, they will be able to, it's Brandy, right? Am I saying it correctly? Brady? Okay, Brady. Brady. Okay, cool. Yeah, so they both will be a part of our AI by design, and I'm sure they'll.</v>
+
+00:09:54.846 --> 00:09:55.166
+<v Michael Prebosnyak>Ohh.</v>
+
+00:09:55.046 --> 00:09:55.486
+<v Andy Arora>Ready.</v>
+
+00:09:56.926 --> 00:09:58.286
+<v Michael Prebosnyak>Yeah, Brady, yeah.</v>
+
+00:09:57.406 --> 00:09:57.726
+<v Andy Arora>Yeah.</v>
+
+00:09:58.846 --> 00:09:59.166
+<v Andy Arora>Vaid.</v>
+
+00:10:07.526 --> 00:10:16.246
+<v Kawandeep Sandhu>Whatever they learn, they're going to share internally with all of you, so that'll be great. Team GPS, we all know about Team GPS. You have the...</v>
+
+00:10:17.686 --> 00:10:23.326
+<v Kawandeep Sandhu>QR code on the screen. If you need the demo, you can let us know. We'll be more than happy to schedule it.</v>
+
+00:10:24.446 --> 00:10:46.846
+<v Kawandeep Sandhu>Way forward remains the same. We need continues to be one of those individuals who wants to make sure that he is learning and growing every now and then to help business wherever he feel like he can add value to your environment, he's doing that. Apart from this, ITBD is committed to deliver the best product and we are ready to support any additional needs.</v>
+
+00:10:47.326 --> 00:10:55.406
+<v Kawandeep Sandhu>that may come up this year. That's the way forward. And with this, I'm going to stop sharing my screen.</v>
+
+00:10:54.686 --> 00:10:55.326
+<v Michael Prebosnyak>What is it?</v>
+
+00:10:56.766 --> 00:11:03.406
+<v Kawandeep Sandhu>I'll go around the table for any questions, concerns, or feedback. So I'll start with Kelsey, you first, and then I'll go to Michael.</v>
+
+00:10:59.886 --> 00:11:00.206
+<v Michael Prebosnyak>Leaders.</v>
+
+00:11:09.646 --> 00:11:10.206
+<v Kawandeep Sandhu>Chelsea.</v>
+
+00:11:11.246 --> 00:11:12.526
+<v Kelsey Magill>No questions from me.</v>
+
+00:11:11.566 --> 00:11:12.526
+<v Kawandeep Sandhu>Anything from your end?</v>
+
+00:11:14.206 --> 00:11:16.286
+<v Kawandeep Sandhu>I know you're busy. You're working, right, Kelsey?</v>
+
+00:11:16.846 --> 00:11:18.046
+<v Kelsey Magill>Yeah, sorry.</v>
+
+00:11:18.846 --> 00:11:28.366
+<v Kawandeep Sandhu>That's okay, that's fine. Thank you so much, by the way. I appreciate your feedback, Kelsey. And thank you so much for your support. We truly appreciate it. Michael?</v>
+
+00:11:23.646 --> 00:11:23.806
+<v Kelsey Magill>Oh.</v>
+
+00:11:25.326 --> 00:11:25.886
+<v Kelsey Magill>Of course.</v>
+
+00:11:30.046 --> 00:11:41.246
+<v Michael Prebosnyak>I don't have anything at this time. Vineet's been very communicative. He's always on top of things, honestly, more so than some of our guys here. Yeah, we like having him as part of the team.</v>
+
+00:11:31.326 --> 00:11:31.366
+<v Kelsey Magill>Oh.</v>
+
+00:11:36.046 --> 00:11:36.686
+<v Kelsey Magill>Sing.</v>
+
+00:11:40.846 --> 00:11:41.166
+<v Kelsey Magill>Touch.</v>
+
+00:11:42.646 --> 00:12:01.526
+<v Kawandeep Sandhu>Awesome. We are trying our best to see if we can give you more individuals like Vineet. We are trying to clone him. Maybe you never know with AI. You know, anything is possible, right? Okay, great. But thank you. Thank you, Michael, for your feedback as well. We truly appreciate it. To my team now, Andy.</v>
+
+00:11:49.566 --> 00:11:49.886
+<v Michael Prebosnyak>Yeah.</v>
+
+00:11:51.566 --> 00:11:51.926
+<v Michael Prebosnyak>Yeah.</v>
+
+00:11:53.526 --> 00:11:53.646
+<v Andy Arora>Yeah.</v>
+
+00:12:01.886 --> 00:12:02.926
+<v Kawandeep Sandhu>Anything from your end?</v>
+
+00:12:22.206 --> 00:12:22.686
+<v Michael Prebosnyak>Ahh.</v>
+
+00:12:23.856 --> 00:12:43.576
+<v Michael Prebosnyak>I don't believe so at this time. We actually had a, yeah, we had some recent interns come in. I'm not, unfortunately, I'm not part of the hiring on that, but we have some interns currently and I'm not sure if that's going to lead to full time, but you know, we are, we certainly will reach out if it's necessary.</v>
+
+00:12:26.686 --> 00:12:27.086
+<v Andy Arora>Okay.</v>
+
+00:12:36.366 --> 00:12:36.446
+<v Kelsey Magill>The.</v>
+
+00:12:43.086 --> 00:12:43.326
+<v Kelsey Magill>Phelps.</v>
+
+00:12:44.206 --> 00:12:49.246
+<v Andy Arora>Thank you. Thank you, Michael. Just shoot us an email and we'll align interviews with you. Thank you.</v>
+
+00:12:49.806 --> 00:12:50.286
+<v Michael Prebosnyak>Thank you.</v>
+
+00:12:50.526 --> 00:12:52.166
+<v Andy Arora>That's it for me. Back to you, Gaurav.</v>
+
+00:12:53.526 --> 00:12:54.926
+<v Kawandeep Sandhu>Thank you, Andy Manish.</v>
+
+00:12:56.566 --> 00:13:16.206
+<v Manish (Max) Mahajan>Thank you, Colin. Thank you, Kelsey and Michael, for the appreciation and your kind words for Vaid. I know him individually. Like personally, I've been knowing him for almost a year now. So he's a great chap to talk to and a great person, a great human being.</v>
+
+00:13:13.486 --> 00:13:13.606
+<v Michael Prebosnyak>Yeah.</v>
+
+00:13:16.606 --> 00:13:35.046
+<v Manish (Max) Mahajan>So I'm sure things are going to stay as it is and it will help us in strengthening our partnership with particularly me coming into the picture now. So it will be, I believe it will be kind of, I would say, an easier task for me to get</v>
+
+00:13:35.406 --> 00:13:51.966
+<v Manish (Max) Mahajan>used to the environment that we have at Atlantic because of a sincere engineer like Vineet and appreciate appreciation from your side. So that's going to play a good role for me as well. Thank you.</v>
+
+00:13:53.926 --> 00:13:59.806
+<v Kawandeep Sandhu>Perfect. Thank you, Manish. Well, that's it from my end. Before we wrap it up, anyone any questions?</v>
+
+00:14:02.086 --> 00:14:08.926
+<v Michael Prebosnyak>I don't have anything at this time. Thank you all for joining. It was nice meeting you, Manish.</v>
+
+00:14:09.806 --> 00:14:10.846
+<v Manish (Max) Mahajan>Same here, Michael.</v>
+
+00:14:11.006 --> 00:14:11.166
+<v Michael Prebosnyak>Mm.</v>
+
+00:14:11.646 --> 00:14:20.206
+<v Kawandeep Sandhu>All right, with this, I give you almost 16 minutes back. So Michael, Kelsey, and Joy, and we'll speak to you next month. Till then, have a good one. Take care. Bye-bye.</v>
+
+00:14:12.846 --> 00:14:13.166
+<v Manish (Max) Mahajan>Hey.</v>
+
+00:14:15.966 --> 00:14:16.206
+<v Michael Prebosnyak>Yeah.</v>
+
+00:14:16.206 --> 00:14:16.366
+<v Andy Arora>Yeah.</v>
+
+00:14:19.646 --> 00:14:21.646
+<v Michael Prebosnyak>Alright, thank you very much.</v>
+
+00:14:19.966 --> 00:14:21.486
+<v Kelsey Magill>Thank you, you too.</v>
+
+00:14:21.326 --> 00:14:23.086
+<v Manish (Max) Mahajan>Thank you. Bye-bye. Have a great day.</v>
+
+00:14:21.806 --> 00:14:23.006
+<v Andy Arora>Thank you. Have a good day. Bye bye.</v>
+
+00:14:23.166 --> 00:14:23.726
+<v Michael Prebosnyak>Bye-bye.</v>
+

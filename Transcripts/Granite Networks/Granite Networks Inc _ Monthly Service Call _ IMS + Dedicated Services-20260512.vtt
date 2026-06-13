@@ -1,0 +1,731 @@
+WEBVTT
+NOTE title: Granite Networks Inc | Monthly Service Call | IMS + Dedicated Services
+NOTE date: 2026-05-12
+NOTE duration: 19m 51s
+
+00:00:40.513 --> 00:00:41.153
+<v Vishal Kashyap>Kip all.</v>
+
+00:00:43.473 --> 00:00:44.353
+<v Paul Hogan>Hello, everyone.</v>
+
+00:00:43.953 --> 00:00:44.833
+<v Keith Rozario>Dr. Paul.</v>
+
+00:00:46.433 --> 00:00:47.233
+<v Vishal Kashyap>Hey, how are you?</v>
+
+00:00:48.033 --> 00:00:49.313
+<v Paul Hogan>I'm good. How you doing?</v>
+
+00:00:50.473 --> 00:00:51.233
+<v Vishal Kashyap>Not too bad.</v>
+
+00:00:52.393 --> 00:00:52.513
+<v Keith Rozario>Yeah.</v>
+
+00:00:52.593 --> 00:00:52.713
+<v Paul Hogan>Yeah.</v>
+
+00:00:53.713 --> 00:00:54.353
+<v Vishal Kashyap>Hey, Mark.</v>
+
+00:00:55.513 --> 00:01:02.113
+<v Mark Paolo Mangune>Hey guys, Andrea will be with us in 5 minutes. She's just on the call.</v>
+
+00:00:56.753 --> 00:00:57.233
+<v Paul Hogan>Hello.</v>
+
+00:01:02.673 --> 00:01:03.473
+<v Paul Hogan>Okay, all good.</v>
+
+00:01:03.873 --> 00:01:04.273
+<v Vishal Kashyap>OK.</v>
+
+00:01:06.993 --> 00:01:08.513
+<v Vishal Kashyap>Support a lot of things have been.</v>
+
+00:01:09.633 --> 00:01:10.353
+<v Paul Hogan>Things have been great.</v>
+
+00:01:11.713 --> 00:01:12.033
+<v Paul Hogan>Yeah.</v>
+
+00:01:12.033 --> 00:01:13.393
+<v Vishal Kashyap>Right, nice.</v>
+
+00:01:17.833 --> 00:01:17.953
+<v Paul Hogan>Yeah.</v>
+
+00:01:18.273 --> 00:01:30.753
+<v Vishal Kashyap>Paul, there was one device, I don't remember the client and client name, but it was an RDS server, I guess RDS 01. Is that supposed to be managed by us or your team is handling that?</v>
+
+00:01:29.633 --> 00:01:32.753
+<v Paul Hogan>That's TDI. I think that's TDIC.</v>
+
+00:01:33.473 --> 00:01:34.433
+<v Vishal Kashyap>I guess.</v>
+
+00:01:34.913 --> 00:01:40.273
+<v Paul Hogan>I think that one's managed with a team here. It's not a very important server.</v>
+
+00:01:41.713 --> 00:01:42.113
+<v Vishal Kashyap>Okay.</v>
+
+00:01:45.153 --> 00:01:45.553
+<v Vishal Kashyap>Cool.</v>
+
+00:01:49.873 --> 00:01:50.193
+<v Paul Hogan>Andy.</v>
+
+00:01:52.273 --> 00:01:55.193
+<v Andrea Canlas>Hey, Paul. Good. What is it? Afternoon.</v>
+
+00:01:56.193 --> 00:01:57.153
+<v Paul Hogan>Whatever it is.</v>
+
+00:02:04.593 --> 00:02:06.033
+<v Vishal Kashyap>So guys, Paul, anyone?</v>
+
+00:02:04.833 --> 00:02:05.393
+<v Andrea Canlas>How are you?</v>
+
+00:02:07.473 --> 00:02:07.553
+<v Vishal Kashyap>Ah.</v>
+
+00:02:08.353 --> 00:02:10.193
+<v Andrea Canlas>Sorry, go ahead, Vishal.</v>
+
+00:02:09.953 --> 00:02:10.673
+<v Vishal Kashyap>No, go ahead.</v>
+
+00:02:10.673 --> 00:02:10.913
+<v Paul Hogan>Yeah.</v>
+
+00:02:12.673 --> 00:02:13.073
+<v Andrea Canlas>Is there?</v>
+
+00:02:14.513 --> 00:02:17.713
+<v Vishal Kashyap>I was just asking Paul if anyone else will be joining us today.</v>
+
+00:02:18.593 --> 00:02:23.953
+<v Paul Hogan>Nope, everyone else is either in meetings or customers. So you're, you only give me today.</v>
+
+00:02:26.113 --> 00:02:26.673
+<v Vishal Kashyap>Kour.</v>
+
+00:02:33.313 --> 00:02:35.953
+<v Vishal Kashyap>All right, I'm gonna quickly share my screen.</v>
+
+00:02:44.353 --> 00:02:46.513
+<v Vishal Kashyap>Okay, Paul, I hope you can see it now.</v>
+
+00:02:46.753 --> 00:02:47.153
+<v Paul Hogan>Yep.</v>
+
+00:02:48.033 --> 00:03:04.753
+<v Vishal Kashyap>Perfect. So Paula, as you know, that Riddle will be discussing the NOC services first, and then I'll pass on the slides to Andrea. She will be running the dedicated one. The agenda for the NOC one would be the SLA summary patch and backup compliance, and eventually true up and recap and to-dos.</v>
+
+00:03:05.993 --> 00:03:24.193
+<v Vishal Kashyap>If you talk about the SLA performance for April, things have been great. We received overall 58 tickets in April, and the resolution SLA for all the tickets is 100%. But for response, I said there was a miss in P2 category. So 3 tickets actually from P2 got missed.</v>
+
+00:03:24.553 --> 00:03:41.873
+<v Vishal Kashyap>from the acknowledgement. So they were delayed by two, 3 minutes, but that did not impact the overall SLA we have. If we talk priority wise for P1, we got 5 tickets, P247 alerts and P34 and two P4 alerts. All of them were acknowledged and closed within the time frame.</v>
+
+00:03:44.113 --> 00:03:44.593
+<v Paul Hogan>Nice.</v>
+
+00:03:44.673 --> 00:03:46.833
+<v Vishal Kashyap>So, if any any questions, Paul?</v>
+
+00:03:47.273 --> 00:03:47.713
+<v Paul Hogan>Nope.</v>
+
+00:03:48.673 --> 00:03:49.033
+<v Vishal Kashyap>Great.</v>
+
+00:03:50.713 --> 00:04:08.193
+<v Vishal Kashyap>If we talk about the patch compliance, the last patches were released on the 14th of April. Currently, we are sitting at 85.29%. New patches were released today, so that's why the numbers are low right now. And as you know, the patching is scheduled for 2nd and 4th Saturday. Currently, there are five devices which are showing pending patches.</v>
+
+00:04:01.553 --> 00:04:02.033
+<v Paul Hogan>Mhm.</v>
+
+00:04:08.833 --> 00:04:18.593
+<v Vishal Kashyap>A few of them will be taken care of this on the second weekend, which is this, I guess, yeah, this one. And the few one, TDIC, the main one, will be taken care on the 4th Saturday.</v>
+
+00:04:19.393 --> 00:04:19.873
+<v Paul Hogan>Gotcha.</v>
+
+00:04:21.473 --> 00:04:34.513
+<v Vishal Kashyap>If you talk about the backup compliance throughout April, we received two failure alerts. They both were acknowledged and closed within the time frame. They have backups are running fine now. Currently we are managing 8 devices for backup and for six clients.</v>
+
+00:04:35.713 --> 00:04:36.113
+<v Paul Hogan>Okay.</v>
+
+00:04:38.193 --> 00:04:45.633
+<v Vishal Kashyap>Moving on to the inventory, we are managing 20 devices right now. Any changes in this poll that we should expect on?</v>
+
+00:04:44.593 --> 00:04:45.233
+<v Paul Hogan>Um...</v>
+
+00:04:46.993 --> 00:04:48.513
+<v Paul Hogan>I don't think so.</v>
+
+00:04:49.513 --> 00:04:51.553
+<v Paul Hogan>I'll let you guys know when that changes.</v>
+
+00:04:52.753 --> 00:04:53.713
+<v Vishal Kashyap>Okay, cool.</v>
+
+00:04:56.673 --> 00:05:08.193
+<v Vishal Kashyap>All right, there were no to-dos from the meeting we had last time. Anything you want to add? Anything that you noticed either on the team chat for the team or any other thing that you want me to add here?</v>
+
+00:05:08.833 --> 00:05:10.353
+<v Paul Hogan>Now, things are going quite well.</v>
+
+00:05:11.753 --> 00:05:12.673
+<v Vishal Kashyap>Perfect, perfect.</v>
+
+00:05:13.793 --> 00:05:17.553
+<v Vishal Kashyap>All right, moving on to the dedicated services, over to you, Andrea.</v>
+
+00:05:20.753 --> 00:05:39.873
+<v Andrea Canlas>Thanks, Vishal. All right, so just wanted to go through the highlights, Paul. So as for the team, just last night, as if we will officially join Granite taking room one, but making sure that we continue with the service continuity with this smooth transition. So we're going to take care of Katie.</v>
+
+00:05:40.273 --> 00:05:48.033
+<v Andrea Canlas>We also had a discussion with one already, so we have that plan. I'll share that with you once we have that entire draft. Okay.</v>
+
+00:05:48.193 --> 00:05:49.713
+<v Paul Hogan>Okay, great.</v>
+
+00:05:49.273 --> 00:06:10.753
+<v Andrea Canlas>All right, perfect. As for team member also, we wanted to welcome Anton back. So he has returned after a few weeks of hospitalization. So he's, we're glad to have him back and making sure that, you know, he continue his best performance to the team. So had to check in with him. He's pretty good. Had a bit of an issue with his,</v>
+
+00:06:05.233 --> 00:06:05.473
+<v Paul Hogan>Yep.</v>
+
+00:06:11.313 --> 00:06:15.953
+<v Andrea Canlas>Hello, I think last week he was out, but he's feeling better now.</v>
+
+00:06:15.073 --> 00:06:17.953
+<v Paul Hogan>Right. Yep. Yeah, we're glad he's doing better.</v>
+
+00:06:19.433 --> 00:06:38.433
+<v Andrea Canlas>Great. Next is client satisfaction. So both the engineer has been receiving positive CSAT ratings. This is reflecting their commitment to the service, the quality service and our partnership, just like what we talked about in the past. We're very, very on to making sure that our</v>
+
+00:06:38.673 --> 00:06:41.393
+<v Andrea Canlas>your partners or your clients are well taken care of.</v>
+
+00:06:42.353 --> 00:06:42.593
+<v Paul Hogan>Kip.</v>
+
+00:06:43.673 --> 00:07:08.273
+<v Andrea Canlas>Next is leadership. So I know that maybe there are some face here in this call that you're not familiar with. We had a different discussion last week, but I wanted to formally introduce you to Marky. So Marky has been appointed as the new technical team lead to this account, bringing additional structure and making sure that we work with Mon, Anton, and Sophia as well.</v>
+
+00:07:08.753 --> 00:07:27.233
+<v Andrea Canlas>to make sure that we're moving forward. So if just like for everybody's understanding, Rodge has been moved to a more senior role, we're very happy for him. We wanted to make sure also that we still continue with the support for granted. I will not take Marky's thunder. Marky, introduce yourself.</v>
+
+00:07:27.553 --> 00:07:28.113
+<v Paul Hogan>Hi, Marky.</v>
+
+00:07:28.033 --> 00:07:46.673
+<v Mark Paolo Mangune>Hi, guys. Good day. Hi, Paul. Nice to meet you. So, yeah, guys, I'm Marky. And just to give you a background, I have 12 years experience in MSP, which is the background that I have. So previously, I'm working with First Focus IT, which is an Australian-based company.</v>
+
+00:07:47.153 --> 00:08:11.673
+<v Mark Paolo Mangune>I'm managing their After Hours team, which is a widely distributed team of 18 support staff members across Manila, Australia, India, Ireland, and South Africa. So aside from being the team lead for After Hours, I'm also doing the incident manager role for After Hours. So responsible for P1 and P0 tickets. Basically, it's an outage tickets. So I'm the one</v>
+
+00:08:11.313 --> 00:08:11.433
+<v Paul Hogan>Yeah.</v>
+
+00:08:11.673 --> 00:08:34.513
+<v Mark Paolo Mangune>I was doing the bridge calls from the client side and also from the support side of things. And not just that, I'm also doing the dispatch coordinator role for the After Hours team, which is responsible as well for assigning tickets to the team and making sure that all tickets that has been raised by VIP clients have been actioned in a timely manner.</v>
+
+00:08:34.993 --> 00:08:39.153
+<v Mark Paolo Mangune>Yeah, I'm looking forward to work with you guys and yeah, so for the best.</v>
+
+00:08:39.553 --> 00:08:40.873
+<v Paul Hogan>Good to meet you. Thanks, Mark.</v>
+
+00:08:41.233 --> 00:08:41.633
+<v Mark Paolo Mangune>Thanks.</v>
+
+00:08:43.153 --> 00:09:02.873
+<v Andrea Canlas>Thank you, Marky. Next slide, please. There we go. Thank you. So just like what I mentioned, Paul, we're going to create that roadmap, training roadmap for Sophie, including what Mon does on a daily basis and what his outputs are, including ticket resolution as well as soon to be utilization as well.</v>
+
+00:09:02.993 --> 00:09:16.033
+<v Andrea Canlas>So we're going to get to that. Marky will be able to help us as well in making sure that we create and send that over to you. Next is April CSAT for Manan and Tom. Have you received that email, Martha?</v>
+
+00:09:16.433 --> 00:09:19.073
+<v Paul Hogan>Yeah, and I thought I did them, but...</v>
+
+00:09:18.913 --> 00:09:23.393
+<v Andrea Canlas>Gotcha. I think you did the NPS. I received the NPS for.</v>
+
+00:09:24.433 --> 00:09:28.633
+<v Paul Hogan>You might want to just resend them to me if I haven't done them. Okay.</v>
+
+00:09:27.073 --> 00:09:30.993
+<v Andrea Canlas>I will do that. Sure. I'll resend it. I'll re-trigger it. Thank you.</v>
+
+00:09:30.473 --> 00:09:31.153
+<v Paul Hogan>Great, thank you.</v>
+
+00:09:32.113 --> 00:09:52.353
+<v Andrea Canlas>All right, let's move on, please. Thank you so much. All right, so ticket closure trend analysis, I wanted to show Manan and Anton's average ticket close per day. So our target is 8 tickets A day. So for Manan, he was able to add, or he did demonstrate a strong operational control.</v>
+
+00:09:52.593 --> 00:10:12.433
+<v Andrea Canlas>with consistently higher resolution rate, even during peak ticket volume. So this is making sure that whatever comes their way, he was able to close most of them, if not all. So as you can see on the numbers here, probably one or two to three tickets are being left and carried over to</v>
+
+00:10:12.593 --> 00:10:32.513
+<v Andrea Canlas>the next day, but as for the resolution, he's been just being a rock star all in all. As for Anton, there was a slight dip with his ticket that has he has been handled and the average ticket closed. And this is not because of his performance. It's just that he was out for a few weeks. That's why it affected.</v>
+
+00:10:32.433 --> 00:10:32.913
+<v Paul Hogan>Mhm.</v>
+
+00:10:32.753 --> 00:10:34.833
+<v Andrea Canlas>is his overall ticket members.</v>
+
+00:10:35.233 --> 00:10:36.113
+<v Paul Hogan>No worries there.</v>
+
+00:10:35.993 --> 00:10:36.153
+<v Andrea Canlas>Yeah.</v>
+
+00:10:37.393 --> 00:10:40.673
+<v Andrea Canlas>Thank you very much. So yeah, any questions on these?</v>
+
+00:10:43.473 --> 00:10:43.993
+<v Andrea Canlas>Okay.</v>
+
+00:10:44.913 --> 00:11:04.033
+<v Andrea Canlas>Got it. All right, so let's move on to CSAT. So customer satisfaction, their target is 95% is the score and response rate is a 30%, just that standard. And looking at the simple stat portal, Manan was able to achieve 90% CSAT for April.</v>
+
+00:11:04.073 --> 00:11:23.793
+<v Andrea Canlas>which is a very, very good job. And I wanted to highlight something that was, I think, given by one of your client CEO, I think it's Diane. I was like, you just got a race, man. And then I was just teasing him. Come on, you're leaving us. I can't keep you in a race anymore.</v>
+
+00:11:12.913 --> 00:11:14.513
+<v Paul Hogan>Yeah, we got a good laugh out of that one.</v>
+
+00:11:19.553 --> 00:11:19.713
+<v Paul Hogan>Okay.</v>
+
+00:11:22.913 --> 00:11:27.793
+<v Paul Hogan>He gives a good review and he's leaving us, so now we're gonna we're just gonna delete that one.</v>
+
+00:11:25.393 --> 00:11:26.193
+<v Andrea Canlas>Exactly.</v>
+
+00:11:25.633 --> 00:11:26.353
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:11:30.073 --> 00:11:49.913
+<v Andrea Canlas>Exactly, but just wanted to highlight it that for a CEO to actually take time and put a note out there just to highlight the service, that means Juan is doing something good. So just wanted to give him that kudos. Mass for Anton, he has achieved 65%, but no negative surveys, which is, I wanted to highlight also, again, there's a dip.</v>
+
+00:11:39.713 --> 00:11:39.993
+<v Paul Hogan>Yeah.</v>
+
+00:11:50.193 --> 00:12:02.353
+<v Andrea Canlas>with how he's getting because of the weeks that he was away. But again, we had a discussion with him, Todd, and he's making sure that he's going to bounce back from that number. It's not a bad number, but he's going to.</v>
+
+00:12:02.153 --> 00:12:04.353
+<v Paul Hogan>How are we, how are you calculating that number?</v>
+
+00:12:05.553 --> 00:12:06.553
+<v Paul Hogan>the 65%.</v>
+
+00:12:05.673 --> 00:12:06.273
+<v Andrea Canlas>For this.</v>
+
+00:12:07.393 --> 00:12:10.273
+<v Andrea Canlas>just from the numbers that they get from.</v>
+
+00:12:09.233 --> 00:12:13.393
+<v Mark Paolo Mangune>From the total numbers, from the total number of the CSAT that they have.</v>
+
+00:12:11.153 --> 00:12:11.633
+<v Andrea Canlas>Portal.</v>
+
+00:12:13.353 --> 00:12:18.273
+<v Paul Hogan>Okay, I don't remember any negatives coming in. So I actually thought I thought he gotten all positives.</v>
+
+00:12:16.273 --> 00:12:16.833
+<v Andrea Canlas>Yes.</v>
+
+00:12:25.553 --> 00:12:27.873
+<v Paul Hogan>I just wasn't sure what 65% came from.</v>
+
+00:12:25.793 --> 00:12:26.753
+<v Keith Rozario>You're in mute.</v>
+
+00:12:30.113 --> 00:12:32.593
+<v Keith Rozario>Probably, were there neutrals as well?</v>
+
+00:12:30.593 --> 00:12:31.073
+<v Andrea Canlas>Sorry.</v>
+
+00:12:34.833 --> 00:12:38.753
+<v Andrea Canlas>No, there were no negative survey, right?</v>
+
+00:12:36.993 --> 00:12:37.553
+<v Keith Rozario>Neutrals.</v>
+
+00:12:36.993 --> 00:12:41.713
+<v Mark Paolo Mangune>There were no negatives, but yeah, the total number, I think, yeah.</v>
+
+00:12:44.273 --> 00:12:48.513
+<v Andrea Canlas>Okay, how many, how many positive survey did he get?</v>
+
+00:12:44.553 --> 00:12:45.793
+<v Paul Hogan>Um, okay.</v>
+
+00:12:48.993 --> 00:12:54.913
+<v Mark Paolo Mangune>I think he only has 13 negative or positive CSATs.</v>
+
+00:12:55.993 --> 00:12:57.393
+<v Mark Paolo Mangune>Well, um...</v>
+
+00:12:58.593 --> 00:13:01.633
+<v Mark Paolo Mangune>One has 18 or 19, if I'm not mistaken.</v>
+
+00:13:03.153 --> 00:13:10.313
+<v Andrea Canlas>Okay, I think we include the target score, which is the 95%, and the response rate of 30%.</v>
+
+00:13:07.153 --> 00:13:08.553
+<v Mark Paolo Mangune>Yeah, for the 95%.</v>
+
+00:13:09.713 --> 00:13:15.953
+<v Paul Hogan>I think from my perspective, they're actually both been running at 100% lately because it's been all positive scores.</v>
+
+00:13:17.033 --> 00:13:26.513
+<v Paul Hogan>So I didn't understand how you were calculating that. You know, when we get negatives, you know, I have to call the customer and we have to go through a whole rigmarole here.</v>
+
+00:13:17.073 --> 00:13:17.553
+<v Andrea Canlas>Okay.</v>
+
+00:13:20.873 --> 00:13:21.233
+<v Andrea Canlas>Mhm.</v>
+
+00:13:27.313 --> 00:13:27.913
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:13:28.673 --> 00:13:35.633
+<v Paul Hogan>And I don't remember any negatives for Anton, either of them, honestly, for, you know, for quite a while.</v>
+
+00:13:36.833 --> 00:13:39.553
+<v Paul Hogan>They're both doing great. Mine gets more tickets because he cherry picks.</v>
+
+00:13:37.073 --> 00:13:37.473
+<v Andrea Canlas>Okay.</v>
+
+00:13:43.033 --> 00:13:43.153
+<v Paul Hogan>Yeah.</v>
+
+00:13:44.273 --> 00:13:44.913
+<v Andrea Canlas>I'll tell him that.</v>
+
+00:13:46.113 --> 00:13:48.513
+<v Paul Hogan>I know he does. I tease him, I tell him I do.</v>
+
+00:13:50.433 --> 00:13:50.593
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:13:51.393 --> 00:14:08.193
+<v Andrea Canlas>Okay. All right. We have to check it out because I think we're including that response rate of 30%. That's why they're just getting these number. But if we're just after the score as an entirety of the CSAT that they get, then they should be getting 100% if there's no negative.</v>
+
+00:14:03.953 --> 00:14:04.113
+<v Paul Hogan>No.</v>
+
+00:14:06.513 --> 00:14:06.913
+<v Paul Hogan>Yeah.</v>
+
+00:14:08.113 --> 00:14:16.033
+<v Paul Hogan>I wouldn't, I wouldn't ding them on response rate just because customers respond or don't, you know, I can't make them do anything.</v>
+
+00:14:13.393 --> 00:14:13.713
+<v Andrea Canlas>Yes.</v>
+
+00:14:14.993 --> 00:14:15.273
+<v Andrea Canlas>Yeah.</v>
+
+00:14:16.673 --> 00:14:17.793
+<v Andrea Canlas>Yeah, OK.</v>
+
+00:14:17.073 --> 00:14:22.113
+<v Mark Paolo Mangune>So we can just focus on the positive ones, not the response. Okay.</v>
+
+00:14:20.233 --> 00:14:39.633
+<v Paul Hogan>Pretty much, yeah. Yeah, if we get negative ones, we really want to drill into those and find out why. You know, those are those are very important. Obviously, we love the nice notes that, like what mom got, but you know, negatives are where we really kind of learn too, and we dig in and see, you know, what what didn't go right.</v>
+
+00:14:21.473 --> 00:14:22.513
+<v Andrea Canlas>Just Kour, yeah.</v>
+
+00:14:25.473 --> 00:14:26.073
+<v Andrea Canlas>Mm-hmm.</v>
+
+00:14:25.793 --> 00:14:26.273
+<v Mark Paolo Mangune>Mhm.</v>
+
+00:14:36.753 --> 00:14:37.233
+<v Andrea Canlas>Yes.</v>
+
+00:14:40.033 --> 00:14:42.873
+<v Paul Hogan>and how to fix it. Almost always a communication problem.</v>
+
+00:14:41.793 --> 00:14:42.033
+<v Andrea Canlas>Oh.</v>
+
+00:14:43.873 --> 00:14:45.393
+<v Mark Paolo Mangune>Okay, we'll think of it.</v>
+
+00:14:44.113 --> 00:14:51.873
+<v Andrea Canlas>Gotcha, so we'll keep with the score, and then you know, with the response rate, just we can just keep that as a standard.</v>
+
+00:14:52.593 --> 00:14:52.913
+<v Paul Hogan>Okay.</v>
+
+00:14:54.353 --> 00:15:14.113
+<v Andrea Canlas>Thank you. All right, let's move on. So way forward, I just wanted to put in that the Katie for Sophia. Katie process will be there. What will happen in the next two weeks? What are the things that she will be learning with the help of Manan also? Just making sure that right after that training,</v>
+
+00:15:14.273 --> 00:15:36.233
+<v Andrea Canlas>she has an acknowledgement that she understand every process throughout the training. So that once she goes live and do shadow session or probably work with the tickets along with Manan, then there will be no problem. That's that. And I will get back. I did receive the email from Blaine as a follow up with the.</v>
+
+00:15:29.233 --> 00:15:29.553
+<v Paul Hogan>Right.</v>
+
+00:15:36.313 --> 00:15:55.473
+<v Andrea Canlas>billing. So I'm making sure that I am actually accurately giving the accurate agreement for that. So I'm checking in with Natalie also with the CX team. So I'll get that sorted. Today, next is ITBD holiday, which is May 25th.</v>
+
+00:15:42.753 --> 00:15:44.193
+<v Paul Hogan>Sure, OK.</v>
+
+00:15:48.113 --> 00:15:48.673
+<v Paul Hogan>All right.</v>
+
+00:15:56.193 --> 00:16:03.473
+<v Andrea Canlas>This is an ITBD holiday for Manila and the US. I just wanted to know if you guys are open at that time.</v>
+
+00:16:04.113 --> 00:16:09.153
+<v Paul Hogan>Is that, what's that one? Memorial Day. We are not working Memorial Day.</v>
+
+00:16:05.713 --> 00:16:06.433
+<v Andrea Canlas>Memorial Day.</v>
+
+00:16:07.673 --> 00:16:08.033
+<v Andrea Canlas>Yes.</v>
+
+00:16:09.873 --> 00:16:15.153
+<v Andrea Canlas>Okay, so the three of them now can take that as an off, right?</v>
+
+00:16:16.593 --> 00:16:19.553
+<v Paul Hogan>Yeah, yeah. What day is that, Monday?</v>
+
+00:16:17.633 --> 00:16:17.993
+<v Andrea Canlas>Okay.</v>
+
+00:16:19.713 --> 00:16:20.913
+<v Andrea Canlas>Monday, yes, Monday.</v>
+
+00:16:21.233 --> 00:16:23.553
+<v Paul Hogan>Okay, good. Yeah, we are not working.</v>
+
+00:16:24.433 --> 00:16:25.393
+<v Andrea Canlas>Cool, alright.</v>
+
+00:16:26.273 --> 00:16:31.153
+<v Andrea Canlas>Well, let them know. Thank you very much. Do you need them to block their calendar?</v>
+
+00:16:32.433 --> 00:16:33.233
+<v Andrea Canlas>LPSA.</v>
+
+00:16:33.873 --> 00:16:39.793
+<v Paul Hogan>Well, it's good practice just to block it out because customers can.</v>
+
+00:16:38.193 --> 00:16:39.153
+<v Andrea Canlas>Okay, cool.</v>
+
+00:16:40.913 --> 00:16:47.473
+<v Paul Hogan>They can schedule appointments. Yeah. And some customer will probably schedule a Memorial Day appointment.</v>
+
+00:16:41.473 --> 00:16:44.273
+<v Andrea Canlas>Schedule, data, all good.</v>
+
+00:16:48.833 --> 00:16:50.113
+<v Andrea Canlas>OK, cool.</v>
+
+00:16:49.593 --> 00:16:50.593
+<v Paul Hogan>Because they don't think about it.</v>
+
+00:16:52.273 --> 00:16:57.633
+<v Andrea Canlas>Okay, gotcha. All right, thank you very much. Vishal, want to take care of this or?</v>
+
+00:16:58.353 --> 00:16:58.753
+<v Vishal Kashyap>Sure.</v>
+
+00:16:59.473 --> 00:16:59.873
+<v Andrea Canlas>Sure.</v>
+
+00:16:59.873 --> 00:17:08.673
+<v Vishal Kashyap>I think we are good, Paul. As you know, the next slides will be just information on the other services we provide, our office locations, and the escalation matrix.</v>
+
+00:17:10.193 --> 00:17:10.513
+<v Paul Hogan>Yep.</v>
+
+00:17:10.873 --> 00:17:16.193
+<v Vishal Kashyap>I'll just stop the screen share now and open the forum for any last comments or questions, anyone.</v>
+
+00:17:17.633 --> 00:17:37.633
+<v Mark Paolo Mangune>So, yeah, I have a question for Paul. So, Paul, for the knowledge transfer or for the training for the new joiner, which is Sophie, based on one's information that has been provided, the training will take for about at least two weeks. So are you okay with that? Because I think the training will be</v>
+
+00:17:17.713 --> 00:17:18.673
+<v Paul Hogan>I have no.</v>
+
+00:17:20.513 --> 00:17:21.473
+<v Paul Hogan>Yeah, sure.</v>
+
+00:17:37.953 --> 00:17:55.073
+<v Mark Paolo Mangune>the documentation process that you guys have, the learning for the tools. And then after a week, I think Manu just going to do a shadowing for Sophie. Like Sophie will be the one who's going to create the tickets and Manu just going to guide him for a week.</v>
+
+00:17:55.673 --> 00:17:57.313
+<v Paul Hogan>Yep, that sounds fair.</v>
+
+00:17:56.753 --> 00:17:57.233
+<v Mark Paolo Mangune>All right.</v>
+
+00:17:59.233 --> 00:18:01.633
+<v Paul Hogan>As much time as she can get, all the better.</v>
+
+00:17:59.553 --> 00:18:00.273
+<v Mark Paolo Mangune>Okay, thanks.</v>
+
+00:18:03.753 --> 00:18:16.753
+<v Andrea Canlas>Gotcha. We'll make sure that she's trained. Another one that I wanted to bring up, I think while we talked about building, wanted to know, are you coming? You should. No, not this time.</v>
+
+00:18:03.953 --> 00:18:04.353
+<v Mark Paolo Mangune>Alright.</v>
+
+00:18:14.593 --> 00:18:14.833
+<v Paul Hogan>No.</v>
+
+00:18:15.953 --> 00:18:18.753
+<v Paul Hogan>I shouldn't. No, I hate Jersey.</v>
+
+00:18:17.953 --> 00:18:18.113
+<v Andrea Canlas>Yeah.</v>
+
+00:18:19.753 --> 00:18:19.873
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:18:20.153 --> 00:18:20.913
+<v Paul Hogan>It stinks.</v>
+
+00:18:20.993 --> 00:18:21.193
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:18:23.633 --> 00:18:23.753
+<v Andrea Canlas>Yeah.</v>
+
+00:18:25.793 --> 00:18:28.273
+<v Andrea Canlas>I was told. I was told.</v>
+
+00:18:29.713 --> 00:18:31.713
+<v Paul Hogan>Put in somewhere nice, and I'll go for that.</v>
+
+00:18:30.193 --> 00:18:30.753
+<v Andrea Canlas>All right, but...</v>
+
+00:18:32.353 --> 00:18:32.833
+<v Mark Paolo Mangune>He.</v>
+
+00:18:32.913 --> 00:18:47.153
+<v Andrea Canlas>I think they're, I think they're thinking of making, I'm not sure if it's finalized really, but I think they're wanting to do the event at, I forgot the place, Stock Exchange, yes, that one.</v>
+
+00:18:44.593 --> 00:18:45.953
+<v Keith Rozario>New York Stock Exchange.</v>
+
+00:18:47.033 --> 00:18:47.233
+<v Keith Rozario>And.</v>
+
+00:18:48.553 --> 00:18:50.353
+<v Paul Hogan>That would be cool. Yeah, that would be cool.</v>
+
+00:18:48.593 --> 00:18:54.113
+<v Andrea Canlas>A lot true. Yeah, I think it's fancy. Yeah. Three coming, coming some with someone? No.</v>
+
+00:18:51.553 --> 00:18:53.473
+<v Paul Hogan>Yeah, but no, no.</v>
+
+00:18:54.593 --> 00:18:55.473
+<v Paul Hogan>Are you are you gonna be there?</v>
+
+00:18:54.633 --> 00:18:54.833
+<v Mark Paolo Mangune>He.</v>
+
+00:18:56.513 --> 00:18:59.273
+<v Andrea Canlas>Yeah, I think so. I should meet you there. Yeah.</v>
+
+00:18:57.673 --> 00:18:59.953
+<v Paul Hogan>You are? You're stuck being there?</v>
+
+00:19:02.753 --> 00:19:06.433
+<v Andrea Canlas>I can say, Paul, this call is recorded. Come on, so.</v>
+
+00:19:07.753 --> 00:19:10.193
+<v Paul Hogan>It smells weird. I don't like Jersey.</v>
+
+00:19:07.873 --> 00:19:08.353
+<v Andrea Canlas>Yeah.</v>
+
+00:19:11.553 --> 00:19:11.673
+<v Mark Paolo Mangune>Yeah.</v>
+
+00:19:14.593 --> 00:19:15.793
+<v Andrea Canlas>I'll keep that in mind.</v>
+
+00:19:14.873 --> 00:19:14.993
+<v Mark Paolo Mangune>Yes.</v>
+
+00:19:16.593 --> 00:19:17.873
+<v Paul Hogan>I'll come to the Philippines first.</v>
+
+00:19:18.593 --> 00:19:20.193
+<v Andrea Canlas>You should. When?</v>
+
+00:19:19.393 --> 00:19:19.873
+<v Mark Paolo Mangune>Good.</v>
+
+00:19:20.273 --> 00:19:24.033
+<v Paul Hogan>Oh, I totally would. Hey, invite me over to Philippines. I'll do an event over there.</v>
+
+00:19:26.273 --> 00:19:28.433
+<v Andrea Canlas>We'll do that. I'll make sure I'll be your tour guide.</v>
+
+00:19:27.393 --> 00:19:27.793
+<v Paul Hogan>All right.</v>
+
+00:19:29.313 --> 00:19:30.353
+<v Paul Hogan>Okay, I'll take that.</v>
+
+00:19:33.233 --> 00:19:39.073
+<v Andrea Canlas>Yeah, I think that is pretty much it for Marky and I. Justin, have anything?</v>
+
+00:19:40.033 --> 00:19:40.993
+<v Justin Samson>Oh, good for me.</v>
+
+00:19:43.553 --> 00:19:44.673
+<v Paul Hogan>Alright, well, thanks everyone.</v>
+
+00:19:46.113 --> 00:19:47.713
+<v Vishal Kashyap>Thanks, Paul. Thanks, everyone.</v>
+
+00:19:46.273 --> 00:19:48.913
+<v Andrea Canlas>Thanks, Paul. Have a good day. Bye!</v>
+
+00:19:48.593 --> 00:19:49.793
+<v Paul Hogan>You too. Thanks, all.</v>
+
+00:19:48.633 --> 00:19:49.033
+<v Keith Rozario>Thank you. Bye.</v>
+
+00:19:48.993 --> 00:19:51.233
+<v Mark Paolo Mangune>Thank you, guys. Bye.</v>
+

@@ -1,0 +1,890 @@
+WEBVTT
+NOTE title: Network Builders IT | ITBD Bi-Weekly Service Call
+NOTE date: 2026-04-24
+NOTE duration: 28m 18s
+
+00:00:22.787 --> 00:00:23.507
+<v Justin  Samson>Hey, Ira.</v>
+
+00:00:25.467 --> 00:00:26.227
+<v Ayra Macatol>Hello.</v>
+
+00:00:26.547 --> 00:00:31.987
+<v Justin  Samson>Will Andy be joining? I mean, Andy Arora or Leon?</v>
+
+00:00:32.867 --> 00:00:33.427
+<v Ayra Macatol>No.</v>
+
+00:00:34.067 --> 00:00:35.667
+<v Justin  Samson>Okay, it's just the two of us.</v>
+
+00:00:35.747 --> 00:00:36.467
+<v Ayra Macatol>Yes.</v>
+
+00:00:37.027 --> 00:00:37.507
+<v Justin  Samson>Okay.</v>
+
+00:00:46.387 --> 00:00:46.787
+<v Ayra Macatol>See.</v>
+
+00:00:48.227 --> 00:00:49.267
+<v Ayra Macatol>Yeah, Ashley.</v>
+
+00:00:50.267 --> 00:00:52.387
+<v Ashley Larocque>Hi, how are we doing, Ayra?</v>
+
+00:00:53.187 --> 00:00:55.107
+<v Ayra Macatol>Good afternoon, I'm good.</v>
+
+00:00:54.667 --> 00:01:01.267
+<v Ashley Larocque>Good afternoon. Good, good. Doing pretty good. Just walking back to my desk, sorry.</v>
+
+00:00:56.307 --> 00:00:57.107
+<v Ayra Macatol>How about you?</v>
+
+00:01:02.387 --> 00:01:02.947
+<v Ayra Macatol>It's fine.</v>
+
+00:01:03.787 --> 00:01:04.707
+<v Ayra Macatol>For your lunch?</v>
+
+00:01:05.667 --> 00:01:11.107
+<v Ashley Larocque>No, no, no. It's only 1130. It's only 1130. We don't take lunch till close till like 2.</v>
+
+00:01:07.027 --> 00:01:09.667
+<v Ayra Macatol>Oh, okay, 11.</v>
+
+00:01:11.707 --> 00:01:14.227
+<v Ayra Macatol>Okay, too late lunch, huh?</v>
+
+00:01:13.747 --> 00:01:15.987
+<v Ashley Larocque>Yeah, yeah, late lunch.</v>
+
+00:01:17.827 --> 00:01:20.707
+<v Ashley Larocque>I make sure everybody else goes. Leaders eat less.</v>
+
+00:01:20.867 --> 00:01:21.067
+<v Ayra Macatol>Yeah.</v>
+
+00:01:22.147 --> 00:01:25.187
+<v Ayra Macatol>I understand that. Have you met Justin?</v>
+
+00:01:26.187 --> 00:01:30.627
+<v Ashley Larocque>Um, I don't think I have, not that I recall.</v>
+
+00:01:29.747 --> 00:01:29.987
+<v Ayra Macatol>Hey.</v>
+
+00:01:29.987 --> 00:01:31.987
+<v Justin  Samson>Not yet, yeah. Hi, Ashley.</v>
+
+00:01:31.187 --> 00:01:31.667
+<v Ayra Macatol>Thank you.</v>
+
+00:01:32.547 --> 00:01:33.107
+<v Ashley Larocque>Hi.</v>
+
+00:01:34.547 --> 00:01:55.387
+<v Justin  Samson>So I'm going to be your customer success manager. I'm just going to be on the call right now just to see how things are going, but hopefully sooner I'll be able to connect with you as well. And if ever you have anything that you need outside, you know, assistance of your engineers, you can just reach out to me.</v>
+
+00:01:38.787 --> 00:01:39.107
+<v Ashley Larocque>Ohh.</v>
+
+00:01:56.107 --> 00:01:56.747
+<v Ashley Larocque>Perfect.</v>
+
+00:01:59.507 --> 00:02:10.747
+<v Justin  Samson>I won't be turning on my camera, sorry, by the way, I'm at home right now. And we have some issues here in the Philippines, but yeah, hopefully soon.</v>
+
+00:01:59.827 --> 00:02:00.307
+<v Ayra Macatol>Alright.</v>
+
+00:02:11.907 --> 00:02:12.387
+<v Ashley Larocque>Okay.</v>
+
+00:02:13.267 --> 00:02:14.227
+<v Ayra Macatol>Is it the fuel?</v>
+
+00:02:13.307 --> 00:02:14.467
+<v Ashley Larocque>Nice to meet you, Justin.</v>
+
+00:02:16.227 --> 00:02:29.667
+<v Ayra Macatol>Is it the fuel thing, Justin? That first strike. Yeah, it's been going on a lot. Are you feeling it too, Ashley, in your country? The fuel?</v>
+
+00:02:16.467 --> 00:02:17.427
+<v Justin  Samson>Nice to meet you too.</v>
+
+00:02:18.547 --> 00:02:20.227
+<v Justin  Samson>Yeah, the transport strike.</v>
+
+00:02:28.467 --> 00:02:34.547
+<v Ashley Larocque>Yes, oh, our gas prices are insane right now. Yes, yes. Absolutely.</v>
+
+00:02:30.867 --> 00:02:31.587
+<v Ayra Macatol>Insane.</v>
+
+00:02:34.627 --> 00:02:36.867
+<v Ayra Macatol>One 100% increase.</v>
+
+00:02:37.507 --> 00:02:41.427
+<v Ashley Larocque>Ohh yeah, yeah, price.</v>
+
+00:02:40.467 --> 00:02:44.067
+<v Ayra Macatol>But luckily we have a rollback this coming Tuesday.</v>
+
+00:02:44.627 --> 00:02:54.147
+<v Ashley Larocque>Ohh, you do? Nice. We have no, we have no, no relief on the horizon quite yet, so...</v>
+
+00:02:45.667 --> 00:02:48.627
+<v Ayra Macatol>Yeah. How about yours, but Rahman?</v>
+
+00:02:55.067 --> 00:02:56.867
+<v Ayra Macatol>Hopefully, it will get better soon, yeah.</v>
+
+00:02:55.587 --> 00:02:57.827
+<v Ashley Larocque>We will, yeah, we'll see.</v>
+
+00:02:58.387 --> 00:02:59.907
+<v Ayra Macatol>OK, let me.</v>
+
+00:02:59.187 --> 00:03:01.107
+<v Ashley Larocque>Doesn't usually get better until like.</v>
+
+00:03:02.267 --> 00:03:07.507
+<v Ashley Larocque>political season when everyone wants to make false promises. Then it gets better for a little while.</v>
+
+00:03:03.507 --> 00:03:04.067
+<v Ayra Macatol>I know.</v>
+
+00:03:09.427 --> 00:03:10.947
+<v Ayra Macatol>Let's just leave it to them.</v>
+
+00:03:11.507 --> 00:03:13.667
+<v Ashley Larocque>Right, alright.</v>
+
+00:03:12.867 --> 00:03:19.747
+<v Ayra Macatol>I know. Anyways, let me just share my deck here. Let me know once you see it.</v>
+
+00:03:28.147 --> 00:03:29.107
+<v Ashley Larocque>Okay, I can see it.</v>
+
+00:03:30.307 --> 00:03:33.907
+<v Ayra Macatol>Okay, perfect. All right.</v>
+
+00:03:34.907 --> 00:03:47.827
+<v Ayra Macatol>Thank you, Justin and Ashley, for joining our bi-weekly service call. Our review will cover April 8th to 19th. Moving on to the agenda items, all of which are the same.</v>
+
+00:03:50.027 --> 00:03:55.267
+<v Ayra Macatol>For here, the action tracker, I did.</v>
+
+00:03:57.427 --> 00:04:04.947
+<v Ayra Macatol>Ask RJ to submit his pending time sheet. I hope that's completed already on your end. Did you see it?</v>
+
+00:04:10.547 --> 00:04:14.227
+<v Ashley Larocque>Sorry, I didn't realize I was muted. Sorry about that.</v>
+
+00:04:12.067 --> 00:04:13.107
+<v Ayra Macatol>Sorry, it's okay.</v>
+
+00:04:15.427 --> 00:04:15.587
+<v Ashley Larocque>No.</v>
+
+00:04:17.267 --> 00:04:18.067
+<v Ayra Macatol>Any pending?</v>
+
+00:04:17.347 --> 00:04:34.707
+<v Ashley Larocque>I apologize. I am trying to get better. So I do have, let me just, he did submit a bunch of them to me. I think the only ones I am missing is last week's. I didn't get last week's yet. Timesheet.</v>
+
+00:04:35.187 --> 00:04:38.707
+<v Ayra Macatol>Last week's time should be okay. Let me remind him with that.</v>
+
+00:04:37.027 --> 00:04:45.427
+<v Ashley Larocque>Yeah, last week's time sheet, that's on my agenda to address with you because he did not, did not fill out his time sheet all the way.</v>
+
+00:04:46.227 --> 00:05:05.827
+<v Ayra Macatol>Okay, let me just check that with him. And the second item, scheduled the board review with RJ. So that's done. I did a book it on his calendar. So that's 30 minutes every Thursday and Friday. So we're also doing the board review. I'm just trying to get to know</v>
+
+00:04:47.667 --> 00:04:47.707
+<v Ashley Larocque>I.</v>
+
+00:04:53.307 --> 00:04:53.787
+<v Ashley Larocque>Mhm.</v>
+
+00:05:06.707 --> 00:05:25.027
+<v Ayra Macatol>his daily task as well as the auto task that tickets that he's working on. So once I see anything, once I have concerns or if I need help with that, I'll surely ping you. But then I'm not sure if, are you like,</v>
+
+00:05:06.947 --> 00:05:07.187
+<v Ashley Larocque>PH.</v>
+
+00:05:12.427 --> 00:05:12.707
+<v Ashley Larocque>Khan.</v>
+
+00:05:25.827 --> 00:05:33.507
+<v Ayra Macatol>Is it okay if I ping you or do you have like a specific time where you want me to have a discussion? Anytime?</v>
+
+00:05:31.667 --> 00:05:32.627
+<v Ashley Larocque>No, you can.</v>
+
+00:05:33.507 --> 00:05:36.547
+<v Ashley Larocque>You can just, yeah, you can just send me a message if you have questions.</v>
+
+00:05:36.867 --> 00:05:38.227
+<v Ayra Macatol>All right, thanks for that.</v>
+
+00:05:38.147 --> 00:05:41.267
+<v Ashley Larocque>8 to 5 PST time frame, just so you know.</v>
+
+00:05:40.747 --> 00:05:42.467
+<v Ayra Macatol>Okay, alrighty.</v>
+
+00:05:42.867 --> 00:05:42.907
+<v Ashley Larocque>Ohh.</v>
+
+00:05:45.027 --> 00:05:52.067
+<v Ayra Macatol>Yes, for the check-in, how are things going at the moment with you and RJ?</v>
+
+00:05:53.827 --> 00:06:11.507
+<v Ashley Larocque>They're okay. It's hard. I don't see RJ for a couple days and then it's been a really busy week. So probably today has been our most interactions today because I needed him to kind of switch gears. I think he just gets easily distracted.</v>
+
+00:06:11.827 --> 00:06:30.067
+<v Ashley Larocque>if I'm being honest. Like he was, I asked him to be flexible with some tickets this morning and he did a great job. He answered, he was flexible, he moved on, like everything was great. And then he like finished early and his next appointment was until 12. And so he went to start a tentative, which was awesome. That's the process, right?</v>
+
+00:06:30.707 --> 00:06:47.267
+<v Ashley Larocque>But then he stopped working the tentative without actually doing anything. Like he started it and then unstarted it. And I'm like, hey, were you going to work on that one? Or like, because his firm for 12 o'clock actually had called in. So the plan was to ask him to start that early.</v>
+
+00:06:49.587 --> 00:07:08.067
+<v Ashley Larocque>But then I saw him go green, his appointment go green. So I followed up with him like, hey, you agreed and then you disappeared. Like, are you going to work on that? He's like, actually, I'm talking with John about a login issue on another ticket. Like, that has nothing to do with what you're working on. Like, why are you left right now? Like, why are we up here?</v>
+
+00:07:09.267 --> 00:07:27.987
+<v Ashley Larocque>It's not any of the tickets you were just working on and it's not any of the tickets that you have right now. I'm not really sure what we're doing. So it's just a little distracting. And so I asked him, I said, okay, I'm just checking in because you know your user had called and so I was going to ask you to start a little bit early. He's like, I could do it.</v>
+
+00:07:28.547 --> 00:07:48.067
+<v Ashley Larocque>Like, okay, so like, was our 20 minute pause to like talk to John really like a thing or not a thing? He just seems to be distracted A lot. Like where there's just random pauses. And I'm not necessarily saying he's not doing anything because it sounds like he's working with the team. I'm just not sure how helpful it is.</v>
+
+00:07:48.467 --> 00:08:06.787
+<v Ashley Larocque>And I'm not sure how efficient it is. Or if he should be reaching out like when he's got the ticket or if he wasn't able to solve the login ticket, like why is he coming back to it two hours later? Neither of the tickets he was on are logins. So I'm not, I'm really not sure. But.</v>
+
+00:08:07.827 --> 00:08:22.067
+<v Ashley Larocque>He's been working on some critical, so I haven't really had a chance to put a pause to have the conversation with him about, hey, like, what's going on? How's it going? So full transparency, all of this just happened within the last hour and a half, so I haven't really had a chance to recap it.</v>
+
+00:08:24.547 --> 00:08:46.027
+<v Ayra Macatol>Okay, thanks for letting me know about that, Ashley, for the detailed explanation of what happened. I was actually speaking to him like 15 minutes ago. I was checking on his tickets and I did saw that he was talking to someone about a login issue.</v>
+
+00:08:47.347 --> 00:08:51.107
+<v Ayra Macatol>And is that not part of his calendar today?</v>
+
+00:08:51.587 --> 00:08:57.907
+<v Ashley Larocque>I don't, I just don't know what ticket it's for because the ones that he had been scheduled weren't weren't login tickets.</v>
+
+00:08:57.987 --> 00:08:59.747
+<v Ayra Macatol>Okay, alright.</v>
+
+00:08:59.107 --> 00:09:06.947
+<v Ashley Larocque>So I'm just not, I'm not sure. Maybe it was related to an issue and like there was another complaint like while he was on the phone.</v>
+
+00:09:01.347 --> 00:09:01.667
+<v Ayra Macatol>Yeah.</v>
+
+00:09:08.227 --> 00:09:26.787
+<v Ashley Larocque>about a login as well. And so he thought he would check on it. All of that could be totally viable and make sense. So like, I'm not trying to say he's doing anything wrong. I'm just saying, I don't know. It feels like this and I haven't had a chance to talk to him and been like, are you going off? Are you like, is it making sense? I'm not sure where you are.</v>
+
+00:09:14.067 --> 00:09:14.787
+<v Ayra Macatol>Mm.</v>
+
+00:09:16.747 --> 00:09:17.227
+<v Ayra Macatol>Mhm.</v>
+
+00:09:27.987 --> 00:09:46.467
+<v Ayra Macatol>It's fine. But I did hear him talking to someone. He said that a user is with me and he's asking for these details. That's what I saw from his chat. But then I'll check and double check with him for you. And you mentioned you will also have...</v>
+
+00:09:38.827 --> 00:09:39.067
+<v Ashley Larocque>PH.</v>
+
+00:09:40.147 --> 00:09:40.707
+<v Ashley Larocque>Got it.</v>
+
+00:09:46.507 --> 00:09:54.547
+<v Ayra Macatol>We will also talk to him today, right? About that. Okay. So that will also help. So we can clear the...</v>
+
+00:09:48.467 --> 00:09:48.787
+<v Ashley Larocque>Yeah.</v>
+
+00:09:55.907 --> 00:10:16.307
+<v Ayra Macatol>the miscommunication on this part. But then I can also see sometimes that he's a bit distracted when someone pings him for another ticket. So he will drop the thing that he's working on and respond to the chat. So there's an opportunity there to work on and I'll make sure.</v>
+
+00:10:16.707 --> 00:10:18.307
+<v Ayra Macatol>To handle that for you.</v>
+
+00:10:19.107 --> 00:10:37.627
+<v Ashley Larocque>Yeah, it just depends, right? Like I want him to be responsive to his dispatchers who are asking him to be flexible, like to be responsive. That's not necessarily a bad thing. It's, you know, I called him, he was really nice and put on, he had a user on the phone and he said,</v>
+
+00:10:38.467 --> 00:10:56.867
+<v Ashley Larocque>I'm answering you, but I have someone on hold. And I was like, no problem. I will be super fast. And it was really just I needed him to wrap up that call quickly so that he could switch gears. What he was working on was really backend work, and I needed something for a user that was completely down. So I'm not.</v>
+
+00:10:57.107 --> 00:11:13.347
+<v Ashley Larocque>saying he's never going to get pooled or never going to have to be asked to reprioritize what he has on his calendar. It's just more of like, when we finish something early, what are you doing with your time? Like, how are you moving efficiently through your time sheets?</v>
+
+00:11:14.387 --> 00:11:35.827
+<v Ayra Macatol>Okay, gotcha. And I believe that will fix the issue if he would put time entries on the things that he's doing daily, right? Even if it's just checking the server. So it's very important to take note of that on the ticket so that when we have a review, we will see it that, oh, okay, he's busy this day.</v>
+
+00:11:24.867 --> 00:11:25.267
+<v Ashley Larocque>Yeah.</v>
+
+00:11:36.147 --> 00:11:39.827
+<v Ayra Macatol>is busy that time. Okay, I'll take note of that.</v>
+
+00:11:38.227 --> 00:11:38.547
+<v Ashley Larocque>Right.</v>
+
+00:11:41.507 --> 00:11:43.667
+<v Ayra Macatol>All right, anything else before we proceed?</v>
+
+00:11:44.387 --> 00:11:44.947
+<v Ashley Larocque>No, go ahead.</v>
+
+00:11:45.267 --> 00:12:04.507
+<v Ayra Macatol>Okay, perfect. ITBD recommended KPIs, we already know that. So let's continue with the billable utilization trend. This is for two weeks, April 8th to 19th. Our target in IT by Design, that's 80%.</v>
+
+00:12:04.627 --> 00:12:25.907
+<v Ayra Macatol>That's the recommended KPI. But then we can see a downward trend here. For Thursdays and Wednesdays, or maybe I can say Wednesday to Friday, I can't see any issues with the utilization at all. But then this is where we're having issues for</v>
+
+00:12:18.747 --> 00:12:18.867
+<v Ashley Larocque>Uh-huh.</v>
+
+00:12:25.987 --> 00:12:44.547
+<v Ayra Macatol>the weekend part. I did check in with him. Did you get any tickets for that week? He said that not pretty much tickets. And last week we also tried to move any tentative ticket, but then we can't really do it because it needs to be closed.</v>
+
+00:12:31.067 --> 00:12:31.307
+<v Ashley Larocque>Yeah.</v>
+
+00:12:44.787 --> 00:13:00.067
+<v Ayra Macatol>that day. So I'm still trying to figure out, I'm still trying to find ways to add tickets to his weekends. But then he said that Sue sent him a document about a night shift SOP.</v>
+
+00:13:00.627 --> 00:13:00.947
+<v Ashley Larocque>Uh-huh.</v>
+
+00:13:01.507 --> 00:13:20.067
+<v Ayra Macatol>So he's most of his time for the past week and he's reading that. But then Jesus said he still needs to discuss it with him. Not sure when will it happen. He doesn't have any schedule yet. But then are you aware of that night shift SOP?</v>
+
+00:13:20.307 --> 00:13:37.987
+<v Ashley Larocque>Yeah, there is a, well, it's a after hours SOP. So for him, it's the Saturday and Sunday work, what he should be doing and how he should be proceeding through it. It's, it is a slightly long document, but it's not that long to read. It's like 16 pages, but it's a lot of screenshots.</v>
+
+00:13:38.067 --> 00:13:48.387
+<v Ashley Larocque>in the 16 pages, like I managed to read it in an hour. It's not terribly long. And he'll probably just need to have it for reference, like.</v>
+
+00:13:49.267 --> 00:13:56.387
+<v Ashley Larocque>somewhere saved down at the bottom icon like as he practices the SOP requirements.</v>
+
+00:13:58.627 --> 00:13:59.107
+<v Ashley Larocque>But...</v>
+
+00:14:00.307 --> 00:14:16.227
+<v Ashley Larocque>I will get with Jesus to make sure that he has reviewed it with him for any kind of clarity that he needs on it. But yeah, I would say it is, it shouldn't be terribly hard to discuss. Yeah, right.</v>
+
+00:14:06.507 --> 00:14:06.987
+<v Ayra Macatol>Mhm.</v>
+
+00:14:14.147 --> 00:14:26.947
+<v Ayra Macatol>To understand, right? Yeah. And also, I'm thinking if we can add that to his weekend time sheet, the training, the time entry, what do you think?</v>
+
+00:14:17.707 --> 00:14:17.987
+<v Ashley Larocque>S.</v>
+
+00:14:23.267 --> 00:14:23.987
+<v Ashley Larocque>I am.</v>
+
+00:14:29.827 --> 00:14:46.707
+<v Ashley Larocque>Yeah, I mean, his training should still be logged in a ticket. He can create a network builders ticket for his training time of going over it with Jesus or reviewing the document. But it's really, I mean, it shouldn't be an ongoing ticket and it shouldn't be something that takes him that long.</v>
+
+00:14:47.027 --> 00:14:47.547
+<v Ayra Macatol>Yu.</v>
+
+00:14:47.467 --> 00:14:48.947
+<v Ashley Larocque>It's like a one-time training.</v>
+
+00:14:49.747 --> 00:14:50.707
+<v Ayra Macatol>Non-billable site.</v>
+
+00:14:49.827 --> 00:14:50.467
+<v Ashley Larocque>And then...</v>
+
+00:14:51.987 --> 00:15:00.667
+<v Ashley Larocque>Yeah, it's not billable. No, it's not billable, but it will help his total utilization, because his total utilization is still not where it needs to be. So, yeah.</v>
+
+00:14:53.107 --> 00:14:53.507
+<v Ayra Macatol>Okay.</v>
+
+00:14:55.707 --> 00:14:56.227
+<v Ayra Macatol>Yes.</v>
+
+00:15:01.427 --> 00:15:11.347
+<v Ayra Macatol>Okay, so we'll do that this coming weekend. Do you think 2 hours a day would work? Saturday and Sunday, 2 hours?</v>
+
+00:15:10.147 --> 00:15:28.067
+<v Ashley Larocque>I don't think he's going to need 2 hours a day. Ira, honestly, like if he puts 2 hours on Saturday, he should pretty much have that like finished and reviewed. And then if he has questions on Sunday, he can schedule himself to like reach out to Jesus for like 30 minutes to go over any questions he has, maybe an hour, but.</v>
+
+00:15:13.467 --> 00:15:13.747
+<v Ayra Macatol>Okay.</v>
+
+00:15:17.747 --> 00:15:19.507
+<v Ayra Macatol>Done it, OK.</v>
+
+00:15:29.587 --> 00:15:30.547
+<v Ashley Larocque>Other than that, that's...</v>
+
+00:15:31.187 --> 00:15:31.907
+<v Ayra Macatol>That's enough.</v>
+
+00:15:32.467 --> 00:15:49.587
+<v Ashley Larocque>We didn't change so much that like his whole workflow is different. What we changed is like how we expect him to like communicate certain things. What we changed is, you know, how to document certain pieces. But it shouldn't be like a whole workflow that he just doesn't understand.</v>
+
+00:15:40.787 --> 00:15:40.947
+<v Ayra Macatol>Yeah.</v>
+
+00:15:50.147 --> 00:16:07.507
+<v Ayra Macatol>Okay, gotcha. So that two hours, I will let him add it to his time, to his calendar, so it would help us increase his utilization over the weekend. And also I'm thinking, are there any other tasks that we can give him? Like,</v>
+
+00:16:07.987 --> 00:16:08.627
+<v Ashley Larocque>Um...</v>
+
+00:16:08.627 --> 00:16:13.187
+<v Ayra Macatol>up checking server maintenance on weekends.</v>
+
+00:16:12.307 --> 00:16:33.067
+<v Ashley Larocque>I mean, I think that's coming. We're rebuilding our NOC. So I think that's coming as part of it, but I don't have that for him right now. I do have some weekend work this weekend. I have probably about four computers that need to be set up, three for some new users. So like there's no one to contact. It's just start setting them up. They're brand new. You already have the passwords like.</v>
+
+00:16:33.187 --> 00:16:37.947
+<v Ashley Larocque>just get the computer set up. They're in my office, so like they're already on.</v>
+
+00:16:39.907 --> 00:16:59.987
+<v Ashley Larocque>When he called earlier this morning for Jennifer, he said he got her login details. I asked him to just go ahead and get a list of what she needed and then we could work on it later as long as it was on. Make sure he could connect to it. So there should be no issues in him working on that this weekend as long as he set himself up for success and make sure to tell Jennifer, leave.</v>
+
+00:17:00.027 --> 00:17:19.947
+<v Ashley Larocque>the computer on, the laptop on, then he should be really good there. But I think there's three, three computers, 4 computers that need to be set up. Two are just being set up as spares. Like there's absolutely no reason why those can't get to the point of spares and a Bluebeam install on them. Like it's really, really quick.</v>
+
+00:17:21.507 --> 00:17:34.387
+<v Ayra Macatol>Okay, that will help for this week, so that's good. We have two pending time entries ready for the training and the computer setup. Will that be assigned to him?</v>
+
+00:17:34.787 --> 00:17:47.187
+<v Ashley Larocque>Yes, yeah, I can actually move them now and put them on his Saturday, Sunday schedule, because there's one that's scheduled for next, but there's plenty of other things he could work on that he could work on this on Saturday.</v>
+
+00:17:47.667 --> 00:18:07.027
+<v Ayra Macatol>All right. Yay. That's cool. So that's that. And then if any other projects that you can assign to him every weekend, that would help us as well, Ashley. So in case you have time or you have any tickets pending or any projects that he can work on,</v>
+
+00:18:07.307 --> 00:18:11.427
+<v Ayra Macatol>Please do let us know, or you can assign it to him so he can work on it.</v>
+
+00:18:13.187 --> 00:18:13.587
+<v Ashley Larocque>Okay.</v>
+
+00:18:14.147 --> 00:18:15.267
+<v Ayra Macatol>Okay, thank you.</v>
+
+00:18:16.587 --> 00:18:36.507
+<v Ayra Macatol>For the ticket closure trend and analysis, so I can see an upward trend here for two weeks. For the peak week was from April 15th to 19th. The resolution rate was 80%. That's good. But then before that, we only have 70%.</v>
+
+00:18:16.947 --> 00:18:16.987
+<v Ashley Larocque>I.</v>
+
+00:18:37.027 --> 00:18:40.467
+<v Ayra Macatol>But then it's a good number for me. I can see that there's a progress there.</v>
+
+00:18:41.827 --> 00:18:43.507
+<v Ayra Macatol>Any questions for this?</v>
+
+00:18:45.027 --> 00:18:46.067
+<v Ayra Macatol>Are we good? Okay.</v>
+
+00:18:46.067 --> 00:18:46.387
+<v Ashley Larocque>Yeah.</v>
+
+00:18:47.387 --> 00:18:56.787
+<v Ayra Macatol>For the way forward, we have an upcoming ITBD holiday, that's May 1st. I would just like to check if you need him that day or you want him to take me off.</v>
+
+00:18:57.547 --> 00:19:01.027
+<v Ashley Larocque>No, everybody will be working that day.</v>
+
+00:19:02.387 --> 00:19:05.027
+<v Ayra Macatol>Okay, so he can take the day off.</v>
+
+00:19:05.667 --> 00:19:08.307
+<v Ashley Larocque>No, no. I need him to come in. Yes.</v>
+
+00:19:06.467 --> 00:19:23.587
+<v Ayra Macatol>Oh, he needs to. All right. Got that. I'll take note of that. And also he's requesting for a birthday PTO this coming May 6th and 7th. I did send you an email. Were you able to review it?</v>
+
+00:19:24.147 --> 00:19:28.147
+<v Ashley Larocque>Oh, I did not, but let me just take a look.</v>
+
+00:19:28.547 --> 00:19:29.107
+<v Ayra Macatol>Okay.</v>
+
+00:19:30.307 --> 00:19:32.547
+<v Ashley Larocque>May 6th and 7th is what you said.</v>
+
+00:19:33.027 --> 00:19:35.667
+<v Ayra Macatol>Yes, correct. Six and seven, that's...</v>
+
+00:19:35.347 --> 00:19:39.667
+<v Ashley Larocque>Okay, I will respond to it in just a minute. That way you have it in writing.</v>
+
+00:19:38.987 --> 00:19:39.107
+<v Ayra Macatol>Hey.</v>
+
+00:19:40.227 --> 00:19:48.707
+<v Ayra Macatol>OK, thank you. Just look into it. If you need him, I can let him know, but then if...</v>
+
+00:19:41.707 --> 00:19:42.507
+<v Ashley Larocque>No problem.</v>
+
+00:19:47.987 --> 00:20:00.067
+<v Ashley Larocque>The Wednesday, Thursday. That's a really hard one. Okay. Yes, I'll have to talk with Jesus because that's a really hard one. Those are the days where he's alone. Oh, he's alone. So that's hard. I will double check.</v>
+
+00:19:51.747 --> 00:19:51.867
+<v Ayra Macatol>Yeah.</v>
+
+00:19:54.227 --> 00:19:54.867
+<v Ayra Macatol>Yes, please.</v>
+
+00:19:56.227 --> 00:19:56.547
+<v Ayra Macatol>Okay.</v>
+
+00:19:58.467 --> 00:19:58.947
+<v Ayra Macatol>Okay.</v>
+
+00:20:00.107 --> 00:20:19.507
+<v Ayra Macatol>All right, that's cool. So I can probably circle back next week so we can give him the answer. And then that's it. That's the end of my slide. I'm going to stop sharing my screen so we can see each other. Yeah, there. Anything you wanted to discuss?</v>
+
+00:20:01.587 --> 00:20:01.987
+<v Ashley Larocque>Okay.</v>
+
+00:20:04.707 --> 00:20:04.827
+<v Ashley Larocque>Play.</v>
+
+00:20:08.787 --> 00:20:09.187
+<v Ashley Larocque>Yep.</v>
+
+00:20:17.027 --> 00:20:17.507
+<v Ashley Larocque>Fact?</v>
+
+00:20:19.667 --> 00:20:20.307
+<v Ayra Macatol>With us.</v>
+
+00:20:20.387 --> 00:20:28.427
+<v Ashley Larocque>So just the pieces we talked about, it looks like he did really well the week before on his timesheet. Let me know when you can see my screen.</v>
+
+00:20:29.427 --> 00:20:30.827
+<v Ayra Macatol>Yes, I can see it.</v>
+
+00:20:30.707 --> 00:20:46.467
+<v Ashley Larocque>Okay, so it looks like, like the week before where he submitted his timesheet, he did end up rounding out his time, which is really good. But like last week, it does seem like we didn't finish. So therefore, probably a reason why he didn't submit it.</v>
+
+00:20:47.827 --> 00:20:51.027
+<v Ashley Larocque>But see, like, we're not at our 9th. Like, we're way off.</v>
+
+00:20:53.507 --> 00:20:58.067
+<v Ashley Larocque>And even still like these ones I'm having a hard time with like I'm not sure.</v>
+
+00:20:59.587 --> 00:21:18.147
+<v Ashley Larocque>why we're ending up so low. If you look, I think this was the day he was sick. He worked half day. Do you remember? He didn't come until five. So his time sheet, yeah, so his time sheet should have some time logged as like his</v>
+
+00:21:09.507 --> 00:21:10.907
+<v Ayra Macatol>Yes, Kasper.</v>
+
+00:21:18.267 --> 00:21:39.587
+<v Ashley Larocque>PTO time or however he chose to use that time, absence should have that logged as well there. And then in these ones where he's only really accounting for six hours, like if you see looking through it, like there's like time gaps, right, where we're missing a little bit here.</v>
+
+00:21:39.867 --> 00:21:43.547
+<v Ashley Larocque>Like he took off early, but then probably took a lunch right around here around 4:00.</v>
+
+00:21:44.787 --> 00:22:04.147
+<v Ashley Larocque>which would make sense for like the long period. But then you get into the after hours portion. And so we're just looking for like the little small things. I'm looking at the small things that try to tell me if he's being like efficient with his time or not. Sorry, but there's like right here.</v>
+
+00:22:04.307 --> 00:22:07.667
+<v Ashley Larocque>If you think it's almost 1/2 an hour of like missing time.</v>
+
+00:22:07.107 --> 00:22:08.587
+<v Ayra Macatol>Mhm, mhm.</v>
+
+00:22:08.907 --> 00:22:30.027
+<v Ashley Larocque>Like he stopped working at 1215 and like didn't come back till 1240. But that's not a lunch. But his lunch is an hour. He took it at two, right? Like two to three. That would make sense. But like, I'm not sure what you're doing with 40 minutes, 30 minutes of time, like where it's just unaccounted for. And that definitely like eats.</v>
+
+00:22:15.267 --> 00:22:15.907
+<v Ayra Macatol>Mhm.</v>
+
+00:22:22.947 --> 00:22:23.107
+<v Ayra Macatol>I.</v>
+
+00:22:25.427 --> 00:22:25.667
+<v Ayra Macatol>Okay.</v>
+
+00:22:30.147 --> 00:22:32.787
+<v Ashley Larocque>So, but as it adds to a total.</v>
+
+00:22:33.867 --> 00:22:41.427
+<v Ashley Larocque>Does that make sense? So like here we've got another like 25 minutes where we don't, I don't, I'm not sure.</v>
+
+00:22:33.987 --> 00:22:34.547
+<v Ayra Macatol>Mm.</v>
+
+00:22:43.187 --> 00:22:43.507
+<v Ayra Macatol>Ohh.</v>
+
+00:22:43.187 --> 00:22:44.387
+<v Ashley Larocque>I'm not sure what's happening.</v>
+
+00:22:46.067 --> 00:22:57.067
+<v Ashley Larocque>And then at the end of the day, he's got like, this is technically a Thursday, a Thursday, so he's off at 9 and like our time entry stops at 630.</v>
+
+00:22:52.307 --> 00:22:52.787
+<v Ayra Macatol>Mhm.</v>
+
+00:23:00.067 --> 00:23:01.667
+<v Ayra Macatol>He stops at 6:30, right?</v>
+
+00:23:02.067 --> 00:23:06.387
+<v Ashley Larocque>Right, but his shift goes until 9, I think.</v>
+
+00:23:03.107 --> 00:23:03.507
+<v Ayra Macatol>Okay.</v>
+
+00:23:07.907 --> 00:23:08.707
+<v Ayra Macatol>Talk to.</v>
+
+00:23:08.267 --> 00:23:18.067
+<v Ashley Larocque>No, this is Friday. This is Friday. So his shift only goes till 7. Okay, so we're only missing 1/2 an hour, the last half an hour. This is Friday. Sorry, my days are...</v>
+
+00:23:13.987 --> 00:23:15.907
+<v Ayra Macatol>Okay. Okay.</v>
+
+00:23:19.267 --> 00:23:19.987
+<v Ayra Macatol>It's okay.</v>
+
+00:23:19.667 --> 00:23:24.227
+<v Ashley Larocque>The time sheet doesn't go in the same order as the rest of the time, so it's throwing me off.</v>
+
+00:23:22.427 --> 00:23:22.627
+<v Ayra Macatol>And.</v>
+
+00:23:24.787 --> 00:23:25.107
+<v Ayra Macatol>Yeah.</v>
+
+00:23:26.467 --> 00:23:32.707
+<v Ayra Macatol>Just a quick question: Are we not putting a time entry for lunch and breaks, or can we do?</v>
+
+00:23:29.547 --> 00:23:29.667
+<v Ashley Larocque>Yes.</v>
+
+00:23:32.067 --> 00:23:43.427
+<v Ashley Larocque>Yes, no, he is supposed to be putting a time entry for lunch and breaks. So if you look at the previous week, he does know how to log his lunch and breaks.</v>
+
+00:23:43.587 --> 00:23:45.387
+<v Ayra Macatol>Yeah, okay, that's...</v>
+
+00:23:44.787 --> 00:23:48.467
+<v Ashley Larocque>He should be logging every day, but again, he just...</v>
+
+00:23:50.147 --> 00:23:53.187
+<v Ashley Larocque>Didn't do last week, so like it's not a habit yet.</v>
+
+00:23:51.587 --> 00:23:52.147
+<v Ayra Macatol>Yeah.</v>
+
+00:23:54.707 --> 00:23:55.347
+<v Ayra Macatol>So.</v>
+
+00:23:55.547 --> 00:24:04.067
+<v Ashley Larocque>which was great, but then he played catch-up probably last week, and then this week just hasn't gone back. So, because if you look at this week, this is the week we're in.</v>
+
+00:24:08.147 --> 00:24:13.027
+<v Ashley Larocque>no round outs. Like he should be rounding out at the end of every shift.</v>
+
+00:24:11.707 --> 00:24:11.987
+<v Ayra Macatol>Okay.</v>
+
+00:24:13.427 --> 00:24:20.627
+<v Ayra Macatol>Yeah, that's what I'm about to say. I'm thinking that it's doing it weekly. Okay.</v>
+
+00:24:16.707 --> 00:24:18.387
+<v Ashley Larocque>Not at the end of every week.</v>
+
+00:24:19.427 --> 00:24:30.867
+<v Ashley Larocque>Right, and it needs to be daily at the end of every day. His last thing that he does in the last like 3 minutes of his time should be timesheet. I log my lunch, I log my break, I log my payroll wrap.</v>
+
+00:24:28.227 --> 00:24:28.867
+<v Ayra Macatol>Okay.</v>
+
+00:24:31.267 --> 00:24:38.707
+<v Ayra Macatol>Yeah, like everything right? So, don't have any discrepancies with the time. OK, I'll check in.</v>
+
+00:24:33.267 --> 00:24:33.747
+<v Ashley Larocque>Right.</v>
+
+00:24:38.107 --> 00:24:59.467
+<v Ashley Larocque>And then that way on his last day of the week for the timesheet, which is Saturday, all he has to do is log his break, log his lunch, log his payroll wrap, and hit submit, and he's done. Like if everything is done daily, like it's supposed to, then it's only one extra step when he leaves Saturday to just hit the submit button rather than go back and have to update and spend time.</v>
+
+00:24:48.947 --> 00:24:49.107
+<v Ayra Macatol>Mm.</v>
+
+00:25:01.987 --> 00:25:03.627
+<v Ashley Larocque>Does that make sense?</v>
+
+00:25:02.467 --> 00:25:09.587
+<v Ayra Macatol>Yeah, I got that. Yeah. When I was a tech, I do that daily. That's the best practice, right?</v>
+
+00:25:08.307 --> 00:25:08.667
+<v Ashley Larocque>Yeah.</v>
+
+00:25:09.987 --> 00:25:21.187
+<v Ashley Larocque>Well, I mean, that's our policy. Like, it's listed as a non-negotiable at the end of his shift every day that he leaves with his timesheet completed. He's just not been doing it.</v>
+
+00:25:11.907 --> 00:25:12.187
+<v Ayra Macatol>Yeah.</v>
+
+00:25:15.147 --> 00:25:15.307
+<v Ayra Macatol>Mm.</v>
+
+00:25:21.987 --> 00:25:32.787
+<v Ayra Macatol>Okay, I'll remind him. I'll remind him. Okay, I'll handle that for you. I'll let him know. I'll have it documented as well. Apart from that, anything else you wanted to discuss?</v>
+
+00:25:27.187 --> 00:25:27.547
+<v Ashley Larocque>Okay.</v>
+
+00:25:33.427 --> 00:25:39.907
+<v Ashley Larocque>I think that's it for right now. That's all I had is really just trying to get that stuff done so we can be in a better spot.</v>
+
+00:25:40.587 --> 00:25:48.947
+<v Ayra Macatol>Okay, I will make sure to help you on that one, because we're partners. Okay, anything you want to say, Justin?</v>
+
+00:25:50.307 --> 00:25:50.787
+<v Ayra Macatol>You good?</v>
+
+00:25:51.907 --> 00:25:53.707
+<v Ayra Macatol>I know you're observing us.</v>
+
+00:25:52.227 --> 00:26:00.547
+<v Justin  Samson>Yeah, I'm good. I just saw the thousands of tabs Ashley had in her desktop. So how do you even manage that?</v>
+
+00:26:01.587 --> 00:26:05.667
+<v Ashley Larocque>And that's only one of my browsers open. You didn't even see my other screen.</v>
+
+00:26:03.587 --> 00:26:04.147
+<v Justin  Samson>Ha ha ha!</v>
+
+00:26:05.787 --> 00:26:14.227
+<v Justin  Samson>Yeah, yeah, but yeah, I, it's good to meet you, Ashley, and we'll be talking more soon.</v>
+
+00:26:11.667 --> 00:26:11.907
+<v Ashley Larocque>Huh.</v>
+
+00:26:13.587 --> 00:26:13.747
+<v Ashley Larocque>Yes.</v>
+
+00:26:15.987 --> 00:26:16.267
+<v Ayra Macatol>Yes.</v>
+
+00:26:16.187 --> 00:26:20.787
+<v Ashley Larocque>Nice to meet you, Justin. Don't be scared of my browser tabs. That's how my brain works.</v>
+
+00:26:17.827 --> 00:26:18.547
+<v Ayra Macatol>All right.</v>
+
+00:26:20.707 --> 00:26:32.387
+<v Justin  Samson>It's actually very intimidating. When I have around 10 to 12 tabs, I really wanted to quit already and I saw yours, but oh my god, that's around 30 tabs.</v>
+
+00:26:22.787 --> 00:26:24.507
+<v Ashley Larocque>If it's open, that means I...</v>
+
+00:26:22.867 --> 00:26:23.107
+<v Ayra Macatol>Yes.</v>
+
+00:26:25.667 --> 00:26:25.747
+<v Ashley Larocque>Oh.</v>
+
+00:26:28.867 --> 00:26:29.227
+<v Ashley Larocque>Yeah.</v>
+
+00:26:33.067 --> 00:26:37.747
+<v Ayra Macatol>Yeah, you'll get used to it. I have mine like 30 years different.</v>
+
+00:26:33.347 --> 00:26:33.627
+<v Ashley Larocque>Yeah.</v>
+
+00:26:35.187 --> 00:26:35.387
+<v Ashley Larocque>Yeah.</v>
+
+00:26:37.187 --> 00:26:38.787
+<v Ashley Larocque>Yeah, you'll get used to it.</v>
+
+00:26:37.987 --> 00:26:38.707
+<v Justin  Samson>Ohh my God.</v>
+
+00:26:40.627 --> 00:26:41.907
+<v Ashley Larocque>It'll be fine.</v>
+
+00:26:40.627 --> 00:26:46.227
+<v Ayra Macatol>Because it's hard to open it every time you need it, right? So it's nice to have it open every time.</v>
+
+00:26:44.067 --> 00:26:44.467
+<v Ashley Larocque>Yep.</v>
+
+00:26:47.107 --> 00:27:05.947
+<v Ashley Larocque>And you just get used to just having too many things and you don't close it until you know you're done with it. So like I have stuff that I know I need to just go back to. So I keep it open. And then as the day goes on, like the tabs get smaller, Justin. And then like, oh, I'm down to my last five tabs. All right, perfect. Everything got finished.</v>
+
+00:26:52.787 --> 00:26:53.027
+<v Ayra Macatol>PH.</v>
+
+00:26:52.867 --> 00:26:53.427
+<v Justin  Samson>Yeah.</v>
+
+00:27:01.707 --> 00:27:01.827
+<v Justin  Samson>Yeah.</v>
+
+00:27:03.347 --> 00:27:03.507
+<v Justin  Samson>PH.</v>
+
+00:27:04.707 --> 00:27:08.147
+<v Ayra Macatol>Best explanation. You got it right.</v>
+
+00:27:06.867 --> 00:27:11.827
+<v Ashley Larocque>Yeah, yeah, so it's like a checklist; you just keep going.</v>
+
+00:27:13.027 --> 00:27:15.107
+<v Ayra Macatol>Okay, cool.</v>
+
+00:27:13.507 --> 00:27:27.907
+<v Ashley Larocque>Okay. Well, have a great weekend. Let's see what this weekend looks like. Check in with him for me, Ayra. I will put the computer setups on his schedule. And if there's any issues, let me know.</v>
+
+00:27:21.027 --> 00:27:21.507
+<v Ayra Macatol>Mhm.</v>
+
+00:27:29.587 --> 00:27:43.107
+<v Ashley Larocque>I can try to step in and help out, but these computers are going to be back end work. He shouldn't need to. As long as he called Jennifer and talked to Jennifer, that one should be good. And the rest are for brand new users and spares. So there should be no roadblocks.</v>
+
+00:27:43.987 --> 00:27:50.547
+<v Ayra Macatol>Okay, so I'll let him know. I'll... He should call Jennifer today, right?</v>
+
+00:27:50.867 --> 00:28:00.107
+<v Ashley Larocque>He already called Jennifer earlier when he first started. That was his first ticket. So as long as he got what he needed out of his phone call with Jennifer, then there should be no reason why he can't work on it this weekend.</v>
+
+00:27:52.867 --> 00:27:53.347
+<v Ayra Macatol>Oh, okay.</v>
+
+00:28:00.627 --> 00:28:01.027
+<v Ayra Macatol>Okay.</v>
+
+00:28:01.187 --> 00:28:06.467
+<v Ashley Larocque>short of it's off and he didn't tell her to leave it on. Let's hope he told her to leave it on.</v>
+
+00:28:06.627 --> 00:28:17.347
+<v Ayra Macatol>Okay, I'll let him know. Okay. So thank you so much for this productive meeting. Nice meeting you today, Ashley. Have a happy weekend for you, both of you. Bye.</v>
+
+00:28:07.667 --> 00:28:10.307
+<v Ashley Larocque>Okay. Perfect. Thank you.</v>
+
+00:28:15.667 --> 00:28:19.107
+<v Ashley Larocque>You too. Thanks. Bye.</v>
+
+00:28:16.707 --> 00:28:18.307
+<v Justin  Samson>Happy weekend, Ashley. Bye bye.</v>
+

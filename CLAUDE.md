@@ -1,9 +1,10 @@
 # CLAUDE.md — PartnerPulse
 
-Executive partner-health & churn-risk dashboard for ITBD (white-label NOC/helpdesk
-provider; "partners" are MSPs). Python build-time pipeline (HaloPSA + TeamGPS + local
-docs → Azure gpt-5.4 churn analysis → static JSON caches) + framework-free HTML/JS
-frontend served from the repo root.
+**AI-Driven Operational Intelligence** — executive partner-health & churn-risk dashboard
+for ITBD (white-label NOC/helpdesk provider; "partners" are MSPs). Python build-time
+pipeline (HaloPSA + TeamGPS + local docs → Azure gpt-5.4 churn analysis → static JSON
+caches) + framework-free HTML/JS frontend served from the repo root. ("PartnerPulse" is
+the legacy project name still used in package/doc headers.)
 
 ## Documentation mandate
 
@@ -19,14 +20,14 @@ touching code without staging `docs/changelog.md` are blocked. Never bypass it w
 ## Commands
 
 ```powershell
-python -m extract.build_all                  # full build: all partners + AI + portfolio index
-python -m extract.build_partner "Logically"  # build one partner
+python -m extract.build_all                  # build all partners + AI + portfolio index (INCREMENTAL: reuses cached AI+decks when inputs unchanged)
+python -m extract.build_all --force-ai       # same, but re-run gpt-5.4 for every partner (ignore AI cache)
+python -m extract.build_all --only "Logically"  # build one partner (DO run via build_all, not build_partner — the latter skips AI)
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
-python scripts/build_real_partners.py        # extra real Halo clients + exec-overview injection
-python scripts/refresh_exec_row.py <slug>    # re-render one partner's embedded exec row from its JSON
-python scripts/refresh_exec_row.py --all     # re-render ALL embedded exec rows (sync step "exec-rows")
-python scripts/refresh_exec_row.py --remove <slug>   # delete a partner's embedded exec row (offboarding)
-#  single-partner refresh: build_all --only <Name> -> build_all --reindex -> refresh_exec_row.py <slug>
+python scripts/build_real_partners.py        # extra real Halo clients (writes their data/*.json)
+python scripts/build_overview.py             # rebuild data/_overview.json (the dashboard feed) from caches
+#  single-partner refresh: build_all --only <Name> -> build_all --reindex -> build_overview.py
+#  (refresh_exec_row.py is DEPRECATED — the dashboard is data-driven, no embedded array to refresh)
 python server.py [port]                      # dev server, default http://localhost:8000
 powershell -ExecutionPolicy Bypass -File .\setup.ps1   # fresh-machine bootstrap
 ```
@@ -37,27 +38,42 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 
 ## Layout
 
-- `index.html` — Executive Overview + Partner 360 views (sidebar-switched). Partner
-  data is an **embedded array** in its inline `<script>`, NOT fetched.
+- `index.html` — Executive Overview + Partner 360 views (sidebar-switched). **Fully
+  data-driven: both views `fetch` `data/_overview.json` at runtime — there is NO
+  embedded partner array** (changed 2026-06-13; see changelog beta.8). Self-contained
+  inline `<style>` + `<script>`; does NOT load `styles.css` (gotcha 7) and no longer
+  uses Chart.js.
+- `data/_overview.json` — the dashboard feed, built by `scripts/build_overview.py`
+  from `data/_index.json` + the per-partner `data/{slug}.json` caches (SIP totals,
+  open/overdue action counts, real per-partner + portfolio NPS, CSAT split with sample
+  size, honest call tone, themes, coverage window). Final step of the sync cycle.
 - `partner.html` + `partner.js` — per-partner drilldown (`?partner=<slug>`), fetches
   `data/{slug}.json` at runtime. Styled by `styles.css` (which `index.html` does
-  NOT load — gotcha 7); Chart.js vendored in `vendor/`.
+  NOT load — gotcha 7); Chart.js vendored in `vendor/`. **Unchanged by the beta.8 redesign.**
 - `refresh.js` — "Sync Data" header button + "Last sync" timestamp (both pages;
   timestamp = `portfolio.generated_at` from `data/_index.json`). Talks to
   `server.py`'s sync API: `POST /api/refresh` (single-flight, optional
-  `{"steps":[...]}` subset: `registry` | `real-extras` | `exec-rows` |
-  `reindex`), `GET /api/refresh/status` (per-step state + live `activity`
-  parsed from streamed pipeline output — see `server.py: parse_activity`).
-  While running, a progress panel under the button shows each step + current
-  activity; its CSS lives in BOTH `styles.css` and `index.html`'s inline
-  `<style>` (gotcha 7). Cycle = build_all → build_real_partners →
-  refresh_exec_row --all → build_all --reindex, continue-on-failure, streamed
-  log in `data/_sync.log`.
+  `{"steps":[...]}` subset: `transcripts` | `registry` | `real-extras` | `reindex` |
+  `overview`), `GET /api/refresh/status` (per-step state + live `activity` parsed from
+  streamed pipeline output — see `server.py: parse_activity`). While running, a progress
+  panel under the button shows each step + current activity; its CSS lives in BOTH
+  `styles.css` and `index.html`'s inline `<style>` (gotcha 7). Cycle =
+  pull_graph_transcripts --write → build_all → build_real_partners → build_all --reindex
+  → build_overview, continue-on-failure, streamed log in `data/_sync.log`. **The Sync
+  button therefore pulls fresh transcripts (Graph) alongside HaloPSA + TeamGPS each
+  run** (transcript-pull caveats: skips manual-`.docx` folders, QBRs 403, ~90-day Teams
+  content retention). **Builds are INCREMENTAL** — gpt-5.4 churn analysis and deck
+  conversion are cached (keyed by an input hash / attachment id) and skipped for
+  partners whose inputs are unchanged, so a re-sync mostly just re-fetches Halo/TeamGPS.
+  This keeps steps under the 30-min `STEP_TIMEOUT_S` and stops run-to-run score drift.
 - `extract/` — pipeline library package (config, halo, teamgps, transcripts, ai,
   build_partner, build_all, portfolio). Secrets: env/.env first, live fallbacks
   baked in `extract/config.py` (beta only — never copy them elsewhere).
 - `scripts/` — operational entry points; they sys.path-shim the repo root, run them
   from anywhere. New one-off scripts go here, library code goes in `extract/`.
+  `build_overview.py` builds the dashboard feed `data/_overview.json` from the caches
+  (the final sync step). `refresh_exec_row.py` is DEPRECATED (no-op against the
+  data-driven dashboard; kept for rollback to the `backups/` copy).
   `build_real_partners.py` NEW is the partner roster beyond the registry (28
   entries); `client_id=None` marks a transcript-only partner with no Halo record
   — Halo/TeamGPS skipped, AI runs on call transcripts alone (path currently
@@ -66,21 +82,31 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   pipeline: finishes the Graph app-registration provisioning (permissions +
   access policies — see `docs/IT-Request-Graph-Transcript-Access.md` § Outcome);
   `probe_graph_transcripts.py` is its acceptance test (token → meeting →
-  transcript fetch). Graph creds: `GRAPH_*` vars in `.env`.
-- `data/` — generated, gitignored (partner JSONs, `_index.json`, `decks/`,
-  `_sync.log`). Never write generated artifacts to the repo root.
+  transcript fetch). `pull_graph_transcripts.py` is the bulk transcript
+  ingester — app-only Graph pull of partner service calls into
+  `Transcripts/{Partner}/` with NO attendee constraint (dry-run by default,
+  `--write` to save); Data-Extraction-SOP §1 Option D. Note Teams keeps
+  transcript **content ~90 days** (older calls list but 404 on content), so run
+  it monthly. Graph creds: `GRAPH_*` vars in `.env`.
+- `data/` — generated, gitignored (partner JSONs, `_index.json`, `_overview.json`,
+  `decks/`, `_sync.log`). Never write generated artifacts to the repo root.
+- `backups/` — saved copies of replaced dashboards for rollback, e.g.
+  `index_pre-AIODI_2026-06-13.html` (the pre-redesign `index.html`).
 - `docs/` — architecture, changelog, 3 API/extraction SOPs, LLM-SOP, `archive/`
   (frozen, never edit). `Transcripts/` — input .docx/.vtt, one folder per
   partner. `legacy/` — dead code, kept.
 
 ## Critical gotchas
 
-1. **Two data layers must stay in sync:** the embedded array in `index.html` vs the
-   `data/*.json` caches. Partner-set changes go through
-   `scripts/build_real_partners.py` (exec-array injection) + `extract.build_all
-   --reindex` (index), never by hand-editing one side.
-2. **Injection anchors:** `build_real_partners.py` splices `index.html` between the
-   literal `// ---- BEGIN/END real partners ----` marker lines. Don't reformat them.
+1. **Single data source (changed 2026-06-13):** `index.html` is data-driven — it
+   `fetch`es `data/_overview.json` (built by `scripts/build_overview.py`). There is **no
+   embedded `const partners` array** anymore, so the old two-layer drift is gone. To
+   refresh the dashboard after a data change, run `build_overview.py` (or the Sync
+   button / full cycle). Partner-set changes: `build_real_partners.py` (writes the
+   JSONs) → `build_all --reindex` (`_index.json`) → `build_overview.py` (`_overview.json`).
+2. **`build_real_partners.py` no longer injects into `index.html`** (the BEGIN/END
+   marker block is gone with the embedded array); `inject_exec` skips gracefully.
+   `refresh_exec_row.py` is likewise a no-op. Don't reintroduce an embedded array.
 3. **Slug ≠ slugified display name** ("MSP Corp" → `mspcorp`, "RealTime, LLC" →
    `realtime-it`, …). Use the explicit `slug` field; never derive from display name.
 4. **All data is real** — the synthetic demo partners were wiped 2026-06-11 (seeder

@@ -1,0 +1,629 @@
+WEBVTT
+NOTE title: Teal Tech | ITBD | Monthly Business Review | Dedicated Team + NOC Services + After Hour HD
+NOTE date: 2026-06-10
+NOTE duration: 23m 13s
+
+00:00:32.596 --> 00:00:33.236
+<v Kris Bhattacharjee>Hey, Mike.</v>
+
+00:00:36.276 --> 00:00:38.676
+<v Mike Sauer>I'm on mute. I was on mute. Hey, how's it going?</v>
+
+00:00:39.476 --> 00:00:40.036
+<v Keith Rozario>Oh, Mike.</v>
+
+00:00:39.836 --> 00:00:40.756
+<v Kris Bhattacharjee>Very good, thank you.</v>
+
+00:00:40.276 --> 00:00:41.076
+<v Vishal Kashyap>Hey, Mike.</v>
+
+00:00:42.356 --> 00:00:42.996
+<v Vishal Kashyap>How are you?</v>
+
+00:00:43.636 --> 00:00:44.196
+<v Mike Sauer>All right.</v>
+
+00:00:47.796 --> 00:00:48.196
+<v Vishal Kashyap>It.</v>
+
+00:00:52.116 --> 00:00:55.316
+<v Vishal Kashyap>Should we wait for Aaron, or you can go ahead?</v>
+
+00:00:55.156 --> 00:00:55.556
+<v Mike Sauer>Um...</v>
+
+00:00:56.996 --> 00:00:58.436
+<v Mike Sauer>I think we can, we can go ahead.</v>
+
+00:01:00.356 --> 00:01:00.676
+<v Vishal Kashyap>QA.</v>
+
+00:01:07.716 --> 00:01:08.676
+<v Vishal Kashyap>Ohh.</v>
+
+00:01:09.956 --> 00:01:10.276
+<v Vishal Kashyap>Yes.</v>
+
+00:01:18.036 --> 00:01:19.956
+<v Vishal Kashyap>Okay, I hope you can see my screen now.</v>
+
+00:01:20.596 --> 00:01:21.556
+<v Mike Sauer>I can, yep.</v>
+
+00:01:21.956 --> 00:01:22.516
+<v Vishal Kashyap>Perfect.</v>
+
+00:01:23.716 --> 00:01:34.996
+<v Vishal Kashyap>So Mike, as you know, the drill, we will be discussing the SLA summary for the last month, batch and backup compliance, DEA slides, engineer and HT data, inventory true up and recap entities.</v>
+
+00:01:36.596 --> 00:01:55.796
+<v Vishal Kashyap>If you talk about the last one, the SLA performance, we got 96 tickets on our end. Out of these 96 tickets, 93 met the response SLA and the resolution SLA as well. If we talk clarity-wise, 36 P1 came in, 18 P2, 8 P3 and 34 P4 tickets came in. The response that was missed was on.</v>
+
+00:01:55.836 --> 00:02:15.956
+<v Vishal Kashyap>one P1 ticket and two P4 ticket, but did not impact the target that we have. And in terms of resolution, the P1 resolution was 100% for P2. There was one ticket which missed out, but it was just kept open for additional hours because the member usage was high during the business hours. If we talk about the P4 ticket.</v>
+
+00:02:16.196 --> 00:02:35.396
+<v Vishal Kashyap>that missed out. There were four tickets which missed out and these two were QTR tickets. One was not in our managed list. That's why we escalated it to you guys. Not sure why the SLA got missed on our side because it was cancelled on our end. I am checking on that, but one ticket for backup related was escalated for more information and was closed.</v>
+
+00:02:35.636 --> 00:02:38.756
+<v Vishal Kashyap>once we got the confirmation regarding the backup status.</v>
+
+00:02:41.076 --> 00:02:42.276
+<v Vishal Kashyap>Any, any questions, Mike?</v>
+
+00:02:44.756 --> 00:02:45.156
+<v Mike Sauer>Yep.</v>
+
+00:02:46.276 --> 00:02:46.796
+<v Vishal Kashyap>Perfect.</v>
+
+00:02:48.276 --> 00:03:06.996
+<v Vishal Kashyap>If you talk about the patch compliance currently, it is pretty low, 27%. Last patches were released on 12th of May, and they were installed successfully, but the recent patches were released yesterday, and that's why the patch compliance is pretty low right now. These will be done, I mean, patching is every Saturday, so by this Saturday, it will be pretty up.</v>
+
+00:03:07.196 --> 00:03:08.516
+<v Vishal Kashyap>Above 80%, at least.</v>
+
+00:03:12.516 --> 00:03:12.916
+<v Mike Sauer>Okay.</v>
+
+00:03:13.796 --> 00:03:32.796
+<v Vishal Kashyap>Mike, regarding patching, I had a question. So our patching team noticed that the policy that we created, so all the servers are under that policy now. So when you guys tell us that this device or this client needs to be offboarded, should we remove the client entirely from?</v>
+
+00:03:17.156 --> 00:03:17.476
+<v Mike Sauer>Yeah.</v>
+
+00:03:33.236 --> 00:03:48.196
+<v Vishal Kashyap>RMM or just the policies because policy cannot be changed. So I just wanted to confirm, will that be done from our end or from your end? Because there is only currently one policy for patching in an RMM.</v>
+
+00:03:49.076 --> 00:04:05.636
+<v Mike Sauer>Yeah, as part of the off off board, my team would be off boarding the endpoint. So we would we would off board the endpoint and ultimately the client, you know, where the where the policy was being applied. So</v>
+
+00:04:06.716 --> 00:04:18.116
+<v Mike Sauer>At that point, you know, it it it wouldn't it wouldn't apply anymore; there'd be no no endpoint to, you know, for it to apply to, so I think that that that's taken care of just through the normal process of our off-boarding at Teal.</v>
+
+00:04:08.276 --> 00:04:08.516
+<v Vishal Kashyap>Ohh.</v>
+
+00:04:20.676 --> 00:04:39.236
+<v Vishal Kashyap>Like earlier, what used to happen, there used to be multiple policies, some that for ITBD and some for the clients that we don't manage, that is created by you guys. But currently there is only one policy. So RMM team was confused that should they remove the device entirely from RMM or?</v>
+
+00:04:40.436 --> 00:04:49.556
+<v Vishal Kashyap>You guys will be doing that, but I'll inform them to just remove them from our managed list and don't make any changes. Will that be good? It was for...</v>
+
+00:04:48.836 --> 00:04:55.396
+<v Mike Sauer>Yeah, I think that it sounds like that makes sense. Yeah, is there a client as an example? Do you have an example for a client?</v>
+
+00:04:56.276 --> 00:05:02.676
+<v Vishal Kashyap>Yes, just give me a minute. There was a recent offboarding for one of the clients. Let me quickly check my email.</v>
+
+00:05:06.916 --> 00:05:24.956
+<v Vishal Kashyap>Yeah, PHS. So PHS first was off voted recently and team just had a couple of questions like the devices should we remove the entire site from RMM because there are workstations, laptop as well. And the servers which were in RMM, we were only managing, I guess, two of them.</v>
+
+00:05:08.676 --> 00:05:09.156
+<v Mike Sauer>Okay.</v>
+
+00:05:25.556 --> 00:05:31.116
+<v Vishal Kashyap>But there were, I guess, six or five servers. So these were the issues that team was facing earlier.</v>
+
+00:05:32.316 --> 00:05:51.716
+<v Mike Sauer>Okay, so the PHS West is a good example, but PHS West was also probably a failure on our part to communicate. PHS West, they told us that they were going to off board and they were supposed to off board at the end of last month. They were supposed to off board the 31st, but then</v>
+
+00:05:42.836 --> 00:05:43.316
+<v Vishal Kashyap>Mhm.</v>
+
+00:05:49.876 --> 00:05:50.356
+<v Vishal Kashyap>Mhm.</v>
+
+00:05:52.036 --> 00:06:12.876
+<v Mike Sauer>in the 11th hour, you know, on like the 30th or something, we talked to them or they talked to us and they ended up extending for another month. So normally we would have off boarded the end points, but because they extended for another month and it was kind of in limbo,</v>
+
+00:05:56.956 --> 00:05:57.436
+<v Vishal Kashyap>Mhm.</v>
+
+00:05:59.076 --> 00:05:59.316
+<v Vishal Kashyap>Right.</v>
+
+00:06:05.396 --> 00:06:05.716
+<v Vishal Kashyap>Ahh.</v>
+
+00:06:09.116 --> 00:06:09.636
+<v Vishal Kashyap>Mhm.</v>
+
+00:06:14.596 --> 00:06:27.076
+<v Mike Sauer>they're still there. So the message to you was probably, oh, they're off boarding on the 31st, when in reality, that changed and we never got the updated message to you to let you know that they're on for another month.</v>
+
+00:06:20.836 --> 00:06:21.476
+<v Vishal Kashyap>Oh.</v>
+
+00:06:28.156 --> 00:06:42.756
+<v Vishal Kashyap>Right, because our team has removed them from our inventory. Can you help me with the form? Can you please fill the form again so that we can just add it to our managed list for the devices for the servers which we should be managing?</v>
+
+00:06:43.956 --> 00:07:02.036
+<v Mike Sauer>Yeah, it's probably okay. You know, we're still in conversations with them about off-boarding. So there are some things that are already in progress, like their new MSP. We're in the process of transitioning. So it's, yeah, it's probably okay to not add them back for the next, you know, 20 some days.</v>
+
+00:06:47.716 --> 00:06:48.196
+<v Vishal Kashyap>Mhm.</v>
+
+00:06:49.956 --> 00:06:50.756
+<v Vishal Kashyap>Ohh, OK.</v>
+
+00:06:53.756 --> 00:06:54.356
+<v Vishal Kashyap>Mhm.</v>
+
+00:06:55.636 --> 00:06:57.156
+<v Vishal Kashyap>Taking over, yeah.</v>
+
+00:07:03.156 --> 00:07:11.796
+<v Vishal Kashyap>Okay, but just in case there are any tickets that you want our team to be working on, just let us know. We will be working on it. Perfect.</v>
+
+00:07:10.116 --> 00:07:10.356
+<v Mike Sauer>Okay.</v>
+
+00:07:11.316 --> 00:07:30.116
+<v Mike Sauer>Okay, I guess out of that though, the other thing that that I that we should probably look at is, you know, you had some of the servers under management, but not others. And I'm not sure, I'm not sure why why we would have designed it that way. I can't think of why it would be that way by design.</v>
+
+00:07:22.276 --> 00:07:22.836
+<v Vishal Kashyap>Right.</v>
+
+00:07:31.956 --> 00:07:48.836
+<v Mike Sauer>I would think that for a client like PHS West, it would be, you know, all or none. They may have told us at some point, you know, oh, we don't want these to be managed. That's very possible. I don't know if you have any like historical notes that would indicate anything like that, but</v>
+
+00:07:36.276 --> 00:07:36.436
+<v Vishal Kashyap>Mm.</v>
+
+00:07:49.636 --> 00:07:50.116
+<v Mike Sauer>Um...</v>
+
+00:07:51.236 --> 00:07:59.956
+<v Mike Sauer>That's a possibility, I guess. I guess the other possibility is they had servers that were added to the mix that were never added.</v>
+
+00:07:51.556 --> 00:07:52.356
+<v Vishal Kashyap>I can.</v>
+
+00:07:58.996 --> 00:07:59.596
+<v Vishal Kashyap>Mm-hmm.</v>
+
+00:08:02.036 --> 00:08:17.316
+<v Mike Sauer>So not really an issue with PHS West since they're off boarding, but an issue that we should look at across the board. Can you hang on just one second? Sorry, I got to take this call. Give me just a minute.</v>
+
+00:08:07.636 --> 00:08:08.036
+<v Vishal Kashyap>But...</v>
+
+00:08:12.316 --> 00:08:13.156
+<v Vishal Kashyap>But mhm.</v>
+
+00:08:15.556 --> 00:08:15.956
+<v Vishal Kashyap>Sure.</v>
+
+00:08:16.756 --> 00:08:17.076
+<v Vishal Kashyap>Show.</v>
+
+00:08:17.956 --> 00:08:18.676
+<v Vishal Kashyap>Sure, cool.</v>
+
+00:08:19.076 --> 00:08:19.236
+<v Mike Sauer>Yeah.</v>
+
+00:10:52.276 --> 00:10:52.996
+<v Mike Sauer>Perfect.</v>
+
+00:10:54.996 --> 00:10:56.276
+<v Mike Sauer>Sorry about that.</v>
+
+00:11:00.036 --> 00:11:19.236
+<v Mike Sauer>So yeah, so the inventory, the inventory across other clients, if you have other clients where you see the same thing, can you point that out to us? Can you highlight that for us? If you have, you see five servers, but you only have two under management, that should be a red flag that we need to look into that.</v>
+
+00:11:00.276 --> 00:11:00.756
+<v Vishal Kashyap>So, yep.</v>
+
+00:11:06.996 --> 00:11:07.236
+<v Vishal Kashyap>Uh-huh.</v>
+
+00:11:12.876 --> 00:11:13.236
+<v Vishal Kashyap>Show.</v>
+
+00:11:20.596 --> 00:11:31.556
+<v Vishal Kashyap>What I can do, I can just get a list from RMM all the servers that are in RMM right now and just verify how many we are managing and give you the number of the devices or the...</v>
+
+00:11:33.236 --> 00:11:36.196
+<v Vishal Kashyap>Name that currently that are not in our bad list - will that be will that be good?</v>
+
+00:11:36.996 --> 00:11:45.876
+<v Mike Sauer>Yeah, that'll be perfect. And then we can look at them individually and say, that makes sense. That doesn't make sense. We can add where we need to.</v>
+
+00:11:39.076 --> 00:11:39.556
+<v Vishal Kashyap>Sure.</v>
+
+00:11:47.316 --> 00:11:48.276
+<v Vishal Kashyap>Sure, I'll do that.</v>
+
+00:11:51.276 --> 00:12:09.236
+<v Vishal Kashyap>Perfect. Moving on to the backup compliance. Last month we received 13 failure alerts. All of them have been closed. The latest backup sheet and the data is attached for your reference. Just let me know. I mean, you can review it and let me know if you have any questions or any devices that that should be managed for backup as well.</v>
+
+00:12:09.556 --> 00:12:12.036
+<v Vishal Kashyap>Currently, we are managing 119 devices.</v>
+
+00:12:16.356 --> 00:12:18.516
+<v Vishal Kashyap>Uh, okay, HD data Mohit over to you.</v>
+
+00:12:21.316 --> 00:12:40.516
+<v Mohit Kumar>Thank you very much, Vishal. Hey, Mike. Hello, everyone. So for the past two weeks, we have received 11 total tickets on Helpdesk site about the SLAs and all. The response in the resolution SLA were 100% at all. And if I talk about the tickets that have been closed, so there were basically 9 tickets that have been taken care by us and three tickets that</v>
+
+00:12:24.676 --> 00:12:25.076
+<v Mike Sauer>Hey.</v>
+
+00:12:40.596 --> 00:12:48.676
+<v Mohit Kumar>have been escalated to your side. I've also attached the data with this slide. Mike, any question, any feedback from your side regarding those?</v>
+
+00:12:50.596 --> 00:12:54.276
+<v Mike Sauer>No, I'll let you know when I look into the data if I have any questions, but no questions now.</v>
+
+00:12:55.476 --> 00:12:57.876
+<v Mohit Kumar>Sure, Mike, thank you very much. Over to you, Vishal.</v>
+
+00:12:59.956 --> 00:13:04.596
+<v Vishal Kashyap>Thanks, Mohit. Okay, dedicated side. Kris, over to you.</v>
+
+00:13:05.636 --> 00:13:25.036
+<v Kris Bhattacharjee>Thank you, Vishal. Hey, Mike. So, for the dedicated side, we'll start with Vipul. Vipul has worked on 69 ticket out of which he is able to close 69 with 100% of killing rate. In terms of available utilization, he has worked on 100, worked for 139.88 hours.</v>
+
+00:13:25.876 --> 00:13:45.236
+<v Kris Bhattacharjee>on an average of 27.98 hours per week. So if I talk about the best highlights, 100% kill rate is something, as he has worked on 69 tickets and successfully closed the 69 tickets altogether. Best week was third week where he has worked on 19 tickets, okay, and able to close all the tickets.</v>
+
+00:13:45.796 --> 00:13:45.956
+<v Mike Sauer>Yeah.</v>
+
+00:13:45.796 --> 00:13:47.476
+<v Kris Bhattacharjee>If I talk about CSAT.</v>
+
+00:13:49.956 --> 00:13:57.476
+<v Kris Bhattacharjee>CSAT, he has received 3 CSATs in the last four weeks. Okay.</v>
+
+00:13:58.756 --> 00:14:07.236
+<v Kris Bhattacharjee>Solid utilization in 21 days. He has worked for 139 hours in 0.88 hours.</v>
+
+00:14:08.516 --> 00:14:09.876
+<v Kris Bhattacharjee>Vishal, can you move to the next slide?</v>
+
+00:14:10.436 --> 00:14:14.276
+<v Mike Sauer>Solid guy, pipples, pipples, pipples, great. Love that.</v>
+
+00:14:12.116 --> 00:14:12.356
+<v Kris Bhattacharjee>Yeah.</v>
+
+00:14:15.836 --> 00:14:19.556
+<v Kris Bhattacharjee>Anything you want to add, Mike, from your end? Anything specifically?</v>
+
+00:14:19.716 --> 00:14:24.116
+<v Mike Sauer>No, no, just nothing but nothing but positive feedback for him.</v>
+
+00:14:21.316 --> 00:14:21.636
+<v Kris Bhattacharjee>Bye.</v>
+
+00:14:25.036 --> 00:14:28.436
+<v Kris Bhattacharjee>Alright, Vishal, can we move to the next slide?</v>
+
+00:14:34.596 --> 00:14:52.676
+<v Kris Bhattacharjee>Okay, so this is for Allison. Once again, Allison also done a very good job where she has worked on 119 tickets out of which she is, she got 100% kill rate with closing all the tickets. On an average, she has worked for 22.73 hours.</v>
+
+00:14:53.516 --> 00:15:12.276
+<v Kris Bhattacharjee>Every week, though, there are five weeks for the first week, only one day was there for the month, but she was on PTO for rest of the day, rest of the days she was available. If I talk about the best highlights, once again, 100% kill rate is something, okay?</v>
+
+00:15:12.956 --> 00:15:31.276
+<v Kris Bhattacharjee>People, sorry, Vishal, can you move to the next slide so that Mike can see that? Okay, so, and if I talk about the CSAT, ** *** has received 8 service, which is a pretty good number. Best week was third week where she has closed 34th.</v>
+
+00:15:19.596 --> 00:15:19.756
+<v Vishal Kashyap>S.</v>
+
+00:15:28.036 --> 00:15:28.076
+<v Vishal Kashyap>I.</v>
+
+00:15:31.356 --> 00:15:31.876
+<v Kris Bhattacharjee>Tickets.</v>
+
+00:15:32.996 --> 00:15:36.596
+<v Kris Bhattacharjee>Okay, out of which she was, there was one.</v>
+
+00:15:38.676 --> 00:15:49.956
+<v Kris Bhattacharjee>Company holiday, but still she has managed to close 34 tickets with 0 backlog for the entire month. Anything you want to add, Mike?</v>
+
+00:15:49.236 --> 00:15:49.796
+<v Mike Sauer>That should.</v>
+
+00:15:51.556 --> 00:15:54.116
+<v Mike Sauer>Positive feedback is very, very effective.</v>
+
+00:15:52.956 --> 00:15:53.196
+<v Kris Bhattacharjee>Yeah.</v>
+
+00:15:54.836 --> 00:15:55.716
+<v Kris Bhattacharjee>Thank you, thank you, Mike.</v>
+
+00:15:56.876 --> 00:16:16.436
+<v Kris Bhattacharjee>Alright, now it comes to Gerald. Alright, so Gerald, ticket numbers looks exclusively very good, where he has worked on 392 tickets out of which he was able to resolve 385 with a kill rate of 98.2%. The total hours he has worked on were 149.</v>
+
+00:16:16.676 --> 00:16:35.236
+<v Kris Bhattacharjee>on an average of 29.95, which is a pretty good number. Open tickets are 7, though if I talk about the key highlights, Vishal, if you can move to the next slide. All right, key highlights, so highlights remain the same, and the number of tickets, 392.</v>
+
+00:16:35.476 --> 00:16:54.276
+<v Kris Bhattacharjee>Which is, which is a huge number, and he has successfully closed 300 eighty-five out of which 300 eighty-five are for the backup. OK, if I segregate within backup and NOC, 300 eighty-five were backup and six NOC tickets, there was 0 patching tickets for Gerald for this month.</v>
+
+00:16:54.436 --> 00:17:03.476
+<v Kris Bhattacharjee>However, killing rate was very good. All right, he was able to resolve all the tickets for the first week and for the 4th week. Okay.</v>
+
+00:17:05.316 --> 00:17:13.956
+<v Kris Bhattacharjee>And there are seven tickets which is open, okay, and he's working on them. Yeah, Vishal, can you please move to the next slide?</v>
+
+00:17:16.756 --> 00:17:34.916
+<v Kris Bhattacharjee>All right, so this is for Harsh. So Harsh, once again, he's in he's working as an L3, so he is he has been assigned with seven ticket out of and able to close 13 tickets, okay, and the closer percentage is 180.</v>
+
+00:17:35.236 --> 00:17:55.156
+<v Kris Bhattacharjee>85% and if I talk about the key highlights for the month, 0 open tickets, all the backlogs are clear, consistent weekly performance for all the weeks within the month. The best week was the second week where he has...</v>
+
+00:17:55.796 --> 00:18:10.916
+<v Kris Bhattacharjee>had the best closure where he was able to close 100% tickets. Okay. And solid utilization with 134.81 hours for within 20 days. Okay. Anything one you want to add, Mike?</v>
+
+00:18:13.076 --> 00:18:31.676
+<v Mike Sauer>No, just, I guess, harsh. You know, his numbers are his numbers are a little bit lower in volume, just given the complexity of the issues that that he's given, you know, that he's given to work, but I appreciate I appreciate his his ability to stick to it and...</v>
+
+00:18:23.876 --> 00:18:24.356
+<v Kris Bhattacharjee>Ohh.</v>
+
+00:18:25.796 --> 00:18:26.516
+<v Kris Bhattacharjee>Yes.</v>
+
+00:18:31.796 --> 00:18:46.596
+<v Mike Sauer>to continue on and not get too frustrated and burned out with some of these complex issues. I've had the opportunity to work with him on a couple of them, closer than most, and you know, and he's doing good.</v>
+
+00:18:42.556 --> 00:18:43.036
+<v Kris Bhattacharjee>Mmh.</v>
+
+00:18:47.876 --> 00:18:50.916
+<v Kris Bhattacharjee>Thank you, Mike. Thanks for the feedback, and...</v>
+
+00:18:52.276 --> 00:18:53.556
+<v Kris Bhattacharjee>Now, over to you, Vishal.</v>
+
+00:18:55.236 --> 00:19:13.756
+<v Vishal Kashyap>Thanks, Chris. Inventory, Mike, we are currently managing 175 devices. This includes server and host. So I believe there are 30 host and rest 145 are servers, 10 workstations. The total is 185 as of now. But I'll review the sheet and the count from RMM and let you know what the numbers are.</v>
+
+00:19:13.956 --> 00:19:16.356
+<v Vishal Kashyap>would look like if we are managing others as well.</v>
+
+00:19:17.796 --> 00:19:28.836
+<v Mike Sauer>Yeah, I think we recently had, I want to say there was recently some conversation about the 10 managed workstations. Which client was that? E1 source?</v>
+
+00:19:27.796 --> 00:19:29.236
+<v Vishal Kashyap>Just give me a minute, I have.</v>
+
+00:19:30.196 --> 00:19:32.596
+<v Vishal Kashyap>Ohh, just give me a minute; I have it open.</v>
+
+00:19:30.516 --> 00:19:31.956
+<v Mike Sauer>You know if that's B1, B1.</v>
+
+00:19:33.716 --> 00:19:34.196
+<v Mike Sauer>Okay.</v>
+
+00:19:35.556 --> 00:19:36.596
+<v Mike Sauer>I saw that.</v>
+
+00:19:35.636 --> 00:19:38.596
+<v Vishal Kashyap>Uh, try your supply be one source.</v>
+
+00:19:38.116 --> 00:19:52.596
+<v Mike Sauer>Trio Splat. Okay, yeah, they have like, they have three different companies in there, but they're all related. Okay. Yeah, we may remove those at some point, but for now, it's good. I just want to make sure I understood what they were.</v>
+
+00:19:39.796 --> 00:19:40.076
+<v Vishal Kashyap>Yeah.</v>
+
+00:19:54.316 --> 00:19:54.596
+<v Vishal Kashyap>Sure.</v>
+
+00:19:56.596 --> 00:20:08.356
+<v Vishal Kashyap>Cool, moving on to the to-dos. There were no to-dos from the last meeting we had. Anything, I mean, I'll add one for me, but apart from that, anything else that you want me to add here, either for NOC or dedicated side?</v>
+
+00:20:09.956 --> 00:20:10.916
+<v Mike Sauer>Uh, nope.</v>
+
+00:20:12.356 --> 00:20:20.116
+<v Mike Sauer>Like, if we can get that list of managed, you know, managed versus not managed, that will be that'll be helpful, but that's all.</v>
+
+00:20:20.756 --> 00:20:22.596
+<v Vishal Kashyap>That will be on me. I'll be sharing that with you.</v>
+
+00:20:24.276 --> 00:20:36.516
+<v Keith Rozario>Mike, I didn't get, I mean, I didn't get any response on the security profiles that I shared with you. Are those still open? Are you still considering them? Do you want me to continue the search?</v>
+
+00:20:36.036 --> 00:20:36.276
+<v Mike Sauer>I...</v>
+
+00:20:37.836 --> 00:20:58.596
+<v Mike Sauer>No, we don't need to continue it, but I appreciate, I apologize for not getting back to you. A lot of things changed in the midst. You know, it was early, really early on in our efforts to try and find a resource there. And I wanted to explore the options with you. They've, we have decided to fill the position in Minnesota.</v>
+
+00:20:39.836 --> 00:20:40.316
+<v Keith Rozario>Mhm.</v>
+
+00:20:42.836 --> 00:20:43.476
+<v Keith Rozario>No worries.</v>
+
+00:20:45.796 --> 00:20:46.276
+<v Keith Rozario>Mhm.</v>
+
+00:20:48.676 --> 00:20:49.036
+<v Keith Rozario>Okay.</v>
+
+00:20:54.036 --> 00:20:54.676
+<v Keith Rozario>Mm-hmm.</v>
+
+00:20:58.836 --> 00:21:06.196
+<v Mike Sauer>And we actually had, yeah, and we actually had a good candidate come through the pipeline who's supposed to start on the 22nd.</v>
+
+00:20:59.076 --> 00:20:59.716
+<v Keith Rozario>Locally? Okay.</v>
+
+00:21:01.476 --> 00:21:01.956
+<v Keith Rozario>Mhm.</v>
+
+00:21:05.116 --> 00:21:05.636
+<v Keith Rozario>Goodnight.</v>
+
+00:21:07.156 --> 00:21:10.356
+<v Keith Rozario>Nice, nice. Cool, no worries, no worries. Thanks, Mike.</v>
+
+00:21:10.996 --> 00:21:12.196
+<v Mike Sauer>I appreciate it. Thank you.</v>
+
+00:21:12.316 --> 00:21:13.636
+<v Keith Rozario>No problem, no problem.</v>
+
+00:21:15.156 --> 00:21:22.596
+<v Vishal Kashyap>All right, text slides would be just information on the other services we provide, our office locations, and the escalation matrix.</v>
+
+00:21:24.076 --> 00:21:28.036
+<v Vishal Kashyap>I'll just stop the screen share now and open the photo for any last comments, Mike.</v>
+
+00:21:31.156 --> 00:21:42.276
+<v Vishal Kashyap>How are things going in terms of NOC? I mean, just wanted to know anything that you want to highlight for NOC? Any misses or any concern from NOC? Do you have any?</v>
+
+00:21:31.396 --> 00:21:32.436
+<v Mike Sauer>Nothing more from...</v>
+
+00:21:44.676 --> 00:21:45.556
+<v Mike Sauer>I don't.</v>
+
+00:21:46.516 --> 00:21:47.436
+<v Mike Sauer>I don't.</v>
+
+00:21:48.996 --> 00:22:08.596
+<v Mike Sauer>We have a couple of clients that we've been really focused on vulnerability management and patching for, and we may engage, you know, Geraldo and help him with some of that at some point. Right now, Kendall is, Kendall's managing that, but that's just been a recent thought of mine is, you know, how could we get</v>
+
+00:21:55.516 --> 00:21:55.996
+<v Vishal Kashyap>Mhm.</v>
+
+00:22:08.836 --> 00:22:11.276
+<v Mike Sauer>Or, although more engaged, and...</v>
+
+00:22:12.356 --> 00:22:17.796
+<v Mike Sauer>Integrated in that activity, you know, that that client effort, but aside from that...</v>
+
+00:22:19.076 --> 00:22:22.916
+<v Mike Sauer>Nothing, nothing else. You know, thanks. Appreciate it. Appreciate all the efforts.</v>
+
+00:22:23.956 --> 00:22:30.436
+<v Vishal Kashyap>Thank you, Mike. Glad to hear that. Anything, Keith, Gary, Kris, you want to share before we end our call?</v>
+
+00:22:33.556 --> 00:22:41.156
+<v Keith Rozario>I'm good. I'm good. Always, always a pleasure meeting you, Mike. He's got a bad cold, yes. He'll curse me for that, I'm sure.</v>
+
+00:22:35.476 --> 00:22:36.676
+<v Mike Sauer>You sound like you've got a cult.</v>
+
+00:22:35.876 --> 00:22:36.396
+<v Gary Johal>I'm good.</v>
+
+00:22:36.556 --> 00:22:36.956
+<v Gary Johal>Thank you.</v>
+
+00:22:39.956 --> 00:22:40.516
+<v Vishal Kashyap>Yeah.</v>
+
+00:22:44.556 --> 00:22:44.676
+<v Keith Rozario>Yeah.</v>
+
+00:22:44.716 --> 00:22:45.396
+<v Mike Sauer>Let me come.</v>
+
+00:22:45.516 --> 00:22:45.636
+<v Gary Johal>Yeah.</v>
+
+00:22:47.076 --> 00:22:47.556
+<v Mike Sauer>Hey.</v>
+
+00:22:47.476 --> 00:22:47.716
+<v Keith Rozario>Uh.</v>
+
+00:22:50.036 --> 00:22:54.116
+<v Gary Johal>Actually, he's working on his day off. We have given him a day off for his skills working on.</v>
+
+00:22:50.116 --> 00:22:51.556
+<v Mike Sauer>I hope it, I hope it.</v>
+
+00:22:50.516 --> 00:22:51.396
+<v Vishal Kashyap>So, Keith, you.</v>
+
+00:22:50.596 --> 00:22:51.156
+<v Keith Rozario>We will talk.</v>
+
+00:22:52.116 --> 00:22:52.276
+<v Keith Rozario>Yeah.</v>
+
+00:22:52.476 --> 00:22:54.116
+<v Mike Sauer>I hope it passes quickly for you.</v>
+
+00:22:56.516 --> 00:22:58.276
+<v Vishal Kashyap>So, Keith and Gary, I need a day off now.</v>
+
+00:22:58.836 --> 00:22:59.116
+<v Keith Rozario>Yeah.</v>
+
+00:23:00.516 --> 00:23:00.756
+<v Keith Rozario>Hmm.</v>
+
+00:23:00.516 --> 00:23:04.996
+<v Mike Sauer>Sorry, sorry I set, sorry I set you up for that one, guys. I hope you feel better quickly.</v>
+
+00:23:01.636 --> 00:23:01.756
+<v Vishal Kashyap>Yeah.</v>
+
+00:23:04.076 --> 00:23:04.196
+<v Gary Johal>Yeah.</v>
+
+00:23:04.196 --> 00:23:04.356
+<v Vishal Kashyap>Yeah.</v>
+
+00:23:06.036 --> 00:23:08.036
+<v Vishal Kashyap>Yep, thanks. Thanks, Mike.</v>
+
+00:23:06.996 --> 00:23:08.276
+<v Keith Rozario>Alright, thanks, thanks, Mike.</v>
+
+00:23:08.996 --> 00:23:09.796
+<v Gary Johal>Thank you.</v>
+
+00:23:09.476 --> 00:23:11.076
+<v Vishal Kashyap>All right, thanks everyone.</v>
+
+00:23:09.796 --> 00:23:11.716
+<v Mike Sauer>Alright, guys, thank you. Thank you, Evan.</v>
+
+00:23:11.076 --> 00:23:12.676
+<v Keith Rozario>Alright, take care. Bye-bye.</v>
+
+00:23:12.596 --> 00:23:13.236
+<v Vishal Kashyap>OK, bye.</v>
+
+00:23:13.076 --> 00:23:13.356
+<v Mike Sauer>Gregg.</v>
+

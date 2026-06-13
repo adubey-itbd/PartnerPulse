@@ -66,14 +66,17 @@ This SOP is **mechanically enforced** by `hooks/pre-commit` (activated via
 These invariants are easy to break silently; if your change touches one, both the
 code and every doc that states it must move together:
 
-1. **Two frontend data layers.** `index.html` has an **embedded** `const partners`
-   array (Executive Overview + Partner 360); `partner.html`/`partner.js` **fetch**
-   `data/{slug}.json` at runtime. Any partner-set change must hit both — via
-   `scripts/build_real_partners.py` (array injection) and `extract.build_all
-   --reindex` (index) — never hand-edit one side only.
-2. **Injection anchors are load-bearing strings.** `scripts/build_real_partners.py`
-   splices between the `// ---- BEGIN/END real partners ... ----` marker lines in
-   `index.html`. Editing those lines breaks the script — update both together.
+1. **Single frontend data source (changed 2026-06-13, beta.8).** `index.html` is
+   data-driven — both Executive Overview and Partner 360 `fetch` `data/_overview.json`
+   (built by `scripts/build_overview.py`). There is **no embedded `const partners`
+   array**; `partner.html`/`partner.js` still fetch `data/{slug}.json`. A partner-set or
+   data change must reach the dashboard through the feed: `build_real_partners.py`
+   (writes JSONs) → `extract.build_all --reindex` (`_index.json`) → `build_overview.py`
+   (`_overview.json`). Never hand-edit generated JSON.
+2. **No embedded-array injection anymore.** The `// ---- BEGIN/END real partners ----`
+   markers and the array they wrapped are gone from `index.html`.
+   `build_real_partners.py`'s `inject_exec` and `refresh_exec_row.py` detect their
+   absence and no-op. Do not reintroduce an embedded array or those markers.
 3. **Slug ≠ slugified display name** for several real partners ("MSP Corp" →
    `mspcorp`, "RealTime, LLC" → `realtime-it`, "Alliance InfoSystems LLC" →
    `alliance-infosystems`, "Stasmayer Inc." → `stasmayer`). Exec-overview objects
@@ -101,8 +104,9 @@ code and every doc that states it must move together:
    (the 10 registry partners, full build incl. decks) and
    `scripts/build_real_partners.py` NEW (everything else). Adding a partner = a NEW
    entry (resolve the Halo client id first; `client_id=None` for transcript-only
-   partners with no Halo record) + run the script + `extract.build_all --reindex`.
-   Never add partners by editing `index.html` or `data/` by hand (rule 1).
+   partners with no Halo record) + run the script + `extract.build_all --reindex` +
+   `scripts/build_overview.py`. Never add partners by editing `index.html` or `data/`
+   by hand (rule 1).
 
 ## 4. Changelog conventions
 

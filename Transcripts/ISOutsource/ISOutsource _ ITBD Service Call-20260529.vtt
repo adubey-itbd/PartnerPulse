@@ -1,0 +1,557 @@
+WEBVTT
+NOTE title: ISOutsource | ITBD Service Call
+NOTE date: 2026-05-29
+NOTE duration: 21m 11s
+
+00:02:12.317 --> 00:02:13.117
+<v Keith Rozario>Morning, Joshua.</v>
+
+00:02:13.597 --> 00:02:14.237
+<v Joshua Key>Good morning.</v>
+
+00:02:15.237 --> 00:02:15.837
+<v Keith Rozario>How are you?</v>
+
+00:02:16.717 --> 00:02:19.517
+<v Joshua Key>Oh, busy. Where?</v>
+
+00:02:18.717 --> 00:02:22.477
+<v Keith Rozario>Yeah, I mean, it's not a Friday at all, that same for me.</v>
+
+00:02:23.277 --> 00:02:27.437
+<v Joshua Key>Yeah, it's not a Friday. I'm actually working tomorrow. We're doing our Halo migration this weekend.</v>
+
+00:02:27.757 --> 00:02:28.557
+<v Keith Rozario>Ahh.</v>
+
+00:02:29.117 --> 00:02:34.077
+<v Joshua Key>So right now we're on ConnectWise and Monday we're on Halo. So it's going to be a busy weekend.</v>
+
+00:02:29.517 --> 00:02:30.077
+<v Keith Rozario>I mean, I...</v>
+
+00:02:32.877 --> 00:02:33.277
+<v Keith Rozario>Yeah.</v>
+
+00:02:34.637 --> 00:02:49.357
+<v Keith Rozario>We've been there, we've been there. I mean, and when we were migrating, I'm not sure you guys working with a vendor or a halo directly because these guys have everyone based in UK. So we had to like work in weird shifts to work with them and get the migrations done. So.</v>
+
+00:02:36.077 --> 00:02:36.477
+<v Joshua Key>Yeah.</v>
+
+00:02:48.717 --> 00:03:07.837
+<v Joshua Key>Yeah, we got some people in Chicago and luckily Halo sent us a person who actually is from Seattle to our Seattle office. And then we also hired a Halo administrator who's been administrating Halo for another company for like the last 15 years or something like that.</v>
+
+00:02:58.717 --> 00:02:59.197
+<v Keith Rozario>Okay.</v>
+
+00:03:08.157 --> 00:03:20.557
+<v Joshua Key>So she's really up to speed on the ins and outs of Halo. So I think we're well prepared, but it's a very different animal to ConnectWise. And so we'll see what happens.</v>
+
+00:03:08.317 --> 00:03:08.797
+<v Keith Rozario>Night.</v>
+
+00:03:19.277 --> 00:03:20.877
+<v Keith Rozario>Oh, seriously.</v>
+
+00:03:22.637 --> 00:03:29.757
+<v Keith Rozario>I'm not sure if you ever experienced it working on Android and then moving to Apple. That's how it felt for me. So yeah.</v>
+
+00:03:29.037 --> 00:03:47.357
+<v Joshua Key>Yeah, yeah. We've been doing testing. We've had a dev environment that we've been recreating everything in and working through all our processes and stuff. And it definitely is very different. But what I keep telling people and what people keep saying is when you started in ConnectWise, everything was weird.</v>
+
+00:03:47.677 --> 00:03:48.237
+<v Keith Rozario>True.</v>
+
+00:03:47.677 --> 00:03:52.877
+<v Joshua Key>So it's just the same process over again. We're just all going to be in the same boat this time.</v>
+
+00:03:53.677 --> 00:04:06.557
+<v Keith Rozario>Yep, yep. That's going to be fun. I mean, the amount of things you can do, the amount of things you can achieve on it, that's great. I'm not sure if the Halo ADMIN that you're talking about is going to stay for you, stay with you for good, or they just contractual basis.</v>
+
+00:03:59.997 --> 00:04:00.397
+<v Joshua Key>Yeah.</v>
+
+00:04:06.077 --> 00:04:28.837
+<v Joshua Key>Yeah, they are a full-time employee. So their job is just going to be administrating Halo, helping out with processes, workflows, automations. They have some AI experience. And so we have some AI tools we use for, we use threads for like our Helpdesk.</v>
+
+00:04:08.397 --> 00:04:10.797
+<v Keith Rozario>Oh, nice. Then you can have one.</v>
+
+00:04:16.557 --> 00:04:16.797
+<v Keith Rozario>Ah.</v>
+
+00:04:22.957 --> 00:04:23.517
+<v Keith Rozario>Nice.</v>
+
+00:04:29.117 --> 00:04:42.837
+<v Joshua Key>automated Helpdesk and auto chat and stuff. And so, you know, working with all that stuff. And then we're bringing in some tools. There's a tool called Scope Stack. We're bringing in for project scoping that integrates with Halo. So just kind of getting all this stuff built. She's a...</v>
+
+00:04:29.437 --> 00:04:29.837
+<v Keith Rozario>Right.</v>
+
+00:04:31.517 --> 00:04:32.237
+<v Keith Rozario>Yeah, yeah.</v>
+
+00:04:39.997 --> 00:04:40.477
+<v Keith Rozario>Mmh.</v>
+
+00:04:43.517 --> 00:04:54.717
+<v Joshua Key>full-time employee for the, you know, till the end of time, hopefully. So, because it's nice to have somebody who just knows the tool, right, and can support the tool.</v>
+
+00:04:49.597 --> 00:04:50.237
+<v Keith Rozario>Nine.</v>
+
+00:04:53.517 --> 00:05:14.077
+<v Keith Rozario>Of course, of course, of course. So my manager here, Gary, he got fully trained on Halo and now he's kind of the administrator here on our end. And he plays around with dashboards and automations and stuff. It looks really cool. I was about to say that if you don't have anybody on your end, anytime, if you need any assistance, I can get Gary on the call and he can assist you with it. But I'm glad you have someone there.</v>
+
+00:05:07.197 --> 00:05:07.597
+<v Joshua Key>Yeah.</v>
+
+00:05:14.557 --> 00:05:33.357
+<v Joshua Key>Yeah, I'm definitely glad because yeah, we're doing that too. We're replacing BrightGauge, you know, because Halo has all that functionality built in for all the different tools and reporting and stuff. So we're replacing BrightGauge and some of our Power BI reports. And so they're working on that. It's a big, big thing. So.</v>
+
+00:05:15.477 --> 00:05:15.597
+<v Keith Rozario>And.</v>
+
+00:05:21.277 --> 00:05:21.757
+<v Keith Rozario>Mhm.</v>
+
+00:05:23.437 --> 00:05:24.157
+<v Keith Rozario>True.</v>
+
+00:05:33.597 --> 00:05:34.557
+<v Joshua Key>It's exciting though.</v>
+
+00:05:33.837 --> 00:05:34.237
+<v Keith Rozario>Nice.</v>
+
+00:05:35.757 --> 00:05:36.317
+<v Keith Rozario>Lovely.</v>
+
+00:05:37.517 --> 00:05:43.997
+<v Keith Rozario>Alrighty, so I'm going to share my screen with you. We had a good connect with Naveen yesterday.</v>
+
+00:05:47.477 --> 00:05:49.357
+<v Keith Rozario>And I mean, it was Jason, if I remember right.</v>
+
+00:05:52.797 --> 00:05:58.637
+<v Keith Rozario>Regarding the new folks, I think you'll be interviewing next week. I'll try to join those calls as well.</v>
+
+00:05:56.957 --> 00:05:57.597
+<v Joshua Key>Yes.</v>
+
+00:05:59.277 --> 00:05:59.677
+<v Joshua Key>Okay.</v>
+
+00:06:00.877 --> 00:06:04.477
+<v Keith Rozario>See how that works. Hopefully you get what you are asking for.</v>
+
+00:06:06.637 --> 00:06:08.797
+<v Keith Rozario>I've shared my screen now. Let me know if it's visible.</v>
+
+00:06:09.317 --> 00:06:10.077
+<v Joshua Key>Yep, I can see.</v>
+
+00:06:11.757 --> 00:06:30.877
+<v Keith Rozario>We'll cover the numbers from May 1st to May 27th. The agenda, check-in highlights, action tracker, performance analysis, recap, way forward, and recap again. Sorry, I'll get rid of that. Really quickly, the key metrics, a quick glance to how things were for Vishal for this month so far. Number of tickets that he worked on, 81.</v>
+
+00:06:31.237 --> 00:06:50.557
+<v Keith Rozario>Tickets closed 62 billable hours, 60.9 hours during this period. The overall billable utilization was 42.8% and the admin hours out of the lot was 46.7 hours. Below we're talking about day by segregation, but I think we can look into that in the upcoming slide, not this slide, the one after this. This talks about.</v>
+
+00:06:50.637 --> 00:07:02.397
+<v Keith Rozario>per day activity. I've just added it as a part of the deck just in case if you want to look into it later on. It's just a part of the second slide. But if you jump into the utilization in particular in the first week, but that's just for one day.</v>
+
+00:07:04.317 --> 00:07:04.797
+<v Joshua Key>Mhm.</v>
+
+00:07:04.317 --> 00:07:26.477
+<v Keith Rozario>Week one is just May 1st, so 5 hours there. Week 2, billable hours 13, admin hours were 13 as well. Week 3, 15 billable hours, 17 admin hours. Week 4, 23 billable hours. And week 5, 5 billable hours with 17 admin hours. So if I look into the utilization total, week one started the 66%, went down to 35 to 39, and then 62 again in 20.</v>
+
+00:07:26.517 --> 00:07:46.437
+<v Keith Rozario>three at the end of the month. That is in the last 5th week. Sorry. Best week for him was week 4 with 23 hours, billable hours is what I'm talking about, and zero admin hours. Week 2 was mixed with 12.72 admin hours. Admin heavy week was week 5 with 22.8%.</v>
+
+00:07:47.357 --> 00:08:05.597
+<v Keith Rozario>of the utilization for admin hours. But otherwise, I think utilization-wise, he's doing way better as compared to how it was the last time we connected. I think we connected in March, was it April? April, I think it was April, I think, the last time we connected. And that time we mentioned that, and you mentioned that there's very less work for the.</v>
+
+00:08:00.397 --> 00:08:02.397
+<v Joshua Key>Yeah, yeah, and April, yep.</v>
+
+00:08:06.397 --> 00:08:26.357
+<v Keith Rozario>I also was internal engineers as well, but I think it did catch up. I mean, if I look into the number of tickets, which is the next slide, week first, again, he worked on 4 tickets, closed three. Week 2, he worked on 17, closed 12. The resolution rate is 71%. Week 3, worked on 24, closed 19, 79% resolution rate. Week 4, worked on 26th.</v>
+
+00:08:26.437 --> 00:08:47.357
+<v Keith Rozario>closed 21, that's 81% improved. And then week 5, 10 tickets he worked on closed 7, 70% resolution rate. And that's just three days we're talking about. So the best week for him was week 4. We achieved 81% resolution rate. As you can see the trend as well, starting from 75 to 71, then moved on to 79% resolution. And then</v>
+
+00:08:47.437 --> 00:08:57.397
+<v Keith Rozario>81% resolution rate after that, a closure rate rather. But I see a good amount of tickets being managed by him as well, but anything that you'd like to add, whether it's for utilization or the closure?</v>
+
+00:08:56.477 --> 00:09:16.317
+<v Joshua Key>Yeah, I think the concern here, and he's doing well. Obviously, we have a lot more work, but we have a lot more work to the point where, I mean, just for example, last month we did, I think it was about 460 hours in projects. This month, just my team.</v>
+
+00:09:17.197 --> 00:09:37.477
+<v Joshua Key>is doing about 580 hours. And then I had to outsource to our proactive team about another 250 hours. And part of the reason I had to outsource that 250 hours is because we're still getting about 50% with a full workload out of Vishal because the admin hours are high. And I understand some of that is coordination and some of that</v>
+
+00:09:37.597 --> 00:09:59.917
+<v Joshua Key>is this week specifically, ShareGate keeps crashing his VM. But I have another engineer who's doing that same work and they put in an 86% average. And it's almost identical work to what Vishal is doing. You know, in fact, the McKean-Smith tickets, it's a divestiture, so it's one company becoming two.</v>
+
+00:09:43.997 --> 00:09:44.637
+<v Keith Rozario>Ohh, yeah.</v>
+
+00:09:49.517 --> 00:09:49.677
+<v Keith Rozario>Mm.</v>
+
+00:09:52.477 --> 00:09:52.957
+<v Keith Rozario>Okay.</v>
+
+00:10:00.237 --> 00:10:19.997
+<v Joshua Key>Vishal is doing 1/2 and Arman is doing the other half, and they literally have the same tasks. And Arman completed almost all those tasks, and Vishal is lagging behind, and I've had to move some of that work to another engineer. So my concern there, I'm not complaining about it. He's very talented. He's great to work with.</v>
+
+00:10:07.517 --> 00:10:07.677
+<v Keith Rozario>Mm.</v>
+
+00:10:14.317 --> 00:10:14.477
+<v Keith Rozario>Mm.</v>
+
+00:10:18.317 --> 00:10:18.957
+<v Keith Rozario>Mm-hmm.</v>
+
+00:10:20.117 --> 00:10:38.797
+<v Joshua Key>He's got a good attitude and whatnot. It's just we seem to be capping out at that 50% right now. And right now is when I need him the most, closer to that 75, 80% because now I have work he's not completing and I'm having to pull in other engineers to take on that work.</v>
+
+00:10:22.237 --> 00:10:22.717
+<v Keith Rozario>Mhm.</v>
+
+00:10:26.157 --> 00:10:26.317
+<v Keith Rozario>Mm.</v>
+
+00:10:31.917 --> 00:10:32.317
+<v Keith Rozario>Reid.</v>
+
+00:10:37.277 --> 00:10:37.677
+<v Keith Rozario>Yeah.</v>
+
+00:10:39.517 --> 00:10:39.997
+<v Keith Rozario>Right.</v>
+
+00:10:40.077 --> 00:10:50.317
+<v Joshua Key>So that's my only concern here is whatever we can do to work with him to minimize that admin time, minimize that excess.</v>
+
+00:10:51.437 --> 00:11:10.717
+<v Joshua Key>work that he's doing that's non-billable, because my other engineers typically are about 15 to 20% non-billable. And so with him being closer to 50% non-billable, that's a concern, right? So whatever we can do, and I'm...</v>
+
+00:10:51.957 --> 00:10:52.437
+<v Keith Rozario>Mhm.</v>
+
+00:11:01.037 --> 00:11:01.197
+<v Keith Rozario>Mm.</v>
+
+00:11:10.877 --> 00:11:32.237
+<v Joshua Key>I'm willing to help. I'm willing to have conversations around that. It's just going forward. And, you know, it's very telling because now I'm asking for another engineer, right? I need both of those engineers to perform above to hit that goal so I don't have to farm out work to our proactive engineering team as much.</v>
+
+00:11:13.677 --> 00:11:14.077
+<v Keith Rozario>Hmm.</v>
+
+00:11:18.597 --> 00:11:18.717
+<v Keith Rozario>Yeah.</v>
+
+00:11:21.677 --> 00:11:21.837
+<v Keith Rozario>Mm.</v>
+
+00:11:24.717 --> 00:11:25.117
+<v Keith Rozario>Yeah.</v>
+
+00:11:32.077 --> 00:11:51.597
+<v Keith Rozario>Absolutely, absolutely. And you're right about that piece where he was getting kicked out of the network again and again. There was some outage on our end. I think it was, it was, it happened most, it happened last week and last week as well for two or three days, if I remember right. And he was getting kicked out again and again for some.</v>
+
+00:11:49.117 --> 00:11:49.597
+<v Joshua Key>Mhm.</v>
+
+00:11:51.677 --> 00:12:10.877
+<v Keith Rozario>due to some issues that we had on our site. But apart from that, regarding the utilization and one of the other engineers who works around the same lines and has similar tasks, is Vishal aware of that? Did you ever have a conversation about this piece, about the utilization that we're talking about? Because I want to have a conversation with him now, but I was just checking if you have.</v>
+
+00:12:07.597 --> 00:12:08.317
+<v Joshua Key>I mean.</v>
+
+00:12:09.677 --> 00:12:28.157
+<v Joshua Key>To a degree, I haven't, you know, pulled him into a detailed conversation. I do have a meeting with him scheduled for next week, and I was going to bring it up, but one-on-one with him next week, just to kind of to talk through that and kind of go through, what are you doing with that admin time? You know, there's some concern there.</v>
+
+00:12:18.077 --> 00:12:18.237
+<v Keith Rozario>Mm.</v>
+
+00:12:20.557 --> 00:12:20.957
+<v Keith Rozario>Yeah.</v>
+
+00:12:27.157 --> 00:12:27.357
+<v Keith Rozario>Mm.</v>
+
+00:12:28.277 --> 00:12:45.677
+<v Joshua Key>also that some of that time could be billable time that we're not billing for, just based off of the notes that I'm seeing in his admin time entries. So, you know, I'd love to go through that with him. I just, you know, whatever we can do to push that through.</v>
+
+00:12:28.797 --> 00:12:29.397
+<v Keith Rozario>Mhm.</v>
+
+00:12:32.837 --> 00:12:33.317
+<v Keith Rozario>Mhm.</v>
+
+00:12:37.157 --> 00:12:37.637
+<v Keith Rozario>Mhm.</v>
+
+00:12:41.117 --> 00:12:41.437
+<v Keith Rozario>Yeah.</v>
+
+00:12:47.677 --> 00:12:51.917
+<v Joshua Key>Because, and you know, this is more back.</v>
+
+00:12:53.197 --> 00:13:15.597
+<v Joshua Key>before you got in the picture, but we had a busy time at the end of last year too, and he started to cap out around 50% as well, and then still have that excess admin time. And so that was a concern back then. And we started doing daily meetings with him to be like, what are you doing today? And we were able to get it a little bit improved, but then we got less busy again, right? And so</v>
+
+00:12:55.277 --> 00:12:55.757
+<v Keith Rozario>Mhm.</v>
+
+00:12:58.637 --> 00:12:58.957
+<v Keith Rozario>OK.</v>
+
+00:13:01.277 --> 00:13:01.677
+<v Keith Rozario>Yeah.</v>
+
+00:13:06.557 --> 00:13:07.157
+<v Keith Rozario>Mhm.</v>
+
+00:13:15.917 --> 00:13:16.077
+<v Keith Rozario>Mm.</v>
+
+00:13:15.997 --> 00:13:34.757
+<v Joshua Key>Now we're getting back to that point where we're getting busier, and now we hit that same cap. And that's my concern. I just don't want to hit that trend, because if I'm hitting that trend, and for me, and I'm just doing this right now for the month of June, I'm putting, because of the amount of workload I'm anticipating, I'm putting him at 70%.</v>
+
+00:13:18.797 --> 00:13:19.197
+<v Keith Rozario>Yeah.</v>
+
+00:13:22.957 --> 00:13:24.397
+<v Keith Rozario>Right, of course.</v>
+
+00:13:29.677 --> 00:13:29.997
+<v Keith Rozario>Yeah.</v>
+
+00:13:35.117 --> 00:13:50.237
+<v Joshua Key>utilized, right? But if he's hitting 50% utilized, and I have a gap of 20% on him, that's, you know, a 10 to $13,000 gap at the end of the month, then I have to find somebody else to cover for. Otherwise, we're not meeting our</v>
+
+00:13:36.317 --> 00:13:36.797
+<v Keith Rozario>Mhm.</v>
+
+00:13:45.677 --> 00:13:46.157
+<v Keith Rozario>Course.</v>
+
+00:13:51.597 --> 00:14:01.837
+<v Joshua Key>our goals for our clients. So anyway, long story short, that's just all I want to talk about. It's not a criticism. It's, you know, what, it's how can we help get this.</v>
+
+00:13:52.837 --> 00:13:52.997
+<v Keith Rozario>And.</v>
+
+00:13:55.037 --> 00:13:57.677
+<v Keith Rozario>Makes sense, makes sense, and I am.</v>
+
+00:13:59.797 --> 00:14:00.397
+<v Keith Rozario>Of course.</v>
+
+00:14:02.717 --> 00:14:04.557
+<v Joshua Key>Better, so.</v>
+
+00:14:03.197 --> 00:14:23.277
+<v Keith Rozario>True, true, and true. And how can he help and assist you guys with this? And I can see there are like May 12th, I can see the admin hours were 8, if I see it correctly. And May 15th, billable hours was 3.4 and admin hours of 5.50. So yeah, there's something that we need to work on.</v>
+
+00:14:06.797 --> 00:14:08.077
+<v Joshua Key>Yeah, yep.</v>
+
+00:14:23.917 --> 00:14:42.717
+<v Keith Rozario>I'll be able to connect with him today because by the end, I have a scheduled connect with him before the day ends today. I will be talking about the same piece. And like you said, you have a connect with him next week. I would really appreciate if you can also share the feedback with him since you know more details than I do, of course. I'll be sharing the details that I captured here on this call right now, but then you know more in depth.</v>
+
+00:14:38.557 --> 00:14:39.037
+<v Joshua Key>Mhm.</v>
+
+00:14:43.277 --> 00:15:05.757
+<v Keith Rozario>info about the same and please be up front and share the feedback with him. I'm pretty sure he's a great individual. I'm sure he'll take that positively and definitely work on it. So yeah, and I was super happy when on the QBR, I was not part of it. Lee joined and my boss joined as well. And I heard on the call that they asked for another Vishal. That's a big compliment. And I connected with him and I told him about this.</v>
+
+00:14:44.877 --> 00:14:45.277
+<v Joshua Key>Yep.</v>
+
+00:14:49.997 --> 00:14:50.477
+<v Joshua Key>Mhm.</v>
+
+00:14:52.477 --> 00:14:53.277
+<v Joshua Key>Yep, for sure.</v>
+
+00:15:05.917 --> 00:15:19.197
+<v Keith Rozario>They were asking for another Vishal, so he was pretty happy about it. So thanks for that feedback. I'm pretty sure that feedback came from you as well. But yeah, I want him to live up to it as well, right? He can't take this lightly. So thank you for that feedback. I'll make sure that it's being shared with him.</v>
+
+00:15:15.317 --> 00:15:15.597
+<v Joshua Key>Yep.</v>
+
+00:15:20.237 --> 00:15:40.677
+<v Joshua Key>Perfect. Yep. Yeah. And then, you know, just in the general, that is, that probably did come for me because when I was told, what do I need? I said, well, I need, if we're going to use IT by design, I need somebody to be another Vishal. I need another, you know, person who can do anything, who is willing to take anything on, positive attitude.</v>
+
+00:15:21.517 --> 00:15:21.837
+<v Keith Rozario>Cool.</v>
+
+00:15:34.877 --> 00:15:35.357
+<v Keith Rozario>Mhm.</v>
+
+00:15:41.117 --> 00:15:46.477
+<v Joshua Key>Great communication with clients, and those are things that you know not everybody has, and so...</v>
+
+00:15:45.997 --> 00:15:46.477
+<v Keith Rozario>Mhm.</v>
+
+00:15:48.557 --> 00:16:08.317
+<v Joshua Key>us outsource our company, that's one of the things we pride ourselves on. Like engineers who don't fit us culturally don't last very long. You know, and so Vishal fits us culturally. And you know, that's a huge thing, especially, you know, he's from a different area of the world, right? And so for him to fit us culturally and be able to laugh and...</v>
+
+00:15:55.157 --> 00:15:55.437
+<v Keith Rozario>Yeah.</v>
+
+00:15:59.357 --> 00:15:59.677
+<v Keith Rozario>Nice.</v>
+
+00:16:07.797 --> 00:16:07.917
+<v Keith Rozario>Yeah.</v>
+
+00:16:08.397 --> 00:16:27.837
+<v Joshua Key>have fun and people get along with him and people compliment him. This week, actually, and this is something to throw in, one of our consultants, Kris Pretty, and also one of our consultants, Adam, both made a comment that Vishal is doing a great job. One of the one of them is on this McKeen Smith, where</v>
+
+00:16:28.317 --> 00:16:46.877
+<v Joshua Key>He's having the issues with share gate migrations and stuff like that. You know, he does a great job. He's communicating well. So, you know, obviously those are the positives and why I'm not interested in losing Vishal anytime soon. I love him. I just want to use him more effectively. So anyway.</v>
+
+00:16:38.317 --> 00:16:38.477
+<v Keith Rozario>Yeah.</v>
+
+00:16:43.277 --> 00:16:43.797
+<v Keith Rozario>Mhm.</v>
+
+00:16:47.517 --> 00:17:06.877
+<v Keith Rozario>Great to hear that. And I remember I did a big sacrifice for IS outsource. You're not aware of it, but when I was not handling dedicated services, I still, I handle the IMS side of the world as well, the NOC part, right, for ITBD for many clients. And I'm still doing that side by side. And Vishal was in my team, and he was a very good, strong NOC engineer.</v>
+
+00:16:59.757 --> 00:17:00.237
+<v Joshua Key>Mhm.</v>
+
+00:17:06.957 --> 00:17:16.957
+<v Keith Rozario>And I got to know that there were many engineers who interviewed for ISO, so I think you were interviewing them, but you were not getting the fit that you were not getting the guy that you were looking for. And that's when Sameer came to me and said, I want Vishal.</v>
+
+00:17:11.517 --> 00:17:11.837
+<v Joshua Key>Yeah.</v>
+
+00:17:14.797 --> 00:17:15.197
+<v Joshua Key>Yeah.</v>
+
+00:17:18.197 --> 00:17:37.357
+<v Keith Rozario>And I was not ready to leave him since he was a very key play of my team. And but yeah, I finally sacrificed him. He appeared for the interview for Ice House and got selectors. I was happy about the thing. But I'm glad that I'm getting to work with him again. I now join this side of the world, the dedicated side, and I'm mentoring him, so I'm happy about it. But yeah.</v>
+
+00:17:18.397 --> 00:17:18.717
+<v Joshua Key>Yeah.</v>
+
+00:17:20.637 --> 00:17:20.957
+<v Joshua Key>Yeah.</v>
+
+00:17:26.477 --> 00:17:26.957
+<v Joshua Key>Yeah.</v>
+
+00:17:37.477 --> 00:17:56.557
+<v Keith Rozario>I'm glad things worked out. I will jump on to my cursor there. We'll quickly jump on to the key wins and contributions very quickly. He there was a project when Intune enrollment and compliance attended discovery and planning meetings for Intune enrollment and compliance project reviewed requirements and independently.</v>
+
+00:17:56.877 --> 00:18:19.357
+<v Keith Rozario>design the overall enrollment approach and compliance policy configuration. Talking about the innovation, autopilot and in tune project contribution. He continued the project contributions, applying prior month's compliance framework design, supported policy deployment, planning and validated device enrollment considerations. GWM Foundry 10, this is something that we showcased on the QBR as well. It was well appreciated.</v>
+
+00:18:19.677 --> 00:18:39.197
+<v Keith Rozario>Coordination and admin, transparent logging, all admin and coordination time logged transparently, higher admin load in week 5 due to holiday and coordination tasks. QBR participation, when I was preparing the deck for the QBR, it was me who prepared it and I took assistance from Vishal as well on the same. So we were able to prepare some good, good data.</v>
+
+00:18:39.317 --> 00:18:50.557
+<v Keith Rozario>and showcase on the call as well. So that was pretty good. But anything that you think I'm missing out here? Anything else that he's done and we're not mentioning here? Any positives or negatives as well?</v>
+
+00:18:49.277 --> 00:19:10.957
+<v Joshua Key>No, it's great. I, you know, and I think that you know you have the QA and migration support, you know, portion, and that's something we're starting to utilize him more heavy on. He has really good feedback when it comes to QAs, and you know, here's the things that are missed, here's the breakdown of the things that need to be looked at before we close out the project.</v>
+
+00:18:55.877 --> 00:18:56.157
+<v Keith Rozario>Yeah.</v>
+
+00:18:59.717 --> 00:19:00.197
+<v Keith Rozario>Mhm.</v>
+
+00:19:11.357 --> 00:19:30.317
+<v Joshua Key>That's been very appreciated, not just by, you know, me and the project managers, but also by the engineers that are actually the ones who are working the project and getting their work criticized, right? Because the way he comes at it is very, you know,</v>
+
+00:19:30.397 --> 00:19:50.237
+<v Joshua Key>agnostic and very open, and here's what I found, and here's, in some cases, here's a suggestion of what needs to happen. It's been great, and so we're going to continue to use him on those QAs and also starting to look at using him on some project scopes for some projects.</v>
+
+00:19:50.637 --> 00:19:55.677
+<v Joshua Key>That's been a great, great help there and a good, good move into that direction.</v>
+
+00:19:51.797 --> 00:19:52.077
+<v Keith Rozario>S.</v>
+
+00:19:53.597 --> 00:19:54.077
+<v Keith Rozario>Taylor.</v>
+
+00:19:56.717 --> 00:20:15.037
+<v Keith Rozario>Glad he was able to help you out with the QA piece. That was something I was happy about as well when he told me about this. But yeah, looking forward to that. I think that was it. Rest of the slides are just informational, the team GPS, the ingrown product that we have, the build it. I'm not sure if you guys have registered. I think Gan did discuss about.</v>
+
+00:19:59.357 --> 00:19:59.757
+<v Joshua Key>Yeah.</v>
+
+00:20:15.597 --> 00:20:21.077
+<v Keith Rozario>The same on the QBR, but are you guys going to build it? John C. Maxwell is gonna be there.</v>
+
+00:20:20.157 --> 00:20:20.837
+<v Joshua Key>I think.</v>
+
+00:20:21.677 --> 00:20:22.717
+<v Joshua Key>I think that...</v>
+
+00:20:23.677 --> 00:20:26.317
+<v Joshua Key>Nevine might go, I'm not sure.</v>
+
+00:20:26.717 --> 00:20:27.197
+<v Keith Rozario>Mhm.</v>
+
+00:20:27.357 --> 00:20:31.757
+<v Joshua Key>on that. But yeah, I think that somebody's probably going to go. I'm just not sure who.</v>
+
+00:20:30.877 --> 00:20:31.037
+<v Keith Rozario>Bye.</v>
+
+00:20:32.477 --> 00:20:40.997
+<v Keith Rozario>Cool. All right. That'll be great. Awesome. And that would be it. I will stop the share and open the forum for any last comments you have.</v>
+
+00:20:34.757 --> 00:20:35.037
+<v Joshua Key>Yep.</v>
+
+00:20:41.197 --> 00:20:50.077
+<v Joshua Key>Yeah, I think that was everything that I had for today. Thank you for listening and, you know, keep moving forward.</v>
+
+00:20:45.117 --> 00:20:46.357
+<v Keith Rozario>Cool, and...</v>
+
+00:20:48.477 --> 00:20:48.637
+<v Keith Rozario>No.</v>
+
+00:20:51.157 --> 00:21:01.677
+<v Keith Rozario>Great, good to hear that. I'll be part of the interviews, like I said, next week. Hope those things work out. And Vishal's leave next month. Thank you for approving those. Really appreciate it.</v>
+
+00:20:54.397 --> 00:20:54.877
+<v Joshua Key>OK.</v>
+
+00:21:01.477 --> 00:21:06.237
+<v Joshua Key>Yep. Yeah, no problem. All right. Thanks for meeting me.</v>
+
+00:21:03.757 --> 00:21:04.117
+<v Keith Rozario>Cool.</v>
+
+00:21:05.757 --> 00:21:08.237
+<v Keith Rozario>Right. Thanks, Joshua. Thanks for joining.</v>
+
+00:21:08.637 --> 00:21:09.037
+<v Joshua Key>Yep.</v>
+
+00:21:09.237 --> 00:21:11.837
+<v Keith Rozario>All right, take care. Bye. You too. Bye.</v>
+
+00:21:09.837 --> 00:21:11.277
+<v Joshua Key>Have a good weekend. Bye.</v>
+
