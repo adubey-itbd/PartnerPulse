@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- Chart.js 4.x vendored locally (no CDN — works fully offline) — powers the "Who needs attention" risk-ranking bars. -->
+<script src="vendor/chart.umd.min.js"></script>
 <style>
 /* AI-Driven Operational Intelligence — Executive Overview + Partner 360.
    Data-driven: both views render from data/_overview.json (built by
@@ -219,6 +221,29 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
 .footnote { font-size: 0.76rem; color: var(--text-muted); margin-top: 14px; line-height: 1.6; }
 .empty { padding: 24px; text-align: center; color: var(--text-muted); }
 
+/* Side-by-side row: "Who needs attention" risk-ranking chart + at-risk table (stacks on narrow screens) */
+/* Stacked: "Who needs attention" chart full-width on top, At-risk table full-width below
+   (single column) — the table gets the whole width so all columns fit without scrolling. */
+.overview-split { display: grid; grid-template-columns: 1fr; gap: 0; align-items: start; }
+.overview-split .card { margin-bottom: 24px; }
+.overview-split .table-wrapper { max-height: 560px; overflow-y: auto; }
+.overview-split .custom-table th { position: sticky; top: 0; z-index: 1; background-color: var(--bg-secondary); }
+.trend-key { color: var(--danger); font-weight: 700; }
+.rank-legend { display: flex; gap: 14px; flex-wrap: wrap; padding-top: 6px; flex-shrink: 0; }
+.rank-scroll { max-height: 540px; overflow-y: auto; overflow-x: hidden; margin: 0 -6px; padding: 0 6px; }
+.rank-box { position: relative; width: 100%; height: 340px; }
+.rank-empty { padding: 32px; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+.rank-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--card-track); }
+.rank-count { font-size: 0.8rem; color: var(--text-muted); }
+.rank-toggle { font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; color: var(--primary);
+    background: var(--bg-secondary); border: 1px solid transparent; border-radius: 11px; padding: 8px 16px; cursor: pointer;
+    transition: var(--transition-fast); box-shadow: 0 3px 10px rgba(76,70,160,0.12); }
+.rank-toggle:hover { background: var(--primary-light); border-color: var(--primary); }
+.rank-toggle[hidden] { display: none; }
+/* Screen-reader-only: visually hidden, still read aloud (the chart's text fallback). */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+@media (max-width: 1380px) { .overview-split { grid-template-columns: 1fr; } }
 @media (max-width: 1100px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } .recurring-grid { grid-template-columns: 1fr; } }
 @media (max-width: 760px) { .sidebar { display: none; } .kpi-grid { grid-template-columns: 1fr; } .sent-row { grid-template-columns: 120px 1fr 90px; gap: 8px; } }
 </style>
@@ -296,6 +321,33 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 <span class="page-filter-count" id="filter-count"></span>
             </div>
 
+            <!-- Who needs attention (risk-ranking chart) + At-risk partners table, side by side -->
+            <div class="overview-split">
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Who needs attention</h2>
+                        <div class="card-subtitle">Partners ranked by churn risk, worst first · <span class="trend-key">▼</span> = declining trend · expand for the full filtered list</div>
+                    </div>
+                    <div class="rank-legend" aria-hidden="true">
+                        <span class="legend-item"><span class="legend-dot" style="background:var(--danger)"></span> High</span>
+                        <span class="legend-item"><span class="legend-dot" style="background:var(--warning)"></span> Watch</span>
+                        <span class="legend-item"><span class="legend-dot" style="background:var(--success)"></span> Healthy</span>
+                    </div>
+                </div>
+                <div class="rank-scroll">
+                    <div class="rank-box" id="rank-box">
+                        <canvas id="riskRankChart" role="img" aria-label="Horizontal bar chart ranking partners by churn risk, worst first, coloured by risk tier."></canvas>
+                    </div>
+                </div>
+                <div class="rank-empty" id="rank-empty" hidden>No partners in this tier.</div>
+                <div class="rank-footer">
+                    <span class="rank-count" id="rank-count"></span>
+                    <button type="button" class="rank-toggle" id="rank-toggle"></button>
+                </div>
+                <div class="sr-only" id="bubble-fallback"></div>
+            </div>
+
             <!-- At-risk partners -->
             <div class="card">
                 <div class="card-header">
@@ -321,6 +373,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 </div>
                 <p class="footnote" id="table-foot"></p>
             </div>
+            </div><!-- /overview-split -->
 
             <!-- Action backlog -->
             <div class="card">
@@ -677,7 +730,94 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         });
     }
 
-    function renderOverview() { renderTable(); renderBacklog(); renderSentiment(); renderRecurring(); }
+    // ---------- "Who needs attention" — collapsible risk-ranking bars ----------
+    // Worst-first horizontal bars over the filtered set; collapses to the top 10
+    // so a wide filter (e.g. All) never floods the card. Rebuilt on every change.
+    const COLLAPSED_N = 10;
+    let rankExpanded = false, rankChart = null;
+    function tierGradient(t) {
+        return t === "High" ? ["#ef4444", "#fb7185"] : t === "Watch" ? ["#f59e0b", "#fbbf24"] : ["#10b981", "#34d399"];
+    }
+    // Print the risk value just past the end of each bar (readable without hovering).
+    const barValueLabel = {
+        id: "barValueLabel",
+        afterDatasetsDraw(chart) {
+            const { ctx } = chart, ds = chart.data.datasets[0];
+            ctx.save();
+            ctx.font = '700 11px "Plus Jakarta Sans", sans-serif';
+            ctx.textBaseline = "middle"; ctx.textAlign = "left";
+            chart.getDatasetMeta(0).data.forEach((bar, i) => {
+                ctx.fillStyle = ds.borderColor[i];
+                ctx.fillText(String(ds.data[i]), bar.x + 6, bar.y);
+            });
+            ctx.restore();
+        },
+    };
+    function renderRiskRank() {
+        const canvas = $("riskRankChart");
+        if (!canvas || typeof Chart === "undefined") return;
+        const grid = "rgba(148,163,184,0.20)", tick = "#8a90a6", label = "#3c4257";
+        const all = filtered();
+        const shown = rankExpanded ? all : all.slice(0, COLLAPSED_N);
+        $("rank-empty").hidden = shown.length > 0;
+        $("rank-box").style.display = shown.length ? "" : "none";
+        // ~34px/row; .rank-scroll caps the visible height and scrolls when expanded.
+        $("rank-box").style.height = Math.max(120, shown.length * 34 + 16) + "px";
+        if (rankChart) rankChart.destroy();
+        if (shown.length) {
+            rankChart = new Chart(canvas, {
+                type: "bar",
+                data: {
+                    labels: shown.map((p) => (p.sentimentTrend === "Declining" ? "▼ " : "") + p.name),
+                    datasets: [{
+                        data: shown.map((p) => p.churnRisk),
+                        backgroundColor: (c) => {
+                            const { ctx, chartArea } = c.chart;
+                            const p = shown[c.dataIndex] || shown[0];
+                            const [from, to] = tierGradient(tierOf(p.churnRisk));
+                            if (!chartArea) return from;
+                            const g = ctx.createLinearGradient(chartArea.left, 0, chartArea.right, 0);
+                            g.addColorStop(0, from); g.addColorStop(1, to);
+                            return g;
+                        },
+                        borderColor: shown.map((p) => tierColor(tierOf(p.churnRisk))),
+                        borderWidth: 0, borderRadius: 999, borderSkipped: false,
+                        barPercentage: 0.55, categoryPercentage: 0.82,
+                    }],
+                },
+                plugins: [barValueLabel],
+                options: {
+                    indexAxis: "y", responsive: true, maintainAspectRatio: false,
+                    layout: { padding: { right: 42 } }, animation: { duration: 300 },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: {
+                            title: (items) => shown[items[0].dataIndex].name,
+                            label: (c) => {
+                                const p = shown[c.dataIndex];
+                                return [`Churn risk: ${p.churnRisk} (${tierOf(p.churnRisk)})`,
+                                        `Top driver: ${p.topDriver}`,
+                                        `Call tone: ${p.toneConfident ? p.callTone : "No calls"} · trend ${p.sentimentTrend}`];
+                            },
+                        } },
+                    },
+                    scales: {
+                        x: { min: 0, max: 100, grid: { color: grid }, ticks: { color: tick, font: { size: 10 } },
+                             title: { display: true, text: "Churn risk (0–100)", color: tick, font: { size: 11 } } },
+                        y: { grid: { display: false }, ticks: { color: label, font: { size: 11 }, autoSkip: false } },
+                    },
+                },
+            });
+        }
+        $("rank-count").textContent = `Showing ${shown.length} of ${all.length} partner${all.length === 1 ? "" : "s"}`;
+        const toggle = $("rank-toggle");
+        if (all.length <= COLLAPSED_N) { toggle.hidden = true; }
+        else { toggle.hidden = false; toggle.textContent = rankExpanded ? "Collapse" : `Show all ${all.length}`; }
+        $("bubble-fallback").innerHTML = "Partner churn-risk ranking (worst first): " + all.map((p) =>
+            `${p.name}, churn risk ${p.churnRisk}, ${tierOf(p.churnRisk)} tier, trend ${p.sentimentTrend}.`).join(" ");
+    }
+
+    function renderOverview() { renderRiskRank(); renderTable(); renderBacklog(); renderSentiment(); renderRecurring(); }
 
     function setupFilters() {
         document.querySelectorAll("#global-filters .filter-pill").forEach((pill) => {
@@ -685,6 +825,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 document.querySelectorAll("#global-filters .filter-pill").forEach((p) => p.classList.remove("active"));
                 pill.classList.add("active");
                 filterState = pill.getAttribute("data-tier");
+                rankExpanded = false;          // a new filter always starts collapsed
                 renderOverview();
             });
         });
@@ -731,6 +872,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         renderKPIs();
         setupFilters();
         setupP360Filters();
+        $("rank-toggle").addEventListener("click", () => { rankExpanded = !rankExpanded; renderRiskRank(); });
         renderOverview();
     }
     document.addEventListener("DOMContentLoaded", init);

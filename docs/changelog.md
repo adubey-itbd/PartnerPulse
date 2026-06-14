@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [1.0.0-beta.9] - 2026-06-14
+
+Pre-CTO-demo fixes from an expert review of the dashboard.
+
+### Fixed
+- **Risk band is now a single, deterministic source of truth.** The Exec Overview banded by the numeric score (High ≥45 · Watch ≥25 · Healthy) while the Partner 360 drilldown displayed gpt-5.4's free-form `risk_band`, which was mis-calibrated against its own score — e.g. **APM IT (63) showed "Medium" in the drilldown but counted as High-Risk in the exec KPIs.** `partner.js` now derives the band from `risk_score` with the same thresholds (`bandFromScore`, labelled High/Medium/Low) instead of the raw LLM band; `build_overview.py` sets `riskBand = _tier(risk)` deterministically. APM now reads **High** everywhere. (gpt-5.4's `risk_band` is still kept in the per-partner cache, just no longer displayed.)
+- **Sentiment trend can no longer contradict the hard signals.** The LLM trend never emits "Declining" and had tagged **Proda (risk 72, Negative tone) as "Improving."** Added `build_overview._reconcile_trend`: a high-risk + Negative account now shows **Declining**, and a high-risk account never shows "Improving" (downgraded to Stable). Proda now reads **Declining**. Call-tone derivation is unchanged (still uses the raw AI trend — it's a hard signal feeding renewal risk); only the *displayed* trend is reconciled. Follow-up noted: replace the LLM trend with a real time-based trend from per-call tone history.
+
+### Added
+- **Executive Overview — "Who needs attention" risk-ranking chart restored**, **stacked full-width above the At-risk table** (`.overview-split` is single-column) as the first row below the KPI cards — so the At-risk table spans the full width and all its columns (Partner · Risk · Call tone · Top driver · SIP · Action Driver) show without horizontal scrolling. (Started side-by-side; switched to stacked per review — a 6-column table + chart sharing a row cramped both.) Worst-first horizontal bars (Chart.js, tier-coloured gradients, value labels, ▼ on declining-trend partners — now meaningful after the trend fix), collapsed to the top 10 of the filtered set with a "Show all N" / Collapse toggle. Anchors the Overview so "who's in trouble" reads at a glance. `index.html` only; the At-risk table keeps its existing columns. (Also added the missing `.sr-only` rule — the AIODI rebuild had dropped it, so the chart's screen-reader text fallback was rendering as visible messy text below the chart; it's now properly hidden while still read aloud.)
+
+---
+
 ## [1.0.0-beta.8] - 2026-06-13
 
 ### Added
