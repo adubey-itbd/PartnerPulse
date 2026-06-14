@@ -26,6 +26,7 @@ python -m extract.build_all --only "Logically"  # build one partner (DO run via 
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
 python scripts/build_real_partners.py        # extra real Halo clients (writes their data/*.json)
 python scripts/build_overview.py             # rebuild data/_overview.json (the dashboard feed) from caches
+python scripts/audit_data.py                 # data-integrity audit (SIPs, AI, CSAT, last-call, transcript folders, feed)
 #  single-partner refresh: build_all --only <Name> -> build_all --reindex -> build_overview.py
 #  (refresh_exec_row.py is DEPRECATED — the dashboard is data-driven, no embedded array to refresh)
 python server.py [port]                      # dev server, default http://localhost:8000
@@ -72,10 +73,14 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 - `scripts/` — operational entry points; they sys.path-shim the repo root, run them
   from anywhere. New one-off scripts go here, library code goes in `extract/`.
   `build_overview.py` builds the dashboard feed `data/_overview.json` from the caches
-  (the final sync step). `refresh_exec_row.py` is DEPRECATED (no-op against the
-  data-driven dashboard; kept for rollback to the `backups/` copy).
-  `build_real_partners.py` NEW is the partner roster beyond the registry (28
-  entries); `client_id=None` marks a transcript-only partner with no Halo record
+  (the final sync step; honours the demo allowlist — see gotcha 8). `audit_data.py` is
+  a data-integrity audit (run after a sync) flagging uncounted SIPs, missing AI, empty
+  CSAT, stale/absent last-call, unmatched transcript folders, and feed/index mismatch;
+  allowlist-aware. `refresh_exec_row.py` is DEPRECATED (no-op against the data-driven
+  dashboard; kept for rollback to the `backups/` copy).
+  `build_real_partners.py` NEW is the partner roster beyond the registry (32
+  entries incl. 4 demo adds — Acrisure Cyber Services, Byte Solutions, SERVICAD,
+  OutsourceIT); `client_id=None` marks a transcript-only partner with no Halo record
   — Halo/TeamGPS skipped, AI runs on call transcripts alone (path currently
   unused: its one user "CW Now" turned out to be Halo client 39 "C&W Computers",
   corrected 2026-06-12). `setup_graph_transcript_access.ps1` is for IT, not the
@@ -89,7 +94,8 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   transcript **content ~90 days** (older calls list but 404 on content), so run
   it monthly. Graph creds: `GRAPH_*` vars in `.env`.
 - `data/` — generated, gitignored (partner JSONs, `_index.json`, `_overview.json`,
-  `decks/`, `_sync.log`). Never write generated artifacts to the repo root.
+  `_demo_roster.json` (demo allowlist — gotcha 8), `decks/`, `_sync.log`). Never write
+  generated artifacts to the repo root.
 - `backups/` — saved copies of replaced dashboards for rollback, e.g.
   `index_pre-AIODI_2026-06-13.html` (the pre-redesign `index.html`).
 - `docs/` — architecture, changelog, 3 API/extraction SOPs, LLM-SOP, `archive/`
@@ -126,3 +132,9 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 7. **`index.html` does NOT load `styles.css`** — it is fully self-contained (own
    inline `<style>` + `<script>`); `styles.css` applies only to `partner.html`.
    Shared UI (like the sync button) needs its CSS in BOTH places.
+8. **Demo-roster allowlist:** if `data/_demo_roster.json` (a list of slugs) exists,
+   `build_overview.py` filters the feed — and the portfolio rollups — to just those
+   partners, so the dashboard shows a curated subset (currently 20 for the CTO demo)
+   without deleting any caches. It is **sync-proof** (a rebuild can't resurrect hidden
+   partners) and reversible: edit the list to add/remove, or delete the file to show all
+   built partners. `audit_data.py` scopes its checks to the allowlist when present.

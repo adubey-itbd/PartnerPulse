@@ -10,6 +10,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Pre-CTO-demo fixes from an expert review of the dashboard.
 
+### Changed
+- **Docs swept per LLM-SOP** — `CLAUDE.md`, `README.md`, `docs/architecture.md`, and `docs/LLM-SOP.md` updated to reflect `scripts/audit_data.py`, the **demo-roster allowlist** (`data/_demo_roster.json`, CLAUDE gotcha 8 / SOP invariant 10), the **42-partner** roster (10 registry + 32 NEW incl. the 4 demo adds), the restored "Who needs attention" chart, and the deterministic risk-band + trend reconciliation.
+
 ### Fixed
 - **Risk band is now a single, deterministic source of truth.** The Exec Overview banded by the numeric score (High ≥45 · Watch ≥25 · Healthy) while the Partner 360 drilldown displayed gpt-5.4's free-form `risk_band`, which was mis-calibrated against its own score — e.g. **APM IT (63) showed "Medium" in the drilldown but counted as High-Risk in the exec KPIs.** `partner.js` now derives the band from `risk_score` with the same thresholds (`bandFromScore`, labelled High/Medium/Low) instead of the raw LLM band; `build_overview.py` sets `riskBand = _tier(risk)` deterministically. APM now reads **High** everywhere. (gpt-5.4's `risk_band` is still kept in the per-partner cache, just no longer displayed.)
 - **Sentiment trend can no longer contradict the hard signals.** The LLM trend never emits "Declining" and had tagged **Proda (risk 72, Negative tone) as "Improving."** Added `build_overview._reconcile_trend`: a high-risk + Negative account now shows **Declining**, and a high-risk account never shows "Improving" (downgraded to Stable). Proda now reads **Declining**. Call-tone derivation is unchanged (still uses the raw AI trend — it's a hard signal feeding renewal risk); only the *displayed* trend is reconciled. Follow-up noted: replace the LLM trend with a real time-based trend from per-call tone history.

@@ -103,11 +103,16 @@ code and every doc that states it must move together:
    case-insensitively). Keep transcript content verbatim — never summarize or edit it.
 9. **The partner roster lives in two places only:** `extract/partners.py` PARTNERS
    (the 10 registry partners, full build incl. decks) and
-   `scripts/build_real_partners.py` NEW (everything else). Adding a partner = a NEW
-   entry (resolve the Halo client id first; `client_id=None` for transcript-only
-   partners with no Halo record) + run the script + `extract.build_all --reindex` +
-   `scripts/build_overview.py`. Never add partners by editing `index.html` or `data/`
-   by hand (rule 1).
+   `scripts/build_real_partners.py` NEW (everything else — 32 entries as of 2026-06-14).
+   Adding a partner = a NEW entry (resolve the Halo client id first; `client_id=None` for
+   transcript-only partners with no Halo record) + run the script + `extract.build_all
+   --reindex` + `scripts/build_overview.py`. Never add partners by editing `index.html`
+   or `data/` by hand (rule 1).
+10. **Demo-roster allowlist:** `data/_demo_roster.json` (if present, gitignored) filters
+   the dashboard feed to a curated subset of slugs (`build_overview.py`) — sync-proof and
+   reversible. It hides, never deletes; remove the file to show all built partners. Keep
+   it in sync with reality (a slug that no longer builds will be flagged by
+   `scripts/audit_data.py`).
 
 ## 4. Changelog conventions
 

@@ -54,7 +54,11 @@ scripts/                      operational entry-point scripts
   build_real_partners.py      pull a hardcoded set of real Halo clients (+ transcripts,
                               + AI analysis) into their data/{slug}.json caches
   build_overview.py           roll the caches up into data/_overview.json — the feed the
-                              dashboard fetches (SIP/action/NPS rollups, coverage window)
+                              dashboard fetches (SIP/action/NPS rollups, coverage window).
+                              Honours data/_demo_roster.json (allowlist) when present.
+  audit_data.py               data-integrity audit across partners (uncounted SIPs,
+                              missing AI, empty CSAT, stale last-call, unmatched
+                              transcript folders, feed integrity); allowlist-aware
   refresh_exec_row.py         DEPRECATED — no-op against the data-driven dashboard
                               (kept for rollback; use build_overview.py instead)
   setup_graph_transcript_access.ps1   for IT: completes the Graph app-registration
