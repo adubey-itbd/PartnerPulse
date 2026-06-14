@@ -126,6 +126,7 @@ _SIP_SEARCH_TERMS = ("SIP", "Service Improvement Plan", "Improvement Plan")
 # expose no reliable `isclosed` flag. These are the terminal statuses.
 _CLOSED_STATUS_NAMES = {
     "closed", "closed order", "closed item", "completed", "cancelled", "rejected",
+    "resolved",   # a Resolved SIP is concluded, not active (e.g. RedHelm HD SIP)
 }
 
 _status_names = None
@@ -168,13 +169,17 @@ def _all_text_sips() -> list:
     return _global_sips
 
 
-def count_sips(client_id: int, name_terms=()) -> dict:
-    """All-time SIP (ticket type 99) counts for a partner, split open vs closed.
+def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
+    """All-time SIP counts for a partner, split open vs closed, de-duplicated by id.
 
-    Counts two buckets, de-duplicated by ticket id:
-      A) SIPs filed under the partner's own Halo client record (`client_id`).
-      B) SIPs filed under another record (typically ITBD's own) whose summary
+    Counts three buckets:
+      A) type-99 SIPs filed under the partner's own Halo client record (`client_id`).
+      B) type-99 SIPs filed under another record (typically ITBD's own) whose summary
          names the partner — matched against `name_terms`.
+      C) the ticket(s) explicitly named in the partner's `CFSIPTicketMDE` custom field
+         (`sip_ticket_field`). This is authoritative and catches SIPs the type-99 search
+         misses — they aren't always type 99 (APM IT's SIP is type 148) and aren't always
+         under this client record (RedHelm's are under another client). Fetched by id.
     """
     names = _status_name_map()
     seen = {}
@@ -193,6 +198,18 @@ def count_sips(client_id: int, name_terms=()) -> dict:
             summ = (r.get("summary") or "").lower()
             if any(tok in summ for tok in toks):
                 seen[r.get("id")] = r
+
+    # C) tickets named in the SIP custom field — fetch each by id (any type/client).
+    if sip_ticket_field:
+        for tid in {int(m) for m in re.findall(r"\d{4,}", str(sip_ticket_field))}:
+            if tid in seen:
+                continue
+            try:
+                t = get(f"Tickets/{tid}")
+            except Exception:
+                continue
+            if t and t.get("id"):
+                seen[t["id"]] = t
 
     open_n = closed_n = 0
     for r in seen.values():

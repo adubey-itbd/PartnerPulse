@@ -106,7 +106,8 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=
         client = halo.get_client(client_id)
         cf = halo.parse_custom_fields(client)
         emails, domains = halo.get_users(client_id)
-        sips = halo.count_sips(client_id, name_terms=[name, halo_search, client.get("name", "")])
+        sips = halo.count_sips(client_id, name_terms=[name, halo_search, client.get("name", "")],
+                               sip_ticket_field=cf.get("CFSIPTicketMDE"))
 
         # TeamGPS CSAT uses a server-side EXACT company-name filter. The short search
         # terms miss, so fall back to the exact Halo client name (which matches).

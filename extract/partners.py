@@ -29,15 +29,16 @@ class Partner:
 # name search on first run.
 PARTNERS = [
     Partner("Logically", "Logically", client_id=106),
-    Partner("Alliance InfoSystems", "Alliance InfoSystems"),
+    Partner("Alliance InfoSystems", "Alliance InfoSystems", teamgps_company="Alliance InfoSystems LLC"),  # TeamGPS company carries the "LLC" suffix
     Partner("Computer Weavers", "Computer Weavers"),
     Partner("ION247", "ION247"),
     Partner("Liongard", "Liongard"),
     Partner("Milner", "Milner"),
     Partner("MSPCorp", "MSPCorp", halo_search="MSP Corp", teamgps_company="MSP Corp"),
     Partner("Premier Technologies", "Premier Technologies"),
-    Partner("Realtime IT", "Realtime IT", client_id=147),  # Halo: "RealTime, LLC"
-    Partner("Stasmayer", "Stasmayer"),
+    Partner("Realtime IT", "Realtime IT", client_id=147,
+            teamgps_company="RealTime, LLC"),  # Halo + TeamGPS both "RealTime, LLC"
+    Partner("Stasmayer", "Stasmayer", teamgps_company="Stasmayer Inc."),  # TeamGPS carries "Inc."
 ]
 
 BY_NAME = {p.name.lower(): p for p in PARTNERS}

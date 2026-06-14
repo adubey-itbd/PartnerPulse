@@ -67,7 +67,8 @@ def build(partner_name: str, with_decks: bool = True, verbose: bool = True,
 
     # SIP (Service Improvement Plan, ticket type 99) counts — own record plus
     # SIPs filed under ITBD's record that name the partner in the summary.
-    sips = halo.count_sips(client_id, name_terms=[p.name, p.halo_search])
+    sips = halo.count_sips(client_id, name_terms=[p.name, p.halo_search],
+                           sip_ticket_field=cf.get("CFSIPTicketMDE"))
     log(f"[sips] open={sips['open']} closed={sips['closed']}")
 
     # 4. CSAT -----------------------------------------------------------------
