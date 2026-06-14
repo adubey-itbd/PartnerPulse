@@ -44,6 +44,10 @@
         if (b === "low") return "badge-success";
         return "badge-outline";
     }
+    // Risk band is a deterministic function of the 0–100 score — SAME thresholds as
+    // the Executive Overview (High ≥45 · ≥25 · Low). Display this, never the raw
+    // gpt-5.4 risk_band, which mis-calibrated vs its own score (e.g. 63 → "Medium").
+    function bandFromScore(s) { return s >= 45 ? "High" : s >= 25 ? "Medium" : "Low"; }
     function sevClass(sev) {
         const s = (sev || "").toLowerCase();
         if (s === "high") return "badge-danger";
@@ -93,8 +97,8 @@
 
         const auBadge = $("client-aurisk-badge");
         if (ai.risk_score != null) {
-            auBadge.className = `badge ${bandClass(ai.risk_band)}`;
-            auBadge.innerHTML = `AI Churn: ${esc(ai.risk_score)} (${esc(ai.risk_band)})`;
+            auBadge.className = `badge ${bandClass(bandFromScore(ai.risk_score))}`;
+            auBadge.innerHTML = `AI Churn: ${esc(ai.risk_score)} (${bandFromScore(ai.risk_score)})`;
         } else {
             auBadge.style.display = "none";
         }
@@ -146,9 +150,9 @@
             $("ov-ai-banner").style.display = "block";
             $("ov-ai-score").textContent = ai.risk_score;
             const bandEl = $("ov-ai-band");
-            bandEl.textContent = ai.risk_band || "";
+            bandEl.textContent = bandFromScore(ai.risk_score);
             $("ov-ai-banner").querySelector(".risk-gauge").className =
-                `risk-gauge gauge-${(ai.risk_band || "").toLowerCase()}`;
+                `risk-gauge gauge-${bandFromScore(ai.risk_score).toLowerCase()}`;
             $("ov-ai-summary").textContent = ai.summary || "";
         }
 
@@ -188,9 +192,9 @@
         host.innerHTML = `
             <div class="card dashboard-full-width ai-banner" style="margin-bottom:24px;">
                 <div class="ai-banner-grid">
-                    <div class="risk-gauge gauge-${(ai.risk_band || "").toLowerCase()}">
+                    <div class="risk-gauge gauge-${bandFromScore(ai.risk_score).toLowerCase()}">
                         <div class="risk-gauge-score">${esc(ai.risk_score)}</div>
-                        <div class="risk-gauge-band">${esc(ai.risk_band)}</div>
+                        <div class="risk-gauge-band">${bandFromScore(ai.risk_score)}</div>
                         <div class="risk-gauge-label">Churn Risk</div>
                     </div>
                     <div class="ai-banner-text">

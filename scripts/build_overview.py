@@ -82,6 +82,18 @@ def _derive_call_tone(trend, neg_share, risk, calls):
     return "Mixed", True
 
 
+def _reconcile_trend(ai_trend, risk, tone):
+    """The gpt-5.4 sentiment_trend can contradict the hard signals — it never emits
+    "Declining" and sometimes tags a high-risk/negative account "Improving" (e.g.
+    Proda 72/Negative). Reconcile so the displayed trend can never read better than
+    risk + tone warrant."""
+    if risk >= 45 and tone == "Negative":
+        return "Declining"
+    if risk >= 45 and ai_trend == "Improving":
+        return "Stable"
+    return ai_trend or "Stable"
+
+
 def build_partner(slug, idx_row):
     path = os.path.join(DATA, f"{slug}.json")
     if not os.path.exists(path):
@@ -164,8 +176,11 @@ def build_partner(slug, idx_row):
         am = "Unassigned"
 
     risk = ai.get("risk_score", idx_row.get("risk_score", 0)) or 0
-    trend = ai.get("sentiment_trend") or idx_row.get("sentiment_trend") or "Stable"
-    tone, tone_confident = _derive_call_tone(trend, neg_share, risk, calls_count)
+    ai_trend = ai.get("sentiment_trend") or idx_row.get("sentiment_trend") or "Stable"
+    # Tone keeps using the raw AI trend (it's a hard signal feeding renewal risk);
+    # the *displayed* trend is then reconciled against risk + tone below.
+    tone, tone_confident = _derive_call_tone(ai_trend, neg_share, risk, calls_count)
+    trend = _reconcile_trend(ai_trend, risk, tone)
     drivers = ai.get("drivers") or []
     top_driver = drivers[0].get("factor") if drivers else (idx_row.get("summary") or "")
     # themes == the gpt-5.4 driver factors, first 4 — identical to index.html's embedded
@@ -176,7 +191,7 @@ def build_partner(slug, idx_row):
         "name": idx_row.get("name") or client.get("name") or slug,
         "slug": slug,
         "churnRisk": risk,
-        "riskBand": ai.get("risk_band") or idx_row.get("risk_band") or _tier(risk),
+        "riskBand": _tier(risk),  # deterministic single source of truth (was: LLM risk_band, mis-calibrated vs the score)
         "accountManager": am,
         "sentimentTrend": trend,
         "topDriver": top_driver,
@@ -215,6 +230,21 @@ def main():
         if p:
             partners.append(p)
     partners.sort(key=lambda p: p["churnRisk"], reverse=True)
+
+    # ---- Optional demo-roster allowlist ----
+    # If data/_demo_roster.json exists (a JSON list of slugs), the feed is filtered to
+    # just those partners — so the dashboard shows a curated set without deleting any
+    # caches. Sync-proof (a full rebuild can't resurrect hidden partners) and reversible
+    # (delete the file to show everyone). Portfolio rollups below reflect the filtered set.
+    roster_path = os.path.join(DATA, "_demo_roster.json")
+    if os.path.exists(roster_path):
+        with open(roster_path, encoding="utf-8") as fh:
+            allow = set(json.load(fh))
+        before = len(partners)
+        partners = [p for p in partners if p["slug"] in allow]
+        missing = sorted(allow - {p["slug"] for p in partners})
+        print(f"Demo roster active: {len(partners)} of {before} partners shown"
+              + (f" (NOT FOUND: {missing})" if missing else ""))
 
     # ---- Coverage window: pull the private _cov off each partner and aggregate ----
     covs = [p.pop("_cov") for p in partners]

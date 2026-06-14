@@ -60,11 +60,20 @@ def main():
     partners = idx.get("partners", [])
     findings = {1: [], 2: [], 3: [], 4: [], 5: [], 6: []}
 
+    # If a demo-roster allowlist is active, scope the partner-level checks to it
+    # (the hidden partners' caches still exist but aren't shown, so don't audit them).
+    allow = None
+    roster_path = os.path.join(DATA, "_demo_roster.json")
+    if os.path.exists(roster_path):
+        allow = set(json.load(open(roster_path, encoding="utf-8")))
+
     known_slugs = set()
     for row in partners:
         slug = row["slug"]
-        known_slugs.add(_slug(row.get("name")))
+        known_slugs.add(_slug(row.get("name")))   # full roster — so hidden partners' folders don't false-flag check 5
         known_slugs.add(_slug(slug))
+        if allow is not None and slug not in allow:
+            continue
         path = os.path.join(DATA, f"{slug}.json")
         if not os.path.exists(path):
             findings[6].append(f"{row.get('name')}: indexed but no data/{slug}.json")
@@ -114,16 +123,21 @@ def main():
     else:
         ov = json.load(open(ov_path, encoding="utf-8"))
         ov_slugs = {p["slug"] for p in ov.get("partners", [])}
-        for row in partners:
-            if row["slug"] not in ov_slugs:
-                findings[6].append(f"{row.get('name')}: in index but missing from _overview.json")
+        expected = allow if allow is not None else {row["slug"] for row in partners}
+        for slug in expected:
+            if slug not in ov_slugs:
+                findings[6].append(f"{slug}: expected on dashboard but missing from _overview.json")
+        extra = ov_slugs - expected
+        if extra:
+            findings[6].append(f"feed shows partners not in the demo roster: {sorted(extra)}")
 
     titles = {
         1: "SIP recorded but not counted", 2: "AI analysis missing/failed",
         3: "CSAT empty (possible TeamGPS name mismatch)", 4: "Last call stale (>45d) or absent",
         5: "Transcripts on disk not ingested (unmatched folder)", 6: "Feed / index integrity",
     }
-    print(f"\n===== DATA AUDIT — {len(partners)} partners, as of {TODAY} =====")
+    scope = f"{len(allow)} demo-roster partners" if allow is not None else f"{len(partners)} partners"
+    print(f"\n===== DATA AUDIT — {scope}, as of {TODAY} =====")
     total = 0
     for k in sorted(findings):
         items = findings[k]

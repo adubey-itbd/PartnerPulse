@@ -85,6 +85,18 @@ PARTNER_ALIASES = {
     "msp corp": "MSPCorp",
     "realtime": "Realtime IT",
     "netgain technology": "Netgain",
+    # ---- 2026-06-14: meeting-subject short names → canonical roster folder, so the
+    # pull routes into the existing partner folder instead of creating a fragmented
+    # short-named one (the durable fix for the folder-mismatch found in the audit). ----
+    "amoskeag": "Amoskeag Network Consulting Group LLC",
+    "atlantic pc": "Atlantic PC Inc",
+    "granite networks": "Granite Networks Inc",
+    "granite": "Granite Networks Inc",
+    "proda technology": "Proda Technologies",
+    "proda": "Proda Technologies",
+    "redhelm": "RedHelm - 1Path",
+    "secure future tech": "Secure Future Tech Solutions",
+    "secure future tech (sft)": "Secure Future Tech Solutions",
 }
 
 _TIME_RE = re.compile(r"(\d{2}):(\d{2}):(\d{2})\.\d{3}\s+-->\s+(\d{2}):(\d{2}):(\d{2})\.\d{3}")

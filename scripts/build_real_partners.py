@@ -70,6 +70,11 @@ NEW = [
     ("CMIT Solutions Stamford",      44,  "CMIT",                "CMIT Solutions (Stamford, CT)"),
     ("Vistitude",                    187, "Vistitude",           "Vistitude Computer Solutions Inc"),
     ("Mission Technology",           975, "Mission Technology",  "Mission Technology Solutions"),
+    # ---- added 2026-06-14 for the CTO demo roster ----
+    ("Acrisure Cyber Services",      937, "Acrisure",            "Acrisure Cyber Services"),
+    ("Byte Solutions Inc",            38, "Byte Solutions",      "Byte Solutions Inc"),
+    ("SERVICAD",                     154, "SERVICAD",            "SERVICAD"),
+    ("OutsourceIT",                  928, "OutsourceIT",         "OutsourceIT"),
 ]
 
 
