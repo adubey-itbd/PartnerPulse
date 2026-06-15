@@ -1,0 +1,608 @@
+WEBVTT
+NOTE title: MSP Corp(MBCCS Group) | Service Call
+NOTE date: 2026-04-29
+NOTE duration: 23m 43s
+
+00:00:03.951 --> 00:00:05.231
+<v Ashish Paul>I may end joining this call.</v>
+
+00:00:06.831 --> 00:00:07.311
+<v Ashish Paul>Okay.</v>
+
+00:00:08.351 --> 00:00:08.671
+<v Arkadi Kleiner>Okay.</v>
+
+00:00:08.671 --> 00:00:29.711
+<v Ashish Paul>Okay, so let's quickly dive in. Excuse me. Let's quickly start off with the discussion which we had in the past week regarding engineers' availability in the call queue and taking the ownership of the tickets. So I did work with Bunch and Jasp and the new engineer, Jimmy. Although Jimmy is</v>
+
+00:00:29.871 --> 00:00:45.551
+<v Ashish Paul>has started picking few tickets from two days ago. So he's still fairly new, but I would like to know about him as well. However, I would first start with Vansh. Have you noticed him getting any better since our previous connect?</v>
+
+00:00:46.671 --> 00:00:58.351
+<v Arkadi Kleiner>Yes, it's a steady improvement. It's not quick, but it's steady and it's going the right direction. So I am hopeful that he can be a good member of the team.</v>
+
+00:00:59.791 --> 00:01:00.031
+<v Ashish Paul>Kip.</v>
+
+00:01:01.391 --> 00:01:01.711
+<v Ashish Paul>Rick.</v>
+
+00:01:04.111 --> 00:01:05.071
+<v Ashish Paul>And how about Jess?</v>
+
+00:01:06.071 --> 00:01:25.551
+<v Arkadi Kleiner>Jasper's been great for a while. Yeah, I'm very happy with how Jasper's performing, both on the calls and on tickets and also on triage for that matter. I don't have really any complaints about Jasper. In fact, I would like other technicians from my GPU to emulate Jasper's way of...</v>
+
+00:01:21.591 --> 00:01:23.471
+<v Ashish Paul>Yeah, appreciate that.</v>
+
+00:01:24.911 --> 00:01:25.071
+<v Ashish Paul>No.</v>
+
+00:01:26.511 --> 00:01:40.831
+<v Arkadi Kleiner>eagerness to learn his initiative, right? His understanding of systems, right? He's very good learner and he has good energy. He has good work ethic. So again, very, very happy with him.</v>
+
+00:01:43.231 --> 00:01:44.271
+<v Ashish Paul>So, you're on mute.</v>
+
+00:01:45.911 --> 00:02:04.991
+<v Amit Dubey>It's my mute. It's almost halfway through, right? I think it says that I need to take a week off. It stole my thunder because I was going to ask you that, right? That what are the top three things that you see in Jess that we can talk about where others can talk to? And I think he gave 5 good reasons that we can take away as a...</v>
+
+00:01:45.951 --> 00:01:46.391
+<v Arkadi Kleiner>****.</v>
+
+00:01:50.631 --> 00:01:50.751
+<v Arkadi Kleiner>Right.</v>
+
+00:02:03.671 --> 00:02:03.791
+<v Arkadi Kleiner>It.</v>
+
+00:02:05.791 --> 00:02:07.631
+<v Amit Dubey>as something that we can talk to Team about.</v>
+
+00:02:09.231 --> 00:02:17.791
+<v Amit Dubey>So, yeah, no, thank you for sharing, and Ashish. Let's make it a point that, you know, we are when we having a team huddle, we're discussing about this.</v>
+
+00:02:18.671 --> 00:02:20.431
+<v Ashish Paul>Yeah, sure, absolutely.</v>
+
+00:02:20.111 --> 00:02:22.111
+<v Amit Dubey>Yep. Thank you. Yep.</v>
+
+00:02:21.551 --> 00:02:21.711
+<v Ashish Paul>Okay.</v>
+
+00:02:23.151 --> 00:02:34.591
+<v Ashish Paul>Thank you. I would also like to touch base on Jimmy's progress, although he completed his training in the last week and just started with the calls. So</v>
+
+00:02:23.391 --> 00:02:23.631
+<v Arkadi Kleiner>No.</v>
+
+00:02:33.951 --> 00:02:38.031
+<v Arkadi Kleiner>No, sorry, not quite. He hasn't completed his training just yet, yeah.</v>
+
+00:02:35.871 --> 00:02:49.431
+<v Ashish Paul>Okay, not the calls, I'm sorry, not the calls, tickets, yes. Yep, so have you noticed, I mean, how's his work ethic, you perceive or his ticket notes and everything else?</v>
+
+00:02:50.191 --> 00:03:10.751
+<v Arkadi Kleiner>It's far too early to tell anything about Jimmy. He seems to have a good attitude. He seems to be willing to learn. He does seem to understand things on a good level. But again, this is very, very preliminary. In our system, we take about six months usually to have a data technician.</v>
+
+00:03:05.551 --> 00:03:06.031
+<v Ashish Paul>Agreed.</v>
+
+00:03:11.071 --> 00:03:29.831
+<v Arkadi Kleiner>to see where they are before we go like, okay, we think where they need to be. And that's it. We can treat them as a normal, full member of the team, giving them all kinds of complexity levels of tickets. Or we can entrust them with all kinds of clients, right?</v>
+
+00:03:30.111 --> 00:03:51.711
+<v Arkadi Kleiner>from the most sensitive to the easiest ones. It's a very gradual process of getting them there. It's not just for ITBD technicians, it's for every technician that we ever add to our team. So it's after less than three weeks, it's way too early to tell with Jimmy. But so far I can tell you that I see things going in the right direction and he seems to be</v>
+
+00:03:51.951 --> 00:03:54.431
+<v Arkadi Kleiner>on track to be a good member of this team too.</v>
+
+00:03:56.031 --> 00:03:57.311
+<v Ashish Paul>I appreciate it, Fathi.</v>
+
+00:03:57.151 --> 00:04:15.431
+<v Amit Dubey>Just one thing for my clarity and it is purely to understand the approach that you take because I kind of like it, right? That I think the approach that you guys are taking is to make sure that for the first six months you are being over critical and picking up things.</v>
+
+00:04:15.911 --> 00:04:35.951
+<v Amit Dubey>which needs improvement, even if that can be ignored, to make sure that in the longer run, they are not even making those smaller mistakes, which I think most of people do, right? That I mean, kind of ignore, okay, this can be ignored. But I think the approach that you guys are taking, that you are pretty much nitpicking everything that you see that requires an improvement to make sure they are really solid.</v>
+
+00:04:19.391 --> 00:04:19.791
+<v Arkadi Kleiner>Yes.</v>
+
+00:04:36.311 --> 00:04:39.791
+<v Amit Dubey>After six months, is that is that a fair understanding that I have?</v>
+
+00:04:40.831 --> 00:04:52.111
+<v Arkadi Kleiner>I wouldn't say we ignore minor issues; we note them and we try to use them as teaching moments, so that if, if sorry, I think you got you, you went mute again.</v>
+
+00:04:53.791 --> 00:05:13.751
+<v Amit Dubey>Yeah, something wrong with my headset. My apologies. All IT issues happening today. No, I was saying, yeah, I was saying the other way around that you are picking up even the smallest, right, to make sure they are, you are really giving them as a feedback so that in the longer run, after the cutoff phase of six months, they are coming up as a solid engineer.</v>
+
+00:05:00.911 --> 00:05:01.191
+<v Arkadi Kleiner>Yeah.</v>
+
+00:05:05.151 --> 00:05:06.591
+<v Arkadi Kleiner>Yes, yeah, we are.</v>
+
+00:05:14.431 --> 00:05:34.751
+<v Arkadi Kleiner>Yes, we have seen this same process in many technicians before, where they start from a place where they will, of course, make mistakes, they will not know the systems, they will not know the clients, they will not know the processes. It's a learning process over time. From our observation over the years, yes, it takes about six months to get them</v>
+
+00:05:36.351 --> 00:05:55.071
+<v Arkadi Kleiner>to be the same as every other member of the team to that baseline where we can trust them with everything fully, right? Some get there faster, some get there slower, some need a lot more work, some need a lot more correction. Again, it's a very individual thing, but the idea is that yes, we...</v>
+
+00:05:39.151 --> 00:05:39.471
+<v Ashish Paul>Yep.</v>
+
+00:05:40.991 --> 00:05:41.231
+<v Ashish Paul>Yeah.</v>
+
+00:05:55.391 --> 00:06:17.351
+<v Arkadi Kleiner>We don't throw them immediately into the deep end. We gradually reduce and we gradually raise the complexity of the work that they do so that they don't themselves feel overwhelmed too. Right? I'm talking about the workload because sometimes that can be very, very high. Yes, that's the nature of the job. But the complexity of the work they do is raised gradually.</v>
+
+00:06:17.471 --> 00:06:18.111
+<v Arkadi Kleiner>Overtime.</v>
+
+00:06:20.511 --> 00:06:22.111
+<v Arkadi Kleiner>Does that make sense? Does that answer your question?</v>
+
+00:06:20.591 --> 00:06:21.071
+<v Ashish Paul>Got it.</v>
+
+00:06:22.991 --> 00:06:24.751
+<v Amit Dubey>It certainly does, it certainly does.</v>
+
+00:06:27.231 --> 00:06:45.631
+<v Ashish Paul>Right. Thank you so much. And Reza would also like to touch base on the calls piece, which was raised by Reza, that Vanch was answering fairly less calls as compared to Jasp. So although on our daily connects with Jasp and Vanch,</v>
+
+00:06:43.391 --> 00:06:43.471
+<v Arkadi Kleiner>The.</v>
+
+00:06:46.511 --> 00:06:56.351
+<v Ashish Paul>We could see that whatever calls were landing at their extensions, they were answering them. So I just wanted to know, have you noticed any positives on that front?</v>
+
+00:06:58.111 --> 00:07:17.231
+<v Arkadi Kleiner>I can tell you again, I apologize that I can't give you the actual statistics because that's not, I'm not at liberty to do that, but I can tell you that Jasp answered almost twice as many calls as Vanch did over the past month. That's give you some, we have to compare their efforts.</v>
+
+00:07:18.431 --> 00:07:22.111
+<v Arkadi Kleiner>Jasp has an eagerness to jump on a call.</v>
+
+00:07:22.991 --> 00:07:23.231
+<v Ashish Paul>Yes.</v>
+
+00:07:23.551 --> 00:07:42.591
+<v Arkadi Kleiner>that Vanch doesn't really have yet, right? That's what needs to be improved. And I understand that Jasp has more opportunity to get calls because he's there in the morning. Ideally, once we move Vanch down to an earlier shift, that will also help him get more calls.</v>
+
+00:07:43.551 --> 00:07:44.191
+<v Arkadi Kleiner>But...</v>
+
+00:07:45.471 --> 00:08:02.431
+<v Arkadi Kleiner>It's my expectation from technicians on this team to take the initiative to answer calls. It's only been a week since we last spoke. I'm going to keep observing how Venge does on the phones, but...</v>
+
+00:07:53.471 --> 00:07:53.871
+<v Ashish Paul>Kour.</v>
+
+00:08:03.631 --> 00:08:18.191
+<v Arkadi Kleiner>get the ideal is not always possible, but my ideal is that I don't have to go to the team and say, hey guys, there's a phone call or three coming in, please pick up, right? That one of the technicians at least will go and have the initiative to grab that phone call.</v>
+
+00:08:18.951 --> 00:08:20.511
+<v Arkadi Kleiner>By themselves, right?</v>
+
+00:08:20.911 --> 00:08:38.831
+<v Ashish Paul>So I just want to quickly share the tracker that we made for the past week for Bunch and Jasp. This is where, I'm sorry, it is just the snippet of Excel that I took. These are the call numbers answered by Bunch and Jasp respectively on these days.</v>
+
+00:08:34.031 --> 00:08:34.511
+<v Arkadi Kleiner>Mhm.</v>
+
+00:08:39.391 --> 00:08:56.591
+<v Ashish Paul>So from April 20th till 24th. And if I just consider the week from 20th to 24th, each engineer has answered 12 calls, although it is scattered as per their availability, but the total is 12 for both of them.</v>
+
+00:08:52.591 --> 00:08:52.831
+<v Arkadi Kleiner>Abe.</v>
+
+00:08:59.311 --> 00:09:02.991
+<v Arkadi Kleiner>That's good. This is this is a good improvement. OK.</v>
+
+00:09:02.751 --> 00:09:03.071
+<v Ashish Paul>Yep.</v>
+
+00:09:04.591 --> 00:09:23.231
+<v Ashish Paul>So for yesterday, since Vansh was more affected by the VPN issue, so obviously he could not get to the calls as Jas was able to. So this is why his number was not updated. And I had a connect with Vansh before this call to ensure that he update his time entries too, because.</v>
+
+00:09:07.311 --> 00:09:07.351
+<v Arkadi Kleiner>I.</v>
+
+00:09:12.591 --> 00:09:13.071
+<v Arkadi Kleiner>Yes.</v>
+
+00:09:15.071 --> 00:09:15.391
+<v Arkadi Kleiner>Yeah.</v>
+
+00:09:23.631 --> 00:09:32.111
+<v Ashish Paul>because of VPN connectivity concern, he was not able to get into the system to update the time sheets. So this is something that he did today.</v>
+
+00:09:33.471 --> 00:09:34.191
+<v Arkadi Kleiner>Sounds good.</v>
+
+00:09:34.991 --> 00:09:37.871
+<v Arkadi Kleiner>No, that that that that that's obviously fair.</v>
+
+00:09:35.431 --> 00:09:35.791
+<v Ashish Paul>Thank you.</v>
+
+00:09:40.671 --> 00:09:59.471
+<v Ashish Paul>Any questions on this one? So this is we are making internally by when we do the board reviews of the engineers, when we go through their call queue, the calls that they have answered. So they were able to provide us a number towards the end of the day that these many calls they answered. So we're just keeping a track here to ensure that.</v>
+
+00:09:45.431 --> 00:09:45.551
+<v Arkadi Kleiner>And.</v>
+
+00:10:03.711 --> 00:10:04.191
+<v Arkadi Kleiner>Mhm.</v>
+
+00:10:04.351 --> 00:10:18.031
+<v Ashish Paul>at least minimized or explainable within the limits of their shift timings because one starts like 4 hours after Jasp. So he has less availability to get on the call as compared to Jasp.</v>
+
+00:10:13.951 --> 00:10:14.511
+<v Arkadi Kleiner>Yes.</v>
+
+00:10:18.591 --> 00:10:37.951
+<v Arkadi Kleiner>And there are fewer calls in the later hours of the day as well. Yes. So we do account for that as well. So yeah, this is a good improvement that we're seeing. Again, we will continue to evaluate. It's not a decision we're making now, right? But again, as I've been saying for the last couple of weeks, I'm seeing trends in the right direction, good trends.</v>
+
+00:10:20.751 --> 00:10:22.351
+<v Ashish Paul>Yes, yep, yep, yep.</v>
+
+00:10:23.791 --> 00:10:23.871
+<v Ashish Paul>The.</v>
+
+00:10:32.351 --> 00:10:33.071
+<v Ashish Paul>Yep, yep, yep.</v>
+
+00:10:39.551 --> 00:10:40.031
+<v Ashish Paul>Thank you.</v>
+
+00:10:41.871 --> 00:10:44.511
+<v Ashish Paul>Any other questions or concerns, Arkadi, you have?</v>
+
+00:10:46.351 --> 00:11:07.071
+<v Arkadi Kleiner>For now, no. Like I said, I'm seeing improvement that I like. Like I said last week, I'm seeing fewer questions that don't make sense. I'm seeing almost none actually, which is again a good trend. I'm seeing more effort put into the explanation of the situation that I'm being asked to spend my time on, which is very important to me.</v>
+
+00:11:08.271 --> 00:11:27.231
+<v Arkadi Kleiner>Because again, I'm jumping from technician to technician to technician. I need a nice quick summary of what's going on about why is my help required, right? I assume it's the same thing for you, right? So I'm seeing this, I'm seeing a better use of my time.</v>
+
+00:11:19.231 --> 00:11:22.071
+<v Ashish Paul>Yes, I understand.</v>
+
+00:11:25.831 --> 00:11:26.271
+<v Ashish Paul>Thank you.</v>
+
+00:11:27.551 --> 00:11:47.231
+<v Arkadi Kleiner>A better use of their time, right? So, let's continue to evaluate week to week as we're doing now, and my hope is that in two, three weeks we're gonna say, okay, yeah, Venge and Jasper are back to their normal roles. They're no longer just on three Azure and Group C and DE tickets. In fact, in...</v>
+
+00:11:47.951 --> 00:11:59.711
+<v Arkadi Kleiner>We can even move them to group A and B tickets at that point. That is my hope. It is ultimately Reza's decision to do that when that switchover happens, but my hope is that's where we are in two to three weeks.</v>
+
+00:12:01.551 --> 00:12:01.951
+<v Ashish Paul>But.</v>
+
+00:12:03.471 --> 00:12:08.431
+<v Ashish Paul>Okay, with that being said, I'll quickly share my screen and we go through the presentation deck.</v>
+
+00:12:10.111 --> 00:12:12.111
+<v Ashish Paul>Let me know, Arkadi, once you are able to see it.</v>
+
+00:12:13.391 --> 00:12:14.431
+<v Arkadi Kleiner>I see, I can see.</v>
+
+00:12:16.551 --> 00:12:16.991
+<v Ashish Paul>Thank you.</v>
+
+00:12:19.271 --> 00:12:35.231
+<v Ashish Paul>So this is our weekly business review, and the review duration is April 20th till 24th. And this is our agenda items, which remains the same. Check in, highlights of the account, action tracker, performance analysis, voice of the customer, we forward, and then recap.</v>
+
+00:12:37.151 --> 00:12:41.791
+<v Ashish Paul>So how are things at this moment? We have already covered this. I'll skip this slide.</v>
+
+00:12:43.071 --> 00:13:02.991
+<v Ashish Paul>These were the discussion points from our previous Connect, where things were progressing well for Jimmy. And we have observed positive trend with Vansh and Jasp. Call gap was observed, so we worked with Vansh and Jasp both, and we could see the numbers are getting better.</v>
+
+00:13:03.911 --> 00:13:22.671
+<v Ashish Paul>The C search survey that we discussed when I explained about the data for Jasmine Bajaj, the sample size was too low. So this is something that we have discovered. And answering the phone calls remains a priority. So this has been cascaded to teams already, and they are on top of it.</v>
+
+00:13:25.151 --> 00:13:26.431
+<v Ashish Paul>Any questions regarding so far?</v>
+
+00:13:27.151 --> 00:13:28.031
+<v Arkadi Kleiner>No, we're good.</v>
+
+00:13:28.791 --> 00:13:29.391
+<v Ashish Paul>Thank Yu.</v>
+
+00:13:31.071 --> 00:13:41.791
+<v Ashish Paul>Next we have is the action tracker. We are the 30, 60, 90 days plan. This is still awaiting. Khattri, if you could please share the training plan for Jimmy.</v>
+
+00:13:39.791 --> 00:13:57.631
+<v Arkadi Kleiner>Yes. So I did receive permission to share our lesson, not so much as more of a training plan with you. So we will present it in a way that makes sense to you, because all of it talks about our internal processes, which</v>
+
+00:13:56.591 --> 00:13:58.271
+<v Ashish Paul>Yes, yes.</v>
+
+00:13:57.871 --> 00:14:05.391
+<v Arkadi Kleiner>you're not familiar with. We'll present it in a way that makes sense to you, and I'll like to share it with you in the next meeting, or even before then.</v>
+
+00:14:04.671 --> 00:14:05.311
+<v Ashish Paul>I appreciate.</v>
+
+00:14:06.831 --> 00:14:07.231
+<v Ashish Paul>Thank you.</v>
+
+00:14:08.391 --> 00:14:28.111
+<v Ashish Paul>Okay, next is aligned call handling priority. So this is already done. I am keeping a tab on it and ensuring that engineers are there to answer all the incoming calls. Continued operational alignment discussions. So this is something we will continue to do for some more time until we are sure that both engineers are meeting the expectations.</v>
+
+00:14:10.591 --> 00:14:10.711
+<v Arkadi Kleiner>Yeah.</v>
+
+00:14:28.351 --> 00:14:32.911
+<v Ashish Paul>and the new engineer is there as per the alignment.</v>
+
+00:14:34.591 --> 00:14:35.151
+<v Arkadi Kleiner>Sounds good.</v>
+
+00:14:36.311 --> 00:14:36.671
+<v Ashish Paul>Thank you.</v>
+
+00:14:38.511 --> 00:14:42.031
+<v Ashish Paul>These are the KPIs that we agreed on.</v>
+
+00:14:43.791 --> 00:15:02.071
+<v Ashish Paul>And moving on to performance analysis. So this is the performance spotlight for lunch. Again, the CSAT that I have taken. Again, the sample size is too small as compared to the last week. But however, I just wanted to share that.</v>
+
+00:15:02.671 --> 00:15:21.311
+<v Ashish Paul>once was highlighted as the second highest in terms of tickets closure between April 20th to 24th. So this is a good win for him. And we could see this was a major shift because it was shared to him, I think, by Torin, who shared this. And that.</v>
+
+00:15:21.391 --> 00:15:28.671
+<v Ashish Paul>to actually push him to deliver more and work in a better way. So thank you so much for doing this.</v>
+
+00:15:32.271 --> 00:15:49.551
+<v Ashish Paul>Next is responsiveness and resolution, where several cases where we have received positive feedback from the end users. This is again was discovered during the board reviews with the engineers where we could see the contact has rated the ticket positive. So on the basis of that, we have collected this data.</v>
+
+00:15:47.631 --> 00:15:47.951
+<v Arkadi Kleiner>Okay.</v>
+
+00:15:50.991 --> 00:16:09.631
+<v Arkadi Kleiner>Yeah, both Vanch and Jasp have, again, the sample size is small because only so many clients submit survey responses. And again, they're allocated to not all client groups, but from the responses they do get.</v>
+
+00:16:10.191 --> 00:16:16.191
+<v Arkadi Kleiner>it is at this point 100% positive responses to their work, which again is a good sign.</v>
+
+00:16:15.351 --> 00:16:15.471
+<v Ashish Paul>Yeah.</v>
+
+00:16:17.391 --> 00:16:35.231
+<v Ashish Paul>Thank you. Ticket hygiene is also top notch. I could not find anything where the ticket was not in proper status. Notes are not accurate. No follow up was done on time. Everything that I could find was up to date. So this came from there.</v>
+
+00:16:36.031 --> 00:16:36.511
+<v Arkadi Kleiner>Mhm.</v>
+
+00:16:36.831 --> 00:16:45.871
+<v Ashish Paul>Next is a work distribution, so triage and admin, as per the instructions from Arkadi, triage and admin should go in one section, so I have done that.</v>
+
+00:16:46.511 --> 00:16:47.151
+<v Arkadi Kleiner>Yes, thank you.</v>
+
+00:16:47.951 --> 00:17:06.431
+<v Ashish Paul>Welcome. And next is the user support. So this is where the percentage of work distribution. So once worked on user support, problem resolution from Outlook, VPN, application and system issues, EOE user off-puting, printer and SharePoint stuff.</v>
+
+00:16:48.751 --> 00:16:48.911
+<v Arkadi Kleiner>Okay.</v>
+
+00:17:06.831 --> 00:17:22.751
+<v Ashish Paul>So we could see that one did work on tickets that has user off putting and end of employment printer and SharePoint stuff. So just wanted to confirm with you or Khattri, are we aligned with this work distribution for a bunch?</v>
+
+00:17:13.551 --> 00:17:14.031
+<v Arkadi Kleiner>Mhm.</v>
+
+00:17:17.591 --> 00:17:18.111
+<v Arkadi Kleiner>Mhm.</v>
+
+00:17:23.311 --> 00:17:24.751
+<v Arkadi Kleiner>This seems correct, yes.</v>
+
+00:17:26.071 --> 00:17:26.431
+<v Ashish Paul>Thank you.</v>
+
+00:17:27.351 --> 00:17:37.711
+<v Arkadi Kleiner>Again, hopefully in the next few weeks, this will change dramatically, where triage will be only about 10 to 15% of their distribution.</v>
+
+00:17:29.031 --> 00:17:29.311
+<v Ashish Paul>Okay.</v>
+
+00:17:38.911 --> 00:17:39.311
+<v Ashish Paul>Sure.</v>
+
+00:17:42.191 --> 00:17:59.711
+<v Ashish Paul>Move on to Jasp. This is where Jasp is working on triage ownership and calls and working on the calls from group C, D, and E. He also worked on a few issues on group A clients. So this is a good site that he's progressing well.</v>
+
+00:17:57.071 --> 00:17:57.671
+<v Arkadi Kleiner>Mm-hmm.</v>
+
+00:18:00.111 --> 00:18:00.591
+<v Arkadi Kleiner>Yes.</v>
+
+00:18:01.391 --> 00:18:08.031
+<v Ashish Paul>In terms of positive C sets from end users, these are the tickets where we have received positive feedback from end users on the tickets.</v>
+
+00:18:09.391 --> 00:18:16.351
+<v Ashish Paul>And the ticket hygiene is also up to date. There are no concerns or no issues that I have observed during my evaluation.</v>
+
+00:18:17.351 --> 00:18:17.511
+<v Arkadi Kleiner>Mm.</v>
+
+00:18:19.391 --> 00:18:38.191
+<v Ashish Paul>Next is work distribution. Again, for triage, it is 55 to 65 percent. User support and quick fix, 15 to 20 percent. Problem resolution, we have access, application, system and printer, it's 10 to 15 percent. And phones, Citrix and SharePoint, there was just one case of Citrix, so I have</v>
+
+00:18:38.311 --> 00:18:41.511
+<v Ashish Paul>put it here, which is from 5 to 10%.</v>
+
+00:18:38.751 --> 00:18:39.071
+<v Arkadi Kleiner>Yeah.</v>
+
+00:18:42.151 --> 00:18:43.871
+<v Arkadi Kleiner>Thank you. Yeah, this seems accurate.</v>
+
+00:18:45.551 --> 00:19:06.111
+<v Ashish Paul>Thank you so much. Okay, I have not gathered any information regarding Jimmy because he's too green for it, you know, and just two or three tickets we've worked on. So verbal feedback would do as of now. And I'll see if I have enough data for Jimmy for upcoming calls. I'll probably prepare a separate slide for.</v>
+
+00:18:52.591 --> 00:18:54.431
+<v Arkadi Kleiner>Yeah, of course.</v>
+
+00:18:55.631 --> 00:18:55.951
+<v Arkadi Kleiner>Okay.</v>
+
+00:18:58.991 --> 00:18:59.471
+<v Arkadi Kleiner>Mmh.</v>
+
+00:19:06.191 --> 00:19:06.831
+<v Ashish Paul>Jimmy, too.</v>
+
+00:19:07.631 --> 00:19:08.351
+<v Arkadi Kleiner>Thank you, Ashish.</v>
+
+00:19:09.151 --> 00:19:09.471
+<v Ashish Paul>Alright.</v>
+
+00:19:11.631 --> 00:19:30.031
+<v Ashish Paul>Okay, this is the utilization trend analysis for the engineers where JASP had been 79% billable, once was 67%. And this is the distribution throughout the week where non-billable segment is also mentioned. Let me know if you have any questions there.</v>
+
+00:19:19.471 --> 00:19:19.631
+<v Arkadi Kleiner>Yeah.</v>
+
+00:19:30.991 --> 00:19:39.871
+<v Arkadi Kleiner>No, this is expected because of their current role. Again, over the next few weeks, this will shift dramatically. That's my expectation.</v>
+
+00:19:40.671 --> 00:19:41.151
+<v Ashish Paul>All right.</v>
+
+00:19:40.951 --> 00:19:42.431
+<v Arkadi Kleiner>So, sorry, no, no, no questions.</v>
+
+00:19:43.711 --> 00:20:02.591
+<v Ashish Paul>Thank you. And this is the tickets closure analysis. I have considered both triage and tickets closed. So tickets closed is relatively less as compared to triage because that's 70% of what they have total worked on. But this is the overall tickets that they did. And</v>
+
+00:19:59.791 --> 00:20:00.191
+<v Arkadi Kleiner>Yeah.</v>
+
+00:20:18.591 --> 00:20:19.071
+<v Arkadi Kleiner>Mhm.</v>
+
+00:20:21.071 --> 00:20:21.991
+<v Ashish Paul>Any questions today?</v>
+
+00:20:21.311 --> 00:20:26.991
+<v Arkadi Kleiner>And again, no, this makes sense. The distribution tickets make sense due to the difference in shifts.</v>
+
+00:20:27.791 --> 00:20:28.191
+<v Ashish Paul>Kip.</v>
+
+00:20:29.871 --> 00:20:31.071
+<v Ashish Paul>Thank you so much.</v>
+
+00:20:32.751 --> 00:20:51.711
+<v Ashish Paul>Okay, way forward, so board reviews will remain a priority, as I said, so we will continue to work on that. During the board reviews, we make sure that ticket resolution will be there, strong quality in terms of documentation and accuracy will be notified, and 36 to 90 days plan, so which is</v>
+
+00:20:52.111 --> 00:21:04.031
+<v Ashish Paul>yet to receive. Once I receive it, I'll probably be able to structure my approach with Jimmy in a better way, as I would foresee what's coming this way so that I can plan things accordingly.</v>
+
+00:20:52.511 --> 00:20:52.671
+<v Arkadi Kleiner>Mm.</v>
+
+00:21:00.751 --> 00:21:00.911
+<v Arkadi Kleiner>Okay.</v>
+
+00:21:05.071 --> 00:21:24.591
+<v Arkadi Kleiner>Sounds good. Yeah, I appreciate your consistent board review and especially the emphasis on documentation. It's very important for us to have a good documentation because we train our technicians to be able to write things in a way, to document things in a way, whereas six months from now or six years from now, they can go back to the ticket.</v>
+
+00:21:07.791 --> 00:21:08.271
+<v Ashish Paul>Mmh.</v>
+
+00:21:24.991 --> 00:21:33.311
+<v Arkadi Kleiner>and be able to recall what happened there from their own notes, to be able to tell us the story of what happened on the ticket from their own notes.</v>
+
+00:21:29.551 --> 00:21:29.951
+<v Ashish Paul>Yep.</v>
+
+00:21:34.351 --> 00:21:34.831
+<v Ashish Paul>I get it.</v>
+
+00:21:35.791 --> 00:21:36.351
+<v Ashish Paul>Thank you.</v>
+
+00:21:38.471 --> 00:21:42.991
+<v Ashish Paul>OK, build it. Sirup, I think this is yours. Please take over.</v>
+
+00:21:42.511 --> 00:21:42.991
+<v Arkadi Kleiner>Mhm.</v>
+
+00:21:42.591 --> 00:22:03.071
+<v Sarbjeet Singh>Thanks. Thanks, Ashish. So Arkadi, and I believe if Reza would have been here, it would have been much better, but I'll definitely share it with you and with the rest of the team too. So this is one of our most awaited event for the 2026. Apart from our AX later workshop, we have Build It Live. That's happening on August 3rd to 5th.</v>
+
+00:22:03.951 --> 00:22:23.791
+<v Sarbjeet Singh>that's happening in New Jersey. So I'll share the details over a separate email so that you can go through the details. There will be plenty of MSP service providers along with the speakers who will be joining this conference. So we would definitely want you to be a part of this event. Last year, Javid was one of the</v>
+
+00:22:24.271 --> 00:22:37.551
+<v Sarbjeet Singh>speakers in this event. So we are expecting you and rest of the team to join us for this event. Rest, I'll share the details over a separate email with you, with Reza and rest of the team so that we can plan out the things in a much better way.</v>
+
+00:22:38.391 --> 00:22:38.911
+<v Arkadi Kleiner>Thank you.</v>
+
+00:22:40.431 --> 00:22:41.231
+<v Sarbjeet Singh>Thanks, Ashish.</v>
+
+00:22:41.951 --> 00:22:42.711
+<v Ashish Paul>Thank you, Sadhotra.</v>
+
+00:22:44.271 --> 00:22:51.071
+<v Ashish Paul>All right, this is our AI by design, so Sarah has covered this already in this description.</v>
+
+00:22:52.911 --> 00:22:55.871
+<v Ashish Paul>This is our team GPS and that's it.</v>
+
+00:22:56.511 --> 00:23:02.911
+<v Amit Dubey>Yeah, Arkadi, do you know what happened on the back of today's interview with Reza Tuck? Do you have any feedback?</v>
+
+00:23:03.191 --> 00:23:05.631
+<v Arkadi Kleiner>No, not yet. I have not spoken to him about this yet.</v>
+
+00:23:06.111 --> 00:23:15.151
+<v Amit Dubey>Yeah, okay. All right. So we'll probably go to Karine to find out, okay. Because he interviewed for one of the positions which are open, so we were expecting to have some feedback.</v>
+
+00:23:16.591 --> 00:23:17.231
+<v Amit Dubey>No worries.</v>
+
+00:23:16.671 --> 00:23:21.151
+<v Arkadi Kleiner>Yeah, it's really he's really the one to talk to about this best because I'm not involved in those interviews.</v>
+
+00:23:21.471 --> 00:23:22.751
+<v Amit Dubey>Okay, alright, no problem.</v>
+
+00:23:23.831 --> 00:23:24.671
+<v Amit Dubey>Right, perfect.</v>
+
+00:23:24.471 --> 00:23:39.311
+<v Ashish Paul>All right, I guess this been just towards the end of the call. So thank you so much, Arkadi, for joining, sharing the feedback. We will connect next week, same time. Until then, please take care of yourself and see you around. Bye.</v>
+
+00:23:38.911 --> 00:23:41.071
+<v Arkadi Kleiner>Same to you, and thank you all for your time.</v>
+
+00:23:40.071 --> 00:23:42.431
+<v Sarbjeet Singh>Thank you Arkadi. Take care.</v>
+
+00:23:41.631 --> 00:23:42.751
+<v Amit Dubey>Thank you. Bye-bye.</v>
+
+00:23:41.791 --> 00:23:42.031
+<v Ashish Paul>Bye.</v>
+
+00:23:42.751 --> 00:23:43.311
+<v Arkadi Kleiner>Bye for now.</v>
+

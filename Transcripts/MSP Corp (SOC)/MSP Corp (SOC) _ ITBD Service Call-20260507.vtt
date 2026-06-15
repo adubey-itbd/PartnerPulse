@@ -1,0 +1,482 @@
+WEBVTT
+NOTE title: MSP Corp (SOC) | ITBD Service Call 
+NOTE date: 2026-05-07
+NOTE duration: 17m 30s
+
+00:00:03.607 --> 00:00:10.447
+<v Ashish Paul>much Ben for joining the call. Let us quickly start with the feedback for Kaden. How are things going with him?</v>
+
+00:00:12.127 --> 00:00:14.767
+<v Ben Fauteux>Everything's going very well. Still very happy.</v>
+
+00:00:17.127 --> 00:00:25.407
+<v Ashish Paul>Yeah. Is there anything that you want us to work on with Kaden? Anything that he needs to improve on or any trainings?</v>
+
+00:00:26.167 --> 00:00:26.847
+<v Ben Fauteux>Mm.</v>
+
+00:00:30.607 --> 00:00:35.167
+<v Ben Fauteux>No, no. Any feedback, you know, I have nothing negative.</v>
+
+00:00:37.087 --> 00:00:47.327
+<v Ben Fauteux>Any feedback to say he's asked questions and I give it to him directly. So, you know, once again, as always, he's very driven. He asks questions when he needs to be and I'm happy with that.</v>
+
+00:00:51.407 --> 00:01:08.767
+<v Ashish Paul>So we also discussed during our previous connect. So as of now, since he deals with the cases regarding the security incidents and proactive checks, anything we see for Ketan that he would be doing going forward, maybe some advanced work?</v>
+
+00:01:09.007 --> 00:01:15.567
+<v Ashish Paul>or in terms of broadening his skill set on staying at MSP Gaur.</v>
+
+00:01:17.247 --> 00:01:35.727
+<v Ben Fauteux>I would want him to do probably a less security related stuff, but I do need him still as like a ticket killer resource for the time being. We did just onboard someone who we can try to move some responsibilities around. He just started this week. So once that guy is up to speed in his role.</v>
+
+00:01:36.607 --> 00:01:50.447
+<v Ben Fauteux>I probably won't need as much as a ticket killer. And so that we can have Ketan focus on other things. As well, our MDR solution, we are looking at kind of like reconfiguring it in a way that it won't make it so noisy.</v>
+
+00:01:51.407 --> 00:02:05.807
+<v Ben Fauteux>And that's also going to help and reduce the number of tickets. But Alvin on our side that I'm sure you know, he kind of wants those tickets, even if when they're noise to be treated. And so that's why I still need him in that role for now, because I just need someone who can take care of those tickets.</v>
+
+00:01:58.287 --> 00:01:58.687
+<v Ashish Paul>Kip.</v>
+
+00:02:08.447 --> 00:02:25.007
+<v Ashish Paul>Perfectly fine. Yep, yep. So I just wanted to know, you know, if anything that we need to prepare, Ketan, for the upcoming responsibilities. So I was just checking from that perspective, else I know that he is very good and I guess supporting him already. So thank you so much. Yeah.</v>
+
+00:02:18.367 --> 00:02:18.447
+<v Ben Fauteux>The.</v>
+
+00:02:27.247 --> 00:02:45.127
+<v Ashish Paul>There was, I think I was I was connecting with with Ketan two two days ago. Is is there is it everything is there everything good in terms of his ticket nodes, like the partner facing nodes and non-partner facing nodes? Is it is it going good with him?</v>
+
+00:02:41.967 --> 00:02:42.367
+<v Ben Fauteux>Right.</v>
+
+00:02:45.807 --> 00:02:49.007
+<v Ben Fauteux>So, yeah, there was just feedback from one client.</v>
+
+00:02:51.567 --> 00:03:12.447
+<v Ben Fauteux>And I did discuss with him, and I didn't bring it up because I didn't want to stress to him. It is not a negative note. It was just on certain categories of tickets. So our MDR sends in things in categories, something needs action. It's just an observation and it's just a recommendation. We got a note that if something required action,</v>
+
+00:03:13.487 --> 00:03:32.607
+<v Ben Fauteux>Just write, just write something, even just one sentence, to see that you know we're not just closing tickets, and that would be the client-facing side, and I agreed with Ketan completely. It's like, we don't, we also don't want to send what I call the, you know, techno-babble to the client, because they're not going to understand, and so this is, you know, something we practice is just like, yeah.</v>
+
+00:03:29.647 --> 00:03:29.967
+<v Ashish Paul>Yep.</v>
+
+00:03:33.327 --> 00:03:50.687
+<v Ben Fauteux>Not everybody does it, I know, and they'll just shove whatever they want in the discussion and they just close the ticket. They just want to get their ticket closed. But it is good practice, you know, just put like a one-line, like, hey, we took care of it or hey, there was no issue here, close the ticket. And then in the internal section of the ticket, you can put all of your technical details, what you did, where you went into the account, where is that.</v>
+
+00:03:52.767 --> 00:04:13.887
+<v Ben Fauteux>you know on our side, that was just the feedback. It's like, I did try to stress to him, like, this is not negative feedback, you're doing nothing wrong. This is just a request from up high that they want to be a little bit more visible to the client. But at the same time, I don't want to send them everything we did, because then they're going to question every line that they don't understand. So I got his point on that too. Like, yeah, just put the tech.</v>
+
+00:04:14.047 --> 00:04:21.767
+<v Ben Fauteux>technical part of the internal like you always do, but then just send a public facing side, just saying one liner, hey, you're doing this, hey, you're doing that.</v>
+
+00:04:23.967 --> 00:04:31.807
+<v Ashish Paul>Yep, yep, this is what I what I also stuck at him, like you mentioned what you did, but how you did that needs to go into non-partner physics site.</v>
+
+00:04:27.487 --> 00:04:27.967
+<v Ben Fauteux>Mhm.</v>
+
+00:04:31.807 --> 00:04:32.087
+<v Ben Fauteux>Yeah.</v>
+
+00:04:33.567 --> 00:04:51.887
+<v Ben Fauteux>But to me, it's like it's not negative, it's just we want to change a little bit. We want to be a bit more visible. Before I gave that feedback to Ketan, like I spent two hours talking with my manager about the demand. It's like, what do we want to do here? Are we going to do this? Like, are we going to expect it to send everything? So, you know, we're not the only business in where...</v>
+
+00:04:34.167 --> 00:04:34.287
+<v Ashish Paul>Yeah.</v>
+
+00:04:52.287 --> 00:05:09.087
+<v Ben Fauteux>How much information on what we've done with the client is a bit of a contention, right? How much do we share? Because the more you share, the more they can push back. And the reason they're paying for a service like ours is because they don't understand it. So how much do you send that they don't understand? You got to play the balance there.</v>
+
+00:04:55.047 --> 00:04:55.167
+<v Ashish Paul>Yeah.</v>
+
+00:04:59.087 --> 00:04:59.567
+<v Ashish Paul>Absolutely.</v>
+
+00:05:05.487 --> 00:05:05.967
+<v Ashish Paul>Yeah.</v>
+
+00:05:08.447 --> 00:05:09.087
+<v Ashish Paul>Yeah.</v>
+
+00:05:11.087 --> 00:05:13.407
+<v Ashish Paul>I got it. Yeah, you're completely right.</v>
+
+00:05:14.527 --> 00:05:16.847
+<v Ashish Paul>Thank you so much, Ben, for sharing that.</v>
+
+00:05:18.367 --> 00:05:18.447
+<v Ashish Paul>Uh...</v>
+
+00:05:19.487 --> 00:05:23.087
+<v Ashish Paul>And did you also see the CSAT survey for the month of April?</v>
+
+00:05:24.447 --> 00:05:25.167
+<v Ashish Paul>Or get it?</v>
+
+00:05:26.847 --> 00:05:29.327
+<v Ben Fauteux>Uh, did I? Did you?</v>
+
+00:05:31.727 --> 00:05:36.687
+<v Ben Fauteux>Uh, please resend it. I don't see it. I think it would have been sent what, like May 1st or...</v>
+
+00:05:38.407 --> 00:05:41.327
+<v Ashish Paul>I think it was, uh, 30th of.</v>
+
+00:05:40.607 --> 00:05:41.727
+<v Sarbjeet Singh>May 4th, Monday.</v>
+
+00:05:42.687 --> 00:05:43.767
+<v Ben Fauteux>Monday, Monday.</v>
+
+00:05:44.487 --> 00:05:44.847
+<v Ben Fauteux>S.</v>
+
+00:05:47.167 --> 00:05:48.447
+<v Ben Fauteux>Oh, yes, okay, I have it.</v>
+
+00:05:47.247 --> 00:05:49.807
+<v Sarbjeet Singh>It should say monthly feedback for Ketan.</v>
+
+00:05:49.647 --> 00:05:54.287
+<v Ben Fauteux>I have it. I will fill that out afterwards. Well, actually, because it's very easy. There we go.</v>
+
+00:05:52.167 --> 00:05:52.607
+<v Sarbjeet Singh>Thank you.</v>
+
+00:05:52.207 --> 00:05:52.927
+<v Ashish Paul>I appreciate it.</v>
+
+00:05:57.127 --> 00:06:03.807
+<v Sarbjeet Singh>I would also love to see your comments there, Ben. That's really motivational for these guys. Ben.</v>
+
+00:06:03.247 --> 00:06:07.087
+<v Ashish Paul>Unless you have somebody did already. Have you?</v>
+
+00:06:08.607 --> 00:06:10.047
+<v Sarbjeet Singh>I'll check it out right away.</v>
+
+00:06:09.007 --> 00:06:09.167
+<v Ben Fauteux>Yeah.</v>
+
+00:06:10.767 --> 00:06:17.407
+<v Ben Fauteux>Okay, I will fill out some comments before I send this one, before after this meeting. So I've got the tab open at least.</v>
+
+00:06:14.927 --> 00:06:15.327
+<v Ashish Paul>Rick.</v>
+
+00:06:18.687 --> 00:06:19.007
+<v Sarbjeet Singh>Kip.</v>
+
+00:06:19.167 --> 00:06:20.047
+<v Ashish Paul>I appreciate it.</v>
+
+00:06:19.647 --> 00:06:27.807
+<v Ben Fauteux>One thing I also just wanted to clarify, I believe it was yesterday I got an email about the upcoming holidays this month.</v>
+
+00:06:27.887 --> 00:06:29.247
+<v Ashish Paul>Yes, yes.</v>
+
+00:06:32.287 --> 00:06:33.247
+<v Ben Fauteux>So...</v>
+
+00:06:34.447 --> 00:06:36.407
+<v Ben Fauteux>You guys will be closed on the 25th.</v>
+
+00:06:37.647 --> 00:06:38.167
+<v Sarbjeet Singh>Uh, no.</v>
+
+00:06:38.167 --> 00:06:59.207
+<v Ashish Paul>Yep, so this is between holidays for our Canadian partners, which is 18th of May, Victoria Day, and for our US partners, is 25th of May, US Memorial Day. So IT by Design will be operational on both days, but at the same time, we wanted to check, Engineering would be taking an off.</v>
+
+00:06:45.487 --> 00:06:45.967
+<v Ben Fauteux>Mhm.</v>
+
+00:06:59.367 --> 00:07:08.127
+<v Ashish Paul>either on the 18th or on the 25th. So, it's your preference that whether you want the changes to take an off on the 18th or on the 25th.</v>
+
+00:07:01.847 --> 00:07:02.207
+<v Ben Fauteux>S.</v>
+
+00:07:12.607 --> 00:07:18.287
+<v Ben Fauteux>I have to think about that one because I'm off the week of the 18th. Like I took the whole week off.</v>
+
+00:07:19.207 --> 00:07:19.647
+<v Ashish Paul>Okay.</v>
+
+00:07:19.967 --> 00:07:30.287
+<v Ben Fauteux>I'll just need to see cover. No, my birthday is actually the 18th, so the holiday fell on my birthday this year. I'm just, I always take the time off.</v>
+
+00:07:20.167 --> 00:07:22.287
+<v Sarbjeet Singh>Hi, are you planning to go somewhere?</v>
+
+00:07:23.327 --> 00:07:23.407
+<v Ashish Paul>The.</v>
+
+00:07:26.367 --> 00:07:26.927
+<v Sarbjeet Singh>Ohh.</v>
+
+00:07:28.647 --> 00:07:29.567
+<v Sarbjeet Singh>Live, live.</v>
+
+00:07:30.367 --> 00:07:30.847
+<v Ashish Paul>Lucky.</v>
+
+00:07:31.087 --> 00:07:32.607
+<v Sarbjeet Singh>Blake like a birthday week.</v>
+
+00:07:32.847 --> 00:07:38.367
+<v Ben Fauteux>Exactly, yeah. I always, I always, I was born around the holiday, so every few years it falls on my birthday.</v>
+
+00:07:39.127 --> 00:07:39.447
+<v Ashish Paul>Yeah.</v>
+
+00:07:39.167 --> 00:07:39.647
+<v Sarbjeet Singh>Night.</v>
+
+00:07:42.287 --> 00:07:57.487
+<v Ben Fauteux>Yeah, I'll think about that one, which one, which day I'll need coverage for more. I mean, because the 25th will be regular for us. I think I'll put, I think I'll ask him to be working on the 18th, but I'll double check with how my, how the schedules fall for the rest of the team.</v>
+
+00:07:58.287 --> 00:08:14.927
+<v Sarbjeet Singh>Surely. So generally, Ben, I'm not sure you are already aware. So in case if the coverage is required, Ketan has been available on these companies holiday and we give him a compensatory off in lieu of working on these days so that at least someone is there to take care of the business needs.</v>
+
+00:08:00.847 --> 00:08:01.167
+<v Ben Fauteux>Okay.</v>
+
+00:08:07.847 --> 00:08:08.327
+<v Ben Fauteux>Mhm.</v>
+
+00:08:12.207 --> 00:08:12.847
+<v Ben Fauteux>Yes.</v>
+
+00:08:15.327 --> 00:08:24.447
+<v Ben Fauteux>Yeah, but so in this case, because he can pick one of the two days, if I say I need him on the 18th, does he get a compensatory day? Like, or...</v>
+
+00:08:24.727 --> 00:08:30.447
+<v Sarbjeet Singh>Instead of 18th, he can take top on 25th. So it's not two holidays, it's only one.</v>
+
+00:08:27.567 --> 00:08:30.527
+<v Ben Fauteux>Okay, yeah, that's fine. Yeah, because then we'll be back at work.</v>
+
+00:08:29.007 --> 00:08:34.527
+<v Ashish Paul>But if you, if you want him available on 18th and on 25th, then he would take open the rehab.</v>
+
+00:08:32.927 --> 00:08:33.647
+<v Ben Fauteux>No, I don't.</v>
+
+00:08:34.767 --> 00:08:42.607
+<v Ben Fauteux>Got it. No, I don't think we'll need them on both. If we're working, if we're all working the 25th, then it's fine. We just need the coverage on the day we're off. Okay, I'll think about that and I'll write back.</v>
+
+00:08:40.847 --> 00:08:41.007
+<v Sarbjeet Singh>The.</v>
+
+00:08:44.607 --> 00:08:46.567
+<v Ashish Paul>OK, thank you so much.</v>
+
+00:08:45.007 --> 00:08:47.007
+<v Ben Fauteux>Let me check my Zoom calendar.</v>
+
+00:08:51.087 --> 00:08:59.647
+<v Ashish Paul>With this, I'll let me share my screen with the data for the last month. Let me know Ben if you are able to see it.</v>
+
+00:08:51.247 --> 00:08:51.567
+<v Ben Fauteux>OK.</v>
+
+00:08:53.807 --> 00:08:53.967
+<v Ben Fauteux>Yeah.</v>
+
+00:09:00.447 --> 00:09:00.767
+<v Ben Fauteux>Kip.</v>
+
+00:09:04.087 --> 00:09:20.287
+<v Ashish Paul>Thank you. So this is our monthly business review, and the reputation is April 6th till May 1st, where we have our agenda items. Check-in, we have highlights, action tracker, performance analysis, voice of the customer, pay forward, and then recap.</v>
+
+00:09:22.127 --> 00:09:26.127
+<v Ashish Paul>We have already covered how our things at this moment, so I'll skip this slide.</v>
+
+00:09:28.247 --> 00:09:50.047
+<v Ashish Paul>Next, we have the highlights of the account where we have received good feedback for Ketan, no positive feedback for the engineer. The utilization had been 95 percent throughout the month, which is a good thing. And we have also ensured that engineer is reinforcing service quality and working in close collaboration with the team.</v>
+
+00:09:50.847 --> 00:10:08.927
+<v Ashish Paul>So that's that. Second is regarding the scorecard piece, which we have discussed. So Penn, as you mentioned, it will take some time for you to get the KPIs or cadence success measurements. So we are waiting on that piece. Yeah, these were the discussion points that we had.</v>
+
+00:10:11.167 --> 00:10:11.487
+<v Ashish Paul>Yeah.</v>
+
+00:10:12.447 --> 00:10:31.927
+<v Ben Fauteux>I don't know, I'll just jump straight to it. I'm not sure what's going on with the automated reports and stuff. I know our ConnectWise team is very active in changing a lot of things, which is why I imagine it still hasn't been done, even though that says right here on the screen, target completion.</v>
+
+00:10:12.927 --> 00:10:13.327
+<v Ashish Paul>That.</v>
+
+00:10:32.047 --> 00:10:35.327
+<v Ben Fauteux>20 December. I will poke them again.</v>
+
+00:10:37.567 --> 00:10:41.367
+<v Ben Fauteux>I'm sorry, guys. I wish I had a better answer. I know. I'm really sorry.</v>
+
+00:10:43.727 --> 00:11:02.687
+<v Ashish Paul>Very appreciate that you are taking it and you will reach out to the team internally. But at the same time, the feedback that we get from you on the service calls, the CSAT piece, which is why Sir mentioned that the comment that you fill in there would describe how successful Ketan is at MSP Corp.</v>
+
+00:11:03.167 --> 00:11:22.527
+<v Ashish Paul>So please take time and it would be great if we include his performance in terms of KPIs piece as well, how, if he's receiving any good CSAT surveys from the end users or collaborative he is for the team members, proactive he is in terms of accepting the tickets, working on them, follow-ups.</v>
+
+00:11:22.807 --> 00:11:31.207
+<v Ashish Paul>Things like that, we just want to accommodate everything in just one piece. That would be great. This is all I can ask you, whether or not.</v>
+
+00:11:32.047 --> 00:11:32.687
+<v Ben Fauteux>Absolutely.</v>
+
+00:11:34.527 --> 00:11:34.927
+<v Ashish Paul>Thank you.</v>
+
+00:11:37.247 --> 00:11:56.047
+<v Ashish Paul>All right, the KPIs, I'll skip them. Moving on to performance side, this is the utilization trend for Ketan, starting with April 6th till May 1st, with billable on an average stands at ninety-one percent. We have observed a dip.</v>
+
+00:11:56.447 --> 00:12:14.287
+<v Ashish Paul>In the second week, where he was at 75.63%, that's only a week where the overall percentage of minimal debt, but the other three weeks he had been 95% and above. So, yeah. Any questions, man?</v>
+
+00:12:11.207 --> 00:12:11.447
+<v Ben Fauteux>Yeah.</v>
+
+00:12:13.647 --> 00:12:22.687
+<v Ben Fauteux>Also, he marked, he for that week, he marked it was a sick day or an off day on the 13th, so the bill of that makes the drop, the dip makes sense. It was a justified dip.</v>
+
+00:12:19.847 --> 00:12:20.047
+<v Ashish Paul>Yes.</v>
+
+00:12:24.527 --> 00:12:26.047
+<v Ashish Paul>Yep, yep, thank you.</v>
+
+00:12:29.167 --> 00:12:48.007
+<v Ashish Paul>Next, we have is the tickets resolved. So, in total, Ketan has resolved 300 and seven tickets, ranging from VP and authentication, MFA, disabled sort of tickets, traditional accesses, risk mitigation, and compliance policies. So, these are the few sectors.</v>
+
+00:12:48.087 --> 00:12:52.127
+<v Ashish Paul>Those from where he worked on the tickets and solved them.</v>
+
+00:12:55.367 --> 00:13:03.287
+<v Ashish Paul>Let me know, Ben, if you have, if you, if these numbers look same at your end, or do you have any questions there?</v>
+
+00:13:03.727 --> 00:13:05.807
+<v Ben Fauteux>No, they match what I see in our system.</v>
+
+00:13:07.327 --> 00:13:07.887
+<v Ashish Paul>Thank you.</v>
+
+00:13:10.367 --> 00:13:13.287
+<v Ashish Paul>OK, I'll skip these slides, so yeah.</v>
+
+00:13:14.607 --> 00:13:35.167
+<v Ashish Paul>Way forward, this is where we have engineer Ketan to expand its capability across EDR and pushing analysis. Board reviews is one of the things that I would work with the engineer to ensure that his ticket notes, although everything is in place, there is just one piece which I found, so I thought I'm discussing it with you.</v>
+
+00:13:23.367 --> 00:13:23.727
+<v Ben Fauteux>S.</v>
+
+00:13:35.807 --> 00:13:44.687
+<v Ashish Paul>Other than that, I know he's doing a pretty good job. And the KPIs piece that we are already working on it, so that's in place.</v>
+
+00:13:45.167 --> 00:14:00.447
+<v Ben Fauteux>Yep, yep. And as mentioned at the beginning, I'm looking forward to getting this new hire on our side on boarded that can take some of the stuff Ketan is doing so we can have Ketan branch out. Looking forward to that. Hopefully, that's going to be a nice addition this summer.</v>
+
+00:14:02.047 --> 00:14:02.567
+<v Ashish Paul>Shukla.</v>
+
+00:14:05.087 --> 00:14:07.807
+<v Ashish Paul>Alright, this is setups, please, Shane.</v>
+
+00:14:08.367 --> 00:14:32.167
+<v Sarbjeet Singh>I'll take it over, Ben. Thank you, Ashish. So Ben, this is one of the most awaited events for the year. So every year we hold an event for our MSP partners. That's Build It Live. This is 8th in the series. So we were able to take our partners to NASA Space Center. We have booked the MetLife Stadium. Sunny has booked the Statue of Liberty as well. This time</v>
+
+00:14:11.327 --> 00:14:11.647
+<v Ashish Paul>S.</v>
+
+00:14:32.247 --> 00:14:51.407
+<v Sarbjeet Singh>We are hosting it once again in New Jersey on Hyatt. That's on the Hudson River. So that's happening from August 3rd to 5th. For 3 days, our partners would be there. We have pre-event before this on August 2nd as well. We have an event and then on the last day on August 5th,</v>
+
+00:14:51.887 --> 00:15:16.127
+<v Sarbjeet Singh>we are taking our partners to New York Stock Exchange. So that's something which it's definitely looking forward for. 550 plus MSP leaders would be there, 70 plus channel influencers would be there. Talking about the list of speakers, you see John Maxwell on the screen, he would definitely be there, along with Dan Sullivan and then many industry leaders.</v>
+
+00:15:16.527 --> 00:15:35.087
+<v Sarbjeet Singh>So I would love to see you and Alvin joining this event. Habib will always be a part of the speaker list. Habib Malig from the MSP Corp team. So you have this QR code available with you. I'll, once Ashish will send you the details for the.</v>
+
+00:15:36.207 --> 00:15:54.527
+<v Sarbjeet Singh>for the service call minutes of meeting. I'll send you a separate PPT so that you can share it with Elvin. If you would like me to reach out to Elvin straight away, I can go ahead, share the details over a separate email as well. And this time for the New York Stock Exchange, the team is great, Gatsby.</v>
+
+00:15:54.927 --> 00:16:13.887
+<v Sarbjeet Singh>So that's for our partners specifically. Rest in case if there is any clarity required. The focus is more on the leadership, how you can go look forward for the growth opportunities along with the AI adoption which is happening in the MSP world. I mean.</v>
+
+00:16:14.007 --> 00:16:16.927
+<v Sarbjeet Singh>No questions, any clarity are required over here.</v>
+
+00:16:17.807 --> 00:16:18.767
+<v Ben Fauteux>No, looking good.</v>
+
+00:16:19.567 --> 00:16:26.687
+<v Sarbjeet Singh>Awesome. I'll send you the link for the registration as well. If you would like, you could go through the details right away.</v>
+
+00:16:29.087 --> 00:16:30.767
+<v Ben Fauteux>Yeah, go for it, sure. Let's see.</v>
+
+00:16:29.487 --> 00:16:29.727
+<v Sarbjeet Singh>Kour.</v>
+
+00:16:31.567 --> 00:16:32.367
+<v Sarbjeet Singh>Thank you, Ashish.</v>
+
+00:16:34.047 --> 00:16:34.687
+<v Ashish Paul>Thank you, Sarah.</v>
+
+00:16:36.687 --> 00:16:41.487
+<v Ashish Paul>Right, uh, next is area by design, so Sarah has covered this already.</v>
+
+00:16:42.367 --> 00:16:46.447
+<v Ashish Paul>This is our team GPS and that is it.</v>
+
+00:16:48.527 --> 00:16:49.087
+<v Ben Fauteux>Okay.</v>
+
+00:16:50.367 --> 00:16:52.047
+<v Ashish Paul>Any other questions, Ben, you have?</v>
+
+00:16:52.607 --> 00:16:55.167
+<v Ben Fauteux>No? Things are always looking good. Thank you so much.</v>
+
+00:16:57.007 --> 00:16:57.327
+<v Ashish Paul>Kip.</v>
+
+00:16:57.007 --> 00:17:16.207
+<v Sarbjeet Singh>The only thing which I would like to add in, Ben, in case if anything, which is not moving as per your expectations, Ashish, me, Amit, we all are a part of your extended team. You don't have to wait for these service calls. You can always text us on the teams. The federation is open, so we'll love to connect with you separately as well.</v>
+
+00:17:11.807 --> 00:17:12.127
+<v Ben Fauteux>Yeah.</v>
+
+00:17:17.447 --> 00:17:18.527
+<v Ben Fauteux>Perfect, thank you very much.</v>
+
+00:17:17.647 --> 00:17:25.647
+<v Sarbjeet Singh>Rest, I'm glad that things are moving as per your expectations. You have a good week ahead. Take care and happy birthday in advance.</v>
+
+00:17:21.887 --> 00:17:22.127
+<v Ben Fauteux>Yeah.</v>
+
+00:17:23.647 --> 00:17:24.207
+<v Ben Fauteux>You too.</v>
+
+00:17:26.127 --> 00:17:29.887
+<v Ben Fauteux>Thank you very much. Have a good day, everybody. Bye-bye.</v>
+
+00:17:27.007 --> 00:17:27.967
+<v Ashish Paul>Happy Birthday, Vaid!</v>
+
+00:17:27.647 --> 00:17:27.807
+<v Sarbjeet Singh>Okay.</v>
+
+00:17:29.167 --> 00:17:29.887
+<v Sarbjeet Singh>Take care.</v>
+
+00:17:29.327 --> 00:17:30.847
+<v Ashish Paul>Take care. Bye.</v>
+

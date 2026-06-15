@@ -46,11 +46,26 @@ def _headers(accept="application/json") -> dict:
 
 
 def get(path: str, **params):
-    """GET /api/{path} as JSON."""
-    r = requests.get(f"{config.HALO_BASE_URL}/api/{path}", headers=_headers(),
-                     params=params, timeout=60)
-    r.raise_for_status()
-    return r.json()
+    """GET /api/{path} as JSON, with retry/backoff for transient failures.
+
+    Halo intermittently returns 5xx / 429 and the odd dropped connection; a
+    single blip used to abort a whole multi-partner build (one 500 on /Tickets
+    killed a 36-partner run). Retry transient errors a few times before raising,
+    so callers only see a genuine, persistent failure."""
+    url = f"{config.HALO_BASE_URL}/api/{path}"
+    for attempt in range(5):
+        try:
+            r = requests.get(url, headers=_headers(), params=params, timeout=60)
+        except requests.exceptions.RequestException:
+            if attempt == 4:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+            continue
+        if r.status_code in (429, 500, 502, 503, 504) and attempt < 4:
+            time.sleep(float(r.headers.get("Retry-After", 1.5 * (attempt + 1))))
+            continue
+        r.raise_for_status()
+        return r.json()
 
 
 def _rows(body):

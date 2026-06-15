@@ -6,6 +6,126 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Full DES/MDE partner roster from Halo report 364 (2026-06-15)
+
+Expanded the dashboard from the 20-partner CTO-demo subset to the **complete
+DES/MDE book of business** — every account ITBD's Dedicated Services manages,
+sourced authoritatively from HaloPSA **report 364 "DES RAG Status"** (filter:
+`Area.CFMDERAG >= 1`). 36 new partners built and onboarded; dashboard now shows
+**77 partners**.
+
+### Added
+- **36 new partners** in `scripts/build_real_partners.py` `NEW` (now 68 entries):
+  the remaining RAG-managed DES/MDE accounts not previously onboarded. Display
+  names are corp-suffix-stripped so the Graph transcript pull's folders
+  auto-match; `teamgps_company` is the exact Halo client name; `client_id` pinned
+  from a full `/api/Client` enumeration cross-checked against `CFMDERAG`.
+  Excluded by request: InTelecom (81, inactive), iStreet Solutions (89, going
+  inactive). Deduped: kept TAB Computer Systems 163 (dropped 971), Spidernet 1003
+  (dropped 1006).
+- **`data/_demo_roster.json`** regenerated to the **77 DES/MDE slugs** (was 20),
+  derived by matching built caches to the report-364 Halo id set. Still
+  sync-proof and reversible (gotcha 8).
+
+### Changed
+- **`extract/halo.py` `get()`** — added retry/backoff for transient Halo failures
+  (5xx / 429 / dropped connections), mirroring `pull_graph_transcripts.get`. A
+  single 500 on `/Tickets` used to abort a whole multi-partner build.
+- **`scripts/build_real_partners.py`** — the per-partner service-ticket fetch is
+  now continue-on-failure: a persistent Halo 5xx on one client no longer aborts
+  the batch (that partner builds without Halo call-notes, still gets
+  transcripts + CSAT/NPS + AI). 4 of the 36 hit this path on this run.
+- **Acrisure Cyber Services** repinned from Halo id **937 → 79**. Halo has two
+  records; 79 is the real DES-managed one (`CFMDERAG=Green`, `CFProduct=MDE`),
+  937 was an empty duplicate. Rebuilt with real health data.
+
+### Data / refresh
+- Ran the Graph transcript pull (`--write`): 26 new `.vtt` written, 125 already
+  present; older calls past Teams' ~90-day content retention expired (expected).
+- Reindexed (`_index.json` → 78 built partners) and rebuilt `_overview.json`
+  (77 shown): 26 active SIPs across 23 partners, 287 open actions (19 overdue),
+  portfolio NPS 86, CSAT coverage 84%.
+- **Audit (`audit_data.py`)**: SIP counting, AI analysis, and feed/index
+  integrity all clean. Open WARNs are coverage gaps, not pipeline faults — 3
+  empty-CSAT (likely TeamGPS name mismatch: PEI, LATG, Spidernet), 14 stale/absent
+  last-call (newly-onboarded partners with no recent Halo note and transcripts
+  expired past 90d), 9 unmatched transcript folders (MSP Corp end-team splits,
+  Dataprise→PEI, and non-DES orgs).
+
+---
+
+## [Unreleased] — Firebase deployment scaffolding, HYBRID Firestore + Storage (2026-06-15)
+
+Scaffolding to take the dashboard live on **Firebase** (Hosting + Cloud
+Functions + Firestore + Cloud Storage), authenticated and internal-only
+(`@itbd.net`). Project `operational-intelligence-ebe23` (Blaze). **Not deployed
+yet** — backend services must be created in the console and rules/data pushed;
+see `docs/Firebase-Deploy-SOP.md`. Local `python server.py` workflow is
+**unchanged** (auth + Firestore auto-disable on localhost).
+
+**Hybrid data split** (chosen for scaling to 100+ partners; the per-partner
+detail caches are up to ~983 KB, near Firestore's 1 MiB doc cap):
+- **SUMMARY layer → Firestore** — `meta/overview` (portfolio + coverage) and
+  `partners/<slug>` (one small summary doc each). The Exec Overview reads these
+  **directly via the Web SDK**, secured by `firestore.rules`. Small, queryable,
+  refreshes without a redeploy.
+- **DETAIL layer → private Cloud Storage** — the big `<slug>.json` blobs
+  (transcripts/decks/notes) + `_index.json`, served only through the
+  authenticated `getData` function. `storage.rules` denies all client access.
+
+### Added
+- **`firebase.json`** — Hosting + Functions + Firestore + Storage config.
+  Hosting serves the static UI from the repo root with an `ignore` list
+  excluding everything non-web (`data/**`, `decks/**`, `extract/**`,
+  `scripts/**`, `functions/**`, `*.py`, `.env`, …) — **no data/ is served
+  statically**. Rewrites `/api/data/**` → the `getData` gen-2 function.
+- **`firestore.rules` / `storage.rules` / `firestore.indexes.json`** — Firestore
+  allows read on `partners/*` + `meta/*` only to verified `@itbd.net` accounts
+  and denies all client writes (pipeline writes via Admin SDK); Storage denies
+  all client access (function-only reads).
+- **`functions/main.py`** — gen-2 Python (`python312`) HTTPS `getData`: verifies
+  a Firebase ID token, allows only verified `@itbd.net`, streams the requested
+  `<file>.json` from the private bucket (prefix `partnerpulse/`, filename
+  regex-validated — no traversal). Serves the DETAIL layer + `_index.json`.
+- **`scripts/upload_firebase_data.py`** — now publishes **both** layers from
+  `data/_overview.json` + the caches: SUMMARY → Firestore (`meta/overview` +
+  `partners/<slug>`, **reconciled** — stale docs deleted), DETAIL → Storage
+  (`<slug>.json` + `_index.json`). `--only firestore|storage`, `--dry-run`;
+  project/bucket default from `.firebaserc`. Hidden partners reach neither store
+  (the feed already honours the allowlist).
+- **`auth.js` + `firebase-config.js`** — shared client gate loaded by
+  `index.html` (with the Firestore SDK) and `partner.html`. Prod: Google sign-in
+  restricted to `@itbd.net`; `loadOverview()` reads Firestore, `authedFetch()`
+  hits the function for detail. **Localhost / unconfigured / no-SDK → DEV mode**:
+  no sign-in, overview + detail read straight from `data/` (workflow preserved).
+  `firebase-config.js` holds the **public** web config (real values, safe to commit).
+
+### Changed
+- **`index.html`** — the Overview now loads via `window.PP_AUTH.loadOverview()`
+  (Firestore in prod, `data/_overview.json` in dev) instead of fetching the JSON
+  directly; added the `firebase-firestore-compat` SDK tag. **`partner.js`** detail
+  fetch goes through `authedFetch` (Storage via function in prod, `data/` in dev).
+  **gotcha 7 still holds** — Firebase script tags + `auth.js` + `firebase-config.js`
+  are in BOTH `index.html` and `partner.html` heads.
+- **`refresh.js`** — "Last sync" timestamp reads `_index.json` via `authedFetch`
+  in prod, falling back to `data/_index.json` locally. The "Sync Data" button
+  still degrades gracefully where the sync API is absent (it is, in prod — the
+  pipeline runs off-host for now).
+
+### Toolchain / setup done this session
+- Installed Node.js LTS (v24) + `firebase-tools` 15.20.0; `firebase login`;
+  `.firebaserc` default set to `operational-intelligence-ebe23`;
+  `firebase-config.js` filled from `firebase apps:sdkconfig`.
+
+### Security / pre-deploy TODO (not code)
+- **Rotate the live API keys** in `.env` / `extract/config.py` (Halo, TeamGPS,
+  Azure, Graph) and move them to Secret Manager before any deploy — README
+  warning. Never part of the Hosting deploy (excluded by `ignore`).
+- Create in the console: **Auth → Google**, **Firestore** (production mode),
+  **Storage** (production mode), same region. Then `firebase deploy`.
+
+---
+
 ## [1.0.0-beta.9] - 2026-06-14
 
 Pre-CTO-demo fixes from an expert review of the dashboard.

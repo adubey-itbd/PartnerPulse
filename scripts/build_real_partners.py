@@ -71,10 +71,57 @@ NEW = [
     ("Vistitude",                    187, "Vistitude",           "Vistitude Computer Solutions Inc"),
     ("Mission Technology",           975, "Mission Technology",  "Mission Technology Solutions"),
     # ---- added 2026-06-14 for the CTO demo roster ----
-    ("Acrisure Cyber Services",      937, "Acrisure",            "Acrisure Cyber Services"),
+    # Halo has two "Acrisure Cyber Services" records: 79 is the real DES-managed
+    # one (CFMDERAG=Green, CFProduct=MDE); 937 is an empty duplicate (no RAG/
+    # service line). Corrected 937 -> 79 on 2026-06-15 so the health data is real.
+    ("Acrisure Cyber Services",      79,  "Acrisure",            "Acrisure Cyber Services"),
     ("Byte Solutions Inc",            38, "Byte Solutions",      "Byte Solutions Inc"),
     ("SERVICAD",                     154, "SERVICAD",            "SERVICAD"),
     ("OutsourceIT",                  928, "OutsourceIT",         "OutsourceIT"),
+    # ---- added 2026-06-15: full DES/MDE roster from Halo report 364 "DES RAG
+    # Status" (filter: Area.CFMDERAG >= 1). These are the remaining RAG-managed
+    # partners not previously onboarded. Display names are corp-suffix-stripped
+    # so the Graph transcript pull's folders auto-match; teamgps_company is the
+    # exact Halo client name (CSAT uses an exact filter, with a client.name
+    # fallback). client_id pinned from the enumeration. Excluded by request:
+    # InTelecom (81, inactive), iStreet Solutions (89, going inactive); deduped:
+    # TAB 971 (kept 163), Spidernet 1006 (kept 1003).
+    ("Atlas Professional Services",          28,  "Atlas Professional",        "Atlas Professional Services, Inc."),
+    ("Blackline IT",                         841, "Black Line",                "Black Line IT"),
+    ("IronEdge Group",                       200, "IronEdge",                  "IronEdge Group, LTD"),
+    ("Marco",                                837, "Marco",                     "Marco Inc"),
+    ("Thrive NextGen",                       29,  "Thrive",                    "Thrive NextGen"),
+    ("Turn Key Solutions",                   182, "Turn Key",                  "Turn Key Solutions LLC"),
+    ("ITSolutions",                          94,  "ITSolutions",               "ITSolutions Inc"),
+    ("OPUS Consulting Group(ZymeWorks)",     131, "OPUS",                      "OPUS Consulting Group Ltd"),
+    ("Summit Business Technologies",         160, "Summit Business",           "Summit Business Technologies"),
+    ("Thinksocially",                        175, "Thinksocially",             "Thinksocially LLC"),
+    ("Aqueduct Technologies",                958, "Aqueduct",                  "Aqueduct Technologies, Inc."),
+    ("Brown Cow Technology",                 20,  "Brown Cow",                 "Brown Cow Technology Inc."),
+    ("Deerwood Technologies",                59,  "Deerwood",                  "Deerwood Technologies Inc"),
+    ("EasyIT",                               209, "EasyIT",                    "EasyIT"),
+    ("Innovative Technology Solutions (ITS)", 199, "Innovative Technology",    "Innovative Technology Solutions"),
+    ("ISOutsource",                          210, "ISOutsource",               "ISOutsource"),
+    ("LanTek Online",                        100, "LanTek",                    "LanTek Online"),
+    ("LATG",                                 883, "LATG",                      "LATG"),
+    ("Microcomputer Consulting Group",       777, "Microcomputer",             "Microcomputer Consulting Group, Inc."),
+    ("MyTech Partners",                      823, "MyTech",                    "MyTech Partners"),
+    ("NTi Networks",                         126, "NTi",                       "NTi Networks"),
+    ("Omega Systems",                        948, "Omega Systems",             "Omega Systems Corp"),
+    ("OmegaCor IT",                          129, "OmegaCor",                  "OmegaCor Technologies"),
+    ("PCH Technologies",                     134, "PCH",                       "PCH Technologies"),
+    ("Planet Depos",                         216, "Planet Depos",              "Planet Depos"),
+    ("Predictiveit",                         829, "Predictiveit",              "Predictiveit"),
+    ("Servcom USA",                          153, "Servcom",                   "Servcom USA"),
+    ("TAB Computer Systems",                 163, "TAB Computer",              "TAB Computer Systems, Inc"),
+    ("Teal Tech",                            164, "Teal",                      "Teal LLC"),
+    ("TekScape",                             169, "TekScape",                  "TekScape Inc"),
+    ("Telecommunication Technologies Group", 170, "Telecommunication Technologies", "Telecommunication Technologies Group"),
+    ("Think Unified",                        174, "Think Unified",             "Think Unified"),
+    ("True North ITG",                       213, "True North",                "True North ITG Inc"),
+    ("Ryan Creek Technology",                959, "Ryan Creek",                "Ryan Creek Technology Associates, Inc."),
+    ("Spidernet Technical Consulting",       1003, "Spidernet",                "Spidernet Consulting"),
+    ("Uptime USA",                           982, "Uptime",                    "Uptime USA"),
 ]
 
 
@@ -124,7 +171,15 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=
         nps_stats = teamgps.nps_stats(nps)
 
         historical_calls, note_authors = [], Counter()
-        for t in halo.find_service_tickets(client_id, search="Service Call"):
+        # Continue-on-failure: a persistent Halo 5xx on this client's ticket list
+        # (seen intermittently) must not abort the whole batch — the partner just
+        # builds without Halo call-notes (still gets transcripts + CSAT/NPS + AI).
+        try:
+            service_tickets = halo.find_service_tickets(client_id, search="Service Call")
+        except Exception as e:
+            print(f"  [calls] find_service_tickets failed: {e} — continuing without Halo call notes", file=sys.stderr)
+            service_tickets = []
+        for t in service_tickets:
             notes = halo.get_meeting_notes(t["id"])
             for n in notes:
                 note_authors[n.get("who")] += 1

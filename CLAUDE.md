@@ -78,9 +78,10 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   CSAT, stale/absent last-call, unmatched transcript folders, and feed/index mismatch;
   allowlist-aware. `refresh_exec_row.py` is DEPRECATED (no-op against the data-driven
   dashboard; kept for rollback to the `backups/` copy).
-  `build_real_partners.py` NEW is the partner roster beyond the registry (32
-  entries incl. 4 demo adds — Acrisure Cyber Services, Byte Solutions, SERVICAD,
-  OutsourceIT); `client_id=None` marks a transcript-only partner with no Halo record
+  `build_real_partners.py` NEW is the partner roster beyond the registry (68
+  entries — expanded 2026-06-15 to the full DES/MDE book from Halo report 364
+  "DES RAG Status", filter `Area.CFMDERAG >= 1`); `client_id=None` marks a
+  transcript-only partner with no Halo record
   — Halo/TeamGPS skipped, AI runs on call transcripts alone (path currently
   unused: its one user "CW Now" turned out to be Halo client 39 "C&W Computers",
   corrected 2026-06-12). `setup_graph_transcript_access.ps1` is for IT, not the
@@ -134,7 +135,8 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
    Shared UI (like the sync button) needs its CSS in BOTH places.
 8. **Demo-roster allowlist:** if `data/_demo_roster.json` (a list of slugs) exists,
    `build_overview.py` filters the feed — and the portfolio rollups — to just those
-   partners, so the dashboard shows a curated subset (currently 20 for the CTO demo)
-   without deleting any caches. It is **sync-proof** (a rebuild can't resurrect hidden
+   partners, so the dashboard shows a curated subset (currently 77 — the full
+   DES/MDE roster from Halo report 364; was 20 for the CTO demo) without deleting
+   any caches. It is **sync-proof** (a rebuild can't resurrect hidden
    partners) and reversible: edit the list to add/remove, or delete the file to show all
    built partners. `audit_data.py` scopes its checks to the allowlist when present.

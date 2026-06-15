@@ -1,0 +1,1046 @@
+WEBVTT
+NOTE title: MSP Corp(MBCCS Group) | Service Call
+NOTE date: 2026-05-20
+NOTE duration: 37m 53s
+
+00:00:03.050 --> 00:00:11.330
+<v Torin Lever>Is good in the winter time when the roads are bad, I I limit that a little bit more, but now it's summer, it's hot, it's nice. Good dr, I don't mind the drive.</v>
+
+00:00:04.290 --> 00:00:04.610
+<v Amit Dubey>Yeah.</v>
+
+00:00:06.170 --> 00:00:06.850
+<v Amit Dubey>This is.</v>
+
+00:00:12.450 --> 00:00:17.170
+<v Amit Dubey>Yeah, always. You guys have the flexibility to work from home. We don't need to.</v>
+
+00:00:18.530 --> 00:00:29.490
+<v Torin Lever>Yeah, it's really nice. Like, yeah, our office is like closer to Toronto and I'm out of Niagara Falls, which is just around the other side of the Big Lake Ontario here.</v>
+
+00:00:26.290 --> 00:00:26.690
+<v Amit Dubey>Key.</v>
+
+00:00:30.010 --> 00:00:30.610
+<v Amit Dubey>Mm-hmm.</v>
+
+00:00:34.250 --> 00:00:34.530
+<v Sarbjeet Singh>Age.</v>
+
+00:00:34.690 --> 00:00:52.690
+<v Amit Dubey>All right, I think for 5 minutes and we probably can get started right here. So the couple of things before we move on to the BA agenda, Torrent, right? We of course received, again, I don't know if you have the visibility, but we requested.</v>
+
+00:00:38.050 --> 00:00:41.010
+<v Torin Lever>Yeah, sure. We can get chatting. Sure.</v>
+
+00:00:53.090 --> 00:01:12.450
+<v Amit Dubey>Reza to fill in the monthly CSAT survey for all the engineers, because that gives us an opportunity to understand how overall the engineers is performed. What are the areas we may have discussed this during the service calls, but again, what is the eventual sentiment right based on the overall performance? So.</v>
+
+00:01:12.850 --> 00:01:32.450
+<v Amit Dubey>The CSAT survey for all of them was sent over and we have unhappy survey filled in for Vunch and it's a neutral for Jesper as well. So our primary focus, of course, as you may remember, we talked about it during the last conversation as well, that, you know, we continue to work with all of them.</v>
+
+00:01:32.690 --> 00:01:52.650
+<v Amit Dubey>to see how we can better align them. Of course, we can see that they have improved in certain areas and they continue to work on certain areas. And of course, there are certain areas where they need to work on, right? So did you happen to see our investigation and what we found on the back of the ticket that we discussed on the last call, Torrin?</v>
+
+00:01:53.970 --> 00:02:12.130
+<v Torin Lever>So, I primarily deal with the field services environment, so I don't really have a lot of the day-to-day involvement with the Helpdesk technicians. I mean, I am there to mentor and guide and assist with things, but when it comes to visibility, that's Reza and Arkadi a little bit more. Oh, Arkadi is going to join. Hi, Arkadi.</v>
+
+00:02:00.050 --> 00:02:01.650
+<v Amit Dubey>Okay. Okay.</v>
+
+00:02:05.570 --> 00:02:06.130
+<v Amit Dubey>Okay.</v>
+
+00:02:11.250 --> 00:02:12.690
+<v Amit Dubey>Hey, Arkadi, how are you?</v>
+
+00:02:11.650 --> 00:02:13.730
+<v Sarbjeet Singh>Conti, here, here, Conti.</v>
+
+00:02:13.490 --> 00:02:14.170
+<v Arkadi Kleiner>Lower down.</v>
+
+00:02:14.010 --> 00:02:14.690
+<v Ashish Paul>Arkadi.</v>
+
+00:02:15.530 --> 00:02:15.890
+<v Arkadi Kleiner>Hey.</v>
+
+00:02:18.370 --> 00:02:20.370
+<v Amit Dubey>You had a busy day already, it looks like.</v>
+
+00:02:18.930 --> 00:02:19.490
+<v Torin Lever>Yes.</v>
+
+00:02:21.210 --> 00:02:24.130
+<v Arkadi Kleiner>Yeah, yeah, that's like every other day.</v>
+
+00:02:22.130 --> 00:02:22.610
+<v Torin Lever>Yeah.</v>
+
+00:02:25.170 --> 00:02:27.330
+<v Amit Dubey>Yeah, be expecting.</v>
+
+00:02:25.530 --> 00:02:25.650
+<v Torin Lever>Yeah.</v>
+
+00:02:26.290 --> 00:02:29.810
+<v Arkadi Kleiner>I don't know if Harish is about to join or not.</v>
+
+00:02:29.970 --> 00:02:33.970
+<v Amit Dubey>He was on a call with Ashish just before we started with this meeting.</v>
+
+00:02:34.290 --> 00:02:35.410
+<v Arkadi Kleiner>Yep, yep.</v>
+
+00:02:35.490 --> 00:02:36.850
+<v Torin Lever>I did ping him as well, so...</v>
+
+00:02:35.890 --> 00:02:36.450
+<v Amit Dubey>Yeah.</v>
+
+00:02:37.730 --> 00:02:38.050
+<v Amit Dubey>Yeah.</v>
+
+00:02:38.130 --> 00:02:41.170
+<v Arkadi Kleiner>Yeah, I think he's in another call right now, so I'm not sure he's gonna have time.</v>
+
+00:02:38.290 --> 00:02:39.330
+<v Torin Lever>People join when you can.</v>
+
+00:02:43.250 --> 00:02:45.330
+<v Torin Lever>Oh yeah, he is showing us on another call.</v>
+
+00:02:46.530 --> 00:02:50.610
+<v Torin Lever>He's presenting another call. OK, well, he'll get he'll get the ping and join if he can.</v>
+
+00:02:48.690 --> 00:02:49.090
+<v Amit Dubey>Okay.</v>
+
+00:02:48.970 --> 00:02:49.250
+<v Arkadi Kleiner>Yep.</v>
+
+00:02:50.930 --> 00:03:09.490
+<v Amit Dubey>Sure, sure. Just to bring you up to speed, Arkadi, we were specifically talking about, you know, what we discussed in the last call, and again, the feedback that has been filled by Reza for Jess and Vansh, right? And we have received negative feedback for Vansh overall for the month of April.</v>
+
+00:03:10.050 --> 00:03:33.050
+<v Amit Dubey>And of course, for Jess, it's neutral. So we specifically wanted to discuss about the overall performance of the engineers, right? And we've just been made aware of before this call that there is a found a ticket wherein this was an off-boarding ticket, off-boarding request for one of the persons, right? From, again, I do not have a lot of details here.</v>
+
+00:03:29.810 --> 00:03:30.130
+<v Ashish Paul>Manu.</v>
+
+00:03:32.130 --> 00:03:32.450
+<v Arkadi Kleiner>See.</v>
+
+00:03:33.490 --> 00:03:47.970
+<v Amit Dubey>and he forwarded that request to L2 and then they off-boarded him. But we eventually found out the person who raised that request was not the right person to raise the request. So is there anything more that you would want to share, Arkadi, around this ticket?</v>
+
+00:03:33.650 --> 00:03:34.130
+<v Arkadi Kleiner>Mhm.</v>
+
+00:03:35.730 --> 00:03:35.810
+<v Ashish Paul>The.</v>
+
+00:03:42.730 --> 00:03:42.930
+<v Ashish Paul>The.</v>
+
+00:03:44.890 --> 00:03:45.330
+<v Arkadi Kleiner>That's right.</v>
+
+00:03:45.010 --> 00:03:45.370
+<v Ashish Paul>David.</v>
+
+00:03:49.010 --> 00:04:08.290
+<v Arkadi Kleiner>We have approvals at our clients who are able to authorize offboarding or onboarding or other access requests. In this case, the person who requested this was neither of those. They were not an HR person, they were not a primary contact, they were not an approval of any kind, and they just requested.</v>
+
+00:03:59.570 --> 00:03:59.970
+<v Amit Dubey>Okay.</v>
+
+00:04:09.130 --> 00:04:27.490
+<v Arkadi Kleiner>another user to be aborted. From our perspective, that's a user asking to abort another user. And the very first action that should be taken in the situation is to check who is the requester, right? It's literally a single click to see whether they're an approver or an HR admin.</v>
+
+00:04:11.410 --> 00:04:11.570
+<v Amit Dubey>Mm.</v>
+
+00:04:21.890 --> 00:04:22.370
+<v Amit Dubey>Mhm.</v>
+
+00:04:27.890 --> 00:04:41.330
+<v Arkadi Kleiner>right, which would give them the authority to request an onboarding. And then we can go ahead and action that. But in this case, there was no approval of any kind requested. So this user was onboarded without any authorization.</v>
+
+00:04:42.130 --> 00:04:43.810
+<v Amit Dubey>So it was off board by Vansh.</v>
+
+00:04:42.250 --> 00:04:42.610
+<v Arkadi Kleiner>Right.</v>
+
+00:04:44.730 --> 00:05:06.570
+<v Arkadi Kleiner>by a different technician who was assigned the ticket later on. But the initial clearance and communication with the client was handled by Bench. It was handled that day and he just said, yep, we'll... So he scheduled himself initially for the time of the onboarding, but then he had other onboardings to handle, so he communicated with another technician and the technician took over.</v>
+
+00:04:47.890 --> 00:04:48.690
+<v Amit Dubey>Okay, and it...</v>
+
+00:04:51.250 --> 00:04:51.410
+<v Amit Dubey>Mm.</v>
+
+00:04:52.690 --> 00:04:53.170
+<v Amit Dubey>Mhm.</v>
+
+00:05:00.930 --> 00:05:01.410
+<v Amit Dubey>Mhm.</v>
+
+00:05:07.090 --> 00:05:25.330
+<v Arkadi Kleiner>But Vanch communicate with the client, said, yep, we'll do this. And he scheduled himself for that time of the offboarding, again, without ever confirming that we should actually proceed. So imagine the client turns around now and goes, why did you do this? We didn't authorize this. No.</v>
+
+00:05:07.450 --> 00:05:07.930
+<v Amit Dubey>Mhm.</v>
+
+00:05:25.570 --> 00:05:33.890
+<v Arkadi Kleiner>Nobody with authority here authorized the onboarding of this user. So now we not only have to apologize to the client, we have to reverse the entire process.</v>
+
+00:05:35.090 --> 00:05:53.970
+<v Arkadi Kleiner>Right, and for most clients, the aborting process is sufficiently complex. That takes a bunch of time to reverse everything and to reinstate the user who wasn't supposed to be aborted. Imagine that there is a miscommunication within that client's office and somebody who is on the group or decides, ohh yeah, yeah.</v>
+
+00:05:35.330 --> 00:05:36.050
+<v Amit Dubey>Yeah, yeah.</v>
+
+00:05:44.290 --> 00:05:44.770
+<v Amit Dubey>Mhm.</v>
+
+00:05:51.090 --> 00:05:51.490
+<v Amit Dubey>Right.</v>
+
+00:05:54.130 --> 00:06:03.250
+<v Arkadi Kleiner>let's abort this person, right? So there is no internal check that happens unless we ask an approver to confirm that and authorize that.</v>
+
+00:05:58.450 --> 00:05:58.930
+<v Amit Dubey>Mhm.</v>
+
+00:06:04.370 --> 00:06:13.170
+<v Amit Dubey>And just for my clarity, do we have a list of the approvers that engineers have access to or is it just, yeah, okay, great.</v>
+
+00:06:04.450 --> 00:06:05.570
+<v Arkadi Kleiner>So that was the issue.</v>
+
+00:06:11.130 --> 00:06:31.010
+<v Arkadi Kleiner>Of course, yes. It's literally a single click to click on the contact and see what the, if they're an approver on the chairperson. And if they click on that contact and see that this person doesn't have the authority, they click into the company, into the contacts, and then they get a list of all the people who are authorized to approve things.</v>
+
+00:06:13.890 --> 00:06:14.290
+<v Reza Hajiahmadi>Start.</v>
+
+00:06:15.570 --> 00:06:16.050
+<v Amit Dubey>Mhm.</v>
+
+00:06:20.570 --> 00:06:20.770
+<v Amit Dubey>And.</v>
+
+00:06:31.290 --> 00:06:35.170
+<v Arkadi Kleiner>who can authorize such a request, right?</v>
+
+00:06:35.170 --> 00:06:35.570
+<v Amit Dubey>Yeah.</v>
+
+00:06:35.810 --> 00:06:36.610
+<v Reza Hajiahmadi>Hey, guys.</v>
+
+00:06:36.370 --> 00:06:37.650
+<v Arkadi Kleiner>It's one or two clicks.</v>
+
+00:06:36.930 --> 00:06:37.570
+<v Amit Dubey>Hey, Rozario.</v>
+
+00:06:38.450 --> 00:06:43.970
+<v Reza Hajiahmadi>I, I think you're, I guess you are discussing about that issue, right?</v>
+
+00:06:39.330 --> 00:06:39.650
+<v Sarbjeet Singh>Okay.</v>
+
+00:06:39.810 --> 00:06:46.850
+<v Amit Dubey>We were just discussing about, yeah, yeah, yeah, yeah, we were just delving a little further into this.</v>
+
+00:06:44.410 --> 00:06:45.330
+<v Arkadi Kleiner>Yes, yes.</v>
+
+00:06:47.490 --> 00:07:05.930
+<v Reza Hajiahmadi>Yeah, we are in trouble with that client because there is no way to explain it to them that why we EOE the user without their approval. Even if it was supposed to happen, we should have that approval.</v>
+
+00:07:06.370 --> 00:07:26.530
+<v Reza Hajiahmadi>approved from our client. Otherwise, they lose their trust to us. And this is very important for us. So important. There is no way that a client has no trust to us, and we have to, and we can handle their ticket, and we can handle their.</v>
+
+00:07:26.610 --> 00:07:39.650
+<v Reza Hajiahmadi>At their request, because if they lose their trust, they're they have they they have to verify everything with us and it's not it's not viable, it's not viable.</v>
+
+00:07:44.530 --> 00:07:45.810
+<v Reza Hajiahmadi>You're muted, Amit.</v>
+
+00:07:46.690 --> 00:08:06.050
+<v Amit Dubey>As always happens, right? So, we again wanted to circle back because one of the discussions that we had on our previous two calls that, you know, we are closely monitoring alongside of course you and Arkadi to see how team are progressing and there will be a point when...</v>
+
+00:07:48.290 --> 00:07:48.770
+<v Reza Hajiahmadi>Sure.</v>
+
+00:08:06.290 --> 00:08:25.250
+<v Amit Dubey>it will hit the threshold if it doesn't go in the right direction and we have to make the final call, right? And we appreciate the fact that you said that you're very much inclined towards giving chances to people as an organization, which is great, but at the same time, that should not have an impact overall on the client experience, right? That should not.</v>
+
+00:08:25.290 --> 00:08:46.570
+<v Amit Dubey>Cost us a client's experience, so we again appreciate you being very transparent on the feedback that you filled in yesterday, right, for the CSAT for function test, and again, with the incident happened today, we are more focused on understanding the next steps that we need to take, because...</v>
+
+00:08:46.770 --> 00:08:47.010
+<v Amit Dubey>Uh...</v>
+
+00:08:48.050 --> 00:09:08.130
+<v Amit Dubey>One that we probably have coached him enough internally and you guys have been investing a lot of time as well. So at this point, do we want to go in a direction of having somebody replace him, right, with the right skill set? Or do you think that you still want to give him some time?</v>
+
+00:09:08.250 --> 00:09:16.610
+<v Amit Dubey>because there are a couple of things that has happened and we are at this point are very, very cautious about this.</v>
+
+00:09:17.210 --> 00:09:17.890
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:09:18.850 --> 00:09:36.690
+<v Reza Hajiahmadi>Yeah, I would say we spend a lot of time, like say more than five months on him. We tried a lot. We start a retraining process. And last week after our conversation, I was hope, okay.</v>
+
+00:09:37.650 --> 00:09:56.370
+<v Reza Hajiahmadi>There is a progress on him and we can again give him some time. But I'm not sure if we again spend more two weeks on him, what would happen. Frankly speaking, when we focus on some...</v>
+
+00:09:56.530 --> 00:10:15.250
+<v Reza Hajiahmadi>some stuff on him. He would be good for a couple of days, sometimes a week or so. And after that, I'm not sure what happened. He backs to the, again, backs again to that process and.</v>
+
+00:10:15.290 --> 00:10:34.130
+<v Reza Hajiahmadi>I'm not sure he forgot something or maybe he just don't pay enough attention to those details. This is the point that I have no idea about that. If you say, okay, yeah, we can guarantee if you train.</v>
+
+00:10:34.690 --> 00:10:53.330
+<v Reza Hajiahmadi>A couple of times I think to him, he is not going to forget it again. He handle everything he knows and he consider it as a detail that we have in our site. Yeah, definitely we can give him a time. But the way that I see that.</v>
+
+00:10:54.130 --> 00:10:57.010
+<v Reza Hajiahmadi>It's double F4 triple F4 in our site.</v>
+
+00:10:58.210 --> 00:11:21.090
+<v Amit Dubey>Yeah, I mean, one thing that we always talk about, that skill is something that we can always train people on, right? But the logical thinking and taking the right step at the right time, it always comes from how you deal with tickets and overall situation, right? So even if it is a ticket that you're dealing with, of course it is overall assessment.</v>
+
+00:11:21.490 --> 00:11:40.930
+<v Amit Dubey>and the logical thinking would come into play. So we certainly have, you know, we started with the training that we spoke about. We now have the entire schedule and is one of the agendas that we wanted to bring it up, but of course the priority remains about the overall, you know, performance of the team members, specifically around Punch.</v>
+
+00:11:41.330 --> 00:12:01.730
+<v Amit Dubey>and make a decision. So as a next step, Reza, what I understand that Vansh is of course out sick, as you may be aware, because of Fanzil. It looks bad. So while we expect him to return, but at the same time, I will quickly initiate the replacement process. I will drop an email to Karine.</v>
+
+00:12:02.090 --> 00:12:24.930
+<v Amit Dubey>CC when so that we're going through the HR process, Reza. And she understands that due to some performance concerns, we are trying to place somebody who is more aligned with your expectations and the role. And of course, we do not spend the time and energy that we have been spending, right, which is not fetching us any results. Because you, I think you've invested enough. And again, on our side as well, we have done enough that we could.</v>
+
+00:12:25.570 --> 00:12:29.570
+<v Amit Dubey>But it is a time that we would really recommend that we go ahead with that direction.</v>
+
+00:12:30.770 --> 00:12:37.970
+<v Reza Hajiahmadi>Okay, what's the replacement process on your side? Because it's the first time that I want to do that.</v>
+
+00:12:38.370 --> 00:12:57.250
+<v Amit Dubey>So skill alignment will be the first priority. Of course, anybody that we present will be of the same skill set. The pricing is something that will remain as it is today. There won't be a change. And of course, we, as per our process, we will send the resume to Karine.</v>
+
+00:12:57.650 --> 00:13:16.530
+<v Amit Dubey>and she would pass it over to you. You will confirm your availability and then you will interview and select and they will be started. One thing that we would focus on is somebody who is readily available to start quickly because we may want to have an overlap period, which is my recommendation of about a week or so, so that...</v>
+
+00:13:16.930 --> 00:13:35.850
+<v Amit Dubey>initially, Vansh can make them aware of what the baseline that he knows, right? And of course, not letting Vansh know that that person is his replacement. So that from a work point of view, also, you have some time to shift the workload from one person to the other person. So that is something that would remain as a commitment.</v>
+
+00:13:35.010 --> 00:13:35.170
+<v Reza Hajiahmadi>Mm.</v>
+
+00:13:36.010 --> 00:13:36.690
+<v Amit Dubey>From our side.</v>
+
+00:13:37.330 --> 00:13:56.050
+<v Reza Hajiahmadi>Okay, so we should have interview with the new candidate once we once we once we give you a go, it's okay. We're gonna again proceed with the hiring process with MSP core.</v>
+
+00:13:45.410 --> 00:13:45.890
+<v Lee Cavellier>Correct.</v>
+
+00:13:56.170 --> 00:14:12.290
+<v Reza Hajiahmadi>with Karine, internal, and then start training, right? Because you know, we should train them about the process. And it might take more than a month for us. Do you guys cover that overlap?</v>
+
+00:14:15.490 --> 00:14:35.410
+<v Amit Dubey>overlap. I mean, like I said, that Vangsh will be there in the system, right? So he will be sharing the initial knowledge, the baseline knowledge that he has, right, and ensuring that they are completely up to speed immediately. And once you're comfortable that this is the time that you want to cut the cord, that's when we pull Vangsh out of the system.</v>
+
+00:14:24.690 --> 00:14:24.850
+<v Reza Hajiahmadi>Okay.</v>
+
+00:14:28.210 --> 00:14:28.530
+<v Reza Hajiahmadi>Kour.</v>
+
+00:14:35.890 --> 00:14:46.290
+<v Reza Hajiahmadi>Okay, because you know we should start the training process and it takes at least four weeks for us to train them about the preliminary process.</v>
+
+00:14:36.970 --> 00:14:38.210
+<v Lee Cavellier>No, no, there's.</v>
+
+00:14:46.970 --> 00:15:08.090
+<v Lee Cavellier>To answer your question, Reza, oh, so sorry. I was going to say, to answer your question, you're not paying for two resources during that time, right? You pay for one single. The overlap is in accordance with what we collaboratively agree makes sense. I know Amit said a week or two, you're saying four weeks. From our perspective, it's</v>
+
+00:14:48.610 --> 00:14:49.490
+<v Reza Hajiahmadi>And I can't.</v>
+
+00:14:50.370 --> 00:14:50.690
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:14:51.770 --> 00:14:52.090
+<v Reza Hajiahmadi>Go ahead.</v>
+
+00:15:08.290 --> 00:15:21.050
+<v Lee Cavellier>You know, within reason, let's get this new person to a point where you guys are comfortable, and then we walk it back, and then we let Vish go, and and it it should be we we when we manage this elsewhere, it's a relatively.</v>
+
+00:15:13.250 --> 00:15:13.730
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:15:15.010 --> 00:15:15.650
+<v Reza Hajiahmadi>Ice.</v>
+
+00:15:22.890 --> 00:15:31.130
+<v Lee Cavellier>And I'll just toss out there. I know this has been going for a while. I want to make sure you guys understand. Oh, shoot.</v>
+
+00:15:31.970 --> 00:15:35.730
+<v Reza Hajiahmadi>No, you're good now. Your voice is good now. Yeah.</v>
+
+00:15:33.410 --> 00:15:34.370
+<v Lee Cavellier>OKOK.</v>
+
+00:15:33.570 --> 00:15:34.850
+<v Amit Dubey>It could, it sound better.</v>
+
+00:15:35.410 --> 00:15:55.730
+<v Lee Cavellier>Okay, okay. Like I did that thing again where I play with my headset and it messes with. Anyway, so that you guys know, we don't press for replacements unless we feel strongly about it. And I know we've brought it up, you know, this is something that we've been bringing up for a little while now. The reason is because part of our success criteria</v>
+
+00:15:39.570 --> 00:15:39.770
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:15:56.130 --> 00:16:15.690
+<v Lee Cavellier>is placements lasting with their pods, right? So we've got a balance for ourselves. When and why are we making that recommendation? So I agree. I think that having joined the calls that I have, having done research on the calls that I wasn't on,</v>
+
+00:16:00.050 --> 00:16:00.210
+<v Reza Hajiahmadi>Mm.</v>
+
+00:16:16.050 --> 00:16:34.610
+<v Lee Cavellier>and looking at the situation and seeing what Ashish is doing with Banch, hearing about what you guys are doing with Banch, we've just hit a point where anything further is sunken cost fallacy. We think we're going to get a return on our investment, but finding somebody who's better aligned and will</v>
+
+00:16:35.970 --> 00:16:56.050
+<v Lee Cavellier>have the skill and the will, right, both aligned up, will make this a much less painful process and likely garner an ROI faster than continuing to sink time and effort into somebody who will go over stuff with and then the next week we see the same or</v>
+
+00:16:56.290 --> 00:17:02.770
+<v Lee Cavellier>something very close to where the mind just isn't correlating those things in a way that we would all expect it to.</v>
+
+00:17:03.330 --> 00:17:20.690
+<v Reza Hajiahmadi>Yeah, yeah, because yesterday I was asked how IT by design resource cost and I told them, okay, let's wait for at least another month because we do have Genie, we do have Paxton in our site. So far.</v>
+
+00:17:22.290 --> 00:17:46.090
+<v Reza Hajiahmadi>That we are happy about their training stuff, and I cannot make decision about the whole resources, 'cause if I wanna say half of the ongoing people has issue, it would it would be right because we we just have two ongoing person on your side, but we will wait for another.</v>
+
+00:17:46.210 --> 00:18:10.450
+<v Reza Hajiahmadi>month, might we can say, yeah, one out of three was not good and three out of four is good. So that's the part, but what I'm saying is, yeah, I totally agree with that, totally agree with that, because hey, if you have no hope about Ranch, we cannot put another effort on him.</v>
+
+00:17:54.210 --> 00:17:55.250
+<v Lee Cavellier>Right, right.</v>
+
+00:18:10.930 --> 00:18:16.610
+<v Reza Hajiahmadi>And if you agree, guys, yeah, definitely we should start the replacement process.</v>
+
+00:18:16.370 --> 00:18:37.090
+<v Amit Dubey>Yeah, I mean, at any point of time, Reza, just so you know, right, that there are multiple people walking in the background with the engineers to make sure that they are successful. It is just not about that they are trained and they're thrown into the ocean for you guys to manage. In addition to Ashish, we have a SME dedicatedly helping them, right, with any queries and questions. So...</v>
+
+00:18:37.490 --> 00:18:48.050
+<v Amit Dubey>We see a lot of efforts going in, right? And of course, at the end of the day, it is not fetching us the results. Then we have to make real quick decisions, right, to make sure that, you know.</v>
+
+00:18:46.290 --> 00:18:46.770
+<v Reza Hajiahmadi>Okay.</v>
+
+00:18:50.450 --> 00:19:06.450
+<v Amit Dubey>it goes in the right direction. So yeah, so what I'll do, the good part is that while you were in the process of selecting for Paxton's role, we, I think Arkadi, have your hand raised, so I'll pause and let you complete your thoughts.</v>
+
+00:19:06.810 --> 00:19:09.650
+<v Arkadi Kleiner>No, I can ask that after after you're done.</v>
+
+00:19:10.050 --> 00:19:28.770
+<v Amit Dubey>Okay, thank you. So we had an immediate joiner. I'll get back to my TA and see if that individual is available. We can send the resume pretty much straight away to Karine today itself, and you can let us know your availability for the interview and we can get the ball rolling.</v>
+
+00:19:28.850 --> 00:19:41.970
+<v Amit Dubey>Pretty quickly, right? Yeah, I'll keep you informed how things go, but of course we'll go through the process going to Karine, else she will be upset, so yeah, so yeah, so.</v>
+
+00:19:30.290 --> 00:19:30.610
+<v Reza Hajiahmadi>Okay.</v>
+
+00:19:39.970 --> 00:19:43.650
+<v Reza Hajiahmadi>Yeah, yeah, definitely. We are gonna follow up the MSP for Prats.</v>
+
+00:19:43.090 --> 00:19:59.890
+<v Amit Dubey>Yeah, yeah, absolutely. The right. Okay, I think I am good there. In terms of Jasp, I know that he was moving in the right direction and how things are, but anything specifically that you want to talk about?</v>
+
+00:20:21.650 --> 00:20:21.810
+<v Amit Dubey>Mm.</v>
+
+00:20:22.930 --> 00:20:41.890
+<v Reza Hajiahmadi>And the best way to say, okay, the technician is good for our client for the process that we have is compare them with the same level that same level technician that we have in our site. I was able to find.</v>
+
+00:20:23.090 --> 00:20:23.570
+<v Amit Dubey>Yousuf.</v>
+
+00:20:39.010 --> 00:20:39.250
+<v Amit Dubey>Yeah.</v>
+
+00:20:42.370 --> 00:21:01.810
+<v Reza Hajiahmadi>one same level with for for for Jazz. So I would say we are okay with we are okay with him. But it doesn't mean that he is one of my top. No, but we are good. We are good. And he showed us some promise. It is good.</v>
+
+00:20:56.570 --> 00:20:57.170
+<v Amit Dubey>Understood.</v>
+
+00:21:02.210 --> 00:21:22.210
+<v Reza Hajiahmadi>He showed up, he showed up some progress in his improvement. It gives me enough confidence and say, okay, I'm going to give him more time. It's a good sign, it's a good sign, but I think within a month,</v>
+
+00:21:22.930 --> 00:21:25.250
+<v Reza Hajiahmadi>We can we can say go or no go.</v>
+
+00:21:26.210 --> 00:21:44.730
+<v Amit Dubey>Yeah, I mean, last time we said, you know, things are good. This happened with Wang, so I'll keep my fingers crossed, right? And we will continue to do what we're doing in the background to make sure that Wang, sorry, Jess is set for success. And hopefully that will move in the right direction there. Okay.</v>
+
+00:21:35.170 --> 00:21:35.650
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:21:37.330 --> 00:21:37.810
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:21:40.770 --> 00:21:41.250
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:21:43.570 --> 00:21:49.490
+<v Reza Hajiahmadi>OK, Arkadi, you had raised your hand, but you raised it down.</v>
+
+00:21:50.410 --> 00:22:09.330
+<v Arkadi Kleiner>No, if that the system lowers it for you, if you don't say keep it raised. So, my question was, so you Amit, you mentioned that there is a there are others working in the background with the technicians who who we hire from ITBD.</v>
+
+00:21:54.770 --> 00:21:55.570
+<v Reza Hajiahmadi>Okay, go ahead.</v>
+
+00:22:09.570 --> 00:22:28.210
+<v Arkadi Kleiner>Do you mean in the technical perspective or do the solutions also have somebody who is aware of our processes, right, at the same time? Because this latest example was not a technical issue, so it was a process issue.</v>
+
+00:22:28.650 --> 00:22:48.290
+<v Arkadi Kleiner>where everybody knows that an approver has to approve these kinds of things. And it is not a technical issue to send an email saying, hey, approver or approvers, can you confirm this and approve this to basically cover us, right, from any possible blowback? So is there somebody who is...</v>
+
+00:22:48.370 --> 00:23:06.850
+<v Arkadi Kleiner>teaching them that too, because we try, we try, I constantly reinforce this, how important the process is, right? And I'm wondering if there's somebody on the, on your side, on your side that is also reinforcing the importance of the process.</v>
+
+00:23:07.170 --> 00:23:09.330
+<v Arkadi Kleiner>not just the technical aspect of the job.</v>
+
+00:23:10.130 --> 00:23:29.730
+<v Amit Dubey>Yeah, so I mean, just to simplify this for you, Arkadi, it's a big thing, right? And there are SMEs available on the floor, right? So, in addition to Ashish, who is a technical team lead officially, so expected to help people whenever they are stuck, but it may be the case that Ashish, of course, Ashish is not dedicated to MSP Corp, so he has other.</v>
+
+00:23:16.290 --> 00:23:16.850
+<v Arkadi Kleiner>Okay.</v>
+
+00:23:29.890 --> 00:23:48.690
+<v Amit Dubey>engineers to take care of, right? So he may be busy. So there are other SMEs also who can help people with generic technical questions, right? So if, for example, if somebody is working on a backup, right, and they're stuck with something or they have a scenario while they're troubleshooting, they can always consult the SMEs on the floor.</v>
+
+00:23:49.010 --> 00:24:10.730
+<v Amit Dubey>that this is what I'm trying to do, this is what the issue is. And if it is a generic something which is not very much specific to your environment, like you said, a process specific thing, you know, anything to do with the general technology, there are people who are available on the floor to help them out. In terms of process specifically to answer your question, right, like I said.</v>
+
+00:24:11.050 --> 00:24:32.690
+<v Amit Dubey>that once you brief them about the process, right, once you've made them aware of what the process needs to be followed, we are expecting them to be logical enough to go ahead and apply those processes, which they have learned to make the right decision. It is not something that you can make them do or I can make them do. At the end of the day, we are expecting.</v>
+
+00:24:27.250 --> 00:24:27.450
+<v Arkadi Kleiner>Yeah.</v>
+
+00:24:31.290 --> 00:24:31.850
+<v Arkadi Kleiner>Yes.</v>
+
+00:24:32.770 --> 00:24:50.090
+<v Amit Dubey>them to do it themselves once they understand what the process is. So yeah, cut the long story short, yes, there are people who are available on the floor to help them technically, but the logical thinking would always sit with the engineers so that they can make the right decisions based on what the training goes.</v>
+
+00:24:51.450 --> 00:25:11.930
+<v Arkadi Kleiner>The good news for that is that so far, Jimmy is exhibiting very good logical thinking. He would, he actually pointed out my own error at one point, saying, no, actually, you said this. Like, oh yeah, I did say that. Good, good catch, right? So that is a good signification that they are not only able to think this way, but they're also able to point out.</v>
+
+00:24:51.530 --> 00:24:51.890
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:24:58.330 --> 00:24:58.890
+<v Amit Dubey>Thank you.</v>
+
+00:25:04.330 --> 00:25:04.650
+<v Lee Cavellier>Ohh.</v>
+
+00:25:07.130 --> 00:25:07.450
+<v Lee Cavellier>Kour.</v>
+
+00:25:11.970 --> 00:25:30.770
+<v Arkadi Kleiner>To me, when I am wrong or when I overlook something that is really good, very good quality in a technician, so yeah, that's okay, that's okay. My second question, if I may, and then this would be better suited for Lee instead, what happens?</v>
+
+00:25:19.370 --> 00:25:23.130
+<v Lee Cavellier>Yeah, I agree. Glad to hear. Sorry, sorry, didn't mean to cut you off.</v>
+
+00:25:23.690 --> 00:25:24.170
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:25:30.890 --> 00:25:40.090
+<v Arkadi Kleiner>to a technician like Vanch when they are replaced. Are they placed in a more appropriate environment where they get additional training or?</v>
+
+00:25:35.410 --> 00:25:35.890
+<v Lee Cavellier>Mhm.</v>
+
+00:25:40.490 --> 00:26:00.650
+<v Lee Cavellier>So, so yes, that's our, that's usually our goal, right? Unless if somebody is a B or an A player and they're moving on from a project for whatever reason, our goal or opportunity there is to place them again. If some, but we do run an evaluation, right? We have a rebench</v>
+
+00:26:00.770 --> 00:26:20.090
+<v Lee Cavellier>Process right before they go back into the bench, the pool of available engineers part of that process includes an evaluation CSATs from their previous. Their previous partner right that is taken into consideration discussions with Ashish discussions with other technical team members.</v>
+
+00:26:02.090 --> 00:26:02.690
+<v Arkadi Kleiner>Mhm.</v>
+
+00:26:20.890 --> 00:26:40.730
+<v Lee Cavellier>So in some cases, it's cut and dry, simple. Yeah, we're going to, we know we're going to find a more comfortable, better alignment for them. In some cases, it's a clear cut. They're not going to make it at all. This is a huge security concern and we need to like address that. And then in some, it's like,</v>
+
+00:26:38.970 --> 00:26:39.210
+<v Arkadi Kleiner>Right.</v>
+
+00:26:42.650 --> 00:27:02.170
+<v Lee Cavellier>We need to see, right? Like, let's run some evaluation. I think Vanch probably falls closest to that last one. You know, we're all trying here, but we have we have partners who have lower, lower needs, right? And so there might be some partnerships that</v>
+
+00:26:45.250 --> 00:26:45.530
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:26:45.530 --> 00:26:45.930
+<v Arkadi Kleiner>Still.</v>
+
+00:26:47.210 --> 00:26:47.530
+<v Arkadi Kleiner>Kip.</v>
+
+00:26:50.890 --> 00:26:51.050
+<v Arkadi Kleiner>Mm.</v>
+
+00:26:59.450 --> 00:27:00.490
+<v Arkadi Kleiner>Right, yes.</v>
+
+00:27:02.410 --> 00:27:16.250
+<v Lee Cavellier>That makes sense. So that's really the high level of it is, you know, one of those three camps. But we do run evaluation and our goal is to, you know, if it's good talent, we want to keep good talent, right?</v>
+
+00:27:16.250 --> 00:27:19.290
+<v Arkadi Kleiner>Yes, yeah, understood. Thank you for explaining that.</v>
+
+00:27:17.850 --> 00:27:36.410
+<v Reza Hajiahmadi>Yeah, at the end, at the end, it's IT by design call and they can make a decision about their technician. Speaking of technicians, it's a good point. The thing is, we have we have a definition in our site.</v>
+
+00:27:20.130 --> 00:27:20.650
+<v Lee Cavellier>Of course.</v>
+
+00:27:22.010 --> 00:27:22.290
+<v Arkadi Kleiner>Yeah.</v>
+
+00:27:24.810 --> 00:27:25.970
+<v Arkadi Kleiner>Yes, yes, exactly.</v>
+
+00:27:36.970 --> 00:28:01.330
+<v Reza Hajiahmadi>We say technician to all of our real technician that work in our side, even if it even if they are level 3. You say engineer and it gives them this kind of feeling that they came from another world because they are engineer and our guys are technician. I'm not sure if it's minor, but I'm not sure if we can somehow.</v>
+
+00:27:53.050 --> 00:27:53.370
+<v Arkadi Kleiner>Yeah.</v>
+
+00:27:54.730 --> 00:27:55.050
+<v Arkadi Kleiner>Yeah.</v>
+
+00:27:56.010 --> 00:27:56.210
+<v Arkadi Kleiner>Yeah.</v>
+
+00:28:01.410 --> 00:28:20.650
+<v Reza Hajiahmadi>adjust it because you know this is this is a kind of mindset that we should have same mindset in a team. When we when we say okay your technician or say that technician said this and that technician said that it can be somehow.</v>
+
+00:28:17.690 --> 00:28:18.090
+<v Amit Dubey>Yeah.</v>
+
+00:28:20.810 --> 00:28:28.010
+<v Reza Hajiahmadi>But I would say if we can somehow adjust it, it would be beneficial for us, but it's not it's not major.</v>
+
+00:28:26.330 --> 00:28:45.610
+<v Amit Dubey>I know, I know what I mean. It's a cultural thing, just so you're aware, right? It's just not with ITBD by design, it's in India, right? So there are a few things which are, if you go into the LinkedIn, right, and if you try and search a post for India, right, India positions, right, it doesn't matter where you go, right?</v>
+
+00:28:30.330 --> 00:28:31.210
+<v Arkadi Kleiner>Yeah, yes.</v>
+
+00:28:30.810 --> 00:28:30.970
+<v Reza Hajiahmadi>Mm.</v>
+
+00:28:35.370 --> 00:28:35.690
+<v Arkadi Kleiner>Yes.</v>
+
+00:28:35.450 --> 00:28:36.010
+<v Reza Hajiahmadi>Ohh.</v>
+
+00:28:44.650 --> 00:28:44.930
+<v Reza Hajiahmadi>And.</v>
+
+00:28:46.090 --> 00:29:04.570
+<v Amit Dubey>Microsoft, Google, anywhere you go, one of the big giants that you go to, right? There's always an engineer, and it's more of a more of a cultural thing, and if we try to shift it right, people may get offended. I mean, we we can you get what I mean, right? So...</v>
+
+00:28:46.250 --> 00:28:46.530
+<v Arkadi Kleiner>Yeah.</v>
+
+00:28:53.130 --> 00:28:53.290
+<v Reza Hajiahmadi>Mm.</v>
+
+00:28:55.130 --> 00:28:55.730
+<v Reza Hajiahmadi>Steve.</v>
+
+00:29:01.850 --> 00:29:06.810
+<v Reza Hajiahmadi>Oh, I see. Okay, okay. Don't worry about that. Don't worry about that.</v>
+
+00:29:04.890 --> 00:29:23.930
+<v Amit Dubey>Yeah, yeah. No, so we certainly can do some adjustments there is what I'm thinking, right? But yeah, allow us some time and we'll see and how can we better adjust things, right? Because at the end of the day, of course, it's going to be a long-term relationship. So of course, we are here to learn from each other and see what can be implemented, right?</v>
+
+00:29:23.170 --> 00:29:23.770
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:29:24.290 --> 00:29:31.610
+<v Amit Dubey>Even if it is specific to MSP Corporate environment, it is something that we can always continue to work on. Yes, Arkadi.</v>
+
+00:29:31.450 --> 00:29:54.010
+<v Reza Hajiahmadi>Yeah, I just want them to feel that they are a part of our team. This is important because, you know, that doesn't matter. They work for IT by design or work for our other partner that we have or we directly hire them. They should feel that all of us, our team, we handle everything.</v>
+
+00:29:36.650 --> 00:29:37.450
+<v Amit Dubey>Yeah, of course.</v>
+
+00:29:36.730 --> 00:29:38.170
+<v Arkadi Kleiner>Exactly, yeah.</v>
+
+00:29:39.970 --> 00:29:40.890
+<v Amit Dubey>Hundred percent.</v>
+
+00:29:54.050 --> 00:30:13.530
+<v Reza Hajiahmadi>based on the clear instruction and there is no difference in the title and something like that. Because after the integration with ConnectWise, we adjusted all the titles. Even my title changed. So, and the reason behind of that is we should have.</v>
+
+00:30:14.810 --> 00:30:21.570
+<v Reza Hajiahmadi>Harmonizing all the titles that we have, but it's totally fine. It's not major. Arkadi, go ahead.</v>
+
+00:30:22.650 --> 00:30:41.930
+<v Arkadi Kleiner>Yes, just then a very minor request is to maybe not use the term in communication with clients, because here they, again, again, it's a cultural thing. Over here, they expect to see the word technician in communication. So a technician will be assigned to your ticket or will action your ticket at a certain point.</v>
+
+00:30:42.010 --> 00:30:56.410
+<v Arkadi Kleiner>time, right? When they see engineer, whether in an email or they hear engineer on the phone call, they're like, what do you mean engineer? Yeah, it's just, it really is a difference in culture. Yeah, yeah, yeah.</v>
+
+00:30:50.450 --> 00:30:52.890
+<v Reza Hajiahmadi>Engineering, yeah, what does that mean?</v>
+
+00:30:52.970 --> 00:30:54.490
+<v Torin Lever>Am I paying more for this engineer?</v>
+
+00:30:55.210 --> 00:30:55.530
+<v Reza Hajiahmadi>Ohh.</v>
+
+00:30:56.490 --> 00:31:11.770
+<v Reza Hajiahmadi>Yeah, and they are afraid, yeah, should I pay the bill for an engineer or is there an extra charge or is it out of fiscal when you assign a ticket to an engineer or something like that? Yeah, okay, okay, cool.</v>
+
+00:30:56.730 --> 00:30:56.890
+<v Torin Lever>Yeah.</v>
+
+00:30:57.770 --> 00:30:58.410
+<v Amit Dubey>Good point.</v>
+
+00:31:02.010 --> 00:31:02.210
+<v Ashish Paul>Mm.</v>
+
+00:31:06.490 --> 00:31:06.970
+<v Amit Dubey>Yeah.</v>
+
+00:31:08.810 --> 00:31:09.290
+<v Amit Dubey>I know.</v>
+
+00:31:11.770 --> 00:31:19.210
+<v Amit Dubey>We have something called level 1, level 1 plus, level 2, level 2 plus, right? So...</v>
+
+00:31:11.930 --> 00:31:12.890
+<v Ashish Paul>If something falls.</v>
+
+00:31:15.210 --> 00:31:15.530
+<v Ashish Paul>S.</v>
+
+00:31:18.730 --> 00:31:38.410
+<v Reza Hajiahmadi>Oh, don't involve us on those side. We have a level one, field level 2, which is field technician for us, and the escalation team technician, which is level 3. If you want to involve us in level 1 1/2 and one plus, plus two.</v>
+
+00:31:18.850 --> 00:31:19.210
+<v Ashish Paul>Hello!</v>
+
+00:31:21.450 --> 00:31:24.490
+<v Amit Dubey>And level 2, I know.</v>
+
+00:31:21.970 --> 00:31:22.130
+<v Ashish Paul>Yeah.</v>
+
+00:31:25.770 --> 00:31:26.250
+<v Amit Dubey>Yeah.</v>
+
+00:31:27.970 --> 00:31:28.090
+<v Ashish Paul>Yeah.</v>
+
+00:31:32.090 --> 00:31:33.370
+<v Amit Dubey>Yeah, yeah.</v>
+
+00:31:38.810 --> 00:31:40.330
+<v Reza Hajiahmadi>Three plus, ohh.</v>
+
+00:31:40.650 --> 00:31:57.930
+<v Amit Dubey>Yeah, no, I shared it with an intent that you know, I mean, don't be surprised if we ever get to hear it, but again, it is not something that we specifically use for MSV Corp, but of course, there are clients who specifically ask that, you know what, give me something who is not a level one, but ready to be level 2, then you go with level 1 plus.</v>
+
+00:31:40.730 --> 00:31:41.930
+<v Ashish Paul>Yeah, so I...</v>
+
+00:31:48.810 --> 00:31:49.130
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:31:56.490 --> 00:31:57.010
+<v Ashish Paul>Very cool.</v>
+
+00:31:58.210 --> 00:32:17.450
+<v Amit Dubey>Right, so yeah, all sort of thing happens, right? So, yeah, okay, very quickly, we overtime. I know, I mean, I that couple of things that I wanted to quickly bring up, so we we calibrated with our training team based on the topics.</v>
+
+00:31:58.330 --> 00:31:58.810
+<v Ashish Paul>Thank you.</v>
+
+00:31:59.450 --> 00:31:59.610
+<v Reza Hajiahmadi>Mm.</v>
+
+00:32:00.290 --> 00:32:00.490
+<v Ashish Paul>Yeah.</v>
+
+00:32:02.410 --> 00:32:02.890
+<v Ashish Paul>Full stop.</v>
+
+00:32:02.970 --> 00:32:03.210
+<v Reza Hajiahmadi>Hmm.</v>
+
+00:32:05.530 --> 00:32:05.690
+<v Ashish Paul>Um...</v>
+
+00:32:06.410 --> 00:32:06.850
+<v Reza Hajiahmadi>Okay.</v>
+
+00:32:08.250 --> 00:32:08.730
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:32:09.330 --> 00:32:09.570
+<v Ashish Paul>Yeah.</v>
+
+00:32:12.330 --> 00:32:12.610
+<v Ashish Paul>Yeah.</v>
+
+00:32:15.410 --> 00:32:15.890
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:32:17.610 --> 00:32:38.650
+<v Amit Dubey>Arkadi that you shared. Thank you for that first of all. So they've given us a plan in terms of how many total hours of training. That's going to be an extensive training, irrespective whether they know it or they don't know it. We want to go over all of these topics right with them. Ashish, I think you wanted to confirm about the timings.</v>
+
+00:32:20.570 --> 00:32:21.210
+<v Ashish Paul>So.</v>
+
+00:32:33.250 --> 00:32:33.730
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:32:39.290 --> 00:32:58.250
+<v Ashish Paul>Yes, so the hours that we have received from the training team, we are around 84 hours they need to complete all the topics that you have mentioned in the list. So we are targeting at like an hour per day for the training because keeping them.</v>
+
+00:32:58.970 --> 00:33:18.570
+<v Ashish Paul>away from their shift more than an hour would be, would also not be wise for their work. So just wanted to know from you, Arkadi, do you want a time that is common for all four of them or how do you want to do it? Because we would.</v>
+
+00:33:08.570 --> 00:33:08.850
+<v Arkadi Kleiner>Yeah.</v>
+
+00:33:18.650 --> 00:33:29.530
+<v Ashish Paul>want all of them to be available for the training at once because the trainer would have to go through the curriculum when all the audience is there.</v>
+
+00:33:30.330 --> 00:33:32.250
+<v Reza Hajiahmadi>Okay, you said 80 hours?</v>
+
+00:33:33.690 --> 00:33:34.330
+<v Ashish Paul>8080.</v>
+
+00:33:35.570 --> 00:33:36.010
+<v Reza Hajiahmadi>Ashish.</v>
+
+00:33:37.130 --> 00:33:37.330
+<v Reza Hajiahmadi>Key.</v>
+
+00:33:37.370 --> 00:33:37.770
+<v Arkadi Kleiner>Mm.</v>
+
+00:33:38.890 --> 00:33:48.250
+<v Reza Hajiahmadi>You want to add receipt during the working day or how is there any way to work on the training during the weekend with them?</v>
+
+00:33:49.530 --> 00:33:49.930
+<v Ashish Paul>Kip.</v>
+
+00:33:49.530 --> 00:34:08.610
+<v Amit Dubey>Yeah, we can try for off hours as well. We have to plan it accordingly. So we just wanted to have an alignment. So I think what we can do now is we can share the plan or our recommendation, right, that how the training plan would look like and what are the suggested hours of availability of the trainers is going to look like. And then you guys can let us know. Not.</v>
+
+00:34:00.250 --> 00:34:00.410
+<v Reza Hajiahmadi>Mm.</v>
+
+00:34:06.050 --> 00:34:06.530
+<v Reza Hajiahmadi>Mmh.</v>
+
+00:34:16.810 --> 00:34:17.370
+<v Reza Hajiahmadi>I see.</v>
+
+00:34:17.690 --> 00:34:17.930
+<v Amit Dubey>Yeah.</v>
+
+00:34:18.650 --> 00:34:37.450
+<v Reza Hajiahmadi>Yeah, and and and another idea is, hey, how we we can prioritize the topics, like say the topics that we we we have more ticket on, we can prioritize those and then start working on the training if you wanna.</v>
+
+00:34:18.730 --> 00:34:19.410
+<v Arkadi Kleiner>Mhm.</v>
+
+00:34:37.610 --> 00:34:56.730
+<v Reza Hajiahmadi>If you want to train them during the weekend, what we can do in our site is we can give you the shift time that we have for our technician for the weekend. Then if someone from IT by Design is in a shift, Arkadi can move them to another time.</v>
+
+00:34:58.170 --> 00:35:17.770
+<v Reza Hajiahmadi>And my idea is if it is during the weekend, you can have two or three, two sessions, I would say, during each weekend. Like say each session can be two hours. So we can handle it like in a couple of months.</v>
+
+00:35:18.090 --> 00:35:18.370
+<v Ashish Paul>Yeah.</v>
+
+00:35:18.170 --> 00:35:38.090
+<v Reza Hajiahmadi>But the priority for us, the priority for us is some topics. Arkadi can share the topic, share the priority for you, like say, might we have less ticket in terms of VSphere or ESXI or virtualization.</v>
+
+00:35:38.450 --> 00:35:54.490
+<v Reza Hajiahmadi>but we have more to get about Active Directory, Intune stuff, Azure stuff, and something like that. And depends on the level of their knowledge, you can move on on on some of those topics. Like say, okay, they know everything about that, so let's move on.</v>
+
+00:35:38.730 --> 00:35:39.130
+<v Amit Dubey>Yeah.</v>
+
+00:35:39.970 --> 00:35:40.130
+<v Ashish Paul>S.</v>
+
+00:35:45.130 --> 00:35:45.530
+<v Amit Dubey>Yep.</v>
+
+00:35:55.530 --> 00:36:06.530
+<v Amit Dubey>Yeah, no, understood. So, Arkadi, we can do what we can do, right? We can collaborate with you over chat separately, right? And you can drop and we can probably give you a quick call for 5 minutes just to go through the list and put a...</v>
+
+00:35:55.650 --> 00:35:56.090
+<v Ashish Paul>Yeah, no.</v>
+
+00:35:55.930 --> 00:35:56.330
+<v Arkadi Kleiner>Key.</v>
+
+00:36:01.050 --> 00:36:01.530
+<v Arkadi Kleiner>Mhm.</v>
+
+00:36:05.290 --> 00:36:11.890
+<v Ashish Paul>Uh, let me, let me quickly share my screen. We can collectively go through the topic that I received from Arkadi, so we have...</v>
+
+00:36:09.130 --> 00:36:09.530
+<v Amit Dubey>Okay.</v>
+
+00:36:11.210 --> 00:36:14.730
+<v Amit Dubey>That is what I gotta drop, um, Reza Arkadi in Torrent.</v>
+
+00:36:13.290 --> 00:36:13.770
+<v Ashish Paul>Okay.</v>
+
+00:36:14.090 --> 00:36:38.410
+<v Reza Hajiahmadi>I have one word if you give me 30 seconds. I just want to recap the replacement for Ranch. So we agreed that you guys give us some candidates. We're going to start interview with them. Once we approve one of them, we start the training process and the training process, based on our experience, at least would be</v>
+
+00:36:18.330 --> 00:36:18.770
+<v Amit Dubey>Vishal.</v>
+
+00:36:18.570 --> 00:36:18.730
+<v Ashish Paul>So...</v>
+
+00:36:23.210 --> 00:36:23.450
+<v Amit Dubey>Yeah.</v>
+
+00:36:39.130 --> 00:37:03.050
+<v Reza Hajiahmadi>Four weeks for us to help them to understand the the the process wise of the staff, and during during that four weeks, we do have we work with the new guy. There is no double pay for us for that four weeks, and once we approve, we're gonna let him go and start working with the new guy.</v>
+
+00:36:45.570 --> 00:36:46.090
+<v Amit Dubey>Rick.</v>
+
+00:36:54.970 --> 00:36:56.490
+<v Amit Dubey>Correct. Correct.</v>
+
+00:36:57.610 --> 00:36:58.170
+<v Amit Dubey>Correct.</v>
+
+00:37:03.650 --> 00:37:22.850
+<v Amit Dubey>Correct. The only thing is that we do not let function know that that person who is working alongside is a replacement. Yeah. So, yeah, yeah. So it's fine. Expect to see an email, Reza, to Karine from me. I'll copy you in that email just to let her know that we have aligned on the call, that we're going ahead of the replacement, and letting her know that what we have discussed.</v>
+
+00:37:03.930 --> 00:37:04.330
+<v Ashish Paul>Yep.</v>
+
+00:37:04.490 --> 00:37:04.890
+<v Reza Hajiahmadi>Okay.</v>
+
+00:37:07.530 --> 00:37:10.810
+<v Reza Hajiahmadi>Yeah, yeah, yeah, yeah, exactly, exactly.</v>
+
+00:37:11.450 --> 00:37:11.610
+<v Ashish Paul>Oh.</v>
+
+00:37:13.530 --> 00:37:14.050
+<v Ashish Paul>Yeah.</v>
+
+00:37:19.290 --> 00:37:19.490
+<v Ashish Paul>Stop.</v>
+
+00:37:22.330 --> 00:37:24.090
+<v Reza Hajiahmadi>Okay, sure. Thank you.</v>
+
+00:37:23.530 --> 00:37:35.450
+<v Amit Dubey>Okay, all right, all right. Thank you, Reza. Thank you, Arkadi, Toran. Have a good, wonderful weekend, and if we don't speak again, hopefully we do not have to, and right, and...</v>
+
+00:37:24.650 --> 00:37:25.130
+<v Ashish Paul>Thank you.</v>
+
+00:37:25.530 --> 00:37:27.210
+<v Arkadi Kleiner>Kip, you can wait.</v>
+
+00:37:27.850 --> 00:37:28.250
+<v Ashish Paul>Have a good.</v>
+
+00:37:27.930 --> 00:37:28.050
+<v Reza Hajiahmadi>Okay.</v>
+
+00:37:31.130 --> 00:37:31.250
+<v Ashish Paul>And...</v>
+
+00:37:33.250 --> 00:37:33.370
+<v Ashish Paul>Yeah.</v>
+
+00:37:34.250 --> 00:37:41.730
+<v Reza Hajiahmadi>Yeah, we love to speak with you about how the technicians are good and we are happy. Why not?</v>
+
+00:37:36.890 --> 00:37:38.930
+<v Amit Dubey>Yeah, good things, good things.</v>
+
+00:37:37.130 --> 00:37:38.810
+<v Ashish Paul>Yeah, a good thing, a good thing.</v>
+
+00:37:42.010 --> 00:37:53.370
+<v Amit Dubey>Yeah, all right. Pleasure. Okay, I gotta jump on an interview call, but yeah, I will shortly drop an email, Reza. Yeah, okay, thank you. Sure, sir. Bye bye. Okay, I'm with you.</v>
+
+00:37:42.810 --> 00:37:43.290
+<v Sarbjeet Singh>True.</v>
+
+00:37:42.890 --> 00:37:47.050
+<v Ashish Paul>All right, pleasure, I jumped on.</v>
+
+00:37:46.170 --> 00:37:46.570
+<v Reza Hajiahmadi>Goodbye.</v>
+
+00:37:47.850 --> 00:37:48.210
+<v Reza Hajiahmadi>Okay.</v>
+
+00:37:48.650 --> 00:37:48.970
+<v Ashish Paul>Johal.</v>
+
+00:37:50.170 --> 00:37:50.890
+<v Reza Hajiahmadi>Sure, bye.</v>
+
+00:37:50.370 --> 00:37:52.170
+<v Ashish Paul>Thank you, everyone.</v>
+
+00:37:51.050 --> 00:37:53.290
+<v Sarbjeet Singh>Thank you, Team. Take care.</v>
+

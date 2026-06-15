@@ -1,0 +1,611 @@
+WEBVTT
+NOTE title: Stratti | Co-Managed | Weekly Service Call | Sterling
+NOTE date: 2026-06-15
+NOTE duration: 20m 42s
+
+00:00:13.846 --> 00:00:14.606
+<v Aman Thakur>Ignoring love.</v>
+
+00:00:15.486 --> 00:00:16.606
+<v Rob Reddemann>Morning, how's it going?</v>
+
+00:00:17.726 --> 00:00:21.286
+<v Aman Thakur>Doing pretty good. How about you? Good to see you after, I think, 2 weeks.</v>
+
+00:00:21.526 --> 00:00:21.646
+<v Aman Thakur>But...</v>
+
+00:00:21.966 --> 00:00:23.806
+<v Rob Reddemann>Yeah, yeah, it's been a while.</v>
+
+00:00:26.126 --> 00:00:27.326
+<v Rob Reddemann>Good to see you.</v>
+
+00:00:26.366 --> 00:00:27.166
+<v Aman Thakur>That's right.</v>
+
+00:00:30.366 --> 00:00:38.166
+<v Aman Thakur>All right, let me see who else is going to be joined. Rick is probably on another call, or give me one second.</v>
+
+00:00:41.526 --> 00:00:41.686
+<v Aman Thakur>No.</v>
+
+00:00:57.286 --> 00:01:00.406
+<v Aman Thakur>Give me one minute. I'm just checking if he's going to join.</v>
+
+00:01:01.166 --> 00:01:01.646
+<v Rob Reddemann>Okay.</v>
+
+00:01:08.326 --> 00:01:12.886
+<v Aman Thakur>So I think this is the first time that we are, you know, have this call, right?</v>
+
+00:01:13.486 --> 00:01:14.046
+<v Rob Reddemann>Yes.</v>
+
+00:01:15.366 --> 00:01:33.926
+<v Aman Thakur>So I'm not sure. Rick has already updated, but just kind of give you the overview what is the purpose agenda of this call. So first beginning when we onboard any new client or any partner, so we'll make sure that the call is scheduled weekly where we check engineer performance, the review, whatever.</v>
+
+00:01:34.006 --> 00:01:49.766
+<v Aman Thakur>things are pending, what all things we're going to take at this week. So overall, the service delivery point of view, we're going to check everything that the engineer is doing at your side. Here are you. I think we have the full audience here.</v>
+
+00:01:50.726 --> 00:01:51.046
+<v Aman Thakur>Addy.</v>
+
+00:01:50.926 --> 00:01:51.046
+<v Rob Reddemann>Yes.</v>
+
+00:01:51.326 --> 00:01:51.966
+<v Amit Dubey>Morning, Rob.</v>
+
+00:01:52.686 --> 00:01:53.126
+<v Aman Thakur>Hey, Mohit.</v>
+
+00:01:52.766 --> 00:01:53.166
+<v Rob Reddemann>Morning.</v>
+
+00:01:54.206 --> 00:01:54.846
+<v Lee Cavellier>Everybody.</v>
+
+00:01:55.806 --> 00:01:56.926
+<v Rob Reddemann>Yeah, how's it going?</v>
+
+00:01:58.206 --> 00:01:58.846
+<v Lee Cavellier>Good, good.</v>
+
+00:02:04.366 --> 00:02:18.966
+<v Aman Thakur>I think I was talking to Rob to just kind of give overview what is the purpose agenda of our weekly call, what all we discuss, what we plan. So kind of we are on the same page and stick to the agenda, what we have.</v>
+
+00:02:22.566 --> 00:02:43.406
+<v Aman Thakur>So next few months, like the 30, 60, 90 day plan that we shared, we're going to work according that. So after a few service call, spending two, three months, once we think everything is online, probably we change the frequency of the call maybe weekly or monthly, twice a month or later after down to the six month and monthly.</v>
+
+00:02:40.046 --> 00:02:40.526
+<v Rob Reddemann>Mhm.</v>
+
+00:02:43.526 --> 00:02:54.486
+<v Aman Thakur>depending on how the service is going from our side, any challenges or anything. And we can again switch the call back to weekly, monthly, depend on the progress that we're going to make.</v>
+
+00:02:55.566 --> 00:02:56.046
+<v Rob Reddemann>Keith.</v>
+
+00:02:56.406 --> 00:03:14.606
+<v Aman Thakur>Yeah, so again, the call is not only that we're going to discuss only on our service call, but if we or you found anything or you noticed anything, yeah, you definitely can reach us out before our service call. You can email to anyone on which you see on the screen, all the stakeholder.</v>
+
+00:02:56.806 --> 00:02:57.486
+<v Rob Reddemann>That sounds great.</v>
+
+00:03:14.726 --> 00:03:20.246
+<v Aman Thakur>So we definitely can take it that immediately rather waiting for weekly and monthly call to be happen.</v>
+
+00:03:21.806 --> 00:03:22.206
+<v Rob Reddemann>OK.</v>
+
+00:03:25.606 --> 00:03:26.726
+<v Aman Thakur>Let's sync.</v>
+
+00:03:29.766 --> 00:03:49.366
+<v Aman Thakur>So I think I will probably, because since it's two week, right? So the first week, what we present normally, like once the engineer started working on the tickets, the utilization, the ticket closer, all the KPIs, right, that we normally shared. So I think the first week was all about the training that.</v>
+
+00:03:50.006 --> 00:04:04.566
+<v Aman Thakur>Sterling completed what all task he has completed, what he's doing, what all the achievement that he made. So I think it is all over about that training that he was doing, understand your process, the ticket flow, et cetera, everything, but the last two week.</v>
+
+00:04:03.406 --> 00:04:03.526
+<v Rob Reddemann>And.</v>
+
+00:04:06.206 --> 00:04:24.046
+<v Rob Reddemann>That's correct. He's been working primarily on vendor certs more than anything. Haven't really started to fold them into operations at all. Just wanted to get through all the vendor certs so he has that framework. That's going to change going forward.</v>
+
+00:04:24.686 --> 00:04:32.686
+<v Rob Reddemann>And remember, he's professional services, so he's not working the support board or anything like that. So it's a kind of different mindset, different goals.</v>
+
+00:04:35.806 --> 00:04:51.326
+<v Rob Reddemann>We are changing the professional services supervisor, actually establishing one. So he'll be reporting to a new person that'll start tomorrow. So this is all really fresh.</v>
+
+00:04:53.726 --> 00:05:12.526
+<v Rob Reddemann>But we have a few projects in mind for him to start participating in. And then also we do want to cross-reference him on the support desk. And so he'll get basically what's on the docket for this upcoming week is.</v>
+
+00:05:13.326 --> 00:05:29.966
+<v Rob Reddemann>A little bit of support time where he'll work some automated tickets with the Support Manager, just so he learns our style for managing tickets and documentation. He's also going to shadow another engineer on a software, sorry, server implementation.</v>
+
+00:05:31.246 --> 00:05:44.926
+<v Rob Reddemann>So he'll be doing that off and on this week. And then we're going to start focusing him in on, we have an internal project of upgrading spam, or spam software for our clients. Excuse me.</v>
+
+00:05:49.966 --> 00:05:51.166
+<v Rob Reddemann>And then we have a few.</v>
+
+00:05:53.886 --> 00:05:57.406
+<v Rob Reddemann>Big projects that are hitting the board that he'll be into in a couple weeks.</v>
+
+00:06:00.886 --> 00:06:01.086
+<v Aman Thakur>Right.</v>
+
+00:06:01.686 --> 00:06:02.846
+<v Rob Reddemann>Any questions about that?</v>
+
+00:06:04.566 --> 00:06:16.726
+<v Lee Cavellier>Just a quick question, Rob. First of all, I don't think we've formally met on a call, so I just want to say hello. If we have it, I'm pretty sure we have it. You can tell me I'm wrong if I am.</v>
+
+00:06:10.366 --> 00:06:10.846
+<v Rob Reddemann>Hello.</v>
+
+00:06:17.406 --> 00:06:23.686
+<v Rob Reddemann>You're wrong, we met once, I think, so we'll give you grace. Yeah, yeah.</v>
+
+00:06:19.366 --> 00:06:39.446
+<v Lee Cavellier>Oh, towards the very, probably then the very first onboarding. Thank you. Thank you for correcting me. Now, quick question. You said that starting tomorrow, he'll be, there will be a supervisor in charge of PS work. Does that mean that this is a person internal to strategy today who's just going to be taking ownership of it?</v>
+
+00:06:20.126 --> 00:06:20.526
+<v Amit Dubey>He did.</v>
+
+00:06:30.406 --> 00:06:30.526
+<v Rob Reddemann>Yeah.</v>
+
+00:06:33.486 --> 00:06:33.886
+<v Rob Reddemann>Yep.</v>
+
+00:06:39.766 --> 00:06:50.966
+<v Lee Cavellier>Okay, right. I just wanted to understand. So essentially, when you say starting tomorrow, you mean that's effectively when that person will start overseeing Sterling's work?</v>
+
+00:06:39.886 --> 00:06:40.366
+<v Rob Reddemann>Yes.</v>
+
+00:06:52.366 --> 00:06:59.406
+<v Rob Reddemann>That's when he'll first step into the role. So even fresher than that. But yeah, he'll start working with Sterling.</v>
+
+00:06:56.806 --> 00:06:57.326
+<v Lee Cavellier>Okay.</v>
+
+00:07:00.446 --> 00:07:01.966
+<v Rob Reddemann>Um, soon.</v>
+
+00:07:00.606 --> 00:07:00.886
+<v Lee Cavellier>Okay.</v>
+
+00:07:02.566 --> 00:07:20.566
+<v Lee Cavellier>Okay. Long term, one of my advisements as far as how we play this, and I know that Aman was, thank you for laying out kind of the trajectory of these meetings, but Rob, for all intents and purposes, that person would probably be the right person to meet on a fairly regular cadence with Aman.</v>
+
+00:07:20.806 --> 00:07:32.806
+<v Lee Cavellier>so that they can make sure we're in lockstep with those daily operational and support items that we can, as far as keeping Sterling on track, supporting whatever initiatives are going on. So.</v>
+
+00:07:21.086 --> 00:07:21.566
+<v Rob Reddemann>Mhm.</v>
+
+00:07:29.686 --> 00:07:30.286
+<v Rob Reddemann>Mm-hmm.</v>
+
+00:07:32.926 --> 00:07:34.606
+<v Rob Reddemann>Agreed. Yeah, that is the plan.</v>
+
+00:07:34.886 --> 00:07:44.086
+<v Lee Cavellier>Great. Great. Just wanted to make sure. As much as we appreciate you being here, I know you've got very important things to be doing in addition. So, yeah.</v>
+
+00:07:36.966 --> 00:07:37.446
+<v Rob Reddemann>Mhm.</v>
+
+00:07:42.126 --> 00:07:42.526
+<v Rob Reddemann>Yep.</v>
+
+00:07:45.006 --> 00:07:45.566
+<v Rob Reddemann>Yes.</v>
+
+00:07:46.086 --> 00:07:46.646
+<v Lee Cavellier>Excellent.</v>
+
+00:07:46.406 --> 00:07:54.606
+<v Aman Thakur>And another clarity question, Rob. So you going to be the point of contact for any communications or is someone else going to be at your side?</v>
+
+00:07:56.046 --> 00:07:56.366
+<v Aman Thakur>That.</v>
+
+00:07:56.126 --> 00:07:56.366
+<v Rob Reddemann>Um...</v>
+
+00:07:57.486 --> 00:08:13.646
+<v Rob Reddemann>Someone else, Max is his name, he will be overseeing the day-to-day. So we'll see how it goes. We'll go through a transition period. It's not going to be a cold turkey thing. He will slowly step up and I'll slowly step out.</v>
+
+00:08:09.326 --> 00:08:09.566
+<v Aman Thakur>Yeah.</v>
+
+00:08:15.246 --> 00:08:39.086
+<v Aman Thakur>Makes sense. Yeah, and Anders, I'm going to open a team federation, right? So where we can chat internally, right on the team, if anything urgent comes in, you definitely can ping us, we can connect or communicate over the team channel. So I think that'll be easy communication way for a daily to daily report if we have to share anything or any gap that you found, right? We can discuss that immediately on the team channel.</v>
+
+00:08:29.806 --> 00:08:30.286
+<v Rob Reddemann>Mhm.</v>
+
+00:08:40.126 --> 00:08:42.326
+<v Rob Reddemann>Which, yeah, which I think we have, right?</v>
+
+00:08:43.326 --> 00:08:43.646
+<v Aman Thakur>Keith.</v>
+
+00:08:44.766 --> 00:08:50.446
+<v Aman Thakur>I haven't tested yet, yeah, but like Rick mentioned on the last service call that, yeah, should be.</v>
+
+00:08:45.726 --> 00:08:46.126
+<v Rob Reddemann>Javid.</v>
+
+00:08:51.926 --> 00:08:53.086
+<v Aman Thakur>Good to chat on the team.</v>
+
+00:08:58.246 --> 00:08:59.366
+<v Amit Dubey>Yeah, we can test it.</v>
+
+00:08:58.286 --> 00:08:59.486
+<v Rob Reddemann>I've gone through my history.</v>
+
+00:09:01.446 --> 00:09:04.246
+<v Amit Dubey>I guess, while you get on the call, we can test it, Rob.</v>
+
+00:09:05.246 --> 00:09:07.326
+<v Aman Thakur>Yeah, works set. I think we're good on that.</v>
+
+00:09:08.366 --> 00:09:08.446
+<v Rob Reddemann>The.</v>
+
+00:09:11.886 --> 00:09:29.966
+<v Aman Thakur>I think this call is going to be a little short. So yeah, I'll definitely share what all Sterling has completed in the last two week, right? What all training that he's completed, the process knowledge and everything. And if I found any gap or anything or any other information that he needed from your side, yeah, I definitely keep you posted for that.</v>
+
+00:09:32.006 --> 00:09:33.366
+<v Rob Reddemann>Okay, that sounds good.</v>
+
+00:09:33.086 --> 00:09:44.606
+<v Amit Dubey>Rob, any initial observations from you while he goes through training? And of course, you know, I'm sure that he would have interacted with them. So anything that you have is an initial observation that you would like to share with us.</v>
+
+00:09:46.246 --> 00:09:46.726
+<v Rob Reddemann>Um...</v>
+
+00:09:48.086 --> 00:10:07.046
+<v Rob Reddemann>Not at this time. This is where we're really going to get a good look at what he can do. He's been doing very well at knocking down certs and our vendor certs. So we're pleased about that. He's been getting through them very quickly. And I know some of the material is familiar, which is a good sign. We want that. But he's been...</v>
+
+00:09:52.806 --> 00:09:52.926
+<v Amit Dubey>Addy.</v>
+
+00:10:20.126 --> 00:10:20.446
+<v Amit Dubey>Yep.</v>
+
+00:10:21.606 --> 00:10:25.966
+<v Rob Reddemann>All that works out. When do we talk about career development plan?</v>
+
+00:10:23.406 --> 00:10:24.046
+<v Amit Dubey>Understood.</v>
+
+00:10:28.606 --> 00:10:29.086
+<v Amit Dubey>Mhm.</v>
+
+00:10:31.606 --> 00:10:34.766
+<v Rob Reddemann>When we talk about the CDP, the Career Development Plan.</v>
+
+00:10:33.966 --> 00:10:34.446
+<v Amit Dubey>Mhm.</v>
+
+00:10:35.966 --> 00:10:36.846
+<v Rob Reddemann>Ready to talk now?</v>
+
+00:10:37.886 --> 00:10:39.086
+<v Aman Thakur>Yeah, yeah, definitely.</v>
+
+00:10:38.846 --> 00:10:39.406
+<v Amit Dubey>Yeah, sure.</v>
+
+00:10:40.366 --> 00:10:43.566
+<v Rob Reddemann>OK, let me share.</v>
+
+00:10:48.526 --> 00:10:49.566
+<v Rob Reddemann>This.</v>
+
+00:10:57.246 --> 00:10:57.486
+<v Rob Reddemann>Um...</v>
+
+00:11:01.646 --> 00:11:04.046
+<v Rob Reddemann>So, one thing we would...</v>
+
+00:11:05.726 --> 00:11:16.926
+<v Rob Reddemann>So, we're led to believe, based on our conversation, that he's fairly strong in Office 365, and we'd like him to...</v>
+
+00:11:18.366 --> 00:11:21.486
+<v Rob Reddemann>Kind of lean into that and be our subject matter expert.</v>
+
+00:11:22.766 --> 00:11:23.166
+<v Rob Reddemann>Um...</v>
+
+00:11:24.126 --> 00:11:38.766
+<v Rob Reddemann>on 365 and the whole modern work suite. And so the primary goal for us would be to have them continue to develop in this area and get these certs, the MS102 and the SC300.</v>
+
+00:11:42.526 --> 00:11:43.006
+<v Aman Thakur>Sure.</v>
+
+00:11:42.606 --> 00:11:43.166
+<v Amit Dubey>Sure.</v>
+
+00:11:44.166 --> 00:11:45.006
+<v Aman Thakur>I cannot of it.</v>
+
+00:11:47.486 --> 00:11:47.726
+<v Rob Reddemann>Um...</v>
+
+00:11:48.686 --> 00:11:50.566
+<v Rob Reddemann>And then, and...</v>
+
+00:11:54.126 --> 00:12:11.246
+<v Rob Reddemann>Secondarily, lean into networking. Sophos are the one we use has architect certification AT80 that we'd like him to get.</v>
+
+00:12:11.606 --> 00:12:13.806
+<v Rob Reddemann>and we can get him access to that.</v>
+
+00:12:15.806 --> 00:12:17.246
+<v Rob Reddemann>And then anything else we can...</v>
+
+00:12:19.326 --> 00:12:32.526
+<v Rob Reddemann>teach him about networking. And I don't know if there's how much industry information or industry training he's had on networking in general. Do you guys know the answer to that?</v>
+
+00:12:35.086 --> 00:12:35.446
+<v Amit Dubey>S.</v>
+
+00:12:37.006 --> 00:12:40.046
+<v Amit Dubey>So he would, okay, go ahead, go ahead, Evan, go ahead.</v>
+
+00:12:37.166 --> 00:12:37.806
+<v Aman Thakur>So, yeah.</v>
+
+00:12:41.006 --> 00:12:59.766
+<v Aman Thakur>Thank you. So I think we have our internal learning and development team, right? So where we align our engineer to we make sure they are fully trained on the technology. Basic, they are already clear, but when it comes to some advanced networking training, so we do align that training. We deliver that training. I personally deliver those training sometime when it comes to my part and</v>
+
+00:12:59.326 --> 00:12:59.486
+<v Rob Reddemann>Mm.</v>
+
+00:13:00.046 --> 00:13:19.886
+<v Aman Thakur>the other engineer and of course side by side to help them daily. It's not only they are trained on limitation, limited technology or limited part of the training person, but I do take care personally if they stuck anywhere on any other issues, whether it's P1, P2 or P3, any issues. So I personally support them, help them, guide them how to resolve.</v>
+
+00:13:17.166 --> 00:13:17.646
+<v Rob Reddemann>Mhm.</v>
+
+00:13:19.966 --> 00:13:41.246
+<v Aman Thakur>So if I found any gap or this person need to be a training, because being in a trainer, you know, delivering the training, when you give trainings, only those are theory part, right? The PPT, right? But we love to, we need to work on the real environment, helping them side by side. They learn quickly and that where they get more knowledge, you know, rather than going to the PPT and online.</v>
+
+00:13:41.966 --> 00:13:50.686
+<v Aman Thakur>those training modules. So we do provide, but we probably prefer to be go on the real event one, then where we help them to grow and learn on the side by side.</v>
+
+00:13:52.326 --> 00:14:02.686
+<v Rob Reddemann>And that would be greatly appreciated. And as you know, there's a difference between maintenance and implementation. And so that's the challenge that.</v>
+
+00:14:00.606 --> 00:14:00.886
+<v Aman Thakur>Yeah.</v>
+
+00:14:05.246 --> 00:14:25.046
+<v Rob Reddemann>We have with him, based on his history, he's a very good support person, but being able to install it from scratch will be the challenge and the level of training that we're going to need for him. So you guys are comfortable with this leaning into Microsoft 365 Cloud related items and...</v>
+
+00:14:25.646 --> 00:14:28.206
+<v Rob Reddemann>And networking, that seems reasonable.</v>
+
+00:14:29.806 --> 00:14:49.966
+<v Amit Dubey>Yep, we can put this in a priority stack, Rob, to be honest, so that they're completing what is immediately required. As A takeaway, just to check, the document that you have on screen, of course, it is one of the documents that we share. So was it updated and sent through, or is it something that we will be sending it across to us?</v>
+
+00:14:30.846 --> 00:14:32.046
+<v Aman Thakur>Yeah, were, yeah.</v>
+
+00:14:50.726 --> 00:14:53.406
+<v Rob Reddemann>It has not been sent across yet. I'll send it to you.</v>
+
+00:14:53.006 --> 00:15:14.086
+<v Amit Dubey>Okay, sure. So once this has been shared with the, of course, the priorities and the technologies that you mentioned, what Aman will do is Aman will create a plan in terms of what comes first, how long it's going to take to complete the first set of training, and then of course, go to the next one. So I guess during the next call, we can bring an alignment in.</v>
+
+00:15:09.486 --> 00:15:09.886
+<v Rob Reddemann>No.</v>
+
+00:15:14.166 --> 00:15:38.286
+<v Amit Dubey>terms of what Aman's recommendation would be in terms of what all trainings and what the completion date looks like. Of course, it depends on how quickly they are able to prepare and appear for the certification. One of the things, Rob, I don't know if you have been made aware of, but if there is any specific training that you want the engineers to complete and if this is a paid certification.</v>
+
+00:15:27.726 --> 00:15:27.966
+<v Rob Reddemann>Das.</v>
+
+00:15:39.006 --> 00:15:57.566
+<v Amit Dubey>We recommend that, you know, if you can go ahead, because if we do the training, we will complete the training piece, but when it comes to a paid certification, then of course we would lean on you to sort of, yeah, help them get it done, and of course we will send across whatever the costing and other things are, so that.</v>
+
+00:15:50.046 --> 00:15:50.246
+<v Rob Reddemann>Yeah.</v>
+
+00:15:54.046 --> 00:15:54.366
+<v Rob Reddemann>Das.</v>
+
+00:15:58.286 --> 00:15:59.566
+<v Amit Dubey>they're aligned in terms of.</v>
+
+00:16:00.526 --> 00:16:01.646
+<v Amit Dubey>How it's moving forward.</v>
+
+00:16:00.966 --> 00:16:01.086
+<v Rob Reddemann>Okay.</v>
+
+00:16:03.006 --> 00:16:10.606
+<v Rob Reddemann>Yeah, so absolutely. So you mean helping him sit for the certificate and pay the certificate fee?</v>
+
+00:16:11.006 --> 00:16:11.806
+<v Amit Dubey>Yeah, yeah.</v>
+
+00:16:11.886 --> 00:16:19.246
+<v Rob Reddemann>Yeah, that, yeah, absolutely. So, yeah, definitely.</v>
+
+00:16:15.606 --> 00:16:15.886
+<v Aman Thakur>Yeah.</v>
+
+00:16:15.646 --> 00:16:16.366
+<v Amit Dubey>Fantastic.</v>
+
+00:16:18.366 --> 00:16:19.886
+<v Aman Thakur>Two person is involved, yeah.</v>
+
+00:16:20.486 --> 00:16:21.006
+<v Rob Reddemann>What's that?</v>
+
+00:16:22.086 --> 00:16:33.726
+<v Aman Thakur>It's 2 person. One is the training part, right, which we deliver it. So when it comes to a Microsoft certified, when he has to appear for the examine everything first, that's what where the cost involved.</v>
+
+00:16:26.206 --> 00:16:26.686
+<v Rob Reddemann>Mhm.</v>
+
+00:16:34.366 --> 00:16:36.446
+<v Rob Reddemann>Yeah, no, no problem with that.</v>
+
+00:16:38.766 --> 00:16:59.326
+<v Rob Reddemann>So we already have a project on the board for a mail migration from App River to a standard Microsoft 365 tenant, which I believe he's done some of those before. So that's on the horizon. And then we have a lot this year, we're planning a lot of migrations from</v>
+
+00:16:49.686 --> 00:16:50.206
+<v Amit Dubey>Mhm.</v>
+
+00:17:01.166 --> 00:17:06.206
+<v Rob Reddemann>standard AD to a Intune environment.</v>
+
+00:17:07.886 --> 00:17:27.406
+<v Aman Thakur>Yeah, he discussed with me about the migration one. So I helped him to create a plan, right, a scope of work, you know, how the first initially discovery part is going to be happen, what is the scope of work is going to be for that. So he already prepared, like I think till last week was almost 55% that we have completed.</v>
+
+00:17:07.966 --> 00:17:08.606
+<v Rob Reddemann>And so...</v>
+
+00:17:27.806 --> 00:17:38.046
+<v Aman Thakur>But I think he was looking for a real environment access where he can real basis in, you know, validate those all information, give the accurate scope of work for the project.</v>
+
+00:17:32.886 --> 00:17:33.006
+<v Rob Reddemann>Yeah.</v>
+
+00:17:39.766 --> 00:17:42.766
+<v Rob Reddemann>Okay, we do have a test environment if that's what he needs.</v>
+
+00:17:43.806 --> 00:17:50.686
+<v Aman Thakur>Yeah, the test environment, yeah, and of course the access for where the email is hosted in another platform, you know.</v>
+
+00:17:43.846 --> 00:17:44.086
+<v Rob Reddemann>And.</v>
+
+00:17:50.806 --> 00:17:51.326
+<v Rob Reddemann>Mhm.</v>
+
+00:17:55.046 --> 00:18:01.326
+<v Rob Reddemann>And that was for the Intune migrations that you guys did. OK.</v>
+
+00:18:00.126 --> 00:18:00.846
+<v Aman Thakur>Yeah, and...</v>
+
+00:18:01.926 --> 00:18:02.206
+<v Aman Thakur>Right.</v>
+
+00:18:04.246 --> 00:18:04.526
+<v Rob Reddemann>OK.</v>
+
+00:18:05.166 --> 00:18:12.926
+<v Aman Thakur>Yeah, but we'll let you know if anything, any additional information that he needed in order to access the environment and create the further plan.</v>
+
+00:18:15.806 --> 00:18:16.286
+<v Rob Reddemann>All right.</v>
+
+00:18:16.846 --> 00:18:35.646
+<v Amit Dubey>Good stuff. So we're good with the career development. Rob, one more thing for clarity. So of course, you know, once he starts working into the real environment, we would want his performance to be measured. And we always work towards finding out the KPIs.</v>
+
+00:18:17.246 --> 00:18:17.566
+<v Rob Reddemann>Done.</v>
+
+00:18:17.326 --> 00:18:17.766
+<v Aman Thakur>Right.</v>
+
+00:18:36.166 --> 00:18:50.286
+<v Amit Dubey>which you would want him to meet, right? Specifically around what are the KPIs that it will be. So is this something that we have already discussed with the Rick and agreed, or is this something that is an open item? And if that is so, we can probably discuss with yourself.</v>
+
+00:18:49.566 --> 00:18:49.806
+<v Rob Reddemann>Yeah.</v>
+
+00:18:50.926 --> 00:18:58.806
+<v Rob Reddemann>It's an open item. And I want to work through that with Max so that he's in agreement too. So it's probably a couple weeks out.</v>
+
+00:18:52.526 --> 00:18:52.766
+<v Aman Thakur>Yeah.</v>
+
+00:18:52.846 --> 00:18:53.806
+<v Amit Dubey>OKOK.</v>
+
+00:18:57.246 --> 00:18:57.806
+<v Amit Dubey>Sure.</v>
+
+00:19:00.126 --> 00:19:18.366
+<v Amit Dubey>Cool. Yeah, because a lot of things, right, we, of course, you understand that we have an internal mechanism of rating our engineers, right? And of course, there's a yearly appraisal that happens and the performance review that happens on a monthly basis. So what comes really handy if they have a specific...</v>
+
+00:19:19.206 --> 00:19:39.806
+<v Amit Dubey>KPI agreed with our partners, right? And we know where do they sit against those KPIs so that we are able to have a constructive conversation with them in terms of are they meeting, not meeting, if not meeting, what needs to be done? If they're already meeting, then of course what else they can do so that they can see the growth.</v>
+
+00:19:21.086 --> 00:19:21.566
+<v Rob Reddemann>Mhm.</v>
+
+00:19:35.726 --> 00:19:36.206
+<v Rob Reddemann>Mmh.</v>
+
+00:19:40.166 --> 00:19:44.446
+<v Amit Dubey>And they can see that, you know, they are actually delivering something which adds value to your environment.</v>
+
+00:19:45.726 --> 00:19:46.286
+<v Rob Reddemann>Great.</v>
+
+00:19:47.046 --> 00:20:06.126
+<v Amit Dubey>Okay, cool. So this is, thank you, Rob. So we'll put that in action open. Whenever you have that discussion closed, we can agree and then we can start, you know, presenting those KPIs as well as a part of our review. One of the things that we would need your help with that whatever the KPIs that you agree to,</v>
+
+00:19:47.886 --> 00:19:48.846
+<v Rob Reddemann>Yeah, I appreciate that.</v>
+
+00:20:06.166 --> 00:20:16.526
+<v Amit Dubey>or if you go ahead, we wouldn't need those numbers, or probably a report that you can share with us, right, which can help us understand and capture the numbers.</v>
+
+00:20:16.046 --> 00:20:16.366
+<v Rob Reddemann>Yes.</v>
+
+00:20:18.086 --> 00:20:18.366
+<v Rob Reddemann>OK.</v>
+
+00:20:21.046 --> 00:20:21.566
+<v Amit Dubey>Great.</v>
+
+00:20:21.726 --> 00:20:31.566
+<v Aman Thakur>I think we're aligned again, Rob. If you find anything that you need to share or you have any update, yeah, feel free to reach us on the team, right? They're waiting for our weekly call to be happened.</v>
+
+00:20:32.286 --> 00:20:32.766
+<v Rob Reddemann>Okay.</v>
+
+00:20:34.366 --> 00:20:34.766
+<v Aman Thakur>Rich.</v>
+
+00:20:34.446 --> 00:20:35.166
+<v Rob Reddemann>Will do.</v>
+
+00:20:35.966 --> 00:20:40.046
+<v Aman Thakur>Yeah, thank you for your time then, and enjoy the rest of your day. Take care.</v>
+
+00:20:37.126 --> 00:20:37.646
+<v Amit Dubey>Great.</v>
+
+00:20:39.726 --> 00:20:41.086
+<v Rob Reddemann>All right. Thank you.</v>
+
+00:20:41.086 --> 00:20:41.326
+<v Aman Thakur>But.</v>
+
+00:20:42.086 --> 00:20:43.646
+<v Amit Dubey>Thank you, Rob. Thank you. Cheers, bye.</v>
+
+00:20:42.126 --> 00:20:42.446
+<v Rob Reddemann>Blake.</v>
+

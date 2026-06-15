@@ -300,6 +300,12 @@ Filter the cleaned action notes for key markers: `"meeting summary"`, `"action i
 #### Incremental rebuild (cost/time control)
 **Added 2026-06-13.** `extract/ai.py:analyze()` caches the gpt-5.4 result by a hash of its input (`build_context`) — unchanged partners reuse the cached churn analysis (no LLM call, no score drift). Deck markdown is reused by attachment id (no re-`markitdown`). So a re-sync re-fetches Halo/TeamGPS (to detect changes) but only re-runs the LLM / deck conversion for partners whose inputs actually changed. `extract.build_all --force-ai` (or `build_real_partners.py --force-ai`) forces a full re-analysis.
 
+#### Batch resilience (continue-on-failure)
+**Added 2026-06-15.** Halo intermittently returns transient **5xx/429** (notably `GET /api/Tickets?client_id=…&search=Service Call`). `extract/halo.get()` now retries those with backoff, and `build_real_partners.py` wraps the per-client service-ticket fetch in continue-on-failure — a client whose ticket list keeps erroring still builds (transcripts + CSAT/NPS + AI), just without Halo call-notes, instead of aborting the whole batch. See `docs/HaloPSA-API-SOP.md` Addendum (2026-06-15).
+
+#### Roster sourcing (who is a DES/MDE partner)
+**Added 2026-06-15.** The partner roster in `scripts/build_real_partners.py` NEW is sourced from HaloPSA **report 364 "DES RAG Status"** — filter `Area.CFMDERAG >= 1` (every RAG-managed account). Report *rows* aren't fetchable via the API (only the SQL definition), so reproduce the filter by enumerating clients (`/api/Client` with `pageinate=true`) and reading `CFMDERAG` per client. See `docs/HaloPSA-API-SOP.md` Addendum (2026-06-15).
+
 ---
 
 ## 5b. SIP Counts — HaloPSA

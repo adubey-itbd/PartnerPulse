@@ -1,0 +1,1034 @@
+WEBVTT
+NOTE title: MSP Corp (HD Team) | ITBD Service Call 
+NOTE date: 2026-05-07
+NOTE duration: 32m 39s
+
+00:00:03.271 --> 00:00:03.951
+<v Ashish Paul>Don't do it.</v>
+
+00:00:06.431 --> 00:00:07.951
+<v Ashish Paul>So, how does it look like?</v>
+
+00:00:15.311 --> 00:00:22.351
+<v Jessel Ackbarali>Sorry, I'm a little distracted. Just checked, taking a look at something here. Sorry about that.</v>
+
+00:00:20.831 --> 00:00:21.471
+<v Ashish Paul>Oh, OK.</v>
+
+00:00:24.031 --> 00:00:26.991
+<v Ashish Paul>I was just saying how the day looks like.</v>
+
+00:00:27.791 --> 00:00:30.911
+<v Jessel Ackbarali>Alright, it's won't have.</v>
+
+00:00:32.671 --> 00:00:36.871
+<v Jessel Ackbarali>I have a lot, I have a lot to do, I have a lot to do, to do something.</v>
+
+00:00:39.071 --> 00:00:42.911
+<v Jessel Ackbarali>But also for this and this some planning as well, so yeah.</v>
+
+00:00:39.111 --> 00:00:39.551
+<v Ashish Paul>Ashish.</v>
+
+00:00:44.591 --> 00:00:45.711
+<v Jessel Ackbarali>I have it, and you?</v>
+
+00:00:46.631 --> 00:00:55.791
+<v Ashish Paul>Yep, perfectly fine. I have back-to-back meetings, so this Thursday doesn't look like Thursday. Waiting for Friday, let's see how it goes.</v>
+
+00:00:56.711 --> 00:00:56.831
+<v Mike Jenson>The.</v>
+
+00:00:58.511 --> 00:00:58.711
+<v Ashish Paul>Key.</v>
+
+00:00:59.471 --> 00:01:00.031
+<v Jessel Ackbarali>I guess.</v>
+
+00:00:59.671 --> 00:01:16.711
+<v Ashish Paul>So Mike, we haven't meet you before, although I know that you lead the level 2 teams. And I guess when we had the level 2 engineer with you guys, so I was thinking, good morning, Kris.</v>
+
+00:01:17.631 --> 00:01:18.271
+<v Karine Pelletier>Good morning.</v>
+
+00:01:18.711 --> 00:01:19.311
+<v Mike Jenson>Morning, Karine.</v>
+
+00:01:19.391 --> 00:01:19.951
+<v Ashish Paul>How are you?</v>
+
+00:01:20.471 --> 00:01:21.391
+<v Karine Pelletier>I'm good, thank you.</v>
+
+00:01:22.671 --> 00:01:38.831
+<v Ashish Paul>Great. So, yeah, I was hearing from Jason that, you know, you would have feedback for the engineers at that time, but it's good that finally meeting you here. Yeah, so looking forward to meeting you more on these meetings.</v>
+
+00:01:39.391 --> 00:01:40.031
+<v Mike Jenson>Absolutely.</v>
+
+00:01:43.231 --> 00:01:47.791
+<v Ashish Paul>Alright, so I guess, Manu, is he gonna join or?</v>
+
+00:01:49.551 --> 00:01:58.271
+<v Jessel Ackbarali>I'm not sure. We've been working on invoicing for the last few days. So he might still be caught up with some of that.</v>
+
+00:02:00.071 --> 00:02:00.271
+<v Ashish Paul>Okay.</v>
+
+00:02:00.111 --> 00:02:18.551
+<v Jessel Ackbarali>We do, we do have, it's kind of tight where we do have like the first week in the next month to handle invoicing and finish that up, so I would I would play the weekend and I actually got mine mostly done, yeah.</v>
+
+00:02:18.751 --> 00:02:37.791
+<v Jessel Ackbarali>But even so, I still took, I still took him once on Monday to do the rest, but yeah, so it goes sometimes. And Jacob Richardson, I think he should be joining us. He's probably, we're early, we're early. We're all early today, so we'll give him a couple of minutes.</v>
+
+00:02:38.591 --> 00:02:43.951
+<v Ashish Paul>That's completely fine. We have more time to discuss about the engineers and plan on the things.</v>
+
+00:02:46.031 --> 00:03:03.871
+<v Jessel Ackbarali>I had sent a request for the May leave planner so that that could help us out as we need to with our understanding of who's off when. Because I know we just had, you know, an overlap technically with Ronan who is out.</v>
+
+00:02:58.271 --> 00:02:58.591
+<v Ashish Paul>Yep.</v>
+
+00:03:04.431 --> 00:03:12.191
+<v Jessel Ackbarali>Well, and we saw that, right, for me. So we have that visibility. So I just want to get for the entire of me what that would look like as well. Thanks.</v>
+
+00:03:12.991 --> 00:03:14.511
+<v Ashish Paul>Sure. Morning, Jacob.</v>
+
+00:03:13.871 --> 00:03:14.191
+<v Jessel Ackbarali>It.</v>
+
+00:03:15.231 --> 00:03:16.431
+<v Jessel Ackbarali>Sarbjeet.</v>
+
+00:03:16.951 --> 00:03:23.311
+<v Sarbjeet Singh>Morning, gentlemen. Hey, Jason. Hello, Jacob. Hi, Mike. Hello, Karine. How are you all?</v>
+
+00:03:19.791 --> 00:03:20.351
+<v Jacob Richardson>Warning.</v>
+
+00:03:24.511 --> 00:03:25.951
+<v Jacob Richardson>Fantastic, thanks for asking.</v>
+
+00:03:27.231 --> 00:03:28.111
+<v Jessel Ackbarali>Good, yeah.</v>
+
+00:03:29.311 --> 00:03:38.271
+<v Ashish Paul>So, uh, Jason, uh, I have replied to your email. As of now, we don't have anyone who has planned any leaves for the month of May, so we are good there.</v>
+
+00:03:29.551 --> 00:03:29.871
+<v Jessel Ackbarali>Good.</v>
+
+00:03:29.591 --> 00:03:29.711
+<v Sarbjeet Singh>Yeah.</v>
+
+00:03:38.711 --> 00:03:39.631
+<v Jessel Ackbarali>I'm good, I'm good.</v>
+
+00:03:40.031 --> 00:03:59.311
+<v Ashish Paul>Yep, yeah. And I have this message instructed to the team that before 25th of every month, let me know about the leave for the next month. So we are aligned there. So yeah, that's why I did not email you. But I'll take the ownership going forward that if even if there are no leaves, I'll still let you know for that.</v>
+
+00:03:51.231 --> 00:03:51.471
+<v Jessel Ackbarali>Rick.</v>
+
+00:03:54.911 --> 00:03:55.031
+<v Jessel Ackbarali>Yeah.</v>
+
+00:03:59.791 --> 00:04:01.231
+<v Ashish Paul>We all are on the same page.</v>
+
+00:04:01.631 --> 00:04:09.511
+<v Jessel Ackbarali>Okay, yeah, yeah, just good to know for us to keep track of it. That's good. That's a good overview for me, technically, yeah.</v>
+
+00:04:10.511 --> 00:04:29.751
+<v Ashish Paul>Yep, that's right. And I just, since we have you here, I would like to quickly discuss about the upcoming holiday that we have for May 18th, which is for Canada, and May 25th, which is for US, the US Memorial Day.</v>
+
+00:04:30.991 --> 00:04:45.391
+<v Ashish Paul>Although engineers are allowed to take only one of the two optional holidays, so just want to understand, like, are you comfortable giving them an off on 18th or on 25th, or you want to split so that you have coverage?</v>
+
+00:04:35.351 --> 00:04:35.791
+<v Jessel Ackbarali>Hoh.</v>
+
+00:04:48.591 --> 00:05:06.271
+<v Jessel Ackbarali>That is a good question. We're off on the 18th for sure, as this would be most of our customers. The 25th we won't. So if I had to make a choice on it, and I'll let Megan and Jacob</v>
+
+00:05:07.311 --> 00:05:13.551
+<v Jessel Ackbarali>You know, voice their, put their vote or cast their vote as well, but I would say take them the 18th off.</v>
+
+00:05:11.911 --> 00:05:12.031
+<v Ashish Paul>Yeah.</v>
+
+00:05:14.591 --> 00:05:17.871
+<v Jessel Ackbarali>In general, for all of them, rather than split.</v>
+
+00:05:19.231 --> 00:05:20.191
+<v Jacob Richardson>Yeah, I agree.</v>
+
+00:05:20.511 --> 00:05:20.991
+<v Mike Jenson>Mhm.</v>
+
+00:05:21.791 --> 00:05:41.151
+<v Jessel Ackbarali>Yeah, yeah. But it's a good question. You may be posed to think into that, but yeah, I think that's a good idea because all of us will be off and then the after hours person assigned will cover as necessary should there be any concerns anyhow. So I think we're good.</v>
+
+00:05:22.991 --> 00:05:23.311
+<v Ashish Paul>Okay.</v>
+
+00:05:37.471 --> 00:05:37.791
+<v Ashish Paul>Yep.</v>
+
+00:05:42.831 --> 00:05:46.031
+<v Ashish Paul>Okay, let me just take a note of this just a moment.</v>
+
+00:05:49.351 --> 00:05:49.631
+<v Ashish Paul>Just.</v>
+
+00:05:50.591 --> 00:06:02.351
+<v Jessel Ackbarali>I don't have any planned leave myself for me. Though if things come up, I'll probably ping and let you all know.</v>
+
+00:06:03.511 --> 00:06:04.111
+<v Jessel Ackbarali>Haight.</v>
+
+00:06:07.151 --> 00:06:12.431
+<v Jessel Ackbarali>Mister Richardson will be off for the last two weeks in May, just so you all know.</v>
+
+00:06:13.791 --> 00:06:16.671
+<v Sarbjeet Singh>Is where are you planning to travel, Jacob?</v>
+
+00:06:17.391 --> 00:06:20.271
+<v Jacob Richardson>I am going to Japan for two weeks.</v>
+
+00:06:20.671 --> 00:06:22.431
+<v Sarbjeet Singh>Oh, nice, nice.</v>
+
+00:06:20.751 --> 00:06:21.391
+<v Ashish Paul>Paul.</v>
+
+00:06:22.271 --> 00:06:30.271
+<v Jacob Richardson>Yeah, so very excited. I haven't done any traveling, so be a first time for me. Good to experience a different culture, so.</v>
+
+00:06:31.191 --> 00:06:35.231
+<v Ashish Paul>It depends, sounds like a place where you would want to go for the holiday.</v>
+
+00:06:31.271 --> 00:06:32.031
+<v Sarbjeet Singh>True, true.</v>
+
+00:06:36.431 --> 00:06:38.991
+<v Jacob Richardson>Yeah, lots of good food. That's what I'm most excited about.</v>
+
+00:06:39.111 --> 00:06:39.231
+<v Mike Jenson>You.</v>
+
+00:06:40.671 --> 00:06:41.231
+<v Ashish Paul>I agree.</v>
+
+00:06:40.831 --> 00:06:41.231
+<v Jessel Ackbarali>Yeah.</v>
+
+00:06:43.951 --> 00:06:45.711
+<v Jessel Ackbarali>Yeah, Mike, you have any Lee planned?</v>
+
+00:06:46.871 --> 00:06:47.311
+<v Jessel Ackbarali>For me.</v>
+
+00:06:48.111 --> 00:06:52.431
+<v Mike Jenson>No, not that I know of right now. Nothing's scheduled out for me. No plan leaves.</v>
+
+00:06:51.991 --> 00:07:03.311
+<v Jessel Ackbarali>Yeah, yeah, so you see, so while Jacob is off, I'll shoulder his responsibilities and the interactions with you all as necessary. OK.</v>
+
+00:07:04.271 --> 00:07:04.911
+<v Ashish Paul>Yeah, sure.</v>
+
+00:07:07.631 --> 00:07:08.151
+<v Ashish Paul>Key.</v>
+
+00:07:09.111 --> 00:07:13.551
+<v Jessel Ackbarali>Um, yeah, we can get, we can get going 'cause I don't think Mirror is is is a...</v>
+
+00:07:14.711 --> 00:07:17.311
+<v Jessel Ackbarali>is joining us if you wanted to.</v>
+
+00:07:16.031 --> 00:07:20.191
+<v Ashish Paul>Yep, Mayur just messaged me that he's joining in 5 minutes, so I think we can.</v>
+
+00:07:19.751 --> 00:07:20.111
+<v Jessel Ackbarali>Hoh.</v>
+
+00:07:21.711 --> 00:07:40.751
+<v Jessel Ackbarali>Okay. General feedback, we had a session and I don't think I talked to Jacob Richardson about it, but I filled out those surveys to get feedback on the engineers and the attention to detail is something that I mentioned, especially as it relates to time entries.</v>
+
+00:07:42.351 --> 00:07:59.151
+<v Jessel Ackbarali>I would say there are varying updates that are given, sometimes very early in the morning. Ronan gives very good detailed updates in a time entry, but late in the day that kind of becomes less.</v>
+
+00:07:59.871 --> 00:08:20.111
+<v Jessel Ackbarali>So, you know, so he's capable right in terms of that, but in particular, the OS batching tickets we saw where the correct work role and agreements were being selected, which you know prompts us to for it to look like as it should be built.</v>
+
+00:08:20.591 --> 00:08:36.431
+<v Jessel Ackbarali>So we had reiterated that. So I wanted to make sure that when we coach that multiple times already. So I wanted to reinforce that point that we do need to see some improvement on that going forward. Okay.</v>
+
+00:08:37.391 --> 00:08:57.951
+<v Ashish Paul>Sure. So regarding the work role update, so I have cascaded this to the entire team. I have a question. When we select the work role administrative type, does it change the associated agreement too or agreement has no effect to it if we change the workflow?</v>
+
+00:08:58.511 --> 00:09:17.151
+<v Jessel Ackbarali>I don't think that they are, when you change one, it immediately affects the other, right? It doesn't cascade that change down. It's not, one is not dependent on the other. So you would have to select the correct agreement and type. That should also hint.</v>
+
+00:09:05.391 --> 00:09:05.791
+<v Ashish Paul>Yep.</v>
+
+00:09:17.311 --> 00:09:37.711
+<v Jessel Ackbarali>To them, as if they should be working on a ticket or not, because I so not necessarily a habit, but sometimes, and something we have to clean up on our end too, where a customer who is no longer a customer might call in and they might do some work for them, or you know, and...</v>
+
+00:09:34.831 --> 00:09:35.311
+<v Ashish Paul>Mhm.</v>
+
+00:09:37.751 --> 00:09:56.671
+<v Jessel Ackbarali>And I could understand where they might have known that customer and said, okay, yes, I will do whatever ticket and not realizing that they went off boarded. That's something that we have to clean up internally and I've escalated that so that we can get those customers cleaned up on out of the way and easily noted.</v>
+
+00:09:56.991 --> 00:10:05.151
+<v Jessel Ackbarali>that we shouldn't be servicing those customers. So that's on austerity remedy so that the engineers don't fall into that category. Okay.</v>
+
+00:10:02.271 --> 00:10:02.551
+<v Ashish Paul>Yep.</v>
+
+00:10:05.391 --> 00:10:13.351
+<v Ashish Paul>Yep, I, I recall it did happen with one of the engineers, I guess, when it was active in IT glue and engineer did work on it, yeah.</v>
+
+00:10:12.111 --> 00:10:32.111
+<v Jessel Ackbarali>Yeah, and I saw it too. I saw it too. It's only when I had to dig deep into the agreement and see that the additions were expired, but the agreement wasn't. So yes, I, for me, it looked as though the customer was an active one. So I agree with their assessment on it too. So it's something that we definitely need to clean up on our end.</v>
+
+00:10:32.991 --> 00:10:33.311
+<v Ashish Paul>Yep.</v>
+
+00:10:34.591 --> 00:10:55.631
+<v Ashish Paul>All right, thank you so much, Jason, for sharing that. So in reference to the end time of the engineers when they are logging in and at what time they are available into the call queue, for my end, what I'm trying to do to track if they are logging in on time is they're updating me the time the moment they log into the call queue.</v>
+
+00:10:37.151 --> 00:10:37.471
+<v Jessel Ackbarali>Here.</v>
+
+00:10:55.791 --> 00:11:07.391
+<v Ashish Paul>drag this option to active and then was tool. Is there any other way that I can possibly track if they are logged into the queue other than this option that I came up with?</v>
+
+00:11:10.551 --> 00:11:13.151
+<v Jessel Ackbarali>Not that I know of.</v>
+
+00:11:15.631 --> 00:11:23.791
+<v Jessel Ackbarali>Not that I, not that I know of, um, honestly, uh, you know, outside of of adding an additional...</v>
+
+00:11:25.551 --> 00:11:44.631
+<v Jessel Ackbarali>license or role for you, you know, like creating a user for you on our end, which I don't think we have that right now. There's no way that you get that visibility of who else might be on. I will check to see if there are like reports as well too, so that...</v>
+
+00:11:44.751 --> 00:11:53.071
+<v Jessel Ackbarali>It lines up with what you're seeing on understanding, um, so, but we historically wouldn't be real-time if it's a report, right?</v>
+
+00:11:54.031 --> 00:11:56.031
+<v Ashish Paul>Sure. Good morning, Manu.</v>
+
+00:11:54.911 --> 00:11:57.391
+<v Jessel Ackbarali>Maybe, maybe I can give that as well, yeah.</v>
+
+00:11:58.911 --> 00:12:07.071
+<v Sarbjeet Singh>Do we have any read-only access or at least without incurring extra cost on the license just to have the live update?</v>
+
+00:12:05.631 --> 00:12:18.591
+<v Jessel Ackbarali>I don't think so. I don't think so because it's, I don't think, I'll ask a question, but it's tied to Microsoft Teams as well in your login. So I'll find out. I'll find out.</v>
+
+00:12:20.191 --> 00:12:20.671
+<v Ashish Paul>Yep, yep.</v>
+
+00:12:21.671 --> 00:12:23.871
+<v Ashish Paul>Yes, sure. Good morning, Mayur.</v>
+
+00:12:24.311 --> 00:12:25.231
+<v Sarbjeet Singh>Good morning, Mayur.</v>
+
+00:12:27.271 --> 00:12:30.671
+<v Mayur Katarmal>Hey, good morning. Nice to see everyone after a while.</v>
+
+00:12:31.711 --> 00:12:34.351
+<v Ashish Paul>Nice to see you too. It's a long time.</v>
+
+00:12:32.751 --> 00:12:33.631
+<v Sarbjeet Singh>How are you doing?</v>
+
+00:12:34.871 --> 00:12:54.991
+<v Mayur Katarmal>Yeah, good, good. Just, yeah, it's a new year for us. A lot of, you know, a lot of admin tasks internally and then also client side as well, making some good progress mainly on the London office where three of our resources are posted. Akhilesh, Harish and recent addition.</v>
+
+00:12:44.191 --> 00:12:44.351
+<v Ashish Paul>Yeah.</v>
+
+00:12:47.671 --> 00:12:47.951
+<v Ashish Paul>Yes.</v>
+
+00:12:57.231 --> 00:12:58.751
+<v Mayur Katarmal>So, for Rodge, so yeah.</v>
+
+00:12:57.591 --> 00:12:58.191
+<v Ashish Paul>Not for us.</v>
+
+00:13:01.431 --> 00:13:19.471
+<v Ashish Paul>Great, thank you. So, Mayur, we were just discussing about the call queue. We were discussing about if there is any mechanism that I can track to see if any changes are into are logged into the call queue. So, I guess, Jason, as you mentioned that some sort of reporting.</v>
+
+00:13:13.471 --> 00:13:14.031
+<v Mayur Katarmal>Mm.</v>
+
+00:13:19.831 --> 00:13:39.871
+<v Ashish Paul>that would help at what time they are into the queue. But there is another catch. So when engineers are going on an outbound call, they are manually required to change their option to inactive so that they don't get any call parallelly, which would eventually miss because they are on an outbound call already.</v>
+
+00:13:41.551 --> 00:13:58.591
+<v Ashish Paul>This is something that I would be able to track if I'm given some limited access at least to what they are doing in the call queue and if they are on an outbound call or on an inbound call. At least this will empower me to.</v>
+
+00:13:47.551 --> 00:13:47.671
+<v Mayur Katarmal>Yeah.</v>
+
+00:13:58.991 --> 00:14:05.151
+<v Ashish Paul>to manage their productivity in the call queue effectively.</v>
+
+00:14:06.911 --> 00:14:11.471
+<v Mayur Katarmal>Right, Jason, for I believe.</v>
+
+00:14:07.831 --> 00:14:08.191
+<v Jessel Ackbarali>Yeah.</v>
+
+00:14:12.351 --> 00:14:22.831
+<v Mayur Katarmal>That's the thing, right? Like we are, if an agent is on call, then they can still can get a call based on the routing policies we have at the moment.</v>
+
+00:14:29.151 --> 00:14:33.391
+<v Jessel Ackbarali>You mean if they, sorry, if they don't have a license, is what you're asking?</v>
+
+00:14:33.831 --> 00:14:48.431
+<v Mayur Katarmal>No, no, so for our technicians, like if they are on the blueware working and then they get a call, they answer the call from the queue, they can still get the second call that is coming in while they are on call with a user.</v>
+
+00:14:48.111 --> 00:14:48.351
+<v Ashish Paul>Yes.</v>
+
+00:14:49.711 --> 00:14:54.191
+<v Jessel Ackbarali>Only from through Teams, yes, through the QA, no.</v>
+
+00:14:55.071 --> 00:14:55.391
+<v Mayur Katarmal>Okay.</v>
+
+00:14:56.191 --> 00:15:04.911
+<v Jessel Ackbarali>Right, so they can get, they can get a call if they get a direct call, they can get a direct call, or if we call in, you know, within our tenant as well, you technically can.</v>
+
+00:14:56.991 --> 00:14:57.711
+<v Mayur Katarmal>Makes sense, yeah.</v>
+
+00:15:02.591 --> 00:15:03.071
+<v Mayur Katarmal>Right.</v>
+
+00:15:06.591 --> 00:15:07.071
+<v Jessel Ackbarali>Why?</v>
+
+00:15:06.671 --> 00:15:07.151
+<v Mayur Katarmal>Rick.</v>
+
+00:15:08.431 --> 00:15:09.151
+<v Jessel Ackbarali>Why do you ask?</v>
+
+00:15:08.911 --> 00:15:15.551
+<v Mayur Katarmal>Yeah, I believe that was, well, Ashish, that's what what were you mentioned, like first phase of your thing.</v>
+
+00:15:15.951 --> 00:15:29.311
+<v Ashish Paul>Yeah, that was for outbound call, not for the inbound, because for inbound, I know automatically they don't get any call, but for when they are making an outbound call, they have to manually change their status to inactive so that they don't get any other incoming call.</v>
+
+00:15:20.271 --> 00:15:21.471
+<v Mayur Katarmal>Okay, makes sense.</v>
+
+00:15:31.231 --> 00:15:31.471
+<v Mayur Katarmal>Mm.</v>
+
+00:15:31.231 --> 00:15:35.231
+<v Jessel Ackbarali>Yeah, you know, that's a good point. That's a good point.</v>
+
+00:15:35.951 --> 00:15:48.031
+<v Mayur Katarmal>That's something we'll have to just we'll have to see in Luware in our flows if there is something we can we can do there as I'm testing Luware right now for the London office. I think that is a good point as well.</v>
+
+00:15:45.471 --> 00:16:05.231
+<v Jessel Ackbarali>Well, I saw something, but I never tested it myself. I'm just going to share my screen for a sec. So, this is one of the views that they may see, right, on Luware. So, technically, if you go to call on behalf,</v>
+
+00:15:53.071 --> 00:15:53.471
+<v Ashish Paul>Sure.</v>
+
+00:15:53.071 --> 00:15:53.391
+<v Mayur Katarmal>Yeah.</v>
+
+00:16:06.591 --> 00:16:22.111
+<v Jessel Ackbarali>Right, it, and so it obviously will use this. That's the overall calling number that you see. It should, it should technically call from Luware and be recorded within Luware as well.</v>
+
+00:16:07.711 --> 00:16:08.111
+<v Mayur Katarmal>Yeah.</v>
+
+00:16:07.871 --> 00:16:08.191
+<v Ashish Paul>Key.</v>
+
+00:16:12.111 --> 00:16:12.711
+<v Mayur Katarmal>Right.</v>
+
+00:16:23.311 --> 00:16:24.031
+<v Mayur Katarmal>Okay.</v>
+
+00:16:25.791 --> 00:16:40.831
+<v Jessel Ackbarali>So I want to test that out before, I have never tested it, but I assume that the functionality was there, but I never delved into it. But if this works, then technically the engineer won't have to go.</v>
+
+00:16:32.991 --> 00:16:33.151
+<v Mayur Katarmal>Mm.</v>
+
+00:16:42.191 --> 00:16:57.871
+<v Jessel Ackbarali>Inactive, they can stay active and make calls through this, so we know what's happening with them, and as they come off that call, they can get another call, etc., right? Because sometimes that removes that entire risk of...</v>
+
+00:17:00.751 --> 00:17:19.151
+<v Jessel Ackbarali>of them getting a call while they're on another call, as you're saying, if they haven't put themselves inactive, as well as it gives us visibility to know, okay, they're on an outbound call, which is an inbound call, but we still would see them in a queue, quote unquote, right?</v>
+
+00:17:21.431 --> 00:17:34.671
+<v Jessel Ackbarali>So we can test that and see how that works, if my hypothesis is correct. And yeah, if that's the case, then it's a lot easier for us to manage and maintain those reasons within the way.</v>
+
+00:17:23.231 --> 00:17:23.631
+<v Mayur Katarmal>Yep.</v>
+
+00:17:25.711 --> 00:17:25.831
+<v Ashish Paul>Yeah.</v>
+
+00:17:35.551 --> 00:17:36.831
+<v Jessel Ackbarali>Jacob, what do you think?</v>
+
+00:17:35.871 --> 00:17:36.271
+<v Mayur Katarmal>Yes.</v>
+
+00:17:39.111 --> 00:17:41.151
+<v Jessel Ackbarali>Did you ever test that by chance? I didn't even ask.</v>
+
+00:17:40.751 --> 00:17:46.911
+<v Jacob Richardson>I haven't tested it personally. I would like to try to play around with it first before I give an opinion.</v>
+
+00:17:42.311 --> 00:17:42.671
+<v Jessel Ackbarali>Okay.</v>
+
+00:17:43.791 --> 00:17:44.191
+<v Jessel Ackbarali>Key.</v>
+
+00:17:47.871 --> 00:17:52.591
+<v Jessel Ackbarali>Yeah, so we'll test it and see if that if that works. If that's the case, then that's great.</v>
+
+00:17:54.591 --> 00:18:13.311
+<v Mayur Katarmal>Yeah, the second part is reporting, so one one way is giving Ashish the license, another just so I believe we can test some automations there for lower reporting, like on a daily or whatever frequency we would like.</v>
+
+00:17:54.831 --> 00:17:55.151
+<v Ashish Paul>Yeah.</v>
+
+00:18:13.391 --> 00:18:14.431
+<v Mayur Katarmal>That would help everyone.</v>
+
+00:18:17.471 --> 00:18:26.191
+<v Jessel Ackbarali>I haven't see, I haven't seen any functionality directly in Lua that that speaks to having that email of our reports going out.</v>
+
+00:18:22.031 --> 00:18:22.271
+<v Mayur Katarmal>Hmm.</v>
+
+00:18:27.631 --> 00:18:30.751
+<v Jessel Ackbarali>So, I thought we could have a discussion with the people on it.</v>
+
+00:18:29.551 --> 00:18:29.911
+<v Mayur Katarmal>Yeah.</v>
+
+00:18:32.271 --> 00:18:50.271
+<v Mayur Katarmal>Yes, I'm already testing Luware for London so that those things will also come up when we implement there for London because we have ITBD by design team there as well. So I just want to ensure that these feedbacks we are looping in and working on improvements as well for that queue.</v>
+
+00:18:33.551 --> 00:18:33.711
+<v Mike Jenson>Yeah.</v>
+
+00:18:50.911 --> 00:19:09.551
+<v Jessel Ackbarali>The reporting outside of Luware through grabbing the data and putting it into Power BI is something that we have as well too, technically from Luware already, because they probably did their shortcomings in terms of that. It's not that we're publishing it though, those Power BI reports.</v>
+
+00:18:57.951 --> 00:18:58.191
+<v Mayur Katarmal>Hmm.</v>
+
+00:19:01.551 --> 00:19:01.871
+<v Mayur Katarmal>Kour.</v>
+
+00:19:02.271 --> 00:19:02.631
+<v Ashish Paul>SK.</v>
+
+00:19:09.951 --> 00:19:24.471
+<v Jessel Ackbarali>so that it could be scheduled out, right, or refreshed. So from that perspective, that ecosystem is not non-existent. But that being said, if technically if they did have the...</v>
+
+00:19:10.351 --> 00:19:10.671
+<v Mayur Katarmal>Right.</v>
+
+00:19:20.111 --> 00:19:20.271
+<v Mayur Katarmal>Mm.</v>
+
+00:19:21.951 --> 00:19:22.111
+<v Jacob Richardson>G.</v>
+
+00:19:24.111 --> 00:19:24.911
+<v Jacob Richardson>Millimeters.</v>
+
+00:19:25.631 --> 00:19:25.791
+<v Ashish Paul>Kip.</v>
+
+00:19:28.831 --> 00:19:32.671
+<v Jessel Ackbarali>We could probably do it on a weekly basis and share it as necessary.</v>
+
+00:19:33.791 --> 00:19:34.271
+<v Mayur Katarmal>Yep.</v>
+
+00:19:35.151 --> 00:19:35.551
+<v Jessel Ackbarali>Yeah.</v>
+
+00:19:35.391 --> 00:19:43.791
+<v Mayur Katarmal>Ashish, for the frequency, from your feedbacks and everything, what helps you the best for what you were looking for?</v>
+
+00:19:40.271 --> 00:19:40.511
+<v Jessel Ackbarali>Okay.</v>
+
+00:19:42.991 --> 00:19:46.431
+<v Ashish Paul>I think, I think daily reports would be helpful.</v>
+
+00:19:47.231 --> 00:19:47.471
+<v Mayur Katarmal>Yeah.</v>
+
+00:19:49.511 --> 00:20:01.071
+<v Mayur Katarmal>Right, so Jaisal, we can do some tests on the automations on reporting, just to see what data we are getting out, and we can then share some examples with Ashish to see if that's something we can use.</v>
+
+00:19:50.191 --> 00:19:50.751
+<v Ashish Paul>So...</v>
+
+00:20:04.031 --> 00:20:06.111
+<v Jessel Ackbarali>You have access to reporting on the way.</v>
+
+00:20:04.591 --> 00:20:04.991
+<v Sarbjeet Singh>So...</v>
+
+00:20:08.671 --> 00:20:08.951
+<v Jacob Richardson>Both.</v>
+
+00:20:09.031 --> 00:20:21.751
+<v Mayur Katarmal>I have just in the test environment, I have that. So just for the testing, we are doing it at the moment. That is, again, we can check with David Peebles to see how we can automate those.</v>
+
+00:20:11.071 --> 00:20:11.271
+<v Jacob Richardson>It.</v>
+
+00:20:18.391 --> 00:20:18.551
+<v Jacob Richardson>Haight.</v>
+
+00:20:23.831 --> 00:20:44.711
+<v Sarbjeet Singh>And Mayur, just adding to your point, the reporting will definitely be helpful. However, if we can have some live data available, that's what we were discussing with Jaisal without incurring any extra cost on the license part, that will be more beneficial for all of us. Ashish will have the real-time visibility. He can go ahead and talk to the engineer straight away.</v>
+
+00:20:32.631 --> 00:20:32.791
+<v Mayur Katarmal>Mm.</v>
+
+00:20:37.271 --> 00:20:38.071
+<v Jacob Richardson>You could try.</v>
+
+00:20:40.471 --> 00:20:40.791
+<v Mayur Katarmal>Right.</v>
+
+00:20:45.071 --> 00:20:47.191
+<v Sarbjeet Singh>ensure that they are available in the queue.</v>
+
+00:20:48.671 --> 00:20:48.791
+<v Jacob Richardson>My.</v>
+
+00:20:48.871 --> 00:21:02.231
+<v Mayur Katarmal>Okay, yeah, that's something that also we can we can test if we can just have like a, you know, read-only type license, if that's something what Laroia is doing, we can definitely, yeah, review that.</v>
+
+00:20:54.111 --> 00:20:54.231
+<v Jessel Ackbarali>Yes.</v>
+
+00:20:59.831 --> 00:20:59.911
+<v Jacob Richardson>The.</v>
+
+00:21:00.151 --> 00:21:00.711
+<v Ashish Paul>Yep, yep.</v>
+
+00:21:00.871 --> 00:21:01.191
+<v Sarbjeet Singh>Yep.</v>
+
+00:21:02.071 --> 00:21:04.391
+<v Jacob Richardson>You can be fantastic, you can be fancy.</v>
+
+00:21:04.551 --> 00:21:05.231
+<v Ashish Paul>Rick.</v>
+
+00:21:06.471 --> 00:21:24.711
+<v Ashish Paul>All right, before we proceed further, Manu, I had a discussion which is still regarding the holiday, upcoming holiday of May 18th and 25th. So I just wanted to know what do you want for your people? Do you want them to take an off on the 18th or 25th or do you want to split?</v>
+
+00:21:13.431 --> 00:21:13.911
+<v Mayur Katarmal>Yes.</v>
+
+00:21:26.871 --> 00:21:47.271
+<v Mayur Katarmal>For me, we do observe the Victoria Day that is 18th, or just like quickly confirm 18th, right? So, yeah, that those like that they will have offices closed, so if we can have for both and London offices, so free resource and then Sandhu as well.</v>
+
+00:21:33.031 --> 00:21:33.511
+<v Ashish Paul>City.</v>
+
+00:21:35.311 --> 00:21:35.751
+<v Sarbjeet Singh>18th.</v>
+
+00:21:44.871 --> 00:21:45.191
+<v Ashish Paul>Yes.</v>
+
+00:21:47.671 --> 00:21:51.271
+<v Mayur Katarmal>If we can target that date, that would be better.</v>
+
+00:21:50.151 --> 00:21:50.631
+<v Ashish Paul>Vaid.</v>
+
+00:21:52.231 --> 00:21:58.071
+<v Ashish Paul>OK, so May 18th would be an off for JSL and may use spot and 25th be working for all of them.</v>
+
+00:21:59.031 --> 00:21:59.271
+<v Mayur Katarmal>Yep.</v>
+
+00:22:00.071 --> 00:22:00.951
+<v Ashish Paul>Okay, got it.</v>
+
+00:22:03.751 --> 00:22:17.271
+<v Ashish Paul>Thank you so much. Just in case, by 18th, if anything comes up, any change of plans, feel free to email us and we can accommodate the required changes and we will have our people for the coverage.</v>
+
+00:22:09.751 --> 00:22:10.231
+<v Mayur Katarmal>Sure.</v>
+
+00:22:14.231 --> 00:22:14.391
+<v Jacob Richardson>In.</v>
+
+00:22:17.591 --> 00:22:18.631
+<v Mayur Katarmal>Okay, sounds good.</v>
+
+00:22:20.151 --> 00:22:20.711
+<v Ashish Paul>Q.</v>
+
+00:22:21.991 --> 00:22:25.391
+<v Ashish Paul>Any other feedback or suggestions for the Engineering?</v>
+
+00:22:26.711 --> 00:22:37.991
+<v Mayur Katarmal>Well, good. I am reviewing the feedbacks today, tomorrow. The CSAT we get back. Last month we had...</v>
+
+00:22:35.511 --> 00:22:36.191
+<v Jacob Richardson>I mean, but...</v>
+
+00:22:40.471 --> 00:22:59.351
+<v Mayur Katarmal>So, we, we are like in bright gauge, we are monitoring 30 days rolling for for CSAT, so those ones that I'm I was concerned about has fallen off from our our our current view at the moment. However, we can't get to the previous ones.</v>
+
+00:22:47.351 --> 00:22:47.791
+<v Ashish Paul>Okay.</v>
+
+00:22:59.631 --> 00:23:21.031
+<v Mayur Katarmal>So I'm just reviewing that mainly for Akhilesh. We got a higher number for last month, but just due to the time constraint, I wasn't able to get the bottom of that and have those conversations with the clients. So I'm just reviewing that and any feedback that comes out of that, we'll share it with you, Ashish, so we can work on improvements there.</v>
+
+00:23:21.991 --> 00:23:42.911
+<v Ashish Paul>Sure. Thank you so much, Mayor. Since you brought this CSAT piece, I will, I get this weekly report. It is automated by Jeremy. And towards the end of the month, I get a monthly report as well. So for entire April month, I have received the CSAT survey for Engineers. Let me quickly share my screen.</v>
+
+00:23:32.951 --> 00:23:33.351
+<v Mayur Katarmal>Yes.</v>
+
+00:23:43.431 --> 00:23:43.831
+<v Mayur Katarmal>Sure.</v>
+
+00:23:43.431 --> 00:23:45.911
+<v Ashish Paul>And we can just go through it.</v>
+
+00:23:53.991 --> 00:23:55.671
+<v Ashish Paul>I hope it's visible to you.</v>
+
+00:23:56.471 --> 00:23:56.831
+<v Mayur Katarmal>Yeah.</v>
+
+00:23:57.991 --> 00:24:11.111
+<v Ashish Paul>Okay, so here if you see, this is for Harish, we have received one negative C set, 6 positive. For Akhilesh, we have 12 positive C sets, one negative. This is for entire April.</v>
+
+00:23:58.151 --> 00:23:58.311
+<v Mayur Katarmal>Yeah.</v>
+
+00:23:58.671 --> 00:23:58.791
+<v Jacob Richardson>Yeah.</v>
+
+00:24:11.671 --> 00:24:12.311
+<v Mayur Katarmal>Oh, okay.</v>
+
+00:24:13.391 --> 00:24:13.511
+<v Ashish Paul>Yeah.</v>
+
+00:24:13.631 --> 00:24:13.751
+<v Mayur Katarmal>Yeah.</v>
+
+00:24:14.751 --> 00:24:35.351
+<v Mayur Katarmal>Let me check what date range I had for, like, I believe there were four negative reviews in total that we were seeing on the right gate side for CSAT. Not sure if that was like, because it's rolling, so not at this moment, not sure. It's just April or it was like end of March and like mid-range or something, so we can.</v>
+
+00:24:14.871 --> 00:24:15.431
+<v Ashish Paul>So.</v>
+
+00:24:19.191 --> 00:24:19.511
+<v Ashish Paul>S.</v>
+
+00:24:32.951 --> 00:24:34.911
+<v Ashish Paul>Possibly, possibly, yes.</v>
+
+00:24:35.431 --> 00:24:48.311
+<v Mayur Katarmal>We can definitely look on that. So as soon as I have some feedback, we'll connect with you, Ashish, so we can see if there is, personnel-wise, if we can make any upgrades there. Or it's a system challenge.</v>
+
+00:24:49.751 --> 00:24:53.991
+<v Ashish Paul>Absolutely, I'll wait for the feedback there for you. Thank you so much.</v>
+
+00:24:53.871 --> 00:24:53.991
+<v Mayur Katarmal>Yeah.</v>
+
+00:24:55.471 --> 00:24:57.671
+<v Ashish Paul>Jesse, anything from your side on the similar lights?</v>
+
+00:25:00.911 --> 00:25:04.951
+<v Jessel Ackbarali>Um, let me do a quick check on the CX.</v>
+
+00:25:11.631 --> 00:25:27.831
+<v Mayur Katarmal>While Jaisal is loading that, one feedback I would share is we were focusing on the call answer rate at London. That was a big challenge. And last couple of weeks, I believe.</v>
+
+00:25:29.111 --> 00:25:38.791
+<v Mayur Katarmal>On 95% plus calls are being answered, so I'm really happy with that. So the team is working really well in conjunction with our on-site team at our London team. So that's really good.</v>
+
+00:25:34.671 --> 00:25:35.031
+<v Ashish Paul>Thank you.</v>
+
+00:25:39.991 --> 00:25:40.551
+<v Jessel Ackbarali>Good job.</v>
+
+00:25:50.511 --> 00:25:53.031
+<v Jessel Ackbarali>It's good, man. Good job. I am.</v>
+
+00:26:02.631 --> 00:26:15.671
+<v Jessel Ackbarali>Actually, all of them so far, Ronan's of all positive feedback, yeah, the responses from our reactions from customers are positive for Ronan.</v>
+
+00:26:18.551 --> 00:26:20.951
+<v Jessel Ackbarali>You know, Karine in particular.</v>
+
+00:26:21.831 --> 00:26:23.751
+<v Jessel Ackbarali>Has like twenty-three.</v>
+
+00:26:24.911 --> 00:26:26.311
+<v Jessel Ackbarali>Positive responses.</v>
+
+00:26:27.671 --> 00:26:37.831
+<v Jessel Ackbarali>As opposed to the others who might have like two and three. No, no, seriously. So that's a that's great. That's great, yeah.</v>
+
+00:26:29.591 --> 00:26:30.151
+<v Mayur Katarmal>That's Kip.</v>
+
+00:26:32.671 --> 00:26:33.031
+<v Ashish Paul>Yeah.</v>
+
+00:26:34.111 --> 00:26:41.591
+<v Mayur Katarmal>That's a great thing, yeah. Jason, on that, on that particular note, current, right?</v>
+
+00:26:35.911 --> 00:26:36.391
+<v Ashish Paul>Yeah.</v>
+
+00:26:35.991 --> 00:26:36.391
+<v Sarbjeet Singh>Yep.</v>
+
+00:26:38.391 --> 00:26:38.471
+<v Ashish Paul>The.</v>
+
+00:26:44.031 --> 00:27:03.911
+<v Mayur Katarmal>Can we build a trend like what's working there? So we can just do a positive reinforcement on that with the rest of the technicians, both with IT by Design and RL1s as well, that what's working. That's something, a monthly activity I do for both London and Guelph, and what worked, what's not working. One of the most common is feed.</v>
+
+00:27:04.151 --> 00:27:20.631
+<v Mayur Katarmal>how fast we can get to them and how fast we can give them updates on their issue, not resolution, but just updates. If there is anything else that is showing up trend-wise, we can just positively reinforce with the team that this is working. Let's follow that.</v>
+
+00:27:07.591 --> 00:27:07.831
+<v Sarbjeet Singh>S.</v>
+
+00:27:23.231 --> 00:27:23.591
+<v Jessel Ackbarali>Yeah.</v>
+
+00:27:25.671 --> 00:27:26.871
+<v Ashish Paul>That's a great idea, Manu.</v>
+
+00:27:25.991 --> 00:27:26.391
+<v Jessel Ackbarali>Sure.</v>
+
+00:27:29.751 --> 00:27:34.471
+<v Jacob Richardson>Yeah, Jess, if you have time after to discuss that, take a look. We can build something out together.</v>
+
+00:27:35.431 --> 00:27:35.831
+<v Jessel Ackbarali>Sure.</v>
+
+00:27:40.711 --> 00:27:41.271
+<v Jessel Ackbarali>Sounds good.</v>
+
+00:27:42.951 --> 00:27:45.511
+<v Ashish Paul>Jessil, are you pulling the the CSAT report or?</v>
+
+00:27:48.151 --> 00:27:51.591
+<v Jessel Ackbarali>Yeah, well, it's a Bright Gate just live that we have right now.</v>
+
+00:27:53.911 --> 00:27:54.311
+<v Ashish Paul>OK.</v>
+
+00:27:54.791 --> 00:27:56.951
+<v Jessel Ackbarali>Do you get those right now?</v>
+
+00:27:58.951 --> 00:28:00.471
+<v Jessel Ackbarali>Do you get the or no?</v>
+
+00:27:59.031 --> 00:28:04.711
+<v Ashish Paul>I only get the I only get the automated report weekly every Monday.</v>
+
+00:28:05.511 --> 00:28:05.911
+<v Jessel Ackbarali>Okay.</v>
+
+00:28:06.151 --> 00:28:08.151
+<v Ashish Paul>For which, which was automated by Jerome.</v>
+
+00:28:09.591 --> 00:28:15.031
+<v Jessel Ackbarali>Okay, okay, yeah. Well, it'll be from the same sources. Well, I'm getting mine from that.</v>
+
+00:28:17.191 --> 00:28:25.911
+<v Sarbjeet Singh>Ash, let's ensure we give a shout out to Karine for the way he's taking care of the things. Definitely, the impact is there.</v>
+
+00:28:23.191 --> 00:28:23.991
+<v Ashish Paul>I will, I will.</v>
+
+00:28:26.631 --> 00:28:27.271
+<v Ashish Paul>Yep, yep.</v>
+
+00:28:27.551 --> 00:28:28.791
+<v Jessel Ackbarali>For sure, for sure.</v>
+
+00:28:32.151 --> 00:28:37.591
+<v Ashish Paul>Okay, before I jump into the presentation deck, Jason, Mayur, is there anything else that you guys want to share?</v>
+
+00:28:39.271 --> 00:28:42.151
+<v Mayur Katarmal>No, that's all for now. Thank you.</v>
+
+00:28:42.981 --> 00:28:47.941
+<v Ashish Paul>Okay, thank you so much. Let me share my screen.</v>
+
+00:28:51.511 --> 00:28:56.151
+<v Ashish Paul>Although we have limited time, I quickly go through the important pieces of the presentation.</v>
+
+00:29:02.791 --> 00:29:03.911
+<v Ashish Paul>I hope it's visible to you.</v>
+
+00:29:05.111 --> 00:29:05.231
+<v Ashish Paul>Yeah.</v>
+
+00:29:05.191 --> 00:29:05.591
+<v Mayur Katarmal>Kip.</v>
+
+00:29:06.231 --> 00:29:06.791
+<v Sarbjeet Singh>It's a test.</v>
+
+00:29:06.631 --> 00:29:25.111
+<v Ashish Paul>Yep. Thank you. The first one is the action tracker. This is where we have the KPIs for the engineer. So I'm getting the reports automated from Jeremy. New engineers like Sir for us and there is another engineer who was added to a different bot.</v>
+
+00:29:25.471 --> 00:29:44.431
+<v Ashish Paul>I have requested these names to be added to the list so that I have a complete picture of the engine's performance. Second action item, this will be on hold for some time, so I can skip it. For the phone queue management, this is still under monitoring, although I have instructed.</v>
+
+00:29:44.511 --> 00:30:04.391
+<v Ashish Paul>technicians to let me know the moment they log into the call queue. But at the same time, as we discussed, some daily reporting or maybe unlimited access would be helpful for me to check it more rigorously so that I can manage the team availability into the call queue.</v>
+
+00:30:06.471 --> 00:30:25.271
+<v Ashish Paul>And last one was the data security and best practices. So engineers who are getting on boarded to MSP Corp, we ensure that they go through the ITBD security best standard practices. There is a module that we have created where every engineer has to go through it. And if</v>
+
+00:30:25.351 --> 00:30:35.911
+<v Ashish Paul>They clear only then we allow them to onboard with you guys. So this is something which is ongoing. It's a regular practice. It happens with every engineer who starts with LSP core.</v>
+
+00:30:39.671 --> 00:30:41.111
+<v Ashish Paul>Any questions, Tim? Yes, Malig.</v>
+
+00:30:41.351 --> 00:30:47.111
+<v Mayur Katarmal>Ohh, this is uh more internal, so, uh, just so, um, do you know if we are...</v>
+
+00:30:48.791 --> 00:31:03.111
+<v Mayur Katarmal>We have this ISAT that we are doing internally, right, for like security training and all that. Do we have all the IT by design team members enrolled into that as well? That's something I'll check as well, but if you know on top of your hand.</v>
+
+00:31:03.471 --> 00:31:04.231
+<v Jessel Ackbarali>What training?</v>
+
+00:31:05.111 --> 00:31:05.751
+<v Mayur Katarmal>Oh.</v>
+
+00:31:06.711 --> 00:31:14.391
+<v Mayur Katarmal>Our security team runs, you know, that spam email trainings and all that, like we have this campaign running from.</v>
+
+00:31:14.311 --> 00:31:15.911
+<v Jessel Ackbarali>For me.</v>
+
+00:31:17.831 --> 00:31:20.151
+<v Mayur Katarmal>What's the tool like forgetting the name there?</v>
+
+00:31:21.031 --> 00:31:22.151
+<v Jessel Ackbarali>From know before, yeah?</v>
+
+00:31:22.311 --> 00:31:23.511
+<v Mayur Katarmal>No before, yes.</v>
+
+00:31:24.471 --> 00:31:46.151
+<v Jessel Ackbarali>Yeah, I'm not sure if they're included in that, but I can ask a question. But I would think that it is default. How it normally is configured in before is once they've been assigned and they're active users on the Microsoft site, that it syncs and that they would get that as well. Yeah, we could pull the Team and see if they're getting those emails.</v>
+
+00:31:38.311 --> 00:31:38.791
+<v Mayur Katarmal>Blake.</v>
+
+00:31:42.231 --> 00:31:42.631
+<v Mayur Katarmal>Key.</v>
+
+00:31:46.791 --> 00:31:48.871
+<v Jessel Ackbarali>And then Dale quickly question.</v>
+
+00:31:47.351 --> 00:31:47.831
+<v Mayur Katarmal>Right.</v>
+
+00:31:49.431 --> 00:31:49.751
+<v Mayur Katarmal>Yeah.</v>
+
+00:31:51.591 --> 00:32:02.791
+<v Mayur Katarmal>I'll quickly check with Alvin as well, just to see if that's something he is aware of or not. So Alvin is our security, let's say, lead national-wide. So.</v>
+
+00:31:54.231 --> 00:31:54.351
+<v Jessel Ackbarali>Yeah.</v>
+
+00:32:03.831 --> 00:32:04.311
+<v Ashish Paul>Right.</v>
+
+00:32:04.071 --> 00:32:06.551
+<v Jessel Ackbarali>But yeah, he's our chief security officer.</v>
+
+00:32:05.911 --> 00:32:07.991
+<v Mayur Katarmal>Chief, Chief Security Officer, yes.</v>
+
+00:32:07.871 --> 00:32:08.151
+<v Jessel Ackbarali>Yeah.</v>
+
+00:32:10.151 --> 00:32:10.511
+<v Ashish Paul>Key.</v>
+
+00:32:14.231 --> 00:32:22.791
+<v Ashish Paul>Uh, uh, I have a hard stop at 11. I have another call for uh, the soft team. So, is it OK if I share the presentation deck in the email?</v>
+
+00:32:18.151 --> 00:32:18.551
+<v Jessel Ackbarali>Sameer.</v>
+
+00:32:20.151 --> 00:32:20.391
+<v Mayur Katarmal>Yeah.</v>
+
+00:32:22.151 --> 00:32:22.631
+<v Mayur Katarmal>Yes.</v>
+
+00:32:23.031 --> 00:32:24.951
+<v Jessel Ackbarali>Ohh, for sure, for sure, yeah, yeah.</v>
+
+00:32:23.991 --> 00:32:24.631
+<v Mayur Katarmal>Yeah, that's fine.</v>
+
+00:32:25.671 --> 00:32:40.551
+<v Ashish Paul>So I will do that. Thank you so much for joining the call. Thank you so much, Karine, Mayur, Jaisal, Mike, and Jacob for your presence, and looking forward to the next video soon. Have a good day. Thank you, Ashish. Take it too.</v>
+
+00:32:37.471 --> 00:32:40.231
+<v Jessel Ackbarali>Yeah, likewise. Take care. Bye.</v>
+
+00:32:37.751 --> 00:32:40.151
+<v Jacob Richardson>Have a great week, everyone. Take care. Bye bye.</v>
+
+00:32:37.951 --> 00:32:39.831
+<v Mayur Katarmal>Thank you. Thanks, everyone. Bye.</v>
+

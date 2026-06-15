@@ -866,5 +866,50 @@ python halo_explore.py            # refreshes halo_api_schema.json (+ .md)
 
 ---
 
-_Last verified: 2026-06-06 against `https://itbd.halopsa.com`. Credentials are
+## ⚠️ Addendum — clients, reports & resilience (2026-06-15 DES-roster session)
+
+Verified while sourcing the full DES/MDE partner roster. Trust these over any
+conflicting earlier statement.
+
+1. **`/api/Client` LIST needs `pageinate=true` or it caps at ~50 rows.** Without
+   it (even with `page_size=5000`) you get a single ~50-row page and miss most
+   clients — the same cap family as `/api/Tickets` (addendum 2026-06-06 #2). With
+   `pageinate=true` + `page_no` iteration the full book is **886 clients (838
+   active)**. Detail-by-id (`GET /api/Client/{id}?includedetails=true`) works for
+   any id regardless of whether the LIST returned it.
+
+2. **`CFProduct` (lookup 76, service line) and `CFMDERAG` (lookup 138, RAG
+   health) are detail-call-only** — they are NOT on LIST rows and there is **no
+   server-side custom-field filter**. To reproduce any RAG/service-line segment
+   you must enumerate clients and read the custom field per client (`get_client`
+   → `parse_custom_fields`).
+
+3. **Reports: definitions are readable, results are NOT.** `/api/Report`
+   paginates (by `page_no`; ~**561** report defs on this tenant).
+   `GET /api/Report/{id}?includedetails=true` returns the report's **`sql`** plus
+   `columns`/`filters`/`available_columns` — but **no executed row set** (no GET
+   run-report param works; `loadreportonly`/`runreport` are ignored).
+   `/api/Dashboard*`, `/api/ReportData`, `/api/Report/{id}/Data` all **404**. So
+   to "pull a report," read its `sql`/filter and reproduce it against the client
+   enumeration. **Report 364 "DES RAG Status"** = `SELECT … FROM Area WHERE
+   CFMDERAG >= 1` — i.e. every RAG-managed account; this is the authoritative
+   DES/MDE partner roster (81 accounts: Red 9 / Amber 13 / Green 51 / Hypercare
+   Green 7 / Hypercare Amber 1).
+
+4. **Duplicate client records are real — match on CF presence, not name.** An org
+   can have >1 Halo client record with the same name; only one carries the live
+   custom fields. **Acrisure Cyber Services**: id **79** has `CFMDERAG=Green` /
+   `CFProduct=MDE` (the real DES record); id **937** is an empty duplicate
+   (`CFMDERAG=0`, `CFProduct=0`). Pinning the wrong id yields blank health data.
+
+5. **Transient 5xx on `/api/Tickets`.** `…?client_id=<id>&search=Service Call`
+   intermittently returns **500**, sometimes persisting across several retries for
+   a specific client. `extract/halo.get` now retries 5xx/429/dropped connections
+   with backoff; batch builders (`build_real_partners.py`) additionally treat the
+   per-client service-ticket fetch as **continue-on-failure** so one bad client
+   can't abort the whole run.
+
+---
+
+_Last verified: 2026-06-15 against `https://itbd.halopsa.com`. Credentials are
 read-only; rotate the client secret if this document is shared._
