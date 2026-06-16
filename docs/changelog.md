@@ -6,7 +6,34 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
-## [Unreleased] — Login page rebranded to ITBD (2026-06-16)
+## [Unreleased] — Roster reconciled to report 364: +2 partners, un-hid Mission Technology (2026-06-16)
+
+Reconciled the dashboard against HaloPSA **report 364 "DES RAG Status"** after a
+roster-gap query. The dashboard now shows **82** partners (was 79).
+
+### Added
+- **CPCORP Inc** (Halo 968) and **Stratti** (Halo 636) — `CFMDERAG>=1` report-364
+  members that were never built. New `NEW` entries in `scripts/build_real_partners.py`
+  (now **72** entries), built with full Halo + TeamGPS + gpt-5.4.
+
+### Changed
+- **Mission Technology** (Halo 975) **un-hidden** — it was built + indexed but missing
+  from the `data/_demo_roster.json` allowlist (flagged by the audit). The allowlist was
+  regenerated with `scripts/discover_des_roster.py --write` (now **82** slugs).
+- Published the 82-partner feed to Firestore (`upload_firebase_data.py`); the sanity
+  gate passed (count rose 79→82).
+
+### Excluded (deliberate)
+- **iStreet Solutions** (89) and **InTelecom** (81) — inactive accounts, kept in
+  `discover_des_roster.py` `EXCLUDE_IDS` per ops.
+- **Evernet** — on report 364 but has **no Halo client record**; cannot be built until
+  ops provides a client id (tracked in `discover_des_roster.py` `UNRESOLVED`).
+
+### Note
+- The new client-name-mismatch guard in `build_real_partners.py` **skipped 2** existing
+  partners this build (fuzzy display-vs-Halo-name check); they retain their prior caches
+  and remain on the dashboard. The guard may be over-strict on known name-drift cases
+  (e.g. "PEI" vs "Dataprise (PEI)") and is worth loosening — follow-up.
 
 ### Changed — sign-in UI (`auth.js`)
 - **Login overlay restyled to the IT By Design brand.** Replaced the generic

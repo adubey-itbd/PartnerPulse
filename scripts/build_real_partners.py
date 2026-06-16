@@ -136,6 +136,11 @@ NEW = [
     # ECS Consulting LLC has no Halo client record — transcript-only build
     # (client_id=None): AI runs on the 3 service-call .vtt in Transcripts/ECS Consulting/.
     ("ECS Consulting",                       None, "ECS Consulting",           "ECS Consulting LLC"),
+    # ---- added 2026-06-16: report-364 members surfaced by discover_des_roster.py
+    # (CFMDERAG>=1 but never built). Inactive accounts (iStreet 89, InTelecom 81)
+    # remain excluded per ops.
+    ("CPCORP Inc",                           968, "CPCORP",                    "CPCORP Inc"),
+    ("Stratti",                              636, "Stratti",                   "Stratti"),
 ]
 
 

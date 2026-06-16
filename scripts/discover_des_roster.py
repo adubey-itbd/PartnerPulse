@@ -56,8 +56,8 @@ DATA = os.path.join(ROOT, "data")
 EXCLUDE_IDS = {
     971,   # duplicate "TAB Computer Systems" record — canonical is 163
     1006,  # duplicate "Spidernet" record — canonical is 1003
-    89,    # iStreet Solutions(20 MSP) — going inactive (per ops, 2026-06-15)
-    81,    # InTelecom — inactive
+    89,    # iStreet Solutions(20 MSP) — inactive (excluded per ops)
+    81,    # InTelecom — inactive (excluded per ops)
 }
 
 # DES dashboard members Halo's CFMDERAG does NOT capture. Keep this list SMALL and

@@ -111,8 +111,9 @@ code and every doc that states it must move together:
    case-insensitively). Keep transcript content verbatim — never summarize or edit it.
 9. **The partner roster lives in two places only:** `extract/partners.py` PARTNERS
    (the 10 registry partners, full build incl. decks) and
-   `scripts/build_real_partners.py` NEW (everything else — 70 entries,
-   the full DES/MDE roster from Halo report 364 `Area.CFMDERAG >= 1`, as of 2026-06-15).
+   `scripts/build_real_partners.py` NEW (everything else — 72 entries,
+   the full DES/MDE roster from Halo report 364 `Area.CFMDERAG >= 1`; 70 as of
+   2026-06-15, + CPCORP Inc & Stratti on 2026-06-16).
    Adding a partner = a NEW entry (resolve the Halo client id first; `client_id=None` for
    transcript-only partners with no Halo record) + run the script + `extract.build_all
    --reindex` + `scripts/build_overview.py`. Never add partners by editing `index.html`
