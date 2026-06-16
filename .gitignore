@@ -11,3 +11,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Firebase CLI local deploy cache (not source)
+.firebase/
+firebase-debug.log

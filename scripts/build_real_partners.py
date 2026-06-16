@@ -8,11 +8,20 @@ review tickets are converted to Markdown like the registry path (added
 2026-06-12 — previously skipped, which left every extras partner with an empty
 Service Decks tab). Deck conversion and transcript ingestion need markitdown;
 if it is missing both are skipped with a warning instead of failing. Writes
-data/{slug}.json (no demo flag) and injects an exec-overview object for each
-into the hardcoded real-partner array.
+data/{slug}.json (no demo flag); the dashboard picks these up via
+data/_index.json + data/_overview.json (build_all --reindex, then
+build_overview.py). Each fetched client is name-checked against the display name
+(halo.fuzzy_name_match) and skipped if the pinned client_id points at the wrong
+Halo record (the Acrisure 937->79 class).
 
     python scripts/build_real_partners.py            # build all
     python scripts/build_real_partners.py netgain    # build one (by slug) — smoke test
+
+NOTE: to_exec_obj / exec_object_js / inject_exec below are NOT dead code — they
+are imported by scripts/refresh_exec_row.py (deprecated, kept for rollback to the
+pre-AIODI embedded-array dashboard). They were therefore left in place rather than
+removed; inject_exec is no longer called from main() since the live dashboard is
+data-driven (no embedded array to inject into).
 """
 import json
 import re
@@ -25,13 +34,10 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from extract import config, halo, teamgps, ai
+from extract.textutil import slugify
 
 DATA = ROOT / "data"
 EXEC = ROOT / "index.html"
-
-
-def slugify(name):
-    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
 # display_name, halo_client_id (None = transcript-only, no Halo/TeamGPS),
@@ -122,6 +128,14 @@ NEW = [
     ("Ryan Creek Technology",                959, "Ryan Creek",                "Ryan Creek Technology Associates, Inc."),
     ("Spidernet Technical Consulting",       1003, "Spidernet",                "Spidernet Consulting"),
     ("Uptime USA",                           982, "Uptime",                    "Uptime USA"),
+    # ---- added 2026-06-15: on DES dashboard 1015 but NOT caught by report-364's
+    # CFMDERAG>=1 filter (their Halo RAG is untagged / they have no Halo record).
+    # See scripts/discover_des_roster.py SUPPLEMENTAL — these are the documented
+    # exceptions the auto-discovery can't derive from Halo alone.
+    ("ETech 7 Inc",                          924, "ETech 7",                   "ETech 7 Inc"),
+    # ECS Consulting LLC has no Halo client record — transcript-only build
+    # (client_id=None): AI runs on the 3 service-call .vtt in Transcripts/ECS Consulting/.
+    ("ECS Consulting",                       None, "ECS Consulting",           "ECS Consulting LLC"),
 ]
 
 
@@ -156,6 +170,16 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=
         account_manager = ""
     else:
         client = halo.get_client(client_id)
+        # Guard against a wrong client_id pinned in NEW (the Acrisure 937->79 class):
+        # the fetched Halo client name must plausibly match the display name. If it
+        # does not, the id points at the wrong/empty record -> WARN and skip so we
+        # don't publish bogus health data under this partner.
+        fetched_name = client.get("name") or ""
+        if fetched_name and not halo.fuzzy_name_match(name, fetched_name):
+            print(f"  WARNING: Halo client {client_id} is {fetched_name!r}, which does "
+                  f"not match {name!r} -- wrong client_id? Skipping this partner.",
+                  file=sys.stderr)
+            return None
         cf = halo.parse_custom_fields(client)
         emails, domains = halo.get_users(client_id)
         sips = halo.count_sips(client_id, name_terms=[name, halo_search, client.get("name", "")],
@@ -382,14 +406,18 @@ def main():
     only = {a.lower() for a in sys.argv[1:] if a.lower() != "--force-ai"}
     targets = [n for n in NEW if not only or slugify(n[0]) in only]
     warn_unmatched_transcript_dirs()
-    print(f"Fetching TeamGPS NPS set once…", file=sys.stderr)
+    print(f"Fetching TeamGPS NPS set once...", file=sys.stderr)
     nps_all = teamgps.get_nps_all()
     print(f"  {len(nps_all)} NPS responses cached", file=sys.stderr)
 
-    exec_objs = []
+    built = 0
+    skipped = 0
     for name, cid, hs, tg in targets:
         print(f"\n=== {name} (Halo {cid}) ===", file=sys.stderr)
         data = build_real(name, cid, hs, tg, nps_all, force_ai=force_ai)
+        if data is None:                       # wrong client_id / name mismatch -> skipped
+            skipped += 1
+            continue
         slug = slugify(name)
         (DATA / f"{slug}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
         aih = data["ai"]
@@ -397,11 +425,12 @@ def main():
               f"sip_open={data['client']['sip_open']} sip_closed={data['client']['sip_closed']}")
         print(f"  risk={aih.get('risk_score')} ({aih.get('risk_band')}) trend={aih.get('sentiment_trend')} "
               f"err={aih.get('_error')}")
-        exec_objs.append(to_exec_obj(data))
+        built += 1
 
-    if exec_objs:
-        inject_exec(exec_objs)
-        print(f"\nInjected {len(exec_objs)} real partners into executive-overview array")
+    print(f"\nBuilt {built} real partner cache(s)"
+          + (f"; skipped {skipped} (client-name mismatch)" if skipped else "")
+          + ". The dashboard reads them via data/_index.json + data/_overview.json "
+            "(run build_all --reindex then build_overview.py).")
 
 
 if __name__ == "__main__":

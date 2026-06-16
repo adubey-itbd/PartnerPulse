@@ -1,0 +1,54 @@
+rules_version = '2';
+
+// PartnerPulse — ALL dashboard data lives in Firestore (sharded).
+//   meta/overview                  portfolio rollups + coverage (Exec Overview)
+//   partners/{slug}                per-partner summary doc       (Exec Overview)
+//   partners/{slug}/detail/profile client meta + AI + CSAT/NPS stats
+//   partners/{slug}/transcripts|decks|calls|csat|nps|actions/{id}
+//                                  the detail layer, one doc per item
+//
+// Reads are restricted to verified @itbd.net accounts (email/password sign-in;
+// email_verified proves mailbox ownership). ALL client writes are denied — the
+// build pipeline writes via the Admin SDK (scripts/upload_firebase_data.py),
+// which bypasses these rules.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // SINGLE LOAD-BEARING ACCESS CLAUSE. Every readable match below gates on
+    // isItbd() and nothing else — this function is the entire server-side
+    // security boundary for the dashboard. All three conditions are required:
+    //   (1) request.auth != null            -> signed in at all
+    //   (2) email_verified == true          -> proved mailbox ownership (the
+    //       client domain check in auth.js is cosmetic; THIS is enforced)
+    //   (3) email matches ^...@itbd[.]net$  -> ITBD staff only
+    // Do NOT weaken or duplicate this logic inline; change it here only, and
+    // keep all writes denied (the Admin SDK pipeline bypasses rules entirely).
+    function isItbd() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email.matches('^[^@]+@itbd[.]net$');
+    }
+
+    // Portfolio meta.
+    match /meta/{doc} {
+      allow read: if isItbd();
+      allow write: if false;
+    }
+
+    // Partner summary + everything under it (detail/profile + all subcollections).
+    match /partners/{slug} {
+      allow read: if isItbd();
+      allow write: if false;
+
+      match /{document=**} {
+        allow read: if isItbd();
+        allow write: if false;
+      }
+    }
+
+    // Default deny everything else.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

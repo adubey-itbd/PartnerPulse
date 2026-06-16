@@ -1,0 +1,14 @@
+rules_version = '2';
+
+// PartnerPulse does NOT use Cloud Storage for any dashboard data — all data
+// lives in Firestore (see firestore.rules) and the static frontend is served
+// from Firebase Hosting. This DENY-ALL ruleset exists so the Storage bucket
+// cannot be read or written by any client; if a future feature needs Storage,
+// add an explicit, narrowly-scoped allow here (mirroring isItbd() semantics).
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

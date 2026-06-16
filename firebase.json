@@ -1,0 +1,43 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "data/**",
+      "decks/**",
+      "extract/**",
+      "scripts/**",
+      "functions/**",
+      "Transcripts/**",
+      "backups/**",
+      "docs/**",
+      "hooks/**",
+      "legacy/**",
+      "__pycache__/**",
+      "**/*.py",
+      "**/*.ps1",
+      "**/*.md",
+      "**/*.log",
+      "requirements.txt"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [ { "key": "Cache-Control", "value": "public, max-age=3600" } ]
+      },
+      {
+        "source": "**/*.@(html)",
+        "headers": [ { "key": "Cache-Control", "value": "no-cache" } ]
+      }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

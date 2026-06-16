@@ -1,0 +1,26 @@
+# Keep the build context (and image) lean and secret-free.
+# State (data/, Transcripts/) comes from the GCS bucket at runtime, NOT the image.
+.git/
+.env
+data/
+Transcripts/
+backups/
+docs/
+legacy/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.log
+
+# Frontend / hosting assets — not used by the pipeline.
+index.html
+partner.html
+styles.css
+auth.js
+refresh.js
+firebase-config.js
+vendor/
+server.py
+
+# NOTE: .firebaserc is intentionally KEPT — upload_firebase_data.py reads the
+# default project id from it.

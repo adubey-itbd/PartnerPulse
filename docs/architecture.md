@@ -15,6 +15,7 @@ graph TD
     subgraph Data Sources
         Halo[HaloPSA API]
         GPS[TeamGPS API]
+        Graph[Microsoft Graph — Teams .vtt transcripts]
         Docs[Local .docx Transcripts & Decks]
     end
 
@@ -41,6 +42,7 @@ graph TD
     %% Data flow connections
     Halo --> Engine
     GPS --> Engine
+    Graph -->|.vtt transcripts → Transcripts/| Docs
     Docs -->|Raw Docs| MID
     MID -->|Markdown Text| Engine
     Engine -->|Metadata + Transcripts| Azure
@@ -65,20 +67,39 @@ graph TD
 > caches). There is **no embedded partner array**. `partner.html`/`partner.js` fetch
 > `data/{slug}.json` as before.
 
+> **Note (changed 2026-06-16): production is now on Firebase + a cloud pipeline.**
+> The diagram above describes the **local** build/serve path, which still works
+> unchanged for dev (`server.py` + `data/*.json`, no auth). In **production**:
+> the UI is served by **Firebase Hosting** behind email/password sign-in restricted
+> to verified `@itbd.net`; all data is read from **Cloud Firestore** (sharded — see
+> `docs/Firebase-Deploy-SOP.md`) via `auth.js`, not from `data/*.json`; and the whole
+> pipeline runs unattended as a nightly **Cloud Run Job** (`scripts/cloud_sync.py`)
+> on a **Cloud Scheduler** trigger (21:00 America/New_York), persisting `data/` +
+> `Transcripts/` in a GCS bucket and publishing Firestore via
+> `scripts/upload_firebase_data.py`. The manual "Sync Data" button was **removed**.
+> **`docs/Data-Schema.md` is the authoritative end-to-end source→store→consumer map;**
+> `docs/Cloud-Pipeline-SOP.md` is the infra runbook. Sections 4 (Manual Sync) and 5
+> (Security) below are partially superseded — see those notes.
+
 ### Repository layout
 
 ```
-index.html / partner.html / partner.js / refresh.js / styles.css / vendor/   the dashboard (served from repo root)
-server.py / setup.ps1 / requirements.txt                        entry points (server.py also hosts the sync API)
+index.html / partner.html / partner.js / refresh.js / styles.css / vendor/   the dashboard (served by Firebase Hosting in prod, server.py locally)
+auth.js / firebase-config.js                                    prod auth gate + Firestore data layer (DEV no-op on localhost)
+firebase.json / .firebaserc / firestore.rules / firestore.indexes.json   Firebase Hosting + Firestore config
+Dockerfile / .dockerignore / .gcloudignore                      Cloud Run Job pipeline image
+server.py / setup.ps1 / requirements.txt                        entry points (server.py also hosts the LOCAL sync API)
 extract/        ingestion + AI pipeline (Python package, run via python -m extract.*)
 scripts/        operational scripts (build_real_partners.py, build_overview.py,
-                setup_graph_transcript_access.ps1, probe_graph_transcripts.py;
-                refresh_exec_row.py kept but DEPRECATED)
+                cloud_sync.py [Cloud Run Job entrypoint], upload_firebase_data.py [Firestore publish],
+                seed_secrets.py [Secret Manager], setup_graph_transcript_access.ps1,
+                probe_graph_transcripts.py; refresh_exec_row.py kept but DEPRECATED)
 backups/        saved copies of replaced dashboards (e.g. index_pre-AIODI_2026-06-13.html)
 data/           generated caches (whole dir gitignored): {slug}.json, _index.json,
-                _overview.json (dashboard feed), decks/, _sync.log
+                _overview.json (dashboard feed), _demo_roster.json, decks/, _sync.log
+                — mirrored to the GCS state bucket between nightly runs
 Transcripts/    input meeting transcripts, per partner (.docx Teams exports + .vtt Graph pulls)
-docs/           architecture, changelog, SOPs, LLM-SOP, archive/
+docs/           architecture, Data-Schema, changelog, SOPs (incl. Firebase-Deploy, Cloud-Pipeline), LLM-SOP, archive/
 legacy/         superseded single-partner files
 CLAUDE.md       LLM working context (commands, gotchas, doc-update rules)
 ```
@@ -94,7 +115,7 @@ The Python engine orchestrates the compilation of raw partner telemetry into a u
    * **HaloPSA (`extract/halo.py`):** Queries custom RAG/risk fields, client metadata, review tickets, meeting notes, and attachments. Attachments support two delivery modes: inline raw bytes, or a JSON `{"link": <pre-signed CDN URL>}` response that must be followed — both handled transparently in `halo.download_attachment`.
    * **TeamGPS (`extract/teamgps.py`):** Fetches CSAT (filtered by company) and NPS (filtered by email domain). The full NPS set is fetched once in `build_all.py` and passed to each partner build to avoid redundant API calls.
    * **SIP counts (`extract/halo.py: count_sips`):** All-time Service Improvement Plan (Halo ticket type 99) counts per partner, split open/closed. Halo has no working server-side ticket-type filter, so the engine searches three free-text terms, filters rows client-side on `tickettype_id == 99`, and runs a second "bucket B" pass over SIPs filed under ITBD's own client record (id 12) whose summary names the partner. Open vs. closed is a status-**name** heuristic (no `isclosed` flag exists). Results land as `client.sip_open` / `client.sip_closed`.
-3. **Document Extraction (`extract/transcripts.py`):** Uses Microsoft's `markitdown` library to convert local `.docx` meeting transcripts, PowerPoint decks, and PDF reports into Markdown text. Teams **WEBVTT** transcripts (`.vtt`, pulled from the Graph meeting-transcript API via the Claude M365 connector — see Data-Extraction-SOP §1 Option C) are parsed natively by `parse_vtt`, no markitdown needed.
+3. **Document Extraction (`extract/transcripts.py`):** Uses Microsoft's `markitdown` library to convert local `.docx` meeting transcripts, PowerPoint decks, and PDF reports into Markdown text. Teams **WEBVTT** transcripts (`.vtt`, pulled from the Graph meeting-transcript API by the app-only `scripts/pull_graph_transcripts.py` — Data-Extraction-SOP §1 Option D; the older attendee-scoped Claude M365 connector flow, Option C, is superseded) are parsed natively by `parse_vtt`, no markitdown needed.
 4. **AI Synthesis & Analysis (`extract/ai.py`):** Feeds the compiled telemetry, meeting notes, and transcripts to **Azure Foundry gpt-5.4** (deployment `gpt-5.4`). The model evaluates:
    * Churn risk score (0-100) and risk band (Low / Medium / High / Critical).
    * Confidence level and sentiment trend (Improving / Stable / Declining).
@@ -174,7 +195,7 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 | `historical_calls` | Service-review meeting records: `ticket_id`, `summary`, `date`, `notes` (Markdown, joined from Halo action entries) |
 | `action_items` | Left empty (`[]`) by the extractor — the AI's extracted items live under `ai.action_items` |
 | `decks` | Converted service-review attachments: `ticket_id`, `attachment_id`, `filename`, `md_path`, `markdown` |
-| `transcripts` | Local `.docx` files parsed to dialogue turns |
+| `transcripts` | Call transcripts parsed to dialogue turns — `.docx` (manual Teams exports, via markitdown) **and** `.vtt` (Graph pulls, via `parse_vtt`) |
 | `ai` | Full gpt-5.4 output: `risk_score`, `risk_band`, `confidence`, `summary`, `sentiment_trend`, `drivers[]`, `remediation[]`, `action_items[]`, `_model` |
 
 ---
@@ -184,9 +205,17 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 ### Build-Time Cache vs. Real-Time API Queries
 * **Choice:** The application processes telemetry and runs AI analysis ahead of time (synchronously, as a CLI pipeline), generating static JSON.
 * **Why:** Calling HaloPSA/TeamGPS APIs and running gpt-5.4 on page load would take 10–30 seconds per request, resulting in a poor user experience. It also prevents API rate-limiting issues and controls Azure API costs.
-* **Tradeoff:** The dashboard displays cached data. Updates are not live — they are triggered by the dashboard's **"Sync Data"** header button (see *Manual Sync API* below), a recurring task (e.g., cron job), or manual execution of `python -m extract.build_all`.
+* **Tradeoff:** The dashboard displays cached data. Updates are not live — in production they are produced by the **nightly Cloud Run Job** (Cloud Scheduler, 21:00 America/New_York), which rebuilds and republishes Firestore (see `docs/Cloud-Pipeline-SOP.md`). Locally, refresh by running `python -m extract.build_all`. (The in-app "Sync Data" button was removed 2026-06-16 — see *Manual Sync API* below.)
 
 ### Manual Sync API + Dashboard Button
+
+> **Superseded 2026-06-16 (production).** The "Sync Data" button was **removed** from
+> `index.html`/`partner.html`; `refresh.js` now only renders the "Last sync" stamp.
+> Refresh is automatic via the nightly **Cloud Run Job** (`scripts/cloud_sync.py` —
+> same cycle, plus a Firestore publish step), triggered by **Cloud Scheduler** at
+> 21:00 America/New_York. The `server.py` sync API below still exists for **local
+> dev** but nothing in the UI calls it. See `docs/Cloud-Pipeline-SOP.md`.
+
 * **Choice:** `server.py` exposes a small stdlib-only sync API — `POST /api/refresh` starts a single-flight sync cycle (409 if one is running; optional `{"steps": [...]}` body runs a subset), `GET /api/refresh/status` reports per-step progress plus a live `activity` string. The cycle shells out sequentially to the existing entry points (`scripts/pull_graph_transcripts.py --write` → `extract.build_all` → `scripts/build_real_partners.py` → `extract.build_all --reindex` → `scripts/build_overview.py`), one subprocess per step, **continue-on-failure**. The first `transcripts` step pulls fresh call transcripts from Graph into `Transcripts/` (so a Sync refreshes transcripts alongside HaloPSA + TeamGPS; caveats: skips manual-`.docx` folders, QBRs 403, ~90-day Teams retention), which the registry build then ingests. The final `overview` step rebuilds `data/_overview.json` (the feed the dashboard renders from) from the freshly rebuilt caches + index — so a sync is only reflected on the page after it runs. (The former `exec-rows` step, which refreshed the now-removed embedded array, was dropped.) Each step's output is **streamed line-by-line** into `data/_sync.log`, and the pipeline's tagged phase lines (`=== Partner ===`, `[csat]`, `[nps]`, `[transcripts]`, "running gpt-5.4 churn analysis…", …) are translated by `parse_activity()` into the human-readable activity (e.g. "Logically: syncing TeamGPS CSAT"). The shared `refresh.js` wires the header "Sync Data" button on both pages: confirm dialog, polled progress (2s), a progress panel under the button listing every step (✓/⟳/✕) with the live activity, page reload when at least one step succeeded. The panel CSS is duplicated in `styles.css` and `index.html`'s inline `<style>` (the latter loads no external CSS).
 * **Why:** Source systems change daily (e.g., a Halo SIP open today is closed tomorrow); the exec needs a way to know the dashboard is current *now* without touching a terminal. Subprocesses (rather than in-process imports) isolate module-level API caches, keep the server dependency-free, and make a missing optional dependency (e.g. `markitdown` for the registry step) degrade to a per-step failure instead of breaking the whole cycle.
 * **Tradeoff:** A full cycle takes minutes and spends live Halo/TeamGPS calls + Azure gpt-5.4 tokens — hence manual, confirm-guarded, and single-flight. On machines without `markitdown` the registry step reports failed while the other steps still refresh Halo/TeamGPS data and the index.
@@ -201,7 +230,7 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 
 ### Incremental rebuild (AI + deck caching)
 * **Choice:** the per-partner build reuses expensive prior results instead of recomputing them every sync. `ai.analyze()` hashes the gpt-5.4 input (`build_context`) into `_input_hash`; if the partner's prior cache carries the same hash, the cached churn result is returned without an LLM call. Deck markdown is reused by attachment id (skips `markitdown`). Halo/TeamGPS are still fetched each run so changes are detected; only the two expensive operations (LLM, deck conversion) are conditional. `--force-ai` overrides.
-* **Why:** a full rebuild re-ran gpt-5.4 on all ~78 partners (slow, costly, and — because the model re-scores run-to-run — it churned the numbers) and re-converted every deck (`markitdown` ~20–30 s each), which together blew past the sync's 30-min per-step timeout. Caching makes re-syncs fast, keeps steps inside the timeout, and stops score drift for unchanged partners.
+* **Why:** a full rebuild re-ran gpt-5.4 on every partner (~80) (slow, costly, and — because the model re-scores run-to-run — it churned the numbers) and re-converted every deck (`markitdown` ~20–30 s each), which together blew past the sync's 30-min per-step timeout. Caching makes re-syncs fast, keeps steps inside the timeout, and stops score drift for unchanged partners.
 * **Call date precision:** `historical_calls` dates come from the latest **meeting-note datetime** on the ticket, not the ticket's `dateoccurred` (recurring/bi-weekly tickets hold an early `dateoccurred` while the note is added later). `build_overview.py` then takes the union of Halo-note dates and transcript dates for "last call".
 
 ### Vanilla Frontend Stack
@@ -214,7 +243,7 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 * **Why:** The earlier design embedded a hardcoded array in `index.html` and kept it in sync with the caches via injection scripts. That created a standing **two-data-layer drift** risk and could not carry the richer rollups the redesign needs (SIP/action counts, real NPS, CSAT sample size, coverage window). A computed feed removes the drift and is far simpler to extend.
 * **How it's built:** `scripts/build_overview.py` reads `data/_index.json` + every per-partner `data/{slug}.json` and emits `data/_overview.json` — per-partner SIP open/closed, open/overdue/no-date action counts, CSAT split + sample size + low-n flag, real per-partner NPS, honest call tone (`toneConfident=false` ⇒ render "No calls"), last-call date/staleness, the gpt-5.4 driver factors as `themes`, plus portfolio rollups (Active SIPs, Open Actions, Portfolio NPS, CSAT coverage) and a coverage window. It is the **final step of the sync cycle** and can be run standalone after any data change.
 * **Consequences:** `scripts/build_real_partners.py`'s `inject_exec` and `scripts/refresh_exec_row.py` are now no-ops (they detect the missing array and skip); they are retained only for rollback to `backups/index_pre-AIODI_2026-06-13.html`. Each feed object still carries an explicit `slug` (slug ≠ `slugify(display name)` for several partners — `MSP Corp` → `mspcorp`, `RealTime, LLC` → `realtime-it`) so drilldown links are never derived from the display name.
-* **Demo-roster allowlist:** if `data/_demo_roster.json` (a list of slugs) is present, `build_overview.py` filters the feed **and its portfolio rollups** to just those partners — a curated dashboard (currently 77 — the full DES/MDE roster from Halo report 364; was 20 for the CTO demo) without deleting caches. Sync-proof (a rebuild can't resurrect hidden partners) and reversible (delete the file to show all). `scripts/audit_data.py` — the post-sync data-integrity audit (uncounted SIPs, missing AI, empty CSAT, stale/absent last-call, unmatched transcript folders, feed/index mismatch) — is allowlist-aware, scoping its partner checks to the roster.
+* **Demo-roster allowlist:** if `data/_demo_roster.json` (a list of slugs) is present, `build_overview.py` filters the feed **and its portfolio rollups** to just those partners — a curated dashboard (currently the full DES/MDE roster from Halo report 364; was 20 for the CTO demo) without deleting caches. Sync-proof (a rebuild can't resurrect hidden partners) and reversible (delete the file to show all). `scripts/audit_data.py` — the post-sync data-integrity audit (uncounted SIPs, missing AI, empty CSAT, stale/absent last-call, unmatched transcript folders, feed/index mismatch) — is allowlist-aware, scoping its partner checks to the roster.
 * **Displayed trend reconciliation (`_reconcile_trend`):** gpt-5.4's `sentiment_trend` never emits "Declining" and can contradict the hard signals, so `build_overview.py` downgrades the *shown* trend — a high-risk + Negative account reads "Declining", a high-risk "Improving" reads "Stable". The risk **band** is likewise derived deterministically from the score (`_tier`), not the LLM's free-form `risk_band`, so Exec Overview and Partner 360 agree.
 
 ### Portfolio Aggregates Derived In-Process
@@ -225,22 +254,23 @@ Contains all fetched data and the AI analysis block. Exact top-level keys:
 
 ## 5. Security & Secret Management
 
-* **Configuration:** Credentials for Azure Foundry, HaloPSA, and TeamGPS are loaded via environment variables or a `.env` file through `extract/config.py`.
-* **Important:** Live credentials should not be checked into Git. The project uses `.env.example` to track the expected keys. Active keys inside the SOP documents must be rotated and moved to a dedicated secrets manager prior to production deployment.
-* **Current state (beta):** `extract/config.py` ships **live fallback secrets baked into source** (Halo client-secret, TeamGPS API key, Azure OpenAI key) so the engine runs out-of-the-box. These must be rotated and externalised before any wider deployment.
+* **Configuration:** Credentials for Azure Foundry, HaloPSA, TeamGPS, and Microsoft Graph are loaded via environment variables or a `.env` file through `extract/config.py` (env-first, so injected values always win).
+* **Production (2026-06-16):** the cloud pipeline reads all secrets from **Google Secret Manager** (loaded by `scripts/seed_secrets.py`, injected into the Cloud Run Job as env vars); the Job authenticates to Firestore/Storage via its **attached service account** (keyless — no JSON key files). Dashboard access is gated by Firebase Auth (verified `@itbd.net` email/password) + `firestore.rules` (client writes denied). Firebase web config values (`firebase-config.js`) are public by design.
+* **Still owed:** the in-repo **fallback secrets baked into `extract/config.py`** (Halo client-secret, TeamGPS key, Azure key) were *reused* into Secret Manager as-is on 2026-06-16, not rotated. Rotation in each source system + a new Secret Manager version is the outstanding task (see `Firebase-Deploy-SOP.md` §0, `Cloud-Pipeline-SOP.md` "Notes"). `.env.example` tracks the expected keys.
 
 ---
 
 ## 6. Data Sources, Connectors & Access Tiers
 
-The engine integrates **three external systems plus local files**, all via direct REST calls (no managed connector/iPaaS layer). The table below also flags the account tier each currently runs on versus what a scaled/production deployment needs.
+The engine integrates **four external systems plus local files**, all via direct REST/SDK calls (no managed connector/iPaaS layer). The table below also flags the account tier each currently runs on versus what a scaled/production deployment needs.
 
 | Source | How it's accessed | Auth used today | Tier / scaling concern |
 |---|---|---|---|
 | **HaloPSA** (`extract/halo.py`) | Direct REST to `itbd.halopsa.com/api` | OAuth2 **client_credentials** app, read scope. (The claude.ai-side equivalent connector is named `HaloPSA_mcp_test` — a test instance.) | Works on the existing Halo tenant. Needs a **sanctioned, named API application** with least-privilege scope and rotating secrets — not a personal/test app registration. |
 | **TeamGPS Open API** (`extract/teamgps.py`) | Direct REST to `api.team-gps.net/open-api/v1` | Single static **`X-API-KEY`** | Account-scoped personal key. For scale: an **org-issued key**, stored in a secret manager, with rotation. No server-side company filter on NPS (full set pulled and filtered locally). |
+| **Microsoft Graph** (Teams meeting transcripts; `scripts/pull_graph_transcripts.py`) | Direct REST to `graph.microsoft.com` | App-only OAuth (`GRAPH_TENANT_ID`/`GRAPH_CLIENT_ID`/`GRAPH_CLIENT_SECRET`) | Pulls partner service-call `.vtt` transcripts into `Transcripts/{Partner}/` (no attendee constraint). Teams retains transcript **content ~90 days**, so the pull runs monthly/nightly. Needs the sanctioned Graph app registration (least-privilege `OnlineMeetingTranscript.Read.All` etc.). |
 | **Azure OpenAI — gpt-5.4** (`extract/ai.py`) | Azure OpenAI SDK | API key against endpoint `leonwisoky.cognitiveservices.azure.com` | Appears to be an **individual/personal Azure Foundry resource**. Production needs an **enterprise Azure subscription**: provisioned throughput/quota, content filtering, private networking, and a data-processing agreement (partner notes are sent to the model). |
-| **Local `.docx` transcripts & deck PDFs/PPTX** | Filesystem | none | Converted with the open-source **MarkItDown** library (no account). Transcripts are manually exported and dropped into `Transcripts/{Partner}/`. |
+| **Local `.docx` transcripts & deck PDFs/PPTX** | Filesystem | none | Converted with the open-source **MarkItDown** library (no account). `.docx` transcripts are manually exported and dropped into `Transcripts/{Partner}/`; `.vtt` transcripts arrive there from the Graph pull above and are parsed natively (`parse_vtt`), no markitdown. |
 | **Chart.js 4.4.4** | Vendored locally under `vendor/` | none | No CDN/account dependency at runtime. |
 
 > **No managed connectors are used in the deployed code.** All integration is hand-rolled `requests`/SDK calls with keys in `config.py`. If this is instead run through Claude/claude.ai connectors (HubSpot, QuickBooks, Microsoft 365, Atlassian, etc.), each of those is a separate OAuth app that would require **business/enterprise tenant authorization** — none are wired into PartnerPulse today.
@@ -274,11 +304,11 @@ These are limitations in the **upstream Halo/TeamGPS data**, not bugs in the eng
 
 ## 9. Data Composition — Real Only
 
-All data is **real**, pulled live from Halo/TeamGPS + gpt-5.4: **78 partners built** —
+All data is **real**, pulled live from Halo/TeamGPS + gpt-5.4 — **80 partners built**:
 
 * the 10 registry partners in `extract/partners.py` (Logically, MSPCorp, Liongard, Milner, ION247, Realtime IT, Stasmayer, Premier, Alliance, Computer Weavers),
-* plus 68 in `scripts/build_real_partners.py` NEW. **Expanded 2026-06-15 to the full DES/MDE book of business** sourced authoritatively from HaloPSA report 364 "DES RAG Status" (filter `Area.CFMDERAG >= 1`): the earlier 32 (8 original extras + 20 from the 2026-06-12 transcript-access audit + 4 CTO-demo adds) plus the 36 remaining RAG-managed DES/MDE accounts added 2026-06-15.
-* **Demo curation:** `data/_demo_roster.json` (allowlist) currently filters the dashboard feed to **77** of the 78 — the full DES/MDE roster (the one hidden cache is a non-DES partner); it was 20 for the CTO demo. The hidden cache reappears if the allowlist is removed.
-* A **transcript-only** build path exists (`client_id=None` in NEW skips Halo/TeamGPS; the AI works from call transcripts alone) but is currently unused: its one user, "CW Now", was actually Halo client 39 **C&W Computers** (their domain is cwnow.com) and was corrected to the full Halo + TeamGPS path on 2026-06-12.
+* plus 70 in `scripts/build_real_partners.py` NEW — **the full DES/MDE book of business**, sourced authoritatively from HaloPSA report 364 "DES RAG Status" (filter `Area.CFMDERAG >= 1`), expanded to that roster on 2026-06-15.
+* **Demo curation:** `data/_demo_roster.json` (allowlist) currently filters the dashboard feed to the full DES/MDE roster (**79** of the 80 built — the one hidden cache is a non-DES partner; it was 20 for the CTO demo). The hidden cache reappears if the allowlist is removed.
+* A **transcript-only** build path exists (`client_id=None` in NEW skips Halo/TeamGPS; the AI works from call transcripts alone) — currently **ECS Consulting** (no Halo client record; built from its service-call `.vtt`). (Its earlier user "CW Now" turned out to be Halo client 39 **C&W Computers**, domain cwnow.com, corrected to the full Halo + TeamGPS path on 2026-06-12.)
 
 > **History:** until 2026-06-11 the cache also held ~36 synthetic demo partners (seeded by a since-deleted `gen_demo_partners.py`) to stress-test the portfolio at scale. All demo data was wiped from the codebase — partner JSONs, the injected exec-overview block, and the seeder itself. If a partner carrying `"demo": true` ever reappears, something is restoring stale data.

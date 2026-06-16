@@ -17,6 +17,9 @@ Every doc in this repo, what it covers, and when a change obligates an update:
 | `CLAUDE.md` (repo root) | LLM working context: commands, repo layout, critical gotchas, pointers | Commands change, files move, a new gotcha is discovered, a doc is added/renamed |
 | `README.md` | Human quick start, manual usage, "How it works" file tree, roadmap | Setup/commands change, files move, components are added/removed |
 | `docs/architecture.md` | System design: pipeline, cache schema, tradeoffs, data sources, data-integrity notes, demo-vs-real composition | Pipeline steps / schema keys / file layout / frontend data flow / partner composition change |
+| `docs/Data-Schema.md` | **Authoritative end-to-end source→pipeline→store→consumer map**: data sources, local cache + feed schema, Firestore sharded layout, GCS state, field provenance, operating model | A data source, JSON/feed key, Firestore collection/doc shape, or storage location changes |
+| `docs/Firebase-Deploy-SOP.md` | Hosted deployment: Firebase Hosting + Firestore (sharded), email/password `@itbd.net` auth, `firestore.rules`, the `upload_firebase_data.py` publish, deploy steps | Auth method, Firestore layout/rules, hosting/deploy steps, or `auth.js`/`firebase-config.js` change |
+| `docs/Cloud-Pipeline-SOP.md` | Cloud Run Job + Cloud Scheduler nightly pipeline: `cloud_sync.py`, Dockerfile image, Secret Manager, GCS state bucket, resource names, provisioning + operate runbook | The job/schedule/secrets/bucket/image or any provisioning step changes |
 | `docs/changelog.md` | Keep-a-Changelog history, semver `1.0.0-beta.N` | **Every user-visible or behavioural change** — add to today's `[Unreleased]`/newest entry or create a new `beta.N+1` dated entry |
 | `docs/Data-Extraction-SOP.md` | The per-partner extraction procedure (transcripts, CSAT, NPS, client metadata, ticket notes, SIP counts, execution workflow) | An extraction step is added/removed/reordered, or an endpoint/filter pattern changes |
 | `docs/HaloPSA-API-SOP.md` | Halo REST reference: auth, quirks, addenda of verified findings, endpoint catalogue, lookup decodes | A new Halo API behaviour/quirk is **verified** — append a dated addendum section; never silently rewrite older findings (mark them superseded) |
@@ -26,8 +29,13 @@ Every doc in this repo, what it covers, and when a change obligates an update:
 | `docs/LLM-SOP.md` (this file) | Doc registry + maintenance procedure | Docs are added/moved/renamed; update rules or repo conventions change |
 | `docs/archive/` | Frozen artifacts (saved session logs) | Never edited — only add to it |
 
-Not documentation, but doc-adjacent: `.env.example` (update when a new secret/env var
-is introduced) and `.gitignore` (update when a new generated-file pattern appears).
+Not documentation, but doc-adjacent — keep in sync when relevant:
+* `.env.example` (new secret/env var introduced) and `.gitignore` (new generated-file pattern).
+* **A new secret/env var also means:** add it to `scripts/seed_secrets.py` `SECRETS` and to the Cloud Run Job's `--set-secrets` (see `Cloud-Pipeline-SOP.md`).
+* `firebase.json` / `.firebaserc` / `firestore.rules` / `firestore.indexes.json`, `firebase-config.js`, `auth.js` (Firebase deploy surface — keep `Firebase-Deploy-SOP.md` true).
+* `storage.rules` (GCS state-bucket access policy for the pipeline — keep `Cloud-Pipeline-SOP.md` true).
+* `Dockerfile` / `.dockerignore` / `.gcloudignore` (pipeline image — keep `Cloud-Pipeline-SOP.md` true).
+* `extract/textutil.py` (canonical `slugify` / `normalize` name-normalization helpers shared by `extract/transcripts.py`, `scripts/audit_data.py`, et al.) — if you change slug/normalize behaviour, gotcha 3 / consistency rule 3 and `Transcripts/` matching (rule 8) must stay true.
 
 ## 1b. Enforcement — pre-commit hook
 
@@ -103,8 +111,8 @@ code and every doc that states it must move together:
    case-insensitively). Keep transcript content verbatim — never summarize or edit it.
 9. **The partner roster lives in two places only:** `extract/partners.py` PARTNERS
    (the 10 registry partners, full build incl. decks) and
-   `scripts/build_real_partners.py` NEW (everything else — 68 entries as of 2026-06-15,
-   the full DES/MDE roster from Halo report 364 `Area.CFMDERAG >= 1`).
+   `scripts/build_real_partners.py` NEW (everything else — 70 entries,
+   the full DES/MDE roster from Halo report 364 `Area.CFMDERAG >= 1`, as of 2026-06-15).
    Adding a partner = a NEW entry (resolve the Halo client id first; `client_id=None` for
    transcript-only partners with no Halo record) + run the script + `extract.build_all
    --reindex` + `scripts/build_overview.py`. Never add partners by editing `index.html`
@@ -114,6 +122,22 @@ code and every doc that states it must move together:
    reversible. It hides, never deletes; remove the file to show all built partners. Keep
    it in sync with reality (a slug that no longer builds will be flagged by
    `scripts/audit_data.py`).
+11. **Two runtimes, one data shape (changed 2026-06-16).** Pages never read storage
+   directly — they call `window.PP_AUTH.loadOverview()` / `loadPartner(slug)` /
+   `lastSyncStamp()` (`auth.js`). LOCAL dev reads `data/*.json` (no auth); PRODUCTION
+   reads **Cloud Firestore** (verified `@itbd.net` email/password). Both return the SAME
+   shapes (the `_overview.json` feed and the `{slug}.json` blob). If you change a feed or
+   blob key, update BOTH the producers (`build_overview.py` / `build_partner.py`) and the
+   Firestore publisher (`upload_firebase_data.py` `_PROFILE_KEYS` / `_SECTIONS`) — and
+   `Data-Schema.md`. **Firestore is the production source of truth for serving**; it is
+   republished every night, never hand-edited.
+12. **Firebase SDK + auth tags live in BOTH HTML heads (gotcha 7 extension).** The
+   firebase-app/auth/firestore compat `<script>`s + `firebase-config.js` + `auth.js` are
+   in `index.html` AND `partner.html`. Add to both or prod auth breaks on one page.
+13. **Cloud pipeline = nightly Cloud Run Job** (`scripts/cloud_sync.py`): the same cycle
+   as the old sync button PLUS `upload_firebase_data.py`, with GCS state pull/push around
+   it. Changing the cycle's steps means updating `cloud_sync.py`, `server.py` `SYNC_STEPS`
+   (local), and `Cloud-Pipeline-SOP.md` together.
 
 ## 4. Changelog conventions
 

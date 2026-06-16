@@ -82,14 +82,42 @@ def get_nps_all():
     return out
 
 
+def _dominant_domains(emails: set, domains: set):
+    """The partner's DOMINANT corporate domain(s): among the contact emails,
+    the most-common domain(s) that are in `domains` (already free-mail-filtered
+    by halo.get_users). Returns a set (ties keep all leaders). Empty when the
+    partner has no resolvable corporate domain (e.g. all contacts on free mail).
+
+    Domain-based NPS attribution must use only the dominant corporate domain(s)
+    rather than every stray contact domain: a single contact who happens to use
+    another company's domain (e.g. a leftover @milner.com address on Perfect
+    Cloud's record) would otherwise cross-attribute that company's NPS."""
+    counts = {}
+    for e in emails:
+        if "@" in e:
+            dom = e.split("@", 1)[1]
+            if dom in domains:
+                counts[dom] = counts.get(dom, 0) + 1
+    if not counts:
+        return set()
+    top = max(counts.values())
+    return {d for d, n in counts.items() if n == top}
+
+
 def filter_nps(all_nps: list, emails: set, domains: set):
-    """Keep NPS responses whose respondent matches a client contact email or an
-    email domain owned by the client."""
+    """Keep NPS responses whose respondent belongs to this partner.
+
+    Matches on the partner's DOMINANT corporate domain(s) (the most common
+    non-free domain among contacts) plus an exact contact-email fallback. When
+    no corporate domain is resolvable (all contacts on free mail), falls back to
+    exact email match only — this avoids both the gmail N-way over-count and
+    stray-contact cross-attribution between partners."""
+    dom_set = _dominant_domains(emails, domains)
     out = []
     for r in all_nps:
         e = r.get("respondent_email") or ""
         dom = e.split("@", 1)[1] if "@" in e else ""
-        if e in emails or (dom and dom in domains):
+        if e in emails or (dom and dom in dom_set):
             out.append(r)
     return out
 

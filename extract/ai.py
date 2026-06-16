@@ -12,6 +12,18 @@ from openai import AzureOpenAI
 
 from . import config
 
+# Bump when the cached-result shape/semantics change so old caches are invalidated
+# (a cached result whose `_schema_version` differs is treated as stale and re-run).
+CACHE_SCHEMA_VERSION = 2
+
+# Keys an AI result must carry to be considered a usable cached value.
+_REQUIRED_KEYS = ("risk_score", "risk_band", "summary", "drivers",
+                  "remediation", "action_items")
+
+# Network hardening for the Azure OpenAI client.
+_REQUEST_TIMEOUT_S = 120
+_MAX_RETRIES = 2
+
 _client = None
 
 
@@ -22,6 +34,8 @@ def _client_singleton() -> AzureOpenAI:
             api_version=config.AZURE_OPENAI_API_VERSION,
             azure_endpoint=config.AZURE_OPENAI_ENDPOINT,
             api_key=config.AZURE_OPENAI_KEY,
+            timeout=_REQUEST_TIMEOUT_S,
+            max_retries=_MAX_RETRIES,
         )
     return _client
 
@@ -90,7 +104,52 @@ def build_context(data: dict) -> str:
             parts.append(f"### Deck: {d.get('filename')}")
             parts.append(_truncate(d.get("markdown"), 4000))
 
+    # Service-call transcripts (.docx/.vtt). For transcript-only partners
+    # (client_id=None) this is the ONLY substantive signal, so it MUST be in the
+    # prompt -- otherwise the model scores on an empty context and fabricates.
+    txs = data.get("transcripts", [])
+    if txs:
+        parts.append("\n## Service-call transcripts")
+        for t in txs[:4]:
+            parts.append(f"### Transcript: {t.get('filename')} ({str(t.get('date'))[:10]})")
+            parts.append(_truncate(t.get("markdown"), 4000))
+
     return "\n".join(str(p) for p in parts)
+
+
+def _has_substantive_signal(data: dict) -> bool:
+    """True when the partner cache carries real churn signal (CSAT/NPS comments,
+    call notes, decks, or transcripts) -- as opposed to just the boilerplate
+    header + empty flag stubs that build_context always emits."""
+    if data.get("csat_comments") or data.get("nps_comments"):
+        return True
+    if any((c.get("notes") or "").strip() for c in data.get("historical_calls", [])):
+        return True
+    if any((d.get("markdown") or "").strip() for d in data.get("decks", [])):
+        return True
+    if any((t.get("markdown") or "").strip() for t in data.get("transcripts", [])):
+        return True
+    return False
+
+
+def _insufficient_data_result(input_hash: str) -> dict:
+    """A low-confidence placeholder used when there is essentially no context to
+    analyze, so we never fabricate a risk score from an empty prompt."""
+    return {
+        "risk_score": None,
+        "risk_band": "Unknown",
+        "confidence": "Low",
+        "summary": "Insufficient data: no CSAT/NPS feedback, call notes, decks, "
+                   "or transcripts available to assess churn risk.",
+        "sentiment_trend": "Stable",
+        "drivers": [],
+        "remediation": [],
+        "action_items": [],
+        "_insufficient_data": True,
+        "_model": config.AZURE_OPENAI_DEPLOYMENT,
+        "_schema_version": CACHE_SCHEMA_VERSION,
+        "_input_hash": input_hash,
+    }
 
 
 def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
@@ -104,10 +163,20 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
     """
     context = build_context(data)
     input_hash = hashlib.sha256(context.encode("utf-8")).hexdigest()
-    if (not force and cached_ai and cached_ai.get("_input_hash") == input_hash
-            and cached_ai.get("risk_score") is not None):
+    cache_ok = (
+        cached_ai
+        and cached_ai.get("_input_hash") == input_hash
+        and cached_ai.get("_schema_version") == CACHE_SCHEMA_VERSION
+        and not cached_ai.get("_error")
+        and all(k in cached_ai for k in _REQUIRED_KEYS)
+    )
+    if not force and cache_ok:
         cached_ai["_cached"] = True            # marker for callers/logs; harmless in the UI
         return cached_ai
+
+    # No real signal -> don't burn an LLM call or fabricate a score.
+    if not _has_substantive_signal(data):
+        return _insufficient_data_result(input_hash)
     try:
         resp = _client_singleton().chat.completions.create(
             model=config.AZURE_OPENAI_DEPLOYMENT,
@@ -121,6 +190,7 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
         insight = json.loads(resp.choices[0].message.content)
         insight["_model"] = config.AZURE_OPENAI_DEPLOYMENT
         insight["_input_hash"] = input_hash
+        insight["_schema_version"] = CACHE_SCHEMA_VERSION
         return insight
     except Exception as e:
         return {"_error": str(e), "risk_score": None, "risk_band": "Unknown",

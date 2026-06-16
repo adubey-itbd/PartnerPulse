@@ -14,6 +14,7 @@ from pathlib import Path
 from markitdown import MarkItDown
 
 from . import config
+from .textutil import slugify as _norm
 
 _md = MarkItDown()
 
@@ -127,10 +128,6 @@ def parse_vtt(path) -> dict:
         "dialogue": dialogue,
         "markdown": markdown,
     }
-
-
-def _norm(name: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")
 
 
 def resolve_partner_dir(partner_name: str):

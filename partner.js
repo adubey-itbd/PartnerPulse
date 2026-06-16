@@ -405,18 +405,40 @@
         $("deck-content").innerHTML = `<pre class="deck-pre">${esc(d.markdown || "")}</pre>`;
     }
 
+    // ---------------- Loading / error states ----------------
+    function showLoading() {
+        const host = document.querySelector("#page-overview") || document.querySelector(".main-content");
+        if (host) host.insertAdjacentHTML("afterbegin",
+            `<div id="pp-loading" class="pp-loading"><div class="pp-spinner" role="status" aria-label="Loading"></div><div>Loading partner data…</div></div>`);
+    }
+    function hideLoading() { const el = $("pp-loading"); if (el) el.remove(); }
+    function showLoadError(e) {
+        const isProd = !!(window.PP_AUTH && window.PP_AUTH.mode === "prod");
+        const hint = isProd
+            ? `We couldn't load this partner's data. This is usually a transient network or sign-in issue — please try again.`
+            : `${esc(e && e.message)} — has it been built? Run <code>python -m extract.build_all</code>`;
+        document.querySelector(".main-content").innerHTML =
+            `<div class="page-container active"><div class="card"><div class="no-results">Could not load partner "<b>${esc(slug)}</b>".<br><small>${hint}</small>` +
+            (isProd ? `<div class="pp-error-actions"><button type="button" class="pp-retry-btn" onclick="location.reload()">Retry</button></div>` : ``) +
+            `<br><br><a class="badge badge-info" href="index.html">&larr; Back to all partners</a></div></div></div>`;
+    }
+
     // ---------------- Init ----------------
     async function init() {
         setupNavigation();
+        showLoading();
         try {
-            const res = await fetch(`data/${slug}.json`, { cache: "no-store" });
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            state.data = await res.json();
+            await window.PP_AUTH.ready();
+            // Partner 360 data: prod reassembles it from the sharded Firestore
+            // docs (partners/<slug> + detail/profile + subcollections); dev reads
+            // the local data/<slug>.json blob. Same shape either way. See auth.js.
+            state.data = await window.PP_AUTH.loadPartner(slug);
         } catch (e) {
-            document.querySelector(".main-content").innerHTML =
-                `<div class="page-container active"><div class="card"><div class="no-results">Could not load partner "<b>${esc(slug)}</b>".<br><small>${esc(e.message)} — has it been built? Run <code>python -m extract.build_all</code></small><br><br><a class="badge badge-info" href="index.html">← Back to all partners</a></div></div></div>`;
+            hideLoading();
+            showLoadError(e);
             return;
         }
+        hideLoading();
         initClientMeta();
         renderOverview();
         renderAI();

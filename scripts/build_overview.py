@@ -31,9 +31,9 @@ from datetime import date, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
-# Pin "today" to the dataset's reference date so "overdue" / "stale" stay meaningful
-# against the (future-dated) sample data rather than the host clock.
-TODAY = date(2026, 6, 13)
+# "Today" for overdue / stale / asOf logic. Defaults to the host clock (date.today())
+# so unattended nightly runs stay correct; override with PARTNERPULSE_ASOF=YYYY-MM-DD
+# (e.g. to pin against the future-dated sample data, or to reproduce a past run).
 STALE_DAYS = 60          # a service-review call older than this is flagged stale
 LOW_SAMPLE = 10          # CSAT/NPS responses below this get a low-confidence badge
 
@@ -47,6 +47,23 @@ def _parse_iso_date(s):
         return datetime.strptime(head, "%Y-%m-%d").date()
     except ValueError:
         return None
+
+
+def _resolve_today():
+    override = (os.environ.get("PARTNERPULSE_ASOF") or "").strip()
+    if override:
+        parsed = _parse_iso_date(override)
+        if parsed is not None:
+            return parsed
+        print(f"WARNING: ignoring invalid PARTNERPULSE_ASOF={override!r} "
+              "(expected YYYY-MM-DD); using today's date")
+    return date.today()
+
+
+# "Today" for overdue / stale / asOf logic. Defaults to the host clock (date.today())
+# so unattended nightly runs stay correct; override with PARTNERPULSE_ASOF=YYYY-MM-DD
+# (e.g. to pin against the future-dated sample data, or to reproduce a past run).
+TODAY = _resolve_today()
 
 
 def _transcript_date(t):
@@ -175,6 +192,13 @@ def build_partner(slug, idx_row):
     if not (isinstance(am, str) and am.strip() and not am.strip().isdigit()):
         am = "Unassigned"
 
+    # ---- Insufficient-data guard ----
+    # A partner with no CSAT, no NPS, no calls and no transcripts has nothing behind its
+    # score — reporting it as a confident "Healthy" is misleading. Flag it so the dashboard
+    # can render an "Insufficient data" band, and exclude it from the avgRisk rollup.
+    has_data = bool(rated or nps_resp or calls_count or transcripts)
+    insufficient_data = not has_data
+
     risk = ai.get("risk_score", idx_row.get("risk_score", 0)) or 0
     ai_trend = ai.get("sentiment_trend") or idx_row.get("sentiment_trend") or "Stable"
     # Tone keeps using the raw AI trend (it's a hard signal feeding renewal risk);
@@ -191,7 +215,10 @@ def build_partner(slug, idx_row):
         "name": idx_row.get("name") or client.get("name") or slug,
         "slug": slug,
         "churnRisk": risk,
-        "riskBand": _tier(risk),  # deterministic single source of truth (was: LLM risk_band, mis-calibrated vs the score)
+        # deterministic single source of truth (was: LLM risk_band, mis-calibrated vs the
+        # score). Zero-evidence partners get "Insufficient data" instead of a confident band.
+        "riskBand": "Insufficient data" if insufficient_data else _tier(risk),
+        "insufficientData": insufficient_data,
         "accountManager": am,
         "sentimentTrend": trend,
         "topDriver": top_driver,
@@ -237,14 +264,22 @@ def main():
     # caches. Sync-proof (a full rebuild can't resurrect hidden partners) and reversible
     # (delete the file to show everyone). Portfolio rollups below reflect the filtered set.
     roster_path = os.path.join(DATA, "_demo_roster.json")
+    excluded_slugs = []
     if os.path.exists(roster_path):
         with open(roster_path, encoding="utf-8") as fh:
             allow = set(json.load(fh))
         before = len(partners)
+        # Built partners the roster silently hides — surface them so genuinely real
+        # partners (e.g. mission-technology) aren't dropped from the feed unnoticed.
+        excluded = [p for p in partners if p["slug"] not in allow]
+        excluded_slugs = sorted(p["slug"] for p in excluded)
         partners = [p for p in partners if p["slug"] in allow]
         missing = sorted(allow - {p["slug"] for p in partners})
         print(f"Demo roster active: {len(partners)} of {before} partners shown"
               + (f" (NOT FOUND: {missing})" if missing else ""))
+        if excluded_slugs:
+            print(f"WARNING: demo roster EXCLUDES {len(excluded_slugs)} built partner(s) "
+                  f"from the feed: {excluded_slugs}")
 
     # ---- Coverage window: pull the private _cov off each partner and aggregate ----
     covs = [p.pop("_cov") for p in partners]
@@ -264,7 +299,11 @@ def main():
 
     n = len(partners)
     # ---- Portfolio rollups ----
-    avg_risk = round(sum(p["churnRisk"] for p in partners) / n) if n else 0
+    # avgRisk only averages partners that actually have evidence — a fleet of zero-data
+    # "Healthy 0" scores would otherwise drag the portfolio average down dishonestly.
+    scored = [p for p in partners if not p.get("insufficientData")]
+    insufficient_n = n - len(scored)
+    avg_risk = round(sum(p["churnRisk"] for p in scored) / len(scored)) if scored else 0
     high_risk = sum(1 for p in partners if p["churnRisk"] >= 45)
     active_sips = sum(p["sip"]["open"] for p in partners)
     partners_with_sip = sum(1 for p in partners if p["sip"]["open"] > 0)
@@ -293,9 +332,12 @@ def main():
     out = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "as_of": TODAY.isoformat(),
+        "excludedCount": len(excluded_slugs),
+        "excludedSlugs": excluded_slugs,
         "coverage": coverage,
         "portfolio": {
-            "tracked": n, "avgRisk": avg_risk, "highRisk": high_risk,
+            "tracked": n, "scored": len(scored), "insufficientData": insufficient_n,
+            "avgRisk": avg_risk, "highRisk": high_risk,
             "activeSIPs": active_sips, "partnersWithSIP": partners_with_sip,
             "openActions": open_actions, "overdueActions": overdue_actions,
             "openNoDate": open_nodate, "renewalsAtRisk": renewals_at_risk,
@@ -307,7 +349,9 @@ def main():
     out_path = os.path.join(DATA, "_overview.json")
     with open(out_path, "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=2, ensure_ascii=False)
-    print(f"Wrote {out_path}: {n} partners, "
+    print(f"Wrote {out_path}: {n} partners "
+          f"({len(scored)} scored, {insufficient_n} insufficient-data), "
+          f"asOf {TODAY.isoformat()}, "
           f"{active_sips} active SIPs across {partners_with_sip} partners, "
           f"{open_actions} open actions ({overdue_actions} overdue), "
           f"portfolio NPS {portfolio_nps}, CSAT coverage {csat_coverage}%")

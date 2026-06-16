@@ -6,6 +6,164 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Audit hardening: publish safety, data-accuracy, resilience, UX, docs (2026-06-16)
+
+Ran a comprehensive multi-agent ("ultracode") audit of the new Firebase + cloud
+pipeline and the wider codebase (67 verified findings), then remediated them via
+file-partitioned subagents. Net effect: the nightly pipeline is now recoverable,
+guarded, and observable, and several long-standing data-accuracy bugs are fixed.
+
+### Fixed — data accuracy
+- **NPS cross-attribution** (`extract/teamgps.py`, `extract/halo.py`) — `get_users`
+  no longer harvests free-mail (gmail/outlook/…) domains, and `filter_nps` now
+  matches on a partner's **dominant corporate domain(s)** instead of every stray
+  contact domain. Fixes the gmail respondents counted across ~5 partners and
+  **Perfect Cloud Solutions' NPS being identical to Milner's** (stray `@milner.com`
+  contacts). `audit_data.py` gained NPS-quality checks that flag these.
+- **SIP over-count** (`extract/halo.py: count_sips`) — bucket-B now requires
+  **word-boundary** name matches and drops short tokens, so tickets like
+  `teal`/`tab`/`f12` no longer match other clients' SIPs.
+- **Wrong-`client_id` guard** (`scripts/build_real_partners.py`, `extract/halo.py:
+  fuzzy_name_match`) — warns/flags when a fetched Halo client name doesn't match
+  the expected partner (the Acrisure 937→79 class).
+
+### Fixed / Added — pipeline resilience
+- **Firestore publish is now gated + ordered safely** (`scripts/upload_firebase_data.py`)
+  — validates all blobs + the feed up front, **aborts if the partner count drops >
+  `PP_MAX_DROP_PCT` (default 20%)** or the feed is empty/stale, and writes
+  `meta/overview` **last** as a completion sentinel. The destructive stale-partner
+  reconcile is guarded by the same gate. No more silent partner deletion from a thin
+  build.
+- **`cloud_sync.py`** — state is **pushed before** the hard publish and guaranteed via
+  `try/finally` (never discards freshly-pulled transcripts/AI on an upload failure);
+  per-step **timeouts**; **refuses to publish** stale data if `build_overview` failed;
+  a **cache-bust guard** (aborts if the pulled `data/` is implausibly small) to avoid a
+  cold full gpt-5.4 re-run + score drift; a `data/` **state-prune** (mirrors deletions);
+  and an end-of-run **`RUN SUMMARY`** line (emitted on every path, for alerting).
+- **GCS state bucket: Object Versioning ON** — a bad nightly run is now recoverable;
+  rollback runbook added to `docs/Cloud-Pipeline-SOP.md`.
+- **`extract/ai.py`** — Azure client `timeout`/`max_retries`; a cache **schema version**
+  so malformed/old cached results invalidate; `build_context` now includes transcripts
+  and returns a low-confidence **"insufficient data"** result instead of scoring an empty
+  prompt.
+- **`extract/config.py`** — emits a loud (non-secret) warning when a credential falls
+  back to the in-repo baked default (i.e. the env var is unset) so cloud misconfig is
+  visible.
+
+### Fixed — feed & operability
+- **`scripts/build_overview.py`** — replaced the hardcoded `TODAY = 2026-06-13` with
+  `date.today()` (env `PARTNERPULSE_ASOF` override) so overdue/stale logic works
+  unattended; **warns on built-but-excluded** partners (surfaced the silently-hidden
+  `mission-technology`); zero-data partners now get an **"Insufficient data"** band and
+  are excluded from `avgRisk` instead of reading as confident "Healthy".
+- **`extract/textutil.py`** (new) — one canonical `slugify`/`normalize`, replacing three
+  divergent copies in `build_real_partners.py`, `audit_data.py`, `transcripts.py`.
+- **`scripts/audit_data.py`** — new checks: NPS domain credited to >1 partner, free-mail
+  in an NPS set, off-corporate-domain respondents, client-name mismatch, and
+  built-but-excluded-by-allowlist.
+
+### Fixed — frontend & auth
+- **Dead Sync UI removed** — stale `.sync-btn`/`.sync-panel`/`@keyframes sync-spin` CSS
+  and `/api/refresh` comments stripped from `index.html` + `styles.css`.
+- **Loading + production-aware errors** (`index.html`, `partner.js`) — a loading state
+  during Firestore reads; the error handler branches on `PP_AUTH.mode` (friendly
+  "couldn't load, retry" in prod instead of local-CLI hints).
+- **Mobile** — a header toggle so the Overview ↔ Partner 360 view switch is reachable
+  on phones (sidebar was hidden < 760px).
+- **Auth UX/security** (`auth.js`) — email-verification no longer dead-ends (sign-in
+  mode + resend + "I've verified, reload"); overlay is accessible (`role=dialog`, labels,
+  autofocus, Enter-to-submit, `aria-live`); forgot-password no longer leaks account
+  existence; client password minimum raised to 12.
+- **`storage.rules`** (new, deny-all) wired into `firebase.json`; `firestore.rules`
+  comment marks `isItbd()` as the single load-bearing access clause.
+- **`firebase-config.js`** — corrected the stale comment referencing a non-existent
+  Cloud Function.
+
+### Docs
+- `architecture.md` (Graph as a first-class source; `.vtt` via the app-only
+  `pull_graph_transcripts.py`, not the superseded connector), `Cloud-Pipeline-SOP.md`
+  (rollback runbook, versioning, `pip install google-cloud-secret-manager`),
+  `Firebase-Deploy-SOP.md` (deploy = UI/rules only, cloud add-a-partner procedure,
+  region `us-central1`), `CLAUDE.md`/`README.md`/`Data-Schema.md`/`LLM-SOP.md`
+  (counts reconciled, `storage.rules` + `extract/textutil.py` registered).
+
+### Still outstanding (owner action — not code)
+- **Rotate** the reused Halo/TeamGPS/Azure/Graph keys in their source systems +
+  publish new Secret Manager versions (the committed `config.py` fallbacks are a
+  standing leak until then). Azure **budget alert**, Firebase **App Check** + **MFA**,
+  and a Cloud Monitoring **failed-run alert** are console/owner tasks.
+
+---
+
+## [Unreleased] — Pipeline moved to the cloud; nightly auto-sync; sync button removed (2026-06-16)
+
+The data pipeline now runs **fully in the cloud, unattended** — no local machine
+in the loop. A **Cloud Run Job** (`partnerpulse-nightly`) runs the whole cycle and
+republishes Firestore, triggered by **Cloud Scheduler at 21:00 America/New_York**
+(9pm Eastern, DST-aware). Chose Cloud Run Job over Cloud Functions: the cycle is a
+5–30 min multi-step batch with a build working dir — a poor fit for Functions.
+Full runbook: **`docs/Cloud-Pipeline-SOP.md`**.
+
+### Added
+- **`scripts/cloud_sync.py`** — the Job entrypoint: optional GCS state pull →
+  the 5 SYNC_STEPS (transcripts → build_all → build_real_partners → reindex →
+  overview, continue-on-failure) → `upload_firebase_data.py` (hard) → GCS state
+  push. State (`data/` + `Transcripts/`) is persisted in a Cloud Storage bucket
+  so the gpt-5.4 cache survives (no run-to-run score drift) and transcripts
+  outlive Teams' ~90-day content retention.
+- **`scripts/seed_secrets.py`** — loads the pipeline keys (Halo/TeamGPS/Azure/
+  Graph) into Secret Manager without printing values; re-run to publish a new
+  version after rotation.
+- **`Dockerfile`** + **`.dockerignore`** — `python:3.12-slim` image; pip-installs
+  `requirements.txt` + `google-cloud-firestore` + `google-cloud-storage`. The
+  ignore file keeps `data/`, `Transcripts/`, `.env`, `.git`, and the frontend out
+  of the image (`.firebaserc` is kept — the upload script needs it).
+- **`docs/Cloud-Pipeline-SOP.md`** — architecture, resource names, one-time
+  provisioning commands, operate/runbook.
+
+### Changed
+- **Manual "Sync Data" button REMOVED** from `index.html` and `partner.html`. The
+  `#sync-btn` markup is gone; `refresh.js` is reduced to rendering the "Last sync"
+  freshness label (`#sync-stamp`) from `portfolio.generated_at` (prod: Firestore
+  `meta/overview`; local: `data/_index.json`). Auto-sync replaces it; in-app sync
+  no longer exists. (The now-unused `.sync-btn`/`.sync-panel` CSS is left in place;
+  harmless.)
+- **Secrets** lifted into Secret Manager as-is (reused, not rotated — per
+  decision 2026-06-16); rotation still owed (SOP "Notes").
+
+### Deploy
+- Provision per `docs/Cloud-Pipeline-SOP.md` (Owner `gcloud auth login`), then
+  `firebase deploy --only hosting` to ship the button removal.
+
+---
+
+## [Unreleased] — Auth switched from Google to email/password (2026-06-16)
+
+ITBD is on **Microsoft 365, not Google Workspace**, so there is no Google
+identity on `@itbd.net` to federate. Replaced the Google sign-in with
+**email/password** sign-in in `auth.js` (production path only; DEV/localhost
+unchanged).
+
+### Changed
+- **`auth.js`** — production overlay is now an email + password form with
+  sign-in / create-account / forgot-password, all restricted to `@itbd.net`
+  client-side. The access boundary is **email verification**: unverified users
+  are held at a "check your inbox" state and signed out (a verification link is
+  sent best-effort), and `firestore.rules` already deny reads until
+  `email_verified` is true — so access == controls an `@itbd.net` mailbox.
+- **`firestore.rules`** — comment only; the rule (`email_verified == true` +
+  `@itbd.net` regex) was already correct and is unchanged, so **no rules
+  redeploy is required**.
+- **`docs/Firebase-Deploy-SOP.md`** — setup/verify steps updated for
+  Email/Password (enable the provider, not Google).
+
+### Deploy
+- Re-run `firebase deploy --only hosting` (UI change only).
+- **Console:** enable **Authentication → Sign-in method → Email/Password**;
+  disable the now-unused **Google** provider.
+
+---
+
 ## [Unreleased] — Full DES/MDE partner roster from Halo report 364 (2026-06-15)
 
 Expanded the dashboard from the 20-partner CTO-demo subset to the **complete
@@ -54,63 +212,74 @@ sourced authoritatively from HaloPSA **report 364 "DES RAG Status"** (filter:
 
 ---
 
-## [Unreleased] — Firebase deployment scaffolding, HYBRID Firestore + Storage (2026-06-15)
+## [Unreleased] — Firebase deployment scaffolding, ALL-Firestore sharded data (2026-06-15)
 
-Scaffolding to take the dashboard live on **Firebase** (Hosting + Cloud
-Functions + Firestore + Cloud Storage), authenticated and internal-only
-(`@itbd.net`). Project `operational-intelligence-ebe23` (Blaze). **Not deployed
-yet** — backend services must be created in the console and rules/data pushed;
-see `docs/Firebase-Deploy-SOP.md`. Local `python server.py` workflow is
-**unchanged** (auth + Firestore auto-disable on localhost).
+Scaffolding to take the dashboard live on **Firebase** (Hosting + Firestore),
+authenticated and internal-only (`@itbd.net`). Project
+`operational-intelligence-ebe23` (Blaze). **Not deployed yet** — backend
+services must be created in the console and rules/data pushed; see
+`docs/Firebase-Deploy-SOP.md`. Local `python server.py` workflow is **unchanged**
+(auth + Firestore auto-disable on localhost — data still read from `data/`).
 
-**Hybrid data split** (chosen for scaling to 100+ partners; the per-partner
-detail caches are up to ~983 KB, near Firestore's 1 MiB doc cap):
-- **SUMMARY layer → Firestore** — `meta/overview` (portfolio + coverage) and
-  `partners/<slug>` (one small summary doc each). The Exec Overview reads these
-  **directly via the Web SDK**, secured by `firestore.rules`. Small, queryable,
-  refreshes without a redeploy.
-- **DETAIL layer → private Cloud Storage** — the big `<slug>.json` blobs
-  (transcripts/decks/notes) + `_index.json`, served only through the
-  authenticated `getData` function. `storage.rules` denies all client access.
+**All data lives in Firestore, sharded** (chosen for maintainability + scaling:
+a single per-partner blob grows unbounded as transcripts/decks accumulate and
+would eventually cross Firestore's 1 MiB doc cap; sharding removes that ceiling,
+allows writing one new item without rewriting the partner, gives cross-partner
+queries, and makes the data browsable doc-by-doc in the console):
+
+```
+meta/overview                     portfolio rollups + coverage  (Exec Overview)
+partners/<slug>                   summary doc                   (Exec Overview)
+partners/<slug>/detail/profile    { meta, client, ai, csat_stats, nps_stats }
+partners/<slug>/transcripts|decks|calls|csat|nps|actions/<i>    detail, 1 doc/item
+```
+
+Each detail doc carries `_i` = its source-list index; the dashboard restores
+order via `orderBy('_i')`. Cloud Storage and the `getData` Cloud Function from
+the first scaffolding pass were **dropped** — no longer needed now that the big
+blob is gone. (Cloud Functions remain available for the future off-host "Sync
+Data" trigger.)
 
 ### Added
-- **`firebase.json`** — Hosting + Functions + Firestore + Storage config.
-  Hosting serves the static UI from the repo root with an `ignore` list
-  excluding everything non-web (`data/**`, `decks/**`, `extract/**`,
-  `scripts/**`, `functions/**`, `*.py`, `.env`, …) — **no data/ is served
-  statically**. Rewrites `/api/data/**` → the `getData` gen-2 function.
-- **`firestore.rules` / `storage.rules` / `firestore.indexes.json`** — Firestore
-  allows read on `partners/*` + `meta/*` only to verified `@itbd.net` accounts
-  and denies all client writes (pipeline writes via Admin SDK); Storage denies
-  all client access (function-only reads).
-- **`functions/main.py`** — gen-2 Python (`python312`) HTTPS `getData`: verifies
-  a Firebase ID token, allows only verified `@itbd.net`, streams the requested
-  `<file>.json` from the private bucket (prefix `partnerpulse/`, filename
-  regex-validated — no traversal). Serves the DETAIL layer + `_index.json`.
-- **`scripts/upload_firebase_data.py`** — now publishes **both** layers from
-  `data/_overview.json` + the caches: SUMMARY → Firestore (`meta/overview` +
-  `partners/<slug>`, **reconciled** — stale docs deleted), DETAIL → Storage
-  (`<slug>.json` + `_index.json`). `--only firestore|storage`, `--dry-run`;
-  project/bucket default from `.firebaserc`. Hidden partners reach neither store
-  (the feed already honours the allowlist).
-- **`auth.js` + `firebase-config.js`** — shared client gate loaded by
-  `index.html` (with the Firestore SDK) and `partner.html`. Prod: Google sign-in
-  restricted to `@itbd.net`; `loadOverview()` reads Firestore, `authedFetch()`
-  hits the function for detail. **Localhost / unconfigured / no-SDK → DEV mode**:
-  no sign-in, overview + detail read straight from `data/` (workflow preserved).
+- **`firebase.json`** — Hosting + Firestore config. Hosting serves the static UI
+  from the repo root with an `ignore` list excluding everything non-web
+  (`data/**`, `decks/**`, `extract/**`, `scripts/**`, `*.py`, `.env`, …) — **no
+  data/ is served statically**. No function rewrites (data is read from Firestore
+  directly by the Web SDK).
+- **`firestore.rules` / `firestore.indexes.json`** — read on `meta/*` and
+  `partners/{slug}/{document=**}` (summary + profile + all subcollections) only
+  for verified `@itbd.net` accounts; all client writes denied (pipeline writes
+  via Admin SDK). Empty indexes (overview fetches all summary docs, filters
+  client-side; see SOP for the paginated-query upgrade past a few hundred partners).
+- **`scripts/upload_firebase_data.py`** — publishes the sharded tree from
+  `data/_overview.json` + the caches: `meta/overview`, `partners/<slug>` summary,
+  `detail/profile`, and the six detail subcollections (doc id = zero-padded
+  index, `_i` order field). **Idempotent + reconciled**: per subcollection, docs
+  beyond the current count are deleted; partners no longer in the feed are
+  removed entirely (summary + profile + subcollections). `--dry-run` prints the
+  plan + per-section counts. Project defaults from `.firebaserc`. Hidden partners
+  never reach Firestore (the feed already honours the allowlist).
+- **`auth.js` + `firebase-config.js`** — shared client gate + Firestore data
+  layer, loaded with the Firestore SDK by BOTH `index.html` and `partner.html`.
+  Prod: Google sign-in restricted to `@itbd.net`; `loadOverview()` reads
+  `meta/overview` + `partners/*`, `loadPartner(slug)` reassembles the profile +
+  subcollections into the old blob shape, `lastSyncStamp()` reads
+  `meta/overview.generated_at`. **Localhost / unconfigured / no-SDK → DEV mode**:
+  no sign-in, everything read straight from `data/` (workflow preserved).
   `firebase-config.js` holds the **public** web config (real values, safe to commit).
 
 ### Changed
-- **`index.html`** — the Overview now loads via `window.PP_AUTH.loadOverview()`
-  (Firestore in prod, `data/_overview.json` in dev) instead of fetching the JSON
-  directly; added the `firebase-firestore-compat` SDK tag. **`partner.js`** detail
-  fetch goes through `authedFetch` (Storage via function in prod, `data/` in dev).
-  **gotcha 7 still holds** — Firebase script tags + `auth.js` + `firebase-config.js`
-  are in BOTH `index.html` and `partner.html` heads.
-- **`refresh.js`** — "Last sync" timestamp reads `_index.json` via `authedFetch`
-  in prod, falling back to `data/_index.json` locally. The "Sync Data" button
-  still degrades gracefully where the sync API is absent (it is, in prod — the
-  pipeline runs off-host for now).
+- **`index.html`** — Overview loads via `window.PP_AUTH.loadOverview()` (Firestore
+  in prod, `data/_overview.json` in dev); added the `firebase-firestore-compat`
+  SDK tag. **`partner.js`** — detail loads via `window.PP_AUTH.loadPartner(slug)`
+  (sharded Firestore in prod, `data/<slug>.json` in dev) — same assembled shape,
+  so the render code is untouched. **`partner.html`** — added the Firebase
+  app/auth/**firestore** SDK tags + `firebase-config.js` + `auth.js`. **gotcha 7
+  still holds** — those tags live in BOTH `index.html` and `partner.html` heads.
+- **`refresh.js`** — "Last sync" timestamp via `PP_AUTH.lastSyncStamp()`
+  (Firestore in prod, `data/_index.json` in dev). The "Sync Data" button still
+  degrades gracefully where the sync API is absent (it is, in prod — the pipeline
+  runs off-host for now).
 
 ### Toolchain / setup done this session
 - Installed Node.js LTS (v24) + `firebase-tools` 15.20.0; `firebase login`;
@@ -121,8 +290,8 @@ detail caches are up to ~983 KB, near Firestore's 1 MiB doc cap):
 - **Rotate the live API keys** in `.env` / `extract/config.py` (Halo, TeamGPS,
   Azure, Graph) and move them to Secret Manager before any deploy — README
   warning. Never part of the Hosting deploy (excluded by `ignore`).
-- Create in the console: **Auth → Google**, **Firestore** (production mode),
-  **Storage** (production mode), same region. Then `firebase deploy`.
+- Create in the console: **Auth → Google** + **Firestore** (production mode).
+  Then push rules + data + `firebase deploy --only hosting,firestore:rules`.
 
 ---
 

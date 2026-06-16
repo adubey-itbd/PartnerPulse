@@ -144,6 +144,58 @@ _CLOSED_STATUS_NAMES = {
     "resolved",   # a Resolved SIP is concluded, not active (e.g. RedHelm HD SIP)
 }
 
+# Generic words that appear in many MSP names and are useless (or actively
+# harmful) as a partner-identifying SIP-summary token.
+_NAME_STOPWORDS = {
+    "the", "and", "inc", "llc", "ltd", "limited", "corp", "corporation",
+    "company", "group", "holdings", "services", "service", "solutions",
+    "solution", "systems", "system", "technology", "technologies", "tech",
+    "cloud", "data", "digital", "global", "managed", "network", "networks",
+    "computer", "computers", "consulting", "partners", "partner", "support",
+    "improvement", "plan",
+}
+
+
+def _name_tokens(name_terms) -> list:
+    """Distinct lower-cased identifying tokens from a partner's name term(s):
+    word-split, drop tokens < 5 chars and generic stopwords. Used for
+    bucket-B word-boundary SIP matching."""
+    toks = []
+    for term in name_terms:
+        if not term:
+            continue
+        for w in re.split(r"[^a-z0-9]+", str(term).lower()):
+            if len(w) >= 5 and w not in _NAME_STOPWORDS and w not in toks:
+                toks.append(w)
+    return toks
+
+
+def fuzzy_name_match(expected: str, actual: str) -> bool:
+    """Case/punctuation-insensitive token-overlap match between two names.
+
+    Returns True when the two names plausibly refer to the same partner. Used
+    by the roster build (build_real_partners) to detect a wrong client_id —
+    i.e. when the Halo client name resolved for a partner does NOT look like the
+    partner's expected name. Conservative: ignores short/generic stopword tokens
+    and requires a meaningful overlap of the remaining identifying tokens."""
+    def sig(s):
+        return [w for w in re.split(r"[^a-z0-9]+", (s or "").lower())
+                if len(w) >= 3 and w not in _NAME_STOPWORDS]
+    a, b = sig(expected), sig(actual)
+    if not a or not b:
+        # Fall back to a normalized exact comparison when nothing meaningful
+        # survives stopword filtering (e.g. very short names).
+        na = re.sub(r"[^a-z0-9]+", "", (expected or "").lower())
+        nb = re.sub(r"[^a-z0-9]+", "", (actual or "").lower())
+        return bool(na) and na == nb
+    sa, sb = set(a), set(b)
+    overlap = sa & sb
+    if not overlap:
+        return False
+    # Require the overlap to cover most of the smaller name's identifying tokens.
+    return len(overlap) >= max(1, min(len(sa), len(sb)) - 1)
+
+
 _status_names = None
 _global_sips = None
 
@@ -205,13 +257,18 @@ def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
         _search_type99(seen, client_id=client_id, search=term)
 
     # B) SIPs filed elsewhere that name the partner in the summary.
-    toks = [t.lower() for t in name_terms if t and len(t) >= 3]
+    #    Match WHOLE words only (\b...\b) and ignore short/generic fragments,
+    #    so a partner whose name contains a common word (e.g. "IT", "Cloud",
+    #    "Tech", "Group") doesn't swallow every unrelated SIP that mentions it.
+    toks = _name_tokens(name_terms)
     if toks:
+        pat = re.compile(
+            r"\b(?:" + "|".join(re.escape(t) for t in toks) + r")\b", re.I)
         for r in _all_text_sips():
             if r.get("id") in seen or r.get("client_id") == client_id:
                 continue
-            summ = (r.get("summary") or "").lower()
-            if any(tok in summ for tok in toks):
+            summ = r.get("summary") or ""
+            if pat.search(summ):
                 seen[r.get("id")] = r
 
     # C) tickets named in the SIP custom field — fetch each by id (any type/client).
@@ -237,8 +294,26 @@ def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
 
 
 # --- Users -> emails / domains ----------------------------------------------
+# Free / consumer mail providers. A contact at one of these tells us nothing
+# about which partner owns an NPS response (a stray @gmail.com contact would
+# otherwise match EVERY partner that happens to have a gmail contact), so we
+# never treat these as partner-owned domains.
+FREE_MAIL = {
+    "gmail.com", "googlemail.com", "yahoo.com", "yahoo.co.uk", "ymail.com",
+    "hotmail.com", "hotmail.co.uk", "outlook.com", "live.com", "msn.com",
+    "aol.com", "icloud.com", "me.com", "mac.com", "comcast.net", "verizon.net",
+    "att.net", "sbcglobal.net", "btinternet.com", "protonmail.com", "proton.me",
+    "gmx.com", "mail.com", "zoho.com", "yandex.com",
+}
+
+
 def get_users(client_id: int):
-    """Return (emails:set, domains:set) for a client's contacts."""
+    """Return (emails:set, domains:set) for a client's contacts.
+
+    Free / consumer mail domains (FREE_MAIL) are kept out of the `domains` set:
+    a partner does not "own" gmail.com, so domain-based NPS attribution must
+    only use genuine corporate domains. The contact's exact email is still
+    returned in `emails` for an exact-match fallback."""
     rows = _rows(get("Users", client_id=client_id, page_size=1000,
                       pageinate="true", includeinactive="true"))
     emails, domains = set(), set()
@@ -246,7 +321,9 @@ def get_users(client_id: int):
         e = (u.get("emailaddress") or "").strip().lower()
         if e and "@" in e:
             emails.add(e)
-            domains.add(e.split("@", 1)[1])
+            dom = e.split("@", 1)[1]
+            if dom and dom not in FREE_MAIL:
+                domains.add(dom)
     return emails, domains
 
 

@@ -1,0 +1,26 @@
+# Controls what `gcloud builds submit` uploads to Cloud Build.
+# Mirrors .dockerignore: keep the build context small and secret-free.
+# (When this file exists, gcloud ignores .gitignore, so list everything here.)
+.git/
+.env
+data/
+Transcripts/
+backups/
+docs/
+legacy/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.log
+
+# Frontend / hosting assets — not used by the pipeline image.
+index.html
+partner.html
+styles.css
+auth.js
+refresh.js
+firebase-config.js
+vendor/
+server.py
+
+# .firebaserc is KEPT (upload_firebase_data.py reads the project id from it).
