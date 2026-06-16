@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Login page rebranded to ITBD (2026-06-16)
+
+### Changed — sign-in UI (`auth.js`)
+- **Login overlay restyled to the IT By Design brand.** Replaced the generic
+  purple/lavender theme and placeholder "P" tile with the real ITBD logo
+  (`assets/itbd-logo.webp`, served from the new repo `assets/` dir — Firebase
+  hosting `public:"."` serves it; not in the `ignore` list) and the brand palette
+  sampled from that logo: cyan-blue `#08A8D8`, deeper blue `#0C8FC0`, lime-green
+  accent `#B8D030`, ink `#0F2C3A`. New look: branded blue→navy gradient backdrop,
+  white card with a blue→green accent stripe, focus-ringed inputs, gradient primary
+  button, and an "Authorized @itbd.net users only · Secured by Firebase" footer.
+- `buildOverlay()` now injects a `<style>` block **scoped to `#pp-auth-overlay`**
+  (so it can't leak into the dashboard) instead of all-inline styles; **all element
+  IDs are unchanged** (`pp-email`/`pp-password`/`pp-auth-btn`/`pp-toggle`/
+  `pp-forgot`/`pp-verify-actions`/`pp-verified-reload`/`pp-resend`/`pp-auth-msg`/
+  `pp-auth-title`), so the sign-in / sign-up / verify-pending logic is untouched.
+  `setMsg`'s neutral text colour moved `#4b5168` → `#5a6b75` to match.
+- Prod-only (the overlay renders only when `auth.js` is in Firebase mode); local
+  dev is unaffected. Verified by screenshotting the real code path under headless
+  Chrome with a stubbed `firebase`.
+
+---
+
 ## [Unreleased] — Audit hardening: publish safety, data-accuracy, resilience, UX, docs (2026-06-16)
 
 Ran a comprehensive multi-agent ("ultracode") audit of the new Firebase + cloud

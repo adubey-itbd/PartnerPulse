@@ -103,42 +103,76 @@
     if (overlay) return overlay;
     overlay = document.createElement("div");
     overlay.id = "pp-auth-overlay";
-    overlay.style.cssText =
-      "position:fixed;inset:0;z-index:99999;display:flex;align-items:center;" +
-      "justify-content:center;background:#c9c6ee;font-family:'Plus Jakarta Sans',system-ui,sans-serif;";
-    var inputCss = "width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #d7d5ec;" +
-      "border-radius:11px;font-size:14px;";
-    var linkBtnCss = "display:block;width:100%;margin-top:10px;padding:11px 16px;border:1px solid #6d5ef0;" +
-      "border-radius:12px;background:#fff;color:#6d5ef0;font-weight:600;font-size:14px;cursor:pointer;";
     overlay.setAttribute("role", "dialog");
     overlay.setAttribute("aria-modal", "true");
     overlay.setAttribute("aria-labelledby", "pp-auth-title");
+    // ITBD brand palette (sampled from the logo): cyan-blue #08A8D8, deeper blue
+    // #0C8FC0, lime-green accent #B8D030, ink #0F2C3A. Styles are scoped to the
+    // overlay id so they can't leak into the dashboard. Element IDs are unchanged
+    // so the sign-in / sign-up / verify logic above keeps working.
     overlay.innerHTML =
-      '<div style="background:#fff;border-radius:20px;padding:36px 40px;max-width:380px;width:90%;' +
-      'box-shadow:0 24px 60px rgba(23,26,44,.18);">' +
-      '<div aria-hidden="true" style="width:56px;height:56px;border-radius:16px;background:#6d5ef0;color:#fff;' +
-      'font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;' +
-      'margin:0 auto 18px;">P</div>' +
-      '<h1 id="pp-auth-title" style="font-size:20px;margin:0 0 6px;color:#171a2c;text-align:center;">Operational Intelligence</h1>' +
-      '<p id="pp-auth-msg" role="status" aria-live="polite" style="font-size:14px;color:#4b5168;margin:0 0 20px;text-align:center;">' +
+      '<style>' +
+      '#pp-auth-overlay{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;' +
+      'justify-content:center;padding:24px;box-sizing:border-box;' +
+      "font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;" +
+      'background:radial-gradient(1100px 620px at 12% 8%, rgba(184,208,48,.22), transparent 55%),' +
+      'radial-gradient(900px 700px at 100% 100%, rgba(8,168,216,.55), transparent 52%),' +
+      'linear-gradient(135deg,#0c93c4 0%,#0d6f9e 55%,#0a5980 100%);}' +
+      '#pp-auth-overlay *{box-sizing:border-box;}' +
+      '#pp-auth-overlay .pp-card{position:relative;background:#fff;border-radius:18px;' +
+      'padding:42px 40px 28px;max-width:404px;width:100%;overflow:hidden;' +
+      'box-shadow:0 30px 70px rgba(7,40,60,.32),0 4px 14px rgba(7,40,60,.14);}' +
+      '#pp-auth-overlay .pp-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;' +
+      'background:linear-gradient(90deg,#08a8d8 0%,#3bbfe0 48%,#b8d030 100%);}' +
+      '#pp-auth-overlay .pp-logo{display:block;height:48px;width:auto;margin:4px auto 22px;}' +
+      '#pp-auth-overlay .pp-title{font-size:20px;font-weight:700;letter-spacing:-.01em;' +
+      'margin:0 0 6px;color:#0f2c3a;text-align:center;}' +
+      '#pp-auth-overlay #pp-auth-msg{font-size:14px;line-height:1.45;color:#5a6b75;' +
+      'margin:0 0 24px;text-align:center;}' +
+      '#pp-auth-overlay .pp-label{display:block;font-size:13px;font-weight:600;color:#3c4a52;margin:0 0 6px;}' +
+      '#pp-auth-overlay .pp-input{width:100%;padding:12px 14px;border:1.5px solid #dfe6ea;border-radius:10px;' +
+      'font-size:14px;color:#0f2c3a;background:#fbfcfd;outline:none;' +
+      'transition:border-color .15s,box-shadow .15s,background .15s;}' +
+      '#pp-auth-overlay .pp-input::placeholder{color:#9aa7ae;}' +
+      '#pp-auth-overlay .pp-input:focus{border-color:#08a8d8;background:#fff;box-shadow:0 0 0 3px rgba(8,168,216,.18);}' +
+      '#pp-auth-overlay .pp-btn{width:100%;padding:13px 16px;border:0;border-radius:10px;color:#fff;' +
+      'font-weight:700;font-size:15px;letter-spacing:.01em;cursor:pointer;' +
+      'background:linear-gradient(135deg,#08a8d8 0%,#0c8fc0 100%);box-shadow:0 6px 16px rgba(8,168,216,.35);' +
+      'transition:transform .12s,box-shadow .12s,filter .12s;}' +
+      '#pp-auth-overlay .pp-btn:hover{filter:brightness(1.05);transform:translateY(-1px);box-shadow:0 9px 22px rgba(8,168,216,.45);}' +
+      '#pp-auth-overlay .pp-btn:active{transform:translateY(0);box-shadow:0 4px 12px rgba(8,168,216,.35);}' +
+      '#pp-auth-overlay .pp-btn-secondary{display:block;width:100%;margin-top:10px;padding:12px 16px;' +
+      'border:1.5px solid #08a8d8;border-radius:10px;background:#fff;color:#0a90c0;font-weight:600;' +
+      'font-size:14px;cursor:pointer;transition:background .12s;}' +
+      '#pp-auth-overlay .pp-btn-secondary:hover{background:#f0fafd;}' +
+      '#pp-auth-overlay .pp-links{display:flex;justify-content:space-between;margin-top:18px;font-size:13px;}' +
+      '#pp-auth-overlay .pp-link{color:#0a90c0;font-weight:600;text-decoration:none;}' +
+      '#pp-auth-overlay .pp-link:hover{color:#08a8d8;text-decoration:underline;}' +
+      '#pp-auth-overlay .pp-foot{margin-top:22px;padding-top:15px;border-top:1px solid #eef2f4;' +
+      'text-align:center;font-size:11.5px;letter-spacing:.02em;color:#93a1a8;}' +
+      '</style>' +
+      '<div class="pp-card">' +
+      '<img class="pp-logo" src="assets/itbd-logo.webp" alt="IT By Design" width="138" height="48" />' +
+      '<h1 id="pp-auth-title" class="pp-title">Operational Intelligence</h1>' +
+      '<p id="pp-auth-msg" role="status" aria-live="polite">' +
       'Sign in with your ITBD (@' + ALLOWED_DOMAIN + ') email.</p>' +
-      '<label for="pp-email" style="display:block;font-size:13px;color:#4b5168;margin:0 0 4px;">Email</label>' +
-      '<input id="pp-email" type="email" autocomplete="username" aria-label="ITBD email address" ' +
-      'placeholder="you@' + ALLOWED_DOMAIN + '" style="' + inputCss + 'margin:0 0 10px;" />' +
-      '<label for="pp-password" style="display:block;font-size:13px;color:#4b5168;margin:0 0 4px;">Password</label>' +
-      '<input id="pp-password" type="password" autocomplete="current-password" aria-label="Password" ' +
-      'placeholder="Password" style="' + inputCss + 'margin:0 0 16px;" />' +
-      '<button id="pp-auth-btn" style="width:100%;padding:12px 16px;border:0;border-radius:12px;' +
-      'background:#6d5ef0;color:#fff;font-weight:600;font-size:15px;cursor:pointer;">Sign in</button>' +
+      '<label for="pp-email" class="pp-label">Email</label>' +
+      '<input id="pp-email" class="pp-input" type="email" autocomplete="username" aria-label="ITBD email address" ' +
+      'placeholder="you@' + ALLOWED_DOMAIN + '" style="margin:0 0 14px;" />' +
+      '<label for="pp-password" class="pp-label">Password</label>' +
+      '<input id="pp-password" class="pp-input" type="password" autocomplete="current-password" aria-label="Password" ' +
+      'placeholder="Password" style="margin:0 0 18px;" />' +
+      '<button id="pp-auth-btn" class="pp-btn">Sign in</button>' +
       '<div id="pp-verify-actions" style="display:none;">' +
-      '<button id="pp-verified-reload" style="width:100%;padding:12px 16px;border:0;border-radius:12px;' +
-      'background:#6d5ef0;color:#fff;font-weight:600;font-size:15px;cursor:pointer;">I\'ve verified - reload</button>' +
-      '<button id="pp-resend" style="' + linkBtnCss + '">Resend link</button>' +
+      '<button id="pp-verified-reload" class="pp-btn">I\'ve verified - reload</button>' +
+      '<button id="pp-resend" class="pp-btn-secondary">Resend link</button>' +
       '</div>' +
-      '<div style="display:flex;justify-content:space-between;margin-top:14px;font-size:13px;">' +
-      '<a id="pp-toggle" href="#" style="color:#6d5ef0;text-decoration:none;">Create account</a>' +
-      '<a id="pp-forgot" href="#" style="color:#6d5ef0;text-decoration:none;">Forgot password?</a>' +
-      '</div></div>';
+      '<div class="pp-links">' +
+      '<a id="pp-toggle" class="pp-link" href="#">Create account</a>' +
+      '<a id="pp-forgot" class="pp-link" href="#">Forgot password?</a>' +
+      '</div>' +
+      '<div class="pp-foot">Authorized @' + ALLOWED_DOMAIN + ' users only &middot; Secured by Firebase</div>' +
+      '</div>';
     document.body.appendChild(overlay);
     overlay.querySelector("#pp-auth-btn").addEventListener("click", submit);
     overlay.querySelector("#pp-toggle").addEventListener("click", function (e) {
@@ -173,7 +207,7 @@
   }
   function setMsg(text, isError) {
     var el = document.getElementById("pp-auth-msg");
-    if (el) { el.textContent = text; el.style.color = isError ? "#c0392b" : "#4b5168"; }
+    if (el) { el.textContent = text; el.style.color = isError ? "#c0392b" : "#5a6b75"; }
   }
   function showOverlay(message, isError) {
     withBody(function () {
