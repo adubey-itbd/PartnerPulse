@@ -8,9 +8,11 @@ rules_version = '2';
 //                                  the detail layer, one doc per item
 //
 // Reads are restricted to verified @itbd.net accounts (email/password sign-in;
-// email_verified proves mailbox ownership). ALL client writes are denied — the
-// build pipeline writes via the Admin SDK (scripts/upload_firebase_data.py),
-// which bypasses these rules.
+// email_verified proves mailbox ownership). Dashboard client writes are denied —
+// the build pipeline writes via the Admin SDK (scripts/upload_firebase_data.py),
+// which bypasses these rules. The ONE exception is the public `feedback`
+// collection (feedback.html): unauthenticated CREATE only, validated + capped,
+// no client reads (reviewed in the Firebase console).
 service cloud.firestore {
   match /databases/{database}/documents {
 
@@ -29,6 +31,27 @@ service cloud.firestore {
         && request.auth.token.email.matches('^[^@]+@itbd[.]net$');
     }
 
+    // Public feedback form (feedback.html) — the ONLY client-writable path.
+    // Anyone (no sign-in) may CREATE a feedback doc; nobody may read/update/
+    // delete it via the client (reviewed in the Firebase console / Admin SDK).
+    // Validation below caps size and locks the key set so the open create can't
+    // be abused as arbitrary storage. `submitted_at` must be the server time
+    // (the form sends FieldValue.serverTimestamp()).
+    function isValidFeedback() {
+      let d = request.resource.data;
+      return d.message is string && d.message.size() >= 1 && d.message.size() <= 5000
+        && d.submitted_at == request.time
+        && (!('name' in d)       || (d.name is string       && d.name.size() <= 120))
+        && (!('email' in d)      || (d.email is string      && d.email.size() <= 200))
+        && (!('company' in d)    || (d.company is string    && d.company.size() <= 160))
+        && (!('category' in d)   || (d.category is string   && d.category.size() <= 60))
+        && (!('rating' in d)     || (d.rating is int        && d.rating >= 1 && d.rating <= 5))
+        && (!('page' in d)       || (d.page is string       && d.page.size() <= 300))
+        && (!('user_agent' in d) || (d.user_agent is string && d.user_agent.size() <= 500))
+        && d.keys().hasOnly(['message', 'category', 'page', 'user_agent',
+                             'submitted_at', 'name', 'email', 'company', 'rating']);
+    }
+
     // Portfolio meta.
     match /meta/{doc} {
       allow read: if isItbd();
@@ -44,6 +67,12 @@ service cloud.firestore {
         allow read: if isItbd();
         allow write: if false;
       }
+    }
+
+    // Public feedback (feedback.html). Create-only, validated; no client reads.
+    match /feedback/{id} {
+      allow create: if isValidFeedback();
+      allow read, update, delete: if false;
     }
 
     // Default deny everything else.

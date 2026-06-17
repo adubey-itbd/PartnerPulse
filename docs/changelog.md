@@ -6,6 +6,43 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Public feedback form (2026-06-17)
+
+Added a shareable, ungated feedback form so anyone (partners, colleagues, anyone
+with the link) can send feedback and suggestions about the product. Submissions go
+straight to Cloud Firestore; reviewed in the Firebase console (no in-app reader yet).
+
+### Added
+- **`feedback.html`** — a standalone, self-contained public page (ITBD brand
+  palette, matching the sign-in overlay). Fields: optional name / email /
+  company-role, a feedback category, an optional 1–5 star rating, and a required
+  message (≤5000 chars) with a live char count; success + "submit more" states.
+  It loads `firebase-config.js` + the firestore compat SDK but **deliberately NOT
+  `auth.js`** — there is no sign-in gate. Writes one auto-id doc to the new
+  `feedback` collection (`message`, `category`, `page`, `user_agent`,
+  `submitted_at` server time, plus the optional fields).
+- **`firestore.rules`:** new `feedback` collection — unauthenticated **CREATE
+  only**, gated by an `isValidFeedback()` validator (required `message` 1–5000
+  chars, `submitted_at == request.time`, optional fields type/size-capped, key set
+  locked via `hasOnly`). No client reads/updates/deletes. This is the **only**
+  client-writable path; everything else stays deny-all (the pipeline writes via
+  the Admin SDK).
+- **Sidebar link** in `index.html` — a "Share feedback" entry in the sidebar
+  footer that opens `feedback.html` in a new tab.
+
+### Deployed
+- `firebase deploy --only hosting,firestore:rules` — rules compiled + released,
+  form live at `https://operational-intelligence-ebe23.web.app/feedback.html`
+  (HTTP 200 verified).
+
+### Docs
+- Updated `CLAUDE.md`, `README.md`, `docs/architecture.md`,
+  `docs/Data-Schema.md`, `docs/Firebase-Deploy-SOP.md`, and `docs/LLM-SOP.md` to
+  record the new public-write path and that "all client writes denied" is now
+  "dashboard client writes denied, public `feedback` create-only".
+
+---
+
 ## [Unreleased] — Roster reconciled to report 364: +2 partners, un-hid Mission Technology (2026-06-16)
 
 Reconciled the dashboard against HaloPSA **report 364 "DES RAG Status"** after a

@@ -75,6 +75,8 @@ index.html                    AI-Driven Operational Intelligence — Executive O
                               Partner 360, data-driven (fetches data/_overview.json)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,
                               Action Tracker, CSAT & NPS, Transcripts, Service Decks
+feedback.html                 PUBLIC, ungated feedback form (shareable link); writes the
+                              create-only Firestore `feedback` collection (no auth.js)
 refresh.js                    renders the "Last sync" freshness stamp (the manual "Sync
                               Data" button was removed 2026-06-16 — refresh is the nightly
                               cloud job; server.py's sync API remains for local dev only)

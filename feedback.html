@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Share Feedback · AI-Driven Operational Intelligence</title>
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- Firebase (PUBLIC form): app + firestore only. NO auth.js — this page is
+     intentionally ungated so it can be shared with anyone; writes land in the
+     create-only `feedback` collection (see firestore.rules). On localhost with a
+     configured firebase-config.js it writes to the same prod Firestore. -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<style>
+/* Standalone, self-contained public feedback form. ITBD brand palette (sampled
+   from the logo, matching the sign-in overlay in auth.js): cyan-blue #08A8D8,
+   deeper blue #0C8FC0, lime-green accent #B8D030, ink #0F2C3A. */
+:root {
+  --brand: #08a8d8; --brand-deep: #0c8fc0; --accent: #b8d030; --ink: #0f2c3a;
+  --muted: #5a6b75; --line: #dfe6ea; --field-bg: #fbfcfd; --err: #c0392b; --ok: #1f9d63;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  min-height: 100vh; display: flex; align-items: flex-start; justify-content: center;
+  padding: 40px 24px; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1100px 620px at 12% 8%, rgba(184,208,48,.22), transparent 55%),
+    radial-gradient(900px 700px at 100% 100%, rgba(8,168,216,.55), transparent 52%),
+    linear-gradient(135deg,#0c93c4 0%,#0d6f9e 55%,#0a5980 100%) fixed;
+}
+.card {
+  position: relative; background: #fff; border-radius: 20px; width: 100%; max-width: 560px;
+  padding: 40px 40px 30px; overflow: hidden;
+  box-shadow: 0 30px 70px rgba(7,40,60,.32), 0 4px 14px rgba(7,40,60,.14);
+}
+.card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg,#08a8d8 0%,#3bbfe0 48%,#b8d030 100%);
+}
+.logo { display: block; height: 46px; width: auto; margin: 4px auto 20px; }
+h1 { font-size: 22px; font-weight: 800; letter-spacing: -.01em; text-align: center; margin-bottom: 6px; }
+.sub { font-size: 14px; line-height: 1.5; color: var(--muted); text-align: center; margin-bottom: 26px; }
+form { display: flex; flex-direction: column; gap: 16px; }
+.row { display: flex; gap: 14px; }
+.row > .field { flex: 1; }
+.field { display: flex; flex-direction: column; }
+label { font-size: 13px; font-weight: 600; color: #3c4a52; margin-bottom: 6px; }
+label .req { color: var(--brand); }
+label .opt { color: #9aa7ae; font-weight: 500; }
+input, select, textarea {
+  width: 100%; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px;
+  font-size: 14px; font-family: inherit; color: var(--ink); background: var(--field-bg);
+  outline: none; transition: border-color .15s, box-shadow .15s, background .15s;
+}
+textarea { resize: vertical; min-height: 130px; line-height: 1.5; }
+input::placeholder, textarea::placeholder { color: #9aa7ae; }
+input:focus, select:focus, textarea:focus {
+  border-color: var(--brand); background: #fff; box-shadow: 0 0 0 3px rgba(8,168,216,.18);
+}
+.charcount { font-size: 11.5px; color: #9aa7ae; text-align: right; margin-top: 4px; }
+/* Rating */
+.rating { display: flex; gap: 8px; }
+.rating button {
+  flex: 1; padding: 10px 0; border: 1.5px solid var(--line); border-radius: 10px; background: var(--field-bg);
+  font-size: 18px; cursor: pointer; transition: all .12s; line-height: 1; color: #c7d0d5;
+}
+.rating button:hover { border-color: var(--brand); }
+.rating button.on { color: #f2b705; border-color: #f2b705; background: #fffaf0; }
+.submit {
+  margin-top: 4px; padding: 14px 16px; border: 0; border-radius: 10px; color: #fff; cursor: pointer;
+  font-weight: 700; font-size: 15px; letter-spacing: .01em;
+  background: linear-gradient(135deg,#08a8d8 0%,#0c8fc0 100%); box-shadow: 0 6px 16px rgba(8,168,216,.35);
+  transition: transform .12s, box-shadow .12s, filter .12s;
+}
+.submit:hover:not(:disabled) { filter: brightness(1.05); transform: translateY(-1px); box-shadow: 0 9px 22px rgba(8,168,216,.45); }
+.submit:active:not(:disabled) { transform: translateY(0); }
+.submit:disabled { opacity: .6; cursor: default; }
+.msg { font-size: 13.5px; line-height: 1.5; text-align: center; min-height: 18px; }
+.msg.error { color: var(--err); }
+.msg.ok { color: var(--ok); }
+.foot { margin-top: 22px; padding-top: 15px; border-top: 1px solid #eef2f4;
+  text-align: center; font-size: 11.5px; letter-spacing: .02em; color: #93a1a8; }
+/* Success state */
+.thanks { text-align: center; padding: 8px 0 4px; }
+.thanks .check {
+  width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 18px; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, rgba(184,208,48,.22), rgba(8,168,216,.18)); color: var(--ok);
+}
+.thanks h2 { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+.thanks p { font-size: 14px; color: var(--muted); line-height: 1.55; margin-bottom: 22px; }
+.thanks .again {
+  display: inline-block; padding: 11px 22px; border: 1.5px solid var(--brand); border-radius: 10px;
+  background: #fff; color: var(--brand-deep); font-weight: 600; font-size: 14px; cursor: pointer;
+}
+.thanks .again:hover { background: #f0fafd; }
+[hidden] { display: none !important; }
+@media (max-width: 480px) { .card { padding: 30px 24px 24px; } .row { flex-direction: column; gap: 16px; } }
+</style>
+</head>
+<body>
+<main class="card">
+  <img class="logo" src="assets/itbd-logo.webp" alt="IT By Design" width="132" height="46" />
+
+  <!-- FORM VIEW -->
+  <div id="form-view">
+    <h1>Share your feedback</h1>
+    <p class="sub">Help us shape <strong>Operational Intelligence</strong>. Tell us what's working,
+      what isn't, and what you'd like to see next — every suggestion is read.</p>
+
+    <form id="feedback-form" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="name">Name <span class="opt">(optional)</span></label>
+          <input id="name" name="name" type="text" maxlength="120" autocomplete="name" placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="opt">(optional)</span></label>
+          <input id="email" name="email" type="email" maxlength="200" autocomplete="email" placeholder="you@company.com" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="company">Company / role <span class="opt">(optional)</span></label>
+        <input id="company" name="company" type="text" maxlength="160" autocomplete="organization" placeholder="e.g. Acme MSP — Operations" />
+      </div>
+
+      <div class="field">
+        <label for="category">What kind of feedback is this?</label>
+        <select id="category" name="category">
+          <option value="General feedback">General feedback</option>
+          <option value="Feature suggestion">Feature suggestion</option>
+          <option value="Bug / issue">Bug / issue</option>
+          <option value="Data accuracy">Data accuracy</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>How would you rate it overall? <span class="opt">(optional)</span></label>
+        <div class="rating" id="rating" role="radiogroup" aria-label="Overall rating">
+          <button type="button" data-val="1" aria-label="1 star">★</button>
+          <button type="button" data-val="2" aria-label="2 stars">★</button>
+          <button type="button" data-val="3" aria-label="3 stars">★</button>
+          <button type="button" data-val="4" aria-label="4 stars">★</button>
+          <button type="button" data-val="5" aria-label="5 stars">★</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="message">Your feedback or suggestion <span class="req">*</span></label>
+        <textarea id="message" name="message" maxlength="5000" required
+          placeholder="What would make this more useful for you?"></textarea>
+        <div class="charcount"><span id="charcount">0</span> / 5000</div>
+      </div>
+
+      <button type="submit" class="submit" id="submit-btn">Send feedback</button>
+      <p class="msg" id="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+
+  <!-- SUCCESS VIEW -->
+  <div id="thanks-view" class="thanks" hidden>
+    <div class="check">
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+    </div>
+    <h2>Thank you!</h2>
+    <p>Your feedback has been recorded. We genuinely appreciate you taking the time to help us improve.</p>
+    <button type="button" class="again" id="again-btn">Submit more feedback</button>
+  </div>
+
+  <div class="foot">IT By Design · Operational Intelligence &middot; Secured by Firebase</div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  // --- Firebase init (graceful if the config/SDK isn't present) ---
+  var db = null;
+  try {
+    var cfg = window.FIREBASE_CONFIG || {};
+    var configured = cfg.apiKey && cfg.apiKey.indexOf("REPLACE") !== 0;
+    if (configured && typeof firebase !== "undefined") {
+      firebase.initializeApp(cfg);
+      db = firebase.firestore();
+    }
+  } catch (e) { db = null; }
+
+  var $ = function (id) { return document.getElementById(id); };
+  var form = $("feedback-form");
+  var msg = $("msg");
+  var submitBtn = $("submit-btn");
+  var rating = 0;
+
+  // Live char count
+  var message = $("message");
+  message.addEventListener("input", function () { $("charcount").textContent = message.value.length; });
+
+  // Star rating (click to set; click the same star again to clear)
+  var stars = Array.prototype.slice.call(document.querySelectorAll("#rating button"));
+  function paint(n) { stars.forEach(function (b, i) { b.classList.toggle("on", i < n); }); }
+  stars.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var v = parseInt(btn.getAttribute("data-val"), 10);
+      rating = (rating === v) ? 0 : v;
+      paint(rating);
+    });
+  });
+
+  function setMsg(text, kind) {
+    msg.textContent = text || "";
+    msg.className = "msg" + (kind ? " " + kind : "");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var text = (message.value || "").trim();
+    if (!text) { setMsg("Please enter your feedback before sending.", "error"); message.focus(); return; }
+
+    // Build the document; omit empty optional fields so the create-only
+    // firestore.rules validation (hasOnly an allowed key set) stays happy.
+    var doc = {
+      message: text,
+      category: $("category").value || "General feedback",
+      page: (location.pathname || "") + (location.search || ""),
+      user_agent: (navigator.userAgent || "").slice(0, 500),
+      submitted_at: db ? firebase.firestore.FieldValue.serverTimestamp() : null,
+    };
+    var name = ($("name").value || "").trim();
+    var email = ($("email").value || "").trim();
+    var company = ($("company").value || "").trim();
+    if (name) doc.name = name.slice(0, 120);
+    if (email) doc.email = email.slice(0, 200);
+    if (company) doc.company = company.slice(0, 160);
+    if (rating > 0) doc.rating = rating;
+
+    if (!db) {
+      setMsg("Feedback isn't available in this environment (no Firebase connection).", "error");
+      return;
+    }
+
+    submitBtn.disabled = true;
+    setMsg("Sending…");
+    db.collection("feedback").add(doc).then(function () {
+      $("form-view").hidden = true;
+      $("thanks-view").hidden = false;
+    }).catch(function (err) {
+      submitBtn.disabled = false;
+      setMsg("Sorry, something went wrong sending your feedback. Please try again.", "error");
+      if (window.console) console.error("feedback submit failed:", err);
+    });
+  });
+
+  $("again-btn").addEventListener("click", function () {
+    form.reset();
+    rating = 0; paint(0);
+    $("charcount").textContent = "0";
+    submitBtn.disabled = false;
+    setMsg("");
+    $("thanks-view").hidden = true;
+    $("form-view").hidden = false;
+    $("name").focus();
+  });
+})();
+</script>
+</body>
+</html>

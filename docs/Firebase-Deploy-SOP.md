@@ -39,7 +39,9 @@ browser ──(email/password sign-in, verified @itbd.net)──▶ Firebase Hos
    └─ data:  Firestore Web SDK ──▶ Cloud Firestore
                                    meta/overview, partners/<slug>(+subcollections)
                                    (firestore.rules: read if verified @itbd.net;
-                                    all client writes denied)
+                                    dashboard client writes denied)
+
+public feedback form (feedback.html, NO sign-in) ──▶ Firestore `feedback` (create-only, validated)
 
 pipeline (off-host) ──▶ scripts/upload_firebase_data.py ──▶ Firestore (Admin SDK, bypasses rules)
 ```
@@ -58,10 +60,11 @@ rules only** — never data.
 |------|------|
 | `firebase.json` | Hosting + Firestore config (no functions, no storage) |
 | `.firebaserc` | project alias → `operational-intelligence-ebe23` |
-| `firestore.rules` | read `meta/*` + `partners/{slug}/**` if verified `@itbd.net`; client writes denied |
+| `firestore.rules` | read `meta/*` + `partners/{slug}/**` if verified `@itbd.net`; dashboard writes denied; public `feedback` create-only (validated) |
 | `firestore.indexes.json` | empty (overview fetches all summary docs, filters client-side) |
 | `firebase-config.js` | **public** web SDK config (filled) |
 | `auth.js` | client gate + Firestore data layer (`loadOverview` / `loadPartner` / `lastSyncStamp`); DEV-mode on localhost |
+| `feedback.html` | **public** (ungated) feedback form; loads firebase-config + firestore SDK (NOT `auth.js`), writes the `feedback` collection |
 | `scripts/upload_firebase_data.py` | publish the sharded Firestore tree from the caches |
 
 ## One-time setup

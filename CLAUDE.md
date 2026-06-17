@@ -64,6 +64,13 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 - `partner.html` + `partner.js` — per-partner drilldown (`?partner=<slug>`), fetches
   `data/{slug}.json` at runtime. Styled by `styles.css` (which `index.html` does
   NOT load — gotcha 7); Chart.js vendored in `vendor/`. **Unchanged by the beta.8 redesign.**
+- `feedback.html` (NEW 2026-06-17) — a **public, ungated** feedback form, self-contained
+  (own inline `<style>`, ITBD brand palette). Loads `firebase-config.js` + the firestore
+  compat SDK but **NOT `auth.js`** (no sign-in — it's meant to be shared with anyone).
+  Writes one auto-id doc to the Firestore **`feedback`** collection, which `firestore.rules`
+  allows **create-only** (validated + size-capped, no client reads — review in the Firebase
+  console). It is the **only** client-writable Firestore path. A "Share feedback" link in
+  `index.html`'s sidebar footer opens it in a new tab.
 - `refresh.js` — now ONLY renders the "Last sync" timestamp (`#sync-stamp`, both
   pages; = `portfolio.generated_at`, prod from Firestore `meta/overview` via
   `PP_AUTH.lastSyncStamp`, local from `data/_index.json`). **The manual "Sync Data"

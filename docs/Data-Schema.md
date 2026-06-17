@@ -140,12 +140,22 @@ partners/{slug}/calls/{i}         ← one doc per service-review     (blob.histo
 partners/{slug}/csat/{i}          ← one doc per CSAT comment       (blob.csat_comments)
 partners/{slug}/nps/{i}           ← one doc per NPS response       (blob.nps_comments)
 partners/{slug}/actions/{i}       ← one doc per action item        (blob.action_items)
+feedback/{auto-id}                 ← one doc per public feedback submission (from feedback.html)
 ```
 
+The `feedback` collection is **not** part of the pipeline feed — it is written
+directly by the browser from the public `feedback.html` form (auto-id docs).
+Shape: `{ message, category, page, user_agent, submitted_at (server time),
+name?, email?, company?, rating? (1–5) }`. Reviewed in the Firebase console (no
+in-app reader).
+
 **Access (`firestore.rules`):** read allowed only for a **verified `@itbd.net`**
-account (`email_verified == true` + domain regex); **all client writes denied**.
+account (`email_verified == true` + domain regex); **dashboard client writes denied**.
 The pipeline writes via the Admin SDK / attached service account, which bypasses
-rules. `firestore.indexes.json` is empty — the overview fetches all summary docs
+rules. **Exception — the public `feedback` collection:** unauthenticated **CREATE
+only**, validated by `isValidFeedback()` (required `message` ≤5000 chars,
+`submitted_at == request.time`, optional fields type/size-capped, key set locked
+via `hasOnly`); no client reads/updates/deletes. `firestore.indexes.json` is empty — the overview fetches all summary docs
 and filters client-side (fine to a few hundred partners; past that, switch
 `loadOverview()` to a server-side `orderBy('churnRisk').limit()` query + composite
 index).

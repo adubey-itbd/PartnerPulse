@@ -139,6 +139,17 @@ code and every doc that states it must move together:
    as the old sync button PLUS `upload_firebase_data.py`, with GCS state pull/push around
    it. Changing the cycle's steps means updating `cloud_sync.py`, `server.py` `SYNC_STEPS`
    (local), and `Cloud-Pipeline-SOP.md` together.
+14. **The public `feedback` collection is the ONLY client-writable Firestore path
+   (added 2026-06-17).** `feedback.html` is intentionally **ungated** — it loads
+   `firebase-config.js` + the firestore SDK but **NOT `auth.js`**, and writes auto-id docs
+   to `feedback`. `firestore.rules` allows **create-only**, validated by `isValidFeedback()`
+   (required `message` ≤5000, `submitted_at == request.time`, optional fields type/size-
+   capped, `hasOnly` key lock); no client reads/updates/deletes. Everything else stays
+   deny-all. If you change the form's field set, update `isValidFeedback()`'s key list and
+   `Data-Schema.md` together; never add `auth.js` to `feedback.html` (it would break the
+   shareable, no-sign-in flow). Statements that "all client writes are denied" must read
+   "dashboard client writes are denied" — keep `firestore.rules`, `architecture.md`,
+   `Data-Schema.md`, and `Firebase-Deploy-SOP.md` consistent.
 
 ## 4. Changelog conventions
 
