@@ -6,6 +6,38 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Fix phantom "active SIP" in AI churn analysis + nightly roster regression (2026-06-17)
+
+Two production-data corrections.
+
+### Fixed
+- **AI churn analysis treated stale `CFNextStep`/`CFSIPTicketMDE` as an active SIP.**
+  `extract/ai.py` `build_context` fed the model the free-text `next_step` /
+  `sip_ticket` client custom fields but **not** the authoritative open/closed SIP
+  counts from `halo.count_sips` (which checks each ticket's real status). When an
+  account team cancels a SIP without resetting `CFNextStep` (e.g. **Community IT**:
+  `CFNextStep="SIP Is in progress"`, but its only SIP ticket **778319 is Cancelled**
+  → `sip_open=0`), the model reported a non-existent "Active SIP" as the top churn
+  driver and inflated the score. `build_context` now appends an authoritative
+  correction line **only when the narrative implies a SIP but 0 are open**, so
+  unaffected partners' context (and AI cache) stay byte-identical — no needless
+  re-score. Re-scored the 4 affected partners: **Community IT 68 (High) → 42
+  (Watch/Medium)**, RedHelm-1Path 32 → 28, Continuous Networks 12 → 14, Matador 18 → 18.
+- **Nightly Cloud Run job regressed the roster 82 → 79.** The `pipeline:latest`
+  image (built 06-16 12:18) predated the 06-16 15:42 "82 partners" roster commit,
+  **and** the GCS state bucket's `data/_demo_roster.json` allowlist still listed only
+  79 slugs — so the nightly dropped CPCORP, Stratti, and Mission Technology. Rebuilt
+  the image, synced the 82-entry allowlist + the missing CPCORP/Stratti caches to the
+  state bucket, and republished Firestore.
+
+### Deployed
+- Rebuilt `…/partnerpulse/pipeline:latest` (Cloud Build); job picks it up next run.
+- `python scripts/upload_firebase_data.py` — republished 82 partners to Firestore
+  with the corrected scores.
+- Synced `data/_demo_roster.json` + corrected partner caches to
+  `gs://operational-intelligence-ebe23-pipeline-state/data/` so the next nightly
+  reuses the corrected AI cache (no re-run/drift) and keeps the full 82 roster.
+
 ## [Unreleased] — Public feedback form (2026-06-17)
 
 Added a shareable, ungated feedback form so anyone (partners, colleagues, anyone

@@ -7,6 +7,7 @@ back into the partner JSON under the `ai` key and rolled up on the portfolio vie
 """
 import hashlib
 import json
+import re
 
 from openai import AzureOpenAI
 
@@ -77,6 +78,21 @@ def build_context(data: dict) -> str:
     parts.append("\n## Account team risk flags (ground truth)")
     for k in ("rag", "cancel_risk", "health_reason", "next_step", "sip_ticket", "service_line", "vip"):
         parts.append(f"- {k}: {c.get(k)}")
+    # Live SIP ticket counts (from halo.count_sips, which checks each ticket's real
+    # status) are authoritative; the CFNextStep/CFSIPTicketMDE free-text fields above
+    # can be stale -- e.g. still read "SIP in progress" after the SIP was cancelled
+    # (Community IT, ticket 778319 -> Cancelled). Only emit a correction when the
+    # narrative implies a SIP but 0 are open, so unaffected partners' context (and
+    # their AI cache) stays byte-identical -- no needless re-score / drift.
+    if not (c.get("sip_open") or 0) and (
+        re.search(r"\d{4,}", str(c.get("sip_ticket") or ""))
+        or "sip" in str(c.get("next_step") or "").lower()
+    ):
+        parts.append(
+            f"- NOTE: there is NO active SIP -- 0 open SIP tickets "
+            f"({c.get('sip_closed') or 0} closed/cancelled on record). Any "
+            f"'SIP in progress' wording above is stale; do not treat it as an active SIP."
+        )
 
     cs = data.get("csat_stats", {})
     parts.append(f"\n## CSAT stats: {cs}")
