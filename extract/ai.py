@@ -209,6 +209,18 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
         insight["_schema_version"] = CACHE_SCHEMA_VERSION
         return insight
     except Exception as e:
+        # Graceful degradation: a transient AI outage (e.g. Azure 401/quota/timeout)
+        # must NOT wipe a partner's existing score to 0. If a usable prior result is
+        # available, keep it (flagged `_stale`) rather than regressing to None -- this
+        # is what zeroed 28 partners on 2026-06-18 when the Azure key was revoked. Only
+        # emit the error placeholder when there was never a good score to fall back to.
+        if (cached_ai and not cached_ai.get("_error")
+                and all(k in cached_ai for k in _REQUIRED_KEYS)):
+            kept = dict(cached_ai)
+            kept["_stale"] = True
+            kept["_stale_reason"] = str(e)[:200]
+            kept.pop("_cached", None)
+            return kept
         return {"_error": str(e), "risk_score": None, "risk_band": "Unknown",
                 "summary": "AI analysis unavailable.", "drivers": [],
                 "remediation": [], "action_items": []}

@@ -6,6 +6,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — AI outage no longer zeroes scores; restore after Azure key revocation (2026-06-18)
+
+### Incident
+The Azure OpenAI key (`AZURE_OPENAI_KEY`) was revoked/rotated between 2026-06-17 and
+the 2026-06-18 01:00Z nightly. Every partner whose AI input changed that night re-ran
+gpt-5.4, hit **HTTP 401**, and `ai.analyze` returned `risk_score=None` → `build_overview`
+wrote `churnRisk=0`. 28 partners published to Firestore with a phantom **0 / "Healthy"**
+score (Community IT, Marco, Logically, MSP Corp, Atlas, …); cache-reuse had masked the
+dead key on prior nights.
+
+### Fixed
+- **`extract/ai.py` `analyze` now degrades gracefully.** On any LLM exception, if a usable
+  prior cached result exists it is returned (flagged `_stale` / `_stale_reason`) instead of
+  regressing the score to `None`/0. A transient AI outage can no longer wipe the book's
+  scores — they hold at last-known-good until the next successful run.
+
+### Restored
+- Republished the last-good local `_overview.json` (79 scored) to Firestore and reseeded
+  the GCS state-bucket partner caches, so the dashboard shows real scores again and the
+  next nightly reuses them.
+
+### Action required (operator)
+- **Provide a valid Azure OpenAI key.** The current key 401s everywhere (verified live).
+  Endpoint `https://leonwisoky.cognitiveservices.azure.com/`, deployment `gpt-5.4`. Update
+  via `python scripts/seed_secrets.py` / Secret Manager `azure-openai-key` AND
+  `extract/config.py`. Until then scores cannot be refreshed (they hold at last-good).
+
 ## [Unreleased] — Fix phantom "active SIP" in AI churn analysis + nightly roster regression (2026-06-17)
 
 Two production-data corrections.
