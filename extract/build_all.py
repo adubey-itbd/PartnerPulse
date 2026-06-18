@@ -1,7 +1,7 @@
 """Build every partner + AI insight + the consolidated portfolio index.
 
     python -m extract.build_all            # all partners, with decks + AI
-    python -m extract.build_all --no-ai    # skip the gpt-5.4 pass
+    python -m extract.build_all --no-ai    # skip the Claude churn-analysis pass
     python -m extract.build_all --no-decks
 
 Writes data/{slug}.json (each with an `ai` block) and data/_index.json (the
@@ -67,7 +67,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-ai", action="store_true")
     ap.add_argument("--force-ai", action="store_true",
-                    help="re-run gpt-5.4 even when inputs are unchanged (default: reuse cached AI)")
+                    help="re-run Claude even when inputs are unchanged (default: reuse cached AI)")
     ap.add_argument("--no-decks", action="store_true")
     ap.add_argument("--only", nargs="*", help="limit to these partner names")
     ap.add_argument("--reindex", action="store_true",
@@ -106,7 +106,7 @@ def main():
             out = config.DATA_DIR / f"{slugify(p.name)}.json"
             if not args.no_ai:
                 # Reuse the cached AI result when the LLM inputs are unchanged (skips the
-                # gpt-5.4 call + avoids score drift); --force-ai re-runs regardless.
+                # Claude call + avoids score drift); --force-ai re-runs regardless.
                 prev_ai = None
                 if out.exists() and not args.force_ai:
                     try:
@@ -116,7 +116,7 @@ def main():
                 data["ai"] = ai.analyze(data, cached_ai=prev_ai, force=args.force_ai)
                 print(f"  risk: {data['ai'].get('risk_score')} "
                       f"({data['ai'].get('risk_band')})"
-                      f"{' [cached]' if data['ai'].get('_cached') else ' [gpt-5.4]'}", file=sys.stderr)
+                      f"{' [cached]' if data['ai'].get('_cached') else ' [' + str(data['ai'].get('_model','claude')) + ']'}", file=sys.stderr)
             out.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
             all_data.append(data)
         except Exception as e:

@@ -1,7 +1,7 @@
 """Portfolio-level aggregates for the Executive Overview charts.
 
 All derived from data already present in the per-partner caches (CSAT/NPS with
-timestamps + the gpt-5.4 `drivers[]`). No new extraction, no ticket/SLA signals.
+timestamps + the Claude `drivers[]`). No new extraction, no ticket/SLA signals.
 """
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -129,7 +129,7 @@ _SEV_W = {"high": 3, "medium": 2, "low": 1}
 
 
 def top_drivers(all_data, top_n=6):
-    """Aggregate the gpt-5.4 churn drivers across partners into themed, severity-
+    """Aggregate the Claude churn drivers across partners into themed, severity-
     weighted bars. Score normalized 0-1 against the strongest theme. The catch-all
     'Other' bucket is excluded from the chart."""
     scores = defaultdict(float)

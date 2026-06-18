@@ -7,12 +7,14 @@
       1. Ensure Python 3 is installed (installs via winget if missing).
       2. Create an isolated virtual environment (.venv) and install dependencies.
       3. (Optionally) write a .env so you can override the baked-in API keys.
-      4. Build every partner's data cache + gpt-5.4 churn analysis (data\*.json).
+      4. Build every partner's data cache + Claude churn analysis (data\*.json).
       5. Start the local web server and open the portfolio dashboard in your browser.
 
-    API keys (Halo / TeamGPS / Azure gpt-5.4) are already baked into extract\config.py,
-    so no key entry is required. To override them, create a .env (see .env.example) or
-    pass -Rebuild after editing config.
+    Halo / TeamGPS API keys are already baked into extract\config.py, so no key entry is
+    required. The Claude churn analysis bills your Claude subscription via the local
+    Claude Agent SDK login — run 'claude setup-token' (or 'claude login') once and keep
+    the 'claude' CLI on PATH; do NOT set ANTHROPIC_API_KEY. To override keys, create a
+    .env (see .env.example) or pass -Rebuild after editing config.
 
 .PARAMETER Rebuild
     Force a full data rebuild even if data\_index.json already exists.
@@ -116,9 +118,10 @@ if (Test-Path ".\.git") {
 # ---------------------------------------------------------------------------
 # 4. Build partner data + AI analysis
 # ---------------------------------------------------------------------------
-Write-Step "Building partner data + gpt-5.4 churn analysis"
+Write-Step "Building partner data + Claude churn analysis"
+Write-Info "Claude churn analysis bills your Claude subscription — authenticate once with 'claude setup-token' (or 'claude login'); the 'claude' CLI must be on PATH. Do NOT set ANTHROPIC_API_KEY."
 if ($Rebuild -or -not (Test-Path ".\data\_index.json")) {
-    Write-Info "Running full build for all partners (live API calls + AI — ~5 min)…"
+    Write-Info "Running full build for all partners (live API calls + Claude — ~5 min)…"
     & $venvPy -m extract.build_all
     if ($LASTEXITCODE -ne 0) { throw "Data build failed. Check API keys / connectivity." }
     Write-Ok "All partner caches + portfolio index built"

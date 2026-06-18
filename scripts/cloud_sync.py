@@ -1,19 +1,30 @@
 #!/usr/bin/env python3
 """Cloud Run Job entrypoint — the full nightly data-refresh cycle, headless.
 
+RETIRED (2026-06-18): this unattended cloud pipeline is no longer used. The AI
+churn-analysis step now bills the operator's personal Claude subscription via the
+Claude Agent SDK's local OAuth login (see extract/ai.py), and subscription auth is
+for individual, interactive use — the Agent SDK cannot legitimately bill a personal
+subscription from unattended cloud automation. The AI step therefore runs MANUALLY
+on a laptop, and the cloud footprint is now HOSTING + Firestore SERVING ONLY. The
+nightly Cloud Scheduler trigger should be disabled (e.g. `gcloud scheduler jobs
+pause <job>`) and this Job retired; refresh data locally instead with
+  python -m extract.build_all  ->  scripts/build_overview.py  ->  scripts/upload_firebase_data.py
+This file is kept for reference / rollback only — the step logic is unchanged.
+
 Runs the same pipeline the local "Sync Data" button used to drive, then
 publishes the result to Cloud Firestore, all in one container:
 
   1. (optional) pull persisted state  ← gs://$STATE_BUCKET   (data/ + Transcripts/)
   2. pull_graph_transcripts --write    (Microsoft Graph → Transcripts/)
-  3. extract.build_all                 (Halo + TeamGPS + docs + gpt-5.4, incremental)
+  3. extract.build_all                 (Halo + TeamGPS + docs + Claude, incremental)
   4. scripts/build_real_partners.py    (extra real Halo clients)
   5. extract.build_all --reindex       (data/_index.json)
   6. scripts/build_overview.py         (data/_overview.json — the dashboard feed)
   7. scripts/upload_firebase_data.py   (publish the sharded Firestore tree)
   8. (optional) push persisted state   → gs://$STATE_BUCKET
 
-Why persist state: the pipeline is INCREMENTAL — the gpt-5.4 churn analysis is
+Why persist state: the pipeline is INCREMENTAL — the Claude churn analysis is
 cached by input-hash so risk scores don't drift run-to-run (see CLAUDE.md), and
 Teams only keeps transcript *content* ~90 days. A stateless container would
 re-run the LLM for all partners every night (cost + drift) and lose older
@@ -40,8 +51,11 @@ Env:
                           state; unset → stateless (full rebuild each run).
   PARTNERPULSE_DATA       data dir (default ./data) — honoured by extract.config
   PARTNERPULSE_TRANSCRIPTS transcripts dir (default ./Transcripts)
-  pipeline secrets        HALO_*, TEAMGPS_*, AZURE_*, GRAPH_* — injected from
-                          Secret Manager by the Cloud Run Job.
+  pipeline secrets        HALO_*, TEAMGPS_*, GRAPH_* — injected from
+                          Secret Manager by the Cloud Run Job. (No AI secret: the
+                          Claude Agent SDK bills the local subscription OAuth login,
+                          which is unavailable in the cloud — another reason this
+                          Job is retired.)
 Firestore auth is the job's attached service account, resolved via ADC by
 scripts/upload_firebase_data.py (project from .firebaserc).
 """
@@ -62,7 +76,7 @@ SOFT_STEP_TIMEOUT_S = 1500
 
 # Cache-bust guard: if the pulled data/ has fewer than this many objects, assume
 # the state pull was incomplete/corrupt and abort BEFORE building — otherwise the
-# incremental gpt-5.4 cache is effectively empty and we'd trigger a full cold
+# incremental Claude cache is effectively empty and we'd trigger a full cold
 # re-run (cost + risk-score drift). A healthy data/ holds dozens of caches.
 DATA_FLOOR = 10
 
@@ -169,13 +183,13 @@ def main():
         print(f"== state: gs://{STATE_BUCKET} ==", flush=True)
         counts = pull_state()
         # Cache-bust guard: an implausibly small data/ means the pull was
-        # incomplete; building now would cold-start the whole gpt-5.4 cache.
+        # incomplete; building now would cold-start the whole Claude cache.
         data_n = counts.get("data", 0)
         if data_n < DATA_FLOOR:
             raise SystemExit(
                 f"FATAL aborting before build: pulled only {data_n} data/ object(s) "
                 f"(< floor {DATA_FLOOR}). State pull looks incomplete; refusing to "
-                f"trigger a full cold gpt-5.4 re-run / score drift.")
+                f"trigger a full cold Claude re-run / score drift.")
     else:
         print("== stateless run (STATE_BUCKET unset) ==", flush=True)
 

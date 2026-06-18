@@ -1,17 +1,44 @@
-"""AI churn-analysis layer (Azure Foundry gpt-5.4).
+"""AI churn-analysis layer (Claude via the Claude Agent SDK).
+
+Runs Claude churn analysis against the **signed-in Claude subscription** — the
+local Claude Code / Agent SDK OAuth login (`claude setup-token` or `claude
+login`). There is **NO API key**: if `ANTHROPIC_API_KEY` is set it would silently
+route to pay-as-you-go API billing instead of the subscription, so this module
+strips it from the environment on import (with a one-time warning). Swapped from
+Azure Foundry gpt-5.4 on 2026-06-18 so the pipeline bills the operator's Claude
+plan when run manually on a laptop (the cloud nightly Job is retired — the SDK
+cannot bill a personal subscription from unattended cloud automation).
 
 Consumes a partner's unified cache (the dict from build_partner.build) and returns
 structured churn insight: a risk score + band, the drivers behind it, proactive
 remediation, extracted action items, and sentiment trend. Designed to be merged
 back into the partner JSON under the `ai` key and rolled up on the portfolio view.
 """
+import asyncio
 import hashlib
 import json
+import os
 import re
+import sys
 
-from openai import AzureOpenAI
+from claude_agent_sdk import (
+    AssistantMessage,
+    ClaudeAgentOptions,
+    TextBlock,
+    query,
+)
 
 from . import config
+
+# Subscription billing requires that no API key is present — it outranks the
+# OAuth/CLI login in the SDK's auth precedence and would bill API credits. Strip
+# it once, loudly, so a stray env var can't silently move spend off the plan.
+if os.environ.pop("ANTHROPIC_API_KEY", None) is not None:
+    sys.stderr.write(
+        "WARNING: ANTHROPIC_API_KEY was set; removing it for this process so "
+        "Claude analysis bills your Claude subscription (OAuth login), not the "
+        "pay-as-you-go API. Unset it in your environment to silence this.\n"
+    )
 
 # Bump when the cached-result shape/semantics change so old caches are invalidated
 # (a cached result whose `_schema_version` differs is treated as stale and re-run).
@@ -21,25 +48,8 @@ CACHE_SCHEMA_VERSION = 2
 _REQUIRED_KEYS = ("risk_score", "risk_band", "summary", "drivers",
                   "remediation", "action_items")
 
-# Network hardening for the Azure OpenAI client.
-_REQUEST_TIMEOUT_S = 120
-_MAX_RETRIES = 2
-
-_client = None
-
-
-def _client_singleton() -> AzureOpenAI:
-    global _client
-    if _client is None:
-        _client = AzureOpenAI(
-            api_version=config.AZURE_OPENAI_API_VERSION,
-            azure_endpoint=config.AZURE_OPENAI_ENDPOINT,
-            api_key=config.AZURE_OPENAI_KEY,
-            timeout=_REQUEST_TIMEOUT_S,
-            max_retries=_MAX_RETRIES,
-        )
-    return _client
-
+# The Agent SDK runs Claude as a single, tool-free, non-interactive turn.
+_MAX_TURNS = 1
 
 SYSTEM = (
     "You are a churn-risk analyst for ITBD, a white-label NOC/helpdesk provider whose "
@@ -48,7 +58,8 @@ SYSTEM = (
     "service-review notes/decks, CSAT/NPS feedback, and the account team's own risk flags. "
     "Weigh recent signals over old ones, named-engineer complaints, unmet/ slipping action "
     "items, declining CSAT/NPS, and active SIPs/PIPs. Ignore raw ticket SLA volume. "
-    "Respond with STRICT JSON only, no prose, matching the requested schema exactly."
+    "Respond with STRICT JSON only, no prose, no markdown fences, matching the requested "
+    "schema exactly."
 )
 
 SCHEMA_HINT = """Return JSON with exactly these keys:
@@ -62,7 +73,8 @@ SCHEMA_HINT = """Return JSON with exactly these keys:
   "remediation": [ {"action": "...", "owner": "<ITBD role/person if known>", "priority": "Low|Medium|High", "rationale": "..."} ],
   "action_items": [ {"task": "...", "owner": "...", "due": "...", "status": "Pending|In Progress|Completed", "source": "<which call/deck>"} ]
 }
-Provide 2-5 drivers, 2-5 remediation steps, and extract concrete action_items from the notes/decks."""
+Provide 2-5 drivers, 2-5 remediation steps, and extract concrete action_items from the notes/decks.
+Output ONLY the JSON object — no prose, no code fences."""
 
 
 def _truncate(text: str, n: int) -> str:
@@ -162,20 +174,66 @@ def _insufficient_data_result(input_hash: str) -> dict:
         "remediation": [],
         "action_items": [],
         "_insufficient_data": True,
-        "_model": config.AZURE_OPENAI_DEPLOYMENT,
+        "_model": config.CLAUDE_MODEL,
         "_schema_version": CACHE_SCHEMA_VERSION,
         "_input_hash": input_hash,
     }
 
 
+_FENCE_RE = re.compile(r"^```(?:json)?\s*|\s*```$", re.IGNORECASE)
+_OBJ_RE = re.compile(r"\{.*\}", re.S)
+
+
+def _extract_json(text: str) -> dict:
+    """Parse the model's reply into a dict. Claude via the Agent SDK returns plain
+    text (no API `response_format`), so be tolerant of stray code fences or a
+    leading sentence: strip fences, else grab the outermost {...} object."""
+    t = (text or "").strip()
+    t = _FENCE_RE.sub("", t).strip()
+    try:
+        return json.loads(t)
+    except (ValueError, TypeError):
+        m = _OBJ_RE.search(t)
+        if m:
+            return json.loads(m.group(0))
+        raise
+
+
+async def _aquery(context: str) -> str:
+    """Run one tool-free Claude turn via the Agent SDK and return its text."""
+    opts = ClaudeAgentOptions(
+        model=config.CLAUDE_MODEL,
+        system_prompt=SYSTEM,
+        allowed_tools=[],
+        max_turns=_MAX_TURNS,
+        setting_sources=[],   # do NOT inherit the repo's CLAUDE.md / settings
+    )
+    chunks = []
+    async for msg in query(prompt=f"{SCHEMA_HINT}\n\n---\n{context}", options=opts):
+        if isinstance(msg, AssistantMessage):
+            for block in msg.content:
+                if isinstance(block, TextBlock):
+                    chunks.append(block.text)
+    return "".join(chunks)
+
+
+def _call_claude(context: str) -> str:
+    """Synchronous wrapper — build_all/build_real_partners call analyze() in a
+    plain loop, so spin a fresh event loop per partner."""
+    return asyncio.run(_aquery(context))
+
+
 def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
-    """Run gpt-5.4 churn analysis for one partner. Returns the insight dict (with
+    """Run Claude churn analysis for one partner. Returns the insight dict (with
     an `_error` key if the call/parse failed).
 
     Incremental: the LLM input (`build_context`) is hashed into `_input_hash`. When
-    `cached_ai` carries the same hash and a valid prior result, that result is reused
-    verbatim — no LLM call. This makes a full rebuild skip the expensive, score-drifting
-    gpt-5.4 call for any partner whose inputs are unchanged. Pass `force=True` to override.
+    `cached_ai` carries the same hash, the same model, and a valid prior result,
+    that result is reused verbatim — no Claude call. This makes a full rebuild skip
+    the expensive, score-drifting LLM call for any partner whose inputs are
+    unchanged. A change of `config.CLAUDE_MODEL` (or the old gpt-5.4 `_model`)
+    invalidates the cache so a model switch re-scores cleanly. Pass `force=True`
+    to override.
     """
     context = build_context(data)
     input_hash = hashlib.sha256(context.encode("utf-8")).hexdigest()
@@ -183,6 +241,7 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
         cached_ai
         and cached_ai.get("_input_hash") == input_hash
         and cached_ai.get("_schema_version") == CACHE_SCHEMA_VERSION
+        and cached_ai.get("_model") == config.CLAUDE_MODEL
         and not cached_ai.get("_error")
         and all(k in cached_ai for k in _REQUIRED_KEYS)
     )
@@ -194,23 +253,15 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
     if not _has_substantive_signal(data):
         return _insufficient_data_result(input_hash)
     try:
-        resp = _client_singleton().chat.completions.create(
-            model=config.AZURE_OPENAI_DEPLOYMENT,
-            messages=[
-                {"role": "system", "content": SYSTEM},
-                {"role": "user", "content": f"{SCHEMA_HINT}\n\n---\n{context}"},
-            ],
-            max_completion_tokens=4000,
-            response_format={"type": "json_object"},
-        )
-        insight = json.loads(resp.choices[0].message.content)
-        insight["_model"] = config.AZURE_OPENAI_DEPLOYMENT
+        raw = _call_claude(context)
+        insight = _extract_json(raw)
+        insight["_model"] = config.CLAUDE_MODEL
         insight["_input_hash"] = input_hash
         insight["_schema_version"] = CACHE_SCHEMA_VERSION
         return insight
     except Exception as e:
-        # Graceful degradation: a transient AI outage (e.g. Azure 401/quota/timeout)
-        # must NOT wipe a partner's existing score to 0. If a usable prior result is
+        # Graceful degradation: a transient AI outage (auth/rate-limit/timeout) must
+        # NOT wipe a partner's existing score to 0. If a usable prior result is
         # available, keep it (flagged `_stale`) rather than regressing to None -- this
         # is what zeroed 28 partners on 2026-06-18 when the Azure key was revoked. Only
         # emit the error placeholder when there was never a good score to fall back to.

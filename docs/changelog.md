@@ -6,6 +6,61 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — AI churn layer swapped from Azure gpt-5.4 to Claude Agent SDK (subscription-billed); nightly Job retired (2026-06-18)
+
+The AI churn-analysis layer no longer calls Azure Foundry **gpt-5.4**. It now runs
+**Claude via the Claude Agent SDK**, billed to the operator's **Claude subscription
+(Pro/Max/Team/Enterprise)** through the local Claude Code OAuth login — **no API key,
+no cloud secret**. Because subscription auth is for individual, interactive use, the AI
+step now runs **manually on a laptop** and the unattended nightly Cloud Run Job is
+**retired**; the cloud footprint is **hosting + Firestore serving only**.
+
+### Changed
+- **`extract/ai.py` now drives Claude through `claude_agent_sdk`** (`query`,
+  `ClaudeAgentOptions`, `AssistantMessage`, `TextBlock`) instead of the Azure OpenAI
+  client. It runs one tool-free, non-interactive turn:
+  `ClaudeAgentOptions(model=config.CLAUDE_MODEL, system_prompt=SYSTEM, allowed_tools=[],
+  max_turns=1, setting_sources=[])`. Auth comes from the local Claude Code OAuth login
+  (`claude setup-token` / `claude login`); the `claude` CLI must be on `PATH`.
+- **Default model is `claude-sonnet-4-6`**, overridable via the **`CLAUDE_MODEL`** env var
+  (`extract/config.py CLAUDE_MODEL`). The `AZURE_OPENAI_*` constants are gone.
+- **The AI cache now keys on `_model`.** Cached results record `"_model":
+  "claude-sonnet-4-6"`, and `ai.analyze`'s cache-validity check now also compares
+  `_model`, so a model switch (including from the old gpt-5.4 caches) invalidates stale
+  results and re-scores cleanly. `CACHE_SCHEMA_VERSION` is unchanged (2) and the result
+  JSON shape is identical (`risk_score`, `risk_band`, `confidence`, `summary`,
+  `sentiment_trend`, `drivers[]`, `remediation[]`, `action_items[]`). Incremental
+  input-hash caching and graceful degradation (keep `_stale` prior result on AI outage)
+  are unchanged.
+- **Tolerant JSON parsing.** Claude via the Agent SDK returns plain text (no API
+  `response_format=json_object`), so `ai.py` parses via `_extract_json` — strip markdown
+  code fences, else grab the outermost `{...}` object.
+- **`requirements.txt`: `openai` replaced by `claude-agent-sdk`** (which needs the
+  `claude` CLI on `PATH`).
+- **`.env.example`: the Azure block is replaced** by a `CLAUDE_MODEL` note plus an
+  explicit "do not set `ANTHROPIC_API_KEY`" warning.
+- **Operating model.** The AI step runs **manually on a laptop**; the manual refresh cycle
+  is `python -m extract.build_all` → `python scripts/build_overview.py` →
+  `python scripts/upload_firebase_data.py`. Hosting + Firestore serving (`auth.js`,
+  `index.html`/`partner.html` via `window.PP_AUTH`) are unchanged — data is still
+  published to Firestore, now from a manual local build.
+
+### Added
+- **`ANTHROPIC_API_KEY` is stripped from the environment on import** of `extract/ai.py`
+  (with a one-time stderr warning) so a stray key cannot silently route spend to
+  pay-as-you-go API billing instead of the subscription.
+
+### Removed
+- **`scripts/seed_secrets.py`: the `azure-openai-key` Secret Manager entry was removed.**
+  The AI step needs no cloud secret.
+
+### Retired (operator action required)
+- **The nightly automated Cloud Run Job (`partnerpulse-nightly`, Cloud Scheduler 21:00
+  America/New_York) is retired for data refresh** — the Agent SDK cannot legitimately bill
+  a personal subscription from unattended cloud automation. This change does **not** delete
+  it; operators should disable it (e.g. `gcloud scheduler jobs pause <job>` and/or delete
+  the Cloud Run Job).
+
 ## [Unreleased] — AI outage no longer zeroes scores; restore after Azure key revocation (2026-06-18)
 
 ### Incident

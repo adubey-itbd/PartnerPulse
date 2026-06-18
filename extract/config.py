@@ -57,11 +57,12 @@ TEAMGPS_API_KEY = _secret(
     "***REMOVED***",
 )
 
-# --- Azure OpenAI (gpt-5.4 on Azure Foundry) ---------------------------------
-AZURE_OPENAI_ENDPOINT = _env("AZURE_OPENAI_ENDPOINT", "https://leonwisoky.cognitiveservices.azure.com/")
-AZURE_OPENAI_KEY = _secret(
-    "AZURE_OPENAI_KEY",
-    "***REMOVED***",
-)
-AZURE_OPENAI_DEPLOYMENT = _env("AZURE_OPENAI_DEPLOYMENT", "gpt-5.4")
-AZURE_OPENAI_API_VERSION = _env("AZURE_OPENAI_API_VERSION", "2024-12-01-preview")
+# --- Claude churn analysis (Claude Agent SDK, subscription-billed) -----------
+# Swapped from Azure Foundry gpt-5.4 on 2026-06-18. The Agent SDK authenticates
+# through the local Claude Code OAuth login (`claude setup-token` / `claude
+# login`) and bills the operator's Claude subscription — there is NO API key.
+# `extract/ai.py` strips ANTHROPIC_API_KEY from the environment so a stray key
+# cannot silently route spend to pay-as-you-go API billing. Because subscription
+# auth is for individual interactive use, this runs MANUALLY on a laptop, not as
+# the (retired) unattended cloud nightly Job. Override the model with CLAUDE_MODEL.
+CLAUDE_MODEL = _env("CLAUDE_MODEL", "claude-sonnet-4-6")

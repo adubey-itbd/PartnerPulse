@@ -3,27 +3,34 @@
 **The authoritative map of where every piece of data comes from, how it is
 processed, and where it is stored — end to end.** Read this with
 `docs/architecture.md` (system design), `docs/Firebase-Deploy-SOP.md` (the hosted
-deployment) and `docs/Cloud-Pipeline-SOP.md` (the nightly job).
+deployment) and `docs/Cloud-Pipeline-SOP.md` (the now-retired nightly job).
 
 Last reworked **2026-06-16**, when the pipeline moved to a scheduled Cloud Run
 Job and the dashboard moved to Firebase Hosting + Cloud Firestore.
+
+**Addendum 2026-06-18:** the AI churn layer was swapped from Azure Foundry
+gpt-5.4 to **Claude via the Claude Agent SDK**, billed to the operator's **Claude
+subscription** (local OAuth login, NO API key). Because subscription auth is for
+individual interactive use, the **build now runs MANUALLY on a laptop** and the
+nightly Cloud Run Job is **retired** (to be disabled by an operator) — the cloud
+footprint is **Hosting + Firestore serving only**. References below are updated in
+place.
 
 ---
 
 ## 0. One-screen flow
 
 ```
- SOURCES (upstream truth)        PIPELINE (nightly, Cloud Run Job)         STORES                         CONSUMERS
+ SOURCES (upstream truth)        PIPELINE (MANUAL, run on a laptop)        STORES                         CONSUMERS
  ─────────────────────────       ─────────────────────────────────        ──────────────────────────     ─────────────────
- HaloPSA REST  ───────────┐      scripts/cloud_sync.py:                    GCS state bucket               browser (Firebase
- TeamGPS Open API ────────┤        1. pull state ← GCS                     gs://…-pipeline-state          Hosting, @itbd.net
- MS Graph (Teams) ────────┼────▶   2. pull_graph_transcripts  ──▶          (data/ + Transcripts/,           email/pw sign-in)
- local decks/.docx ───────┤        3. extract.build_all (gpt-5.4)          incl. gpt-5.4 cache)               │  reads via
- Azure OpenAI gpt-5.4 ────┘        4. build_real_partners                       ▲      │                       │  auth.js
-                                   5. build_all --reindex                       │ persist                     ▼
-                                   6. build_overview  ──▶ data/*.json  ─────────┘      └──▶ Cloud Firestore ──▶ Exec Overview
-                                   7. upload_firebase_data  ─────────────────────────────▶ (sharded docs)      + Partner 360
-                                   8. push state → GCS
+ HaloPSA REST  ───────────┐      local build cycle:                       local data/ + Transcripts/    browser (Firebase
+ TeamGPS Open API ────────┤        (pull_graph_transcripts) ──▶           (incl. the Claude AI cache)     Hosting, @itbd.net
+ MS Graph (Teams) ────────┼────▶   1. extract.build_all (Claude SDK)            │                          email/pw sign-in)
+ local decks/.docx ───────┤        2. build_real_partners                       │                            │  reads via
+ Claude Agent SDK ────────┘        3. build_all --reindex                        │                            │  auth.js
+ (subscription, no API key)        4. build_overview ──▶ data/*.json  ───────────┘                            ▼
+                                   5. upload_firebase_data ─────────────────────────────▶ Cloud Firestore ──▶ Exec Overview
+                                                                                          (sharded docs)       + Partner 360
 ```
 
 Three different "stores" hold the same data at three stages:
@@ -31,8 +38,8 @@ Three different "stores" hold the same data at three stages:
 | Store | Role | Lifetime / source of truth |
 |---|---|---|
 | **External APIs** (Halo / TeamGPS / Graph) | Upstream operational systems | The real source of truth for the raw facts; queried read-only. |
-| **`data/*.json` + GCS state bucket** | Pipeline working cache (incl. the gpt-5.4 cache) | Intermediate. The bucket is the durable copy between nightly runs; local `data/` is just a dev convenience. |
-| **Cloud Firestore** | What the dashboard actually reads in production | **Source of truth for *serving*.** A point-in-time snapshot republished every night. |
+| **`data/*.json` (local)** | Pipeline working cache (incl. the Claude AI cache) | Intermediate. Built on the operator's laptop; persisted there between manual runs so the AI cache + transcript history stay warm. |
+| **Cloud Firestore** | What the dashboard actually reads in production | **Source of truth for *serving*.** A point-in-time snapshot, republished manually after each local build via `upload_firebase_data.py`. |
 
 Local dev still reads `data/*.json` directly (no Firestore, no auth) — `auth.js`
 auto-detects localhost. Production reads Firestore only.
@@ -47,39 +54,46 @@ auto-detects localhost. Production reads Firestore only.
 | **TeamGPS Open API** (`api.team-gps.net/open-api/v1`) | `extract/teamgps.py` | static `TEAMGPS_API_KEY` | CSAT responses (per company) and NPS responses (per email domain). |
 | **Microsoft Graph** (Teams meeting transcripts) | `scripts/pull_graph_transcripts.py` | app-only OAuth (`GRAPH_TENANT_ID`, `GRAPH_CLIENT_ID`, `GRAPH_CLIENT_SECRET`) | `.vtt` call transcripts → `Transcripts/{Partner}/`. Teams keeps content ~90 days. |
 | **Local documents** | `extract/transcripts.py` (markitdown) | none | `.docx` Teams exports + deck `.pptx`/`.pdf` → Markdown text. |
-| **Azure OpenAI — gpt-5.4** (`*.cognitiveservices.azure.com`) | `extract/ai.py` | `AZURE_OPENAI_KEY` | The churn analysis: risk score/band, confidence, sentiment, drivers, remediation, extracted action items. |
+| **Claude — `claude-sonnet-4-6`** (via the Claude Agent SDK) | `extract/ai.py` | Claude **subscription** OAuth login (`claude setup-token` / `claude login`; `claude` CLI on PATH) — **NO API key** (ai.py strips `ANTHROPIC_API_KEY`) | The churn analysis: risk score/band, confidence, sentiment, drivers, remediation, extracted action items. Model overridable via `CLAUDE_MODEL` (`extract/config.py`). |
 
-All secrets live in **Secret Manager** in the cloud (loaded by
-`scripts/seed_secrets.py`) and in `.env` / `extract/config.py` fallbacks for local
-runs. **No external/web data** is used — churn risk is inferred entirely from
-internal signals (see `architecture.md` §7).
+Halo/TeamGPS/Graph secrets live in `.env` / `extract/config.py` fallbacks for
+local runs (and in **Secret Manager** for any cloud use — but **the Claude AI step
+has no cloud secret**: subscription billing uses the local OAuth login, and the
+former `azure-openai-key` Secret Manager entry was removed). **No external/web
+data** is used — churn risk is inferred entirely from internal signals (see
+`architecture.md` §7).
 
 ---
 
 ## 2. Pipeline (how it's processed)
 
-The nightly **Cloud Run Job** runs `scripts/cloud_sync.py`, which executes the
-same cycle the local "Sync Data" button used to (that button was removed
-2026-06-16):
+The build is run **MANUALLY on a laptop** (changed 2026-06-18 with the move to
+Claude subscription billing — the Agent SDK cannot legitimately bill a personal
+subscription from unattended cloud automation, so the nightly Cloud Run Job is
+retired). The operator runs:
 
-1. **Pull state** from `gs://…-pipeline-state` → `data/` + `Transcripts/` (so the gpt-5.4 cache and transcript history are present).
-2. `pull_graph_transcripts.py --write` — fresh `.vtt` from Graph.
-3. `extract.build_all` — per partner: Halo + TeamGPS fetch, doc/transcript parse, **gpt-5.4** churn analysis → `data/{slug}.json`. **Incremental**: the AI is cached by an input hash and skipped when inputs are unchanged (no score drift); decks cached by attachment id.
-4. `scripts/build_real_partners.py` — the DES/MDE roster beyond the registry.
-5. `extract.build_all --reindex` — `data/_index.json` (slim rows + portfolio aggregates).
-6. `scripts/build_overview.py` — `data/_overview.json`, the dashboard feed (honours the `_demo_roster.json` allowlist).
-7. `scripts/upload_firebase_data.py` — publish the sharded Firestore tree.
-8. **Push state** back to GCS.
+1. (optional) `pull_graph_transcripts.py --write` — fresh `.vtt` from Graph.
+2. `extract.build_all` — per partner: Halo + TeamGPS fetch, doc/transcript parse, **Claude** (`claude-sonnet-4-6`, via the Agent SDK on the subscription) churn analysis → `data/{slug}.json`. **Incremental**: the AI is cached by an input hash and skipped when inputs are unchanged (no score drift); decks cached by attachment id. (`extract.build_all` also runs `build_real_partners` + `--reindex` internally; the explicit steps below mirror the documented cycle.)
+3. `scripts/build_real_partners.py` — the DES/MDE roster beyond the registry.
+4. `extract.build_all --reindex` — `data/_index.json` (slim rows + portfolio aggregates).
+5. `scripts/build_overview.py` — `data/_overview.json`, the dashboard feed (honours the `_demo_roster.json` allowlist).
+6. `scripts/upload_firebase_data.py` — publish the sharded Firestore tree.
 
-Steps 2–6 are continue-on-failure; 1/7/8 are hard (fail the run). See
-`docs/Cloud-Pipeline-SOP.md` for the infra.
+The condensed manual cycle is: `python -m extract.build_all` → `python
+scripts/build_overview.py` → `python scripts/upload_firebase_data.py`. Switching
+the AI model invalidates the per-partner cache (it keys on `_model`), so the first
+post-swap build re-scores every partner cleanly. The cloud footprint is now
+**Hosting + Firestore serving only**; `docs/Cloud-Pipeline-SOP.md` covers the
+(retired) Job infra.
 
 ---
 
 ## 3. Local cache schema (`data/`, gitignored)
 
-> Generated artifacts only — never hand-edited, never committed. Mirrored into the
-> GCS state bucket between runs.
+> Generated artifacts only — never hand-edited, never committed. Persisted on the
+> operator's laptop between manual runs (so the Claude AI cache + transcript
+> history stay warm). The `ai` block records `_model` (now `claude-sonnet-4-6`),
+> `_input_hash`, and `_schema_version` (2) for incremental caching.
 
 - **`data/{slug}.json`** — the full per-partner payload. Top-level keys: `meta`,
   `client`, `csat_stats`, `csat_comments`, `nps_stats`, `nps_comments`,
@@ -113,7 +127,7 @@ This is the shape the Exec Overview renders and the shape published to Firestore
       "name", "slug",                         // slug ≠ slugify(name) — use it verbatim
       "churnRisk", "riskBand",                // riskBand derived from score (_tier), not LLM
       "accountManager", "sentimentTrend",     // sentimentTrend reconciled (_reconcile_trend)
-      "topDriver", "themes",                  // themes ← gpt-5.4 drivers[]
+      "topDriver", "themes",                  // themes ← Claude drivers[]
       "csat", "nps", "sip", "actions", "calls",
       "callTone", "toneConfident"             // toneConfident=false ⇒ UI shows "No calls"
   } ]
@@ -162,14 +176,20 @@ index).
 
 ---
 
-## 6. GCS state bucket (pipeline persistence)
+## 6. Pipeline persistence (local `data/` + Transcripts)
 
-`gs://operational-intelligence-ebe23-pipeline-state` holds `data/` and
-`Transcripts/` between nightly runs. **Why it exists:** the build is incremental
-(gpt-5.4 cached by input hash → stable scores) and Teams drops transcript content
-after ~90 days; persisting state keeps the cache warm and the transcript history
-intact. The Cloud Run Job's service account has `roles/storage.objectAdmin` on it.
-Not web-exposed.
+**Changed 2026-06-18:** with the build now run manually on a laptop, pipeline
+state lives in the operator's local `data/` + `Transcripts/`. **Why it matters:**
+the build is incremental (Claude analysis cached by input hash → stable scores)
+and Teams drops transcript content after ~90 days, so keeping the local cache warm
+and the transcript history intact avoids re-scoring drift and lost calls — back up
+the laptop's `data/`/`Transcripts/` accordingly.
+
+The legacy GCS state bucket
+(`gs://operational-intelligence-ebe23-pipeline-state`) persisted `data/` +
+`Transcripts/` between the nightly Cloud Run Job's runs; with that Job retired it
+is no longer in the active path (left in place pending operator cleanup — see
+`docs/Cloud-Pipeline-SOP.md`). Not web-exposed.
 
 ---
 
@@ -193,7 +213,7 @@ get the same shapes regardless of where the data lives.
 
 | Dashboard field | Origin |
 |---|---|
-| `churnRisk`, `riskBand`, `confidence`, `topDriver`, `themes`, `sentimentTrend` (raw), `remediation`, `ai.action_items` | **Azure gpt-5.4** (`extract/ai.py`) over the compiled context |
+| `churnRisk`, `riskBand`, `confidence`, `topDriver`, `themes`, `sentimentTrend` (raw), `remediation`, `ai.action_items` | **Claude `claude-sonnet-4-6`** via the Agent SDK (`extract/ai.py`, subscription-billed) over the compiled context; recorded as `ai._model` |
 | `riskBand` (shown), `sentimentTrend` (shown) | **Derived deterministically** in `build_overview.py` (`_tier`, `_reconcile_trend`) — not the LLM's free-form values |
 | `csat`, `csatCoverage`, CSAT comments/stats | **TeamGPS** CSAT |
 | `nps`, `portfolioNPS`, `npsResponses`, NPS comments/stats | **TeamGPS** NPS |
@@ -209,15 +229,25 @@ get the same shapes regardless of where the data lives.
 
 ## 9. Going forward (operating model)
 
-- **Refresh cadence:** automatic, nightly **21:00 America/New_York** (Cloud
-  Scheduler → Cloud Run Job). No manual button; no local machine in the loop.
-- **Source of truth for serving** is **Firestore**; it is overwritten each night
-  from a fresh build. To force a refresh off-cycle:
-  `gcloud run jobs execute partnerpulse-nightly --region=us-central1`.
-- **`firebase deploy` ships UI/rules only** — data changes flow through the Job +
-  `upload_firebase_data.py`, not a redeploy.
+- **Refresh cadence (changed 2026-06-18):** **MANUAL**, run on a laptop, because
+  the Claude Agent SDK bills the operator's interactive subscription and cannot
+  legitimately run unattended. The nightly Cloud Run Job + Cloud Scheduler trigger
+  (`partnerpulse-nightly`, 21:00 America/New_York) are **retired and should be
+  disabled by an operator** (e.g. `gcloud scheduler jobs pause …` / delete the
+  Job) — this change does not itself disable them. Manual cycle:
+  `python -m extract.build_all` → `python scripts/build_overview.py` →
+  `python scripts/upload_firebase_data.py`.
+- **Source of truth for serving** is still **Firestore**; it is overwritten by the
+  manual `upload_firebase_data.py` step after each local build. The cloud footprint
+  is now **Hosting + Firestore serving only** — no AI or pipeline runs in the cloud.
+- **`firebase deploy` ships UI/rules only** — data changes flow through a local
+  build + `upload_firebase_data.py`, not a redeploy.
 - **Adding/removing a partner** still happens in code (`extract/partners.py` or
-  `scripts/build_real_partners.py` NEW) + the allowlist — the nightly job then
-  propagates it to Firestore. Never hand-edit `data/` or Firestore docs.
-- **Secrets** are in Secret Manager (rotation still owed — see
-  `Firebase-Deploy-SOP.md` §0 and `Cloud-Pipeline-SOP.md` "Notes").
+  `scripts/build_real_partners.py` NEW) + the allowlist — then a manual build +
+  upload propagates it to Firestore. Never hand-edit `data/` or Firestore docs.
+- **AI auth:** the Claude subscription is reached via the local Claude Code OAuth
+  login (`claude setup-token` / `claude login`); there is **NO API key** and no
+  cloud secret for AI (`ai.py` strips `ANTHROPIC_API_KEY`; the `azure-openai-key`
+  Secret Manager entry was removed). Halo/TeamGPS/Graph secrets remain in Secret
+  Manager (rotation still owed — see `Firebase-Deploy-SOP.md` §0 and
+  `Cloud-Pipeline-SOP.md` "Notes").
