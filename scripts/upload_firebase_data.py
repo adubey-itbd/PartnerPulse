@@ -5,6 +5,7 @@ script derives the document tree from data/_overview.json (which already honours
 the demo allowlist) + the per-partner data/<slug>.json caches:
 
     meta/overview                     { generated_at, as_of, coverage, portfolio }
+    meta/csatRecon                    the whole data/_csat_recon.json feed (single doc)
     partners/<slug>                   summary doc (powers the Exec Overview)
     partners/<slug>/detail/profile    { meta, client, ai, csat_stats, nps_stats }
     partners/<slug>/transcripts/<i>   one doc per call transcript
@@ -254,6 +255,19 @@ def main():
     except ValueError as exc:
         sys.exit(f"feed validation failed (nothing written): {exc}")
 
+    # Optional CSAT-reconciliation feed (the third dashboard view). Published as a
+    # single Firestore doc (meta/csatRecon). Absence is tolerated (the view simply
+    # has no data); a present-but-corrupt file aborts before any write.
+    recon = None
+    recon_path = DATA / "_csat_recon.json"
+    if recon_path.exists():
+        try:
+            recon = load_json(recon_path)
+            if not isinstance(recon, dict):
+                raise ValueError("not a JSON object")
+        except (ValueError, OSError) as exc:
+            sys.exit(f"{recon_path.name} is unreadable/corrupt: {exc}")
+
     drop_pct = max_drop_pct()
 
     if args.dry_run:
@@ -268,6 +282,10 @@ def main():
             counts = {s: len(blob.get(src) or []) for s, src in _SECTIONS.items()}
             detail = " ".join(f"{s}={n}" for s, n in counts.items() if n)
             print(f"  partners/{slug}  + detail/profile  [{detail or 'no detail items'}]")
+        if recon is not None:
+            t = recon.get("totals", {}) or {}
+            print(f"  meta/csatRecon  [{len(recon.get('rows') or [])} rows, "
+                  f"{t.get('sent')} sent / {t.get('received')} received]")
         print(f"  sanity gate: max drop {drop_pct:.1f}% (existing count checked "
               f"live at publish time)")
         print(f"{len(partners)} partner(s). Nothing written (dry run).")
@@ -308,6 +326,10 @@ def main():
     batch.flush()
 
     sentinel = Batcher(db)
+    # The CSAT-recon feed rides with the sentinel batch (written after all partner
+    # docs). It is a single self-contained doc, independent of the partner tree.
+    if recon is not None:
+        sentinel.set(db.collection("meta").document("csatRecon"), recon)
     sentinel.set(db.collection("meta").document("overview"),
                  {k: feed.get(k) for k in _META_KEYS})
     sentinel.flush()

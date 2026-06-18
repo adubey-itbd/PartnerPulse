@@ -19,6 +19,7 @@ Cloud Scheduler  ── daily 21:00 America/New_York ──▶  Cloud Run Job: p
    4. build_real_partners.py           (extra Halo clients)
    5. extract.build_all --reindex      (_index.json)
    6. build_overview.py                (_overview.json — dashboard feed)
+   6b. build_csat_recon.py             (_csat_recon.json — CSAT Reconciliation feed; Halo sent-side)
    7. upload_firebase_data.py          (publish sharded tree)  ──▶ Cloud Firestore
    8. push state  → gs://…-pipeline-state
 ```
@@ -26,7 +27,11 @@ Cloud Scheduler  ── daily 21:00 America/New_York ──▶  Cloud Run Job: p
 Secrets come from **Secret Manager**; Firestore/Storage auth is the job's
 **attached service account** (keyless — no JSON key files). State persistence
 keeps the Grok AI cache (no score drift) and transcript history (Teams ~90-day
-content retention). Steps 2–6 are continue-on-failure; 1/7/8 are hard.
+content retention). Steps 2–6b are continue-on-failure; 1/7/8 are hard. (Step 6b,
+`build_csat_recon.py`, reads `_overview.json` and hits Halo for the sent-side CSAT
+tickets; a failure leaves the CSAT Reconciliation view stale —
+`upload_firebase_data.py` treats `data/_csat_recon.json` as optional — but never
+blocks the core publish.)
 
 ## Names (edit here if you rename anything)
 

@@ -61,11 +61,13 @@ graph TD
     PartnerC -->|Runtime fetch| DetailUI
 ```
 
-> **Note (changed 2026-06-13, beta.8):** `index.html` is **data-driven** — both the
+> **Note (changed 2026-06-13, beta.8):** `index.html` is **data-driven** — the
 > Executive Overview and Partner 360 views `fetch` `data/_overview.json` at runtime
 > (built by `scripts/build_overview.py` from `data/_index.json` + the per-partner
 > caches). There is **no embedded partner array**. `partner.html`/`partner.js` fetch
-> `data/{slug}.json` as before.
+> `data/{slug}.json` as before. **(2026-06-18)** A third view, **CSAT Reconciliation**,
+> fetches `data/_csat_recon.json` (built by `scripts/build_csat_recon.py` after
+> `build_overview.py`; monthly CSAT sent vs received per partner) lazily on first open.
 
 > **Note (changed 2026-06-16): production is now on Firebase + a cloud pipeline.**
 > The diagram above describes the **local** build/serve path, which still works
@@ -90,13 +92,13 @@ firebase.json / .firebaserc / firestore.rules / firestore.indexes.json   Firebas
 Dockerfile / .dockerignore / .gcloudignore                      Cloud Run Job pipeline image
 server.py / setup.ps1 / requirements.txt                        entry points (server.py also hosts the LOCAL sync API)
 extract/        ingestion + AI pipeline (Python package, run via python -m extract.*)
-scripts/        operational scripts (build_real_partners.py, build_overview.py,
+scripts/        operational scripts (build_real_partners.py, build_overview.py, build_csat_recon.py [CSAT recon feed],
                 cloud_sync.py [Cloud Run Job entrypoint], upload_firebase_data.py [Firestore publish],
                 seed_secrets.py [Secret Manager], setup_graph_transcript_access.ps1,
                 probe_graph_transcripts.py; refresh_exec_row.py kept but DEPRECATED)
 backups/        saved copies of replaced dashboards (e.g. index_pre-AIODI_2026-06-13.html)
 data/           generated caches (whole dir gitignored): {slug}.json, _index.json,
-                _overview.json (dashboard feed), _demo_roster.json, decks/, _sync.log
+                _overview.json (dashboard feed), _csat_recon.json (CSAT recon feed), _demo_roster.json, decks/, _sync.log
                 — mirrored to the GCS state bucket between nightly runs
 Transcripts/    input meeting transcripts, per partner (.docx Teams exports + .vtt Graph pulls)
 docs/           architecture, Data-Schema, changelog, SOPs (incl. Firebase-Deploy, Cloud-Pipeline), LLM-SOP, archive/

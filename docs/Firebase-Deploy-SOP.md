@@ -184,6 +184,13 @@ run) — see `docs/Cloud-Pipeline-SOP.md`.
 - **Don't move data into the Hosting `public` set** — keep all data in Firestore
   behind the rules. (`firebase.json` already ignores `data/`, `extract/`, `scripts/`,
   `Transcripts/`, `docs/`, and every `*.py`/`*.md`.)
+- **Cache headers (`firebase.json` `hosting.headers`):** `*.html` → `no-cache` (always
+  fresh); `*.js`/`*.css` → `public, max-age=3600`; **`auth.js` + `firebase-config.js` →
+  `no-cache`** (a more-specific rule that overrides the generic JS rule — last match wins,
+  verified by `curl -I`). Keep the two bootstrap files on `no-cache`: HTML is no-cache, so
+  if the data/auth layer it loads were cached it could drift a method behind after a deploy
+  (caused the CSAT view to read empty for returning users — changelog 2026-06-18). If you
+  add another always-fresh bootstrap script, give it the same treatment.
 - **Scaling note:** the overview fetches *all* summary docs and filters
   client-side — fine to a few hundred partners (~1.5 KB each). Past that, switch
   `loadOverview()` to a Firestore `orderBy('churnRisk','desc').limit(...)` query

@@ -10,6 +10,7 @@ publishes the result to Cloud Firestore, all in one container:
   4. scripts/build_real_partners.py    (extra real Halo clients)
   5. extract.build_all --reindex       (data/_index.json)
   6. scripts/build_overview.py         (data/_overview.json — the dashboard feed)
+  6b. scripts/build_csat_recon.py      (data/_csat_recon.json — CSAT Reconciliation view)
   7. scripts/upload_firebase_data.py   (publish the sharded Firestore tree)
   8. (optional) push persisted state   → gs://$STATE_BUCKET
 
@@ -75,6 +76,10 @@ SYNC_STEPS = [
     ("real-extras", [PY, str(ROOT / "scripts" / "build_real_partners.py")]),
     ("reindex",     [PY, "-m", "extract.build_all", "--reindex"]),
     ("overview",    [PY, str(ROOT / "scripts" / "build_overview.py")]),
+    # Reads data/_overview.json (built above) + hits Halo for the sent-side CSAT
+    # tickets. Soft: a failure leaves the recon view stale, never blocks the core
+    # publish. upload_firebase_data treats data/_csat_recon.json as optional.
+    ("csat-recon",  [PY, str(ROOT / "scripts" / "build_csat_recon.py")]),
 ]
 
 # step id -> return code (or sentinel), for the end-of-run RUN SUMMARY line.
@@ -230,7 +235,8 @@ def main():
 
 def _summary():
     parts = [f"{k}={RESULTS[k]}" for k in
-             ["transcripts", "registry", "real-extras", "reindex", "overview", "upload"]
+             ["transcripts", "registry", "real-extras", "reindex", "overview",
+              "csat-recon", "upload"]
              if k in RESULTS]
     print("\nRUN SUMMARY: " + " ".join(parts), flush=True)
 

@@ -30,6 +30,11 @@
       {
         "source": "**/*.@(html)",
         "headers": [ { "key": "Cache-Control", "value": "no-cache" } ]
+      },
+      {
+        "comment": "Auth/data bootstrap must never lag the no-cache HTML that loads it (else a stale cached revision drifts from fresh index.html — see changelog 2026-06-18).",
+        "source": "/@(auth|firebase-config).js",
+        "headers": [ { "key": "Cache-Control", "value": "no-cache" } ]
       }
     ]
   },

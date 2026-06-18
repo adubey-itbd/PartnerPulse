@@ -911,5 +911,37 @@ conflicting earlier statement.
 
 ---
 
-_Last verified: 2026-06-15 against `https://itbd.halopsa.com`. Credentials are
+## ⚠️ Addendum — monthly CSAT survey tickets (2026-06-18 session)
+
+The "sent" side of CSAT reconciliation. ITBD's **"DES CSAT Monthly"** team raises one
+ticket per recipient per month; **one ticket = one CSAT sent**. Verified against
+`https://itbd.halopsa.com`:
+
+1. **CSAT survey ticket types are `36`, `163`, `164`.** A client's monthly-feedback
+   tickets are split across these three `tickettype_id`s (for client 106 / Logically:
+   138 + 410 + 60 = 608 all-time). As established in the 2026-06-10 addendum, the
+   server-side `tickettype` filter on `/api/Tickets` is **ignored**, so you must keep
+   rows client-side by `tickettype_id ∈ {36,163,164}`.
+2. **`search="Monthly Feedback"` narrows the fetch cheaply.** The free-text `search`
+   IS honoured: `/api/Tickets?client_id=<id>&search=Monthly Feedback` returns ~7 pages
+   for Logically vs ~17 for an unfiltered client sweep, and still captures all CSAT-type
+   rows. This is the pattern `extract/halo.fetch_csat_tickets` uses.
+3. **The survey month is in the ticket summary, not a field.** Format:
+   `"Monthly Feedback for <Name> For The Month of <Month>"` (month case varies; some
+   tickets omit it, e.g. `"IT By Design Values Your Feedback"`). Parse the month name
+   from the summary and take the **year from `dateoccurred`** (correct the Dec→Jan wrap:
+   a "Month of December" survey is raised in early January). `build_csat_recon.py` falls
+   back to `dateoccurred`'s own month when the summary has no parseable month.
+4. **`accountmanagertech_name` / `regmanagertech_name` are on the Client detail.** They
+   carry the partner's Account Manager / Regional Manager (the `*tech` int variants are
+   the agent ids). The Site dimension is the client custom field **`CFAccountSite`**
+   (NDA/CDG/DL/PH); an **unset `CFAccountSite` returns the sentinel `-1`** (int), so
+   coerce to str and treat numeric values as "no site".
+5. **The TeamGPS response joins back by `ticket_id`.** A received CSAT (TeamGPS
+   `csat_comments`) carries the Halo `ticket_id` of the survey it answers — that is the
+   only reliable sent↔received join key.
+
+---
+
+_Last verified: 2026-06-18 against `https://itbd.halopsa.com`. Credentials are
 read-only; rotate the client secret if this document is shared._

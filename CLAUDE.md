@@ -39,6 +39,7 @@ python -m extract.build_all --only "Logically"  # build one partner (DO run via 
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
 python scripts/build_real_partners.py        # extra real Halo clients (writes their data/*.json)
 python scripts/build_overview.py             # rebuild data/_overview.json (the dashboard feed) from caches
+python scripts/build_csat_recon.py           # rebuild data/_csat_recon.json (CSAT Reconciliation view); reads _overview.json + hits Halo for sent-side CSAT tickets
 python scripts/audit_data.py                 # data-integrity audit (SIPs, AI, CSAT, last-call, transcript folders, feed)
 #  single-partner refresh: build_all --only <Name> -> build_all --reindex -> build_overview.py
 #  (refresh_exec_row.py is DEPRECATED — the dashboard is data-driven, no embedded array to refresh)
@@ -57,15 +58,25 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 
 ## Layout
 
-- `index.html` — Executive Overview + Partner 360 views (sidebar-switched). **Fully
-  data-driven: both views `fetch` `data/_overview.json` at runtime — there is NO
-  embedded partner array** (changed 2026-06-13; see changelog beta.8). Self-contained
-  inline `<style>` + `<script>`; does NOT load `styles.css` (gotcha 7) and no longer
-  uses Chart.js.
+- `index.html` — Executive Overview + Partner 360 + **CSAT Reconciliation** views
+  (sidebar-switched). **Fully data-driven: it `fetch`es `data/_overview.json` (Exec
+  Overview + Partner 360) and `data/_csat_recon.json` (CSAT Reconciliation, lazy on
+  first open) at runtime — there is NO embedded partner array** (changed 2026-06-13;
+  see changelog beta.8). Self-contained inline `<style>` + `<script>`; does NOT load
+  `styles.css` (gotcha 7). Uses Chart.js (vendored in `vendor/`) for the Exec-Overview
+  risk-ranking bars and the CSAT sent/received combo chart.
 - `data/_overview.json` — the dashboard feed, built by `scripts/build_overview.py`
   from `data/_index.json` + the per-partner `data/{slug}.json` caches (SIP totals,
   open/overdue action counts, real per-partner + portfolio NPS, CSAT split with sample
   size, honest call tone, themes, coverage window). Final step of the sync cycle.
+- `data/_csat_recon.json` — the CSAT Reconciliation feed, built by
+  `scripts/build_csat_recon.py` AFTER `build_overview.py`. Per DES/MDE partner and
+  per month it reconciles CSAT **sent** (Halo tickets, types 36/163/164, one ticket =
+  one sent; survey month from the ticket summary, year from `dateoccurred`) against
+  CSAT **received** (TeamGPS responses in the `data/{slug}.json` caches, joined by
+  `ticket_id`). Carries per-row Account Manager / Regional Manager / Site (Halo
+  `accountmanagertech_name` / `regmanagertech_name` / `CFAccountSite`) so the view can
+  re-group client-side. Published to Firestore as the single doc `meta/csatRecon`.
 - `partner.html` + `partner.js` — per-partner drilldown (`?partner=<slug>`), fetches
   `data/{slug}.json` at runtime. Styled by `styles.css` (which `index.html` does
   NOT load — gotcha 7); Chart.js vendored in `vendor/`. **Unchanged by the beta.8 redesign.**
@@ -86,7 +97,7 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   but nothing in the UI calls it.
 - **Cloud pipeline (NEW 2026-06-16, see `docs/Cloud-Pipeline-SOP.md`)** — the cycle
   (pull_graph_transcripts --write → build_all → build_real_partners → build_all
-  --reindex → build_overview → **upload_firebase_data.py**) runs unattended as a
+  --reindex → build_overview → build_csat_recon → **upload_firebase_data.py**) runs unattended as a
   **Cloud Run Job** (`partnerpulse-nightly`) on a **Cloud Scheduler** trigger at
   **21:00 America/New_York**. Entrypoint `scripts/cloud_sync.py`; image from
   `Dockerfile`; secrets from Secret Manager (`scripts/seed_secrets.py`); `data/` +
@@ -105,7 +116,10 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 - `scripts/` — operational entry points; they sys.path-shim the repo root, run them
   from anywhere. New one-off scripts go here, library code goes in `extract/`.
   `build_overview.py` builds the dashboard feed `data/_overview.json` from the caches
-  (the final sync step; honours the demo allowlist — see gotcha 8). `audit_data.py` is
+  (honours the demo allowlist — see gotcha 8). `build_csat_recon.py` builds the CSAT
+  Reconciliation feed `data/_csat_recon.json` (runs after `build_overview.py`; reads its
+  partner set, then hits Halo for the sent-side CSAT tickets + AM/RM/Site per client).
+  `audit_data.py` is
   a data-integrity audit (run after a sync) flagging uncounted SIPs, missing AI, empty
   CSAT, stale/absent last-call, unmatched transcript folders, and feed/index mismatch;
   allowlist-aware. `refresh_exec_row.py` is DEPRECATED (no-op against the data-driven

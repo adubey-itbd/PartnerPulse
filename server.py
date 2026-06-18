@@ -57,6 +57,9 @@ SYNC_STEPS = [
     {"id": "overview",
      "label": "Operational-intelligence feed (data/_overview.json ← caches)",
      "cmd": [sys.executable, str(ROOT / "scripts" / "build_overview.py")]},
+    {"id": "csat-recon",
+     "label": "CSAT reconciliation feed (data/_csat_recon.json ← Halo + caches)",
+     "cmd": [sys.executable, str(ROOT / "scripts" / "build_csat_recon.py")]},
 ]
 
 # Live-activity translation: the build scripts emit one tagged stderr line per

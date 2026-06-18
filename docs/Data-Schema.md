@@ -125,6 +125,50 @@ This is the shape the Exec Overview renders and the shape published to Firestore
 
 ---
 
+## 4b. The CSAT Reconciliation feed (`data/_csat_recon.json` → Firestore)
+
+Built by `scripts/build_csat_recon.py` AFTER `build_overview.py` (it reads the
+overview's partner set, already demo-allowlist filtered). Powers the CSAT
+Reconciliation view in `index.html`. **Source→field provenance:**
+
+| Field | Source |
+|---|---|
+| CSAT **sent** (per month) | HaloPSA tickets, `tickettype_id ∈ {36,163,164}` ("DES CSAT Monthly"), one ticket = one sent. Month parsed from the ticket summary ("…For The Month of May"); year from `dateoccurred` (`extract/halo.fetch_csat_tickets`). |
+| CSAT **received** (per month) | TeamGPS responses (the `data/{slug}.json` `csat_comments`), joined to a sent ticket by `ticket_id` and attributed to that sent ticket's month (distinct answered tickets, so received ≤ sent). |
+| CSAT **% positive** (per month) | Of the matched responses, `positive ÷ rated` (rated = Positive+Neutral+Negative ratings on `csat_comments`). The satisfaction score, distinct from the response rate. |
+| Account Manager / Regional Manager | Halo client `accountmanagertech_name` / `regmanagertech_name`. |
+| Site | Halo client custom field `CFAccountSite` (NDA/CDG/DL/PH; the `-1` sentinel and stray numeric ids → "—"). |
+| Partner roster | `data/_overview.json` partners (= Halo `CFMDERAG ≥ 1`, demo-allowlist applied). |
+
+```jsonc
+{
+  "generated_at", "as_of",
+  "ticketTypes": [36, 163, 164],
+  "period": { "start": "2026-01", "end": "2026-06",
+              "months": [ { "key": "2026-01", "label": "Jan 2026" }, … ] },
+  "totals": { "partners", "partnersWithSent", "sent", "received",
+              "responseRate",          // received ÷ sent, %
+              "positive", "rated", "csatPct",   // CSAT satisfaction: positive ÷ rated, %
+              "respondedNoMatch" },    // in-window responses whose ticket_id matches no in-window sent survey
+  "byMonth": [ { "key", "label", "sent", "received", "pos", "rated",
+                 "rate",   // response rate %
+                 "csat" } ],           // CSAT % positive
+  "rows": [ {
+      "partner", "slug", "accountManager", "regionalManager", "site",
+      "months": { "2026-01": { "sent", "received", "pos", "rated" }, … },
+      "total":  { "sent", "received", "pos", "rated" }
+  } ]
+}
+```
+
+Window = Jan of the current year → current month (`PARTNERPULSE_ASOF=YYYY-MM-DD`
+override, same as `build_overview.py`). The view re-groups `rows` by
+Partner/AM/RM/Site and re-buckets months→quarters client-side. Read via
+`window.PP_AUTH.loadCsatRecon()` (Firestore `meta/csatRecon` in prod,
+`data/_csat_recon.json` on localhost).
+
+---
+
 ## 5. Cloud Firestore (where it's stored for serving)
 
 Published by `scripts/upload_firebase_data.py`. **Sharded** so no single doc
@@ -135,6 +179,7 @@ trailing docs and removes partners no longer in the feed).
 
 ```
 meta/overview                     ← { generated_at, as_of, coverage, portfolio }     (from _overview.json)
+meta/csatRecon                    ← the whole _csat_recon.json feed (single doc)     → CSAT Reconciliation view
 partners/{slug}                   ← the per-partner SUMMARY object (the feed's partners[] entry) → Exec Overview
 partners/{slug}/detail/profile    ← { meta, client, ai, csat_stats, nps_stats }      (from {slug}.json)
 partners/{slug}/transcripts/{i}   ← one doc per transcript        (blob.transcripts)

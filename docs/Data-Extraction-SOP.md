@@ -184,6 +184,21 @@ CSAT reviews provide ticket-level feedback from end users on completed service r
 }
 ```
 
+### 2b. CSAT Reconciliation — sent (HaloPSA) vs received (TeamGPS)
+
+The TeamGPS `/csat/` data above is the **received** side. The **sent** side is
+HaloPSA: ITBD's "DES CSAT Monthly" team raises one survey ticket per recipient per
+month (`tickettype_id ∈ {36,163,164}`). `extract/halo.fetch_csat_tickets(client_id)`
+fetches them (narrow with `search="Monthly Feedback"`, then filter by type — the
+server type filter is ignored; see HaloPSA-API-SOP addendum 2026-06-18), parsing the
+survey month from the ticket summary ("…For The Month of May") with the year from
+`dateoccurred`. `scripts/build_csat_recon.py` joins the two by **`ticket_id`** (a
+survey counts as *received* once it gets any response — distinct answered tickets, so
+the rate never exceeds 100%) and rolls them up per partner / month, plus Account
+Manager (`accountmanagertech_name`), Regional Manager (`regmanagertech_name`) and Site
+(`CFAccountSite`), into `data/_csat_recon.json` (the CSAT Reconciliation view). It runs
+after `build_overview.py` and reads its (allowlist-applied) partner set.
+
 ---
 
 ## 3. Net Promoter Score (NPS) — TeamGPS

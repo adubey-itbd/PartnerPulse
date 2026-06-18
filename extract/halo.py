@@ -97,6 +97,8 @@ def clean_html(raw: str) -> str:
 _CF_KEYS = {
     "CFCancelationRisk", "CFMDERAG", "CFHealthReason", "CFNextStep",
     "CFSIPTicketMDE", "CFProduct",
+    # CSAT-reconciliation Site dimension (RAG tab): NDA / CDG / DL / PH.
+    "CFAccountSite",
 }
 
 
@@ -291,6 +293,44 @@ def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
         else:
             open_n += 1
     return {"open": open_n, "closed": closed_n}
+
+
+# --- Monthly CSAT survey tickets (the "sent" side of CSAT reconciliation) ----
+# ITBD's "DES CSAT Monthly" team raises one ticket per recipient per month; each
+# is one CSAT *sent*. They live under three ticket types and their summary embeds
+# the survey month ("Monthly Feedback for <Name> For The Month of <Month>"). As
+# with SIPs (type 99) there is NO working server-side tickettype filter, but the
+# free-text `search` IS honoured and narrows a client's tickets to the CSAT ones
+# cheaply (~7 pages vs ~17 for a full sweep), so we search then keep the rows whose
+# `tickettype_id` is one of the CSAT types. The TeamGPS response (the "received"
+# side) joins back to these by `ticket_id` — see scripts/build_csat_recon.py.
+CSAT_TICKET_TYPE_IDS = {36, 163, 164}
+_CSAT_SEARCH = "Monthly Feedback"
+
+
+def fetch_csat_tickets(client_id: int) -> list:
+    """All monthly-CSAT survey tickets raised for a client, across all time.
+
+    Returns list of {id, tickettype_id, summary, dateoccurred}. De-duplicated by
+    id. The caller parses the survey month from the summary and windows by year
+    (the summary month + dateoccurred year — see build_csat_recon)."""
+    seen = {}
+    for page in range(1, 30):
+        rows = _rows(get("Tickets", client_id=client_id, search=_CSAT_SEARCH,
+                         page_size=100, page_no=page, pageinate="true"))
+        if not rows:
+            break
+        for r in rows:
+            if r.get("tickettype_id") in CSAT_TICKET_TYPE_IDS:
+                seen[r.get("id")] = {
+                    "id": r.get("id"),
+                    "tickettype_id": r.get("tickettype_id"),
+                    "summary": r.get("summary") or "",
+                    "dateoccurred": r.get("dateoccurred"),
+                }
+        if len(rows) < 100:        # short page => last page for this client
+            break
+    return list(seen.values())
 
 
 # --- Users -> emails / domains ----------------------------------------------

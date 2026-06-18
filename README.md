@@ -33,6 +33,7 @@ python -m extract.build_partner "Logically"  # build a single partner
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
 python scripts/build_real_partners.py        # pull the extra real Halo clients (writes their data/*.json)
 python scripts/build_overview.py             # build data/_overview.json (the dashboard feed) from the caches
+python scripts/build_csat_recon.py           # build data/_csat_recon.json (CSAT Reconciliation view) from _overview.json + Halo
 python server.py                             # serve the dashboard at http://localhost:8000
 ```
 
@@ -58,6 +59,9 @@ scripts/                      operational entry-point scripts
   build_overview.py           roll the caches up into data/_overview.json — the feed the
                               dashboard fetches (SIP/action/NPS rollups, coverage window).
                               Honours data/_demo_roster.json (allowlist) when present.
+  build_csat_recon.py         build data/_csat_recon.json — the CSAT Reconciliation view:
+                              monthly CSAT sent (Halo tickets 36/163/164) vs received
+                              (TeamGPS, joined by ticket_id), per partner/AM/RM/Site.
   audit_data.py               data-integrity audit across partners (uncounted SIPs,
                               missing AI, empty CSAT, stale last-call, unmatched
                               transcript folders, feed integrity); allowlist-aware
@@ -74,7 +78,8 @@ scripts/                      operational entry-point scripts
                               meeting -> transcript fetch; GRAPH_* creds from .env)
 
 index.html                    AI-Driven Operational Intelligence — Executive Overview +
-                              Partner 360, data-driven (fetches data/_overview.json)
+                              Partner 360 + CSAT Reconciliation, data-driven
+                              (fetches data/_overview.json + data/_csat_recon.json)
 partner.html / partner.js     per-partner detail (?partner=slug): Overview, AI Insights,
                               Action Tracker, CSAT & NPS, Transcripts, Service Decks
 feedback.html                 PUBLIC, ungated feedback form (shareable link); writes the

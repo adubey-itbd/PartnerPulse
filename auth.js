@@ -54,6 +54,7 @@
       mode: "dev",
       ready: function () { return Promise.resolve(null); },
       loadOverview: function () { return jget("_overview.json"); },
+      loadCsatRecon: function () { return jget("_csat_recon.json"); },
       loadPartner: function (slug) { return jget(slug + ".json"); },
       lastSyncStamp: function () {
         return jget("_index.json").then(function (ix) {
@@ -370,6 +371,13 @@
         var data = Object.assign({}, r[1].exists ? r[1].data() : {});
         names.forEach(function (n, i) { data[SECTIONS[n]] = docs(r[i + 2]); });
         return data;
+      });
+    },
+
+    // CSAT Reconciliation view: the whole feed lives in a single meta doc.
+    loadCsatRecon: function () {
+      return firebase.firestore().doc("meta/csatRecon").get().then(function (s) {
+        return s.exists ? s.data() : null;
       });
     },
 

@@ -6,6 +6,86 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — New dashboard view: CSAT Reconciliation (sent vs received) (2026-06-18)
+
+A third sidebar view in `index.html`, below Partner 360, reconciles the monthly DES/MDE
+CSAT surveys ITBD **sends** (HaloPSA) against the responses **received** (TeamGPS),
+per partner and per month, in the same claymorphic-lavender theme as the rest of the
+dashboard. Headline (current run): **1,201 sent / 852 received = 70.9% response rate**
+across 82 partners, window **Jan–Jun 2026**.
+
+### Added
+- **`extract/halo.py` — `fetch_csat_tickets(client_id)`** pulls a client's monthly-CSAT
+  survey tickets (the "sent" side). As with SIPs, Halo has no working server-side
+  `tickettype` filter, so it narrows with the free-text `search="Monthly Feedback"`
+  (honoured) and keeps rows whose `tickettype_id` is one of the CSAT types
+  **`{36, 163, 164}`** (`CSAT_TICKET_TYPE_IDS`) — ~7 pages vs ~17 for a full sweep.
+  `CFAccountSite` was added to `_CF_KEYS` so the Site dimension comes through the
+  existing client-detail path.
+- **`scripts/build_csat_recon.py`** — new aggregator that writes **`data/_csat_recon.json`**.
+  It mirrors the dashboard's partner set (reads `data/_overview.json`, already
+  demo-allowlist filtered), and per partner: takes the client_id + responses from the
+  `data/<slug>.json` cache, fetches the sent tickets + AM/RM/Site from Halo, parses each
+  sent survey's **month from the ticket summary** ("…For The Month of May") with the
+  **year from `dateoccurred`** (Dec→Jan wrap corrected), and joins responses to sent
+  tickets by **`ticket_id`** (each received is attributed to its sent ticket's month, so
+  sent and received line up). Window = Jan of the current year → current month
+  (`PARTNERPULSE_ASOF` override, same as `build_overview.py`). Per-row Account Manager
+  (`accountmanagertech_name`), Regional Manager (`regmanagertech_name`) and Site
+  (`CFAccountSite`) let the view re-group the same numbers client-side. `respondedNoMatch`
+  = in-window responses whose `ticket_id` matches no in-window sent survey.
+- **`index.html` — "CSAT Reconciliation" view** (nav item + section + JS): 6 KPI cards
+  (DES/MDE partners, sent, received, response rate, **CSAT % positive**,
+  responded-w/o-sent-match), a Chart.js combo (sent/received bars + **two** lines:
+  response rate and CSAT % positive), and a Breakdown pivot table with
+  **Partner / Account Manager / Regional Manager / Site** grouping, **Monthly / Quarterly**
+  period, **Sent-Received / Response-rate / CSAT %** metric toggles, and a row filter.
+  Loads lazily on first open via the new `PP_AUTH.loadCsatRecon()`.
+- **CSAT % positive** (the satisfaction score, `positive ÷ rated responses`) added to the
+  feed per partner / month (`pos`, `rated` per cell; `csat` per month; `csatPct` in totals)
+  and surfaced as a KPI, a chart line, and a Breakdown metric. Distinct from the response
+  rate: a survey counts as *received* once it gets any response (distinct answered tickets,
+  so received ≤ sent), while CSAT % rates the sentiment of those responses.
+- **Breakdown "CSAT %" mode now shows the response rate alongside it** — each cell
+  stacks a labelled **CSAT** %-positive badge and an **RR** response-rate badge, so
+  satisfaction can be read against how many actually responded. (The "Sent / Received"
+  and "Response rate" modes are unchanged.)
+- **Typography polish:** enabled `-webkit-font-smoothing: antialiased` /
+  `text-rendering: optimizeLegibility` on `body`, and switched the Breakdown table to
+  **tabular figures** with lighter, cleaner numeric cells (was the heavy display font) so
+  the dense sent/received/% columns read cleanly and align.
+- **Published to production:** wrote the `meta/csatRecon` Firestore doc and ran
+  `firebase deploy --only hosting` so the view is live.
+
+### Fixed
+- **CSAT Reconciliation showed "No data yet" in production** for returning users.
+  `index.html` is served `no-cache` (always fresh) but `auth.js` is cached
+  `max-age=3600`, so a returning user loaded the new HTML against a stale cached
+  `auth.js` that lacked `loadCsatRecon` → the method was undefined and the view fell
+  back to its empty state. Fixed by making the always-fresh `index.html` self-sufficient:
+  `loadReconData()` uses `PP_AUTH.loadCsatRecon` when present, else reads `meta/csatRecon`
+  directly via the Firebase SDK (prod) or fetches the local JSON (dev). No dependency on
+  the cached `auth.js` revision.
+- **Prevented the whole class of drift:** `firebase.json` now serves the bootstrap files
+  `auth.js` + `firebase-config.js` with `Cache-Control: no-cache` (a new, more-specific
+  header rule that overrides the generic `**/*.@(js|css)` `max-age=3600`). The data/auth
+  layer is now always as fresh as the no-cache HTML that loads it, so a future `auth.js`
+  change can't leave returning users on a stale revision. Other JS/CSS keep the 1-hour
+  cache. Verified live: `auth.js`/`firebase-config.js` → `no-cache`, `partner.js`/`styles.css`
+  → `max-age=3600`. (The doc was written surgically
+  rather than via a full `upload_firebase_data.py` run, to avoid overwriting prod's
+  partner tree with local caches; the nightly Cloud Run Job — once its image carries the
+  new `build_csat_recon.py` step — refreshes `meta/csatRecon` going forward.)
+- **`auth.js` — `loadCsatRecon()`** returns the feed: Firestore `meta/csatRecon` in prod,
+  `data/_csat_recon.json` on localhost (same two-runtimes-one-shape contract as
+  `loadOverview`).
+- **`scripts/upload_firebase_data.py`** publishes `data/_csat_recon.json` as the single
+  Firestore doc **`meta/csatRecon`** (written with the `meta/overview` sentinel batch).
+  The file is optional — its absence leaves the view empty; a corrupt file aborts the run.
+- **Sync cycle:** `build_csat_recon` added as a soft step after `build_overview` in both
+  `scripts/cloud_sync.py` (nightly Cloud Run Job) and `server.py` `SYNC_STEPS` (local).
+  A failure leaves the recon view stale but never blocks the core publish.
+
 ## [Unreleased] — AI prompt: cite CSAT as a percentage, not the raw count (2026-06-18)
 
 ### Fixed
