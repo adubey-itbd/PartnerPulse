@@ -103,7 +103,19 @@ def build_context(data: dict) -> str:
         )
 
     cs = data.get("csat_stats", {})
-    parts.append(f"\n## CSAT stats: {cs}")
+    _pos, _neu, _neg = cs.get("Positive", 0), cs.get("Neutral", 0), cs.get("Negative", 0)
+    _rated = _pos + _neu + _neg
+    _pos_pct = round(_pos / _rated * 100, 1) if _rated else 0
+    _neg_pct = round(_neg / _rated * 100, 1) if _rated else 0
+    parts.append(f"\n## CSAT (raw counts): {cs}")
+    # Pre-compute the percentage and tell the model to cite IT, not the raw count —
+    # the model otherwise misreads "Positive: 75" as "75% positive" (it is 97.4%).
+    parts.append(
+        f"## CSAT summary: {_pos_pct}% positive, {_neg_pct}% negative "
+        f"({_pos} positive / {_neg} negative / {_neu} neutral, of {_rated} rated reviews). "
+        f'IMPORTANT: when citing CSAT, quote the PERCENTAGE (e.g. "{_pos_pct}% positive"); '
+        f"the bare numbers above are review COUNTS, not percentages — never present a count as a percent."
+    )
     negs = [r for r in data.get("csat_comments", []) if r.get("rating") in ("Negative", "Neutral")]
     if negs:
         parts.append("Negative/neutral CSAT comments (most recent first):")

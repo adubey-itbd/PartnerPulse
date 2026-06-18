@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — AI prompt: cite CSAT as a percentage, not the raw count (2026-06-18)
+
+### Fixed
+- **CSAT now passed to the model as a pre-computed percentage.** `extract/ai.py:build_context`
+  previously fed only raw CSAT counts (`{'Positive': 75, ...}`), and the model misread
+  "Positive: 75" as "75% positive" when the true rate is 97.4%. The prompt now adds a
+  **`## CSAT summary`** line with the computed `% positive` / `% negative` and an explicit
+  instruction to cite the percentage (counts are labelled as counts). Verified on Community IT:
+  the driver evidence changed from "CSAT 75% positive" to "97.4% positive CSAT" (risk unchanged
+  at 25). NOTE: this changes `build_context` output, so every partner's `_input_hash` changes and
+  the next build re-scores all partners (the dashboard CSAT tile already showed the correct % —
+  it is computed from data, not the model).
+
 ## [Unreleased] — AI churn engine switched to Grok (`grok-4-1-fast-reasoning`) via Azure AI Foundry; cloud nightly back online (2026-06-18)
 
 The AI churn-analysis engine now runs on **Grok** — deployment `grok-4-1-fast-reasoning`
