@@ -31,7 +31,7 @@ Every doc in this repo, what it covers, and when a change obligates an update:
 
 Not documentation, but doc-adjacent — keep in sync when relevant:
 * `.env.example` (new secret/env var introduced) and `.gitignore` (new generated-file pattern).
-* **A new secret/env var also means:** add it to `scripts/seed_secrets.py` `SECRETS` and to the Cloud Run Job's `--set-secrets` (see `Cloud-Pipeline-SOP.md`). (The AI layer no longer needs a secret: as of 2026-06-18 churn analysis is Claude via the Claude Agent SDK, billed to the operator's Claude subscription through the local `claude` OAuth login — there is NO API key, no `azure-openai-key` secret, and `extract/ai.py` strips `ANTHROPIC_API_KEY` on import. The model is set by the `CLAUDE_MODEL` env var; do NOT set `ANTHROPIC_API_KEY`.)
+* **A new secret/env var also means:** add it to `scripts/seed_secrets.py` `SECRETS` and to the Cloud Run Job's `--set-secrets` (see `Cloud-Pipeline-SOP.md`). The AI engine is **Grok `grok-4-1-fast-reasoning`** via an Azure AI Foundry OpenAI-compatible endpoint, configured by `AI_BASE_URL` / `AI_API_KEY` / `AI_MODEL` (env/`extract/config.py`); the API key is the Secret Manager secret **`ai-api-key`** (was `azure-openai-key`/`AZURE_OPENAI_*`). A change of `AI_MODEL`/endpoint must update `extract/config.py`, `seed_secrets.py`, the Job's `--set-secrets`, and any AI-engine mention across the docs.
 * `firebase.json` / `.firebaserc` / `firestore.rules` / `firestore.indexes.json`, `firebase-config.js`, `auth.js` (Firebase deploy surface — keep `Firebase-Deploy-SOP.md` true).
 * `storage.rules` (GCS state-bucket access policy for the pipeline — keep `Cloud-Pipeline-SOP.md` true).
 * `Dockerfile` / `.dockerignore` / `.gcloudignore` (pipeline image — keep `Cloud-Pipeline-SOP.md` true).
@@ -135,18 +135,10 @@ code and every doc that states it must move together:
 12. **Firebase SDK + auth tags live in BOTH HTML heads (gotcha 7 extension).** The
    firebase-app/auth/firestore compat `<script>`s + `firebase-config.js` + `auth.js` are
    in `index.html` AND `partner.html`. Add to both or prod auth breaks on one page.
-13. **Refresh is now a MANUAL local cycle (changed 2026-06-18); the nightly Cloud Run Job
-   is retired.** The AI step is Claude via the Claude Agent SDK billed to the operator's
-   Claude subscription, and subscription auth is for individual interactive use — it cannot
-   legitimately bill from unattended cloud automation. So the cycle runs manually on a laptop:
-   `python -m extract.build_all` → `python scripts/build_overview.py` →
-   `python scripts/upload_firebase_data.py`. The nightly `partnerpulse-nightly` Cloud Run Job
-   / Cloud Scheduler trigger (`scripts/cloud_sync.py`) is retired and should be disabled by an
-   operator (`gcloud scheduler jobs pause …` / delete the Job) — that operator action is NOT
-   performed by code changes, so do not claim it is deleted, only that it is retired. The cloud
-   footprint is now Firebase Hosting + Cloud Firestore SERVING only. If the manual cycle's steps
-   change, update `server.py` `SYNC_STEPS` (local), `cloud_sync.py` (if it is ever revived), and
-   `Cloud-Pipeline-SOP.md` together.
+13. **Cloud pipeline = nightly Cloud Run Job** (`scripts/cloud_sync.py`): the same cycle
+   as the old sync button PLUS `upload_firebase_data.py`, with GCS state pull/push around
+   it. Changing the cycle's steps means updating `cloud_sync.py`, `server.py` `SYNC_STEPS`
+   (local), and `Cloud-Pipeline-SOP.md` together.
 14. **The public `feedback` collection is the ONLY client-writable Firestore path
    (added 2026-06-17).** `feedback.html` is intentionally **ungated** — it loads
    `firebase-config.js` + the firestore SDK but **NOT `auth.js`**, and writes auto-id docs

@@ -6,60 +6,55 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
-## [Unreleased] — AI churn layer swapped from Azure gpt-5.4 to Claude Agent SDK (subscription-billed); nightly Job retired (2026-06-18)
+## [Unreleased] — AI churn engine switched to Grok (`grok-4-1-fast-reasoning`) via Azure AI Foundry; cloud nightly back online (2026-06-18)
 
-The AI churn-analysis layer no longer calls Azure Foundry **gpt-5.4**. It now runs
-**Claude via the Claude Agent SDK**, billed to the operator's **Claude subscription
-(Pro/Max/Team/Enterprise)** through the local Claude Code OAuth login — **no API key,
-no cloud secret**. Because subscription auth is for individual, interactive use, the AI
-step now runs **manually on a laptop** and the unattended nightly Cloud Run Job is
-**retired**; the cloud footprint is **hosting + Firestore serving only**.
+The AI churn-analysis engine now runs on **Grok** — deployment `grok-4-1-fast-reasoning`
+— served through an **Azure AI Foundry OpenAI-compatible endpoint** using the plain
+**OpenAI SDK** (`from openai import OpenAI`, `base_url` + `api_key`), **not** the
+`AzureOpenAI` client. This replaces the original Azure `gpt-5.4` and reverts/replaces a
+short-lived Claude Agent SDK experiment from earlier the same day.
+
+**Why:** the org's `gpt-5.4` Azure deployment is type "Global Batch" (asynchronous,
+batch-only) and cannot serve the pipeline's synchronous per-partner calls. The
+`grok-4-1-fast-reasoning` deployment is "Global Standard" (synchronous), so it serves the
+per-partner requests directly over the OpenAI v1 surface.
 
 ### Changed
-- **`extract/ai.py` now drives Claude through `claude_agent_sdk`** (`query`,
-  `ClaudeAgentOptions`, `AssistantMessage`, `TextBlock`) instead of the Azure OpenAI
-  client. It runs one tool-free, non-interactive turn:
-  `ClaudeAgentOptions(model=config.CLAUDE_MODEL, system_prompt=SYSTEM, allowed_tools=[],
-  max_turns=1, setting_sources=[])`. Auth comes from the local Claude Code OAuth login
-  (`claude setup-token` / `claude login`); the `claude` CLI must be on `PATH`.
-- **Default model is `claude-sonnet-4-6`**, overridable via the **`CLAUDE_MODEL`** env var
-  (`extract/config.py CLAUDE_MODEL`). The `AZURE_OPENAI_*` constants are gone.
-- **The AI cache now keys on `_model`.** Cached results record `"_model":
-  "claude-sonnet-4-6"`, and `ai.analyze`'s cache-validity check now also compares
-  `_model`, so a model switch (including from the old gpt-5.4 caches) invalidates stale
-  results and re-scores cleanly. `CACHE_SCHEMA_VERSION` is unchanged (2) and the result
-  JSON shape is identical (`risk_score`, `risk_band`, `confidence`, `summary`,
-  `sentiment_trend`, `drivers[]`, `remediation[]`, `action_items[]`). Incremental
-  input-hash caching and graceful degradation (keep `_stale` prior result on AI outage)
-  are unchanged.
-- **Tolerant JSON parsing.** Claude via the Agent SDK returns plain text (no API
-  `response_format=json_object`), so `ai.py` parses via `_extract_json` — strip markdown
-  code fences, else grab the outermost `{...}` object.
-- **`requirements.txt`: `openai` replaced by `claude-agent-sdk`** (which needs the
-  `claude` CLI on `PATH`).
-- **`.env.example`: the Azure block is replaced** by a `CLAUDE_MODEL` note plus an
-  explicit "do not set `ANTHROPIC_API_KEY`" warning.
-- **Operating model.** The AI step runs **manually on a laptop**; the manual refresh cycle
-  is `python -m extract.build_all` → `python scripts/build_overview.py` →
-  `python scripts/upload_firebase_data.py`. Hosting + Firestore serving (`auth.js`,
-  `index.html`/`partner.html` via `window.PP_AUTH`) are unchanged — data is still
-  published to Firestore, now from a manual local build.
+- **`extract/config.py`** — replaced the `AZURE_OPENAI_*` constants with provider-neutral
+  AI config: `AI_BASE_URL` (`https://daku.services.ai.azure.com/openai/v1/`), `AI_API_KEY`
+  (Secret Manager / `.env` first, in-repo baked fallback for local dev), and `AI_MODEL`
+  (default `grok-4-1-fast-reasoning`).
+- **`extract/ai.py`** — now builds an `OpenAI` client from `config.AI_BASE_URL` +
+  `config.AI_API_KEY` (singleton) and makes a **synchronous** `chat.completions.create`
+  call with `response_format={"type": "json_object"}` and
+  `max_completion_tokens=8000`. `max_retries=5` because the deployment is rate-limited
+  (**50k TPM / 50 RPM**) — the SDK backs off on 429s. JSON is parsed via the tolerant
+  `_extract_json` helper (strips a stray code fence / leading reasoning token, else grabs
+  the outermost `{...}` object). The per-partner AI cache now records
+  `"_model": "grok-4-1-fast-reasoning"`, and the **cache-validity check additionally keys
+  on `_model`** (`cached_ai.get("_model") == config.AI_MODEL`), so a model switch
+  invalidates stale caches and re-scores cleanly. The result JSON shape is unchanged and
+  `CACHE_SCHEMA_VERSION` stays `2`.
+- **`scripts/seed_secrets.py`** — the secret entry changed from `azure-openai-key` to
+  `ai-api-key`.
+- **`.env.example`** — updated to document `AI_BASE_URL` / `AI_API_KEY` / `AI_MODEL`.
+- **Frontend (`index.html`, `partner.html`, `partner.js`)** — the visible
+  "Azure gpt-5.4" / "gpt-5.4" engine labels now read "Grok".
 
 ### Added
-- **`ANTHROPIC_API_KEY` is stripped from the environment on import** of `extract/ai.py`
-  (with a one-time stderr warning) so a stray key cannot silently route spend to
-  pay-as-you-go API billing instead of the subscription.
+- A new Secret Manager secret **`ai-api-key`** holding the Grok/Foundry key.
 
 ### Removed
-- **`scripts/seed_secrets.py`: the `azure-openai-key` Secret Manager entry was removed.**
-  The AI step needs no cloud secret.
+- The `AZURE_OPENAI_*` constants from `extract/config.py` and the `azure-openai-key`
+  entry from `scripts/seed_secrets.py`.
 
-### Retired (operator action required)
-- **The nightly automated Cloud Run Job (`partnerpulse-nightly`, Cloud Scheduler 21:00
-  America/New_York) is retired for data refresh** — the Agent SDK cannot legitimately bill
-  a personal subscription from unattended cloud automation. This change does **not** delete
-  it; operators should disable it (e.g. `gcloud scheduler jobs pause <job>` and/or delete
-  the Cloud Run Job).
+### Deployed
+- **Cloud nightly pipeline is fully online again** (not the "manual/retired" posture from
+  the reverted Claude experiment). The nightly Cloud Run Job `partnerpulse-nightly` and
+  Cloud Scheduler trigger `partnerpulse-nightly-trigger` remain **enabled**. Created the
+  `ai-api-key` secret, rebuilt the pipeline image, and updated the Cloud Run Job to inject
+  `AI_API_KEY` (from `ai-api-key`) plus `AI_BASE_URL` / `AI_MODEL` env, replacing the old
+  `AZURE_OPENAI_KEY` (from `azure-openai-key`).
 
 ## [Unreleased] — AI outage no longer zeroes scores; restore after Azure key revocation (2026-06-18)
 

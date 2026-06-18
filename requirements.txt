@@ -1,5 +1,5 @@
 # PartnerPulse extraction + AI engine
 requests>=2.31
 markitdown[pdf,docx,pptx]>=0.1.0   # .docx transcripts + PDF/PPTX deck conversion
-claude-agent-sdk>=0.2               # Claude churn analysis billed to the signed-in Claude subscription (no API key); needs the `claude` CLI on PATH
+openai>=1.40                        # AI churn analysis — Grok via Azure AI Foundry (OpenAI SDK, base_url + key)
 python-dotenv>=1.0                  # load .env for local runs

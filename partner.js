@@ -46,7 +46,7 @@
     }
     // Risk band is a deterministic function of the 0–100 score — SAME thresholds as
     // the Executive Overview (High ≥45 · ≥25 · Low). Display this, never the raw
-    // LLM risk_band, which mis-calibrated vs its own score (e.g. 63 → "Medium").
+    // the model's raw risk_band, which mis-calibrated vs its own score (e.g. 63 → "Medium").
     function bandFromScore(s) { return s >= 45 ? "High" : s >= 25 ? "Medium" : "Low"; }
     function sevClass(sev) {
         const s = (sev || "").toLowerCase();
@@ -198,12 +198,12 @@
                         <div class="risk-gauge-label">Churn Risk</div>
                     </div>
                     <div class="ai-banner-text">
-                        <div class="card-title" style="margin-bottom:8px;">Claude Executive Assessment</div>
+                        <div class="card-title" style="margin-bottom:8px;">Grok Executive Assessment</div>
                         <p style="color:var(--text-secondary);">${esc(ai.summary)}</p>
                         <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
                             <span class="badge badge-outline">Sentiment: ${esc(ai.sentiment_trend || "—")}</span>
                             <span class="badge badge-outline">Confidence: ${esc(ai.confidence || "—")}</span>
-                            <span class="badge badge-outline">Model: ${esc(ai._model || "claude-sonnet-4-6")}</span>
+                            <span class="badge badge-outline">Model: ${esc(ai._model || "grok-4-1-fast-reasoning")}</span>
                         </div>
                     </div>
                 </div>

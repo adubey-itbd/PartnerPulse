@@ -50,7 +50,8 @@ LAYER 1 — SOURCE SYSTEMS (live data we pull from)
 ─────────────────────────────────────────────
 LAYER 2 — INGESTION & CONNECTORS
 ─────────────────────────────────────────────
-• Build pipeline (Python: extract.build_all) — run manually on a laptop
+• Nightly cloud build pipeline (Python: extract.build_all) — runs unattended as a
+  Cloud Run Job on a Cloud Scheduler trigger (21:00 America/New_York)
 • MCP servers + MS Graph app registration + HaloPSA OAuth
 • markitdown — converts .docx/.vtt transcripts to text
 • Incremental sync: cached results reused when inputs unchanged
@@ -68,11 +69,11 @@ LAYER 3 — NORMALIZATION & FEATURE EXTRACTION
 ─────────────────────────────────────────────
 LAYER 4 — AI SCORING ENGINE  (the core)
 ─────────────────────────────────────────────
-• Claude churn analysis via the Claude Agent SDK
-  (subscription-billed; no API key — local Claude Code OAuth login)
+• Grok grok-4-1-fast-reasoning churn analysis
+  (Azure AI Foundry, OpenAI-compatible endpoint via the OpenAI SDK)
 • Outputs per partner: churn-risk score (0–100), top risk
   contributors, "why-it-changed" narrative, recommended actions
-• Cached/keyed by input hash + model to prevent run-to-run score drift
+• Cached/keyed by input hash to prevent run-to-run score drift
 • Tier breakpoints: Healthy / Watch / At-Risk / Critical
 
 ─────────────────────────────────────────────
@@ -99,12 +100,8 @@ LAYER 6 — WHAT PEOPLE SEE  (frontend)
 ## Demo talking points
 
 - **One-liner that lands:** *"It pulls from every system we already use — Halo,
-  TeamGPS, Teams calls, QuickBooks, SharePoint — and uses Claude to turn that into a
-  single churn-risk score per partner, with the reason it changed."*
-- **AI engine:** Claude via the Claude Agent SDK, billed to a Claude subscription (no
-  API key). The build pipeline runs manually on a laptop and publishes to Firestore
-  (the nightly cloud Job is retired as of 2026-06-18); the cloud footprint is Hosting +
-  Firestore serving only.
+  TeamGPS, Teams calls, QuickBooks, SharePoint — and uses AI to turn that into a single
+  churn-risk score per partner, with the reason it changed."*
 - **All data is real** — no synthetic/demo partners; running against live Halo clients.
 - **MCP connectors** (TeamGPS, QuickBooks, MS Graph) are the modern integration story —
   the impressive part for a technical audience.

@@ -1,44 +1,22 @@
-"""AI churn-analysis layer (Claude via the Claude Agent SDK).
+"""AI churn-analysis layer (Grok via Azure AI Foundry, OpenAI SDK).
 
-Runs Claude churn analysis against the **signed-in Claude subscription** — the
-local Claude Code / Agent SDK OAuth login (`claude setup-token` or `claude
-login`). There is **NO API key**: if `ANTHROPIC_API_KEY` is set it would silently
-route to pay-as-you-go API billing instead of the subscription, so this module
-strips it from the environment on import (with a one-time warning). Swapped from
-Azure Foundry gpt-5.4 on 2026-06-18 so the pipeline bills the operator's Claude
-plan when run manually on a laptop (the cloud nightly Job is retired — the SDK
-cannot bill a personal subscription from unattended cloud automation).
+Calls a Global Standard `grok-4-1-fast-reasoning` deployment over its synchronous
+OpenAI-compatible endpoint (`config.AI_BASE_URL` + `config.AI_API_KEY`, model
+`config.AI_MODEL`). Swapped from Azure Foundry gpt-5.4 on 2026-06-18 (that gpt-5.4
+deployment is Batch-only and can't serve synchronous per-partner calls).
 
 Consumes a partner's unified cache (the dict from build_partner.build) and returns
 structured churn insight: a risk score + band, the drivers behind it, proactive
 remediation, extracted action items, and sentiment trend. Designed to be merged
 back into the partner JSON under the `ai` key and rolled up on the portfolio view.
 """
-import asyncio
 import hashlib
 import json
-import os
 import re
-import sys
 
-from claude_agent_sdk import (
-    AssistantMessage,
-    ClaudeAgentOptions,
-    TextBlock,
-    query,
-)
+from openai import OpenAI
 
 from . import config
-
-# Subscription billing requires that no API key is present — it outranks the
-# OAuth/CLI login in the SDK's auth precedence and would bill API credits. Strip
-# it once, loudly, so a stray env var can't silently move spend off the plan.
-if os.environ.pop("ANTHROPIC_API_KEY", None) is not None:
-    sys.stderr.write(
-        "WARNING: ANTHROPIC_API_KEY was set; removing it for this process so "
-        "Claude analysis bills your Claude subscription (OAuth login), not the "
-        "pay-as-you-go API. Unset it in your environment to silence this.\n"
-    )
 
 # Bump when the cached-result shape/semantics change so old caches are invalidated
 # (a cached result whose `_schema_version` differs is treated as stale and re-run).
@@ -48,8 +26,27 @@ CACHE_SCHEMA_VERSION = 2
 _REQUIRED_KEYS = ("risk_score", "risk_band", "summary", "drivers",
                   "remediation", "action_items")
 
-# The Agent SDK runs Claude as a single, tool-free, non-interactive turn.
-_MAX_TURNS = 1
+# Network hardening for the OpenAI client. max_retries is generous because the Grok
+# deployment is rate-limited (50k TPM / 50 RPM) — the SDK backs off on 429s.
+_REQUEST_TIMEOUT_S = 120
+_MAX_RETRIES = 5
+# Reasoning model: give the completion enough room for reasoning + the JSON payload.
+_MAX_COMPLETION_TOKENS = 8000
+
+_client = None
+
+
+def _client_singleton() -> OpenAI:
+    global _client
+    if _client is None:
+        _client = OpenAI(
+            base_url=config.AI_BASE_URL,
+            api_key=config.AI_API_KEY,
+            timeout=_REQUEST_TIMEOUT_S,
+            max_retries=_MAX_RETRIES,
+        )
+    return _client
+
 
 SYSTEM = (
     "You are a churn-risk analyst for ITBD, a white-label NOC/helpdesk provider whose "
@@ -58,8 +55,7 @@ SYSTEM = (
     "service-review notes/decks, CSAT/NPS feedback, and the account team's own risk flags. "
     "Weigh recent signals over old ones, named-engineer complaints, unmet/ slipping action "
     "items, declining CSAT/NPS, and active SIPs/PIPs. Ignore raw ticket SLA volume. "
-    "Respond with STRICT JSON only, no prose, no markdown fences, matching the requested "
-    "schema exactly."
+    "Respond with STRICT JSON only, no prose, matching the requested schema exactly."
 )
 
 SCHEMA_HINT = """Return JSON with exactly these keys:
@@ -174,7 +170,7 @@ def _insufficient_data_result(input_hash: str) -> dict:
         "remediation": [],
         "action_items": [],
         "_insufficient_data": True,
-        "_model": config.CLAUDE_MODEL,
+        "_model": config.AI_MODEL,
         "_schema_version": CACHE_SCHEMA_VERSION,
         "_input_hash": input_hash,
     }
@@ -185,9 +181,9 @@ _OBJ_RE = re.compile(r"\{.*\}", re.S)
 
 
 def _extract_json(text: str) -> dict:
-    """Parse the model's reply into a dict. Claude via the Agent SDK returns plain
-    text (no API `response_format`), so be tolerant of stray code fences or a
-    leading sentence: strip fences, else grab the outermost {...} object."""
+    """Parse the model reply into a dict. response_format=json_object is honored by
+    the endpoint, but be tolerant of a stray fence / leading token from a reasoning
+    model: strip fences, else grab the outermost {...} object."""
     t = (text or "").strip()
     t = _FENCE_RE.sub("", t).strip()
     try:
@@ -199,41 +195,16 @@ def _extract_json(text: str) -> dict:
         raise
 
 
-async def _aquery(context: str) -> str:
-    """Run one tool-free Claude turn via the Agent SDK and return its text."""
-    opts = ClaudeAgentOptions(
-        model=config.CLAUDE_MODEL,
-        system_prompt=SYSTEM,
-        allowed_tools=[],
-        max_turns=_MAX_TURNS,
-        setting_sources=[],   # do NOT inherit the repo's CLAUDE.md / settings
-    )
-    chunks = []
-    async for msg in query(prompt=f"{SCHEMA_HINT}\n\n---\n{context}", options=opts):
-        if isinstance(msg, AssistantMessage):
-            for block in msg.content:
-                if isinstance(block, TextBlock):
-                    chunks.append(block.text)
-    return "".join(chunks)
-
-
-def _call_claude(context: str) -> str:
-    """Synchronous wrapper — build_all/build_real_partners call analyze() in a
-    plain loop, so spin a fresh event loop per partner."""
-    return asyncio.run(_aquery(context))
-
-
 def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
-    """Run Claude churn analysis for one partner. Returns the insight dict (with
-    an `_error` key if the call/parse failed).
+    """Run Grok churn analysis for one partner. Returns the insight dict (with an
+    `_error` key if the call/parse failed).
 
     Incremental: the LLM input (`build_context`) is hashed into `_input_hash`. When
-    `cached_ai` carries the same hash, the same model, and a valid prior result,
-    that result is reused verbatim — no Claude call. This makes a full rebuild skip
-    the expensive, score-drifting LLM call for any partner whose inputs are
-    unchanged. A change of `config.CLAUDE_MODEL` (or the old gpt-5.4 `_model`)
-    invalidates the cache so a model switch re-scores cleanly. Pass `force=True`
-    to override.
+    `cached_ai` carries the same hash, the same model, and a valid prior result, that
+    result is reused verbatim — no model call. This makes a full rebuild skip the
+    expensive, score-drifting LLM call for any partner whose inputs are unchanged. A
+    change of `config.AI_MODEL` invalidates the cache so a model switch re-scores
+    cleanly. Pass `force=True` to override.
     """
     context = build_context(data)
     input_hash = hashlib.sha256(context.encode("utf-8")).hexdigest()
@@ -241,7 +212,7 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
         cached_ai
         and cached_ai.get("_input_hash") == input_hash
         and cached_ai.get("_schema_version") == CACHE_SCHEMA_VERSION
-        and cached_ai.get("_model") == config.CLAUDE_MODEL
+        and cached_ai.get("_model") == config.AI_MODEL
         and not cached_ai.get("_error")
         and all(k in cached_ai for k in _REQUIRED_KEYS)
     )
@@ -253,9 +224,17 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
     if not _has_substantive_signal(data):
         return _insufficient_data_result(input_hash)
     try:
-        raw = _call_claude(context)
-        insight = _extract_json(raw)
-        insight["_model"] = config.CLAUDE_MODEL
+        resp = _client_singleton().chat.completions.create(
+            model=config.AI_MODEL,
+            messages=[
+                {"role": "system", "content": SYSTEM},
+                {"role": "user", "content": f"{SCHEMA_HINT}\n\n---\n{context}"},
+            ],
+            max_completion_tokens=_MAX_COMPLETION_TOKENS,
+            response_format={"type": "json_object"},
+        )
+        insight = _extract_json(resp.choices[0].message.content)
+        insight["_model"] = config.AI_MODEL
         insight["_input_hash"] = input_hash
         insight["_schema_version"] = CACHE_SCHEMA_VERSION
         return insight

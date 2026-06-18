@@ -1,55 +1,9 @@
 # Cloud Pipeline SOP — PartnerPulse
 
-> ### ⚠️ 2026-06-18 — Nightly automated pipeline RETIRED for data refresh
->
-> The AI churn-analysis layer was swapped from Azure Foundry gpt-5.4 to **Claude
-> via the Claude Agent SDK**, billed to the operator's **Claude subscription
-> (Pro/Max/Team/Enterprise) — no API key** (local Claude Code OAuth login;
-> `claude setup-token` / `claude login`). Subscription auth is licensed for
-> **individual, interactive use**, so the Agent SDK cannot legitimately bill a
-> personal subscription from **unattended cloud automation**. As a result the
-> nightly **Cloud Run Job (`partnerpulse-nightly`) + Cloud Scheduler trigger are
-> RETIRED for data refresh**.
->
-> **AI scoring + data refresh now run MANUALLY on a laptop** (signed in to Claude
-> Code). The manual cycle, run from the repo root:
->
-> ```bash
-> python -m extract.build_all          # Halo + TeamGPS + Claude churn analysis (incremental)
-> python scripts/build_overview.py     # rebuild data/_overview.json (dashboard feed)
-> python scripts/upload_firebase_data.py   # publish the sharded tree → Cloud Firestore
-> ```
->
-> **The cloud footprint is now HOSTING + Firestore SERVING ONLY** — Firebase
-> Hosting + Cloud Firestore + `auth.js` are unchanged; `index.html`/`partner.html`
-> still read via `window.PP_AUTH`; data is still published to Firestore by
-> `scripts/upload_firebase_data.py`, just run manually after a local build.
->
-> **Disable the schedule** (operator action — **NOT yet executed by this change**;
-> it only documents the intent):
->
-> ```bash
-> # Stop the nightly trigger from firing (reversible):
-> gcloud scheduler jobs pause partnerpulse-nightly-trigger --location=us-central1
-> # (Or fully decommission: delete the scheduler job and the Cloud Run Job.)
-> #   gcloud scheduler jobs delete partnerpulse-nightly-trigger --location=us-central1
-> #   gcloud run jobs delete partnerpulse-nightly --region=us-central1
-> ```
->
-> The historical, fully-cloud runbook is preserved below for reference — it is
-> **SUPERSEDED** by the manual cycle above and should not be used to (re)create
-> the nightly automation while AI is subscription-billed.
-
----
-
 How the data pipeline runs **fully in the cloud, unattended** — a nightly
 **Cloud Run Job** that rebuilds every partner and republishes Firestore, on a
 **Cloud Scheduler** trigger. No local machine, no manual "Sync Data" button
 (that was removed — see changelog 2026-06-16).
-
-> **SUPERSEDED (2026-06-18):** everything from here down describes the retired
-> nightly automation. The AI step now runs manually on a laptop (see the note at
-> the top of this file); the cloud is hosting + Firestore serving only.
 
 Project: **`operational-intelligence-ebe23`** · Region: **`us-central1`** (matches Firestore).
 
@@ -61,7 +15,7 @@ Cloud Scheduler  ── daily 21:00 America/New_York ──▶  Cloud Run Job: p
                                                             │
    1. pull state  ← gs://…-pipeline-state (data/ + Transcripts/)
    2. pull_graph_transcripts --write   (Microsoft Graph)
-   3. extract.build_all                (Halo + TeamGPS + Claude churn analysis, incremental)
+   3. extract.build_all                (Halo + TeamGPS + Grok, incremental)
    4. build_real_partners.py           (extra Halo clients)
    5. extract.build_all --reindex      (_index.json)
    6. build_overview.py                (_overview.json — dashboard feed)
@@ -71,14 +25,8 @@ Cloud Scheduler  ── daily 21:00 America/New_York ──▶  Cloud Run Job: p
 
 Secrets come from **Secret Manager**; Firestore/Storage auth is the job's
 **attached service account** (keyless — no JSON key files). State persistence
-keeps the AI cache (no score drift) and transcript history (Teams ~90-day
+keeps the Grok AI cache (no score drift) and transcript history (Teams ~90-day
 content retention). Steps 2–6 are continue-on-failure; 1/7/8 are hard.
-
-> **SUPERSEDED (2026-06-18):** step 3's AI scoring no longer runs in this Job —
-> Claude churn analysis is subscription-billed and runs manually on a laptop
-> (top-of-file note). There is **no `azure-openai-key` secret anymore** (it was
-> removed from `scripts/seed_secrets.py`); the diagram/commands below reflect the
-> retired gpt-5.4 design.
 
 ## Names (edit here if you rename anything)
 
@@ -91,7 +39,8 @@ content retention). Steps 2–6 are continue-on-failure; 1/7/8 are hard.
 | State bucket | `gs://operational-intelligence-ebe23-pipeline-state` |
 | Pipeline service account | `partnerpulse-pipeline@operational-intelligence-ebe23.iam.gserviceaccount.com` |
 | Scheduler job | `partnerpulse-nightly-trigger` |
-| Secrets | `halo-client-id`, `halo-client-secret`, `teamgps-api-key`, `graph-tenant-id`, `graph-client-id`, `graph-client-secret` (the AI `azure-openai-key` secret was REMOVED 2026-06-18 — Claude is subscription-billed, no cloud secret) |
+| Secrets | `halo-client-id`, `halo-client-secret`, `teamgps-api-key`, `ai-api-key`, `graph-tenant-id`, `graph-client-id`, `graph-client-secret` |
+| AI env vars (non-secret) | `AI_BASE_URL=https://daku.services.ai.azure.com/openai/v1/`, `AI_MODEL=grok-4-1-fast-reasoning` (set via `--set-env-vars`, not Secret Manager) |
 
 ## One-time setup
 
@@ -116,7 +65,7 @@ gcloud artifacts repositories create partnerpulse --repository-format=docker \
 
 # 3. Secrets (values loaded by scripts/seed_secrets.py — never echoed)
 pip install google-cloud-secret-manager   # once — the seeder needs the client lib
-python scripts/seed_secrets.py            # creates/updates the secrets above (no AI key — removed 2026-06-18)
+python scripts/seed_secrets.py            # creates/updates the 7 secrets above
 
 # 4. State bucket + seed with current local caches (run after a local build).
 #    Object Versioning is ON so a bad nightly run can be rolled back (see Rollback).
@@ -140,10 +89,8 @@ gcloud builds submit --tag $IMAGE
 gcloud run jobs create partnerpulse-nightly \
   --image=$IMAGE --region=$REGION --service-account=$SA \
   --task-timeout=3600 --max-retries=1 --memory=2Gi --cpu=2 \
-  --set-env-vars="STATE_BUCKET=$BUCKET" \
-  --set-secrets="HALO_CLIENT_ID=halo-client-id:latest,HALO_CLIENT_SECRET=halo-client-secret:latest,TEAMGPS_API_KEY=teamgps-api-key:latest,GRAPH_TENANT_ID=graph-tenant-id:latest,GRAPH_CLIENT_ID=graph-client-id:latest,GRAPH_CLIENT_SECRET=graph-client-secret:latest"
-#   (SUPERSEDED 2026-06-18: the AZURE_OPENAI_KEY=azure-openai-key:latest mapping was dropped —
-#    Claude churn analysis is subscription-billed and runs manually, not in this Job.)
+  --set-env-vars="STATE_BUCKET=$BUCKET,AI_BASE_URL=https://daku.services.ai.azure.com/openai/v1/,AI_MODEL=grok-4-1-fast-reasoning" \
+  --set-secrets="HALO_CLIENT_ID=halo-client-id:latest,HALO_CLIENT_SECRET=halo-client-secret:latest,TEAMGPS_API_KEY=teamgps-api-key:latest,AI_API_KEY=ai-api-key:latest,GRAPH_TENANT_ID=graph-tenant-id:latest,GRAPH_CLIENT_ID=graph-client-id:latest,GRAPH_CLIENT_SECRET=graph-client-secret:latest"
 
 # 8. Schedule it: 21:00 America/New_York (DST-aware → 9pm Eastern year-round)
 gcloud scheduler jobs create http partnerpulse-nightly-trigger \
@@ -221,13 +168,17 @@ next run. UI/rules rollback is in `docs/Firebase-Deploy-SOP.md` (Rollback).
   see new data on next load. `firebase deploy` is only for UI/rules changes.
 - **First run** seeds nothing new if step 4 already ran locally; subsequent runs
   are incremental off the bucket-persisted cache (fast, ~minutes).
-- **Cost:** Run Job a few min/day + Scheduler (free tier) + tiny bucket ≈ pennies/mo.
-  (SUPERSEDED 2026-06-18: the AI calls were the real cost under gpt-5.4; Claude
-  churn analysis is now subscription-billed and runs off-cloud, so the Job — if
-  re-enabled at all — only re-fetches Halo/TeamGPS/Graph.)
-- **Outstanding follow-ups:** the **Azure budget alert** follow-up is **moot as of
-  2026-06-18** — the gpt-5.4 resource is no longer used (AI is subscription-billed,
-  no per-token cloud spend to alert on). Two dashboard-side hardening items remain
-  open (tracked in
+- **AI engine:** **Grok `grok-4-1-fast-reasoning`** via the Azure AI Foundry
+  OpenAI-compatible endpoint (`AI_BASE_URL` + `AI_API_KEY` + `AI_MODEL`; OpenAI SDK,
+  not the AzureOpenAI client). **Rate limit: 50k TPM / 50 RPM** — a full re-score is
+  throttled, so the OpenAI client retries 429s with backoff (`_MAX_RETRIES` in
+  `extract/ai.py`). The incremental cache means a normal nightly run only re-scores
+  changed partners, staying well inside the limit. A model change (`AI_MODEL`)
+  invalidates the AI cache and forces a clean re-score.
+- **Cost:** Run Job a few min/day + Scheduler (free tier) + tiny bucket ≈ pennies/mo;
+  the Grok calls are the real cost and are cached/incremental.
+- **Outstanding follow-ups:** no **budget alert** is set on the Grok / Azure AI
+  Foundry resource — add a Cost Management budget so a full rebuild can't run up token
+  cost unnoticed. Two dashboard-side hardening items are also open (tracked in
   `Firebase-Deploy-SOP.md` "Outstanding follow-ups"): **Firebase App Check** and
   **MFA** on the `@itbd.net` sign-in are not yet enabled.

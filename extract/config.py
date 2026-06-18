@@ -57,12 +57,16 @@ TEAMGPS_API_KEY = _secret(
     "***REMOVED***",
 )
 
-# --- Claude churn analysis (Claude Agent SDK, subscription-billed) -----------
-# Swapped from Azure Foundry gpt-5.4 on 2026-06-18. The Agent SDK authenticates
-# through the local Claude Code OAuth login (`claude setup-token` / `claude
-# login`) and bills the operator's Claude subscription — there is NO API key.
-# `extract/ai.py` strips ANTHROPIC_API_KEY from the environment so a stray key
-# cannot silently route spend to pay-as-you-go API billing. Because subscription
-# auth is for individual interactive use, this runs MANUALLY on a laptop, not as
-# the (retired) unattended cloud nightly Job. Override the model with CLAUDE_MODEL.
-CLAUDE_MODEL = _env("CLAUDE_MODEL", "claude-sonnet-4-6")
+# --- AI churn analysis (Grok via Azure AI Foundry, OpenAI-compatible endpoint) ---
+# Synchronous chat-completions through the OpenAI SDK (NOT the AzureOpenAI client) —
+# base_url + API key. Swapped 2026-06-18: the org's `gpt-5.4` Azure deployment is
+# Batch-only (async, can't serve the per-partner synchronous calls), so the engine
+# uses a Global Standard `grok-4-1-fast-reasoning` deployment that serves synchronous
+# requests over the OpenAI v1 surface. Rate limits on this deployment: 50k TPM / 50 RPM
+# (a full re-score is throttled — the OpenAI client retries 429s with backoff).
+AI_BASE_URL = _env("AI_BASE_URL", "https://daku.services.ai.azure.com/openai/v1/")
+AI_API_KEY = _secret(
+    "AI_API_KEY",
+    "***REMOVED***",
+)
+AI_MODEL = _env("AI_MODEL", "grok-4-1-fast-reasoning")

@@ -93,7 +93,7 @@ def parse_activity(line: str, ctx: dict):
         return "syncing TeamGPS NPS (portfolio-wide fetch)"
     if "churn analysis" in line:
         partner = ctx.get("partner")
-        return (f"{partner}: " if partner else "") + "running AI churn analysis (Claude)"
+        return (f"{partner}: " if partner else "") + "running AI churn analysis (Grok)"
     if line.startswith("Reindexed"):
         return "portfolio index rebuilt"
     if line.startswith("Wrote") and "_overview" in line:

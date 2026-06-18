@@ -27,9 +27,7 @@ SECRETS = {
     "halo-client-id":      config.HALO_CLIENT_ID,
     "halo-client-secret":  config.HALO_CLIENT_SECRET,
     "teamgps-api-key":     config.TEAMGPS_API_KEY,
-    # No Claude secret: churn analysis now bills the operator's Claude subscription
-    # via the local Agent SDK login (run manually), not a cloud-stored API key
-    # (was "azure-openai-key" until the 2026-06-18 gpt-5.4 -> Claude swap).
+    "ai-api-key":          config.AI_API_KEY,
     "graph-tenant-id":     config._env("GRAPH_TENANT_ID"),
     "graph-client-id":     config._env("GRAPH_CLIENT_ID"),
     "graph-client-secret": config._env("GRAPH_CLIENT_SECRET"),

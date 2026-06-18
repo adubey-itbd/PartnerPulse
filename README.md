@@ -2,33 +2,25 @@
 
 Executive **partner-health & churn-risk dashboard** for ITBD (a white-label NOC/helpdesk
 provider). It consolidates every MSP partner into one portfolio view, scores churn risk with
-**Claude (via the Claude Agent SDK, billed to the operator's Claude subscription — no API key)**,
-and drills into per-partner detail: CSAT/NPS, service-review meeting notes, AI-extracted action
-items, call transcripts, and the converted service-review decks.
+**Grok `grok-4-1-fast-reasoning`** (via an Azure AI Foundry OpenAI-compatible endpoint), and
+drills into per-partner detail: CSAT/NPS, service-review meeting
+notes, AI-extracted action items, call transcripts, and the converted service-review decks.
 
 > ⚠️ **Private repo.** `extract/config.py` and the two SOP docs contain live API keys for
 > convenience. Rotate them before this ever goes public, and move them to a secret manager for
-> any real deployment. (The Claude AI layer uses NO API key — it bills your Claude subscription
-> via the local `claude` CLI OAuth login; do **not** set `ANTHROPIC_API_KEY`.)
+> any real deployment.
 
 ## Quick start (fresh Windows machine)
-
-**Prerequisite — Claude subscription auth:** the AI churn-analysis layer runs Claude through the
-Claude Agent SDK billed to your Claude subscription (Pro/Max/Team/Enterprise), with **no API key**.
-You need the **`claude` CLI on PATH** and a one-time OAuth login — run **`claude setup-token`** (or
-`claude login`) before building. Do **not** set `ANTHROPIC_API_KEY` (the pipeline strips it so it
-can't silently route spend to pay-as-you-go API billing).
 
 Download/extract the repo, then from a PowerShell prompt in the project folder:
 
 ```powershell
-claude setup-token                                   # one-time: authenticate your Claude subscription
 powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
 
 `setup.ps1` installs Python (via winget if missing), creates a `.venv`, installs dependencies,
-builds every partner's data + Claude churn analysis (~5 min; live Halo/TeamGPS calls + Claude on
-your subscription), then starts the dashboard and opens it at **http://localhost:8000/**.
+builds every partner's data + Grok churn analysis (~5 min, live API calls), then starts the
+dashboard and opens it at **http://localhost:8000/**.
 
 Useful flags: `-Rebuild` (force a fresh data build), `-Port 8080`, `-NoBrowser`.
 
@@ -54,8 +46,8 @@ extract/                      Python extraction + AI engine
                               meeting notes, attachment list + two-mode download
   teamgps.py                  TeamGPS CSAT (company filter) + NPS (local domain filter)
   transcripts.py              MarkItDown: .docx transcripts + PDF/PPTX decks -> Markdown
-  ai.py                       Claude churn analysis via the Claude Agent SDK — subscription-
-                              billed, no API key (risk, drivers, remediation)
+  ai.py                       Grok grok-4-1-fast-reasoning churn analysis via Azure AI Foundry
+                              OpenAI-compatible endpoint (OpenAI SDK) — risk, drivers, remediation
   build_partner.py            orchestrates one partner -> data/{slug}.json
   portfolio.py                derives portfolio aggregates from per-partner caches
   build_all.py                all partners + AI + data/_index.json roll-up
@@ -72,8 +64,7 @@ scripts/                      operational entry-point scripts
   cloud_sync.py               Cloud Run Job entrypoint: GCS state pull → full build cycle
                               → upload_firebase_data → state push (the nightly pipeline)
   upload_firebase_data.py     publish the sharded data tree → Cloud Firestore
-  seed_secrets.py             load Halo/TeamGPS/Graph keys → Secret Manager (no AI secret —
-                              Claude bills your subscription via the local `claude` CLI login)
+  seed_secrets.py             load Halo/TeamGPS/AI (ai-api-key)/Graph keys → Secret Manager
   refresh_exec_row.py         DEPRECATED — no-op against the data-driven dashboard
                               (kept for rollback; use build_overview.py instead)
   setup_graph_transcript_access.ps1   for IT: completes the Graph app-registration
@@ -126,5 +117,5 @@ loop. Secrets are in **Secret Manager**. See `docs/Data-Schema.md` (end-to-end d
 
 Outstanding:
 
-- **Rotate the reused API keys** (Halo/TeamGPS/Azure/Graph) in their source systems and
+- **Rotate the reused API keys** (Halo/TeamGPS/AI/Graph) in their source systems and
   publish new Secret Manager versions, then remove the in-repo `extract/config.py` fallbacks.

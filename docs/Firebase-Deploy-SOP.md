@@ -43,19 +43,16 @@ browser ──(email/password sign-in, verified @itbd.net)──▶ Firebase Hos
 
 public feedback form (feedback.html, NO sign-in) ──▶ Firestore `feedback` (create-only, validated)
 
-pipeline (local laptop) ──▶ scripts/upload_firebase_data.py ──▶ Firestore (Admin SDK, bypasses rules)
+pipeline (off-host) ──▶ scripts/upload_firebase_data.py ──▶ Firestore (Admin SDK, bypasses rules)
 ```
 
-The build pipeline (HaloPSA + TeamGPS + Graph + Claude churn analysis) runs **locally
-on a laptop** and the operator publishes the result to Firestore with
-`scripts/upload_firebase_data.py` (Admin SDK). **Changed 2026-06-18:** the AI step is
-now Claude via the **Claude Agent SDK**, billed to the operator's Claude subscription
-through the local Claude Code OAuth login (no API key) — subscription auth is for
-interactive use, so the **nightly Cloud Run Job is retired** for data refresh and the
-build runs manually (see `docs/Cloud-Pipeline-SOP.md`). The cloud footprint is now
-**Hosting + Firestore serving only**. There is **no in-app "Sync Data" button** — it
-was removed 2026-06-16; `refresh.js` only renders the "Last sync" stamp. `firebase
-deploy` ships the **UI and rules only** — never data.
+The build pipeline (HaloPSA + TeamGPS + Graph + Grok `grok-4-1-fast-reasoning`) runs **off-host as the
+nightly Cloud Run Job** (`scripts/cloud_sync.py`; see `docs/Cloud-Pipeline-SOP.md`).
+Each night it regenerates `data/*.json` then publishes the sharded Firestore tree
+via `scripts/upload_firebase_data.py`. There is **no in-app "Sync Data" button** —
+it was removed 2026-06-16 when the pipeline moved to the cloud; `refresh.js` now
+only renders the "Last sync" stamp. `firebase deploy` therefore ships the **UI and
+rules only** — never data.
 
 ## Files
 
@@ -72,10 +69,10 @@ deploy` ships the **UI and rules only** — never data.
 
 ## One-time setup
 
-0. **Rotate the live API keys** (Halo, TeamGPS, Graph) in `.env` /
+0. **Rotate the live API keys** (Halo, TeamGPS, AI/Grok, Graph) in `.env` /
    `extract/config.py`; move to Secret Manager. (Excluded from the deploy, but
-   they were committed — rotate anyway.) The AI layer no longer uses an Azure key —
-   it is Claude via the Agent SDK on the local Claude Code OAuth login, no API key.
+   they were committed — rotate anyway.) The AI key is the Secret Manager secret
+   `ai-api-key` (env `AI_API_KEY`) for the Grok endpoint at `daku.services.ai.azure.com`.
 1. Toolchain (done this session): `firebase-tools` installed, `firebase login`,
    `.firebaserc` set, `firebase-config.js` filled.
 2. In the console (Blaze):
@@ -110,23 +107,24 @@ Use `firebase hosting:channel:deploy preview` for a throwaway preview URL.
 
 ## Refreshing the data (NOT a deploy)
 
-Data is **not** part of `firebase deploy`. **Changed 2026-06-18:** the data is now
-refreshed by a **manual local build** rather than the nightly Cloud Run Job (which is
-retired — the Claude Agent SDK bills the operator's subscription and can't legitimately
-run unattended in the cloud; see `docs/Cloud-Pipeline-SOP.md`). Run the full cycle on a
-laptop, then publish to Firestore — signed-in users see the new data on next load:
+Data is **not** part of `firebase deploy`. Firestore is republished by the nightly
+**Cloud Run Job** (`partnerpulse-nightly` → `scripts/cloud_sync.py`, which ends in
+`scripts/upload_firebase_data.py`); signed-in users see the new data on next load.
+See `docs/Cloud-Pipeline-SOP.md`. To force an off-cycle refresh:
+
+```bash
+gcloud run jobs execute partnerpulse-nightly --region=us-central1
+```
+
+The publish step can also be run by hand (e.g. for an emergency fix outside the
+nightly window), authenticated with credentials that can write Firestore:
 
 ```powershell
-python -m extract.build_all                       # pull + Claude churn analysis (local, subscription-billed)
-python scripts/build_overview.py                  # rebuild the dashboard feed
 pip install google-cloud-firestore                # once
 gcloud auth application-default login             # once
 python scripts/upload_firebase_data.py --dry-run  # review the plan + counts
 python scripts/upload_firebase_data.py            # publish (idempotent, reconciled)
 ```
-
-(While the `partnerpulse-nightly` Cloud Run Job still exists it should be paused —
-e.g. `gcloud scheduler jobs pause …` — and is no longer the data-refresh path.)
 
 ## Verify
 
@@ -135,23 +133,32 @@ e.g. `gcloud scheduler jobs pause …` — and is no longer the data-refresh pat
   blocked by the rules) until the verification link is clicked.
 - Signed in as a verified `@itbd.net` → Overview (`meta/overview` + `partners/*`) and
   Partner 360 (`partners/<slug>` + subcollections) load.
-- Firestore console → `partners/<slug>/csat/0000` etc. populated by a manual
-  `upload_firebase_data.py` run.
+- Firestore console → `partners/<slug>/csat/0000` etc. populated by the nightly Job
+  (or a manual `upload_firebase_data.py` run).
 - `https://<site>/data/<anything>.json` → **404** (data isn't hosted statically).
 
 ## Add a partner (cloud)
 
-A partner reaches production through the (now manual, local) pipeline + Firestore,
-never by a deploy or a hand-edit:
+A partner reaches production through the nightly pipeline + Firestore, never by a
+deploy or a hand-edit:
 
 1. Add the partner in **code**: a `NEW` entry in `scripts/build_real_partners.py`
    (resolve the Halo client id first; `client_id=None` for a transcript-only
    partner with no Halo record) — or, for a registry partner, `extract/partners.py`.
 2. If a curated roster is in force, add the partner's **slug** to the allowlist
-   `data/_demo_roster.json` (otherwise the feed filters it out — gotcha 8).
-3. Run the **manual local build cycle** (`build_real_partners` → `build_all
-   --reindex` → `build_overview` → `upload_firebase_data`) on a laptop; the last step
-   publishes the new partner to Firestore (see "Refreshing the data" above).
+   `data/_demo_roster.json` (otherwise the feed filters it out — gotcha 8). In the
+   cloud this file lives in the GCS state bucket; update it there so it survives the
+   next run.
+3. Let the **nightly Cloud Run Job** pick it up — it runs the full cycle
+   (`build_real_partners` → `build_all --reindex` → `build_overview` →
+   `upload_firebase_data`) and publishes the new partner to Firestore. To see it
+   immediately, force a run: `gcloud run jobs execute partnerpulse-nightly
+   --region=us-central1`.
+
+The container only re-reads code on a fresh image, so if the partner list change is
+in code that the running image predates, **rebuild the image first**
+(`gcloud builds submit --tag …/pipeline:latest`; the Job picks up `:latest` next
+run) — see `docs/Cloud-Pipeline-SOP.md`.
 
 ## Rollback
 
@@ -164,17 +171,16 @@ never by a deploy or a hand-edit:
   a prior `data/`/`Transcripts/` snapshot can be restored
   (`gcloud storage cp --recursive gs://operational-intelligence-ebe23-pipeline-state
   …` of an earlier generation, or `gcloud storage ls -a` to list versions), then run
-  `python scripts/upload_firebase_data.py` to republish that snapshot. (With the
-  pipeline now manual/local, the laptop's own `data/`/`Transcripts/` is usually the
-  recovery source.) See `docs/Cloud-Pipeline-SOP.md` for the full state-bucket runbook.
+  `python scripts/upload_firebase_data.py` to republish that snapshot. See
+  `docs/Cloud-Pipeline-SOP.md` for the full state-bucket runbook.
 
 ## Gotchas
 
 - **gotcha 7 still applies** — Firebase app/auth/firestore SDK tags + `auth.js` +
   `firebase-config.js` are in BOTH `index.html` and `partner.html` heads.
-- **Data refresh = a manual local build + `upload_firebase_data.py` (the nightly Job
-  is retired, 2026-06-18), not a redeploy.** `firebase deploy` ships UI/rules only;
-  Firestore content changes live for signed-in users on next load.
+- **Data refresh = the nightly Job (or a manual `upload_firebase_data.py`), not a
+  redeploy.** `firebase deploy` ships UI/rules only; Firestore content changes live
+  for signed-in users on next load.
 - **Don't move data into the Hosting `public` set** — keep all data in Firestore
   behind the rules. (`firebase.json` already ignores `data/`, `extract/`, `scripts/`,
   `Transcripts/`, `docs/`, and every `*.py`/`*.md`.)
@@ -198,8 +204,9 @@ Security/ops hardening not yet done — track and close these:
 - **Multi-factor auth (MFA)** is not enforced on the email/password sign-in. The
   current gate is domain + email verification only; enabling MFA in the Identity
   Platform is the next step for an internal exec tool.
-- **AI spend** is now on the operator's **Claude subscription** (Claude Agent SDK, no
-  API key) — no Azure/OpenAI budget alert applies. The former Azure-OpenAI budget
-  follow-up is obsolete as of 2026-06-18.
-- **API-key rotation** (§0) is still owed — the keys were reused into Secret
-  Manager as-is on 2026-06-16, not rotated.
+- **Azure budget alert** for the Grok (`grok-4-1-fast-reasoning`) spend is not
+  configured — set a Cost Management budget + alert on the Azure AI Foundry resource
+  so a runaway/full rebuild can't silently rack up token cost. (The deployment is
+  rate-limited to 50k TPM / 50 RPM, which caps a single run.)
+- **API-key rotation** (§0) is still owed — the keys (incl. the Grok `ai-api-key`)
+  were reused into Secret Manager as-is, not rotated.

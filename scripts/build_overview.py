@@ -12,7 +12,7 @@ per-partner caches up into the fields those views need:
   - CSAT split with sample size + low-n flag, negative share
   - call tone with an honesty flag (toneConfident=false ⇒ render "No calls"), last-call
     date + days-since + a >60-day "stale" flag
-  - the Claude driver factors as `themes`, and the top driver text
+  - the Grok driver factors as `themes`, and the top driver text
   - a coverage window (service-review and feedback date ranges + snapshot date)
 
 Everything is derived from the same caches partner.html uses (data/_index.json +
@@ -100,7 +100,7 @@ def _derive_call_tone(trend, neg_share, risk, calls):
 
 
 def _reconcile_trend(ai_trend, risk, tone):
-    """The Claude sentiment_trend can contradict the hard signals — it never emits
+    """The Grok sentiment_trend can contradict the hard signals — it never emits
     "Declining" and sometimes tags a high-risk/negative account "Improving" (e.g.
     Proda 72/Negative). Reconcile so the displayed trend can never read better than
     risk + tone warrant."""
@@ -207,7 +207,7 @@ def build_partner(slug, idx_row):
     trend = _reconcile_trend(ai_trend, risk, tone)
     drivers = ai.get("drivers") or []
     top_driver = drivers[0].get("factor") if drivers else (idx_row.get("summary") or "")
-    # themes == the Claude driver factors, first 4 — identical to index.html's embedded
+    # themes == the Grok driver factors, first 4 — identical to index.html's embedded
     # array, so the Voice-of-partner section renders the same content as the live dashboard.
     themes = [dr.get("factor") for dr in drivers if dr.get("factor")][:4]
 

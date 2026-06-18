@@ -286,7 +286,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
             <div class="data-source-row"><span class="status-dot ok"></span> HALO PSA</div>
             <div class="data-source-row"><span class="status-dot ok"></span> TeamGPS · CSAT/NPS</div>
             <div class="data-source-row"><span class="status-dot ok"></span> Transcripts &amp; Decks</div>
-            <div class="data-source-row"><span class="status-dot ai"></span> Claude · churn analysis</div>
+            <div class="data-source-row"><span class="status-dot ai"></span> Grok · churn analysis</div>
             <div class="data-sources-title" style="margin-top:16px;">Data</div>
             <div class="data-source-row" id="feed-stamp" style="font-size:0.74rem;">loading…</div>
             <a class="nav-link" href="feedback.html" target="_blank" rel="noopener" style="margin-top:14px;">
@@ -311,7 +311,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 <div class="data-window" id="data-window"></div>
             </div>
             <div class="header-badges">
-                <span class="badge badge-info">Claude</span>
+                <span class="badge badge-info">Grok</span>
             </div>
             <span class="sync-stamp" id="sync-stamp"></span>
         </header>
@@ -424,7 +424,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">Recurring themes across partners</h2>
-                        <div class="card-subtitle">Claude theme tags aggregated over the filtered partners · click any theme to reveal — and open — the partners behind it</div>
+                        <div class="card-subtitle">Grok theme tags aggregated over the filtered partners · click any theme to reveal — and open — the partners behind it</div>
                     </div>
                 </div>
                 <div class="recurring-grid">
@@ -513,7 +513,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
             return da.toLocaleDateString("en-US", { month: "short" }) + " – " + db.toLocaleDateString("en-US", { month: "short", year: "numeric" });
         return fmtMonYr(a) + " – " + fmtMonYr(b);
     }
-    // Theme classifier — maps each Claude driver factor to a canonical theme + polarity.
+    // Theme classifier — maps each Grok driver factor to a canonical theme + polarity.
     const THEME_RULES = [
         ["Healthy / no active escalations", "positive", ["no active churn", "no escalation", "no recent escalation", "no concerns", "no detractors", "low churn", "on track", "no service complaints", "no reported escalations", "no planned escalation", "well managed", "remains healthy", "improving operational", "relationship as healthy"]],
         ["Named-engineer performance & quality", "concern", ["performance", "underperforming", "quality", "reliability", "coverage", "consistency", "follow-through", "troubleshooting", "end-to-end ownership", "growth in", "dissatisfaction", "residual risk"]],
@@ -611,7 +611,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         }).join("");
         wireRowClicks(tb);
         $("filter-count").textContent = `${rows.length} of ${partners.length} partners shown`;
-        $("table-foot").innerHTML = "<b>SIP</b>: active Service Improvement Plans (open/closed). <b>Action Driver</b>: open service-review actions with an overdue count. Call tone is derived from sentiment trend + negative share, muted to “No calls” where none were analysed and flagged “stale” when the last call is &gt;60 days old. Sentiment from TeamGPS CSAT (NPS where unavailable); churn risk, top driver and themes from Claude; SIPs and action items from HaloPSA.";
+        $("table-foot").innerHTML = "<b>SIP</b>: active Service Improvement Plans (open/closed). <b>Action Driver</b>: open service-review actions with an overdue count. Call tone is derived from sentiment trend + negative share, muted to “No calls” where none were analysed and flagged “stale” when the last call is &gt;60 days old. Sentiment from TeamGPS CSAT (NPS where unavailable); churn risk, top driver and themes from Grok; SIPs and action items from HaloPSA.";
     }
 
     function renderBacklog() {

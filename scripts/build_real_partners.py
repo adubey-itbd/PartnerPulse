@@ -3,7 +3,7 @@
 Runs the same extraction as extract.build_partner (Halo client fields + SIP
 counts + service-review meeting notes + TeamGPS CSAT/NPS + local .docx
 transcripts when a matching Transcripts/{Partner}/ folder exists) then the
-Claude churn analysis (extract.ai). Service-deck attachments (PDF/PPTX) on the
+Grok churn analysis (extract.ai). Service-deck attachments (PDF/PPTX) on the
 review tickets are converted to Markdown like the registry path (added
 2026-06-12 — previously skipped, which left every extras partner with an empty
 Service Decks tab). Deck conversion and transcript ingestion need markitdown;
@@ -275,7 +275,7 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=
         "historical_calls": historical_calls,
         "action_items": [], "decks": decks, "transcripts": tx,
     }
-    # Reuse cached AI when LLM inputs are unchanged (skips Claude + avoids score drift).
+    # Reuse cached AI when LLM inputs are unchanged (skips Grok + avoids score drift).
     prev_ai = None
     cache = DATA / f"{slugify(name)}.json"
     if cache.exists() and not force_ai:

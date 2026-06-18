@@ -2,21 +2,22 @@
 
 **AI-Driven Operational Intelligence** — executive partner-health & churn-risk dashboard
 for ITBD (white-label NOC/helpdesk provider; "partners" are MSPs). Python build-time
-pipeline (HaloPSA + TeamGPS + local docs → Claude churn analysis → JSON caches)
+pipeline (HaloPSA + TeamGPS + local docs → Grok `grok-4-1-fast-reasoning` churn
+analysis → JSON caches)
 + framework-free HTML/JS frontend. ("PartnerPulse" is the legacy project name still used
 in package/doc headers.)
 
-**Production (since 2026-06-16; AI/refresh model changed 2026-06-18):** the UI is hosted
-on **Firebase Hosting** behind email/password sign-in restricted to verified
-**`@itbd.net`**; all data is read from **Cloud Firestore** (sharded) via `auth.js`.
-**The AI churn layer is now Claude via the Claude Agent SDK, billed to the operator's
-Claude subscription (no API key — see gotcha 11)**, which is for interactive use, so the
-build/AI step runs **MANUALLY on a laptop** and is published to Firestore with
-`scripts/upload_firebase_data.py`. **The nightly Cloud Run Job is RETIRED** (operators
-should pause/delete it) — the cloud footprint is now **Hosting + Firestore serving only**.
-**Local dev is unchanged** — `server.py` + `data/*.json`, no auth (`auth.js` auto-detects
-localhost). See `docs/Data-Schema.md` (end-to-end source→store map),
-`docs/Firebase-Deploy-SOP.md`, and `docs/Cloud-Pipeline-SOP.md`.
+**Production (since 2026-06-16):** the UI is hosted on **Firebase Hosting** behind
+email/password sign-in restricted to verified **`@itbd.net`**; all data is read from
+**Cloud Firestore** (sharded) via `auth.js`; and the pipeline runs unattended as a
+nightly **Cloud Run Job** (Cloud Scheduler, 21:00 America/New_York) that rebuilds and
+republishes Firestore. The churn AI is **Grok (`grok-4-1-fast-reasoning`)** served via
+an **Azure AI Foundry OpenAI-compatible endpoint** (OpenAI SDK, `base_url` + API key,
+synchronous chat-completions) — this replaced the prior Azure gpt-5.4 (Batch-only
+deployment, couldn't serve synchronous per-partner calls) on 2026-06-18. **Local dev
+is unchanged** — `server.py` + `data/*.json`, no auth
+(`auth.js` auto-detects localhost). See `docs/Data-Schema.md` (end-to-end source→store
+map), `docs/Firebase-Deploy-SOP.md`, and `docs/Cloud-Pipeline-SOP.md`.
 
 ## Documentation mandate
 
@@ -32,10 +33,8 @@ touching code without staging `docs/changelog.md` are blocked. Never bypass it w
 ## Commands
 
 ```powershell
-# AI now bills your Claude SUBSCRIPTION via the Agent SDK — prerequisite: log in once with
-# 'claude setup-token' (or 'claude login'); the 'claude' CLI must be on PATH. NO ANTHROPIC_API_KEY (gotcha 11).
 python -m extract.build_all                  # build all partners + AI + portfolio index (INCREMENTAL: reuses cached AI+decks when inputs unchanged)
-python -m extract.build_all --force-ai       # same, but re-run Claude for every partner (ignore AI cache)
+python -m extract.build_all --force-ai       # same, but re-run Grok for every partner (ignore AI cache)
 python -m extract.build_all --only "Logically"  # build one partner (DO run via build_all, not build_partner — the latter skips AI)
 python -m extract.build_all --reindex        # rebuild data/_index.json from existing JSONs (no fetch)
 python scripts/build_real_partners.py        # extra real Halo clients (writes their data/*.json)
@@ -45,18 +44,15 @@ python scripts/audit_data.py                 # data-integrity audit (SIPs, AI, C
 #  (refresh_exec_row.py is DEPRECATED — the dashboard is data-driven, no embedded array to refresh)
 python server.py [port]                      # dev server, default http://localhost:8000
 powershell -ExecutionPolicy Bypass -File .\setup.ps1   # fresh-machine bootstrap
-# --- Manual refresh + publish (prod; the nightly Cloud Run Job is RETIRED as of 2026-06-18) ---
-#  run this cycle locally on a laptop (the subscription-billed AI can't run unattended in the cloud):
-python -m extract.build_all                  # 1) rebuild caches + Claude AI (logged-in subscription)
-python scripts/build_overview.py             # 2) rebuild data/_overview.json (the dashboard feed)
-python scripts/upload_firebase_data.py       # 3) publish data/_overview.json + caches → Firestore (sharded)
-# --- Deploy (full runbooks in docs/Firebase-Deploy-SOP.md + docs/Cloud-Pipeline-SOP.md) ---
-python scripts/seed_secrets.py               # load Halo/TeamGPS/Graph keys → Secret Manager (no AI secret — AI bills the subscription)
+# --- Cloud / deploy (prod; full runbooks in docs/Firebase-Deploy-SOP.md + docs/Cloud-Pipeline-SOP.md) ---
+python scripts/upload_firebase_data.py       # publish data/_overview.json + caches → Firestore (sharded)
+python scripts/seed_secrets.py               # load Halo/TeamGPS/AI (ai-api-key)/Graph keys → Secret Manager
 firebase deploy --only hosting               # ship the UI (and --only firestore:rules for rule changes)
+gcloud run jobs execute partnerpulse-nightly --region=us-central1   # force an off-cycle data refresh
 ```
 
 No test suite. Verify changes by running the relevant build script and loading the
-dashboard. Full builds hit live APIs + Claude (~5 min) — prefer single-partner or
+dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partner or
 `--reindex` runs.
 
 ## Layout
@@ -88,21 +84,23 @@ dashboard. Full builds hit live APIs + Claude (~5 min) — prefer single-partner
   `styles.css` and `index.html`'s inline `<style>` — gotcha 7) is left in place,
   harmless. `server.py`'s `POST /api/refresh` sync API still exists for LOCAL dev use
   but nothing in the UI calls it.
-- **Pipeline cadence — MANUAL/local (changed 2026-06-18; the cloud nightly Job is RETIRED).**
-  The cycle (pull_graph_transcripts --write → build_all → build_real_partners → build_all
-  --reindex → build_overview → **upload_firebase_data.py**) now runs **manually on a laptop**,
-  because the Claude churn analysis bills the operator's Claude subscription via the local
-  Agent SDK login and the SDK cannot bill a personal subscription from unattended cloud
-  automation (gotcha 11). The old **Cloud Run Job** (`partnerpulse-nightly`, Cloud Scheduler
-  21:00 America/New_York; entrypoint `scripts/cloud_sync.py`, `Dockerfile`, GCS state bucket)
-  is **retired and should be paused/deleted by an operator** — see `docs/Cloud-Pipeline-SOP.md`
-  (kept as a superseded runbook). **Builds remain INCREMENTAL** — Claude churn analysis and
-  deck conversion are cached (keyed by input hash + `_model` / attachment id) and skipped for
-  unchanged partners, so a re-sync mostly just re-fetches Halo/TeamGPS and stops run-to-run
-  score drift. (Transcript-pull caveats: skips manual-`.docx` folders, QBRs 403, ~90-day Teams
-  content retention.)
+- **Cloud pipeline (NEW 2026-06-16, see `docs/Cloud-Pipeline-SOP.md`)** — the cycle
+  (pull_graph_transcripts --write → build_all → build_real_partners → build_all
+  --reindex → build_overview → **upload_firebase_data.py**) runs unattended as a
+  **Cloud Run Job** (`partnerpulse-nightly`) on a **Cloud Scheduler** trigger at
+  **21:00 America/New_York**. Entrypoint `scripts/cloud_sync.py`; image from
+  `Dockerfile`; secrets from Secret Manager (`scripts/seed_secrets.py`); `data/` +
+  `Transcripts/` persisted in a GCS state bucket so the Grok AI cache + transcript
+  history survive between runs. **Builds are INCREMENTAL** — Grok churn analysis
+  and deck conversion are cached (keyed by input hash / attachment id) and skipped
+  for unchanged partners, so a re-sync mostly just re-fetches Halo/TeamGPS; this keeps
+  steps under the 30-min `STEP_TIMEOUT_S` and stops run-to-run score drift. (Transcript-
+  pull caveats: skips manual-`.docx` folders, QBRs 403, ~90-day Teams content retention.)
 - `extract/` — pipeline library package (config, halo, teamgps, transcripts, ai,
-  build_partner, build_all, portfolio). Secrets: env/.env first, live fallbacks
+  build_partner, build_all, portfolio). `ai.py` calls Grok `grok-4-1-fast-reasoning`
+  over the Azure AI Foundry OpenAI-compatible endpoint (synchronous OpenAI SDK; config
+  `AI_BASE_URL` / `AI_API_KEY` / `AI_MODEL` in `extract/config.py` — the old
+  `AZURE_OPENAI_*` constants are gone). Secrets: env/.env first, live fallbacks
   baked in `extract/config.py` (beta only — never copy them elsewhere).
 - `scripts/` — operational entry points; they sys.path-shim the repo root, run them
   from anywhere. New one-off scripts go here, library code goes in `extract/`.

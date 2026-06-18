@@ -298,7 +298,7 @@ Filter the cleaned action notes for key markers: `"meeting summary"`, `"action i
 **Changed 2026-06-13.** Each `historical_calls` entry's `date` is the **latest matching action note's `datetime`**, not the ticket's `dateoccurred`. Recurring/bi-weekly service tickets keep an early `dateoccurred` (set at creation) while the actual call note is appended later — e.g. Logically ticket `0755301`: `dateoccurred` 2026-05-27, note `2026-06-12`. Using `dateoccurred` made "last call" stale for every recurring-ticket partner. See `extract/build_partner.py` / `scripts/build_real_partners.py` and `docs/HaloPSA-API-SOP.md` Addendum (2026-06-13). `build_overview.py` then takes the union of these note dates and transcript dates for the dashboard's "last call".
 
 #### Incremental rebuild (cost/time control)
-**Added 2026-06-13.** `extract/ai.py:analyze()` caches the AI result by a hash of its input (`build_context`) — unchanged partners reuse the cached churn analysis (no LLM call, no score drift). Deck markdown is reused by attachment id (no re-`markitdown`). So a re-sync re-fetches Halo/TeamGPS (to detect changes) but only re-runs the LLM / deck conversion for partners whose inputs actually changed. `extract.build_all --force-ai` (or `build_real_partners.py --force-ai`) forces a full re-analysis. (The cache also keys on the model; **as of 2026-06-18** the AI layer is **Claude via the Claude Agent SDK**, subscription-billed — see §6a.)
+**Added 2026-06-13.** The AI churn analysis is run by **Grok `grok-4-1-fast-reasoning`** via an **Azure AI Foundry OpenAI-compatible endpoint** (OpenAI SDK, `config.AI_BASE_URL` + `config.AI_API_KEY`, synchronous; swapped from gpt-5.4 on 2026-06-18). `extract/ai.py:analyze()` caches the result by a hash of its input (`build_context`) — unchanged partners reuse the cached churn analysis (no LLM call, no score drift); a change of `config.AI_MODEL` invalidates the cache so a model switch re-scores cleanly. Deck markdown is reused by attachment id (no re-`markitdown`). So a re-sync re-fetches Halo/TeamGPS (to detect changes) but only re-runs the LLM / deck conversion for partners whose inputs actually changed. `extract.build_all --force-ai` (or `build_real_partners.py --force-ai`) forces a full re-analysis.
 
 #### Batch resilience (continue-on-failure)
 **Added 2026-06-15.** Halo intermittently returns transient **5xx/429** (notably `GET /api/Tickets?client_id=…&search=Service Call`). `extract/halo.get()` now retries those with backoff, and `build_real_partners.py` wraps the per-client service-ticket fetch in continue-on-failure — a client whose ticket list keeps erroring still builds (transcripts + CSAT/NPS + AI), just without Halo call-notes, instead of aborting the whole batch. See `docs/HaloPSA-API-SOP.md` Addendum (2026-06-15).
@@ -344,40 +344,5 @@ To scan a new partner in the system, the dashboard engine must execute these ste
   │
   ├─► 10. Merge and cache all extracted data into a unified Partner JSON payload.
   │
-  ├─► 11. Run the AI churn analysis over that payload (see §6a) and merge the
-  │       result under the partner JSON's `ai` key.
-  │
   └─► [End: Render Dashboard UI]
 ```
-
----
-
-## 6a. AI churn analysis — Claude via the Claude Agent SDK
-
-**Changed 2026-06-18** (was Azure Foundry gpt-5.4). After a partner's unified JSON
-payload is assembled (step 10), `extract/ai.py:analyze()` runs one tool-free Claude
-turn over the compacted churn context (`build_context`) and merges the structured
-result (`risk_score`, `risk_band`, `confidence`, `summary`, `sentiment_trend`,
-`drivers[]`, `remediation[]`, `action_items[]`) under the partner JSON's `ai` key.
-
-* **Engine:** Claude via the **Claude Agent SDK** (`claude_agent_sdk.query` with
-  `ClaudeAgentOptions(model=config.CLAUDE_MODEL, allowed_tools=[], max_turns=1,
-  setting_sources=[])`). Default model `claude-sonnet-4-6`, overridable via the
-  `CLAUDE_MODEL` env var (`extract/config.py`).
-* **Billing / auth:** the operator's **Claude subscription** (Pro/Max/Team/Enterprise)
-  through the local Claude Code OAuth login — run `claude setup-token` or `claude
-  login`, and keep the `claude` CLI on PATH. **There is NO API key and no cloud
-  secret.** `ai.py` strips `ANTHROPIC_API_KEY` from the environment on import (with a
-  one-time warning) so a stray key can't silently route spend to pay-as-you-go API
-  billing.
-* **Where it runs:** **locally, on a laptop** (subscription auth is for individual
-  interactive use). The nightly Cloud Run Job is **retired** for the AI step; the
-  manual refresh cycle is `python -m extract.build_all` → `python
-  scripts/build_overview.py` → `python scripts/upload_firebase_data.py`.
-* **Parsing:** Claude via the Agent SDK returns plain text (no API
-  `response_format=json_object`), so `_extract_json` parses tolerantly — strips
-  markdown code fences, else grabs the outermost `{...}` object.
-* **Cache:** keyed by input hash, schema version, AND `_model` (`requirements.txt`
-  ships `claude-agent-sdk`). A model switch invalidates old gpt-5.4 caches and
-  re-scores cleanly; incremental caching + graceful degradation are unchanged (§5
-  "Incremental rebuild").
