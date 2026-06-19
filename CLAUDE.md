@@ -119,7 +119,11 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   (honours the demo allowlist — see gotcha 8). `build_csat_recon.py` builds the CSAT
   Reconciliation feed `data/_csat_recon.json` (runs after `build_overview.py`; reads its
   partner set, then hits Halo for the sent-side CSAT tickets + AM/RM/Site per client).
-  `audit_data.py` is
+  `audit_csat_recon.py` cross-checks that feed against source for every partner (drift /
+  impossible values / month-shift → `data/_csat_audit.json`). **Never run two Halo-hitting
+  builds/audits concurrently** — Halo rate-limits and returns 500s (and on Windows the
+  Store Python runs as `python3.13.exe`, so `Stop-Process -Name python` does NOT kill a
+  stray build). `audit_data.py` is
   a data-integrity audit (run after a sync) flagging uncounted SIPs, missing AI, empty
   CSAT, stale/absent last-call, unmatched transcript folders, and feed/index mismatch;
   allowlist-aware. `refresh_exec_row.py` is DEPRECATED (no-op against the data-driven

@@ -6,6 +6,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — CSAT Reconciliation: accuracy audit, "still collecting" markers (2026-06-19)
+
+### Added
+- **`scripts/audit_csat_recon.py`** — a cross-partner accuracy check for the CSAT
+  Reconciliation feed. For every partner it recomputes sent/received/CSAT from source
+  (Halo sent tickets + the per-partner `csat_comments`), reusing `build_csat_recon`'s own
+  helpers so it can't drift from the builder, and flags: `DRIFT` (published feed disagrees
+  with a fresh recompute — i.e. stale), `RECV_GT_SENT`/`RATED_GT_RECV` (impossible),
+  `MONTH_SHIFT` (responses attributed to the survey's month but mostly *submitted* in a
+  later month — by design, but it's what makes a recent month read low vs a TeamGPS
+  submission-date view), `NO_CLIENT`, `HALO_FAIL`. Writes `data/_csat_audit.json`; exits
+  non-zero on actionable flags. **First run: 0 drift / 0 impossible across all 82 partners**
+  — the data is accurate; the per-month numbers are keyed to the survey's "Month of …"
+  subject (so a May survey answered in June/July counts under May), not the submission date.
+- **"Still collecting" markers (`index.html`).** Recent months (current + previous,
+  derived from the feed `as_of`) are tagged **collecting** and lightly shaded in the
+  Breakdown, with a caption explaining that response rate & CSAT % keep rising as late
+  responses arrive — so a partial figure (e.g. May 55%) reads as in-progress, not a problem.
+
+### Fixed
+- **Liongard (and any partner) under-count from a stale feed.** The published feed had been
+  built against partner caches that were refreshed moments later, undercounting received
+  (Liongard 36 vs the correct 45). Rebuilt against current caches and republished
+  `meta/csatRecon`. (Root cause was local-only: a manual out-of-order rebuild; the nightly
+  cloud cycle runs `build_csat_recon` *after* the caches are rebuilt, so it can't happen there.)
+
 ## [Unreleased] — Recency windows for churn analysis: newest-first + rolling 180d/90d (2026-06-19)
 
 ### Fixed

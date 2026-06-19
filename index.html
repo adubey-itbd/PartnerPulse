@@ -300,6 +300,15 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
 .badge-row { display: flex; align-items: center; justify-content: flex-end; gap: 5px; }
 .badge-row + .badge-row { margin-top: 4px; }
 .metric-tag { font-size: 0.58rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+/* "still collecting" markers on recent (in-progress) month columns */
+.csat-table th.col-prog { background: var(--info-light); }
+.csat-table td.col-prog { background: rgba(14,165,233,0.05); }
+.csat-table tr:hover td.col-prog { background: rgba(14,165,233,0.10); }
+.col-prog-tag { display: block; margin-top: 3px; font-size: 0.56rem; font-weight: 800; color: var(--info-dark);
+    text-transform: uppercase; letter-spacing: 0.4px; }
+.csat-note { display: flex; gap: 8px; align-items: flex-start; font-size: 0.78rem; color: var(--text-secondary);
+    background: var(--info-light); border: 1px solid #cdeafb; border-radius: 12px; padding: 11px 14px; margin-top: 16px; }
+.csat-note svg { width: 16px; height: 16px; color: var(--info-dark); flex-shrink: 0; margin-top: 1px; }
 @media (max-width: 1300px) { .kpi-grid-5, .kpi-grid-6 { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 1380px) { .overview-split { grid-template-columns: 1fr; } }
 @media (max-width: 1100px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } .recurring-grid { grid-template-columns: 1fr; } .kpi-grid-5, .kpi-grid-6 { grid-template-columns: repeat(2, 1fr); } }
@@ -588,6 +597,10 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                         <table class="csat-table" id="csat-table"><thead></thead><tbody></tbody><tfoot></tfoot></table>
                     </div>
                     <div class="empty" id="csat-table-empty" hidden>No rows match your filter.</div>
+                    <p class="csat-note">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                        <span>Numbers are keyed to the month a survey is <b>for</b> (its "Month of …" subject), not when it was answered — a May survey filled in June/July still counts under May. The most recent months (tagged <b>collecting</b>) are still being answered, so their response rate &amp; CSAT % will keep rising.</span>
+                    </p>
                 </div>
             </div>
         </section>
@@ -1046,7 +1059,21 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         return `<span class="cell-rc"><span class="rc-recv">${c.received}</span>` +
             `<span class="rc-sep">/</span><span class="rc-sent">${c.sent}</span></span><br>${badge}`;
     }
-    function rcCell(c) { return `<td>${cellBody(c)}</td>`; }
+    function rcCell(c, cls) { return `<td${cls ? ` class="${cls}"` : ""}>${cellBody(c)}</td>`; }
+
+    // Months still accumulating responses: a survey for month M is answered over the
+    // weeks AFTER it's sent (a May survey comes back through June/July), so the current
+    // and previous calendar month (relative to the feed's as_of) are "in progress".
+    function inProgressMonthKeys() {
+        const keys = new Set();
+        const m = /^(\d{4})-(\d{2})/.exec((reconData && reconData.as_of) || "");
+        if (!m) return keys;
+        let y = +m[1], mo = +m[2];
+        keys.add(`${y}-${String(mo).padStart(2, "0")}`);
+        mo -= 1; if (mo < 1) { mo = 12; y -= 1; }
+        keys.add(`${y}-${String(mo).padStart(2, "0")}`);
+        return keys;
+    }
 
     const GRP_LABEL = { partner: "Partner", accountManager: "Account Manager", regionalManager: "Regional Manager", site: "Site" };
 
@@ -1058,15 +1085,20 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         if (q) groups = groups.filter((g) => g.name.toLowerCase().indexOf(q) !== -1);
         groups.sort((a, b) => b.total.sent - a.total.sent);
 
+        const prog = inProgressMonthKeys();
+        const isProg = (b) => b.months.some((mk) => prog.has(mk));
+
         $("csat-table-empty").hidden = groups.length > 0;
         tbl.querySelector("thead").innerHTML = "<tr><th class=\"col-grp\">" + esc(GRP_LABEL[reconState.grp]) + "</th>" +
-            buckets.map((b) => `<th>${esc(b.label)}</th>`).join("") + "<th class=\"col-total\">Total</th></tr>";
+            buckets.map((b) => `<th class="${isProg(b) ? "col-prog" : ""}">${esc(b.label)}` +
+                (isProg(b) ? `<span class="col-prog-tag">collecting</span>` : "") + `</th>`).join("") +
+            "<th class=\"col-total\">Total</th></tr>";
 
         tbl.querySelector("tbody").innerHTML = groups.map((g) => {
             const link = reconState.grp === "partner"
                 ? `<a class="grp-name" href="partner.html?partner=${encodeURIComponent(g.key)}">${esc(g.name)}</a>`
                 : `<span class="grp-name">${esc(g.name)}</span>`;
-            const cells = buckets.map((b) => rcCell(g.cells[b.key])).join("");
+            const cells = buckets.map((b) => rcCell(g.cells[b.key], isProg(b) ? "col-prog" : "")).join("");
             const totCell = `<td class="col-total">${cellBody(g.total)}</td>`;
             return `<tr><td class="col-grp">${link}</td>${cells}${totCell}</tr>`;
         }).join("");
@@ -1079,7 +1111,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
             fb[b.key].sent += c.sent; fb[b.key].received += c.received; fb[b.key].pos += c.pos; fb[b.key].rated += c.rated;
         }));
         groups.forEach((g) => { gs += g.total.sent; gr += g.total.received; gp += g.total.pos; gd += g.total.rated; });
-        const footCells = buckets.map((b) => rcCell(fb[b.key])).join("");
+        const footCells = buckets.map((b) => rcCell(fb[b.key], isProg(b) ? "col-prog" : "")).join("");
         const footTot = `<td class="col-total">${cellBody({ sent: gs, received: gr, pos: gp, rated: gd })}</td>`;
         tbl.querySelector("tfoot").innerHTML = `<tr><td class="col-grp">All (${groups.length})</td>${footCells}${footTot}</tr>`;
     }
