@@ -6,17 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
-## [Unreleased] — Add Network Builders IT (Halo 426); build Dataprise (2026-06-19)
+## [Unreleased] — Build Dataprise (active); exclude Network Builders IT (cancelled) (2026-06-19)
 
 ### Added
-- **Network Builders IT** (Halo client **426**) added to `scripts/build_real_partners.py` and the
-  demo-roster allowlist — its `Transcripts/Network Builders IT/` folder (2 `.vtt`) was previously
-  unmatched and dropped. First score: **risk 100 / Declining** — correctly driven by a **contract
-  cancellation** in the meeting notes (engineer RJ's last day 2026-05-29, offboarding next), despite
-  historically positive CSAT/NPS. A genuinely churning account now surfaced.
-- **Dataprise** (Halo client 57, added to the roster earlier today) was **built** to fill the
-  allowlisted-but-unbuilt gap → risk 25 / Stable. Roster/feed now **84 partners**; published to
-  GCS + Firestore.
+- **Dataprise** (Halo client 57, added to the roster earlier today) **built** to fill the
+  allowlisted-but-unbuilt gap → risk 25 / Stable. Confirmed active (`CFMDERAG=Amber`, cancel-risk Low).
+
+### Removed
+- **Network Builders IT** (Halo 426) was briefly added (its `Transcripts/` folder was unmatched) but
+  is **deliberately EXCLUDED** — it's **not an active DES partner**: `CFMDERAG=0` (below the report-364
+  roster threshold), contract **cancelled**, offboarding (`CFHealthReason` "client cancelled the
+  contract, RJ LWD May 29"). A cancelled account is a past loss, not a current churn-risk to track —
+  same policy as the excluded iStreet/InTelecom. Removed from `scripts/build_real_partners.py` (with a
+  do-not-re-add note), the allowlist, GCS, and Firestore. Roster/feed back to **83 partners**.
 
 ## [Unreleased] — NPS: require a single unambiguous dominant domain (stop cross-attribution) (2026-06-19)
 

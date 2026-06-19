@@ -65,7 +65,10 @@ NEW = [
     ("Dataprise",                    57,  "Dataprise",           "Dataprise"),
     ("Prevare LLC",                  141, "Prevare",             "Prevare LLC"),
     ("Perfect Cloud Solutions",      834, "Perfect Cloud",       "Perfect Cloud Solutions"),
-    ("Network Builders IT",          426, "Network Builders",    "Network Builders IT"),
+    # Network Builders IT (Halo 426) deliberately EXCLUDED (2026-06-19): CFMDERAG=0 (not in
+    # the DES roster report 364) — contract CANCELLED, offboarding (CFHealthReason "client
+    # cancelled the contract, RJ LWD May 29"). Its Transcripts/ folder is correctly unmatched.
+    # Do not re-add: a cancelled account is a past loss, not a current churn-risk to track.
     ("Dependable Solutions",         60,  "Dependable",          "Dependable Solutions Inc"),
     ("Pegasus Technology Solutions", 135, "Pegasus",             "Pegasus Technology Solutions"),
     ("Boomtown CIO",                 34,  "Boomtown",            "Boomtown CIO"),
