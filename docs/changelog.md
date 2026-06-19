@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Content-filter fallback so blocked partners still score (2026-06-19)
+
+### Fixed
+- **Azure content-filter blocks no longer leave a partner unscored.** Some service-call
+  transcripts trip the Grok deployment's "Default" Responsible-AI content filter — a hard
+  HTTP 400 (`finish_reason=content_filter`) the SDK does not retry, which left **F12** stuck
+  on a stale score across every run. `extract/ai.py:analyze` now catches the content-filter
+  error and **retries once without transcripts**, scoring the partner from CSAT/NPS/risk-flags/
+  decks instead (flagged `_content_filtered`). Verified: F12 → risk 15/Stable. Also re-scored
+  `blackline-it` and `pei`, which were never erroring — they only timed out late in the cloud
+  step — bringing the book to **82/82 on `grok-4-1-fast-reasoning`** (published to GCS + Firestore).
+  NOTE: the cleaner long-term fix is relaxing the RAI content filter on the `daku` Grok
+  deployment (Azure side) so transcripts aren't dropped for filtered partners.
+
 ## [Unreleased] — Transcript sub-team folders roll into their parent partner (2026-06-19)
 
 ### Fixed

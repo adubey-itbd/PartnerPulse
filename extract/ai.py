@@ -285,6 +285,20 @@ def _extract_json(text: str) -> dict:
         raise
 
 
+def _grok_json(context: str) -> dict:
+    """One synchronous Grok call returning the parsed JSON insight (raises on error)."""
+    resp = _client_singleton().chat.completions.create(
+        model=config.AI_MODEL,
+        messages=[
+            {"role": "system", "content": SYSTEM},
+            {"role": "user", "content": f"{SCHEMA_HINT}\n\n---\n{context}"},
+        ],
+        max_completion_tokens=_MAX_COMPLETION_TOKENS,
+        response_format={"type": "json_object"},
+    )
+    return _extract_json(resp.choices[0].message.content)
+
+
 def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
     """Run Grok churn analysis for one partner. Returns the insight dict (with an
     `_error` key if the call/parse failed).
@@ -313,34 +327,40 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
     # No real signal -> don't burn an LLM call or fabricate a score.
     if not _has_substantive_signal(data):
         return _insufficient_data_result(input_hash)
+    insight = None
     try:
-        resp = _client_singleton().chat.completions.create(
-            model=config.AI_MODEL,
-            messages=[
-                {"role": "system", "content": SYSTEM},
-                {"role": "user", "content": f"{SCHEMA_HINT}\n\n---\n{context}"},
-            ],
-            max_completion_tokens=_MAX_COMPLETION_TOKENS,
-            response_format={"type": "json_object"},
-        )
-        insight = _extract_json(resp.choices[0].message.content)
-        insight["_model"] = config.AI_MODEL
-        insight["_input_hash"] = input_hash
-        insight["_schema_version"] = CACHE_SCHEMA_VERSION
-        return insight
+        insight = _grok_json(context)
     except Exception as e:
-        # Graceful degradation: a transient AI outage (auth/rate-limit/timeout) must
-        # NOT wipe a partner's existing score to 0. If a usable prior result is
-        # available, keep it (flagged `_stale`) rather than regressing to None -- this
-        # is what zeroed 28 partners on 2026-06-18 when the Azure key was revoked. Only
-        # emit the error placeholder when there was never a good score to fall back to.
-        if (cached_ai and not cached_ai.get("_error")
-                and all(k in cached_ai for k in _REQUIRED_KEYS)):
-            kept = dict(cached_ai)
-            kept["_stale"] = True
-            kept["_stale_reason"] = str(e)[:200]
-            kept.pop("_cached", None)
-            return kept
-        return {"_error": str(e), "risk_score": None, "risk_band": "Unknown",
-                "summary": "AI analysis unavailable.", "drivers": [],
-                "remediation": [], "action_items": []}
+        # Azure RAI content filter: some service-call transcripts trip the deployment's
+        # "Default" content filter — a hard HTTP 400 (finish_reason=content_filter) that
+        # the SDK does NOT retry. Retry once WITHOUT transcripts so the partner still
+        # scores from CSAT/NPS/risk-flags/decks instead of being stuck unscored (this is
+        # what blocked F12 — its transcripts tripped the filter; the rest scores fine).
+        if "content_filter" in str(e) and data.get("transcripts"):
+            try:
+                insight = _grok_json(build_context({**data, "transcripts": []}))
+                insight["_content_filtered"] = (
+                    "transcripts excluded (Azure content filter blocked them); scored "
+                    "from CSAT/NPS/risk-flags/decks only")
+            except Exception as e2:
+                e = e2
+        if insight is None:
+            # Graceful degradation: a transient AI outage (auth/rate-limit/timeout) or a
+            # hard content-filter block must NOT wipe a partner's existing score to 0.
+            # Keep a usable prior result (flagged `_stale`) rather than regressing to None
+            # -- this is what zeroed 28 partners on 2026-06-18 when the Azure key was
+            # revoked. Only emit the error placeholder when there was never a good score.
+            if (cached_ai and not cached_ai.get("_error")
+                    and all(k in cached_ai for k in _REQUIRED_KEYS)):
+                kept = dict(cached_ai)
+                kept["_stale"] = True
+                kept["_stale_reason"] = str(e)[:200]
+                kept.pop("_cached", None)
+                return kept
+            return {"_error": str(e), "risk_score": None, "risk_band": "Unknown",
+                    "summary": "AI analysis unavailable.", "drivers": [],
+                    "remediation": [], "action_items": []}
+    insight["_model"] = config.AI_MODEL
+    insight["_input_hash"] = input_hash
+    insight["_schema_version"] = CACHE_SCHEMA_VERSION
+    return insight
