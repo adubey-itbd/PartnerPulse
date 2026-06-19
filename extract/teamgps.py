@@ -105,7 +105,13 @@ def _dominant_domains(emails: set, domains: set):
     if not counts:
         return set()
     top = max(counts.values())
-    return {d for d, n in counts.items() if n == top}
+    leaders = [d for d, n in counts.items() if n == top]
+    # Require a SINGLE unambiguous dominant domain. Multiple domains tied at the top
+    # means no clear corporate home — the tell-tale of a stray cross-company contact
+    # (e.g. one bturner@milner.com sitting on Perfect Cloud Solutions' record, which
+    # would otherwise drag ALL of Milner's NPS onto Perfect Cloud). On a tie, attribute
+    # by exact contact email only (changed 2026-06-19).
+    return set(leaders) if len(leaders) == 1 else set()
 
 
 def filter_nps(all_nps: list, emails: set, domains: set):

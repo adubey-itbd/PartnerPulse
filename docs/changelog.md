@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — NPS: require a single unambiguous dominant domain (stop cross-attribution) (2026-06-19)
+
+### Fixed
+- **A stray cross-company contact no longer drags another partner's NPS over.** `extract/teamgps.py`
+  `_dominant_domains` kept ALL domains tied for the top contact-count, so a 3-way 1-1-1 tie on
+  **Perfect Cloud Solutions** (`cloudinvestmentsllc.com` / `milner.com` / `perfectcloudsolutions.com`,
+  the `milner.com` from one misfiled contact `bturner@milner.com`) pulled **all 9 of Milner's NPS
+  responses** onto Perfect Cloud — its entire NPS was Milner's. Now a domain is only used when it's
+  the **single** clear dominant; a tie falls back to exact-email matching. Verified fleet-wide: **only
+  Perfect Cloud changes** (NPS 9 → 0, its true value), Milner keeps its own 9 (`milner.com` sole
+  dominant), all other 73 partners unaffected. Re-scored both (Perfect Cloud 15/Stable, Milner 30/Low).
+
 ## [Unreleased] — Halo client name = single source of truth; add Dataprise (57) (2026-06-19)
 
 ### Changed
