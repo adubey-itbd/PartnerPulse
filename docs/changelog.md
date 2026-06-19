@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Recency windows for churn analysis: newest-first + rolling 180d/90d (2026-06-19)
+
+### Fixed
+- **Stale meetings no longer distort the churn read.** `extract/ai.py:build_context` previously
+  fed the model meetings "newest N by count" **without sorting and with no date cutoff**, so a
+  partner could be scored off a 7-month-old call (and even *skip* newer ones). Now calls and
+  transcripts are **sorted newest-first** and filtered to a **rolling 180-day analysis window**;
+  meetings older than **90 days** are tagged `[HISTORICAL …]` and used as trend/background only —
+  the model is told not to surface their (likely-resolved) action items as open.
+  - Windows are **rolling (`today − N`)**, not a fixed calendar date, honouring `PARTNERPULSE_ASOF`
+    (same "today" as `build_overview`). A fallback keeps the single newest meeting if a
+    transcript-only partner has nothing inside the window, so prompts are never empty.
+  - **Verified on Milner:** it had been scored off a Nov-2025 transcript (a stale "considering
+    other vendors" comment) → risk ~55, **Declining**. With windowing it feeds the four newest
+    (May–Jun 2026) calls → risk **25, Stable** — matching the real account state.
+  - Changes `build_context` output, so all partners re-score on the next build. New tunables in
+    `extract/ai.py`: `ANALYSIS_WINDOW_DAYS=180`, `ACTION_WINDOW_DAYS=90`.
+
 ## [Unreleased] — New dashboard view: CSAT Reconciliation (sent vs received) (2026-06-18)
 
 A third sidebar view in `index.html`, below Partner 360, reconciles the monthly DES/MDE

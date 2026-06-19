@@ -12,7 +12,9 @@ back into the partner JSON under the `ai` key and rolled up on the portfolio vie
 """
 import hashlib
 import json
+import os
 import re
+from datetime import date, datetime, timedelta
 
 from openai import OpenAI
 
@@ -32,6 +34,19 @@ _REQUEST_TIMEOUT_S = 120
 _MAX_RETRIES = 5
 # Reasoning model: give the completion enough room for reasoning + the JSON payload.
 _MAX_COMPLETION_TOKENS = 8000
+
+# Rolling recency windows (relative to "today") for what the model ANALYZES — keeps the
+# churn read current so resolved 2025 discussions/actions don't distort it:
+#   - meetings within ANALYSIS_WINDOW_DAYS feed the churn/sentiment analysis;
+#   - only meetings within ACTION_WINDOW_DAYS yield "open" action items (older meetings
+#     are tagged HISTORICAL and used as background/trend context only).
+# ROLLING (today - N), NOT a fixed calendar date, so freshness stays constant as the
+# nightly job runs forever. A partner's prompt changes only when a meeting crosses a
+# boundary or a new one arrives, so the incremental AI cache mostly still holds.
+ANALYSIS_WINDOW_DAYS = 180
+ACTION_WINDOW_DAYS = 90
+_MAX_CALLS = 4
+_MAX_TRANSCRIPTS = 4
 
 _client = None
 
@@ -69,7 +84,10 @@ SCHEMA_HINT = """Return JSON with exactly these keys:
   "remediation": [ {"action": "...", "owner": "<ITBD role/person if known>", "priority": "Low|Medium|High", "rationale": "..."} ],
   "action_items": [ {"task": "...", "owner": "...", "due": "...", "status": "Pending|In Progress|Completed", "source": "<which call/deck>"} ]
 }
-Provide 2-5 drivers, 2-5 remediation steps, and extract concrete action_items from the notes/decks.
+Provide 2-5 drivers and 2-5 remediation steps. Extract concrete action_items ONLY from meetings
+NOT marked "[HISTORICAL …]" — HISTORICAL-tagged meetings are background for the relationship trend
+only; their action items are old and likely already resolved, so do NOT list them as open. When a
+recent meeting conflicts with an older one, trust the most recent.
 Output ONLY the JSON object — no prose, no code fences."""
 
 
@@ -78,9 +96,68 @@ def _truncate(text: str, n: int) -> str:
     return text if len(text) <= n else text[:n] + " …[truncated]"
 
 
+_DATE_RE = re.compile(r"(20\d{2})[-/]?(\d{2})[-/]?(\d{2})")
+
+
+def _today() -> date:
+    """Analysis 'today' — honours PARTNERPULSE_ASOF (same as build_overview) else host date."""
+    s = (os.environ.get("PARTNERPULSE_ASOF") or "").strip()
+    if s:
+        try:
+            return datetime.strptime(s[:10], "%Y-%m-%d").date()
+        except ValueError:
+            pass
+    return date.today()
+
+
+def _meeting_date(obj: dict, keys):
+    """Best-effort meeting date from the given fields (ISO date or embedded YYYYMMDD)."""
+    for k in keys:
+        m = _DATE_RE.search(str(obj.get(k) or ""))
+        if m:
+            try:
+                return date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+            except ValueError:
+                pass
+    return None
+
+
+def _window_meetings(items, date_keys, today, max_n):
+    """Select up to max_n meetings within the analysis window, NEWEST-FIRST, as
+    (item, date_or_None, is_historical) tuples. is_historical is True for meetings older
+    than ACTION_WINDOW_DAYS (background/trend only — their action items are stale). Undated
+    items fill any leftover slots as historical. If nothing falls inside the window (e.g. a
+    transcript-only partner whose calls are all old), the single newest dated meeting is kept
+    (flagged historical) so the prompt is never empty."""
+    analysis_cut = today - timedelta(days=ANALYSIS_WINDOW_DAYS)
+    action_cut = today - timedelta(days=ACTION_WINDOW_DAYS)
+    dated, undated = [], []
+    for it in items:
+        dt = _meeting_date(it, date_keys)
+        (dated if dt else undated).append((dt, it))
+    dated.sort(key=lambda x: x[0], reverse=True)          # newest first
+    out = [(it, dt, dt < action_cut) for dt, it in dated if dt >= analysis_cut][:max_n]
+    for _dt, it in undated:                               # fill remaining as historical
+        if len(out) >= max_n:
+            break
+        out.append((it, None, True))
+    if not out and dated:                                 # fallback: newest stale meeting
+        dt, it = dated[0]
+        out.append((it, dt, True))
+    return out[:max_n]
+
+
+def _meeting_header(label, dt, is_historical) -> str:
+    ds = dt.isoformat() if dt else "date unknown"
+    tag = (" [HISTORICAL >90d — background/trend context only; do NOT list its action items as open]"
+           if is_historical else "")
+    return f"### {label} ({ds}){tag}"
+
+
 def build_context(data: dict) -> str:
     """Compact, churn-relevant context from a partner cache (keeps tokens sane)."""
     c = data.get("client", {})
+    today = _today()
     parts = [f"# PARTNER: {c.get('name')} (Halo client {c.get('id')})"]
 
     parts.append("\n## Account team risk flags (ground truth)")
@@ -126,11 +203,11 @@ def build_context(data: dict) -> str:
     for r in data.get("nps_comments", [])[:10]:
         parts.append(f'- score {r.get("score")} ({r.get("category")}) {r.get("respondent")}: "{_truncate(r.get("comment"), 240)}"')
 
-    calls = data.get("historical_calls", [])
-    if calls:
-        parts.append("\n## Recent service-review meeting notes")
-        for call in calls[:4]:
-            parts.append(f"### {call.get('summary')} ({str(call.get('date'))[:10]})")
+    sel_calls = _window_meetings(data.get("historical_calls", []), ("date",), today, _MAX_CALLS)
+    if sel_calls:
+        parts.append(f"\n## Service-review meeting notes (newest first; last {ANALYSIS_WINDOW_DAYS} days)")
+        for call, dt, hist in sel_calls:
+            parts.append(_meeting_header(call.get("summary"), dt, hist))
             parts.append(_truncate(call.get("notes"), 2500))
 
     decks = data.get("decks", [])
@@ -143,11 +220,12 @@ def build_context(data: dict) -> str:
     # Service-call transcripts (.docx/.vtt). For transcript-only partners
     # (client_id=None) this is the ONLY substantive signal, so it MUST be in the
     # prompt -- otherwise the model scores on an empty context and fabricates.
-    txs = data.get("transcripts", [])
-    if txs:
-        parts.append("\n## Service-call transcripts")
-        for t in txs[:4]:
-            parts.append(f"### Transcript: {t.get('filename')} ({str(t.get('date'))[:10]})")
+    sel_tx = _window_meetings(data.get("transcripts", []), ("date", "title", "filename"),
+                              today, _MAX_TRANSCRIPTS)
+    if sel_tx:
+        parts.append(f"\n## Service-call transcripts (newest first; last {ANALYSIS_WINDOW_DAYS} days)")
+        for t, dt, hist in sel_tx:
+            parts.append(_meeting_header(f"Transcript: {t.get('filename')}", dt, hist))
             parts.append(_truncate(t.get("markdown"), 4000))
 
     return "\n".join(str(p) for p in parts)

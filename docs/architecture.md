@@ -123,6 +123,13 @@ The Python engine orchestrates the compilation of raw partner telemetry into a u
    * Confidence level and sentiment trend (Improving / Stable / Declining).
    * Key churn drivers with severity and evidence quotes.
    * Remediation steps and extracted action items.
+   * **Recency windows (added 2026-06-19):** `build_context` sorts calls/transcripts **newest-first**
+     and feeds only those within a **rolling 180-day analysis window** (`ANALYSIS_WINDOW_DAYS`);
+     meetings older than **90 days** (`ACTION_WINDOW_DAYS`) are tagged `[HISTORICAL]` and used for
+     trend/background only — the model is told not to surface their stale action items as open.
+     Rolling on `today` (honours `PARTNERPULSE_ASOF`), with a fallback to the single newest meeting
+     so transcript-only partners are never scored on an empty prompt. This keeps the churn read on
+     *current* meetings (e.g. Milner stopped being scored off a Nov-2025 call).
 5. **Per-Partner Caching:** Outputs a unified data payload to `data/{slug}.json`.
 6. **Portfolio Aggregation (`extract/portfolio.py`):** Derives portfolio-level aggregates (risk distribution, weekly CSAT/NPS sentiment trend, feedback mix by source, severity-weighted top churn drivers) from the already-fetched per-partner data — no new API calls, no ticket/SLA data. Results are written as the `portfolio` block in `data/_index.json`.
 7. **Index Compilation:** `build_all.py` writes `data/_index.json` as an object containing a sorted `partners` array (one slim row per partner) plus the `portfolio` aggregate block.
