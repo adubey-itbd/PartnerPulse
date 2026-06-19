@@ -38,6 +38,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
   responses arrive — so a partial figure (e.g. May 55%) reads as in-progress, not a problem.
 
 ### Fixed
+- **Unanswered surveys were counted as "received," inflating the response rate and
+  showing RR with no CSAT.** The TeamGPS `/csat` endpoint returns *sent* surveys too — a
+  not-yet-answered one has `is_responded=false` (empty rating/comment, null
+  `submitted_date`). `build_csat_recon` had counted any matched row as received, so
+  partners whose recent surveys were still unanswered (e.g. APM IT, Aqueduct, Uptime USA,
+  Teal Tech, IronEdge, and Netgain's latest month) showed a response rate but no CSAT %.
+  Now a row counts as received only when actually answered: `extract/teamgps.get_csat`
+  carries `is_responded`, and `build_csat_recon` (+ `audit_csat_recon`) gate received on a
+  `_responded()` check (prefers `is_responded`; falls back to rating/date presence for
+  caches built before the field was added). Unanswered surveys no longer count toward RR
+  and the misleading "RR but no CSAT" cells are gone.
 - **Liongard (and any partner) under-count from a stale feed.** The published feed had been
   built against partner caches that were refreshed moments later, undercounting received
   (Liongard 36 vs the correct 45). Rebuilt against current caches and republished

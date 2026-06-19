@@ -41,7 +41,7 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 DATA = os.path.join(ROOT, "data")
 
 import build_csat_recon as R  # noqa: E402  (reuse the builder's exact logic)
-from build_csat_recon import halo, _ticket_month, _window_keys, _parse_iso_date  # noqa: E402
+from build_csat_recon import halo, _ticket_month, _window_keys, _parse_iso_date, _responded  # noqa: E402
 
 
 def recompute(blob, client_id):
@@ -64,6 +64,8 @@ def recompute(blob, client_id):
     answered = {k: set() for k in keys}
     submit_months = defaultdict(Counter)   # survey-month -> Counter(response submit month)
     for c in blob.get("csat_comments", []) or []:
+        if not _responded(c):
+            continue
         tid = str(c.get("ticket_id") or "")
         key = sent_ids.get(tid)
         if not key:

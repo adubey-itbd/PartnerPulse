@@ -134,7 +134,7 @@ Reconciliation view in `index.html`. **Source→field provenance:**
 | Field | Source |
 |---|---|
 | CSAT **sent** (per month) | HaloPSA tickets, `tickettype_id ∈ {36,163,164}` ("DES CSAT Monthly"), one ticket = one sent. Month parsed from the ticket summary ("…For The Month of May"); year from `dateoccurred` (`extract/halo.fetch_csat_tickets`). |
-| CSAT **received** (per month) | TeamGPS responses (the `data/{slug}.json` `csat_comments`), joined to a sent ticket by `ticket_id` and attributed to that sent ticket's month (distinct answered tickets, so received ≤ sent). |
+| CSAT **received** (per month) | TeamGPS responses (the `data/{slug}.json` `csat_comments`) where **`is_responded`** is true — the `/csat` endpoint also returns *sent-but-unanswered* surveys (empty rating, null date), which must NOT count. Joined to a sent ticket by `ticket_id` and attributed to that sent ticket's month (distinct answered tickets, so received ≤ sent). |
 | CSAT **% positive** (per month) | Of the matched responses, `positive ÷ rated` (rated = Positive+Neutral+Negative ratings on `csat_comments`). The satisfaction score, distinct from the response rate. |
 | Account Manager / Regional Manager | Halo client `accountmanagertech_name` / `regmanagertech_name`. |
 | Site | Halo client custom field `CFAccountSite` (NDA/CDG/DL/PH; the `-1` sentinel and stray numeric ids → "—"). |

@@ -57,6 +57,19 @@ _MONTH_NUM.update({
 _MONTH_RE = re.compile(r"month of\s+([a-z]+)", re.I)
 
 
+def _responded(c):
+    """True if a CSAT row is a real response, not just a sent-but-unanswered survey.
+    The TeamGPS /csat endpoint also returns sent surveys; an unanswered one has
+    is_responded=false (empty rating/comment, null submitted_date) and must NOT count
+    as 'received' (it would inflate the response rate and yield no CSAT). Prefer the
+    is_responded flag; fall back to rating/date presence for caches built before that
+    field was captured (see extract/teamgps.get_csat)."""
+    r = c.get("is_responded")
+    if isinstance(r, bool):
+        return r
+    return bool(str(c.get("rating") or "").strip()) or bool(c.get("date"))
+
+
 def _clean_name(v):
     """A real person-name string, or None — Halo occasionally leaks a numeric id
     (or the -1 'unset' sentinel) in place of a manager name."""
@@ -190,6 +203,8 @@ def main():
         #      TeamGPS response record), so received <= sent and the rate <= 100%. ----
         answered = {k: set() for k in month_keys}
         for c in blob.get("csat_comments", []) or []:
+            if not _responded(c):        # skip sent-but-unanswered surveys
+                continue
             tid = str(c.get("ticket_id") or "")
             key = partner_sent_ids.get(tid)
             if not key:
@@ -231,6 +246,8 @@ def main():
         with open(blob_path, encoding="utf-8") as fh:
             blob = json.load(fh)
         for c in blob.get("csat_comments", []) or []:
+            if not _responded(c):
+                continue
             tid = str(c.get("ticket_id") or "")
             if tid in sent_index:
                 continue

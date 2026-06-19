@@ -31,13 +31,17 @@ def get_csat(company: str):
         for r in rows:
             out.append({
                 "id": r.get("id"),
-                "rating": r.get("rating"),                 # Positive/Neutral/Negative
+                "rating": r.get("rating"),                 # Positive/Neutral/Negative ('' until answered)
                 "comment": r.get("comment"),
                 "contact": r.get("contact_name"),
                 "contact_email": r.get("contact_email"),
                 "date": r.get("submitted_date"),
                 "ticket_id": r.get("ticket_id"),
                 "ticket_name": r.get("ticket_name"),
+                # The /csat endpoint returns sent surveys too — a not-yet-answered one
+                # has is_responded=false (empty rating/comment, null submitted_date).
+                # Carry the flag so consumers can count only real responses.
+                "is_responded": r.get("is_responded"),
             })
         if page >= (data.get("total_pages") or 1):
             break
