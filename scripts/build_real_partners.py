@@ -59,6 +59,10 @@ NEW = [
     ("Vitis Tech",                   144, "Vitis",               "Vitis Tech"),
     ("Community IT",                 45,  "Community IT",        "Community IT Innovators"),
     ("PEI",                          137, "PEI",                 "Dataprise (PEI)"),
+    # Independent "Dataprise" account (Halo 57, site PH, RM Pritam Das) — distinct from
+    # PEI (137, NDA). Its monthly CSAT is filed under TeamGPS company "Dataprise" and is
+    # the active one (2026 surveys); PEI (137) is the older record (surveys ended 2025).
+    ("Dataprise",                    57,  "Dataprise",           "Dataprise"),
     ("Prevare LLC",                  141, "Prevare",             "Prevare LLC"),
     ("Perfect Cloud Solutions",      834, "Perfect Cloud",       "Perfect Cloud Solutions"),
     ("Dependable Solutions",         60,  "Dependable",          "Dependable Solutions Inc"),

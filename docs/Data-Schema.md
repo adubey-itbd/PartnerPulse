@@ -113,7 +113,7 @@ This is the shape the Exec Overview renders and the shape published to Firestore
                  "openNoDate", "renewalsAtRisk", "portfolioNPS",
                  "csatCoverage", "npsResponses" },
   "partners": [ {
-      "name", "slug",                         // slug ≠ slugify(name) — use it verbatim
+      "name", "slug",                         // name = live Halo client.name (source of truth); slug ≠ slugify(name) — use it verbatim
       "churnRisk", "riskBand",                // riskBand derived from score (_tier), not LLM
       "accountManager", "sentimentTrend",     // sentimentTrend reconciled (_reconcile_trend)
       "topDriver", "themes",                  // themes ← Grok drivers[]

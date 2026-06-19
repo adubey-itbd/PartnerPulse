@@ -212,7 +212,10 @@ def build_partner(slug, idx_row):
     themes = [dr.get("factor") for dr in drivers if dr.get("factor")][:4]
 
     return {
-        "name": idx_row.get("name") or client.get("name") or slug,
+        # Halo Client Name is the single source of truth for the displayed account
+        # name across all views (a Halo rename propagates automatically); fall back to
+        # the index/roster label only when the cache has no client name.
+        "name": client.get("name") or idx_row.get("name") or slug,
         "slug": slug,
         "churnRisk": risk,
         # deterministic single source of truth (was: LLM risk_band, mis-calibrated vs the

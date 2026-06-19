@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Halo client name = single source of truth; add Dataprise (57) (2026-06-19)
+
+### Changed
+- **Displayed account names now come from the live Halo Client Name** across every view.
+  `scripts/build_overview.py` now prefers `client.name` (the cached live Halo name) over
+  the hand-entered roster/index label for the feed's `name` (slugs are unchanged — still
+  explicit). So a Halo rename (e.g. "PEI" → "PEI (Dataprise)") propagates to the Exec
+  Overview, Partner 360 and CSAT Reconciliation automatically — Halo is the one source of
+  truth for the name.
+
+### Added
+- **Dataprise (Halo client 57)** added to the roster (`scripts/build_real_partners.py`) and
+  the demo allowlist (82 → 83). It is an **independent** DES/MDE account (site PH, RM Pritam
+  Das), distinct from **PEI (Halo 137, site NDA)** — the two share engineers, which had
+  caused confusion. Dataprise's monthly CSAT is filed under TeamGPS company **"Dataprise"**
+  and is the active one (2026 surveys); PEI (137) is the older record (surveys ended 2025),
+  so it correctly shows no 2026 CSAT. Each account now appears under its own Halo name with
+  CSAT attributed by the Halo client the survey ticket is filed under (verified: all of
+  Dataprise's responded surveys join to client 57; none to 137).
+- **Roster/allowlist change checklist reminder:** this needs the Cloud Run image rebuilt
+  AND the GCS state bucket's `data/_demo_roster.json` updated (cloud reads the allowlist
+  from the bucket, code from the image) — otherwise prod silently regresses.
+
 ## [Unreleased] — Content-filter fallback so blocked partners still score (2026-06-19)
 
 ### Fixed
