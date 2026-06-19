@@ -129,6 +129,25 @@ def _window_keys():
             for mn in range(1, TODAY.month + 1)]
 
 
+# Survey tickets ITBD files under the "wrong" Halo client, reassigned by site/type.
+# PEI's NDA monthly-engineer CSAT (ticket type 163, "DES Monthly Engineer CSAT - NDA")
+# is raised under the shared "Dataprise" client (57) but belongs to PEI (137, the NDA
+# account). Key: (source_client_id, ticket_type_id) -> target_client_id.
+_TICKET_REASSIGN = {(57, 163): 137}
+
+
+def _claimed_tickets(client_id, fetch):
+    """Sent CSAT tickets this client OWNS after applying _TICKET_REASSIGN: drop tickets
+    reassigned away to another client, and add tickets reassigned in from another. `fetch`
+    is a memoised halo.fetch_csat_tickets so a shared source client isn't pulled twice."""
+    out = [t for t in fetch(client_id)
+           if _TICKET_REASSIGN.get((client_id, t.get("tickettype_id")), client_id) == client_id]
+    for (src, typ), tgt in _TICKET_REASSIGN.items():
+        if tgt == client_id and src != client_id:
+            out += [t for t in fetch(src) if t.get("tickettype_id") == typ]
+    return out
+
+
 def main():
     overview_path = os.path.join(DATA, "_overview.json")
     if not os.path.exists(overview_path):
@@ -140,12 +159,22 @@ def main():
     month_keys = [m["key"] for m in months]
     win_keys = set(month_keys)
 
-    rows = []
-    # ticket_id (str) -> month_key, for every in-window sent ticket across the book
-    # (used to flag responses that match no sent survey).
-    sent_index = {}
-    total_sent = total_received = 0
+    # Memoised Halo sent-ticket fetch — a reassignment source (e.g. client 57) is
+    # otherwise pulled once per partner that claims tickets from it.
+    _ticket_cache = {}
+    def _fetch(cid):
+        if cid not in _ticket_cache:
+            try:
+                _ticket_cache[cid] = halo.fetch_csat_tickets(cid)
+            except Exception as exc:  # one client's Halo blip must not abort the build
+                print(f"  WARN: Halo CSAT tickets failed for client {cid}: {exc}", file=sys.stderr)
+                _ticket_cache[cid] = []
+        return _ticket_cache[cid]
 
+    # ---- Pass 1: per partner — AM/RM/Site + SENT cells; build a global ticket-OWNER
+    #      map (ticket_id -> (slug, month_key)) applying _TICKET_REASSIGN. ----
+    partners_meta = []          # ordered: {slug, name, am, rm, site, cells}
+    owner = {}                  # str(ticket_id) -> (slug, month_key), in-window only
     for p in overview.get("partners", []):
         slug = p.get("slug")
         name = p.get("name") or slug
@@ -158,10 +187,8 @@ def main():
         client_id = client.get("id")
 
         am = rm = site = None
-        sent_tickets = []
+        cells = {k: {"sent": 0, "received": 0, "pos": 0, "rated": 0} for k in month_keys}
         if client_id:
-            # Two independent Halo calls — a failure in one must not void the other.
-            # Some Halo fields come back as ints/ids, so coerce before stripping.
             try:
                 detail = halo.get_client(client_id)
                 cf = halo.parse_custom_fields(detail)
@@ -175,68 +202,26 @@ def main():
             except Exception as exc:
                 print(f"  WARN: Halo client detail failed for {slug} ({client_id}): {exc}",
                       file=sys.stderr)
-            try:
-                sent_tickets = halo.fetch_csat_tickets(client_id)
-            except Exception as exc:  # one partner's Halo blip must not abort the build
-                print(f"  WARN: Halo CSAT tickets failed for {slug} ({client_id}): {exc}",
-                      file=sys.stderr)
+            for t in _claimed_tickets(client_id, _fetch):
+                ym = _ticket_month(t.get("summary"), t.get("dateoccurred"))
+                if not ym:
+                    continue
+                key = f"{ym[0]}-{ym[1]:02d}"
+                if key not in win_keys:
+                    continue
+                cells[key]["sent"] += 1
+                owner[str(t.get("id"))] = (slug, key)
+        partners_meta.append({"slug": slug, "name": name, "am": am, "rm": rm,
+                              "site": site, "cells": cells})
 
-        # ---- SENT: window + bucket by month; index ids for the received join ----
-        # Per cell: sent, received (distinct answered tickets), and the rating tally
-        # of the matched responses (pos / rated) for the CSAT satisfaction score.
-        cells = {k: {"sent": 0, "received": 0, "pos": 0, "rated": 0} for k in month_keys}
-        partner_sent_ids = {}     # str(ticket_id) -> month_key
-        for t in sent_tickets:
-            ym = _ticket_month(t.get("summary"), t.get("dateoccurred"))
-            if not ym:
-                continue
-            key = f"{ym[0]}-{ym[1]:02d}"
-            if key not in win_keys:
-                continue
-            cells[key]["sent"] += 1
-            tid = str(t.get("id"))
-            partner_sent_ids[tid] = key
-            sent_index[tid] = key
-
-        # ---- RECEIVED: a sent survey is "received" once it gets ANY response.
-        #      Count DISTINCT answered tickets (a single survey occasionally has >1
-        #      TeamGPS response record), so received <= sent and the rate <= 100%. ----
-        answered = {k: set() for k in month_keys}
-        for c in blob.get("csat_comments", []) or []:
-            if not _responded(c):        # skip sent-but-unanswered surveys
-                continue
-            tid = str(c.get("ticket_id") or "")
-            key = partner_sent_ids.get(tid)
-            if not key:
-                continue
-            answered[key].add(tid)
-            rt = str(c.get("rating") or "").capitalize()
-            if rt in ("Positive", "Neutral", "Negative"):
-                cells[key]["rated"] += 1
-                if rt == "Positive":
-                    cells[key]["pos"] += 1
-        for k in month_keys:
-            cells[k]["received"] = len(answered[k])
-
-        p_sent = sum(c["sent"] for c in cells.values())
-        p_recv = sum(c["received"] for c in cells.values())
-        p_pos = sum(c["pos"] for c in cells.values())
-        p_rated = sum(c["rated"] for c in cells.values())
-        total_sent += p_sent
-        total_received += p_recv
-
-        rows.append({
-            "partner": name,
-            "slug": slug,
-            "accountManager": am or "Unassigned",
-            "regionalManager": rm or "Unassigned",
-            "site": site or "—",
-            "months": cells,
-            "total": {"sent": p_sent, "received": p_recv, "pos": p_pos, "rated": p_rated},
-        })
-
-    # ---- Responded-without-sent-match (portfolio): in-window responses whose
-    #      ticket_id matches no in-window sent survey across the whole book. ----
+    # ---- Pass 2: RECEIVED (global). Attribute each response to whoever OWNS its sent
+    #      ticket (per `owner`) — regardless of which partner's blob carries it — so a
+    #      reassigned survey's response lands on the right partner. Count DISTINCT
+    #      answered tickets per cell (a survey may have >1 response) so received <= sent;
+    #      tally pos/rated for CSAT%. Dedup responses by id across blobs. ----
+    by_slug = {m["slug"]: m for m in partners_meta}
+    answered = {}               # (slug, month_key) -> set(ticket_id)
+    seen_resp = set()
     responded_no_match = 0
     for p in overview.get("partners", []):
         slug = p.get("slug")
@@ -246,14 +231,50 @@ def main():
         with open(blob_path, encoding="utf-8") as fh:
             blob = json.load(fh)
         for c in blob.get("csat_comments", []) or []:
-            if not _responded(c):
+            if not _responded(c):        # skip sent-but-unanswered surveys
                 continue
+            rid = c.get("id")
+            if rid in seen_resp:         # same response can appear in >1 blob (shared company)
+                continue
+            seen_resp.add(rid)
             tid = str(c.get("ticket_id") or "")
-            if tid in sent_index:
+            own = owner.get(tid)
+            if not own:
+                d = _parse_iso_date(c.get("date"))
+                if d and d.year == TODAY.year and d.month <= TODAY.month:
+                    responded_no_match += 1
                 continue
-            d = _parse_iso_date(c.get("date"))
-            if d and d.year == TODAY.year and d.month <= TODAY.month:
-                responded_no_match += 1
+            o_slug, key = own
+            answered.setdefault((o_slug, key), set()).add(tid)
+            cell = by_slug[o_slug]["cells"][key]
+            rt = str(c.get("rating") or "").capitalize()
+            if rt in ("Positive", "Neutral", "Negative"):
+                cell["rated"] += 1
+                if rt == "Positive":
+                    cell["pos"] += 1
+    for (o_slug, key), tids in answered.items():
+        by_slug[o_slug]["cells"][key]["received"] = len(tids)
+
+    # ---- Build rows + portfolio totals ----
+    rows = []
+    total_sent = total_received = 0
+    for m in partners_meta:
+        cells = m["cells"]
+        p_sent = sum(c["sent"] for c in cells.values())
+        p_recv = sum(c["received"] for c in cells.values())
+        p_pos = sum(c["pos"] for c in cells.values())
+        p_rated = sum(c["rated"] for c in cells.values())
+        total_sent += p_sent
+        total_received += p_recv
+        rows.append({
+            "partner": m["name"],
+            "slug": m["slug"],
+            "accountManager": m["am"] or "Unassigned",
+            "regionalManager": m["rm"] or "Unassigned",
+            "site": m["site"] or "—",
+            "months": cells,
+            "total": {"sent": p_sent, "received": p_recv, "pos": p_pos, "rated": p_rated},
+        })
 
     by_month = []
     for k, m in zip(month_keys, months):

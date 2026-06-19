@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — CSAT recon: reassign NDA monthly-CSAT from Dataprise(57) to PEI(137) (2026-06-19)
+
+### Changed
+- **CSAT survey tickets are now attributed by ticket-type/site, not just the Halo client
+  they're filed under.** ITBD raises PEI's NDA monthly-engineer CSAT (ticket **type 163**,
+  "DES Monthly Engineer CSAT - NDA") under the shared **"Dataprise"** Halo client (**57**),
+  but it belongs to **PEI (Dataprise) (137**, the NDA account). `scripts/build_csat_recon.py`
+  now applies a reassignment map (`_TICKET_REASSIGN = {(57,163): 137}`): the build resolves
+  each survey ticket's **owner** partner, and attributes the TeamGPS response (by `ticket_id`)
+  to that owner — **regardless of which partner's blob carries the response** (responses are
+  now pooled globally and deduped by id, since the same TeamGPS "Dataprise" responses appear
+  in both the PEI and Dataprise caches). Result: **PEI (Dataprise)** shows the NDA CSAT
+  (15 sent / 12 received / 100% positive), and **Dataprise (57)** shows 0 (its only CSAT was
+  the NDA tickets, now PEI's). `scripts/audit_csat_recon.py` mirrors `_claimed_tickets` for
+  sent and skips the cross-blob clients from its per-partner DRIFT check (flags `REASSIGNED`).
+  - Caveat: the per-partner **Partner 360 CSAT tile** is still TeamGPS-company based (it can't
+    split by ticket type), so Dataprise's tile may still show those responses; the
+    **CSAT Reconciliation** report (the authoritative split) attributes them to PEI.
+
 ## [Unreleased] — Build Dataprise (active); exclude Network Builders IT (cancelled) (2026-06-19)
 
 ### Added

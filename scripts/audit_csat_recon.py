@@ -41,7 +41,13 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 DATA = os.path.join(ROOT, "data")
 
 import build_csat_recon as R  # noqa: E402  (reuse the builder's exact logic)
-from build_csat_recon import halo, _ticket_month, _window_keys, _parse_iso_date, _responded  # noqa: E402
+from build_csat_recon import (halo, _ticket_month, _window_keys, _parse_iso_date,  # noqa: E402
+                               _responded, _claimed_tickets, _TICKET_REASSIGN)
+
+# Clients whose CSAT tickets are reassigned across Halo records (build_csat_recon
+# attributes their received globally, cross-blob). This per-partner audit can't mirror
+# that, so it skips DRIFT for them and flags REASSIGNED instead (informational).
+_REASSIGN_CLIENTS = {c for pair in _TICKET_REASSIGN for c in (pair[0],)} | set(_TICKET_REASSIGN.values())
 
 
 def recompute(blob, client_id):
@@ -53,7 +59,7 @@ def recompute(blob, client_id):
     cells = {k: {"sent": 0, "received": 0, "pos": 0, "rated": 0} for k in keys}
     sent_ids = {}
     if client_id:
-        for t in halo.fetch_csat_tickets(client_id):
+        for t in _claimed_tickets(client_id, halo.fetch_csat_tickets):
             ym = _ticket_month(t.get("summary"), t.get("dateoccurred"))
             if not ym:
                 continue
@@ -128,9 +134,12 @@ def main():
                     flags.append(f"MONTH_SHIFT:{k}->{top[0]}")
                 month_detail[k] = {**c, "submitMonths": dict(sm)}
 
-        # drift vs published feed
+        # drift vs published feed — skip clients whose tickets are reassigned cross-blob
+        # (the builder attributes their received globally; this per-partner recompute can't).
         fr = feed_rows.get(slug)
-        if fr:
+        if client_id in _REASSIGN_CLIENTS:
+            flags.append("REASSIGNED")
+        elif fr:
             for k in keys:
                 fc = (fr.get("months") or {}).get(k) or {}
                 rc = cells[k]
