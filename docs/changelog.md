@@ -22,11 +22,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 - **Displayed account names now come from the live Halo Client Name** across every view.
-  `scripts/build_overview.py` now prefers `client.name` (the cached live Halo name) over
-  the hand-entered roster/index label for the feed's `name` (slugs are unchanged — still
-  explicit). So a Halo rename (e.g. "PEI" → "PEI (Dataprise)") propagates to the Exec
-  Overview, Partner 360 and CSAT Reconciliation automatically — Halo is the one source of
-  truth for the name.
+  `scripts/build_real_partners.py` now stores the cache `client.name` as the **Halo** name
+  (it previously overrode it with the roster label — which is why "PEI" never picked up
+  Halo's "PEI (Dataprise)"); `meta.partner` keeps the roster label (drives the slug +
+  Transcripts/ folder matching). `scripts/build_overview.py` then prefers `client.name`
+  over the index label for the feed's `name` (slugs unchanged — still explicit). The
+  registry path (`extract/build_partner.py`) already used the Halo name. So a Halo rename
+  (e.g. "PEI" → "PEI (Dataprise)") propagates to Exec Overview, Partner 360 and CSAT
+  Reconciliation automatically — Halo is the one source of truth for the name.
 
 ### Added
 - **Dataprise (Halo client 57)** added to the roster (`scripts/build_real_partners.py`) and

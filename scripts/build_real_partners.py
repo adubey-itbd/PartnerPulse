@@ -267,7 +267,12 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=
                         "decks": len(decks), "transcripts": len(tx)},
         },
         "client": {
-            "id": client.get("id"), "name": name, "vip": bool(client.get("is_vip")),
+            # Halo Client Name is the source of truth for the displayed name (a Halo
+            # rename then propagates everywhere); fall back to the roster label only if
+            # Halo returns no name. meta.partner keeps the roster label (drives the slug
+            # + Transcripts/ folder matching).
+            "id": client.get("id"), "name": (client.get("name") if client_id else None) or name,
+            "vip": bool(client.get("is_vip")),
             "rag": cf.get("CFMDERAG"), "cancel_risk": cf.get("CFCancelationRisk"),
             "health_reason": cf.get("CFHealthReason"), "next_step": cf.get("CFNextStep"),
             "sip_ticket": cf.get("CFSIPTicketMDE"),
