@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Transcript sub-team folders roll into their parent partner (2026-06-19)
+
+### Fixed
+- **Sub-team transcript folders are now ingested.** `extract/transcripts.py` matched a partner to
+  exactly one folder (`slugify` equality), so `MSP Corp (HD Team)`, `MSP Corp (SOC)`,
+  `MSP Corp(Accounts Payable)`, `MSP Corp(CRDS Group)`, `MSP Corp(MBCCS Group)` were silently
+  dropped (slugify keeps the hyphen: `msp-corp-hd-team` ≠ `mspcorp`). New `partner_transcript_dirs()`
+  matches on an **alphanumeric-only** key and rolls **sub-team siblings** (folders whose alnum name
+  starts with the partner's, ≥6-char floor to avoid collisions) into the parent — MSPCorp now
+  ingests all 5 sub-team folders (98 transcript files). Other partners are unaffected.
+  - Still unmatched (need a roster decision, NOT auto-added): `Network Builders IT/`, `Dataprise/`.
+
 ## [Unreleased] — CSAT Reconciliation: accuracy audit, "still collecting" markers (2026-06-19)
 
 ### Added

@@ -105,7 +105,10 @@ code and every doc that states it must move together:
 8. **`Transcripts/` conventions (git-tracked input data):** one folder per partner,
    whose name must normalize-match the partner's display name — `slugify(folder)` ==
    `slugify(registry name or NEW display name)` — or the files are silently ignored
-   (a warning fires in `build_real_partners.py` for orphan folders). Files are
+   (a warning fires in `build_real_partners.py` for orphan folders). **Sub-team folders
+   roll into their parent (changed 2026-06-19):** `partner_transcript_dirs()` also matches
+   siblings whose alphanumeric name starts with the partner's (≥6-char floor), so
+   `MSP Corp (SOC)` etc. ingest into MSPCorp. Files are
    `.docx` (manual Teams exports) or `.vtt` (Graph pulls); every `.vtt` starts with
    `WEBVTT` + `NOTE title:` / `NOTE date:` / `NOTE duration:` lines (keys matched
    case-insensitively). Keep transcript content verbatim — never summarize or edit it.

@@ -145,12 +145,41 @@ def resolve_partner_dir(partner_name: str):
     return None
 
 
+def _alnum(s: str) -> str:
+    """Lowercase alphanumerics only — collapses 'MSP Corp (HD Team)' and 'MSPCorp'
+    to a comparable form ('mspcorphdteam' vs 'mspcorp') so sub-team folders can be
+    rolled into their parent partner (slugify alone keeps the hyphen and won't)."""
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def partner_transcript_dirs(transcript_dir: str):
+    """Transcripts/ folders for a partner: the exact/normalized match PLUS sub-team
+    siblings whose alphanumeric name starts with the partner's — e.g. 'MSP Corp (HD
+    Team)', 'MSP Corp(SOC)', 'MSP Corp(MBCCS Group)' all roll into 'MSPCorp' (added
+    2026-06-19). A 6-char floor on the partner key keeps short names from grabbing
+    unrelated folders."""
+    base = config.TRANSCRIPTS_DIR
+    if not base.is_dir():
+        d = base / transcript_dir
+        return [d] if d.is_dir() else []
+    want = _norm(transcript_dir)
+    key = _alnum(transcript_dir)
+    dirs = []
+    for sub in sorted(base.iterdir()):
+        if not sub.is_dir():
+            continue
+        if _norm(sub.name) == want or (len(key) >= 6 and _alnum(sub.name).startswith(key)):
+            dirs.append(sub)
+    return dirs
+
+
 def list_partner_transcripts(transcript_dir: str):
-    """All .docx and .vtt transcripts for a partner folder, sorted by name."""
-    d = resolve_partner_dir(transcript_dir)
-    if d is None:
-        return []
-    return sorted(list(d.glob("*.docx")) + list(d.glob("*.vtt")))
+    """All .docx and .vtt transcripts for a partner (its folder + any sub-team
+    folders that roll into it), sorted by name."""
+    files = []
+    for d in partner_transcript_dirs(transcript_dir):
+        files += list(d.glob("*.docx")) + list(d.glob("*.vtt"))
+    return sorted(files)
 
 
 def parse_partner_transcripts(transcript_dir: str):
