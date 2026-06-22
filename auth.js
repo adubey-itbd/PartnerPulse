@@ -333,12 +333,44 @@
         });
       } else {
         hideOverlay();
+        recordLogin(user);
         resolve(user);
       }
     });
   });
 
   function docs(snap) { return snap.docs.map(function (d) { return d.data(); }); }
+
+  // Sign-in audit. Once per browser-tab session (sessionStorage guard) so reloads
+  // and index<->partner navigation in the same tab don't inflate the count, write:
+  //   - an immutable event doc to `login_audit` (who/when/where), and
+  //   - a per-user rollup in `login_audit_summary/{uid}` (count + last_login).
+  // Both are fire-and-forget and best-effort: a failed/denied write must never
+  // block dashboard access. firestore.rules restricts both to the signed-in user's
+  // own identity; reads happen in the Firebase console, not the client.
+  function recordLogin(user) {
+    try {
+      if (sessionStorage.getItem("pp_login_logged") === "1") return;
+      sessionStorage.setItem("pp_login_logged", "1");
+    } catch (_) { /* private mode / disabled storage: fall through, log anyway */ }
+    try {
+      var db = firebase.firestore();
+      var FV = firebase.firestore.FieldValue;
+      var email = (user.email || "").toLowerCase();
+      db.collection("login_audit").add({
+        email: email,
+        uid: user.uid,
+        ts: FV.serverTimestamp(),
+        page: (location.pathname || "").slice(0, 300),
+        user_agent: (navigator.userAgent || "").slice(0, 500),
+      }).catch(function () {});
+      db.collection("login_audit_summary").doc(user.uid).set({
+        email: email,
+        count: FV.increment(1),
+        last_login: FV.serverTimestamp(),
+      }, { merge: true }).catch(function () {});
+    } catch (_) { /* never let auditing break sign-in */ }
+  }
 
   window.PP_AUTH = {
     mode: "prod",

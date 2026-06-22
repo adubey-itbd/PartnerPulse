@@ -6,6 +6,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Provision 5 dashboard users + sign-in audit log (2026-06-22)
+
+### Added
+- **Sign-in audit logging.** `auth.js` now calls `recordLogin(user)` when a verified
+  `@itbd.net` session resolves, writing two Firestore paths: an immutable event doc to
+  **`login_audit`** (`email`, `uid`, `ts`=serverTimestamp, `page`, `user_agent`) and a
+  per-user rollup **`login_audit_summary/{uid}`** (`email`, `count` via `FieldValue.increment(1)`,
+  `last_login`). A **sessionStorage guard (`pp_login_logged`)** fires it at most once per
+  browser-tab session, so reloads / index↔partner navigation don't inflate the count. Writes
+  are fire-and-forget and best-effort — a denied/failed write never blocks dashboard access.
+  Review counts/times in the **Firebase console** (no client reads). Loaded on **both**
+  `index.html` and `partner.html` (shared `auth.js`).
+- **`firestore.rules`:** two new client-writable, create/append-only clauses
+  (`login_audit/{id}` create-only; `login_audit_summary/{uid}` create + monotonic
+  `count == prev + 1` update), each restricted via `isItbd()` to the signed-in user's **own**
+  `uid`/`email`, with `keys().hasOnly(...)` locks and no client reads. These are the 2nd/3rd
+  client-writable paths after `feedback`.
+
+### Operational
+- **Provisioned 5 Firebase Auth accounts** (vishal.dogra, keith.rozario, andrea.canlas,
+  lee.cavellier, jkhan @itbd.net) via the Admin SDK with strong random passwords and
+  **`email_verified=True`** (admin-vouched, so they sign in immediately without the mailbox
+  verification step). Credentials delivered out-of-band, not stored in the repo.
+- Deployed: `firebase deploy --only firestore:rules,hosting`.
+
 ## [Unreleased] — CSAT recon: reassign NDA monthly-CSAT from Dataprise(57) to PEI(137) (2026-06-19)
 
 ### Changed

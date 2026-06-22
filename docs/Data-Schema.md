@@ -189,6 +189,8 @@ partners/{slug}/csat/{i}          ← one doc per CSAT comment       (blob.csat_
 partners/{slug}/nps/{i}           ← one doc per NPS response       (blob.nps_comments)
 partners/{slug}/actions/{i}       ← one doc per action item        (blob.action_items)
 feedback/{auto-id}                 ← one doc per public feedback submission (from feedback.html)
+login_audit/{auto-id}              ← one doc per sign-in session            (from auth.js recordLogin)
+login_audit_summary/{uid}          ← per-user rollup: count + last_login    (from auth.js recordLogin)
 ```
 
 The `feedback` collection is **not** part of the pipeline feed — it is written
@@ -197,13 +199,24 @@ Shape: `{ message, category, page, user_agent, submitted_at (server time),
 name?, email?, company?, rating? (1–5) }`. Reviewed in the Firebase console (no
 in-app reader).
 
+The `login_audit` / `login_audit_summary` collections are likewise **not** part
+of the pipeline feed — they are written directly by the browser (`auth.js`
+`recordLogin`, once per browser-tab session). `login_audit/{auto-id}` shape:
+`{ email, uid, ts (server time), page, user_agent }` (immutable). `login_audit_summary/{uid}`
+shape: `{ email, count (FieldValue.increment), last_login (server time) }`.
+Reviewed in the Firebase console (no in-app reader).
+
 **Access (`firestore.rules`):** read allowed only for a **verified `@itbd.net`**
 account (`email_verified == true` + domain regex); **dashboard client writes denied**.
 The pipeline writes via the Admin SDK / attached service account, which bypasses
 rules. **Exception — the public `feedback` collection:** unauthenticated **CREATE
 only**, validated by `isValidFeedback()` (required `message` ≤5000 chars,
 `submitted_at == request.time`, optional fields type/size-capped, key set locked
-via `hasOnly`); no client reads/updates/deletes. `firestore.indexes.json` is empty — the overview fetches all summary docs
+via `hasOnly`); no client reads/updates/deletes. **Exception — sign-in audit
+(`login_audit` / `login_audit_summary`):** create/append-only by a **verified
+`@itbd.net`** user writing **only their own** `uid`/`email` (`isItbd()` + identity
+match + `ts`/`last_login == request.time` + `count` monotonic `== prev + 1` on
+update + `hasOnly` key locks); no client reads/deletes. `firestore.indexes.json` is empty — the overview fetches all summary docs
 and filters client-side (fine to a few hundred partners; past that, switch
 `loadOverview()` to a server-side `orderBy('churnRisk').limit()` query + composite
 index).
