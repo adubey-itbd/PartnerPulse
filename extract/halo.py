@@ -99,6 +99,8 @@ _CF_KEYS = {
     "CFSIPTicketMDE", "CFProduct",
     # CSAT-reconciliation Site dimension (RAG tab): NDA / CDG / DL / PH.
     "CFAccountSite",
+    # CSAT-reconciliation Product (MDE) dimension (RAG tab): Self-Managed / Co-Managed.
+    "CFProductMDE",
 }
 
 

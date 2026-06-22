@@ -76,9 +76,10 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   per month it reconciles CSAT **sent** (Halo tickets, types 36/163/164, one ticket =
   one sent; survey month from the ticket summary, year from `dateoccurred`) against
   CSAT **received** (TeamGPS responses in the `data/{slug}.json` caches, joined by
-  `ticket_id`). Carries per-row Account Manager / Regional Manager / Site (Halo
-  `accountmanagertech_name` / `regmanagertech_name` / `CFAccountSite`) so the view can
-  re-group client-side. Published to Firestore as the single doc `meta/csatRecon`.
+  `ticket_id`). Carries per-row Account Manager / Regional Manager / Site / Product (MDE)
+  (Halo `accountmanagertech_name` / `regmanagertech_name` / `CFAccountSite` /
+  `CFProductMDE` [Self-Managed|Co-Managed]) so the view can re-group client-side.
+  Published to Firestore as the single doc `meta/csatRecon`.
 - `partner.html` + `partner.js` — per-partner drilldown (`?partner=<slug>`), fetches
   `data/{slug}.json` at runtime. Styled by `styles.css` (which `index.html` does
   NOT load — gotcha 7); Chart.js vendored in `vendor/`. **Unchanged by the beta.8 redesign.**

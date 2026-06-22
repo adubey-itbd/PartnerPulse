@@ -138,6 +138,7 @@ Reconciliation view in `index.html`. **Source→field provenance:**
 | CSAT **% positive** (per month) | Of the matched responses, `positive ÷ rated` (rated = Positive+Neutral+Negative ratings on `csat_comments`). The satisfaction score, distinct from the response rate. |
 | Account Manager / Regional Manager | Halo client `accountmanagertech_name` / `regmanagertech_name`. |
 | Site | Halo client custom field `CFAccountSite` (NDA/CDG/DL/PH; the `-1` sentinel and stray numeric ids → "—"). |
+| Product (MDE) | Halo client custom field `CFProductMDE` (Self-Managed / Co-Managed; same sentinel/numeric guard → "—"). |
 | Partner roster | `data/_overview.json` partners (= Halo `CFMDERAG ≥ 1`, demo-allowlist applied). |
 
 ```jsonc
@@ -154,7 +155,7 @@ Reconciliation view in `index.html`. **Source→field provenance:**
                  "rate",   // response rate %
                  "csat" } ],           // CSAT % positive
   "rows": [ {
-      "partner", "slug", "accountManager", "regionalManager", "site",
+      "partner", "slug", "accountManager", "regionalManager", "site", "product",
       "months": { "2026-01": { "sent", "received", "pos", "rated" }, … },
       "total":  { "sent", "received", "pos", "rated" }
   } ]

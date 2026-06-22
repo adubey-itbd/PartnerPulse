@@ -18,8 +18,9 @@ responses *received*:
                sent ticket (e.g. a survey sent before the window, or a non-DES one).
 
 Each row also carries the partner's Account Manager (client.accountmanagertech_name),
-Regional Manager (client.regmanagertech_name) and Site (client custom field
-CFAccountSite) so the view can re-group the same numbers by those dimensions
+Regional Manager (client.regmanagertech_name), Site (client custom field
+CFAccountSite) and Product (MDE) (custom field CFProductMDE — Self-Managed /
+Co-Managed) so the view can re-group the same numbers by those dimensions
 client-side.
 
 The partner set mirrors the dashboard exactly: it is read from data/_overview.json
@@ -186,7 +187,7 @@ def main():
         client = blob.get("client", {}) or {}
         client_id = client.get("id")
 
-        am = rm = site = None
+        am = rm = site = product = None
         cells = {k: {"sent": 0, "received": 0, "pos": 0, "rated": 0} for k in month_keys}
         if client_id:
             try:
@@ -199,6 +200,10 @@ def main():
                 # that isn't a real alphabetic site code.
                 site_raw = str(cf.get("CFAccountSite") or "").strip()
                 site = site_raw if site_raw and not re.fullmatch(r"-?\d+", site_raw) else None
+                # CFProductMDE is "Self-Managed"/"Co-Managed" (RAG tab "ProductMDE");
+                # same sentinel/leak guard — keep only a real text label.
+                product_raw = str(cf.get("CFProductMDE") or "").strip()
+                product = product_raw if product_raw and not re.fullmatch(r"-?\d+", product_raw) else None
             except Exception as exc:
                 print(f"  WARN: Halo client detail failed for {slug} ({client_id}): {exc}",
                       file=sys.stderr)
@@ -212,7 +217,7 @@ def main():
                 cells[key]["sent"] += 1
                 owner[str(t.get("id"))] = (slug, key)
         partners_meta.append({"slug": slug, "name": name, "am": am, "rm": rm,
-                              "site": site, "cells": cells})
+                              "site": site, "product": product, "cells": cells})
 
     # ---- Pass 2: RECEIVED (global). Attribute each response to whoever OWNS its sent
     #      ticket (per `owner`) — regardless of which partner's blob carries it — so a
@@ -272,6 +277,7 @@ def main():
             "accountManager": m["am"] or "Unassigned",
             "regionalManager": m["rm"] or "Unassigned",
             "site": m["site"] or "—",
+            "product": m["product"] or "—",
             "months": cells,
             "total": {"sent": p_sent, "received": p_recv, "pos": p_pos, "rated": p_rated},
         })

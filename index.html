@@ -575,6 +575,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                                 <button data-grp="accountManager" role="tab">Account Manager</button>
                                 <button data-grp="regionalManager" role="tab">Regional Manager</button>
                                 <button data-grp="site" role="tab">Site</button>
+                                <button data-grp="product" role="tab">Product (MDE)</button>
                             </div>
                             <div class="seg" id="csat-period" role="tablist" aria-label="Period">
                                 <button class="active" data-period="monthly" role="tab">Monthly</button>
@@ -1075,7 +1076,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         return keys;
     }
 
-    const GRP_LABEL = { partner: "Partner", accountManager: "Account Manager", regionalManager: "Regional Manager", site: "Site" };
+    const GRP_LABEL = { partner: "Partner", accountManager: "Account Manager", regionalManager: "Regional Manager", site: "Site", product: "Product (MDE)" };
 
     function renderCsatTable() {
         const tbl = $("csat-table");

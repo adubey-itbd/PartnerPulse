@@ -6,6 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — CSAT Reconciliation: add Product (MDE) group-by dimension (2026-06-22)
+
+### Added
+- **CSAT Reconciliation can now group by Product (MDE) — Self-Managed / Co-Managed**,
+  alongside Partner / Account Manager / Regional Manager / Site. Sourced from the Halo
+  client custom field **`CFProductMDE`** (the RAG-tab "ProductMDE" field).
+  - `extract/halo.py`: added `CFProductMDE` to `_CF_KEYS` so `parse_custom_fields` returns it.
+  - `scripts/build_csat_recon.py`: each row now carries `product` (the `CFProductMDE`
+    display label, or `—` when unset / numeric-sentinel), mirroring how `site`
+    (`CFAccountSite`) is captured.
+  - `index.html`: new "Product (MDE)" group-by tab + `GRP_LABEL.product`. The grouping
+    logic is generic (`r[reconState.grp]`), so no other JS changed.
+  - Published in the existing whole-blob `meta/csatRecon` upload (no `upload_firebase_data.py`
+    key change needed). Shipped durably: hosting redeploy + Cloud Run image rebuild so the
+    nightly job keeps emitting `product`.
+
 ## [Unreleased] — Restrict access to a named 6-person allowlist; remove dup account (2026-06-22)
 
 ### Changed
