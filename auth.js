@@ -30,6 +30,19 @@
   var isLocal = host === "localhost" || host === "127.0.0.1" || host === "";
   var configured = cfg.apiKey && cfg.apiKey.indexOf("REPLACE") !== 0;
   var ALLOWED_DOMAIN = "itbd.net";
+  // Access allowlist (2026-06-22): only these named accounts may use the dashboard,
+  // not the whole @itbd.net domain. This is a cosmetic gate (bounce non-listed users
+  // at the overlay instead of showing a broken page); the ENFORCED boundary is the
+  // identical allowlist in firestore.rules isItbd(). Keep the two in sync — to add/
+  // remove a person, edit BOTH lists and redeploy rules + hosting. Lowercase only.
+  var ALLOWED_EMAILS = [
+    "amit.dubey@itbd.net",
+    "vishal.dogra@itbd.net",
+    "keith.rozario@itbd.net",
+    "andrea.canlas@itbd.net",
+    "lee.cavellier@itbd.net",
+    "jkhan@itbd.net",
+  ];
   var DEV = isLocal || !configured || typeof firebase === "undefined";
 
   // Subcollection name -> the key partner.js expects on the assembled object.
@@ -71,6 +84,10 @@
   function validDomain(email) {
     return new RegExp("^[^@]+@" + ALLOWED_DOMAIN.replace(/\./g, "\\.") + "$", "i")
       .test((email || "").trim());
+  }
+
+  function isAllowed(email) {
+    return ALLOWED_EMAILS.indexOf((email || "").trim().toLowerCase()) !== -1;
   }
 
   // --- sign-in overlay (created lazily once the body exists) ---
@@ -318,9 +335,11 @@
     auth.onAuthStateChanged(function (user) {
       if (!user) { showOverlay(); return; }
       var email = (user.email || "").toLowerCase();
-      if (!validDomain(email)) {
+      if (!isAllowed(email)) {
+        // Not on the named allowlist — sign out and bounce (firestore.rules would
+        // deny all reads anyway; this just avoids dead-ending on a broken page).
         auth.signOut();
-        showOverlay("Access is restricted to @" + ALLOWED_DOMAIN + " addresses.", true);
+        showOverlay("This account isn't authorized for the dashboard. Contact your admin for access.", true);
       } else if (!user.emailVerified) {
         // Prove mailbox ownership before granting access (firestore.rules also
         // require email_verified). Best-effort (re)send, then drop the session

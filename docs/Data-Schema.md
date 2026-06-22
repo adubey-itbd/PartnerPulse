@@ -206,8 +206,10 @@ of the pipeline feed — they are written directly by the browser (`auth.js`
 shape: `{ email, count (FieldValue.increment), last_login (server time) }`.
 Reviewed in the Firebase console (no in-app reader).
 
-**Access (`firestore.rules`):** read allowed only for a **verified `@itbd.net`**
-account (`email_verified == true` + domain regex); **dashboard client writes denied**.
+**Access (`firestore.rules`):** read allowed only for a **verified, allowlisted**
+account (`email_verified == true` + `email in [...]` — a **named 6-person allowlist**,
+not the whole `@itbd.net` domain, since 2026-06-22; mirrored in `auth.js` `ALLOWED_EMAILS`);
+**dashboard client writes denied**.
 The pipeline writes via the Admin SDK / attached service account, which bypasses
 rules. **Exception — the public `feedback` collection:** unauthenticated **CREATE
 only**, validated by `isValidFeedback()` (required `message` ≤5000 chars,

@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Restrict access to a named 6-person allowlist; remove dup account (2026-06-22)
+
+### Changed
+- **Access is now a named allowlist, NOT the whole `@itbd.net` domain** (by request —
+  "only these people, no one else for now"). `firestore.rules` `isItbd()` now requires
+  `request.auth.token.email in [...]` (the enforced boundary) and `auth.js` gained a matching
+  `ALLOWED_EMAILS` list + `isAllowed()` that bounces non-listed accounts at the sign-in overlay
+  (cosmetic — rules would deny their reads regardless). The two lists **must stay in sync**; to
+  add/remove a person edit BOTH and redeploy rules + hosting. Current allowlist (lowercase):
+  `amit.dubey`, `vishal.dogra`, `keith.rozario`, `andrea.canlas`, `lee.cavellier`, `jkhan` @itbd.net.
+  `email_verified == true` is still required.
+
+### Removed
+- **Deleted a dead duplicate `amit.dubey@itbd.net` Auth account** (uid `N25MyNExZ…`, unverified,
+  never signed in) that coexisted with the verified, in-use account (uid `M5nMEG9x…`, kept). The
+  two existed because the project permits multiple accounts per email; the unverified one could
+  never pass the rules/`auth.js` gate and split UID-keyed `login_audit_summary`.
+
 ## [Unreleased] — Provision 5 dashboard users + sign-in audit log (2026-06-22)
 
 ### Added

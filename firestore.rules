@@ -25,14 +25,25 @@ service cloud.firestore {
     // security boundary for the dashboard. All three conditions are required:
     //   (1) request.auth != null            -> signed in at all
     //   (2) email_verified == true          -> proved mailbox ownership (the
-    //       client domain check in auth.js is cosmetic; THIS is enforced)
-    //   (3) email matches ^...@itbd[.]net$  -> ITBD staff only
+    //       client allowlist in auth.js is cosmetic; THIS is enforced)
+    //   (3) email in the explicit ALLOWLIST -> named individuals only
+    // ACCESS IS NOW A NAMED ALLOWLIST, NOT THE WHOLE @itbd.net DOMAIN (2026-06-22,
+    // by request — "only these people, no one else for now"). To add/remove a
+    // person, edit BOTH this list AND the ALLOWED_EMAILS array in auth.js, then
+    // redeploy rules + hosting. Emails are lowercase (Firebase normalizes tokens).
     // Do NOT weaken or duplicate this logic inline; change it here only, and
     // keep all writes denied (the Admin SDK pipeline bypasses rules entirely).
     function isItbd() {
       return request.auth != null
         && request.auth.token.email_verified == true
-        && request.auth.token.email.matches('^[^@]+@itbd[.]net$');
+        && request.auth.token.email in [
+          'amit.dubey@itbd.net',
+          'vishal.dogra@itbd.net',
+          'keith.rozario@itbd.net',
+          'andrea.canlas@itbd.net',
+          'lee.cavellier@itbd.net',
+          'jkhan@itbd.net'
+        ];
     }
 
     // Public feedback form (feedback.html) — the ONLY client-writable path.

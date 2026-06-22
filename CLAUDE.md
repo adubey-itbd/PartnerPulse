@@ -8,7 +8,9 @@ analysis → JSON caches)
 in package/doc headers.)
 
 **Production (since 2026-06-16):** the UI is hosted on **Firebase Hosting** behind
-email/password sign-in restricted to verified **`@itbd.net`**; all data is read from
+email/password sign-in restricted to a **named allowlist** of verified **`@itbd.net`**
+accounts (a 6-person list since 2026-06-22, not the whole domain — kept in sync between
+`firestore.rules` `isItbd()` and `auth.js` `ALLOWED_EMAILS`); all data is read from
 **Cloud Firestore** (sharded) via `auth.js`; and the pipeline runs unattended as a
 nightly **Cloud Run Job** (Cloud Scheduler, 21:00 America/New_York) that rebuilds and
 republishes Firestore. The churn AI is **Grok (`grok-4-1-fast-reasoning`)** served via
@@ -203,6 +205,8 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
    only — data refresh is the Job, not a redeploy.
 10. **Firebase tags in BOTH HTML heads:** the firebase-app/auth/firestore compat
    `<script>`s + `firebase-config.js` + `auth.js` are in `index.html` AND `partner.html`.
-   Auth is email/password restricted to verified `@itbd.net` (ITBD is on M365, not Google
-   Workspace). Full deploy + provisioning runbooks: `docs/Firebase-Deploy-SOP.md` and
+   Auth is email/password restricted to a **named allowlist** of verified `@itbd.net`
+   accounts (ITBD is on M365, not Google Workspace) — the list lives in BOTH
+   `firestore.rules` `isItbd()` (enforced) and `auth.js` `ALLOWED_EMAILS` (overlay bounce);
+   edit both + redeploy rules + hosting to change who has access. Full deploy + provisioning runbooks: `docs/Firebase-Deploy-SOP.md` and
    `docs/Cloud-Pipeline-SOP.md`; end-to-end data map: `docs/Data-Schema.md`.
