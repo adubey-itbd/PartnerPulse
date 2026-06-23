@@ -269,6 +269,15 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
 .csat-filter { padding: 8px 13px; border: 1px solid var(--border-color); border-radius: 10px; font-family: var(--font-body);
     font-size: 0.8rem; color: var(--text-primary); background: var(--bg-secondary); outline: none; min-width: 150px; transition: var(--transition-fast); }
 .csat-filter:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
+.csat-pick { display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: var(--text-secondary); }
+.csat-select { padding: 7px 10px; border: 1px solid var(--border-color); border-radius: 10px; font-family: var(--font-body);
+    font-weight: 700; font-size: 0.82rem; color: var(--text-primary); background: var(--bg-secondary); cursor: pointer; transition: var(--transition-fast); }
+.csat-select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); outline: none; }
+.csat-table td.col-attr, .csat-table th.col-attr { text-align: left; color: var(--text-secondary); font-weight: 700; }
+.csat-table tr.row-subtotal td { background: var(--card-track); font-weight: 800; }
+.csat-table tr.row-subtotal td.col-grp { background: #eef0f8; }
+.csat-table td.col-grp.row-child { padding-left: 30px; }
+.csat-table td.col-grp.row-child .grp-name { font-weight: 600; color: var(--text-secondary); }
 .csat-legend { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; font-size: 0.76rem; color: var(--text-muted); }
 /* breakdown pivot table */
 .csat-table-wrap { max-height: 620px; overflow: auto; }
@@ -570,13 +579,25 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                             <div class="card-subtitle">Grouped by dimension · cell = <b>received / sent</b> · badge = the metric you pick (response rate or CSAT % positive)</div>
                         </div>
                         <div class="csat-controls">
-                            <div class="seg" id="csat-group" role="tablist" aria-label="Group by">
-                                <button class="active" data-grp="partner" role="tab">Partner</button>
-                                <button data-grp="accountManager" role="tab">Account Manager</button>
-                                <button data-grp="regionalManager" role="tab">Regional Manager</button>
-                                <button data-grp="site" role="tab">Site</button>
-                                <button data-grp="product" role="tab">Product (MDE)</button>
-                            </div>
+                            <label class="csat-pick">Break down by
+                                <select class="csat-select" id="csat-dim1" aria-label="Break down by">
+                                    <option value="partner">Partner</option>
+                                    <option value="accountManager">Account Manager</option>
+                                    <option value="regionalManager">Regional Manager</option>
+                                    <option value="site">Site</option>
+                                    <option value="product">Product (MDE)</option>
+                                </select>
+                            </label>
+                            <label class="csat-pick">then by
+                                <select class="csat-select" id="csat-dim2" aria-label="Then break down by">
+                                    <option value="none">None</option>
+                                    <option value="partner">Partner</option>
+                                    <option value="accountManager">Account Manager</option>
+                                    <option value="regionalManager">Regional Manager</option>
+                                    <option value="site">Site</option>
+                                    <option value="product">Product (MDE)</option>
+                                </select>
+                            </label>
                             <div class="seg" id="csat-period" role="tablist" aria-label="Period">
                                 <button class="active" data-period="monthly" role="tab">Monthly</button>
                                 <button data-period="quarterly" role="tab">Quarterly</button>
@@ -989,7 +1010,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
     // ---------- CSAT Reconciliation view ----------
     const COL_INFO = "#0ea5e9", COL_SENT = "#b9c0d4", COL_CSAT = "#6d5ef0";
     let reconData = null, reconLoaded = false, reconChart = null, reconWired = false;
-    const reconState = { grp: "partner", period: "monthly", metric: "sr", filter: "" };
+    const reconState = { dim1: "partner", dim2: "none", period: "monthly", metric: "sr", filter: "" };
 
     function rateClass(r) { return r == null ? "rate-na" : r >= 80 ? "rate-hi" : r >= 60 ? "rate-mid" : "rate-lo"; }
     function csatClass(p) { return p == null ? "rate-na" : p >= 90 ? "rate-hi" : p >= 75 ? "rate-mid" : "rate-lo"; }
@@ -1010,18 +1031,56 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         return Object.keys(q).map((k) => q[k]);
     }
 
-    // Group the per-partner rows by the active dimension.
-    function csatGroups() {
+    // Value of a dimension on a partner row (partner uses its display name; the
+    // coarse attributes fall back to "Unassigned"/"—" when unset).
+    function dimVal(r, dim) {
+        if (dim === "partner") return r.partner;
+        return r[dim] || (dim === "product" || dim === "site" ? "—" : "Unassigned");
+    }
+
+    // Build the ordered list of table rows for the current dim1 (+ optional dim2)
+    // selection, each already aggregated over `buckets`. Item kinds:
+    //   "row"      flat top-level row (dim2 = none, or one partner)
+    //   "subtotal" a dim1 group header (pooled) when dim2 is set — followed by…
+    //   "child"    the dim2 sub-rows of the preceding subtotal
+    // When dim1 = partner + a dim2 is chosen, the partner's dim2 value rides along
+    // as an `attr` column instead of nesting (a partner can't be split further).
+    function csatRender(buckets) {
         const rows = reconData.rows || [];
-        if (reconState.grp === "partner")
-            return rows.map((r) => ({ name: r.partner, key: r.slug, src: [r] }));
-        const map = new Map();
-        rows.forEach((r) => {
-            const k = r[reconState.grp] || "Unassigned";
-            if (!map.has(k)) map.set(k, { name: k, key: k, src: [] });
-            map.get(k).src.push(r);
+        const q = reconState.filter.trim().toLowerCase();
+        const d1 = reconState.dim1, d2 = reconState.dim2;
+        const cells = (src) => csatCells({ src }, buckets);
+        const bySent = (a, b) => b.total.sent - a.total.sent;
+        const items = [];
+
+        if (d1 === "partner") {
+            let rs = rows.slice();
+            if (q) rs = rs.filter((r) => r.partner.toLowerCase().indexOf(q) !== -1);
+            rs.map((r) => Object.assign({ r }, cells([r]))).sort(bySent).forEach((x) =>
+                items.push({ kind: "row", name: x.r.partner, link: x.r.slug,
+                    attr: d2 !== "none" ? dimVal(x.r, d2) : null, cells: x.cells, total: x.total }));
+            return items;
+        }
+
+        const g1 = new Map();
+        rows.forEach((r) => { const k = dimVal(r, d1); (g1.get(k) || g1.set(k, []).get(k)).push(r); });
+        let groups = Array.from(g1, ([name, src]) => Object.assign({ name, src }, cells(src)));
+        if (q) groups = groups.filter((g) => g.name.toLowerCase().indexOf(q) !== -1);
+        groups.sort(bySent);
+
+        groups.forEach((g) => {
+            if (d2 === "none") {
+                items.push({ kind: "row", name: g.name, cells: g.cells, total: g.total });
+                return;
+            }
+            items.push({ kind: "subtotal", name: g.name, cells: g.cells, total: g.total });
+            const g2 = new Map();
+            g.src.forEach((r) => { const k = dimVal(r, d2); (g2.get(k) || g2.set(k, []).get(k)).push(r); });
+            Array.from(g2, ([name, src]) => Object.assign({ name, src }, cells(src))).sort(bySent)
+                .forEach((c) => items.push({ kind: "child", name: c.name,
+                    link: d2 === "partner" ? c.src[0].slug : null, cells: c.cells, total: c.total }));
         });
-        return Array.from(map.values());
+        return items;
     }
 
     function csatCells(group, buckets) {
@@ -1081,40 +1140,47 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
     function renderCsatTable() {
         const tbl = $("csat-table");
         const buckets = csatBuckets();
-        const q = reconState.filter.trim().toLowerCase();
-        let groups = csatGroups().map((g) => Object.assign(g, csatCells(g, buckets)));
-        if (q) groups = groups.filter((g) => g.name.toLowerCase().indexOf(q) !== -1);
-        groups.sort((a, b) => b.total.sent - a.total.sent);
+        const d1 = reconState.dim1, d2 = reconState.dim2;
+        const showAttr = d1 === "partner" && d2 !== "none";   // partner rows + a dim2 label column
+        const items = csatRender(buckets);
 
         const prog = inProgressMonthKeys();
         const isProg = (b) => b.months.some((mk) => prog.has(mk));
 
-        $("csat-table-empty").hidden = groups.length > 0;
-        tbl.querySelector("thead").innerHTML = "<tr><th class=\"col-grp\">" + esc(GRP_LABEL[reconState.grp]) + "</th>" +
-            buckets.map((b) => `<th class="${isProg(b) ? "col-prog" : ""}">${esc(b.label)}` +
-                (isProg(b) ? `<span class="col-prog-tag">collecting</span>` : "") + `</th>`).join("") +
+        $("csat-table-empty").hidden = items.length > 0;
+        let head = "<tr><th class=\"col-grp\">" + esc(GRP_LABEL[d1]) + "</th>";
+        if (showAttr) head += "<th class=\"col-attr\">" + esc(GRP_LABEL[d2]) + "</th>";
+        head += buckets.map((b) => `<th class="${isProg(b) ? "col-prog" : ""}">${esc(b.label)}` +
+            (isProg(b) ? `<span class="col-prog-tag">collecting</span>` : "") + `</th>`).join("") +
             "<th class=\"col-total\">Total</th></tr>";
+        tbl.querySelector("thead").innerHTML = head;
 
-        tbl.querySelector("tbody").innerHTML = groups.map((g) => {
-            const link = reconState.grp === "partner"
-                ? `<a class="grp-name" href="partner.html?partner=${encodeURIComponent(g.key)}">${esc(g.name)}</a>`
-                : `<span class="grp-name">${esc(g.name)}</span>`;
-            const cells = buckets.map((b) => rcCell(g.cells[b.key], isProg(b) ? "col-prog" : "")).join("");
-            const totCell = `<td class="col-total">${cellBody(g.total)}</td>`;
-            return `<tr><td class="col-grp">${link}</td>${cells}${totCell}</tr>`;
+        tbl.querySelector("tbody").innerHTML = items.map((it) => {
+            const name = it.link
+                ? `<a class="grp-name" href="partner.html?partner=${encodeURIComponent(it.link)}">${esc(it.name)}</a>`
+                : `<span class="grp-name">${esc(it.name)}</span>`;
+            const grpCls = "col-grp" + (it.kind === "child" ? " row-child" : "");
+            let tds = `<td class="${grpCls}">${name}</td>`;
+            if (showAttr) tds += `<td class="col-attr">${esc(it.attr || "—")}</td>`;
+            tds += buckets.map((b) => rcCell(it.cells[b.key], isProg(b) ? "col-prog" : "")).join("");
+            tds += `<td class="col-total">${cellBody(it.total)}</td>`;
+            return `<tr${it.kind === "subtotal" ? ' class="row-subtotal"' : ""}>${tds}</tr>`;
         }).join("");
 
-        // Footer: totals across the currently shown groups.
+        // Footer: grand total. Sum only top-level items (rows + subtotals) so the
+        // nested children — which partition their subtotal — aren't double-counted.
+        const tops = items.filter((it) => it.kind !== "child");
         const fb = {}; let gs = 0, gr = 0, gp = 0, gd = 0;
         buckets.forEach((b) => { fb[b.key] = { sent: 0, received: 0, pos: 0, rated: 0 }; });
-        groups.forEach((g) => buckets.forEach((b) => {
-            const c = g.cells[b.key];
+        tops.forEach((it) => buckets.forEach((b) => {
+            const c = it.cells[b.key];
             fb[b.key].sent += c.sent; fb[b.key].received += c.received; fb[b.key].pos += c.pos; fb[b.key].rated += c.rated;
         }));
-        groups.forEach((g) => { gs += g.total.sent; gr += g.total.received; gp += g.total.pos; gd += g.total.rated; });
+        tops.forEach((it) => { gs += it.total.sent; gr += it.total.received; gp += it.total.pos; gd += it.total.rated; });
+        const footAttr = showAttr ? "<td class=\"col-attr\"></td>" : "";
         const footCells = buckets.map((b) => rcCell(fb[b.key], isProg(b) ? "col-prog" : "")).join("");
         const footTot = `<td class="col-total">${cellBody({ sent: gs, received: gr, pos: gp, rated: gd })}</td>`;
-        tbl.querySelector("tfoot").innerHTML = `<tr><td class="col-grp">All (${groups.length})</td>${footCells}${footTot}</tr>`;
+        tbl.querySelector("tfoot").innerHTML = `<tr><td class="col-grp">All (${tops.length})</td>${footAttr}${footCells}${footTot}</tr>`;
     }
 
     function renderCsatKPIs() {
@@ -1178,7 +1244,11 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
             reconState[key] = b.getAttribute(attr);
             renderCsatTable();
         });
-        seg("csat-group", "data-grp", "grp");
+        const pick = (id, key) => $(id).addEventListener("change", (e) => {
+            reconState[key] = e.target.value; renderCsatTable();
+        });
+        pick("csat-dim1", "dim1");
+        pick("csat-dim2", "dim2");
         seg("csat-period", "data-period", "period");
         seg("csat-metric", "data-metric", "metric");
         $("csat-filter").addEventListener("input", (e) => { reconState.filter = e.target.value || ""; renderCsatTable(); });

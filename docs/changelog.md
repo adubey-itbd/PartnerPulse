@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — CSAT Reconciliation: two-dimension breakdown (nested) (2026-06-23)
+
+### Changed
+- **The CSAT "Breakdown" now supports two dimensions at once.** The single "Group by"
+  tab strip is replaced by two dropdowns — **Break down by** (`dim1`) and **then by**
+  (`dim2`, optional, default None) — over Partner / Account Manager / Regional Manager /
+  Site / Product (MDE). Period (Monthly/Quarterly) and Metric (Sent-Received / Response
+  rate / CSAT %) are unchanged.
+  - `dim2 = None` → the old flat single-dimension table.
+  - `dim1 = coarse attr` + `dim2` → **nested rows**: a pooled bold subtotal per `dim1`
+    group, then indented `dim2` sub-rows (e.g. Account Manager → Self/Co-Managed).
+  - `dim1 = Partner` + `dim2` → partner rows with the `dim2` value as an extra label
+    column (a partner can't be split further).
+  - Footer "All (N)" sums only top-level rows so nested children aren't double-counted;
+    all subtotals/totals are pooled (positive ÷ rated), not row averages.
+  - **Front-end only** (`index.html`) — the feed already carries every dimension, so no
+    pipeline/Firestore/image change. Unclassified partners (blank Halo `CFProductMDE` /
+    no RM) group under "—"/"Unassigned" as before.
+
 ## [Unreleased] — CSAT Reconciliation: add Product (MDE) group-by dimension (2026-06-22)
 
 ### Added
