@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Hide the Renewal Risk dashboard tab (2026-06-23)
+
+### Changed
+- **The "Renewal Risk" nav tab is hidden** in `index.html` — both the sidebar `<li>`
+  and the mobile-nav `<a>` (`data-view="renewal"`) are commented out (marked
+  "HIDDEN (2026-06-23, will unhide when needed)"). The Renewal Risk view section and
+  its JS are left intact, so restoring is just uncommenting the two nav entries.
+  - **Front-end only** (`index.html`) — no pipeline/Firestore/image change; the
+    `ai_renewal` overlay still builds and publishes as before.
+
 ## [Unreleased] — CSAT Reconciliation: two-dimension breakdown (nested) (2026-06-23)
 
 ### Changed
@@ -24,6 +34,43 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
   - **Front-end only** (`index.html`) — the feed already carries every dimension, so no
     pipeline/Firestore/image change. Unclassified partners (blank Halo `CFProductMDE` /
     no RM) group under "—"/"Unassigned" as before.
+## [Unreleased] — Capture SIP progress notes (incl. private notes) into AI + Partner 360 (2026-06-23)
+
+### Added
+- **SIP ticket progress notes now feed the churn AI and a new Partner-360 "SIP Progress
+  Notes" card.** Previously the pipeline only *counted* SIP tickets (`{open, closed}`) — the
+  SDM's weekly progress write-ups (utilization, ticket-closure, governance review, on-track
+  status) and the initial action plan never reached the analysis. QC on **Logically** (SIP
+  ticket `0761066`) surfaced the gap: the AI mentioned the SIP only via the bi-weekly call
+  notes, with none of the actual week-by-week SIP execution detail.
+  - **Root Halo quirk (documented in HaloPSA-API-SOP):** those write-ups are filed as
+    **PRIVATE notes** (`hiddenfromuser=true`), and Halo's `/api/Actions` **LIST endpoint
+    silently omits private notes**. They are only retrievable by fetching each action by its
+    (1-based, per-ticket) `id`. The earlier Stratti MoM gap was the same class of issue.
+  - `extract/halo.py`: refactored SIP discovery into `_discover_sips` (+ `_count_sip_rows`);
+    `count_sips` is unchanged behaviourally. Added `analyze_sips()` — one-pass discovery that
+    returns **`{open, closed, sips}`** where `sips` is grouped **per SIP ticket** with status
+    (`_sip_status_label` → Open / On Hold / Closed/Resolved/…), `started`/`latest` range, an
+    engineer-derived `subject`, and `updates[]` (the progress write-ups; `_sip_ticket_notes`
+    walks action ids to include the PRIVATE notes the LIST hides). Active SIPs sort before closed.
+  - `extract/build_partner.py` + `scripts/build_real_partners.py`: call `analyze_sips`, write
+    new top-level cache key **`sips`** (grouped).
+  - `extract/ai.py`: `build_context` adds a **"## SIP progress notes"** section (flattens
+    `sips[].updates`); counts toward `_has_substantive_signal`; `SCHEMA_HINT` now allows
+    action_items from SIP notes too. New cached **`summarize_sips()`** — a small per-SIP Grok
+    call that writes a start→date `summary` + `latest_status` onto each **active** SIP (keyed by
+    a notes hash, so it only re-runs when a SIP's notes change). Wired into `build_all.py` +
+    `build_real_partners.py` next to `analyze`/`analyze_renewal`. Only SIP partners' churn input
+    hash changes, so only they re-score (no portfolio-wide drift).
+  - `partner.html` + `partner.js`: new collapsible **SIP Progress Notes** card on the Action
+    Tracker page — one entry per SIP ticket with a status badge + date range; active SIPs show
+    the AI journey summary + latest status with the raw weekly notes behind a "Show updates"
+    expander, closed SIPs collapse to a one-liner. Hidden when a partner has no SIPs. The
+    MoM/SIP accordions share one builder.
+  - `scripts/upload_firebase_data.py` `_SECTIONS` + `auth.js` `SECTIONS`: new **`sip`**
+    subcollection (`sips`). `firestore.rules` already covers it via the recursive
+    `match /{document=**}` under `partners/{slug}` (comment lists updated). `docs/Data-Schema.md`
+    updated (top-level key, subcollection map, source-of-truth table).
 
 ## [Unreleased] — CSAT Reconciliation: add Product (MDE) group-by dimension (2026-06-22)
 

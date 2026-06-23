@@ -355,6 +355,14 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                         CSAT Reconciliation
                     </a>
                 </li>
+<!-- HIDDEN (2026-06-23, will unhide when needed): Renewal Risk tab
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-view="renewal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+                        Renewal Risk
+                    </a>
+                </li>
+                -->
             </ul>
         </div>
         <div class="sidebar-footer">
@@ -381,6 +389,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 <a class="nav-link" href="#top" data-view="overview">Executive Overview</a>
                 <a class="nav-link" href="#" data-view="partners">Partner 360</a>
                 <a class="nav-link" href="#" data-view="csat">CSAT Reconciliation</a>
+                <!-- HIDDEN (2026-06-23, will unhide when needed): <a class="nav-link" href="#" data-view="renewal">Renewal Risk</a> -->
             </nav>
             <div class="header-title-section">
                 <h1 id="view-title">Executive Overview</h1>
@@ -626,6 +635,39 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 </div>
             </div>
         </section>
+
+        <!-- View: Renewal Risk — churn re-weighted for contract-renewal timing (separate score) -->
+        <section class="page-container" id="view-renewal" style="display:none;">
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Renewal-adjusted risk</h2>
+                        <div class="card-subtitle">Every partner's churn score re-weighted by contract-renewal timing (HaloPSA contracts) · this is a <b>separate</b> score — the base Partner 360 is unchanged</div>
+                    </div>
+                    <div class="filter-pills" id="ren-filters" role="tablist" aria-label="Filter by renewal-adjusted risk tier">
+                        <span class="filter-pill active" data-tier="All" role="tab">All</span>
+                        <span class="filter-pill" data-tier="High" role="tab">High</span>
+                        <span class="filter-pill" data-tier="Watch" role="tab">Watch</span>
+                        <span class="filter-pill" data-tier="Healthy" role="tab">Healthy</span>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Partner</th><th>Renewal risk</th><th>Base churn</th><th>Δ</th><th>Next renewal</th><th>Days out</th><th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="ren-table-body"></tbody>
+                    </table>
+                </div>
+                <div class="empty" id="ren-empty" hidden>No partners in this tier.</div>
+                <p class="csat-note">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    <span><b>Renewal risk</b> = the base Grok churn score re-weighted for how soon the contract renews — an imminent renewal amplifies risk for a shaky account; a distant or evergreen contract dampens it. <b>Δ</b> is the shift vs the base churn score. Partners with no contract-renewal date on file mirror their base score.</span>
+                </p>
+            </div>
+        </section>
     </main>
 </div>
 
@@ -705,7 +747,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         flag2: svg("M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5"),
     };
 
-    let DATA = null, partners = [], filterState = "Attention", p360Tier = "All";
+    let DATA = null, partners = [], filterState = "Attention", p360Tier = "All", renTier = "All";
 
     function kpiCard(c) {
         return `<div class="kpi-card ${c.cls}">
@@ -902,6 +944,47 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
                 pill.classList.add("active");
                 p360Tier = pill.getAttribute("data-tier");
                 renderAllPartners();
+            });
+        });
+    }
+
+    // ---------- Renewal Risk — churn re-weighted for contract-renewal timing ----------
+    function renderRenewal() {
+        const rows = partners
+            .filter((p) => p.renewal && p.renewal.score != null)
+            .filter((p) => renTier === "All" || tierOf(p.renewal.score) === renTier)
+            .sort((a, b) => b.renewal.score - a.renewal.score);
+        const empty = $("ren-empty");
+        if (!rows.length) { $("ren-table-body").innerHTML = ""; empty.hidden = false; return; }
+        empty.hidden = true;
+        $("ren-table-body").innerHTML = rows.map((p) => {
+            const r = p.renewal, tier = tierOf(r.score), baseTier = tierOf(p.churnRisk), d = r.delta;
+            const deltaCell = (d == null || d === 0) ? `<span style="color:var(--text-muted)">—</span>`
+                : d > 0 ? `<span style="color:var(--danger)">▲ +${d}</span>`
+                        : `<span style="color:var(--success)">▼ ${d}</span>`;
+            const days = r.daysToRenewal;
+            const daysCell = (days == null) ? `<span class="cell-sub">—</span>`
+                : `<span style="color:${days <= 30 ? "var(--danger)" : days <= 90 ? "var(--warning)" : "var(--text-secondary)"};font-weight:${days <= 90 ? 700 : 400}">${days}d</span>`;
+            const next = r.nextDate ? fmtDate(r.nextDate) : (r.evergreen ? "evergreen" : "—");
+            return `<tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
+                <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span></td>
+                <td><span class="risk-num" style="color:${tierColor(tier)}">${r.score}</span> <span class="cell-sub">${tier}</span></td>
+                <td><span class="cell-sub">${p.churnRisk} · ${baseTier}</span></td>
+                <td>${deltaCell}</td>
+                <td>${esc(next)}</td>
+                <td>${daysCell}</td>
+                <td style="color:var(--text-muted);">→</td>
+            </tr>`;
+        }).join("");
+        wireRowClicks($("ren-table-body"));
+    }
+    function setupRenewalFilters() {
+        document.querySelectorAll("#ren-filters .filter-pill").forEach((pill) => {
+            pill.addEventListener("click", () => {
+                document.querySelectorAll("#ren-filters .filter-pill").forEach((p) => p.classList.remove("active"));
+                pill.classList.add("active");
+                renTier = pill.getAttribute("data-tier");
+                renderRenewal();
             });
         });
     }
@@ -1284,18 +1367,20 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
     }
 
     // ---------- View switching ----------
-    const VIEWS = ["overview", "partners", "csat"];
-    const VIEW_TITLE = { overview: "Executive Overview", partners: "Partner 360", csat: "CSAT Reconciliation" };
+    const VIEWS = ["overview", "partners", "csat", "renewal"];
+    const VIEW_TITLE = { overview: "Executive Overview", partners: "Partner 360", csat: "CSAT Reconciliation", renewal: "Renewal Risk" };
     const VIEW_SUB = {
         overview: "Real-time partner health, churn risk & operational signal across the book",
         partners: "Every partner ranked by churn risk — select one to drill in",
         csat: "Monthly DES/MDE CSAT — surveys sent (HaloPSA) vs responses received (TeamGPS)",
+        renewal: "Churn risk re-weighted for contract-renewal timing (HaloPSA contracts) — a separate, renewal-aware score",
     };
     function showView(view) {
         if (VIEWS.indexOf(view) === -1) view = "overview";
         $("view-overview").style.display = (view === "overview") ? "" : "none";
         $("view-partners").style.display = (view === "partners") ? "" : "none";
         $("view-csat").style.display = (view === "csat") ? "" : "none";
+        $("view-renewal").style.display = (view === "renewal") ? "" : "none";
         $("view-title").textContent = VIEW_TITLE[view] || VIEW_TITLE.overview;
         $("view-subtitle").textContent = VIEW_SUB[view] || VIEW_SUB.overview;
         $("data-window").style.display = (view === "overview") ? "flex" : "none";
@@ -1304,6 +1389,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         });
         if (view === "partners") renderAllPartners();
         if (view === "csat") renderCsatRecon();
+        if (view === "renewal") renderRenewal();
         window.scrollTo(0, 0);
     }
     function setupNav() {
@@ -1374,6 +1460,7 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
         renderKPIs();
         setupFilters();
         setupP360Filters();
+        setupRenewalFilters();
         $("rank-toggle").addEventListener("click", () => { rankExpanded = !rankExpanded; renderRiskRank(); });
         renderOverview();
     }
