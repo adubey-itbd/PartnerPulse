@@ -6,6 +6,56 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — CSAT recon: don't inflate a settled month's "sent" with month-less stragglers (2026-06-24)
+
+### Fixed
+- **CSAT Reconciliation over-counted SENT surveys in settled months** (e.g. **Logically
+  May read 30 vs Halo's 27**). ITBD raises each monthly CSAT batch (~day 23) with bare
+  `Monthly Feedback for <name>` summaries and stamps the `For The Month of <X>` text on
+  later; most get stamped, a few stragglers/duplicates never do. `_ticket_month`
+  (`scripts/build_csat_recon.py`) fell back to the ticket's **raise month** for any
+  month-less ticket, so those unstamped stragglers were still counted into the month they
+  were raised — inflating it above Halo's "Month of …" report.
+  - The summary "Month of …" is now authoritative; the `dateoccurred` fallback applies
+    **only to the current (in-progress) month**, whose freshly-raised batch is legitimately
+    still month-less. Settled prior months now match Halo's per-month count; the current
+    month's batch still shows.
+  - `audit_csat_recon.py` reuses `_ticket_month`, so the audit picks up the same rule.
+  - Effect (Logically): May 30→**27** (Halo: 27); also Jan 31→28, Mar 28→27; June (current)
+    stays 30. Re-run `python scripts/build_csat_recon.py` (then `upload_firebase_data.py`)
+    to republish the feed.
+
+## [Unreleased] — Fix Etech7 (live client 934 not API-readable) + tolerate unreadable clients (2026-06-23)
+
+### Fixed
+- **Etech7 was pulling all-zero data** (CSAT/SIP/calls/AI empty). Root cause was Halo data
+  hygiene: the roster pointed at **client 924 "ETech 7 Inc"**, a **stale empty duplicate**,
+  while the **live** record is **"Etech7" (ticket `client_id=934`)** — whose `/api/Client/934`
+  **404s** (the record isn't API-readable; its contacts even sit under the "HubSpot Unmatched"
+  client 211), and whose TeamGPS CSAT name is the exact string **"Etech7"** (our roster used
+  "ETech 7 Inc" → matched 0).
+  - `scripts/build_real_partners.py`: roster entry repointed `924 → 934`, `halo_search`/
+    `teamgps_company` → **"Etech7"**. The roster **label is kept as "ETech 7 Inc"** so the slug
+    stays `etech-7-inc` (Firestore doc + demo-roster allowlist unchanged — no cascade); the
+    **displayed** client name resolves to "Etech7".
+  - **`build_real` now tolerates an API-unreadable Halo client** — when `get_client(id)` 404s (or
+    returns no name) it builds from **ticket-space data only** (SIP / service-call notes /
+    CSAT-sent all filter by `client_id` and work fine) with a manual display name from
+    `halo_search`; RAG / custom fields / NPS-users stay blank because the record genuinely can't
+    be read. General fix for any future "ghost client_id" partner (cf. the Acrisure 937→79
+    class). Previously such a 404 aborted the partner's build.
+  - Result: Etech7 now resolves to the live record — **1 open SIP**, **5 sent CSAT surveys
+    (Jan–May 2026, 0 received)** in CSAT Reconciliation, churn 15 (Low). (CSAT ratings, MoM
+    notes, and SIP-progress detail remain thin — genuine Halo data-entry gaps, not a pipeline
+    bug.) `build_csat_recon.py` already tolerated the 934 detail-404 (WARN + continue).
+
+### Added
+- **`extract/ai.py` `_normalize_insight`** — repairs a Grok quirk where the churn JSON puts
+  `action_items` under a BLANK/non-string key (`"": [...]`), which both failed the cache's
+  required-key check and was rejected by Firestore (field names must be non-empty strings).
+  Coalesces such a key into `action_items` and drops empty keys so every result is
+  Firestore-safe. (Surfaced when the SIP-rollout upload failed on the Amoskeag cache.)
+
 ## [Unreleased] — Hide the Renewal Risk dashboard tab (2026-06-23)
 
 ### Changed

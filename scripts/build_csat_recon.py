@@ -105,15 +105,23 @@ def _ticket_month(summary: str, occurred):
 
     Month comes from the summary ("...Month of May"); year from dateoccurred,
     corrected for the Dec->Jan wrap (a "Month of December" survey is raised in
-    early January). Falls back to dateoccurred's own month when the summary has
-    no parseable month."""
+    early January).
+
+    A batch is raised (~day 23) with bare "Monthly Feedback for <name>" summaries
+    and the "For The Month of <X>" text is stamped on later, so the CURRENT month's
+    fresh batch is still month-less. We therefore fall back to the raise month ONLY
+    for the current month; a month-less ticket in a settled prior month is a
+    straggler/duplicate that Halo's "Month of …" report excludes, and counting it
+    would inflate that month's sent total (e.g. Logically May read 30 vs Halo's 27)."""
     od = _parse_iso_date(occurred)
     m = _MONTH_RE.search(summary or "")
     mnum = _MONTH_NUM.get(m.group(1).lower()) if m else None
     if not od:
         return None
     if not mnum:
-        return od.year, od.month
+        if (od.year, od.month) == (TODAY.year, TODAY.month):
+            return od.year, od.month
+        return None
     year = od.year
     # The survey is raised in or shortly after its subject month; a big positive
     # gap means it wrapped a year boundary (Dec subject raised in Jan).

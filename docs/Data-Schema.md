@@ -86,7 +86,12 @@ Steps 2–6 are continue-on-failure; 1/7/8 are hard (fail the run). See
 
 - **`data/{slug}.json`** — the full per-partner payload. Top-level keys: `meta`,
   `client`, `csat_stats`, `csat_comments`, `nps_stats`, `nps_comments`,
-  `historical_calls`, `action_items` (always `[]`; real items live in `ai.action_items`),
+  `historical_calls`, `sips` (one object per SIP ticket — `{ticket_id, subject, status,
+  status_label, status_class, started, latest, updates[], summary, latest_status}` — from
+  `halo.analyze_sips`; the `updates` are the SIP ticket's progress write-ups incl. PRIVATE
+  notes, `summary`/`latest_status` are the AI journey summary (`ai.summarize_sips`, active SIPs
+  only). Feeds the AI context + the Partner-360 SIP Progress card),
+  `action_items` (always `[]`; real items live in `ai.action_items`),
   `decks`, `transcripts`, `ai`. (Field-level detail in `architecture.md` §3.)
 - **`data/_index.json`** — `{ partners: [slim row…], portfolio: {…aggregates…} }`,
   written by `build_all`. `portfolio.generated_at` is the freshness stamp.
@@ -133,7 +138,7 @@ Reconciliation view in `index.html`. **Source→field provenance:**
 
 | Field | Source |
 |---|---|
-| CSAT **sent** (per month) | HaloPSA tickets, `tickettype_id ∈ {36,163,164}` ("DES CSAT Monthly"), one ticket = one sent. Month parsed from the ticket summary ("…For The Month of May"); year from `dateoccurred` (`extract/halo.fetch_csat_tickets`). |
+| CSAT **sent** (per month) | HaloPSA tickets, `tickettype_id ∈ {36,163,164}` ("DES CSAT Monthly"), one ticket = one sent. Month parsed from the ticket summary ("…For The Month of May"); year from `dateoccurred` (`extract/halo.fetch_csat_tickets`). The summary month is authoritative; a month-less ticket (a batch is raised bare and stamped with the month later) counts only when raised in the **current** month — so a settled month matches Halo's "Month of …" report and isn't inflated by unstamped stragglers (`_ticket_month`). |
 | CSAT **received** (per month) | TeamGPS responses (the `data/{slug}.json` `csat_comments`) where **`is_responded`** is true — the `/csat` endpoint also returns *sent-but-unanswered* surveys (empty rating, null date), which must NOT count. Joined to a sent ticket by `ticket_id` and attributed to that sent ticket's month (distinct answered tickets, so received ≤ sent). |
 | CSAT **% positive** (per month) | Of the matched responses, `positive ÷ rated` (rated = Positive+Neutral+Negative ratings on `csat_comments`). The satisfaction score, distinct from the response rate. |
 | Account Manager / Regional Manager | Halo client `accountmanagertech_name` / `regmanagertech_name`. |
@@ -186,6 +191,7 @@ partners/{slug}/detail/profile    ← { meta, client, ai, csat_stats, nps_stats 
 partners/{slug}/transcripts/{i}   ← one doc per transcript        (blob.transcripts)
 partners/{slug}/decks/{i}         ← one doc per converted deck     (blob.decks)
 partners/{slug}/calls/{i}         ← one doc per service-review     (blob.historical_calls)
+partners/{slug}/sip/{i}           ← one doc per SIP ticket (status + notes) (blob.sips)
 partners/{slug}/csat/{i}          ← one doc per CSAT comment       (blob.csat_comments)
 partners/{slug}/nps/{i}           ← one doc per NPS response       (blob.nps_comments)
 partners/{slug}/actions/{i}       ← one doc per action item        (blob.action_items)
@@ -261,7 +267,8 @@ get the same shapes regardless of where the data lives.
 | `riskBand` (shown), `sentimentTrend` (shown) | **Derived deterministically** in `build_overview.py` (`_tier`, `_reconcile_trend`) — not the LLM's free-form values |
 | `csat`, `csatCoverage`, CSAT comments/stats | **TeamGPS** CSAT |
 | `nps`, `portfolioNPS`, `npsResponses`, NPS comments/stats | **TeamGPS** NPS |
-| `sip`, `activeSIPs`, `partnersWithSIP`, `client.sip_*` | **HaloPSA** type-99 tickets (`halo.count_sips`) |
+| `sip`, `activeSIPs`, `partnersWithSIP`, `client.sip_*` | **HaloPSA** type-99 tickets (`halo.analyze_sips` → counts) |
+| `sips` (Partner-360 SIP Progress card + AI context) | **HaloPSA** SIP tickets grouped w/ status + progress notes incl. PRIVATE notes (`halo.analyze_sips`; the Actions LIST hides private notes, so they're fetched per-action by id). Per-SIP `summary`/`latest_status` = **Grok** (`ai.summarize_sips`). |
 | `actions`, `openActions`, `overdueActions`, `openNoDate` | **HaloPSA** meeting-note Actions + AI-extracted items |
 | `accountManager`, `client.rag/cancel_risk/health_reason/next_step` | **HaloPSA** client metadata + custom RAG fields |
 | `calls`, `callTone`, `toneConfident`, `historical_calls`, `coverage.calls*` | **HaloPSA** meeting notes + **Graph** transcript dates |
