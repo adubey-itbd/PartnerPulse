@@ -111,6 +111,8 @@ This is the shape the Exec Overview renders and the shape published to Firestore
 {
   "generated_at": "2026-06-16T08:34:31",     // freshness stamp
   "as_of": "2026-06-13",
+  "excludedCount", "excludedSlugs",          // partners hidden by the demo-roster allowlist (gotcha 8)
+  "inactiveCount", "inactiveSlugs",          // partners dropped because Halo client.inactive is true (auto-excluded from feed + rollups)
   "coverage": { "asOf", "callsStart", "callsEnd", "callsCount",
                 "feedbackStart", "feedbackEnd", "feedbackCount" },
   "portfolio": { "tracked", "avgRisk", "highRisk", "activeSIPs",
@@ -271,6 +273,7 @@ get the same shapes regardless of where the data lives.
 | `sips` (Partner-360 SIP Progress card + AI context) | **HaloPSA** SIP tickets grouped w/ status + progress notes incl. PRIVATE notes (`halo.analyze_sips`; the Actions LIST hides private notes, so they're fetched per-action by id). Per-SIP `summary`/`latest_status` = **Grok** (`ai.summarize_sips`). |
 | `actions`, `openActions`, `overdueActions`, `openNoDate` | **HaloPSA** meeting-note Actions + AI-extracted items |
 | `accountManager`, `client.rag/cancel_risk/health_reason/next_step` | **HaloPSA** client metadata + custom RAG fields |
+| `client.inactive` | **HaloPSA** client `inactive` flag. When true, `build_overview.py` drops the partner from the feed + rollups (→ `inactiveSlugs`); `upload_firebase_data.py` then prunes its Firestore docs. Sync-proof & reversible. |
 | `calls`, `callTone`, `toneConfident`, `historical_calls`, `coverage.calls*` | **HaloPSA** meeting notes + **Graph** transcript dates |
 | `transcripts` | **MS Graph** `.vtt` + local `.docx` (markitdown) |
 | `decks` | **HaloPSA** attachments → markitdown |

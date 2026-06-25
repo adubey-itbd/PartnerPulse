@@ -120,6 +120,7 @@ def build_partner(slug, idx_row):
 
     client = d.get("client", {}) or {}
     ai = d.get("ai", {}) or {}
+    air = d.get("ai_renewal", {}) or {}   # renewal-adjusted overlay (Renewal Risk view)
 
     # ---- CSAT: counts, positive share, and rated coverage ----
     cs = d.get("csat_stats", {}) or {}
@@ -246,7 +247,22 @@ def build_partner(slug, idx_row):
             "daysSince": days_since, "stale": stale,
         },
         "callTone": tone, "toneConfident": tone_confident,
+        # Renewal-adjusted churn (Option A overlay) for the separate Renewal Risk view. Mirrors
+        # the base churn fields' shape; band derived deterministically via _tier (same as above).
+        "renewal": {
+            "score": air.get("renewal_risk_score"),
+            "band": ("Insufficient data" if insufficient_data or air.get("renewal_risk_score") is None
+                     else _tier(air.get("renewal_risk_score"))),
+            "delta": (air.get("renewal_risk_score") - risk
+                      if isinstance(air.get("renewal_risk_score"), (int, float)) else None),
+            "nextDate": air.get("next_renewal"),
+            "daysToRenewal": air.get("days_to_renewal"),
+            "summary": air.get("renewal_summary"),
+            "activeContracts": air.get("active_contracts"),
+            "evergreen": bool(air.get("evergreen")),
+        },
         "_cov": cov,
+        "_inactive": bool(client.get("inactive")),
     }
 
 
@@ -260,6 +276,17 @@ def main():
         if p:
             partners.append(p)
     partners.sort(key=lambda p: p["churnRisk"], reverse=True)
+
+    # ---- Exclude Halo-inactive partners ----
+    # A client flagged inactive in Halo (blob client.inactive) drops off the dashboard
+    # and every portfolio rollup automatically. Sync-proof: a later rebuild keeps it out
+    # as long as Halo still says inactive; reactivating in Halo brings it back on next sync.
+    inactive_slugs = sorted(p["slug"] for p in partners if p.get("_inactive"))
+    if inactive_slugs:
+        partners = [p for p in partners if not p.get("_inactive")]
+        print(f"Excluding {len(inactive_slugs)} Halo-inactive partner(s): {inactive_slugs}")
+    for p in partners:
+        p.pop("_inactive", None)
 
     # ---- Optional demo-roster allowlist ----
     # If data/_demo_roster.json exists (a JSON list of slugs), the feed is filtered to
@@ -277,7 +304,8 @@ def main():
         excluded = [p for p in partners if p["slug"] not in allow]
         excluded_slugs = sorted(p["slug"] for p in excluded)
         partners = [p for p in partners if p["slug"] in allow]
-        missing = sorted(allow - {p["slug"] for p in partners})
+        # Inactive partners were already removed above; don't flag them as "missing".
+        missing = sorted(allow - {p["slug"] for p in partners} - set(inactive_slugs))
         print(f"Demo roster active: {len(partners)} of {before} partners shown"
               + (f" (NOT FOUND: {missing})" if missing else ""))
         if excluded_slugs:
@@ -337,6 +365,8 @@ def main():
         "as_of": TODAY.isoformat(),
         "excludedCount": len(excluded_slugs),
         "excludedSlugs": excluded_slugs,
+        "inactiveCount": len(inactive_slugs),
+        "inactiveSlugs": inactive_slugs,
         "coverage": coverage,
         "portfolio": {
             "tracked": n, "scored": len(scored), "insufficientData": insufficient_n,

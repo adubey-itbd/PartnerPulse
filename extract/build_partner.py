@@ -30,6 +30,9 @@ def _client_block(client: dict, cf: dict, account_manager: str, sips: dict) -> d
         "id": client.get("id"),
         "name": client.get("name"),
         "vip": bool(client.get("is_vip")),
+        # Halo "inactive" flag — inactive clients are auto-excluded from the feed by
+        # build_overview (sync-proof). See scripts/build_overview.py.
+        "inactive": bool(client.get("inactive")),
         "rag": cf.get("CFMDERAG"),
         "cancel_risk": cf.get("CFCancelationRisk"),
         "health_reason": cf.get("CFHealthReason"),
@@ -65,11 +68,15 @@ def build(partner_name: str, with_decks: bool = True, verbose: bool = True,
     emails, domains = halo.get_users(client_id)
     log(f"[users] {len(emails)} emails, domains={sorted(domains)}")
 
-    # SIP (Service Improvement Plan, ticket type 99) counts — own record plus
-    # SIPs filed under ITBD's record that name the partner in the summary.
-    sips = halo.count_sips(client_id, name_terms=[p.name, p.halo_search],
-                           sip_ticket_field=cf.get("CFSIPTicketMDE"))
-    log(f"[sips] open={sips['open']} closed={sips['closed']}")
+    # SIP (Service Improvement Plan, ticket type 99) counts + progress notes — own
+    # record plus SIPs filed under ITBD's record that name the partner in the summary.
+    # analyze_sips also pulls each SIP ticket's progress write-ups (incl. PRIVATE
+    # notes the Actions list hides) so they feed the AI context + the dashboard.
+    sips = halo.analyze_sips(client_id, name_terms=[p.name, p.halo_search],
+                             sip_ticket_field=cf.get("CFSIPTicketMDE"))
+    sip_groups = sips.get("sips", [])
+    log(f"[sips] open={sips['open']} closed={sips['closed']} "
+        f"tickets={len(sip_groups)} updates={sum(len(s.get('updates') or []) for s in sip_groups)}")
 
     # 4. CSAT -----------------------------------------------------------------
     csat = teamgps.get_csat(p.teamgps_company)
@@ -157,11 +164,14 @@ def build(partner_name: str, with_decks: bool = True, verbose: bool = True,
             },
         },
         "client": _client_block(client, cf, account_manager, sips),
+        "renewal": halo.get_next_renewal(client_id),   # contract-renewal facts (Renewal Risk view)
         "csat_stats": csat_stats,
         "csat_comments": csat,
         "nps_stats": nps_stats,
         "nps_comments": nps,
         "historical_calls": historical_calls,
+        "sips": sip_groups,            # SIP tickets grouped w/ status + progress notes;
+                                       # AI journey summary added by the AI layer (build_all)
         "action_items": [],            # populated by the AI layer (next phase)
         "decks": decks,
         "transcripts": tx,

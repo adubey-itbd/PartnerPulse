@@ -6,6 +6,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Auto-exclude Halo-inactive partners from the dashboard (2026-06-25)
+
+### Added
+- **A partner flagged `inactive` in Halo is now automatically dropped from the
+  dashboard feed and every portfolio rollup.** The per-partner build captures Halo's
+  client `inactive` flag into the blob (`client.inactive`) — both
+  `extract/build_partner.py` (`_client_block`, registry path) and
+  `scripts/build_real_partners.py` (real-partner roster path); API-unreadable /
+  transcript-only clients have no record and read as active (`False`).
+  `scripts/build_overview.py` then excludes any `client.inactive` partner before the
+  rollups, surfacing the drop (`Excluding N Halo-inactive partner(s): [...]`) and
+  recording it in the feed as `inactiveCount` / `inactiveSlugs`.
+- **Sync-proof & reversible** (like the demo-roster allowlist, gotcha 8): a rebuild
+  keeps an inactive partner out as long as Halo still says inactive; flipping it back
+  to active in Halo brings it back on the next sync. No caches deleted.
+  `upload_firebase_data.py` needs no change — it derives the doc tree from
+  `_overview.json` (already filtered) and its stale-partner reconcile prunes the
+  now-absent partner's Firestore docs (sanity-gated).
+- **First application: Thrive NextGen (Halo client 29) went inactive** — dropped from
+  the feed (83→82 partners; its 1 open SIP and risk-90 row removed), its Firestore docs
+  pruned (1 stale removed) on publish.
+
 ## [Unreleased] — CSAT recon: don't inflate a settled month's "sent" with month-less stragglers (2026-06-24)
 
 ### Fixed

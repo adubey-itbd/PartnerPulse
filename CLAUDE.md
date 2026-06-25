@@ -195,6 +195,11 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
    any caches. It is **sync-proof** (a rebuild can't resurrect hidden
    partners) and reversible: edit the list to add/remove, or delete the file to show all
    built partners. `audit_data.py` scopes its checks to the allowlist when present.
+   **Separately, partners flagged `inactive` in Halo are auto-dropped** (since
+   2026-06-25): the build records `client.inactive` in the blob and `build_overview.py`
+   excludes them from the feed + rollups (→ `inactiveSlugs`), `upload_firebase_data.py`
+   prunes their Firestore docs. Also sync-proof/reversible (re-activate in Halo →
+   returns next sync). First case: Thrive NextGen (client 29).
 9. **Production data source = Cloud Firestore, NOT `data/*.json` (since 2026-06-16).**
    Pages never read storage directly — they call `window.PP_AUTH.loadOverview()` /
    `loadPartner(slug)` / `lastSyncStamp()` (`auth.js`), which reads Firestore in prod and

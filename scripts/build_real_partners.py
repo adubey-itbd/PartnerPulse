@@ -140,7 +140,12 @@ NEW = [
     # CFMDERAG>=1 filter (their Halo RAG is untagged / they have no Halo record).
     # See scripts/discover_des_roster.py SUPPLEMENTAL — these are the documented
     # exceptions the auto-discovery can't derive from Halo alone.
-    ("ETech 7 Inc",                          924, "ETech 7",                   "ETech 7 Inc"),
+    # Display "Etech7" (real Halo name); roster label kept as "ETech 7 Inc" so the slug
+    # stays `etech-7-inc` (demo-roster + Firestore doc unchanged). client_id 934 is the
+    # LIVE record (ticket-queryable); its /api/Client/{id} 404s, so the build runs in
+    # ticket-only mode (see build_real guard). 924 was a stale empty duplicate. teamgps
+    # CSAT keys on the exact name "Etech7".
+    ("ETech 7 Inc",                          934, "Etech7",                    "Etech7"),
     # ECS Consulting LLC has no Halo client record — transcript-only build
     # (client_id=None): AI runs on the 3 service-call .vtt in Transcripts/ECS Consulting/.
     ("ECS Consulting",                       None, "ECS Consulting",           "ECS Consulting LLC"),
@@ -182,21 +187,39 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=
         nps_stats = teamgps.nps_stats(nps)
         account_manager = ""
     else:
-        client = halo.get_client(client_id)
-        # Guard against a wrong client_id pinned in NEW (the Acrisure 937->79 class):
-        # the fetched Halo client name must plausibly match the display name. If it
-        # does not, the id points at the wrong/empty record -> WARN and skip so we
-        # don't publish bogus health data under this partner.
-        fetched_name = client.get("name") or ""
-        if fetched_name and not halo.fuzzy_name_match(name, fetched_name):
-            print(f"  WARNING: Halo client {client_id} is {fetched_name!r}, which does "
-                  f"not match {name!r} -- wrong client_id? Skipping this partner.",
-                  file=sys.stderr)
-            return None
-        cf = halo.parse_custom_fields(client)
+        # Some live partners have a client_id that is ticket-queryable but whose
+        # /api/Client/{id} record is NOT API-readable (404) -- e.g. Etech7 (934): all
+        # its tickets carry client_id=934, but the client record itself 404s (its
+        # contacts even land in the "HubSpot Unmatched" bucket) and a stale empty
+        # duplicate ("ETech 7 Inc", 924) exists. In that case build from TICKET-space
+        # data only (SIP / service-call notes / CSAT-sent all filter by client_id and
+        # work fine), with a manual display name from halo_search; RAG/custom-fields/
+        # NPS-users stay blank because the record genuinely can't be read.
+        try:
+            client = halo.get_client(client_id)
+        except Exception as e:
+            print(f"  NOTE: Halo client {client_id} not API-readable ({str(e)[:50]}); "
+                  f"building {name!r} from ticket data only.", file=sys.stderr)
+            client = None
+        if client and client.get("name"):
+            # Guard against a wrong client_id pinned in NEW (the Acrisure 937->79 class):
+            # the fetched Halo client name must plausibly match the display name. If it
+            # does not, the id points at the wrong/empty record -> WARN and skip so we
+            # don't publish bogus health data under this partner.
+            if not halo.fuzzy_name_match(name, client.get("name")):
+                print(f"  WARNING: Halo client {client_id} is {client.get('name')!r}, which does "
+                      f"not match {name!r} -- wrong client_id? Skipping this partner.",
+                      file=sys.stderr)
+                return None
+            cf = halo.parse_custom_fields(client)
+        else:
+            # API-unreadable client: ticket-space only. Display name from halo_search
+            # (the human label) so the Partner-360 header reads correctly.
+            client = {"id": client_id, "name": halo_search or name}
+            cf = {}
         emails, domains = halo.get_users(client_id)
-        sips = halo.count_sips(client_id, name_terms=[name, halo_search, client.get("name", "")],
-                               sip_ticket_field=cf.get("CFSIPTicketMDE"))
+        sips = halo.analyze_sips(client_id, name_terms=[name, halo_search, client.get("name", "")],
+                                 sip_ticket_field=cf.get("CFSIPTicketMDE"))
 
         # TeamGPS CSAT uses a server-side EXACT company-name filter. The short search
         # terms miss, so fall back to the exact Halo client name (which matches).
@@ -277,26 +300,43 @@ def build_real(name, client_id, halo_search, teamgps_company, nps_all, force_ai=
             # + Transcripts/ folder matching).
             "id": client.get("id"), "name": (client.get("name") if client_id else None) or name,
             "vip": bool(client.get("is_vip")),
+            # Halo "inactive" flag — an inactive client is auto-excluded from the
+            # dashboard feed + rollups by build_overview (sync-proof: re-builds keep
+            # it out as long as Halo says inactive). API-unreadable / transcript-only
+            # clients have no record, so they read as active (False).
+            "inactive": bool(client.get("inactive")),
             "rag": cf.get("CFMDERAG"), "cancel_risk": cf.get("CFCancelationRisk"),
             "health_reason": cf.get("CFHealthReason"), "next_step": cf.get("CFNextStep"),
             "sip_ticket": cf.get("CFSIPTicketMDE"),
             "sip_open": sips.get("open", 0), "sip_closed": sips.get("closed", 0),
             "service_line": cf.get("CFProduct"), "account_manager": account_manager,
         },
+        "renewal": (halo.get_next_renewal(client_id) if client_id else
+                    {"end_dates": [], "active_contracts": 0, "evergreen": False}),
         "csat_stats": csat_stats, "csat_comments": csat,
         "nps_stats": nps_stats, "nps_comments": nps,
         "historical_calls": historical_calls,
+        "sips": sips.get("sips", []),         # SIP tickets grouped w/ status + progress notes
         "action_items": [], "decks": decks, "transcripts": tx,
     }
     # Reuse cached AI when LLM inputs are unchanged (skips Grok + avoids score drift).
-    prev_ai = None
+    prev_ai = prev_renewal = prev_sips = None
     cache = DATA / f"{slugify(name)}.json"
     if cache.exists() and not force_ai:
         try:
-            prev_ai = json.loads(cache.read_text(encoding="utf-8")).get("ai")
+            _prev = json.loads(cache.read_text(encoding="utf-8"))
+            prev_ai = _prev.get("ai")
+            prev_renewal = _prev.get("ai_renewal")
+            prev_sips = _prev.get("sips")
         except (ValueError, OSError):
-            prev_ai = None
+            prev_ai = prev_renewal = prev_sips = None
     data["ai"] = ai.analyze(data, cached_ai=prev_ai, force=force_ai)
+    # Renewal-adjusted overlay (Option A) — separate block for the Renewal Risk view.
+    data["ai_renewal"] = ai.analyze_renewal(data["ai"], data.get("renewal"),
+                                            cached=prev_renewal, force=force_ai)
+    # Per-SIP journey summaries for the Partner-360 SIP card (active SIPs only).
+    data["sips"] = ai.summarize_sips(data.get("sips", []), cached_sips=prev_sips,
+                                     force=force_ai)
     return data
 
 
