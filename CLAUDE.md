@@ -42,6 +42,7 @@ python -m extract.build_all --reindex        # rebuild data/_index.json from exi
 python scripts/build_real_partners.py        # extra real Halo clients (writes their data/*.json)
 python scripts/build_overview.py             # rebuild data/_overview.json (the dashboard feed) from caches
 python scripts/build_csat_recon.py           # rebuild data/_csat_recon.json (CSAT Reconciliation view); reads _overview.json + hits Halo for sent-side CSAT tickets
+python scripts/build_cw_agreements.py        # rebuild data/_cw_agreements.json (Renewal Risk view) from the static "CW Agreements*.xlsx" export; reads _overview.json (no API). Run after build_overview.py, then upload_firebase_data.py
 python scripts/audit_data.py                 # data-integrity audit (SIPs, AI, CSAT, last-call, transcript folders, feed)
 #  single-partner refresh: build_all --only <Name> -> build_all --reindex -> build_overview.py
 #  (refresh_exec_row.py is DEPRECATED — the dashboard is data-driven, no embedded array to refresh)
@@ -60,8 +61,13 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
 
 ## Layout
 
-- `index.html` — Executive Overview + Partner 360 + **CSAT Reconciliation** views
-  (sidebar-switched). **Fully data-driven: it `fetch`es `data/_overview.json` (Exec
+- `index.html` — Executive Overview + Partner 360 + **CSAT Reconciliation** +
+  **Renewal Risk** views (sidebar-switched). The **Renewal Risk** view (rebuilt
+  2026-06-26) is driven by `data/_cw_agreements.json` (ConnectWise agreements: per-partner
+  MRR, quarterly renewal forecast, MRR-at-risk; lazy-loaded via `PP_AUTH.loadCwAgreements()`).
+  Its source is a **static** `CW Agreements*.xlsx` export in the repo root — built locally
+  by `scripts/build_cw_agreements.py`, **not refreshed by the nightly cloud job** (manual
+  re-run on request). See `docs/Data-Schema.md` §4c. **Fully data-driven: it `fetch`es `data/_overview.json` (Exec
   Overview + Partner 360) and `data/_csat_recon.json` (CSAT Reconciliation, lazy on
   first open) at runtime — there is NO embedded partner array** (changed 2026-06-13;
   see changelog beta.8). Self-contained inline `<style>` + `<script>`; does NOT load

@@ -10,7 +10,7 @@
  *   meta/overview                   portfolio rollups + coverage
  *   partners/{slug}                 summary doc (Exec Overview)
  *   partners/{slug}/detail/profile  client meta + AI + CSAT/NPS stats
- *   partners/{slug}/{transcripts|decks|calls|csat|nps|actions}/{id}
+ *   partners/{slug}/{transcripts|decks|calls|sip|csat|nps|actions}/{id}
  *
  * LOCAL DEV (server.py on localhost): NO auth; data is read straight from the
  * data/*.json caches exactly as before, so the build/serve workflow is
@@ -42,6 +42,7 @@
     "andrea.canlas@itbd.net",
     "lee.cavellier@itbd.net",
     "jkhan@itbd.net",
+    "manu.sharma@itbd.net",
   ];
   var DEV = isLocal || !configured || typeof firebase === "undefined";
 
@@ -50,6 +51,7 @@
     transcripts: "transcripts",
     decks: "decks",
     calls: "historical_calls",
+    sip: "sips",
     csat: "csat_comments",
     nps: "nps_comments",
     actions: "action_items",
@@ -68,6 +70,7 @@
       ready: function () { return Promise.resolve(null); },
       loadOverview: function () { return jget("_overview.json"); },
       loadCsatRecon: function () { return jget("_csat_recon.json"); },
+      loadCwAgreements: function () { return jget("_cw_agreements.json"); },
       loadPartner: function (slug) { return jget(slug + ".json"); },
       lastSyncStamp: function () {
         return jget("_index.json").then(function (ix) {
@@ -428,6 +431,12 @@
     // CSAT Reconciliation view: the whole feed lives in a single meta doc.
     loadCsatRecon: function () {
       return firebase.firestore().doc("meta/csatRecon").get().then(function (s) {
+        return s.exists ? s.data() : null;
+      });
+    },
+
+    loadCwAgreements: function () {
+      return firebase.firestore().doc("meta/cwAgreements").get().then(function (s) {
         return s.exists ? s.data() : null;
       });
     },

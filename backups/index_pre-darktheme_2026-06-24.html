@@ -90,13 +90,6 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
 .header-badges { display: flex; align-items: center; gap: 12px; margin-left: auto; }
 /* "Last sync" data-freshness timestamp (rendered by refresh.js into #sync-stamp) */
 .sync-stamp { margin-left: 16px; font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
-/* Privacy masking — money figures (.pp-money) blur until the eye toggle reveals them. */
-.pp-money { transition: filter .12s ease; }
-body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-select: none; }
-.privacy-btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary);
-    color: var(--text-secondary); border-radius: 10px; padding: 6px 10px; font-size: 0.74rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
-.privacy-btn:hover { color: var(--text-primary); border-color: var(--primary); }
-.privacy-btn svg { width: 16px; height: 16px; }
 .page-container { flex-grow: 1; padding: 32px; overflow-y: auto; animation: fadeIn var(--transition-normal); }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -362,13 +355,14 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
                         CSAT Reconciliation
                     </a>
                 </li>
-                <!-- Unhidden 2026-06-26 for renewal-enhancement review (was hidden 2026-06-23). -->
+<!-- HIDDEN (2026-06-23, will unhide when needed): Renewal Risk tab
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-view="renewal">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
                         Renewal Risk
                     </a>
                 </li>
+                -->
             </ul>
         </div>
         <div class="sidebar-footer">
@@ -395,7 +389,7 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
                 <a class="nav-link" href="#top" data-view="overview">Executive Overview</a>
                 <a class="nav-link" href="#" data-view="partners">Partner 360</a>
                 <a class="nav-link" href="#" data-view="csat">CSAT Reconciliation</a>
-                <a class="nav-link" href="#" data-view="renewal">Renewal Risk</a>
+                <!-- HIDDEN (2026-06-23, will unhide when needed): <a class="nav-link" href="#" data-view="renewal">Renewal Risk</a> -->
             </nav>
             <div class="header-title-section">
                 <h1 id="view-title">Executive Overview</h1>
@@ -405,7 +399,6 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
             <div class="header-badges">
                 <span class="badge badge-info">Grok</span>
             </div>
-            <button type="button" class="privacy-btn" id="privacy-toggle" aria-pressed="true" title="Show/hide financial figures"></button>
             <span class="sync-stamp" id="sync-stamp"></span>
         </header>
 
@@ -474,8 +467,6 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
                                 <th>Top driver</th>
                                 <th>SIP</th>
                                 <th>Action Driver</th>
-                                <th>MRR</th>
-                                <th>MRR at risk</th>
                             </tr>
                         </thead>
                         <tbody id="risk-table-body"></tbody>
@@ -484,17 +475,6 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
                 <p class="footnote" id="table-foot"></p>
             </div>
             </div><!-- /overview-split -->
-
-            <!-- Renewal insights (ConnectWise + partner health) -->
-            <div class="card" id="renewal-insights-card" hidden>
-                <div class="card-header">
-                    <div>
-                        <h2 class="card-title">Renewal insights</h2>
-                        <div class="card-subtitle">Actionable observations from ConnectWise agreements + partner health — what's exposed, why it matters</div>
-                    </div>
-                </div>
-                <div id="renewal-insights"></div>
-            </div>
 
             <!-- Action backlog -->
             <div class="card">
@@ -656,50 +636,36 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
             </div>
         </section>
 
-        <!-- View: Renewal Risk — ConnectWise agreements: MRR, renewals by quarter, MRR at risk -->
+        <!-- View: Renewal Risk — churn re-weighted for contract-renewal timing (separate score) -->
         <section class="page-container" id="view-renewal" style="display:none;">
-            <div class="empty" id="renewal-empty" hidden>No agreement data.
-                <small>Run <code>python scripts/build_cw_agreements.py</code> then reload.</small></div>
-            <div id="renewal-body">
-                <div class="kpi-grid" id="renewal-kpis"></div>
-                <div class="card">
-                    <div class="card-header">
-                        <div>
-                            <h2 class="card-title">Renewal forecast by quarter</h2>
-                            <div class="card-subtitle">Agreements &amp; MRR up for renewal by calendar quarter (ConnectWise end-dates)</div>
-                        </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Renewal-adjusted risk</h2>
+                        <div class="card-subtitle">Every partner's churn score re-weighted by contract-renewal timing (HaloPSA contracts) · this is a <b>separate</b> score — the base Partner 360 is unchanged</div>
                     </div>
-                    <div style="height:260px;"><canvas id="renewalQChart"></canvas></div>
+                    <div class="filter-pills" id="ren-filters" role="tablist" aria-label="Filter by renewal-adjusted risk tier">
+                        <span class="filter-pill active" data-tier="All" role="tab">All</span>
+                        <span class="filter-pill" data-tier="High" role="tab">High</span>
+                        <span class="filter-pill" data-tier="Watch" role="tab">Watch</span>
+                        <span class="filter-pill" data-tier="Healthy" role="tab">Healthy</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <div>
-                            <h2 class="card-title">Partner renewals &amp; MRR at risk</h2>
-                            <div class="card-subtitle">Click a partner for agreement-level detail · sorted worst-first by risk then MRR at risk</div>
-                        </div>
-                        <div class="filter-pills" id="ren-filters" role="tablist" aria-label="Filter by renewal risk tier">
-                            <span class="filter-pill active" data-tier="All" role="tab">All</span>
-                            <span class="filter-pill" data-tier="At Risk" role="tab">At Risk</span>
-                            <span class="filter-pill" data-tier="Watch" role="tab">Watch</span>
-                            <span class="filter-pill" data-tier="On Track" role="tab">On Track</span>
-                        </div>
-                    </div>
-                    <div class="table-wrapper">
-                        <table class="custom-table">
-                            <thead>
-                                <tr>
-                                    <th>Partner</th><th>Agr.</th><th>MRR /mo</th><th>Earliest</th><th>Latest</th><th>MRR at risk</th><th>Status</th><th></th>
-                                </tr>
-                            </thead>
-                            <tbody id="ren-table-body"></tbody>
-                        </table>
-                    </div>
-                    <div class="empty" id="ren-empty" hidden>No partners in this tier.</div>
-                    <p class="csat-note">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                        <span><b>At Risk</b> = an agreement renewing within 90 days <b>and</b> the partner is unhealthy (churn ≥ 45, RAG Red, confident-Negative call tone, or a Declining trend). <b>Watch</b> = renewing within 90 days (healthy) or within 180 days (unhealthy). <b>MRR</b> = monthly recurring (Annual ÷ 12; One-Time excluded). Agreements with no end-date on file are kept and <b>flagged</b> (excluded from quarter &amp; at-risk timing). Renewal dates &amp; MRR are from the ConnectWise export.</span>
-                    </p>
+                <div class="table-wrapper">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Partner</th><th>Renewal risk</th><th>Base churn</th><th>Δ</th><th>Next renewal</th><th>Days out</th><th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="ren-table-body"></tbody>
+                    </table>
                 </div>
+                <div class="empty" id="ren-empty" hidden>No partners in this tier.</div>
+                <p class="csat-note">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    <span><b>Renewal risk</b> = the base Grok churn score re-weighted for how soon the contract renews — an imminent renewal amplifies risk for a shaky account; a distant or evergreen contract dampens it. <b>Δ</b> is the shift vs the base churn score. Partners with no contract-renewal date on file mirror their base score.</span>
+                </p>
             </div>
         </section>
     </main>
@@ -711,30 +677,6 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
     const $ = (id) => document.getElementById(id);
     const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     const COL = { success: "#10b981", warning: "#f59e0b", danger: "#ef4444", neutral: "#94a3b8" };
-
-    // ---- Privacy masking: money figures blur until the eye toggle reveals them ----
-    // m() wraps a formatted dollar value; maskMoney() wraps $-tokens inside free text
-    // (e.g. AI insight sentences). Both rely on .pp-money + body.pp-private (CSS).
-    const _EYE_ON = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.22A10.48 10.48 0 0 0 1.93 12C3.23 16.34 7.24 19.5 12 19.5c.99 0 1.95-.14 2.86-.39M6.23 6.23A10.45 10.45 0 0 1 12 4.5c4.76 0 8.77 3.16 10.07 7.5a10.52 10.52 0 0 1-4.29 5.27M6.23 6.23 3 3m3.23 3.23 3.65 3.65m7.89 7.89L21 21m-3.23-3.23-3.65-3.65m0 0a3 3 0 1 0-4.24-4.24m4.24 4.24L9.88 9.88"/></svg>`;
-    const _EYE_OFF = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.04 12.32a1.01 1.01 0 0 1 0-.64C3.42 7.51 7.36 4.5 12 4.5c4.64 0 8.57 3.01 9.96 7.18.07.2.07.44 0 .64C20.58 16.49 16.64 19.5 12 19.5c-4.64 0-8.57-3.01-9.96-7.18Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>`;
-    let ppPrivate = true;
-    function m(n) { return `<span class="pp-money">${fmtMoney(n)}</span>`; }
-    function maskMoney(s) { return String(s).replace(/\$[\d,]+/g, (x) => `<span class="pp-money">${x}</span>`); }
-    function applyPrivacy() {
-        document.body.classList.toggle("pp-private", ppPrivate);
-        const b = document.getElementById("privacy-toggle");
-        if (b) { b.setAttribute("aria-pressed", String(ppPrivate)); b.innerHTML = (ppPrivate ? _EYE_ON + " Show $" : _EYE_OFF + " Hide $"); }
-    }
-    function setupPrivacy() {
-        try { ppPrivate = localStorage.getItem("pp_private") === "1"; } catch (e) { ppPrivate = false; }
-        const b = document.getElementById("privacy-toggle");
-        if (b) b.addEventListener("click", () => {
-            ppPrivate = !ppPrivate;
-            try { localStorage.setItem("pp_private", ppPrivate ? "1" : "0"); } catch (e) {}
-            applyPrivacy();
-        });
-        applyPrivacy();
-    }
 
     function tierOf(r) { return r >= 45 ? "High" : r >= 25 ? "Watch" : "Healthy"; }
     function tierColor(t) { return t === "High" ? COL.danger : t === "Watch" ? COL.warning : COL.success; }
@@ -834,15 +776,7 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
         if (filterState === "Attention") return p.churnRisk >= 25;
         return tierOf(p.churnRisk) === filterState;
     }
-    // Primary sort = churn (preserves the existing ranking); secondary = $-at-risk then
-    // MRR, so within a churn tier the bigger-money partners surface first. Partners with
-    // no CW agreement (no _cw) keep their churn-based position (money terms count as 0).
-    const cwAtRisk = (p) => (p._cw && p._cw.mrrAtRisk) || 0;
-    const cwMrr = (p) => (p._cw && p._cw.mrr) || 0;
-    function filtered() {
-        return partners.filter(tierMatch)
-            .sort((a, b) => b.churnRisk - a.churnRisk || cwAtRisk(b) - cwAtRisk(a) || cwMrr(b) - cwMrr(a));
-    }
+    function filtered() { return partners.filter(tierMatch).sort((a, b) => b.churnRisk - a.churnRisk); }
 
     function toneCell(p) {
         const stale = p.calls.stale ? `<span class="flag-stale" title="Last call ${fmtDays(p.calls.daysSince)}">stale</span>` : "";
@@ -865,12 +799,9 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
     function renderTable() {
         const rows = filtered();
         const tb = $("risk-table-body");
-        if (!rows.length) { tb.innerHTML = `<tr><td colspan="8" class="empty">No partners in this tier.</td></tr>`; return; }
+        if (!rows.length) { tb.innerHTML = `<tr><td colspan="6" class="empty">No partners in this tier.</td></tr>`; return; }
         tb.innerHTML = rows.map((p) => {
             const tier = tierOf(p.churnRisk);
-            const cw = p._cw;
-            const mrrCell = cw ? m(cw.mrr) : `<span class="cell-sub">—</span>`;
-            const atRiskCell = (cw && cw.mrrAtRisk) ? `<span style="color:var(--danger);font-weight:700">${m(cw.mrrAtRisk)}</span>` : `<span class="cell-sub">—</span>`;
             return `<tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
                 <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span>
                     <div class="cell-sub" style="margin-left:20px;">last call ${fmtDays(p.calls.daysSince)}</div></td>
@@ -879,8 +810,6 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
                 <td style="color:var(--text-secondary);">${esc(p.topDriver)}</td>
                 <td>${sipCell(p)}</td>
                 <td>${actionCell(p)}</td>
-                <td>${mrrCell}</td>
-                <td>${atRiskCell}</td>
             </tr>`;
         }).join("");
         wireRowClicks(tb);
@@ -994,18 +923,15 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
         if (!rows.length) { $("p360-table-body").innerHTML = ""; empty.hidden = false; return; }
         empty.hidden = true;
         $("p360-table-body").innerHTML = rows.map((p) => {
-            const tier = tierOf(p.churnRisk), cw = p._cw;
+            const tier = tierOf(p.churnRisk), ren = renewalRisk(p);
             const tone = p.toneConfident ? p.callTone : "No calls";
-            const renCell = cw
-                ? `<span class="pill ${renewalPill(cw.renewalRiskBand)}">${cw.renewalRiskScore} · ${cw.renewalRiskBand}</span>`
-                : `<span class="cell-sub">—</span>`;
             return `<tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
                 <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span></td>
                 <td><span class="risk-num" style="color:${tierColor(tier)}">${p.churnRisk}</span> <span class="cell-sub">${tier}</span></td>
                 <td>${trendCell(p.sentimentTrend)}</td>
                 <td>${Math.round(p.csat.positivePct)}%</td>
                 <td><span class="pill ${tonePill(p)}">${tone}</span></td>
-                <td>${renCell}</td>
+                <td><span class="pill ${renewalPill(ren)}">${ren}</span></td>
                 <td style="color:var(--text-muted);">→</td>
             </tr>`;
         }).join("");
@@ -1022,156 +948,35 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
         });
     }
 
-    // ---------- Renewal Risk — ConnectWise agreements: MRR, renewals by quarter, MRR at risk ----------
-    // cwData is loaded ONCE (cached promise) and shared by the Executive Overview (revenue
-    // KPIs + at-risk MRR columns) and this view. Renewal data degrades gracefully: if the
-    // feed is absent, cwData is null and the revenue extras simply don't render.
-    let cwData = null, cwRendered = false, renChart = null, cwPromise = null;
-    const REN_TIER_COLOR = { "At Risk": "var(--danger)", "Watch": "var(--warning)", "On Track": "var(--success)" };
-    const REN_TIER_PILL = { "At Risk": "pill-danger", "Watch": "pill-warning", "On Track": "pill-success" };
-    const fmtMoney = (n) => "$" + Math.round(n || 0).toLocaleString();
-
-    // Resilient loader (mirrors loadReconData): new auth.js method, else direct Firestore (prod) / JSON (dev).
-    function loadCwData() {
-        const A = window.PP_AUTH || {};
-        if (A.loadCwAgreements) return A.loadCwAgreements();
-        if (A.mode === "prod" && typeof firebase !== "undefined") {
-            return firebase.firestore().doc("meta/cwAgreements").get().then((s) => (s.exists ? s.data() : null));
-        }
-        return fetch("data/_cw_agreements.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null));
-    }
-
-    // Fetch the CW feed at most once; cache the result in cwData. Safe to call from both
-    // init (for the overview) and the renewal tab; a failure resolves to null (no data).
-    function ensureCw() {
-        if (cwPromise) return cwPromise;
-        cwPromise = loadCwData().then((d) => { cwData = d; return d; }).catch(() => { cwData = null; return null; });
-        return cwPromise;
-    }
-    // Attach each partner's CW row (mrr / mrrAtRisk / riskTier / renewalRiskScore) as p._cw.
-    function mergeCw() {
-        const bySlug = {};
-        if (cwData && cwData.rows) cwData.rows.forEach((r) => { bySlug[r.slug] = r; });
-        partners.forEach((p) => { p._cw = bySlug[p.slug] || null; });
-    }
-    // Executive Overview "Renewal insights" card (portfolio observations from the CW feed).
-    function renderRenewalInsights() {
-        if (!cwData || !(cwData.insights && cwData.insights.length)) return;
-        const sevColor = { high: "var(--danger)", med: "var(--warning)", action: "var(--primary)", info: "var(--info)" };
-        $("renewal-insights-card").hidden = false;
-        $("renewal-insights").innerHTML = cwData.insights.map((i) => {
-            const c = sevColor[i.severity] || "var(--text-muted)";
-            return `<div style="border-left:3px solid ${c};padding:10px 14px;margin-bottom:10px;background:var(--card-track);border-radius:0 10px 10px 0;">
-                <div style="font-weight:700;color:var(--text-primary);">${maskMoney(esc(i.title))}</div>
-                <div style="font-size:0.84rem;color:var(--text-secondary);margin:3px 0;">${maskMoney(esc(i.detail))}</div>
-                <div class="cell-sub" style="font-style:italic;">${esc(i.why)}</div>
-            </div>`;
-        }).join("");
-    }
-
-    function renderRenewalView() {
-        if (cwRendered) return;        // render the tab once
-        cwRendered = true;
-        ensureCw().then((d) => {
-            if (!d || !(d.rows && d.rows.length)) { $("renewal-empty").hidden = false; $("renewal-body").style.display = "none"; return; }
-            $("renewal-empty").hidden = true; $("renewal-body").style.display = "";
-            renderRenewalKPIs();
-            renderRenewalQChart();
-            renderRenewal();
-        }).catch(() => { cwRendered = false; $("renewal-empty").hidden = false; $("renewal-body").style.display = "none"; });
-    }
-
-    function renderRenewalKPIs() {
-        const t = cwData.totals || {};
-        const pct = t.mrr ? Math.round((t.mrrAtRisk / t.mrr) * 100) : 0;
-        const cards = [
-            { cls: "primary", icon: ICONS.chart, label: "Total MRR", value: m(t.mrr) + "/mo", sub: m(t.arr) + " ARR · " + (t.agreements || 0) + " agreements" },
-            { cls: "info", icon: ICONS.users, label: "Partners", value: t.partners || 0, sub: (t.agreements || 0) + " agreements" },
-            { cls: "danger", icon: ICONS.shield, label: "MRR at risk", value: m(t.mrrAtRisk) + "/mo", sub: pct + "% of MRR · " + (t.agreementsAtRisk || 0) + " agreements" },
-            { cls: "warning", icon: ICONS.renew, label: "Partners at risk", value: t.partnersAtRisk || 0, sub: "renewing ≤90d & unhealthy" },
-        ];
-        $("renewal-kpis").innerHTML = cards.map(kpiCard).join("");
-    }
-
-    function renderRenewalQChart() {
-        if (typeof Chart === "undefined") return;
-        const cv = $("renewalQChart"); if (!cv) return;
-        if (renChart) { renChart.destroy(); renChart = null; }
-        const q = cwData.byQuarter || [];
-        renChart = new Chart(cv, {
-            type: "bar",
-            data: { labels: q.map((x) => x.label), datasets: [{
-                label: "MRR renewing", data: q.map((x) => Math.round(x.mrr)),
-                backgroundColor: "#6d5ef0", borderRadius: 6 }] },
-            options: {
-                responsive: true, maintainAspectRatio: false,
-                plugins: { legend: { display: false },
-                    tooltip: { callbacks: { label: (c) => {
-                        const x = q[c.dataIndex];
-                        return [fmtMoney(x.mrr) + "/mo MRR", x.agreements + " agreements · " + x.partners + " partners"]; } } } },
-                scales: { y: { beginAtZero: true, ticks: { callback: (v) => "$" + Math.round(v / 1000) + "k" } }, x: { grid: { display: false } } },
-            },
-        });
-    }
-
-    function renderAgrDetail(r) {
-        const body = (r.agreements || []).map((a) => {
-            const tcol = REN_TIER_COLOR[a.tier] || "var(--text-muted)";
-            const end = a.end ? (fmtDate(a.end) + (a.daysOut == null ? "" : ` <span class="cell-sub">(${a.daysOut}d)</span>`)) : `<span class="flag-stale">no date</span>`;
-            return `<tr>
-                <td style="padding-left:30px;">${esc(a.name || "—")}</td>
-                <td><span class="cell-sub">${esc(a.engineer || "")}</span></td>
-                <td><span class="cell-sub">${esc(a.type)}</span></td>
-                <td>${m(a.mrr)}</td>
-                <td>${end}</td>
-                <td><span style="color:${tcol};font-weight:600">${a.tier}</span></td>
-            </tr>`;
-        }).join("");
-        return `<table class="custom-table" style="margin:0;background:var(--card-track);">
-            <thead><tr><th style="padding-left:30px;">Agreement</th><th>Engineer</th><th>Type</th><th>MRR /mo</th><th>End date</th><th>Status</th></tr></thead>
-            <tbody>${body}</tbody></table>`;
-    }
-
-    // AI "why" comment for a red MRR-at-risk figure, composed from the reason engine.
-    function whyAtRisk(r) {
-        const rs = (r.riskReasons || []).filter((x) => x.severity !== "action");
-        if (!rs.length) return "";
-        return rs.slice(0, 4).map((x) => x.label).join(" · ");
-    }
+    // ---------- Renewal Risk — churn re-weighted for contract-renewal timing ----------
     function renderRenewal() {
-        if (!cwData) return;
-        const rows = (cwData.rows || []).filter((r) => renTier === "All" || r.riskTier === renTier);
+        const rows = partners
+            .filter((p) => p.renewal && p.renewal.score != null)
+            .filter((p) => renTier === "All" || tierOf(p.renewal.score) === renTier)
+            .sort((a, b) => b.renewal.score - a.renewal.score);
         const empty = $("ren-empty");
         if (!rows.length) { $("ren-table-body").innerHTML = ""; empty.hidden = false; return; }
         empty.hidden = true;
-        $("ren-table-body").innerHTML = rows.map((r) => {
-            const col = REN_TIER_COLOR[r.riskTier] || "var(--text-muted)";
-            const blank = r.blankEndCount ? ` <span class="flag-stale" title="${r.blankEndCount} agreement(s) with no end-date">${r.blankEndCount} no date</span>` : "";
-            const why = whyAtRisk(r);
-            const rec = r.recommendation;
-            const atRiskCell = r.mrrAtRisk
-                ? `<span style="color:var(--danger);font-weight:700">${m(r.mrrAtRisk)}</span>`
-                  + (why ? `<div style="font-size:0.72rem;color:var(--text-muted);font-style:italic;margin-top:3px;max-width:300px;white-space:normal;line-height:1.35;" title="${esc(why)}"><span style="color:var(--primary);font-style:normal;font-weight:700;">✦ AI</span> ${esc(why)}</div>` : "")
-                  + (rec ? `<div style="font-size:0.72rem;color:var(--success-dark);margin-top:4px;max-width:300px;white-space:normal;line-height:1.35;"><span style="font-weight:700;">→ Recommended:</span> ${esc(rec)}</div>` : "")
-                : `<span class="cell-sub">—</span>`;
-            return `<tr class="ren-row" style="cursor:pointer;" title="Show agreements">
-                <td><span class="tier-dot" style="background:${col}"></span><span class="cell-name">${esc(r.partner)}</span>${blank}</td>
-                <td>${r.agreementCount}</td>
-                <td>${m(r.mrr)}</td>
-                <td><span class="cell-sub">${r.earliestRenewal ? fmtDate(r.earliestRenewal) : "—"}</span></td>
-                <td><span class="cell-sub">${r.latestRenewal ? fmtDate(r.latestRenewal) : "—"}</span></td>
-                <td style="vertical-align:top;">${atRiskCell}</td>
-                <td><span class="pill ${REN_TIER_PILL[r.riskTier] || "pill-muted"}">${r.riskTier}</span></td>
-                <td style="color:var(--text-muted);">▾</td>
-            </tr>
-            <tr class="ren-detail" style="display:none;"><td colspan="8" style="padding:0;">${renderAgrDetail(r)}</td></tr>`;
+        $("ren-table-body").innerHTML = rows.map((p) => {
+            const r = p.renewal, tier = tierOf(r.score), baseTier = tierOf(p.churnRisk), d = r.delta;
+            const deltaCell = (d == null || d === 0) ? `<span style="color:var(--text-muted)">—</span>`
+                : d > 0 ? `<span style="color:var(--danger)">▲ +${d}</span>`
+                        : `<span style="color:var(--success)">▼ ${d}</span>`;
+            const days = r.daysToRenewal;
+            const daysCell = (days == null) ? `<span class="cell-sub">—</span>`
+                : `<span style="color:${days <= 30 ? "var(--danger)" : days <= 90 ? "var(--warning)" : "var(--text-secondary)"};font-weight:${days <= 90 ? 700 : 400}">${days}d</span>`;
+            const next = r.nextDate ? fmtDate(r.nextDate) : (r.evergreen ? "evergreen" : "—");
+            return `<tr class="partner-row" data-slug="${esc(p.slug || "")}" style="cursor:pointer;" title="Open ${esc(p.name)} →">
+                <td><span class="tier-dot" style="background:${tierColor(tier)}"></span><span class="cell-name">${esc(p.name)}</span></td>
+                <td><span class="risk-num" style="color:${tierColor(tier)}">${r.score}</span> <span class="cell-sub">${tier}</span></td>
+                <td><span class="cell-sub">${p.churnRisk} · ${baseTier}</span></td>
+                <td>${deltaCell}</td>
+                <td>${esc(next)}</td>
+                <td>${daysCell}</td>
+                <td style="color:var(--text-muted);">→</td>
+            </tr>`;
         }).join("");
-        $("ren-table-body").querySelectorAll("tr.ren-row").forEach((tr) => {
-            tr.addEventListener("click", () => {
-                const d = tr.nextElementSibling;
-                if (d && d.classList.contains("ren-detail")) d.style.display = (d.style.display === "none") ? "" : "none";
-            });
-        });
+        wireRowClicks($("ren-table-body"));
     }
     function setupRenewalFilters() {
         document.querySelectorAll("#ren-filters .filter-pill").forEach((pill) => {
@@ -1249,11 +1054,9 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
                             title: (items) => shown[items[0].dataIndex].name,
                             label: (c) => {
                                 const p = shown[c.dataIndex];
-                                const lines = [`Churn risk: ${p.churnRisk} (${tierOf(p.churnRisk)})`,
+                                return [`Churn risk: ${p.churnRisk} (${tierOf(p.churnRisk)})`,
                                         `Top driver: ${p.topDriver}`,
                                         `Call tone: ${p.toneConfident ? p.callTone : "No calls"} · trend ${p.sentimentTrend}`];
-                                if (p._cw) lines.push(`MRR: ${fmtMoney(p._cw.mrr)}/mo${p._cw.mrrAtRisk ? ` · ${fmtMoney(p._cw.mrrAtRisk)} at risk` : ""}`);
-                                return lines;
                             },
                         } },
                     },
@@ -1570,7 +1373,7 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
         overview: "Real-time partner health, churn risk & operational signal across the book",
         partners: "Every partner ranked by churn risk — select one to drill in",
         csat: "Monthly DES/MDE CSAT — surveys sent (HaloPSA) vs responses received (TeamGPS)",
-        renewal: "ConnectWise agreements — MRR, renewals by quarter, and MRR at risk for near-term renewals on unhealthy partners",
+        renewal: "Churn risk re-weighted for contract-renewal timing (HaloPSA contracts) — a separate, renewal-aware score",
     };
     function showView(view) {
         if (VIEWS.indexOf(view) === -1) view = "overview";
@@ -1586,7 +1389,7 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
         });
         if (view === "partners") renderAllPartners();
         if (view === "csat") renderCsatRecon();
-        if (view === "renewal") renderRenewalView();
+        if (view === "renewal") renderRenewal();
         window.scrollTo(0, 0);
     }
     function setupNav() {
@@ -1653,12 +1456,8 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
         hideLoading();
         partners = DATA.partners || [];
         $("feed-stamp").textContent = `as of ${DATA.as_of} · ${partners.length} partners`;
-        await ensureCw();          // load CW agreements (optional) so the overview can show revenue
-        mergeCw();                 // attach p._cw to each partner
         renderCoverage();
-        setupPrivacy();
         renderKPIs();
-        renderRenewalInsights();
         setupFilters();
         setupP360Filters();
         setupRenewalFilters();

@@ -85,9 +85,9 @@ SCHEMA_HINT = """Return JSON with exactly these keys:
   "action_items": [ {"task": "...", "owner": "...", "due": "...", "status": "Pending|In Progress|Completed", "source": "<which call/deck>"} ]
 }
 Provide 2-5 drivers and 2-5 remediation steps. Extract concrete action_items ONLY from meetings
-NOT marked "[HISTORICAL …]" — HISTORICAL-tagged meetings are background for the relationship trend
-only; their action items are old and likely already resolved, so do NOT list them as open. When a
-recent meeting conflicts with an older one, trust the most recent.
+and SIP progress notes NOT marked "[HISTORICAL …]" — HISTORICAL-tagged items are background for the
+relationship trend only; their action items are old and likely already resolved, so do NOT list them
+as open. When a recent meeting/SIP note conflicts with an older one, trust the most recent.
 Output ONLY the JSON object — no prose, no code fences."""
 
 
@@ -210,6 +210,24 @@ def build_context(data: dict) -> str:
             parts.append(_meeting_header(call.get("summary"), dt, hist))
             parts.append(_truncate(call.get("notes"), 2500))
 
+    # SIP execution detail: the SDM's weekly progress write-ups on the SIP ticket
+    # (utilization, ticket-closure, governance, on-track status). These are filed as
+    # private Halo notes and are the ground truth for whether an active SIP is actually
+    # turning the account around — distinct from the service-review call notes above.
+    # `sips` is grouped per ticket; flatten its updates (tagging the SIP subject/status)
+    # so the recency window applies per individual note.
+    sip_updates = [
+        {"summary": f"{s.get('subject')} [{s.get('status_label')}]",
+         "datetime": u.get("datetime"), "note": u.get("note")}
+        for s in data.get("sips", []) for u in (s.get("updates") or [])
+    ]
+    sel_sip = _window_meetings(sip_updates, ("datetime",), today, _MAX_CALLS)
+    if sel_sip:
+        parts.append(f"\n## SIP (Service Improvement Plan) progress notes (newest first; last {ANALYSIS_WINDOW_DAYS} days)")
+        for note, dt, hist in sel_sip:
+            parts.append(_meeting_header(f"SIP note: {note.get('summary')}", dt, hist))
+            parts.append(_truncate(note.get("note"), 2000))
+
     decks = data.get("decks", [])
     if decks:
         parts.append("\n## Service-review deck content (converted)")
@@ -238,6 +256,9 @@ def _has_substantive_signal(data: dict) -> bool:
     if data.get("csat_comments") or data.get("nps_comments"):
         return True
     if any((c.get("notes") or "").strip() for c in data.get("historical_calls", [])):
+        return True
+    if any((u.get("note") or "").strip()
+           for s in data.get("sips", []) for u in (s.get("updates") or [])):
         return True
     if any((d.get("markdown") or "").strip() for d in data.get("decks", [])):
         return True
@@ -285,18 +306,43 @@ def _extract_json(text: str) -> dict:
         raise
 
 
-def _grok_json(context: str) -> dict:
-    """One synchronous Grok call returning the parsed JSON insight (raises on error)."""
+def _grok_call(system: str, user: str) -> dict:
+    """One synchronous Grok JSON call (raises on error)."""
     resp = _client_singleton().chat.completions.create(
         model=config.AI_MODEL,
         messages=[
-            {"role": "system", "content": SYSTEM},
-            {"role": "user", "content": f"{SCHEMA_HINT}\n\n---\n{context}"},
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
         ],
         max_completion_tokens=_MAX_COMPLETION_TOKENS,
         response_format={"type": "json_object"},
     )
     return _extract_json(resp.choices[0].message.content)
+
+
+def _normalize_insight(insight: dict) -> dict:
+    """Repair quirks in the model's JSON before it's cached/uploaded. The reasoning
+    model occasionally emits the `action_items` array under a BLANK or non-string key
+    (seen: `"": [...]` with no `action_items` key) — which both fails the cache's
+    required-key check and is rejected by Firestore (field names must be non-empty
+    strings). Coalesce such a key into `action_items`, then drop any empty/non-string
+    keys so the result is always Firestore-safe."""
+    if not isinstance(insight, dict):
+        return insight
+    if "action_items" not in insight:
+        for k, v in insight.items():
+            if (not isinstance(k, str) or not k) and isinstance(v, list):
+                insight["action_items"] = v
+                break
+    for bad in [k for k in insight if not isinstance(k, str) or not k]:
+        insight.pop(bad, None)
+    insight.setdefault("action_items", [])
+    return insight
+
+
+def _grok_json(context: str) -> dict:
+    """The base churn-analysis call (full SYSTEM + schema + partner context)."""
+    return _normalize_insight(_grok_call(SYSTEM, f"{SCHEMA_HINT}\n\n---\n{context}"))
 
 
 def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
@@ -364,3 +410,187 @@ def analyze(data: dict, cached_ai: dict = None, force: bool = False) -> dict:
     insight["_input_hash"] = input_hash
     insight["_schema_version"] = CACHE_SCHEMA_VERSION
     return insight
+
+
+# --- Renewal-aware pass (Option A: lightweight overlay on the base churn score) -----------
+# A SMALL second call that re-weights the base churn score for contract-renewal timing — it
+# is fed only the base assessment + the renewal facts (NO transcripts), so it's cheap and the
+# base `ai` block is left untouched. Powers the separate "Renewal Risk" dashboard view.
+RENEWAL_SYSTEM = (
+    "You are a churn-risk analyst for ITBD (a white-label NOC/helpdesk provider; partners are "
+    "MSPs). You are given a partner's EXISTING churn assessment plus their contract-renewal "
+    "timing, and must produce a RENEWAL-ADJUSTED churn risk. Guidance: an imminent renewal is a "
+    "decision window that AMPLIFIES risk for a shaky/declining account; a distant renewal or a "
+    "strong, healthy account dampens near-term risk; an evergreen/auto-renew contract with no "
+    "near-term end slightly lowers near-term risk. NEVER lower a high base risk merely because "
+    "renewal is far off. Stay close to the base score unless renewal timing clearly changes it. "
+    "Respond with STRICT JSON only, no prose."
+)
+RENEWAL_SCHEMA = """Return JSON with exactly these keys:
+{
+  "renewal_risk_score": <int 0-100, the renewal-adjusted churn risk>,
+  "renewal_band": "Low" | "Medium" | "High" | "Critical",
+  "renewal_summary": "<=2 sentences on how the renewal timing changes the churn picture>"
+}
+Output ONLY the JSON object — no prose, no code fences."""
+
+
+def _renewal_bucket(days):
+    if days is None:
+        return "none"
+    if days < 0:
+        return "overdue"
+    if days <= 30:
+        return "le30"
+    if days <= 90:
+        return "le90"
+    if days <= 180:
+        return "le180"
+    return "gt180"
+
+
+def resolve_renewal(raw: dict) -> dict:
+    """From halo.get_next_renewal output ({end_dates, active_contracts, evergreen}) pick the
+    NEXT upcoming renewal (earliest end_date >= today; else the most recent past end) and
+    days-to-renewal, relative to _today(). Returns the resolved renewal facts."""
+    r = raw or {}
+    ends = [e for e in (r.get("end_dates") or []) if e]
+    today = _today()
+    iso = today.isoformat()
+    upcoming = [e for e in ends if e >= iso]
+    nxt = upcoming[0] if upcoming else (ends[-1] if ends else None)
+    days = None
+    if nxt:
+        try:
+            days = (datetime.strptime(nxt, "%Y-%m-%d").date() - today).days
+        except ValueError:
+            days = None
+    return {"next_renewal": nxt, "days_to_renewal": days,
+            "active_contracts": r.get("active_contracts", 0),
+            "evergreen": bool(r.get("evergreen"))}
+
+
+def analyze_renewal(base_ai: dict, renewal_raw: dict, cached: dict = None,
+                    force: bool = False) -> dict:
+    """Renewal-adjusted churn score for one partner (Option A). `renewal_raw` is
+    halo.get_next_renewal output. Returns an `ai_renewal` block carrying the adjusted score +
+    a short rationale + the resolved next_renewal/days_to_renewal (echoed for the feed).
+    Cached/keyed on base risk + next date + proximity bucket + model, so it only re-runs when
+    the churn picture or the renewal window actually moves. Degrades to mirroring the base
+    score when there is no renewal data or the call fails — never blocks a partner."""
+    base = base_ai or {}
+    base_risk = base.get("risk_score")
+    rr = resolve_renewal(renewal_raw)
+    nxt, days = rr["next_renewal"], rr["days_to_renewal"]
+
+    def _mirror(reason, **extra):
+        out = {"renewal_risk_score": base_risk, "renewal_band": base.get("risk_band"),
+               "renewal_summary": reason, "_model": config.AI_MODEL}
+        out.update(rr)
+        out.update(extra)
+        return out
+
+    key = f"{base_risk}|{nxt}|{_renewal_bucket(days)}|{rr['evergreen']}|{config.AI_MODEL}"
+    input_hash = hashlib.sha256(key.encode("utf-8")).hexdigest()
+    if (not force and cached and cached.get("_input_hash") == input_hash
+            and cached.get("_model") == config.AI_MODEL and not cached.get("_error")
+            and cached.get("renewal_risk_score") is not None):
+        cached["_cached"] = True
+        return cached
+
+    # Nothing to refine: no base score, or no renewal date and not evergreen.
+    if base_risk is None or (nxt is None and not rr["evergreen"]):
+        return _mirror("No active contract-renewal date on file; renewal-adjusted risk "
+                       "mirrors the base churn score.", _no_renewal_data=True,
+                       _input_hash=input_hash)
+
+    facts = f"next renewal: {nxt or 'none (evergreen/auto-renew)'}"
+    if days is not None:
+        facts += f" (~{days} days from today)"
+    facts += f"; active contracts: {rr['active_contracts']}"
+    if rr["evergreen"]:
+        facts += "; has an evergreen/auto-renew contract"
+    drivers = "; ".join(d.get("factor", "") for d in (base.get("drivers") or []))[:400]
+    user = (f"{RENEWAL_SCHEMA}\n\n---\nBASE CHURN ASSESSMENT: risk {base_risk}/100, trend "
+            f"{base.get('sentiment_trend')}. Summary: {base.get('summary', '')}\n"
+            f"Key drivers: {drivers}\n\nCONTRACT RENEWAL: {facts}")
+    try:
+        out = _grok_call(RENEWAL_SYSTEM, user)
+        if out.get("renewal_risk_score") is None:
+            raise ValueError("no renewal_risk_score in response")
+        out.update(rr)
+        out["_model"] = config.AI_MODEL
+        out["_input_hash"] = input_hash
+        return out
+    except Exception as e:
+        if (cached and not cached.get("_error")
+                and cached.get("renewal_risk_score") is not None):
+            kept = dict(cached)
+            kept["_stale"] = True
+            kept["_stale_reason"] = str(e)[:200]
+            kept.pop("_cached", None)
+            return kept
+        return _mirror("Renewal-adjusted scoring unavailable; showing the base churn score.",
+                       _error=str(e)[:200], _input_hash=input_hash)
+
+
+# --- SIP journey summary (per-ticket narrative for the Partner-360 SIP card) ---------------
+# A SMALL per-SIP call that turns a SIP ticket's weekly progress notes into a 1-2 sentence
+# start->date narrative + a short current-status label. Only ACTIVE (open / on-hold) SIPs are
+# summarized — closed ones render as a collapsed one-liner. Cached per ticket on a hash of its
+# notes so a rebuild only re-summarizes a SIP whose notes actually changed.
+SIP_SUMMARY_SYSTEM = (
+    "You are a service-delivery analyst for ITBD (a white-label NOC/helpdesk provider; partners "
+    "are MSPs). You are given ONE Service Improvement Plan (SIP) for an engineer/team and its "
+    "weekly progress notes (oldest to newest). Write a concise factual summary of the SIP's "
+    "journey from start to the latest update — what it was opened for and how it has trended — "
+    "citing concrete figures (utilization %, tickets closed, governance feedback) when present. "
+    "Do NOT invent data. Respond with STRICT JSON only, no prose."
+)
+SIP_SUMMARY_SCHEMA = """Return JSON with exactly these keys:
+{
+  "summary": "<=2 sentence start->date narrative of this SIP's progress",
+  "latest_status": "<short label for the most recent state, e.g. ON TRACK | AT RISK | STALLED | COMPLETED>"
+}
+Output ONLY the JSON object — no prose, no code fences."""
+
+
+def _sip_summary_hash(sip: dict) -> str:
+    txt = "\n".join((u.get("datetime", "") + "|" + (u.get("note") or ""))
+                    for u in (sip.get("updates") or []))
+    return hashlib.sha256((str(sip.get("ticket_id")) + "\n" + txt).encode("utf-8")).hexdigest()
+
+
+def summarize_sips(sips: list, cached_sips: list = None, force: bool = False) -> list:
+    """Attach an AI `summary` + `latest_status` to each ACTIVE SIP (mutates + returns
+    `sips`). Reuses a cached summary when the SIP's notes are unchanged (keyed by
+    ticket_id + notes hash). Closed SIPs and SIPs with no notes are left as-is.
+    Never raises — a failed call falls back to no summary (the card still shows the
+    status badge + date range + raw updates)."""
+    sips = sips or []
+    prev = {c.get("ticket_id"): c for c in (cached_sips or [])}
+    for s in sips:
+        if s.get("status_class") == "closed" or not s.get("updates"):
+            continue
+        h = _sip_summary_hash(s)
+        p = prev.get(s.get("ticket_id"))
+        if (not force and p and p.get("_sum_hash") == h and p.get("summary")
+                and p.get("_sum_model") == config.AI_MODEL):
+            s["summary"], s["latest_status"] = p.get("summary"), p.get("latest_status")
+            s["_sum_hash"], s["_sum_model"] = h, config.AI_MODEL
+            continue
+        # oldest->newest so the narrative reads as a journey
+        ups = sorted(s.get("updates"), key=lambda u: u.get("datetime") or "")
+        body = "\n\n".join(
+            f"[{(u.get('datetime') or '')[:10]}] {_truncate(u.get('note'), 1200)}" for u in ups)
+        user = (f"{SIP_SUMMARY_SCHEMA}\n\n---\nSIP: {s.get('subject')} "
+                f"(status: {s.get('status') or s.get('status_label')})\n\n{body}")
+        try:
+            out = _grok_call(SIP_SUMMARY_SYSTEM, user)
+            s["summary"] = (out.get("summary") or "").strip() or None
+            s["latest_status"] = (out.get("latest_status") or "").strip() or None
+        except Exception as e:
+            s["summary"], s["latest_status"] = None, None
+            s["_sum_error"] = str(e)[:200]
+        s["_sum_hash"], s["_sum_model"] = h, config.AI_MODEL
+    return sips

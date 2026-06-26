@@ -198,6 +198,16 @@ These are the things that trip people up on Halo's API:
    attachments, time/charges) fetch each action at `/api/Actions/{action_id}?ticket_id={id}`
    (≈100 fields vs ≈55 in the list).
 
+4a. **The `/api/Actions` LIST silently OMITS private notes** (`hiddenfromuser=true`) —
+   and no `includeprivate`/`excludesys`-style param brings them back. The list returns
+   only the public actions, so the `id`s have **gaps** (e.g. visible `[1,3,5,…,23]` while
+   `2,4,6,…` are private SLA/Private-Note rows). Private notes are still readable by
+   **direct id fetch** (`/api/Actions/{seq}?ticket_id={id}`); within a ticket the action
+   `id` is a **1-based per-ticket sequence**, so to capture everything walk
+   `1..max(visible id)+buffer` and fetch each. This is how SIP weekly progress write-ups
+   (filed as private notes) are ingested — see `halo.analyze_sips` / `_sip_ticket_notes`.
+   (Same class of gap bit the Stratti MoM, which arrived as a forwarded-email action.)
+
 5. **`/api/Team` and `/api/Department` return empty / are out of scope** for
    these credentials. Reconstruct the org tree from **`/api/Agent`** instead:
    each agent embeds `teams[]` (`team_id`, `team_name`, `department_id`) and

@@ -107,13 +107,22 @@ def main():
             if not args.no_ai:
                 # Reuse the cached AI result when the LLM inputs are unchanged (skips the
                 # Grok call + avoids score drift); --force-ai re-runs regardless.
-                prev_ai = None
+                prev_ai = prev_renewal = prev_sips = None
                 if out.exists() and not args.force_ai:
                     try:
-                        prev_ai = json.loads(out.read_text(encoding="utf-8")).get("ai")
+                        _prev = json.loads(out.read_text(encoding="utf-8"))
+                        prev_ai = _prev.get("ai")
+                        prev_renewal = _prev.get("ai_renewal")
+                        prev_sips = _prev.get("sips")
                     except (ValueError, OSError):
-                        prev_ai = None
+                        prev_ai = prev_renewal = prev_sips = None
                 data["ai"] = ai.analyze(data, cached_ai=prev_ai, force=args.force_ai)
+                # Renewal-adjusted overlay (Option A) — separate block for the Renewal Risk view.
+                data["ai_renewal"] = ai.analyze_renewal(
+                    data["ai"], data.get("renewal"), cached=prev_renewal, force=args.force_ai)
+                # Per-SIP journey summaries for the Partner-360 SIP card (active SIPs only).
+                data["sips"] = ai.summarize_sips(
+                    data.get("sips", []), cached_sips=prev_sips, force=args.force_ai)
                 print(f"  risk: {data['ai'].get('risk_score')} "
                       f"({data['ai'].get('risk_band')})"
                       f"{' [cached]' if data['ai'].get('_cached') else ' [' + str(data['ai'].get('_model','ai')) + ']'}", file=sys.stderr)

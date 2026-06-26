@@ -3,9 +3,10 @@ rules_version = '2';
 // PartnerPulse — ALL dashboard data lives in Firestore (sharded).
 //   meta/overview                  portfolio rollups + coverage (Exec Overview)
 //   meta/csatRecon                 the CSAT Reconciliation feed  (single doc)
+//   meta/cwAgreements              the Renewal Risk feed (CW agreements; single doc)
 //   partners/{slug}                per-partner summary doc       (Exec Overview)
 //   partners/{slug}/detail/profile client meta + AI + CSAT/NPS stats
-//   partners/{slug}/transcripts|decks|calls|csat|nps|actions/{id}
+//   partners/{slug}/transcripts|decks|calls|sip|csat|nps|actions/{id}
 //                                  the detail layer, one doc per item
 //
 // Reads are restricted to verified @itbd.net accounts (email/password sign-in;
@@ -42,7 +43,8 @@ service cloud.firestore {
           'keith.rozario@itbd.net',
           'andrea.canlas@itbd.net',
           'lee.cavellier@itbd.net',
-          'jkhan@itbd.net'
+          'jkhan@itbd.net',
+          'manu.sharma@itbd.net'
         ];
     }
 

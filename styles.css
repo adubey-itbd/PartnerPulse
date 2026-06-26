@@ -263,6 +263,14 @@ body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bo
     white-space: nowrap;
 }
 
+/* Privacy masking — money figures blur until the eye toggle reveals them. */
+.pp-money { transition: filter .12s ease; }
+body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-select: none; }
+.privacy-btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary);
+    color: var(--text-secondary); border-radius: 10px; padding: 6px 10px; font-size: 0.74rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.privacy-btn:hover { color: var(--text-primary); border-color: var(--primary); }
+.privacy-btn svg { width: 16px; height: 16px; }
+
 /* Badge System */
 .badge {
     display: inline-flex;

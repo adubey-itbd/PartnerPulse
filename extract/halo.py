@@ -133,6 +133,37 @@ def parse_custom_fields(client: dict) -> dict:
     return out
 
 
+def get_next_renewal(client_id: int) -> dict:
+    """Contract-renewal facts for a client from /api/ClientContract. Partners carry many
+    contract rows (one per service, staggered terms) plus a `2099-12-31` 'evergreen'
+    sentinel, so this returns the ACTIVE, non-expired end_dates (excluding 2099 sentinels)
+    sorted earliest-first, the active-contract count, and an evergreen flag. The caller
+    (build_overview) picks the next upcoming date + days-to-renewal against 'today'.
+
+    Returns {"end_dates": [YYYY-MM-DD, …], "active_contracts": int, "evergreen": bool}."""
+    try:
+        rows = _rows(get("ClientContract", client_id=client_id))
+    except Exception:
+        return {"end_dates": [], "active_contracts": 0, "evergreen": False}
+    ends, active, evergreen = [], 0, False
+    for r in rows:
+        if not r.get("active") or r.get("expired"):
+            continue
+        active += 1
+        ed = str(r.get("end_date") or "")[:10]
+        if len(ed) != 10:
+            continue
+        try:
+            year = int(ed[:4])
+        except ValueError:
+            continue
+        if year >= 2099:                       # evergreen / no-end sentinel
+            evergreen = True
+            continue
+        ends.append(ed)
+    return {"end_dates": sorted(ends), "active_contracts": active, "evergreen": evergreen}
+
+
 # --- Service Improvement Plans (ticket type 99) -----------------------------
 # SIPs are a first-class Halo ticket type. There is NO working server-side type
 # filter on /api/Tickets (every tickettype_* param is ignored), but each list
@@ -240,10 +271,10 @@ def _all_text_sips() -> list:
     return _global_sips
 
 
-def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
-    """All-time SIP counts for a partner, split open vs closed, de-duplicated by id.
+def _discover_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
+    """All of a partner's SIP tickets, de-duplicated by id -> {id: ticket_row}.
 
-    Counts three buckets:
+    Unions three buckets:
       A) type-99 SIPs filed under the partner's own Halo client record (`client_id`).
       B) type-99 SIPs filed under another record (typically ITBD's own) whose summary
          names the partner — matched against `name_terms`.
@@ -252,7 +283,6 @@ def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
          misses — they aren't always type 99 (APM IT's SIP is type 148) and aren't always
          under this client record (RedHelm's are under another client). Fetched by id.
     """
-    names = _status_name_map()
     seen = {}
 
     # A) the partner's own client record (catches SIPs whose summary may not even
@@ -286,15 +316,120 @@ def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
                 continue
             if t and t.get("id"):
                 seen[t["id"]] = t
+    return seen
 
+
+def _count_sip_rows(rows) -> dict:
+    """Split discovered SIP rows into open vs closed by terminal status name."""
+    names = _status_name_map()
     open_n = closed_n = 0
-    for r in seen.values():
+    for r in rows:
         nm = names.get(r.get("status_id"), "").strip().lower()
         if nm in _CLOSED_STATUS_NAMES:
             closed_n += 1
         else:
             open_n += 1
     return {"open": open_n, "closed": closed_n}
+
+
+def count_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
+    """All-time SIP counts for a partner, split open vs closed, de-duplicated by id.
+    See `_discover_sips` for the three buckets unioned."""
+    return _count_sip_rows(
+        _discover_sips(client_id, name_terms, sip_ticket_field).values())
+
+
+# A SIP ticket's substantive write-ups (the SDM's weekly progress updates and the
+# initial action plan) are filed as PRIVATE notes (hiddenfromuser=True). Halo's
+# /api/Actions LIST endpoint silently OMITS private notes, so they are invisible to
+# the bulk fetch — they are only retrievable by fetching each action by id. Within a
+# ticket the action `id` is a 1-based sequence, so we walk 1..max(+buffer) and keep
+# the notes that read like SIP progress write-ups (not the SLA/status-change noise).
+_SIP_NOTE_MARKERS = ("sip progress", "service improvement action plan", "utilization",
+                     "governance review", "ticket closure", "parameter compliance",
+                     "overall status")
+_SIP_NOTE_SEQ_BUFFER = 6      # private notes can sit just past the last visible action
+_SIP_NOTE_SEQ_CAP = 150       # hard runaway guard
+# Capture the engineer name on the SAME line only ([ \t], not \s) — the notes read
+# "Engineer: Mazid\nReporting Manager: …", so \s+ would wrongly swallow "Reporting".
+_SIP_ENGINEER_RE = re.compile(r"Engineer:[ \t]*([A-Za-z][\w'.\-]*(?:[ \t]+[A-Za-z][\w'.\-]*)?)", re.I)
+
+
+def _sip_ticket_notes(ticket_id: int) -> list:
+    """A SIP ticket's progress-update notes (newest first), INCLUDING private notes
+    (the LIST hides them, so each action is fetched by its 1-based id). Each item:
+    {action_id, who, datetime, note}."""
+    body = get("Actions", ticket_id=ticket_id)
+    listed = body.get("actions") if isinstance(body, dict) else _rows(body)
+    max_seq = max((a.get("id") or 0 for a in (listed or [])), default=0)
+    notes = []
+    for seq in range(1, min(max_seq + _SIP_NOTE_SEQ_BUFFER, _SIP_NOTE_SEQ_CAP) + 1):
+        try:
+            d = get(f"Actions/{seq}", ticket_id=ticket_id)
+        except Exception:
+            continue
+        if not isinstance(d, dict) or not d.get("id"):
+            continue
+        note = clean_html(d.get("note") or "")
+        if len(note) >= 40 and any(m in note.lower() for m in _SIP_NOTE_MARKERS):
+            notes.append({"action_id": d.get("id"), "who": d.get("who"),
+                          "datetime": d.get("datetime"), "note": note})
+    notes.sort(key=lambda n: n.get("datetime") or "", reverse=True)
+    return notes
+
+
+def _sip_status_label(name: str):
+    """Map a Halo SIP status NAME to a simplified (label, class) for the dashboard
+    badge: ('On Hold','hold') | ('Closed'/'Resolved'/…, 'closed') | ('Open','open')."""
+    low = (name or "").lower()
+    if "hold" in low:
+        return "On Hold", "hold"
+    if low in _CLOSED_STATUS_NAMES:
+        return (name.title() if name else "Closed"), "closed"
+    return "Open", "open"
+
+
+def _sip_subject(raw_summary: str, notes: list) -> str:
+    """A short label for a SIP. Prefer the engineer named in the notes
+    ('Engineer: Mazid' -> 'Mazid SIP'); else fall back to the ticket summary."""
+    for n in notes:
+        m = _SIP_ENGINEER_RE.search(n.get("note") or "")
+        if m:
+            return f"{m.group(1).strip()} SIP"
+    return (raw_summary or "SIP").strip()
+
+
+def analyze_sips(client_id: int, name_terms=(), sip_ticket_field=None) -> dict:
+    """One-pass SIP read for a partner. Returns {open, closed, sips} where `sips` is
+    one object PER SIP ticket — {ticket_id, subject, raw_summary, status,
+    status_label, status_class, started, latest, updates[]} — grouped so the AI can
+    summarize each SIP's journey and the dashboard can show it with a status badge.
+    Active (open / on-hold) SIPs sort before closed ones; newest update first."""
+    rows = _discover_sips(client_id, name_terms, sip_ticket_field)
+    names = _status_name_map()
+    counts = _count_sip_rows(rows.values())
+    sips = []
+    for r in rows.values():
+        tid = r.get("id")
+        if not tid:
+            continue
+        notes = _sip_ticket_notes(tid)
+        label, cls = _sip_status_label(names.get(r.get("status_id"), "").strip())
+        dts = [n["datetime"] for n in notes if n.get("datetime")]
+        sips.append({
+            "ticket_id": tid,
+            "subject": _sip_subject(r.get("summary"), notes),
+            "raw_summary": r.get("summary"),
+            "status": names.get(r.get("status_id"), "").strip(),
+            "status_label": label,
+            "status_class": cls,
+            "started": (min(dts) if dts else r.get("dateoccurred")) or "",
+            "latest": (max(dts) if dts else r.get("dateoccurred")) or "",
+            "updates": notes,
+        })
+    sips.sort(key=lambda s: s.get("latest") or "", reverse=True)   # newest first…
+    sips.sort(key=lambda s: s["status_class"] == "closed")         # …active before closed
+    return {"open": counts["open"], "closed": counts["closed"], "sips": sips}
 
 
 # --- Monthly CSAT survey tickets (the "sent" side of CSAT reconciliation) ----

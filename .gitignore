@@ -6,6 +6,12 @@
 # decks, run logs). Nothing in data/ is ever tracked; scripts go in scripts/.
 /data/
 
+# ConnectWise agreement export — sensitive financial source data (per-engineer
+# MRR); static local input to scripts/build_cw_agreements.py. Never commit.
+CW Agreements*.xlsx
+# Local screenshots / scratch images
+UI Theme.png
+
 # Python
 __pycache__/
 *.pyc

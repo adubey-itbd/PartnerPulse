@@ -177,6 +177,43 @@ Partner/AM/RM/Site and re-buckets months→quarters client-side. Read via
 
 ---
 
+## 4c. The Renewal Risk feed (`data/_cw_agreements.json` → Firestore)
+
+Built by `scripts/build_cw_agreements.py` AFTER `build_overview.py` from a **static**
+ConnectWise export (`CW Agreements*.xlsx` in the repo root) — **not** part of the nightly
+cloud pipeline; built locally and published on request. One source row = one agreement.
+
+| Field | Source |
+|---|---|
+| Partner | CW col D Company Name → matched to a **dashboard** partner only (exact + alias map; non-dashboard ignored). |
+| MRR (per agreement) | CW col F Amount, normalized by col G Billing Cycle: Monthly = Amount, Annual = Amount ÷ 12, One-Time/blank = 0. Partner MRR = Σ; ARR = MRR × 12. |
+| Renewal date | CW col I Date End (**source of truth** for the Renewal view; Halo `ClientContract` no longer used here). Blank dates kept & flagged. |
+| Included types | col B ∈ {Co-Managed, Self Managed, MSP Dedicated Engineer}; IMS / Team GPS / Project / Managed IT / Support By Design Complete excluded. |
+| At Risk | agreement renewing ≤ 90d AND partner unhealthy (churn ≥ 45 OR RAG Red OR confident-Negative tone OR Declining trend). Partner tier = worst agreement tier; MRR-at-risk = Σ At-Risk agreement MRR. |
+
+**Renewal Risk score** (per partner, `renewalRiskScore` 0–100 + `renewalRiskBand`): a
+weighted blend of renewal **timing 40%** + account **health 40%** + **MRR exposure 20%**
+(timing ≈ 0 when nothing is renewing soon). It **sits alongside** the Grok churn score
+(doesn't blend/replace).
+
+Shape: `{ generated_at, as_of, source, includedTypes, atRisk{windowDays,definition},
+totals{partners,agreements,mrr,arr,partnersAtRisk,agreementsAtRisk,mrrAtRisk,
+mrrRenew30,mrrRenew60,mrrRenew90,blankEndCount,…}, byQuarter[{key,label,agreements,mrr,partners}],
+insights[{code,severity,title,detail,why}],
+rows[{partner,slug,agreementCount,mrr,arr,earliestRenewal,latestRenewal,daysToNextRenewal,
+mrrAtRisk,riskTier,renewalRiskScore,renewalRiskBand,riskReasons[{code,label,severity}],
+recommendation,health{…},agreements[{name,engineer,type,mrr,billing,start,end,daysOut,tier,blankEnd}]}] }`.
+Served via `window.PP_AUTH.loadCwAgreements()` (Firestore `meta/cwAgreements` in prod,
+`data/_cw_agreements.json` on localhost). **Consumed in three places:** the Executive
+Overview (Revenue & renewals KPI row + a "Renewal insights" card from `insights[]` + MRR /
+MRR-at-risk columns and a $-at-risk secondary sort on "Who needs attention"), the Partner
+360 table (renewal-risk column = `renewalRiskScore`), and the `partner.html` drilldown
+(Revenue & Renewals card + `riskReasons[]` "why at risk"). `riskReasons` uses only
+currently-available signals (timing/churn/RAG/trend/tone/CSAT/engagement/SIP); GP, ticket-
+trend, manual flags, true QBR and renewal-owner are deferred.
+
+---
+
 ## 5. Cloud Firestore (where it's stored for serving)
 
 Published by `scripts/upload_firebase_data.py`. **Sharded** so no single doc
@@ -188,6 +225,7 @@ trailing docs and removes partners no longer in the feed).
 ```
 meta/overview                     ← { generated_at, as_of, coverage, portfolio }     (from _overview.json)
 meta/csatRecon                    ← the whole _csat_recon.json feed (single doc)     → CSAT Reconciliation view
+meta/cwAgreements                 ← the whole _cw_agreements.json feed (single doc)  → Renewal Risk view
 partners/{slug}                   ← the per-partner SUMMARY object (the feed's partners[] entry) → Exec Overview
 partners/{slug}/detail/profile    ← { meta, client, ai, csat_stats, nps_stats }      (from {slug}.json)
 partners/{slug}/transcripts/{i}   ← one doc per transcript        (blob.transcripts)

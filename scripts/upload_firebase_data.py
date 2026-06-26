@@ -6,11 +6,13 @@ the demo allowlist) + the per-partner data/<slug>.json caches:
 
     meta/overview                     { generated_at, as_of, coverage, portfolio }
     meta/csatRecon                    the whole data/_csat_recon.json feed (single doc)
+    meta/cwAgreements                 the whole data/_cw_agreements.json feed (single doc; Renewal Risk view)
     partners/<slug>                   summary doc (powers the Exec Overview)
     partners/<slug>/detail/profile    { meta, client, ai, csat_stats, nps_stats }
     partners/<slug>/transcripts/<i>   one doc per call transcript
     partners/<slug>/decks/<i>         one doc per converted deck
     partners/<slug>/calls/<i>         one doc per service-review note (historical_calls)
+    partners/<slug>/sip/<i>           one doc per SIP ticket, grouped w/ status + notes (sips)
     partners/<slug>/csat/<i>          one doc per CSAT comment
     partners/<slug>/nps/<i>           one doc per NPS response
     partners/<slug>/actions/<i>       one doc per action item
@@ -69,6 +71,7 @@ _SECTIONS = {
     "transcripts": "transcripts",
     "decks": "decks",
     "calls": "historical_calls",
+    "sip": "sips",
     "csat": "csat_comments",
     "nps": "nps_comments",
     "actions": "action_items",
@@ -268,6 +271,18 @@ def main():
         except (ValueError, OSError) as exc:
             sys.exit(f"{recon_path.name} is unreadable/corrupt: {exc}")
 
+    # Optional CW-agreements feed (the Renewal Risk view). Single Firestore doc
+    # (meta/cwAgreements), same absence/corrupt handling as the CSAT-recon feed.
+    cw = None
+    cw_path = DATA / "_cw_agreements.json"
+    if cw_path.exists():
+        try:
+            cw = load_json(cw_path)
+            if not isinstance(cw, dict):
+                raise ValueError("not a JSON object")
+        except (ValueError, OSError) as exc:
+            sys.exit(f"{cw_path.name} is unreadable/corrupt: {exc}")
+
     drop_pct = max_drop_pct()
 
     if args.dry_run:
@@ -286,6 +301,10 @@ def main():
             t = recon.get("totals", {}) or {}
             print(f"  meta/csatRecon  [{len(recon.get('rows') or [])} rows, "
                   f"{t.get('sent')} sent / {t.get('received')} received]")
+        if cw is not None:
+            t = cw.get("totals", {}) or {}
+            print(f"  meta/cwAgreements  [{len(cw.get('rows') or [])} partners, "
+                  f"{t.get('agreements')} agreements, ${t.get('mrr', 0):,.0f}/mo MRR]")
         print(f"  sanity gate: max drop {drop_pct:.1f}% (existing count checked "
               f"live at publish time)")
         print(f"{len(partners)} partner(s). Nothing written (dry run).")
@@ -330,6 +349,8 @@ def main():
     # docs). It is a single self-contained doc, independent of the partner tree.
     if recon is not None:
         sentinel.set(db.collection("meta").document("csatRecon"), recon)
+    if cw is not None:
+        sentinel.set(db.collection("meta").document("cwAgreements"), cw)
     sentinel.set(db.collection("meta").document("overview"),
                  {k: feed.get(k) for k in _META_KEYS})
     sentinel.flush()

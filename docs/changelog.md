@@ -6,6 +6,96 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Renewal Risk view rebuilt on ConnectWise agreements (MRR + renewals + MRR-at-risk) (2026-06-26)
+
+### Added
+- **`scripts/build_cw_agreements.py`** — parses a static ConnectWise export
+  (`CW Agreements*.xlsx` in the repo root) into **`data/_cw_agreements.json`**, the feed
+  for the (now rebuilt) **Renewal Risk** view. Runs **after** `build_overview.py` (it joins
+  partner health for the at-risk calc). Business rules (signed off 2026-06-26):
+  - **Include** Agreement Type ∈ {Co-Managed, Self Managed, MSP Dedicated Engineer}; drop
+    IMS, Team GPS (all), Project, Managed IT, Support By Design Complete.
+  - **MRR** (col F) normalized to monthly: Monthly = Amount, Annual = Amount ÷ 12,
+    One-Time / blank billing = 0. Summed per partner; ARR = MRR × 12.
+  - **Partner match** to dashboard partners only (never creates partners): exact normalized
+    name + a signed-off alias map (Dataprise→PEI (Dataprise), Redhelm→RedHelm -1Path,
+    ETech 7 Inc→Etech7, Spidernet Technical Consulting→Spidernet Consulting, Vitis
+    Technologies (ProSource)→Vitis Tech, Omega Systems Consultants Inc→Omega Systems Corp).
+    Non-dashboard companies are ignored.
+  - **At Risk** = an agreement renewing within **90 days** AND the partner is unhealthy
+    (churn ≥ 45, RAG Red, confident-Negative call tone, or Declining trend). **Watch** =
+    renewing ≤ 90d (healthy) or ≤ 180d (unhealthy). Partner tier = worst agreement tier;
+    MRR-at-risk = Σ At-Risk agreement MRR. Blank end-dates are kept & flagged.
+  - First export (June 2026): **76 partners, 208 agreements, ~$995K/mo MRR ($11.9M ARR);
+    6 partners / 19 agreements / ~$58K/mo at risk.**
+- **Renewal Risk view (`index.html`) rebuilt + unhidden** (was hidden 2026-06-23): replaces
+  the old HaloPSA-contract renewal-adjusted score with CW-driven content — KPI cards
+  (Total MRR/ARR, Partners, MRR-at-risk, Partners-at-risk), a **quarterly renewal forecast**
+  chart, and a partner table (filter: All / At Risk / Watch / On Track) **expandable to
+  agreement-level rows**. Loaded lazily via `PP_AUTH.loadCwAgreements()` (Firestore
+  `meta/cwAgreements` in prod, `data/_cw_agreements.json` on localhost).
+- **`scripts/upload_firebase_data.py`** publishes the feed as the single doc
+  **`meta/cwAgreements`** (mirrors `meta/csatRecon`; absence tolerated, corrupt aborts).
+  `auth.js` gains `loadCwAgreements()` (local + prod). `firestore.rules` already grants
+  read via the `meta/{doc}` rule (no change).
+- **Renewal Risk score (0–100), per partner** — `build_cw_agreements.py` adds
+  `renewalRiskScore`/`renewalRiskBand` (+ `daysToNextRenewal`): a weighted blend of
+  **renewal timing (40%) + account health (40%) + MRR exposure (20%)** (timing factor ≈ 0
+  when nothing's renewing soon, so it's only meaningful for upcoming renewals). It **sits
+  alongside** the Grok churn score — it does not blend with or replace it.
+- **Renewal data now feeds the Executive Overview** (not just its own tab) — signed off
+  2026-06-26, built additively (nothing removed):
+  - New **"Revenue & renewals"** KPI row: Total Active MRR (+ARR), MRR renewing ≤90d
+    (with 30/60-day split), MRR at risk, Partners at risk. Feed totals gain
+    `mrrRenew30/60/90`.
+  - The At-risk table gains **MRR** and **MRR-at-risk** columns.
+  - **"Who needs attention"** keeps its churn ranking but adds **$-at-risk then MRR as a
+    secondary sort** (and MRR in the bar tooltip), so within a tier the bigger-money
+    partners surface first. Partners with no CW agreement keep their churn position.
+  - `index.html` loads the CW feed once at init (cached promise, shared with the Renewal
+    tab) and degrades gracefully when it's absent.
+- **AI Findings — a "Renewal insights" card on the Executive Overview** (deterministic
+  facts + a one-line "why it matters"): largest near-term MRR exposure, total MRR-at-risk,
+  revenue concentration (top-5 %), partners with several agreements renewing together,
+  high-value partners with no recent engagement, and recommended priority actions. Built in
+  `build_cw_agreements.py` as `insights[]`.
+- **Partner 360 — renewal detail + a "why at risk" reason engine.** Each partner row now
+  carries `riskReasons[]` (computed from signals we have today: renewal timing, churn, RAG,
+  declining trend, negative tone, low CSAT, no-engagement-90d as a QBR proxy, and a
+  "no open SIP → open one" recommendation). The `partner.html` drilldown gains a **Revenue
+  & Renewals** card (agreement count, MRR/ARR, renewal-risk score, MRR-at-risk, the why-at-
+  risk badges, and an agreement-level table); the Partner 360 **table's renewal column now
+  shows the CW renewal-risk score** (was the Halo `ai_renewal` band). `partner.js` loads the
+  CW feed and matches its row by slug. **Deferred** (need data/decisions): GP/margin,
+  ticket-trend, manual flags, true QBR date, and "missing renewal owner" (needs Regional
+  Manager + Product Owner ingestion).
+- **Privacy masking (HRIS-style).** A header eye toggle (`index.html` + `partner.html`)
+  blurs all **money** figures (MRR/ARR/$-renewing/$-at-risk) when enabled — **visible by
+  default**, click the eye to hide; choice persisted in `localStorage` (`pp_private`). Implemented via `.pp-money`
+  + `body.pp-private` and the `m()` / `maskMoney()` helpers; scope is money only (scores,
+  counts, % stay visible). Chart-canvas figures (tooltips/axes) aren't maskable and are
+  left as-is.
+- **AI "why" comment on at-risk dollars.** On the Renewal Risk page, every red MRR-at-risk
+  figure now shows an italic **✦ AI** explanation composed from the reason engine
+  (e.g. "Renewal in 4 days · Account RAG is Red · High churn risk (65)").
+- **Recommended actions for at-risk renewals.** Each at-risk/watch partner now carries a
+  `recommendation` (build_cw_agreements) — a concrete next step ordered by urgency (open a
+  SIP, confirm renewal before end date, exec-sponsor save-play, schedule a QBR). Shown on
+  the Renewal Risk page (a "→ Recommended:" line under the AI why-comment) and in the
+  `partner.html` drilldown's Revenue & Renewals card.
+- **Known gap — cancellations.** The CW export marks no cancellations/non-renewals (every
+  row is Status "Active", no Do-Not-Renew/cancellation field), so the dashboard cannot flag
+  a known cancellation (e.g. an engineer ending without renewal). Surfacing these needs the
+  signal added to the source export; not inferred from proxies.
+
+### Notes
+- **Static source / manual refresh.** The xlsx is a manual export, not in the Cloud Run
+  image or GCS, so the **nightly job does not refresh CW data** — it is built locally and
+  published on request (re-drop the file → `build_cw_agreements.py` → `upload_firebase_data.py`).
+  A ConnectWise API / GCS wiring is a future option if it needs to go automated.
+- The base Partner-360 "Renewal" column still uses the Halo `ai_renewal` overlay (unchanged);
+  only the dedicated Renewal Risk view moved to CW.
+
 ## [Unreleased] — Auto-exclude Halo-inactive partners from the dashboard (2026-06-25)
 
 ### Added

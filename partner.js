@@ -7,6 +7,7 @@
 
     const state = {
         data: null,
+        cw: null,
         activeTab: "overview",
         csatFilter: "All",
         feedbackTab: "csat",
@@ -112,6 +113,61 @@
             : "N/A";
         const sipOpen = c.sip_open || 0, sipClosed = c.sip_closed || 0;
         $("ov-sip-counts").textContent = `${sipOpen} open / ${sipClosed} closed`;
+    }
+
+    // ---------------- Revenue & Renewals (ConnectWise) ----------------
+    const fmtMoney = (n) => "$" + Math.round(n || 0).toLocaleString();
+    function fmtDate(s) {
+        if (!s) return "—";
+        const d = new Date(s + "T00:00:00");
+        return isNaN(d) ? s : d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+    // Privacy masking — money figures blur until the eye toggle reveals them (HRIS-style).
+    const _EYE_ON = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.22A10.48 10.48 0 0 0 1.93 12C3.23 16.34 7.24 19.5 12 19.5c.99 0 1.95-.14 2.86-.39M6.23 6.23A10.45 10.45 0 0 1 12 4.5c4.76 0 8.77 3.16 10.07 7.5a10.52 10.52 0 0 1-4.29 5.27M6.23 6.23 3 3m3.23 3.23 3.65 3.65m7.89 7.89L21 21"/></svg>`;
+    const _EYE_OFF = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M2.04 12.32a1.01 1.01 0 0 1 0-.64C3.42 7.51 7.36 4.5 12 4.5c4.64 0 8.57 3.01 9.96 7.18.07.2.07.44 0 .64C20.58 16.49 16.64 19.5 12 19.5c-4.64 0-8.57-3.01-9.96-7.18Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>`;
+    let ppPrivate = true;
+    const m = (n) => `<span class="pp-money">${fmtMoney(n)}</span>`;
+    function applyPrivacy() {
+        document.body.classList.toggle("pp-private", ppPrivate);
+        const b = $("privacy-toggle");
+        if (b) { b.setAttribute("aria-pressed", String(ppPrivate)); b.innerHTML = (ppPrivate ? _EYE_ON + " Show $" : _EYE_OFF + " Hide $"); }
+    }
+    function setupPrivacy() {
+        try { ppPrivate = localStorage.getItem("pp_private") === "1"; } catch (e) { ppPrivate = false; }
+        const b = $("privacy-toggle");
+        if (b) b.addEventListener("click", () => {
+            ppPrivate = !ppPrivate;
+            try { localStorage.setItem("pp_private", ppPrivate ? "1" : "0"); } catch (e) {}
+            applyPrivacy();
+        });
+        applyPrivacy();
+    }
+    function renderRenewal() {
+        const cw = state.cw;
+        if (!cw) return;                         // no CW agreements -> card stays hidden
+        $("ov-renewal-card").style.display = "";
+        const band = cw.renewalRiskBand || "—";
+        const why = (cw.riskReasons || []).map((r) => {
+            const cls = r.severity === "high" ? "badge-danger" : r.severity === "action" ? "badge-info" : "badge-warning";
+            return `<span class="badge ${cls}" style="margin:2px 4px 2px 0;display:inline-block;">${esc(r.label)}</span>`;
+        }).join("");
+        const kpis = `<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:18px;">
+            <div><div class="kpi-label">Agreements</div><div class="kpi-value">${cw.agreementCount}</div></div>
+            <div><div class="kpi-label">Total MRR</div><div class="kpi-value">${m(cw.mrr)}<span style="font-size:0.7rem;color:var(--text-muted);">/mo</span></div><div style="font-size:0.72rem;color:var(--text-muted);">${m(cw.arr)} ARR</div></div>
+            <div><div class="kpi-label">Renewal Risk</div><div class="kpi-value">${cw.renewalRiskScore} <span class="badge ${bandClass(band)}" style="font-size:0.7rem;">${esc(band)}</span></div><div style="font-size:0.72rem;color:var(--text-muted);">${cw.daysToNextRenewal != null ? ("next in " + cw.daysToNextRenewal + "d") : "no upcoming renewal"}</div></div>
+            <div><div class="kpi-label">MRR at risk</div><div class="kpi-value" style="${cw.mrrAtRisk ? "color:var(--danger);" : ""}">${cw.mrrAtRisk ? m(cw.mrrAtRisk) : "—"}</div><div style="font-size:0.72rem;color:var(--text-muted);">${cw.atRiskCount} agreement(s)</div></div>
+        </div>`;
+        const whyBlock = why ? `<div style="margin-bottom:14px;"><div class="kpi-label" style="margin-bottom:6px;">Why at risk</div>${why}</div>` : "";
+        const recBlock = cw.recommendation
+            ? `<div style="margin-bottom:18px;padding:10px 14px;background:var(--bg-subtle,rgba(16,185,129,0.08));border-left:3px solid var(--success);border-radius:0 8px 8px 0;"><span style="font-weight:700;color:var(--success);">→ Recommended action:</span> ${esc(cw.recommendation)}</div>`
+            : "";
+        const body = (cw.agreements || []).map((a) => {
+            const sc = a.tier === "At Risk" ? "badge-danger" : a.tier === "Watch" ? "badge-warning" : "badge-success";
+            const end = a.end ? (fmtDate(a.end) + (a.daysOut != null ? ` <span style="color:var(--text-muted);font-size:0.8rem;">(${a.daysOut}d)</span>` : "")) : `<span class="badge badge-warning">no date</span>`;
+            return `<tr><td style="font-weight:500;">${esc(a.name || "—")}</td><td>${esc(a.engineer || "")}</td><td>${esc(a.type)}</td><td>${m(a.mrr)}/mo</td><td>${end}</td><td><span class="badge ${sc}">${esc(a.tier)}</span></td></tr>`;
+        }).join("");
+        const table = `<div class="table-wrapper"><table class="custom-table"><thead><tr><th>Agreement</th><th>Engineer</th><th>Type</th><th>MRR</th><th>End date</th><th>Status</th></tr></thead><tbody>${body}</tbody></table></div>`;
+        $("ov-renewal-body").innerHTML = kpis + whyBlock + recBlock + table;
     }
 
     // ---------------- Overview ----------------
@@ -236,32 +292,113 @@
             body.appendChild(tr);
         });
 
-        const acc = $("accordion-list");
-        acc.innerHTML = "";
-        (state.data.historical_calls || []).forEach((call, index) => {
-            const item = document.createElement("div");
-            item.className = "accordion-item";
-            const d = call.date ? new Date(call.date) : null;
-            const dateStr = d && !isNaN(d) ? d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }) : "";
-            const notes = esc(call.notes || "")
+        // Reusable accordion builder (used by both the MoM and the SIP cards). The
+        // active-toggle is scoped to the owning list so opening a SIP note doesn't
+        // collapse an open MoM note and vice-versa.
+        function buildAccordion(container, rows, fmt) {
+            container.innerHTML = "";
+            (rows || []).forEach((row) => {
+                const item = document.createElement("div");
+                item.className = "accordion-item";
+                const d = row[fmt.dateKey] ? new Date(row[fmt.dateKey]) : null;
+                const dateStr = d && !isNaN(d) ? d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }) : "";
+                item.innerHTML = `
+                    <div class="accordion-header">
+                        <div class="accordion-header-left">
+                            ${fmt.icon}
+                            <span class="accordion-title">${esc(fmt.title(row))}</span>
+                            <span class="accordion-date">${dateStr}</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-icon"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+                    </div>
+                    <div class="accordion-content"><div class="accordion-body"><div style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">${fmt.body(row)}</div></div></div>`;
+                item.querySelector(".accordion-header").addEventListener("click", () => {
+                    const wasActive = item.classList.contains("active");
+                    container.querySelectorAll(".accordion-item").forEach((a) => a.classList.remove("active"));
+                    if (!wasActive) item.classList.add("active");
+                });
+                container.appendChild(item);
+            });
+        }
+
+        // MoM service-review notes
+        buildAccordion($("accordion-list"), state.data.historical_calls || [], {
+            dateKey: "date",
+            icon: CAL_ICON,
+            title: (c) => c.summary || "Service Review",
+            body: (c) => esc(c.notes || "")
                 .replace(/1\.\s+Meeting\s+Summary/gi, "<h4 class='notes-h4'>1. Meeting Summary</h4>")
                 .replace(/2\.\s+Action\s+Items/gi, "<h4 class='notes-h4' style='margin-top:16px;'>2. Action Items</h4>")
-                .replace(/\n/g, "<br>");
+                .replace(/\n/g, "<br>"),
+        });
+
+        // SIP Progress card: one entry per SIP ticket (grouped, with status badge + date
+        // range). Active SIPs show the AI journey summary + raw updates behind an expander;
+        // closed SIPs collapse to a one-liner. Hidden entirely when the partner has no SIPs.
+        renderSipCard(state.data.sips || []);
+    }
+
+    const CAL_ICON = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:20px;height:20px;color:var(--primary);"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>`;
+
+    // Map a SIP status_class to a badge style.
+    function sipBadge(cls) {
+        if (cls === "closed") return "badge-success";
+        if (cls === "hold") return "badge-warning";
+        return "badge-info"; // open / active
+    }
+    function fmtDate(s) {
+        const d = s ? new Date(s) : null;
+        return d && !isNaN(d) ? d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : "";
+    }
+    function renderSipCard(sips) {
+        const card = $("sip-card");
+        if (!sips.length) { card.style.display = "none"; return; }
+        card.style.display = "";
+        const active = sips.filter((s) => s.status_class !== "closed").length;
+        $("sip-count").textContent = `${sips.length} SIP${sips.length === 1 ? "" : "s"}` + (active ? ` · ${active} active` : "");
+        const acc = $("sip-accordion-list");
+        acc.innerHTML = "";
+        sips.forEach((s) => {
+            const range = [fmtDate(s.started), fmtDate(s.latest)].filter(Boolean);
+            const rangeStr = range.length === 2 && range[0] !== range[1] ? `${range[0]} → ${range[1]}` : (range[range.length - 1] || "");
+            const updates = s.updates || [];
+            let body = "";
+            if (s.summary) {
+                body += `<div style="font-size:0.92rem;color:var(--text-secondary);line-height:1.7;">${esc(s.summary)}</div>`;
+                if (s.latest_status) body += `<div style="margin-top:10px;font-size:0.8rem;font-weight:700;letter-spacing:.04em;color:var(--primary);">LATEST STATUS: ${esc(s.latest_status)}</div>`;
+            }
+            if (updates.length) {
+                const inner = updates.map((u) => {
+                    const note = esc(u.note || "")
+                        .replace(/(SIP PROGRESS UPDATE[^\n]*)/i, "<strong>$1</strong>")
+                        .replace(/(UTILIZATION|TICKET CLOSURE|PARAMETER COMPLIANCE|GOVERNANCE REVIEW|OVERALL STATUS)/g, "<h4 class='notes-h4' style='margin-top:12px;'>$1</h4>")
+                        .replace(/\n/g, "<br>");
+                    return `<div style="padding:12px 0;border-top:1px solid var(--border,#eee);"><div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:4px;">${fmtDate(u.datetime)} · ${esc(u.who || "")}</div><div style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;">${note}</div></div>`;
+                }).join("");
+                body += `<details style="margin-top:${s.summary ? "12px" : "0"};"><summary style="cursor:pointer;font-size:0.82rem;color:var(--primary);font-weight:600;">Show ${updates.length} update${updates.length === 1 ? "" : "s"}</summary>${inner}</details>`;
+            }
+            if (!body) body = `<div class="no-results" style="padding:8px 0;">No progress notes recorded on this SIP.</div>`;
+
+            const item = document.createElement("div");
+            item.className = "accordion-item";
             item.innerHTML = `
-                <div class="accordion-header" data-index="${index}">
+                <div class="accordion-header">
                     <div class="accordion-header-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:20px;height:20px;color:var(--primary);"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
-                        <span class="accordion-title">${esc(call.summary || "Service Review")}</span>
-                        <span class="accordion-date">${dateStr}</span>
+                        ${CAL_ICON}
+                        <span class="accordion-title">${esc(s.subject || "SIP")}</span>
+                        <span class="badge ${sipBadge(s.status_class)}" title="${esc(s.status || s.status_label)}">${esc(s.status_label || "Open")}</span>
+                        <span class="accordion-date">${rangeStr}</span>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-icon"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
                 </div>
-                <div class="accordion-content"><div class="accordion-body"><div style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">${notes}</div></div></div>`;
-            item.querySelector(".accordion-header").addEventListener("click", () => {
+                <div class="accordion-content"><div class="accordion-body">${body}</div></div>`;
+            item.querySelector(".accordion-header").addEventListener("click", (e) => {
+                if (e.target.closest("details")) return; // inner expander shouldn't toggle the card
                 const wasActive = item.classList.contains("active");
-                document.querySelectorAll(".accordion-item").forEach((a) => a.classList.remove("active"));
+                acc.querySelectorAll(".accordion-item").forEach((a) => a.classList.remove("active"));
                 if (!wasActive) item.classList.add("active");
             });
+            if (s.status_class !== "closed") item.classList.add("active"); // active SIPs open by default
             acc.appendChild(item);
         });
     }
@@ -438,9 +575,18 @@
             showLoadError(e);
             return;
         }
+        // CW agreements (Renewal Risk) — optional; find this partner's row by slug.
+        try {
+            if (window.PP_AUTH.loadCwAgreements) {
+                const cw = await window.PP_AUTH.loadCwAgreements();
+                state.cw = (cw && cw.rows) ? (cw.rows.find((r) => r.slug === slug) || null) : null;
+            }
+        } catch (e) { state.cw = null; }
         hideLoading();
+        setupPrivacy();
         initClientMeta();
         renderOverview();
+        renderRenewal();
         renderAI();
         renderActionsPage();
         setupFeedbackPage();
