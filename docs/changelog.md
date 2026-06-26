@@ -10,7 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 - **`scripts/build_cw_agreements.py`** — parses a static ConnectWise export
-  (`CW Agreements*.xlsx` in the repo root) into **`data/_cw_agreements.json`**, the feed
+  (`CW Agreements*.xlsx` in `inputs/`) into **`data/_cw_agreements.json`**, the feed
   for the (now rebuilt) **Renewal Risk** view. Runs **after** `build_overview.py` (it joins
   partner health for the at-risk calc). Business rules (signed off 2026-06-26):
   - **Include** Agreement Type ∈ {Co-Managed, Self Managed, MSP Dedicated Engineer}; drop
@@ -87,6 +87,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
   row is Status "Active", no Do-Not-Renew/cancellation field), so the dashboard cannot flag
   a known cancellation (e.g. an engineer ending without renewal). Surfacing these needs the
   signal added to the source export; not inferred from proxies.
+
+### Changed
+- **Repo tidy: stray root files moved into folders.** The static `CW Agreements*.xlsx`
+  export moved from the repo root into **`inputs/`** (`build_cw_agreements.py` now globs
+  `inputs/`); the `UI Theme.png` design-reference screenshot moved into **`reference/`**.
+  Both stay gitignored. No behavioural change to the pipeline or UI. Docs (`CLAUDE.md`,
+  `Data-Schema.md`) updated to the new paths.
 
 ### Notes
 - **Static source / manual refresh.** The xlsx is a manual export, not in the Cloud Run

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Build data/_cw_agreements.json — the feed for the Renewal Risk view.
 
-Source: a STATIC ConnectWise agreement export dropped in the repo root as
+Source: a STATIC ConnectWise agreement export dropped in `inputs/` as
 `CW Agreements*.xlsx` (e.g. "CW Agreements June 2026.xlsx"). One row = one
 agreement (engineer). Columns used: D Company Name (partner), F Amount,
 G Billing Cycle, H Date Start, I Date End (renewal), B Agreement Type.
@@ -191,9 +191,9 @@ def _recommendation(row):
 
 
 def _find_source():
-    hits = sorted(glob.glob(os.path.join(ROOT, "CW Agreements*.xlsx")))
+    hits = sorted(glob.glob(os.path.join(ROOT, "inputs", "CW Agreements*.xlsx")))
     if not hits:
-        sys.exit("no 'CW Agreements*.xlsx' found in repo root")
+        sys.exit("no 'CW Agreements*.xlsx' found in inputs/")
     return hits[-1]  # latest by name
 
 

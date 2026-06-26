@@ -7,9 +7,10 @@
 /data/
 
 # ConnectWise agreement export — sensitive financial source data (per-engineer
-# MRR); static local input to scripts/build_cw_agreements.py. Never commit.
+# MRR); static local input to scripts/build_cw_agreements.py (lives in inputs/).
+# Never commit. Pattern is name-only so it matches wherever the file sits.
 CW Agreements*.xlsx
-# Local screenshots / scratch images
+# Local screenshots / scratch reference images (now under reference/)
 UI Theme.png
 
 # Python

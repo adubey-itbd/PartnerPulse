@@ -180,7 +180,7 @@ Partner/AM/RM/Site and re-buckets months→quarters client-side. Read via
 ## 4c. The Renewal Risk feed (`data/_cw_agreements.json` → Firestore)
 
 Built by `scripts/build_cw_agreements.py` AFTER `build_overview.py` from a **static**
-ConnectWise export (`CW Agreements*.xlsx` in the repo root) — **not** part of the nightly
+ConnectWise export (`CW Agreements*.xlsx` in `inputs/`) — **not** part of the nightly
 cloud pipeline; built locally and published on request. One source row = one agreement.
 
 | Field | Source |
