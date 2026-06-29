@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Remove baked-in secrets from config.py + scrub git history (2026-06-29)
+
+### Security
+- **Removed all hardcoded credentials from `extract/config.py`.** It previously carried
+  live fallback secrets (Halo client id/secret, TeamGPS API key, Azure-AI/Grok key) as
+  default args to `_secret(...)`. GitHub push-protection blocked pushing the repo to the
+  ITBD remote because of them. The literals are gone — `_secret("KEY")` now resolves from
+  env / `.env` only and warns once (then returns `""`) if unset.
+- **`config.py` now loads `.env` with a built-in parser** (no `python-dotenv` dependency,
+  which wasn't installed — so `.env` had silently never loaded and the baked defaults were
+  always used). `os.environ.setdefault` keeps real env vars / Secret Manager values
+  authoritative over `.env`.
+- **Scrubbed the secrets from the entire git history** with `git filter-repo --replace-text`
+  (every historical occurrence in `config.py`, including the older Azure `gpt-5.4` key,
+  replaced with `***REMOVED***`) so no secret reaches GitHub. All commit SHAs were rewritten.
+- **Local dev:** the keys were moved to the gitignored `.env` (HALO_CLIENT_ID/SECRET,
+  TEAMGPS_API_KEY, AI_API_KEY — alongside the existing GRAPH_*). Cloud is unaffected
+  (Secret Manager via `scripts/seed_secrets.py`). **Recommended follow-up: rotate these
+  keys**, since they lived in git history (and possibly a prior personal remote).
+- CLAUDE.md updated to state config.py is secret-free / env-and-.env-only.
+
 ## [Unreleased] — Data-audit accuracy fixes (2026-06-29)
 
 ### Fixed

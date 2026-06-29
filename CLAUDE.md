@@ -120,8 +120,12 @@ dashboard. Full builds hit live APIs + the LLM (~5 min) — prefer single-partne
   build_partner, build_all, portfolio). `ai.py` calls Grok `grok-4-1-fast-reasoning`
   over the Azure AI Foundry OpenAI-compatible endpoint (synchronous OpenAI SDK; config
   `AI_BASE_URL` / `AI_API_KEY` / `AI_MODEL` in `extract/config.py` — the old
-  `AZURE_OPENAI_*` constants are gone). Secrets: env/.env first, live fallbacks
-  baked in `extract/config.py` (beta only — never copy them elsewhere).
+  `AZURE_OPENAI_*` constants are gone). **Secrets come ONLY from env vars or a local,
+  gitignored `.env`** — `config.py` loads `.env` itself (built-in parser, no python-dotenv
+  dependency) and has **NO baked-in credentials** (the hardcoded fallbacks were removed +
+  scrubbed from git history 2026-06-29 after GitHub push-protection flagged them; an unset
+  secret warns once and resolves to `""`). Local dev needs `.env` (HALO_CLIENT_ID/SECRET,
+  TEAMGPS_API_KEY, AI_API_KEY, GRAPH_*); cloud uses Secret Manager (`scripts/seed_secrets.py`).
 - `scripts/` — operational entry points; they sys.path-shim the repo root, run them
   from anywhere. New one-off scripts go here, library code goes in `extract/`.
   `build_overview.py` builds the dashboard feed `data/_overview.json` from the caches

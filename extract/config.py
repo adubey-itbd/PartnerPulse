@@ -1,19 +1,28 @@
 """Configuration & secrets.
 
-Env-first: every value can be overridden by an environment variable (or a local
-.env file). The fallback defaults are the SOP-documented test credentials so the
-engine runs locally out-of-the-box. For the Firebase / Cloud Functions deploy,
-set these via Secret Manager and DO NOT rely on the in-code fallbacks.
+Env-first and secret-free: credentials come ONLY from environment variables or a
+local, gitignored `.env` file — there are NO secrets baked into this file (the
+in-code fallbacks were removed 2026-06-29 after GitHub push-protection flagged
+them; see changelog). Locally, put the keys in `.env` (HALO_CLIENT_ID/SECRET,
+TEAMGPS_API_KEY, AI_API_KEY, GRAPH_*); in the Firebase / Cloud Run deploy they
+come from Secret Manager (see scripts/seed_secrets.py). A missing secret warns
+once and resolves to "" rather than silently using a hardcoded credential.
 """
 import os
 import sys
 from pathlib import Path
 
-try:
-    from dotenv import load_dotenv
-    load_dotenv(Path(__file__).resolve().parent.parent / ".env")
-except Exception:
-    pass
+# Load the local .env (gitignored) into the environment without an external
+# dependency (python-dotenv may not be installed). Real env vars / Secret Manager
+# take precedence — setdefault never overrides an already-set variable.
+_ENV_FILE = Path(__file__).resolve().parent.parent / ".env"
+if _ENV_FILE.exists():
+    for _line in _ENV_FILE.read_text(encoding="utf-8").splitlines():
+        _line = _line.strip()
+        if not _line or _line.startswith("#") or "=" not in _line:
+            continue
+        _k, _v = _line.split("=", 1)
+        os.environ.setdefault(_k.strip(), _v.strip())
 
 
 def _env(key: str, default: str = "") -> str:
@@ -24,16 +33,17 @@ _warned_fallbacks = set()
 
 
 def _secret(key: str, default: str = "") -> str:
-    """Like _env, but warns ONCE (ASCII stderr) when the env var is unset and the
-    in-repo baked default is used, so a cloud misconfig / missing Secret Manager
-    value is visible in logs. Never prints the secret value itself."""
+    """Like _env, but warns ONCE (ASCII stderr) when the secret is unset, so a
+    missing .env entry / Secret Manager value is visible in logs. There is no
+    baked default — an unset secret resolves to "" (calls will then fail loudly
+    against the API rather than silently using a hardcoded credential). Never
+    prints the secret value itself."""
     val = os.environ.get(key)
     if val is None and key not in _warned_fallbacks:
         _warned_fallbacks.add(key)
         sys.stderr.write(
-            "WARNING: env var %s is unset; using in-repo baked default "
-            "credential (local-dev fallback). Set it via Secret Manager / "
-            "environment for any non-local deploy.\n" % key
+            "WARNING: secret %s is not set (no env var or .env entry). Set it in "
+            ".env for local dev, or Secret Manager for the cloud deploy.\n" % key
         )
     return val if val is not None else default
 
@@ -46,16 +56,13 @@ DECKS_DIR = DATA_DIR / "decks"          # downloaded deck PDFs + converted .md
 
 # --- HaloPSA (OAuth2 client_credentials, read-only) --------------------------
 HALO_BASE_URL = _env("HALO_BASE_URL", "https://itbd.halopsa.com")
-HALO_CLIENT_ID = _secret("HALO_CLIENT_ID", "***REMOVED***")
-HALO_CLIENT_SECRET = _secret("HALO_CLIENT_SECRET", "***REMOVED***")
+HALO_CLIENT_ID = _secret("HALO_CLIENT_ID")
+HALO_CLIENT_SECRET = _secret("HALO_CLIENT_SECRET")
 HALO_SCOPE = _env("HALO_SCOPE", "all")
 
 # --- TeamGPS Open API --------------------------------------------------------
 TEAMGPS_BASE_URL = _env("TEAMGPS_BASE_URL", "https://api.team-gps.net/open-api/v1")
-TEAMGPS_API_KEY = _secret(
-    "TEAMGPS_API_KEY",
-    "***REMOVED***",
-)
+TEAMGPS_API_KEY = _secret("TEAMGPS_API_KEY")
 
 # --- AI churn analysis (Grok via Azure AI Foundry, OpenAI-compatible endpoint) ---
 # Synchronous chat-completions through the OpenAI SDK (NOT the AzureOpenAI client) —
@@ -65,8 +72,5 @@ TEAMGPS_API_KEY = _secret(
 # requests over the OpenAI v1 surface. Rate limits on this deployment: 50k TPM / 50 RPM
 # (a full re-score is throttled — the OpenAI client retries 429s with backoff).
 AI_BASE_URL = _env("AI_BASE_URL", "https://daku.services.ai.azure.com/openai/v1/")
-AI_API_KEY = _secret(
-    "AI_API_KEY",
-    "***REMOVED***",
-)
+AI_API_KEY = _secret("AI_API_KEY")
 AI_MODEL = _env("AI_MODEL", "grok-4-1-fast-reasoning")
