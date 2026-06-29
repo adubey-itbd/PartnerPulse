@@ -6,6 +6,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Data-audit accuracy fixes (2026-06-29)
+
+### Fixed
+- **`scripts/audit_data.py` clock un-frozen** — `TODAY` was hardcoded to `2026-06-13`,
+  so the "last call stale (>60d)" check measured staleness from a fixed past date and
+  under-reported. Now `date.today()`. (Surfaced e.g. Blackline IT at 73d, previously missed.)
+- **Transcript-folder check (#5) no longer false-flags sub-team folders.** The build folds
+  sub-team folders into their parent partner via `transcripts.partner_transcript_dirs`
+  (`_alnum().startswith()` with a 6-char floor, since 2026-06-19 — e.g. `MSP Corp (HD Team)`,
+  `(SOC)`, `(MBCCS Group)` all roll into `mspcorp`, which has 98 transcripts ingested), but
+  the audit only did an exact-slug match and so reported those 6 folders as "not ingested."
+  The audit now mirrors the build's fold rule (replicated locally — does **not** import
+  `extract.transcripts`, which would pull in `markitdown` and break the audit's API-free,
+  ~1s contract). Added `IGNORE_TRANSCRIPT_FOLDERS` for confirmed non-partners (`Network
+  Builders IT` — Halo 426, contract cancelled, deliberately excluded per
+  `build_real_partners.py`). Check #5 now reports 0.
+
+### Notes (investigated, no code change)
+- **Empty-CSAT partners are genuine data gaps, not name mismatches.** Probed TeamGPS for every
+  plausible company name behind the 6 flagged partners: PEI (Dataprise) is by design (active
+  CSAT is on the separate Dataprise/Halo-57 partner = 27 reviews); Stratti, Mission Technology,
+  Spidernet, CPCORP, LATG return 0 under all spellings. No alias fix warranted.
+- **CPCORP Inc (Halo 968) & LATG (883) kept on the roster** despite having no Halo/CSAT/
+  transcript data yet (hence no AI score) — confirmed intentional; they'll populate as activity accrues.
+
 ## [Unreleased] — Dashboard re-themed to ITBD brand (cyan/Light) (2026-06-29)
 
 ### Changed

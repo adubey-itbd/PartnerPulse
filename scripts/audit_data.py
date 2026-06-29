@@ -34,7 +34,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 DATA = os.path.join(ROOT, "data")
 TRANSCRIPTS = os.path.join(ROOT, "Transcripts")
-TODAY = date(2026, 6, 13)
+TODAY = date.today()
 # Match build_overview's stale-call threshold (60 days) so the audit flags exactly
 # the partners the dashboard would treat as stale.
 STALE_DAYS = 60
@@ -59,6 +59,19 @@ FREEMAIL = {
 def _domain(email):
     e = (email or "").strip().lower()
     return e.split("@", 1)[1] if "@" in e else ""
+
+
+def _alnum(s):
+    """Lowercase alphanumerics only — mirrors extract.transcripts._alnum so check 5
+    folds sub-team folders into their parent exactly as the build does ('MSP Corp
+    (HD Team)' -> 'mspcorphdteam' starts with 'mspcorp'). Avoids importing
+    extract.transcripts (which pulls in markitdown) and keeps this audit API-free."""
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+# Transcript folders that are intentionally NOT partners — don't flag them as
+# uningested. Network Builders IT confirmed not an active partner (2026-06-29).
+IGNORE_TRANSCRIPT_FOLDERS = {"networkbuildersit"}
 
 
 def _names_match(a, b):
@@ -113,10 +126,14 @@ def main():
         allow = set(json.load(open(roster_path, encoding="utf-8")))
 
     known_slugs = set()
+    known_alnum = set()   # alnum keys (>=6 chars) for the build's sub-team fold rule
     for row in partners:
         slug = row["slug"]
         known_slugs.add(_slug(row.get("name")))   # full roster — so hidden partners' folders don't false-flag check 5
         known_slugs.add(_slug(slug))
+        for k in (_alnum(row.get("name")), _alnum(slug)):
+            if len(k) >= 6:                        # mirror transcripts.partner_transcript_dirs 6-char floor
+                known_alnum.add(k)
         if allow is not None and slug not in allow:
             continue
         path = os.path.join(DATA, f"{slug}.json")
@@ -200,7 +217,12 @@ def main():
             if not os.path.isdir(fpath):
                 continue
             files = [f for f in os.listdir(fpath) if f.lower().endswith((".vtt", ".docx"))]
-            if files and _slug(folder) not in known_slugs:
+            fa = _alnum(folder)
+            # Claimed if it slug-matches a partner OR rolls into one as a sub-team
+            # folder (same rule the build uses), unless it's a known non-partner.
+            claimed = (_slug(folder) in known_slugs
+                       or any(fa.startswith(k) for k in known_alnum))
+            if files and not claimed and fa not in IGNORE_TRANSCRIPT_FOLDERS:
                 findings[5].append(f"{folder}/ ({len(files)} files) — matches no built partner")
 
     # 6. feed integrity
