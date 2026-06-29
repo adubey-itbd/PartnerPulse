@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    /* Theme Colors — claymorphic palette, kept in sync with index.html's inline styles */
-    --bg-primary: #c9c6ee;
-    --bg-shell: #f7f7fd;
+    /* Theme Colors — ITBD brand (Light), kept in sync with index.html's inline styles */
+    --bg-primary: #BED6E2;
+    --bg-shell: #F6F9FC;
     --bg-secondary: #ffffff;
-    --border-color: #ececf8;
-    --text-primary: #171a2c;
-    --text-secondary: #4b5168;
-    --text-muted: #9298ad;
+    --border-color: #e2edf3;
+    --text-primary: #252525;
+    --text-secondary: #4b5662;
+    --text-muted: #8a93a0;
 
     /* Accents */
-    --primary: #6d5ef0;
-    --primary-light: #efedfd;
-    --primary-hover: #5b4bd9;
-    --grad-primary: linear-gradient(135deg, #9d7bfa 0%, #6d5ef0 100%);
+    --primary: #00AFDD;
+    --primary-light: #e1f4fb;
+    --primary-hover: #0090b8;
+    --grad-primary: linear-gradient(135deg, #22c3e8 0%, #00AFDD 100%);
 
     /* Status Colors */
-    --success: #10b981;
-    --success-light: #e3f8ef;
-    --success-dark: #0c7a58;
+    --success: #BFD730;
+    --success-light: #f1f7d6;
+    --success-dark: #5f7000;
 
-    --warning: #f59e0b;
-    --warning-light: #fdf3e0;
-    --warning-dark: #9a5b07;
+    --warning: #FC9700;
+    --warning-light: #fff0d9;
+    --warning-dark: #b56b00;
 
     --danger: #ef4444;
     --danger-light: #fdeaec;
@@ -38,10 +38,10 @@
     --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
     /* Shadows */
-    --shadow-sm: 0 2px 6px rgba(76,70,160,0.06), 0 12px 28px rgba(76,70,160,0.08);
-    --shadow-md: 0 14px 38px rgba(76,70,160,0.16);
-    --shadow-grad: 0 10px 22px rgba(109,94,240,0.38);
-    --shadow-float: 0 30px 70px rgba(64,58,150,0.22), 0 8px 20px rgba(64,58,150,0.10);
+    --shadow-sm: 0 2px 6px rgba(0,120,160,0.06), 0 12px 28px rgba(0,120,160,0.08);
+    --shadow-md: 0 14px 38px rgba(0,120,160,0.16);
+    --shadow-grad: 0 10px 22px rgba(0,160,200,0.38);
+    --shadow-float: 0 30px 70px rgba(0,90,120,0.22), 0 8px 20px rgba(0,90,120,0.10);
     --card-track: #f4f5fb;
     --radius-card: 22px;
 
@@ -57,7 +57,7 @@
 }
 
 body {
-    background: linear-gradient(160deg, #d4d1f4 0%, #c5c2ec 45%, #b7b3e6 100%) fixed;
+    background: linear-gradient(160deg, #dbeaf1 0%, #cfe1ea 45%, #BED6E2 100%) fixed;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: var(--font-body);
@@ -73,7 +73,7 @@ body::before, body::after {
     filter: blur(70px); pointer-events: none; z-index: 0;
 }
 body::before { width: 460px; height: 460px; background: rgba(255,255,255,0.5); top: -140px; right: -120px; }
-body::after { width: 520px; height: 520px; background: rgba(124,94,240,0.28); bottom: -200px; left: -140px; }
+body::after { width: 520px; height: 520px; background: rgba(0,175,221,0.22); bottom: -200px; left: -140px; }
 
 /* App Layout */
 .app-container {
@@ -427,7 +427,7 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
 /* Pastel/gradient tiles keyed off the existing icon classes (markup unchanged) */
 .kpi-card:has(.kpi-icon-wrapper.primary) {
     background: var(--grad-primary);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 18px 34px rgba(109,94,240,0.42);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 18px 34px rgba(0,160,200,0.42);
 }
 .kpi-card:has(.kpi-icon-wrapper.primary) .kpi-icon-wrapper { background-color: rgba(255,255,255,0.22); box-shadow: none; color: #fff; }
 .kpi-card:has(.kpi-icon-wrapper.primary) .kpi-label { color: rgba(255,255,255,0.85); }
@@ -761,7 +761,7 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
     font-weight: 700;
     cursor: pointer;
     transition: var(--transition-fast);
-    box-shadow: 0 3px 10px rgba(76,70,160,0.12);
+    box-shadow: 0 3px 10px rgba(0,120,160,0.12);
 }
 
 .filter-pill:hover {
@@ -1259,7 +1259,7 @@ body.pp-private .pp-money { filter: blur(7px); -webkit-filter: blur(7px); user-s
 }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .status-dot.ok { background: var(--success); box-shadow: 0 0 0 3px rgba(16,185,129,0.15); }
-.status-dot.ai { background: var(--primary); box-shadow: 0 0 0 3px rgba(99,102,241,0.15); }
+.status-dot.ai { background: var(--primary); box-shadow: 0 0 0 3px rgba(0,175,221,0.15); }
 .last-sync { font-size: 0.72rem; color: var(--text-muted); margin-top: 12px; }
 
 @media (max-width: 1100px) {

@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Dashboard re-themed to ITBD brand (cyan/Light) (2026-06-29)
+
+### Changed
+- **Theme swapped from claymorphic lavender → ITBD brand "Light"** across both UIs.
+  Palette (from the ITBD brand set): `--primary`/accent **`#00AFDD`** cyan (was `#6d5ef0`
+  violet; hover `#0090b8`, gradient `#22c3e8→#00AFDD`), `--bg-primary` **`#BED6E2`** pale
+  blue, `--bg-shell` **`#F6F9FC`** ice, `--text-primary` **`#252525`** charcoal,
+  `--success` **`#BFD730`** lime (text-dark `#5f7000`), `--warning` **`#FC9700`** orange
+  (text-dark `#b56b00`). `--danger` red and `--info` blue kept (brand has no red). Cyan is
+  reserved for fills/bars/active states (low contrast on white). Edited in **both**
+  `index.html`'s inline `<style>` `:root` AND `styles.css` `:root` (gotcha 7), plus the
+  matching hardcoded values: body gradient + `body::after` glow, the violet-tinted shadow
+  rgba tokens (`76,70,160`/`109,94,240`/`64,58,150` → cyan tints `0,120,160`/`0,160,200`/
+  `0,90,120`), `.status-dot.ai` ring, `.dw-asof` chip border/divider, and the **Chart.js
+  colors** in `index.html` JS (`COL.success`/`warning`, the Renewal-MRR bar `#00AFDD`,
+  `tierColor()` Watch/healthy pairs, `COL_CSAT`, and a grid line). `partner.js` has no
+  hardcoded chart colors (drives off `styles.css` vars). **CSS/JS-only — no data, feed,
+  Firestore, or pipeline change.** The previous dark theme backup
+  (`backups/index_pre-darktheme_2026-06-24.html`) and pre-redesign backup remain for rollback.
+
 ## [Unreleased] — Renewal Risk view rebuilt on ConnectWise agreements (MRR + renewals + MRR-at-risk) (2026-06-26)
 
 ### Added
