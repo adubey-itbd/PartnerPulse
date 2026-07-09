@@ -6,6 +6,47 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Transcript-pull folder routing: aliases now name NEW folders (2026-07-09)
+
+### Fixed
+- **`scripts/pull_graph_transcripts.py` `target_folder()` now uses a `PARTNER_ALIASES`
+  entry to name a NEW folder, not just to match an existing one.** Previously an alias was
+  consulted only via `resolve_partner_dir(alias)`; if that folder didn't exist yet the alias
+  was silently ignored and the folder was created from the corp-suffix-stripped subject. That
+  mis-routed any not-yet-onboarded aliased partner — notably **CPCORP Inc**, whose meeting
+  subject `"CP Corp | … Service Call"` stripped to a `"CP"` folder that `build_real_partners`
+  (which matches transcript folders by display name) never picked up, so CPCorp showed
+  **"No calls"** despite having a recorded weekly service call. Existing aliases still resolve
+  to their existing folders first (no regression: MSPCorp/Netgain/etc. verified `is_new=False`).
+- **Added `PARTNER_ALIASES` entries** mapping mis-parsed meeting-subject short names to their
+  exact roster display names: `"cp corp" → "CPCORP Inc"`, `"atlas ps" → "Atlas Professional
+  Services"`, `"itbd-ironedge" → "IronEdge Group"`.
+
+### Notes
+- **Primary root cause of the CPCorp report was NOT the folder name — the transcript pull is
+  down roster-wide.** A live Graph dry-run (`pull_graph_transcripts.py --since 2026-04-01`)
+  found **all 112 partner service-call series return `resolve 403`** — `"No application access
+  policy found for this app … on the user"`. The Teams application access policy grant on the
+  **`DESManagement@itbd.net`** shared mailbox (organizer of ~125/152 calls, incl. CPCorp) has
+  **lapsed** — it was verified working on 2026-06-13, so this is a regression, not a new gap.
+  **Remediation (Teams-admin action, not code):** re-run the grant —
+  `Grant-CsApplicationAccessPolicy -PolicyName 'PartnerPulse-Transcripts-Policy' -Identity 'DESManagement@itbd.net'`
+  (or re-run `scripts/setup_graph_transcript_access.ps1`, whose Step 2 re-grants idempotently).
+- **Policy decision (2026-07-09): management-mailbox-only, no individual accounts.** Transcripts
+  are pulled only for calls organized by the DESManagement shared mailbox (which covers its
+  MDE/SBD SMTP aliases — same object id). The 25 series organized by individual AMs (Luis.Gavino,
+  SBhatia, Ashish.Paul, …), mostly QBRs, are **intentionally out of scope** and will stay 403.
+- **One `MDEManagement`-tagged call is out of scope by that rule.** "Monthly Service call |
+  Innovative Technology Solutions (ITS)" resolves to a *distinct* identity (oid `55eb5f1a`,
+  = an individual, Gagan.Chowdhary) rather than the DESManagement mailbox (oid `3f79ace1`) —
+  it used the MDE alias but was organized by a person. `MDEManagement` itself can't be granted
+  (alias, "User does not exist"), so covering it would require an individual grant; left out of
+  scope per the no-individuals decision.
+- **QBR-format subjects still mis-parse** (`"ITBD x Acrisure : Quarterly Business Review"`,
+  `"Omega Systems Corp - Bi-Weekly Service Call | <people>"`): `partner_from_subject` has no
+  separator to split on, so the partner isn't isolated. Moot (those calls are organizer-out-of-
+  scope) and not fixable by an alias; left as a known limitation.
+
 ## [Unreleased] — Remove baked-in secrets from config.py + scrub git history (2026-06-29)
 
 ### Security
