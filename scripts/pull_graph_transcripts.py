@@ -162,23 +162,25 @@ def target_folder(partner_name: str):
     Matches existing folders against both the raw name and a corp-suffix-stripped
     variant ('Prevare LLC' matches as-is; 'Infopathways, Inc.' strips to
     'Infopathways'). When a PARTNER_ALIASES entry applies, its value is the
-    canonical roster folder name and is used BOTH to match an existing folder AND
-    to name a new one — otherwise a mis-parsed subject like 'CP Corp' would strip
-    to 'CP' and land in a folder no roster partner matches (build_real_partners
-    matches by display name). Returns (path, is_new)."""
+    canonical roster folder name and is AUTHORITATIVE: we route to that folder
+    (existing or newly-created) and never fall back to the raw/stripped name —
+    otherwise a mis-parsed subject like 'CP Corp' would strip to 'CP' and land in
+    a folder no roster partner matches (build_real_partners matches by display
+    name). The authoritative-alias rule matters even when a stale mis-stripped
+    folder ('CP') already exists: without it the stripped-name match below would
+    win and keep routing into the wrong folder. Returns (path, is_new)."""
     stripped = CORP_SUFFIX_RE.sub("", partner_name).strip()
     aliased = next((PARTNER_ALIASES[c.lower()] for c in (partner_name, stripped)
                     if c.lower() in PARTNER_ALIASES), None)
     if aliased:
         existing = resolve_partner_dir(aliased)
-        if existing:
-            return existing, False
+        return (existing, False) if existing else (config.TRANSCRIPTS_DIR / aliased, True)
     for cand in (partner_name, stripped):
         existing = resolve_partner_dir(cand)
         if existing:
             return existing, False
-    # New folder: prefer the alias (canonical roster name) over the stripped subject.
-    return config.TRANSCRIPTS_DIR / (aliased or stripped or partner_name), True
+    # No alias and no existing folder: new folder from the stripped subject.
+    return config.TRANSCRIPTS_DIR / (stripped or partner_name), True
 
 
 def sanitize(subject: str) -> str:
