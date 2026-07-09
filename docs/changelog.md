@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Access allowlist: +3 users (2026-07-09)
+
+### Changed
+- **Added `sarbjeet.singh@itbd.net`, `ankur.kumar@itbd.net`, `kpatel@itbd.net`** to the
+  access allowlist in BOTH `auth.js` `ALLOWED_EMAILS` and `firestore.rules` `isItbd()`
+  (now 10 named `@itbd.net` accounts — gotcha 10). Accounts pre-created in Firebase Auth
+  (email/password, `email_verified=true`, admin-provisioned rather than self-signup).
+  Shipped via `firebase deploy --only firestore:rules,hosting`.
+
 ## [Unreleased] — Transcript-pull: make PARTNER_ALIASES authoritative (2026-07-09)
 
 ### Fixed

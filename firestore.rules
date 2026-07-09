@@ -44,7 +44,10 @@ service cloud.firestore {
           'andrea.canlas@itbd.net',
           'lee.cavellier@itbd.net',
           'jkhan@itbd.net',
-          'manu.sharma@itbd.net'
+          'manu.sharma@itbd.net',
+          'sarbjeet.singh@itbd.net',
+          'ankur.kumar@itbd.net',
+          'kpatel@itbd.net'
         ];
     }
 
