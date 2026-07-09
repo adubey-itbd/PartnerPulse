@@ -97,6 +97,13 @@ PARTNER_ALIASES = {
     "redhelm": "RedHelm - 1Path",
     "secure future tech": "Secure Future Tech Solutions",
     "secure future tech (sft)": "Secure Future Tech Solutions",
+    # ---- 2026-07-09: subjects whose parsed short name won't reach the roster
+    # folder (build_real_partners matches by display name). "CP Corp" strips to
+    # "CP" (the CORP_SUFFIX trap); "Atlas PS" / "ITbD-IronEdge" are short-name
+    # variants. Values are the exact roster display names in build_real_partners.NEW. ----
+    "cp corp": "CPCORP Inc",
+    "atlas ps": "Atlas Professional Services",
+    "itbd-ironedge": "IronEdge Group",
 }
 
 _TIME_RE = re.compile(r"(\d{2}):(\d{2}):(\d{2})\.\d{3}\s+-->\s+(\d{2}):(\d{2}):(\d{2})\.\d{3}")
@@ -154,19 +161,24 @@ def target_folder(partner_name: str):
     """Resolve to an existing Transcripts/ folder, else a NEW folder path.
     Matches existing folders against both the raw name and a corp-suffix-stripped
     variant ('Prevare LLC' matches as-is; 'Infopathways, Inc.' strips to
-    'Infopathways'); new folders use the stripped name. Returns (path, is_new)."""
+    'Infopathways'). When a PARTNER_ALIASES entry applies, its value is the
+    canonical roster folder name and is used BOTH to match an existing folder AND
+    to name a new one — otherwise a mis-parsed subject like 'CP Corp' would strip
+    to 'CP' and land in a folder no roster partner matches (build_real_partners
+    matches by display name). Returns (path, is_new)."""
     stripped = CORP_SUFFIX_RE.sub("", partner_name).strip()
-    for cand in (partner_name, stripped):
-        alias = PARTNER_ALIASES.get(cand.lower())
-        if alias:
-            existing = resolve_partner_dir(alias)
-            if existing:
-                return existing, False
+    aliased = next((PARTNER_ALIASES[c.lower()] for c in (partner_name, stripped)
+                    if c.lower() in PARTNER_ALIASES), None)
+    if aliased:
+        existing = resolve_partner_dir(aliased)
+        if existing:
+            return existing, False
     for cand in (partner_name, stripped):
         existing = resolve_partner_dir(cand)
         if existing:
             return existing, False
-    return config.TRANSCRIPTS_DIR / (stripped or partner_name), True
+    # New folder: prefer the alias (canonical roster name) over the stripped subject.
+    return config.TRANSCRIPTS_DIR / (aliased or stripped or partner_name), True
 
 
 def sanitize(subject: str) -> str:
