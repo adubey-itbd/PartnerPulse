@@ -6,6 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Transcript-pull: make PARTNER_ALIASES authoritative (2026-07-09)
+
+### Fixed
+- **`target_folder()` now treats a `PARTNER_ALIASES` match as AUTHORITATIVE** — it routes
+  to the canonical folder (existing or newly-created) and never falls back to the
+  raw/stripped name. The prior fix (below) only created the canonical folder when *no*
+  folder existed; if a **stale mis-stripped folder was already present** (e.g. a `CP/`
+  folder in the cloud state bucket from an old pre-fix pull of "CP Corp"), the
+  stripped-name branch still won and transcripts kept landing in `CP/` — which
+  `build_real_partners` (matches folders by display name `CPCORP Inc`) never picked up, so
+  CPCorp stayed **"No calls"** in prod even after the image rebuild. Verified against the
+  stale-folder case + regressions (Netgain/MSPCorp/Infopathways still resolve to their
+  existing folders). NOTE: the orphaned `CP/` folder in the state bucket is now a harmless
+  unmatched folder (flagged by `warn_unmatched_transcript_dirs`); transcripts re-pull into
+  `CPCORP Inc/` on the next run (within the ~90-day Teams content window).
+
 ## [Unreleased] — Transcript-pull folder routing: aliases now name NEW folders (2026-07-09)
 
 ### Fixed
