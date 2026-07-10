@@ -43,6 +43,9 @@
     "lee.cavellier@itbd.net",
     "jkhan@itbd.net",
     "manu.sharma@itbd.net",
+    "sarbjeet.singh@itbd.net",
+    "ankur.kumar@itbd.net",
+    "kpatel@itbd.net",
   ];
   var DEV = isLocal || !configured || typeof firebase === "undefined";
 
