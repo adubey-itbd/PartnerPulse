@@ -1,0 +1,1238 @@
+WEBVTT
+NOTE title: Spidernet Technical Consulting | Co-Managed | Weekly Service Call
+NOTE date: 2026-06-25
+NOTE duration: 46m 56s
+
+00:00:24.135 --> 00:00:25.575
+<v Gagan Chowdhary>Hi, Anthony, good morning.</v>
+
+00:00:27.495 --> 00:00:28.455
+<v Anthony Licate>Gagan, how you doing?</v>
+
+00:00:29.975 --> 00:00:34.295
+<v Gagan Chowdhary>Yeah, I'm doing great. Thank you for asking. Hi, Andrew. Thank you for joining in.</v>
+
+00:00:35.015 --> 00:00:39.415
+<v Andrew Ordak>Hello? Sorry, I'm having my webcam off. I'm feeling a little under the weather here.</v>
+
+00:00:40.295 --> 00:00:45.015
+<v Gagan Chowdhary>Well, that's alright. I mean, but do take good care of yourself.</v>
+
+00:00:45.615 --> 00:00:46.295
+<v Andrew Ordak>Yeah, thank you.</v>
+
+00:00:49.335 --> 00:01:07.575
+<v Gagan Chowdhary>So, how have you been? I mean, yesterday we had a call, you know, a pre-scheduled, you know, series of this weekly call, but I think, you know, some other call came up at the same time. So, Rick informed me that, you know, we would need to cancel that. Well, thank you for accommodating time for today.</v>
+
+00:01:09.255 --> 00:01:10.415
+<v Gagan Chowdhary>Was it good yesterday?</v>
+
+00:01:09.335 --> 00:01:09.895
+<v Anthony Licate>Got it.</v>
+
+00:01:10.975 --> 00:01:20.375
+<v Anthony Licate>It was neat, pretty interesting kind of things talking about, you know, the AI side of things.</v>
+
+00:01:21.815 --> 00:01:24.055
+<v Anthony Licate>Look ahead, you know, very cool.</v>
+
+00:01:25.095 --> 00:01:25.415
+<v Gagan Chowdhary>Me.</v>
+
+00:01:26.415 --> 00:01:27.495
+<v Gagan Chowdhary>Nice, thank you.</v>
+
+00:01:30.295 --> 00:01:31.495
+<v Gagan Chowdhary>So, thank you, Anthony.</v>
+
+00:01:33.255 --> 00:01:40.295
+<v Gagan Chowdhary>Apart from, you know, presentation, how's the weather out there? I mean, is it getting really hot or normal?</v>
+
+00:01:40.935 --> 00:01:49.735
+<v Anthony Licate>Our our normal hot, yeah, so you know, so it's hovering around it like eighty-eight to ninety-two somewhere, you know, but...</v>
+
+00:01:51.975 --> 00:02:01.815
+<v Anthony Licate>Yeah, this is sort of peak season for us as far as temperatures, I think. Maybe next month it gets the hottest, but yeah, no, it's a...</v>
+
+00:02:03.055 --> 00:02:06.055
+<v Anthony Licate>It's good. I'm sort of glad it's warming up a little bit.</v>
+
+00:02:08.775 --> 00:02:29.135
+<v Gagan Chowdhary>You like when it gets warmer a little bit? And okay, but coincidentally, even our temperature shows right now 89 Fahrenheit here in Chandigarh, because we got rain, you know, on an alternate day basis, so which is why I mean it lowered the temperature to some extent.</v>
+
+00:02:30.055 --> 00:02:32.055
+<v Gagan Chowdhary>But you said, like I was telling you.</v>
+
+00:02:30.215 --> 00:02:30.695
+<v Anthony Licate>Ice.</v>
+
+00:02:33.575 --> 00:02:52.295
+<v Gagan Chowdhary>Yeah, July, yeah, July is still, I mean, June has completely passed. So during these months, we do not get enough rain. So it does touch your 90 plus, I mean, 100 or 100 plus sometimes. There are years. When they say news, the weather news that.</v>
+
+00:02:47.975 --> 00:02:48.615
+<v Anthony Licate>Mmh.</v>
+
+00:02:52.855 --> 00:03:06.055
+<v Gagan Chowdhary>Oh, it broke a record of last 15 years. It broke a record of last 10 years sometimes. It all depends on Western disturbance at our end. And also,</v>
+
+00:02:58.615 --> 00:03:00.295
+<v Anthony Licate>The goodness, goodness.</v>
+
+00:03:04.295 --> 00:03:04.695
+<v Anthony Licate>Yeah.</v>
+
+00:03:09.415 --> 00:03:25.575
+<v Gagan Chowdhary>some breeze, you know, yeah, a breeze, you know, comes from the southern side of India, so that affects, you know, monsoon, you know, starts from the southern side of India because our ocean is there on southern, eastern, and western side. So we are at the north side, up north.</v>
+
+00:03:26.855 --> 00:03:27.015
+<v Anthony Licate>Mm.</v>
+
+00:03:26.855 --> 00:03:45.815
+<v Gagan Chowdhary>So it travels, it takes around, I would say, yeah, about a month to reach, you know, north side here. So when it reaches here, it starts to rain and we get rain for almost 25 to 30 days. That season is called monsoon here in India.</v>
+
+00:03:35.895 --> 00:03:36.135
+<v Anthony Licate>Pre.</v>
+
+00:03:42.495 --> 00:03:43.255
+<v Anthony Licate>My goodness.</v>
+
+00:03:47.455 --> 00:03:47.575
+<v Gagan Chowdhary>Yeah.</v>
+
+00:03:47.735 --> 00:03:49.015
+<v Anthony Licate>Well, that doesn't sound great.</v>
+
+00:03:49.655 --> 00:03:51.655
+<v Gagan Chowdhary>Oh yeah, so just wanted to share.</v>
+
+00:03:49.975 --> 00:03:55.895
+<v Anthony Licate>Is it raining like straight, just it doesn't doesn't stop, just doesn't stop or does it stop during that time?</v>
+
+00:03:55.575 --> 00:04:13.575
+<v Gagan Chowdhary>Yeah, it depends. Usually, you know, monsoons are expected to give more rain almost maybe hourly basis every day or every day or, you know, sometimes or every alternate day sometimes.</v>
+
+00:04:13.815 --> 00:04:17.575
+<v Gagan Chowdhary>But it rains almost very heavily during those days.</v>
+
+00:04:14.295 --> 00:04:14.455
+<v Anthony Licate>Mm.</v>
+
+00:04:18.615 --> 00:04:18.855
+<v Anthony Licate>Hmm.</v>
+
+00:04:19.655 --> 00:04:36.375
+<v Gagan Chowdhary>So in some areas, yeah, there is some sometimes flood-like situation. Some areas do get flooded. And so, yeah, government and local administration needs to, you know, work effectively to tackle those situation accordingly.</v>
+
+00:04:37.335 --> 00:04:41.255
+<v Gagan Chowdhary>But yeah, those are really, really high rainfall dates.</v>
+
+00:04:37.455 --> 00:04:37.975
+<v Anthony Licate>Nice.</v>
+
+00:04:42.375 --> 00:04:42.455
+<v Anthony Licate>Huh.</v>
+
+00:04:44.055 --> 00:04:53.255
+<v Gagan Chowdhary>It's good for us sometimes. You know, it brings, you know, pleasant weather for us, but not good for farmers at the same time.</v>
+
+00:04:53.735 --> 00:04:54.375
+<v Anthony Licate>All right.</v>
+
+00:04:55.015 --> 00:04:55.415
+<v Gagan Chowdhary>Yeah.</v>
+
+00:04:56.655 --> 00:04:57.175
+<v Anthony Licate>Interesting.</v>
+
+00:04:57.895 --> 00:05:08.135
+<v Gagan Chowdhary>All right, thank you. So we will be discussing, I mean, something differently. So I mean, we get to know more each other's culture, geography, demographies as well. Yeah, so thank you.</v>
+
+00:05:05.655 --> 00:05:06.135
+<v Anthony Licate>Right.</v>
+
+00:05:09.495 --> 00:05:15.495
+<v Gagan Chowdhary>All right, so I think, are we good to start the meeting, presentation? All right, thank you. So...</v>
+
+00:05:12.775 --> 00:05:14.375
+<v Anthony Licate>Yeah, yep.</v>
+
+00:05:16.935 --> 00:05:21.975
+<v Gagan Chowdhary>As you know, this call is being recorded, you know, for these sessions, and I hope that will be OK.</v>
+
+00:05:22.695 --> 00:05:23.095
+<v Anthony Licate>Sure.</v>
+
+00:05:23.975 --> 00:05:28.215
+<v Gagan Chowdhary>Thank you. So Team, I'm sharing my screen. Let me know once it's there on your screens.</v>
+
+00:05:31.935 --> 00:05:32.295
+<v Anthony Licate>Got it.</v>
+
+00:05:34.455 --> 00:05:51.975
+<v Gagan Chowdhary>Thank you. So as of now, I mean, this is just a start with Sophie. So I mean, she has not completed a month, so which is why initially we are starting with monthly progress review, oh sorry, weekly review. So which is why it's only for a week from June 15th to 19th last week.</v>
+
+00:05:53.015 --> 00:05:54.295
+<v Gagan Chowdhary>And...</v>
+
+00:05:56.695 --> 00:06:15.255
+<v Gagan Chowdhary>Agenda items will remain the same, so most of the time it remains the same. Just one activity gets included into it. That is CSAT, monthly CSAT, once she completes her one month with spider nets. So we'll shoot us monthly CSAT survey with Unit 2 and we'll get to hear her.</v>
+
+00:06:15.495 --> 00:06:18.215
+<v Gagan Chowdhary>Overall, your monthly feedback from you.</v>
+
+00:06:19.415 --> 00:06:39.895
+<v Gagan Chowdhary>So currently we have highlights, performance analysis, ITBD service offerings. Yeah, by design. Now you are very much familiar with this and the holiday schedule of Sophie way forward with the organization. And of course, recap that I shared after this call.</v>
+
+00:06:29.975 --> 00:06:30.455
+<v Anthony Licate>Mhm.</v>
+
+00:06:40.215 --> 00:06:42.535
+<v Gagan Chowdhary>Along with minutes of meetings.</v>
+
+00:06:43.615 --> 00:07:04.535
+<v Gagan Chowdhary>And I don't have to say it, but that's a ritual. So I mean, I do say it as a drill. Please feel free to chime in whenever you think you have any ideas, any feedback, any suggestion or insights for any of the slides or anything that you have in your observations.</v>
+
+00:07:04.775 --> 00:07:05.495
+<v Gagan Chowdhary>Overall.</v>
+
+00:07:06.295 --> 00:07:06.855
+<v Anthony Licate>Sounds good.</v>
+
+00:07:08.055 --> 00:07:27.095
+<v Gagan Chowdhary>Thank you. So not much. I captured some basic highlights. So Sophie has exceeded her utilization target, which we'll be discussing further. Utilization means her time. And she's making steady progress. I thank you.</v>
+
+00:07:27.495 --> 00:07:46.815
+<v Gagan Chowdhary>You know, it was good to hear from you and Sophie did share the other day that, you know, she heard some good feedback from you, Anthony. So she shared that with me. That team did appreciate me. So I also passed my kudos to her for that appreciation that she received from you.</v>
+
+00:07:38.935 --> 00:07:39.255
+<v Anthony Licate>Good.</v>
+
+00:07:47.415 --> 00:08:05.815
+<v Gagan Chowdhary>Because we have internally here a GPS point system, so we give each other points when they do something extra, or even whenever they we find, you know, someone has helped the other team member or they did something extra, so TTLs may give to their teams or...</v>
+
+00:07:52.215 --> 00:07:52.415
+<v Anthony Licate>No.</v>
+
+00:08:06.215 --> 00:08:23.175
+<v Gagan Chowdhary>Team members can pass those points to each other. Oh, you helped me on that ticket, so I give you 10 points or 15 points accordingly. So, so she got some points and yeah, so she is making, you know, steady, steadily improving her productivity at the same time.</v>
+
+00:08:24.455 --> 00:08:24.775
+<v Anthony Licate>Vaid.</v>
+
+00:08:24.535 --> 00:08:29.735
+<v Gagan Chowdhary>Any feedback observation from you, Anthony? I will then go to Andrew.</v>
+
+00:08:31.375 --> 00:08:31.975
+<v Anthony Licate>Yeah, huh?</v>
+
+00:08:33.895 --> 00:08:51.935
+<v Anthony Licate>That's good. She's starting to integrate more into the tickets. She's starting to understand a little bit more about the different environments, you know, because they all have their little quirks. So she's starting to get a handle on like, you know, the customers and the technologies.</v>
+
+00:08:34.215 --> 00:08:34.535
+<v Gagan Chowdhary>Okay.</v>
+
+00:08:52.855 --> 00:09:10.135
+<v Anthony Licate>They're close, but they're a little different, so that helps. She's getting to know the people associated with the customers. That's good. And she's, I know Andrew and Cole on our team have been giving her pushes when needed.</v>
+
+00:08:58.175 --> 00:08:58.455
+<v Gagan Chowdhary>S.</v>
+
+00:09:10.935 --> 00:09:19.495
+<v Anthony Licate>The interesting thing right now, and Andrew could speak to it too, but so we have one, we have one gentleman out.</v>
+
+00:09:21.615 --> 00:09:40.535
+<v Anthony Licate>With he just recently had a baby, so he's gonna be touch and go for the next two weeks, and then you have some vacations coming up, right? So we slowed things down just to sort of get our bearings, and then we can we can spend more time to just make sure that the pieces are in place with.</v>
+
+00:09:30.775 --> 00:09:31.255
+<v Gagan Chowdhary>Mhm.</v>
+
+00:09:41.095 --> 00:09:46.455
+<v Anthony Licate>with Sophie, so that's good. So, you know, as far as anything.</v>
+
+00:09:45.535 --> 00:09:45.855
+<v Gagan Chowdhary>S.</v>
+
+00:09:47.975 --> 00:10:05.655
+<v Anthony Licate>running at 6 cylinders, not unrelated to Sophie. It's, you know, we have, we're into that season where we have, where we have vacations, things come up and, and that's, it's that time of year, right? So, it's just a, just a.</v>
+
+00:09:58.615 --> 00:09:59.095
+<v Gagan Chowdhary>Mhm.</v>
+
+00:10:02.455 --> 00:10:02.775
+<v Gagan Chowdhary>Yeah.</v>
+
+00:10:05.695 --> 00:10:09.895
+<v Anthony Licate>At that time of year, really, when it comes down to it, but yeah.</v>
+
+00:10:11.215 --> 00:10:31.975
+<v Gagan Chowdhary>Sure, thank you for sharing that and thank you for the heads up on that. And yeah, that is completely understandable. So thank you, Anthony. And wherever you think you need our assistance in anything, you know, about her time utilization, I think if she gets some bandwidth or time, we will also talk more.</v>
+
+00:10:18.735 --> 00:10:18.935
+<v Anthony Licate>No.</v>
+
+00:10:32.055 --> 00:10:39.415
+<v Gagan Chowdhary>or her CDG, how we can utilize her extra time in some training and upskilling herself on certain technologies.</v>
+
+00:10:41.295 --> 00:10:41.735
+<v Anthony Licate>Perfect.</v>
+
+00:10:42.055 --> 00:10:46.935
+<v Gagan Chowdhary>So, Andrea, anything from your end? Maybe you're working closely with her.</v>
+
+00:10:46.415 --> 00:11:06.375
+<v Andrew Ordak>Yeah, I was going to say, just on that first bullet point, that like hits the nail on the head. She's been doing really great since she started. I've been working with her on different tickets, getting her introduced to the customers. She's been asking a lot of questions, which is great. She's been chatting with our group. Yeah, she's been doing really great.</v>
+
+00:11:06.535 --> 00:11:21.015
+<v Andrew Ordak>She actually just asked me yesterday. She's worried about her time sheets. So yeah, getting her on a training path would be good. I told her don't worry about the time sheets too much yet since it's a slower time. But yeah, she's doing great and she's always looking for more to do.</v>
+
+00:11:23.015 --> 00:11:35.175
+<v Gagan Chowdhary>It's really great to hear from both of you, Anthony and Andrew. Yeah, I know where she's coming from. I think why she's asking about time entrance because when I connect with her, you know, I ask these questions because...</v>
+
+00:11:23.655 --> 00:11:23.815
+<v Andrew Ordak>Mm.</v>
+
+00:11:36.375 --> 00:11:55.175
+<v Gagan Chowdhary>From TTLs standpoint and from ITBD standpoint, my emphasis would always be to keep in encouraging her to do her best, keep meeting her KPI targets, whatever assigned to her, so that, you know, whether something productive at the client environment, I...</v>
+
+00:11:55.535 --> 00:12:15.415
+<v Gagan Chowdhary>That is completely understandable as you shared. So we do anticipate in certain seasons, maybe they are vacations or maybe some users are out or she may have some less workflow during those days. So we ensure during those days how she can.</v>
+
+00:12:16.055 --> 00:12:40.175
+<v Gagan Chowdhary>Apart from if she's not getting enough client tickets, how she can be utilized in internal work in improvement in improvement activities such as maybe some board cleanup is required where she can do her hands-on on, or maybe some level one project tickets where she where she can upskill herself understanding.</v>
+
+00:12:40.215 --> 00:12:42.615
+<v Gagan Chowdhary>those processes, those procedures.</v>
+
+00:12:43.815 --> 00:13:04.295
+<v Gagan Chowdhary>And yeah, if you need any kind of documentation, maybe your work, your team is working on some KB articles, SOPs, refinement, or something, so we would encourage her to be a part of those activities as well, because it will give her exposure to, you know, to review, update.</v>
+
+00:13:04.575 --> 00:13:21.495
+<v Gagan Chowdhary>like SOPs and, you know, went to your who to seek approval for those things. So going forward, when someone is out, she can at least, if not 100%, she can at least handle those things at least maybe 30 or 40%. Yeah, so that'll be helpful for the team.</v>
+
+00:13:23.175 --> 00:13:26.615
+<v Gagan Chowdhary>Thank you. Moving on to performance analysis.</v>
+
+00:13:28.695 --> 00:13:45.735
+<v Gagan Chowdhary>Billable, non-billable. So currently we have just one bar because it represents just one week. So she stood 86%. Her ITBD target is 80%. And so yeah, she met her target with 86%.</v>
+
+00:13:46.855 --> 00:13:49.415
+<v Gagan Chowdhary>I was asking her, do you understand? I mean...</v>
+
+00:13:50.855 --> 00:14:10.775
+<v Gagan Chowdhary>what ticket requires, you know, what time entry and how much you, how much time entry you needed to put in, ensure that there should not be, you know, exaggerated entry, whatever work honestly you have performed, it should justify your time entry and ticket notes accordingly and the time you spent on a ticket.</v>
+
+00:14:11.575 --> 00:14:27.895
+<v Gagan Chowdhary>So I was glad to hear that you understand that. But I do also have a clarity question from you. You know, any one of you may answer. So I see in your environment, I believe you charge users on a monthly basis, maybe.</v>
+
+00:14:28.615 --> 00:14:29.015
+<v Anthony Licate>Yeah.</v>
+
+00:14:29.735 --> 00:14:52.655
+<v Gagan Chowdhary>Okay, so which is why we, you know, which is why it changed in the last minute, you know, yesterday from billable target to non-billable target, that is non-billable productive target, I believe. So, in your environment, so whatever time entries she puts in, whatever, whatever ticket she works on with the users, she, so all the...</v>
+
+00:14:30.215 --> 00:14:30.615
+<v Anthony Licate>Support.</v>
+
+00:14:52.735 --> 00:14:58.215
+<v Gagan Chowdhary>time entries, time goes to non-available part, not in the billable part. Is that right?</v>
+
+00:14:58.775 --> 00:15:04.295
+<v Anthony Licate>That's correct. So as far as your KPIs, if you're measuring billable to non-billable,</v>
+
+00:15:05.255 --> 00:15:13.975
+<v Anthony Licate>It's probably not an accurate data point because she could literally stick, you know, 50 hours in the non-billable under a contract.</v>
+
+00:15:08.295 --> 00:15:08.415
+<v Gagan Chowdhary>Yeah.</v>
+
+00:15:12.335 --> 00:15:12.455
+<v Gagan Chowdhary>****.</v>
+
+00:15:15.415 --> 00:15:29.495
+<v Anthony Licate>And she's still meeting her, she's exceeding her time sheets and it's not, it's not necessary, it's not, it's not in her control to figure out what's billable or non-billed because of the way that we have the contracts. Our contracts.</v>
+
+00:15:19.895 --> 00:15:19.935
+<v Gagan Chowdhary>I.</v>
+
+00:15:21.255 --> 00:15:21.735
+<v Gagan Chowdhary>Mhm.</v>
+
+00:15:31.495 --> 00:15:51.255
+<v Anthony Licate>are generally that things are billable, but they're billable from my end. Like, for example, if we need, if we have a workstation set up, we'll build the works, the one-time set up within our quote, fill it out, but the user sticks it in as a project and it shows up as zero because we already built it out, right? So</v>
+
+00:15:33.735 --> 00:15:33.895
+<v Gagan Chowdhary>Okay.</v>
+
+00:15:50.895 --> 00:15:51.055
+<v Gagan Chowdhary>Just.</v>
+
+00:15:51.895 --> 00:16:12.855
+<v Anthony Licate>It comes out in the wash and it's not all free, right? So when you have a project, the project has a fixed cost. We build a project, but everything else gets imported as a project with a 0 rate because we already build it out. We can track it. We can track the projects and the hours that were in a project.</v>
+
+00:15:57.495 --> 00:15:57.655
+<v Gagan Chowdhary>S.</v>
+
+00:16:05.135 --> 00:16:05.615
+<v Gagan Chowdhary>Mhm.</v>
+
+00:16:07.575 --> 00:16:07.815
+<v Gagan Chowdhary>Just.</v>
+
+00:16:12.935 --> 00:16:18.215
+<v Anthony Licate>to cross-compare do like an analysis of, you know, whether we hit our numbers, but...</v>
+
+00:16:16.015 --> 00:16:16.135
+<v Gagan Chowdhary>Yes.</v>
+
+00:16:19.735 --> 00:16:26.695
+<v Anthony Licate>All things considered, when when you measure the billable, the non-billable, we I don't use that as a metric because it's.</v>
+
+00:16:27.895 --> 00:16:40.615
+<v Anthony Licate>It's not up to the user to figure out what's billable or non-billable. It's really up to us to spec it if it is billable and then price it, get it approved, then move through the project slash whatever initiative that is, right?</v>
+
+00:16:42.415 --> 00:17:02.415
+<v Gagan Chowdhary>Yeah, thank you, Anthony. You very well, you know, covered this. So, yeah, we are almost, you know, in line with each other. It's just, I tell you, you know, why ITBD, in the general, why we, you know, represent or keep billable as our KPI target, because most of the environment, I know.</v>
+
+00:17:02.535 --> 00:17:05.095
+<v Gagan Chowdhary>Each and every environment is different, so...</v>
+
+00:17:06.335 --> 00:17:28.375
+<v Gagan Chowdhary>whether I put billable here or not billable here, you know, it is completely as per your environment, you know, how you deal in your environment. So the basis of that is, or from understanding standpoint, we just want billable represents productivity, being productive. So if your environment itself is working on client tickets, and that is.</v>
+
+00:17:24.775 --> 00:17:25.255
+<v Anthony Licate>Okay.</v>
+
+00:17:28.615 --> 00:17:43.815
+<v Gagan Chowdhary>that entire time entry is going to non-billable parts. That means she is still productive. So if the productivity refers non-billable parts, so yeah, we just want her to be productive. That's it. So I'll change billable to non-billable.</v>
+
+00:17:34.095 --> 00:17:34.615
+<v Anthony Licate>Correct.</v>
+
+00:17:45.015 --> 00:18:03.655
+<v Gagan Chowdhary>I'll mention non-billable productive. OK, so, and if she is, if she is engaged in any kind of admin activities, maybe that is non-productive. Do you have any non-billable, so I would say non-billable, any non-productive activities?</v>
+
+00:17:49.095 --> 00:17:49.495
+<v Anthony Licate>Yeah.</v>
+
+00:18:06.455 --> 00:18:25.175
+<v Anthony Licate>We try and stay away from that. So like, like, here's an example, and I don't think it's worth tracking, but at least right now we do, we do track admin to not. So like, for example, we have an initiative to move people off of Cisco Duo to Microsoft MFA, right?</v>
+
+00:18:07.695 --> 00:18:10.375
+<v Gagan Chowdhary>What I need, or any separate buckets for that?</v>
+
+00:18:14.295 --> 00:18:14.775
+<v Gagan Chowdhary>Okay.</v>
+
+00:18:24.935 --> 00:18:25.415
+<v Gagan Chowdhary>Mhm.</v>
+
+00:18:25.655 --> 00:18:31.735
+<v Anthony Licate>Um, we're not, it saves us money. We need to, we need to initiate the customer, migrate.</v>
+
+00:18:32.895 --> 00:18:41.495
+<v Anthony Licate>the MFA, you know, user by user essentially, right? So there's a good bit of users. It's going to take some time to do it, a lot of touch points, things like that. So.</v>
+
+00:18:37.575 --> 00:18:38.055
+<v Gagan Chowdhary>Mhm.</v>
+
+00:18:43.095 --> 00:18:51.735
+<v Anthony Licate>But we're not billing the customer for that. It's more of an administrative element because it saves us money if we can if we can phase out duo.</v>
+
+00:18:52.615 --> 00:19:12.095
+<v Anthony Licate>And reduce that expense, but we already have MFA with all the Microsoft licenses we already have, right? So, it's already built in, right? So, we'll move through that. Now, the way we'll play that is Andrew will end up pricing up, or Andy Andrew will end up.</v>
+
+00:19:02.615 --> 00:19:02.735
+<v Gagan Chowdhary>You.</v>
+
+00:19:12.375 --> 00:19:32.135
+<v Anthony Licate>building out a project plan, then the steps, the general steps, and then we'll probably eventually give that, give some level of ownership to Sophie to have her move through, call back, schedule the time, get with the end user, set up the MFA, move on to the next user, close out the company, move on to the next company.</v>
+
+00:19:32.455 --> 00:19:51.255
+<v Anthony Licate>and then do that over a period of time. So in that case, that's like an admin task, but it's super useful for us. You know what I mean? Because we can cut that expense down. She's able to do the work. Andrew can focus on his time on the higher level stuff as far as building out the projects.</v>
+
+00:19:32.615 --> 00:19:33.095
+<v Gagan Chowdhary>Mhm.</v>
+
+00:19:40.695 --> 00:19:41.415
+<v Gagan Chowdhary>Absolutely.</v>
+
+00:19:44.935 --> 00:19:45.415
+<v Gagan Chowdhary>Mhm.</v>
+
+00:19:51.655 --> 00:20:11.575
+<v Anthony Licate>guiding her through the process and Sophie can handle the heavy lifting with the end users. So that's an example of like, you could call it an admin task. It's highly, it's a big cost savings for us to move through that project. We've had it on our plate. We haven't, we're just trying to get traction on it.</v>
+
+00:19:53.655 --> 00:19:54.135
+<v Gagan Chowdhary>Mhm.</v>
+
+00:20:01.015 --> 00:20:01.335
+<v Gagan Chowdhary>S.</v>
+
+00:20:12.615 --> 00:20:29.815
+<v Anthony Licate>We have everyone out, right? Andrew's sick. He took a vacation last week. So we're in this like June-ish, July time frame where, you know, summers get a little crazy, you know, right? So with vacations and such. So, so there's that. But then there's also project initiatives.</v>
+
+00:20:31.255 --> 00:20:51.095
+<v Anthony Licate>Some of those are, we didn't want to quite go there yet too deep, but projects are typically billed out straight. Like if we have a project, say, call it $15,000, 7,000 on labor, the rest is hardware. We bill it out, we'll track it in our system.</v>
+
+00:20:51.175 --> 00:21:01.255
+<v Anthony Licate>with a $0.00 entry. So it says project, and we can tag the project. We can track the hours in the project, but it's not showing up as a bill.</v>
+
+00:21:02.135 --> 00:21:03.175
+<v Anthony Licate>Because we already build it.</v>
+
+00:21:02.775 --> 00:21:03.335
+<v Gagan Chowdhary>Got you.</v>
+
+00:21:04.055 --> 00:21:23.415
+<v Anthony Licate>I can look at the hours and I can see how much time everyone spent on it. You know, but that's those are the two variables. And then the other one is tickets, right? Which is where we have her right now, which is she's picking up tickets, she's working through the queue, getting into the customers, interfacing with the team.</v>
+
+00:21:17.095 --> 00:21:17.375
+<v Gagan Chowdhary>Yes.</v>
+
+00:21:24.615 --> 00:21:33.975
+<v Anthony Licate>And that's where we're at with generally the non-billable break-fix kind of configuration right now.</v>
+
+00:21:35.055 --> 00:21:35.575
+<v Anthony Licate>With her.</v>
+
+00:21:35.815 --> 00:21:56.255
+<v Gagan Chowdhary>Thank you, Anthony. Totally agree with you, and thank you for explaining, you know, your perspective, and this exactly, you know, how we track just that under we were tracking under different, you know, headings, different heads. So, yeah, whether she's working internally or externally with the partners, but as long as she's working on something.</v>
+
+00:21:56.375 --> 00:22:03.015
+<v Gagan Chowdhary>which, you know, as an assigned task. So, yeah, we call it productive, productive task.</v>
+
+00:22:02.215 --> 00:22:09.735
+<v Anthony Licate>Gagan, maybe at some point, if we look forward like six months from now or something, maybe we change this from...</v>
+
+00:22:12.135 --> 00:22:17.175
+<v Anthony Licate>Like, I'm guessing, productivity time in addition to project time.</v>
+
+00:22:18.335 --> 00:22:27.495
+<v Anthony Licate>Like, like, like, I billable, non-billable, it, we're not, we try and get away from billable, because if we're in billable.</v>
+
+00:22:18.455 --> 00:22:19.575
+<v Gagan Chowdhary>Right, absolutely.</v>
+
+00:22:26.455 --> 00:22:30.055
+<v Gagan Chowdhary>Let's not talk about billable, not billable. That's so confusing.</v>
+
+00:22:29.495 --> 00:22:47.815
+<v Anthony Licate>Well, because billable means that something broke at the customer and they're going to get some kind of a surprise bill, right? Unless it's a project, which that would be billable, but it's already billed out, right? So I try not to get into this spot where...</v>
+
+00:22:43.175 --> 00:22:43.415
+<v Gagan Chowdhary>Ha.</v>
+
+00:22:44.695 --> 00:22:45.255
+<v Gagan Chowdhary>Exit.</v>
+
+00:22:48.295 --> 00:22:56.215
+<v Anthony Licate>Oh, you know, this is this gets billable and then we go hit the customer for $300 and I have to have a conversation about how, you know.</v>
+
+00:22:48.375 --> 00:22:49.255
+<v Gagan Chowdhary>I get you.</v>
+
+00:22:56.215 --> 00:22:56.615
+<v Gagan Chowdhary>Yeah.</v>
+
+00:22:57.415 --> 00:22:57.895
+<v Anthony Licate>I said.</v>
+
+00:22:57.815 --> 00:23:16.855
+<v Gagan Chowdhary>Thank you, Andrea. Yeah, which is why I, you know, I had this clarity question, so thank you for explaining this, and you know, you know, I got some understanding about your environment, so will not be going forward talking about billable, non-billable instead, not, as I said, non-available, productive, OK, productive tasks.</v>
+
+00:23:17.415 --> 00:23:18.295
+<v Gagan Chowdhary>All right, thank you.</v>
+
+00:23:19.175 --> 00:23:20.135
+<v Gagan Chowdhary>So, uh...</v>
+
+00:23:23.015 --> 00:23:28.055
+<v Gagan Chowdhary>One other question, is there any, do you also track idle time somewhere?</v>
+
+00:23:29.895 --> 00:23:38.535
+<v Anthony Licate>The only way we track idle time is based on what a time sheet looks like. So if they don't hit their numbers, then we, it's just a game of subtraction at that point.</v>
+
+00:23:34.455 --> 00:23:34.855
+<v Gagan Chowdhary>OK.</v>
+
+00:23:38.695 --> 00:23:40.855
+<v Gagan Chowdhary>Okay, and um...</v>
+
+00:23:42.055 --> 00:23:42.695
+<v Gagan Chowdhary>Drew.</v>
+
+00:23:43.815 --> 00:23:59.895
+<v Gagan Chowdhary>Employees need to equalize, you know, their time to 8 hours, you know, every day, or, you know, or whatever productivity, you know, they got in a day. I mean, they should just show the exact numbers.</v>
+
+00:24:00.615 --> 00:24:19.495
+<v Anthony Licate>So we have, yeah, their share numbers, 33 and a half hours per week. Allocate the time however you want in the day, get your hours in. Now that includes lunch, right? So if you take 40 hours and then take some lunchtime and throw it in there, you know.</v>
+
+00:24:07.935 --> 00:24:08.495
+<v Gagan Chowdhary>Mhm.</v>
+
+00:24:13.255 --> 00:24:13.655
+<v Gagan Chowdhary>Great.</v>
+
+00:24:19.735 --> 00:24:27.655
+<v Anthony Licate>That includes billable and non-billable, right? In addition to projects. So all three of those together in a big pot.</v>
+
+00:24:22.415 --> 00:24:22.935
+<v Gagan Chowdhary>Mhm.</v>
+
+00:24:24.535 --> 00:24:24.855
+<v Gagan Chowdhary>Yeah.</v>
+
+00:24:28.735 --> 00:24:34.615
+<v Anthony Licate>hooking their cells away and at any given week to figure out whether those hours are being hit.</v>
+
+00:24:36.055 --> 00:24:37.335
+<v Gagan Chowdhary>All right, thank you.</v>
+
+00:24:38.695 --> 00:24:56.895
+<v Gagan Chowdhary>Okay, in the interest of time, I mean, we had a really good, fruitful discussion and we didn't realize time, so I'll just quickly move on to the next slide. So, yeah, thanks. So the green bar represents here number of tickets she worked on, and the blue bar represents number of tickets she was able to resolve.</v>
+
+00:24:44.775 --> 00:24:45.175
+<v Anthony Licate>Kip.</v>
+
+00:24:57.735 --> 00:25:17.335
+<v Gagan Chowdhary>It's not that she was not able to resolve any of the tickets, you know, which are remaining, you know, other than, you know, 30 tickets. It's that represents one day activity, same day. Because we measure on a daily basis, you know, how she's making progress. So we want to be in line with you. Do you track?</v>
+
+00:25:17.975 --> 00:25:36.615
+<v Gagan Chowdhary>You know this sort of performance on a daily basis or a weekly basis? Let's say, I mean, she was assigned forty-nine tickets in a week, but would you check numbers at the end of the week that, okay, if she's able to complete all the forty-nine tickets, so the productivity is 100%, but if we...</v>
+
+00:25:36.775 --> 00:25:55.415
+<v Gagan Chowdhary>see it on a daily basis, maybe she got 9 tickets in a day and for that particular day she was able to knock down only 6 tickets. So her productivity maybe was close to 66 or 67 percent. So this is how we track.</v>
+
+00:25:55.495 --> 00:26:00.855
+<v Gagan Chowdhary>To be very realistic, you know what she's doing on a daily basis, but...</v>
+
+00:26:01.655 --> 00:26:09.615
+<v Gagan Chowdhary>I would love to hear from you. I mean, if your plan is different or tracking system, we can we can present as per your plan going forward.</v>
+
+00:26:09.495 --> 00:26:27.175
+<v Anthony Licate>How are you coming up with those numbers? Is that from, because here's the reason why I say that is because here's the problem that we have with this type of metric. If we have, let's just say I'm going to make something up, say it's a BCDR data device.</v>
+
+00:26:14.215 --> 00:26:15.495
+<v Gagan Chowdhary>Good, good question.</v>
+
+00:26:17.415 --> 00:26:17.495
+<v Gagan Chowdhary>The.</v>
+
+00:26:18.375 --> 00:26:18.535
+<v Gagan Chowdhary>Paul.</v>
+
+00:26:20.135 --> 00:26:20.615
+<v Gagan Chowdhary>Mhm.</v>
+
+00:26:27.815 --> 00:26:28.295
+<v Gagan Chowdhary>Mhm.</v>
+
+00:26:28.215 --> 00:26:48.055
+<v Anthony Licate>And we get an alert, and then we get another alert, same thing, and then another, and then another. So say we get 6 tickets, same issue. We take it, we merge it all into a single ticket. The auto test system is going to report that as seven tickets. It wasn't 7 tickets, it was one ticket. They just, the alerts just came.</v>
+
+00:26:32.215 --> 00:26:32.455
+<v Gagan Chowdhary>Yeah.</v>
+
+00:26:48.375 --> 00:27:06.895
+<v Anthony Licate>kept coming in. So when we resolve a ticket, it shows, you know, this person resolved 7 tickets, but it's not 7 tickets, it's one ticket. So there are times where that happens. So it's a tough metric to track because if we put ticket metrics on that and we had, you know, one customer.</v>
+
+00:27:05.575 --> 00:27:05.895
+<v Gagan Chowdhary>Yeah.</v>
+
+00:27:07.015 --> 00:27:17.015
+<v Anthony Licate>It's easy to manipulate, right? So that's the situation. So that's why I asked you how you got those numbers. There's the common sense aspect to it, right? I mean.</v>
+
+00:27:09.015 --> 00:27:10.695
+<v Gagan Chowdhary>Yeah, absolutely.</v>
+
+00:27:16.855 --> 00:27:21.735
+<v Gagan Chowdhary>Absolutely. Yeah, thank you. That's a really good, yeah, that's a really good question. So,</v>
+
+00:27:18.495 --> 00:27:19.255
+<v Anthony Licate>There's that too.</v>
+
+00:27:23.415 --> 00:27:43.255
+<v Gagan Chowdhary>As at the end, as you say, as a common, you know, practice, it should be ideal practice, and it should, and it can be manipulated. So, common rule, general rule here at ITBD, you know, is if you, if you get multiple tickets for the same...</v>
+
+00:27:43.295 --> 00:27:43.895
+<v Gagan Chowdhary>Cause.</v>
+
+00:27:44.855 --> 00:27:47.735
+<v Gagan Chowdhary>Ideally, all those tickets should be bundled into one.</v>
+
+00:27:48.855 --> 00:27:52.295
+<v Gagan Chowdhary>Into one parent ticket, so they should not, they should.</v>
+
+00:27:50.775 --> 00:28:02.855
+<v Anthony Licate>Yeah, but how, so say you do that, but how would you run a report at the end of the week or whatever that says, you know, you bundled 10 tickets into one ticket, you know?</v>
+
+00:27:54.855 --> 00:27:55.175
+<v Gagan Chowdhary>Yeah.</v>
+
+00:27:59.175 --> 00:28:10.295
+<v Gagan Chowdhary>Yes, so we will. Yeah, so once we bundle all those tickets, we will not be counting them as 10 tickets. We'll count them as one pattern ticket, just one.</v>
+
+00:28:11.575 --> 00:28:12.215
+<v Gagan Chowdhary>Because...</v>
+
+00:28:11.975 --> 00:28:14.055
+<v Anthony Licate>manually or how do you get how you come and do it?</v>
+
+00:28:15.255 --> 00:28:18.775
+<v Anthony Licate>How you meant you're looking at her time sheet? Like, how do you how do you come to that conclusion?</v>
+
+00:28:19.815 --> 00:28:40.215
+<v Gagan Chowdhary>Okay, so I'm not sure about your PSA tool here. You use Autotask, right? Yeah. So we used to use, you know, ConnectWise Manager earlier. Now we are in Hello PSA. So what happens is whenever we bundle a ticket, it shows just one ticket on the PSA tool, not all the 10 tickets.</v>
+
+00:28:25.095 --> 00:28:25.815
+<v Anthony Licate>Autotask.</v>
+
+00:28:26.895 --> 00:28:27.095
+<v Anthony Licate>Yeah.</v>
+
+00:28:31.215 --> 00:28:32.695
+<v Anthony Licate>In a class, yeah.</v>
+
+00:28:40.695 --> 00:28:45.975
+<v Gagan Chowdhary>All the 10 tickets will the rest of the ticket will share as attachment to those to that one ticket.</v>
+
+00:28:41.255 --> 00:28:41.575
+<v Anthony Licate>Yeah.</v>
+
+00:28:47.095 --> 00:28:59.415
+<v Gagan Chowdhary>So which is why and why which is why you know you can see on the right hand side in the text form I mentioned ticket tickets work and take a result. That means.</v>
+
+00:28:59.375 --> 00:28:59.495
+<v Anthony Licate>Yeah.</v>
+
+00:29:01.175 --> 00:29:15.655
+<v Gagan Chowdhary>Number of tickets she worked on, if she already bundled 10 tickets into one parent ticket, that means she worked now only on one ticket. She did not work separately on 10 tickets. So that makes sense. If she worked on one ticket, it will be counted as one ticket.</v>
+
+00:29:17.575 --> 00:29:17.895
+<v Anthony Licate>Good.</v>
+
+00:29:19.895 --> 00:29:25.815
+<v Gagan Chowdhary>Yeah, absolutely. So thank you. That was a really good question. And just a moment.</v>
+
+00:29:34.055 --> 00:29:36.055
+<v Gagan Chowdhary>Let me go back to...</v>
+
+00:29:49.415 --> 00:29:52.935
+<v Gagan Chowdhary>Alright, so here we come to a CDG tracker.</v>
+
+00:29:54.135 --> 00:30:14.935
+<v Gagan Chowdhary>I can rather, you know, you know, pull out the actual sheets. So this is what we discussed the last time. So I filtered out all what we filled, you know, filled in previously. So, so these are the ones where she stated that she has no understanding at all. So these are those technologies or.</v>
+
+00:30:14.975 --> 00:30:31.975
+<v Gagan Chowdhary>tool sets. So Andrew and Anthony, we needed your plan on this. I know this is, you know, last time we did Mark, this is an immediate requirement at your end. Please do let me know. It's 1130 if you have some extra minutes for discussion.</v>
+
+00:30:33.775 --> 00:30:36.455
+<v Anthony Licate>Let me just double check. I think I do, but let me just double check.</v>
+
+00:30:37.655 --> 00:30:39.415
+<v Anthony Licate>Yeah, I'm good. Andrew, how are you doing?</v>
+
+00:30:41.415 --> 00:30:42.135
+<v Andrew Ordak>Yeah, I'm good over here.</v>
+
+00:30:43.335 --> 00:30:43.895
+<v Anthony Licate>Yeah, we're good.</v>
+
+00:30:43.895 --> 00:30:58.295
+<v Gagan Chowdhary>All right, thank you. So, so Andrew, these are, and Anthony, these are a few, you know, products, tool sets, you know, where she needs assistance on. Maybe she needs some training or a refresher, so...</v>
+
+00:30:59.495 --> 00:31:17.895
+<v Gagan Chowdhary>I mean, you can decide and let me know. We can segregate into multiple buckets, I would say, which one are on top priority. Let's say, you know, one, two, or four segments. So these are the four tools which needs, you know, immediate attention as of now.</v>
+
+00:31:18.295 --> 00:31:34.295
+<v Gagan Chowdhary>that she can pick up training on, maybe 30 minutes every day or something like that. So this is how we can proceed further to so that, I mean, she builds understanding and she starts to take those tickets accordingly in your environment.</v>
+
+00:31:25.335 --> 00:31:26.455
+<v Anthony Licate>So, so...</v>
+
+00:31:34.935 --> 00:31:42.455
+<v Anthony Licate>So let me ask you this. So if we, if you and I, if we all three of us go through this and we prioritize this list.</v>
+
+00:31:40.055 --> 00:31:40.535
+<v Gagan Chowdhary>Mhm.</v>
+
+00:31:43.415 --> 00:31:43.895
+<v Anthony Licate>Um...</v>
+
+00:31:43.975 --> 00:31:44.215
+<v Gagan Chowdhary>Yeah.</v>
+
+00:31:45.095 --> 00:31:47.895
+<v Anthony Licate>What would would it be?</v>
+
+00:31:45.495 --> 00:31:48.215
+<v Gagan Chowdhary>Let me open the sheet. Let me unshare. Sorry.</v>
+
+00:31:49.175 --> 00:31:51.095
+<v Gagan Chowdhary>Let me bring out the actual sheet here.</v>
+
+00:31:49.535 --> 00:32:07.655
+<v Anthony Licate>What would it? Yeah, sure, yeah, and it it won't take long once we do that, 'cause Andrew should give he'll he'll give some feedback on that as well, just to figure, you know, 'cause he'll probably have a better sense of like what comes in more and what what what adds the most value as far as things popping in, but...</v>
+
+00:31:53.895 --> 00:31:54.215
+<v Gagan Chowdhary>Yeah.</v>
+
+00:32:09.015 --> 00:32:10.215
+<v Anthony Licate>Say we do that.</v>
+
+00:32:11.095 --> 00:32:11.495
+<v Anthony Licate>Um...</v>
+
+00:32:11.655 --> 00:32:12.135
+<v Gagan Chowdhary>Mhm.</v>
+
+00:32:12.655 --> 00:32:35.695
+<v Anthony Licate>How does it function from a training perspective? Is that something that we would put a plan together internally to, like, for example, Hyper-V? Is that something we're going to set up, we're going to prop a machine up and have her play with? Or is that something that that's sort of a collective, you know, training methodology that you folks have something cooking on your end? Or how does that work?</v>
+
+00:32:38.295 --> 00:32:59.815
+<v Gagan Chowdhary>Thank you. That was my second question. Thank you for discussing this already. So currently she needs only maybe a video tutorial as of now. I mean, if you do not have any labs set up at the moment, so that's going to be fine. And so that is my first question to you. I mean, if you have those training materials available in your environment at your end.</v>
+
+00:33:00.215 --> 00:33:12.455
+<v Gagan Chowdhary>So she'll be good. If you think maybe you do not have, so, you know, I can look internally with our L&D team here and I can schedule those trainings with our L&D team.</v>
+
+00:33:13.735 --> 00:33:25.015
+<v Anthony Licate>Got it. So how do we so how do you want to work the priority side? Is that something where we can we we we add another column or and then we put numbers next to them or how does that work?</v>
+
+00:33:24.055 --> 00:33:42.775
+<v Gagan Chowdhary>Yeah, I can, I can create a column, but you know, for now I can add under, you know, a comment section, maybe that you know, it's a P1, P1 would be, you know, that's you know, that that's in the first bucket immediate requirement as of now.</v>
+
+00:33:28.335 --> 00:33:28.615
+<v Anthony Licate>Mm.</v>
+
+00:33:33.335 --> 00:33:33.815
+<v Anthony Licate>Yeah, sure.</v>
+
+00:33:43.855 --> 00:33:55.695
+<v Anthony Licate>Well, let me let me ask, so Andrew, when you're looking at this list, not necessarily based on complexity, but based on the volume.</v>
+
+00:33:54.855 --> 00:33:56.775
+<v Gagan Chowdhary>Maybe call drivers. Yeah.</v>
+
+00:33:56.895 --> 00:33:59.095
+<v Anthony Licate>What's that? Yeah, like.</v>
+
+00:33:58.215 --> 00:34:00.455
+<v Gagan Chowdhary>Maybe call drivers, yeah.</v>
+
+00:34:00.215 --> 00:34:19.015
+<v Anthony Licate>Yeah, yeah. What is like the top three? If we just focus on top three at this point, what do you think the top three is for her to get accustomed to? I could come up with mine, but I'm curious as to what you think.</v>
+
+00:34:19.895 --> 00:34:23.415
+<v Andrew Ordak>I mean, I'm sure ours are very similar. I would say Enki.</v>
+
+00:34:24.295 --> 00:34:25.095
+<v Andrew Ordak>Threat Locker.</v>
+
+00:34:26.135 --> 00:34:26.935
+<v Andrew Ordak>And...</v>
+
+00:34:28.055 --> 00:34:31.255
+<v Andrew Ordak>I mean, data is just so open. There's so many different data things. I...</v>
+
+00:34:32.215 --> 00:34:35.575
+<v Andrew Ordak>I wanna say dad do like BCDR or networking, but...</v>
+
+00:34:37.815 --> 00:34:55.735
+<v Andrew Ordak>I would say for sure ThreatLocker because of the requests or if someone just needs help real quick and like Cole and Sean are busy. It'd be nice if she knows how to, I mean, I think she already has ThreatLocker experience, but just to make sure she has everything under our side. And then Inky, since we transitioned from Mimecast to Inky.</v>
+
+00:34:57.015 --> 00:35:01.175
+<v Andrew Ordak>There are a lot of issues coming in with emails getting stuck and things like that.</v>
+
+00:35:02.615 --> 00:35:03.415
+<v Anthony Licate>So, would you?</v>
+
+00:35:02.615 --> 00:35:06.375
+<v Andrew Ordak>As for the third, I mean, maybe Dadu, something in Dadu, Hyper-V.</v>
+
+00:35:07.695 --> 00:35:12.615
+<v Andrew Ordak>Hyper-V isn't that difficult. I plan on showing her some things in there eventually.</v>
+
+00:35:14.615 --> 00:35:15.095
+<v Gagan Chowdhary>Mhm.</v>
+
+00:35:14.815 --> 00:35:19.895
+<v Andrew Ordak>Yeah, I would definitely say Threat Locker and Inky are the main tickets right now.</v>
+
+00:35:23.855 --> 00:35:25.815
+<v Anthony Licate>Let's do this.</v>
+
+00:35:27.495 --> 00:35:37.335
+<v Anthony Licate>Let's stay here, Gagan, as far as the P1s. I don't want to overcomplicate it. If we got that, if we got that far, that's pretty good.</v>
+
+00:35:29.975 --> 00:35:30.455
+<v Gagan Chowdhary>Mhm.</v>
+
+00:35:33.655 --> 00:35:33.895
+<v Gagan Chowdhary>Yeah.</v>
+
+00:35:38.535 --> 00:35:39.655
+<v Gagan Chowdhary>Okay, yeah, sure.</v>
+
+00:35:40.215 --> 00:35:47.575
+<v Andrew Ordak>Maybe flip Hyper-V, take off Hyper-V and put Sonic Wall because of like net extender or SSL VPN issues.</v>
+
+00:35:40.375 --> 00:35:41.095
+<v Anthony Licate>I mean, I...</v>
+
+00:35:45.175 --> 00:35:56.695
+<v Anthony Licate>Yeah, yeah, yeah, yes, yeah, I agree with that one. Yeah, I mean, Hyper-V, that might just be exposure, play with it, look at it, exposure, exposure. I mean, that just...</v>
+
+00:35:49.815 --> 00:35:50.295
+<v Gagan Chowdhary>Okay.</v>
+
+00:35:55.615 --> 00:35:59.655
+<v Andrew Ordak>It's not like there's tickets on it, it's just something that would be very helpful for her in the future.</v>
+
+00:36:00.375 --> 00:36:00.855
+<v Gagan Chowdhary>Mhm.</v>
+
+00:36:00.455 --> 00:36:18.695
+<v Anthony Licate>Right. So I like that list. I don't know if that EDR hits the list or whether that's, you know, like I don't want to get too pigeonholed into expecting that our two cyber guys, their main job is to take care of L1 EDR tickets. Do you know what I'm saying?</v>
+
+00:36:18.535 --> 00:36:19.575
+<v Andrew Ordak>Yeah, yeah.</v>
+
+00:36:19.975 --> 00:36:23.655
+<v Anthony Licate>So I maybe put a P1 next to data EDR.</v>
+
+00:36:24.775 --> 00:36:25.735
+<v Anthony Licate>Oh, you already have that.</v>
+
+00:36:26.855 --> 00:36:30.215
+<v Anthony Licate>Oh yeah? Yeah, yeah. Oh yeah, oh yeah, and then...</v>
+
+00:36:27.255 --> 00:36:28.535
+<v Gagan Chowdhary>Yes, it's already marked.</v>
+
+00:36:29.175 --> 00:36:37.175
+<v Andrew Ordak>That threat locker and key. What about just the online backups? Maybe just fixing any backup failures from the data devices?</v>
+
+00:36:31.655 --> 00:36:32.375
+<v Anthony Licate>And then...</v>
+
+00:36:37.575 --> 00:36:40.215
+<v Anthony Licate>That's a that's a good one. That's DR.</v>
+
+00:36:42.615 --> 00:36:44.855
+<v Anthony Licate>Well, you have data backup, and then you have a...</v>
+
+00:36:46.535 --> 00:36:47.975
+<v Anthony Licate>DRBC.</v>
+
+00:36:49.135 --> 00:37:07.775
+<v Anthony Licate>Backup. What's the DRBC? The disaster recovery back. OK, so you broke that out. I would say I would say that's not that's not a P1. I would because we would probably initiate some of the higher tiered. I would say the data backup on the top, meaning.</v>
+
+00:36:54.215 --> 00:36:54.615
+<v Gagan Chowdhary>Right.</v>
+
+00:37:09.015 --> 00:37:28.975
+<v Anthony Licate>The Cirrus device, unless you, unless that's what you mean by the RBC, but like there's an issue with a data Cirrus and it's not backing up and you need to do a quick depth merge on the on it or open a ticket up with with with data to work through the issue. That's something that would be helpful.</v>
+
+00:37:26.255 --> 00:37:26.735
+<v Gagan Chowdhary>Mhm.</v>
+
+00:37:29.095 --> 00:37:33.975
+<v Anthony Licate>That would, so that I would think that would be backup Dadu, right? Is that the way you have it Gagan?</v>
+
+00:37:36.615 --> 00:37:39.975
+<v Gagan Chowdhary>Yeah, I mean, data as a service for your backup service.</v>
+
+00:37:41.255 --> 00:37:41.815
+<v Anthony Licate>I mean.</v>
+
+00:37:42.695 --> 00:37:44.295
+<v Andrew Ordak>Well, yeah, so I would say...</v>
+
+00:37:42.695 --> 00:37:44.615
+<v Anthony Licate>I wouldn't expect that she would do a DR.</v>
+
+00:37:45.535 --> 00:38:00.535
+<v Andrew Ordak>Yeah, I was gonna say, there's like 2 differences. There's like the alerts that come in from the data devices, such as like a server can't back up or a screenshot failed. That's something we would have her on, but the DR, like if a server fails and we need to restore it or something, yeah, that wouldn't be falling on her.</v>
+
+00:37:45.855 --> 00:37:46.295
+<v Anthony Licate>Right.</v>
+
+00:37:53.015 --> 00:37:53.375
+<v Gagan Chowdhary>Yeah.</v>
+
+00:37:57.895 --> 00:37:58.455
+<v Anthony Licate>Yes.</v>
+
+00:37:59.335 --> 00:37:59.975
+<v Gagan Chowdhary>That is right.</v>
+
+00:38:01.415 --> 00:38:01.695
+<v Gagan Chowdhary>No.</v>
+
+00:38:01.415 --> 00:38:05.095
+<v Anthony Licate>So, which one would it be for a P1? Is like, so say a P1 for us with...</v>
+
+00:38:04.135 --> 00:38:06.615
+<v Andrew Ordak>The top one, online backup, I would just say.</v>
+
+00:38:09.575 --> 00:38:11.015
+<v Andrew Ordak>I don't know how you separate that.</v>
+
+00:38:10.455 --> 00:38:10.695
+<v Anthony Licate>Okay.</v>
+
+00:38:11.815 --> 00:38:13.095
+<v Anthony Licate>Well, there's online backup.</v>
+
+00:38:14.055 --> 00:38:17.335
+<v Anthony Licate>Right, but is it on the, but he has, he has...</v>
+
+00:38:16.495 --> 00:38:19.015
+<v Andrew Ordak>I would call it like serious alerting or something.</v>
+
+00:38:19.575 --> 00:38:26.655
+<v Anthony Licate>Well, he has backup data on the top, and then he has online backup data, and then he has DRBC solutions data.</v>
+
+00:38:27.975 --> 00:38:37.575
+<v Anthony Licate>So, it's not it's not the online backup. I would think it would be the top one backup data, right? Because it's basically tickets coming from a Cirrus device.</v>
+
+00:38:36.615 --> 00:38:49.095
+<v Andrew Ordak>Oh yeah, maybe that's like the cloud continuity backups. There's so many different data ones. So yeah, Gagan, if you can remove the P1 from that line and move it all the way up, I believe it'd be...</v>
+
+00:38:41.255 --> 00:38:41.735
+<v Anthony Licate>Yeah.</v>
+
+00:38:49.895 --> 00:38:50.615
+<v Anthony Licate>Second one down.</v>
+
+00:38:50.295 --> 00:38:52.615
+<v Andrew Ordak>Line 80, back up Dadu.</v>
+
+00:38:52.255 --> 00:38:53.495
+<v Anthony Licate>Yeah, yeah.</v>
+
+00:38:54.935 --> 00:38:55.415
+<v Gagan Chowdhary>Okay.</v>
+
+00:38:55.335 --> 00:38:55.815
+<v Andrew Ordak>Yeah.</v>
+
+00:38:56.055 --> 00:39:01.975
+<v Anthony Licate>And you might want to put a comment there that says, general tickets associated with backup failures on Cirrus.</v>
+
+00:39:03.935 --> 00:39:06.215
+<v Andrew Ordak>Like, yeah, general general alerts.</v>
+
+00:39:04.135 --> 00:39:04.535
+<v Gagan Chowdhary>Sure.</v>
+
+00:39:06.935 --> 00:39:07.335
+<v Anthony Licate>Yeah.</v>
+
+00:39:08.295 --> 00:39:21.895
+<v Anthony Licate>That way, we're not going down the rabbit hole with, oh, you know, you got to have a, you got to know how to crank up a virtual machine off the data appliance, you know, it's an Active Directory controller, what do you do? Like, forget all that stuff for now.</v>
+
+00:39:17.935 --> 00:39:18.695
+<v Gagan Chowdhary>Mhm.</v>
+
+00:39:22.975 --> 00:39:43.695
+<v Anthony Licate>That's going to involve more than one hand anyway. Yeah, good. I like that. I say stay with that list. If we got that far, that's good. We still have Mimecast, but it's, we have select customers that are still on it. I'm, you know, I think she has some exposure maybe with Mimecast, but I don't know if we need to make it a priority. What do you think, Andrew?</v>
+
+00:39:23.495 --> 00:39:23.815
+<v Gagan Chowdhary>Sure.</v>
+
+00:39:43.855 --> 00:39:45.175
+<v Anthony Licate>I mean, it's...</v>
+
+00:39:44.855 --> 00:39:57.255
+<v Andrew Ordak>No, I feel like we're trying to phase it out or else. Yeah, we're just, yeah, she doesn't really need training in there. I mean, she tried to log in to someone yesterday and I was like, I'll just take a look at it and yeah, it's easier just for me to do Mimecast stuff.</v>
+
+00:39:47.175 --> 00:39:48.055
+<v Anthony Licate>Yeah, yeah.</v>
+
+00:39:50.335 --> 00:39:50.935
+<v Anthony Licate>All right, cool.</v>
+
+00:39:54.335 --> 00:39:54.695
+<v Anthony Licate>Yeah.</v>
+
+00:39:57.815 --> 00:40:03.655
+<v Anthony Licate>I like that. I like that Gagan. I think that's a good list and that gets us that gets us a really good push.</v>
+
+00:40:02.055 --> 00:40:16.695
+<v Gagan Chowdhary>It is, it is actually, absolutely. Thank you, Anthony and Andrea, for your working with me on this, and I need to ask you, would just training and upskilling be enough, or does she require to have certification for the same?</v>
+
+00:40:20.695 --> 00:40:26.535
+<v Andrew Ordak>I don't think she needs certifications unless Anthony specifies. I think just basic training video.</v>
+
+00:40:24.615 --> 00:40:25.255
+<v Anthony Licate>And.</v>
+
+00:40:27.175 --> 00:40:28.215
+<v Gagan Chowdhary>As of now, yeah.</v>
+
+00:40:28.375 --> 00:40:28.775
+<v Andrew Ordak>Yeah.</v>
+
+00:40:28.375 --> 00:40:39.815
+<v Anthony Licate>Yeah, I mean, it would be nice to get her in some of the some of the basic level data trainings, meaning meaning that for the for the serious, and I think they're free, right, Andrew?</v>
+
+00:40:35.935 --> 00:40:36.415
+<v Gagan Chowdhary>Mhm.</v>
+
+00:40:39.815 --> 00:40:40.135
+<v Gagan Chowdhary>Yes.</v>
+
+00:40:42.015 --> 00:40:45.255
+<v Andrew Ordak>Yeah, they should be. There might be like little data certifications for those.</v>
+
+00:40:43.295 --> 00:40:44.695
+<v Anthony Licate>Yeah, yeah.</v>
+
+00:40:45.655 --> 00:40:46.935
+<v Anthony Licate>But I, but I...</v>
+
+00:40:45.695 --> 00:40:48.695
+<v Gagan Chowdhary>What do you have data university at your end?</v>
+
+00:40:49.255 --> 00:40:49.575
+<v Anthony Licate>Yeah.</v>
+
+00:40:50.655 --> 00:40:50.815
+<v Anthony Licate>Yeah.</v>
+
+00:40:50.655 --> 00:40:57.895
+<v Gagan Chowdhary>Where you can, you know, take a course and complete those, you know, yeah, training and get a certificate, right?</v>
+
+00:40:53.055 --> 00:40:53.415
+<v Anthony Licate>Yes.</v>
+
+00:40:56.095 --> 00:40:56.215
+<v Anthony Licate>And.</v>
+
+00:40:58.535 --> 00:40:59.015
+<v Anthony Licate>Yes.</v>
+
+00:40:59.815 --> 00:41:16.935
+<v Gagan Chowdhary>Okay, great. If you don't, I mean, because you know, many organizations, even ITBD does use data and let us know. I mean, you know, I can also assign her the training module and we can get her certificate downloaded once she completes the course.</v>
+
+00:41:17.415 --> 00:41:17.895
+<v Anthony Licate>Awesome.</v>
+
+00:41:19.015 --> 00:41:31.575
+<v Gagan Chowdhary>So thank you team. That was it. You know, as far as the CDG is concerned, let me get back to you really quick. I mean, I know you're over time. I really appreciate for your extra time.</v>
+
+00:41:35.295 --> 00:41:35.895
+<v Andrew Ordak>And it works.</v>
+
+00:41:41.895 --> 00:41:42.535
+<v Gagan Chowdhary>So.</v>
+
+00:41:43.255 --> 00:41:45.255
+<v Gagan Chowdhary>Anthony, have you registered already?</v>
+
+00:41:47.735 --> 00:41:48.295
+<v Anthony Licate>I have.</v>
+
+00:41:48.055 --> 00:41:48.855
+<v Gagan Chowdhary>Who built it?</v>
+
+00:41:49.735 --> 00:41:50.135
+<v Anthony Licate>Yep.</v>
+
+00:41:50.055 --> 00:41:50.455
+<v Gagan Chowdhary>Yeah.</v>
+
+00:41:51.495 --> 00:41:51.575
+<v Anthony Licate>Huh?</v>
+
+00:41:52.295 --> 00:42:08.375
+<v Gagan Chowdhary>All right, that's great. So you'll get to meet our senior leadership at the same time. I mean, our C-level executives will be there, I'm sure. Of course, and this is our own event. So have you met Sunny?</v>
+
+00:42:09.895 --> 00:42:17.255
+<v Anthony Licate>At some point, he, I, there's no way he remembers me, but yeah, it's probably it was probably a good six years ago, yeah.</v>
+
+00:42:11.695 --> 00:42:11.975
+<v Gagan Chowdhary>Okay.</v>
+
+00:42:14.455 --> 00:42:14.935
+<v Gagan Chowdhary>Excellent.</v>
+
+00:42:17.095 --> 00:42:36.535
+<v Gagan Chowdhary>Oh yeah, absolutely. So you will get to, you know, spend more time with, you know, our CEO, Sunny, as well as Javid, who's our CTO and many C-level executives over there. And yeah, absolutely. I think this will be a nice conference apart from a learning standpoint.</v>
+
+00:42:36.775 --> 00:42:49.655
+<v Gagan Chowdhary>but you will also have, you will also get to see our leadership team, what are their goals, you know, challenges, or what are their plans to tackle situation in the near future. Thank you.</v>
+
+00:42:50.375 --> 00:42:50.695
+<v Anthony Licate>Kour.</v>
+
+00:42:52.695 --> 00:43:05.655
+<v Gagan Chowdhary>Oh, you know, in the interest of time, I will just say that when you have 30 minutes, please do also see our Team GPS homegrown tool. If that meets your expectations, if you're trying to resolve some internal...</v>
+
+00:43:07.815 --> 00:43:20.775
+<v Gagan Chowdhary>You know, these, you know, you know, concerns, which means they're handling group meetings, employee engagement, client management, performance management, and customer experience, and all that.</v>
+
+00:43:22.375 --> 00:43:22.775
+<v Anthony Licate>Yeah.</v>
+
+00:43:24.775 --> 00:43:40.295
+<v Gagan Chowdhary>All right, thank you. So, yeah, but I mean, these are ITBD initiatives, so I mean, please, I mean, this will also be discussed. I mean, I think one of the one of the days in August from 3rd to 5th, they will touch upon these things as well, so you will get more insights.</v>
+
+00:43:41.655 --> 00:44:06.095
+<v Gagan Chowdhary>Okay, I did check Sophie the last time. We were confused about, we were not sure about her first option holiday. So I did check with her. So one is definitely sure that we did discuss the last night. There was Diwali, one of the biggest festival in India. And the other thing she is planning, she has not taken, I was surprised. I mean, she has not taken her first option holiday yet.</v>
+
+00:44:07.015 --> 00:44:26.215
+<v Gagan Chowdhary>in the month of March. So I think she's waiting to schedule this in October and November. So these will be October 20th and November 9th. So I mean, these can be marked on your calendar. These are one of the biggest festivals. So we wanted to, we will let her celebrate.</v>
+
+00:44:26.455 --> 00:44:45.495
+<v Gagan Chowdhary>And but about the other holidays, you can let us know if there are any special business requirements on those specific days. We can definitely speak to her and if she can work on that day, cover the shift. Because I know for US holidays, maybe most or...</v>
+
+00:44:45.735 --> 00:44:56.775
+<v Gagan Chowdhary>Some of your team members may be out and if the business is open, so she may be required to cover the shift so she can accommodate that and she can take a complimentary off later on.</v>
+
+00:44:57.895 --> 00:44:58.335
+<v Anthony Licate>Cool.</v>
+
+00:44:59.335 --> 00:45:10.615
+<v Gagan Chowdhary>Thank you, and this is a general, but very basic. What I have emphasis on ITBD to continue to support Sophie in meeting her KPI targets.</v>
+
+00:45:12.135 --> 00:45:32.295
+<v Gagan Chowdhary>And as, yeah, from our side, assist Sophie in identifying any area of improvements where she thinks, you know, there are gaps which needs to be filled in so that she consistently add value in your environment. And of course, we will continue to motivate our team with</v>
+
+00:45:33.255 --> 00:45:57.055
+<v Gagan Chowdhary>engagement activities, such as taking them out on lunch or dinner. Actually, we have planned a team dinner this Sunday on 28th. So, as well, share some pictures with you. I mean, Sophie, you know, had some logistic issues. She was saying, I mean, her baby is small, which is why she</v>
+
+00:45:45.255 --> 00:45:45.655
+<v Anthony Licate>Nice.</v>
+
+00:45:48.495 --> 00:45:49.015
+<v Anthony Licate>Garet.</v>
+
+00:45:57.135 --> 00:46:01.735
+<v Gagan Chowdhary>We may or may not be able to join, but you know I insisted her to join this, and yes.</v>
+
+00:46:02.895 --> 00:46:10.295
+<v Gagan Chowdhary>So, one of the team members will be will be picking and dropping her, so that I mean she has no transport issues.</v>
+
+00:46:11.815 --> 00:46:25.495
+<v Gagan Chowdhary>All right, so thank you very much for being your time, extra time with me. I truly appreciate Anthony and Andrea for your time. Anything else that you think, I mean, this slide should have, but we are not presenting at the moment?</v>
+
+00:46:26.335 --> 00:46:42.055
+<v Anthony Licate>That's good, Gagan. Appreciate it. A lot of things bubble up to the surface when we work through those slides, so it's a good thing to latch on to and launch into next time we get together. Yeah.</v>
+
+00:46:42.855 --> 00:46:50.455
+<v Gagan Chowdhary>All right, thank you very much and we'll meet up positively with more positive updates next time. Thank you.</v>
+
+00:46:50.295 --> 00:46:50.775
+<v Anthony Licate>Awesome.</v>
+
+00:46:51.535 --> 00:46:55.895
+<v Gagan Chowdhary>Thank you, Team, for joining in. Let's meet next Wednesday at the same time. Thank you.</v>
+
+00:46:55.135 --> 00:46:57.015
+<v Anthony Licate>Alright, take care. See ya.</v>
+
+00:46:55.895 --> 00:46:56.935
+<v Andrew Ordak>Sounds good. Thank you.</v>
+

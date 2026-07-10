@@ -1,0 +1,452 @@
+WEBVTT
+NOTE title: Vitis Tech I ITBD Service Call
+NOTE date: 2026-07-01
+NOTE duration: 15m 26s
+
+00:00:14.669 --> 00:00:15.229
+<v Amit Dubey>Akip.</v>
+
+00:00:20.989 --> 00:00:22.029
+<v Amit Dubey>Ashish joining in.</v>
+
+00:00:23.829 --> 00:00:24.509
+<v Kip Singh>Not yourself.</v>
+
+00:00:25.709 --> 00:00:26.269
+<v Kip Singh>Should.</v>
+
+00:00:25.869 --> 00:00:26.589
+<v Amit Dubey>Andrews.</v>
+
+00:00:28.349 --> 00:00:29.149
+<v Amit Dubey>Adrian is here.</v>
+
+00:00:31.389 --> 00:00:32.109
+<v Kip Singh>Shall I admit?</v>
+
+00:00:32.509 --> 00:00:32.909
+<v Amit Dubey>Yeah.</v>
+
+00:00:39.949 --> 00:00:40.589
+<v Kip Singh>Will it rain?</v>
+
+00:00:41.229 --> 00:00:43.869
+<v Adrian Hoh>Hello. Hey guys, how's it going?</v>
+
+00:00:41.269 --> 00:00:42.029
+<v Amit Dubey>Hi, Adrian.</v>
+
+00:00:44.829 --> 00:00:46.269
+<v Amit Dubey>We're good. How are you doing?</v>
+
+00:00:47.429 --> 00:00:52.429
+<v Adrian Hoh>It's my Friday, so I'm not gonna be here for a week and a half, so I'm pretty good right now.</v>
+
+00:00:51.429 --> 00:00:51.709
+<v Amit Dubey>The.</v>
+
+00:00:52.989 --> 00:00:54.109
+<v Amit Dubey>Awesome, awesome.</v>
+
+00:00:55.629 --> 00:01:14.989
+<v Amit Dubey>Great. Now we won't take long as we promised that we'll try to wrap up as quickly as possible. So we wanted to have this touch point to see how things are going. Have you seen any improvements? Kip and Ashish, they both have been working with all the engineers. We're putting in a lot of work in the background. So yeah, it is more about.</v>
+
+00:01:15.629 --> 00:01:18.829
+<v Amit Dubey>touch base and see how things are moving from your perspective.</v>
+
+00:01:19.549 --> 00:01:25.949
+<v Adrian Hoh>Yeah, I think from the conversation we had last week, I definitely have seen improvement already.</v>
+
+00:01:29.469 --> 00:01:41.629
+<v Adrian Hoh>And I think really the, because you know, we talked about this last week too, right? Kris is going to be, he's having proceed done and he's going to be out for, you know, possibly 4 to 8 weeks.</v>
+
+00:01:30.029 --> 00:01:30.189
+<v Kip Singh>Pre.</v>
+
+00:01:37.069 --> 00:01:37.389
+<v Amit Dubey>Yeah.</v>
+
+00:01:42.429 --> 00:01:42.909
+<v Amit Dubey>Right.</v>
+
+00:01:43.549 --> 00:02:06.429
+<v Adrian Hoh>I would ask that if any of the guys need something, instead of sending me a Teams message, they need to call me. Like, there was a there was an instance yesterday where Grayson was having some some duo MFA issues, and I mean, I get so I'm in so many meetings throughout the day and so many different things that I didn't see it.</v>
+
+00:01:50.829 --> 00:01:51.309
+<v Amit Dubey>Okay.</v>
+
+00:02:05.389 --> 00:02:07.469
+<v Amit Dubey>Understood, yeah, understood.</v>
+
+00:02:06.589 --> 00:02:11.629
+<v Adrian Hoh>I wasn't able to get them fixed until like I think after 4:00 yesterday. So.</v>
+
+00:02:06.989 --> 00:02:07.229
+<v Kip Singh>Yeah.</v>
+
+00:02:11.709 --> 00:02:12.109
+<v Amit Dubey>Yeah.</v>
+
+00:02:13.229 --> 00:02:14.749
+<v Amit Dubey>Totally understandable. Okay.</v>
+
+00:02:15.829 --> 00:02:34.669
+<v Adrian Hoh>But no, I think from the, they don't ask me a lot of questions, right? Because they usually just go to Kris or somebody else on the team. You know, I've heard that some of the questions that have been asked are a little bit better. So I think that's good. We just need, instead of just saying like, hey, Kip with a ticket number.</v>
+
+00:02:17.069 --> 00:02:17.229
+<v Kip Singh>Mm.</v>
+
+00:02:28.909 --> 00:02:29.069
+<v Amit Dubey>Mm.</v>
+
+00:02:35.149 --> 00:02:35.629
+<v Amit Dubey>Mhm.</v>
+
+00:02:35.229 --> 00:02:44.189
+<v Adrian Hoh>It's like, hey Kip, I need help with this. I've tried ABC, XYZ, stuff like that. You know, what do you think the next step should be?</v>
+
+00:02:44.909 --> 00:02:46.029
+<v Amit Dubey>Ah, sure.</v>
+
+00:02:45.069 --> 00:02:45.549
+<v Kip Singh>Sure.</v>
+
+00:02:46.749 --> 00:03:00.829
+<v Kip Singh>And I already am working with the engineers in regards to the responding to priority one tickets. So I guess they have started picking up the P1 alerts as well.</v>
+
+00:02:56.349 --> 00:02:56.749
+<v Adrian Hoh>Yep.</v>
+
+00:03:01.869 --> 00:03:15.469
+<v Adrian Hoh>Yeah, and I have, like, I have a chat, like a Teams chat with with our NOC one individuals, and I've been calling them out there and Santina's been picking those up, so very pleased with with that change.</v>
+
+00:03:05.869 --> 00:03:06.389
+<v Kip Singh>Mhm.</v>
+
+00:03:13.029 --> 00:03:13.149
+<v Kip Singh>Yeah.</v>
+
+00:03:16.989 --> 00:03:35.069
+<v Kip Singh>No, we will keep an eye, I promise, and yeah, we'll bring things on track. So, no worries. Apart from that, one more thing I wanted to check with you that Sentinel did raise with me. So, regarding customers on vacations, I think...</v>
+
+00:03:25.669 --> 00:03:26.349
+<v Ashish Paul>Hi, Adrian.</v>
+
+00:03:27.509 --> 00:03:27.869
+<v Adrian Hoh>Yes.</v>
+
+00:03:35.829 --> 00:03:50.829
+<v Kip Singh>an incident happened. So how can we reach out to those? Should we reach out over the phone to those customers or how can we know that they are on vacation and let's not disturb them?</v>
+
+00:03:38.189 --> 00:03:38.509
+<v Adrian Hoh>Yeah.</v>
+
+00:03:51.469 --> 00:04:06.029
+<v Adrian Hoh>So, that's kind of a that's kind of a loaded question, right? Because we're not always going to know if somebody's on vacation. I think you're probably referencing the email that I forwarded over to Santino yesterday. He didn't do anything wrong there. I mean, he...</v>
+
+00:03:58.829 --> 00:03:59.149
+<v Kip Singh>Yeah.</v>
+
+00:04:01.069 --> 00:04:02.269
+<v Kip Singh>Yeah, yeah, right.</v>
+
+00:04:04.749 --> 00:04:17.389
+<v Kip Singh>Yeah, I understand. Yeah, we just wondered like the people who are on vacation, let's not bother them. Is there any way we can know from their out of office or from their any notification sort of things?</v>
+
+00:04:07.229 --> 00:04:07.549
+<v Adrian Hoh>Yeah.</v>
+
+00:04:18.029 --> 00:04:36.509
+<v Adrian Hoh>So in a perfect world, they should have an out of office response set up. So, you know, if they're trying to communicate with the customer, you know, they're going to, they should call first. If they call and leave a voicemail, then they should send an email through the ticket. If they have an out of office setup, it should.</v>
+
+00:04:35.229 --> 00:04:35.869
+<v Kip Singh>Mm-hmm.</v>
+
+00:04:36.749 --> 00:04:57.709
+<v Adrian Hoh>reply back on that ticket, you know, with the out of office message saying like, I'm out of office. Hopefully, they'll say when they're going to return. And then they can put the ticket in, you know, hold for future work status or resource schedule status, and they can give themselves a service caller to do to follow up on that individual will be.</v>
+
+00:04:38.349 --> 00:04:38.829
+<v Kip Singh>Thank you.</v>
+
+00:04:57.829 --> 00:05:18.429
+<v Adrian Hoh>back. So the problem is, like, you know, we have a kind of a blanket standard rule. We call it the three strike policy. So call, leave a voicemail, call, leave a voicemail, call, leave a voicemail on support tickets. And if you don't get a response, you know, we've reached out to you a total of 6 times, three times through email, three times through.</v>
+
+00:05:18.669 --> 00:05:34.269
+<v Adrian Hoh>phone, we're going to close the ticket. And we say that like in the note that we send out to the individual that submitted the request. But with a monitoring alert, we can't just do that, right? We can't just close the ticket out because that alert's still out there. It's just going to generate a new ticket. So we</v>
+
+00:05:35.629 --> 00:05:56.749
+<v Adrian Hoh>In a perfect world, they should have their out of office setup. I mean, I don't, I used to on my work phone, like when I was gonna be out of the office, I would update my voicemail greeting, like, hey, I'm gonna be back on this date. I don't think people really do that anymore. So if they get a, if they get a out of office response on their ticket when they're emailing out.</v>
+
+00:05:39.389 --> 00:05:39.709
+<v Kip Singh>Yeah.</v>
+
+00:05:56.909 --> 00:06:08.909
+<v Adrian Hoh>to try to coordinate the time to get on the machine or anything. If they get that out of office, they should, what I would recommend is that they put the ticket into resource scheduled status.</v>
+
+00:06:09.989 --> 00:06:34.029
+<v Adrian Hoh>And then they give themselves a service call. They can create a service call for themselves. It'll go on their calendar, both in auto-task and their 365 calendar through the Vitus email account that they have. It'll show up on there and be like, okay, this person's going to be out until the 13th of July. Obviously, following up with them on the first day that they're back from vacation, we're probably not going to get</v>
+
+00:06:10.349 --> 00:06:10.829
+<v Kip Singh>Mhm.</v>
+
+00:06:34.269 --> 00:06:47.469
+<v Adrian Hoh>a response out of them. So we should maybe should follow up like that Tuesday or Wednesday and just setting yourselves like a, you know, 5, 10 minute service call to follow up with the customer and find a good time to work with them on that. I think that's perfectly fine.</v>
+
+00:06:48.509 --> 00:06:50.429
+<v Kip Singh>Yeah, yeah, understood.</v>
+
+00:06:51.629 --> 00:07:06.429
+<v Adrian Hoh>It's hard, right? I mean, it's just, you know, an MSP and IT company that deals with a bunch of different customers. This is something that everybody runs into. I wish there was a quick, easy answer for, but you guys know that there's not. So.</v>
+
+00:06:53.709 --> 00:06:54.029
+<v Kip Singh>Yeah.</v>
+
+00:07:07.789 --> 00:07:09.669
+<v Kip Singh>Sure, sure, I understand.</v>
+
+00:07:10.509 --> 00:07:29.309
+<v Kip Singh>And, yeah, and from the performance point of view, so Centrino is around 6 hours on a daily basis, and Grayson is also somewhere between 4:00 to 5:00 hours, and everyone was on PTO for a whole week last week, so, but he's also around the same.</v>
+
+00:07:19.869 --> 00:07:20.269
+<v Adrian Hoh>Kip.</v>
+
+00:07:30.749 --> 00:07:48.029
+<v Amit Dubey>So Adrian, how do we get this up? From 4 to 5 hours is not something that we see as an ideal state to be in. So anything that you suggest that we can bring it up at least in the least possible situation, we want that to be at least 6 to 6.5 hours.</v>
+
+00:07:30.789 --> 00:07:32.429
+<v Adrian Hoh>Where are we getting the?</v>
+
+00:07:42.909 --> 00:07:43.069
+<v Kip Singh>No.</v>
+
+00:07:48.589 --> 00:08:04.109
+<v Kip Singh>Yeah, they also wanted to increase their scope. So they also wanted to start working on the Office 365 tickets. So if you allow, so that will help them increase the utilization and the ticket count as well.</v>
+
+00:07:49.069 --> 00:07:49.389
+<v Adrian Hoh>Good.</v>
+
+00:08:05.189 --> 00:08:23.909
+<v Adrian Hoh>Yeah, no, I think it's, you know, obviously we want them to focus on the kinds of tickets that we had sent out, you know, in the document I sent over to you guys. If there is an instance where there's nothing out there for them to work on, have them reach out to me and I can throw stuff at them. Not a problem at all.</v>
+
+00:08:23.149 --> 00:08:23.549
+<v Kip Singh>Sharma.</v>
+
+00:08:24.909 --> 00:08:26.189
+<v Kip Singh>Okay, no problem. Thank you.</v>
+
+00:08:27.069 --> 00:08:27.709
+<v Adrian Hoh>Pearce.</v>
+
+00:08:29.389 --> 00:08:30.669
+<v Kip Singh>I see some anything from you.</v>
+
+00:08:32.029 --> 00:08:49.309
+<v Ashish Paul>No, I think you have covered everything. Just one thing that I would like to add is, so when genius were done working on all the tickets related to T3T1 issues, but I think once the T1 queue is empty, they would they would.</v>
+
+00:08:50.429 --> 00:09:10.029
+<v Ashish Paul>focus on the tier 2 tickets. So, but for tier 2 as well, I think they need to seek approval either from you or Kris if they are free to work on such tickets. So one of them was for the certificate update. So I believe certificate update can be categorized as tier one because.</v>
+
+00:08:58.269 --> 00:08:58.509
+<v Adrian Hoh>Dio.</v>
+
+00:09:10.349 --> 00:09:10.749
+<v Adrian Hoh>Kip.</v>
+
+00:09:10.829 --> 00:09:30.509
+<v Ashish Paul>That's not something that D2 has to do. So there are few tickets in there which are waiting users' response and which are due for action maybe in next month or few days. So relatively, their closure would be less as computer tickets that they have worked on because.</v>
+
+00:09:23.829 --> 00:09:24.029
+<v Kip Singh>Yeah.</v>
+
+00:09:30.909 --> 00:09:37.709
+<v Ashish Paul>They are dependent on users availability and the confirmation if the ticket is good to be closed or not, but we...</v>
+
+00:09:34.189 --> 00:09:34.429
+<v Adrian Hoh>Yeah.</v>
+
+00:09:36.789 --> 00:09:39.709
+<v Adrian Hoh>No, I, I'm not super.</v>
+
+00:09:40.509 --> 00:09:59.629
+<v Adrian Hoh>concerned about the amount of tickets closed a week, right? Because there could be 1 monitoring order that might take, I mean, it might be 5 to 10 hours worth of work, or they might have a bunch of other monitoring orders that could take 10, 15 minutes. My concern is really</v>
+
+00:10:00.109 --> 00:10:20.189
+<v Adrian Hoh>getting good, legitimate hours, whether that's through the tickets that they can grab for pickup, if they've already worked through all those and they need to, if they need additional tickets to work on, you know, we can go through the list and send stuff over. Ticket closure per week is not something that I'm currently measuring.</v>
+
+00:10:20.589 --> 00:10:39.229
+<v Adrian Hoh>because it's not like, you know, our help desk, they have a, you know, first call percentage, ticket closure percentage. I mean, that's part of their metrics. From an OC perspective, I don't have that because just the amount of different variables that could go into these tickets. I mean, I have, we have tickets that could have.</v>
+
+00:10:27.389 --> 00:10:27.669
+<v Ashish Paul>Yes.</v>
+
+00:10:37.829 --> 00:10:37.949
+<v Ashish Paul>Yeah.</v>
+
+00:10:39.389 --> 00:10:46.989
+<v Adrian Hoh>50, 60 hours on. It's just one of those things where I'm more concerned about good quality work versus how many tickets are closed.</v>
+
+00:10:47.789 --> 00:10:48.269
+<v Ashish Paul>Got it.</v>
+
+00:10:50.989 --> 00:10:52.829
+<v Ashish Paul>Thank you so much, Adrian, for clarification.</v>
+
+00:10:53.309 --> 00:11:04.109
+<v Amit Dubey>Aiden, just one thing on a separate note. We were planning to reach out to yourself as well regarding Build It. Have you had any communication from Natalie?</v>
+
+00:10:53.429 --> 00:10:53.709
+<v Kip Singh>Yeah.</v>
+
+00:10:53.469 --> 00:10:54.029
+<v Adrian Hoh>Of course.</v>
+
+00:10:56.189 --> 00:10:56.389
+<v Adrian Hoh>Yeah.</v>
+
+00:11:05.789 --> 00:11:09.789
+<v Adrian Hoh>I've talked with, talked with Kip about it a little bit. That is the...</v>
+
+00:11:11.549 --> 00:11:15.389
+<v Adrian Hoh>thing in August, right? Yeah, we will not be able to go to that.</v>
+
+00:11:11.949 --> 00:11:13.469
+<v Amit Dubey>Yeah, yeah.</v>
+
+00:11:13.789 --> 00:11:13.989
+<v Kip Singh>Yes.</v>
+
+00:11:16.109 --> 00:11:19.149
+<v Amit Dubey>Okay, are you guys going to any other event at the same time?</v>
+
+00:11:21.629 --> 00:11:30.829
+<v Adrian Hoh>That is, there's, we have something, something going on because I had asked Daniel about it and there was something else that we had to do so.</v>
+
+00:11:29.789 --> 00:11:30.269
+<v Amit Dubey>Kour.</v>
+
+00:11:31.389 --> 00:11:51.069
+<v Amit Dubey>Yeah, the reason I was asking is, right, I mean, we were in a briefing yesterday and that would have about 500 plus MSP leaders across the industry, of course, right? And then about 92% of the decision makers and MSP executives would be there. So it would be a great platform for you guys to connect.</v>
+
+00:11:51.109 --> 00:12:12.749
+<v Amit Dubey>and everybody who's visiting to have a connect to see what's going on in the industry, right? And of course, get the firsthand information. As you know, right, that this is again, not a sales platform more than a collaboration platform, right? So anything that we can do, I mean, if it is ticket is a concern or the cost is a concern, if you guys can let us know.</v>
+
+00:11:55.469 --> 00:11:55.509
+<v Adrian Hoh>I.</v>
+
+00:12:03.309 --> 00:12:03.549
+<v Adrian Hoh>Yep.</v>
+
+00:12:05.309 --> 00:12:05.629
+<v Adrian Hoh>Yeah.</v>
+
+00:12:13.189 --> 00:12:32.669
+<v Amit Dubey>We're more than willing to see what is the best we can do, because what we focus on, Adrian, is bringing at least the partners that we are working with so that you are getting a first-hand experience of what we are focusing on as a business and what other MSPs are thinking, and that probably creates a great way of starting the collaboration and maturing the collaboration.</v>
+
+00:12:33.149 --> 00:12:33.629
+<v Amit Dubey>So...</v>
+
+00:12:34.909 --> 00:12:50.989
+<v Amit Dubey>I'll get somebody to send over some details over to you, Adrian, right? Do let us know. I mean, what, how can we help you? If it, if you're going to any other MSP, then of course we can probably send you more details. Kris is joining.</v>
+
+00:12:52.069 --> 00:12:53.629
+<v Adrian Hoh>Yeah, he had to take a customer call.</v>
+
+00:12:52.989 --> 00:12:53.229
+<v Ashish Paul>Yeah.</v>
+
+00:12:54.669 --> 00:12:54.989
+<v Amit Dubey>Yeah.</v>
+
+00:12:57.389 --> 00:12:58.109
+<v Amit Dubey>Hi, Kris.</v>
+
+00:12:58.589 --> 00:12:59.309
+<v Kip Singh>Hi, Kris.</v>
+
+00:12:59.189 --> 00:12:59.709
+<v Chris Dowers>Hello.</v>
+
+00:13:00.029 --> 00:13:01.389
+<v Ashish Paul>Hey Kris, how are you?</v>
+
+00:13:02.109 --> 00:13:03.229
+<v Chris Dowers>Doing well, how about yourselves?</v>
+
+00:13:04.149 --> 00:13:04.509
+<v Kip Singh>Okay.</v>
+
+00:13:04.189 --> 00:13:04.829
+<v Ashish Paul>Great.</v>
+
+00:13:04.749 --> 00:13:05.149
+<v Amit Dubey>It.</v>
+
+00:13:06.549 --> 00:13:06.669
+<v Kip Singh>Yes.</v>
+
+00:13:07.389 --> 00:13:25.309
+<v Amit Dubey>We just had a quick chat talking about how the engineers are doing, and it was great to hear from Adrian that, you know, the engineers have performed really well. I mean, they are moving in the right direction. There are a few things that Adrian helped us with that we are going to focus with them to see, you know, how things can move forward.</v>
+
+00:13:25.949 --> 00:13:26.389
+<v Chris Dowers>OK.</v>
+
+00:13:26.069 --> 00:13:28.429
+<v Amit Dubey>Anything specific from you Kris that you wanted to add?</v>
+
+00:13:28.989 --> 00:13:40.829
+<v Chris Dowers>No, I can say based off the feedback I provided last time, I've seen a lot of improvement with their communication with me and the types of questions they're asking me. So I'm a lot happier with what I'm seeing.</v>
+
+00:13:42.269 --> 00:14:03.309
+<v Amit Dubey>Awesome, thank you. Thank you, Chris. Right, so we were just discussing about Build It. So yeah, somebody from the team would be reaching out to yourself, Adrian and Chris, right, sharing a little bit of more details about Build It and give you guys a little bit of more insight. Do let us know if you guys have any questions or queries, right, where we can help you with.</v>
+
+00:13:43.269 --> 00:13:44.509
+<v Kip Singh>Yeah, thank you.</v>
+
+00:14:03.749 --> 00:14:17.309
+<v Amit Dubey>The idea is to, you know, see all of our partners there, so that at least out of the 500 plus MSP, you know, executives who are coming over, we can see our partners also being a part of the event, and of course, it's a learning and growth platform.</v>
+
+00:14:22.109 --> 00:14:28.349
+<v Amit Dubey>All right, I think this is it for me. Kip, Ashish, anything from you guys?</v>
+
+00:14:29.549 --> 00:14:31.389
+<v Ashish Paul>Nope, I'm all set. Thank you.</v>
+
+00:14:30.589 --> 00:14:40.509
+<v Kip Singh>No, all good. I believe things are moving in the right direction and we will keep an eye and we'll keep the coaching ongoing for a few more weeks.</v>
+
+00:14:31.629 --> 00:14:32.029
+<v Amit Dubey>Okay.</v>
+
+00:14:41.869 --> 00:15:00.269
+<v Adrian Hoh>Fantastic. Reminder, reminder guys, I am out. Today's my last day. I'll be back on the 13th. So I'll have my laptop and phone and stuff with me. So if they need something that is, if any of the IT by design guys need something that's urgent, they can, they can call me.</v>
+
+00:14:43.229 --> 00:14:43.709
+<v Amit Dubey>Haight.</v>
+
+00:14:43.349 --> 00:14:43.589
+<v Kip Singh>Yeah.</v>
+
+00:15:00.589 --> 00:15:09.949
+<v Adrian Hoh>So I can't promise you the state of mind I'll be in. I'll be on a beach the whole time, but I'll do my best to help him out on whatever's needed. So</v>
+
+00:15:00.869 --> 00:15:01.229
+<v Amit Dubey>Sure.</v>
+
+00:15:10.829 --> 00:15:21.469
+<v Amit Dubey>Once you're on IT, you can be happy, but you cannot be unoccupied. So I'm sure if 25% of your brain would be thinking about work. But yeah, all the best for your time off, ADMIN.</v>
+
+00:15:22.189 --> 00:15:22.349
+<v Kip Singh>No.</v>
+
+00:15:22.989 --> 00:15:26.429
+<v Adrian Hoh>Appreciate it, guys. Thanks. Have a great one. Yep. Thank you so much.</v>
+
+00:15:24.189 --> 00:15:26.269
+<v Amit Dubey>All right, thank you. Thank you. Cheers and bye.</v>
+
+00:15:24.429 --> 00:15:26.429
+<v Kip Singh>Thank you. Thank you, everyone. Yeah. Bye-bye.</v>
+
+00:15:24.549 --> 00:15:26.029
+<v Chris Dowers>All right. Thank you. Bye.</v>
+

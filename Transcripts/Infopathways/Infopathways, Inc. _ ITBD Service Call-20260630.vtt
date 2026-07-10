@@ -1,0 +1,227 @@
+WEBVTT
+NOTE title: Infopathways, Inc. | ITBD Service Call
+NOTE date: 2026-06-30
+NOTE duration: 9m 10s
+
+00:00:04.320 --> 00:00:04.960
+<v Kip Singh>Hello, Ryan.</v>
+
+00:00:05.760 --> 00:00:06.880
+<v Ryan Brumbaugh>Hey, how you doing?</v>
+
+00:00:08.080 --> 00:00:09.280
+<v Kip Singh>I'm doing good, how are you?</v>
+
+00:00:09.680 --> 00:00:12.720
+<v Ryan Brumbaugh>I'm doing very well. Appreciate you hopping on here with me.</v>
+
+00:00:14.640 --> 00:00:17.520
+<v Kip Singh>Yeah, I've been missing you from the last couple of weeks.</v>
+
+00:00:17.920 --> 00:00:34.240
+<v Ryan Brumbaugh>Yeah, sorry about that. And then I honestly, last week I was on vacation. I thought I had sent out like a reschedule, but then I saw the transcript of it starting the meeting. So I do apologize for not following up on that. I don't know if it showed or not.</v>
+
+00:00:32.680 --> 00:00:32.800
+<v Kip Singh>Yeah.</v>
+
+00:00:35.360 --> 00:00:38.640
+<v Kip Singh>That's fine, that's fine, not a problem. It's alright.</v>
+
+00:00:40.080 --> 00:00:40.960
+<v Ryan Brumbaugh>But I...</v>
+
+00:00:40.240 --> 00:00:42.240
+<v Kip Singh>How are you doing? How are things going?</v>
+
+00:00:42.880 --> 00:00:54.880
+<v Ryan Brumbaugh>Things are good. Things are a little bit busy, I'm not going to lie. It's been a little crazy, especially, like I said, just coming back off of a week-long vacation, but good. Things are really good.</v>
+
+00:00:56.120 --> 00:01:07.680
+<v Ryan Brumbaugh>You know, company is doing really well. We have a lot of new, you know, work coming down the pipeline, a lot of new experience coming up. But yeah, overall, ship is sailing.</v>
+
+00:01:09.520 --> 00:01:15.040
+<v Kip Singh>Great, great, good to hear that, and how are the engineers doing, Javid? Um, so with NCR.</v>
+
+00:01:15.920 --> 00:01:36.680
+<v Ryan Brumbaugh>They're doing very good. I think overall, you know, performance has been really great. I know Sovit's been working on a lot of projects with like mail. He's working on like a mail-in data migration, which has been good. He's really been owning that project. And I know same thing with like Amit. I think he's been doing more like day-to-day stuff.</v>
+
+00:01:26.040 --> 00:01:26.720
+<v Kip Singh>Banguilan.</v>
+
+00:01:37.680 --> 00:01:57.040
+<v Ryan Brumbaugh>Not as much like project work, but I know that he's been a core contributor for our biggest client, and that's been really good. For Sia, I know she's been holding down the fort. You know, business as usual. Not a whole lot of feedback for her, as far as, you know, just pretty consistent, which is, you know, the beauty of it.</v>
+
+00:01:38.600 --> 00:01:38.760
+<v Kip Singh>Yeah.</v>
+
+00:01:59.280 --> 00:02:00.080
+<v Kip Singh>Yeah, yeah.</v>
+
+00:02:01.680 --> 00:02:04.240
+<v Kip Singh>Anything additional you want to share and suggest?</v>
+
+00:02:05.360 --> 00:02:23.600
+<v Ryan Brumbaugh>I'd say that the biggest thing for us, which I don't know what capacity the engineers can be involved. I don't know the, you know, requirements for it, but we're having a lot of clients come to us with CMMC 2.0 compliant requirements.</v>
+
+00:02:24.560 --> 00:02:42.480
+<v Ryan Brumbaugh>That's a lot of work that's coming down the pipeline. So with that, if they have any compliance, you know, background or maybe you can get involved in that, I'd love to do that. It's never a bad thing to include the rest of the team, either for remediation or, you know, helping get that client.</v>
+
+00:02:27.680 --> 00:02:28.080
+<v Kip Singh>Yeah.</v>
+
+00:02:38.880 --> 00:02:39.200
+<v Kip Singh>Hoh.</v>
+
+00:02:42.520 --> 00:03:05.600
+<v Ryan Brumbaugh>to a compliance state. That would be the one thing I'd say for, you know, edit skill is going to be really nice. We have two clients that are approaching CMMC. One is 1.0, the other is trying for 2.0. And then we're doing maintenance on the client that's 2.0 right now. That's a bit of a haul.</v>
+
+00:02:46.000 --> 00:02:46.240
+<v Kip Singh>Yeah.</v>
+
+00:03:05.760 --> 00:03:23.280
+<v Ryan Brumbaugh>We worked on that for about a year now. We're approaching a year lapse of when we started that project, and now we're in like the, you know, the maintenance phase. You have to update those controls and evidence on a reoccurring schedule. But we have an engineer dedicated to doing that portion.</v>
+
+00:03:25.520 --> 00:03:26.000
+<v Kip Singh>Okay.</v>
+
+00:03:28.320 --> 00:03:28.880
+<v Ryan Brumbaugh>So...</v>
+
+00:03:28.400 --> 00:03:32.000
+<v Kip Singh>So do you want them to go through some training and stuff?</v>
+
+00:03:34.480 --> 00:03:52.960
+<v Ryan Brumbaugh>Yeah, so I don't know if you guys have anything offered there. You know, we kind of fly by the seat of our pants and just kind of make it happen with, you know, what we develop in control map. But if anyone has experience in, you know, scale pad control map, that would be really great.</v>
+
+00:03:54.000 --> 00:04:01.520
+<v Ryan Brumbaugh>I don't know if you guys do anything in that product. If not, we can always get them involved for the remediation portion.</v>
+
+00:04:03.920 --> 00:04:22.240
+<v Ryan Brumbaugh>That's maybe the biggest thing for us. So that's like conditional access. It'll be, you know, setting up tenants for, you know, MFA or device control. Those are really the things that we're doing for the rest of the engineers that are outside of the compliance member that we have.</v>
+
+00:04:23.440 --> 00:04:29.120
+<v Kip Singh>So you specifically want someone who is trained on CMMC 2.0?</v>
+
+00:04:30.320 --> 00:04:47.840
+<v Ryan Brumbaugh>I think it would be a value add, not that it's a huge requirement, but you know, when we're talking about things that might be lateral for us, you know, having some cross-training would always be nice. We do have one member right now that is trained in that field.</v>
+
+00:04:35.360 --> 00:04:35.880
+<v Kip Singh>Okay.</v>
+
+00:04:40.920 --> 00:04:41.520
+<v Kip Singh>Mmh.</v>
+
+00:04:43.920 --> 00:04:44.400
+<v Kip Singh>Okay.</v>
+
+00:04:48.640 --> 00:05:01.840
+<v Ryan Brumbaugh>You know, he's kind of our compliance guy, cybersecurity as well. So, yeah, just giving that insight. Not like hard requirements, but, you know, just always good things to have.</v>
+
+00:05:04.000 --> 00:05:05.760
+<v Kip Singh>Okay, okay, sure.</v>
+
+00:05:07.920 --> 00:05:08.400
+<v Ryan Brumbaugh>Begin.</v>
+
+00:05:08.080 --> 00:05:16.720
+<v Kip Singh>Sure. So do you have any online training available for CMMC or you want us to arrange something for them?</v>
+
+00:05:09.760 --> 00:05:10.240
+<v Ryan Brumbaugh>Hoh.</v>
+
+00:05:17.680 --> 00:05:35.680
+<v Ryan Brumbaugh>So if you guys have something available, we can move forward with that. We do plan on involving our entire staff in Coursera courses and some stuff that we have through like ADP moving forward. Those will not be, or at least to my knowledge, CMMC, but</v>
+
+00:05:34.560 --> 00:05:34.880
+<v Kip Singh>Ohh.</v>
+
+00:05:36.240 --> 00:05:56.080
+<v Ryan Brumbaugh>That's my only request. The rest, we do plan on rolling out some training formally. We've been working with our HR to kind of put that together. There's some stuff on like communication as far as like how we work together as a team, but it's also some skill set training involved in there too.</v>
+
+00:05:37.880 --> 00:05:38.120
+<v Kip Singh>Okay.</v>
+
+00:05:49.320 --> 00:05:49.520
+<v Kip Singh>Mm.</v>
+
+00:05:56.800 --> 00:06:00.000
+<v Ryan Brumbaugh>So, stuff that's more like role-based.</v>
+
+00:06:02.120 --> 00:06:09.680
+<v Kip Singh>Sure, so let me check with our internal learning and development team.</v>
+
+00:06:10.320 --> 00:06:10.800
+<v Ryan Brumbaugh>Okay.</v>
+
+00:06:11.280 --> 00:06:13.120
+<v Kip Singh>and see what they have.</v>
+
+00:06:15.520 --> 00:06:30.160
+<v Kip Singh>Regarding this, I mean, CMMC, what kind of training or the resources they have available for the engineers, and yeah, and then I can update you, like, how we can do this.</v>
+
+00:06:30.960 --> 00:06:52.640
+<v Ryan Brumbaugh>Okay, awesome. Yeah, and I appreciate that. How are the engineers in your eyes as far as, you know, their hunger to learn more things? Or are people feeling more like, I guess, complacent? Like, are they happy with, you know, their skill set, their knowledge? Like, what is their direction?</v>
+
+00:06:32.800 --> 00:06:33.000
+<v Kip Singh>Yeah.</v>
+
+00:06:54.000 --> 00:06:57.080
+<v Kip Singh>Well, they are always hunger and...</v>
+
+00:06:58.160 --> 00:07:06.560
+<v Kip Singh>for more learning and growth, like both horizontal and vertically. So yeah, so that shouldn't be a problem.</v>
+
+00:07:07.120 --> 00:07:25.040
+<v Ryan Brumbaugh>Okay, and like I said, even if it wasn't, you know, their path forward, I totally understand if they want to maybe just kind of hone in on what they're working on now. I just was curious to see if you had any separate feedback from what I've seen. Overall, I think things are going pretty smooth.</v>
+
+00:07:26.400 --> 00:07:30.160
+<v Ryan Brumbaugh>Hopefully, that's the the visibility that you have, too.</v>
+
+00:07:31.120 --> 00:07:43.040
+<v Kip Singh>Yeah, yeah, so things are, I mean, from the engineers' perspective, they are happy with the book, with the team, and with all your support.</v>
+
+00:07:38.000 --> 00:07:38.480
+<v Ryan Brumbaugh>Okay.</v>
+
+00:07:44.240 --> 00:08:01.360
+<v Kip Singh>So thank you so much. We really appreciate that with the regular monthly CSATs. So you will be getting the CSAT for the month of June within this week. So keep an eye on your inbox and take out some time and fill that out for them.</v>
+
+00:07:52.800 --> 00:07:53.280
+<v Ryan Brumbaugh>Okay.</v>
+
+00:08:02.160 --> 00:08:08.240
+<v Ryan Brumbaugh>Okay, awesome. Absolutely. Like I said, I want to give back any way I can. So everyone's doing great.</v>
+
+00:08:09.520 --> 00:08:18.960
+<v Kip Singh>Yeah, okay, so I guess, well, I can send you the deck or you want me to go through it right now, I mean, the way you want to.</v>
+
+00:08:19.840 --> 00:08:32.560
+<v Ryan Brumbaugh>If you're comfortable with just sending it over, I'd be fine with that. I want to say that for the most part, I know that everyone's aligning with good metrics. We're just really busy in the middle of a lot of stuff. So.</v>
+
+00:08:22.720 --> 00:08:23.120
+<v Kip Singh>Okay.</v>
+
+00:08:32.720 --> 00:08:51.040
+<v Kip Singh>I understand. I completely understand. That's fine. No problem. So I will send you the deck. You can go through their metrics, like utilization and tickets. And do let us know if you have any inputs. Again, we are available on Teams. You can ping me anytime.</v>
+
+00:08:35.360 --> 00:08:35.760
+<v Ryan Brumbaugh>Yeah.</v>
+
+00:08:51.520 --> 00:08:54.400
+<v Ryan Brumbaugh>Okay, awesome. Like I said, I appreciate it, Kip.</v>
+
+00:08:55.840 --> 00:08:58.560
+<v Kip Singh>Thank you, Ryan. And okay, so.</v>
+
+00:09:00.240 --> 00:09:04.640
+<v Kip Singh>Take some time back and thank you. Thank you for joining this call and have a wonderful rest of the day and week.</v>
+
+00:09:05.120 --> 00:09:07.680
+<v Ryan Brumbaugh>You too. Thank you so much. Take it easy, buddy.</v>
+
+00:09:07.240 --> 00:09:09.440
+<v Kip Singh>Yep. Yeah. Thank you. Bye bye.</v>
+
+00:09:09.880 --> 00:09:10.840
+<v Ryan Brumbaugh>Alright, bye now.</v>
+

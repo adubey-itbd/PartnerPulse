@@ -1,0 +1,947 @@
+WEBVTT
+NOTE title: Dataprise Inc | Bi-Weekly Service Call | Self Managed
+NOTE date: 2026-06-16
+NOTE duration: 33m 32s
+
+00:01:03.480 --> 00:01:07.240
+<v Navid Salimian>Hey, good afternoon, evening.</v>
+
+00:01:04.440 --> 00:01:05.080
+<v Pritam Das>Hello, Namit.</v>
+
+00:01:06.920 --> 00:01:07.640
+<v Pritam Das>Good afternoon.</v>
+
+00:01:08.760 --> 00:01:10.920
+<v Navid Salimian>No, I'm sorry. It's morning for you right now, isn't it?</v>
+
+00:01:12.120 --> 00:01:15.400
+<v Pritam Das>It's in fact midnight.</v>
+
+00:01:15.960 --> 00:01:22.960
+<v Jose Correa>Hello, everyone. Ohh, I see that you guys already snuck the introduction in. Alright, alright, alright.</v>
+
+00:01:16.440 --> 00:01:16.840
+<v Navid Salimian>Namit.</v>
+
+00:01:16.960 --> 00:01:17.400
+<v Pritam Das>Yeah.</v>
+
+00:01:17.880 --> 00:01:18.520
+<v Navid Salimian>Excellent!</v>
+
+00:01:22.360 --> 00:01:23.400
+<v Navid Salimian>No, no.</v>
+
+00:01:22.520 --> 00:01:24.040
+<v Pritam Das>Not yet, Jose, not yet.</v>
+
+00:01:24.440 --> 00:01:29.400
+<v Jose Correa>Noel, do I have time to go run and get my last cup of coffee for today?</v>
+
+00:01:24.520 --> 00:01:25.160
+<v Navid Salimian>Yeah, I know.</v>
+
+00:01:31.160 --> 00:01:35.240
+<v Navid Salimian>Dude, I'm more worried about the fact that you're having a cup of coffee about 3 hours before you go to bed.</v>
+
+00:01:35.600 --> 00:01:35.720
+<v Jose Correa>Yeah.</v>
+
+00:01:37.000 --> 00:01:40.200
+<v Jose Correa>Oh, don't worry, I'm a pro at this chief. No consider yourself.</v>
+
+00:01:39.800 --> 00:01:39.920
+<v Pritam Das>Yeah.</v>
+
+00:01:41.080 --> 00:01:41.880
+<v Navid Salimian>All right.</v>
+
+00:01:44.040 --> 00:02:02.120
+<v Navid Salimian>And, by the way, Pritam, nice to meet you. I know we've kind of crossed in emails here, but I don't think we've actually formally met. So, my name is Navid Selimi on. I am the new director of our service desk here. I'm replacing Christian. Been with Data Prize for about...</v>
+
+00:02:00.400 --> 00:02:00.840
+<v Pritam Das>OK.</v>
+
+00:02:03.560 --> 00:02:12.680
+<v Navid Salimian>12 years now, working out, you know, different positions within the service desk, and again, now stepping into fulfill Christian's previous role.</v>
+
+00:02:13.600 --> 00:02:29.400
+<v Pritam Das>Thank you, thank you. Nice meeting you here, Namit. Again, my name is Pritam, one year less than you, 11 years with ID by design, and I currently manage the service delivery operations here from the Philippines location, where the entire enterprise team is.</v>
+
+00:02:19.800 --> 00:02:20.080
+<v Navid Salimian>Ha ha ha.</v>
+
+00:02:22.320 --> 00:02:22.440
+<v William Freeman>Yeah.</v>
+
+00:02:30.840 --> 00:02:42.360
+<v Pritam Das>And yep, I'm the primary contact for anything related to operations, queries, questions, performance issues. So I work closely with Jose and William.</v>
+
+00:02:43.880 --> 00:02:51.600
+<v Pritam Das>Yep, nice meeting you. So thank you, Jose, again for adding him here in this call, and we'll make sure that we'll keep you on emails moving forward.</v>
+
+00:02:52.040 --> 00:02:52.080
+<v Jose Correa>Oh.</v>
+
+00:02:52.040 --> 00:02:53.160
+<v Navid Salimian>Thank you, please.</v>
+
+00:02:55.960 --> 00:02:57.160
+<v Pritam Das>Afternoon, William, how are you?</v>
+
+00:02:58.480 --> 00:02:59.400
+<v William Freeman>Pretty good.</v>
+
+00:03:03.080 --> 00:03:03.960
+<v Pritam Das>Yeah, yeah.</v>
+
+00:03:03.120 --> 00:03:07.280
+<v Navid Salimian>And I just want to make sure I'm pronouncing your name right, Pritam, correct? Okay.</v>
+
+00:03:06.040 --> 00:03:07.400
+<v Pritam Das>Yeah, that's correct, Pritam.</v>
+
+00:03:08.320 --> 00:03:13.080
+<v Navid Salimian>Correct, if I ever get it wrong, please do correct me. I'm not great with names, but I do try.</v>
+
+00:03:11.720 --> 00:03:12.320
+<v Pritam Das>Definitely.</v>
+
+00:03:14.040 --> 00:03:14.520
+<v Pritam Das>Mmh.</v>
+
+00:03:17.000 --> 00:03:20.920
+<v Pritam Das>I will just try and open. In the meantime, William, how is things going on?</v>
+
+00:03:20.400 --> 00:03:20.600
+<v William Freeman>Mm.</v>
+
+00:03:22.680 --> 00:03:24.280
+<v William Freeman>Oh, I would say...</v>
+
+00:03:25.400 --> 00:03:45.240
+<v William Freeman>So far, so good. I was out yesterday, so I feel like I'm still getting caught up on things, but I hear, I hear it was busy, but I hear it was manageable. Common, just looking at the queue today, number of tickets, but you know, it's Ivy, it's always the case, but it doesn't.</v>
+
+00:03:45.440 --> 00:03:49.760
+<v William Freeman>Doesn't seem like an overwhelming amount, so we're trucking along here.</v>
+
+00:03:51.000 --> 00:03:57.480
+<v Pritam Das>Any improvements you have seen on the customer response ticket count or in progress ticket counts?</v>
+
+00:03:58.560 --> 00:04:17.080
+<v William Freeman>Oh, I will say I have seen, at least, I mean, fairly anecdotally, but I do, I feel like I've seen people getting to the, to specifically the tickets we wanted them to focus more on was tickets that users have replied to, just making sure that we're getting back to those folks.</v>
+
+00:04:14.200 --> 00:04:14.760
+<v Pritam Das>Mhm.</v>
+
+00:04:17.360 --> 00:04:17.480
+<v Jose Correa>Yeah.</v>
+
+00:04:17.360 --> 00:04:36.920
+<v William Freeman>in a timely fashion. I do see that that is occurring far more frequently now. So next battle is, we're just going to work on the ones that users don't reply to. So sometimes some of those tickets have a tendency to linger a bit.</v>
+
+00:04:19.640 --> 00:04:19.800
+<v Jose Correa>Okay.</v>
+
+00:04:37.480 --> 00:04:51.640
+<v William Freeman>So, or things that don't have definitive, you know, things that are, I guess, less urgent items. You know, they're less urgent, so they get put on the back burner, but we still need to make sure we get back to them at some point. So things like that.</v>
+
+00:04:53.640 --> 00:05:07.760
+<v Pritam Das>Okay, okay. No, thank you, William. Also, I have been connecting with the team and I think we are slowly getting into there. They are shaping up, they are getting comfortable with the tickets, the navigation and stuff like that.</v>
+
+00:05:09.480 --> 00:05:11.240
+<v Pritam Das>And, uh, yes.</v>
+
+00:05:12.400 --> 00:05:14.920
+<v Pritam Das>Talking about the new.</v>
+
+00:05:16.360 --> 00:05:23.800
+<v Pritam Das>Okay, we'll talk about this things later. Jose, anything from your end? How are things going on? And thank you for the utilization report.</v>
+
+00:05:24.880 --> 00:05:28.120
+<v Jose Correa>Okay, cool. Yeah, let's start with that.</v>
+
+00:05:33.360 --> 00:05:34.280
+<v Pritam Das>You're scaring me now.</v>
+
+00:05:36.680 --> 00:05:36.840
+<v Pritam Das>TA.</v>
+
+00:05:37.520 --> 00:05:39.240
+<v Navid Salimian>This thing's got a flair for the dramatic.</v>
+
+00:05:37.840 --> 00:05:38.120
+<v Jose Correa>Where?</v>
+
+00:05:39.760 --> 00:05:39.960
+<v Pritam Das>Yeah.</v>
+
+00:05:41.640 --> 00:05:48.200
+<v Jose Correa>We have some challenges, Houston. Listen, so let's start with Carmina.</v>
+
+00:05:48.920 --> 00:05:49.400
+<v Pritam Das>Mhm.</v>
+
+00:05:49.560 --> 00:05:55.040
+<v Jose Correa>I don't know, don't know what's going on with Carmina, and then you know, let's start with.</v>
+
+00:05:57.160 --> 00:05:59.560
+<v Jose Correa>A lot of refused calls.</v>
+
+00:06:01.560 --> 00:06:03.880
+<v Jose Correa>She's having a lot of difficulties.</v>
+
+00:06:05.000 --> 00:06:16.040
+<v Jose Correa>She's not putting any time into her tickets. As you can see from the utilization report, she has very little to no utilization for the amount of hours that she reports to work.</v>
+
+00:06:17.720 --> 00:06:18.280
+<v Jose Correa>Um...</v>
+
+00:06:19.800 --> 00:06:22.840
+<v Jose Correa>So, I'm not really sure what her struggles are.</v>
+
+00:06:24.000 --> 00:06:29.080
+<v Jose Correa>But she's a really big concern of mine because she doesn't seem to be working out at all.</v>
+
+00:06:29.680 --> 00:06:30.200
+<v Pritam Das>Mhm.</v>
+
+00:06:32.400 --> 00:06:43.320
+<v Jose Correa>Because we've had many conversations for with her, even while she was in training, we had a lot of we we we had conversations with her and trying, you know, so at this point.</v>
+
+00:06:44.840 --> 00:06:49.800
+<v Jose Correa>Really concerned with with with her, really concerned with Helen.</v>
+
+00:06:51.960 --> 00:06:52.520
+<v Jose Correa>Um...</v>
+
+00:06:58.000 --> 00:07:02.120
+<v Jose Correa>Like, I'm gonna be really nice 'cause my boss is here, but...</v>
+
+00:07:03.080 --> 00:07:17.320
+<v Jose Correa>You know, okay, you know, I understand that she has problems with family, she's got some circumstances going on. But for her attendance is starting to be an issue.</v>
+
+00:07:20.200 --> 00:07:26.920
+<v Jose Correa>And it's something that I mentioned from the beginning and it really hasn't changed much. I think you would agree with me on that.</v>
+
+00:07:25.240 --> 00:07:25.560
+<v Pritam Das>Yep.</v>
+
+00:07:28.760 --> 00:07:47.760
+<v Jose Correa>But my biggest concern with the team right now, because the indicators show that, for me anyways, like we could go over to refuse calls, we could go over how many calls they've taken, we could go over those metrics, that's all well and dandy. But the utilization report tells me.</v>
+
+00:07:48.160 --> 00:07:56.920
+<v Jose Correa>what they've been doing in tickets, how much time they've been working on something and putting that into the ticket. So, you know.</v>
+
+00:07:58.360 --> 00:08:04.280
+<v Jose Correa>If there's nothing in there and they come to work for 40 hours, just...</v>
+
+00:08:05.640 --> 00:08:07.880
+<v Jose Correa>Using that generalization right, if you know where it.</v>
+
+00:08:08.040 --> 00:08:08.360
+<v Pritam Das>Yep.</v>
+
+00:08:09.320 --> 00:08:13.320
+<v Jose Correa>For 40 hours, but they only have 7 hours bill for the week. What did they do?</v>
+
+00:08:15.160 --> 00:08:22.440
+<v Jose Correa>If they only have seven hours in the ticket, one ticket or whatever amount of tickets that only go up to seven hours.</v>
+
+00:08:24.440 --> 00:08:25.960
+<v Jose Correa>That's concerning to me.</v>
+
+00:08:29.480 --> 00:08:41.480
+<v Jose Correa>So those are the kind of things that I need to, I think that from where my service desk stands right now, ours, because I have like my my my my my team here.</v>
+
+00:08:44.360 --> 00:08:50.760
+<v Jose Correa>Like those things that I just mentioned will go a long way in helping me clean up a lot of a lot of my problems.</v>
+
+00:08:52.600 --> 00:09:07.800
+<v Jose Correa>I need bodies, I need them to be here, I need tickets worked on ASAP. You know, once they come to the service desk, once a ticket comes into the service desk, I need hands on it as soon as possible, regardless of the source.</v>
+
+00:09:09.040 --> 00:09:18.040
+<v Jose Correa>And then we work to get it either to the next team that's going to resolve it or we resolve it. That's the nature of it. Pre time. Pretty much. That's it.</v>
+
+00:09:19.320 --> 00:09:29.320
+<v Jose Correa>And by the way, I did ask on the media yesterday to get you access to our some of our resources, and we're working on, you know, on that.</v>
+
+00:09:30.440 --> 00:09:30.840
+<v Pritam Das>Okay.</v>
+
+00:09:34.280 --> 00:09:36.200
+<v Jose Correa>But yeah, that's my feedback.</v>
+
+00:09:37.320 --> 00:09:56.280
+<v Jose Correa>We we have IV is has a really high mean time to engineer right now. I just came out of a meeting with the entire team where we discuss 18 tickets and the overall performance of the service desk from the from the week prior, and IV is still, you know.</v>
+
+00:09:56.400 --> 00:10:15.960
+<v Jose Correa>Red, really good with full metrics though, to be clear. So the ASA is fantastic. We're doing a, you know, a good job at getting to the people, but we're for certain things, some things we're not doing that great, and that number is escalating.</v>
+
+00:10:01.520 --> 00:10:01.760
+<v Pritam Das>Yeah.</v>
+
+00:10:16.200 --> 00:10:18.440
+<v Jose Correa>Resolution times are really hot.</v>
+
+00:10:20.640 --> 00:10:22.200
+<v Jose Correa>which is something that we've addressed.</v>
+
+00:10:23.440 --> 00:10:24.040
+<v Jose Correa>in the past.</v>
+
+00:10:30.520 --> 00:10:35.400
+<v Pritam Das>Okay, resolution time, Jose, let me...</v>
+
+00:10:36.600 --> 00:10:55.240
+<v Pritam Das>check with the team that if they are getting stuck technically or process wise, because last time I circled back with them, they said they are struggling something with the process, not very much info is there, so they have to get back to the group, wait for it. So I will just cross verify.</v>
+
+00:10:55.360 --> 00:11:09.640
+<v Pritam Das>the things with them, if it's still the process or it's a technical roadblock, because I don't find there should be a technical roadblock because I have went through their tickets, like not exactly each and every one, but few of them randomly.</v>
+
+00:11:11.800 --> 00:11:12.640
+<v Pritam Das>These are basics.</v>
+
+00:11:14.040 --> 00:11:18.360
+<v Pritam Das>I'll not say that I will need a proper, you know.</v>
+
+00:11:14.520 --> 00:11:15.080
+<v Jose Correa>Okay.</v>
+
+00:11:20.200 --> 00:11:41.360
+<v Pritam Das>L2 or L1 plus level of troubleshooting. Yeah, process is different, like creating a distribution list. They are not directly doing it via Active Directory. I think you guys have this GUI interface from where they are doing it and adding the group members and all. So which is kind of different. And from where they need to get the approvals and all and get.</v>
+
+00:11:41.440 --> 00:11:42.600
+<v Pritam Das>Get those things done.</v>
+
+00:11:43.960 --> 00:12:01.080
+<v Pritam Das>So I can work on the resolution thing and thank you so much for the phone answering thing. Because I see the entire team sitting on their desk. So that should not be an issue answering a phone call and that's what I am really good to hear. Talking about Carmina and Helen.</v>
+
+00:11:44.920 --> 00:11:45.160
+<v Jose Correa>Yes.</v>
+
+00:12:02.520 --> 00:12:14.600
+<v Pritam Das>It started, in fact, when you sent me the utilization report, I went through the entire report. I am good with the people, like those who have billables more than 25.</v>
+
+00:12:15.640 --> 00:12:21.000
+<v Pritam Das>because I think they are working 7.5 hours and one hour break in a day.</v>
+
+00:12:21.480 --> 00:12:27.240
+<v Jose Correa>But you have some engineers in here that are doing fantastic, Pritam, for example, Mister Mercado.</v>
+
+00:12:28.520 --> 00:12:39.960
+<v Jose Correa>39.7 out in one of my reports here, this one is from 66. So, you know, and that just goes to show you, you know,</v>
+
+00:12:30.760 --> 00:12:31.160
+<v Pritam Das>Yep.</v>
+
+00:12:40.840 --> 00:12:43.960
+<v Jose Correa>That, that's what that's the expectation, and it can be met.</v>
+
+00:12:44.760 --> 00:12:45.360
+<v Pritam Das>Yes.</v>
+
+00:12:46.600 --> 00:13:03.640
+<v Pritam Das>I can see Krishna, 39, Rana, 35, Sarah, 35, Jane, 32, Kim, 31. So these guys are doing a fantastic job, I can see, because if I look at 7.5 in two</v>
+
+00:12:53.080 --> 00:12:53.200
+<v Jose Correa>Yeah.</v>
+
+00:13:04.840 --> 00:13:24.280
+<v Pritam Das>five days, the total billable hours is 37.5. Those one hour is their break, right? So out of 37.5, if they're meeting 39, 30 above, I think it's a good job. Improvements are there a little bit for Paula, Jaime.</v>
+
+00:13:11.160 --> 00:13:11.400
+<v Jose Correa>Yeah.</v>
+
+00:13:25.480 --> 00:13:28.200
+<v Pritam Das>And Zeus rest, I think, Nico.</v>
+
+00:13:27.240 --> 00:13:34.720
+<v Jose Correa>I wouldn't worry about anybody, anybody, anybody. Pritam, I wouldn't worry about anybody except for Carmina at 10%.</v>
+
+00:13:35.480 --> 00:13:36.080
+<v Pritam Das>Yes.</v>
+
+00:13:35.800 --> 00:13:56.600
+<v Jose Correa>And Helen, like 31. To be honest, I'm like, seriously, don't even worry about the rest of the team. I'm comfortable with where they are. I've gone over the metrics. I've seen the numbers. I'm comfortable with where they are, and they'll continue to improve. Those 2 there, though, that's, I don't, it's a different story.</v>
+
+00:13:38.600 --> 00:13:39.080
+<v Pritam Das>System.</v>
+
+00:13:47.840 --> 00:13:48.200
+<v Pritam Das>Evening.</v>
+
+00:13:56.640 --> 00:13:58.440
+<v Jose Correa>And that those numbers say it.</v>
+
+00:13:59.640 --> 00:14:00.440
+<v Jose Correa>Ten percent.</v>
+
+00:14:03.800 --> 00:14:04.520
+<v Pritam Das>I...</v>
+
+00:14:03.880 --> 00:14:05.000
+<v Jose Correa>Ten percent, Pritam.</v>
+
+00:14:05.720 --> 00:14:29.000
+<v Pritam Das>I had a word with like Michael, sorry, William, three, four weeks back, Emily also. And I think we agreed to give these guys, Kermina and Helen, especially like two to three weeks and see how it goes. I circled back to them this morning, like because yesterday I was kind of occupied, so I circled back to them this morning, especially Kermina because Helen is out of office.</v>
+
+00:14:29.480 --> 00:14:40.040
+<v Pritam Das>on the numbers and they really don't have a good explanation, Jose. They really don't have, which I can present to you or if I'm not convinced, how can I present it to you?</v>
+
+00:14:41.320 --> 00:14:52.840
+<v Pritam Das>Give me today's time; we'll schedule some time with Carmina and Helen tomorrow, if she comes in, then most probably we might take a hard decision.</v>
+
+00:14:42.640 --> 00:14:42.920
+<v Jose Correa>S.</v>
+
+00:14:54.360 --> 00:15:12.680
+<v Jose Correa>Yeah, I think that's how I feel. I think I would rather pretty much just not have them and start with new bodies that would be going to, you know, training rather than, I don't know how to correct. There is no correcting this in my opinion. This individual,</v>
+
+00:14:54.520 --> 00:14:55.720
+<v Pritam Das>if things are not working out.</v>
+
+00:15:04.120 --> 00:15:04.360
+<v Pritam Das>Yes.</v>
+
+00:15:13.000 --> 00:15:19.080
+<v Jose Correa>Carmina, for example. Helen, I don't know, you know, what her issue is. She's got a lot of dependence.</v>
+
+00:15:21.120 --> 00:15:25.480
+<v Jose Correa>Shows a lot of promise, but then she takes a lot of steps back, so, and, and at this point...</v>
+
+00:15:27.000 --> 00:15:38.120
+<v Pritam Das>No, it makes sense, Jose. So just give me today's time. I will just have a word with them and I will drop you an email with detailed next step actions.</v>
+
+00:15:29.030 --> 00:15:29.150
+<v Jose Correa>If.</v>
+
+00:15:39.160 --> 00:15:46.920
+<v Pritam Das>But I'll ensure that the team is not impacted, especially the IV team. Helen Carmina, they are with work group 14, I believe.</v>
+
+00:15:39.320 --> 00:15:39.960
+<v Jose Correa>Kurt.</v>
+
+00:15:47.320 --> 00:15:57.040
+<v Jose Correa>No, they're Carmina's working with 12 and Helen is, yeah, Helen's tier 2. Oh, Helen is also, yeah.</v>
+
+00:15:51.160 --> 00:15:51.480
+<v Pritam Das>Well.</v>
+
+00:15:52.760 --> 00:15:53.560
+<v Pritam Das>Share desk.</v>
+
+00:15:54.920 --> 00:15:55.240
+<v Navid Salimian>Yeah.</v>
+
+00:15:55.640 --> 00:15:56.360
+<v Pritam Das>Yeah, tier too.</v>
+
+00:15:58.680 --> 00:16:00.440
+<v Pritam Das>Helen is with Angelica, I believe.</v>
+
+00:16:01.640 --> 00:16:02.200
+<v Jose Correa>Yes.</v>
+
+00:16:01.640 --> 00:16:06.120
+<v Pritam Das>And Julka Cruz, yeah, tier two. No, I can I can give you good replacements.</v>
+
+00:16:03.880 --> 00:16:04.360
+<v William Freeman>Yes.</v>
+
+00:16:04.400 --> 00:16:22.040
+<v Jose Correa>Yeah, but, and to be honest, they like tier 2 was transferred to a different team, but I'm only looking at their utilization report and I'm just looking out for data prize at this point. I really don't care who's addressing this and I'm gonna deal with it at this moment because, you know, to be honest, Pritam.</v>
+
+00:16:23.000 --> 00:16:24.040
+<v Jose Correa>Do you think she's coming back?</v>
+
+00:16:28.160 --> 00:16:31.080
+<v Pritam Das>The last email I have received is how mom's helped.</v>
+
+00:16:32.680 --> 00:16:33.320
+<v Pritam Das>I don't know.</v>
+
+00:16:33.240 --> 00:16:33.560
+<v Jose Correa>Two.</v>
+
+00:16:34.600 --> 00:16:43.520
+<v Pritam Das>I can't be sure with you now, Jose, but she is keeping a constant communication. If someone is not coming back, then they will stop communicating.</v>
+
+00:16:45.160 --> 00:16:46.280
+<v Pritam Das>That I can say to you.</v>
+
+00:16:49.000 --> 00:16:54.160
+<v Pritam Das>Uh, just let me... I received the last message at what time?</v>
+
+00:16:57.400 --> 00:17:01.880
+<v Pritam Das>At 1908, that's like 7, 8 A.m. Eastern Time.</v>
+
+00:17:02.840 --> 00:17:21.080
+<v Jose Correa>OK, like when, like, from what all new onboardings, Pritam, like, there's two things we really do need to start stressing with them. Two things, and one I already mentioned, right? Well, I think I probably already mentioned both of these, but attendance is a is critical.</v>
+
+00:17:04.200 --> 00:17:05.360
+<v Pritam Das>Seven 080 today.</v>
+
+00:17:22.600 --> 00:17:41.480
+<v Jose Correa>It's critical. We're dealing with just the amount, the right amount of people that we need to get what we need to do that we promised our clients. So critical that we have people in those chairs. And then critical #2 is that they know what they're doing. So MS 365,</v>
+
+00:17:41.880 --> 00:17:49.640
+<v Jose Correa>From some of the things that we noticed, you know, some of these engineers have been struggling with some of those basic...</v>
+
+00:17:51.360 --> 00:18:11.320
+<v Jose Correa>Knowledge skills for Microsoft, and even though they, you know, they, they, I sat in on those interviews, so they did really, really well. I can't really say that we missed anything during the interviewing process that would have led to that, that would have indicated that they this would be happening.</v>
+
+00:18:12.280 --> 00:18:23.560
+<v Jose Correa>So I just want to be extra careful moving forward with those areas. Scrutinize the heck out of them. If they haven't worked large MSPs, I probably wouldn't even.</v>
+
+00:18:24.920 --> 00:18:41.480
+<v Jose Correa>You know, Pritam, that's been like part of the big issue with this team here, especially with Ivy, is that they've been, they were overwhelmed with everything, right? Processes, confidence, and volley to a certain extent. So.</v>
+
+00:18:42.960 --> 00:18:58.120
+<v Pritam Das>No, IV, I believe IV is good now. I had a word with each one of them and I can see the confidence is good. It was the initial stage that they had some shaky start, but now I believe IV is settling down and it's good.</v>
+
+00:18:59.520 --> 00:19:14.520
+<v Pritam Das>Helen and Carmina has been a challenge from day one. I want to be very transparent with you. I was talking with Emily and yeah, I know you and William don't have that visibility with this team, like Carmina, Helen and Angel, but I was talking with...</v>
+
+00:19:14.080 --> 00:19:17.720
+<v Jose Correa>No, I do. I have visibility. I have visibility over everything.</v>
+
+00:19:15.800 --> 00:19:35.520
+<v Pritam Das>Okay, you have, okay. So Emily, I was talking to Emily and I have receiving things. So I have been in constant talking, coaching with them, trying to make them a success, but it seems we have provided enough time now and investing so much of time does not make sense.</v>
+
+00:19:36.200 --> 00:19:55.240
+<v Pritam Das>I could have easily get another resource up and running by this time. So I think it's time I have a word with them and see what best we can do. Don't worry, I will give you good resources now. Now I know. See, what happened when we started the enterprise here? I was not aware how we can go through the things. Now I am.</v>
+
+00:19:55.320 --> 00:20:01.240
+<v Pritam Das>aware of it. I know what type of people you need, what type of expectation is there, so I know which people I have to place there.</v>
+
+00:20:02.040 --> 00:20:03.000
+<v Pritam Das>So, yeah.</v>
+
+00:20:02.120 --> 00:20:20.440
+<v Jose Correa>No, we're good. We're working things out. So we're doing pretty good. And I do feel that that's what I wanted to hear. I think that their time is up pretty much. I think that we've given them enough time. I think they've had more enough conversations for them to make the adjustments.</v>
+
+00:20:05.880 --> 00:20:06.200
+<v Pritam Das>Yep.</v>
+
+00:20:13.320 --> 00:20:13.720
+<v Pritam Das>Yep.</v>
+
+00:20:20.480 --> 00:20:33.320
+<v Jose Correa>they needed to make, raise their hands if they've had any issues and that's not happening. That's a really big concern. So yeah, do whatever you gotta do to let's get ready for them.</v>
+
+00:20:32.800 --> 00:20:33.080
+<v Pritam Das>No.</v>
+
+00:20:34.600 --> 00:20:47.000
+<v Pritam Das>Yeah, and a quick question here, Jose. Do we want to keep them till we get a replacement, like in next one, two weeks, or do you want to remove them with immediate effect?</v>
+
+00:20:34.720 --> 00:20:35.760
+<v Jose Correa>Whatever we have to do.</v>
+
+00:20:51.160 --> 00:20:52.920
+<v Jose Correa>Helen's not even coming to work.</v>
+
+00:20:53.800 --> 00:20:54.360
+<v Jose Correa>So...</v>
+
+00:20:54.280 --> 00:20:54.680
+<v Pritam Das>Yes.</v>
+
+00:20:56.480 --> 00:20:57.240
+<v Jose Correa>Get me wrong.</v>
+
+00:20:58.360 --> 00:21:02.040
+<v Jose Correa>That doesn't mean anything. I'm just saying she's spending it here.</v>
+
+00:21:01.120 --> 00:21:02.840
+<v Pritam Das>Yeah, I know, I know, I understand, just...</v>
+
+00:21:03.560 --> 00:21:04.120
+<v Jose Correa>Oh.</v>
+
+00:21:06.760 --> 00:21:24.360
+<v Jose Correa>Helen, because of the reasons that she's put in there, not you, that's up to you, because it's neither here nor there, right? She's not here, she's not here. Carmina, she's here, it's up to you, right? She's getting paid and she's really not doing anything.</v>
+
+00:21:26.440 --> 00:21:27.000
+<v Jose Correa>So...</v>
+
+00:21:30.040 --> 00:21:31.800
+<v Jose Correa>She's getting paid and she's not doing it.</v>
+
+00:21:32.760 --> 00:21:33.560
+<v Jose Correa>Is how I see.</v>
+
+00:21:33.080 --> 00:21:47.240
+<v Pritam Das>I get your point. I get your point. So what I can do is, I can, I can end of this week, I can remove her and we can stop the billing and we can revise it. I can get it done for you.</v>
+
+00:21:47.840 --> 00:21:57.680
+<v Jose Correa>Let me pull up real quick. Give me give me one second. Like this is from the prior week. I know that I Mondays are really busy and I end up being busy all day, but give me one second.</v>
+
+00:21:48.200 --> 00:21:48.760
+<v Pritam Das>And it.</v>
+
+00:21:50.360 --> 00:21:50.760
+<v Pritam Das>Chop.</v>
+
+00:22:06.440 --> 00:22:16.040
+<v Jose Correa>Yeah, so okay, so this is for the week ending June 6th, Karmina, 10% at Helen, 30.</v>
+
+00:22:17.240 --> 00:22:23.800
+<v Jose Correa>Helen had a 32% utilization, and that was with a...</v>
+
+00:22:26.000 --> 00:22:32.520
+<v Jose Correa>On the full schedule, so she worked, she she put 11 hours total and tickets that day for a tier 2 engineer.</v>
+
+00:22:33.800 --> 00:22:44.200
+<v Jose Correa>I really, I'm just stuck. I don't know what she did for the rest of the day, for the whole week. That's, that's, I don't even moving on. Let me.</v>
+
+00:22:44.600 --> 00:23:05.040
+<v Navid Salimian>Yeah, let me, I do want to chime in here. I think part of our frustration is in training, we noticed these same like behavior patterns with, you know, basically not billing time correctly. And Emily, when, you know, kind of asking them point blank, like, show me how to, you know, like, like, show me how to do it.</v>
+
+00:22:56.280 --> 00:22:56.400
+<v Pritam Das>Uh-huh.</v>
+
+00:23:05.160 --> 00:23:24.480
+<v Navid Salimian>right? You know, she would have no problem doing it. It's just when she was left to her own devices, would proceed to not do it. So from our perspective, we're just having trouble understanding what the gap there is. If you know the expectation and you know how to do it, what's preventing you from billing your time?</v>
+
+00:23:13.120 --> 00:23:13.240
+<v Jose Correa>Okay.</v>
+
+00:23:24.680 --> 00:23:28.520
+<v Navid Salimian>Correctly, because if she...</v>
+
+00:23:30.120 --> 00:23:48.600
+<v Navid Salimian>It just make, you know, either she's under-reporting and under-billing her time, which is a problem, or she's, you know, sitting idle, which is another problem, right? You know, but either way, it's just not a good look. So hopefully one that can be addressed, but we're also kind of at the...</v>
+
+00:23:48.680 --> 00:23:51.640
+<v Navid Salimian>Point where we feel like we've invested a lot of.</v>
+
+00:23:52.840 --> 00:23:57.800
+<v Navid Salimian>time in helping her understand what the correct process is and we're not necessarily seeing results.</v>
+
+00:23:54.200 --> 00:23:54.600
+<v Pritam Das>Correct.</v>
+
+00:23:58.440 --> 00:24:18.360
+<v Jose Correa>She, she, so for the week ending last week, or week ending the 13th, right, she did improve to 57% utilization. So from 10%, she went up to 57%, but her hours worked because she called out were 30 hours and she put in 50.</v>
+
+00:23:58.600 --> 00:23:59.640
+<v Pritam Das>No, definitely.</v>
+
+00:24:18.680 --> 00:24:24.600
+<v Jose Correa>Fifteen hours, so still significant, so, and this is what kills.</v>
+
+00:24:25.800 --> 00:24:30.360
+<v Jose Correa>So, you know, just like what Javid just said, you know what to do.</v>
+
+00:24:31.000 --> 00:24:31.560
+<v Pritam Das>Mhm.</v>
+
+00:24:31.560 --> 00:24:50.320
+<v Jose Correa>You know what you're supposed to be doing, so what's the problem? Tier one, she's in one of my craziest work groups, 12, so I know there's sufficient work to go around to keep them busy throughout, you know, their entire shift, so there's still something wrong, and then going back to Helen on this one, she...</v>
+
+00:24:50.760 --> 00:24:54.200
+<v Jose Correa>Backtracked, and this is my, my, you know, to prove my, my...</v>
+
+00:24:55.600 --> 00:25:01.160
+<v Jose Correa>My point with her, she she she moves forward and then goes backwards, Helen.</v>
+
+00:25:02.040 --> 00:25:14.040
+<v Jose Correa>You saw it where she was previous week, now she goes back to only available 7.82 hours out of a 32-hour work week if she also called out one day last week. So...</v>
+
+00:25:15.400 --> 00:25:17.000
+<v Jose Correa>28% utilization.</v>
+
+00:25:17.960 --> 00:25:34.440
+<v Pritam Das>Agreed, Jose. And like I said, it's time to take some hard decisions. Just give me end of business today. I will drop you an email with the next necessary steps. And sorry, William, you might have to invest some more time with me to get the replacement, guys.</v>
+
+00:25:23.880 --> 00:25:24.360
+<v Jose Correa>Stop.</v>
+
+00:25:36.680 --> 00:25:56.640
+<v Pritam Das>And I'll share some profiles with you, good ones, people who are accountable and who can work. And once I have those resume as profiles ready, I will share it across to you. And most probably by end of this week, Jose, I will pull these guys out of the account. I will suspend the billing so that you guys don't.</v>
+
+00:25:37.080 --> 00:25:37.640
+<v Navid Salimian>Yeah, no.</v>
+
+00:25:54.280 --> 00:25:54.400
+<v Jose Correa>Yes.</v>
+
+00:25:56.760 --> 00:26:13.080
+<v Pritam Das>keep on paying for these guys until we have the replacement candidates on boarded. And I will also see if I can help you out with some replacement rebates, like so that we don't have those time invested in training does not doubles up.</v>
+
+00:26:14.080 --> 00:26:14.120
+<v Jose Correa>I.</v>
+
+00:26:14.360 --> 00:26:16.120
+<v Pritam Das>I'll just work with my stakeholders on that.</v>
+
+00:26:16.120 --> 00:26:20.920
+<v Jose Correa>All I heard was rebate and I like that. So...</v>
+
+00:26:19.960 --> 00:26:21.000
+<v Navid Salimian>Thank you for that, Pritam.</v>
+
+00:26:22.800 --> 00:26:23.000
+<v Pritam Das>Ha ha.</v>
+
+00:26:23.080 --> 00:26:23.400
+<v Jose Correa>Yeah.</v>
+
+00:26:24.760 --> 00:26:26.920
+<v Pritam Das>No, it's one or the other thing, you know.</v>
+
+00:26:25.000 --> 00:26:32.280
+<v Jose Correa>All right, so you touched on my next, you touched on my next topic, which is, you know, we have a couple of open records with you, don't we?</v>
+
+00:26:33.960 --> 00:26:51.160
+<v Pritam Das>Yes, I have one L2 NOC and one HSS. So HSS means L1. L1 I will schedule it with William, the NOC L2, which Lindsay confirmed me day before yesterday.</v>
+
+00:26:50.480 --> 00:26:50.600
+<v Jose Correa>Yeah.</v>
+
+00:26:51.800 --> 00:26:57.320
+<v Jose Correa>Oh, we're not interested on the NOP one. Wait a second, you said L1? What do you mean by L1? Tier one?</v>
+
+00:26:56.120 --> 00:26:56.520
+<v Pritam Das>No.</v>
+
+00:26:57.880 --> 00:26:59.160
+<v Pritam Das>Yes, tier one, tier one.</v>
+
+00:26:59.720 --> 00:27:12.280
+<v Jose Correa>Okay, all right. No, it's okay. Like, it happens to me all day. Different terms, and I'm like, let's focus here. Okay, so our tier one, do you have one only?</v>
+
+00:27:00.240 --> 00:27:01.840
+<v Pritam Das>Sorry, my bad, my bad, here was.</v>
+
+00:27:13.640 --> 00:27:16.440
+<v Pritam Das>I have one only. New requisition.</v>
+
+00:27:17.120 --> 00:27:37.560
+<v William Freeman>I was going to say we just got a we got a message from Lindsay saying there should be another one. It might be coming, to be fair. I don't know if it's fully three. I know it's been the the the records been approved on our side, but I don't know if that means that it's made it to you yet or not. But I just know right before this meeting, we got a message.</v>
+
+00:27:17.480 --> 00:27:18.760
+<v Jose Correa>And it's for Will?</v>
+
+00:27:38.320 --> 00:27:41.240
+<v William Freeman>About that, so dude.</v>
+
+00:27:40.560 --> 00:27:43.000
+<v Jose Correa>Should have like 2 at least from my side.</v>
+
+00:27:46.840 --> 00:27:50.440
+<v Jose Correa>So those are all mine? Well, not yours, right?</v>
+
+00:27:49.320 --> 00:28:02.600
+<v William Freeman>Yeah, yeah, one of them was the one to replace Adrian Pasquale. That's been lingering for a while. And the other one, yeah, the other one's for Jay Salvador. I think that's a more recent one.</v>
+
+00:27:56.440 --> 00:27:57.400
+<v Jose Correa>Yeah, like a year now.</v>
+
+00:28:02.760 --> 00:28:07.640
+<v Jose Correa>That is more recent. That was the end of May. Okay. All right. So, or last week or so.</v>
+
+00:28:06.520 --> 00:28:15.560
+<v Pritam Das>Okay, I have three in total, but I will just name them out. I don't know if this is what you're talking. First is system engineer to knock.</v>
+
+00:28:17.160 --> 00:28:17.720
+<v Jose Correa>Not mine.</v>
+
+00:28:17.160 --> 00:28:33.480
+<v Pritam Das>There is System Engineer 2 for NOC profile only. I have one Azure Cloud Engineer, Azure Cloud Engineer that's temporal, maybe 3 months. And then I have System Engineer that's tier one.</v>
+
+00:28:34.920 --> 00:28:40.440
+<v Pritam Das>Yes, good with Helpdesk and Office 365 immediate. I have this three.</v>
+
+00:28:40.040 --> 00:28:41.960
+<v William Freeman>That's that sounds like the one for Adrian.</v>
+
+00:28:43.000 --> 00:28:44.200
+<v William Freeman>So, it sounds like we...</v>
+
+00:28:43.320 --> 00:28:45.400
+<v Jose Correa>OK, so he still doesn't have Joseph.</v>
+
+00:28:45.800 --> 00:28:46.200
+<v William Freeman>Yeah.</v>
+
+00:28:46.120 --> 00:28:51.720
+<v Pritam Das>This is the one, William, you gave me like a couple of weeks back when was I was following up with you.</v>
+
+00:28:50.040 --> 00:28:53.880
+<v William Freeman>Yeah, yeah, exactly, exactly. Yeah, that's the one for Adrian, yeah.</v>
+
+00:28:54.960 --> 00:28:58.720
+<v Jose Correa>And for Ivy, you already made the replacements for Rodge and Jay and Dhiman.</v>
+
+00:28:55.000 --> 00:28:55.800
+<v William Freeman>So, some.</v>
+
+00:28:55.080 --> 00:28:55.400
+<v Pritam Das>Okay.</v>
+
+00:29:00.360 --> 00:29:10.200
+<v Pritam Das>Yes, Jaime, it's William. I've already picked up the guy for Rodge. I'm sourcing a couple of more candidates. So we'll give it to William as soon as we have them.</v>
+
+00:29:11.080 --> 00:29:13.040
+<v Jose Correa>Oh, so we don't have a garage replacement yet.</v>
+
+00:29:13.560 --> 00:29:13.960
+<v William Freeman>Not yet.</v>
+
+00:29:14.680 --> 00:29:15.240
+<v Pritam Das>Got you.</v>
+
+00:29:15.760 --> 00:29:16.360
+<v Jose Correa>Mhm.</v>
+
+00:29:18.680 --> 00:29:22.200
+<v Pritam Das>It's taking time; it's a lead position.</v>
+
+00:29:20.240 --> 00:29:26.880
+<v Jose Correa>No, it's okay. I just, but I need to coordinate with the rest of the departments because the, you know, the team lead that we're backfilling with.</v>
+
+00:29:24.280 --> 00:29:24.560
+<v Pritam Das>Yeah.</v>
+
+00:29:28.120 --> 00:29:34.840
+<v Jose Correa>He's he belongs to other people now; he's not. I stole him for a little bit, but it's OK, alright.</v>
+
+00:29:33.720 --> 00:29:34.000
+<v Pritam Das>Hahaha.</v>
+
+00:29:35.960 --> 00:29:36.760
+<v Jose Correa>Um...</v>
+
+00:29:36.320 --> 00:29:46.600
+<v Pritam Das>So I just don't want to give you people who are not good or suited for this role. So I'm looking for the best candidates who can replace Rodge. I don't want to repeat the Rodge story again.</v>
+
+00:29:44.880 --> 00:29:45.640
+<v Jose Correa>Appreciate it.</v>
+
+00:29:47.160 --> 00:29:57.400
+<v William Freeman>Yeah, I do appreciate it. It's not the easiest rule, I will say. So I definitely would prefer it. If it takes a little time, I'd much rather get the right person personally.</v>
+
+00:29:49.560 --> 00:29:49.720
+<v Pritam Das>Yeah.</v>
+
+00:29:51.480 --> 00:29:51.960
+<v Pritam Das>Yeah.</v>
+
+00:29:57.880 --> 00:30:07.640
+<v Jose Correa>Yeah, no, we learned our lessons, some lessons, and well, let's apply what we learn. All right, Javid, you said you had a couple of things for...</v>
+
+00:30:00.840 --> 00:30:01.160
+<v Pritam Das>Yep.</v>
+
+00:30:02.440 --> 00:30:03.000
+<v Pritam Das>Select.</v>
+
+00:30:16.360 --> 00:30:16.760
+<v Pritam Das>Yeah.</v>
+
+00:30:28.200 --> 00:30:28.440
+<v Pritam Das>Oh.</v>
+
+00:30:28.480 --> 00:30:31.960
+<v Navid Salimian>Otherwise, we can coordinate via email or something else. Let me know.</v>
+
+00:30:32.520 --> 00:30:50.760
+<v Pritam Das>No, I think I just need access to ConnectWise just to look at the tickets. If not ConnectWise, I'm good with thread also because I will technically not work on tickets so that I can just have a monitoring at my end so that I can go ahead and work with the team in case that TL is absent.</v>
+
+00:30:50.880 --> 00:31:10.760
+<v Pritam Das>Like Rodge was out of office yesterday, and William was also out of office yesterday, so I need my also view that, okay, if there is a customer response pending, I can talk to the team. Hey, can you, if someone is free, can you acknowledge this? Second, I need some access to the performance management, so that I myself can also see.</v>
+
+00:31:11.080 --> 00:31:24.040
+<v Pritam Das>Rather than William coming to me or Jose coming to me that Carmina's utilization is 10%, I can proactively see it from my end and get it fixed before Jose comes and gives it back to me.</v>
+
+00:31:25.680 --> 00:31:26.040
+<v Navid Salimian>Okay.</v>
+
+00:31:25.960 --> 00:31:27.240
+<v Pritam Das>That's why I ask.</v>
+
+00:31:28.920 --> 00:31:32.440
+<v Navid Salimian>Can I ask, do you have prior ConnectWise experience?</v>
+
+00:31:33.000 --> 00:31:33.880
+<v Pritam Das>Yes, I do.</v>
+
+00:31:33.800 --> 00:31:49.240
+<v Navid Salimian>Okay, so what I'm kind of hearing from you, excuse me, I apologize, is access to the service reports, as well as access to the time entry reports, and then access to the service boards. Is that, is there anything that I'm missing?</v>
+
+00:31:44.680 --> 00:31:45.160
+<v Pritam Das>Right.</v>
+
+00:31:47.160 --> 00:31:47.640
+<v Pritam Das>Correct.</v>
+
+00:31:49.800 --> 00:31:50.120
+<v Pritam Das>Noel.</v>
+
+00:31:50.840 --> 00:31:58.600
+<v Navid Salimian>Okay, cool. I'll submit the request. We have to get it approved, blah, blah, blah. But we'll get cracking on that for you, okay?</v>
+
+00:31:59.160 --> 00:32:01.040
+<v Pritam Das>Okay, sure. Thank you. Thank you so much.</v>
+
+00:32:01.640 --> 00:32:19.320
+<v Navid Salimian>My pleasure. I did want to just end with really quickly that Pritam we appreciate your time. Thank you so much. I feel like we beat you up a little bit this meeting, but I want you to know that we very much value your partnership and your efforts here. I've heard nothing but great things about you from everybody that I've spoken to. So</v>
+
+00:32:19.880 --> 00:32:27.240
+<v Navid Salimian>Very much looking forward to, you know, you know, developing our relationship and, you know.</v>
+
+00:32:26.440 --> 00:32:30.200
+<v Pritam Das>Definitely, definitely know it, and you know...</v>
+
+00:32:29.280 --> 00:32:33.880
+<v Jose Correa>Please, I'm not gonna tell it, but don't rat me out then if he thinks I beat you up this time.</v>
+
+00:32:35.960 --> 00:32:56.080
+<v Pritam Das>It's not like that. Okay. So data price is like one of the valued partnership that Javid really endorsed. Like Javid is my CTO. So I'm always on my toes when it comes to data price. And I have been working with a lot many enterprise and strategic partnership and that's why they have</v>
+
+00:32:39.040 --> 00:32:39.320
+<v Jose Correa>Yeah.</v>
+
+00:32:56.160 --> 00:32:57.640
+<v Pritam Das>put me from India to Philippines here.</v>
+
+00:32:58.520 --> 00:33:09.480
+<v Pritam Das>So Javid is trusting on me and definitely I will go ahead and make sure that we go towards the right direction. And yes, initial hiccups were out there, but we'll definitely settle it down.</v>
+
+00:33:10.800 --> 00:33:12.040
+<v Navid Salimian>Thank you. I appreciate that.</v>
+
+00:33:13.360 --> 00:33:14.280
+<v Jose Correa>Again, there again.</v>
+
+00:33:13.720 --> 00:33:14.200
+<v Pritam Das>That again.</v>
+
+00:33:15.240 --> 00:33:25.800
+<v Pritam Das>Nice meeting you, Javid, and thank you, Jose William, for all the inputs. Just wait till the end of the business, Jose. I will drop you an email with the next action steps.</v>
+
+00:33:17.160 --> 00:33:17.960
+<v Navid Salimian>Likewise.</v>
+
+00:33:26.400 --> 00:33:28.480
+<v Jose Correa>Appreciate that. See you in two weeks, too.</v>
+
+00:33:29.560 --> 00:33:30.120
+<v Pritam Das>Thank you.</v>
+
+00:33:30.600 --> 00:33:31.400
+<v Navid Salimian>Take care. Bye.</v>
+
+00:33:30.680 --> 00:33:31.000
+<v Jose Correa>Bye.</v>
+
+00:33:30.680 --> 00:33:32.200
+<v William Freeman>All right. Take care, everybody.</v>
+
+00:33:31.720 --> 00:33:32.280
+<v Pritam Das>Take your way.</v>
+

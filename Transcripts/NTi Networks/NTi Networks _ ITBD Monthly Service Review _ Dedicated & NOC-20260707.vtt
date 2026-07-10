@@ -1,0 +1,965 @@
+WEBVTT
+NOTE title: NTi Networks | ITBD Monthly Service Review | Dedicated & NOC
+NOTE date: 2026-07-07
+NOTE duration: 23m 30s
+
+00:00:03.803 --> 00:00:04.843
+<v Ashley Popkin Wilson>It's a good question.</v>
+
+00:00:05.643 --> 00:00:05.803
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:00:07.483 --> 00:00:08.843
+<v Kawandeep Sandhu>Only Ben can answer this.</v>
+
+00:00:09.723 --> 00:00:17.483
+<v Ashley Popkin Wilson>Correct. I know Jeremy said he'll be a few minutes late. He was wrapping something up.</v>
+
+00:00:10.443 --> 00:00:10.563
+<v Megan Ehmen>Yeah.</v>
+
+00:00:13.963 --> 00:00:15.163
+<v Kawandeep Sandhu>Okay, no worries.</v>
+
+00:00:20.443 --> 00:00:26.763
+<v Kawandeep Sandhu>In the meantime, while we wait for Ben, which I hope it joins.</v>
+
+00:00:27.243 --> 00:00:28.043
+<v Ashley Popkin Wilson>I'm checking.</v>
+
+00:00:27.723 --> 00:00:28.443
+<v Kawandeep Sandhu>We have time.</v>
+
+00:00:35.483 --> 00:00:39.963
+<v Kawandeep Sandhu>So before we go ahead with the presentation, I will let...</v>
+
+00:00:40.843 --> 00:00:43.883
+<v Kawandeep Sandhu>Andy, I'm sorry, Addy and Kobe.</v>
+
+00:00:45.083 --> 00:00:48.083
+<v Kawandeep Sandhu>Ask questions as per NOC, and then we can look at the presentation.</v>
+
+00:00:49.243 --> 00:00:50.923
+<v Kawandeep Sandhu>So, over to you, gentlemen.</v>
+
+00:00:52.843 --> 00:00:59.563
+<v Addy Kumar>Thank you, Kevin. So nothing critical from my end. So any feedback for NOC team?</v>
+
+00:01:01.963 --> 00:01:05.163
+<v Addy Kumar>From the server side, anything you see concerning?</v>
+
+00:01:02.363 --> 00:01:02.683
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:01:03.883 --> 00:01:07.003
+<v Ashley Popkin Wilson>Not not for me, that would be that would be a question for Ben.</v>
+
+00:01:07.923 --> 00:01:08.083
+<v Addy Kumar>Yeah.</v>
+
+00:01:13.603 --> 00:01:15.483
+<v Addy Kumar>Kobe, anything will be alright.</v>
+
+00:01:17.083 --> 00:01:17.323
+<v Ashley Popkin Wilson>No.</v>
+
+00:01:17.363 --> 00:01:19.243
+<v Kobe Kumar>Thank you so much, Addy. I am all good.</v>
+
+00:01:21.483 --> 00:01:22.123
+<v Addy Kumar>All right.</v>
+
+00:01:25.963 --> 00:01:27.003
+<v Kawandeep Sandhu>That was pretty fast.</v>
+
+00:01:27.723 --> 00:01:28.043
+<v Addy Kumar>Kip.</v>
+
+00:01:27.963 --> 00:01:37.403
+<v Kawandeep Sandhu>So you guys want to stick around? I mean, I don't know if Ben will join and if he has any questions, then either I can pull you in or you can just...</v>
+
+00:01:38.483 --> 00:01:39.163
+<v Kawandeep Sandhu>Be on this call.</v>
+
+00:01:40.963 --> 00:01:41.643
+<v Addy Kumar>Yeah, sure.</v>
+
+00:01:42.123 --> 00:01:45.643
+<v Kobe Kumar>Sure. Thank you so much, guys, for your time. Have a good day.</v>
+
+00:01:45.563 --> 00:01:58.443
+<v Kawandeep Sandhu>Okay, Kobe wants to drop, so he's like, I'm dropping. Kevin's going to pull me in. But don't really, Kobe, I'll pull you in. So if you have other things to do, you can go ahead and you can drop.</v>
+
+00:01:47.403 --> 00:01:47.563
+<v Addy Kumar>Yeah.</v>
+
+00:01:47.563 --> 00:01:50.123
+<v Kobe Kumar>It's been.</v>
+
+00:01:59.883 --> 00:02:00.603
+<v Kobe Kumar>Thank you, Kevin.</v>
+
+00:02:02.523 --> 00:02:05.003
+<v Kawandeep Sandhu>Okay, in the meantime, what I'll do is...</v>
+
+00:02:06.283 --> 00:02:10.603
+<v Kawandeep Sandhu>I'm going to share my screen and we will look at the presentation. Okay.</v>
+
+00:02:11.883 --> 00:02:12.043
+<v Ashley Popkin Wilson>Akshay.</v>
+
+00:02:13.923 --> 00:02:17.003
+<v Kawandeep Sandhu>Let me know when you can see my screen.</v>
+
+00:02:21.803 --> 00:02:22.363
+<v Ashley Popkin Wilson>That's good.</v>
+
+00:02:22.043 --> 00:02:22.923
+<v Kawandeep Sandhu>I hope you can see it.</v>
+
+00:02:24.923 --> 00:02:27.163
+<v Kawandeep Sandhu>Alright, why is Megan so serious?</v>
+
+00:02:27.803 --> 00:02:33.883
+<v Megan Ehmen>Sorry, I'm waiting. This is this over here is you guys. This over here is my e-mail.</v>
+
+00:02:33.963 --> 00:02:39.563
+<v Kawandeep Sandhu>Yeah, that's why when I look at you, you were like so serious that maybe I hope.</v>
+
+00:02:38.283 --> 00:02:43.323
+<v Megan Ehmen>That's probably in my face the entire day. I'll try. I will try to work on this.</v>
+
+00:02:38.923 --> 00:02:39.643
+<v Ashley Popkin Wilson>Ha ha ha.</v>
+
+00:02:41.643 --> 00:02:43.643
+<v Kawandeep Sandhu>It's Tuesday, so we have time.</v>
+
+00:02:46.443 --> 00:02:49.003
+<v Kawandeep Sandhu>Okay, cool. Yeah, we have Jeremy. Hey, Jeremy, welcome.</v>
+
+00:02:49.483 --> 00:02:51.443
+<v Jeremy Campbell>Hey, hey, good morning. Sorry about that.</v>
+
+00:02:50.843 --> 00:03:02.443
+<v Kawandeep Sandhu>Have we just started? No worries, we just started. So welcome to our monthly service check-in for NTI networks. As per the agenda item, it stays pretty much the same. We'll go through the highlights, performance analysis, all the schedule.</v>
+
+00:03:03.323 --> 00:03:22.283
+<v Kawandeep Sandhu>Build it, Team GPS, way forward, and then meeting minutes. As per the highlights, the biggest highlight from last week is that, from last month, is that Rachel has been promoted to Senior Helpdesk Support Specialist. So that's a promotion on our side. Okay.</v>
+
+00:03:18.843 --> 00:03:19.643
+<v Ashley Popkin Wilson>Ohh.</v>
+
+00:03:22.603 --> 00:03:25.083
+<v Kawandeep Sandhu>So just wanted to share this news with everyone.</v>
+
+00:03:23.643 --> 00:03:26.523
+<v Ashley Popkin Wilson>But still, congratulations to her.</v>
+
+00:03:27.323 --> 00:03:49.563
+<v Kawandeep Sandhu>Yep, yep. And Akshay is also getting ready, but for Akshay, it's a little bit more difficult because he's going for the advanced level. So he's already at a senior level right now. So he's preparing for the advance. But overall, he is like certified as per SC300 and AZ104. And then the team continues to meet their service expectations with a focus on SLA address.</v>
+
+00:03:49.683 --> 00:03:56.363
+<v Kawandeep Sandhu>and continuous improvement. So these are the few, you know, highlights. Anything that you want to add before we move on to the next slide?</v>
+
+00:03:58.523 --> 00:03:59.243
+<v Ashley Popkin Wilson>I don't think so.</v>
+
+00:04:01.403 --> 00:04:01.803
+<v Jeremy Campbell>Nope.</v>
+
+00:04:01.803 --> 00:04:20.723
+<v Kawandeep Sandhu>Okay, cool. As for their performance analysis, overall, Annie was at 52%, Rachel 61, Akshay 66. For the month of June, Rachel and Akshay, they were able to exceed their benchmark score. Annie, however, did well. We all know where she's struggling.</v>
+
+00:04:21.883 --> 00:04:26.403
+<v Kawandeep Sandhu>But as per the team, if I look at it, on an average, they are around about 60%.</v>
+
+00:04:29.003 --> 00:04:32.523
+<v Kawandeep Sandhu>So anything that you want to add, Ashley, Jeremy, Megan?</v>
+
+00:04:34.123 --> 00:04:41.723
+<v Kawandeep Sandhu>I should not pick on Megan because Megan is obviously not the one who is working closely with the team. It's Jeremy and Ashley.</v>
+
+00:04:36.763 --> 00:04:37.083
+<v Megan Ehmen>Addy.</v>
+
+00:04:39.083 --> 00:04:39.803
+<v Ashley Popkin Wilson>Show.</v>
+
+00:04:39.723 --> 00:04:42.523
+<v Megan Ehmen>Just because my camera is visible.</v>
+
+00:04:40.043 --> 00:04:40.603
+<v Jeremy Campbell>Yeah.</v>
+
+00:04:42.803 --> 00:04:42.923
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:04:42.843 --> 00:04:43.123
+<v Jeremy Campbell>Haha.</v>
+
+00:04:43.883 --> 00:04:47.643
+<v Ashley Popkin Wilson>Well, I usually turn it off while we're paying attention to the to the...</v>
+
+00:04:44.763 --> 00:04:44.923
+<v Megan Ehmen>Mm.</v>
+
+00:04:48.283 --> 00:04:53.003
+<v Kawandeep Sandhu>Well, Ben is here, so Ben is here. So, hey Ben, we miss you, but thanks for joining.</v>
+
+00:04:49.203 --> 00:04:50.523
+<v Ashley Popkin Wilson>Good evening. Hi then.</v>
+
+00:04:51.563 --> 00:04:52.283
+<v Ashley Popkin Wilson>You're muted.</v>
+
+00:04:55.323 --> 00:04:59.723
+<v Kawandeep Sandhu>You're speaking on mute. He has to say everything again.</v>
+
+00:04:55.603 --> 00:04:56.123
+<v Ashley Popkin Wilson>You're muted.</v>
+
+00:05:01.883 --> 00:05:07.003
+<v Kawandeep Sandhu>Sorry, Ben, still not able to hear anything. You're facing technical issues, Ben.</v>
+
+00:05:07.283 --> 00:05:09.963
+<v Ashley Popkin Wilson>There we go. Call IT. Yeah.</v>
+
+00:05:07.563 --> 00:05:13.643
+<v Ben Bierbaum>Oh, sorry, you're talking to me. No, someone showed up to my house to do some work and it came right at 1030, so.</v>
+
+00:05:08.763 --> 00:05:09.483
+<v Kawandeep Sandhu>There you go.</v>
+
+00:05:13.643 --> 00:05:16.363
+<v Ashley Popkin Wilson>That's what Mary Beth said when I called her.</v>
+
+00:05:14.403 --> 00:05:14.763
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:05:17.283 --> 00:05:17.523
+<v Ben Bierbaum>Yeah.</v>
+
+00:05:17.723 --> 00:05:26.923
+<v Kawandeep Sandhu>But we're happy that you're here, so thank you so much for joining, Ben. We just started. Let me do one thing. Let me just stop sharing my screen and as per our...</v>
+
+00:05:28.443 --> 00:05:38.603
+<v Kawandeep Sandhu>usual stuff, we're going to go with to the NOC team first. So I have Addy. So Ben, if you have anything for the NOC team, you can go ahead and let Addy know about it.</v>
+
+00:05:40.123 --> 00:05:41.163
+<v Kawandeep Sandhu>Addy, you with us?</v>
+
+00:05:41.483 --> 00:05:43.003
+<v Ben Bierbaum>No, I don't have any.</v>
+
+00:05:42.923 --> 00:05:43.803
+<v Addy Kumar>Yep, yep, on here.</v>
+
+00:05:44.123 --> 00:05:44.763
+<v Ben Bierbaum>Anything?</v>
+
+00:05:46.763 --> 00:05:49.803
+<v Kawandeep Sandhu>So can we let Addy go then? Because he was patiently waiting for you.</v>
+
+00:05:50.443 --> 00:05:50.763
+<v Ben Bierbaum>Ah.</v>
+
+00:05:50.603 --> 00:05:50.843
+<v Addy Kumar>Pre.</v>
+
+00:05:51.883 --> 00:06:00.363
+<v Ben Bierbaum>Addy, for the NOC team, actually I did think of one thing. We're switching our VMware hosts to Proxmox.</v>
+
+00:05:52.403 --> 00:05:52.523
+<v Kawandeep Sandhu>But.</v>
+
+00:06:01.003 --> 00:06:01.483
+<v Addy Kumar>Mhm.</v>
+
+00:06:02.363 --> 00:06:21.243
+<v Ben Bierbaum>Do you guys have any experience with Proxmox, like monitoring it? Okay, all right. I'll have to, we don't have additional, we don't have enough hardware to do them all at once, so we're doing them one at a time and moving things around. So that project will be going on starting.</v>
+
+00:06:04.723 --> 00:06:06.483
+<v Addy Kumar>Yeah, we do, we do.</v>
+
+00:06:17.403 --> 00:06:17.563
+<v Addy Kumar>Mm.</v>
+
+00:06:21.323 --> 00:06:37.083
+<v Ben Bierbaum>I don't know, in a couple of weeks, but I'll, I'll, we'll let the NOC know when things are going to be going down and things, and then once it's once we convert them, I guess we'll need to find out how you guys want to have access to the new Proxmox versus the...</v>
+
+00:06:39.003 --> 00:06:39.563
+<v Ben Bierbaum>VMware.</v>
+
+00:06:39.083 --> 00:06:39.403
+<v Addy Kumar>OK.</v>
+
+00:06:43.323 --> 00:06:43.883
+<v Ben Bierbaum>Thank you.</v>
+
+00:06:45.723 --> 00:06:47.563
+<v Addy Kumar>Thank you, Ben. Over to you, Kevin.</v>
+
+00:06:49.163 --> 00:06:58.363
+<v Kawandeep Sandhu>Okay, thank you, Addy. So if you're good, feel free to drop. If you want to stick around again, I'll say the same thing. You can. Okay.</v>
+
+00:06:57.083 --> 00:06:57.243
+<v Addy Kumar>Yeah.</v>
+
+00:06:59.923 --> 00:07:00.123
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:07:00.203 --> 00:07:01.083
+<v Addy Kumar>Thank you, Chopra.</v>
+
+00:07:02.403 --> 00:07:15.323
+<v Kawandeep Sandhu>All right, so Ben, we just started. Let me just go back to our previous slide. We were just discussing the highlights, so I just want to go back to the previous one. Well, the big news is that Rachel, she has been promoted to senior.</v>
+
+00:07:16.243 --> 00:07:29.803
+<v Kawandeep Sandhu>Helpdesk support specialists. That's on our side. I was just telling the team Akshay is also getting ready for his level up. That will be as for the advanced level. So they both are preparing in a way that.</v>
+
+00:07:30.763 --> 00:07:47.643
+<v Kawandeep Sandhu>Now they can handle more complex tickets on your side. So feel free to test them. That's what I can tell you. As they, you know, go ahead with the promotion on our side, we want you guys to assess them, test them, and see where they stand as per their knowledge.</v>
+
+00:07:49.243 --> 00:07:55.083
+<v Ben Bierbaum>Yeah, I did. I had got through exercise with Rachel this morning, so she's doing good.</v>
+
+00:07:54.763 --> 00:07:58.523
+<v Kawandeep Sandhu>Yeah, I know something happened. I she told me that something happened.</v>
+
+00:07:57.083 --> 00:08:08.123
+<v Ben Bierbaum>Well, I just said, they did a ticket and they closed it and I was like, well, you can't, you didn't, we didn't really ask all the questions. So anyway, it turned out good. She did a good job.</v>
+
+00:08:05.483 --> 00:08:05.763
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:08:08.763 --> 00:08:13.243
+<v Kawandeep Sandhu>Okay, cool, but she told me that something happened as I was like, no way.</v>
+
+00:08:12.923 --> 00:08:30.283
+<v Ben Bierbaum>I mean, it ended up that the ticket was solved properly, but I said, we really can't know that this is the right answer unless we at least ask a couple more questions. And so, but that's, it was, it turned out they did the right, they answered it. They were right in the first part.</v>
+
+00:08:20.843 --> 00:08:21.243
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:08:28.603 --> 00:08:30.123
+<v Kawandeep Sandhu>Okay, cool.</v>
+
+00:08:31.083 --> 00:08:43.643
+<v Kawandeep Sandhu>That's good. That's good. Questions when you ask, it will give you clarity. And I think that's where we all struggle at times because we assume things and we all know what happens when we assume things.</v>
+
+00:08:39.483 --> 00:08:39.803
+<v Ben Bierbaum>Yeah.</v>
+
+00:08:43.923 --> 00:08:44.163
+<v Ben Bierbaum>Yeah.</v>
+
+00:08:46.123 --> 00:08:46.763
+<v Kawandeep Sandhu>Okay.</v>
+
+00:08:47.323 --> 00:08:49.443
+<v Ben Bierbaum>We have a saying here for that, but I don't.</v>
+
+00:08:49.163 --> 00:08:49.923
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:08:50.443 --> 00:08:50.923
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:08:51.483 --> 00:08:55.163
+<v Megan Ehmen>I was hoping it'd be the same. That's why I was like, assumes what? What does that mean?</v>
+
+00:08:52.483 --> 00:08:53.163
+<v Kawandeep Sandhu>Something like.</v>
+
+00:08:54.963 --> 00:09:00.203
+<v Kawandeep Sandhu>Yeah. Yes, I know.</v>
+
+00:08:55.203 --> 00:08:55.323
+<v Ben Bierbaum>Yeah.</v>
+
+00:08:57.723 --> 00:08:59.083
+<v Ben Bierbaum>You guys know the Singh?</v>
+
+00:09:00.363 --> 00:09:00.923
+<v Ben Bierbaum>Okay.</v>
+
+00:09:01.323 --> 00:09:03.643
+<v Kawandeep Sandhu>I know it. I just don't want to say it.</v>
+
+00:09:01.483 --> 00:09:02.923
+<v Megan Ehmen>The only reason I know how to spell it.</v>
+
+00:09:05.963 --> 00:09:17.083
+<v Kawandeep Sandhu>We all know it, it's a, yeah, I think around the globe it's the same thing, so I think we we all know it, so we're on the same page, because so we were just assessing their...</v>
+
+00:09:11.683 --> 00:09:12.203
+<v Ben Bierbaum>Okay, good.</v>
+
+00:09:19.163 --> 00:09:38.443
+<v Kawandeep Sandhu>Billable KPI as per last month, June month, we're looking at June's data. Akshay, Rachel, as always, they're doing great as per they're billable. And even though she's struggling, but that's something that I think, Ben, we already discussed, and I just wanted to let you know that next week we will have Sneha.</v>
+
+00:09:40.203 --> 00:09:52.443
+<v Kawandeep Sandhu>Snares on boarding, but that will happen next week. We'll keep you posted. So, this team, this team knows right that very soon and he will not be part of this group. Do we know this?</v>
+
+00:09:41.963 --> 00:09:42.283
+<v Ben Bierbaum>OK.</v>
+
+00:09:53.003 --> 00:10:00.123
+<v Ashley Popkin Wilson>We, we were, we knew, but we we didn't know it was official, I think, but it we were in the we were in the know.</v>
+
+00:10:01.083 --> 00:10:19.403
+<v Kawandeep Sandhu>Okay, yeah, so looking at the current scenario, she's struggling with her health, you know, what's happening at her pace with her father. So things are not good at her. And so, yeah, very soon. That's why we wanted to make sure that we have</v>
+
+00:10:20.203 --> 00:10:27.083
+<v Kawandeep Sandhu>Sneha, who's the replacement engineer for Annie, she will be joining us next week. So you'll get more details from us.</v>
+
+00:10:29.803 --> 00:10:42.843
+<v Kawandeep Sandhu>OK, ticket closure rate again, Rachel Akshay doing phenomenal above the goal, and he was at sixty-seven percent, but yeah, looking at the scorecard, looking at their KPIs, I mean...</v>
+
+00:10:44.043 --> 00:10:47.323
+<v Kawandeep Sandhu>Akshay, Rachel, I have no question. They have been doing phenomenal work.</v>
+
+00:10:50.763 --> 00:10:53.883
+<v Kawandeep Sandhu>Jeremy, Ashley, anything from your end?</v>
+
+00:10:56.683 --> 00:10:58.363
+<v Ashley Popkin Wilson>Um, I don't think so.</v>
+
+00:10:57.123 --> 00:10:57.243
+<v Jeremy Campbell>Yeah.</v>
+
+00:10:59.803 --> 00:11:00.643
+<v Jeremy Campbell>No, not really.</v>
+
+00:11:00.483 --> 00:11:01.643
+<v Kawandeep Sandhu>Okay, cool.</v>
+
+00:11:01.003 --> 00:11:01.763
+<v Ashley Popkin Wilson>Been doing pretty good.</v>
+
+00:11:02.803 --> 00:11:09.403
+<v Kawandeep Sandhu>All right, perfect. Jeremy, you've been watching FIFA. Who's watching FIFA, by the way? Is anyone watching FIFA?</v>
+
+00:11:06.443 --> 00:11:06.603
+<v Jeremy Campbell>Ha.</v>
+
+00:11:07.723 --> 00:11:08.763
+<v Ashley Popkin Wilson>I've been watching.</v>
+
+00:11:08.683 --> 00:11:10.763
+<v Jeremy Campbell>I've been keeping track of it.</v>
+
+00:11:08.883 --> 00:11:11.083
+<v Ben Bierbaum>We are. Last night, though.</v>
+
+00:11:12.203 --> 00:11:13.643
+<v Ashley Popkin Wilson>I know, last night, yeah.</v>
+
+00:11:12.363 --> 00:11:12.523
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:11:13.723 --> 00:11:16.283
+<v Kawandeep Sandhu>Maybe we're not talking about last night. We're not talking about last night.</v>
+
+00:11:13.843 --> 00:11:14.443
+<v Jeremy Campbell>Yeah.</v>
+
+00:11:15.403 --> 00:11:20.923
+<v Ben Bierbaum>Last night was terrible. We got, I mean, yeah, that third goal was awful.</v>
+
+00:11:21.083 --> 00:11:22.763
+<v Ashley Popkin Wilson>Well, you know what they say that.</v>
+
+00:11:22.123 --> 00:11:23.883
+<v Ben Bierbaum>I could have, I could have stopped that.</v>
+
+00:11:24.123 --> 00:11:34.363
+<v Ashley Popkin Wilson>You know what they say? They say that there's a curse because of Trump. And anytime he gets himself involved, like we lose.</v>
+
+00:11:25.603 --> 00:11:25.883
+<v Ben Bierbaum>But.</v>
+
+00:11:31.243 --> 00:11:31.723
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:11:33.483 --> 00:11:34.683
+<v Ben Bierbaum>We deserve it!</v>
+
+00:11:37.923 --> 00:11:41.243
+<v Kawandeep Sandhu>Yeah, so I'm not a huge fan of soccer.</v>
+
+00:11:38.803 --> 00:11:38.923
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:11:39.403 --> 00:11:39.803
+<v Ben Bierbaum>Rump.</v>
+
+00:11:39.403 --> 00:11:41.803
+<v Jeremy Campbell>There's actually a funnier thing kind of going on with that whole thing.</v>
+
+00:11:42.083 --> 00:11:47.003
+<v Ben Bierbaum>We want to turn this into Trump bashing. I'm happy to oblige. I can go on and on.</v>
+
+00:11:43.123 --> 00:11:43.803
+<v Jeremy Campbell>There's a...</v>
+
+00:11:45.843 --> 00:11:46.043
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:11:46.083 --> 00:11:46.763
+<v Ashley Popkin Wilson>No, Namit.</v>
+
+00:11:48.123 --> 00:11:51.803
+<v Ashley Popkin Wilson>Yeah, no, no, I just was reading about that today that there are some curse they were talking about.</v>
+
+00:11:52.923 --> 00:12:11.803
+<v Kawandeep Sandhu>Yeah, you hear a lot of things. Obviously, you know what happened last night, you're not talking about it. But overall, I think we are very happy from my perspective that you are getting new teams now challenging the big giants of soccer. So to me, that's a good sign. When you see like teams like Norway, you know, coming in.</v>
+
+00:11:57.083 --> 00:11:57.403
+<v Ben Bierbaum>Ohh.</v>
+
+00:12:12.203 --> 00:12:31.483
+<v Kawandeep Sandhu>We have that small country like Cape Verde challenging, yeah, challenging Argentina. So yeah, so that's a good sign. So we don't want a domination from one country where that's not how it should be. So let's see, let's see. I'm excited for France, Argentina. They have been playing very well.</v>
+
+00:12:15.483 --> 00:12:18.843
+<v Jeremy Campbell>Hey, Verde, yeah, they did phenomenal, so.</v>
+
+00:12:25.323 --> 00:12:25.363
+<v Ashley Popkin Wilson>100%.</v>
+
+00:12:31.763 --> 00:12:36.363
+<v Ashley Popkin Wilson>Argentina is here today. They're here in Atlanta today. There was a bunch of people marching downtown.</v>
+
+00:12:32.043 --> 00:12:32.563
+<v Kawandeep Sandhu>Friend.</v>
+
+00:12:36.843 --> 00:12:39.403
+<v Kawandeep Sandhu>Oh, that's cool. You're gonna watch Messi? That's nice.</v>
+
+00:12:38.283 --> 00:12:44.763
+<v Ben Bierbaum>Yeah, my son went to one of the games last week, England. Who did he go to? Not the, not the...</v>
+
+00:12:44.203 --> 00:12:44.843
+<v Kawandeep Sandhu>England.</v>
+
+00:12:44.843 --> 00:12:47.243
+<v Jeremy Campbell>That's England versus Mexico, if that's the case.</v>
+
+00:12:46.363 --> 00:12:47.643
+<v Kawandeep Sandhu>Versa, yeah, Mexico.</v>
+
+00:12:47.163 --> 00:12:50.523
+<v Ben Bierbaum>No, what was the one, but what who did they play before that? It was...</v>
+
+00:12:50.443 --> 00:12:52.003
+<v Ashley Popkin Wilson>England versus wasn't.</v>
+
+00:12:50.963 --> 00:12:51.803
+<v Kawandeep Sandhu>Maybe Seattle?</v>
+
+00:12:53.563 --> 00:12:53.643
+<v Ashley Popkin Wilson>Ahh.</v>
+
+00:12:53.643 --> 00:13:01.003
+<v Ben Bierbaum>It was something in Atlanta. I thought it was in and maybe it was if they're in Seattle then it wasn't that he's here in Atlanta. Anyway, he was he was like...</v>
+
+00:13:03.483 --> 00:13:12.603
+<v Ben Bierbaum>I don't know, had the afternoon off and he just looked, the game started and then the tickets dropped in price, like it went by half. So he was able to get a good price on the ticket.</v>
+
+00:13:07.643 --> 00:13:08.123
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:13:11.083 --> 00:13:11.723
+<v Ashley Popkin Wilson>Mhm.</v>
+
+00:13:11.563 --> 00:13:11.883
+<v Kawandeep Sandhu>Oh.</v>
+
+00:13:13.323 --> 00:13:24.363
+<v Kawandeep Sandhu>I'm hearing the tickets are so expensive, right? It's not cheap and it's like crazy expensive. So good luck with that if you're getting it at a half price.</v>
+
+00:13:16.363 --> 00:13:16.843
+<v Ben Bierbaum>Yeah.</v>
+
+00:13:20.443 --> 00:13:20.603
+<v Jeremy Campbell>Okay.</v>
+
+00:13:21.003 --> 00:13:27.563
+<v Ben Bierbaum>Yeah, yeah, after that, he still paid a lot, but it was only a few $100 versus thousands, you know.</v>
+
+00:13:27.883 --> 00:13:39.803
+<v Kawandeep Sandhu>Yeah, crazy prices are ticket prices are crazy, man. It's an expensive sport. Anyways, getting back to our usual things, so next holiday is on.</v>
+
+00:13:28.123 --> 00:13:28.603
+<v Ashley Popkin Wilson>Right.</v>
+
+00:13:33.323 --> 00:13:33.483
+<v Ashley Popkin Wilson>Okay.</v>
+
+00:13:41.323 --> 00:13:53.523
+<v Kawandeep Sandhu>September 7th, Labor Day. So we have time. I think we can discuss if you need the team during Labor Day. But rest, apart from that, I haven't heard anything else.</v>
+
+00:13:51.163 --> 00:13:51.403
+<v Ben Bierbaum>No.</v>
+
+00:13:52.603 --> 00:13:53.163
+<v Ben Bierbaum>Me.</v>
+
+00:13:54.323 --> 00:13:58.843
+<v Kawandeep Sandhu>I think we are good as for the scheduling piece on the holidays, so yep.</v>
+
+00:14:00.603 --> 00:14:06.603
+<v Kawandeep Sandhu>Moving on, as for the shift schedules remains the same for all three, no change, so...</v>
+
+00:14:01.163 --> 00:14:01.483
+<v Ben Bierbaum>Yeah.</v>
+
+00:14:09.403 --> 00:14:19.923
+<v Kawandeep Sandhu>I see Sameer joining in. Thank you, Sameer, for joining in. Build it. I think registrations is done, right, Ben? And then overall, you're coming. Okay, awesome.</v>
+
+00:14:16.443 --> 00:14:18.043
+<v Ben Bierbaum>Yeah, we're three of us coming.</v>
+
+00:14:17.163 --> 00:14:17.523
+<v Ashley Popkin Wilson>Yeah.</v>
+
+00:14:22.123 --> 00:14:33.083
+<v Kawandeep Sandhu>All right, AI by design will be added to our build it agenda. That will be on August 5th. So you will get a lot of insights on day 3rd.</v>
+
+00:14:34.923 --> 00:14:52.683
+<v Kawandeep Sandhu>Team GPS, we all know about it, we're going to skip it. Focus overall remains the same. We just want to make sure that the team continues to perform well and provide value to NTI. And I think that's where our focus is. And hopefully once we get the new person in,</v>
+
+00:14:47.243 --> 00:14:47.323
+<v Ben Bierbaum>Ohh.</v>
+
+00:14:53.963 --> 00:15:10.923
+<v Kawandeep Sandhu>things will be more streamlined. And if there are any roadblocks, then together we'll overcome all those. So that's pretty much it from my side. I'm going to stop sharing my screen now. I'm going to open up the floor. So I'll go over to Ben, you first, since you joined late. So</v>
+
+00:15:12.003 --> 00:15:12.523
+<v Kawandeep Sandhu>Over to you.</v>
+
+00:15:14.763 --> 00:15:19.083
+<v Ben Bierbaum>Yeah, I don't have uh too much. Um, nice.</v>
+
+00:15:20.443 --> 00:15:21.723
+<v Ben Bierbaum>Right now, I...</v>
+
+00:15:23.083 --> 00:15:23.883
+<v Ben Bierbaum>Oh, hey, Sameer.</v>
+
+00:15:25.483 --> 00:15:44.923
+<v Sameer Shukla>Hey Ben, how are you guys? I'm good, I'm good. I joined it purposefully, just wanted to say hi. And looking again, forward to meet all three of you if you guys are coming. That's what I heard from Andy and the team. Yeah, yeah, I'm good, I'm good. And Shashank probably will also be flying. So we, you're going to say...</v>
+
+00:15:26.363 --> 00:15:29.643
+<v Ben Bierbaum>How you doing? Good. It's been a while.</v>
+
+00:15:32.043 --> 00:15:32.603
+<v Ben Bierbaum>Okay.</v>
+
+00:15:36.123 --> 00:15:39.323
+<v Ben Bierbaum>Okay, you're going to be there again? That'll be good. All right.</v>
+
+00:15:36.243 --> 00:15:36.363
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:15:43.963 --> 00:15:44.763
+<v Ashley Popkin Wilson>Ohh.</v>
+
+00:15:44.803 --> 00:15:49.163
+<v Ben Bierbaum>Okay, because he didn't make it last year, I think, right? Or I didn't see him anyway.</v>
+
+00:15:45.003 --> 00:15:45.723
+<v Sameer Shukla>Both of us.</v>
+
+00:15:47.003 --> 00:15:47.643
+<v Ashley Popkin Wilson>No.</v>
+
+00:15:48.043 --> 00:15:48.923
+<v Sameer Shukla>Yeah, yeah.</v>
+
+00:15:49.963 --> 00:15:52.763
+<v Sameer Shukla>Yeah, no, so he should be there this time along with me.</v>
+
+00:15:50.363 --> 00:15:50.843
+<v Ben Bierbaum>Okay.</v>
+
+00:15:53.323 --> 00:15:53.803
+<v Ben Bierbaum>Okay.</v>
+
+00:15:55.043 --> 00:16:06.763
+<v Ben Bierbaum>Yeah, no, I'm good. The question I had was for the onboarding of the new person. Does that, I mean, remind me how that, do you guys handle that there, like?</v>
+
+00:16:08.603 --> 00:16:10.283
+<v Sameer Shukla>Yeah, Evan, can you help me with that? Yeah.</v>
+
+00:16:09.003 --> 00:16:09.483
+<v Kawandeep Sandhu>Yes.</v>
+
+00:16:09.723 --> 00:16:12.763
+<v Ben Bierbaum>Does Jeremy have to be highly involved in that or?</v>
+
+00:16:14.043 --> 00:16:29.083
+<v Kawandeep Sandhu>No, so yeah, we'll send you the updates next week. By next week, we'll give you all the details to you, Ben. And I think tentatively, I'm looking at July 15th. That's the date we are targeting. And beforehand, we'll give you all the details.</v>
+
+00:16:25.483 --> 00:16:25.963
+<v Ben Bierbaum>Okay.</v>
+
+00:16:27.243 --> 00:16:27.643
+<v Ben Bierbaum>Okay.</v>
+
+00:16:29.563 --> 00:16:32.043
+<v Ben Bierbaum>Okay, I'll get with...</v>
+
+00:16:33.763 --> 00:16:53.363
+<v Ben Bierbaum>Hear me about the new person to replace Annie coming up. The only other thing I had was I will be out of town that week before Build It. So that's the 26th through the 1st. I'll be out of town and mostly unavailable that week.</v>
+
+00:16:38.403 --> 00:16:38.523
+<v Jeremy Campbell>Yeah.</v>
+
+00:16:54.323 --> 00:17:08.603
+<v Ben Bierbaum>So if anything you need from me that week, I'm going to be at a scout tamboree thing. I'll be like living in a tent. So I should have cell service, but I'm not going to be working that week.</v>
+
+00:16:55.483 --> 00:16:56.043
+<v Kawandeep Sandhu>Ketan.</v>
+
+00:17:09.883 --> 00:17:21.123
+<v Kawandeep Sandhu>Okay, understood. Yeah. So I think the only help that we need from your end will be for the credentials. So I think that's something, do you think? Okay.</v>
+
+00:17:19.403 --> 00:17:22.043
+<v Ben Bierbaum>Jeremy and the guy, they can handle that at the Helpdesk.</v>
+
+00:17:22.203 --> 00:17:24.843
+<v Jeremy Campbell>I apologize, what day do we say was the start date?</v>
+
+00:17:22.803 --> 00:17:23.723
+<v Kawandeep Sandhu>Then I think we should be good.</v>
+
+00:17:25.243 --> 00:17:26.203
+<v Ashley Popkin Wilson>The 15th.</v>
+
+00:17:25.563 --> 00:17:28.443
+<v Kawandeep Sandhu>We're targeting July 15th, that's Wednesday.</v>
+
+00:17:29.723 --> 00:17:38.363
+<v Jeremy Campbell>Okay, I'm going to have to talk with some of the other guys to possibly cover for me because I'm actually going to be out next week. I'm going to be visiting family over in Delaware.</v>
+
+00:17:38.683 --> 00:17:40.683
+<v Ben Bierbaum>Yeah, no, no one I'm sure can handle that.</v>
+
+00:17:40.683 --> 00:17:42.123
+<v Jeremy Campbell>Oh yeah, yeah, 100%.</v>
+
+00:17:40.843 --> 00:17:45.403
+<v Ashley Popkin Wilson>I will be, I will be in town and I will be working.</v>
+
+00:17:44.603 --> 00:17:46.763
+<v Ben Bierbaum>Yeah, and I'll be, and I'll be around next week, too.</v>
+
+00:17:46.843 --> 00:17:52.003
+<v Jeremy Campbell>Yeah, no one's pretty good at filling in for me when I'm not available, so he should definitely be able to help out.</v>
+
+00:17:52.963 --> 00:17:53.323
+<v Ben Bierbaum>OK.</v>
+
+00:17:54.603 --> 00:17:57.483
+<v Kawandeep Sandhu>Okay, sounds good. And uh...</v>
+
+00:17:56.523 --> 00:18:07.643
+<v Jeremy Campbell>Oh, if you don't mind me asking, like, so are they going to be like located in the same office with Akshay and Rachel or? Okay. Cool, cool, cool. Awesome.</v>
+
+00:18:04.123 --> 00:18:06.283
+<v Kawandeep Sandhu>Yes, yes, yes, same office.</v>
+
+00:18:07.883 --> 00:18:17.003
+<v Kawandeep Sandhu>Even if, let's say, you don't have time, she will be sitting with Rachel and Akshay. So all three will be.</v>
+
+00:18:15.643 --> 00:18:16.043
+<v Jeremy Campbell>Okay.</v>
+
+00:18:15.803 --> 00:18:29.803
+<v Sameer Shukla>Yeah, that's the blessing in disguise, sort of a thing, Jeremy and Ben, that she's going to be in the same office. We want all three at the same place, sitting next to Gaurav and Gagan, me, and also in that office, right? So that we'll have the entire team sitting at one place.</v>
+
+00:18:24.923 --> 00:18:27.403
+<v Ben Bierbaum>That'll be nice. Yeah, that'll be helpful.</v>
+
+00:18:30.843 --> 00:18:31.323
+<v Jeremy Campbell>Cool.</v>
+
+00:18:33.443 --> 00:18:33.883
+<v Ben Bierbaum>Great.</v>
+
+00:18:34.203 --> 00:18:38.363
+<v Kawandeep Sandhu>Okay, great. Thank you, Ben. Jeremy, over to you. Any questions, concerns, feedback?</v>
+
+00:18:39.643 --> 00:18:59.243
+<v Jeremy Campbell>The only feedback I have, it's very minor stuff. Obviously, I'm always available to try and assist with any of the technicians' questions. You know, me, Patrick, Nolan, A, the local team and everything. I do want to make sure that when they're asking us for questions, obviously, you know, use all your resources before you ask them for help.</v>
+
+00:18:59.563 --> 00:19:20.123
+<v Jeremy Campbell>just general basic stuff. Also, there's been a little bit of trouble with when they're asking for help, they're incredibly vague. I do want to make sure it's kind of hammered into their head that like, hey, you know, what client's this for? Like, who's the user? What machine? Just like have everything all spread out so that we're not playing a guessing game. Because sometimes I just.</v>
+
+00:19:07.523 --> 00:19:08.043
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:19:10.283 --> 00:19:10.683
+<v Ben Bierbaum>Boo!</v>
+
+00:19:20.603 --> 00:19:41.323
+<v Jeremy Campbell>You know, like, let me just go and say, like, actually it's fantastic. Like, I can trust him with most cases and he can handle stuff without a problem with minimal interaction for me. But sometimes he'll just send me screenshots of things and I have to literally stop what I'm doing to go and try and research, like, okay, what are we talking about? Which tickets this for? Who's this for? Because I don't have all the stuff memorized, like.</v>
+
+00:19:41.523 --> 00:19:59.403
+<v Jeremy Campbell>what computer or who has what. I just want to make sure they're a little more aware to have all this stuff front and center before they're asking for help. That way we can kind of, you know, get them helped out, you know, as quick as possible, that kind of thing. The other thing was...</v>
+
+00:19:51.483 --> 00:19:52.043
+<v Kawandeep Sandhu>Yep, yep.</v>
+
+00:20:01.483 --> 00:20:21.843
+<v Jeremy Campbell>Do we have any method to provide better training for them as far as Macs go? So we don't have many clients that have Macs, but I do notice that they're struggling as a whole with supporting those. And whereas, you know, we don't mind, you know, taking those tickets from time to time. Obviously, we want to make sure that everyone knows how to do everything.</v>
+
+00:20:09.643 --> 00:20:10.123
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:20:13.803 --> 00:20:14.203
+<v Kawandeep Sandhu>Okay.</v>
+
+00:20:23.883 --> 00:20:45.283
+<v Sameer Shukla>Yeah, so I I'll take it as a to do here. So, Kavan, if we can just work with the L&D team, give them the soft training, retraining with the Mac piece, because I know that there are a lot of pieces in UK and US where there are a lot of clients who works on just Macs, like probably on the designing part, Acrobat piece. I also suffered a lot during my engineering days. They're not easy peasing, so...</v>
+
+00:20:28.563 --> 00:20:29.043
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:20:36.643 --> 00:20:36.963
+<v Jeremy Campbell>Kip.</v>
+
+00:20:41.483 --> 00:20:41.843
+<v Jeremy Campbell>Yeah.</v>
+
+00:20:45.323 --> 00:21:07.523
+<v Sameer Shukla>Please work with the team, see if they can give them some training around this. We do have a Mac, Jeremy, in office where we do have the trainings that can be done and aligned. So we do have the module. So come on, just work with them, create that module, get it blessed by Jeremy and the team if he finds it good. Give them the training for one or two weeks and then we can take it from there.</v>
+
+00:20:45.843 --> 00:20:46.323
+<v Kawandeep Sandhu>Mhm.</v>
+
+00:20:47.683 --> 00:20:48.083
+<v Kawandeep Sandhu>Sure.</v>
+
+00:20:52.243 --> 00:20:52.723
+<v Jeremy Campbell>Mhm.</v>
+
+00:20:56.483 --> 00:20:56.803
+<v Ashley Popkin Wilson>Right.</v>
+
+00:20:58.003 --> 00:20:58.163
+<v Ashley Popkin Wilson>Ansh.</v>
+
+00:20:58.523 --> 00:20:58.643
+<v Ben Bierbaum>Yeah.</v>
+
+00:21:08.083 --> 00:21:25.763
+<v Jeremy Campbell>Cool. Yeah, and honestly, it's nothing crazy too. Like, it's honestly just, it's bare bones basic stuff. I just want to make sure they're comfortable navigating around in there, making profiles, things like that. You know, we don't usually do anything crazy for Macs, but again, I just want to make sure they're comfortable working in it and not just be like, what do I do? You know?</v>
+
+00:21:08.723 --> 00:21:09.443
+<v Kawandeep Sandhu>Absolutely.</v>
+
+00:21:08.723 --> 00:21:09.523
+<v Ashley Popkin Wilson>Can we?</v>
+
+00:21:20.883 --> 00:21:21.123
+<v Sameer Shukla>Yeah.</v>
+
+00:21:25.443 --> 00:21:26.483
+<v Ashley Popkin Wilson>And we have...</v>
+
+00:21:26.003 --> 00:21:27.683
+<v Sameer Shukla>No, I completely understand. Yep.</v>
+
+00:21:27.603 --> 00:21:28.003
+<v Jeremy Campbell>Yeah.</v>
+
+00:21:28.163 --> 00:21:46.483
+<v Ashley Popkin Wilson>We have a Mac for business purposes, specifically to use for training and for testing and things like that. So if they need, it lives here at my house, so with me, so they can always just ask me if they can't get on it because it should be on screen connect and all that.</v>
+
+00:21:28.563 --> 00:21:29.083
+<v Sameer Shukla>So, actually.</v>
+
+00:21:36.803 --> 00:21:38.243
+<v Sameer Shukla>Yes, yes.</v>
+
+00:21:46.883 --> 00:21:47.123
+<v Ashley Popkin Wilson>Oh.</v>
+
+00:21:47.163 --> 00:21:58.243
+<v Sameer Shukla>Yeah, so we do have, we have a couple, I guess. I'll just check it again. So, Khan, you are there. I'm in Noida today, so if we can check it quickly, what is the part of the training and if they can do the hands on as well.</v>
+
+00:21:48.723 --> 00:21:49.203
+<v Ashley Popkin Wilson>Okay.</v>
+
+00:21:50.883 --> 00:21:51.363
+<v Ashley Popkin Wilson>Okay.</v>
+
+00:21:58.883 --> 00:21:59.923
+<v Kawandeep Sandhu>Sure, absolutely.</v>
+
+00:22:01.083 --> 00:22:04.083
+<v Kawandeep Sandhu>Thank you, Jeremy. Over to Ashley.</v>
+
+00:22:02.483 --> 00:22:02.803
+<v Jeremy Campbell>Cool.</v>
+
+00:22:05.643 --> 00:22:08.723
+<v Ashley Popkin Wilson>Uh, I, I have, I don't have much.</v>
+
+00:22:09.523 --> 00:22:11.363
+<v Ashley Popkin Wilson>I've been happy, they're good.</v>
+
+00:22:11.923 --> 00:22:14.003
+<v Kawandeep Sandhu>Okay, awesome. Thanks, Ashley. Megan.</v>
+
+00:22:17.523 --> 00:22:19.523
+<v Megan Ehmen>Yeah, everything seemed to be covered.</v>
+
+00:22:20.803 --> 00:22:22.323
+<v Kawandeep Sandhu>Thank you, Megan. Andy?</v>
+
+00:22:24.203 --> 00:22:46.163
+<v Andy Arora>Just wanted to ask Ben, Ashley, any requirement for Build It? I think you guys are registered, RSVP, all things are done. If you have any questions, need any support, just feel free to ping me or e-mail me and we'll be happy to assist and wish you a very happy, very good experience during Build It and I'll be meeting you after Build It.</v>
+
+00:22:39.363 --> 00:22:39.603
+<v Ashley Popkin Wilson>Okay.</v>
+
+00:22:46.483 --> 00:22:50.243
+<v Andy Arora>Sameer and Sushant will be there with you during build it. Thank you.</v>
+
+00:22:50.563 --> 00:22:50.803
+<v Ashley Popkin Wilson>Oh.</v>
+
+00:22:50.723 --> 00:22:51.283
+<v Ben Bierbaum>Sounds good.</v>
+
+00:22:52.003 --> 00:22:55.683
+<v Kawandeep Sandhu>All right, awesome. Thank you, Andy. Uh, Sameer, over to you.</v>
+
+00:22:56.483 --> 00:23:12.003
+<v Sameer Shukla>I'm good, I'm good. I'm excited to meet this team again. We had a good time last time as well. And we built up Ben together and it's going to be different again since Sushant will be there. He was more connected with the Ben in the team more than me. But I said it will be good to meet them in again person.</v>
+
+00:23:12.963 --> 00:23:13.443
+<v Kawandeep Sandhu>Awesome.</v>
+
+00:23:14.403 --> 00:23:27.243
+<v Kawandeep Sandhu>Thank you, Sameer. Well, that's all from our side today. I will see you after Build It. We're 100% sure you're going to have a great time during Build It. So looking forward to that, and we'll see you next time. Until then, have a good one. Take care. Bye bye.</v>
+
+00:23:19.883 --> 00:23:20.163
+<v Ben Bierbaum>Yep.</v>
+
+00:23:26.163 --> 00:23:28.163
+<v Ben Bierbaum>Thanks, Kris. Alright, bye.</v>
+
+00:23:27.683 --> 00:23:28.643
+<v Andy Arora>Thank you, bye-bye.</v>
+
+00:23:28.043 --> 00:23:29.763
+<v Ashley Popkin Wilson>Great, thanks guys. Bye.</v>
+
+00:23:28.883 --> 00:23:30.403
+<v Jeremy Campbell>Awesome. Thanks guys. Bye bye.</v>
+

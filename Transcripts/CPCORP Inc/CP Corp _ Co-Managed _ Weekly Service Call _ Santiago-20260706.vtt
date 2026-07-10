@@ -1,0 +1,743 @@
+WEBVTT
+NOTE title: CP Corp | Co-Managed | Weekly Service Call | Santiago
+NOTE date: 2026-07-06
+NOTE duration: 23m 29s
+
+00:00:03.359 --> 00:00:08.919
+<v Orlando Colon>We are waiting for somebody from your side. Let me know when you are completed.</v>
+
+00:00:10.279 --> 00:00:10.999
+<v Orlando Colon>Hi, Rick.</v>
+
+00:00:12.679 --> 00:00:13.319
+<v Kip Singh>All right.</v>
+
+00:00:13.959 --> 00:00:16.759
+<v Lee Cavellier>Yeah, I think it's the I think it's just the three of us today.</v>
+
+00:00:14.039 --> 00:00:14.919
+<v Rick Arora>Hi, Alan.</v>
+
+00:00:17.319 --> 00:00:17.639
+<v Lee Cavellier>Ah.</v>
+
+00:00:17.759 --> 00:00:22.959
+<v Kip Singh>Yeah, I'm just waiting for Ashish. Let me see if he can try, yeah.</v>
+
+00:00:20.759 --> 00:00:21.719
+<v Lee Cavellier>Oh, is that Chaudhary?</v>
+
+00:00:23.599 --> 00:00:31.639
+<v Lee Cavellier>Okay. Well, I didn't need to be on for long. I just wanted to pop on and say hi to Orlando because we've only checked in once or twice.</v>
+
+00:00:24.919 --> 00:00:25.559
+<v Orlando Colon>OK, got it.</v>
+
+00:00:32.519 --> 00:00:36.759
+<v Lee Cavellier>Why I said I don't always get to join these calls, so I saw it pop up and wanted to say hello. That's all.</v>
+
+00:00:37.799 --> 00:00:38.679
+<v Orlando Colon>Okay, perfect.</v>
+
+00:00:38.919 --> 00:00:42.039
+<v Lee Cavellier>Everything going okay for you, Orlando, with Santiago?</v>
+
+00:00:43.079 --> 00:00:56.599
+<v Orlando Colon>Oh yeah, absolutely. He's doing very good. He's practically taking ownership of all the Nutanix stuff. I'm very happy for that because he's practically doing what I want.</v>
+
+00:00:52.599 --> 00:00:53.079
+<v Lee Cavellier>Mhm.</v>
+
+00:00:57.719 --> 00:00:58.039
+<v Lee Cavellier>At.</v>
+
+00:00:59.239 --> 00:01:09.559
+<v Orlando Colon>The only the only plan that we have right now, I going to spoke with him today, is related to the time stamps, the time time set up.</v>
+
+00:01:09.879 --> 00:01:10.679
+<v Lee Cavellier>Time entry.</v>
+
+00:01:11.639 --> 00:01:26.119
+<v Orlando Colon>Yeah, the time attendance, there is something that practically is not supposed to be an issue because, you know, there's some stuff related to the way that he make the time registers.</v>
+
+00:01:27.239 --> 00:01:36.199
+<v Orlando Colon>But related to the to the stuff that I'm really worried about, it is doing good for now, so...</v>
+
+00:01:37.159 --> 00:01:43.079
+<v Lee Cavellier>Good. Very, very happy to hear. Thank you. And I know you've got a good team here working with you on it. So, hey, Ashish.</v>
+
+00:01:43.959 --> 00:01:45.959
+<v Ashish Paul>Hi, Lee, hi, Orlando, how are you?</v>
+
+00:01:44.359 --> 00:01:44.759
+<v Orlando Colon>Priya.</v>
+
+00:01:46.599 --> 00:01:47.879
+<v Orlando Colon>Hi, I think everything's good.</v>
+
+00:01:49.039 --> 00:01:49.439
+<v Ashish Paul>Amit.</v>
+
+00:01:49.399 --> 00:02:07.119
+<v Lee Cavellier>Great. All right, well, I'm going to drop off. Like I said, I just had a couple of minutes and I wanted to pop on and say hello. Kip, Ash, Rick, thank you so much for running the call. And Orlando, good to hear from you. I appreciate you sharing the feedback early. I know it's going to be the first thing that Kip or Ashish asked anyway, but</v>
+
+00:02:07.359 --> 00:02:07.559
+<v Ashish Paul>Yeah.</v>
+
+00:02:07.719 --> 00:02:08.359
+<v Orlando Colon>Gaur.</v>
+
+00:02:07.839 --> 00:02:14.359
+<v Lee Cavellier>But I appreciate it and glad to hear. And yeah, we'll keep chugging along in the right direction.</v>
+
+00:02:15.319 --> 00:02:16.279
+<v Orlando Colon>Okay, perfect.</v>
+
+00:02:16.519 --> 00:02:17.399
+<v Lee Cavellier>I'll talk with you all soon.</v>
+
+00:02:18.039 --> 00:02:19.079
+<v Orlando Colon>Banguilan.</v>
+
+00:02:19.159 --> 00:02:19.719
+<v Lee Cavellier>Cheers.</v>
+
+00:02:22.279 --> 00:02:27.159
+<v Kip Singh>So, Orlando, anything apart from the time entries which you think we need to...</v>
+
+00:02:22.839 --> 00:02:23.319
+<v Orlando Colon>Okay.</v>
+
+00:02:28.279 --> 00:02:28.919
+<v Kip Singh>Log on.</v>
+
+00:02:30.279 --> 00:02:48.839
+<v Orlando Colon>No, apart of that, just this little topic. Like I said, I'm going to talk to him about it. There's no big deal with that. So it's just like sometimes the person that managed the</v>
+
+00:02:43.799 --> 00:02:44.039
+<v Kip Singh>Yeah.</v>
+
+00:02:49.479 --> 00:02:57.879
+<v Orlando Colon>Time clock tool. She always have this kind of.</v>
+
+00:02:53.039 --> 00:02:53.319
+<v Kip Singh>Mm.</v>
+
+00:03:01.079 --> 00:03:06.599
+<v Orlando Colon>Of requirements about the the the timestamp needs to be they are in the.</v>
+
+00:03:09.239 --> 00:03:29.119
+<v Orlando Colon>in particular time. Actually, we are discussing that internally because probably we will need to be a little bit flexible with that because his role, he done depends to be in a phone call queue or something similar. So I understand that we can</v>
+
+00:03:11.879 --> 00:03:12.359
+<v Kip Singh>OK.</v>
+
+00:03:29.199 --> 00:03:35.639
+<v Orlando Colon>be from our side, of course, a little bit flexible with that. So I'm going to discuss that internally.</v>
+
+00:03:36.439 --> 00:03:36.839
+<v Kip Singh>Okay.</v>
+
+00:03:37.559 --> 00:03:55.079
+<v Orlando Colon>So, that, that's not for, for be clear, that's not a real issue right now. So, that's just, I'm just tell you for, you know, for let you know that that's the only thing, but it's not something related to the performance of Shishan.</v>
+
+00:03:38.599 --> 00:03:38.759
+<v Kip Singh>Yes.</v>
+
+00:03:56.399 --> 00:03:59.079
+<v Kip Singh>Okay, understood. Thank you for sharing.</v>
+
+00:04:01.159 --> 00:04:01.719
+<v Ashish Paul>Kip.</v>
+
+00:04:01.559 --> 00:04:01.879
+<v Kip Singh>Yeah.</v>
+
+00:04:02.519 --> 00:04:19.399
+<v Ashish Paul>And Orlando, do we also have connects with Shashank? Like maybe weekly, like check-ins, like how he's doing and anything that you would identify proactively, let us know and we can work with Shashank on the same.</v>
+
+00:04:03.079 --> 00:04:03.319
+<v Orlando Colon>Yeah.</v>
+
+00:04:20.279 --> 00:04:39.559
+<v Orlando Colon>Okay, yeah. For now, I understand that he's doing good, you know. I practically assigned to him plays up today all the all the mechanics and we were clusters that we are managing. Some of them he's consulting with me because some of them I need</v>
+
+00:04:39.599 --> 00:04:52.359
+<v Orlando Colon>to spoke with the customer and request any possible maintenance window or sometimes it's just because the client is a little bit...</v>
+
+00:04:43.239 --> 00:04:43.719
+<v Kip Singh>Mmh.</v>
+
+00:04:54.679 --> 00:05:07.959
+<v Orlando Colon>I don't know how to call, but they always want, hey, don't do anything without let me know or consulting with me. Even do not represent any kind of downtime from the system. So</v>
+
+00:05:09.719 --> 00:05:18.919
+<v Orlando Colon>That's the only ones that we are, we're still pending, but for the rest of them, he's doing good. And actually, he's...</v>
+
+00:05:16.479 --> 00:05:16.759
+<v Ashish Paul>Okay.</v>
+
+00:05:21.319 --> 00:05:24.039
+<v Orlando Colon>Even he's working with the...</v>
+
+00:05:25.879 --> 00:05:46.439
+<v Orlando Colon>with the upgrade process and all the stuff, he's working to in the solving alerts that he'd find by himself in the clusters. He just asked me, hey, can I work with that? Yeah, sure, you can do it. He opened a couple of support cases with Nutanix too that was</v>
+
+00:05:46.599 --> 00:05:50.999
+<v Orlando Colon>Is good, because, and normally does depend from from us.</v>
+
+00:05:52.279 --> 00:06:00.999
+<v Orlando Colon>But, you know, in this way, I'm very happy with them. Actually, the team, the whole team is very happy with them.</v>
+
+00:05:56.799 --> 00:05:57.079
+<v Kip Singh>Yes.</v>
+
+00:06:04.199 --> 00:06:06.279
+<v Kip Singh>Thank you, Orlando. Thank you so much.</v>
+
+00:06:04.519 --> 00:06:04.919
+<v Ashish Paul>Right.</v>
+
+00:06:10.439 --> 00:06:29.959
+<v Ashish Paul>Another thing, Orlando, you would think that I'm keeping asking the questions to you, but we would like to understand how we measure Shashank's success with you guys. I think during the onboarding call with Rick,</v>
+
+00:06:30.359 --> 00:06:48.439
+<v Ashish Paul>He must have given you a glimpse of the KPIs that we would use to measure Shashank against those numbers. So anything that you have decided for engineers like Shashank who is...</v>
+
+00:06:32.399 --> 00:06:32.759
+<v Kip Singh>S.</v>
+
+00:06:41.919 --> 00:06:42.039
+<v Orlando Colon>Yeah.</v>
+
+00:06:49.599 --> 00:07:08.559
+<v Ashish Paul>an offshore engineer for you, so there would be certain parameters that are not applicable to him, but obviously there are certain which are, and as per your experience, the best suited KPIs for Shashank, we would like to get those from you and...</v>
+
+00:07:08.839 --> 00:07:10.919
+<v Ashish Paul>Start measuring Sushant on sale.</v>
+
+00:07:12.039 --> 00:07:20.839
+<v Orlando Colon>Okay, yeah, in this case, normally the way that I normally will wait is like, of course, the task that I assign and...</v>
+
+00:07:22.279 --> 00:07:28.039
+<v Orlando Colon>I'm constantly reviewing the the the job that the that all the technicians doing.</v>
+
+00:07:28.919 --> 00:07:47.799
+<v Orlando Colon>You know, I have practically in charge of two different chips, second and third. He's working particularly in the third, but normally he handles some pending cases from the second chip. So I'm constantly investing in the operation, even if he don't know me for some.</v>
+
+00:07:38.479 --> 00:07:38.599
+<v Kip Singh>Kip.</v>
+
+00:07:47.839 --> 00:07:56.479
+<v Orlando Colon>For one day, because this day I decide that I need to sleep some some kind of hours, a couple of hours, but...</v>
+
+00:07:57.679 --> 00:08:14.919
+<v Orlando Colon>Yeah, if you guys from our side, we don't have a formal a formal way to measure like a like a some kind of or forms or something similar to that. I think that.</v>
+
+00:08:16.119 --> 00:08:31.079
+<v Orlando Colon>Somebody of you sent to us one example of the form that you guys use. I can check that if you want to, I can fill it and send you back for, you know, for the purposes that you have this documentation for your site.</v>
+
+00:08:22.919 --> 00:08:23.399
+<v Ashish Paul>Mhm.</v>
+
+00:08:32.839 --> 00:08:34.199
+<v Orlando Colon>You just let...</v>
+
+00:08:33.399 --> 00:08:52.599
+<v Ashish Paul>Yeah, sure. I think I think that is this is doable. So Kip can obviously share the recommended KPIs that most of our partners follow. But again, there could be some KPIs which are not a best example of what Sushant does.</v>
+
+00:08:41.319 --> 00:08:41.479
+<v Kip Singh>Kip.</v>
+
+00:08:53.079 --> 00:09:14.999
+<v Ashish Paul>So you are free to edit those KPIs, even if you feel the weightage of some of the parameters are not reflecting the true nature of this work. You can also do the addition there. And when we meet next week, we would discuss on those finalized KPIs and set the percentage of</v>
+
+00:09:15.039 --> 00:09:18.839
+<v Ashish Paul>For various parameters, and we'll we'll move it from there.</v>
+
+00:09:20.439 --> 00:09:31.639
+<v Rick Arora>I think Ashish, Orlando, if you remember, we did review this one. Ashish, just FYI, that this was discussed with Orlando and Luis.</v>
+
+00:09:20.999 --> 00:09:21.399
+<v Orlando Colon>Okay.</v>
+
+00:09:32.599 --> 00:09:38.199
+<v Rick Arora>And is it same which Kip Kip will be sharing, Ashish?</v>
+
+00:09:32.679 --> 00:09:33.039
+<v Orlando Colon>Yeah.</v>
+
+00:09:39.639 --> 00:09:42.279
+<v Ashish Paul>Uh, no, these are not the same.</v>
+
+00:09:41.319 --> 00:09:42.119
+<v Kip Singh>No, not again.</v>
+
+00:09:42.599 --> 00:09:44.279
+<v Rick Arora>Okay, perfect, then I'm good.</v>
+
+00:09:46.839 --> 00:09:58.039
+<v Orlando Colon>Yeah, I'm just looking for the for the one, the only the only one that I had right now here is the career development. I'm checking that there's a lot of emails here.</v>
+
+00:10:00.679 --> 00:10:01.639
+<v Orlando Colon>Just trying to check.</v>
+
+00:10:00.679 --> 00:10:03.959
+<v Rick Arora>Scorecard and the 30, 60, 90 plan, three things would be there.</v>
+
+00:10:05.159 --> 00:10:05.399
+<v Kip Singh>Yeah.</v>
+
+00:10:07.719 --> 00:10:11.559
+<v Orlando Colon>But if you can, you can send me back the form.</v>
+
+00:10:10.679 --> 00:10:11.799
+<v Rick Arora>Yep, I can share.</v>
+
+00:10:12.999 --> 00:10:20.839
+<v Orlando Colon>I really appreciate that. For the next, oh yeah, I think that I found here, the scoreboard, right?</v>
+
+00:10:22.119 --> 00:10:22.599
+<v Ashish Paul>Yep.</v>
+
+00:10:24.519 --> 00:10:27.719
+<v Orlando Colon>Yeah, I see it here. I see her. Yeah. I see it.</v>
+
+00:10:25.119 --> 00:10:25.479
+<v Rick Arora>Okay.</v>
+
+00:10:29.079 --> 00:10:29.799
+<v Orlando Colon>Uh, Excel.</v>
+
+00:10:31.799 --> 00:10:33.879
+<v Orlando Colon>Okay, got it. So I got it here.</v>
+
+00:10:35.959 --> 00:10:42.679
+<v Orlando Colon>So I can easily can fill that in the next week. We can.</v>
+
+00:10:45.239 --> 00:10:46.599
+<v Orlando Colon>I can send to you.</v>
+
+00:10:48.439 --> 00:10:48.919
+<v Orlando Colon>Lit up.</v>
+
+00:10:50.439 --> 00:10:51.319
+<v Ashish Paul>Yep, that.</v>
+
+00:10:50.439 --> 00:10:53.079
+<v Orlando Colon>And discussing the case that you, so...</v>
+
+00:10:50.919 --> 00:10:51.239
+<v Kip Singh>Okay.</v>
+
+00:10:54.439 --> 00:10:56.679
+<v Orlando Colon>Sure, well, yeah, sure.</v>
+
+00:10:57.919 --> 00:10:58.279
+<v Ashish Paul>Support.</v>
+
+00:10:59.639 --> 00:11:06.919
+<v Ashish Paul>Okay, Kip, can you quickly share the utilization numbers of Sushant from the past week?</v>
+
+00:11:07.559 --> 00:11:27.159
+<v Kip Singh>Yeah, sure. So, Orlando, I'm going to share my screen and we can quickly review Shashank's last week numbers, like how he performed or what kind of work he did. So let me share my screen. And from next call onwards, we will be</v>
+
+00:11:11.759 --> 00:11:11.999
+<v Orlando Colon>Yeah.</v>
+
+00:11:21.079 --> 00:11:21.399
+<v Orlando Colon>Yep.</v>
+
+00:11:29.239 --> 00:11:32.839
+<v Kip Singh>Using this presentation to review his performance.</v>
+
+00:11:33.559 --> 00:11:33.959
+<v Orlando Colon>Ohh.</v>
+
+00:11:34.039 --> 00:11:34.639
+<v Ashish Paul>Okay.</v>
+
+00:11:34.599 --> 00:11:45.239
+<v Kip Singh>So this is for the last week starting June 27th till July 1st. And this would be the agenda, check in highlights, action tracker, way forward and recap.</v>
+
+00:11:39.519 --> 00:11:39.879
+<v Orlando Colon>Hoh.</v>
+
+00:11:47.399 --> 00:12:05.959
+<v Kip Singh>Check in we already did. We discussed about how things are moving and these are some key updates on the account so far. Like we have been getting good feedback on Santiago. He is participating in upgrade planning, execution, remediation activities, matching activities.</v>
+
+00:12:06.919 --> 00:12:18.999
+<v Kip Singh>He completed his onboarding and knowledge transfer, also getting familiar with the tools. He is currently involved with DRPC upgrades, Nutanix upgrades, VMware upgrades, and batch management activities.</v>
+
+00:12:20.919 --> 00:12:28.199
+<v Kip Singh>So this is the action tracker which we were discussing earlier, the 30, 60 and 90 day plan, which you already mentioned that you will be sharing with us soon.</v>
+
+00:12:29.719 --> 00:12:32.919
+<v Kip Singh>And these are the KPIs that we were discussing.</v>
+
+00:12:30.039 --> 00:12:30.359
+<v Orlando Colon>Great.</v>
+
+00:12:34.279 --> 00:12:53.719
+<v Kip Singh>So this is, these are the KPIs in which we recommend. That includes the billable utilization, 80%, but again, it varies, so it depends like the way Shank works in off hours. So if you think 80% is achievable.</v>
+
+00:12:39.399 --> 00:12:39.879
+<v Orlando Colon>Mhm.</v>
+
+00:12:50.879 --> 00:12:51.239
+<v Orlando Colon>Hoh.</v>
+
+00:12:53.839 --> 00:13:06.679
+<v Kip Singh>you can get enough work, then that's fine. If you want to change it, you can feel free to change it to whatever the numbers you think are feasible or achievable.</v>
+
+00:13:05.239 --> 00:13:05.959
+<v Orlando Colon>Okay, got it.</v>
+
+00:13:07.479 --> 00:13:24.919
+<v Orlando Colon>But in this case, I understand that this number for the available utilization is perfect. Actually, normally, for the kind of work that it's doing, it can be hard, but using 80% of target, I understand that it's more than...</v>
+
+00:13:08.119 --> 00:13:08.359
+<v Kip Singh>Yeah.</v>
+
+00:13:25.879 --> 00:13:30.919
+<v Orlando Colon>more than comprehensible. So we can go with this number.</v>
+
+00:13:31.599 --> 00:13:50.839
+<v Kip Singh>Okay, and ticket resolved rate 8 to 10 per day, but again, because he is also involved or mostly involved in the project work. So 8 tickets per day because project tickets are mostly the long running tickets. So yeah, what do you think 8 to 10 is good or you want to?</v>
+
+00:13:47.319 --> 00:13:47.799
+<v Orlando Colon>Exactly.</v>
+
+00:13:50.999 --> 00:13:52.439
+<v Kip Singh>Change it to something else.</v>
+
+00:13:51.799 --> 00:14:11.679
+<v Orlando Colon>No, I no, no. In this case, I cannot give you a specific a specific number because, for example, all the tickets that he that he's handled right now is tickets related to upgrades, and normally one one ticket can take him all the shifts.</v>
+
+00:14:02.279 --> 00:14:02.359
+<v Ashish Paul>So.</v>
+
+00:14:11.879 --> 00:14:20.119
+<v Orlando Colon>So, you know, it's a little bit hard to determine a specific number for this.</v>
+
+00:14:16.199 --> 00:14:16.599
+<v Kip Singh>Yeah.</v>
+
+00:14:21.639 --> 00:14:24.719
+<v Orlando Colon>For this kind of...</v>
+
+00:14:27.239 --> 00:14:28.519
+<v Orlando Colon>A flat hour, you know.</v>
+
+00:14:27.719 --> 00:14:47.599
+<v Ashish Paul>So Orlando, Orlando, what we can do is, since these are the recommended KPIs, which most of our partners follow, we will tweak these KPIs to best suit what is being done by Shashank, and we will share those numbers with those KPIs with you.</v>
+
+00:14:45.319 --> 00:14:45.559
+<v Orlando Colon>Mohit.</v>
+
+00:14:48.039 --> 00:15:05.719
+<v Ashish Paul>And then you let us know if you are comfortable with those KPIs or you want us to make any changes to it. So let's not discuss the recommended KPIs because these are applicable to engineers who work with tickets often, not for engineers like Shashank who works on projects.</v>
+
+00:14:50.679 --> 00:14:50.919
+<v Kip Singh>Yeah.</v>
+
+00:15:03.159 --> 00:15:03.639
+<v Orlando Colon>Yeah, I...</v>
+
+00:15:04.759 --> 00:15:12.039
+<v Orlando Colon>Yeah, I I think that maybe that will be better to determine the quantity of hours documented.</v>
+
+00:15:09.159 --> 00:15:09.479
+<v Kip Singh>Yeah.</v>
+
+00:15:13.799 --> 00:15:28.359
+<v Orlando Colon>Because that will be a real, that will be a more real, a more real data related to the to the task that they are doing, because, to be honest, it's going to be a little bit not</v>
+
+00:15:14.199 --> 00:15:14.999
+<v Kip Singh>Yeah, so I will.</v>
+
+00:15:21.879 --> 00:15:22.199
+<v Kip Singh>Right.</v>
+
+00:15:30.679 --> 00:15:39.479
+<v Orlando Colon>Injustice for him for determining quantity of, yeah, quantity of tickets per day, it's not it's not far, you know.</v>
+
+00:15:32.759 --> 00:15:33.639
+<v Ashish Paul>We understand.</v>
+
+00:15:34.359 --> 00:15:34.759
+<v Kip Singh>Haight.</v>
+
+00:15:38.079 --> 00:15:38.279
+<v Ashish Paul>S.</v>
+
+00:15:39.319 --> 00:15:39.639
+<v Kip Singh>Ashish.</v>
+
+00:15:40.519 --> 00:15:40.999
+<v Ashish Paul>Mhm.</v>
+
+00:15:42.079 --> 00:15:52.119
+<v Kip Singh>Yeah, completely understandable. I will share these KPIs with you over the e-mail. You can review internally and let us know what amends you want to make.</v>
+
+00:15:42.599 --> 00:15:43.239
+<v Ashish Paul>We got it.</v>
+
+00:15:53.079 --> 00:15:54.759
+<v Orlando Colon>Okay, got it. Yeah, sure.</v>
+
+00:15:54.519 --> 00:15:54.839
+<v Kip Singh>Kour.</v>
+
+00:15:55.799 --> 00:16:10.919
+<v Kip Singh>So let's quickly jump into the performance. So this is his utilization for the last term from 27th till 1st. He's already at 80%. So which is good. So.</v>
+
+00:16:13.399 --> 00:16:15.559
+<v Kip Singh>Yeah, he's pretty close to the target already.</v>
+
+00:16:16.679 --> 00:16:24.039
+<v Kip Singh>And the dip in the end on 1st July, that was maybe probably due to the long, long weekend coming. So.</v>
+
+00:16:24.759 --> 00:16:25.239
+<v Orlando Colon>Yes.</v>
+
+00:16:25.639 --> 00:16:30.119
+<v Kip Singh>Apart from the rest of the days, he was pretty close to the target.</v>
+
+00:16:33.399 --> 00:16:34.039
+<v Orlando Colon>Yeah, sure.</v>
+
+00:16:33.799 --> 00:16:54.999
+<v Kip Singh>And this is his ticket data. So as I was, we were discussing earlier, so per day he has maximum work done 5 tickets on 30th of June. So based on the ticket data, we can decide like how many tickets he can handle, which should be good.</v>
+
+00:16:55.119 --> 00:17:07.879
+<v Kip Singh>for measuring his performance. But the ticket closure is pretty strong with almost 100% closure on the tickets, so which is again a good thing.</v>
+
+00:17:00.999 --> 00:17:01.319
+<v Orlando Colon>Kit.</v>
+
+00:17:09.239 --> 00:17:09.719
+<v Orlando Colon>Okay.</v>
+
+00:17:13.239 --> 00:17:31.079
+<v Kip Singh>So these are the projects he has been involved in, that is the Nutanix infrastructure upgrades, VMware upgrade, patch management, alert and incident remediation, compatibility assessment, and also following up with the vendors where he has some dependency. So.</v>
+
+00:17:32.599 --> 00:17:37.079
+<v Orlando Colon>Yeah, practically that's exactly what he's doing right now.</v>
+
+00:17:37.439 --> 00:17:38.839
+<v Kip Singh>Right, right.</v>
+
+00:17:40.599 --> 00:17:45.319
+<v Kip Singh>Right, so way forward, we will keep on.</v>
+
+00:17:46.679 --> 00:18:05.479
+<v Kip Singh>doing the board reviews with him, keep a check on him regarding any gaps, if there are any in terms of process or technical gaps, and also to increase the consistency and throughput and tickets resolution. And also</v>
+
+00:18:06.199 --> 00:18:13.239
+<v Kip Singh>We are waiting on the 36 to 20 day plan. So once you complete that, please share that with us.</v>
+
+00:18:13.959 --> 00:18:14.519
+<v Orlando Colon>Yeah, sure.</v>
+
+00:18:16.919 --> 00:18:30.919
+<v Kip Singh>And this is the build it, which is coming on August 5th, August 3rd till five. I hope you're already aware. And in case you need any further information, do let us know. We will share that with you.</v>
+
+00:18:31.799 --> 00:18:32.839
+<v Orlando Colon>Okay, got it.</v>
+
+00:18:35.719 --> 00:18:41.399
+<v Kip Singh>So, and this is our team GPS in house too, so I hope you're already aware, and that's it.</v>
+
+00:18:42.999 --> 00:18:54.119
+<v Kip Singh>I will share this presentation with you along with the KPIs and you can review internally and do let us know if you want to make any changes.</v>
+
+00:18:54.959 --> 00:18:56.519
+<v Orlando Colon>Okay, perfect. Sounds good.</v>
+
+00:18:59.479 --> 00:19:01.719
+<v Kip Singh>Uh, anything else, uh, Ashish?</v>
+
+00:19:02.599 --> 00:19:11.079
+<v Ashish Paul>No, I'm good. It was a pleasure meeting you, Orlando. We'll catch up next week and we'll talk more about KPIs for the Shark.</v>
+
+00:19:11.719 --> 00:19:30.759
+<v Orlando Colon>I just want to ask something about the day that we are that we are making the meeting. I'm I'm thinking about if it's possible to change the day for Wednesdays, because practically the Wednesdays is the first day off.</v>
+
+00:19:12.479 --> 00:19:12.839
+<v Kip Singh>Yep.</v>
+
+00:19:14.279 --> 00:19:14.599
+<v Kip Singh>Yeah.</v>
+
+00:19:26.759 --> 00:19:26.919
+<v Ashish Paul>Mm.</v>
+
+00:19:31.279 --> 00:19:50.919
+<v Orlando Colon>of Chauhan, so I can practically review all the complete week for him. I don't know if you guys have his availability. If you had it, we can move to change to Wednesday. Of course, for me right now, it's going to be a little bit better because I can let you know how was the complete week.</v>
+
+00:19:35.879 --> 00:19:36.399
+<v Kip Singh>Okay.</v>
+
+00:19:50.999 --> 00:19:54.119
+<v Orlando Colon>That he worked, I don't know what you think about it.</v>
+
+00:19:55.319 --> 00:20:02.519
+<v Kip Singh>Yep, no, that's fine. So what time would work for you? Any slots, available slots for Wednesdays?</v>
+
+00:19:55.799 --> 00:19:56.519
+<v Ashish Paul>It makes sense.</v>
+
+00:20:02.999 --> 00:20:05.479
+<v Orlando Colon>Same time, same time, Wednesdays.</v>
+
+00:20:08.959 --> 00:20:10.039
+<v Kip Singh>Let me quick.</v>
+
+00:20:09.239 --> 00:20:09.799
+<v Ashish Paul>Is it?</v>
+
+00:20:09.239 --> 00:20:15.399
+<v Orlando Colon>It can be, it can be later, it can be, well, yeah, it can be later. In my case, it just needs to be later.</v>
+
+00:20:17.159 --> 00:20:22.839
+<v Orlando Colon>Or let me share, yeah, later. I don't have any any other time slots.</v>
+
+00:20:24.439 --> 00:20:25.639
+<v Kip Singh>So, later.</v>
+
+00:20:27.119 --> 00:20:31.719
+<v Orlando Colon>Because normally I start my shift normally at 1 P.m. Puerto Rico time.</v>
+
+00:20:35.319 --> 00:20:44.279
+<v Orlando Colon>On the two, I have the shift handoff between the 1st and 2nd shift, so normally this time slot I'm busy.</v>
+
+00:20:45.399 --> 00:20:50.519
+<v Ashish Paul>So, so Orlando, your time is same as Eastern Standard Time, right? Atlantic is same as Eastern.</v>
+
+00:20:50.999 --> 00:21:01.319
+<v Orlando Colon>Exactly, exactly. But keep it in mind that Atlantic time in November changed, but in Puerto Rico, but in Puerto Rico, that does not change.</v>
+
+00:20:56.599 --> 00:20:59.719
+<v Ashish Paul>Yeah, you don't follow the latest events. Yep, I am aware of this.</v>
+
+00:20:58.799 --> 00:20:58.959
+<v Kip Singh>And.</v>
+
+00:21:02.279 --> 00:21:02.679
+<v Ashish Paul>Okay.</v>
+
+00:21:02.759 --> 00:21:03.879
+<v Kip Singh>Okay, understood.</v>
+
+00:21:04.879 --> 00:21:24.559
+<v Ashish Paul>You know, it took us some time to understand the difference between our timings, the days, how it will reflect in Eastern, then in Indian Standard Time. So I was, we were able to find a common standard time that is Eastern Day Time that you guys are following. So we are comfortable with that.</v>
+
+00:21:05.239 --> 00:21:05.319
+<v Kip Singh>The.</v>
+
+00:21:25.319 --> 00:21:27.879
+<v Ashish Paul>So, thank you so much.</v>
+
+00:21:25.559 --> 00:21:29.559
+<v Orlando Colon>Yeah, yeah, actually, for you right now, it's Tuesday, right?</v>
+
+00:21:30.839 --> 00:21:32.199
+<v Ashish Paul>It is, it is stupid, yeah.</v>
+
+00:21:31.079 --> 00:21:31.479
+<v Kip Singh>Yes.</v>
+
+00:21:35.399 --> 00:21:37.399
+<v Orlando Colon>Hey, you're talking to me from the future.</v>
+
+00:21:38.679 --> 00:21:54.439
+<v Ashish Paul>Yeah, you know, that makes me recall an instance that happened with one of my partners when I used to be an engineer. So they were from Idaho. And I wish them a new year from the future.</v>
+
+00:21:50.759 --> 00:21:51.319
+<v Orlando Colon>Okay.</v>
+
+00:21:55.879 --> 00:22:14.559
+<v Orlando Colon>Yeah, actually, for us, for us, is very is very interesting because part of our team is from Argentina. Some of them are from Mexico, other ones are from Spain. Right now, Shashan is from India. Personally, I am located in</v>
+
+00:22:14.879 --> 00:22:33.479
+<v Orlando Colon>Texas in the United States. So there's in Christmas, there's two hours of difference with Puerto Rico. So normally in the, when they pass the New Year's year, I'm still in the previous year. I always send them a message like a,</v>
+
+00:22:27.079 --> 00:22:27.319
+<v Kip Singh>Ashish.</v>
+
+00:22:28.839 --> 00:22:29.399
+<v Kip Singh>Mhm.</v>
+
+00:22:33.879 --> 00:22:36.199
+<v Orlando Colon>Happy New Year from the from the last year.</v>
+
+00:22:35.479 --> 00:22:35.799
+<v Ashish Paul>The.</v>
+
+00:22:38.439 --> 00:22:38.999
+<v Ashish Paul>Yeah, yeah.</v>
+
+00:22:38.639 --> 00:22:38.759
+<v Kip Singh>Hoh.</v>
+
+00:22:40.679 --> 00:22:41.559
+<v Ashish Paul>Crazy World.</v>
+
+00:22:40.919 --> 00:22:41.039
+<v Kip Singh>Yes.</v>
+
+00:22:42.359 --> 00:22:42.679
+<v Orlando Colon>Yeah.</v>
+
+00:22:42.599 --> 00:22:42.719
+<v Kip Singh>Yeah.</v>
+
+00:22:44.999 --> 00:22:45.799
+<v Orlando Colon>Well, guys, uh...</v>
+
+00:22:45.479 --> 00:23:03.319
+<v Ashish Paul>All right, well, it was nice talking to you, Orlando. So Kip will share the updated device as promised, and we will meet as per the schedule. So it is Wednesday, so this week is already gone, so I believe upcoming call is...</v>
+
+00:23:03.479 --> 00:23:05.719
+<v Ashish Paul>to happen on 15th of July, that's Wednesday.</v>
+
+00:23:07.479 --> 00:23:08.199
+<v Orlando Colon>Yep.</v>
+
+00:23:08.199 --> 00:23:08.359
+<v Kip Singh>Yeah.</v>
+
+00:23:09.959 --> 00:23:10.439
+<v Ashish Paul>Alright.</v>
+
+00:23:10.519 --> 00:23:15.639
+<v Kip Singh>And time should be same. 3pm. Okay, cool.</v>
+
+00:23:12.919 --> 00:23:15.079
+<v Ashish Paul>3 PM Eastern. 33.</v>
+
+00:23:16.039 --> 00:23:18.279
+<v Orlando Colon>The same time. 3pm. 3pm.</v>
+
+00:23:18.199 --> 00:23:22.279
+<v Kip Singh>Okay, cool. I will update the invite. Sure.</v>
+
+00:23:19.599 --> 00:23:19.879
+<v Ashish Paul>Yep.</v>
+
+00:23:23.479 --> 00:23:28.199
+<v Orlando Colon>Well, thank you. I really appreciate your time. You're welcome. Have a good one.</v>
+
+00:23:23.519 --> 00:23:24.199
+<v Kip Singh>Thank you, Orlando.</v>
+
+00:23:25.319 --> 00:23:26.199
+<v Ashish Paul>Thank you so much.</v>
+
+00:23:26.519 --> 00:23:30.119
+<v Kip Singh>Yep. Have a wonderful rest of the week. Bye.</v>
+
+00:23:27.679 --> 00:23:29.079
+<v Ashish Paul>Feeling is mature. Bye.</v>
+

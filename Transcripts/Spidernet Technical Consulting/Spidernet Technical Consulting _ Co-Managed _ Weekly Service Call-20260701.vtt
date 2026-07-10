@@ -1,0 +1,674 @@
+WEBVTT
+NOTE title: Spidernet Technical Consulting | Co-Managed | Weekly Service Call
+NOTE date: 2026-07-01
+NOTE duration: 31m 12s
+
+00:00:04.101 --> 00:00:18.501
+<v Gagan Chowdhary>So please do let me know and we can discuss further on that. So thank you. And my screen must be there on your screen. Yeah, now it appears, you know, you are on a laptop. It's a wide screen angle.</v>
+
+00:00:08.581 --> 00:00:08.901
+<v Anthony Licate>Sure.</v>
+
+00:00:20.101 --> 00:00:21.381
+<v Anthony Licate>Oh yeah, I flipped it.</v>
+
+00:00:22.661 --> 00:00:22.901
+<v Gagan Chowdhary>Yeah.</v>
+
+00:00:25.781 --> 00:00:46.821
+<v Gagan Chowdhary>Tim, I hope, okay, thank you. So Anthony, this is for the previous week, from June 22nd to 26th, and let's gauge the overall performance. Will not spend much time on agenda items, so nothing has changed. So yeah, quick highlights. So she met her.</v>
+
+00:00:25.861 --> 00:00:26.421
+<v Anthony Licate>I see you.</v>
+
+00:00:46.981 --> 00:01:08.021
+<v Gagan Chowdhary>utilization target, Sophie, when it comes to time. I know we did discuss it last time. In your environment, it's not available, but productive time. So you do not capture under specific header that is called billable. So which is why I'm, you know, this time onwards, I'm capturing as.</v>
+
+00:01:08.101 --> 00:01:10.341
+<v Gagan Chowdhary>utilization time or productive time.</v>
+
+00:01:08.261 --> 00:01:08.301
+<v Anthony Licate>I.</v>
+
+00:01:11.701 --> 00:01:31.981
+<v Gagan Chowdhary>And she enhanced her ticket number, which we'll be reviewing on the following slides. And yeah, she is steadily improving her productivity, you know, which I gauged. But overall, I know you have more tasks on your plate, you know, apart from working with a team on technical side.</v>
+
+00:01:32.101 --> 00:01:35.301
+<v Gagan Chowdhary>But did you do you have any observations for your end?</v>
+
+00:01:34.061 --> 00:01:34.181
+<v Anthony Licate>But...</v>
+
+00:01:37.541 --> 00:01:44.741
+<v Anthony Licate>Yeah, so, so one one thing as we dig in to some of the details of of a technical capability, right?</v>
+
+00:01:45.301 --> 00:01:45.781
+<v Gagan Chowdhary>Mhm.</v>
+
+00:01:46.621 --> 00:01:48.101
+<v Anthony Licate>We work.</v>
+
+00:01:49.301 --> 00:01:52.101
+<v Anthony Licate>We're trying to lock in a little bit more on some level one.</v>
+
+00:01:54.101 --> 00:02:10.341
+<v Anthony Licate>tasks that she may not be familiar with or as familiar with. And so that's something we're going to probably concentrate on over the coming weeks. When we're talking about like Outlook profile issues or...</v>
+
+00:01:57.461 --> 00:01:58.061
+<v Gagan Chowdhary>Mm-hmm.</v>
+
+00:02:05.661 --> 00:02:05.941
+<v Gagan Chowdhary>Yeah.</v>
+
+00:02:13.141 --> 00:02:23.541
+<v Anthony Licate>some general troubleshooting steps. Her process seems clean, but sometimes we need to tighten up on the level 1 knowledge.</v>
+
+00:02:25.461 --> 00:02:39.701
+<v Anthony Licate>But yeah, it's coming along, it's progressing. And we're working through people getting to know her. And so that's good.</v>
+
+00:02:42.821 --> 00:02:59.221
+<v Gagan Chowdhary>Thank you, Andrew. Sorry, Anthony, for highlighting this. And yeah, so when you say level one, yeah, I, when I was doing her board review, I also acknowledge some of the tasks, for instance, you know, onboarding. I mean,</v>
+
+00:03:00.981 --> 00:03:19.141
+<v Gagan Chowdhary>So she had not reviewed the SOP, but she was shadowing with Andrea on those tasks and that took longer. And some of the application support, for instance, Sage or something else, some of the client specific applications, those required some extra time.</v>
+
+00:03:19.861 --> 00:03:20.261
+<v Anthony Licate>What?</v>
+
+00:03:19.861 --> 00:03:38.341
+<v Gagan Chowdhary>on that ticket. So in hours, it took, you know, longer than usual. So she said she's getting used to with a client environment. Right in the 1st place, she sometimes doesn't get to understand which thing is where.</v>
+
+00:03:38.421 --> 00:04:03.261
+<v Gagan Chowdhary>you know, how she can find those things. And sometimes she has to reach out to the team and also take vendor support on the call to work with vendor. And this entire thing, you know, stretches time. But yeah, well, thank you for sharing this. If you have any, you know, I can also check with Andrew if he's the one who works technically, you know, close to technician.</v>
+
+00:04:04.101 --> 00:04:17.861
+<v Gagan Chowdhary>like Sophie, if there's any kind of specific details on some specific tools, technologies that she needs to enhance on her skill set, knowledge, and we'll work along with that.</v>
+
+00:04:18.581 --> 00:04:20.781
+<v Anthony Licate>Let me see if I can get him in here. Hold on one second.</v>
+
+00:04:21.541 --> 00:04:21.941
+<v Gagan Chowdhary>Sure.</v>
+
+00:04:22.781 --> 00:04:24.261
+<v Anthony Licate>Let me just hit him on Team.</v>
+
+00:04:25.701 --> 00:04:26.101
+<v Gagan Chowdhary>Okay.</v>
+
+00:04:27.781 --> 00:04:27.821
+<v Gagan Chowdhary>I.</v>
+
+00:04:30.101 --> 00:04:30.581
+<v Anthony Licate>Jack.</v>
+
+00:04:36.101 --> 00:04:36.461
+<v Anthony Licate>IND.</v>
+
+00:05:01.541 --> 00:05:02.101
+<v Anthony Licate>Just see.</v>
+
+00:05:03.301 --> 00:05:05.061
+<v Anthony Licate>Start screen, let me see.</v>
+
+00:05:29.621 --> 00:05:38.581
+<v Gagan Chowdhary>Until he joins, I mean, should we move on to the other slides? Because we have utilization productivity slides as well, where we can discuss more on those things.</v>
+
+00:05:39.701 --> 00:05:40.181
+<v Anthony Licate>Yeah.</v>
+
+00:05:41.301 --> 00:05:41.941
+<v Gagan Chowdhary>Thank you.</v>
+
+00:05:41.901 --> 00:05:42.541
+<v Anthony Licate>Okay.</v>
+
+00:05:46.981 --> 00:05:56.741
+<v Gagan Chowdhary>I'm not sure whether you're able to see my screen now, because I believe maybe you're on a different screen because you're texting Andrew. Hi, Andrew.</v>
+
+00:05:58.301 --> 00:05:58.741
+<v Andrew Ordak>Hello!</v>
+
+00:05:59.381 --> 00:06:01.141
+<v Gagan Chowdhary>Hi, welcome to the call. Thank you.</v>
+
+00:06:02.261 --> 00:06:02.821
+<v Kawandeep Sandhu>Andrew.</v>
+
+00:06:04.501 --> 00:06:05.301
+<v Andrew Ordak>Hey, how's it going?</v>
+
+00:06:06.061 --> 00:06:09.301
+<v Kawandeep Sandhu>It could. I think this is the first time I'm meeting you, right Andrew?</v>
+
+00:06:07.061 --> 00:06:07.701
+<v Gagan Chowdhary>Good.</v>
+
+00:06:10.181 --> 00:06:11.141
+<v Andrew Ordak>Yeah, I believe so.</v>
+
+00:06:11.781 --> 00:06:18.341
+<v Kawandeep Sandhu>Okay, great. Let's go through this presentation, then I can introduce myself to you. Anthony knows me, by the way, so.</v>
+
+00:06:20.101 --> 00:06:28.181
+<v Kawandeep Sandhu>If we, if we don't get to the introduction, then Anthony will update you about myself. OK, cool. Thanks. Back to you, Gagan.</v>
+
+00:06:20.621 --> 00:06:20.861
+<v Anthony Licate>Yes.</v>
+
+00:06:25.061 --> 00:06:25.461
+<v Andrew Ordak>OK.</v>
+
+00:06:26.741 --> 00:06:26.981
+<v Anthony Licate>Okay.</v>
+
+00:06:30.021 --> 00:06:34.101
+<v Gagan Chowdhary>Well, thank you. I was just reading a message from Lee. I think this is for Anthony.</v>
+
+00:06:35.701 --> 00:06:36.181
+<v Gagan Chowdhary>Okay.</v>
+
+00:06:37.541 --> 00:06:56.581
+<v Gagan Chowdhary>Hi, Andrew. So, we were just discussing, you know, overall. So, OK, I've come to utilization slide. You know, our utilization target is 80%, but if you know, as you do not have available, so we are getting only productive time, productive utilization. Do you think in...</v>
+
+00:06:56.981 --> 00:07:02.661
+<v Gagan Chowdhary>It is feasible to be 80% or should it be 90% total utilization.</v>
+
+00:07:04.221 --> 00:07:06.861
+<v Anthony Licate>We're typically on an 85% or higher marker.</v>
+
+00:07:07.541 --> 00:07:08.501
+<v Gagan Chowdhary>Okay, sure.</v>
+
+00:07:09.861 --> 00:07:16.021
+<v Gagan Chowdhary>So, I'll set this target to eighty-five percent, and um, yeah, so...</v>
+
+00:07:17.061 --> 00:07:36.821
+<v Gagan Chowdhary>So, you know, I can see that in this period from June 22 to 26, she touched the number of 91% in terms of utilization time. Or maybe there are some tasks where she has been spending extra time, so we need to curb on that.</v>
+
+00:07:37.221 --> 00:07:56.821
+<v Gagan Chowdhary>so that, you know, she finishes up those tickets quickly, as you have very well highlighted, some L1 tasks where she might need some assistance. So, Andrea, I just wanted to ask from you, I mean, which is why you have been pulled to this call. You work maybe closely with Sophie.</v>
+
+00:07:57.541 --> 00:08:04.661
+<v Gagan Chowdhary>Anything specific, if you observed she needs assistance with, she needs some improvement.</v>
+
+00:08:06.101 --> 00:08:24.221
+<v Andrew Ordak>Not yet. I mean, we have some tricky setups with customers that we're trying to work through. It's hard to like just have her jump into each customer because some are like cookie cutter the same, but others have a little bit different of setups. So I'm trying to work through that with her, but she's been doing.</v>
+
+00:08:12.501 --> 00:08:12.661
+<v Gagan Chowdhary>Yeah.</v>
+
+00:08:21.541 --> 00:08:22.021
+<v Gagan Chowdhary>Mhm.</v>
+
+00:08:24.301 --> 00:08:24.981
+<v Andrew Ordak>Exceptional.</v>
+
+00:08:26.391 --> 00:08:31.351
+<v Gagan Chowdhary>Thank you. I also want to know, do you...</v>
+
+00:08:32.501 --> 00:08:38.981
+<v Gagan Chowdhary>consistently work on or you know update SOPs. Do you have SOP culture near environment?</v>
+
+00:08:42.981 --> 00:08:44.341
+<v Andrew Ordak>That would be on Anthony.</v>
+
+00:08:42.981 --> 00:09:01.461
+<v Gagan Chowdhary>Why I'm asking, you know, why I'm asking is, for instance, anything that is repetitive, apart from technological issues, for instance, she needs to, you know, set up Sage an application on a machine. So</v>
+
+00:09:01.941 --> 00:09:22.861
+<v Gagan Chowdhary>it needs to be in the same manner all the time. Or if she needs to set up a machine, set up a onboard a user, so those things will remain same for that particular client. So if you have those SOPs, I will encourage Sophie to go to those SOPs. So do her due diligence first. I mean, do her research.</v>
+
+00:09:22.941 --> 00:09:34.741
+<v Gagan Chowdhary>Go to those SOPs, follow the standard process what the team is following, so that, I mean, it will save her time as well as it will improve the accuracy on those tickets.</v>
+
+00:09:35.941 --> 00:09:42.661
+<v Gagan Chowdhary>If, so I just, I'm just curious, I mean, if that is being implemented or you encourage within your team.</v>
+
+00:10:02.021 --> 00:10:02.981
+<v Gagan Chowdhary>Okay, thank you.</v>
+
+00:10:04.501 --> 00:10:16.661
+<v Gagan Chowdhary>All right, thank you. So, so I'm sure she is aware of the location where all SOPs are being documented, you know, or categorized. Okay, thank you. I'll encourage Sophie to, yeah.</v>
+
+00:10:15.301 --> 00:10:15.781
+<v Anthony Licate>Gagan.</v>
+
+00:10:17.301 --> 00:10:22.181
+<v Anthony Licate>I have a question for you. It would be interesting at some point to...</v>
+
+00:10:23.541 --> 00:10:40.421
+<v Anthony Licate>to get a perspective from her based on some of the experiences she's had in the past as far as whether she sees that our current SOPs are good enough or whether it's a scenario where she's just not, she's not, she just needs more.</v>
+
+00:10:43.141 --> 00:11:03.301
+<v Anthony Licate>I have an understanding of like what these environments look like and that comes in with time, right? So the question I guess I'm asking is, is it that we need better SOPs or is it that we have our SOPs are fine, but the environments are too unique on certain aspects to expect that.</v>
+
+00:11:03.501 --> 00:11:23.421
+<v Anthony Licate>we would write an SOP for every aspect of what is needed and that time will heal that, time will fix that. So right now, you know, it's easy for us to get into a spot where we can say, well, what we have is sufficient and it works, but it would be interesting at some point.</v>
+
+00:11:23.781 --> 00:11:38.661
+<v Anthony Licate>maybe in a, whether it's in a week or a month or whenever, to get her feedback on this, whether it's a scenario where she just needs to get more comfortable with the environments or whether the SOPs need to be tightened up.</v>
+
+00:11:41.061 --> 00:11:59.821
+<v Gagan Chowdhary>That's a very good point, Anthony, and this is exactly, you know, what I encouraged, you know, my team on, that there should always be, and many of our clients, they emphasize on the same thing. So, you know, be it someone is older in the system, maybe two or three years, and still.</v>
+
+00:12:00.901 --> 00:12:20.661
+<v Gagan Chowdhary>They are working on the same SOPs because vendor platforms, they do change, they upgrade their platforms, interfaces, you know, after maybe six months or a year. So SOPs are not always relevant. So what they do is they always, whenever they work on the same issue again, maybe after six months, that is repeating.</v>
+
+00:12:21.021 --> 00:12:38.021
+<v Gagan Chowdhary>for a year. So if the SOP does not match with the portal interface or the text is not the same, it is not relevant. So they should always be highlighting this, that yeah, this needs to be updated. And or if the existing SOP.</v>
+
+00:12:40.341 --> 00:12:59.541
+<v Gagan Chowdhary>Despite following all the steps, they are still, they still feel stuck somewhere. That means, you know, that is still not, you know, you know, guiding them the right path properly. So they should suggest what else, what is it that it is missing so that, you know, those</v>
+
+00:13:00.341 --> 00:13:07.381
+<v Gagan Chowdhary>steps could be added in the SOP so that other team member, it can be helpful for the other team members at the same time.</v>
+
+00:13:09.541 --> 00:13:10.101
+<v Anthony Licate>I gotcha.</v>
+
+00:13:10.421 --> 00:13:28.901
+<v Gagan Chowdhary>Yeah, especially for the level ones, because even when the newer team member joins in, so my other client used to do that. So if SOPs are up to date, they just assign SOPs, they just ask new team member to go through those SOPs so that they understand, they read those SOPs.</v>
+
+00:13:29.261 --> 00:13:38.581
+<v Gagan Chowdhary>and understand the environment, how things are done. And yeah, it does help the new team members as well, besides the existing ones.</v>
+
+00:13:39.661 --> 00:14:00.421
+<v Gagan Chowdhary>So thank you. I will encourage Sophie to go through those SOP category. You know, try to search for SOPs as much as possible, wherever they are available for the relevant tickets that she is handling at the moment. And if that is, if that is helping her 90 or 100%, that's great.</v>
+
+00:14:00.781 --> 00:14:19.701
+<v Gagan Chowdhary>But if she thinks she still feels stuck, so she must highlight what is it that she felt stuck on and what needs to be improved on that SOP. Yeah, so at least they will give everyone a different perspective to see things, you know, from a different perspective.</v>
+
+00:14:20.661 --> 00:14:21.061
+<v Anthony Licate>Right.</v>
+
+00:14:22.261 --> 00:14:26.661
+<v Gagan Chowdhary>Thank you. Anything else from you, Andrea and Anthony, before we move on?</v>
+
+00:14:26.981 --> 00:14:27.021
+<v Anthony Licate>I.</v>
+
+00:14:28.261 --> 00:14:28.901
+<v Andrew Ordak>Not for me.</v>
+
+00:14:30.181 --> 00:14:30.501
+<v Anthony Licate>No.</v>
+
+00:14:30.981 --> 00:14:49.141
+<v Gagan Chowdhary>Okay, thank you. Coming to ticket closure rate, so our ticket closure rate is target is 80% and yeah, I can see that because she handled longer tickets more. I see that previously in the previous week.</v>
+
+00:14:50.181 --> 00:15:09.781
+<v Gagan Chowdhary>week prior to the previous week, between 15th to 19th, she had touched 49 tickets, out of which she was able to resolve 30. But in the following week from that week, she touched 55 tickets, that means 6 tickets more. And I think, but those tickets cannot be.</v>
+
+00:15:09.821 --> 00:15:30.701
+<v Gagan Chowdhary>closed, you know, same day because those were longer tickets. She had to work on those, you know, multiple tickets or multiple times. So which is why I mean the ticket closure rate because we purely gauge or and calculate this performance based on the same day performance and whether she.</v>
+
+00:15:30.781 --> 00:15:34.581
+<v Gagan Chowdhary>whether or not she was able to close those tickets the same day or not.</v>
+
+00:15:35.701 --> 00:15:41.581
+<v Gagan Chowdhary>So this, which is why the ticket result rate shows very less, is 36.36%.</v>
+
+00:15:43.701 --> 00:15:53.381
+<v Gagan Chowdhary>I can, yeah, you know, when I was checking with her, I can highlight a few tickets in just a moment.</v>
+
+00:15:56.741 --> 00:16:13.821
+<v Anthony Licate>So the two things sort of happened there. Number one, there were some pent up baseline level 1 tickets that were in the system. So they were, that was good. We were able to sort of like grab those backlog tickets and get them probably addressed.</v>
+
+00:15:59.061 --> 00:15:59.381
+<v Gagan Chowdhary>Yeah.</v>
+
+00:16:14.101 --> 00:16:23.221
+<v Anthony Licate>Andrew can confirm whether what I'm saying makes sense. And then we get into the week two and we kicked it up a little bit. So the tickets had a little bit more.</v>
+
+00:16:24.701 --> 00:16:37.381
+<v Anthony Licate>they required a little bit more energy as it relates to technical ability. So we slowly integrated more advanced level one tickets into the queue.</v>
+
+00:16:29.301 --> 00:16:29.781
+<v Gagan Chowdhary>Mhm.</v>
+
+00:16:37.941 --> 00:16:38.421
+<v Gagan Chowdhary>Mhm.</v>
+
+00:16:38.341 --> 00:16:57.261
+<v Anthony Licate>And we saw that that, you know, obviously there was there was there was more of a shadowing need to to to 1st get the customer used to to to a new face, in addition to get Sophie used to the actual environment.</v>
+
+00:16:52.101 --> 00:16:52.581
+<v Gagan Chowdhary>Mhm.</v>
+
+00:16:54.101 --> 00:16:54.221
+<v Gagan Chowdhary>Yeah.</v>
+
+00:16:57.901 --> 00:16:58.501
+<v Gagan Chowdhary>Mhm.</v>
+
+00:16:58.501 --> 00:17:04.981
+<v Anthony Licate>and the personalities. So what we are trying to address now is a combination of</v>
+
+00:17:07.861 --> 00:17:25.381
+<v Anthony Licate>You know, the customers, some of our customers are pretty, they get in there, they get very used to the same, right? The same tech, the same, and that's a hard thing for any organization. You can't have the same tech service, the same customer every single time, but...</v>
+
+00:17:19.901 --> 00:17:20.501
+<v Gagan Chowdhary>Mm-hmm.</v>
+
+00:17:24.901 --> 00:17:25.301
+<v Gagan Chowdhary>True.</v>
+
+00:17:27.861 --> 00:17:47.781
+<v Anthony Licate>Sometimes that's the predicament we fell into with level 1 tickets. Now we have the option to sort of distribute them out a little bit, give a little bit more to Sophie as she matures in those areas. And so it's we're really trying to kill two birds with once.</v>
+
+00:17:48.021 --> 00:17:50.501
+<v Anthony Licate>down on it all because we're trying to...</v>
+
+00:17:52.261 --> 00:18:12.021
+<v Anthony Licate>On one hand, we're trying to get the customer comfortable with a new face. On the other hand, we're trying to get Sophie comfortable with the environment, knowing that, you know, these tickets aren't as straightforward as let's set up Outlook for a new person, right? So.</v>
+
+00:17:59.701 --> 00:18:00.181
+<v Gagan Chowdhary>Mhm.</v>
+
+00:18:13.061 --> 00:18:31.301
+<v Anthony Licate>So you might see a little lag on the statistics like you see here because it's not going to get any easier, right? So once we go to L1, baseline L1, then this next week, baseline L1, probably more like middle L1.</v>
+
+00:18:21.781 --> 00:18:22.261
+<v Gagan Chowdhary>Mhm.</v>
+
+00:18:28.981 --> 00:18:29.141
+<v Gagan Chowdhary>Yes.</v>
+
+00:18:31.981 --> 00:18:50.221
+<v Anthony Licate>then we're going to start moving to higher level L1 tickets. And, but that really can't happen until she gets more comfortable with what's, you know, the customers, the customers get more comfortable with her. So it's a part of, you know, being able to.</v>
+
+00:18:50.261 --> 00:18:50.341
+<v Gagan Chowdhary>The.</v>
+
+00:18:50.661 --> 00:18:54.421
+<v Anthony Licate>to sort of mature with the customer in addition to the systems that we have, you know.</v>
+
+00:18:56.101 --> 00:19:01.061
+<v Gagan Chowdhary>That completely makes sense. Totally in line with your plan. Yeah. Thank you, Anthony.</v>
+
+00:19:02.581 --> 00:19:03.861
+<v Gagan Chowdhary>Okay, uh... S.</v>
+
+00:19:05.301 --> 00:19:07.461
+<v Gagan Chowdhary>Anything, anything from you, Andrew, on this?</v>
+
+00:19:09.061 --> 00:19:09.941
+<v Andrew Ordak>Nothing for me.</v>
+
+00:19:11.301 --> 00:19:12.261
+<v Gagan Chowdhary>All right, thank you.</v>
+
+00:19:13.541 --> 00:19:14.661
+<v Gagan Chowdhary>One moment.</v>
+
+00:19:16.901 --> 00:19:36.181
+<v Gagan Chowdhary>Okay, for that, I also wanted to ask, you know, since we have a 30, 60, 90 day plan created for Sophie for 1st 90 days. So in order for her to succeed in that plan, so, you know, I need to connect with her on a daily basis. So would it be okay if I connect for 15 minutes?</v>
+
+00:19:36.261 --> 00:19:37.301
+<v Gagan Chowdhary>Every day with Sophie.</v>
+
+00:19:39.221 --> 00:19:40.421
+<v Anthony Licate>Would it be okay? Sure.</v>
+
+00:19:40.581 --> 00:20:00.021
+<v Gagan Chowdhary>Yeah, thank you. So by this, you know, I'll be able to personally gauge her overall performance, you know, you know, how she is working and what are her challenges and where she needs support from ITBD end. Because I'll be working alongside with you, Andrew and Anthony, whatever feedback or suggestion you will share with me and.</v>
+
+00:19:43.301 --> 00:19:43.781
+<v Anthony Licate>Kip.</v>
+
+00:20:20.981 --> 00:20:21.141
+<v Anthony Licate>And.</v>
+
+00:20:21.181 --> 00:20:22.741
+<v Gagan Chowdhary>I also have a question, Evan.</v>
+
+00:20:23.621 --> 00:20:39.541
+<v Gagan Chowdhary>Do you, where does she need to enter that time? Because we always document each and every time wherever we spend, you know, to a ticket or maybe admin ticket or some meeting ticket, something like that.</v>
+
+00:20:31.541 --> 00:20:31.941
+<v Anthony Licate>Please, then.</v>
+
+00:20:40.901 --> 00:20:43.541
+<v Gagan Chowdhary>So, but you can share that and you can guide her.</v>
+
+00:20:41.061 --> 00:20:41.781
+<v Anthony Licate>Andrew.</v>
+
+00:20:42.901 --> 00:20:43.301
+<v Anthony Licate>Andrew.</v>
+
+00:20:44.461 --> 00:20:48.261
+<v Anthony Licate>What, what you, Andrew, we have a process for that, right? So...</v>
+
+00:20:47.861 --> 00:20:51.141
+<v Andrew Ordak>Yeah, do you want me to just have her do it as like admin internal meeting?</v>
+
+00:20:51.941 --> 00:20:52.381
+<v Gagan Chowdhary>Okay.</v>
+
+00:20:52.701 --> 00:20:53.901
+<v Anthony Licate>That's fine, yeah.</v>
+
+00:20:54.821 --> 00:21:06.341
+<v Gagan Chowdhary>All right, so yeah, thank you. So there she can enter the note that ITBD meeting, 15 or 20 minutes. And all right, so we'll try to wrap it up within 15 minutes every day. Thank you.</v>
+
+00:20:54.941 --> 00:20:55.941
+<v Andrew Ordak>Yeah, I'll share with that.</v>
+
+00:21:07.461 --> 00:21:26.741
+<v Anthony Licate>Yeah, I mean, Gagan, if 15 minutes gets me back an hour, then so be it. You know, I'm not hung up on the 15 minutes. It's good. We'll document it. We'll stick it in the time sheet. But yeah, sometimes 15 minutes can go a long way. We have our end of day meetings at the end of the days. And a lot of times it's</v>
+
+00:21:27.461 --> 00:21:46.661
+<v Anthony Licate>It's not the 90% of the meeting that matters. It's really the 10% of things that are said that usually push people along through those things. So you might out, as I would see, as I would imagine from other times when you had these meetings, I would imagine, you know, maybe 10 minutes of this meeting.</v>
+
+00:21:47.621 --> 00:21:57.701
+<v Anthony Licate>You know, you're working through some things, but the 5 minutes is really where the meat's at. So I appreciate you doing that and working through those things with her.</v>
+
+00:21:58.661 --> 00:21:59.861
+<v Gagan Chowdhary>Sure, absolutely.</v>
+
+00:22:01.621 --> 00:22:20.501
+<v Gagan Chowdhary>Because at ITBD, our focus is always to continue to add value in your environment. And firstly, starting with fixing those gaps if we identify any. So thank you for sharing your feedback. This is really, really important for us to consistently improve our services. Thank you.</v>
+
+00:22:21.501 --> 00:22:22.101
+<v Anthony Licate>Mm-hmm.</v>
+
+00:22:23.381 --> 00:22:40.741
+<v Gagan Chowdhary>So yeah, so total, she worked on 55 tickets, of which she was able to complete 20, which brings her ticket resolve rate to 36.36%. So this is my target, my focus area, what I need to work on with Sophie so that we can.</v>
+
+00:22:40.861 --> 00:22:46.181
+<v Gagan Chowdhary>Bring the ticket result rate higher, you know, close to 80%.</v>
+
+00:22:47.261 --> 00:22:59.221
+<v Gagan Chowdhary>All right, thank you. Moving on to ITBD services, I, I don't think I need to spend much time on it. You've already, you know, booked your ticket for that. Did you get, did you get your hotel booking done?</v>
+
+00:23:01.301 --> 00:23:08.061
+<v Anthony Licate>Now, but you're pretty close. I can't imagine it'll be too much of an issue. I'll work it out.</v>
+
+00:23:06.341 --> 00:23:06.901
+<v Gagan Chowdhary>Okay.</v>
+
+00:23:08.901 --> 00:23:28.461
+<v Gagan Chowdhary>Great. If you need any help, so, you know, some of the India team members are also there, managers from India, they have already reached New Jersey, Jersey City. So, but Sunny is visiting India when we are going back and forth. So, Sunny is in her office. Yesterday we had a town hall with Sunny here in Chandigarh.</v>
+
+00:23:18.261 --> 00:23:18.381
+<v Anthony Licate>Yeah.</v>
+
+00:23:28.981 --> 00:23:41.701
+<v Gagan Chowdhary>And so he'll be going back within this week, I believe, not sure the date. So Team is there in the US office as well. So if you need any assistance with a hotel booking or anything about your...</v>
+
+00:23:43.101 --> 00:23:49.461
+<v Gagan Chowdhary>Any plans, you know, during those three days, so you can discuss with Team and they'll be glad to help you.</v>
+
+00:23:50.901 --> 00:23:51.541
+<v Anthony Licate>That sounds good.</v>
+
+00:23:52.101 --> 00:24:03.061
+<v Gagan Chowdhary>Thank you. So, I mean, since you're driving, so we'll not be touching this team GPS, so sheet will be shared with you. When you get time, you can book this demo with our team.</v>
+
+00:24:04.341 --> 00:24:09.941
+<v Gagan Chowdhary>So this will also be discussed during those three days, AI by design kind of services.</v>
+
+00:24:11.221 --> 00:24:32.581
+<v Gagan Chowdhary>Yeah, so just reiterating, so Sophie has chosen these two optional holidays. I mean, optional holidays, I mean, she has chosen these two options out of these five options. So these are the major ones I'm highlighting again, which can be marked on your calendar, apart from otherwise</v>
+
+00:24:32.901 --> 00:24:50.901
+<v Gagan Chowdhary>the compulsory holidays that we see on the left-hand side. So if some of the US on some of the US holidays, you think Sophie or some of the team members need to cover the shift, need to support the team, so we can, you know, ask Sophie to work on that day and cover the shift.</v>
+
+00:24:52.261 --> 00:25:07.061
+<v Gagan Chowdhary>and she can take complementary of later on. So this is how we collaborate and work together. When you have US holidays, she can work and when she has major India festival, so she would expect support from your team. So thank you.</v>
+
+00:25:08.101 --> 00:25:08.701
+<v Anthony Licate>Mm-hmm.</v>
+
+00:25:10.101 --> 00:25:28.501
+<v Gagan Chowdhary>Yeah, so my way forward is still the same. That has not changed. So continue to support Sophie in meeting her KPI target that we discussed and assist to Sophie in identifying gaps wherein she needs support so that we can.</v>
+
+00:25:28.621 --> 00:25:48.021
+<v Gagan Chowdhary>bring her up to speed to add value in your environment for what she has been hired. So that you start to see she's putting in value and you start to receive good appreciation or feedback from your user customers at the same time. And I'm sure she will also feel happy.</v>
+
+00:25:48.901 --> 00:25:53.061
+<v Gagan Chowdhary>That she's she has started to receive some positive feedback from the users, yeah.</v>
+
+00:25:54.221 --> 00:26:16.181
+<v Gagan Chowdhary>So Andrew, we did have our team collaboration team dinner this Sunday, but unfortunately she did not turn up. She said, I mean, because of her baby, she couldn't come to the meeting. But I'll show you the picture, you know, that I, so some of the team members who could join this dinner party with me, so.</v>
+
+00:26:16.661 --> 00:26:17.621
+<v Gagan Chowdhary>So, that was it.</v>
+
+00:26:18.741 --> 00:26:23.541
+<v Gagan Chowdhary>I'm sharing my screen. Let me quickly show the picture.</v>
+
+00:26:25.461 --> 00:26:26.581
+<v Gagan Chowdhary>Just a moment.</v>
+
+00:26:32.661 --> 00:26:34.981
+<v Gagan Chowdhary>Where is it? Oh, I found one.</v>
+
+00:26:39.621 --> 00:26:42.581
+<v Gagan Chowdhary>Let me know once my screen is visible to you.</v>
+
+00:26:44.741 --> 00:26:45.541
+<v Anthony Licate>Nice.</v>
+
+00:26:45.221 --> 00:26:47.181
+<v Andrew Ordak>Yep, I see it. That looks like a nice dinner.</v>
+
+00:26:49.061 --> 00:26:49.101
+<v Gagan Chowdhary>I.</v>
+
+00:26:50.501 --> 00:26:50.821
+<v Gagan Chowdhary>Yeah.</v>
+
+00:26:52.501 --> 00:27:11.621
+<v Gagan Chowdhary>So you see this person, so these are my other team members. So they work with, you know, other clients, partners. So this person, Maverick, I mean, he's not in this city. So he drove from 300 kilometers, I mean,</v>
+
+00:27:12.341 --> 00:27:32.661
+<v Gagan Chowdhary>That was more than a 3 1/2 hour drive to get to that venue to have dinner with us. So I really appreciated his efforts and because he works from a different city. ITBD has different offices. You know, I'm from Chennai office, but he works from Noida office. That is in, you must have heard, New Delhi is the capital of India.</v>
+
+00:27:31.861 --> 00:27:32.181
+<v Andrew Ordak>Yeah.</v>
+
+00:27:32.901 --> 00:27:47.381
+<v Gagan Chowdhary>So, Noida is really adjacent, it's adjacent to New Delhi, so he works from Noida office, but he made it to the party, so yeah, so this is how we do, you know, this time we had a little less.</v>
+
+00:27:49.021 --> 00:28:08.101
+<v Gagan Chowdhary>I would say attendance, because some people, you know, had last minute emergencies. So which is why I mean, they couldn't join. But we'll keep on showing you how we celebrate at ITBD. This is a quarterly connect, but we do have weekly and monthly connects. So I'll keep showing you those pictures as well.</v>
+
+00:28:08.741 --> 00:28:27.861
+<v Gagan Chowdhary>I was planning to show you, you know, or create a slide for you to show, you know, something about our city. You know, what special we have in our city and, you know, what is our culture, how people live, our parks and everything so that you get to know more about our city, not just work, but everything around us.</v>
+
+00:28:23.541 --> 00:28:23.701
+<v Anthony Licate>Yeah.</v>
+
+00:28:28.581 --> 00:28:30.741
+<v Anthony Licate>Send it over, it'd be cool. Just a few slides.</v>
+
+00:28:30.341 --> 00:28:50.101
+<v Gagan Chowdhary>Yeah, absolutely. I will definitely add those so that, I mean, in your available time, you can see those things. All right, so that was clearly all for my end, Andrew and Anthony. That was really good and fruitful discussion with you. Anything else that probably I didn't, I mean,</v>
+
+00:28:31.621 --> 00:28:31.941
+<v Andrew Ordak>Yeah.</v>
+
+00:28:39.061 --> 00:28:39.461
+<v Anthony Licate>Yeah.</v>
+
+00:28:50.501 --> 00:29:07.621
+<v Gagan Chowdhary>I had promised that I will end this meeting in 15 to 20 minutes, but I mean, it took the regular time. I mean, even 2 minutes above that. So truly appreciate that. Anything else you would like to see more on these slides? I mean, I would love to hear from you.</v>
+
+00:29:08.821 --> 00:29:28.501
+<v Anthony Licate>Now, let's keep moving through, get continue to make progress with what Sophie knows. The hope, which I know we'll get there, is that she will definitely have more independence to address and take care of these tickets over time. Like I was telling you, Gagan,</v>
+
+00:29:16.381 --> 00:29:16.621
+<v Gagan Chowdhary>Okay.</v>
+
+00:29:26.261 --> 00:29:26.461
+<v Gagan Chowdhary>Yeah.</v>
+
+00:29:28.621 --> 00:29:36.181
+<v Anthony Licate>The the ultimate goal is to is to free up guys like Andrew and and some of the other guys, so that we can we can.</v>
+
+00:29:33.181 --> 00:29:33.661
+<v Gagan Chowdhary>Mhm.</v>
+
+00:29:37.381 --> 00:29:38.501
+<v Anthony Licate>We can make sure that.</v>
+
+00:29:40.581 --> 00:29:41.381
+<v Gagan Chowdhary>I get you.</v>
+
+00:29:40.661 --> 00:29:50.501
+<v Anthony Licate>You know, everything gets it gets gets addressed at the at the level one side, so that we can optimize some of some of these two plus functionality.</v>
+
+00:29:43.221 --> 00:29:43.701
+<v Gagan Chowdhary>Yeah.</v>
+
+00:29:51.461 --> 00:30:10.661
+<v Gagan Chowdhary>Absolutely, totally in line with your plan because your ultimate goal is not to drag your team behind to support Sophie, but you know, everyone, you know, she should be, you know, soon be independent so that, you know, team is working on their own issues, their own tasks, and you know, she's working independently and handling stuff.</v>
+
+00:30:06.941 --> 00:30:07.061
+<v Anthony Licate>And.</v>
+
+00:30:25.781 --> 00:30:25.821
+<v Anthony Licate>Oh.</v>
+
+00:30:25.981 --> 00:30:45.581
+<v Gagan Chowdhary>You know, I'll connect with you separately on that. You know, things, for instance, I mean, I will let Anthony go, but you know, last time we did decide some tools that she needs understanding on, maybe training. So, for instance, Datto for backup, Sonic Wall, Firewall.</v>
+
+00:30:26.381 --> 00:30:26.541
+<v Anthony Licate>Ohh.</v>
+
+00:30:32.941 --> 00:30:33.341
+<v Anthony Licate>Kour.</v>
+
+00:30:44.301 --> 00:30:45.181
+<v Anthony Licate>Very, very.</v>
+
+00:30:46.061 --> 00:30:57.821
+<v Gagan Chowdhary>And all those, all those things, so do let me know. I mean, how these, when or how these can be planned for Sophie, you know, and those can be scheduled on our calendar accordingly. OK.</v>
+
+00:30:54.381 --> 00:30:54.541
+<v Anthony Licate>No.</v>
+
+00:30:56.381 --> 00:30:56.901
+<v Anthony Licate>OK.</v>
+
+00:30:58.821 --> 00:31:00.461
+<v Andrew Ordak>Yeah, we'll start looking into those trainings.</v>
+
+00:31:01.661 --> 00:31:08.621
+<v Gagan Chowdhary>All right, so thank you very much, Team. So we'll meet next time next week with some more positive updates. Until then, have a nice day.</v>
+
+00:31:09.421 --> 00:31:10.301
+<v Andrew Ordak>Thank you as well.</v>
+
+00:31:09.501 --> 00:31:11.501
+<v Anthony Licate>Thank you. You too. Bye.</v>
+
+00:31:10.941 --> 00:31:11.981
+<v Gagan Chowdhary>Thank you. Bye-bye.</v>
+
+00:31:12.541 --> 00:31:12.781
+<v Andrew Ordak>See you.</v>
+

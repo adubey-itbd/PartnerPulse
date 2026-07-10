@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Data: commit recovered service-call transcripts (2026-07-10)
+
+### Added
+- **54 `Transcripts/*.vtt`** pulled 2026-07-09 after the Teams application-access-policy was
+  restored — across ~35 partner folders (incl. `CPCORP Inc/`, `GainSide/`, plus monthly/QBR
+  calls through early July). Pipeline input data, not code.
+
 ## [Unreleased] — Privacy: money masked by default (2026-07-10)
 
 ### Changed

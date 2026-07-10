@@ -1,0 +1,1301 @@
+WEBVTT
+NOTE title: MSP Corp(MBCCS Group) | Service Call
+NOTE date: 2026-06-17
+NOTE duration: 41m 35s
+
+00:00:03.481 --> 00:00:22.161
+<v Ashish Paul>So based on the previous connect and the feedback that we have shared for the engineers, we are working on that at the same time. The information that I shared in the performance spotlight for the individuals very mentioned.</v>
+
+00:00:22.721 --> 00:00:41.841
+<v Ashish Paul>work distribution should not reflect the percentage of work that they have done and the relevant tickets. So I was actually reaching out to Arkadi too because he was supposed to share me what information he wants to see in those slides. So I did not get any reply from him so I had to.</v>
+
+00:00:29.041 --> 00:00:29.401
+<v Reza Hajiahmadi>Dharam.</v>
+
+00:00:37.801 --> 00:00:38.241
+<v Reza Hajiahmadi>Akshay.</v>
+
+00:00:42.081 --> 00:01:02.321
+<v Ashish Paul>proceed with the old way that I used to do. So this is just one thing that I wanted to give the heads up before I present the negative thing. And the training milestones that you asked for. So I have that to complete list with me.</v>
+
+00:00:44.001 --> 00:00:44.321
+<v Reza Hajiahmadi>Okay.</v>
+
+00:00:49.121 --> 00:00:54.321
+<v Reza Hajiahmadi>Okay, yeah, alright, alright, yeah.</v>
+
+00:01:02.721 --> 00:01:06.081
+<v Ashish Paul>and I will share that with you right after this call.</v>
+
+00:01:06.161 --> 00:01:07.761
+<v Reza Hajiahmadi>Okay, perfect. Thank you.</v>
+
+00:01:07.121 --> 00:01:24.401
+<v Ashish Paul>So that we are on track with that. And yeah, that's about it. So before I go into the presentation deck and discuss other details of the past week, I would like to know from you, how was the past week with the engineers and how did they do?</v>
+
+00:01:24.801 --> 00:01:43.281
+<v Reza Hajiahmadi>I have no insight of that. I think it's an Arkadi because Arkadi works with them directly. So, I'm not sure what was the effect of those, but in overall we can say even if you train.</v>
+
+00:01:44.081 --> 00:02:03.921
+<v Reza Hajiahmadi>One line, if you study one line, it's definitely has effect on on on the technician work, but I I I don't know, I I would say it's on Arkadi, so let's wait for him. Hey, Sarbjeet.</v>
+
+00:01:54.401 --> 00:01:56.001
+<v Ashish Paul>We did already.</v>
+
+00:01:57.361 --> 00:01:57.521
+<v Ashish Paul>The.</v>
+
+00:02:02.401 --> 00:02:02.641
+<v Ashish Paul>Oh.</v>
+
+00:02:04.721 --> 00:02:07.921
+<v Reza Hajiahmadi>to see what he says because I'm not working directly with them.</v>
+
+00:02:10.081 --> 00:02:10.721
+<v Reza Hajiahmadi>Kam.</v>
+
+00:02:10.641 --> 00:02:11.041
+<v Ashish Paul>All right.</v>
+
+00:02:15.041 --> 00:02:18.961
+<v Sarbjeet Singh>Apologies, Rita. Sorry, I was just talking to Chester a few minutes back.</v>
+
+00:02:15.601 --> 00:02:15.961
+<v Ashish Paul>Kour.</v>
+
+00:02:19.521 --> 00:02:20.121
+<v Reza Hajiahmadi>Mm-hmm.</v>
+
+00:02:21.201 --> 00:02:22.001
+<v Sarbjeet Singh>How are you doing?</v>
+
+00:02:22.001 --> 00:02:23.201
+<v Reza Hajiahmadi>I'm good, yeah.</v>
+
+00:02:23.601 --> 00:02:25.281
+<v Sarbjeet Singh>Good, doing well, thank you.</v>
+
+00:02:25.281 --> 00:02:28.161
+<v Reza Hajiahmadi>Yeah, yeah, in a side note, uh...</v>
+
+00:02:30.881 --> 00:02:46.241
+<v Reza Hajiahmadi>I'm not sure it was a it was a discussion between your team and Tyson about somehow swapping branch with someone else. Okay, you're aware about that.</v>
+
+00:02:45.921 --> 00:02:46.241
+<v Sarbjeet Singh>Kip.</v>
+
+00:02:48.561 --> 00:02:51.441
+<v Reza Hajiahmadi>Why do you want to swap that that attack with us?</v>
+
+00:02:52.641 --> 00:02:55.521
+<v Reza Hajiahmadi>Are they complaining about the that that technician?</v>
+
+00:02:52.761 --> 00:02:52.881
+<v Ashish Paul>Yeah.</v>
+
+00:02:57.521 --> 00:03:10.721
+<v Sarbjeet Singh>I'm being honest, Reza, I'm not aware because I wasn't part of the discussion. I believe Amit and Lee had a word with Tyson specifically, how they would like to strategically do the placement for the resources.</v>
+
+00:03:07.121 --> 00:03:07.601
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:03:11.441 --> 00:03:16.401
+<v Reza Hajiahmadi>Ohh, I see, and they mentioned to me that you have a...</v>
+
+00:03:13.041 --> 00:03:13.361
+<v Sarbjeet Singh>Yep.</v>
+
+00:03:17.601 --> 00:03:24.401
+<v Reza Hajiahmadi>Another resource from another country, like you do have Philippines technicians as well.</v>
+
+00:03:24.801 --> 00:03:25.841
+<v Sarbjeet Singh>Yes, we do.</v>
+
+00:03:25.921 --> 00:03:27.761
+<v Reza Hajiahmadi>Oh, okay. Okay.</v>
+
+00:03:28.721 --> 00:03:44.721
+<v Reza Hajiahmadi>I'm not sure what the plan is, but I think for Ranch we're gonna go and do the swap stuff with the with the Paris and see what happened. I'm not sure about the technician name. Who's that technician name?</v>
+
+00:03:39.921 --> 00:03:40.001
+<v Ashish Paul>The.</v>
+
+00:03:46.881 --> 00:03:48.641
+<v Ashish Paul>I think it's Karthik.</v>
+
+00:03:51.761 --> 00:03:51.801
+<v Ashish Paul>I.</v>
+
+00:03:51.841 --> 00:03:53.721
+<v Reza Hajiahmadi>How we can spell it? G.A.</v>
+
+00:03:54.081 --> 00:03:57.481
+<v Ashish Paul>It's KKARTICK.</v>
+
+00:03:56.561 --> 00:04:01.441
+<v Reza Hajiahmadi>KTICK Kartik Okay.</v>
+
+00:04:03.201 --> 00:04:08.081
+<v Reza Hajiahmadi>How long is it joined to your company or to Parry's company, I would say?</v>
+
+00:04:09.681 --> 00:04:14.721
+<v Ashish Paul>He had been with Jason Scott. I think it's been more than six months now.</v>
+
+00:04:12.641 --> 00:04:12.801
+<v Reza Hajiahmadi>Mm.</v>
+
+00:04:15.041 --> 00:04:17.881
+<v Reza Hajiahmadi>Okay, just so he's happy with him, right?</v>
+
+00:04:19.601 --> 00:04:24.361
+<v Ashish Paul>But he's happy with all of his technicians, not specifically with.</v>
+
+00:04:21.681 --> 00:04:37.121
+<v Reza Hajiahmadi>Ohh, he's happy with everyone. OK, OK, OK, so my, my, my, it's a good point for Vange to find the Perry's to work, yeah, OK.</v>
+
+00:04:28.441 --> 00:04:28.561
+<v Ashish Paul>Yeah.</v>
+
+00:04:35.161 --> 00:04:35.761
+<v Ashish Paul>Yep, yep.</v>
+
+00:04:38.521 --> 00:04:49.761
+<v Ashish Paul>No, I would like to utilize this time, Rita, to quickly walk you through the training plan that I have. Although I will share in the email, but I can utilize this time to share with you.</v>
+
+00:04:45.201 --> 00:04:46.241
+<v Reza Hajiahmadi>Yep, yep.</v>
+
+00:04:50.321 --> 00:04:50.721
+<v Reza Hajiahmadi>Yep.</v>
+
+00:04:51.601 --> 00:04:53.521
+<v Ashish Paul>Let me know if you're able to see on screen.</v>
+
+00:04:53.201 --> 00:04:54.881
+<v Reza Hajiahmadi>Yeah, see your screen now.</v>
+
+00:04:57.121 --> 00:05:16.561
+<v Ashish Paul>Thank you. So, the emphasis was on start with the high impact topics first, but since some high and medium impact topics were falling under a specific domain, so the trainer had to build the environment from scratch, so he chose to</v>
+
+00:05:16.881 --> 00:05:35.121
+<v Ashish Paul>categorize it domain-wise and put high impact and medium impact and even low impact topics into relevant domains so that we have a clear picture which topics he would cover date-wise and how long it will take to complete the entire training. So if I...</v>
+
+00:05:23.041 --> 00:05:23.361
+<v Reza Hajiahmadi>Hi.</v>
+
+00:05:34.441 --> 00:05:37.041
+<v Reza Hajiahmadi>That makes sense. Yeah, it makes sense.</v>
+
+00:05:36.561 --> 00:05:43.921
+<v Ashish Paul>If I scroll down, so it will take until the end of September, so we are looking at the entire Q3 here.</v>
+
+00:05:44.481 --> 00:05:53.521
+<v Reza Hajiahmadi>Ohh, OK. So, by the end of the September, we're gonna end up with the full training plan with two things.</v>
+
+00:05:53.121 --> 00:05:55.201
+<v Ashish Paul>Yes, including hands on.</v>
+
+00:05:56.881 --> 00:06:05.441
+<v Reza Hajiahmadi>OK, good point. So they started from active directory, then they're going to go on Azure Intra.</v>
+
+00:06:07.761 --> 00:06:08.081
+<v Ashish Paul>Yep.</v>
+
+00:06:08.641 --> 00:06:13.041
+<v Reza Hajiahmadi>Okay, user device in 365. Yeah, these are good stuff.</v>
+
+00:06:14.401 --> 00:06:20.241
+<v Reza Hajiahmadi>OK, so the sequence is like, so the curriculum of the course is based on the sequence, right?</v>
+
+00:06:21.121 --> 00:06:21.761
+<v Ashish Paul>That's right.</v>
+
+00:06:22.081 --> 00:06:25.761
+<v Reza Hajiahmadi>Okay, change it to SharePoint.</v>
+
+00:06:27.121 --> 00:06:30.241
+<v Reza Hajiahmadi>65, change tune.</v>
+
+00:06:31.601 --> 00:06:50.161
+<v Reza Hajiahmadi>SharePoint gonna happen on next month, which is good. I think by the end of the next month, we would train them for Active Directory Azure and 365 Exchange in Tune and SharePoint.</v>
+
+00:06:50.201 --> 00:06:54.161
+<v Reza Hajiahmadi>Yeah, which is perfect. Can you scroll it down?</v>
+
+00:06:54.881 --> 00:06:55.281
+<v Ashish Paul>Support.</v>
+
+00:07:00.641 --> 00:07:16.561
+<v Reza Hajiahmadi>You really, OK, compromise detection. I think we can, yeah, we can swap RDS and security time if it is possible, 'cause you know, these technicians are mostly working RDS, then security part.</v>
+
+00:07:17.761 --> 00:07:18.321
+<v Ashish Paul>Correct.</v>
+
+00:07:18.041 --> 00:07:22.001
+<v Reza Hajiahmadi>Even, yeah, even you can move security to the end of the course.</v>
+
+00:07:27.761 --> 00:07:38.001
+<v Ashish Paul>Okay, I'll ask the trainer to put security towards the end and I think from SharePoint we have RDS desktop and general issues, right?</v>
+
+00:07:30.001 --> 00:07:30.321
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:07:36.561 --> 00:07:40.801
+<v Reza Hajiahmadi>Yes, yes, desktop, desktop health.</v>
+
+00:07:42.881 --> 00:07:47.921
+<v Reza Hajiahmadi>At work device will be blockers to take that, but in theory direction.</v>
+
+00:07:50.441 --> 00:07:56.401
+<v Reza Hajiahmadi>Yeah, and for desktop support, yeah, it's gonna happen on August and September, right?</v>
+
+00:07:57.601 --> 00:07:58.081
+<v Ashish Paul>Yes.</v>
+
+00:07:59.721 --> 00:08:19.281
+<v Reza Hajiahmadi>All right, I think it's good. It's good. Because you know, they already know how to support a desktop and it would be a quick review for them. But if they can focus on the 365 stuff, yeah, it would be better. Okay, I think it's good. Just move the security to the end, move everything up.</v>
+
+00:08:20.081 --> 00:08:21.321
+<v Reza Hajiahmadi>Wednesday 8 and.</v>
+
+00:08:22.521 --> 00:08:23.921
+<v Reza Hajiahmadi>We would be good with that.</v>
+
+00:08:25.641 --> 00:08:26.161
+<v Ashish Paul>Short.</v>
+
+00:08:27.441 --> 00:08:28.881
+<v Ashish Paul>I will do that.</v>
+
+00:08:30.081 --> 00:08:30.801
+<v Ashish Paul>And, uh...</v>
+
+00:08:32.121 --> 00:08:52.241
+<v Ashish Paul>Regarding July 1st, so you were more inclined towards utilizing Kobe Day for the training. Since July 1st is not a holiday for ITBD in India, rather it's July 3rd. Before I go into training.</v>
+
+00:08:41.681 --> 00:08:42.161
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:08:49.521 --> 00:08:50.001
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:08:52.481 --> 00:09:00.641
+<v Ashish Paul>Side, um, since we are aligned with engineers getting trained on, you know, July 1st, so that means it's the working day for them, July 1st.</v>
+
+00:08:53.521 --> 00:08:54.001
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:09:00.001 --> 00:09:04.961
+<v Reza Hajiahmadi>Yeah, you can, you can consider the working day, but focus on training, totally fine.</v>
+
+00:09:07.361 --> 00:09:26.721
+<v Ashish Paul>Right. I would have to check on this piece because although it is working day for ITBD by design, so is a working day for trainers. He would have his slots booked for other trainings too, but I will check. That day would not be limited to just an hour.</v>
+
+00:09:18.001 --> 00:09:18.241
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:09:22.241 --> 00:09:22.881
+<v Reza Hajiahmadi>I see.</v>
+
+00:09:26.881 --> 00:09:32.641
+<v Ashish Paul>Look rather two, three, or four, as much as possible, so that we can place the maximum of it.</v>
+
+00:09:28.961 --> 00:09:29.441
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:09:31.201 --> 00:09:49.601
+<v Reza Hajiahmadi>Yeah, yeah, exactly, because you know I can assign some tasks to them, but I would rather have them to be trained than assign some off-the-shelf tasks to them to work, so the more obvious that we can train them.</v>
+
+00:09:48.721 --> 00:09:48.801
+<v Ashish Paul>The.</v>
+
+00:09:49.881 --> 00:09:50.401
+<v Reza Hajiahmadi>Heather.</v>
+
+00:09:51.921 --> 00:09:52.241
+<v Ashish Paul>Okay.</v>
+
+00:09:54.481 --> 00:09:55.201
+<v Ashish Paul>All right.</v>
+
+00:09:56.881 --> 00:09:59.841
+<v Ashish Paul>Any other questions on the training?</v>
+
+00:10:00.681 --> 00:10:20.321
+<v Reza Hajiahmadi>No, Paul, you should, you replied to my email about the recording sharing, totally fine, yeah, acceptable, because it might be in your privacy to not share, which is which is fine, yeah, but I'm not sure if you're...</v>
+
+00:10:20.721 --> 00:10:42.401
+<v Reza Hajiahmadi>Trainer can share the curriculum, detailed curriculum of that, like, let's say, or or any any item that they studied during the course, just for our information, even if it is a high level of stuff, one level down then that the file that you share.</v>
+
+00:10:43.041 --> 00:10:57.361
+<v Reza Hajiahmadi>Just for us to make sure that the topics that we want covered there. It's totally fine. But if it isn't in your privacy, again, it's fine. Don't worry about that. We want to see the results.</v>
+
+00:10:58.521 --> 00:11:17.201
+<v Ashish Paul>Yeah, sure. So, this is one thing behind engineer, when they are going to the train sessions, the trainer is building everything from scratch, including server installations, you know, promoting the DC. So, while he is performing the actions and training it to the individuals,</v>
+
+00:10:59.161 --> 00:10:59.441
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:11:10.001 --> 00:11:10.641
+<v Reza Hajiahmadi>Ohh.</v>
+
+00:11:12.561 --> 00:11:13.041
+<v Reza Hajiahmadi>Is it?</v>
+
+00:11:17.601 --> 00:11:40.001
+<v Ashish Paul>It's a bit complicated for him to make side notes as well for high-level information. Hey, Dorian. So yeah, I would respectfully say no to this request. At the same time, since we are more aligned towards a genius getting the required knowledge and utilize that knowledge for the betterment of our customers.</v>
+
+00:11:19.921 --> 00:11:20.401
+<v Reza Hajiahmadi>Ohh.</v>
+
+00:11:24.881 --> 00:11:25.121
+<v Reza Hajiahmadi>I.</v>
+
+00:11:30.921 --> 00:11:31.441
+<v Reza Hajiahmadi>Nice.</v>
+
+00:11:35.681 --> 00:11:36.001
+<v Reza Hajiahmadi>Kip.</v>
+
+00:11:40.881 --> 00:11:42.601
+<v Ashish Paul>So this is what we are aiming to.</v>
+
+00:11:42.961 --> 00:11:44.321
+<v Reza Hajiahmadi>Yeah, Kour.</v>
+
+00:11:43.521 --> 00:11:43.601
+<v Ashish Paul>The.</v>
+
+00:11:45.921 --> 00:11:46.561
+<v Ashish Paul>Thank you.</v>
+
+00:11:47.641 --> 00:12:06.521
+<v Reza Hajiahmadi>Okay, Karine, just want to give you a heads up about the decision that recently made about lunch. We're going to swap lunch with one of the technicians from Paris PU.</v>
+
+00:11:49.041 --> 00:11:49.761
+<v Ashish Paul>Or.</v>
+
+00:11:56.361 --> 00:11:56.481
+<v Ashish Paul>Yes.</v>
+
+00:11:57.761 --> 00:11:58.161
+<v Torin Lever>Okay.</v>
+
+00:12:07.281 --> 00:12:07.761
+<v Torin Lever>Okay.</v>
+
+00:12:07.521 --> 00:12:26.921
+<v Reza Hajiahmadi>Who, who directly works with GSL? So, yeah, so, so the technician name is Kartrick or Kartrick, yeah, yeah, yeah, I think he is based on their experience with it.</v>
+
+00:12:19.601 --> 00:12:20.161
+<v Ashish Paul>Karthik.</v>
+
+00:12:20.961 --> 00:12:21.201
+<v Torin Lever>Kip.</v>
+
+00:12:23.281 --> 00:12:23.321
+<v Ashish Paul>I.</v>
+
+00:12:27.001 --> 00:12:47.081
+<v Reza Hajiahmadi>This technician, as per Ashish, just as happy with him, just want to swap, so suppose my branch works for them, because you know there are different type of process, there are different type of expectation, so we're gonna, we're gonna swap.</v>
+
+00:12:47.161 --> 00:12:48.641
+<v Reza Hajiahmadi>Both and see what happens.</v>
+
+00:12:48.961 --> 00:12:50.001
+<v Torin Lever>Okay, sounds good.</v>
+
+00:12:50.481 --> 00:12:50.721
+<v Reza Hajiahmadi>Yep.</v>
+
+00:12:52.121 --> 00:12:52.201
+<v Reza Hajiahmadi>So.</v>
+
+00:12:53.521 --> 00:12:54.081
+<v Ashish Paul>Right.</v>
+
+00:12:53.601 --> 00:12:59.841
+<v Torin Lever>Yeah, we used to have a gentleman named Karthik back when I was with MedEx, so the name familiar with me, so that'll be yeah.</v>
+
+00:12:59.081 --> 00:12:59.361
+<v Reza Hajiahmadi>Paul.</v>
+
+00:13:00.481 --> 00:13:03.001
+<v Reza Hajiahmadi>Alright, alright.</v>
+
+00:13:05.841 --> 00:13:10.161
+<v Ashish Paul>Before I jump into the presentation, is there anything else you want to share?</v>
+
+00:13:10.721 --> 00:13:13.521
+<v Reza Hajiahmadi>No, from my end, no, okay.</v>
+
+00:13:14.841 --> 00:13:15.001
+<v Reza Hajiahmadi>Ashish.</v>
+
+00:13:15.521 --> 00:13:15.921
+<v Ashish Paul>Kip.</v>
+
+00:13:17.601 --> 00:13:21.121
+<v Ashish Paul>I'll go ahead and share my screen.</v>
+
+00:13:23.321 --> 00:13:23.361
+<v Ashish Paul>I.</v>
+
+00:13:25.281 --> 00:13:25.921
+<v Ashish Paul>Is it?</v>
+
+00:13:26.161 --> 00:13:26.561
+<v Reza Hajiahmadi>Yep.</v>
+
+00:13:26.881 --> 00:13:27.201
+<v Torin Lever>Yep.</v>
+
+00:13:28.081 --> 00:13:49.201
+<v Ashish Paul>Thank you. So, starting with performance spotlight for lunch, this is from June 8th till June 14th, where we have received 2 surveys for lunch and both were positive. So, it's 100% for lunch for this duration. During the board reviews, it was identified that there was a ticket to...</v>
+
+00:13:49.601 --> 00:14:11.201
+<v Ashish Paul>409326 that could be categorized as sort of a project ticket because it was it was involving 20 users where a bunch had to work on minor changes into the email address of the user. So he successfully did that. There is a ticket number, 2409387, where we received.</v>
+
+00:14:11.361 --> 00:14:29.921
+<v Ashish Paul>Positive feedback from the users documented in the day itself, and next we have is a bulk distribution for lunch, where his triage percentage is thirty-six. User facing issues were 8%, problem resolution regarding application and systems they were 18%, then...</v>
+
+00:14:30.401 --> 00:14:32.481
+<v Ashish Paul>User set up an onboarding for thirty-one percent.</v>
+
+00:14:35.761 --> 00:14:43.121
+<v Ashish Paul>He was able to answer 3 calls in the last week. So we have this number as well listed here.</v>
+
+00:14:44.881 --> 00:14:45.281
+<v Ashish Paul>Ali.</v>
+
+00:14:47.761 --> 00:14:48.241
+<v Lee Cavellier>Hey, Team.</v>
+
+00:14:49.041 --> 00:14:49.161
+<v Ashish Paul>Yeah.</v>
+
+00:14:49.361 --> 00:14:50.081
+<v Reza Hajiahmadi>Hey.</v>
+
+00:14:50.161 --> 00:14:51.281
+<v Ashish Paul>Any questions there, Rita?</v>
+
+00:14:54.641 --> 00:15:02.921
+<v Reza Hajiahmadi>Yeah, no, I have no question 'cause, you know, about these numbers, we already we already spoke about this, yeah, we came over.</v>
+
+00:15:02.001 --> 00:15:02.561
+<v Ashish Paul>Yep, yep.</v>
+
+00:15:04.481 --> 00:15:22.681
+<v Ashish Paul>Okay, similarly for JASP, although his percentage is lesser than the last week, but it's still at 53%, which is apparently more. On basis of my assessment, Tuesday then Thursdays are the days when JASP does the triaging.</v>
+
+00:15:23.601 --> 00:15:38.721
+<v Ashish Paul>And so, ticket and flow was was on the higher side during two during those two days, because of which his overall percentage has increased more than we expected.</v>
+
+00:15:42.721 --> 00:16:02.481
+<v Reza Hajiahmadi>Yeah, that's right. And one of the good thing about Jasp happened yesterday, I'm not sure, Torin, you involved with, yeah, you were involved with on that. Jasp was able to catch one of the security stuff that happened for one of.</v>
+
+00:16:02.601 --> 00:16:15.121
+<v Reza Hajiahmadi>one of our client, suspicious activity that happened for a client, and he could catch it right at that time. So that was a great job that he did.</v>
+
+00:16:15.121 --> 00:16:30.641
+<v Torin Lever>Yeah, plus he, plus he followed our process, so knowing that it was before 9 A.m. we don't have our security team on yet, so we do have a process to follow. He executed all the changes that we needed made before then, and then got to pick it up to our security guys to follow up. That was excellent, very happy with that.</v>
+
+00:16:17.601 --> 00:16:18.081
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:16:27.201 --> 00:16:27.561
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:16:31.361 --> 00:16:31.761
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:16:32.161 --> 00:16:33.641
+<v Ashish Paul>Thank you, Rita. Thank you, Dorian.</v>
+
+00:16:34.041 --> 00:16:34.321
+<v Torin Lever>Mm.</v>
+
+00:16:35.001 --> 00:16:53.761
+<v Ashish Paul>Okay, next slide is, I hate to present, but I have to. This is again regarding the process site where one of the tickets regarding time sensitivity, I think it was signed by Jas to Rihanna, where he did message Rihanna that</v>
+
+00:16:35.521 --> 00:16:35.641
+<v Torin Lever>But.</v>
+
+00:16:53.801 --> 00:16:56.401
+<v Ashish Paul>This ticket can be taken by her, however they.</v>
+
+00:16:57.761 --> 00:17:13.041
+<v Ashish Paul>was no punishment. So we have cascaded this to entire team and they have been instructed to do not apply just on the DM, but rather in the chat where people can be held accountable.</v>
+
+00:17:02.641 --> 00:17:03.041
+<v Reza Hajiahmadi>Ohh.</v>
+
+00:17:15.321 --> 00:17:15.521
+<v Ashish Paul>What?</v>
+
+00:17:17.121 --> 00:17:34.961
+<v Ashish Paul>My observation, correct me if I'm wrong. Team had been following these steps. It is just one odd instance that happened yesterday, and I mean, I accept that it did happen, but at the same time, we have to be considerate that, you know, JASP.</v>
+
+00:17:35.321 --> 00:17:41.921
+<v Ashish Paul>and rest of the team, they have been following the process diligently and we just shared one of the examples too. So yeah.</v>
+
+00:17:41.281 --> 00:18:00.881
+<v Reza Hajiahmadi>Yeah, yeah, it is totally fine. It happens, but one of the things that we are working on is revising our triage process, because I know they know how to triage, and that is the learning point for the new hire.</v>
+
+00:17:58.841 --> 00:17:59.201
+<v Ashish Paul>What?</v>
+
+00:18:01.441 --> 00:18:20.641
+<v Reza Hajiahmadi>to understand the importance of triage for us, but Tori, me and Arkadi are working on a new document to a new process to explain everything about triage and the importance of that and how.</v>
+
+00:18:21.281 --> 00:18:41.041
+<v Reza Hajiahmadi>They can handle it because we know we can have two different approach. The first one is the one that we are already on it. We triage a ticket, assign it to technician, and it takes some work on the issue. And if something happens for the ticket, back to the...</v>
+
+00:18:41.681 --> 00:19:02.201
+<v Reza Hajiahmadi>very first of, very first day and see how we did triage, what was missed there, and then say, okay, if we could start it over, we would do it in this way and we triage it in that way. But what I'm thinking is we should catch the issues that.</v>
+
+00:19:02.281 --> 00:19:22.201
+<v Reza Hajiahmadi>At the beginning of the ticket, which is the triage part, so we're gonna, we're gonna, we're gonna focus more on the triage process. It would be a new training for our technician, and yeah, we're gonna help them to understand better about.</v>
+
+00:19:05.441 --> 00:19:05.681
+<v Ashish Paul>Rick.</v>
+
+00:19:22.481 --> 00:19:33.361
+<v Reza Hajiahmadi>the expectation that we have for triage, but totally fine. Yesterday it happened and I jumped in and I spoke with Jas. It was only a training point. We are happy with him.</v>
+
+00:19:26.801 --> 00:19:26.921
+<v Ashish Paul>Yes.</v>
+
+00:19:34.721 --> 00:19:35.441
+<v Ashish Paul>I appreciate it.</v>
+
+00:19:38.721 --> 00:19:57.321
+<v Ashish Paul>Right, next we have is Jimmy's spotlight performance, where he worked on email outlook issues, either onboarding and offboarding, device connectivity, and phishing alerts on email. Although his significantly...</v>
+
+00:19:57.601 --> 00:20:17.761
+<v Ashish Paul>Higher, as compared to one, the other my calls last week. The matrix site for Jimmy is not visible to us as of yet, because his name is not in the report I get every week from Jeremy. So, I'm in communication with Jeremy to add both Jimmy and...</v>
+
+00:20:13.761 --> 00:20:14.321
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:20:17.841 --> 00:20:21.601
+<v Ashish Paul>Paxton to the list that we have visibility about this.</v>
+
+00:20:20.001 --> 00:20:20.321
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:20:22.081 --> 00:20:23.201
+<v Reza Hajiahmadi>See, OK.</v>
+
+00:20:28.721 --> 00:20:29.921
+<v Reza Hajiahmadi>Okay, sure.</v>
+
+00:20:32.561 --> 00:20:51.641
+<v Ashish Paul>Similarly, for Paxton, his work distribution says that 30% of the work was on either onboarding and mailbox and email outlook, they were from 19%. Phishing was 7% and device and hardware ratios 23%. And he also answered 7 calls in the last week.</v>
+
+00:20:52.481 --> 00:21:11.401
+<v Reza Hajiahmadi>Sure about the call answer, because I see his name a lot in the panel. He grabbed the phone call right after the call, coming to our queue. So it should be more than this. I'm not sure, but it, yeah, it's only my intuitive.</v>
+
+00:20:55.601 --> 00:20:56.001
+<v Ashish Paul>Yep.</v>
+
+00:21:06.721 --> 00:21:11.521
+<v Torin Lever>Yeah, I kind of feel like there should be more than that too, but yeah, because he's pretty quick on this.</v>
+
+00:21:07.281 --> 00:21:07.921
+<v Ashish Paul>It's a bit.</v>
+
+00:21:11.841 --> 00:21:15.521
+<v Reza Hajiahmadi>Conviction about his call answering, but...</v>
+
+00:21:18.001 --> 00:21:27.361
+<v Ashish Paul>Okay, how about once? Do you see same trend for once also? Because what I showed you was three. You did not say anything for him.</v>
+
+00:21:26.801 --> 00:21:26.961
+<v Reza Hajiahmadi>Mm.</v>
+
+00:21:28.721 --> 00:21:45.321
+<v Reza Hajiahmadi>Hmm, Purvesh, yeah, really? Yeah, Jasmine, Jimmy, or I got a call. Paxton start working, and I see his name a lot. Yeah, at least recently I saw his name.</v>
+
+00:21:30.801 --> 00:21:34.241
+<v Torin Lever>He'll answer calls, not not as not as frequently as Jasper, Jimmy.</v>
+
+00:21:47.521 --> 00:21:47.921
+<v Ashish Paul>Rick.</v>
+
+00:21:49.961 --> 00:22:09.361
+<v Ashish Paul>All right, next I have is the utilization trend for Jasp, Wanch. I think they are on the higher side. Being the older ingenious, obviously, they have more visibility, but Jimmy and Paxton, they are gradually climbing up, and soon they'll be able to match the numbers for the other two ingenious.</v>
+
+00:22:10.961 --> 00:22:14.401
+<v Reza Hajiahmadi>Pass was 95. Yeah, can I go back? Sure.</v>
+
+00:22:11.601 --> 00:22:12.001
+<v Ashish Paul>Ankur.</v>
+
+00:22:14.481 --> 00:22:15.041
+<v Ashish Paul>Yeah, sure.</v>
+
+00:22:17.441 --> 00:22:19.441
+<v Reza Hajiahmadi>Yes, 91.</v>
+
+00:22:25.081 --> 00:22:31.721
+<v Reza Hajiahmadi>How is that positive of 91% B level, 13% non B level? It's more than 100, right?</v>
+
+00:22:33.361 --> 00:22:51.441
+<v Ashish Paul>Yep, so the time he entered into the tickets, six hours, what he entered was non-billable time. So on a basis of calculation, it's 13%. I know the sum is more than 100%. So at times, you know, engineers have extended their shifts, so they are not just sitting.</v>
+
+00:22:46.481 --> 00:22:46.641
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:22:51.841 --> 00:23:00.201
+<v Ashish Paul>For 9 hours, uh, at times they reduce the on the break timings also, and then the shift, so which explains why it's more than 100%.</v>
+
+00:22:56.001 --> 00:22:56.241
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:22:58.801 --> 00:22:59.281
+<v Reza Hajiahmadi>Ohh.</v>
+
+00:23:00.161 --> 00:23:21.281
+<v Reza Hajiahmadi>Oh yeah, because you know the way that we calculate the bill level and un-bill level is totally different. We consider we consider the total of the working hour and just calculate the bill level based on the total hour. But yeah, yeah, I think you considered 44 hours or...</v>
+
+00:23:21.561 --> 00:23:24.081
+<v Reza Hajiahmadi>Forty hours for the for, yeah, Kashyap.</v>
+
+00:23:21.801 --> 00:23:23.041
+<v Ashish Paul>40 Kip.</v>
+
+00:23:26.881 --> 00:23:27.681
+<v Ashish Paul>Any other questions?</v>
+
+00:23:27.201 --> 00:23:27.441
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:23:28.961 --> 00:23:29.321
+<v Reza Hajiahmadi>No.</v>
+
+00:23:31.441 --> 00:23:31.681
+<v Ashish Paul>Kip.</v>
+
+00:23:32.761 --> 00:23:42.321
+<v Ashish Paul>And this is the tickets data for them. Jazz was able to close 16 tickets, once 29. Jimmy and Paxton, 10 and 12 tickets, respectively.</v>
+
+00:23:48.241 --> 00:23:48.321
+<v Reza Hajiahmadi>Hey.</v>
+
+00:23:51.001 --> 00:23:52.641
+<v Ashish Paul>With me and share my screen.</v>
+
+00:23:57.201 --> 00:23:58.561
+<v Ashish Paul>Uh, Kip.</v>
+
+00:23:59.921 --> 00:24:19.441
+<v Ashish Paul>And regarding the non-billable site, Razdan, one thing that came into my mind is I think Jas was on call last week. So I only got to know this morning that he was on call last week. So I'm not completely aware about how this process works.</v>
+
+00:24:19.561 --> 00:24:21.681
+<v Ashish Paul>what he's expected to do when he's on call.</v>
+
+00:24:23.441 --> 00:24:41.801
+<v Reza Hajiahmadi>Now, we have it, we have it on call shift for our weekend, because you know I have three different teams under service desk. One is Helpdesk, another is Field, and the last one is team.</v>
+
+00:24:30.801 --> 00:24:30.841
+<v Ashish Paul>I.</v>
+
+00:24:42.321 --> 00:25:00.961
+<v Reza Hajiahmadi>and help this team, including the field technicians. We do have an obligation for weekend. It doesn't mean that we need them to actively work on stuff. We need them to be on call for</v>
+
+00:25:01.121 --> 00:25:20.481
+<v Reza Hajiahmadi>Anything that happens, because I do have another team in India, they are working 24 7. They cover, they cover after hour for us as well as weekends. So if something happens and they cannot fix it, they're going to ping.</v>
+
+00:25:21.041 --> 00:25:38.961
+<v Reza Hajiahmadi>a chat that we have, including Helpdesk shift, escalation shift, and security shift. So depends on the subject of the ticket. If they need help, someone jump in. So I would say it's not.</v>
+
+00:25:40.961 --> 00:25:45.281
+<v Reza Hajiahmadi>It's not actively working. It's only being on call.</v>
+
+00:25:47.041 --> 00:25:55.041
+<v Reza Hajiahmadi>So, yeah, so we we shouldn't expect a lot of utilization, be able to stop for them on those days.</v>
+
+00:25:47.521 --> 00:25:47.841
+<v Ashish Paul>OK.</v>
+
+00:25:56.641 --> 00:26:04.681
+<v Reza Hajiahmadi>They can, yeah, they, they, they, they can go do their stop, but if we need them, we're gonna ping them.</v>
+
+00:25:56.801 --> 00:25:57.041
+<v Ashish Paul>Kip.</v>
+
+00:26:06.481 --> 00:26:16.121
+<v Ashish Paul>Right, and if and if during this time any if an emergency happens or anything of that sort happens, so they are found.</v>
+
+00:26:13.761 --> 00:26:32.441
+<v Reza Hajiahmadi>This should reach to their team. We say, yeah, it's OK. I cannot, I cannot be there. I cannot handle this ****. It's totally fine, because you know we we do have at least four people during the weekend and they are back, they're backing up.</v>
+
+00:26:32.641 --> 00:26:52.881
+<v Reza Hajiahmadi>Everything, yeah, I mean, like most of the things are handled with our twenty-four 7 people, so in rare case we need them, so like something happened for a client, it's critical incident, we need might we need more hands to communicate with client to.</v>
+
+00:26:53.041 --> 00:26:57.721
+<v Reza Hajiahmadi>to handle the tickets or something like that. But it's rare. It's rare.</v>
+
+00:26:59.441 --> 00:27:06.961
+<v Ashish Paul>All right, I got it. And one last thing, I think Arkadi reached out to Paxton.</v>
+
+00:27:08.801 --> 00:27:12.321
+<v Ashish Paul>Do we have a need of changing Paxton's shift timings?</v>
+
+00:27:15.201 --> 00:27:17.201
+<v Reza Hajiahmadi>Uh, was it yesterday?</v>
+
+00:27:17.921 --> 00:27:21.321
+<v Ashish Paul>Was today? I, yeah, it was yesterday. I'm sorry, it was yesterday.</v>
+
+00:27:19.161 --> 00:27:19.441
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:27:21.761 --> 00:27:38.001
+<v Reza Hajiahmadi>OK, Paxton works 11 to 11 to 8, right? I think in our last our our yesterday meeting, we agreed that.</v>
+
+00:27:29.521 --> 00:27:29.921
+<v Ashish Paul>Yep.</v>
+
+00:27:39.201 --> 00:27:45.761
+<v Reza Hajiahmadi>We agreed to move packs into 1030 or 10. I'm not sure about that time. Can you recall it, Karine?</v>
+
+00:27:44.881 --> 00:28:04.761
+<v Torin Lever>Our caddy reached out to him to discuss yesterday. He's going to look into it. Yeah, it was just we talked about pushing some of that support a little earlier in the day because we're getting a lot more morning stuff. Plus for utilization purposes, having two texts on after 5pm, it's a little bit difficult to always make sure that they have enough work.</v>
+
+00:27:55.201 --> 00:27:55.841
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:27:59.601 --> 00:28:00.161
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:28:04.881 --> 00:28:11.961
+<v Torin Lever>on their plate to work with. So that is the plan. And I know Arkadi was discussing with Paxton, but I don't know the outcome of that.</v>
+
+00:28:06.321 --> 00:28:06.881
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:28:11.761 --> 00:28:12.241
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:28:13.441 --> 00:28:18.401
+<v Reza Hajiahmadi>Oh yeah, let let me let me find his timesheet. It's good to share with you.</v>
+
+00:28:14.001 --> 00:28:14.321
+<v Ashish Paul>Because.</v>
+
+00:28:18.161 --> 00:28:18.321
+<v Torin Lever>Okay.</v>
+
+00:28:19.281 --> 00:28:19.681
+<v Ashish Paul>Kip.</v>
+
+00:28:20.641 --> 00:28:40.081
+<v Ashish Paul>So the reason why I was discussing this, Razdan, is changing shift timings of the engineers depends on external factors such as logistics and the availability during the requested hours. So I have to ensure.</v>
+
+00:28:35.681 --> 00:28:36.321
+<v Reza Hajiahmadi>I see.</v>
+
+00:28:40.241 --> 00:28:59.041
+<v Ashish Paul>that we have the required transportation facilities available during this time. So, and even if they don't, then we would have to rearrange everything. So it takes close to 7 to 8 days to say a yes or a no. So at times, Paxton,</v>
+
+00:28:44.241 --> 00:28:46.481
+<v Reza Hajiahmadi>Ohh, I see.</v>
+
+00:28:54.361 --> 00:28:54.881
+<v Reza Hajiahmadi>Aman.</v>
+
+00:28:59.161 --> 00:29:19.041
+<v Ashish Paul>and other engineers are not in the state to agree or say yes or no to it. So I would, you know, if any such requests, you know, they are directed through us, that would be more convenient because if everything is sorted, we would let you know and then the engineer.</v>
+
+00:29:01.681 --> 00:29:02.241
+<v Reza Hajiahmadi>Mm.</v>
+
+00:29:05.441 --> 00:29:06.081
+<v Reza Hajiahmadi>Ohh.</v>
+
+00:29:16.081 --> 00:29:28.961
+<v Reza Hajiahmadi>I like, yeah, yeah, I agree, I agree. Yeah, sure. Moving forward, we do that. So, for now, for packs, then is it viable or you need to?</v>
+
+00:29:29.441 --> 00:29:31.841
+<v Ashish Paul>I need to check, I need to check this with the D.</v>
+
+00:29:31.841 --> 00:29:32.961
+<v Reza Hajiahmadi>Kip, Kip.</v>
+
+00:29:32.961 --> 00:29:33.201
+<v Ashish Paul>Kip.</v>
+
+00:29:34.841 --> 00:29:34.961
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:29:38.641 --> 00:29:39.281
+<v Ashish Paul>All right.</v>
+
+00:29:38.721 --> 00:29:56.721
+<v Reza Hajiahmadi>As you know, as you know, yeah, for some of the technician that we have, I'm not sure Paxton was there. We do have a time slot every day at six or seven, or it was 7, 7 to 8 P.m.</v>
+
+00:29:40.641 --> 00:29:41.041
+<v Lee Cavellier>Right.</v>
+
+00:29:58.161 --> 00:30:17.361
+<v Reza Hajiahmadi>The workload is low, we do not have a lot of ticket, so they are looking for some tickets to to to add to their utilization, but if we move them a little bit up to like to 10:30 or to 10.</v>
+
+00:30:10.041 --> 00:30:10.081
+<v Ashish Paul>I.</v>
+
+00:30:17.921 --> 00:30:21.041
+<v Reza Hajiahmadi>They have enough workload to handle.</v>
+
+00:30:19.561 --> 00:30:19.841
+<v Ashish Paul>S.</v>
+
+00:30:21.961 --> 00:30:25.041
+<v Ashish Paul>1030 Eastern is what we are eating. 11.</v>
+
+00:30:26.481 --> 00:30:29.681
+<v Reza Hajiahmadi>1030, 1030 is there, yeah.</v>
+
+00:30:28.801 --> 00:30:29.041
+<v Torin Lever>Okay.</v>
+
+00:30:29.841 --> 00:30:31.401
+<v Ashish Paul>10:30 Eastern, OK.</v>
+
+00:30:31.721 --> 00:30:38.121
+<v Reza Hajiahmadi>I'm not sure which time Arkadi told you, but I think we agreed on 1030 or 10.</v>
+
+00:30:39.841 --> 00:30:42.041
+<v Torin Lever>Let's see if I can frame the conversation.</v>
+
+00:30:40.241 --> 00:30:47.561
+<v Ashish Paul>Is it, yeah, Torrent, or if maybe Khattri can just email us, that would be better.</v>
+
+00:30:46.921 --> 00:31:02.321
+<v Reza Hajiahmadi>Yeah, sure. Yeah, yeah, moving forward, we're gonna we're gonna formalize it to send email to you first and then speak with the technician, or maybe it's on your side to speak with technician and handle everything. Yeah, yeah, I agree with that.</v>
+
+00:30:59.561 --> 00:31:07.401
+<v Ashish Paul>Absolutely, yes, so I would, I would wait for Arkadi's email on the practice, and then we'll take it from there.</v>
+
+00:31:04.761 --> 00:31:05.241
+<v Reza Hajiahmadi>Sure.</v>
+
+00:31:07.561 --> 00:31:07.961
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:31:10.041 --> 00:31:10.521
+<v Ashish Paul>Thank you.</v>
+
+00:31:12.201 --> 00:31:12.441
+<v Reza Hajiahmadi>True.</v>
+
+00:31:12.281 --> 00:31:13.721
+<v Ashish Paul>Anything else, Rita?</v>
+
+00:31:14.681 --> 00:31:15.721
+<v Reza Hajiahmadi>Nothing from my end.</v>
+
+00:31:17.481 --> 00:31:17.961
+<v Ashish Paul>Dorian.</v>
+
+00:31:17.561 --> 00:31:19.881
+<v Torin Lever>All good for my answer. No, we're all good from here.</v>
+
+00:31:20.281 --> 00:31:24.241
+<v Reza Hajiahmadi>Yeah, yeah, yeah.</v>
+
+00:31:20.601 --> 00:31:21.081
+<v Keith Rozario>Support.</v>
+
+00:31:21.321 --> 00:31:22.601
+<v Torin Lever>I'll check in with our Khattri after.</v>
+
+00:31:21.361 --> 00:31:21.481
+<v Lee Cavellier>The.</v>
+
+00:31:23.561 --> 00:31:44.201
+<v Lee Cavellier>I know I missed the start. I know I missed the start of the call. Hello, everybody. Thank you again for jumping on. It's good to hear. I'm hearing good and better things sprinkled into the discussion. So I'm really, really happy to hear that. That's great. And thank you for sharing those. Was there, I know that there was some discussion.</v>
+
+00:31:24.121 --> 00:31:24.241
+<v Ashish Paul>Yeah.</v>
+
+00:31:27.801 --> 00:31:28.201
+<v Torin Lever>Bye.</v>
+
+00:31:37.601 --> 00:31:38.041
+<v Reza Hajiahmadi>Right.</v>
+
+00:31:45.081 --> 00:32:00.201
+<v Lee Cavellier>around some movement that Tyson and I started having. And I just want to know, because where Tyson and I left it, was he was going to talk to you all and one of his other groups and do some internal coordination.</v>
+
+00:32:00.881 --> 00:32:01.361
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:32:01.321 --> 00:32:11.241
+<v Lee Cavellier>Did you guys have an update for me on that or are you waiting on an update from me on that? I guess is how I'll put it here.</v>
+
+00:32:08.401 --> 00:32:26.841
+<v Reza Hajiahmadi>Yeah, it happened just before our meeting, 'cause another our our meeting with Tyson just before this meeting. I'm gonna I'm gonna speak with Jessel 1st and see what's his plan for that swap.</v>
+
+00:32:14.201 --> 00:32:14.601
+<v Lee Cavellier>OK.</v>
+
+00:32:22.441 --> 00:32:22.921
+<v Lee Cavellier>Mhm.</v>
+
+00:32:27.161 --> 00:32:46.601
+<v Reza Hajiahmadi>And then we can reach to you to coordinate the all the hardware stuff configuration, 'cause you know bad they they should join, we we we we do we we should do some technical things before swapping those those guys, but give me.</v>
+
+00:32:27.721 --> 00:32:28.041
+<v Lee Cavellier>Yeah.</v>
+
+00:32:47.721 --> 00:32:54.761
+<v Reza Hajiahmadi>Yeah, give me a couple of hours. I'm gonna work with Jessel, but yeah, yeah.</v>
+
+00:32:51.881 --> 00:33:07.561
+<v Lee Cavellier>So, sounds good, and no problem. I wasn't intending to rush. I just knew that this was a topic of discussion, and I wanted to make that we were on the same page as far as who's waiting for what. If I had information to share, I wanted to make sure that I was getting the.</v>
+
+00:32:58.681 --> 00:33:01.641
+<v Reza Hajiahmadi>Yeah, yeah, yeah, I'll let you know that.</v>
+
+00:33:02.521 --> 00:33:03.001
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:33:06.921 --> 00:33:07.401
+<v Reza Hajiahmadi>Hi.</v>
+
+00:33:08.681 --> 00:33:09.801
+<v Reza Hajiahmadi>All right, perfect. Thank you.</v>
+
+00:33:10.601 --> 00:33:29.321
+<v Lee Cavellier>Yeah, and and absolutely right, right? We want to manage this just as we would with any other swap or replacement. I'm sure Tyson shared the goal here is to is to is to make, I I guess, run thoroughly.</v>
+
+00:33:17.481 --> 00:33:17.761
+<v Reza Hajiahmadi>Sure.</v>
+
+00:33:29.681 --> 00:33:48.521
+<v Lee Cavellier>evaluation against the team member. What if there's a better, you know, it's not, you know, there's a better opportunity that they fit better with, right? And I know you guys have been so incredibly considerate about trying to make sure that the engineers are taken care of and give them opportunities.</v>
+
+00:33:33.481 --> 00:33:33.961
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:33:38.281 --> 00:33:38.681
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:33:48.561 --> 00:34:08.761
+<v Lee Cavellier>So I knew you wouldn't take any issue with that. It just gives us that extra little bit of due diligence to say, oh yeah, this person actually gets much better here, or yeah, still not a fit. Let's go ahead and move them out, and then ITBD will have our own internal processor.</v>
+
+00:33:52.521 --> 00:33:53.001
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:34:02.201 --> 00:34:02.841
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:34:07.361 --> 00:34:26.281
+<v Reza Hajiahmadi>Yeah, yeah, exactly. Yeah, at the end, it's gonna happen, 'cause you know, even if we say we don't wanna work with Ranch and you, you should look for another job for him, or say, let's swap them between views and see what happens.</v>
+
+00:34:26.921 --> 00:34:45.321
+<v Lee Cavellier>Yeah, well, and that's the thing, right? The goal is to somebody, if somebody has spent a little bit of time learning MSP Corp overall, you know, maybe there's an opportunity to sit there, right? That knowledge share that's happened, even if it's not directly benefiting your pod.</v>
+
+00:34:27.241 --> 00:34:27.841
+<v Reza Hajiahmadi>Okay, thanks.</v>
+
+00:34:37.481 --> 00:34:37.881
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:34:42.441 --> 00:34:42.761
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:34:46.121 --> 00:35:04.521
+<v Lee Cavellier>If it directly benefits the org as a whole, then that's still a win for all of us, right? And it gives you the opportunity to do the same if we see, you know, if Tyson and I are talking, he's like, hey, this person's advancing beyond the need of this BU.</v>
+
+00:34:50.041 --> 00:34:50.681
+<v Reza Hajiahmadi>Thank you.</v>
+
+00:34:52.201 --> 00:34:52.841
+<v Reza Hajiahmadi>Practice.</v>
+
+00:34:56.441 --> 00:34:56.761
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:35:04.921 --> 00:35:05.401
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:35:05.081 --> 00:35:24.801
+<v Lee Cavellier>and you guys have an open position at some point, then we get to say, oh, okay, how would they fare on Razdan spot? Maybe, maybe they'd be doing really well over there on a BCCS. So, yeah, so just glad that we're in those discussions now, and you just keep me posted on what's needed. Keep us, the group was, did I want.</v>
+
+00:35:08.441 --> 00:35:08.761
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:35:14.201 --> 00:35:14.441
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:35:24.881 --> 00:35:29.161
+<v Lee Cavellier>What's needed, and we'll make sure that anything from our side, as far as communication.</v>
+
+00:35:25.721 --> 00:35:26.041
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:35:30.041 --> 00:35:33.881
+<v Lee Cavellier>and coordination on the logistic and physical front takes place.</v>
+
+00:35:31.321 --> 00:35:31.681
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:35:34.201 --> 00:35:53.961
+<v Reza Hajiahmadi>Yeah, cool, cool. And yeah, I think I, yeah, I'm in the process of getting approval for two more technicians, but it should be from another spot that you have, because they mentioned that you have.</v>
+
+00:35:51.001 --> 00:35:51.241
+<v Lee Cavellier>Right.</v>
+
+00:35:54.761 --> 00:35:57.881
+<v Reza Hajiahmadi>technicians as well and we're going to work on it. Yeah.</v>
+
+00:35:56.841 --> 00:36:05.241
+<v Lee Cavellier>We do, we do. I has that been? Are there are those positions open up with us yet? Do you know? Have those been opened with Karine?</v>
+
+00:36:05.721 --> 00:36:10.681
+<v Reza Hajiahmadi>Uh, I'm working on that for it, but once I get after a while, I let you know.</v>
+
+00:36:07.081 --> 00:36:07.641
+<v Sarbjeet Singh>Fortune.</v>
+
+00:36:08.841 --> 00:36:09.241
+<v Lee Cavellier>Okay.</v>
+
+00:36:11.081 --> 00:36:31.481
+<v Lee Cavellier>Oh, yeah, please. If you want to offer the heads up, and I know that between Amit and Ash and Keith, we all have a lot of current, so I'm sure we'll hear about it there too. But if you want to give myself a heads up, I can go ahead and make sure that I'm talking with our Pre Sales and bench team that</v>
+
+00:36:16.681 --> 00:36:17.161
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:36:19.561 --> 00:36:19.921
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:36:22.761 --> 00:36:23.481
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:36:31.081 --> 00:36:31.561
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:36:32.041 --> 00:36:38.081
+<v Lee Cavellier>We're doing stuff because I do work across both sides, right? Across the community. Yeah.</v>
+
+00:36:36.441 --> 00:36:43.401
+<v Reza Hajiahmadi>Uh, okay, so it's not a new department. Previously you had that one, right?</v>
+
+00:36:43.641 --> 00:36:53.721
+<v Lee Cavellier>Correct, our Philippines our Philippines group has existed for about two years now, now with MSP Corp, it will be it will be new to MSP Corp, right?</v>
+
+00:36:50.121 --> 00:36:50.361
+<v Reza Hajiahmadi>Um...</v>
+
+00:36:53.481 --> 00:37:01.161
+<v Reza Hajiahmadi>Ohh, so no, no one from that group is working, give them a speaker. OK, OK.</v>
+
+00:36:58.361 --> 00:37:18.601
+<v Lee Cavellier>Not as of yet, not as of yet, but, but it's worth noting, we do have several clients, several partners of ours who leverage skill from both sides of both regions, so this is new for us either, right? We, yeah, yeah, so the question's really just gonna be...</v>
+
+00:37:04.761 --> 00:37:04.921
+<v Reza Hajiahmadi>Mm.</v>
+
+00:37:09.801 --> 00:37:10.601
+<v Reza Hajiahmadi>I see.</v>
+
+00:37:12.041 --> 00:37:12.601
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:37:14.281 --> 00:37:15.081
+<v Reza Hajiahmadi>Alright.</v>
+
+00:37:16.521 --> 00:37:16.841
+<v Reza Hajiahmadi>Pre.</v>
+
+00:37:18.761 --> 00:37:38.601
+<v Lee Cavellier>Making sure we're finding talent that, just like, just like in India, talent that we leverage the skill sets that they have appropriately, right, and and find our ways to make up for any any advancement or development that those.</v>
+
+00:37:24.041 --> 00:37:24.441
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:37:29.481 --> 00:37:29.841
+<v Reza Hajiahmadi>Thanks.</v>
+
+00:37:38.721 --> 00:37:42.281
+<v Lee Cavellier>Team members need as a as a plan, yep.</v>
+
+00:37:39.561 --> 00:37:40.361
+<v Reza Hajiahmadi>Hmm, I see.</v>
+
+00:37:42.401 --> 00:37:59.641
+<v Reza Hajiahmadi>Okay, and what's the delta between those groups? Either is fine for us. We're just looking for someone who is able to handle our stuff. I'm not sure about what's the delta between those groups.</v>
+
+00:38:00.041 --> 00:38:02.201
+<v Lee Cavellier>So it.</v>
+
+00:38:03.241 --> 00:38:20.161
+<v Lee Cavellier>In general, and remember, these are generalizations, and there are, of course, people who live outside of these generalizations. In general, you're going to find a higher technical skill set easier to come by in India, in general.</v>
+
+00:38:04.681 --> 00:38:05.161
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:38:07.641 --> 00:38:08.121
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:38:14.441 --> 00:38:14.841
+<v Reza Hajiahmadi>Okay.</v>
+
+00:38:19.721 --> 00:38:20.121
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:38:22.361 --> 00:38:40.521
+<v Lee Cavellier>That said, in general, you're going to find very customer service slash communication focused team members in Philippines. Like those are the generalizations of their skill set strengths, right?</v>
+
+00:38:33.561 --> 00:38:33.721
+<v Reza Hajiahmadi>Mm.</v>
+
+00:38:34.841 --> 00:38:36.521
+<v Reza Hajiahmadi>Ohh, I see.</v>
+
+00:38:38.041 --> 00:38:40.201
+<v Reza Hajiahmadi>No, I see.</v>
+
+00:38:41.721 --> 00:39:01.281
+<v Lee Cavellier>That said, we've got a number of people in India, many of whom you interact with, who are very communicators, right? Very strong at customer service and follow-through. And similarly in Philippines, we try to find people who are strong technically.</v>
+
+00:38:42.521 --> 00:38:43.161
+<v Reza Hajiahmadi>Hmm.</v>
+
+00:38:49.161 --> 00:38:49.561
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:38:55.721 --> 00:38:56.281
+<v Reza Hajiahmadi>Mhm.</v>
+
+00:39:01.481 --> 00:39:20.521
+<v Lee Cavellier>right? So it really is just a question of what people bring front and center as part of their like natural inclination and culture, right? But if you're saying that the new positions are going to be, you know, with Philippines in mind, that's fine.</v>
+
+00:39:07.441 --> 00:39:07.881
+<v Reza Hajiahmadi>Hi.</v>
+
+00:39:20.641 --> 00:39:26.361
+<v Lee Cavellier>But we can still, if you, if you want, we can still source from both and just see who wins the race, right?</v>
+
+00:39:25.961 --> 00:39:33.801
+<v Reza Hajiahmadi>Yeah, yeah, I think I, as I said, either is fine for me, as you know, I have some...</v>
+
+00:39:32.361 --> 00:39:32.761
+<v Lee Cavellier>Yeah.</v>
+
+00:39:36.601 --> 00:39:55.881
+<v Reza Hajiahmadi>Skill set, I wanna I wanna know who can cover it, and I do have some job description for them. I'm looking for someone to handle it, so I'm just curious what what was delta explain it, but just overall it's general, it's not specific.</v>
+
+00:39:41.961 --> 00:39:42.121
+<v Lee Cavellier>Kour.</v>
+
+00:39:44.641 --> 00:39:45.001
+<v Lee Cavellier>Pre.</v>
+
+00:39:46.921 --> 00:39:47.201
+<v Lee Cavellier>Pre.</v>
+
+00:39:52.881 --> 00:39:53.401
+<v Lee Cavellier>When?</v>
+
+00:39:55.121 --> 00:40:06.281
+<v Lee Cavellier>When you send it along to current, forward it to current, and she's going to open it up with us, send it my way, and I'll give you my thoughts, my initial thoughts as well, based on the JD that you pulled together.</v>
+
+00:40:01.881 --> 00:40:02.361
+<v Reza Hajiahmadi>Oh, yeah.</v>
+
+00:40:03.641 --> 00:40:03.881
+<v Reza Hajiahmadi>Kip.</v>
+
+00:40:06.201 --> 00:40:13.241
+<v Reza Hajiahmadi>JD is the same. JD is the same as what we have for Paxton, Jimmy, or where it's for helpless.</v>
+
+00:40:09.881 --> 00:40:10.121
+<v Lee Cavellier>Ohh.</v>
+
+00:40:12.761 --> 00:40:33.561
+<v Lee Cavellier>Okay, okay, good to know. All right, then I'll take a look at that. Yeah, but you know, a little from our perspective, like I said, we've got many partners who leverage across both seas, and part of it is because the holidays</v>
+
+00:40:15.881 --> 00:40:16.041
+<v Reza Hajiahmadi>Mm.</v>
+
+00:40:17.641 --> 00:40:17.801
+<v Reza Hajiahmadi>Mm.</v>
+
+00:40:33.881 --> 00:40:50.441
+<v Lee Cavellier>Schedule tends to be a little different, and that helps with coverage. Part of it is these little nuances in culture that the add color and and sometimes really, really nice to have that you know that that difference in diversity among the among the staff.</v>
+
+00:40:37.001 --> 00:40:37.241
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:40:40.201 --> 00:40:40.921
+<v Reza Hajiahmadi>Eyes.</v>
+
+00:40:51.481 --> 00:40:54.681
+<v Reza Hajiahmadi>Anyway, OK. Thank you. Let's see what happens.</v>
+
+00:40:55.081 --> 00:40:55.641
+<v Lee Cavellier>Yeah, right.</v>
+
+00:40:56.201 --> 00:40:56.321
+<v Reza Hajiahmadi>And.</v>
+
+00:40:57.081 --> 00:40:58.681
+<v Lee Cavellier>It's on, guys, it's on.</v>
+
+00:40:58.681 --> 00:40:58.801
+<v Ashish Paul>Yeah.</v>
+
+00:40:58.921 --> 00:40:59.361
+<v Reza Hajiahmadi>Yeah.</v>
+
+00:41:02.441 --> 00:41:03.561
+<v Reza Hajiahmadi>Okay, thank you guys.</v>
+
+00:41:02.601 --> 00:41:03.161
+<v Ashish Paul>Thank you.</v>
+
+00:41:02.841 --> 00:41:03.321
+<v Lee Cavellier>Talk.</v>
+
+00:41:04.121 --> 00:41:22.681
+<v Sarbjeet Singh>Yeah, just before I let you go, the only request which I have is we have received the monthly CSAT for JASP. It's pending for the rest of the three engineers for one for other engineers. So, Ashley, if you could please resend the CSAT survey, that would be helpful for us too.</v>
+
+00:41:22.761 --> 00:41:26.201
+<v Reza Hajiahmadi>Yeah, sure, sure, yeah, do that.</v>
+
+00:41:25.001 --> 00:41:26.761
+<v Sarbjeet Singh>Appreciate it. Thank you.</v>
+
+00:41:26.521 --> 00:41:29.881
+<v Lee Cavellier>Yeah, thank you. Excellent. Yeah, nothing else for me. Thanks.</v>
+
+00:41:28.081 --> 00:41:29.801
+<v Reza Hajiahmadi>Okay, thank you guys.</v>
+
+00:41:31.081 --> 00:41:33.721
+<v Ashish Paul>Right, thank you so much. Have a good day.</v>
+
+00:41:31.561 --> 00:41:33.561
+<v Reza Hajiahmadi>Guys, have a good day. Bye.</v>
+
+00:41:31.881 --> 00:41:32.321
+<v Torin Lever>So much more.</v>
+
+00:41:32.641 --> 00:41:33.401
+<v Lee Cavellier>Pleasure as always.</v>
+
+00:41:34.601 --> 00:41:35.081
+<v Lee Cavellier>Cheers.</v>
+
+00:41:35.641 --> 00:41:35.961
+<v Sarbjeet Singh>Bye bye.</v>
+
+00:41:35.681 --> 00:41:35.801
+<v Keith Rozario>Yeah.</v>
+

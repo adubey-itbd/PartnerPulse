@@ -1,0 +1,674 @@
+WEBVTT
+NOTE title: F12 | C&A Team | Monthly Service Call
+NOTE date: 2026-06-17
+NOTE duration: 28m 29s
+
+00:02:04.146 --> 00:02:04.706
+<v Shashank Agarwal>Hey, Mike.</v>
+
+00:02:05.506 --> 00:02:06.706
+<v Mike Gilbert>Hey, how you doing today?</v>
+
+00:02:07.666 --> 00:02:09.426
+<v Shashank Agarwal>I'm doing great, how about you?</v>
+
+00:02:10.306 --> 00:02:10.706
+<v Mike Gilbert>Good.</v>
+
+00:02:11.906 --> 00:02:13.426
+<v Shashank Agarwal>How's everything going on your end?</v>
+
+00:02:12.066 --> 00:02:12.546
+<v Mike Gilbert>Phelps.</v>
+
+00:02:14.866 --> 00:02:17.186
+<v Mike Gilbert>Going pretty good, busy, but...</v>
+
+00:02:18.146 --> 00:02:18.346
+<v Shashank Agarwal>Yeah.</v>
+
+00:02:18.266 --> 00:02:18.626
+<v Mike Gilbert>The Keith.</v>
+
+00:02:20.066 --> 00:02:20.866
+<v Shashank Agarwal>How's the weather?</v>
+
+00:02:22.706 --> 00:02:33.986
+<v Mike Gilbert>We're finally getting some rain. We've been a deep in my rain this summer, so I like it, but I feel like I'm in the smaller category for that. Nobody else wants some.</v>
+
+00:02:32.306 --> 00:02:32.426
+<v Shashank Agarwal>Yeah.</v>
+
+00:02:35.266 --> 00:02:53.986
+<v Shashank Agarwal>And I really like the background where the, not the background, but really a good picture where things are moving in the background. This looks great. Like I really like this kind of a view when the office is on side and we can see outside and it looks very pretty.</v>
+
+00:02:46.386 --> 00:02:46.786
+<v Mike Gilbert>Yeah.</v>
+
+00:02:54.106 --> 00:02:55.266
+<v Shashank Agarwal>pleasant, honestly.</v>
+
+00:02:56.546 --> 00:03:18.146
+<v Mike Gilbert>It looks way better than the old ones where it was just like a wall behind me and that's it. So pretty happy with it too. I found it gives something for people to pay attention to sometimes when conversation gets pretty deep into it, there's still something to track your eye to and not just people's faces.</v>
+
+00:03:02.386 --> 00:03:02.906
+<v Shashank Agarwal>Yeah.</v>
+
+00:03:05.186 --> 00:03:05.586
+<v Shashank Agarwal>Gary.</v>
+
+00:03:18.706 --> 00:03:21.266
+<v Mike Gilbert>After a while, that can be a little intense.</v>
+
+00:03:19.106 --> 00:03:19.666
+<v Shashank Agarwal>I'll be.</v>
+
+00:03:21.746 --> 00:03:31.186
+<v Shashank Agarwal>Yeah, and honestly, when I talk to you, sometimes I get distracted with the cars moving in the background. Yeah.</v>
+
+00:03:29.266 --> 00:03:29.586
+<v Mike Gilbert>No.</v>
+
+00:03:30.626 --> 00:03:40.066
+<v Mike Gilbert>Yeah, I get it. I've thought about learning it and I did it once and Zephron on my team was like, no, no, I want to see the cards. And I was like, is that the only reason we talk now?</v>
+
+00:03:39.346 --> 00:03:40.146
+<v Shashank Agarwal>Sameer.</v>
+
+00:03:44.146 --> 00:03:59.946
+<v Shashank Agarwal>That's really amazing. Okay, let me not take much of your time because I know this has been a very busy month. Last month as well. So let me share the screen. So agenda stays the same, no changes.</v>
+
+00:04:00.866 --> 00:04:20.946
+<v Shashank Agarwal>For highlights, I was speaking to Manu and he said that he was basically working on backup most of the times. He did not get time to work on automation. So the upgrade program that he's working on and that resulted in a lot of tickets getting generated because of backup.</v>
+
+00:04:05.346 --> 00:04:05.386
+<v Mike Gilbert>I.</v>
+
+00:04:21.106 --> 00:04:31.186
+<v Shashank Agarwal>backup failures and everything and he had to work on them and then he completed the backup reviews and the ticket automation that's still in progress. While I was thinking like...</v>
+
+00:04:24.546 --> 00:04:24.706
+<v Mike Gilbert>Mm.</v>
+
+00:04:32.226 --> 00:04:36.746
+<v Shashank Agarwal>Lakhwinder holds both the teams, your team and after hours team as well.</v>
+
+00:04:38.066 --> 00:04:38.786
+<v Mike Gilbert>Yeah, yeah.</v>
+
+00:04:38.306 --> 00:04:57.826
+<v Shashank Agarwal>And I know, I know Kyle is the main person who is handling the team. Why don't we add after our team to pick up backup tickets if they do not have any volume so that the CNA team can focus more on automation because...</v>
+
+00:04:58.066 --> 00:05:17.986
+<v Shashank Agarwal>as you were speaking last time, there's a lot of backlog on the automation side and the compliance side. So this would really help if we can download some or offload some of the backup related work to them. But again, I know only your team works on backup, so there might be a...</v>
+
+00:05:18.146 --> 00:05:37.066
+<v Shashank Agarwal>data discrepancy wherein we would not be able to pull in a lot of data where how much time we spent on backups and everything. But I guess we can modulate that by putting in the work category like backups or something like that. In that way we can do it. But yes, I think.</v>
+
+00:05:37.186 --> 00:05:37.826
+<v Shashank Agarwal>Kour.</v>
+
+00:05:39.186 --> 00:05:58.546
+<v Shashank Agarwal>We can look into this aspect. I do not want to enter your territory. I'm just giving an example where we can help. Because even the after hours team that's led by Manuj, he works along with me. So I think, and if there is any capability.</v>
+
+00:05:45.986 --> 00:05:46.626
+<v Mike Gilbert>This is me.</v>
+
+00:05:58.786 --> 00:06:18.146
+<v Shashank Agarwal>issue, I guess he would be able to train the engineers because our backup team is working 24 cross 7. The ITBD internal backup team I'm talking about. So I guess there should not be any issue. And since most of the backups are on Beam, and it's a pretty easy tool, I would say.</v>
+
+00:06:06.706 --> 00:06:07.186
+<v Mike Gilbert>Mhm.</v>
+
+00:06:18.386 --> 00:06:22.066
+<v Shashank Agarwal>They can do at least the remediation part.</v>
+
+00:06:24.146 --> 00:06:45.146
+<v Mike Gilbert>Yeah, I think there's some possibility in there. I know we talked about it earlier on. And I think there's some organizational changes on our end, just with teams moving around and the M&As and stuff like that, that I think will need to get sorted first. And then once we have an idea, I think that would be a good time. So probably in like...</v>
+
+00:06:46.226 --> 00:07:04.786
+<v Mike Gilbert>Maybe next month would be a good time to revisit that one specifically, because I do think there's a lot there. And there's that. And then I think the other one is potentially some of remediation around patching and things along those lines. But that's probably when we'll want to work out what that looks like.</v>
+
+00:07:05.266 --> 00:07:18.866
+<v Mike Gilbert>as well as what sort of structure and support we can add to it. So it's not just, here's a bunch of work without an understanding of the processes, how we want to handle it, and all that other stuff. Because I'd want to make sure that we...</v>
+
+00:07:20.506 --> 00:07:39.106
+<v Mike Gilbert>When we hand that off right now, a lot of the stuff, the details of it are just in people's heads. And I think translating some of that to procedure and the rest of it. That way it's, I don't like giving people, like handing off work like that when we don't have.</v>
+
+00:07:39.506 --> 00:07:50.666
+<v Mike Gilbert>the clear expectations developed yet. That's kind of, it can set them up to fail to a degree. Within reason, obviously, you can't have everything written yet.</v>
+
+00:07:44.506 --> 00:07:44.706
+<v Shashank Agarwal>Yeah.</v>
+
+00:07:47.746 --> 00:07:48.266
+<v Shashank Agarwal>Correct.</v>
+
+00:07:52.626 --> 00:08:11.546
+<v Shashank Agarwal>Yeah, and you just spoke about patching. So does your team handle the patching as well? Because generally that happens in after hours when the client is not logged in or when they are not operational. So how does your team manage patching in that case?</v>
+
+00:08:11.906 --> 00:08:12.946
+<v Shashank Agarwal>Who handles that?</v>
+
+00:08:14.146 --> 00:08:33.626
+<v Mike Gilbert>So we manage more the configuration part of it. So like we'll configure the RMM to do that and all of like all the automated part. And then we're like an escalation point for the remediation. But I feel like the remediation side is probably the part that we struggle with.</v>
+
+00:08:33.746 --> 00:08:35.026
+<v Mike Gilbert>most people probably want to.</v>
+
+00:08:36.226 --> 00:08:47.426
+<v Mike Gilbert>Eventually, like we will have to learn how we want to address that, but that's gonna, that's gonna both of those are ones that are over the next month here, we're gonna be.</v>
+
+00:08:39.666 --> 00:08:40.146
+<v Shashank Agarwal>Yeah.</v>
+
+00:08:47.826 --> 00:09:07.106
+<v Shashank Agarwal>Yeah, and again, yeah, and again, I guess we can do one thing. If your team is handling more of backup and patching, kind of, that's a proactive stuff. I think we can, I'm not trying to take away your team's capability, but I guess...</v>
+
+00:08:48.706 --> 00:08:49.986
+<v Mike Gilbert>Working through a little bit more.</v>
+
+00:09:07.666 --> 00:09:26.466
+<v Shashank Agarwal>More of it, the remediation part, I guess we can move it to after our team because that is the only team that's operational 24 cross 7 and they have a good knowledge about it. Plus if they are stuck technically, we have a proactive teams working.</v>
+
+00:09:26.866 --> 00:09:46.306
+<v Shashank Agarwal>in after hours, specifically after hours, like they work from 930 PM EST till 7 AM, 930 till, I guess it would be 7, sorry, 630, 630 AM EST. So they would be able to.</v>
+
+00:09:29.026 --> 00:09:29.626
+<v Mike Gilbert>Mm-hmm.</v>
+
+00:09:47.106 --> 00:09:55.826
+<v Shashank Agarwal>Support these guys if they are getting stuck in any of the technical areas, not on the process side, but the technical side if they are stuck like.</v>
+
+00:09:54.066 --> 00:09:54.546
+<v Mike Gilbert>Mhm.</v>
+
+00:09:56.946 --> 00:09:57.186
+<v Shashank Agarwal>Uh...</v>
+
+00:09:58.186 --> 00:10:11.666
+<v Shashank Agarwal>like any SXI host needs to be upgraded and they want help on that, how to do that, what's the procedure. We can also put in some training for these after hours guys and that, but again, that's your call.</v>
+
+00:10:12.146 --> 00:10:12.946
+<v Shashank Agarwal>Ohh.</v>
+
+00:10:13.826 --> 00:10:22.786
+<v Shashank Agarwal>on that. How do you manage physical host patching? Means I just want to know from F12 side, how do we do it?</v>
+
+00:10:21.986 --> 00:10:22.306
+<v Mike Gilbert>Yeah.</v>
+
+00:10:23.746 --> 00:10:42.306
+<v Mike Gilbert>Most of the time that's more manual. That's just scheduled with oftentimes after hours people. So it might even be people on the team already handling parts of it. We have a lot of clients too though that are no longer, like they're no longer on the supported ones.</v>
+
+00:10:30.866 --> 00:10:31.186
+<v Shashank Agarwal>Okay.</v>
+
+00:10:42.346 --> 00:10:48.706
+<v Mike Gilbert>like they're on ESX 67 and things along those lines. So there's some opportunity there, but there's also.</v>
+
+00:10:44.906 --> 00:10:45.106
+<v Shashank Agarwal>Yeah.</v>
+
+00:10:50.586 --> 00:10:59.266
+<v Mike Gilbert>People don't want to pay for it, like the licenses and the new versions and all that other stuff, especially with how they've been treating customers over the last two years here.</v>
+
+00:10:52.306 --> 00:10:52.946
+<v Shashank Agarwal>Correct.</v>
+
+00:10:59.586 --> 00:10:59.986
+<v Shashank Agarwal>Yeah.</v>
+
+00:11:01.266 --> 00:11:19.346
+<v Shashank Agarwal>And obviously with the Broadcom changes that they brought in, they made everything very costly. The licensing and everything became very costly. The licensing for Mac also changed. So everything has become a big issue with Broadcom.</v>
+
+00:11:01.666 --> 00:11:01.986
+<v Mike Gilbert>No.</v>
+
+00:11:05.906 --> 00:11:06.386
+<v Mike Gilbert>Yeah.</v>
+
+00:11:15.906 --> 00:11:16.226
+<v Mike Gilbert>Yeah.</v>
+
+00:11:19.186 --> 00:11:35.466
+<v Mike Gilbert>Well, my guess is more Hyper-V is what we'd see in the future. But that's at this point, that's just a guess. I don't want to say, yep, that's what we're going to do, because it's not even mostly my decision maker either.</v>
+
+00:11:22.706 --> 00:11:23.026
+<v Shashank Agarwal>Yep.</v>
+
+00:11:36.626 --> 00:11:46.306
+<v Shashank Agarwal>And in case of Hyper-V, I am asking this out of curiosity, have you automated Hyper-V patching or is it manual?</v>
+
+00:11:42.426 --> 00:11:42.906
+<v Mike Gilbert>Mhm.</v>
+
+00:11:47.226 --> 00:12:04.946
+<v Mike Gilbert>Yeah, that's mostly automated. There's some changes that we're going to be making coming up, but yeah, that'll be automated. That's the goal anyway. And then there may be a few cases where there's odd clients or weird scenarios where manual has to come in. But for the most part, the goal there is to make it automated.</v>
+
+00:12:06.226 --> 00:12:06.786
+<v Shashank Agarwal>Okay.</v>
+
+00:12:07.906 --> 00:12:08.946
+<v Shashank Agarwal>So, just in...</v>
+
+00:12:08.146 --> 00:12:26.866
+<v Mike Gilbert>Most of our clients don't have a large level of sophistication when it comes to it. Like, I'd be surprised if we had to any that even had like a DRS and all that other stuff set up. And most of the time it's, they may have more than one host, but there is no automatic failover or anything else along those lines. It's just.</v>
+
+00:12:27.146 --> 00:12:37.666
+<v Mike Gilbert>When that host goes down, those VMs also go down and everybody's okay with it. And they don't want to spend extra for the licensing and all the other stuff needed to have a better solution for it.</v>
+
+00:12:35.986 --> 00:12:36.306
+<v Shashank Agarwal>Yeah.</v>
+
+00:12:37.906 --> 00:12:57.346
+<v Shashank Agarwal>Okay, so just in case I know this falls out of you, so suppose a host goes down, batch can fail any times. How does F23 that means because the host is physical and it goes on, maybe it gets into a BSOD or...</v>
+
+00:12:49.266 --> 00:12:49.746
+<v Mike Gilbert>Mhm.</v>
+
+00:12:57.746 --> 00:13:02.386
+<v Shashank Agarwal>Any issue in that case, how do we fix that?</v>
+
+00:13:00.826 --> 00:13:01.266
+<v Mike Gilbert>Lee.</v>
+
+00:13:03.506 --> 00:13:22.906
+<v Mike Gilbert>We do have part of our standards, and it's supposed to be a requirement, there may be a few that don't, is we're supposed to have that out of band management cards. So at least we can do some sort of remote support on there to reset things and, you know, attach boot media. Sometimes that can be tricky as well, because like if you don't have a...</v>
+
+00:13:14.946 --> 00:13:15.346
+<v Shashank Agarwal>Okay.</v>
+
+00:13:23.106 --> 00:13:34.546
+<v Mike Gilbert>access to a lot of devices. Sometimes the host is like also the DNS. So now it's like the other computers are on, they just can't talk to anything. So you have all of those problems that come up.</v>
+
+00:13:32.546 --> 00:13:33.106
+<v Shashank Agarwal>Correct.</v>
+
+00:13:35.746 --> 00:13:55.826
+<v Mike Gilbert>So usually those, I'm not sure how we manage it 100%, but that's, my assumption there is those will bubble up to the after hours team as far as alerts go, and then from there they reach it to the escalation team depending on what they're running into. And that's probably how we handle it.</v>
+
+00:13:50.146 --> 00:13:50.706
+<v Shashank Agarwal>Correct.</v>
+
+00:13:55.986 --> 00:13:57.666
+<v Mike Gilbert>So, but um...</v>
+
+00:13:57.186 --> 00:13:57.666
+<v Shashank Agarwal>Okay.</v>
+
+00:14:00.386 --> 00:14:05.186
+<v Mike Gilbert>I think in general that's how it works. I could be wrong, but actually I do see.</v>
+
+00:14:03.106 --> 00:14:03.586
+<v Shashank Agarwal>Okay.</v>
+
+00:14:07.026 --> 00:14:08.066
+<v Mike Gilbert>Just looking through.</v>
+
+00:14:09.266 --> 00:14:15.666
+<v Mike Gilbert>So few I see even from last night, no servers that are down and things along those lines.</v>
+
+00:14:13.186 --> 00:14:13.506
+<v Shashank Agarwal>Bing.</v>
+
+00:14:16.386 --> 00:14:34.466
+<v Shashank Agarwal>Okay, great. One more thing I would like to ask, and it's kind of a suggestion as well, because you handle the automation team and you put in all the monitoring and everything, everything is under you. Have you specifically thought of running an SFC scan?</v>
+
+00:14:23.626 --> 00:14:23.786
+<v Mike Gilbert>Team.</v>
+
+00:14:34.866 --> 00:14:54.186
+<v Shashank Agarwal>So what we did, we did with one of the customers where we put in SFC scan. Usually it runs, it tries to auto remediate. If the SFC scan fails, it tries twice or thrice. And still if it does fail, it creates a ticket for the team.</v>
+
+00:14:46.466 --> 00:14:46.946
+<v Mike Gilbert>Mmh.</v>
+
+00:14:55.026 --> 00:15:00.466
+<v Shashank Agarwal>to fix it and it runs after every seven days.</v>
+
+00:15:01.626 --> 00:15:20.586
+<v Shashank Agarwal>What it brings is it brings in more system stability and it improves patching as well because suppose if there is an issue in the OS, it automatically gets remediated and then the patch does not happen. So we have seen a better improvement in this area.</v>
+
+00:15:08.386 --> 00:15:08.986
+<v Mike Gilbert>Mm-hmm.</v>
+
+00:15:20.706 --> 00:15:24.786
+<v Shashank Agarwal>So, do you think this would help if you haven't done this?</v>
+
+00:15:25.746 --> 00:15:46.226
+<v Mike Gilbert>Yeah, we've started to look at that as well as some of the DISM commands that you can run. The DISM ones can be more disruptive depending on how you're running them. So obviously we'll want to be a little more careful on those ones. But we're starting to look at that and probably tying them to our clients who are supposed to have like a weekly maintenance window.</v>
+
+00:15:31.506 --> 00:15:31.986
+<v Shashank Agarwal>Yes.</v>
+
+00:15:46.626 --> 00:16:05.986
+<v Mike Gilbert>So then we arrange it around, like based on when that is. So maybe the day before or something along those lines, that's when we'll do sort of a weekly scan. But we haven't finalized anything. Right now we have some of those automations built, but they're just not scheduled to auto run. The manual triggers is reactionary.</v>
+
+00:16:06.066 --> 00:16:17.106
+<v Mike Gilbert>But I do like that proactive approach to it. I think that could, if you're seeing that fix it with other people, then that's probably something we can add to our plan.</v>
+
+00:16:09.266 --> 00:16:11.426
+<v Shashank Agarwal>Yeah, I would suggest.</v>
+
+00:16:17.746 --> 00:16:35.586
+<v Shashank Agarwal>Yeah, you can just ask Manu. He can talk to his kind of, he shares that dotted line with me, but he reports to another manager who is actually the lead of RMM. He manages the RMM for all the ITBD clients.</v>
+
+00:16:29.386 --> 00:16:29.626
+<v Mike Gilbert>Team.</v>
+
+00:16:36.146 --> 00:16:57.586
+<v Shashank Agarwal>So he is, and we obviously worked on that and I worked with him on building that script. So he can give you that very easily because he has a better access than me. So he can work along with you. And we have implemented that with a lot of clients and we did that in automate and that was really successful for us.</v>
+
+00:16:49.266 --> 00:16:50.466
+<v Mike Gilbert>Fair enough. Well, that's good.</v>
+
+00:16:57.986 --> 00:17:06.386
+<v Shashank Agarwal>We haven't seen any system broke because of SFC scan. We have never got this issue, honestly.</v>
+
+00:17:05.666 --> 00:17:11.426
+<v Mike Gilbert>Yeah, that one's, from my understanding, pretty safe. So that's probably one that'd be easier to work in.</v>
+
+00:17:09.746 --> 00:17:29.866
+<v Shashank Agarwal>Yeah, and that runs the DSM commands like two or three only, not major, like automatic. There is 1 DSM that repairs. I do not remember the command exactly, but yes, that helps. Again, it creates a ticket. Initially, what we saw when we ran this command.</v>
+
+00:17:15.586 --> 00:17:15.746
+<v Mike Gilbert>Yeah.</v>
+
+00:17:30.386 --> 00:17:49.026
+<v Shashank Agarwal>We used to get a lot of tickets because of this. But eventually that ticket count, suppose if it started with 100 tickets in a month, that eventually went down to five or 10. And now we see very rarely. It usually happens when one of our clients on board.</v>
+
+00:17:33.346 --> 00:17:33.746
+<v Mike Gilbert>Pre.</v>
+
+00:17:49.066 --> 00:17:56.386
+<v Shashank Agarwal>any of their clients. So that way it generates a ticket for those clients, but usually that gets...</v>
+
+00:17:53.466 --> 00:17:54.106
+<v Mike Gilbert>Yeah, but...</v>
+
+00:17:58.146 --> 00:18:05.586
+<v Shashank Agarwal>Going down the lane, I would say that reduces A lot. So initially it does create a bulk of tickets, but.</v>
+
+00:18:05.906 --> 00:18:14.226
+<v Mike Gilbert>Yeah, but it's not really creating problems. It's just showing you where the ones that you already have are at that point, right? That makes sense.</v>
+
+00:18:12.226 --> 00:18:13.906
+<v Shashank Agarwal>Yes, yeah.</v>
+
+00:18:14.946 --> 00:18:28.186
+<v Shashank Agarwal>Yeah, and we usually keep it as P4 because that's not a major thing, but yes, that thing needs to look into. So kind of a proactive thing. So even if we get a lot of tickets, we are not fighting for it.</v>
+
+00:18:21.186 --> 00:18:21.666
+<v Mike Gilbert>Mhm.</v>
+
+00:18:29.746 --> 00:18:31.346
+<v Mike Gilbert>Yeah, no, that makes sense.</v>
+
+00:18:32.226 --> 00:18:32.546
+<v Shashank Agarwal>Yeah.</v>
+
+00:18:33.026 --> 00:18:36.546
+<v Mike Gilbert>I'll probably end up looking into that. We might have to make a couple.</v>
+
+00:18:37.746 --> 00:18:42.946
+<v Mike Gilbert>changes just on the reporting part, just because creating tickets here can be a little...</v>
+
+00:18:44.146 --> 00:18:48.146
+<v Mike Gilbert>That one you gotta warm people up too, because you're making it work.</v>
+
+00:18:46.866 --> 00:19:05.626
+<v Shashank Agarwal>Yeah, and I guess that, yeah, and I guess that needs to send out, you need to send out a proactive communication to all the ISDs. Like, this is one thing that we are trying to implement. This would essentially help the customers, but obviously you'll get a high inflow.</v>
+
+00:18:55.906 --> 00:18:56.186
+<v Mike Gilbert>Yeah.</v>
+
+00:19:05.106 --> 00:19:05.426
+<v Mike Gilbert>Yeah.</v>
+
+00:19:05.706 --> 00:19:06.306
+<v Shashank Agarwal>Tickets.</v>
+
+00:19:07.386 --> 00:19:26.106
+<v Mike Gilbert>And what we might end up doing is having it, we've done those with others where in in Central we'll have it right to a custom property rather than make a ticket. And then we can do reporting based on that so that we know, okay, if I ran this and had ticketing, that'd be 100 tickets or five tickets. And if it's five tickets.</v>
+
+00:19:26.466 --> 00:19:36.626
+<v Mike Gilbert>way easier for that conversation to happen. So 100 tickets, then usually people are like, whoa, whoa, whoa, slow down. So they want some time to clean it up.</v>
+
+00:19:34.306 --> 00:19:35.826
+<v Shashank Agarwal>Yeah, that also.</v>
+
+00:19:38.106 --> 00:19:56.706
+<v Shashank Agarwal>Yeah, and what I would say, like, we can do it in phases as well. So suppose in Central, you have 700 customers. So you can just deploy it for one customer per IST. You select one. So only 15 customers are done.</v>
+
+00:19:48.546 --> 00:19:48.706
+<v Mike Gilbert>Mm.</v>
+
+00:19:57.026 --> 00:20:02.706
+<v Shashank Agarwal>And we do this bi-weekly so that those tickets are immediate and everything.</v>
+
+00:20:01.266 --> 00:20:04.386
+<v Mike Gilbert>Yeah, we just slowly roll it out. Yeah.</v>
+
+00:20:21.506 --> 00:20:21.906
+<v Shashank Agarwal>Yeah.</v>
+
+00:20:23.346 --> 00:20:36.466
+<v Shashank Agarwal>So thanks. It was a great discussion and thankful that I was able to add some values. I'll try and keep thinking of this. Anything that comes to my mind, I'll do that.</v>
+
+00:20:37.586 --> 00:20:37.746
+<v Mike Gilbert>Mm.</v>
+
+00:20:37.586 --> 00:20:48.626
+<v Shashank Agarwal>And I was speaking to one of our other customers as well, and they told that they have put in intelligent automation, like a service, if it is running.</v>
+
+00:20:50.386 --> 00:21:09.026
+<v Shashank Agarwal>It does not alert if it stopped every time. It alerts only when in the first time and if we make it like disabled or stopped, it won't alert. So the alerting is very intelligent.</v>
+
+00:21:08.786 --> 00:21:09.106
+<v Mike Gilbert>Yeah.</v>
+
+00:21:09.986 --> 00:21:31.946
+<v Mike Gilbert>That for Windows services, that one we do have where it will, it will try and restart it. If it can't restart it, it'll make a ticket. But if it is offline, like you're saying, because it was set to disabled, then I've used that as intentional and won't make a ticket in those cases. So then it's, we found that that one has been pretty effective at like reducing the noise, but creating it when we need it.</v>
+
+00:21:26.306 --> 00:21:26.466
+<v Shashank Agarwal>Yeah.</v>
+
+00:21:32.066 --> 00:21:41.186
+<v Mike Gilbert>So I think that's, yeah, that one we are doing the same way. A lot of that, or some of that is built into it central, so it made that easy to implement.</v>
+
+00:21:36.706 --> 00:21:37.186
+<v Shashank Agarwal>Okay.</v>
+
+00:21:41.986 --> 00:22:04.146
+<v Shashank Agarwal>Oh, great, great to hear that. And there was one more thing I implemented in my previous organization. Sorry, I'm coming up with the ideas randomly. Yeah, so what we did, we used to get ping failure tickets. And this happened with high CPU and high memory as well. So what we did, if the...</v>
+
+00:21:50.826 --> 00:21:51.586
+<v Mike Gilbert>No, all good.</v>
+
+00:21:56.226 --> 00:21:56.706
+<v Mike Gilbert>Mhm.</v>
+
+00:22:04.186 --> 00:22:06.706
+<v Shashank Agarwal>Bing fails continuously for.</v>
+
+00:22:07.666 --> 00:22:22.946
+<v Shashank Agarwal>5 minutes only then it would generate a ticket. And for sleep utilization, what it does, it catches like constantly for last 30 minutes, the utilization should be high, like it catches them.</v>
+
+00:22:26.386 --> 00:22:27.346
+<v Mike Gilbert>The pins.</v>
+
+00:22:26.946 --> 00:22:44.466
+<v Shashank Agarwal>I would say, yeah, 5 minutes buffer or bracket and then it sees like if the six times continuously it's getting above 90% or 85%, then it creates only then it creates a ticket.</v>
+
+00:22:31.186 --> 00:22:31.506
+<v Mike Gilbert>Yeah.</v>
+
+00:22:45.986 --> 00:22:49.986
+<v Mike Gilbert>I know we've talked about that one internally and I just don't know if we...</v>
+
+00:22:51.506 --> 00:23:09.946
+<v Mike Gilbert>That's probably one that we will have to kind of need to do an overhaul of some of those just because they haven't we haven't reassessed them recently. So I think those ones those ones there that memory is a little bit trickier because certain things like a SQL server is always going to have high memory, but I think CPU is.</v>
+
+00:22:55.986 --> 00:22:56.186
+<v Shashank Agarwal>Yeah.</v>
+
+00:23:08.546 --> 00:23:08.786
+<v Shashank Agarwal>Yep.</v>
+
+00:23:10.026 --> 00:23:16.306
+<v Mike Gilbert>probably one that we'll need to reassess there as well. And there's probably some others in there that we are leaving on the table that we can.</v>
+
+00:23:17.986 --> 00:23:19.586
+<v Mike Gilbert>Better visibility into at least.</v>
+
+00:23:20.226 --> 00:23:39.026
+<v Shashank Agarwal>Yeah, and again, with the AI interplay, we can do one more thing, like it checks whether this, and it creates a data, like it creates a data, like if this CPU utilization is going high only for a specific time, like between.</v>
+
+00:23:38.506 --> 00:23:38.706
+<v Mike Gilbert>Mm.</v>
+
+00:23:39.426 --> 00:23:59.586
+<v Shashank Agarwal>1 P.m. and 2 P.m. on Friday. Maybe something is running in the background and that creates, so it judges the data and then it changes the automation in that way. Like, okay, on Friday between 1 and 2 it generally goes high and so we do not need to create a ticket. This is more on the next level that we can do.</v>
+
+00:23:57.906 --> 00:23:59.506
+<v Mike Gilbert>Yeah, so it's more the...</v>
+
+00:24:01.266 --> 00:24:19.746
+<v Mike Gilbert>That's a, that one is really interesting and I think that's probably where all this stuff needs to go, is you have that sort of anomaly detection of like, hey, this is unexpected, we need to tell somebody. That'll help filter out a lot of the noise, because I know there's a lot of things that we don't respond to because.</v>
+
+00:24:19.986 --> 00:24:21.906
+<v Mike Gilbert>99% of the time it's normal.</v>
+
+00:24:22.866 --> 00:24:23.186
+<v Shashank Agarwal>Yeah.</v>
+
+00:24:23.106 --> 00:24:27.826
+<v Mike Gilbert>Um, so yeah, that's a that's a tricky one, but I feel like it definitely.</v>
+
+00:24:29.226 --> 00:24:36.386
+<v Mike Gilbert>We're not there yet. I don't think we've, that's something we'll need to build a better strategy on how do we manage and handle and work that into these workflows.</v>
+
+00:24:37.346 --> 00:24:41.586
+<v Shashank Agarwal>Yeah, and simply that happens for disk space as well. Sometimes what happened?</v>
+
+00:24:42.466 --> 00:24:42.946
+<v Mike Gilbert>Mhm.</v>
+
+00:24:43.586 --> 00:25:02.506
+<v Shashank Agarwal>If I talk about SQL Server, so in SQL Server, some suppose it's doing a backup and everything. So at that time, it utilizes the disk, but later on when the cleanup happened, the disk automatically gets cleaned. So in that case, we can see when it's running.</v>
+
+00:24:58.466 --> 00:24:58.666
+<v Mike Gilbert>Yeah.</v>
+
+00:25:02.706 --> 00:25:09.826
+<v Shashank Agarwal>this backup, it should not alert as well. So kind of all those intelligent alerting we can put into place.</v>
+
+00:25:11.666 --> 00:25:17.186
+<v Mike Gilbert>Yeah. No, that does sound interesting. I think that's something we probably want to look into more.</v>
+
+00:25:18.066 --> 00:25:18.386
+<v Shashank Agarwal>Yeah.</v>
+
+00:25:18.746 --> 00:25:19.426
+<v Mike Gilbert>That's.</v>
+
+00:25:21.026 --> 00:25:27.506
+<v Mike Gilbert>That was the battle of like getting the noise out of the rest of it. So you're only focusing what you need to, right? So.</v>
+
+00:25:28.466 --> 00:25:41.266
+<v Shashank Agarwal>Yeah, okay. Next time I would have more ideas, I'll think where I can share with you so that we improve the alerting for our teams.</v>
+
+00:25:42.866 --> 00:25:47.106
+<v Mike Gilbert>I think, um, for the next one.</v>
+
+00:25:48.946 --> 00:25:58.106
+<v Mike Gilbert>Okay, yeah, we're good. It's the week after the next one. I'm on vacation for two weeks. I just wanted to make sure I didn't forget to mention it.</v>
+
+00:25:59.106 --> 00:26:08.626
+<v Shashank Agarwal>So next we have on 15th, so you are away from 20th, I guess, 18th.</v>
+
+00:25:59.586 --> 00:26:00.466
+<v Mike Gilbert>Was, but we're good.</v>
+
+00:26:05.106 --> 00:26:05.266
+<v Mike Gilbert>Yeah.</v>
+
+00:26:07.106 --> 00:26:10.626
+<v Mike Gilbert>And I'm on exactly, yeah, yeah.</v>
+
+00:26:09.906 --> 00:26:10.866
+<v Shashank Agarwal>Oh, Khattri.</v>
+
+00:26:12.066 --> 00:26:13.746
+<v Shashank Agarwal>Otherwise, I would have to put the meeting.</v>
+
+00:26:12.466 --> 00:26:13.186
+<v Mike Gilbert>No, we're still good.</v>
+
+00:26:14.546 --> 00:26:15.586
+<v Mike Gilbert>Yeah.</v>
+
+00:26:17.266 --> 00:26:32.906
+<v Shashank Agarwal>Okay, moving on. Next, note to lose from previous meeting. Attendance looks good. I asked Manu if he's planning any leaves. So he said no leaves. So that's good. Nothing else.</v>
+
+00:26:32.626 --> 00:26:42.786
+<v Mike Gilbert>Yeah, I think the, we have Canada Day off and I believe you guys have Independence Day, like American Independence Day, July 4th.</v>
+
+00:26:41.986 --> 00:26:51.826
+<v Shashank Agarwal>Yeah, 3rd July. Third July. It's actually on 4th, but yeah, because to shift the holiday and everything, that's why it's on 3rd.</v>
+
+00:26:44.466 --> 00:26:45.746
+<v Mike Gilbert>Or, yeah, third, sorry.</v>
+
+00:26:52.946 --> 00:27:02.386
+<v Mike Gilbert>Yeah, yeah, so we've already we've already arranged that one where he'll cover the 1st and then take the third off instead. So then he's not in an empty office by himself as well.</v>
+
+00:27:03.426 --> 00:27:21.786
+<v Shashank Agarwal>Yeah, no, no, because we have shared teams as well, which are working 24 across 7, and then there are a few Canadian clients and US clients which do require people to be present. So yeah, not an empty office altogether, but yes, skeleton staffing, I would say.</v>
+
+00:27:11.706 --> 00:27:11.826
+<v Mike Gilbert>Okay.</v>
+
+00:27:22.826 --> 00:27:27.906
+<v Mike Gilbert>Yeah, those days have different fields where you're like, look around and you don't see anybody or you see only a few.</v>
+
+00:27:25.106 --> 00:27:26.706
+<v Shashank Agarwal>Yeah, Ashish.</v>
+
+00:27:29.266 --> 00:27:39.586
+<v Shashank Agarwal>And it becomes very difficult for me because the other leads are generally on leave and everything, so it becomes difficult for me as well.</v>
+
+00:27:36.786 --> 00:27:37.226
+<v Mike Gilbert>Yeah.</v>
+
+00:27:38.626 --> 00:27:43.586
+<v Mike Gilbert>Yeah, it's there's less people, but suddenly, some suddenly more work, so...</v>
+
+00:27:44.546 --> 00:27:44.866
+<v Shashank Agarwal>Yeah.</v>
+
+00:27:46.066 --> 00:27:51.906
+<v Shashank Agarwal>Okay, I guess we are good then. Thank you so much, Mike, for listening to me, for listening to my ideas.</v>
+
+00:27:53.026 --> 00:28:11.586
+<v Mike Gilbert>No, no, it's good. I'm definitely going to implement some of them. We can talk more about it next month or two, just to see. But yeah, I'll talk to you. I'll see if I can get a hold of a script that you guys are using, and we'll probably work that within some of the ones that we already have. And then.</v>
+
+00:28:11.986 --> 00:28:14.226
+<v Mike Gilbert>Put it all together and see what we can come up with.</v>
+
+00:28:15.346 --> 00:28:22.306
+<v Shashank Agarwal>Sure, and I'll let Manu know which script are we talking about so that his manager can share it with him.</v>
+
+00:28:23.506 --> 00:28:23.986
+<v Mike Gilbert>Sounds good.</v>
+
+00:28:24.626 --> 00:28:26.466
+<v Shashank Agarwal>Okay, have a great day, Mike.</v>
+
+00:28:27.346 --> 00:28:28.186
+<v Mike Gilbert>You too. Later.</v>
+
+00:28:28.786 --> 00:28:29.586
+<v Shashank Agarwal>Thanks, bye.</v>
+

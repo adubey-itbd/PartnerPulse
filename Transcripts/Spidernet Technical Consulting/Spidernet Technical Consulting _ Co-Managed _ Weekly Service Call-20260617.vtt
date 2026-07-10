@@ -1,0 +1,569 @@
+WEBVTT
+NOTE title: Spidernet Technical Consulting | Co-Managed | Weekly Service Call
+NOTE date: 2026-06-17
+NOTE duration: 29m 14s
+
+00:00:03.537 --> 00:00:08.977
+<v Gagan Chowdhary>Thank you. So Anthony, are we expecting Andrew today or someone else from your team?</v>
+
+00:00:08.177 --> 00:00:08.577
+<v Anthony Licate>And...</v>
+
+00:00:09.457 --> 00:00:11.457
+<v Anthony Licate>Yeah, Andrew's on vacation this week, so we're good.</v>
+
+00:00:11.377 --> 00:00:28.977
+<v Gagan Chowdhary>Oh, okay. All right. Thank you. So welcome everyone once again, and I like this household. I mean, Lee, you know, mostly, I mean, he's busy and does not join, you know, each and every call, but I'm glad he found time for this call. So thank you. And thank you everyone, Vishal, Kevin, and Rick.</v>
+
+00:00:14.017 --> 00:00:14.177
+<v Anthony Licate>Yeah.</v>
+
+00:00:31.297 --> 00:00:39.337
+<v Gagan Chowdhary>All right, so if you're good, you know I'm going to present my presentation for the previous week. Just a moment.</v>
+
+00:00:40.657 --> 00:00:42.977
+<v Gagan Chowdhary>Team, let me know once is there on your screens.</v>
+
+00:00:46.377 --> 00:00:47.537
+<v Anthony Licate>Yep, got it.</v>
+
+00:00:48.897 --> 00:00:50.257
+<v Gagan Chowdhary>Well, thank you, so...</v>
+
+00:00:51.537 --> 00:01:05.177
+<v Gagan Chowdhary>This is a weekly business review, you know, from June 8th to 12th. Sophie just completed her one week successfully. I'm glad to hear. And she has moved towards the second week, which is in progress at the moment.</v>
+
+00:01:07.217 --> 00:01:08.577
+<v Gagan Chowdhary>Let me.</v>
+
+00:01:09.897 --> 00:01:28.497
+<v Gagan Chowdhary>Review the agenda. So going forward, so previously we had governance and all that agenda was different, but from now on we will have highlights, a performance analysis, ITBD service offerings, AI by design, that is ITBD initiative, and holiday schedule way forward.</v>
+
+00:01:28.657 --> 00:01:48.977
+<v Gagan Chowdhary>with SpiderNet Technical Consulting. And of course, recap, which I'll be sharing with you along with minutes of meeting after this call. So this is to Anthony and everyone, so please feel free to chime in wherever you think you have any inputs, feedback, or suggestions.</v>
+
+00:01:49.137 --> 00:01:59.217
+<v Gagan Chowdhary>about anything. We would love to hear from you because that gives us space to improve our services, you know, to match your requirements. Thank you.</v>
+
+00:02:00.817 --> 00:02:17.217
+<v Gagan Chowdhary>So Sophia has successfully completed her initial shadow with the team. I'm glad to hear from, you know, from Sophie, but I would like to hear from you as well. Is there anything pending at your end? Still more task or is it done with that? Anthony?</v>
+
+00:02:16.617 --> 00:02:36.177
+<v Anthony Licate>No, she's she's obviously there will be a continuation of the of the shadowing, but the but she she started getting her sea legs, it seemed like yesterday, getting getting hold of things. I still have to get to know her a little bit.</v>
+
+00:02:36.217 --> 00:02:38.577
+<v Anthony Licate>a little bit more, but my sense is she's hard on herself.</v>
+
+00:02:39.617 --> 00:02:56.097
+<v Anthony Licate>I could be wrong, but so I I wanna I wanna just make sure that I reassure her and and that she's she's doing a great job and and she's a hard worker and and and it's comforting to see.</v>
+
+00:02:58.417 --> 00:03:17.537
+<v Gagan Chowdhary>Great to hear from you, Anthony. So thank you for sharing this wonderful feedback. I know during initial days, even engineers, they feel a little reluctant, they feel hesitant reaching out to their team, but you know, I'm trying my best and I'm sure Andrew and everyone in your team is, they're doing great.</v>
+
+00:03:17.857 --> 00:03:36.537
+<v Gagan Chowdhary>So she is not feeling that reluctant or hesitant reaching out to anyone. So they did their best to make her feel so comfortable, you know, while doing shadowing with her. And so she is open. She feels free when she needs to raise her hand or voice is out.</v>
+
+00:03:36.937 --> 00:03:41.057
+<v Gagan Chowdhary>when she needs any assistance. So kudos to your team. Thank you.</v>
+
+00:03:39.857 --> 00:03:42.097
+<v Anthony Licate>This is true. Great. Yeah.</v>
+
+00:03:43.057 --> 00:04:01.217
+<v Gagan Chowdhary>Yeah, and so she began to address tickets. Glad to hear that she understands, you know, what, and she is implementing her knowledge that she possessed from a previous client experience.</v>
+
+00:04:01.537 --> 00:04:21.377
+<v Gagan Chowdhary>So, you know, I was reviewing her board, so she showed me that. There were a few billing related applications that a user reported to her. She was able to note down that, although it took a little bit more time. And there were some vendor related ticket that she worked on. She worked with, even today, she was working with Microsoft.</v>
+
+00:04:21.697 --> 00:04:24.257
+<v Gagan Chowdhary>To resolve certain concern that user reported.</v>
+
+00:04:25.377 --> 00:04:44.017
+<v Gagan Chowdhary>Yeah, different sort of issues, but so I'm sure the only concern or the only thing, you know, not concern, but my focus or my emphasis would be to just help her increase her pace so that she starts to take more tasks and meet her requirements.</v>
+
+00:04:44.497 --> 00:04:47.857
+<v Gagan Chowdhary>productivity targets going forward in following weeks.</v>
+
+00:04:48.817 --> 00:05:02.657
+<v Gagan Chowdhary>So thank you for being soft at her. And along with building her understanding about the process, client environment, she is steadily improving her productivity. So thank you on that.</v>
+
+00:05:03.297 --> 00:05:03.857
+<v Anthony Licate>Got it.</v>
+
+00:05:05.697 --> 00:05:25.777
+<v Gagan Chowdhary>Moving on to other slide, performance analysis. So I mean, most of the times she did, you know, last week shadowing. She had less time on your ticketing tool PSA, which is why, you know, I was capturing this manually at my end, because although I mean, she was not entering time, I think there was an instruction at your end.</v>
+
+00:05:25.897 --> 00:05:45.217
+<v Gagan Chowdhary>that she did not need to extensively, explicitly enter time on the tool PS itself. But it was my to-do that I need to capture productivity, you know, at my end, what exactly she's doing. So.</v>
+
+00:05:45.457 --> 00:06:05.537
+<v Gagan Chowdhary>I'm presenting in this table form. So this is what we see in day one. You know, we already know this actually. I don't have to read everything, but just major task, introduction to tools. She got introduction to 365 auto task.</v>
+
+00:06:05.617 --> 00:06:26.417
+<v Gagan Chowdhary>PSA, IT Glue, Kaseya, Dio, Onboarding Process Document, Threat Locker, Mimecast, Polycom, on System, Novi 4, Line Guard, Bamboo HR, and of course Microsoft EDR. And from week 3rd, sorry, day 3rd to day 7th, that means from...</v>
+
+00:06:28.177 --> 00:06:30.737
+<v Gagan Chowdhary>June 10th to June 16th.</v>
+
+00:06:32.497 --> 00:06:44.817
+<v Gagan Chowdhary>She worked on the data RMM and did sharing with the team, then again on PS Atul, she shared it with the team and handle, you know, started to handle a few tickets.</v>
+
+00:06:48.177 --> 00:07:11.377
+<v Gagan Chowdhary>Teams app, she she took training on the Teams voice that you use to for communication with the client, and she also explored that that tool. I mean, that was pretty extensive, so which is why she spent two days on this specific tool. Yeah, from which, you know, why she was mentioning auto task PSA, because she started to handle task and for these.</v>
+
+00:07:11.537 --> 00:07:20.817
+<v Gagan Chowdhary>These days onwards, from day 5th or 4th onwards, she started to enter her time on the PSA tool, Kaseya.</v>
+
+00:07:22.897 --> 00:07:41.297
+<v Gagan Chowdhary>Sorry, auto task at your end. So which we can see on the productivity. So currently, when, as far as shadowing was concerned, so she was doing shadowing for apart from her big time for 7 to 8 hours every day. And when she started working on, so she is.</v>
+
+00:07:41.457 --> 00:08:03.377
+<v Gagan Chowdhary>putting in the actual time that she spent on tickets. So and the shadowing. So if we see from day 5th, that is 4 hours, 5.75 hours, and on 16th yesterday, she spent, she did 6.25 hours of productivity. So gradually she's improving, as I said.</v>
+
+00:08:04.487 --> 00:08:07.127
+<v Gagan Chowdhary>Any comments and feedback on that, Anthony, from your end?</v>
+
+00:08:08.497 --> 00:08:09.777
+<v Anthony Licate>No, it's um...</v>
+
+00:08:10.857 --> 00:08:20.097
+<v Anthony Licate>It's comforting to see, you know, the progress. It's definitely helpful to have you folks, you know, facilitating your side of it.</v>
+
+00:08:21.977 --> 00:08:24.177
+<v Anthony Licate>It's, we don't typically.</v>
+
+00:08:25.537 --> 00:08:27.217
+<v Anthony Licate>I mean, you know, the...</v>
+
+00:08:28.657 --> 00:08:47.937
+<v Anthony Licate>The trajectory has been very, very nice to see, and you know, the velocity of ramping her up, and it's somewhat, at least at this point, it's sort of remarkable for me to see the amount of...</v>
+
+00:08:48.177 --> 00:08:50.657
+<v Anthony Licate>Things we've accomplished in such a short amount of time.</v>
+
+00:08:52.177 --> 00:09:10.497
+<v Anthony Licate>That's for sure. So very so that's props to you guys so far. I appreciate everything you're doing and keeping tabs on on these things. And my hope is that, you know, once once she gets she gets her confidence with these things and starts to</v>
+
+00:09:02.257 --> 00:09:02.337
+<v Gagan Chowdhary>The.</v>
+
+00:09:07.857 --> 00:09:08.097
+<v Gagan Chowdhary>S.</v>
+
+00:09:10.537 --> 00:09:29.537
+<v Anthony Licate>To interface more with the customers and the tickets, she'll only, you know, become more resilient when issues come up and she starts to learn the systems a little bit better. That Team voice one is not an easy ticket that she's working on now, but you know.</v>
+
+00:09:16.937 --> 00:09:17.057
+<v Gagan Chowdhary>Yeah.</v>
+
+00:09:29.697 --> 00:09:31.137
+<v Anthony Licate>It is what it is, will work it out.</v>
+
+00:09:33.857 --> 00:09:52.417
+<v Gagan Chowdhary>Thank you. It's truly great to hear your appreciation, your feedback, you know, borrow a team and I pass, you know, this feedback or this kudos to my entire team, ITBD team, be it, you know, Rick, our Pre Sales team and onboarding team, and of course, you know, leadership.</v>
+
+00:09:52.977 --> 00:10:11.857
+<v Gagan Chowdhary>I know it was not a, it was a bumpy start, you know, because of Sam's initial, you know, onboarding, but, well, thank you for your cooperation and for understanding and giving us a chance to to move ahead with our, you know, what we can offer to you and trusting in us.</v>
+
+00:10:12.257 --> 00:10:25.537
+<v Gagan Chowdhary>And this, which is why we were able to find a good candidate for you and propose Sophie. And I'm glad that she is able to meet your expectations and we hope she continues to do that going forward in the coming weeks and months.</v>
+
+00:10:26.817 --> 00:10:27.217
+<v Anthony Licate>Good.</v>
+
+00:10:26.977 --> 00:10:29.297
+<v Gagan Chowdhary>Cohen, Michelle, anything from anyone?</v>
+
+00:10:33.297 --> 00:10:54.417
+<v Vishal Dogra>I'm good. Yeah, sorry, sorry, Kavan. Yeah, I'm good. Happy to hear all those feedback from Anthony. And trust me, Anthony, this is teamwork. The support Sophie's getting from your side, she's very happy. She's all gaga when talking about support from Andrew as well. So thank you, thank you so much for all the, all the.</v>
+
+00:10:33.457 --> 00:10:34.417
+<v Kawandeep Sandhu>I'm good for my thing.</v>
+
+00:10:52.657 --> 00:10:52.817
+<v Anthony Licate>Mm.</v>
+
+00:10:54.737 --> 00:10:56.577
+<v Vishal Dogra>all the support on that. Appreciate that.</v>
+
+00:10:57.377 --> 00:10:58.177
+<v Anthony Licate>Yeah, you got it.</v>
+
+00:11:00.137 --> 00:11:15.457
+<v Gagan Chowdhary>All right, thank you. So thank you, Anthony. Moving on to ITBD service offerings. And I'm sure Lee will be able to take care of that, or Rick, maybe. Rick, over to you. And if we need from Lee, or he can take over.</v>
+
+00:11:15.937 --> 00:11:33.377
+<v Lee Cavellier>I'll speak to it really quickly because I think this is worth taking a moment for. The rest of the service offers, I know we're on a service call. I don't love pitching and I'm on the service delivery side, so I really don't love pitching. But I do.</v>
+
+00:11:33.697 --> 00:11:40.817
+<v Lee Cavellier>strongly, strongly advocate for this event. Anthony, have you been to a build it in the past?</v>
+
+00:11:41.617 --> 00:11:59.777
+<v Anthony Licate>No, I signed up back in 2022 and just, I don't know, 21 maybe, and a pandemic hit and just fell to the back burner. But yeah, no, it does look impressive. I will probably likely take this year off from this, but you know, I've</v>
+
+00:11:49.377 --> 00:11:49.817
+<v Lee Cavellier>Yeah.</v>
+
+00:11:53.057 --> 00:11:53.377
+<v Lee Cavellier>Kip.</v>
+
+00:11:59.857 --> 00:12:00.497
+<v Anthony Licate>I've had a...</v>
+
+00:12:02.017 --> 00:12:11.217
+<v Anthony Licate>Gotta run with with with the with the between the Vegas conference and and Kaseya Connect and all that other stuff, so but it does look impressive.</v>
+
+00:12:08.977 --> 00:12:10.017
+<v Lee Cavellier>Yeah, told.</v>
+
+00:12:12.337 --> 00:12:36.897
+<v Lee Cavellier>Yeah, totally understood. All right, well, when you're ready to have any kind of discussion around it, you know, even if it's for 27, let me know because I'm more than happy to talk about it and kind of geek out about why as a service delivery side, I feel very comfortable and confident pushing this. I say pushing because I don't like sales, but like pushing this on our partners.</v>
+
+00:12:38.177 --> 00:12:56.977
+<v Lee Cavellier>I joined IT by Design about 18 months ago. I had never been to one before. I went last year. And it was drastically different than any other event I'd gone to, and I'd been in the industry for 20 years. So it was, it's cool to see just how outcomes</v>
+
+00:12:57.137 --> 00:13:15.857
+<v Lee Cavellier>And when is it not sales focused? It is. Like we do the hard sell now, but when you're there, it's not a sales pitch. It's just genuinely us figuring out, okay, how do we all move forward as an industry? So anyway, let me know.</v>
+
+00:13:15.377 --> 00:13:16.017
+<v Anthony Licate>It was.</v>
+
+00:13:16.577 --> 00:13:31.937
+<v Lee Cavellier>If and when you're ready to dig in, or if there's anybody else in the organization that you want sitting in the room to be part of those conversations, give me a heads up and I'm happy to talk to them about it or get them set up.</v>
+
+00:13:32.817 --> 00:13:51.257
+<v Anthony Licate>Yeah, I know that back in the day before IT Glue was purchased by Kaseya, Luis kicked off in IT, well, I think he was having the IT Glue conference there in Arizona. I believe the attendance was somewhere around the 350 or 500. I forget.</v>
+
+00:13:52.817 --> 00:14:03.057
+<v Anthony Licate>For the IT for the IT glue at the time, but what was really interesting, and they sort of locked in on this when I was there, was back when they did this.</v>
+
+00:13:55.777 --> 00:13:56.097
+<v Lee Cavellier>Yeah.</v>
+
+00:14:04.497 --> 00:14:14.257
+<v Anthony Licate>You know, I get so used to going to the Casia Connects where there's 6,000 people there. And you're just like, it's like, it's like a big, you know.</v>
+
+00:14:09.417 --> 00:14:09.857
+<v Lee Cavellier>Yeah.</v>
+
+00:14:15.297 --> 00:14:36.857
+<v Anthony Licate>you know, constant fire hose, which is fine, I get it, you know, but then when you, I remember comparing the IT glue one and I remember thinking to myself, this is like boutique, personable, people connect at a different level at a capacity of that level. It's not the 6000, it's the 350, 500 range where</v>
+
+00:14:16.217 --> 00:14:18.097
+<v Lee Cavellier>Yeah, yes.</v>
+
+00:14:29.857 --> 00:14:30.177
+<v Lee Cavellier>Yeah.</v>
+
+00:14:36.977 --> 00:14:47.217
+<v Anthony Licate>It's just a different feel. It's more intimate. And it was really sort of really cool to see. So that's good that you guys are somewhere around the 550 range.</v>
+
+00:14:47.857 --> 00:14:54.817
+<v Lee Cavellier>Yeah, yeah, no, I mean, and that's quite intentional, like you just said, right? The impact that we could have.</v>
+
+00:14:56.497 --> 00:15:14.937
+<v Lee Cavellier>through a single event, there's a point of diminishing returns, right? To your point, there's a spectacle to having a larger event. But, you know, in my book, being in a room, it was about 500</v>
+
+00:15:15.177 --> 00:15:34.337
+<v Lee Cavellier>70 or so last year, 90% of that's entrepreneurs, owners, right? 90% executive representation, which means, you know, for somebody like me, it's awesome because I get to see people who are doing, you know, what I've been looking at and aspiring to.</v>
+
+00:15:22.817 --> 00:15:22.977
+<v Anthony Licate>Mm.</v>
+
+00:15:25.137 --> 00:15:25.257
+<v Anthony Licate>Kour.</v>
+
+00:15:32.017 --> 00:15:32.257
+<v Anthony Licate>Right.</v>
+
+00:15:34.577 --> 00:15:44.017
+<v Lee Cavellier>And it's just really, really cool to be in those in those conversations, and, like I said, it allows you to really focus on.</v>
+
+00:15:45.777 --> 00:16:05.137
+<v Lee Cavellier>Not just, oddly enough, even though there's more people with the larger events, it almost makes it harder then to interact with a network, build rapport with any reliable count of people, just because everybody's trying to get to as many people as they can.</v>
+
+00:15:57.937 --> 00:15:58.577
+<v Anthony Licate>True.</v>
+
+00:16:06.497 --> 00:16:25.377
+<v Lee Cavellier>And, you know, and the Kaila are really great about baking in opportunities for that networking. I mean, they've got a pre-dinner at their house on the Sunday night before. We've got dinners booked for Monday and Tuesday with like smaller groups of attendees. And then</v>
+
+00:16:22.977 --> 00:16:23.457
+<v Anthony Licate>Mhm.</v>
+
+00:16:26.177 --> 00:16:39.297
+<v Lee Cavellier>And then a big party at the New York Stock Exchange on Wednesday night, that'll be capped out at 300. So I think we're, I think, I think that's at this point.</v>
+
+00:16:37.377 --> 00:16:39.617
+<v Anthony Licate>Guys, walk on the floor, could be on the floor.</v>
+
+00:16:40.737 --> 00:16:41.617
+<v Lee Cavellier>What's that? Yeah.</v>
+
+00:16:41.217 --> 00:16:43.137
+<v Anthony Licate>Are you gonna, you're gonna be on the floor?</v>
+
+00:16:43.457 --> 00:16:45.377
+<v Lee Cavellier>on the floor of the New York Stock Exchange.</v>
+
+00:16:45.377 --> 00:16:48.657
+<v Anthony Licate>Oh man, that that might that might change my opinion of this.</v>
+
+00:16:48.057 --> 00:17:07.137
+<v Lee Cavellier>Yeah, I think you, I, it's great Gatsby theme, so I gotta head over to Brooklyn and buy a new Fedora. I have a, or whatever's appropriate. I haven't, yeah, but I'm telling you, man, it's, they don't, they don't go half measure. Last year was, last year was the top of the...</v>
+
+00:16:57.457 --> 00:16:57.937
+<v Anthony Licate>Right.</v>
+
+00:17:03.697 --> 00:17:04.097
+<v Anthony Licate>But.</v>
+
+00:17:07.777 --> 00:17:11.537
+<v Lee Cavellier>Of the world trade, and I was crazy, I was crazy.</v>
+
+00:17:09.617 --> 00:17:10.177
+<v Anthony Licate>Nice.</v>
+
+00:17:11.337 --> 00:17:18.817
+<v Anthony Licate>Wow, that's interesting. Well, I'll keep you on my sights. I, when's the deadline? I gotta let you know, like now.</v>
+
+00:17:17.137 --> 00:17:17.377
+<v Lee Cavellier>All right.</v>
+
+00:17:19.057 --> 00:17:37.777
+<v Lee Cavellier>I'll tell you what, I'll drop you, I'll drop you an email with the information. I'll just pull the information from one of the one of the emails that are going out and make sure you have it. I mean, deadline for the New York Stock Exchange, I, we may be capped out at that already.</v>
+
+00:17:37.937 --> 00:17:56.497
+<v Lee Cavellier>But if you let, like, I'll send you the information, seriously, if you let me know, like, right away, I can see if we might have saved a few for, like, partners, because we want to make sure our partners are represented there. And I can say, hey, SpiderNet's new. We got to look good for them. So, like, I'll...</v>
+
+00:17:49.497 --> 00:17:49.857
+<v Anthony Licate>Right.</v>
+
+00:17:51.457 --> 00:17:52.017
+<v Anthony Licate>Right.</v>
+
+00:17:57.937 --> 00:17:58.977
+<v Lee Cavellier>I'll drop you the airpile.</v>
+
+00:17:58.377 --> 00:18:03.297
+<v Anthony Licate>All right, Lisa, send it out right. You say you're not a sales guy, but I like it. You're speaking my language.</v>
+
+00:18:00.417 --> 00:18:01.777
+<v Lee Cavellier>Sounds good. I'll get that overrated.</v>
+
+00:18:03.417 --> 00:18:03.617
+<v Rick Arora>Yeah.</v>
+
+00:18:05.857 --> 00:18:06.017
+<v Rick Arora>Kip.</v>
+
+00:18:06.257 --> 00:18:06.417
+<v Anthony Licate>And.</v>
+
+00:18:08.817 --> 00:18:16.177
+<v Gagan Chowdhary>All right, thank you, Lee. That was impressive. So now, Lee, sorry, Rick is your turn. I pass this to you.</v>
+
+00:18:09.497 --> 00:18:09.697
+<v Rick Arora>Yeah.</v>
+
+00:18:16.217 --> 00:18:41.017
+<v Rick Arora>No, I think, yep, I think Lee, we are connecting next week as well with Anthony for the AI assessment. And Anthony Lee is the one who will be leading that discovery assessment call with us. So that's also, we are connecting next week, just FYI. And I think we did cover the team GPS, but I can work with them later on on this one, having a separate demo next month maybe. But I think we are good other than this.</v>
+
+00:18:27.217 --> 00:18:27.377
+<v Lee Cavellier>Kour.</v>
+
+00:18:41.097 --> 00:18:44.657
+<v Rick Arora>We are connecting next week regarding the AI assessment, Gaurav, so we are good.</v>
+
+00:18:45.777 --> 00:18:47.377
+<v Gagan Chowdhary>All right, that's great. Thank you.</v>
+
+00:18:49.057 --> 00:19:08.017
+<v Gagan Chowdhary>So when it comes to ITBD holidays, so Anthony, this is the same slide we tend to bring every time just to give a reminder to the team because PTA is something that comes up at any time and because and our business strategies and plans do change. So</v>
+
+00:19:08.737 --> 00:19:27.977
+<v Gagan Chowdhary>So this is a list of compulsory holidays on the left hand side. And so out of, and on the right hand side, out of these five optional holidays, so she'll be selecting at least one now. She has taken, if I'm not wrong, she's already taken Holi before joining SpiderNet.</v>
+
+00:19:28.577 --> 00:19:48.097
+<v Gagan Chowdhary>So Diwali is one of the major, major Indian festivals. So most of just like Christmas. So people tend to enjoy this holiday with their families. And sometimes they do also, I mean, they plan to schedule one additional day along with that. You know, as per business requirements,</v>
+
+00:19:48.337 --> 00:20:07.457
+<v Gagan Chowdhary>that can be taken care of. However, please do let us know in advance if there is any sort of business requirement on our holiday so we can speak to our technician and generate at the same time and so that they can accommodate their day on that specific day and</v>
+
+00:20:07.497 --> 00:20:11.457
+<v Gagan Chowdhary>take a complementary of later on. Okay. Yep.</v>
+
+00:20:09.857 --> 00:20:15.777
+<v Anthony Licate>Let me ask you this. So did you say that the two days were established? So was it Diwali and Holi?</v>
+
+00:20:17.297 --> 00:20:20.097
+<v Anthony Licate>Or no, did I did I hear that wrong? That those were the two days.</v>
+
+00:20:17.617 --> 00:20:18.017
+<v Gagan Chowdhary>Yeah.</v>
+
+00:20:20.417 --> 00:20:21.937
+<v Gagan Chowdhary>Yes, so...</v>
+
+00:20:21.297 --> 00:20:40.017
+<v Anthony Licate>Okay, because I just want to make so our procedure internally, which is it's fine, is that she just she and I think she's starting to know this from our onboarding, but I'm gonna I'm gonna have her put calendar calendar invites just so everybody everybody sees all these dates that are in the.</v>
+
+00:20:26.177 --> 00:20:26.657
+<v Gagan Chowdhary>Mhm.</v>
+
+00:20:40.177 --> 00:20:54.577
+<v Anthony Licate>And the calendar that she'll be off, but yeah, that that's just fine. So, so, so we have we have solidified Holi and Diwali as the two optional holidays in addition to the compulsory holidays. True, OK.</v>
+
+00:20:53.057 --> 00:21:10.577
+<v Gagan Chowdhary>That is correct. So, so Holly, you know, it's already passed, so she must, I'll just confirm she has not taken it, but 90% I'm confirmed she has taken it already before joining SpiderNet, but Diwal is for sure she's going to take.</v>
+
+00:21:07.497 --> 00:21:07.937
+<v Anthony Licate>OK.</v>
+
+00:21:10.977 --> 00:21:11.457
+<v Anthony Licate>Okay.</v>
+
+00:21:11.377 --> 00:21:13.537
+<v Gagan Chowdhary>How about you can mark on the calendar? Thank you.</v>
+
+00:21:13.297 --> 00:21:13.937
+<v Anthony Licate>Got it.</v>
+
+00:21:14.657 --> 00:21:31.297
+<v Vishal Dogra>And just to apprise, Anthony, these holidays are subjected to your approval. Depends, you know, if you need her working on that specific day. In case if you need her, she can work on that day and we can give her a comp off later on. So, it's all subjected to your approval and discussion.</v>
+
+00:21:32.537 --> 00:21:34.097
+<v Anthony Licate>Perfect. Thank you.</v>
+
+00:21:33.857 --> 00:21:34.337
+<v Vishal Dogra>Yeah.</v>
+
+00:21:35.897 --> 00:21:55.617
+<v Gagan Chowdhary>Thank you, Vishal. And way forward, nothing much, but my measure or basic emphasis would be on to Sophie to meet her KPIs, start to meet her KPI targets, because now she has started to take on tasks on her plate. And ITBD, that means...</v>
+
+00:21:56.257 --> 00:22:16.417
+<v Gagan Chowdhary>Including me and my team above me, so we need to support Sophie in maintaining her productivity and identifying any areas where she thinks she needs some improvement, be it her technical skill set or understanding the environment, or she needs any assistance, you know, which is...</v>
+
+00:22:17.777 --> 00:22:37.857
+<v Gagan Chowdhary>you know, kind of roadblock in meeting her productivity targets or anything. So we need to address those challenges and work with her and support her in those scenarios. And lastly, but not the least, so we always, this is our emphasis to make a team always feel like they're working with family.</v>
+
+00:22:38.417 --> 00:22:56.337
+<v Gagan Chowdhary>So, on a weekly basis, we, you know, because we do not get enough time, you know, sitting with each other, we sit on our seats and working from 8 A.m. to 5 P.m., but she's working from 9 to 6. So, on a weekend,</v>
+
+00:22:57.617 --> 00:23:16.577
+<v Gagan Chowdhary>work day weekend, I would say, Friday. We gather in the cafeteria sometimes. We order pizza, burger, or, you know, that's the time when we enjoy sitting with each other and discussing or having chit chats, that we understand each other better, not just work, work, and work.</v>
+
+00:23:16.977 --> 00:23:36.017
+<v Gagan Chowdhary>and we feel deprived of these moments. And monthly and quarterly basis, we organize some outdoor activities when we plan some games or just dine out on a lunch or dinner with team.</v>
+
+00:23:36.737 --> 00:23:54.817
+<v Gagan Chowdhary>Then we have good two to three hours, you know, time with our team. We laugh, dance, or enjoy together during those club events. When we celebrate this time, I'll share the picture with you and include that in the slide.</v>
+
+00:23:49.457 --> 00:23:49.697
+<v Anthony Licate>Good.</v>
+
+00:23:55.217 --> 00:23:55.697
+<v Anthony Licate>Awesome.</v>
+
+00:23:56.897 --> 00:24:15.577
+<v Gagan Chowdhary>Thank you, sir. That is clearly all for my end as far as the presentation is concerned. I'm sharing my screen. So anything that you think probably I did or did not cover in this slide, but you think it's necessary for you to see it going forward, we can include that.</v>
+
+00:24:17.057 --> 00:24:24.257
+<v Anthony Licate>No, I think I think we're in the early stages. I think the best thing we can do is what you just did. I think we just need to to.</v>
+
+00:24:25.217 --> 00:24:43.777
+<v Anthony Licate>To continue along with the progress we've made, make sure that she feels at home and that the customers, the customers can, so we've tried to make a push so that the customers can hear her, see her, understand that she's now a part of the team without.</v>
+
+00:24:44.257 --> 00:25:04.097
+<v Anthony Licate>without possibly hearing the accent and saying, oh, this can't be real kind of thing. So we're just trying to like fix that part where, you know, like we can, we can, we can have our people that have been here make that introduction, even if she's a fly on the wall and the camera's on, it still doesn't matter. She's still.</v>
+
+00:24:48.977 --> 00:24:50.017
+<v Gagan Chowdhary>Yeah, yeah.</v>
+
+00:25:04.417 --> 00:25:24.897
+<v Anthony Licate>she's able to say hi, whatever it is, and then we move on. And so the shadowing is important, not just from the standpoint of her seeing how to technically go through things, but just from the overall cosmetics standpoint of showing our existing customers that she's a part of this, right? So</v>
+
+00:25:15.337 --> 00:25:15.817
+<v Gagan Chowdhary>Mhm.</v>
+
+00:25:25.617 --> 00:25:46.817
+<v Anthony Licate>That's ongoing. We'll continue to move through that. In the meantime, hopefully we kill two birds with one stone and she can capitalize on on some of the things she's learning from those sessions once we continue to shadow and then let her off, let her on her way and, you know, she can open her wings up a little bit as far as</v>
+
+00:25:46.977 --> 00:26:01.697
+<v Anthony Licate>you know, addressing things. So I would say I think it's a good idea. We just keep having these and I think we're going to fall into a good place once the comfort level grows.</v>
+
+00:25:57.857 --> 00:25:58.257
+<v Gagan Chowdhary>Just.</v>
+
+00:26:02.697 --> 00:26:23.777
+<v Anthony Licate>And then we can lock in a little bit more on metrics and things, but I don't want to get, you know, like you, like you just went through. I mean, there's only so many metrics we can measure at this point anyway, as it relates to support. So, but my guys have an incentive, especially with the L1, L2 tickets that come in. I have a guy that's progressing.</v>
+
+00:26:18.897 --> 00:26:18.937
+<v Gagan Chowdhary>I.</v>
+
+00:26:24.257 --> 00:26:43.377
+<v Anthony Licate>into more of a cybersecurity role, which that's sort of his passion. So, and then we have another person, our senior cyber guy who is going to go out on maternity leave for a little bit. So he's going to be touch and go over the next few weeks, which means that the junior guy has the opportunity to sort of fill that gap.</v>
+
+00:26:43.857 --> 00:27:02.097
+<v Anthony Licate>And then that opens up windows of opportunity for the L1, L2 tickets to be more available. And so we can sort of get her into where she needs to be and extend the runway just a little bit, right? So good stuff.</v>
+
+00:26:57.057 --> 00:26:57.377
+<v Gagan Chowdhary>Yes.</v>
+
+00:27:03.697 --> 00:27:27.697
+<v Gagan Chowdhary>Thank you, Anthony. I like your plan, you know, at a granular level. I mean, not only just, you know, she needs to be meeting her targets on a daily basis, but I like that, you know, from a user standpoint, from our interpersonal skills and soft skills standpoint, yeah, absolutely. Users, you know, you know, must understand that she's not speaking to an AI person or some robots.</v>
+
+00:27:28.057 --> 00:27:46.817
+<v Gagan Chowdhary>interactive voice response system. So she's there speaking to an actual human being. Yeah, so during initial days, you know, we are not, you know, connecting monthly basis, although we are connecting on a weekly basis, but still, anything comes up, anything that you think.</v>
+
+00:27:47.857 --> 00:28:07.537
+<v Gagan Chowdhary>Along with your team, some attention is required. So please, I mean, we do have our Teams channel open federation. So do let us know. And alongside you, I mean, we'll work with Sophie at the same time, whether it's technical skill set upgradation or soft skill interpersonal skills, we do have our</v>
+
+00:28:07.697 --> 00:28:15.057
+<v Gagan Chowdhary>L&D Team available here, and yeah, so we can, you know, bring things up to speed for you.</v>
+
+00:28:16.657 --> 00:28:18.017
+<v Anthony Licate>Awesome. Appreciate that.</v>
+
+00:28:19.137 --> 00:28:27.537
+<v Gagan Chowdhary>Thank you. It's great to hear from you. We'll be connecting in between as well. So I hand it over to the rest of the team. Anything from your end?</v>
+
+00:28:30.337 --> 00:28:38.337
+<v Anthony Licate>Nothing right now. I appreciate the check-in, appreciate the insight, and yeah, look forward to the future.</v>
+
+00:28:30.977 --> 00:28:31.217
+<v Gagan Chowdhary>Kip.</v>
+
+00:28:39.937 --> 00:28:48.257
+<v Gagan Chowdhary>Thank you. And going forward, you'll see slides in more graphical presentation standpoint. I mean.</v>
+
+00:28:40.417 --> 00:28:40.577
+<v Kawandeep Sandhu>Yeah.</v>
+
+00:28:41.377 --> 00:28:41.497
+<v Lee Cavellier>Yeah.</v>
+
+00:28:50.097 --> 00:28:50.977
+<v Gagan Chowdhary>I would say.</v>
+
+00:28:52.257 --> 00:29:11.737
+<v Gagan Chowdhary>I will do, I will work on more beautification apart, you know, going forward. Yeah, that's it. All right, so thanks. So that is all from everyone. So thank you for joining in and we shall meet in our following call with more positive updates. And until then, good day and we'll meet again.</v>
+
+00:28:57.537 --> 00:29:00.737
+<v Anthony Licate>Sure. Yeah. Awesome. Appreciate that.</v>
+
+00:29:11.857 --> 00:29:12.257
+<v Gagan Chowdhary>Thank you.</v>
+
+00:29:12.777 --> 00:29:14.017
+<v Anthony Licate>Thanks, guys. Take care.</v>
+
+00:29:12.897 --> 00:29:14.577
+<v Rick Arora>Take care, Anthony. Thank you.</v>
+
+00:29:13.937 --> 00:29:15.217
+<v Lee Cavellier>All right. Cheers.</v>
+
+00:29:14.257 --> 00:29:14.977
+<v Kawandeep Sandhu>Thanks, Anthony.</v>
+
