@@ -133,7 +133,7 @@
         if (b) { b.setAttribute("aria-pressed", String(ppPrivate)); b.innerHTML = (ppPrivate ? _EYE_ON + " Show $" : _EYE_OFF + " Hide $"); }
     }
     function setupPrivacy() {
-        try { ppPrivate = localStorage.getItem("pp_private") === "1"; } catch (e) { ppPrivate = false; }
+        try { const _v = localStorage.getItem("pp_private"); ppPrivate = _v === null ? true : _v === "1"; } catch (e) { ppPrivate = true; }
         const b = $("privacy-toggle");
         if (b) b.addEventListener("click", () => {
             ppPrivate = !ppPrivate;

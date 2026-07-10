@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Privacy: money masked by default (2026-07-10)
+
+### Changed
+- **Money values now default to MASKED (blurred) on first load** when there is no saved
+  `pp_private` preference — `index.html` + `partner.js` `setupPrivacy` (was: defaulted to
+  visible). The header eye toggle still reveals and persists the choice. Committed from
+  long-standing working-tree WIP; becomes prod behavior on the next
+  `firebase deploy --only hosting`.
+
 ## [Unreleased] — Roster: add GainSide (2026-07-10)
 
 ### Added
