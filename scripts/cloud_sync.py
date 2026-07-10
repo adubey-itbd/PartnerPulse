@@ -58,9 +58,13 @@ STATE_BUCKET = os.environ.get("STATE_BUCKET", "").replace("gs://", "").strip("/ 
 DATA_DIR = os.environ.get("PARTNERPULSE_DATA", str(ROOT / "data"))
 TRANSCRIPTS_DIR = os.environ.get("PARTNERPULSE_TRANSCRIPTS", str(ROOT / "Transcripts"))
 
-# Per-soft-step timeout; mirrors server.py STEP_TIMEOUT_S (kept a touch lower so a
-# stuck step is reaped before the Cloud Run Job's own wall-clock budget).
-SOFT_STEP_TIMEOUT_S = 1500
+# Per-soft-step timeout; honours the STEP_TIMEOUT_S env var (mirrors server.py),
+# falling back to 2700s. Keep it below the Cloud Run Job's task timeout so a stuck
+# step is reaped before the job's own wall-clock budget. Raised from a hardcoded
+# 1500s on 2026-07-09: build_real_partners needs >25min to fetch the full roster
+# from Halo/TeamGPS, so the 1500s cap was chronically killing the tail of the list
+# (Servcom..CPCORP..Stratti) before those partners were rebuilt.
+SOFT_STEP_TIMEOUT_S = int(os.environ.get("STEP_TIMEOUT_S", "2700"))
 
 # Cache-bust guard: if the pulled data/ has fewer than this many objects, assume
 # the state pull was incomplete/corrupt and abort BEFORE building — otherwise the

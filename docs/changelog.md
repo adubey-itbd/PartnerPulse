@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — cloud_sync: honour STEP_TIMEOUT_S / raise soft-step timeout (2026-07-09)
+
+### Fixed
+- **`cloud_sync.py` `SOFT_STEP_TIMEOUT_S` now reads the `STEP_TIMEOUT_S` env var (default
+  2700s), up from a hardcoded 1500s.** The old cap chronically killed the
+  `build_real_partners` step mid-roster (it needs >25 min to fetch ~73 partners from
+  Halo/TeamGPS), so the tail of the NEW list (Servcom USA … CPCORP Inc … Stratti) was
+  dropped from nightly rebuilds depending on per-run timing — e.g. CPCorp's freshly-pulled
+  transcripts weren't ingested (stayed "No calls") until a run happened to reach it before
+  the cutoff. The env var was previously ignored despite the code comment claiming it
+  mirrored `server.py`. Takes effect on the next Cloud Run image rebuild. (The job already
+  has `STEP_TIMEOUT_S=2700` + task-timeout 5400s set.)
+
 ## [Unreleased] — Access allowlist: +3 users (2026-07-09)
 
 ### Changed
