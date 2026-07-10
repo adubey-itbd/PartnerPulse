@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [Unreleased] — Roster: add GainSide (2026-07-10)
+
+### Added
+- **GainSide (Halo client 1008, MDE / CFMDERAG "Hypercare Green", site CDG)** added to
+  `scripts/build_real_partners.py` `NEW`. Its DES-organized service calls were already
+  being pulled into `Transcripts/GainSide/` (flagged as an unmatched folder) but it had no
+  roster entry, so it was never built. Also added slug `gainside` to the demo-roster
+  allowlist (`_demo_roster.json`) in the GCS state bucket → roster now 84. Effective on the
+  next nightly (needs the Cloud Run image rebuilt so `NEW` includes it — done 2026-07-10).
+
 ## [Unreleased] — cloud_sync: honour STEP_TIMEOUT_S / raise soft-step timeout (2026-07-09)
 
 ### Fixed

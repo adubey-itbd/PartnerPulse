@@ -154,6 +154,11 @@ NEW = [
     # remain excluded per ops.
     ("CPCORP Inc",                           968, "CPCORP",                    "CPCORP Inc"),
     ("Stratti",                              636, "Stratti",                   "Stratti"),
+    # ---- added 2026-07-10: GainSide (Halo 1008, MDE / CFMDERAG "Hypercare Green",
+    # site CDG). DES-organized service calls were already being pulled into
+    # Transcripts/GainSide/ but the partner had no roster entry, so it was an
+    # unmatched folder (never built). Display name matches the folder. ----
+    ("GainSide",                             1008, "GainSide",                 "GainSide"),
 ]
 
 
